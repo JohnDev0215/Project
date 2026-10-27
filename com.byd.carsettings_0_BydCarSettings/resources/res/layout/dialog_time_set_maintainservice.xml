@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:orientation="horizontal"
+    android:layout_width="@dimen/dp_560"
+    android:layout_height="@dimen/dp_224"
+    android:paddingStart="@dimen/dp_39"
+    android:paddingEnd="@dimen/dp_39">
+    <com.byd.carsettings.ui.widget.wheelview.WheelView
+        android:id="@+id/wheelView_data"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_192"
+        android:layout_marginTop="@dimen/dp_6"
+        android:layout_marginBottom="@dimen/dp_16"
+        app:itemNumber="3"
+        app:lineColor="?attr/dialog_divider_common"
+        app:lineHeight="@dimen/dp_1"
+        app:noEmpty="true"
+        app:normalTextColor="?attr/text_color_main_gray"
+        app:normalTextSize="@dimen/sp_24"
+        app:selectedTextColor="?attr/time_set_selected"
+        app:selectedTextSize="@dimen/sp_24"
+        app:unitHeight="@dimen/dp_64"/>
+    <TextView
+        android:textSize="@dimen/sp_18"
+        android:textColor="?attr/text_color_main"
+        android:gravity="center_vertical"
+        android:id="@+id/tv_unit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_192"
+        android:layout_marginTop="@dimen/dp_6"
+        android:layout_marginBottom="@dimen/dp_16"
+        android:layout_marginStart="@dimen/dp_285"/>
+</RelativeLayout>

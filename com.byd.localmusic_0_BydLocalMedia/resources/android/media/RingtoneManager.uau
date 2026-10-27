@@ -1,0 +1,6 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/media/RingtoneManager;->mCursor:Landroid/database/Cursor;,frameworks/base/media/java/android/media/RingtoneManager.java,250,5,250,25,
+Landroid/media/RingtoneManager;->getInternalRingtones()Landroid/database/Cursor;,frameworks/base/media/java/android/media/RingtoneManager.java,568,5,568,25,
+Landroid/media/RingtoneManager;->getMediaRingtones(Landroid/content/Context;)Landroid/database/Cursor;,frameworks/base/media/java/android/media/RingtoneManager.java,582,5,582,25,
+Landroid/media/RingtoneManager;->getRingtone(Landroid/content/Context;Landroid/net/Uri;I)Landroid/media/Ringtone;,frameworks/base/media/java/android/media/RingtoneManager.java,708,5,708,25,
+Landroid/media/RingtoneManager;->getRingtone(Landroid/content/Context;Landroid/net/Uri;ILandroid/media/VolumeShaper$Configuration;)Landroid/media/Ringtone;,frameworks/base/media/java/android/media/RingtoneManager.java,725,5,725,25,

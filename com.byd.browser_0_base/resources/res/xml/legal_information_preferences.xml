@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <org.chromium.chrome.browser.about_settings.HyperlinkPreference
+        android:title="@string/open_source_license_title"
+        android:key="open_source_license"
+        app:url="@string/open_source_license_url"/>
+    <org.chromium.chrome.browser.about_settings.HyperlinkPreference
+        android:title="@string/google_terms_of_service_title"
+        android:key="google_terms_of_service"
+        app:url="@string/google_terms_of_service_url"/>
+    <org.chromium.chrome.browser.about_settings.HyperlinkPreference
+        android:title="@string/chrome_additional_terms_of_service_title"
+        android:key="chrome_additional_terms_of_service"
+        app:url="@string/chrome_additional_terms_of_service_url"/>
+    <org.chromium.chrome.browser.about_settings.HyperlinkPreference
+        android:title="@string/privacy_policy_title"
+        android:key="privacy_policy"
+        app:url="@string/google_privacy_policy_url"/>
+</PreferenceScreen>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/dp_512"
+    android:layout_height="@dimen/dp_74"
+    android:layout_marginTop="@dimen/dp_8">
+    <TextView
+        android:textSize="@dimen/sp_20"
+        android:textColor="@color/text_color_main"
+        android:id="@+id/item_es_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_7"
+        android:text="@string/external_storage_app_manage"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"/>
+    <TextView
+        android:textSize="@dimen/sp_16"
+        android:textColor="@color/text_color_main_gray"
+        android:id="@+id/item_es_me_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/item_es_name"
+        android:layout_alignParentStart="true"/>
+    <com.byd.carsettings.ui.widget.BydInvalidButton
+        android:textSize="@dimen/sp_18"
+        android:textColor="@color/text_color_btn_blue"
+        android:id="@+id/item_es_eject"
+        android:background="@drawable/selector_dialog_white"
+        android:layout_width="@dimen/dp_128"
+        android:layout_height="@dimen/dp_40"
+        android:text="@string/eject_usage_app_manage"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="@dimen/dp_24"
+        android:layout_alignParentEnd="true"/>
+</RelativeLayout>

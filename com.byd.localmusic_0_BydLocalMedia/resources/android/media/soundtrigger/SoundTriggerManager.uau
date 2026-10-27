@@ -1,0 +1,7 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/media/soundtrigger/SoundTriggerManager;->loadSoundModel(Landroid/hardware/soundtrigger/SoundTrigger$SoundModel;)I,frameworks/base/media/java/android/media/soundtrigger/SoundTriggerManager.java,320,5,320,25,
+Landroid/media/soundtrigger/SoundTriggerManager;->startRecognition(Ljava/util/UUID;Landroid/os/Bundle;Landroid/content/ComponentName;Landroid/hardware/soundtrigger/SoundTrigger$RecognitionConfig;)I,frameworks/base/media/java/android/media/soundtrigger/SoundTriggerManager.java,367,5,367,25,
+Landroid/media/soundtrigger/SoundTriggerManager;->stopRecognition(Ljava/util/UUID;)I,frameworks/base/media/java/android/media/soundtrigger/SoundTriggerManager.java,388,5,388,25,
+Landroid/media/soundtrigger/SoundTriggerManager;->unloadSoundModel(Ljava/util/UUID;)I,frameworks/base/media/java/android/media/soundtrigger/SoundTriggerManager.java,410,5,410,25,
+Landroid/media/soundtrigger/SoundTriggerManager;->isRecognitionActive(Ljava/util/UUID;)Z,frameworks/base/media/java/android/media/soundtrigger/SoundTriggerManager.java,433,5,433,25,
+Landroid/media/soundtrigger/SoundTriggerManager;->getModelState(Ljava/util/UUID;)I,frameworks/base/media/java/android/media/soundtrigger/SoundTriggerManager.java,473,5,473,25,

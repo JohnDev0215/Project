@@ -1,0 +1,4 @@
+signature,file,startline,startcol,endline,endcol,properties
+Lcom/android/internal/app/LocalePicker;->updateLocale(Ljava/util/Locale;)V,frameworks/base/core/java/com/android/internal/app/LocalePicker.java,256,5,256,25,
+Lcom/android/internal/app/LocalePicker;->updateLocales(Landroid/os/LocaleList;)V,frameworks/base/core/java/com/android/internal/app/LocalePicker.java,266,5,266,25,
+Lcom/android/internal/app/LocalePicker;->getLocales()Landroid/os/LocaleList;,frameworks/base/core/java/com/android/internal/app/LocalePicker.java,288,5,288,25,

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<org.chromium.chrome.browser.bookmarks.BookmarkToolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bookmark_toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/toolbar_height_no_shadow"
+    style="@style/BookMarkModernToolbar">
+    <TextView
+        android:textSize="@dimen/dimen_20_sp"
+        android:textColor="@color/color_text_title"
+        android:layout_gravity="center"
+        android:id="@+id/tv_center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""/>
+</org.chromium.chrome.browser.bookmarks.BookmarkToolbar>

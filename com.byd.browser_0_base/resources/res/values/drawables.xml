@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <drawable name="account_picker_background">@drawable/rounded_rectangle_surface_1</drawable>
+    <drawable name="badge_update">@drawable/badge_update_dark</drawable>
+    <drawable name="bookmark_save_flow_background">@drawable/rounded_rectangle_surface_1</drawable>
+    <drawable name="circular_progress_bar_background_small">@drawable/oval_surface_1</drawable>
+    <drawable name="dialog_bg_tinted">@drawable/dialog_bg_baseline</drawable>
+    <drawable name="ic_error_24dp_filled">@drawable/ic_error_grey800_24dp_filled</drawable>
+    <drawable name="ic_more_vert_24dp">@drawable/ic_more_vert_24dp_on_light_bg</drawable>
+    <drawable name="ic_offline_pin_24dp">@drawable/ic_offline_pin_24dp_on_light_bg</drawable>
+    <drawable name="ic_play_circle_filled_24dp">@drawable/ic_play_circle_filled_24dp_on_light_bg</drawable>
+    <drawable name="material_ic_keyboard_arrow_next_black_24dp">@drawable/material_ic_keyboard_arrow_right_black_24dp</drawable>
+    <drawable name="material_ic_keyboard_arrow_previous_black_24dp">@drawable/material_ic_keyboard_arrow_left_black_24dp</drawable>
+    <drawable name="menu_bg_tinted">@drawable/menu_bg_baseline</drawable>
+    <drawable name="notification_template_icon_bg">#3333b5e5</drawable>
+    <drawable name="notification_template_icon_low_bg">#0cffffff</drawable>
+    <drawable name="shared_clipboard_zero_state">@drawable/shared_clipboard_zero_state_light</drawable>
+    <drawable name="status_icon_background">@drawable/oval_surface_0</drawable>
+    <drawable name="tile_view_icon_background_modern_updated">@drawable/oval_surface_0</drawable>
+</resources>

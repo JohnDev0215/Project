@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="oval">
+    <size
+        android:height="@dimen/preference_setting_switch_thumb_size"
+        android:width="@dimen/preference_setting_switch_thumb_size"/>
+    <solid android:color="@color/settings_preference_switch_thumb_off_color"/>
+    <stroke
+        android:width="@dimen/preference_setting_switch_thumb_stroke_width"
+        android:color="@color/preference_setting_switch_thumb_stroke_color"/>
+</shape>

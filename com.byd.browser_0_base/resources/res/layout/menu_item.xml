@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="?android:attr/listPreferredItemHeightSmall"
+    style="@style/AppMenuItem">
+    <TextView
+        android:layout_gravity="start"
+        android:id="@+id/menu_item_text"
+        android:duplicateParentState="true"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        style="@style/AppMenuItemText"/>
+    <org.chromium.ui.widget.ChromeImageView
+        android:gravity="center_vertical"
+        android:layout_gravity="end"
+        android:id="@+id/menu_item_icon"
+        android:duplicateParentState="true"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:tint="?attr/colorOnSurfaceVariant"
+        android:layout_weight="0"
+        android:importantForAccessibility="no"/>
+</LinearLayout>

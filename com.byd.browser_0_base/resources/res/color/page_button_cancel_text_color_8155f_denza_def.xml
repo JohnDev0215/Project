@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:state_pressed="true"
+        android:color="@color/page_button_cancel_text_color2_8155f_denza_def"/>
+    <item
+        android:state_enabled="false"
+        android:color="@color/page_button_cancel_text_color3_8155f_denza_def"/>
+    <item android:color="@color/page_button_cancel_text_color1_8155f_denza_def"/>
+</selector>

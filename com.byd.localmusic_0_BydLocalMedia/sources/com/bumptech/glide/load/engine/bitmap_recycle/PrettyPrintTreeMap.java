@@ -1,0 +1,29 @@
+package com.bumptech.glide.load.engine.bitmap_recycle;
+
+import com.android.internal.accessibility.common.ShortcutConstants;
+import java.util.Map;
+import java.util.TreeMap;
+
+/* JADX INFO: loaded from: classes3.dex */
+class PrettyPrintTreeMap<K, V> extends TreeMap<K, V> {
+    PrettyPrintTreeMap() {
+    }
+
+    @Override // java.util.AbstractMap
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        sb.append("( ");
+        for (Map.Entry<K, V> entry : entrySet()) {
+            sb.append('{');
+            sb.append(entry.getKey());
+            sb.append(ShortcutConstants.SERVICES_SEPARATOR);
+            sb.append(entry.getValue());
+            sb.append("}, ");
+        }
+        if (!isEmpty()) {
+            sb.replace(sb.length() - 2, sb.length(), "");
+        }
+        sb.append(" )");
+        return sb.toString();
+    }
+}

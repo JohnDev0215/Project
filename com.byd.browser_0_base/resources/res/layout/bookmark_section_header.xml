@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="@dimen/list_item_default_margin">
+    <TextView
+        android:textAppearance="@style/TextAppearance.TextMedium.Secondary"
+        android:textSize="20sp"
+        android:textColor="@color/color_b3dae1eb"
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

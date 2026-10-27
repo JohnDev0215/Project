@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <View
+        android:background="?attr/colorSurfaceVariant"
+        android:layout_width="match_parent"
+        android:layout_marginTop="70dp"
+        android:importantForAccessibility="no"
+        style="@style/HorizontalDivider"/>
+    <androidx.core.widget.NestedScrollView
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:textAppearance="@style/TextAppearance.TextMedium.Primary"
+                android:ellipsize="end"
+                android:id="@+id/description"
+                android:focusable="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:maxLines="7"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:lineHeight="20dp"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:orientation="horizontal"
+                android:id="@+id/screenshots_container"
+                android:layout_width="match_parent"
+                android:layout_height="320dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="16dp"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

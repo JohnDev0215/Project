@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="accessibility_dialog_back_button">
+        <item quantity="one">Zwiń %1$d kartę.</item>
+        <item quantity="few">Zwiń grupę kart z %1$d kartami.</item>
+        <item quantity="many">Zwiń grupę kart z %1$d kartami.</item>
+        <item quantity="other">Zwiń grupę kart z %1$d karty.</item>
+    </plurals>
+    <plurals name="accessibility_dialog_back_button_with_group_name">
+        <item quantity="one">Zwiń %1$d kartę.</item>
+        <item quantity="few">Zwiń grupę kart %1$s z %2$d kartami.</item>
+        <item quantity="many">Zwiń grupę kart %1$s z %2$d kartami.</item>
+        <item quantity="other">Zwiń grupę kart %1$s z %2$d karty.</item>
+    </plurals>
+    <plurals name="accessibility_download_manager_ui_audio">
+        <item quantity="one">%d plik dźwiękowy</item>
+        <item quantity="few">%d pliki dźwiękowe</item>
+        <item quantity="many">%d plików dźwiękowych</item>
+        <item quantity="other">%d pliku dźwiękowego</item>
+    </plurals>
+    <plurals name="accessibility_download_manager_ui_generic">
+        <item quantity="one">%d plik</item>
+        <item quantity="few">%d pliki</item>
+        <item quantity="many">%d plików</item>
+        <item quantity="other">%d pliku</item>
+    </plurals>
+    <plurals name="accessibility_download_manager_ui_images">
+        <item quantity="one">%d obraz</item>
+        <item quantity="few">%d obrazy</item>
+        <item quantity="many">%d obrazów</item>
+        <item quantity="other">%d obrazu</item>
+    </plurals>
+    <plurals name="accessibility_download_manager_ui_pages">
+        <item quantity="one">%d strona</item>
+        <item quantity="few">%d strony</item>
+        <item quantity="many">%d stron</item>
+        <item quantity="other">%d strony</item>
+    </plurals>
+    <plurals name="accessibility_download_manager_ui_video">
+        <item quantity="one">%d film</item>
+        <item quantity="few">%d filmy</item>
+        <item quantity="many">%d filmów</item>
+        <item quantity="other">%d filmu</item>
+    </plurals>
+    <plurals name="accessibility_merchant_viewer_message_description">
+        <item quantity="one"> Ocena %1$s/%2$s, %3$d opinia</item>
+        <item quantity="few">Ocena %1$s/%2$s, %3$d opinie</item>
+        <item quantity="many">Ocena %1$s/%2$s, %3$d opinii</item>
+        <item quantity="other">Ocena %1$s/%2$s, %3$d opinii</item>
+    </plurals>
+    <plurals name="accessibility_remove_selected_items">
+        <item quantity="one">Usuń 1 wybrany element</item>
+        <item quantity="few">Usuń %d wybrane elementy</item>
+        <item quantity="many">Usuń %d wybranych elementów</item>
+        <item quantity="other">Usuń %d wybranego elementu</item>
+    </plurals>
+    <plurals name="accessibility_share_selected_items">
+        <item quantity="one">Udostępnij 1 wybrany element</item>
+        <item quantity="few">Udostępnij %d wybrane elementy</item>
+        <item quantity="many">Udostępnij %d wybranych elementów</item>
+        <item quantity="other">Udostępnij %d wybranego elementu</item>
+    </plurals>
+    <plurals name="accessibility_tab_selection_dialog_remove_button">
+        <item quantity="one">Usuń %1$d wybraną kartę z grupy.</item>
+        <item quantity="few">Usuń %1$d wybrane karty z grupy.</item>
+        <item quantity="many">Usuń %1$d wybranych kart z grupy.</item>
+        <item quantity="other">Usuń %1$d wybranej karty z grupy.</item>
+    </plurals>
+    <plurals name="accessibility_tab_selection_editor_bookmark_tabs_action_button">
+        <item quantity="one">Dodaj do zakładek %1$d wybraną kartę</item>
+        <item quantity="few">Dodaj do zakładek %1$d wybrane karty</item>
+        <item quantity="many">Dodaj do zakładek %1$d wybranych kart</item>
+        <item quantity="other">Dodaj do zakładek %1$d wybranej karty</item>
+    </plurals>
+    <plurals name="accessibility_tab_selection_editor_close_tabs">
+        <item quantity="one">Zamknij %1$d wybraną kartę</item>
+        <item quantity="few">Zamknij %1$d wybrane karty</item>
+        <item quantity="many">Zamknij %1$d wybranych kart</item>
+        <item quantity="other">Zamknij %1$d wybranej karty</item>
+    </plurals>
+    <plurals name="accessibility_tab_selection_editor_group_button">
+        <item quantity="one">Dodaj %1$d wybraną kartę do grupy</item>
+        <item quantity="few">Dodaj %1$d wybrane kart do grupy</item>
+        <item quantity="many">Dodaj %1$d wybranych kart do grupy</item>
+        <item quantity="other">Dodaj %1$d wybranej karty do grupy</item>
+    </plurals>
+    <plurals name="accessibility_tab_selection_editor_group_tabs">
+        <item quantity="one">Dodaj %1$d wybraną kartę do grupy</item>
+        <item quantity="few">Dodaj %1$d wybrane kart do grupy</item>
+        <item quantity="many">Dodaj %1$d wybranych kart do grupy</item>
+        <item quantity="other">Dodaj %1$d wybranej karty do grupy</item>
+    </plurals>
+    <plurals name="accessibility_tab_selection_editor_share_tabs_action_button">
+        <item quantity="one">Udostępnij %1$d wybraną kartę</item>
+        <item quantity="few">Udostępnij %1$d wybrane karty</item>
+        <item quantity="many">Udostępnij %1$d wybranych kart</item>
+        <item quantity="other">Udostępnij %1$d wybranej karty</item>
+    </plurals>
+    <plurals name="accessibility_tab_selection_editor_ungroup_tabs">
+        <item quantity="one">Rozgrupuj %1$d wybraną kartę</item>
+        <item quantity="few">Rozgrupuj %1$d wybrane karty</item>
+        <item quantity="many">Rozgrupuj %1$d wybranych kart</item>
+        <item quantity="other">Rozgrupuj %1$d wybranej karty</item>
+    </plurals>
+    <plurals name="accessibility_tab_suggestion_close_tab_action_button">
+        <item quantity="one">Zamknij %1$d wybraną kartę</item>
+        <item quantity="few">Zamknij %1$d wybrane karty</item>
+        <item quantity="many">Zamknij %1$d wybranych kart</item>
+        <item quantity="other">Zamknij %1$d wybranej karty</item>
+    </plurals>
+    <plurals name="allsites_fps_list_summary">
+        <item quantity="one">Pliki cookie dozwolone w przypadku %1$s witryny %2$s</item>
+        <item quantity="few">Pliki cookie dozwolone w przypadku %1$s witryn %2$s</item>
+        <item quantity="many">Pliki cookie dozwolone w przypadku %1$s witryn %2$s</item>
+        <item quantity="other">Pliki cookie dozwolone w przypadku %1$s witryny %2$s</item>
+    </plurals>
+    <plurals name="allsites_fps_summary">
+        <item quantity="one">%1$s witryna w grupie witryn %2$s, które mają dostęp do danych o Twojej aktywności w tej grupie</item>
+        <item quantity="few">%1$s witryny w grupie witryn %2$s, które mają dostęp do danych o Twojej aktywności w tej grupie</item>
+        <item quantity="many">%1$s witryn w grupie witryn %2$s, które mają dostęp do danych o Twojej aktywności w tej grupie</item>
+        <item quantity="other">%1$s witryny w grupie witryn %2$s, które mają dostęp do danych o Twojej aktywności w tej grupie</item>
+    </plurals>
+    <plurals name="bookmarks_count">
+        <item quantity="one">%1$d zakładka</item>
+        <item quantity="few">%1$d zakładki</item>
+        <item quantity="many">%1$d zakładek</item>
+        <item quantity="other">%1$d zakładki</item>
+    </plurals>
+    <plurals name="bottom_tab_grid_title_placeholder">
+        <item quantity="one">%1$d karta</item>
+        <item quantity="few">%1$d karty</item>
+        <item quantity="many">%1$d kart</item>
+        <item quantity="other">%1$d karty</item>
+    </plurals>
+    <plurals name="contacts_picker_more_details">
+        <item quantity="one">(i jeszcze 1)</item>
+        <item quantity="few">(i jeszcze %d)</item>
+        <item quantity="many">(i jeszcze %d)</item>
+        <item quantity="other">(i jeszcze %d)</item>
+    </plurals>
+    <plurals name="cookie_controls_blocked_cookies">
+        <item quantity="one">Zablokowano 1 plik cookie</item>
+        <item quantity="few">Zablokowano %d pliki cookie</item>
+        <item quantity="many">Zablokowano %d plików cookie</item>
+        <item quantity="other">Zablokowano %d pliku cookie</item>
+    </plurals>
+    <plurals name="cookies_count">
+        <item quantity="one">%d plik cookie</item>
+        <item quantity="few">%d pliki cookie</item>
+        <item quantity="many">%d plików cookie</item>
+        <item quantity="other">%d pliku cookie</item>
+    </plurals>
+    <plurals name="download_manager_n_hours">
+        <item quantity="one">%d godzina</item>
+        <item quantity="few">%d godziny</item>
+        <item quantity="many">%d godzin</item>
+        <item quantity="other">%d godziny</item>
+    </plurals>
+    <plurals name="download_message_multiple_download_complete">
+        <item quantity="one">Plik został pobrany</item>
+        <item quantity="few">Ukończono pobieranie %d plików</item>
+        <item quantity="many">Ukończono pobieranie %d plików</item>
+        <item quantity="other">Ukończono pobieranie %d pliku</item>
+    </plurals>
+    <plurals name="download_message_multiple_download_failed">
+        <item quantity="one">Nie udało się pobrać 1 pliku</item>
+        <item quantity="few">Nie udało się pobrać %d plików</item>
+        <item quantity="many">Nie udało się pobrać %d plików</item>
+        <item quantity="other">Nie udało się pobrać %d pliku</item>
+    </plurals>
+    <plurals name="download_message_multiple_download_in_progress">
+        <item quantity="one">Pobieram plik…</item>
+        <item quantity="few">Pobieram %d pliki…</item>
+        <item quantity="many">Pobieram %d plików…</item>
+        <item quantity="other">Pobieram %d pliku…</item>
+    </plurals>
+    <plurals name="download_message_multiple_download_pending">
+        <item quantity="one">1 plik oczekuje na pobranie</item>
+        <item quantity="few">%d pliki oczekują na pobranie</item>
+        <item quantity="many">%d plików oczekuje na pobranie</item>
+        <item quantity="other">%d pliku oczekuje na pobranie</item>
+    </plurals>
+    <plurals name="download_ui_files_downloaded">
+        <item quantity="one">Pobrano %1$d plik</item>
+        <item quantity="few">Pobrano %1$d pliki</item>
+        <item quantity="many">Pobrano %1$d plików</item>
+        <item quantity="other">Pobrano %1$d pliku</item>
+    </plurals>
+    <plurals name="history_clusters_n_matches">
+        <item quantity="one">%d dopasowanie</item>
+        <item quantity="few">%d dopasowania</item>
+        <item quantity="many">%d dopasowań</item>
+        <item quantity="other">%d dopasowania</item>
+    </plurals>
+    <plurals name="instance_switcher_close_confirm_deleted_incognito">
+        <item quantity="one">Zostanie zamknięta %1$s karta incognito</item>
+        <item quantity="few">Zostaną zamknięte %1$s karty incognito</item>
+        <item quantity="many">Zostanie zamkniętych %1$s kart incognito</item>
+        <item quantity="other">Zostanie zamknięte %1$s karty incognito</item>
+    </plurals>
+    <plurals name="instance_switcher_close_confirm_deleted_incognito_mixed">
+        <item quantity="one">Zostaną zamknięte karty incognito (%1$s) i %2$s inna</item>
+        <item quantity="few">Zostaną zamknięte karty incognito (%1$s) i %2$s inne</item>
+        <item quantity="many">Zostaną zamknięte karty incognito (%1$s) i %2$s innych</item>
+        <item quantity="other">Zostaną zamknięte karty incognito (%1$s) i %2$s innej</item>
+    </plurals>
+    <plurals name="instance_switcher_close_confirm_deleted_tabs_many">
+        <item quantity="one">Zostaną zamknięte karty: %1$s i %2$s inna</item>
+        <item quantity="few">Zostaną zamknięte karty: %1$s i %2$s inne</item>
+        <item quantity="many">Zostaną zamknięte karty: %1$s i %2$s innych</item>
+        <item quantity="other">Zostaną zamknięte karty: %1$s i %2$s innej</item>
+    </plurals>
+    <plurals name="instance_switcher_desc_incognito">
+        <item quantity="one">%1$s karta incognito</item>
+        <item quantity="few">%1$s karty incognito</item>
+        <item quantity="many">%1$s kart incognito</item>
+        <item quantity="other">%1$s karty incognito</item>
+    </plurals>
+    <plurals name="instance_switcher_desc_mixed">
+        <item quantity="one">%1$s karta</item>
+        <item quantity="few">%2$s karty, %1$s incognito</item>
+        <item quantity="many">%2$s kart, %1$s incognito</item>
+        <item quantity="other">%2$s karty, %1$s incognito</item>
+    </plurals>
+    <plurals name="instance_switcher_tab_count_nonzero">
+        <item quantity="one">1 karta</item>
+        <item quantity="few">%d karty</item>
+        <item quantity="many">%d kart</item>
+        <item quantity="other">%d karty</item>
+    </plurals>
+    <plurals name="merchant_viewer_message_description_reviews">
+        <item quantity="one">(%1$s opinia)</item>
+        <item quantity="few">(%1$s opinie)</item>
+        <item quantity="many">(%1$s opinii)</item>
+        <item quantity="other">(%1$s opinii)</item>
+    </plurals>
+    <plurals name="merchant_viewer_message_description_reviews_from_google">
+        <item quantity="one">%1$s opinia z Google</item>
+        <item quantity="few">%1$s opinie z Google</item>
+        <item quantity="many">%1$s opinii z Google</item>
+        <item quantity="other">%1$s opinii z Google</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">%d nowe powiadomienie</item>
+        <item quantity="few">%d nowe powiadomienia</item>
+        <item quantity="many">%d nowych powiadomień</item>
+        <item quantity="other">%d nowego powiadomienia</item>
+    </plurals>
+    <plurals name="n_days_ago">
+        <item quantity="one">%d dzień temu</item>
+        <item quantity="few">%d dni temu</item>
+        <item quantity="many">%d dni temu</item>
+        <item quantity="other">%d dnia temu</item>
+    </plurals>
+    <plurals name="n_hours_ago">
+        <item quantity="one">%d godzinę temu</item>
+        <item quantity="few">%d godziny temu</item>
+        <item quantity="many">%d godzin temu</item>
+        <item quantity="other">%d godziny temu</item>
+    </plurals>
+    <plurals name="n_minutes_ago">
+        <item quantity="one">%d minutę temu</item>
+        <item quantity="few">%d minuty temu</item>
+        <item quantity="many">%d minut temu</item>
+        <item quantity="other">%d minuty temu</item>
+    </plurals>
+    <plurals name="offline_pages_auto_fetch_in_progress_notification_text">
+        <item quantity="one">Chrome wczyta stronę, gdy będzie gotowa</item>
+        <item quantity="few">Chrome wczyta strony, gdy będą gotowe</item>
+        <item quantity="many">Chrome wczyta strony, gdy będą gotowe</item>
+        <item quantity="other">Chrome wczyta strony, gdy będą gotowe</item>
+    </plurals>
+    <plurals name="page_info_cookies_in_use">
+        <item quantity="one">1 plik cookie w użyciu</item>
+        <item quantity="few">%d pliki cookie w użyciu</item>
+        <item quantity="many">%d plików cookie w użyciu</item>
+        <item quantity="other">%d pliku cookie w użyciu</item>
+    </plurals>
+    <plurals name="page_info_permissions_summary_more_allowed">
+        <item quantity="one">Dozwolone: %1$s, %2$s i jeszcze %3$s</item>
+        <item quantity="few">Dozwolone: %1$s, %2$s i jeszcze %3$s</item>
+        <item quantity="many">Dozwolone: %1$s, %2$s i jeszcze %3$s</item>
+        <item quantity="other">Dozwolone: %1$s, %2$s i jeszcze %3$s</item>
+    </plurals>
+    <plurals name="page_info_permissions_summary_more_blocked">
+        <item quantity="one">Zablokowane: %1$s, %2$s i jeszcze %3$s</item>
+        <item quantity="few">Zablokowane: %1$s, %2$s i jeszcze %3$s</item>
+        <item quantity="many">Zablokowane: %1$s, %2$s i jeszcze %3$s</item>
+        <item quantity="other">Zablokowane: %1$s, %2$s i jeszcze %3$s</item>
+    </plurals>
+    <plurals name="page_info_permissions_summary_more_mixed">
+        <item quantity="one">%1$s, %2$s i jeszcze %3$s</item>
+        <item quantity="few">%1$s, %2$s i jeszcze %3$s</item>
+        <item quantity="many">%1$s, %2$s i jeszcze %3$s</item>
+        <item quantity="other">%1$s, %2$s i jeszcze %3$s</item>
+    </plurals>
+    <plurals name="password_check_status_message_idle_with_leaks">
+        <item quantity="one">%d przejęte hasło</item>
+        <item quantity="few">%d przejęte hasła</item>
+        <item quantity="many">%d przejętych haseł</item>
+        <item quantity="other">%d przejętego hasła</item>
+    </plurals>
+    <plurals name="payment_request_contacts_preview">
+        <item quantity="one">%1$s… i jeszcze %2$s</item>
+        <item quantity="few">%1$s… i jeszcze %2$s</item>
+        <item quantity="many">%1$s… i jeszcze %2$s</item>
+        <item quantity="other">%1$s… i jeszcze %2$s</item>
+    </plurals>
+    <plurals name="payment_request_payment_methods_preview">
+        <item quantity="one">%1$s… i jeszcze %2$s</item>
+        <item quantity="few">%1$s… i jeszcze %2$s</item>
+        <item quantity="many">%1$s… i jeszcze %2$s</item>
+        <item quantity="other">%1$s… i jeszcze %2$s</item>
+    </plurals>
+    <plurals name="payment_request_shipping_addresses_preview">
+        <item quantity="one">%1$s… i jeszcze %2$s</item>
+        <item quantity="few">%1$s… i jeszcze %2$s</item>
+        <item quantity="many">%1$s… i jeszcze %2$s</item>
+        <item quantity="other">%1$s… i jeszcze %2$s</item>
+    </plurals>
+    <plurals name="payment_request_shipping_options_preview">
+        <item quantity="one">%1$s… i jeszcze %2$s</item>
+        <item quantity="few">%1$s… i jeszcze %2$s</item>
+        <item quantity="many">%1$s… i jeszcze %2$s</item>
+        <item quantity="other">%1$s… i jeszcze %2$s</item>
+    </plurals>
+    <plurals name="reading_list_reminder_notification_subtitle">
+        <item quantity="one">Masz %1$d nieprzeczytaną stronę</item>
+        <item quantity="few">Masz %1$d nieprzeczytane strony</item>
+        <item quantity="many">Masz %1$d nieprzeczytanych stron</item>
+        <item quantity="other">Masz %1$d nieprzeczytanej strony</item>
+    </plurals>
+    <plurals name="reading_list_unread_page_count">
+        <item quantity="one">%1$d nieprzeczytana strona</item>
+        <item quantity="few">%1$d nieprzeczytane strony</item>
+        <item quantity="many">%1$d nieprzeczytanych stron</item>
+        <item quantity="other">%1$d nieprzeczytanej strony</item>
+    </plurals>
+    <plurals name="safety_check_passwords_compromised_exist">
+        <item quantity="one">1 przejęte hasło</item>
+        <item quantity="few">%d przejęte hasła</item>
+        <item quantity="many">%d przejętych haseł</item>
+        <item quantity="other">%d przejętego hasła</item>
+    </plurals>
+    <plurals name="safety_check_timestamp_after_days">
+        <item quantity="one">Sprawdzano 1 dzień temu</item>
+        <item quantity="few">Sprawdzano %d dni temu</item>
+        <item quantity="many">Sprawdzano %d dni temu</item>
+        <item quantity="other">Sprawdzano %d dnia temu</item>
+    </plurals>
+    <plurals name="safety_check_timestamp_after_hours">
+        <item quantity="one">Sprawdzano godzinę temu</item>
+        <item quantity="few">Sprawdzano %d godziny temu</item>
+        <item quantity="many">Sprawdzano %d godzin temu</item>
+        <item quantity="other">Sprawdzano %d godziny temu</item>
+    </plurals>
+    <plurals name="safety_check_timestamp_after_mins">
+        <item quantity="one">Sprawdzano minutę temu</item>
+        <item quantity="few">Sprawdzano %d minuty temu</item>
+        <item quantity="many">Sprawdzano %d minut temu</item>
+        <item quantity="other">Sprawdzano %d minuty temu</item>
+    </plurals>
+    <plurals name="selected_items">
+        <item quantity="one">Wybrano 1</item>
+        <item quantity="few">Wybrano %d</item>
+        <item quantity="many">Wybrano %d</item>
+        <item quantity="other">Wybrano %d</item>
+    </plurals>
+    <plurals name="signal_strength_level_n_bars">
+        <item quantity="one">Poziom siły sygnału: %d słupek</item>
+        <item quantity="few">Poziom siły sygnału: %d słupki</item>
+        <item quantity="many">Poziom siły sygnału: %d słupków</item>
+        <item quantity="other">Poziom siły sygnału: %d słupka</item>
+    </plurals>
+    <plurals name="tab_selection_editor_bookmark_tabs_action_button">
+        <item quantity="one">Dodaj kartę do zakładek</item>
+        <item quantity="few">Dodaj karty do zakładek</item>
+        <item quantity="many">Dodaj karty do zakładek</item>
+        <item quantity="other">Dodaj karty do zakładek</item>
+    </plurals>
+    <plurals name="tab_selection_editor_close_tabs">
+        <item quantity="one">Zamknij kartę</item>
+        <item quantity="few">Zamknij karty</item>
+        <item quantity="many">Zamknij karty</item>
+        <item quantity="other">Zamknij karty</item>
+    </plurals>
+    <plurals name="tab_selection_editor_group_tabs">
+        <item quantity="one">Dodaj kartę do grupy</item>
+        <item quantity="few">Dodaj karty do grupy</item>
+        <item quantity="many">Dodaj karty do grupy</item>
+        <item quantity="other">Dodaj karty do grupy</item>
+    </plurals>
+    <plurals name="tab_selection_editor_share_sheet_preview_message">
+        <item quantity="one">%1$d link z Chrome</item>
+        <item quantity="few">%1$d linki z Chrome</item>
+        <item quantity="many">%1$d linków z Chrome</item>
+        <item quantity="other">%1$d linku z Chrome</item>
+    </plurals>
+    <plurals name="tab_selection_editor_share_tabs_action_button">
+        <item quantity="one">Udostępnij kartę</item>
+        <item quantity="few">Udostępnij karty</item>
+        <item quantity="many">Udostępnij karty</item>
+        <item quantity="other">Udostępnij karty</item>
+    </plurals>
+    <plurals name="tab_selection_editor_tabs_count">
+        <item quantity="one">%1$d karta</item>
+        <item quantity="few">%1$d karty</item>
+        <item quantity="many">%1$d kart</item>
+        <item quantity="other">%1$d karty</item>
+    </plurals>
+    <plurals name="tab_selection_editor_ungroup_tabs">
+        <item quantity="one">Usuń kartę z grupy</item>
+        <item quantity="few">Usuń karty z grupy</item>
+        <item quantity="many">Usuń karty z grupy</item>
+        <item quantity="other">Usuń karty z grupy</item>
+    </plurals>
+</resources>

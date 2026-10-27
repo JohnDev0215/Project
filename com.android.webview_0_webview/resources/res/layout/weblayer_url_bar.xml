@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageButton
+        app:tint="@color/default_icon_color_tint_list"
+        android:layout_gravity="center_vertical"
+        android:id="@id/security_button"
+        android:background="@android:color/transparent"
+        android:layout_width="@dimen/security_status_icon_size"
+        android:layout_height="@dimen/security_status_icon_size"
+        android:scaleType="center"
+        android:color="@color/modern_grey_900"/>
+    <TextView
+        android:textColor="@color/modern_grey_900"
+        android:layout_gravity="center_vertical"
+        android:id="@id/url_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:layout_weight="1"
+        android:paddingStart="@dimen/url_text_edge_padding"
+        android:paddingEnd="@dimen/url_text_edge_padding"/>
+</merge>

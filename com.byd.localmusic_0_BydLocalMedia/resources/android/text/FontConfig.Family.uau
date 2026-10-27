@@ -1,0 +1,4 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/text/FontConfig$Family;->getName()Ljava/lang/String;,frameworks/base/core/java/android/text/FontConfig.java,234,9,234,29,
+Landroid/text/FontConfig$Family;->getFonts()[Landroid/text/FontConfig$Font;,frameworks/base/core/java/android/text/FontConfig.java,242,9,242,29,
+Landroid/text/FontConfig$Family;->getVariant()I,frameworks/base/core/java/android/text/FontConfig.java,257,9,257,29,

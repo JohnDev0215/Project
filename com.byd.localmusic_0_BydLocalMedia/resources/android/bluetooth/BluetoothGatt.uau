@@ -1,0 +1,11 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/bluetooth/BluetoothGatt;->mService:Landroid/bluetooth/IBluetoothGatt;,frameworks/base/core/java/android/bluetooth/BluetoothGatt.java,46,5,46,25,
+Landroid/bluetooth/BluetoothGatt;->mCallback:Landroid/bluetooth/BluetoothGattCallback;,frameworks/base/core/java/android/bluetooth/BluetoothGatt.java,48,5,48,25,
+Landroid/bluetooth/BluetoothGatt;->mClientIf:I,frameworks/base/core/java/android/bluetooth/BluetoothGatt.java,51,5,51,25,
+Landroid/bluetooth/BluetoothGatt;->mAutoConnect:Z,frameworks/base/core/java/android/bluetooth/BluetoothGatt.java,54,5,54,25,
+Landroid/bluetooth/BluetoothGatt;->mAuthRetryState:I,frameworks/base/core/java/android/bluetooth/BluetoothGatt.java,56,5,56,88,maxTargetSdk=28&trackingBug=115609023L
+Landroid/bluetooth/BluetoothGatt;->mDeviceBusy:Ljava/lang/Boolean;,frameworks/base/core/java/android/bluetooth/BluetoothGatt.java,61,5,61,25,
+Landroid/bluetooth/BluetoothGatt;->mTransport:I,frameworks/base/core/java/android/bluetooth/BluetoothGatt.java,63,5,63,25,
+Landroid/bluetooth/BluetoothGatt;->unregisterApp()V,frameworks/base/core/java/android/bluetooth/BluetoothGatt.java,823,5,823,25,
+Landroid/bluetooth/BluetoothGatt;->connect(Ljava/lang/Boolean;Landroid/bluetooth/BluetoothGattCallback;Landroid/os/Handler;)Z,frameworks/base/core/java/android/bluetooth/BluetoothGatt.java,859,5,859,25,
+Landroid/bluetooth/BluetoothGatt;->refresh()Z,frameworks/base/core/java/android/bluetooth/BluetoothGatt.java,1422,5,1422,25,

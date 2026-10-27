@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:paddingTop="@dimen/dp_22"
+    android:paddingBottom="@dimen/dp_16"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingEnd="@dimen/dp_32">
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rc_dead_zone_assist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

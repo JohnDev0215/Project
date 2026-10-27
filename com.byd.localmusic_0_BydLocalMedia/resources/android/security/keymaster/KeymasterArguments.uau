@@ -1,0 +1,7 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/security/keymaster/KeymasterArguments;->CREATOR:Landroid/os/Parcelable$Creator;,frameworks/base/core/java/android/security/keymaster/KeymasterArguments.java,44,5,44,25,
+Landroid/security/keymaster/KeymasterArguments;-><init>()V,frameworks/base/core/java/android/security/keymaster/KeymasterArguments.java,58,5,58,25,
+Landroid/security/keymaster/KeymasterArguments;->addEnum(II)V,frameworks/base/core/java/android/security/keymaster/KeymasterArguments.java,72,5,72,25,
+Landroid/security/keymaster/KeymasterArguments;->addUnsignedInt(IJ)V,frameworks/base/core/java/android/security/keymaster/KeymasterArguments.java,144,5,144,25,
+Landroid/security/keymaster/KeymasterArguments;->addUnsignedLong(ILjava/math/BigInteger;)V,frameworks/base/core/java/android/security/keymaster/KeymasterArguments.java,181,5,181,25,
+Landroid/security/keymaster/KeymasterArguments;->readFromParcel(Landroid/os/Parcel;)V,frameworks/base/core/java/android/security/keymaster/KeymasterArguments.java,367,5,367,25,

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cl_toast"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/ll_toast"
+        android:background="@drawable/bg_toast"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_56"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <ImageView
+            android:layout_gravity="center"
+            android:id="@+id/iv_toast"
+            android:visibility="visible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_toast_ok"/>
+        <TextView
+            android:textSize="@dimen/sp_18"
+            android:textColor="@color/dialog_text"
+            android:layout_gravity="center"
+            android:id="@+id/tv_toast"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxWidth="@dimen/dp_550"
+            android:text="一段很长的测试文字一段很长的测试文字一段很长的测试文字"
+            android:lineSpacingMultiplier="1.2"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

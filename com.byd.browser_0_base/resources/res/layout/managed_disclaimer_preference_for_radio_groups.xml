@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<org.chromium.components.browser_ui.widget.text.TextViewWithCompoundDrawables xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="16dp"
+    android:focusable="true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="?android:attr/listPreferredItemHeightSmall"
+    android:drawablePadding="20dp"
+    android:paddingStart="20dp"
+    style="@style/ManagedDisclaimerView"/>

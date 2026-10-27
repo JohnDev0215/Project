@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="start|center_vertical"
+    android:orientation="horizontal"
+    android:background="?attr/oil_background"
+    android:paddingBottom="@dimen/dp_12"
+    android:layout_width="@dimen/dp_464"
+    android:layout_height="wrap_content"
+    android:paddingStart="@dimen/dp_17"
+    android:paddingEnd="@dimen/dp_17"
+    android:layout_marginStart="@dimen/dp_39"
+    android:layout_marginEnd="@dimen/dp_39">
+    <TextView
+        android:textSize="@dimen/sp_16"
+        android:textColor="?attr/text_color_main"
+        android:id="@+id/tv_record_date"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"/>
+    <TextView
+        android:textSize="@dimen/sp_16"
+        android:textColor="?attr/text_color_main"
+        android:id="@+id/tv_record_mile"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.2"/>
+    <TextView
+        android:textSize="@dimen/sp_16"
+        android:textColor="?attr/attr_text_color_main"
+        android:id="@+id/tv_record_value"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.2"/>
+</LinearLayout>

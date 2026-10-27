@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:id="@+id/cc_details"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="3dp"
+    android:minHeight="30dp">
+    <ImageView
+        android:id="@+id/google_pay_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="24dp"
+        android:importantForAccessibility="no"
+        app:srcCompat="@drawable/google_pay"/>
+    <ImageView
+        android:id="@+id/message_divider"
+        android:background="?attr/colorSurfaceVariant"
+        android:layout_width="1dp"
+        android:layout_height="16dp"
+        android:importantForAccessibility="no"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"/>
+    <TextView
+        android:textAppearance="@style/TextAppearance.TextLarge.Primary"
+        android:id="@+id/cc_details_masked"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="24dp"/>
+</LinearLayout>

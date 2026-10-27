@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="cookie_controls_blocked_cookies">
+        <item quantity="one">1 файл cookie заблоковано</item>
+        <item quantity="few">%d файли cookie заблоковано</item>
+        <item quantity="many">%d файлів cookie заблоковано</item>
+        <item quantity="other">%d файлу cookie заблоковано</item>
+    </plurals>
+    <plurals name="selected_items">
+        <item quantity="one">Вибрано 1</item>
+        <item quantity="few">Вибрано %d</item>
+        <item quantity="many">Вибрано %d</item>
+        <item quantity="other">Вибрано %d</item>
+    </plurals>
+</resources>

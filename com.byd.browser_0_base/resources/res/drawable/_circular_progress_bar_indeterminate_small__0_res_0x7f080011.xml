@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt"
+    android:tint="?attr/colorPrimary"
+    android:height="36dp"
+    android:width="36dp"
+    android:viewportWidth="36"
+    android:viewportHeight="36">
+    <group
+        android:name="container"
+        android:pivotX="18"
+        android:pivotY="18">
+        <path
+            android:name="arc"
+            android:fillColor="@android:color/transparent"
+            android:pathData="m 18,1 a 17,17 0 1,1 0,34 a 17,17 0 1,1 0,-34"
+            android:strokeColor="?attr/colorPrimary"
+            android:strokeWidth="2"
+            android:trimPathStart="0"
+            android:trimPathEnd="0.05"
+            android:trimPathOffset="0"
+            android:strokeLineCap="square"
+            android:strokeLineJoin="miter"/>
+    </group>
+</vector>

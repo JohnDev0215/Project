@@ -1,0 +1,4 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/widget/CompoundButton;->mBroadcasting:Z,frameworks/base/core/java/android/widget/CompoundButton.java,65,5,65,25,
+Landroid/widget/CompoundButton;->mButtonDrawable:Landroid/graphics/drawable/Drawable;,frameworks/base/core/java/android/widget/CompoundButton.java,68,5,68,25,
+Landroid/widget/CompoundButton;->mOnCheckedChangeListener:Landroid/widget/CompoundButton$OnCheckedChangeListener;,frameworks/base/core/java/android/widget/CompoundButton.java,75,5,75,25,

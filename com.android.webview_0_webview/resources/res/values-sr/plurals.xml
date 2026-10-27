@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="cookie_controls_blocked_cookies">
+        <item quantity="one">1 колачић је блокиран</item>
+        <item quantity="few">%d колачића су блокирана</item>
+        <item quantity="other">%d колачића је блокирано</item>
+    </plurals>
+    <plurals name="selected_items">
+        <item quantity="one">Изабрано: 1</item>
+        <item quantity="few">Изабрано: %d</item>
+        <item quantity="other">Изабрано: %d</item>
+    </plurals>
+</resources>

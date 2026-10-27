@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_checked="true">
+        <layer-list>
+            <item
+                android:gravity="center"
+                android:height="@dimen/dp_4"
+                android:width="@dimen/dp_36"
+                android:top="@dimen/dp_32">
+                <shape android:shape="rectangle">
+                    <solid android:color="@color/denza_color_white_front"/>
+                    <corners android:radius="@dimen/dp_2"/>
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+    <item android:drawable="@color/denza_color_transparent"/>
+</selector>

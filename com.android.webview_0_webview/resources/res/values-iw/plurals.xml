@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="cookie_controls_blocked_cookies">
+        <item quantity="one">‏נחסם קובץ cookie אחד</item>
+        <item quantity="two">‏נחסמו %d קובצי cookie</item>
+        <item quantity="many">‏נחסמו %d קובצי cookie</item>
+        <item quantity="other">‏נחסמו %d קובצי cookie</item>
+    </plurals>
+    <plurals name="selected_items">
+        <item quantity="one">נבחר אחד</item>
+        <item quantity="two">נבחרו %d</item>
+        <item quantity="many">נבחרו %d</item>
+        <item quantity="other">נבחרו %d</item>
+    </plurals>
+</resources>

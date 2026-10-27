@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:textAppearance="@style/TextAppearance.TextMediumThick.Primary"
+    android:gravity="center"
+    android:background="@drawable/autofill_chip_inset"
+    android:paddingTop="0dp"
+    android:paddingBottom="0dp"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/keyboard_accessory_bar_item_height"
+    android:layout_marginTop="@dimen/keyboard_accessory_chip_vertical_margin"
+    android:layout_marginBottom="@dimen/keyboard_accessory_chip_vertical_margin"
+    android:minWidth="0dp"
+    android:minHeight="0dp"
+    android:paddingStart="@dimen/keyboard_accessory_horizontal_padding"
+    android:paddingEnd="@dimen/keyboard_accessory_horizontal_padding"
+    android:elevation="2dp"/>

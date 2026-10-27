@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:a="http://schemas.android.com/apk/res/android"
+    a:name="circle_loader"
+    a:height="200dp"
+    a:width="200dp"
+    a:viewportWidth="200"
+    a:viewportHeight="200">
+    <group
+        a:name="circle"
+        a:translateX="100"
+        a:translateY="99.5">
+        <path
+            a:name="ellipse_path_1"
+            a:pathData="M 0.0,-80.0 c 44.182779984,0.0 80.0,35.817220016 80.0,80.0 c 0.0,44.182779984 -35.817220016,80.0 -80.0,80.0 c -44.182779984,0.0 -80.0,-35.817220016 -80.0,-80.0 c 0.0,-44.182779984 35.817220016,-80.0 80.0,-80.0 Z"
+            a:strokeColor="#ffe8eaec"
+            a:strokeWidth="4"/>
+    </group>
+    <group
+        a:name="circlegreen"
+        a:rotation="-116"
+        a:translateX="100"
+        a:translateY="99.5">
+        <path
+            a:name="ellipse_path_2"
+            a:pathData="M 0.0,-80.0 c 44.182779984,0.0 80.0,35.817220016 80.0,80.0 c 0.0,44.182779984 -35.817220016,80.0 -80.0,80.0 c -44.182779984,0.0 -80.0,-35.817220016 -80.0,-80.0 c 0.0,-44.182779984 35.817220016,-80.0 80.0,-80.0 Z"
+            a:strokeColor="#ff33a752"
+            a:strokeWidth="4"
+            a:trimPathEnd="0.2"/>
+    </group>
+    <group
+        a:name="circleyellow"
+        a:rotation="-84"
+        a:translateX="100"
+        a:translateY="99.5">
+        <path
+            a:name="ellipse_path_3"
+            a:pathData="M 0.0,-80.0 c 44.182779984,0.0 80.0,35.817220016 80.0,80.0 c 0.0,44.182779984 -35.817220016,80.0 -80.0,80.0 c -44.182779984,0.0 -80.0,-35.817220016 -80.0,-80.0 c 0.0,-44.182779984 35.817220016,-80.0 80.0,-80.0 Z"
+            a:strokeColor="#fffabb05"
+            a:strokeWidth="4"
+            a:trimPathEnd="0.2"/>
+    </group>
+    <group
+        a:name="circlered"
+        a:rotation="-18"
+        a:translateX="100"
+        a:translateY="99.5">
+        <path
+            a:name="ellipse_path_4"
+            a:pathData="M 0.0,-80.0 c 44.182779984,0.0 80.0,35.817220016 80.0,80.0 c 0.0,44.182779984 -35.817220016,80.0 -80.0,80.0 c -44.182779984,0.0 -80.0,-35.817220016 -80.0,-80.0 c 0.0,-44.182779984 35.817220016,-80.0 80.0,-80.0 Z"
+            a:strokeColor="#ffea4334"
+            a:strokeWidth="4"
+            a:trimPathEnd="0.1"/>
+    </group>
+    <group
+        a:name="circleblue"
+        a:translateX="100"
+        a:translateY="99.5">
+        <path
+            a:name="ellipse_path_5"
+            a:pathData="M 0.0,-80.0 c 44.182779984,0.0 80.0,35.817220016 80.0,80.0 c 0.0,44.182779984 -35.817220016,80.0 -80.0,80.0 c -44.182779984,0.0 -80.0,-35.817220016 -80.0,-80.0 c 0.0,-44.182779984 35.817220016,-80.0 80.0,-80.0 Z"
+            a:strokeColor="#ff4185f3"
+            a:strokeWidth="4"
+            a:trimPathEnd="0.1"/>
+    </group>
+</vector>

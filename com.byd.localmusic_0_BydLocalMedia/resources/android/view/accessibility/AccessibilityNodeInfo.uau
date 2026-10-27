@@ -1,0 +1,10 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/view/accessibility/AccessibilityNodeInfo;->getAccessibilityViewId(J)I,frameworks/base/core/java/android/view/accessibility/AccessibilityNodeInfo.java,729,5,729,25,
+Landroid/view/accessibility/AccessibilityNodeInfo;->getVirtualDescendantId(J)I,frameworks/base/core/java/android/view/accessibility/AccessibilityNodeInfo.java,743,5,743,25,
+Landroid/view/accessibility/AccessibilityNodeInfo;->mSealed:Z,frameworks/base/core/java/android/view/accessibility/AccessibilityNodeInfo.java,771,5,771,25,
+Landroid/view/accessibility/AccessibilityNodeInfo;->mSourceNodeId:J,frameworks/base/core/java/android/view/accessibility/AccessibilityNodeInfo.java,776,5,776,25,
+Landroid/view/accessibility/AccessibilityNodeInfo;->mChildNodeIds:Landroid/util/LongArray;,frameworks/base/core/java/android/view/accessibility/AccessibilityNodeInfo.java,803,5,803,25,
+Landroid/view/accessibility/AccessibilityNodeInfo;->refresh(Landroid/os/Bundle;Z)Z,frameworks/base/core/java/android/view/accessibility/AccessibilityNodeInfo.java,991,5,991,25,
+Landroid/view/accessibility/AccessibilityNodeInfo;->getSourceNodeId()J,frameworks/base/core/java/android/view/accessibility/AccessibilityNodeInfo.java,3439,5,3439,25,
+Landroid/view/accessibility/AccessibilityNodeInfo;->setSealed(Z)V,frameworks/base/core/java/android/view/accessibility/AccessibilityNodeInfo.java,3486,5,3486,25,
+Landroid/view/accessibility/AccessibilityNodeInfo;->isSealed()Z,frameworks/base/core/java/android/view/accessibility/AccessibilityNodeInfo.java,3498,5,3498,25,

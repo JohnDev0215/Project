@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center"
+    android:id="@+id/ll_dialog_masks"
+    android:background="@color/base_dialog_masks"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:alpha="0">
+    <FrameLayout
+        android:id="@+id/dialog_content"
+        android:clickable="true"
+        android:layout_width="@dimen/dp_560"
+        android:layout_height="@dimen/dp_544"
+        android:alpha="0"
+        android:scaleX="0.9"
+        android:scaleY="0.9"
+        android:elevation="@dimen/dp_3"/>
+</LinearLayout>

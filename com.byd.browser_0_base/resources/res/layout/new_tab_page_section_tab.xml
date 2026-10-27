@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:duplicateParentState="true"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <TextView
+        android:textAppearance="@style/TextAppearance.TabLayout"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:id="@android:id/text1"
+        android:duplicateParentState="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="1"/>
+    <ImageView
+        android:layout_gravity="center_vertical"
+        android:id="@+id/options_indicator"
+        android:visibility="gone"
+        android:layout_width="@dimen/feed_header_dropdown_size"
+        android:layout_height="@dimen/feed_header_dropdown_size"
+        android:src="@drawable/mtrl_ic_arrow_drop_down"
+        android:scaleType="centerInside"
+        android:contentDescription="@string/feed_options_dropdown_description"
+        app:tint="@color/tab_layout_text_color_list"/>
+</LinearLayout>

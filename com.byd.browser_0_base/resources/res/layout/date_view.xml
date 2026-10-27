@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:textSize="@dimen/dimen_20_sp"
+    android:textColor="@color/color_history_date"
+    android:id="@+id/history_date"
+    android:layout_marginStart="0dp"
+    style="@style/DateView"/>

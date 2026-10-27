@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<org.chromium.components.browser_ui.widget.SurfaceColorDrawable xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:shape="rectangle"
+    app:surfaceElevation="@dimen/snackbar_background_tablet_elev">
+    <corners
+        android:topLeftRadius="2dp"
+        android:topRightRadius="2dp"/>
+</org.chromium.components.browser_ui.widget.SurfaceColorDrawable>

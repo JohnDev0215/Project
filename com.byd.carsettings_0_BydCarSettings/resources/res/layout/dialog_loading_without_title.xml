@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/dp_560"
+    android:layout_height="@dimen/dp_312"
+    style="@style/vehicle_setting_dialog_background_container">
+    <LinearLayout
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+        <ImageView
+            android:id="@+id/iv_loading_dialog_loading_without_title"
+            android:layout_width="@dimen/dp_72"
+            android:layout_height="@dimen/dp_72"
+            android:src="@drawable/icon_public_loading_72"/>
+        <TextView
+            android:textSize="@dimen/sp_20"
+            android:textColor="@color/text_color_main_dilink_pagers"
+            android:gravity="center"
+            android:id="@+id/tv_msg_dialog_loading_without_title"
+            android:layout_width="@dimen/dp_464"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</RelativeLayout>

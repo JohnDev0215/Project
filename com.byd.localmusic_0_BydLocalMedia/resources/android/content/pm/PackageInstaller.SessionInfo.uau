@@ -1,0 +1,13 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/content/pm/PackageInstaller$SessionInfo;->sessionId:I,frameworks/base/core/java/android/content/pm/PackageInstaller.java,2104,9,2104,92,maxTargetSdk=28&trackingBug=115609023L
+Landroid/content/pm/PackageInstaller$SessionInfo;->installerPackageName:Ljava/lang/String;,frameworks/base/core/java/android/content/pm/PackageInstaller.java,2109,9,2109,92,maxTargetSdk=28&trackingBug=115609023L
+Landroid/content/pm/PackageInstaller$SessionInfo;->resolvedBaseCodePath:Ljava/lang/String;,frameworks/base/core/java/android/content/pm/PackageInstaller.java,2112,9,2112,29,
+Landroid/content/pm/PackageInstaller$SessionInfo;->progress:F,frameworks/base/core/java/android/content/pm/PackageInstaller.java,2115,9,2115,92,maxTargetSdk=28&trackingBug=115609023L
+Landroid/content/pm/PackageInstaller$SessionInfo;->sealed:Z,frameworks/base/core/java/android/content/pm/PackageInstaller.java,2118,9,2118,29,
+Landroid/content/pm/PackageInstaller$SessionInfo;->active:Z,frameworks/base/core/java/android/content/pm/PackageInstaller.java,2121,9,2121,92,maxTargetSdk=28&trackingBug=115609023L
+Landroid/content/pm/PackageInstaller$SessionInfo;->mode:I,frameworks/base/core/java/android/content/pm/PackageInstaller.java,2125,9,2125,92,maxTargetSdk=28&trackingBug=115609023L
+Landroid/content/pm/PackageInstaller$SessionInfo;->sizeBytes:J,frameworks/base/core/java/android/content/pm/PackageInstaller.java,2130,9,2130,92,maxTargetSdk=28&trackingBug=115609023L
+Landroid/content/pm/PackageInstaller$SessionInfo;->appPackageName:Ljava/lang/String;,frameworks/base/core/java/android/content/pm/PackageInstaller.java,2133,9,2133,92,maxTargetSdk=28&trackingBug=115609023L
+Landroid/content/pm/PackageInstaller$SessionInfo;->appIcon:Landroid/graphics/Bitmap;,frameworks/base/core/java/android/content/pm/PackageInstaller.java,2136,9,2136,92,maxTargetSdk=28&trackingBug=115609023L
+Landroid/content/pm/PackageInstaller$SessionInfo;->appLabel:Ljava/lang/CharSequence;,frameworks/base/core/java/android/content/pm/PackageInstaller.java,2139,9,2139,92,maxTargetSdk=28&trackingBug=115609023L
+Landroid/content/pm/PackageInstaller$SessionInfo;-><init>()V,frameworks/base/core/java/android/content/pm/PackageInstaller.java,2191,9,2191,29,

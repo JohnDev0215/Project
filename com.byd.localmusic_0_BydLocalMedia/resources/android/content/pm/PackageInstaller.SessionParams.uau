@@ -1,0 +1,8 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/content/pm/PackageInstaller$SessionParams;->mode:I,frameworks/base/core/java/android/content/pm/PackageInstaller.java,1459,9,1459,92,maxTargetSdk=28&trackingBug=115609023L
+Landroid/content/pm/PackageInstaller$SessionParams;->installFlags:I,frameworks/base/core/java/android/content/pm/PackageInstaller.java,1462,9,1462,29,
+Landroid/content/pm/PackageInstaller$SessionParams;->sizeBytes:J,frameworks/base/core/java/android/content/pm/PackageInstaller.java,1469,9,1469,29,
+Landroid/content/pm/PackageInstaller$SessionParams;->appPackageName:Ljava/lang/String;,frameworks/base/core/java/android/content/pm/PackageInstaller.java,1472,9,1472,92,maxTargetSdk=28&trackingBug=115609023L
+Landroid/content/pm/PackageInstaller$SessionParams;->appIcon:Landroid/graphics/Bitmap;,frameworks/base/core/java/android/content/pm/PackageInstaller.java,1475,9,1475,29,
+Landroid/content/pm/PackageInstaller$SessionParams;->appLabel:Ljava/lang/String;,frameworks/base/core/java/android/content/pm/PackageInstaller.java,1478,9,1478,92,maxTargetSdk=28&trackingBug=115609023L
+Landroid/content/pm/PackageInstaller$SessionParams;->originatingUid:I,frameworks/base/core/java/android/content/pm/PackageInstaller.java,1485,9,1485,29,

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orderingFromXml="false">
+    <Preference
+        app:key="pref1"
+        app:summary="Summary"
+        app:title="Title"/>
+    <Preference
+        app:key="pref2"
+        app:summary="Summary"
+        app:title="Title"/>
+    <Preference
+        app:key="pref3"
+        app:summary="Summary"
+        app:title="Title"/>
+    <Preference
+        app:key="pref4"
+        app:summary="Summary"
+        app:title="Title"/>
+    <Preference
+        app:key="pref5"
+        app:summary="Summary"
+        app:title="Title"/>
+    <Preference
+        app:key="pref6"
+        app:summary="Summary"
+        app:title="Title"/>
+    <Preference
+        app:key="pref7"
+        app:summary="Summary"
+        app:title="Title"/>
+    <Preference
+        app:key="pref8"
+        app:summary="Summary"
+        app:title="Title"/>
+    <Preference
+        app:key="pref9"
+        app:summary="Summary"
+        app:title="Title"/>
+    <Preference
+        app:key="pref10"
+        app:summary="Summary"
+        app:title="Title"/>
+    <Preference
+        app:key="pref11"
+        app:summary="Summary"
+        app:title="Title"/>
+</PreferenceScreen>

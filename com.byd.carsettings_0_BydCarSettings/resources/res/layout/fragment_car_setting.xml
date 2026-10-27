@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/car_setting_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <com.bydux.api.common.views.window.DampingScrollView
+        android:id="@+id/damping_horizontal_scrollview"
+        android:scrollbars="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_16"
+        app:orientation="horiziton">
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/car_setting_tablayout"
+            style="@style/byd_tablayout_style"/>
+    </com.bydux.api.common.views.window.DampingScrollView>
+</RelativeLayout>

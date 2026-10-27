@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<org.chromium.chrome.browser.download.home.list.view.AspectRatioFrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/rectangle_surface_1"
+    android:focusable="true"
+    android:clickable="true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:layout_gravity="center"
+        android:id="@+id/placeholder"
+        android:layout_width="match_parent"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true"
+        app:layout_aspectRatio="100%"/>
+    <org.chromium.ui.widget.ChromeImageButton
+        android:layout_gravity="end|top"
+        android:id="@+id/cancel_button"
+        android:background="?attr/selectableItemBackground"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:src="@drawable/btn_close"
+        android:contentDescription="@string/download_notification_cancel_button"
+        app:tint="@color/modern_blue_600"/>
+    <LinearLayout
+        android:layout_gravity="bottom|fill_horizontal"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textAppearance="@style/TextAppearance.TextMedium.Secondary"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/caption"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingStart="4dp"
+            style="@style/DownloadItemText"/>
+        <org.chromium.chrome.browser.download.home.list.view.CircularProgressView
+            android:layout_gravity="center_vertical"
+            android:id="@+id/action_button"
+            style="@style/TinyCircularProgress"/>
+    </LinearLayout>
+</org.chromium.chrome.browser.download.home.list.view.AspectRatioFrameLayout>

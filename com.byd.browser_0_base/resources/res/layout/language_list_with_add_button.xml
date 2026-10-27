@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:padding="0dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="0dp"
+            android:paddingEnd="0dp"
+            style="@style/PreferenceLayout">
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/language_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:gravity="center_vertical"
+                android:id="@+id/add_language"
+                android:background="?attr/selectableItemBackground"
+                android:padding="@dimen/draggable_list_item_padding"
+                android:focusable="true"
+                android:clickable="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/add_language"
+                android:drawablePadding="@dimen/pref_languages_add_button_padding"
+                android:paddingStart="@dimen/pref_languages_add_button_padding"
+                style="@style/PreferenceTitle"/>
+        </LinearLayout>
+    </ScrollView>
+    <include layout="@layout/settings_action_bar_shadow"/>
+</FrameLayout>

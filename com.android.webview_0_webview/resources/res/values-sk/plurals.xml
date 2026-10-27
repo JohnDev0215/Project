@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="cookie_controls_blocked_cookies">
+        <item quantity="one">1 zablokovaný súbor cookie</item>
+        <item quantity="few">%d zablokované súbory cookie</item>
+        <item quantity="many">%d cookies blocked</item>
+        <item quantity="other">%d zablokovaných súborov cookie</item>
+    </plurals>
+    <plurals name="selected_items">
+        <item quantity="one">1 vybratá položka</item>
+        <item quantity="few">%d vybraté položky</item>
+        <item quantity="many">Niekoľko (%d) vybratých položiek</item>
+        <item quantity="other">%d vybratých položiek</item>
+    </plurals>
+</resources>

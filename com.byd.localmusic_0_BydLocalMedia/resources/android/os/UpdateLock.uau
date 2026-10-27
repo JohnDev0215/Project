@@ -1,0 +1,7 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/os/UpdateLock;->UPDATE_LOCK_CHANGED:Ljava/lang/String;,frameworks/base/core/java/android/os/UpdateLock.java,54,5,54,25,
+Landroid/os/UpdateLock;->NOW_IS_CONVENIENT:Ljava/lang/String;,frameworks/base/core/java/android/os/UpdateLock.java,63,5,63,25,
+Landroid/os/UpdateLock;->TIMESTAMP:Ljava/lang/String;,frameworks/base/core/java/android/os/UpdateLock.java,72,5,72,25,
+Landroid/os/UpdateLock;->isHeld()Z,frameworks/base/core/java/android/os/UpdateLock.java,97,5,97,25,
+Landroid/os/UpdateLock;->acquire()V,frameworks/base/core/java/android/os/UpdateLock.java,107,5,107,25,
+Landroid/os/UpdateLock;->release()V,frameworks/base/core/java/android/os/UpdateLock.java,134,5,134,25,

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="ltr">
+    <com.bydux.api.common.views.window.DampingScrollView
+        android:id="@+id/nsw"
+        style="@style/vehicle_setting_rtl_module_damping_scrollView_land_style">
+        <LinearLayout style="@style/vehicle_setting_rtl_module_damping_scrollView_child_land_style">
+            <RelativeLayout
+                android:id="@+id/trailer_signal_check_container"
+                android:visibility="visible"
+                style="@style/vehicle_setting_rtl_tv_sw_icon_container_style">
+                <com.byd.base.view.BydSwitch
+                    android:id="@+id/trailer_signal_sw"
+                    style="@style/vehicle_setting_rtl_tv_sw_icon_sw_style"/>
+                <com.byd.base.view.BydFlexTextView
+                    android:id="@+id/trailer_signal_tv"
+                    android:text="@string/vehiclesettings_trailer_drive_mode_with_trailer_signal"
+                    style="@style/vehicle_setting_rtl_tv_sw_icon_tv_land_style"/>
+                <ImageView
+                    android:id="@+id/trailer_signal_iv"
+                    android:layout_toStartOf="@+id/trailer_signal_tv"
+                    style="@style/vehicle_setting_rtl_tv_sw_icon_icon_style"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </com.bydux.api.common.views.window.DampingScrollView>
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/trailer_lottie_view"
+        style="@style/vehicle_setting_rtl_car_image_land_style"/>
+</LinearLayout>

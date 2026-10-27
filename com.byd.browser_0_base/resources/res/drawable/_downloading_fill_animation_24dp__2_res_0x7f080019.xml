@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" android:ordering="sequentially">
+    <objectAnimator
+        android:interpolator="@android:interpolator/linear"
+        android:duration="0"
+        android:valueFrom="?attr/colorPrimary"
+        android:valueTo="?attr/colorPrimary"
+        android:propertyName="fillColor"/>
+    <objectAnimator
+        android:interpolator="@android:interpolator/linear"
+        android:duration="@integer/download_infobar_fill_out_delay"
+        android:startOffset="@integer/download_infobar_fill_in_delay"
+        android:valueFrom="?attr/colorPrimary"
+        android:valueTo="@android:color/transparent"
+        android:propertyName="fillColor"/>
+</set>

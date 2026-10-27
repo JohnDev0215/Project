@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="ModernToolbar" parent="@style/Base.ModernToolbar">
+        <item name="android:background">@null</item>
+    </style>
+    <style name="Theme.Chromium.Activity.Book" parent="@style/Theme.BrowserUI.DayNightBook">
+    </style>
+    <style name="Theme.Chromium.Activity.Fullscreen" parent="@style/Base.Theme.Chromium.Activity.Fullscreen">
+    </style>
+    <style name="Theme.Chromium.DialogWhenLarge" parent="@style/Base.Theme.Chromium.DialogWhenLarge">
+    </style>
+    <style name="Theme.Chromium.Settings" parent="@style/Base.Theme.Chromium.Settings">
+        <item name="android:dropDownListViewStyle">@style/XSpinnerStyle</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:statusBarColor">?attr/colorSurface</item>
+        <item name="android:navigationBarColor">?attr/colorSurface</item>
+        <item name="android:windowLightStatusBar">@bool/window_light_status_bar</item>
+        <item name="colorPrimary">@color/settings_color_primary</item>
+    </style>
+    <style name="Theme.Chromium.TabbedMode" parent="@style/Base.Theme.Chromium.TabbedMode">
+        <item name="android:statusBarColor">?attr/colorSurface</item>
+        <item name="android:navigationBarColor">?attr/colorSurface</item>
+        <item name="android:windowLightStatusBar">@bool/window_light_status_bar</item>
+    </style>
+    <style name="Theme.Chromium.WithWindowAnimation" parent="@style/Base.Theme.Chromium.WithWindowAnimation">
+    </style>
+    <style name="ThemeOverlay.BrowserUI.Fullscreen" parent="@style/Base.ThemeOverlay.BrowserUI.Fullscreen">
+    </style>
+    <style name="Widget.Design.TabLayout" parent="@style/Base.Widget.Design.TabLayout">
+        <item name="tabGravity">center</item>
+        <item name="tabMode">fixed</item>
+    </style>
+</resources>

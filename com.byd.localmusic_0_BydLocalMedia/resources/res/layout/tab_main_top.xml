@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/dp_108"
+    android:layout_height="@dimen/dp_98">
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="9dp"
+        android:src="@drawable/icon_dark_media_folder_48"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <ImageView
+        android:id="@+id/music_indicator"
+        android:visibility="invisible"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="9dp"
+        android:src="@drawable/icon_dark_public_triangle_dowm_48"
+        android:layout_marginStart="-8dp"
+        app:layout_constraintStart_toEndOf="@+id/icon"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="@color/color_selector_text"/>
+    <TextView
+        android:textSize="20sp"
+        android:textColor="@color/color_selector_text"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="29dp"
+        android:singleLine="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/icon"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

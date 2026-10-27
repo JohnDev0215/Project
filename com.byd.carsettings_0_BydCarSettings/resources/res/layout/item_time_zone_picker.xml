@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:padding="@dimen/dp_10"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:textSize="@dimen/sp_24"
+        android:ellipsize="middle"
+        android:gravity="start"
+        android:id="@+id/tv_zone_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:layout_weight="1"/>
+    <TextView
+        android:textSize="@dimen/sp_24"
+        android:gravity="end"
+        android:id="@+id/tv_zone_gmt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:paddingStart="@dimen/dp_12"/>
+</LinearLayout>

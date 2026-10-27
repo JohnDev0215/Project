@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/dp_36"/>
+            <gradient
+                android:startColor="@color/button_gradient_start_pressed"
+                android:endColor="@color/bg_button_gradient_end_pressed"
+                android:angle="90"/>
+        </shape>
+    </item>
+    <item android:state_selected="true">
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/dp_36"/>
+            <gradient
+                android:startColor="@color/button_gradient_start"
+                android:endColor="@color/bg_button_gradient_end"
+                android:angle="90"/>
+        </shape>
+    </item>
+    <item android:state_checked="true">
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/dp_36"/>
+            <gradient
+                android:startColor="@color/button_gradient_start"
+                android:endColor="@color/bg_button_gradient_end"
+                android:angle="90"/>
+        </shape>
+    </item>
+    <item android:state_enabled="false">
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/dp_36"/>
+            <gradient
+                android:startColor="@color/button_gradient_start_unable"
+                android:endColor="@color/bg_button_gradient_end_unable"
+                android:angle="90"/>
+        </shape>
+    </item>
+    <item android:state_checked="false">
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/dp_36"/>
+            <gradient
+                android:startColor="@color/bg_button_subscribe"
+                android:endColor="@color/bg_button_subscribe"
+                android:angle="90"/>
+        </shape>
+    </item>
+    <item android:state_selected="false">
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/dp_36"/>
+            <gradient
+                android:startColor="@color/bg_button_subscribe"
+                android:endColor="@color/bg_button_subscribe"
+                android:angle="90"/>
+        </shape>
+    </item>
+</selector>

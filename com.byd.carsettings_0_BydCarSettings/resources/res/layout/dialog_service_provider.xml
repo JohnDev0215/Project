@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:layout_width="@dimen/dp_560"
+    android:layout_height="wrap_content">
+    <androidx.recyclerview.widget.RecyclerView
+        android:scrollbarSize="@dimen/dp_4"
+        android:scrollbarThumbVertical="@drawable/bar_thumb"
+        android:scrollbarTrackVertical="@drawable/bar_track"
+        android:id="@+id/rv_service_provider"
+        android:paddingTop="@dimen/dp_18"
+        android:paddingBottom="@dimen/dp_12"
+        android:visibility="visible"
+        android:scrollbars="vertical"
+        android:layout_width="@dimen/dp_542"
+        android:layout_height="wrap_content"
+        android:requiresFadingEdge="vertical"
+        android:layout_marginStart="@dimen/dp_9"
+        android:layout_marginEnd="@dimen/dp_9"/>
+    <TextView
+        android:textSize="@dimen/sp_20"
+        android:textColor="@color/text_color_main"
+        android:gravity="center"
+        android:id="@+id/tv_nodata"
+        android:visibility="gone"
+        android:layout_width="@dimen/dp_560"
+        android:layout_height="@dimen/dp_200"
+        android:text="@string/carhealthy_oil_nodata"/>
+</LinearLayout>

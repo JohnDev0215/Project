@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<level-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:maxLevel="@integer/list_item_level_default">
+        <shape android:shape="oval">
+            <solid android:color="@android:color/transparent"/>
+            <stroke
+                android:width="2dp"
+                android:color="?attr/colorOnSurface"/>
+        </shape>
+    </item>
+    <item android:maxLevel="@integer/list_item_level_selected">
+        <shape android:shape="oval">
+            <solid android:color="?attr/colorPrimary"/>
+        </shape>
+    </item>
+</level-list>

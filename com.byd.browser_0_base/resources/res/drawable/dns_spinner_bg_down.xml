@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingStart="0dp"
+    android:paddingEnd="48dp"
+    android:paddingMode="stack">
+    <item
+        android:gravity="end|center_vertical"
+        android:height="@dimen/settings_ic_spinner_down_width_height"
+        android:width="@dimen/settings_ic_spinner_down_width_height"
+        android:drawable="@drawable/ic_spinner_down"
+        android:end="12dp"/>
+</layer-list>

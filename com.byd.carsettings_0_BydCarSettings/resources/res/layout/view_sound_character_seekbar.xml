@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true">
+        <ImageView
+            android:layout_width="@dimen/dp_24"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/dp_2"
+            android:layout_marginBottom="@dimen/dp_16"
+            android:src="@drawable/icon_seekbar_track_dyna_freq_band"/>
+        <ImageView
+            android:layout_width="@dimen/dp_6"
+            android:layout_height="@dimen/dp_20"
+            android:layout_marginBottom="@dimen/dp_6"
+            android:src="@drawable/shape_blue_seekbar_track_patch"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"/>
+        <com.byd.carsettings.ui.widget.BydVerticalSeekBar
+            android:id="@+id/sbar_view_sound_character_seekbar"
+            android:background="@null"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:progressDrawable="@drawable/layer_blue_black_seekbar_track"
+            android:thumb="@color/transparent_00"
+            android:layout_centerVertical="true"
+            android:splitTrack="false"
+            app:byd_thumb_drawable="@drawable/icon_sound_seekbar_thumb"
+            app:byd_thumb_height="@dimen/dp_34"
+            app:byd_thumb_width="@dimen/dp_24"/>
+    </RelativeLayout>
+</RelativeLayout>

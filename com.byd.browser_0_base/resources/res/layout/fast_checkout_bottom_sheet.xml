@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/fast_checkout_sheet_margin"
+    android:paddingRight="@dimen/fast_checkout_sheet_margin"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/drag_handlebar"
+        android:layout_width="32dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:importantForAccessibility="no"
+        app:srcCompat="@drawable/drag_handlebar"/>
+    <ViewFlipper
+        android:id="@+id/fast_checkout_bottom_sheet_view_flipper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:measureAllChildren="false"
+        android:inAnimation="@anim/fast_checkout_view_flipper_fade_in"
+        android:outAnimation="@anim/fast_checkout_view_flipper_fade_out">
+        <include
+            android:id="@+id/fast_checkout_home_screen_sheet"
+            layout="@layout/fast_checkout_home_screen_sheet"/>
+        <include
+            android:id="@+id/fast_checkout_detail_screen_sheet"
+            layout="@layout/fast_checkout_detail_screen_sheet"/>
+    </ViewFlipper>
+</LinearLayout>

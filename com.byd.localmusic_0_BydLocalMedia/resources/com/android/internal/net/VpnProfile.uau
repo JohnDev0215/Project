@@ -1,0 +1,9 @@
+signature,file,startline,startcol,endline,endcol,properties
+Lcom/android/internal/net/VpnProfile;->key:Ljava/lang/String;,frameworks/base/core/java/com/android/internal/net/VpnProfile.java,76,5,76,25,
+Lcom/android/internal/net/VpnProfile;->name:Ljava/lang/String;,frameworks/base/core/java/com/android/internal/net/VpnProfile.java,79,5,79,25,
+Lcom/android/internal/net/VpnProfile;->type:I,frameworks/base/core/java/com/android/internal/net/VpnProfile.java,82,5,82,25,
+Lcom/android/internal/net/VpnProfile;->server:Ljava/lang/String;,frameworks/base/core/java/com/android/internal/net/VpnProfile.java,85,5,85,88,maxTargetSdk=28&trackingBug=115609023L
+Lcom/android/internal/net/VpnProfile;->username:Ljava/lang/String;,frameworks/base/core/java/com/android/internal/net/VpnProfile.java,88,5,88,25,
+Lcom/android/internal/net/VpnProfile;->saveLogin:Z,frameworks/base/core/java/com/android/internal/net/VpnProfile.java,142,5,142,25,
+Lcom/android/internal/net/VpnProfile;-><init>(Landroid/os/Parcel;)V,frameworks/base/core/java/com/android/internal/net/VpnProfile.java,154,5,154,25,
+Lcom/android/internal/net/VpnProfile;->decode(Ljava/lang/String;[B)Lcom/android/internal/net/VpnProfile;,frameworks/base/core/java/com/android/internal/net/VpnProfile.java,238,5,238,25,

@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    android:sharedUserId="android.uid.system"
+    android:versionCode="146"
+    android:versionName="1.18.2-202507110941"
+    android:compileSdkVersion="29"
+    android:compileSdkVersionCodename="10"
+    package="com.byd.carsettings"
+    platformBuildVersionCode="29"
+    platformBuildVersionName="10">
+    <uses-sdk
+        android:minSdkVersion="26"
+        android:targetSdkVersion="29"/>
+    <permission android:name="android.permission.DEVICE_POWER "/>
+    <permission android:name="android.permission.MEDIA_CONTENT_CONTROL "/>
+    <queries>
+        <intent>
+            <action android:name="com.intent.action.OTA_UPGRADE_SDK"/>
+        </intent>
+        <package android:name="com.byd.ota"/>
+        <package android:name="com.byd.datashared"/>
+    </queries>
+    <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES"/>
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES"/>
+    <uses-permission android:name="android.permission.DELETE_PACKAGES"/>
+    <uses-permission android:name="android.permission.REQUEST_DELETE_PACKAGES"/>
+    <uses-permission android:name="android.permission.PACKAGE_USAGE_STATS"/>
+    <uses-permission android:name="android.permission.WHITELIST_RESTRICTED_PERMISSIONS"/>
+    <uses-permission android:name="android.permission.GRANT_RUNTIME_PERMISSIONS"/>
+    <uses-permission android:name="android.permission.REVOKE_RUNTIME_PERMISSIONS"/>
+    <uses-permission android:name="android.permission.GET_RUNTIME_PERMISSIONS"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.CLEAR_APP_CACHE"/>
+    <uses-permission android:name="android.permission.CLEAR_APP_USER_DATA"/>
+    <uses-permission android:name="android.permission.GET_PACKAGE_SIZE"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_PRIVILEGED"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.LOCAL_MAC_ADDRESS"/>
+    <uses-permission android:name="android.permission.UPDATE_DEVICE_STATS"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.SYSTEM_OVERLAY_WINDOW"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_NUMBERS"/>
+    <uses-permission android:name="android.permission.MODIFY_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.READ_PRIVILEGED_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.TETHER_PRIVILEGED"/>
+    <uses-permission android:name="android.permission.OVERRIDE_WIFI_CONFIG"/>
+    <uses-permission android:name="android.permission.NETWORK_SETTINGS"/>
+    <uses-permission android:name="android.permission.NETWORK_SETUP_WIZARD"/>
+    <uses-permission android:name="android.permission.SET_TIME"/>
+    <uses-permission android:name="android.permission.SET_TIME_ZONE"/>
+    <uses-permission android:name="android.permission.SET_PREFERRED_APPLICATIONS"/>
+    <uses-permission android:name="android.permission.CHANGE_COMPONENT_ENABLED_STATE"/>
+    <uses-permission android:name="android.permission.BYDAUTO_BODYWORK_COMMON"/>
+    <uses-permission android:name="android.permission.BYDAUTO_BODYWORK_GET"/>
+    <uses-permission android:name="android.permission.BYDAUTO_BODYWORK_SET"/>
+    <uses-permission android:name="android.permission.BYDAUTO_LIGHT_COMMON"/>
+    <uses-permission android:name="android.permission.BYDAUTO_LIGHT_GET"/>
+    <uses-permission android:name="android.permission.BYDAUTO_LIGHT_SET"/>
+    <uses-permission android:name="android.permission.BYDAUTO_SPEED_COMMON"/>
+    <uses-permission android:name="android.permission.BYDAUTO_SPEED_GET"/>
+    <uses-permission android:name="android.permission.BYDAUTO_SPEED_SET"/>
+    <uses-permission android:name="android.permission.BYDAUTO_INSTRUMENT_COMMON"/>
+    <uses-permission android:name="android.permission.BYDAUTO_INSTRUMENT_GET"/>
+    <uses-permission android:name="android.permission.BYDAUTO_INSTRUMENT_SET"/>
+    <uses-permission android:name="android.permission.BYDAUTO_SETTING_COMMON"/>
+    <uses-permission android:name="android.permission.BYDAUTO_SETTING_GET"/>
+    <uses-permission android:name="android.permission.BYDAUTO_SETTING_SET"/>
+    <uses-permission android:name="android.permission.BYDAUTO_DOOR_LOCK_COMMON"/>
+    <uses-permission android:name="android.permission.BYDAUTO_DOOR_LOCK_GET"/>
+    <uses-permission android:name="android.permission.BYDAUTO_DOOR_LOCK_SET"/>
+    <uses-permission android:name="android.permission.BYDAUTO_AC_COMMON"/>
+    <uses-permission android:name="android.permission.BYDAUTO_AC_GET"/>
+    <uses-permission android:name="android.permission.BYDAUTO_AC_SET"/>
+    <uses-permission android:name="android.permission.BYDAUTO_SAFETY_BELT_COMMON"/>
+    <uses-permission android:name="android.permission.BYDAUTO_SAFETY_BELT_SET"/>
+    <uses-permission android:name="android.permission.BYDAUTO_SAFETY_BELT_GET"/>
+    <uses-permission android:name="android.permission.BYDAUTO_STATISTIC_COMMON"/>
+    <uses-permission android:name="android.permission.BYDAUTO_STATISTIC_SET"/>
+    <uses-permission android:name="android.permission.BYDAUTO_STATISTIC_GET"/>
+    <uses-permission android:name="android.permission.BYDAUTO_CHARGING_COMMON"/>
+    <uses-permission android:name="android.permission.BYDAUTO_CHARGING_SET"/>
+    <uses-permission android:name="android.permission.BYDAUTO_CHARGING_GET"/>
+    <uses-permission android:name="android.permission.BYDAUTO_GEARBOX_COMMON"/>
+    <uses-permission android:name="android.permission.BYDAUTO_GEARBOX_GET"/>
+    <uses-permission android:name="android.permission.BYDAUTO_ENGINE_COMMON"/>
+    <uses-permission android:name="android.permission.BYDAUTO_ENGINE_SET"/>
+    <uses-permission android:name="android.permission.BYDAUTO_ENGINE_GET"/>
+    <uses-permission android:name="android.permission.BYDAUTO_VERSION_COMMON"/>
+    <uses-permission android:name="android.permission.BYDAUTO_VERSION_SET"/>
+    <uses-permission android:name="android.permission.BYDAUTO_VERSION_GET"/>
+    <uses-permission android:name="android.permission.BYDAUTO_PANORAMA_COMMON"/>
+    <uses-permission android:name="android.permission.BYDAUTO_PANORAMA_SET"/>
+    <uses-permission android:name="android.permission.BYDAUTO_PANORAMA_GET"/>
+    <uses-permission android:name="android.permission.BYDAUTO_ADAS_COMMON"/>
+    <uses-permission android:name="android.permission.BYDAUTO_ADAS_SET"/>
+    <uses-permission android:name="android.permission.BYDAUTO_ADAS_GET"/>
+    <uses-permission android:name="android.permission.BYDAUTO_REAR_VIEW_MIRROR_COMMON"/>
+    <uses-permission android:name="android.permission.BYDAUTO_REAR_VIEW_MIRROR_SET"/>
+    <uses-permission android:name="android.permission.BYDAUTO_REAR_VIEW_MIRROR_GET"/>
+    <uses-permission android:name="android.permission.BYDAUTO_LOCATION_COMMON"/>
+    <uses-permission android:name="android.permission.BYDAUTO_LOCATION_SET"/>
+    <uses-permission android:name="android.permission.BYDAUTO_LOCATION_GET"/>
+    <uses-permission android:name="android.permission.BYDAUTO_OTA_COMMON"/>
+    <uses-permission android:name="android.permission.BYDAUTO_OTA_SET"/>
+    <uses-permission android:name="android.permission.BYDAUTO_OTA_GET"/>
+    <uses-permission android:name="android.permission.BYDAUTO_POWER_COMMON"/>
+    <uses-permission android:name="android.permission.BYDAUTO_POWER_SET"/>
+    <uses-permission android:name="android.permission.BYDAUTO_POWER_GET"/>
+    <uses-permission android:name="android.permission.BYDAUTO_RADAR_COMMON"/>
+    <uses-permission android:name="android.permission.BYDAUTO_RADAR_SET"/>
+    <uses-permission android:name="android.permission.BYDAUTO_RADAR_GET"/>
+    <uses-permission android:name="android.permission.BYDAUTO_SENSOR_COMMON"/>
+    <uses-permission android:name="android.permission.BYDAUTO_SENSOR_SET"/>
+    <uses-permission android:name="android.permission.BYDAUTO_SENSOR_GET"/>
+    <uses-permission android:name="android.permission.BYDAUTO_TIME_COMMON"/>
+    <uses-permission android:name="android.permission.BYDAUTO_TIME_SET"/>
+    <uses-permission android:name="android.permission.BYDAUTO_TIME_GET"/>
+    <uses-permission android:name="android.permission.BYDAUTO_TYRE_COMMON"/>
+    <uses-permission android:name="android.permission.BYDAUTO_TYRE_SET"/>
+    <uses-permission android:name="android.permission.BYDAUTO_TYRE_GET"/>
+    <uses-permission android:name="com.byd.permission.carsettings.READ_CARSETTINGS_PROVIDER"/>
+    <uses-permission android:name="com.byd.permission.carsettings.WRITE_CARSETTINGS_PROVIDER"/>
+    <uses-permission android:name="android.permission.BYDAUTO_AUDIO_GET"/>
+    <uses-permission android:name="android.permission.BYDAUTO_AUDIO_SET"/>
+    <uses-permission android:name="android.permission.DELETE_CACHE_FILES"/>
+    <uses-permission android:name="android.car.permission.CAR_CONTROL_AUDIO_VOLUME"/>
+    <uses-permission android:name="car.permission.ANDROIDAUTO_APP"/>
+    <uses-permission android:name="car.permission.ANDROIDAUTO_DEVICELIST"/>
+    <uses-permission android:name="car.permission.CARPLAY_APP"/>
+    <uses-permission android:name="car.permission.CARPLAY_DEVICE_LIST"/>
+    <uses-permission
+        android:name="com.byd.mediacenter.STARTSERVER"
+        android:protectionLevel="signatureOrSystem"/>
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD"/>
+    <application
+        android:theme="@style/Theme_CarSettings_final"
+        android:label="@string/cs_app_name"
+        android:icon="@mipmap/app_icon_setting_72"
+        android:name="com.byd.carsettings.BydApp"
+        android:exported="true"
+        android:configChanges="uiMode"
+        android:allowBackup="false"
+        android:supportsRtl="true"
+        android:extractNativeLibs="true"
+        android:usesCleartextTraffic="true"
+        android:resizeableActivity="false"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+        android:requestLegacyExternalStorage="true">
+        <activity
+            android:theme="@style/dialog_activity_statusbar"
+            android:name="com.byd.carsettings.RearViewMirrorActivity"
+            android:exported="true"/>
+        <activity
+            android:theme="@style/Theme_CarSettings_final"
+            android:label="@string/cs_app_name"
+            android:icon="@mipmap/app_icon_setting_72"
+            android:name="com.byd.carsettings.MainActivity"
+            android:exported="true"
+            android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="byd.intent.aciton.carsettings"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:theme="@style/Theme_CarSettings_final"
+            android:name="com.byd.carsettings.ui.activity.SearchActivity"
+            android:exported="false"
+            android:fitsSystemWindows="true"
+            android:clipToPadding="false"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity
+            android:theme="@style/dialog_activity_statusbar"
+            android:name="com.byd.carsettings.ui.activity.AppListActivity"
+            android:exported="false"
+            android:launchMode="singleTop"/>
+        <activity
+            android:theme="@style/dialog_activity_statusbar"
+            android:name="com.byd.carsettings.ui.activity.CopyrightNoticeActivity"
+            android:exported="false"
+            android:launchMode="singleTop"/>
+        <activity
+            android:theme="@style/dialog_activity_statusbar"
+            android:label="@string/title_app_details_app_manage"
+            android:name="com.byd.carsettings.ui.activity.AppDetailActivity"
+            android:exported="true"
+            android:taskAffinity=".ui.activity.AppDetailActivity"
+            android:excludeFromRecents="true"
+            android:launchMode="singleTop">
+            <intent-filter>
+                <action android:name="com.byd.carsettings.ui.activity.AppDetailActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:theme="@style/dialog_activity_statusbar"
+            android:label="@string/notification_app_manage"
+            android:name="com.byd.carsettings.ui.activity.NotificationAppListActivity"
+            android:exported="true"
+            android:taskAffinity=".ui.activity.NotificationAppListActivity"
+            android:excludeFromRecents="true"/>
+        <activity
+            android:theme="@style/dialog_activity_statusbar"
+            android:name="com.byd.carsettings.ui.activity.DiskStatisticsActivity"
+            android:exported="false"
+            android:launchMode="singleTop"/>
+        <activity
+            android:theme="@style/dialog_activity_statusbar"
+            android:name="com.byd.carsettings.ui.activity.PermissionActivity"
+            android:exported="false"
+            android:launchMode="singleTop"/>
+        <activity android:name="com.byd.carsettings.ui.activity.ZKTestActivity"/>
+        <activity android:name="com.byd.carsettings.ui.activity.MovePowerStationActivity"/>
+        <activity
+            android:name="com.byd.carsettings.ui.activity.MessageCenterActivity"
+            android:exported="true"/>
+        <activity
+            android:theme="@style/dialog_activity_statusbar"
+            android:name="com.byd.carsettings.ui.activity.ContainerActivity"
+            android:exported="true"
+            android:taskAffinity=".ui.activity.ContainerActivity"
+            android:excludeFromRecents="true"
+            android:launchMode="singleTop"/>
+        <activity
+            android:theme="@style/Theme_CarSettings_final"
+            android:name="com.byd.carsettings.WadeProtectRiskActivity"
+            android:exported="true"/>
+        <receiver
+            android:name="com.byd.btsetting.receiver.BtPairRequestReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.bluetooth.device.action.PAIRING_REQUEST"/>
+                <action android:name="android.bluetooth.device.action.ACL_CONNECTED"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </receiver>
+        <service
+            android:name="com.byd.systemsettings.wifi2.service.WifiActionService"
+            android:exported="false"/>
+        <service
+            android:name="com.byd.systemsettings.hotspot.service.HotspotService"
+            android:exported="false"/>
+        <service
+            android:theme="@style/Theme_CarSettings_final"
+            android:name="com.byd.dialogservice.DialogService"
+            android:sharedUserId="android.uid.system"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter android:priority="1000">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="byd_pad"
+                    android:host="byd_car_settings"
+                    android:port="2933"
+                    android:path="/launcher"/>
+            </intent-filter>
+        </service>
+        <uses-library android:name="ts.platform.library"/>
+        <activity
+            android:name="com.byd.digitalkey.activity.DigitalKeyActivity"
+            android:launchMode="singleTop"/>
+        <activity android:name="com.byd.digitalkey.activity.DigitalKeySettingActivity"/>
+        <activity
+            android:name="com.byd.digitalkey.activity.DigitalKeyActivateNewActivity"
+            android:exported="true"
+            android:launchMode="singleInstance">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data
+                    android:scheme="byd_pad"
+                    android:host="nfc"
+                    android:port="1080"
+                    android:path="/digitalKeyActivateNewActivity"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.byd.digitalkey.activity.TestDigitalDeviceApiActivity"/>
+        <activity android:name="com.byd.digitalkey.activity.UserAgreementActivity"/>
+        <activity android:name="com.byd.digitalkey.activity.UserHelpActivity"/>
+        <service
+            android:name="com.byd.bt.service.BtActionService"
+            android:exported="false"/>
+        <activity
+            android:name="com.byd.base.view.BaseWebViewActivity"
+            android:launchMode="singleTop"/>
+        <provider
+            android:name="org.extra.tools.ContextProvider"
+            android:exported="false"
+            android:authorities="com.byd.carsettings.org.libpag.contextprovider"/>
+    </application>
+</manifest>

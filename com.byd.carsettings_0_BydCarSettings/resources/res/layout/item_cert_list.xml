@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/dp_24"
+        android:layout_marginEnd="@dimen/dp_16">
+        <com.byd.base.view.BydSwitch
+            android:id="@+id/switch_item_cert_list"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/dp_16"
+            android:layout_alignParentStart="true"
+            style="@style/byd_switch"/>
+        <TextView
+            android:textSize="@dimen/sp_20"
+            android:textColor="@color/text_color_main"
+            android:gravity="center_vertical"
+            android:id="@+id/tv_cert_name_item_cert_list"
+            android:paddingTop="@dimen/dp_10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingEnd="@dimen/dp_10"
+            android:layout_toEndOf="@+id/switch_item_cert_list"/>
+        <TextView
+            android:textSize="@dimen/sp_16"
+            android:textColor="@color/text_color_main_gray"
+            android:gravity="center_vertical"
+            android:id="@+id/tv_cert_name_a_item_cert_list"
+            android:paddingBottom="@dimen/dp_10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_cert_name_item_cert_list"
+            android:paddingEnd="@dimen/dp_10"
+            android:layout_alignStart="@+id/tv_cert_name_item_cert_list"/>
+        <View
+            android:background="@color/bg_color_line"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_1"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="@dimen/dp_24"/>
+    </RelativeLayout>
+</LinearLayout>

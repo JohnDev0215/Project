@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/bg_dialog_dirac_sound_field"
+    android:layout_width="@dimen/dp_560"
+    android:layout_height="@dimen/dp_544">
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_72"
+        layout="@layout/dialog_common_title"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <com.byd.carsettings.ui.widget.SoundFieldView
+            android:id="@+id/sfv_dirac_sound_field"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/dp_60"
+            android:layout_marginBottom="@dimen/dp_20"
+            android:layout_marginStart="@dimen/dp_136"
+            android:layout_marginEnd="@dimen/dp_136"
+            app:axis_x_width="@dimen/dp_194"
+            app:axis_y_height="@dimen/dp_294"
+            app:drawable_axis_x="@drawable/img_axis_x"
+            app:drawable_axis_y="@drawable/img_axis_y"
+            app:drawable_bottom="@drawable/icon_arrow_down"
+            app:drawable_height="@dimen/dp_42"
+            app:drawable_left="@drawable/icon_arrow_left"
+            app:drawable_right="@drawable/icon_arrow_right"
+            app:drawable_top="@drawable/icon_arrow_up"
+            app:drawable_width="@dimen/dp_42"
+            app:field_padding_bottom="@dimen/dp_42"
+            app:field_padding_left="@dimen/dp_42"
+            app:field_padding_right="@dimen/dp_42"
+            app:field_padding_top="@dimen/dp_42"
+            app:thumb_height="@dimen/dp_24"
+            app:thumb_seekbar="@drawable/seekbar_thumb_point"
+            app:thumb_width="@dimen/dp_24"/>
+    </RelativeLayout>
+</LinearLayout>

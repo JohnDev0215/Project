@@ -1,0 +1,3 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/content/om/IOverlayManager;->getAllOverlays(I)Ljava/util/Map;,frameworks/base/core/java/android/content/om/IOverlayManager.aidl,40,1,40,25,
+Landroid/content/om/IOverlayManager;->getOverlayInfo(Ljava/lang/String;I)Landroid/content/om/OverlayInfo;,frameworks/base/core/java/android/content/om/IOverlayManager.aidl,64,1,64,25,

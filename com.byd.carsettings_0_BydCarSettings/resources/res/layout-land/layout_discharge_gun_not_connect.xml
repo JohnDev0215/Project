@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/iv_status_logo"
+        android:layout_width="@dimen/dp_280"
+        android:layout_height="@dimen/dp_240"
+        android:layout_marginTop="@dimen/dp_152"
+        android:src="@drawable/img_dark_carsetting_newenergy_charge_power_station_discharge_connection_socket"
+        android:layout_marginEnd="@dimen/dp_300"
+        android:layout_alignParentEnd="true"/>
+    <ProgressBar
+        android:id="@+id/progressbar_wait"
+        android:layout_width="@dimen/dp_240"
+        android:layout_height="@dimen/dp_240"
+        android:layout_marginTop="@dimen/dp_152"
+        android:indeterminateDrawable="@drawable/progressbar_discharge_bg"
+        android:layout_marginEnd="@dimen/dp_320"
+        android:layout_alignParentEnd="true"/>
+    <TextView
+        android:textSize="@dimen/sp_20"
+        android:textColor="?attr/text_color_main"
+        android:gravity="center"
+        android:id="@+id/tv_status_desc"
+        android:layout_width="@dimen/dp_400"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_392"
+        android:layout_marginEnd="@dimen/dp_240"
+        android:layout_alignParentEnd="true"/>
+</RelativeLayout>

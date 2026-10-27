@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="cookie_controls_blocked_cookies">
+        <item quantity="one">Блокирана е 1 „бисквитка“</item>
+        <item quantity="other">Блокирани са %d „бисквитки“</item>
+    </plurals>
+    <plurals name="selected_items">
+        <item quantity="one">Избрана е 1</item>
+        <item quantity="other">Избрани са %d</item>
+    </plurals>
+</resources>

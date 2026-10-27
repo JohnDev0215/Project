@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:id="@+id/back_to_top_bubble"
+    android:paddingTop="@dimen/back_to_top_bubble_vertical_padding"
+    android:paddingBottom="@dimen/back_to_top_bubble_vertical_padding"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingStart="@dimen/back_to_top_bubble_horizontal_padding"
+    android:paddingEnd="@dimen/back_to_top_bubble_horizontal_padding">
+    <org.chromium.ui.widget.ChromeImageView
+        android:id="@+id/image"
+        android:layout_width="@dimen/back_to_top_bubble_image_size"
+        android:layout_height="@dimen/back_to_top_bubble_image_size"
+        android:scaleType="centerInside"
+        android:layout_marginEnd="@dimen/back_to_top_bubble_image_margin_end"/>
+    <TextView
+        android:textAppearance="@style/TextAppearance.TextMedium.Secondary"
+        android:id="@+id/message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

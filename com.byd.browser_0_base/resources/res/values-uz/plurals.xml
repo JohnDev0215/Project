@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="accessibility_dialog_back_button">
+        <item quantity="one">%1$d ta varaqni yigʻish.</item>
+        <item quantity="other">%1$d varaqli guruhni yigʻish.</item>
+    </plurals>
+    <plurals name="accessibility_dialog_back_button_with_group_name">
+        <item quantity="one">%1$d ta varaqni yigʻish.</item>
+        <item quantity="other">%2$d varaqli %1$s guruhini yigʻish.</item>
+    </plurals>
+    <plurals name="accessibility_download_manager_ui_audio">
+        <item quantity="one">%d ta audio fayl</item>
+        <item quantity="other">%d ta audio fayl</item>
+    </plurals>
+    <plurals name="accessibility_download_manager_ui_generic">
+        <item quantity="one">%d ta fayl</item>
+        <item quantity="other">%d ta fayl</item>
+    </plurals>
+    <plurals name="accessibility_download_manager_ui_images">
+        <item quantity="one">%d ta rasm</item>
+        <item quantity="other">%d ta rasm</item>
+    </plurals>
+    <plurals name="accessibility_download_manager_ui_pages">
+        <item quantity="one">%d ta sahifa</item>
+        <item quantity="other">%d ta sahifa</item>
+    </plurals>
+    <plurals name="accessibility_download_manager_ui_video">
+        <item quantity="one">%d ta video</item>
+        <item quantity="other">%d ta video</item>
+    </plurals>
+    <plurals name="accessibility_merchant_viewer_message_description">
+        <item quantity="one"> %1$s/%2$s baho, %3$d ta sharh</item>
+        <item quantity="other">%1$s/%2$s baho, %3$d ta sharh</item>
+    </plurals>
+    <plurals name="accessibility_remove_selected_items">
+        <item quantity="one">Tanlangan 1 ta elementni olib tashlash</item>
+        <item quantity="other">Tanlangan %d ta elementni olib tashlash</item>
+    </plurals>
+    <plurals name="accessibility_share_selected_items">
+        <item quantity="one">Belgilangan 1 ta elementni ulashish</item>
+        <item quantity="other">Belgilangan %d ta elementni ulashish</item>
+    </plurals>
+    <plurals name="accessibility_tab_selection_dialog_remove_button">
+        <item quantity="one">Tanlangan %1$d ta varaqni guruhdan olib tashlash.</item>
+        <item quantity="other">Tanlangan %1$d ta varaqni guruhdan olib tashlash.</item>
+    </plurals>
+    <plurals name="accessibility_tab_selection_editor_bookmark_tabs_action_button">
+        <item quantity="one">Tanlangan %1$d ta varaqni bukmarklash</item>
+        <item quantity="other">Tanlangan %1$d ta varaqni bukmarklash</item>
+    </plurals>
+    <plurals name="accessibility_tab_selection_editor_close_tabs">
+        <item quantity="one">Tanlangan %1$d ta varaqni yopish</item>
+        <item quantity="other">Tanlangan %1$d ta varaqni yopish</item>
+    </plurals>
+    <plurals name="accessibility_tab_selection_editor_group_button">
+        <item quantity="one">Belgilangan %1$d ta varaqni guruhlash</item>
+        <item quantity="other">Belgilangan %1$d ta varaqni guruhlash</item>
+    </plurals>
+    <plurals name="accessibility_tab_selection_editor_group_tabs">
+        <item quantity="one">Belgilangan %1$d ta varaqni guruhlash</item>
+        <item quantity="other">Belgilangan %1$d ta varaqni guruhlash</item>
+    </plurals>
+    <plurals name="accessibility_tab_selection_editor_share_tabs_action_button">
+        <item quantity="one">Tanlangan %1$d ta varaqni ulashish</item>
+        <item quantity="other">Tanlangan %1$d ta varaqni ulashish</item>
+    </plurals>
+    <plurals name="accessibility_tab_selection_editor_ungroup_tabs">
+        <item quantity="one">Tanlangan %1$d ta varaq guruhini yechish</item>
+        <item quantity="other">Tanlangan %1$d ta varaq guruhini yechish</item>
+    </plurals>
+    <plurals name="accessibility_tab_suggestion_close_tab_action_button">
+        <item quantity="one">Tanlangan %1$d ta varaqni yopish</item>
+        <item quantity="other">Tanlangan %1$d ta varaqni yopish</item>
+    </plurals>
+    <plurals name="allsites_fps_list_summary">
+        <item quantity="one">%2$s guruhidagi %1$s ta sayt uchun cookie fayllarga ruxsat berilgan</item>
+        <item quantity="other">%2$s guruhidagi %1$s ta sayt uchun cookie fayllarga ruxsat berilgan</item>
+    </plurals>
+    <plurals name="allsites_fps_summary">
+        <item quantity="one">%2$s saytlar guruhidagi %1$s ta sayt guruhdagi faoliyatingizni kuzatishi mumkin</item>
+        <item quantity="other">%2$s saytlar guruhidagi %1$s ta sayt guruhdagi faoliyatingizni kuzatishi mumkin</item>
+    </plurals>
+    <plurals name="bookmarks_count">
+        <item quantity="one">%1$d ta bukmark</item>
+        <item quantity="other">%1$d ta bukmark</item>
+    </plurals>
+    <plurals name="bottom_tab_grid_title_placeholder">
+        <item quantity="one">%1$d ta varaq</item>
+        <item quantity="other">%1$d ta varaq</item>
+    </plurals>
+    <plurals name="contacts_picker_more_details">
+        <item quantity="one">(yana 1 ta)</item>
+        <item quantity="other">(yana %d ta)</item>
+    </plurals>
+    <plurals name="cookie_controls_blocked_cookies">
+        <item quantity="one">1 ta cookie fayl bloklandi</item>
+        <item quantity="other">%d ta cookie fayl bloklandi</item>
+    </plurals>
+    <plurals name="cookies_count">
+        <item quantity="one">%d ta cookie</item>
+        <item quantity="other">%d ta cookie</item>
+    </plurals>
+    <plurals name="download_manager_n_hours">
+        <item quantity="one">%d soat</item>
+        <item quantity="other">%d soat</item>
+    </plurals>
+    <plurals name="download_message_multiple_download_complete">
+        <item quantity="one">Fayl yuklab olindi</item>
+        <item quantity="other">%d ta fayl yuklab olindi</item>
+    </plurals>
+    <plurals name="download_message_multiple_download_failed">
+        <item quantity="one">1 ta fayl yuklab olinmadi</item>
+        <item quantity="other">%d ta fayl yuklab olinmadi</item>
+    </plurals>
+    <plurals name="download_message_multiple_download_in_progress">
+        <item quantity="one">Fayl yuklab olinmoqda…</item>
+        <item quantity="other">%d ta fayl yuklab olinmoqda…</item>
+    </plurals>
+    <plurals name="download_message_multiple_download_pending">
+        <item quantity="one">1 ta fayl yuklab olinishi kutilmoqda...</item>
+        <item quantity="other">%d ta fayl yuklab olinishi kutilmoqda...</item>
+    </plurals>
+    <plurals name="download_ui_files_downloaded">
+        <item quantity="one">%1$d ta fayl yuklab olindi</item>
+        <item quantity="other">%1$d ta fayl yuklab olindi</item>
+    </plurals>
+    <plurals name="history_clusters_n_matches">
+        <item quantity="one">%d ta mos natija</item>
+        <item quantity="other">%d ta mos natija</item>
+    </plurals>
+    <plurals name="instance_switcher_close_confirm_deleted_incognito">
+        <item quantity="one">%1$s ta inkognito varaq yopiladi</item>
+        <item quantity="other">%1$s ta inkognito varaq yopiladi</item>
+    </plurals>
+    <plurals name="instance_switcher_close_confirm_deleted_incognito_mixed">
+        <item quantity="one">yana %2$s ta varaq yopiladi (%1$s tasi inkognito)</item>
+        <item quantity="other">yana %2$s ta varaq yopiladi (%1$s tasi inkognito)</item>
+    </plurals>
+    <plurals name="instance_switcher_close_confirm_deleted_tabs_many">
+        <item quantity="one">%1$s va yana %2$s ta varaq yopiladi</item>
+        <item quantity="other">%1$s va yana %2$s ta varaq yopiladi</item>
+    </plurals>
+    <plurals name="instance_switcher_desc_incognito">
+        <item quantity="one">%1$s ta inkognito varaq</item>
+        <item quantity="other">%1$s ta inkognito varaq</item>
+    </plurals>
+    <plurals name="instance_switcher_desc_mixed">
+        <item quantity="one">%1$s ta varaq</item>
+        <item quantity="other">%2$s ta varaq, %1$s tasi inkognito</item>
+    </plurals>
+    <plurals name="instance_switcher_tab_count_nonzero">
+        <item quantity="one">1 ta varaq</item>
+        <item quantity="other">%d ta varaq</item>
+    </plurals>
+    <plurals name="merchant_viewer_message_description_reviews">
+        <item quantity="one">(%1$s ta sharh)</item>
+        <item quantity="other">(%1$s ta sharh)</item>
+    </plurals>
+    <plurals name="merchant_viewer_message_description_reviews_from_google">
+        <item quantity="one">%1$s ta sharh Googledan</item>
+        <item quantity="other">%1$s ta sharh Googledan</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">%d ta yangi bildirishnoma</item>
+        <item quantity="other">%d ta yangi bildirishnoma</item>
+    </plurals>
+    <plurals name="n_days_ago">
+        <item quantity="one">%d kun oldin</item>
+        <item quantity="other">%d kun oldin</item>
+    </plurals>
+    <plurals name="n_hours_ago">
+        <item quantity="one">%d soat oldin</item>
+        <item quantity="other">%d soat oldin</item>
+    </plurals>
+    <plurals name="n_minutes_ago">
+        <item quantity="one">%d daqiqa oldin</item>
+        <item quantity="other">%d daqiqa oldin</item>
+    </plurals>
+    <plurals name="offline_pages_auto_fetch_in_progress_notification_text">
+        <item quantity="one">Chrome sahifani tayyor boʻlishi bilan ochadi</item>
+        <item quantity="other">Chrome sahifalarni tayyor boʻlishi bilan ochadi</item>
+    </plurals>
+    <plurals name="page_info_cookies_in_use">
+        <item quantity="one">1 ta cookie fayl ishlatilmoqda</item>
+        <item quantity="other">%d ta cookie fayl ishlatilmoqda</item>
+    </plurals>
+    <plurals name="page_info_permissions_summary_more_allowed">
+        <item quantity="one">Ruxsat berildi: %1$s, %2$s va yana %3$s ta</item>
+        <item quantity="other">Ruxsat berildi: %1$s, %2$s va yana %3$s ta</item>
+    </plurals>
+    <plurals name="page_info_permissions_summary_more_blocked">
+        <item quantity="one">Bloklandi: %1$s, %2$s va yana %3$s ta</item>
+        <item quantity="other">Bloklandi: %1$s, %2$s va yana %3$s ta</item>
+    </plurals>
+    <plurals name="page_info_permissions_summary_more_mixed">
+        <item quantity="one">%1$s, %2$s va yana %3$s ta</item>
+        <item quantity="other">%1$s, %2$s va yana %3$s ta</item>
+    </plurals>
+    <plurals name="password_check_status_message_idle_with_leaks">
+        <item quantity="one">%d ta parol oshkor etilgan</item>
+        <item quantity="other">%d ta parol oshkor etilgan</item>
+    </plurals>
+    <plurals name="payment_request_contacts_preview">
+        <item quantity="one">%1$s… va yana %2$s ta</item>
+        <item quantity="other">%1$s… va yana %2$s ta</item>
+    </plurals>
+    <plurals name="payment_request_payment_methods_preview">
+        <item quantity="one">%1$s… va yana %2$s ta</item>
+        <item quantity="other">%1$s… va yana %2$s ta</item>
+    </plurals>
+    <plurals name="payment_request_shipping_addresses_preview">
+        <item quantity="one">%1$s… va yana %2$s ta</item>
+        <item quantity="other">%1$s… va yana %2$s ta</item>
+    </plurals>
+    <plurals name="payment_request_shipping_options_preview">
+        <item quantity="one">%1$s… va yana %2$s ta</item>
+        <item quantity="other">%1$s… va yana %2$s ta</item>
+    </plurals>
+    <plurals name="reading_list_reminder_notification_subtitle">
+        <item quantity="one">%1$d ta oʻqilmagan xat bor</item>
+        <item quantity="other">%1$d ta oʻqilmagan xat bor</item>
+    </plurals>
+    <plurals name="reading_list_unread_page_count">
+        <item quantity="one">%1$d ta sahifa oʻqilmagan</item>
+        <item quantity="other">%1$d ta sahifa oʻqilmagan</item>
+    </plurals>
+    <plurals name="safety_check_passwords_compromised_exist">
+        <item quantity="one">1 ta parol oshkor etilgan</item>
+        <item quantity="other">%d ta parol oshkor etilgan</item>
+    </plurals>
+    <plurals name="safety_check_timestamp_after_days">
+        <item quantity="one">1 kun oldin tekshirilgan</item>
+        <item quantity="other">%d kun oldin tekshirilgan</item>
+    </plurals>
+    <plurals name="safety_check_timestamp_after_hours">
+        <item quantity="one">1 soat oldin tekshirilgan</item>
+        <item quantity="other">%d soat oldin tekshirilgan</item>
+    </plurals>
+    <plurals name="safety_check_timestamp_after_mins">
+        <item quantity="one">1 daqiqa oldin tekshirilgan</item>
+        <item quantity="other">%d daqiqa oldin tekshirilgan</item>
+    </plurals>
+    <plurals name="selected_items">
+        <item quantity="one"> 1 ta belgilandi</item>
+        <item quantity="other">%d ta belgilandi</item>
+    </plurals>
+    <plurals name="signal_strength_level_n_bars">
+        <item quantity="one">Signal darajasi: %d chiziqda</item>
+        <item quantity="other">Signal darajasi: %d chiziqda</item>
+    </plurals>
+    <plurals name="tab_selection_editor_bookmark_tabs_action_button">
+        <item quantity="one">Varaqni bukmarklash</item>
+        <item quantity="other">Varaqlarni bukmarklash</item>
+    </plurals>
+    <plurals name="tab_selection_editor_close_tabs">
+        <item quantity="one">Varaqni yopish</item>
+        <item quantity="other">Varaqlarni yopish</item>
+    </plurals>
+    <plurals name="tab_selection_editor_group_tabs">
+        <item quantity="one">Varaqni guruhlash</item>
+        <item quantity="other">Varaqlarni guruhlash</item>
+    </plurals>
+    <plurals name="tab_selection_editor_share_sheet_preview_message">
+        <item quantity="one">Chrome brauzeridan %1$d ta havola</item>
+        <item quantity="other">Chrome brauzeridan %1$d ta havola</item>
+    </plurals>
+    <plurals name="tab_selection_editor_share_tabs_action_button">
+        <item quantity="one">Varaqni ulashish</item>
+        <item quantity="other">Varaqlarni ulashish</item>
+    </plurals>
+    <plurals name="tab_selection_editor_tabs_count">
+        <item quantity="one">%1$d ta varaq</item>
+        <item quantity="other">%1$d ta varaq</item>
+    </plurals>
+    <plurals name="tab_selection_editor_ungroup_tabs">
+        <item quantity="one">Varaqni yechish</item>
+        <item quantity="other">Varaqlar guruhini yechish</item>
+    </plurals>
+</resources>

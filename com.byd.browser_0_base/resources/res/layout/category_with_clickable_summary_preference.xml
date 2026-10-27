@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="@dimen/settings_preference_min_height"
+    android:paddingStart="@dimen/dp_0_dp"
+    android:paddingEnd="@dimen/dp_0_dp"
+    android:paddingVertical="@dimen/custom_preference_category_paddingVertical"
+    style="@style/PreferenceLayout">
+    <TextView
+        android:textSize="@dimen/preference_title_text_size"
+        android:textColor="@color/settings_preference_title_text_color"
+        android:id="@android:id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/custom_preference_category_title_marginBottom"/>
+    <org.chromium.ui.widget.TextViewWithClickableSpans
+        android:textSize="@dimen/preference_title_summary_size"
+        android:textColor="@color/settings_preference_summary_text_color"
+        android:id="@android:id/summary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

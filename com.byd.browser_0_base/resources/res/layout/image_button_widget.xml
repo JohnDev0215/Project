@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<org.chromium.ui.widget.ChromeImageButton xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/image_button"
+    android:background="?attr/selectableItemBackgroundBorderless"
+    android:layout_width="32dp"
+    android:layout_height="32dp"
+    app:tint="?attr/colorOnSurface"/>

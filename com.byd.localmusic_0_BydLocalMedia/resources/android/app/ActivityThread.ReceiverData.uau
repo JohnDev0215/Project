@@ -1,0 +1,4 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/app/ActivityThread$ReceiverData;->intent:Landroid/content/Intent;,frameworks/base/core/java/android/app/ActivityThread.java,723,9,723,29,
+Landroid/app/ActivityThread$ReceiverData;->info:Landroid/content/pm/ActivityInfo;,frameworks/base/core/java/android/app/ActivityThread.java,725,9,725,29,
+Landroid/app/ActivityThread$ReceiverData;->compatInfo:Landroid/content/res/CompatibilityInfo;,frameworks/base/core/java/android/app/ActivityThread.java,727,9,727,29,

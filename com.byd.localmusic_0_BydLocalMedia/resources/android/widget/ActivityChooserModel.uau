@@ -1,0 +1,7 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/widget/ActivityChooserModel;->get(Landroid/content/Context;Ljava/lang/String;)Landroid/widget/ActivityChooserModel;,frameworks/base/core/java/android/widget/ActivityChooserModel.java,343,5,343,25,
+Landroid/widget/ActivityChooserModel;->setIntent(Landroid/content/Intent;)V,frameworks/base/core/java/android/widget/ActivityChooserModel.java,381,5,381,25,
+Landroid/widget/ActivityChooserModel;->getActivityCount()I,frameworks/base/core/java/android/widget/ActivityChooserModel.java,411,5,411,25,
+Landroid/widget/ActivityChooserModel;->getActivity(I)Landroid/content/pm/ResolveInfo;,frameworks/base/core/java/android/widget/ActivityChooserModel.java,427,5,427,25,
+Landroid/widget/ActivityChooserModel;->chooseActivity(I)Landroid/content/Intent;,frameworks/base/core/java/android/widget/ActivityChooserModel.java,475,5,475,25,
+Landroid/widget/ActivityChooserModel;->setOnChooseActivityListener(Landroid/widget/ActivityChooserModel$OnChooseActivityListener;)V,frameworks/base/core/java/android/widget/ActivityChooserModel.java,516,5,516,25,

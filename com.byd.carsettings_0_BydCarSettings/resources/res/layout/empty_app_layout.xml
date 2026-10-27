@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:id="@+id/empty_ll"
+    android:visibility="gone"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerInParent="true">
+    <ImageView
+        android:background="@drawable/img_media_music_playlist_empty"
+        android:layout_width="@dimen/dp_312"
+        android:layout_height="@dimen/dp_208"/>
+    <TextView
+        android:textSize="@dimen/sp_16"
+        android:textColor="@color/text_color_main_gray"
+        android:gravity="center"
+        android:id="@+id/tv_empty"
+        android:layout_width="@dimen/dp_272"
+        android:layout_height="@dimen/dp_24"
+        android:text="@string/no_data_app_permission_app_manage"/>
+</LinearLayout>

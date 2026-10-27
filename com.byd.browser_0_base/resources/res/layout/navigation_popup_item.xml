@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:background="?attr/selectableItemBackground"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="@dimen/navigation_popup_default_padding"
+    android:paddingEnd="@dimen/navigation_popup_default_padding">
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+        <View
+            android:layout_gravity="center"
+            android:id="@+id/favicon_bg"
+            android:background="?attr/tileViewIconBackgroundModern"
+            android:layout_width="@dimen/navigation_popup_favicon_bg_size"
+            android:layout_height="@dimen/navigation_popup_favicon_bg_size"/>
+        <ImageView
+            android:layout_gravity="center"
+            android:id="@+id/favicon_img"
+            android:layout_width="@dimen/default_favicon_size"
+            android:layout_height="@dimen/default_favicon_size"/>
+    </FrameLayout>
+    <TextView
+        android:textAppearance="@style/TextAppearance.TextLarge.Primary"
+        android:gravity="center_vertical"
+        android:id="@+id/entry_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/navigation_popup_item_height"
+        android:singleLine="true"
+        android:layout_marginStart="@dimen/navigation_popup_default_padding"/>
+</LinearLayout>

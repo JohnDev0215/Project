@@ -1,0 +1,6 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/media/Ringtone;->mLocalPlayer:Landroid/media/MediaPlayer;,frameworks/base/media/java/android/media/Ringtone.java,76,5,76,25,
+Landroid/media/Ringtone;->mUri:Landroid/net/Uri;,frameworks/base/media/java/android/media/Ringtone.java,80,5,80,25,
+Landroid/media/Ringtone;-><init>(Landroid/content/Context;Z)V,frameworks/base/media/java/android/media/Ringtone.java,94,5,94,25,
+Landroid/media/Ringtone;->setUri(Landroid/net/Uri;)V,frameworks/base/media/java/android/media/Ringtone.java,306,5,306,25,
+Landroid/media/Ringtone;->getUri()Landroid/net/Uri;,frameworks/base/media/java/android/media/Ringtone.java,359,5,359,25,

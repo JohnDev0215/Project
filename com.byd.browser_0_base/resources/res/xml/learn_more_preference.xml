@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <org.chromium.components.browser_ui.settings.LongSummaryTextMessagePreference
+        android:layout="@layout/preference_settings_no_padding"
+        android:title="@string/privacy_sandbox_topic_interests_subtitle"
+        android:selectable="false"
+        android:key="topics_description"
+        app:allowDividerBelow="false"
+        app:singleLineTitle="false"/>
+    <org.chromium.components.browser_ui.settings.LongSummaryTextMessagePreference
+        android:layout="@layout/preference_settings_no_padding"
+        android:title="@string/privacy_sandbox_fledge_interests_subtitle"
+        android:selectable="false"
+        android:key="fledge_description"
+        app:allowDividerBelow="false"
+        app:singleLineTitle="false"/>
+</PreferenceScreen>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:tag="layout-sw720dp/item_artist_search_0"
+    android:layout_width="@dimen/dp_140"
+    android:layout_height="@dimen/dp_140">
+    <com.google.android.material.imageview.ShapeableImageView
+        android:tag="binding_1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        app:shapeAppearanceOverlay="@style/roundedCornerStyle"/>
+    <TextView
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:ellipsize="end"
+        android:id="@+id/tv_album_name"
+        android:tag="binding_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp_2"
+        android:maxWidth="@dimen/dp_120"
+        android:singleLine="true"
+        android:layout_marginStart="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_goneMarginStart="@dimen/dp_8"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

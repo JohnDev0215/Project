@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<appwidget-provider xmlns:android="http://schemas.android.com/apk/res/android"
+    android:minWidth="@dimen/quick_action_search_widget_dino_min_size"
+    android:minHeight="@dimen/quick_action_search_widget_dino_min_size"
+    android:initialLayout="@layout/quick_action_search_widget_dino_layout"
+    android:previewImage="@drawable/quick_action_search_widget_dino_preview"
+    android:widgetCategory="home_screen"
+    android:previewLayout="@layout/quick_action_search_widget_dino_preview_layout"/>

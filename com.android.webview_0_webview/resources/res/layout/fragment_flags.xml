@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/error_red"
+        android:id="@id/flags_warning"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="WARNING: EXPERIMENTAL FEATURES AHEAD!"/>
+    <TextView
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@id/flags_description"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@id/reset_flags_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:text="Reset all to default"/>
+    <View
+        android:background="?android:attr/listDivider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+    <ListView
+        android:id="@id/flags_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

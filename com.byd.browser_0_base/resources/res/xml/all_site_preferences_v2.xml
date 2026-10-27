@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <org.chromium.components.browser_ui.settings.ChromeBasePreference android:key="clear_browsing_data_link"/>
+    <Preference
+        android:layout="@layout/divider_preference"
+        android:key="clear_browsing_divider"/>
+</PreferenceScreen>

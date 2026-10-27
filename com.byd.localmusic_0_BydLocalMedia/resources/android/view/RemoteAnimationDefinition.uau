@@ -1,0 +1,4 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/view/RemoteAnimationDefinition;-><init>()V,frameworks/base/core/java/android/view/RemoteAnimationDefinition.java,43,5,43,25,
+Landroid/view/RemoteAnimationDefinition;->addRemoteAnimation(IILandroid/view/RemoteAnimationAdapter;)V,frameworks/base/core/java/android/view/RemoteAnimationDefinition.java,56,5,56,25,
+Landroid/view/RemoteAnimationDefinition;->addRemoteAnimation(ILandroid/view/RemoteAnimationAdapter;)V,frameworks/base/core/java/android/view/RemoteAnimationDefinition.java,70,5,70,25,

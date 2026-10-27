@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:id="@+id/version_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true">
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/iv_bg_version_manage"
+            android:layout_width="@dimen/dp_556"
+            android:layout_height="@dimen/dp_468"
+            android:src="@drawable/img_carsetting_dilink_version_management"/>
+        <TextView
+            android:textSize="@dimen/sp_24"
+            android:textColor="@color/text_color_gray_bt"
+            android:gravity="center"
+            android:id="@+id/tv_version_os"
+            android:layout_width="@dimen/dp_556"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_338"/>
+    </FrameLayout>
+    <com.bydux.api.common.views.window.DampingScrollView
+        android:orientation="vertical"
+        android:id="@+id/version_scrollView"
+        android:scrollbars="none"
+        android:fadingEdge="vertical"
+        android:fadingEdgeLength="@dimen/dp_24"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:requiresFadingEdge="vertical">
+        <include
+            android:layout_gravity="center_horizontal"
+            android:layout_width="@dimen/dp_640"
+            android:layout_height="match_parent"
+            layout="@layout/subview_version_manage"/>
+    </com.bydux.api.common.views.window.DampingScrollView>
+</LinearLayout>

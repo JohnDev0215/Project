@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_74"
+    android:minHeight="@dimen/dp_74">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingStart="@dimen/dp_24"
+            android:layout_alignParentStart="true">
+            <com.byd.base.view.BydSwitch
+                android:id="@+id/switch_item_auxiliary_app_list"
+                style="@style/byd_switch"/>
+            <TextView
+                android:textSize="@dimen/sp_20"
+                android:textColor="@color/text_color_main"
+                android:gravity="center_vertical"
+                android:id="@+id/tv_app_name_item_auxiliary_app_list"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp_29"
+                android:layout_marginStart="@dimen/dp_16"/>
+            <ImageView
+                android:id="@+id/iv_detail_item_auxiliary_app_list"
+                android:background="@drawable/icon_public_details_48"
+                android:layout_width="@dimen/dp_48"
+                android:layout_height="@dimen/dp_48"/>
+        </LinearLayout>
+        <View
+            android:id="@+id/v_line_item_auxiliary_app_list"
+            android:background="@color/bg_color_line"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_1"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+</LinearLayout>

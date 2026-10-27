@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="cookie_controls_blocked_cookies">
+        <item quantity="one">1 ta cookie fayl bloklandi</item>
+        <item quantity="other">%d ta cookie fayl bloklandi</item>
+    </plurals>
+    <plurals name="selected_items">
+        <item quantity="one"> 1 ta tanlandi</item>
+        <item quantity="other">%d ta tanlandi</item>
+    </plurals>
+</resources>

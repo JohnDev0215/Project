@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:minHeight="@dimen/bookmark_minimum_dialog_size_tablet">
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:paddingTop="@dimen/toolbar_height_no_shadow"
+        android:clipToPadding="false"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:clipToPadding="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <org.chromium.chrome.browser.bookmarks.BookmarkTextInputLayout
+                android:id="@+id/folder_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:hint="@string/title"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="12dp"
+                app:emptyErrorMessage="@string/bookmark_missing_title">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textAutoCorrect"
+                    android:imeOptions="flagNoExtractUi"/>
+            </org.chromium.chrome.browser.bookmarks.BookmarkTextInputLayout>
+        </LinearLayout>
+    </ScrollView>
+</merge>

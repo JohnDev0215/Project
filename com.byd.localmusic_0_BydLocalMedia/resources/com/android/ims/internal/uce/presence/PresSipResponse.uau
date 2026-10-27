@@ -1,0 +1,12 @@
+signature,file,startline,startcol,endline,endcol,properties
+Lcom/android/ims/internal/uce/presence/PresSipResponse;->getCmdId()Lcom/android/ims/internal/uce/presence/PresCmdId;,frameworks/base/core/java/com/android/ims/internal/uce/presence/PresSipResponse.java,36,5,36,25,
+Lcom/android/ims/internal/uce/presence/PresSipResponse;->setCmdId(Lcom/android/ims/internal/uce/presence/PresCmdId;)V,frameworks/base/core/java/com/android/ims/internal/uce/presence/PresSipResponse.java,45,5,45,25,
+Lcom/android/ims/internal/uce/presence/PresSipResponse;->getRequestId()I,frameworks/base/core/java/com/android/ims/internal/uce/presence/PresSipResponse.java,54,5,54,25,
+Lcom/android/ims/internal/uce/presence/PresSipResponse;->setRequestId(I)V,frameworks/base/core/java/com/android/ims/internal/uce/presence/PresSipResponse.java,63,5,63,25,
+Lcom/android/ims/internal/uce/presence/PresSipResponse;->getSipResponseCode()I,frameworks/base/core/java/com/android/ims/internal/uce/presence/PresSipResponse.java,72,5,72,25,
+Lcom/android/ims/internal/uce/presence/PresSipResponse;->setSipResponseCode(I)V,frameworks/base/core/java/com/android/ims/internal/uce/presence/PresSipResponse.java,81,5,81,25,
+Lcom/android/ims/internal/uce/presence/PresSipResponse;->getReasonPhrase()Ljava/lang/String;,frameworks/base/core/java/com/android/ims/internal/uce/presence/PresSipResponse.java,92,5,92,25,
+Lcom/android/ims/internal/uce/presence/PresSipResponse;->setReasonPhrase(Ljava/lang/String;)V,frameworks/base/core/java/com/android/ims/internal/uce/presence/PresSipResponse.java,101,5,101,25,
+Lcom/android/ims/internal/uce/presence/PresSipResponse;->getRetryAfter()I,frameworks/base/core/java/com/android/ims/internal/uce/presence/PresSipResponse.java,110,5,110,25,
+Lcom/android/ims/internal/uce/presence/PresSipResponse;->setRetryAfter(I)V,frameworks/base/core/java/com/android/ims/internal/uce/presence/PresSipResponse.java,119,5,119,25,
+Lcom/android/ims/internal/uce/presence/PresSipResponse;-><init>()V,frameworks/base/core/java/com/android/ims/internal/uce/presence/PresSipResponse.java,128,5,128,25,

@@ -1,0 +1,7 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/hardware/soundtrigger/SoundTriggerModule;->mId:I,frameworks/base/core/java/android/hardware/soundtrigger/SoundTriggerModule.java,48,5,48,25,
+Landroid/hardware/soundtrigger/SoundTriggerModule;->detach()V,frameworks/base/core/java/android/hardware/soundtrigger/SoundTriggerModule.java,72,5,72,25,
+Landroid/hardware/soundtrigger/SoundTriggerModule;->loadSoundModel(Landroid/hardware/soundtrigger/SoundTrigger$SoundModel;[I)I,frameworks/base/core/java/android/hardware/soundtrigger/SoundTriggerModule.java,100,5,100,25,
+Landroid/hardware/soundtrigger/SoundTriggerModule;->unloadSoundModel(I)I,frameworks/base/core/java/android/hardware/soundtrigger/SoundTriggerModule.java,134,5,134,25,
+Landroid/hardware/soundtrigger/SoundTriggerModule;->startRecognition(ILandroid/hardware/soundtrigger/SoundTrigger$RecognitionConfig;)I,frameworks/base/core/java/android/hardware/soundtrigger/SoundTriggerModule.java,161,5,161,25,
+Landroid/hardware/soundtrigger/SoundTriggerModule;->stopRecognition(I)I,frameworks/base/core/java/android/hardware/soundtrigger/SoundTriggerModule.java,186,5,186,25,

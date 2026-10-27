@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:id="@+id/search_rl"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/item_his_h">
+    <skin.support.widget.SkinCompatImageView
+        android:id="@+id/iv_search"
+        android:layout_width="@dimen/item_his_search_img"
+        android:layout_height="@dimen/item_his_search_img"
+        android:src="@drawable/icon_search"
+        app:tint="@color/search_iv_del"/>
+    <TextView
+        android:textSize="@dimen/text_size_20sp"
+        android:textColor="@color/color_text_title"
+        android:ellipsize="end"
+        android:id="@+id/tv_card"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:layout_weight="1"
+        android:layout_toLeftOf="@+id/iv_del"
+        android:layout_toRightOf="@+id/iv_search"
+        android:layout_marginHorizontal="5dp"/>
+    <skin.support.widget.SkinCompatImageView
+        android:id="@+id/iv_del"
+        android:layout_width="@dimen/item_his_img"
+        android:layout_height="@dimen/item_his_img"
+        android:src="@drawable/icon_del_his"
+        android:layout_alignParentRight="true"
+        app:tint="@color/search_iv_del"/>
+</LinearLayout>

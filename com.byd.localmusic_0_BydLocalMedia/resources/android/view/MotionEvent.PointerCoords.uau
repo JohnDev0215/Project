@@ -1,0 +1,4 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/view/MotionEvent$PointerCoords;->mPackedAxisBits:J,frameworks/base/core/java/android/view/MotionEvent.java,3803,9,3803,29,
+Landroid/view/MotionEvent$PointerCoords;->mPackedAxisValues:[F,frameworks/base/core/java/android/view/MotionEvent.java,3805,9,3805,29,
+Landroid/view/MotionEvent$PointerCoords;->createArray(I)[Landroid/view/MotionEvent$PointerCoords;,frameworks/base/core/java/android/view/MotionEvent.java,3825,9,3825,29,

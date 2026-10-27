@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fast_checkout_footer_item"
+    android:paddingTop="@dimen/fast_checkout_detail_sheet_padding_vertical"
+    android:paddingBottom="@dimen/fast_checkout_detail_sheet_padding_vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:layout_gravity="center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:importantForAccessibility="no"
+        android:layout_marginStart="@dimen/fast_checkout_detail_sheet_footer_icon_margin_horizontal"
+        app:srcCompat="@drawable/ic_add"
+        app:tint="?attr/colorPrimary"/>
+    <TextView
+        android:textAppearance="@style/TextAppearance.TextMediumThick.Accent1"
+        android:layout_gravity="center_vertical"
+        android:id="@+id/fast_checkout_add_new_item_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"/>
+</FrameLayout>

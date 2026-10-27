@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <org.chromium.components.browser_ui.settings.TextMessagePreferenceSettings
+        android:minHeight="@dimen/text_message_preference_min_height"
+        android:key="subtitle"
+        app:allowDividerBelow="false"
+        app:titleTextSize="@dimen/dimen_22_sp"/>
+    <org.chromium.components.browser_ui.settings.TextMessagePreferenceSettings
+        android:layout="@layout/preference_settings_no_padding"
+        android:minHeight="@dimen/text_message_preference_min_height"
+        android:key="bullet_one"
+        android:summary="@string/website_settings_category_cookie_subpage_bullet_one"
+        app:allowDividerBelow="false"
+        app:summaryTextColor="@color/preference_setting_text_message_color"
+        app:summaryTextSize="@dimen/dimen_18_sp"/>
+    <org.chromium.components.browser_ui.settings.TextMessagePreferenceSettings
+        android:key="bullet_two"
+        app:allowDividerBelow="false"
+        app:summaryTextColor="@color/preference_setting_text_message_color"
+        app:summaryTextSize="@dimen/dimen_18_sp"/>
+    <org.chromium.components.browser_ui.settings.ChromeSwitchPreferenceSecondary
+        android:persistent="false"
+        android:title="@string/website_settings_category_cookie_fps_toggle_title"
+        android:key="allow_fps"
+        android:summary="@string/website_settings_category_cookie_fps_toggle_description"
+        app:allowDividerBelow="false"/>
+</PreferenceScreen>

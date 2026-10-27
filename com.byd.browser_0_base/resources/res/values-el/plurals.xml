@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="accessibility_dialog_back_button">
+        <item quantity="one">Συμπτύξτε %1$d καρτέλα.</item>
+        <item quantity="other">Συμπτύξτε την ομάδα καρτελών με τις %1$d καρτέλες.</item>
+    </plurals>
+    <plurals name="accessibility_dialog_back_button_with_group_name">
+        <item quantity="one">Συμπτύξτε %1$d καρτέλα.</item>
+        <item quantity="other">Συμπτύξτε την ομάδα καρτελών %1$s με τις %2$d καρτέλες.</item>
+    </plurals>
+    <plurals name="accessibility_download_manager_ui_audio">
+        <item quantity="one">%d Αρχείο ήχου</item>
+        <item quantity="other">%d Αρχεία ήχου</item>
+    </plurals>
+    <plurals name="accessibility_download_manager_ui_generic">
+        <item quantity="one">%d Αρχείο</item>
+        <item quantity="other">%d Αρχεία</item>
+    </plurals>
+    <plurals name="accessibility_download_manager_ui_images">
+        <item quantity="one">%d Εικόνα</item>
+        <item quantity="other">%d Εικόνες</item>
+    </plurals>
+    <plurals name="accessibility_download_manager_ui_pages">
+        <item quantity="one">%d Σελίδα</item>
+        <item quantity="other">%d Σελίδες</item>
+    </plurals>
+    <plurals name="accessibility_download_manager_ui_video">
+        <item quantity="one">%d Βίντεο</item>
+        <item quantity="other">%d Βίντεο</item>
+    </plurals>
+    <plurals name="accessibility_merchant_viewer_message_description">
+        <item quantity="one"> Αξιολόγηση %1$s/%2$s, %3$d κριτική</item>
+        <item quantity="other">Αξιολόγηση %1$s/%2$s, %3$d κριτικές</item>
+    </plurals>
+    <plurals name="accessibility_remove_selected_items">
+        <item quantity="one">Κατάργηση 1 επιλεγμένου στοιχείου</item>
+        <item quantity="other">Κατάργηση %d επιλεγμένων στοιχείων</item>
+    </plurals>
+    <plurals name="accessibility_share_selected_items">
+        <item quantity="one">Κοινοποίηση 1 επιλεγμένου στοιχείου</item>
+        <item quantity="other">Κοινοποίηση %d επιλεγμένων στοιχείων</item>
+    </plurals>
+    <plurals name="accessibility_tab_selection_dialog_remove_button">
+        <item quantity="one">Αφαιρέστε %1$d επιλεγμένη καρτέλα από την ομάδα.</item>
+        <item quantity="other">Αφαιρέστε %1$d επιλεγμένες καρτέλες από την ομάδα.</item>
+    </plurals>
+    <plurals name="accessibility_tab_selection_editor_bookmark_tabs_action_button">
+        <item quantity="one">Δημιουργία σελιδοδείκτη για %1$d επιλεγμένη καρτέλα</item>
+        <item quantity="other">Δημιουργία σελιδοδείκτη για %1$d επιλεγμένες καρτέλες</item>
+    </plurals>
+    <plurals name="accessibility_tab_selection_editor_close_tabs">
+        <item quantity="one">Κλείσιμο %1$d επιλεγμένης καρτέλας</item>
+        <item quantity="other">Κλείσιμο %1$d επιλεγμένων καρτελών</item>
+    </plurals>
+    <plurals name="accessibility_tab_selection_editor_group_button">
+        <item quantity="one">Ομαδοποίηση %1$d επιλεγμένης καρτέλας</item>
+        <item quantity="other">Ομαδοποίηση %1$d επιλεγμένων καρτελών</item>
+    </plurals>
+    <plurals name="accessibility_tab_selection_editor_group_tabs">
+        <item quantity="one">Ομαδοποίηση %1$d επιλεγμένης καρτέλας</item>
+        <item quantity="other">Ομαδοποίηση %1$d επιλεγμένων καρτελών</item>
+    </plurals>
+    <plurals name="accessibility_tab_selection_editor_share_tabs_action_button">
+        <item quantity="one">Κοινοποίηση %1$d επιλεγμένης καρτέλας</item>
+        <item quantity="other">Κοινοποίηση %1$d επιλεγμένων καρτελών</item>
+    </plurals>
+    <plurals name="accessibility_tab_selection_editor_ungroup_tabs">
+        <item quantity="one">Κατάργηση ομαδοποίησης %1$d επιλεγμένης καρτέλας</item>
+        <item quantity="other">Κατάργηση ομαδοποίησης %1$d επιλεγμένων καρτελών</item>
+    </plurals>
+    <plurals name="accessibility_tab_suggestion_close_tab_action_button">
+        <item quantity="one">Κλείσιμο %1$d επιλεγμένης καρτέλας</item>
+        <item quantity="other">Κλείσιμο %1$d επιλεγμένων καρτελών</item>
+    </plurals>
+    <plurals name="allsites_fps_list_summary">
+        <item quantity="one">Επιτρέπονται τα cookie για %1$s ιστότοπο %2$s</item>
+        <item quantity="other">Επιτρέπονται τα cookie για %1$s ιστοτόπους %2$s</item>
+    </plurals>
+    <plurals name="allsites_fps_summary">
+        <item quantity="one">%1$s ιστότοπος στην ομάδα ιστοτόπων του %2$s που μπορεί να δει τη δραστηριότητά σας στην ομάδα</item>
+        <item quantity="other">%1$s ιστότοποι στην ομάδα ιστοτόπων του %2$s που μπορούν να δουν τη δραστηριότητά σας στην ομάδα</item>
+    </plurals>
+    <plurals name="bookmarks_count">
+        <item quantity="one">%1$d σελιδοδείκτης</item>
+        <item quantity="other">%1$d σελιδοδείκτες</item>
+    </plurals>
+    <plurals name="bottom_tab_grid_title_placeholder">
+        <item quantity="one">%1$d καρτέλα</item>
+        <item quantity="other">%1$d καρτέλες</item>
+    </plurals>
+    <plurals name="contacts_picker_more_details">
+        <item quantity="one">(+ 1 ακόμη)</item>
+        <item quantity="other">(+ %d ακόμη)</item>
+    </plurals>
+    <plurals name="cookie_controls_blocked_cookies">
+        <item quantity="one">Αποκλείστηκε ένα cookie</item>
+        <item quantity="other">Αποκλείστηκαν %d cookie</item>
+    </plurals>
+    <plurals name="cookies_count">
+        <item quantity="one">%d cookie</item>
+        <item quantity="other">%d cookie</item>
+    </plurals>
+    <plurals name="download_manager_n_hours">
+        <item quantity="one">%d ω.</item>
+        <item quantity="other">%d ω.</item>
+    </plurals>
+    <plurals name="download_message_multiple_download_complete">
+        <item quantity="one">Η λήψη του αρχείου ολοκληρώθηκε.</item>
+        <item quantity="other">%d ολοκληρωμένες λήψεις</item>
+    </plurals>
+    <plurals name="download_message_multiple_download_failed">
+        <item quantity="one">1 λήψη απέτυχε</item>
+        <item quantity="other">%d λήψεις απέτυχαν</item>
+    </plurals>
+    <plurals name="download_message_multiple_download_in_progress">
+        <item quantity="one">Λήψη αρχείου…</item>
+        <item quantity="other">Λήψη %d αρχείων…</item>
+    </plurals>
+    <plurals name="download_message_multiple_download_pending">
+        <item quantity="one">1 λήψη σε εκκρεμότητα</item>
+        <item quantity="other">%d λήψεις σε εκκρεμότητα</item>
+    </plurals>
+    <plurals name="download_ui_files_downloaded">
+        <item quantity="one">Έγινε λήψη %1$d αρχείου</item>
+        <item quantity="other">Έγινε λήψη %1$d αρχείων</item>
+    </plurals>
+    <plurals name="history_clusters_n_matches">
+        <item quantity="one">%d αντιστοίχιση</item>
+        <item quantity="other">%d αντιστοιχίσεις</item>
+    </plurals>
+    <plurals name="instance_switcher_close_confirm_deleted_incognito">
+        <item quantity="one">Πρόκειται να κλείσει %1$s καρτέλα ανώνυμης περιήγησης.</item>
+        <item quantity="other">Πρόκειται να κλείσουν %1$s καρτέλες ανώνυμης περιήγησης.</item>
+    </plurals>
+    <plurals name="instance_switcher_close_confirm_deleted_incognito_mixed">
+        <item quantity="one">Πρόκειται να κλείσει %1$s καρτέλα ανώνυμης περιήγησης και %2$s ακόμη καρτέλα.</item>
+        <item quantity="other">Πρόκειται να κλείσουν %1$s καρτέλες ανώνυμης περιήγησης και %2$s ακόμη καρτέλες.</item>
+    </plurals>
+    <plurals name="instance_switcher_close_confirm_deleted_tabs_many">
+        <item quantity="one">Πρόκειται να κλείσει η καρτέλα %1$s και %2$s ακόμη καρτέλα</item>
+        <item quantity="other">Πρόκειται να κλείσει η καρτέλα %1$s και %2$s ακόμη καρτέλες</item>
+    </plurals>
+    <plurals name="instance_switcher_desc_incognito">
+        <item quantity="one">%1$s καρτέλα ανώνυμης περιήγησης</item>
+        <item quantity="other">%1$s καρτέλες ανώνυμης περιήγησης</item>
+    </plurals>
+    <plurals name="instance_switcher_desc_mixed">
+        <item quantity="one">%1$s καρτέλα</item>
+        <item quantity="other">%2$s καρτέλες, %1$s ανώνυμης περιήγησης</item>
+    </plurals>
+    <plurals name="instance_switcher_tab_count_nonzero">
+        <item quantity="one">1 καρτέλα</item>
+        <item quantity="other">%d καρτέλες</item>
+    </plurals>
+    <plurals name="merchant_viewer_message_description_reviews">
+        <item quantity="one">(%1$s κριτική)</item>
+        <item quantity="other">(%1$s κριτικές)</item>
+    </plurals>
+    <plurals name="merchant_viewer_message_description_reviews_from_google">
+        <item quantity="one">%1$s έλεγχος από την Google</item>
+        <item quantity="other">%1$s έλεγχοι από την Google</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">%d νέα ειδοποίηση</item>
+        <item quantity="other">%d νέες ειδοποιήσεις</item>
+    </plurals>
+    <plurals name="n_days_ago">
+        <item quantity="one">Πριν από %d ημέρα</item>
+        <item quantity="other">Πριν από %d ημέρες</item>
+    </plurals>
+    <plurals name="n_hours_ago">
+        <item quantity="one">Πριν από %d ώρα</item>
+        <item quantity="other">Πριν από %d ώρες</item>
+    </plurals>
+    <plurals name="n_minutes_ago">
+        <item quantity="one">Πριν από %d λεπτό</item>
+        <item quantity="other">Πριν από %d λεπτά</item>
+    </plurals>
+    <plurals name="offline_pages_auto_fetch_in_progress_notification_text">
+        <item quantity="one">Το Chrome θα φορτώσει τη σελίδα σας όταν είναι έτοιμη</item>
+        <item quantity="other">Το Chrome θα φορτώσει τις σελίδες σας όταν είναι έτοιμες</item>
+    </plurals>
+    <plurals name="page_info_cookies_in_use">
+        <item quantity="one">Χρησιμοποιείται 1 cookie</item>
+        <item quantity="other">Χρησιμοποιούνται %d cookie</item>
+    </plurals>
+    <plurals name="page_info_permissions_summary_more_allowed">
+        <item quantity="one">Οι άδειες %1$s, %2$s και %3$s ακόμη επιτράπηκαν.</item>
+        <item quantity="other">Οι άδειες %1$s, %2$s και %3$s ακόμη επιτράπηκαν.</item>
+    </plurals>
+    <plurals name="page_info_permissions_summary_more_blocked">
+        <item quantity="one">Οι άδειες %1$s, %2$s και %3$s ακόμη αποκλείστηκαν.</item>
+        <item quantity="other">Οι άδειες %1$s, %2$s και %3$s ακόμη αποκλείστηκαν.</item>
+    </plurals>
+    <plurals name="page_info_permissions_summary_more_mixed">
+        <item quantity="one">%1$s, %2$s και %3$s ακόμη</item>
+        <item quantity="other">%1$s, %2$s και %3$s ακόμη</item>
+    </plurals>
+    <plurals name="password_check_status_message_idle_with_leaks">
+        <item quantity="one">%d παραβιασμένος κωδικός πρόσβασης</item>
+        <item quantity="other">%d παραβιασμένοι κωδικοί πρόσβασης</item>
+    </plurals>
+    <plurals name="payment_request_contacts_preview">
+        <item quantity="one">%1$s… και %2$s ακόμη</item>
+        <item quantity="other">%1$s… και %2$s ακόμη</item>
+    </plurals>
+    <plurals name="payment_request_payment_methods_preview">
+        <item quantity="one">%1$s… και %2$s ακόμη</item>
+        <item quantity="other">%1$s… και %2$s ακόμη</item>
+    </plurals>
+    <plurals name="payment_request_shipping_addresses_preview">
+        <item quantity="one">%1$s… και %2$s ακόμη</item>
+        <item quantity="other">%1$s… και %2$s ακόμη</item>
+    </plurals>
+    <plurals name="payment_request_shipping_options_preview">
+        <item quantity="one">%1$s… και %2$s ακόμη</item>
+        <item quantity="other">%1$s… και %2$s ακόμη</item>
+    </plurals>
+    <plurals name="reading_list_reminder_notification_subtitle">
+        <item quantity="one">Έχετε %1$d μη αναγνωσμένη σελίδα</item>
+        <item quantity="other">Έχετε %1$d μη αναγνωσμένες σελίδες</item>
+    </plurals>
+    <plurals name="reading_list_unread_page_count">
+        <item quantity="one">%1$d μη αναγνωσμένη σελίδα</item>
+        <item quantity="other">%1$d μη αναγνωσμένες σελίδες</item>
+    </plurals>
+    <plurals name="safety_check_passwords_compromised_exist">
+        <item quantity="one">1 παραβιασμένος κωδικός πρόσβασης</item>
+        <item quantity="other">%d παραβιασμένοι κωδικοί πρόσβασης</item>
+    </plurals>
+    <plurals name="safety_check_timestamp_after_days">
+        <item quantity="one">Ελέγχθηκε πριν από μία ημέρα</item>
+        <item quantity="other">Ελέγχθηκε πριν από %d ημέρες</item>
+    </plurals>
+    <plurals name="safety_check_timestamp_after_hours">
+        <item quantity="one">Ελέγχθηκε πριν από μία ώρα</item>
+        <item quantity="other">Ελέγχθηκε πριν από %d ώρες</item>
+    </plurals>
+    <plurals name="safety_check_timestamp_after_mins">
+        <item quantity="one">Ελέγχθηκε πριν από ένα λεπτό</item>
+        <item quantity="other">Ελέγχθηκε πριν από %d λεπτά</item>
+    </plurals>
+    <plurals name="selected_items">
+        <item quantity="one">1 επιλεγμένο</item>
+        <item quantity="other">%d επιλεγμένα</item>
+    </plurals>
+    <plurals name="signal_strength_level_n_bars">
+        <item quantity="one">Επίπεδο ισχύος σήματος: %d γραμμή</item>
+        <item quantity="other">Επίπεδο ισχύος σήματος: %d γραμμές</item>
+    </plurals>
+    <plurals name="tab_selection_editor_bookmark_tabs_action_button">
+        <item quantity="one">Δημιουργία σελιδ. καρτέλας</item>
+        <item quantity="other">Δημιουργία σελιδ. καρτελών</item>
+    </plurals>
+    <plurals name="tab_selection_editor_close_tabs">
+        <item quantity="one">Κλείσιμο καρτέλας</item>
+        <item quantity="other">Κλείσιμο καρτελών</item>
+    </plurals>
+    <plurals name="tab_selection_editor_group_tabs">
+        <item quantity="one">Ομαδοποίηση καρτέλας</item>
+        <item quantity="other">Ομαδοποίηση καρτελών</item>
+    </plurals>
+    <plurals name="tab_selection_editor_share_sheet_preview_message">
+        <item quantity="one">%1$d σύνδεσμος από το Chrome</item>
+        <item quantity="other">%1$d σύνδεσμοι από το Chrome</item>
+    </plurals>
+    <plurals name="tab_selection_editor_share_tabs_action_button">
+        <item quantity="one">Κοινοποίηση καρτέλας</item>
+        <item quantity="other">Κοινοποίηση καρτελών</item>
+    </plurals>
+    <plurals name="tab_selection_editor_tabs_count">
+        <item quantity="one">%1$d καρτέλα</item>
+        <item quantity="other">%1$d καρτέλες</item>
+    </plurals>
+    <plurals name="tab_selection_editor_ungroup_tabs">
+        <item quantity="one">Κατάργηση ομαδοπ. καρτέλας</item>
+        <item quantity="other">Κατάργηση ομαδοπ. καρτελών</item>
+    </plurals>
+</resources>

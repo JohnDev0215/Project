@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" android:drawable="@drawable/async_image_view_unavailable">
+    <target
+        android:name="circle"
+        android:animation="@drawable/_async_image_view_waiting__0_res_0x7f080000"/>
+    <target
+        android:name="square"
+        android:animation="@drawable/_async_image_view_waiting__1_res_0x7f080001"/>
+    <target
+        android:name="arc"
+        android:animation="@drawable/_async_image_view_waiting__2_res_0x7f080002"/>
+</animated-vector>

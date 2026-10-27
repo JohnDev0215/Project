@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:gravity="center"
+        android:id="@android:id/background">
+        <shape>
+            <corners
+                android:topLeftRadius="@dimen/dp_3"
+                android:topRightRadius="@dimen/dp_3"
+                android:bottomLeftRadius="@dimen/dp_3"
+                android:bottomRightRadius="@dimen/dp_3"/>
+            <size android:height="@dimen/dp_6"/>
+            <solid android:color="@color/carlights_seekbar_secondprogress"/>
+        </shape>
+    </item>
+    <item
+        android:gravity="center"
+        android:id="@android:id/progress">
+        <clip>
+            <shape>
+                <corners
+                    android:topLeftRadius="@dimen/dp_100"
+                    android:topRightRadius="@dimen/dp_100"
+                    android:bottomLeftRadius="@dimen/dp_100"
+                    android:bottomRightRadius="@dimen/dp_100"/>
+                <size android:height="@dimen/dp_6"/>
+                <gradient
+                    android:startColor="?attr/byd_vehicle_seekbar_progress_start_color"
+                    android:endColor="?attr/byd_vehicle_seekbar_progress_end_color"
+                    android:angle="0"/>
+            </shape>
+        </clip>
+    </item>
+</layer-list>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="16dp"
+    android:layout_marginHorizontal="8dp">
+    <ImageView
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/branding_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/ttf_for_payments_product_icon_height"
+        android:importantForAccessibility="no"
+        android:layout_marginVertical="@dimen/ttf_for_payments_product_icon_margin_vertical"/>
+    <androidx.appcompat.widget.DialogTitle
+        android:textAppearance="@style/TextAppearance.AlertDialogTitleStyle"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/touch_to_fill_sheet_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/autofill_credit_card_bottom_sheet_title"
+        android:textAlignment="center"/>
+</LinearLayout>

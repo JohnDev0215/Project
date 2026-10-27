@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/content"
+    android:layout_marginStart="@dimen/dp_0_dp"
+    style="@style/ListItemContainer">
+    <org.chromium.ui.widget.ChromeImageView
+        android:id="@+id/bt_check"
+        android:visibility="gone"
+        android:layout_width="@dimen/dimen_40_dp"
+        android:layout_height="@dimen/dimen_40_dp"
+        android:src="@drawable/bookmark_check_no"
+        android:layout_marginEnd="@dimen/dimen_24_dp"/>
+    <skin.support.widget.SkinCompatImageView
+        android:id="@+id/start_icon"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:importantForAccessibility="no"
+        android:layout_marginStart="-8dp"
+        android:layout_marginEnd="12dp"
+        app:tint="@color/default_icon_color_tint_list"
+        style="@style/ListItemStartIcon"/>
+    <include layout="@layout/title_and_description_layout"/>
+    <skin.support.widget.SkinCompatImageView
+        android:id="@+id/end_button"
+        android:visibility="gone"
+        style="@style/ListItemEndIcon"/>
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:state_checked="true"
+        android:drawable="@drawable/denza_img_1menu_bg_select_right_h"/>
+    <item
+        android:state_selected="true"
+        android:drawable="@drawable/denza_img_1menu_bg_select_right_h"/>
+    <item android:drawable="@color/denza_color_transparent"/>
+</selector>

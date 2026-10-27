@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<org.chromium.components.browser_ui.widget.SurfaceColorDrawable xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:shape="rectangle"
+    app:surfaceElevation="@dimen/default_elevation_1">
+    <corners android:radius="@dimen/search_resumption_module_rounded_corner_radius_small"/>
+</org.chromium.components.browser_ui.widget.SurfaceColorDrawable>

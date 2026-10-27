@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="cookie_controls_blocked_cookies">
+        <item quantity="one">۱ کوکی مسدود شده است</item>
+        <item quantity="other">%d کوکی مسدود شده است</item>
+    </plurals>
+    <plurals name="selected_items">
+        <item quantity="one">۱ مورد انتخاب شد</item>
+        <item quantity="other">%d مورد انتخاب شد</item>
+    </plurals>
+</resources>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<org.chromium.chrome.browser.feed.shared.ui.MaterialSpinnerView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_gravity="center"
+    android:id="@+id/loading_spinner"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/feed_suggestion_card_action_min_height"/>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/dp_17">
+    <TextView
+        android:textSize="@dimen/sp_20"
+        android:textColor="@drawable/selector_ime_text_color_checked_blue"
+        android:id="@+id/ime_lable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dilink_eq_custom"
+        android:layout_toEndOf="@+id/iv_check"/>
+    <TextView
+        android:textSize="@dimen/sp_18"
+        android:textColor="@drawable/selector_ime_text_color_checked_blue"
+        android:id="@+id/ime_sub_lable"
+        android:paddingTop="@dimen/dp_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dilink_eq_custom"
+        android:layout_below="@+id/ime_lable"
+        android:layout_toEndOf="@+id/iv_check"/>
+    <ImageView
+        android:id="@+id/iv_check"
+        android:background="@drawable/selector_ime_drawable_left"
+        android:layout_width="@dimen/dp_38"
+        android:layout_height="@dimen/dp_38"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="@dimen/dp_12"
+        android:layout_alignParentStart="true"/>
+</RelativeLayout>

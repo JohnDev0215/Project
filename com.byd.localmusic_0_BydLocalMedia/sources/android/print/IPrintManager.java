@@ -1,0 +1,996 @@
+package android.print;
+
+import android.content.ComponentName;
+import android.content.Context;
+import android.graphics.drawable.Icon;
+import android.os.Binder;
+import android.os.Bundle;
+import android.os.IBinder;
+import android.os.IInterface;
+import android.os.Parcel;
+import android.os.RemoteException;
+import android.print.IPrintDocumentAdapter;
+import android.print.IPrintJobStateChangeListener;
+import android.print.IPrintServicesChangeListener;
+import android.print.IPrinterDiscoveryObserver;
+import android.printservice.PrintServiceInfo;
+import android.printservice.recommendation.IRecommendationsChangeListener;
+import android.printservice.recommendation.RecommendationInfo;
+import java.util.List;
+
+/* JADX INFO: loaded from: classes.dex */
+public interface IPrintManager extends IInterface {
+
+    public static class Default implements IPrintManager {
+        @Override // android.print.IPrintManager
+        public void addPrintJobStateChangeListener(IPrintJobStateChangeListener iPrintJobStateChangeListener, int i, int i2) throws RemoteException {
+        }
+
+        @Override // android.print.IPrintManager
+        public void addPrintServiceRecommendationsChangeListener(IRecommendationsChangeListener iRecommendationsChangeListener, int i) throws RemoteException {
+        }
+
+        @Override // android.print.IPrintManager
+        public void addPrintServicesChangeListener(IPrintServicesChangeListener iPrintServicesChangeListener, int i) throws RemoteException {
+        }
+
+        @Override // android.os.IInterface
+        public IBinder asBinder() {
+            return null;
+        }
+
+        @Override // android.print.IPrintManager
+        public void cancelPrintJob(PrintJobId printJobId, int i, int i2) throws RemoteException {
+        }
+
+        @Override // android.print.IPrintManager
+        public void createPrinterDiscoverySession(IPrinterDiscoveryObserver iPrinterDiscoveryObserver, int i) throws RemoteException {
+        }
+
+        @Override // android.print.IPrintManager
+        public void destroyPrinterDiscoverySession(IPrinterDiscoveryObserver iPrinterDiscoveryObserver, int i) throws RemoteException {
+        }
+
+        @Override // android.print.IPrintManager
+        public boolean getBindInstantServiceAllowed(int i) throws RemoteException {
+            return false;
+        }
+
+        @Override // android.print.IPrintManager
+        public Icon getCustomPrinterIcon(PrinterId printerId, int i) throws RemoteException {
+            return null;
+        }
+
+        @Override // android.print.IPrintManager
+        public PrintJobInfo getPrintJobInfo(PrintJobId printJobId, int i, int i2) throws RemoteException {
+            return null;
+        }
+
+        @Override // android.print.IPrintManager
+        public List<PrintJobInfo> getPrintJobInfos(int i, int i2) throws RemoteException {
+            return null;
+        }
+
+        @Override // android.print.IPrintManager
+        public List<RecommendationInfo> getPrintServiceRecommendations(int i) throws RemoteException {
+            return null;
+        }
+
+        @Override // android.print.IPrintManager
+        public List<PrintServiceInfo> getPrintServices(int i, int i2) throws RemoteException {
+            return null;
+        }
+
+        @Override // android.print.IPrintManager
+        public Bundle print(String str, IPrintDocumentAdapter iPrintDocumentAdapter, PrintAttributes printAttributes, String str2, int i, int i2) throws RemoteException {
+            return null;
+        }
+
+        @Override // android.print.IPrintManager
+        public void removePrintJobStateChangeListener(IPrintJobStateChangeListener iPrintJobStateChangeListener, int i) throws RemoteException {
+        }
+
+        @Override // android.print.IPrintManager
+        public void removePrintServiceRecommendationsChangeListener(IRecommendationsChangeListener iRecommendationsChangeListener, int i) throws RemoteException {
+        }
+
+        @Override // android.print.IPrintManager
+        public void removePrintServicesChangeListener(IPrintServicesChangeListener iPrintServicesChangeListener, int i) throws RemoteException {
+        }
+
+        @Override // android.print.IPrintManager
+        public void restartPrintJob(PrintJobId printJobId, int i, int i2) throws RemoteException {
+        }
+
+        @Override // android.print.IPrintManager
+        public void setBindInstantServiceAllowed(int i, boolean z) throws RemoteException {
+        }
+
+        @Override // android.print.IPrintManager
+        public void setPrintServiceEnabled(ComponentName componentName, boolean z, int i) throws RemoteException {
+        }
+
+        @Override // android.print.IPrintManager
+        public void startPrinterDiscovery(IPrinterDiscoveryObserver iPrinterDiscoveryObserver, List<PrinterId> list, int i) throws RemoteException {
+        }
+
+        @Override // android.print.IPrintManager
+        public void startPrinterStateTracking(PrinterId printerId, int i) throws RemoteException {
+        }
+
+        @Override // android.print.IPrintManager
+        public void stopPrinterDiscovery(IPrinterDiscoveryObserver iPrinterDiscoveryObserver, int i) throws RemoteException {
+        }
+
+        @Override // android.print.IPrintManager
+        public void stopPrinterStateTracking(PrinterId printerId, int i) throws RemoteException {
+        }
+
+        @Override // android.print.IPrintManager
+        public void validatePrinters(List<PrinterId> list, int i) throws RemoteException {
+        }
+    }
+
+    void addPrintJobStateChangeListener(IPrintJobStateChangeListener iPrintJobStateChangeListener, int i, int i2) throws RemoteException;
+
+    void addPrintServiceRecommendationsChangeListener(IRecommendationsChangeListener iRecommendationsChangeListener, int i) throws RemoteException;
+
+    void addPrintServicesChangeListener(IPrintServicesChangeListener iPrintServicesChangeListener, int i) throws RemoteException;
+
+    void cancelPrintJob(PrintJobId printJobId, int i, int i2) throws RemoteException;
+
+    void createPrinterDiscoverySession(IPrinterDiscoveryObserver iPrinterDiscoveryObserver, int i) throws RemoteException;
+
+    void destroyPrinterDiscoverySession(IPrinterDiscoveryObserver iPrinterDiscoveryObserver, int i) throws RemoteException;
+
+    boolean getBindInstantServiceAllowed(int i) throws RemoteException;
+
+    Icon getCustomPrinterIcon(PrinterId printerId, int i) throws RemoteException;
+
+    PrintJobInfo getPrintJobInfo(PrintJobId printJobId, int i, int i2) throws RemoteException;
+
+    List<PrintJobInfo> getPrintJobInfos(int i, int i2) throws RemoteException;
+
+    List<RecommendationInfo> getPrintServiceRecommendations(int i) throws RemoteException;
+
+    List<PrintServiceInfo> getPrintServices(int i, int i2) throws RemoteException;
+
+    Bundle print(String str, IPrintDocumentAdapter iPrintDocumentAdapter, PrintAttributes printAttributes, String str2, int i, int i2) throws RemoteException;
+
+    void removePrintJobStateChangeListener(IPrintJobStateChangeListener iPrintJobStateChangeListener, int i) throws RemoteException;
+
+    void removePrintServiceRecommendationsChangeListener(IRecommendationsChangeListener iRecommendationsChangeListener, int i) throws RemoteException;
+
+    void removePrintServicesChangeListener(IPrintServicesChangeListener iPrintServicesChangeListener, int i) throws RemoteException;
+
+    void restartPrintJob(PrintJobId printJobId, int i, int i2) throws RemoteException;
+
+    void setBindInstantServiceAllowed(int i, boolean z) throws RemoteException;
+
+    void setPrintServiceEnabled(ComponentName componentName, boolean z, int i) throws RemoteException;
+
+    void startPrinterDiscovery(IPrinterDiscoveryObserver iPrinterDiscoveryObserver, List<PrinterId> list, int i) throws RemoteException;
+
+    void startPrinterStateTracking(PrinterId printerId, int i) throws RemoteException;
+
+    void stopPrinterDiscovery(IPrinterDiscoveryObserver iPrinterDiscoveryObserver, int i) throws RemoteException;
+
+    void stopPrinterStateTracking(PrinterId printerId, int i) throws RemoteException;
+
+    void validatePrinters(List<PrinterId> list, int i) throws RemoteException;
+
+    public static abstract class Stub extends Binder implements IPrintManager {
+        private static final String DESCRIPTOR = "android.print.IPrintManager";
+        static final int TRANSACTION_addPrintJobStateChangeListener = 6;
+        static final int TRANSACTION_addPrintServiceRecommendationsChangeListener = 12;
+        static final int TRANSACTION_addPrintServicesChangeListener = 8;
+        static final int TRANSACTION_cancelPrintJob = 4;
+        static final int TRANSACTION_createPrinterDiscoverySession = 15;
+        static final int TRANSACTION_destroyPrinterDiscoverySession = 22;
+        static final int TRANSACTION_getBindInstantServiceAllowed = 23;
+        static final int TRANSACTION_getCustomPrinterIcon = 20;
+        static final int TRANSACTION_getPrintJobInfo = 2;
+        static final int TRANSACTION_getPrintJobInfos = 1;
+        static final int TRANSACTION_getPrintServiceRecommendations = 14;
+        static final int TRANSACTION_getPrintServices = 10;
+        static final int TRANSACTION_print = 3;
+        static final int TRANSACTION_removePrintJobStateChangeListener = 7;
+        static final int TRANSACTION_removePrintServiceRecommendationsChangeListener = 13;
+        static final int TRANSACTION_removePrintServicesChangeListener = 9;
+        static final int TRANSACTION_restartPrintJob = 5;
+        static final int TRANSACTION_setBindInstantServiceAllowed = 24;
+        static final int TRANSACTION_setPrintServiceEnabled = 11;
+        static final int TRANSACTION_startPrinterDiscovery = 16;
+        static final int TRANSACTION_startPrinterStateTracking = 19;
+        static final int TRANSACTION_stopPrinterDiscovery = 17;
+        static final int TRANSACTION_stopPrinterStateTracking = 21;
+        static final int TRANSACTION_validatePrinters = 18;
+
+        public static String getDefaultTransactionName(int i) {
+            switch (i) {
+                case 1:
+                    return "getPrintJobInfos";
+                case 2:
+                    return "getPrintJobInfo";
+                case 3:
+                    return Context.PRINT_SERVICE;
+                case 4:
+                    return "cancelPrintJob";
+                case 5:
+                    return "restartPrintJob";
+                case 6:
+                    return "addPrintJobStateChangeListener";
+                case 7:
+                    return "removePrintJobStateChangeListener";
+                case 8:
+                    return "addPrintServicesChangeListener";
+                case 9:
+                    return "removePrintServicesChangeListener";
+                case 10:
+                    return "getPrintServices";
+                case 11:
+                    return "setPrintServiceEnabled";
+                case 12:
+                    return "addPrintServiceRecommendationsChangeListener";
+                case 13:
+                    return "removePrintServiceRecommendationsChangeListener";
+                case 14:
+                    return "getPrintServiceRecommendations";
+                case 15:
+                    return "createPrinterDiscoverySession";
+                case 16:
+                    return "startPrinterDiscovery";
+                case 17:
+                    return "stopPrinterDiscovery";
+                case 18:
+                    return "validatePrinters";
+                case 19:
+                    return "startPrinterStateTracking";
+                case 20:
+                    return "getCustomPrinterIcon";
+                case 21:
+                    return "stopPrinterStateTracking";
+                case 22:
+                    return "destroyPrinterDiscoverySession";
+                case 23:
+                    return "getBindInstantServiceAllowed";
+                case 24:
+                    return "setBindInstantServiceAllowed";
+                default:
+                    return null;
+            }
+        }
+
+        @Override // android.os.IInterface
+        public IBinder asBinder() {
+            return this;
+        }
+
+        public Stub() {
+            attachInterface(this, DESCRIPTOR);
+        }
+
+        public static IPrintManager asInterface(IBinder iBinder) {
+            if (iBinder == null) {
+                return null;
+            }
+            IInterface iInterfaceQueryLocalInterface = iBinder.queryLocalInterface(DESCRIPTOR);
+            if (iInterfaceQueryLocalInterface != null && (iInterfaceQueryLocalInterface instanceof IPrintManager)) {
+                return (IPrintManager) iInterfaceQueryLocalInterface;
+            }
+            return new Proxy(iBinder);
+        }
+
+        @Override // android.os.Binder
+        public String getTransactionName(int i) {
+            return getDefaultTransactionName(i);
+        }
+
+        @Override // android.os.Binder
+        public boolean onTransact(int i, Parcel parcel, Parcel parcel2, int i2) throws RemoteException {
+            if (i == 1598968902) {
+                parcel2.writeString(DESCRIPTOR);
+                return true;
+            }
+            switch (i) {
+                case 1:
+                    parcel.enforceInterface(DESCRIPTOR);
+                    List<PrintJobInfo> printJobInfos = getPrintJobInfos(parcel.readInt(), parcel.readInt());
+                    parcel2.writeNoException();
+                    parcel2.writeTypedList(printJobInfos);
+                    return true;
+                case 2:
+                    parcel.enforceInterface(DESCRIPTOR);
+                    PrintJobInfo printJobInfo = getPrintJobInfo(parcel.readInt() != 0 ? PrintJobId.CREATOR.createFromParcel(parcel) : null, parcel.readInt(), parcel.readInt());
+                    parcel2.writeNoException();
+                    if (printJobInfo != null) {
+                        parcel2.writeInt(1);
+                        printJobInfo.writeToParcel(parcel2, 1);
+                    } else {
+                        parcel2.writeInt(0);
+                    }
+                    return true;
+                case 3:
+                    parcel.enforceInterface(DESCRIPTOR);
+                    Bundle bundlePrint = print(parcel.readString(), IPrintDocumentAdapter.Stub.asInterface(parcel.readStrongBinder()), parcel.readInt() != 0 ? PrintAttributes.CREATOR.createFromParcel(parcel) : null, parcel.readString(), parcel.readInt(), parcel.readInt());
+                    parcel2.writeNoException();
+                    if (bundlePrint != null) {
+                        parcel2.writeInt(1);
+                        bundlePrint.writeToParcel(parcel2, 1);
+                    } else {
+                        parcel2.writeInt(0);
+                    }
+                    return true;
+                case 4:
+                    parcel.enforceInterface(DESCRIPTOR);
+                    cancelPrintJob(parcel.readInt() != 0 ? PrintJobId.CREATOR.createFromParcel(parcel) : null, parcel.readInt(), parcel.readInt());
+                    parcel2.writeNoException();
+                    return true;
+                case 5:
+                    parcel.enforceInterface(DESCRIPTOR);
+                    restartPrintJob(parcel.readInt() != 0 ? PrintJobId.CREATOR.createFromParcel(parcel) : null, parcel.readInt(), parcel.readInt());
+                    parcel2.writeNoException();
+                    return true;
+                case 6:
+                    parcel.enforceInterface(DESCRIPTOR);
+                    addPrintJobStateChangeListener(IPrintJobStateChangeListener.Stub.asInterface(parcel.readStrongBinder()), parcel.readInt(), parcel.readInt());
+                    parcel2.writeNoException();
+                    return true;
+                case 7:
+                    parcel.enforceInterface(DESCRIPTOR);
+                    removePrintJobStateChangeListener(IPrintJobStateChangeListener.Stub.asInterface(parcel.readStrongBinder()), parcel.readInt());
+                    parcel2.writeNoException();
+                    return true;
+                case 8:
+                    parcel.enforceInterface(DESCRIPTOR);
+                    addPrintServicesChangeListener(IPrintServicesChangeListener.Stub.asInterface(parcel.readStrongBinder()), parcel.readInt());
+                    parcel2.writeNoException();
+                    return true;
+                case 9:
+                    parcel.enforceInterface(DESCRIPTOR);
+                    removePrintServicesChangeListener(IPrintServicesChangeListener.Stub.asInterface(parcel.readStrongBinder()), parcel.readInt());
+                    parcel2.writeNoException();
+                    return true;
+                case 10:
+                    parcel.enforceInterface(DESCRIPTOR);
+                    List<PrintServiceInfo> printServices = getPrintServices(parcel.readInt(), parcel.readInt());
+                    parcel2.writeNoException();
+                    parcel2.writeTypedList(printServices);
+                    return true;
+                case 11:
+                    parcel.enforceInterface(DESCRIPTOR);
+                    setPrintServiceEnabled(parcel.readInt() != 0 ? ComponentName.CREATOR.createFromParcel(parcel) : null, parcel.readInt() != 0, parcel.readInt());
+                    parcel2.writeNoException();
+                    return true;
+                case 12:
+                    parcel.enforceInterface(DESCRIPTOR);
+                    addPrintServiceRecommendationsChangeListener(IRecommendationsChangeListener.Stub.asInterface(parcel.readStrongBinder()), parcel.readInt());
+                    parcel2.writeNoException();
+                    return true;
+                case 13:
+                    parcel.enforceInterface(DESCRIPTOR);
+                    removePrintServiceRecommendationsChangeListener(IRecommendationsChangeListener.Stub.asInterface(parcel.readStrongBinder()), parcel.readInt());
+                    parcel2.writeNoException();
+                    return true;
+                case 14:
+                    parcel.enforceInterface(DESCRIPTOR);
+                    List<RecommendationInfo> printServiceRecommendations = getPrintServiceRecommendations(parcel.readInt());
+                    parcel2.writeNoException();
+                    parcel2.writeTypedList(printServiceRecommendations);
+                    return true;
+                case 15:
+                    parcel.enforceInterface(DESCRIPTOR);
+                    createPrinterDiscoverySession(IPrinterDiscoveryObserver.Stub.asInterface(parcel.readStrongBinder()), parcel.readInt());
+                    parcel2.writeNoException();
+                    return true;
+                case 16:
+                    parcel.enforceInterface(DESCRIPTOR);
+                    startPrinterDiscovery(IPrinterDiscoveryObserver.Stub.asInterface(parcel.readStrongBinder()), parcel.createTypedArrayList(PrinterId.CREATOR), parcel.readInt());
+                    parcel2.writeNoException();
+                    return true;
+                case 17:
+                    parcel.enforceInterface(DESCRIPTOR);
+                    stopPrinterDiscovery(IPrinterDiscoveryObserver.Stub.asInterface(parcel.readStrongBinder()), parcel.readInt());
+                    parcel2.writeNoException();
+                    return true;
+                case 18:
+                    parcel.enforceInterface(DESCRIPTOR);
+                    validatePrinters(parcel.createTypedArrayList(PrinterId.CREATOR), parcel.readInt());
+                    parcel2.writeNoException();
+                    return true;
+                case 19:
+                    parcel.enforceInterface(DESCRIPTOR);
+                    startPrinterStateTracking(parcel.readInt() != 0 ? PrinterId.CREATOR.createFromParcel(parcel) : null, parcel.readInt());
+                    parcel2.writeNoException();
+                    return true;
+                case 20:
+                    parcel.enforceInterface(DESCRIPTOR);
+                    Icon customPrinterIcon = getCustomPrinterIcon(parcel.readInt() != 0 ? PrinterId.CREATOR.createFromParcel(parcel) : null, parcel.readInt());
+                    parcel2.writeNoException();
+                    if (customPrinterIcon != null) {
+                        parcel2.writeInt(1);
+                        customPrinterIcon.writeToParcel(parcel2, 1);
+                    } else {
+                        parcel2.writeInt(0);
+                    }
+                    return true;
+                case 21:
+                    parcel.enforceInterface(DESCRIPTOR);
+                    stopPrinterStateTracking(parcel.readInt() != 0 ? PrinterId.CREATOR.createFromParcel(parcel) : null, parcel.readInt());
+                    parcel2.writeNoException();
+                    return true;
+                case 22:
+                    parcel.enforceInterface(DESCRIPTOR);
+                    destroyPrinterDiscoverySession(IPrinterDiscoveryObserver.Stub.asInterface(parcel.readStrongBinder()), parcel.readInt());
+                    parcel2.writeNoException();
+                    return true;
+                case 23:
+                    parcel.enforceInterface(DESCRIPTOR);
+                    boolean bindInstantServiceAllowed = getBindInstantServiceAllowed(parcel.readInt());
+                    parcel2.writeNoException();
+                    parcel2.writeInt(bindInstantServiceAllowed ? 1 : 0);
+                    return true;
+                case 24:
+                    parcel.enforceInterface(DESCRIPTOR);
+                    setBindInstantServiceAllowed(parcel.readInt(), parcel.readInt() != 0);
+                    parcel2.writeNoException();
+                    return true;
+                default:
+                    return super.onTransact(i, parcel, parcel2, i2);
+            }
+        }
+
+        private static class Proxy implements IPrintManager {
+            public static IPrintManager sDefaultImpl;
+            private IBinder mRemote;
+
+            public String getInterfaceDescriptor() {
+                return Stub.DESCRIPTOR;
+            }
+
+            Proxy(IBinder iBinder) {
+                this.mRemote = iBinder;
+            }
+
+            @Override // android.os.IInterface
+            public IBinder asBinder() {
+                return this.mRemote;
+            }
+
+            @Override // android.print.IPrintManager
+            public List<PrintJobInfo> getPrintJobInfos(int i, int i2) throws RemoteException {
+                Parcel parcelObtain = Parcel.obtain();
+                Parcel parcelObtain2 = Parcel.obtain();
+                try {
+                    parcelObtain.writeInterfaceToken(Stub.DESCRIPTOR);
+                    parcelObtain.writeInt(i);
+                    parcelObtain.writeInt(i2);
+                    if (!this.mRemote.transact(1, parcelObtain, parcelObtain2, 0) && Stub.getDefaultImpl() != null) {
+                        return Stub.getDefaultImpl().getPrintJobInfos(i, i2);
+                    }
+                    parcelObtain2.readException();
+                    return parcelObtain2.createTypedArrayList(PrintJobInfo.CREATOR);
+                } finally {
+                    parcelObtain2.recycle();
+                    parcelObtain.recycle();
+                }
+            }
+
+            @Override // android.print.IPrintManager
+            public PrintJobInfo getPrintJobInfo(PrintJobId printJobId, int i, int i2) throws RemoteException {
+                Parcel parcelObtain = Parcel.obtain();
+                Parcel parcelObtain2 = Parcel.obtain();
+                try {
+                    parcelObtain.writeInterfaceToken(Stub.DESCRIPTOR);
+                    if (printJobId != null) {
+                        parcelObtain.writeInt(1);
+                        printJobId.writeToParcel(parcelObtain, 0);
+                    } else {
+                        parcelObtain.writeInt(0);
+                    }
+                    parcelObtain.writeInt(i);
+                    parcelObtain.writeInt(i2);
+                    if (!this.mRemote.transact(2, parcelObtain, parcelObtain2, 0) && Stub.getDefaultImpl() != null) {
+                        return Stub.getDefaultImpl().getPrintJobInfo(printJobId, i, i2);
+                    }
+                    parcelObtain2.readException();
+                    return parcelObtain2.readInt() != 0 ? PrintJobInfo.CREATOR.createFromParcel(parcelObtain2) : null;
+                } finally {
+                    parcelObtain2.recycle();
+                    parcelObtain.recycle();
+                }
+            }
+
+            @Override // android.print.IPrintManager
+            public Bundle print(String str, IPrintDocumentAdapter iPrintDocumentAdapter, PrintAttributes printAttributes, String str2, int i, int i2) throws Throwable {
+                Parcel parcelObtain = Parcel.obtain();
+                Parcel parcelObtain2 = Parcel.obtain();
+                try {
+                    parcelObtain.writeInterfaceToken(Stub.DESCRIPTOR);
+                    parcelObtain.writeString(str);
+                    parcelObtain.writeStrongBinder(iPrintDocumentAdapter != null ? iPrintDocumentAdapter.asBinder() : null);
+                    if (printAttributes != null) {
+                        parcelObtain.writeInt(1);
+                        printAttributes.writeToParcel(parcelObtain, 0);
+                    } else {
+                        parcelObtain.writeInt(0);
+                    }
+                    parcelObtain.writeString(str2);
+                    parcelObtain.writeInt(i);
+                    parcelObtain.writeInt(i2);
+                } catch (Throwable th) {
+                    th = th;
+                }
+                try {
+                    if (!this.mRemote.transact(3, parcelObtain, parcelObtain2, 0) && Stub.getDefaultImpl() != null) {
+                        Bundle bundlePrint = Stub.getDefaultImpl().print(str, iPrintDocumentAdapter, printAttributes, str2, i, i2);
+                        parcelObtain2.recycle();
+                        parcelObtain.recycle();
+                        return bundlePrint;
+                    }
+                    parcelObtain2.readException();
+                    Bundle bundleCreateFromParcel = parcelObtain2.readInt() != 0 ? Bundle.CREATOR.createFromParcel(parcelObtain2) : null;
+                    parcelObtain2.recycle();
+                    parcelObtain.recycle();
+                    return bundleCreateFromParcel;
+                } catch (Throwable th2) {
+                    th = th2;
+                    parcelObtain2.recycle();
+                    parcelObtain.recycle();
+                    throw th;
+                }
+            }
+
+            @Override // android.print.IPrintManager
+            public void cancelPrintJob(PrintJobId printJobId, int i, int i2) throws RemoteException {
+                Parcel parcelObtain = Parcel.obtain();
+                Parcel parcelObtain2 = Parcel.obtain();
+                try {
+                    parcelObtain.writeInterfaceToken(Stub.DESCRIPTOR);
+                    if (printJobId != null) {
+                        parcelObtain.writeInt(1);
+                        printJobId.writeToParcel(parcelObtain, 0);
+                    } else {
+                        parcelObtain.writeInt(0);
+                    }
+                    parcelObtain.writeInt(i);
+                    parcelObtain.writeInt(i2);
+                    if (!this.mRemote.transact(4, parcelObtain, parcelObtain2, 0) && Stub.getDefaultImpl() != null) {
+                        Stub.getDefaultImpl().cancelPrintJob(printJobId, i, i2);
+                    } else {
+                        parcelObtain2.readException();
+                    }
+                } finally {
+                    parcelObtain2.recycle();
+                    parcelObtain.recycle();
+                }
+            }
+
+            @Override // android.print.IPrintManager
+            public void restartPrintJob(PrintJobId printJobId, int i, int i2) throws RemoteException {
+                Parcel parcelObtain = Parcel.obtain();
+                Parcel parcelObtain2 = Parcel.obtain();
+                try {
+                    parcelObtain.writeInterfaceToken(Stub.DESCRIPTOR);
+                    if (printJobId != null) {
+                        parcelObtain.writeInt(1);
+                        printJobId.writeToParcel(parcelObtain, 0);
+                    } else {
+                        parcelObtain.writeInt(0);
+                    }
+                    parcelObtain.writeInt(i);
+                    parcelObtain.writeInt(i2);
+                    if (!this.mRemote.transact(5, parcelObtain, parcelObtain2, 0) && Stub.getDefaultImpl() != null) {
+                        Stub.getDefaultImpl().restartPrintJob(printJobId, i, i2);
+                    } else {
+                        parcelObtain2.readException();
+                    }
+                } finally {
+                    parcelObtain2.recycle();
+                    parcelObtain.recycle();
+                }
+            }
+
+            @Override // android.print.IPrintManager
+            public void addPrintJobStateChangeListener(IPrintJobStateChangeListener iPrintJobStateChangeListener, int i, int i2) throws RemoteException {
+                Parcel parcelObtain = Parcel.obtain();
+                Parcel parcelObtain2 = Parcel.obtain();
+                try {
+                    parcelObtain.writeInterfaceToken(Stub.DESCRIPTOR);
+                    parcelObtain.writeStrongBinder(iPrintJobStateChangeListener != null ? iPrintJobStateChangeListener.asBinder() : null);
+                    parcelObtain.writeInt(i);
+                    parcelObtain.writeInt(i2);
+                    if (!this.mRemote.transact(6, parcelObtain, parcelObtain2, 0) && Stub.getDefaultImpl() != null) {
+                        Stub.getDefaultImpl().addPrintJobStateChangeListener(iPrintJobStateChangeListener, i, i2);
+                    } else {
+                        parcelObtain2.readException();
+                    }
+                } finally {
+                    parcelObtain2.recycle();
+                    parcelObtain.recycle();
+                }
+            }
+
+            @Override // android.print.IPrintManager
+            public void removePrintJobStateChangeListener(IPrintJobStateChangeListener iPrintJobStateChangeListener, int i) throws RemoteException {
+                Parcel parcelObtain = Parcel.obtain();
+                Parcel parcelObtain2 = Parcel.obtain();
+                try {
+                    parcelObtain.writeInterfaceToken(Stub.DESCRIPTOR);
+                    parcelObtain.writeStrongBinder(iPrintJobStateChangeListener != null ? iPrintJobStateChangeListener.asBinder() : null);
+                    parcelObtain.writeInt(i);
+                    if (!this.mRemote.transact(7, parcelObtain, parcelObtain2, 0) && Stub.getDefaultImpl() != null) {
+                        Stub.getDefaultImpl().removePrintJobStateChangeListener(iPrintJobStateChangeListener, i);
+                    } else {
+                        parcelObtain2.readException();
+                    }
+                } finally {
+                    parcelObtain2.recycle();
+                    parcelObtain.recycle();
+                }
+            }
+
+            @Override // android.print.IPrintManager
+            public void addPrintServicesChangeListener(IPrintServicesChangeListener iPrintServicesChangeListener, int i) throws RemoteException {
+                Parcel parcelObtain = Parcel.obtain();
+                Parcel parcelObtain2 = Parcel.obtain();
+                try {
+                    parcelObtain.writeInterfaceToken(Stub.DESCRIPTOR);
+                    parcelObtain.writeStrongBinder(iPrintServicesChangeListener != null ? iPrintServicesChangeListener.asBinder() : null);
+                    parcelObtain.writeInt(i);
+                    if (!this.mRemote.transact(8, parcelObtain, parcelObtain2, 0) && Stub.getDefaultImpl() != null) {
+                        Stub.getDefaultImpl().addPrintServicesChangeListener(iPrintServicesChangeListener, i);
+                    } else {
+                        parcelObtain2.readException();
+                    }
+                } finally {
+                    parcelObtain2.recycle();
+                    parcelObtain.recycle();
+                }
+            }
+
+            @Override // android.print.IPrintManager
+            public void removePrintServicesChangeListener(IPrintServicesChangeListener iPrintServicesChangeListener, int i) throws RemoteException {
+                Parcel parcelObtain = Parcel.obtain();
+                Parcel parcelObtain2 = Parcel.obtain();
+                try {
+                    parcelObtain.writeInterfaceToken(Stub.DESCRIPTOR);
+                    parcelObtain.writeStrongBinder(iPrintServicesChangeListener != null ? iPrintServicesChangeListener.asBinder() : null);
+                    parcelObtain.writeInt(i);
+                    if (!this.mRemote.transact(9, parcelObtain, parcelObtain2, 0) && Stub.getDefaultImpl() != null) {
+                        Stub.getDefaultImpl().removePrintServicesChangeListener(iPrintServicesChangeListener, i);
+                    } else {
+                        parcelObtain2.readException();
+                    }
+                } finally {
+                    parcelObtain2.recycle();
+                    parcelObtain.recycle();
+                }
+            }
+
+            @Override // android.print.IPrintManager
+            public List<PrintServiceInfo> getPrintServices(int i, int i2) throws RemoteException {
+                Parcel parcelObtain = Parcel.obtain();
+                Parcel parcelObtain2 = Parcel.obtain();
+                try {
+                    parcelObtain.writeInterfaceToken(Stub.DESCRIPTOR);
+                    parcelObtain.writeInt(i);
+                    parcelObtain.writeInt(i2);
+                    if (!this.mRemote.transact(10, parcelObtain, parcelObtain2, 0) && Stub.getDefaultImpl() != null) {
+                        return Stub.getDefaultImpl().getPrintServices(i, i2);
+                    }
+                    parcelObtain2.readException();
+                    return parcelObtain2.createTypedArrayList(PrintServiceInfo.CREATOR);
+                } finally {
+                    parcelObtain2.recycle();
+                    parcelObtain.recycle();
+                }
+            }
+
+            @Override // android.print.IPrintManager
+            public void setPrintServiceEnabled(ComponentName componentName, boolean z, int i) throws RemoteException {
+                Parcel parcelObtain = Parcel.obtain();
+                Parcel parcelObtain2 = Parcel.obtain();
+                try {
+                    parcelObtain.writeInterfaceToken(Stub.DESCRIPTOR);
+                    int i2 = 1;
+                    if (componentName != null) {
+                        parcelObtain.writeInt(1);
+                        componentName.writeToParcel(parcelObtain, 0);
+                    } else {
+                        parcelObtain.writeInt(0);
+                    }
+                    if (!z) {
+                        i2 = 0;
+                    }
+                    parcelObtain.writeInt(i2);
+                    parcelObtain.writeInt(i);
+                    if (!this.mRemote.transact(11, parcelObtain, parcelObtain2, 0) && Stub.getDefaultImpl() != null) {
+                        Stub.getDefaultImpl().setPrintServiceEnabled(componentName, z, i);
+                    } else {
+                        parcelObtain2.readException();
+                    }
+                } finally {
+                    parcelObtain2.recycle();
+                    parcelObtain.recycle();
+                }
+            }
+
+            @Override // android.print.IPrintManager
+            public void addPrintServiceRecommendationsChangeListener(IRecommendationsChangeListener iRecommendationsChangeListener, int i) throws RemoteException {
+                Parcel parcelObtain = Parcel.obtain();
+                Parcel parcelObtain2 = Parcel.obtain();
+                try {
+                    parcelObtain.writeInterfaceToken(Stub.DESCRIPTOR);
+                    parcelObtain.writeStrongBinder(iRecommendationsChangeListener != null ? iRecommendationsChangeListener.asBinder() : null);
+                    parcelObtain.writeInt(i);
+                    if (!this.mRemote.transact(12, parcelObtain, parcelObtain2, 0) && Stub.getDefaultImpl() != null) {
+                        Stub.getDefaultImpl().addPrintServiceRecommendationsChangeListener(iRecommendationsChangeListener, i);
+                    } else {
+                        parcelObtain2.readException();
+                    }
+                } finally {
+                    parcelObtain2.recycle();
+                    parcelObtain.recycle();
+                }
+            }
+
+            @Override // android.print.IPrintManager
+            public void removePrintServiceRecommendationsChangeListener(IRecommendationsChangeListener iRecommendationsChangeListener, int i) throws RemoteException {
+                Parcel parcelObtain = Parcel.obtain();
+                Parcel parcelObtain2 = Parcel.obtain();
+                try {
+                    parcelObtain.writeInterfaceToken(Stub.DESCRIPTOR);
+                    parcelObtain.writeStrongBinder(iRecommendationsChangeListener != null ? iRecommendationsChangeListener.asBinder() : null);
+                    parcelObtain.writeInt(i);
+                    if (!this.mRemote.transact(13, parcelObtain, parcelObtain2, 0) && Stub.getDefaultImpl() != null) {
+                        Stub.getDefaultImpl().removePrintServiceRecommendationsChangeListener(iRecommendationsChangeListener, i);
+                    } else {
+                        parcelObtain2.readException();
+                    }
+                } finally {
+                    parcelObtain2.recycle();
+                    parcelObtain.recycle();
+                }
+            }
+
+            @Override // android.print.IPrintManager
+            public List<RecommendationInfo> getPrintServiceRecommendations(int i) throws RemoteException {
+                Parcel parcelObtain = Parcel.obtain();
+                Parcel parcelObtain2 = Parcel.obtain();
+                try {
+                    parcelObtain.writeInterfaceToken(Stub.DESCRIPTOR);
+                    parcelObtain.writeInt(i);
+                    if (!this.mRemote.transact(14, parcelObtain, parcelObtain2, 0) && Stub.getDefaultImpl() != null) {
+                        return Stub.getDefaultImpl().getPrintServiceRecommendations(i);
+                    }
+                    parcelObtain2.readException();
+                    return parcelObtain2.createTypedArrayList(RecommendationInfo.CREATOR);
+                } finally {
+                    parcelObtain2.recycle();
+                    parcelObtain.recycle();
+                }
+            }
+
+            @Override // android.print.IPrintManager
+            public void createPrinterDiscoverySession(IPrinterDiscoveryObserver iPrinterDiscoveryObserver, int i) throws RemoteException {
+                Parcel parcelObtain = Parcel.obtain();
+                Parcel parcelObtain2 = Parcel.obtain();
+                try {
+                    parcelObtain.writeInterfaceToken(Stub.DESCRIPTOR);
+                    parcelObtain.writeStrongBinder(iPrinterDiscoveryObserver != null ? iPrinterDiscoveryObserver.asBinder() : null);
+                    parcelObtain.writeInt(i);
+                    if (!this.mRemote.transact(15, parcelObtain, parcelObtain2, 0) && Stub.getDefaultImpl() != null) {
+                        Stub.getDefaultImpl().createPrinterDiscoverySession(iPrinterDiscoveryObserver, i);
+                    } else {
+                        parcelObtain2.readException();
+                    }
+                } finally {
+                    parcelObtain2.recycle();
+                    parcelObtain.recycle();
+                }
+            }
+
+            @Override // android.print.IPrintManager
+            public void startPrinterDiscovery(IPrinterDiscoveryObserver iPrinterDiscoveryObserver, List<PrinterId> list, int i) throws RemoteException {
+                Parcel parcelObtain = Parcel.obtain();
+                Parcel parcelObtain2 = Parcel.obtain();
+                try {
+                    parcelObtain.writeInterfaceToken(Stub.DESCRIPTOR);
+                    parcelObtain.writeStrongBinder(iPrinterDiscoveryObserver != null ? iPrinterDiscoveryObserver.asBinder() : null);
+                    parcelObtain.writeTypedList(list);
+                    parcelObtain.writeInt(i);
+                    if (!this.mRemote.transact(16, parcelObtain, parcelObtain2, 0) && Stub.getDefaultImpl() != null) {
+                        Stub.getDefaultImpl().startPrinterDiscovery(iPrinterDiscoveryObserver, list, i);
+                    } else {
+                        parcelObtain2.readException();
+                    }
+                } finally {
+                    parcelObtain2.recycle();
+                    parcelObtain.recycle();
+                }
+            }
+
+            @Override // android.print.IPrintManager
+            public void stopPrinterDiscovery(IPrinterDiscoveryObserver iPrinterDiscoveryObserver, int i) throws RemoteException {
+                Parcel parcelObtain = Parcel.obtain();
+                Parcel parcelObtain2 = Parcel.obtain();
+                try {
+                    parcelObtain.writeInterfaceToken(Stub.DESCRIPTOR);
+                    parcelObtain.writeStrongBinder(iPrinterDiscoveryObserver != null ? iPrinterDiscoveryObserver.asBinder() : null);
+                    parcelObtain.writeInt(i);
+                    if (!this.mRemote.transact(17, parcelObtain, parcelObtain2, 0) && Stub.getDefaultImpl() != null) {
+                        Stub.getDefaultImpl().stopPrinterDiscovery(iPrinterDiscoveryObserver, i);
+                    } else {
+                        parcelObtain2.readException();
+                    }
+                } finally {
+                    parcelObtain2.recycle();
+                    parcelObtain.recycle();
+                }
+            }
+
+            @Override // android.print.IPrintManager
+            public void validatePrinters(List<PrinterId> list, int i) throws RemoteException {
+                Parcel parcelObtain = Parcel.obtain();
+                Parcel parcelObtain2 = Parcel.obtain();
+                try {
+                    parcelObtain.writeInterfaceToken(Stub.DESCRIPTOR);
+                    parcelObtain.writeTypedList(list);
+                    parcelObtain.writeInt(i);
+                    if (!this.mRemote.transact(18, parcelObtain, parcelObtain2, 0) && Stub.getDefaultImpl() != null) {
+                        Stub.getDefaultImpl().validatePrinters(list, i);
+                    } else {
+                        parcelObtain2.readException();
+                    }
+                } finally {
+                    parcelObtain2.recycle();
+                    parcelObtain.recycle();
+                }
+            }
+
+            @Override // android.print.IPrintManager
+            public void startPrinterStateTracking(PrinterId printerId, int i) throws RemoteException {
+                Parcel parcelObtain = Parcel.obtain();
+                Parcel parcelObtain2 = Parcel.obtain();
+                try {
+                    parcelObtain.writeInterfaceToken(Stub.DESCRIPTOR);
+                    if (printerId != null) {
+                        parcelObtain.writeInt(1);
+                        printerId.writeToParcel(parcelObtain, 0);
+                    } else {
+                        parcelObtain.writeInt(0);
+                    }
+                    parcelObtain.writeInt(i);
+                    if (!this.mRemote.transact(19, parcelObtain, parcelObtain2, 0) && Stub.getDefaultImpl() != null) {
+                        Stub.getDefaultImpl().startPrinterStateTracking(printerId, i);
+                    } else {
+                        parcelObtain2.readException();
+                    }
+                } finally {
+                    parcelObtain2.recycle();
+                    parcelObtain.recycle();
+                }
+            }
+
+            @Override // android.print.IPrintManager
+            public Icon getCustomPrinterIcon(PrinterId printerId, int i) throws RemoteException {
+                Parcel parcelObtain = Parcel.obtain();
+                Parcel parcelObtain2 = Parcel.obtain();
+                try {
+                    parcelObtain.writeInterfaceToken(Stub.DESCRIPTOR);
+                    if (printerId != null) {
+                        parcelObtain.writeInt(1);
+                        printerId.writeToParcel(parcelObtain, 0);
+                    } else {
+                        parcelObtain.writeInt(0);
+                    }
+                    parcelObtain.writeInt(i);
+                    if (!this.mRemote.transact(20, parcelObtain, parcelObtain2, 0) && Stub.getDefaultImpl() != null) {
+                        return Stub.getDefaultImpl().getCustomPrinterIcon(printerId, i);
+                    }
+                    parcelObtain2.readException();
+                    return parcelObtain2.readInt() != 0 ? Icon.CREATOR.createFromParcel(parcelObtain2) : null;
+                } finally {
+                    parcelObtain2.recycle();
+                    parcelObtain.recycle();
+                }
+            }
+
+            @Override // android.print.IPrintManager
+            public void stopPrinterStateTracking(PrinterId printerId, int i) throws RemoteException {
+                Parcel parcelObtain = Parcel.obtain();
+                Parcel parcelObtain2 = Parcel.obtain();
+                try {
+                    parcelObtain.writeInterfaceToken(Stub.DESCRIPTOR);
+                    if (printerId != null) {
+                        parcelObtain.writeInt(1);
+                        printerId.writeToParcel(parcelObtain, 0);
+                    } else {
+                        parcelObtain.writeInt(0);
+                    }
+                    parcelObtain.writeInt(i);
+                    if (!this.mRemote.transact(21, parcelObtain, parcelObtain2, 0) && Stub.getDefaultImpl() != null) {
+                        Stub.getDefaultImpl().stopPrinterStateTracking(printerId, i);
+                    } else {
+                        parcelObtain2.readException();
+                    }
+                } finally {
+                    parcelObtain2.recycle();
+                    parcelObtain.recycle();
+                }
+            }
+
+            @Override // android.print.IPrintManager
+            public void destroyPrinterDiscoverySession(IPrinterDiscoveryObserver iPrinterDiscoveryObserver, int i) throws RemoteException {
+                Parcel parcelObtain = Parcel.obtain();
+                Parcel parcelObtain2 = Parcel.obtain();
+                try {
+                    parcelObtain.writeInterfaceToken(Stub.DESCRIPTOR);
+                    parcelObtain.writeStrongBinder(iPrinterDiscoveryObserver != null ? iPrinterDiscoveryObserver.asBinder() : null);
+                    parcelObtain.writeInt(i);
+                    if (!this.mRemote.transact(22, parcelObtain, parcelObtain2, 0) && Stub.getDefaultImpl() != null) {
+                        Stub.getDefaultImpl().destroyPrinterDiscoverySession(iPrinterDiscoveryObserver, i);
+                    } else {
+                        parcelObtain2.readException();
+                    }
+                } finally {
+                    parcelObtain2.recycle();
+                    parcelObtain.recycle();
+                }
+            }
+
+            @Override // android.print.IPrintManager
+            public boolean getBindInstantServiceAllowed(int i) throws RemoteException {
+                Parcel parcelObtain = Parcel.obtain();
+                Parcel parcelObtain2 = Parcel.obtain();
+                try {
+                    parcelObtain.writeInterfaceToken(Stub.DESCRIPTOR);
+                    parcelObtain.writeInt(i);
+                    if (!this.mRemote.transact(23, parcelObtain, parcelObtain2, 0) && Stub.getDefaultImpl() != null) {
+                        return Stub.getDefaultImpl().getBindInstantServiceAllowed(i);
+                    }
+                    parcelObtain2.readException();
+                    return parcelObtain2.readInt() != 0;
+                } finally {
+                    parcelObtain2.recycle();
+                    parcelObtain.recycle();
+                }
+            }
+
+            @Override // android.print.IPrintManager
+            public void setBindInstantServiceAllowed(int i, boolean z) throws RemoteException {
+                Parcel parcelObtain = Parcel.obtain();
+                Parcel parcelObtain2 = Parcel.obtain();
+                try {
+                    parcelObtain.writeInterfaceToken(Stub.DESCRIPTOR);
+                    parcelObtain.writeInt(i);
+                    parcelObtain.writeInt(z ? 1 : 0);
+                    if (!this.mRemote.transact(24, parcelObtain, parcelObtain2, 0) && Stub.getDefaultImpl() != null) {
+                        Stub.getDefaultImpl().setBindInstantServiceAllowed(i, z);
+                    } else {
+                        parcelObtain2.readException();
+                    }
+                } finally {
+                    parcelObtain2.recycle();
+                    parcelObtain.recycle();
+                }
+            }
+        }
+
+        public static boolean setDefaultImpl(IPrintManager iPrintManager) {
+            if (Proxy.sDefaultImpl != null) {
+                throw new IllegalStateException("setDefaultImpl() called twice");
+            }
+            if (iPrintManager == null) {
+                return false;
+            }
+            Proxy.sDefaultImpl = iPrintManager;
+            return true;
+        }
+
+        public static IPrintManager getDefaultImpl() {
+            return Proxy.sDefaultImpl;
+        }
+    }
+}

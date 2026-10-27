@@ -1,0 +1,13 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/app/Dialog;->mOwnerActivity:Landroid/app/Activity;,frameworks/base/core/java/android/app/Dialog.java,98,5,98,25,
+Landroid/app/Dialog;->mContext:Landroid/content/Context;,frameworks/base/core/java/android/app/Dialog.java,103,5,103,25,
+Landroid/app/Dialog;->mWindow:Landroid/view/Window;,frameworks/base/core/java/android/app/Dialog.java,105,5,105,25,
+Landroid/app/Dialog;->mCancelMessage:Landroid/os/Message;,frameworks/base/core/java/android/app/Dialog.java,118,5,118,25,
+Landroid/app/Dialog;->mDismissMessage:Landroid/os/Message;,frameworks/base/core/java/android/app/Dialog.java,120,5,120,25,
+Landroid/app/Dialog;->mShowMessage:Landroid/os/Message;,frameworks/base/core/java/android/app/Dialog.java,122,5,122,25,
+Landroid/app/Dialog;->mOnKeyListener:Landroid/content/DialogInterface$OnKeyListener;,frameworks/base/core/java/android/app/Dialog.java,125,5,125,25,
+Landroid/app/Dialog;->mShowing:Z,frameworks/base/core/java/android/app/Dialog.java,129,5,129,25,
+Landroid/app/Dialog;->mHandler:Landroid/os/Handler;,frameworks/base/core/java/android/app/Dialog.java,133,5,133,88,maxTargetSdk=28&trackingBug=115609023L
+Landroid/app/Dialog;->CANCEL:I,frameworks/base/core/java/android/app/Dialog.java,137,5,137,88,maxTargetSdk=28&trackingBug=115609023L
+Landroid/app/Dialog;->mListenersHandler:Landroid/os/Handler;,frameworks/base/core/java/android/app/Dialog.java,141,5,141,25,
+Landroid/app/Dialog;->dismissDialog()V,frameworks/base/core/java/android/app/Dialog.java,375,5,375,25,

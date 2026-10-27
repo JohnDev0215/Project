@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center_horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_205"
+        android:layout_alignParentTop="true">
+        <com.byd.screensaver.view.NumberImgTime
+            android:id="@+id/nit_hour_clock_1_audio_screen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <com.byd.screensaver.view.NumberImgTime
+            android:id="@+id/nit_minute_clock_1_audio_screen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:textSize="@dimen/sp_18"
+            android:textColor="@color/text_color_white_dilink"
+            android:id="@+id/tv_date_clock_1_audio_screen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</RelativeLayout>

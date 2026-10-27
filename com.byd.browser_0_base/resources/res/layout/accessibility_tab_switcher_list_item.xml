@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<org.chromium.chrome.browser.accessibility_tab_switcher.AccessibilityTabModelListItem xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/list_item_frame"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/accessibility_tab_height">
+    <include layout="@layout/modern_list_item_view"/>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/undo_contents"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:visibility="invisible"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <org.chromium.ui.widget.ButtonCompat
+            android:layout_gravity="center_vertical"
+            android:id="@+id/undo_button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="@string/accessibility_tab_switcher_undo_tab_closed"
+            android:layout_weight="1"
+            android:contentDescription="@string/accessibility_tab_switcher_undo_tab_closed"
+            android:textAlignment="viewStart"
+            android:paddingStart="72dp"
+            style="@style/TextButton"/>
+    </LinearLayout>
+</org.chromium.chrome.browser.accessibility_tab_switcher.AccessibilityTabModelListItem>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="cookie_controls_blocked_cookies">
+        <item quantity="one">1 కుక్కీ బ్లాక్ చేయబడింది</item>
+        <item quantity="other">%d కుక్కీలు బ్లాక్ చేయబడ్డాయి</item>
+    </plurals>
+    <plurals name="selected_items">
+        <item quantity="one">1 ఎంచుకోబడింది</item>
+        <item quantity="other">%d ఎంచుకోబడ్డాయి</item>
+    </plurals>
+</resources>

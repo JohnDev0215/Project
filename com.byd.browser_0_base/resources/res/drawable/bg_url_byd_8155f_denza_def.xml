@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+    <solid android:color="@color/color_bg_url_bar_8155f_denza_def"/>
+    <stroke
+        android:width="1dp"
+        android:color="@color/color_bg_url_bar_stroke_8155f_denza_def"/>
+    <size
+        android:height="@dimen/modern_toolbar_background_size"
+        android:width="@dimen/modern_toolbar_background_size"/>
+    <corners android:radius="5dp"/>
+</shape>

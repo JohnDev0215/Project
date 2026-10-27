@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory
+        android:title="@string/website_settings_site_category"
+        android:key="site_heading"/>
+    <org.chromium.components.browser_ui.settings.TextMessagePreference android:key="site_title"/>
+    <PreferenceCategory
+        android:title="@string/website_settings_usage_category"
+        android:key="site_usage"/>
+    <org.chromium.components.browser_ui.site_settings.ClearWebsiteStorage
+        android:title="@string/webstorage_clear_data_dialog_title"
+        android:key="clear_data"
+        android:widgetLayout="@layout/clear_storage"
+        android:positiveButtonText="@string/webstorage_clear_data_dialog_ok_button"
+        android:negativeButtonText="@string/cancel"/>
+    <PreferenceCategory
+        android:title="@string/website_settings_related_sites"
+        android:key="related_sites_header"/>
+    <org.chromium.components.browser_ui.settings.TextMessagePreference android:key="related_sites"/>
+    <PreferenceCategory android:key="sites_in_group"/>
+    <org.chromium.components.browser_ui.settings.ButtonPreference
+        android:title="@string/website_reset_full"
+        android:key="reset_group_button"
+        app:allowDividerAbove="false"
+        app:allowDividerBelow="false"/>
+</PreferenceScreen>

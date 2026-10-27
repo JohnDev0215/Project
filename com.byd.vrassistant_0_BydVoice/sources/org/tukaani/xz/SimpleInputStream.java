@@ -1,0 +1,125 @@
+package org.tukaani.xz;
+
+import java.io.IOException;
+import java.io.InputStream;
+import org.tukaani.xz.simple.SimpleFilter;
+
+/* JADX INFO: loaded from: classes4.dex */
+class SimpleInputStream extends InputStream {
+    static final /* synthetic */ boolean $assertionsDisabled = false;
+    private static final int FILTER_BUF_SIZE = 4096;
+    private InputStream in;
+    private final SimpleFilter simpleFilter;
+    private final byte[] filterBuf = new byte[4096];
+    private int pos = 0;
+    private int filtered = 0;
+    private int unfiltered = 0;
+    private boolean endReached = false;
+    private IOException exception = null;
+    private final byte[] tempBuf = new byte[1];
+
+    SimpleInputStream(InputStream inputStream, SimpleFilter simpleFilter) {
+        inputStream.getClass();
+        this.in = inputStream;
+        this.simpleFilter = simpleFilter;
+    }
+
+    static int getMemoryUsage() {
+        return 5;
+    }
+
+    @Override // java.io.InputStream
+    public int available() throws IOException {
+        if (this.in == null) {
+            throw new XZIOException("Stream closed");
+        }
+        IOException iOException = this.exception;
+        if (iOException == null) {
+            return this.filtered;
+        }
+        throw iOException;
+    }
+
+    @Override // java.io.InputStream, java.io.Closeable, java.lang.AutoCloseable
+    public void close() throws IOException {
+        InputStream inputStream = this.in;
+        if (inputStream != null) {
+            try {
+                inputStream.close();
+            } finally {
+                this.in = null;
+            }
+        }
+    }
+
+    @Override // java.io.InputStream
+    public int read() throws IOException {
+        if (read(this.tempBuf, 0, 1) == -1) {
+            return -1;
+        }
+        return this.tempBuf[0] & 255;
+    }
+
+    @Override // java.io.InputStream
+    public int read(byte[] bArr, int i, int i2) throws IOException {
+        int i3;
+        if (i < 0 || i2 < 0 || (i3 = i + i2) < 0 || i3 > bArr.length) {
+            throw new IndexOutOfBoundsException();
+        }
+        if (i2 == 0) {
+            return 0;
+        }
+        if (this.in == null) {
+            throw new XZIOException("Stream closed");
+        }
+        IOException iOException = this.exception;
+        if (iOException != null) {
+            throw iOException;
+        }
+        int i4 = 0;
+        while (true) {
+            try {
+                int iMin = Math.min(this.filtered, i2);
+                System.arraycopy(this.filterBuf, this.pos, bArr, i, iMin);
+                int i5 = this.pos + iMin;
+                this.pos = i5;
+                int i6 = this.filtered - iMin;
+                this.filtered = i6;
+                i += iMin;
+                i2 -= iMin;
+                i4 += iMin;
+                int i7 = this.unfiltered;
+                if (i5 + i6 + i7 == 4096) {
+                    byte[] bArr2 = this.filterBuf;
+                    System.arraycopy(bArr2, i5, bArr2, 0, i6 + i7);
+                    this.pos = 0;
+                }
+                if (i2 == 0 || this.endReached) {
+                    break;
+                }
+                int i8 = this.pos;
+                int i9 = this.filtered;
+                int i10 = this.unfiltered;
+                int i11 = this.in.read(this.filterBuf, i8 + i9 + i10, 4096 - ((i8 + i9) + i10));
+                if (i11 == -1) {
+                    this.endReached = true;
+                    this.filtered = this.unfiltered;
+                    this.unfiltered = 0;
+                } else {
+                    int i12 = this.unfiltered + i11;
+                    this.unfiltered = i12;
+                    int iCode = this.simpleFilter.code(this.filterBuf, this.pos, i12);
+                    this.filtered = iCode;
+                    this.unfiltered -= iCode;
+                }
+            } catch (IOException e) {
+                this.exception = e;
+                throw e;
+            }
+        }
+        if (i4 > 0) {
+            return i4;
+        }
+        return -1;
+    }
+}

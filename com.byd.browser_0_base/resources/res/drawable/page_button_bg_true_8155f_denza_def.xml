@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:state_pressed="true"
+        android:drawable="@drawable/page_button_pressed_true_bg_8155f_denza_def"/>
+    <item
+        android:state_enabled="false"
+        android:drawable="@drawable/page_button_enable_true_bg_8155f_denza_def"/>
+    <item android:drawable="@drawable/page_button_default_true_bg_8155f_denza_def"/>
+</selector>

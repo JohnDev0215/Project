@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rl_title_permission"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/iv_back_permission"
+        android:layout_width="@dimen/dp_48"
+        android:layout_height="@dimen/dp_48"
+        android:src="@drawable/icon_public_close_48"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/dp_16"
+        android:layout_alignParentStart="true"/>
+    <TextView
+        android:textSize="@dimen/sp_20"
+        android:textStyle="bold"
+        android:textColor="@color/text_color_main_dilink_pagers"
+        android:id="@+id/tv_title_permission"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/permission_app_details"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/iv_back_permission"/>
+    <com.byd.base.view.segmentedbutton.SegmentedButtonGroup
+        android:layout_gravity="center_vertical"
+        android:id="@+id/srg_permission_type_permission"
+        android:background="@drawable/shape_bg_gray_radio_group"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="@dimen/dp_34"
+        android:layout_alignParentEnd="true"
+        style="@style/independent_segment_button_group_style">
+        <com.byd.base.view.segmentedbutton.SegmentedButton
+            android:id="@+id/rbtn_permission_permission"
+            app:sb_text="@string/permission_app_details"
+            style="@style/sbtn_2_app_manage_pager"/>
+        <com.byd.base.view.segmentedbutton.SegmentedButton
+            android:id="@+id/rbtn_app_permission"
+            app:sb_text="@string/dilink_application"
+            style="@style/sbtn_2_app_manage_pager"/>
+    </com.byd.base.view.segmentedbutton.SegmentedButtonGroup>
+</RelativeLayout>

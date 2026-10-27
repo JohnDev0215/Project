@@ -1,0 +1,6 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/view/GestureDetector;->mTouchSlopSquare:I,frameworks/base/core/java/android/view/GestureDetector.java,237,5,237,25,
+Landroid/view/GestureDetector;->mMinimumFlingVelocity:I,frameworks/base/core/java/android/view/GestureDetector.java,242,5,242,25,
+Landroid/view/GestureDetector;->LONGPRESS_TIMEOUT:I,frameworks/base/core/java/android/view/GestureDetector.java,246,5,246,63,maxTargetSdk=28
+Landroid/view/GestureDetector;->mListener:Landroid/view/GestureDetector$OnGestureListener;,frameworks/base/core/java/android/view/GestureDetector.java,258,5,258,25,
+Landroid/view/GestureDetector;->mAlwaysInTapRegion:Z,frameworks/base/core/java/android/view/GestureDetector.java,267,5,267,25,

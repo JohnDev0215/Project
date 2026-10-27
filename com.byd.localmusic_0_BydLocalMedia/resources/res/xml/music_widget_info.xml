@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<appwidget-provider xmlns:android="http://schemas.android.com/apk/res/android"
+    android:minWidth="@dimen/dp_300"
+    android:minHeight="@dimen/dp_200"
+    android:updatePeriodMillis="30000"
+    android:initialLayout="@layout/music_widget_main_day"
+    android:initialKeyguardLayout="@layout/music_widget_main_day"
+    android:widgetCategory="home_screen"/>

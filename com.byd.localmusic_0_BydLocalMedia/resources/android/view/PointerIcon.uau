@@ -1,0 +1,8 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/view/PointerIcon;->mType:I,frameworks/base/core/java/android/view/PointerIcon.java,152,5,152,88,maxTargetSdk=28&trackingBug=115609023L
+Landroid/view/PointerIcon;->mBitmap:Landroid/graphics/Bitmap;,frameworks/base/core/java/android/view/PointerIcon.java,155,5,155,25,
+Landroid/view/PointerIcon;->mHotSpotX:F,frameworks/base/core/java/android/view/PointerIcon.java,157,5,157,25,
+Landroid/view/PointerIcon;->mHotSpotY:F,frameworks/base/core/java/android/view/PointerIcon.java,159,5,159,25,
+Landroid/view/PointerIcon;->mBitmapFrames:[Landroid/graphics/Bitmap;,frameworks/base/core/java/android/view/PointerIcon.java,163,5,163,25,
+Landroid/view/PointerIcon;->mDurationPerFrame:I,frameworks/base/core/java/android/view/PointerIcon.java,165,5,165,25,
+Landroid/view/PointerIcon;->load(Landroid/content/Context;)Landroid/view/PointerIcon;,frameworks/base/core/java/android/view/PointerIcon.java,343,5,343,88,maxTargetSdk=28&trackingBug=115609023L

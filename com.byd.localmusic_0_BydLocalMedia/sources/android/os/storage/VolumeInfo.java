@@ -1,0 +1,487 @@
+package android.os.storage;
+
+import android.content.Context;
+import android.content.Intent;
+import android.content.res.Resources;
+import android.net.ConnectivityManager;
+import android.net.Uri;
+import android.os.Environment;
+import android.os.Parcel;
+import android.os.Parcelable;
+import android.os.UserHandle;
+import android.provider.DocumentsContract;
+import android.text.TextUtils;
+import android.util.ArrayMap;
+import android.util.DebugUtils;
+import android.util.SparseArray;
+import android.util.SparseIntArray;
+import com.android.internal.R;
+import com.android.internal.util.IndentingPrintWriter;
+import com.android.internal.util.Preconditions;
+import java.io.CharArrayWriter;
+import java.io.File;
+import java.util.Comparator;
+import java.util.Locale;
+import java.util.Objects;
+
+/* JADX INFO: loaded from: classes2.dex */
+public class VolumeInfo implements Parcelable {
+    public static final String ACTION_VOLUME_STATE_CHANGED = "android.os.storage.action.VOLUME_STATE_CHANGED";
+    public static final Parcelable.Creator<VolumeInfo> CREATOR;
+    private static final String DOCUMENT_AUTHORITY = "com.android.externalstorage.documents";
+    private static final String DOCUMENT_ROOT_PRIMARY_EMULATED = "primary";
+    public static final String EXTRA_VOLUME_ID = "android.os.storage.extra.VOLUME_ID";
+    public static final String EXTRA_VOLUME_STATE = "android.os.storage.extra.VOLUME_STATE";
+    public static final String ID_EMULATED_INTERNAL = "emulated";
+    public static final String ID_PRIVATE_INTERNAL = "private";
+    public static final int MOUNT_FLAG_PRIMARY = 1;
+    public static final int MOUNT_FLAG_VISIBLE = 2;
+    public static final int STATE_BAD_REMOVAL = 8;
+    public static final int STATE_CHECKING = 1;
+    public static final int STATE_EJECTING = 5;
+    public static final int STATE_FORMATTING = 4;
+    public static final int STATE_MOUNTED = 2;
+    public static final int STATE_MOUNTED_READ_ONLY = 3;
+    public static final int STATE_REMOVED = 7;
+    public static final int STATE_UNMOUNTABLE = 6;
+    public static final int STATE_UNMOUNTED = 0;
+    public static final int TYPE_ASEC = 3;
+    public static final int TYPE_EMULATED = 2;
+    public static final int TYPE_OBB = 4;
+    public static final int TYPE_PRIVATE = 1;
+    public static final int TYPE_PUBLIC = 0;
+    public static final int TYPE_STUB = 5;
+    public String deviceType;
+    public final DiskInfo disk;
+    public String fsLabel;
+    public String fsType;
+    public String fsUuid;
+    public final String id;
+    public String internalPath;
+    public int mountFlags;
+    public int mountUserId;
+    public final String partGuid;
+    public String path;
+    public int state;
+    public final int type;
+    private static SparseArray<String> sStateToEnvironment = new SparseArray<>();
+    private static ArrayMap<String, String> sEnvironmentToBroadcast = new ArrayMap<>();
+    private static SparseIntArray sStateToDescrip = new SparseIntArray();
+    private static final Comparator<VolumeInfo> sDescriptionComparator = new Comparator<VolumeInfo>() { // from class: android.os.storage.VolumeInfo.1
+        @Override // java.util.Comparator
+        public int compare(VolumeInfo volumeInfo, VolumeInfo volumeInfo2) {
+            if (VolumeInfo.ID_PRIVATE_INTERNAL.equals(volumeInfo.getId())) {
+                return -1;
+            }
+            if (volumeInfo.getDescription() == null) {
+                return 1;
+            }
+            if (volumeInfo2.getDescription() == null) {
+                return -1;
+            }
+            return volumeInfo.getDescription().compareTo(volumeInfo2.getDescription());
+        }
+    };
+
+    @Override // android.os.Parcelable
+    public int describeContents() {
+        return 0;
+    }
+
+    static {
+        sStateToEnvironment.put(0, Environment.MEDIA_UNMOUNTED);
+        sStateToEnvironment.put(1, Environment.MEDIA_CHECKING);
+        sStateToEnvironment.put(2, Environment.MEDIA_MOUNTED);
+        sStateToEnvironment.put(3, Environment.MEDIA_MOUNTED_READ_ONLY);
+        sStateToEnvironment.put(4, Environment.MEDIA_UNMOUNTED);
+        sStateToEnvironment.put(5, Environment.MEDIA_EJECTING);
+        sStateToEnvironment.put(6, Environment.MEDIA_UNMOUNTABLE);
+        sStateToEnvironment.put(7, Environment.MEDIA_REMOVED);
+        sStateToEnvironment.put(8, Environment.MEDIA_BAD_REMOVAL);
+        sEnvironmentToBroadcast.put(Environment.MEDIA_UNMOUNTED, Intent.ACTION_MEDIA_UNMOUNTED);
+        sEnvironmentToBroadcast.put(Environment.MEDIA_CHECKING, Intent.ACTION_MEDIA_CHECKING);
+        sEnvironmentToBroadcast.put(Environment.MEDIA_MOUNTED, Intent.ACTION_MEDIA_MOUNTED);
+        sEnvironmentToBroadcast.put(Environment.MEDIA_MOUNTED_READ_ONLY, Intent.ACTION_MEDIA_MOUNTED);
+        sEnvironmentToBroadcast.put(Environment.MEDIA_EJECTING, Intent.ACTION_MEDIA_EJECT);
+        sEnvironmentToBroadcast.put(Environment.MEDIA_UNMOUNTABLE, Intent.ACTION_MEDIA_UNMOUNTABLE);
+        sEnvironmentToBroadcast.put(Environment.MEDIA_REMOVED, Intent.ACTION_MEDIA_REMOVED);
+        sEnvironmentToBroadcast.put(Environment.MEDIA_BAD_REMOVAL, Intent.ACTION_MEDIA_BAD_REMOVAL);
+        sStateToDescrip.put(0, R.string.ext_media_status_unmounted);
+        sStateToDescrip.put(1, R.string.ext_media_status_checking);
+        sStateToDescrip.put(2, R.string.ext_media_status_mounted);
+        sStateToDescrip.put(3, R.string.ext_media_status_mounted_ro);
+        sStateToDescrip.put(4, R.string.ext_media_status_formatting);
+        sStateToDescrip.put(5, R.string.ext_media_status_ejecting);
+        sStateToDescrip.put(6, R.string.ext_media_status_unmountable);
+        sStateToDescrip.put(7, R.string.ext_media_status_removed);
+        sStateToDescrip.put(8, R.string.ext_media_status_bad_removal);
+        CREATOR = new Parcelable.Creator<VolumeInfo>() { // from class: android.os.storage.VolumeInfo.2
+            /* JADX WARN: Can't rename method to resolve collision */
+            @Override // android.os.Parcelable.Creator
+            public VolumeInfo createFromParcel(Parcel parcel) {
+                return new VolumeInfo(parcel);
+            }
+
+            /* JADX WARN: Can't rename method to resolve collision */
+            @Override // android.os.Parcelable.Creator
+            public VolumeInfo[] newArray(int i) {
+                return new VolumeInfo[i];
+            }
+        };
+    }
+
+    public VolumeInfo(String str, int i, DiskInfo diskInfo, String str2) {
+        this.mountFlags = 0;
+        this.mountUserId = -10000;
+        this.state = 0;
+        this.id = (String) Preconditions.checkNotNull(str);
+        this.type = i;
+        this.disk = diskInfo;
+        this.partGuid = str2;
+        this.deviceType = "";
+    }
+
+    public VolumeInfo(String str, int i, DiskInfo diskInfo, String str2, String str3) {
+        this.mountFlags = 0;
+        this.mountUserId = -10000;
+        this.state = 0;
+        this.id = (String) Preconditions.checkNotNull(str);
+        this.type = i;
+        this.disk = diskInfo;
+        this.partGuid = str2;
+        this.deviceType = str3;
+    }
+
+    public VolumeInfo(Parcel parcel) {
+        this.mountFlags = 0;
+        this.mountUserId = -10000;
+        this.state = 0;
+        this.id = parcel.readString8();
+        this.type = parcel.readInt();
+        if (parcel.readInt() != 0) {
+            this.disk = DiskInfo.CREATOR.createFromParcel(parcel);
+        } else {
+            this.disk = null;
+        }
+        this.partGuid = parcel.readString8();
+        this.mountFlags = parcel.readInt();
+        this.mountUserId = parcel.readInt();
+        this.state = parcel.readInt();
+        this.fsType = parcel.readString8();
+        this.fsUuid = parcel.readString8();
+        this.fsLabel = parcel.readString8();
+        this.path = parcel.readString8();
+        this.internalPath = parcel.readString8();
+        this.deviceType = parcel.readString8();
+    }
+
+    public static String getEnvironmentForState(int i) {
+        String str = sStateToEnvironment.get(i);
+        return str != null ? str : "unknown";
+    }
+
+    public static String getBroadcastForEnvironment(String str) {
+        return sEnvironmentToBroadcast.get(str);
+    }
+
+    public static String getBroadcastForState(int i) {
+        return getBroadcastForEnvironment(getEnvironmentForState(i));
+    }
+
+    public static Comparator<VolumeInfo> getDescriptionComparator() {
+        return sDescriptionComparator;
+    }
+
+    public String getId() {
+        return this.id;
+    }
+
+    public DiskInfo getDisk() {
+        return this.disk;
+    }
+
+    public String getDiskId() {
+        DiskInfo diskInfo = this.disk;
+        if (diskInfo != null) {
+            return diskInfo.id;
+        }
+        return null;
+    }
+
+    public int getType() {
+        return this.type;
+    }
+
+    public int getState() {
+        return this.state;
+    }
+
+    public int getStateDescription() {
+        return sStateToDescrip.get(this.state, 0);
+    }
+
+    public String getFsUuid() {
+        return this.fsUuid;
+    }
+
+    public String getNormalizedFsUuid() {
+        String str = this.fsUuid;
+        if (str != null) {
+            return str.toLowerCase(Locale.US);
+        }
+        return null;
+    }
+
+    public int getMountUserId() {
+        return this.mountUserId;
+    }
+
+    public String getDescription() {
+        if (ID_PRIVATE_INTERNAL.equals(this.id) || this.id.startsWith("emulated;")) {
+            return Resources.getSystem().getString(R.string.storage_internal);
+        }
+        if (TextUtils.isEmpty(this.fsLabel)) {
+            return null;
+        }
+        return this.fsLabel;
+    }
+
+    public boolean isMountedReadable() {
+        int i = this.state;
+        return i == 2 || i == 3;
+    }
+
+    public boolean isMountedWritable() {
+        return this.state == 2;
+    }
+
+    public boolean isPrimary() {
+        return (this.mountFlags & 1) != 0;
+    }
+
+    public boolean isPrimaryPhysical() {
+        return isPrimary() && getType() == 0;
+    }
+
+    public boolean isVisible() {
+        return (this.mountFlags & 2) != 0;
+    }
+
+    public boolean isVisibleForUser(int i) {
+        int i2 = this.type;
+        if ((i2 == 0 || i2 == 5 || i2 == 2) && this.mountUserId == i) {
+            return isVisible();
+        }
+        return false;
+    }
+
+    public boolean isPrimaryEmulatedForUser(int i) {
+        return this.id.equals("emulated;" + i);
+    }
+
+    public boolean isVisibleForRead(int i) {
+        return isVisibleForUser(i);
+    }
+
+    public boolean isVisibleForWrite(int i) {
+        return isVisibleForUser(i);
+    }
+
+    public File getPath() {
+        if (this.path != null) {
+            return new File(this.path);
+        }
+        return null;
+    }
+
+    public File getInternalPath() {
+        if (this.internalPath != null) {
+            return new File(this.internalPath);
+        }
+        return null;
+    }
+
+    public String getDeviceType() {
+        return this.deviceType;
+    }
+
+    public File getPathForUser(int i) {
+        if (this.path == null) {
+            return null;
+        }
+        int i2 = this.type;
+        if (i2 == 0 || i2 == 5) {
+            return new File(this.path);
+        }
+        if (i2 == 2) {
+            return new File(this.path, Integer.toString(i));
+        }
+        return null;
+    }
+
+    public File getInternalPathForUser(int i) {
+        if (this.path == null) {
+            return null;
+        }
+        int i2 = this.type;
+        if (i2 == 0 || i2 == 5) {
+            return new File(this.path.replace("/storage/", "/mnt/media_rw/"));
+        }
+        return getPathForUser(i);
+    }
+
+    public StorageVolume buildStorageVolume(Context context, int i, boolean z) {
+        String str;
+        long j;
+        boolean z2;
+        StorageManager storageManager = (StorageManager) context.getSystemService(StorageManager.class);
+        String environmentForState = z ? Environment.MEDIA_UNMOUNTED : getEnvironmentForState(this.state);
+        File pathForUser = getPathForUser(i);
+        if (pathForUser == null) {
+            pathForUser = new File("/dev/null");
+        }
+        File file = pathForUser;
+        File internalPathForUser = getInternalPathForUser(i);
+        if (internalPathForUser == null) {
+            internalPathForUser = new File("/dev/null");
+        }
+        File file2 = internalPathForUser;
+        String bestVolumeDescription = null;
+        String str2 = this.fsUuid;
+        int i2 = this.type;
+        boolean z3 = true;
+        if (i2 == 2) {
+            VolumeInfo volumeInfoFindPrivateForEmulated = storageManager.findPrivateForEmulated(this);
+            if (volumeInfoFindPrivateForEmulated != null) {
+                bestVolumeDescription = storageManager.getBestVolumeDescription(volumeInfoFindPrivateForEmulated);
+                str2 = volumeInfoFindPrivateForEmulated.fsUuid;
+            }
+            z2 = !isPrimaryEmulatedForUser(i);
+            str = str2;
+            j = 0;
+        } else if (i2 == 0 || i2 == 5) {
+            String bestVolumeDescription2 = storageManager.getBestVolumeDescription(this);
+            str = str2;
+            j = "vfat".equals(this.fsType) ? 4294967295L : 0L;
+            z2 = true;
+            z3 = false;
+            bestVolumeDescription = bestVolumeDescription2;
+        } else {
+            throw new IllegalStateException("Unexpected volume type " + this.type);
+        }
+        return new StorageVolume(this.id, file, file2, bestVolumeDescription == null ? context.getString(17039374) : bestVolumeDescription, isPrimary(), z2, z3, false, j, new UserHandle(i), str, environmentForState, this.deviceType);
+    }
+
+    public static int buildStableMtpStorageId(String str) {
+        if (TextUtils.isEmpty(str)) {
+            return 0;
+        }
+        int iCharAt = 0;
+        for (int i = 0; i < str.length(); i++) {
+            iCharAt = (iCharAt * 31) + str.charAt(i);
+        }
+        int i2 = ((iCharAt << 16) ^ iCharAt) & (-65536);
+        if (i2 == 0) {
+            i2 = 131072;
+        }
+        int i3 = i2 != 65536 ? i2 : 131072;
+        if (i3 == -65536) {
+            i3 = -131072;
+        }
+        return i3 | 1;
+    }
+
+    public Intent buildBrowseIntent() {
+        return buildBrowseIntentForUser(UserHandle.myUserId());
+    }
+
+    public Intent buildBrowseIntentForUser(int i) {
+        Uri uriBuildRootUri;
+        int i2 = this.type;
+        if ((i2 == 0 || i2 == 5) && this.mountUserId == i) {
+            uriBuildRootUri = DocumentsContract.buildRootUri("com.android.externalstorage.documents", this.fsUuid);
+        } else {
+            if (this.type != 2 || !isPrimary()) {
+                return null;
+            }
+            uriBuildRootUri = DocumentsContract.buildRootUri("com.android.externalstorage.documents", "primary");
+        }
+        Intent intent = new Intent("android.intent.action.VIEW");
+        intent.addCategory(Intent.CATEGORY_DEFAULT);
+        intent.setDataAndType(uriBuildRootUri, DocumentsContract.Root.MIME_TYPE_ITEM);
+        intent.putExtra(DocumentsContract.EXTRA_SHOW_ADVANCED, isPrimary());
+        return intent;
+    }
+
+    public String toString() {
+        CharArrayWriter charArrayWriter = new CharArrayWriter();
+        dump(new IndentingPrintWriter(charArrayWriter, "    ", 80));
+        return charArrayWriter.toString();
+    }
+
+    public void dump(IndentingPrintWriter indentingPrintWriter) {
+        indentingPrintWriter.println("VolumeInfo{" + this.id + "}:");
+        indentingPrintWriter.increaseIndent();
+        indentingPrintWriter.printPair("type", DebugUtils.valueToString(getClass(), "TYPE_", this.type));
+        indentingPrintWriter.printPair("diskId", getDiskId());
+        indentingPrintWriter.printPair("partGuid", this.partGuid);
+        indentingPrintWriter.printPair("mountFlags", DebugUtils.flagsToString(getClass(), "MOUNT_FLAG_", this.mountFlags));
+        indentingPrintWriter.printPair("mountUserId", Integer.valueOf(this.mountUserId));
+        indentingPrintWriter.printPair("state", DebugUtils.valueToString(getClass(), "STATE_", this.state));
+        indentingPrintWriter.println();
+        indentingPrintWriter.printPair("fsType", this.fsType);
+        indentingPrintWriter.printPair("fsUuid", this.fsUuid);
+        indentingPrintWriter.printPair("fsLabel", this.fsLabel);
+        indentingPrintWriter.println();
+        indentingPrintWriter.printPair("path", this.path);
+        indentingPrintWriter.printPair("internalPath", this.internalPath);
+        indentingPrintWriter.printPair(ConnectivityManager.EXTRA_DEVICE_TYPE, this.deviceType);
+        indentingPrintWriter.decreaseIndent();
+        indentingPrintWriter.println();
+    }
+
+    /* JADX INFO: renamed from: clone, reason: merged with bridge method [inline-methods] */
+    public VolumeInfo m32clone() {
+        Parcel parcelObtain = Parcel.obtain();
+        try {
+            writeToParcel(parcelObtain, 0);
+            parcelObtain.setDataPosition(0);
+            return CREATOR.createFromParcel(parcelObtain);
+        } finally {
+            parcelObtain.recycle();
+        }
+    }
+
+    public boolean equals(Object obj) {
+        if (obj instanceof VolumeInfo) {
+            return Objects.equals(this.id, ((VolumeInfo) obj).id);
+        }
+        return false;
+    }
+
+    public int hashCode() {
+        return this.id.hashCode();
+    }
+
+    @Override // android.os.Parcelable
+    public void writeToParcel(Parcel parcel, int i) {
+        parcel.writeString8(this.id);
+        parcel.writeInt(this.type);
+        if (this.disk != null) {
+            parcel.writeInt(1);
+            this.disk.writeToParcel(parcel, i);
+        } else {
+            parcel.writeInt(0);
+        }
+        parcel.writeString8(this.partGuid);
+        parcel.writeInt(this.mountFlags);
+        parcel.writeInt(this.mountUserId);
+        parcel.writeInt(this.state);
+        parcel.writeString8(this.fsType);
+        parcel.writeString8(this.fsUuid);
+        parcel.writeString8(this.fsLabel);
+        parcel.writeString8(this.path);
+        parcel.writeString8(this.internalPath);
+        parcel.writeString8(this.deviceType);
+    }
+}

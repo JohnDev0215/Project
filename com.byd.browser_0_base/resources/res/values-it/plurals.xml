@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="accessibility_dialog_back_button">
+        <item quantity="one">Comprimi %1$d scheda.</item>
+        <item quantity="other">Comprimi il gruppo di schede con %1$d schede.</item>
+    </plurals>
+    <plurals name="accessibility_dialog_back_button_with_group_name">
+        <item quantity="one">Comprimi %1$d scheda.</item>
+        <item quantity="other">Comprimi il gruppo di schede %1$s contenente %2$d schede.</item>
+    </plurals>
+    <plurals name="accessibility_download_manager_ui_audio">
+        <item quantity="one">%d file audio</item>
+        <item quantity="other">%d file audio</item>
+    </plurals>
+    <plurals name="accessibility_download_manager_ui_generic">
+        <item quantity="one">%d file</item>
+        <item quantity="other">%d file</item>
+    </plurals>
+    <plurals name="accessibility_download_manager_ui_images">
+        <item quantity="one">%d immagine</item>
+        <item quantity="other">%d immagini</item>
+    </plurals>
+    <plurals name="accessibility_download_manager_ui_pages">
+        <item quantity="one">%d pagina</item>
+        <item quantity="other">%d pagine</item>
+    </plurals>
+    <plurals name="accessibility_download_manager_ui_video">
+        <item quantity="one">%d video</item>
+        <item quantity="other">%d video</item>
+    </plurals>
+    <plurals name="accessibility_merchant_viewer_message_description">
+        <item quantity="one">Valutazione di %1$s/%2$s, %3$d recensione</item>
+        <item quantity="other">Valutazione di %1$s/%2$s, %3$d recensioni</item>
+    </plurals>
+    <plurals name="accessibility_remove_selected_items">
+        <item quantity="one">Rimuovi 1 elemento selezionato</item>
+        <item quantity="other">Rimuovi %d elementi selezionati</item>
+    </plurals>
+    <plurals name="accessibility_share_selected_items">
+        <item quantity="one">Condividi 1 elemento selezionato</item>
+        <item quantity="other">Condividi %d elementi selezionati</item>
+    </plurals>
+    <plurals name="accessibility_tab_selection_dialog_remove_button">
+        <item quantity="one">Rimuovi %1$d scheda selezionata dal gruppo.</item>
+        <item quantity="other">Rimuovi %1$d schede selezionate dal gruppo.</item>
+    </plurals>
+    <plurals name="accessibility_tab_selection_editor_bookmark_tabs_action_button">
+        <item quantity="one">Aggiungi %1$d scheda selezionata ai preferiti</item>
+        <item quantity="other">Aggiungi %1$d schede selezionate ai preferiti</item>
+    </plurals>
+    <plurals name="accessibility_tab_selection_editor_close_tabs">
+        <item quantity="one">Chiudi %1$d scheda selezionata</item>
+        <item quantity="other">Chiudi %1$d schede selezionate</item>
+    </plurals>
+    <plurals name="accessibility_tab_selection_editor_group_button">
+        <item quantity="one">Raggruppa %1$d scheda selezionata</item>
+        <item quantity="other">Raggruppa %1$d schede selezionate</item>
+    </plurals>
+    <plurals name="accessibility_tab_selection_editor_group_tabs">
+        <item quantity="one">Raggruppa %1$d scheda selezionata</item>
+        <item quantity="other">Raggruppa %1$d schede selezionate</item>
+    </plurals>
+    <plurals name="accessibility_tab_selection_editor_share_tabs_action_button">
+        <item quantity="one">Condividi %1$d scheda selezionata</item>
+        <item quantity="other">Condividi %1$d schede selezionate</item>
+    </plurals>
+    <plurals name="accessibility_tab_selection_editor_ungroup_tabs">
+        <item quantity="one">Separa %1$d scheda selezionata</item>
+        <item quantity="other">Separa %1$d schede selezionate</item>
+    </plurals>
+    <plurals name="accessibility_tab_suggestion_close_tab_action_button">
+        <item quantity="one">Chiudi %1$d scheda selezionata</item>
+        <item quantity="other">Chiudi %1$d schede selezionate</item>
+    </plurals>
+    <plurals name="allsites_fps_list_summary">
+        <item quantity="one">Cookie consentiti per %1$s sito %2$s</item>
+        <item quantity="other">Cookie consentiti per %1$s siti %2$s</item>
+    </plurals>
+    <plurals name="allsites_fps_summary">
+        <item quantity="one">%1$s sito del gruppo di siti di %2$s può vedere le tue attività nel gruppo</item>
+        <item quantity="other">%1$s siti del gruppo di siti di %2$s possono vedere le tue attività nel gruppo</item>
+    </plurals>
+    <plurals name="bookmarks_count">
+        <item quantity="one">%1$d preferito</item>
+        <item quantity="other">%1$d preferiti</item>
+    </plurals>
+    <plurals name="bottom_tab_grid_title_placeholder">
+        <item quantity="one">%1$d scheda</item>
+        <item quantity="other">%1$d schede</item>
+    </plurals>
+    <plurals name="contacts_picker_more_details">
+        <item quantity="one">(+ 1 altro)</item>
+        <item quantity="other">(+ altri %d)</item>
+    </plurals>
+    <plurals name="cookie_controls_blocked_cookies">
+        <item quantity="one">1 cookie bloccato</item>
+        <item quantity="other">%d cookie bloccati</item>
+    </plurals>
+    <plurals name="cookies_count">
+        <item quantity="one">%d cookie</item>
+        <item quantity="other">%d cookie</item>
+    </plurals>
+    <plurals name="download_manager_n_hours">
+        <item quantity="one">%d ora</item>
+        <item quantity="other">%d ore</item>
+    </plurals>
+    <plurals name="download_message_multiple_download_complete">
+        <item quantity="one">File scaricato</item>
+        <item quantity="other">%d download completati</item>
+    </plurals>
+    <plurals name="download_message_multiple_download_failed">
+        <item quantity="one">1 download non riuscito</item>
+        <item quantity="other">%d download non riusciti</item>
+    </plurals>
+    <plurals name="download_message_multiple_download_in_progress">
+        <item quantity="one">Download del file in corso…</item>
+        <item quantity="other">Download di %d file in corso…</item>
+    </plurals>
+    <plurals name="download_message_multiple_download_pending">
+        <item quantity="one">1 download in attesa</item>
+        <item quantity="other">%d download in attesa</item>
+    </plurals>
+    <plurals name="download_ui_files_downloaded">
+        <item quantity="one">%1$d file scaricato</item>
+        <item quantity="other">%1$d file scaricati</item>
+    </plurals>
+    <plurals name="history_clusters_n_matches">
+        <item quantity="one">%d corrispondenza</item>
+        <item quantity="other">%d corrispondenze</item>
+    </plurals>
+    <plurals name="instance_switcher_close_confirm_deleted_incognito">
+        <item quantity="one">%1$s scheda di navigazione in incognito verrà chiusa</item>
+        <item quantity="other">%1$s schede di navigazione in incognito verranno chiuse</item>
+    </plurals>
+    <plurals name="instance_switcher_close_confirm_deleted_incognito_mixed">
+        <item quantity="one">%1$s scheda in incognito e %2$s altra scheda verranno chiuse</item>
+        <item quantity="other">%1$s schede in incognito e altre %2$s schede verranno chiuse</item>
+    </plurals>
+    <plurals name="instance_switcher_close_confirm_deleted_tabs_many">
+        <item quantity="one">%1$s e %2$s altra scheda verranno chiuse</item>
+        <item quantity="other">%1$s e altre %2$s schede verranno chiuse</item>
+    </plurals>
+    <plurals name="instance_switcher_desc_incognito">
+        <item quantity="one">%1$s scheda di navigazione in incognito</item>
+        <item quantity="other">%1$s schede di navigazione in incognito</item>
+    </plurals>
+    <plurals name="instance_switcher_desc_mixed">
+        <item quantity="one">%1$s scheda</item>
+        <item quantity="other">%2$s schede, %1$s in incognito</item>
+    </plurals>
+    <plurals name="instance_switcher_tab_count_nonzero">
+        <item quantity="one">1 scheda</item>
+        <item quantity="other">%d schede</item>
+    </plurals>
+    <plurals name="merchant_viewer_message_description_reviews">
+        <item quantity="one">(%1$s recensione)</item>
+        <item quantity="other">(%1$s recensioni)</item>
+    </plurals>
+    <plurals name="merchant_viewer_message_description_reviews_from_google">
+        <item quantity="one">%1$s recensione da Google</item>
+        <item quantity="other">%1$s recensioni da Google</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">%d nuova notifica</item>
+        <item quantity="other">%d nuove notifiche</item>
+    </plurals>
+    <plurals name="n_days_ago">
+        <item quantity="one">%d giorno fa</item>
+        <item quantity="other">%d giorni fa</item>
+    </plurals>
+    <plurals name="n_hours_ago">
+        <item quantity="one">%d ora fa</item>
+        <item quantity="other">%d ore fa</item>
+    </plurals>
+    <plurals name="n_minutes_ago">
+        <item quantity="one">%d minuto fa</item>
+        <item quantity="other">%d minuti fa</item>
+    </plurals>
+    <plurals name="offline_pages_auto_fetch_in_progress_notification_text">
+        <item quantity="one">Chrome caricherà la tua pagina quando sarà pronta</item>
+        <item quantity="other">Chrome caricherà le tue pagine quando saranno pronte</item>
+    </plurals>
+    <plurals name="page_info_cookies_in_use">
+        <item quantity="one">1 cookie in uso</item>
+        <item quantity="other">%d cookie in uso</item>
+    </plurals>
+    <plurals name="page_info_permissions_summary_more_allowed">
+        <item quantity="one">Consentite: %1$s, %2$s e %3$s altra</item>
+        <item quantity="other">Consentite: %1$s, %2$s e altre %3$s</item>
+    </plurals>
+    <plurals name="page_info_permissions_summary_more_blocked">
+        <item quantity="one">Bloccate: %1$s, %2$s e %3$s altra</item>
+        <item quantity="other">Bloccate: %1$s, %2$s e altre %3$s</item>
+    </plurals>
+    <plurals name="page_info_permissions_summary_more_mixed">
+        <item quantity="one">%1$s, %2$s e %3$s altra</item>
+        <item quantity="other">%1$s, %2$s e altre %3$s</item>
+    </plurals>
+    <plurals name="password_check_status_message_idle_with_leaks">
+        <item quantity="one">%d password compromessa</item>
+        <item quantity="other">%d password compromesse</item>
+    </plurals>
+    <plurals name="payment_request_contacts_preview">
+        <item quantity="one">%1$s… e altri %2$s</item>
+        <item quantity="other">%1$s… e altri %2$s</item>
+    </plurals>
+    <plurals name="payment_request_payment_methods_preview">
+        <item quantity="one">%1$s… e altri %2$s</item>
+        <item quantity="other">%1$s… e altri %2$s</item>
+    </plurals>
+    <plurals name="payment_request_shipping_addresses_preview">
+        <item quantity="one">%1$s… e altri %2$s</item>
+        <item quantity="other">%1$s… e altri %2$s</item>
+    </plurals>
+    <plurals name="payment_request_shipping_options_preview">
+        <item quantity="one">%1$s… e altre %2$s</item>
+        <item quantity="other">%1$s… e altre %2$s</item>
+    </plurals>
+    <plurals name="reading_list_reminder_notification_subtitle">
+        <item quantity="one">Hai %1$d pagina da leggere</item>
+        <item quantity="other">Hai %1$d pagine da leggere</item>
+    </plurals>
+    <plurals name="reading_list_unread_page_count">
+        <item quantity="one">%1$d pagina da leggere</item>
+        <item quantity="other">%1$d pagine da leggere</item>
+    </plurals>
+    <plurals name="safety_check_passwords_compromised_exist">
+        <item quantity="one">1 password compromessa</item>
+        <item quantity="other">%d password compromesse</item>
+    </plurals>
+    <plurals name="safety_check_timestamp_after_days">
+        <item quantity="one">Eseguito 1 giorno fa</item>
+        <item quantity="other">Eseguito %d giorni fa</item>
+    </plurals>
+    <plurals name="safety_check_timestamp_after_hours">
+        <item quantity="one">Eseguito 1 ora fa</item>
+        <item quantity="other">Eseguito %d ore fa</item>
+    </plurals>
+    <plurals name="safety_check_timestamp_after_mins">
+        <item quantity="one">Eseguito 1 minuto fa</item>
+        <item quantity="other">Eseguito %d minuti fa</item>
+    </plurals>
+    <plurals name="selected_items">
+        <item quantity="one">1 elemento selezionato</item>
+        <item quantity="other">%d elementi selezionati</item>
+    </plurals>
+    <plurals name="signal_strength_level_n_bars">
+        <item quantity="one">Intensità del segnale: %d barra</item>
+        <item quantity="other">Intensità del segnale: %d barre</item>
+    </plurals>
+    <plurals name="tab_selection_editor_bookmark_tabs_action_button">
+        <item quantity="one">Aggiungi scheda a preferiti</item>
+        <item quantity="other">Aggiungi schede a preferiti</item>
+    </plurals>
+    <plurals name="tab_selection_editor_close_tabs">
+        <item quantity="one">Chiudi scheda</item>
+        <item quantity="other">Chiudi schede</item>
+    </plurals>
+    <plurals name="tab_selection_editor_group_tabs">
+        <item quantity="one">Raggruppa scheda</item>
+        <item quantity="other">Raggruppa schede</item>
+    </plurals>
+    <plurals name="tab_selection_editor_share_sheet_preview_message">
+        <item quantity="one">%1$d link da Chrome</item>
+        <item quantity="other">%1$d link da Chrome</item>
+    </plurals>
+    <plurals name="tab_selection_editor_share_tabs_action_button">
+        <item quantity="one">Condividi scheda</item>
+        <item quantity="other">Condividi schede</item>
+    </plurals>
+    <plurals name="tab_selection_editor_tabs_count">
+        <item quantity="one">%1$d scheda</item>
+        <item quantity="other">%1$d schede</item>
+    </plurals>
+    <plurals name="tab_selection_editor_ungroup_tabs">
+        <item quantity="one">Separa scheda</item>
+        <item quantity="other">Separa schede</item>
+    </plurals>
+</resources>

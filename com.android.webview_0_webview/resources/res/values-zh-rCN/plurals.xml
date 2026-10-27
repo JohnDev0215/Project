@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="cookie_controls_blocked_cookies">
+        <item quantity="one">已拦截 1 个 Cookie</item>
+        <item quantity="other">已拦截 %d 个 Cookie</item>
+    </plurals>
+    <plurals name="selected_items">
+        <item quantity="one">已选择 1 项</item>
+        <item quantity="other">已选择 %d 项</item>
+    </plurals>
+</resources>

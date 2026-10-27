@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+    <solid android:color="@color/white_fa_8155f_dynasty_def"/>
+    <corners android:radius="@dimen/dimen_8_dp"/>
+    <stroke
+        android:width="@dimen/dimen_1_dp"
+        android:color="@color/card_stroke_color_8155f_dynasty_def"/>
+</shape>

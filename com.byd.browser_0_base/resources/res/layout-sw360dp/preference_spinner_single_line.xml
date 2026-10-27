@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:maxHeight="@dimen/settings_spinner_max_height"
+    android:layoutDirection="ltr"
+    style="@style/SpinnerPreference">
+    <TextView
+        android:layout_gravity="center_vertical"
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textAlignment="viewStart"
+        style="@style/SpinnerPreferenceTitle"/>
+    <Spinner
+        android:textAppearance="@style/SpinnerText"
+        android:gravity="start|center_vertical"
+        android:layout_gravity="center_vertical"
+        android:id="@+id/spinner"
+        android:background="@drawable/clear_browsing_spinner_bg"
+        android:paddingTop="@dimen/settings_spinner_padding_top_bottom"
+        android:paddingBottom="@dimen/settings_spinner_padding_top_bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="@dimen/settings_spinner_min_width"
+        android:popupBackground="@drawable/clear_browsing_spinner_popu_bg"
+        android:paddingStart="@dimen/settings_spinner_padding_start"/>
+</LinearLayout>

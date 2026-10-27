@@ -1,0 +1,3 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/net/Proxy;->getProxy(Landroid/content/Context;Ljava/lang/String;)Ljava/net/Proxy;,frameworks/base/core/java/android/net/Proxy.java,110,5,110,25,
+Landroid/net/Proxy;->setHttpProxySystemProperty(Landroid/net/ProxyInfo;)V,frameworks/base/core/java/android/net/Proxy.java,244,5,244,25,

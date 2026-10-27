@@ -1,0 +1,4 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/telephony/SubscriptionInfo;->setDisplayName(Ljava/lang/CharSequence;)V,frameworks/base/telephony/java/android/telephony/SubscriptionInfo.java,358,5,358,25,
+Landroid/telephony/SubscriptionInfo;->getNameSource()I,frameworks/base/telephony/java/android/telephony/SubscriptionInfo.java,383,5,383,25,
+Landroid/telephony/SubscriptionInfo;->setIconTint(I)V,frameworks/base/telephony/java/android/telephony/SubscriptionInfo.java,450,5,450,25,

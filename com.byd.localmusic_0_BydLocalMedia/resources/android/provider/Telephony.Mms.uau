@@ -1,0 +1,5 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/provider/Telephony$Mms;->NAME_ADDR_EMAIL_PATTERN:Ljava/util/regex/Pattern;,frameworks/base/core/java/android/provider/Telephony.java,2906,9,2906,29,
+Landroid/provider/Telephony$Mms;->extractAddrSpec(Ljava/lang/String;)Ljava/lang/String;,frameworks/base/core/java/android/provider/Telephony.java,2934,9,2934,29,
+Landroid/provider/Telephony$Mms;->isEmailAddress(Ljava/lang/String;)Z,frameworks/base/core/java/android/provider/Telephony.java,2951,9,2951,29,
+Landroid/provider/Telephony$Mms;->isPhoneNumber(Ljava/lang/String;)Z,frameworks/base/core/java/android/provider/Telephony.java,2969,9,2969,29,

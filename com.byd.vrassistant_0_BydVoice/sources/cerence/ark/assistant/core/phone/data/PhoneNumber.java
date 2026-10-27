@@ -1,0 +1,57 @@
+package cerence.ark.assistant.core.phone.data;
+
+/* JADX INFO: loaded from: classes.dex */
+public class PhoneNumber {
+    private final String mNumber;
+    private final PhoneNumberType mNumberType;
+
+    public enum PhoneNumberType {
+        HOME,
+        MOBILE,
+        WORK,
+        OTHER
+    }
+
+    private PhoneNumber(Builder builder) {
+        this.mNumber = builder.mNumber;
+        this.mNumberType = builder.mNumberType;
+    }
+
+    public static Builder builder() {
+        return new Builder();
+    }
+
+    public String getNumber() {
+        return this.mNumber;
+    }
+
+    public PhoneNumberType getNumberType() {
+        return this.mNumberType;
+    }
+
+    public String toString() {
+        return "PhoneNumber{mNumber='" + this.mNumber + "', mNumberType=" + this.mNumberType + '}';
+    }
+
+    public static class Builder {
+        private String mNumber;
+        private PhoneNumberType mNumberType;
+
+        private Builder() {
+        }
+
+        public Builder setNumber(String str) {
+            this.mNumber = str;
+            return this;
+        }
+
+        public Builder setNumberType(PhoneNumberType phoneNumberType) {
+            this.mNumberType = phoneNumberType;
+            return this;
+        }
+
+        public PhoneNumber build() {
+            return new PhoneNumber(this);
+        }
+    }
+}

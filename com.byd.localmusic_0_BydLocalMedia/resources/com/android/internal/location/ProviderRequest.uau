@@ -1,0 +1,4 @@
+signature,file,startline,startcol,endline,endcol,properties
+Lcom/android/internal/location/ProviderRequest;->reportLocation:Z,frameworks/base/location/java/com/android/internal/location/ProviderRequest.java,38,5,38,25,
+Lcom/android/internal/location/ProviderRequest;->interval:J,frameworks/base/location/java/com/android/internal/location/ProviderRequest.java,42,5,42,25,
+Lcom/android/internal/location/ProviderRequest;->locationRequests:Ljava/util/List;,frameworks/base/location/java/com/android/internal/location/ProviderRequest.java,65,5,65,25,

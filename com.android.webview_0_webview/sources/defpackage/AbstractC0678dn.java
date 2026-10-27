@@ -1,0 +1,101 @@
+package defpackage;
+
+import android.R;
+
+/* JADX INFO: renamed from: dn, reason: case insensitive filesystem */
+/* JADX INFO: compiled from: chromium-SystemWebView.apk-default-410412053 */
+/* JADX INFO: loaded from: classes.dex */
+public abstract class AbstractC0678dn {
+    public static int[] a = {2130903089, 2130903090, 2130903091, 2130903196, 2130903197, 2130903198, 2130903199, 2130903200, 2130903201, 2130903219, 2130903225, 2130903226, 2130903241, 2130903283, 2130903288, 2130903294, 2130903295, 2130903298, 2130903312, 2130903322, 2130903358, 2130903379, 2130903396, 2130903403, 2130903404, 2130903457, 2130903460, 2130903529, 2130903539};
+    public static int[] b = {R.attr.layout_gravity};
+    public static int[] c = {R.attr.minWidth};
+    public static int[] d = new int[0];
+    public static int[] e = {2130903089, 2130903090, 2130903173, 2130903283, 2130903460, 2130903539};
+    public static int[] f = {2130903246, 2130903313};
+    public static int[] g = {2130903124, 2130903125, 2130903349, 2130903350, 2130903376, 2130903432, 2130903433, R.attr.layout};
+    public static int[] h = {R.attr.dither, R.attr.visible, R.attr.variablePadding, R.attr.constantSize, R.attr.enterFadeDuration, R.attr.exitFadeDuration};
+    public static int[] i = {R.attr.id, R.attr.drawable};
+    public static int[] j = {R.attr.drawable, R.attr.toId, R.attr.fromId, R.attr.reversible};
+    public static int[] k = {2130903241, 2130903247, 2130903344, R.attr.background, R.attr.touchscreenBlocksFocus, R.attr.keyboardNavigationCluster};
+    public static int[] l = {2130903447, 2130903448, 2130903449, 2130903450};
+    public static int[] m = {2130903341, 2130903342};
+    public static int[] n = {2130903443, 2130903527, 2130903528, R.attr.src};
+    public static int[] o = {2130903524, 2130903525, 2130903526, R.attr.thumb};
+    public static int[] p = {R.attr.textAppearance, R.attr.drawableTop, R.attr.drawableBottom, R.attr.drawableLeft, R.attr.drawableRight, R.attr.drawableStart, R.attr.drawableEnd};
+    public static int[] q = {2130903084, 2130903085, 2130903086, 2130903087, 2130903088, 2130903266, 2130903269, 2130903330, 2130903345, 2130903492, R.attr.textAppearance};
+    public static int[] r = {2130903040, 2130903041, 2130903042, 2130903043, 2130903044, 2130903045, 2130903046, 2130903047, 2130903048, 2130903049, 2130903050, 2130903051, 2130903052, 2130903054, 2130903055, 2130903056, 2130903057, 2130903058, 2130903059, 2130903060, 2130903061, 2130903062, 2130903063, 2130903064, 2130903065, 2130903066, 2130903067, 2130903068, 2130903069, 2130903070, 2130903073, 2130903074, 2130903075, 2130903076, 2130903077, 2130903083, 2130903102, 2130903117, 2130903118, 2130903119, 2130903120, 2130903121, 2130903128, 2130903129, 2130903139, 2130903144, 2130903179, 2130903181, 2130903182, 2130903183, 2130903184, 2130903185, 2130903186, 2130903187, 2130903188, 2130903193, 2130903208, 2130903222, 2130903223, 2130903224, 2130903227, 2130903229, 2130903234, 2130903235, 2130903238, 2130903239, 2130903240, 2130903294, 2130903311, 2130903347, 2130903348, 2130903351, 2130903352, 2130903353, 2130903354, 2130903355, 2130903356, 2130903357, 2130903387, 2130903388, 2130903389, 2130903395, 2130903397, 2130903407, 2130903408, 2130903409, 2130903410, 2130903420, 2130903423, 2130903426, 2130903427, 2130903440, 2130903441, 2130903464, 2130903503, 2130903504, 2130903505, 2130903506, 2130903508, 2130903509, 2130903510, 2130903511, 2130903514, 2130903515, 2130903541, 2130903542, 2130903543, 2130903544, 2130903553, 2130903555, 2130903556, 2130903557, 2130903558, 2130903559, 2130903560, 2130903561, 2130903562, 2130903563, 2130903564, R.attr.windowIsFloating, R.attr.windowAnimationStyle};
+    public static int[] s = {2130903331};
+    public static int[] t = {2130903092, 2130903255, 2130903256, 2130903257, 2130903258, 2130903289};
+    public static int[] u = {2130903241, 2130903316, 2130903318, 2130903320, 2130903321, 2130903325, 2130903326, 2130903327, 2130903329, 2130903371};
+    public static int[] v = {2130903096, 2130903097, 2130903099, 2130903100};
+    public static int[] w = {2130903366, 2130903368, 2130903369};
+    public static int[] x = {2130903078};
+    public static int[] y = {2130903122, 2130903126, 2130903412, 2130903551};
+    public static int[] z = {2130903132, 2130903133, 2130903134, 2130903135, 2130903136, 2130903137, 2130903202, 2130903203, 2130903204, 2130903205, 2130903206, R.attr.minWidth, R.attr.minHeight};
+    public static int[] A = {2130903141, 2130903142, 2130903143, 2130903145, 2130903147, 2130903148, 2130903150, 2130903151, 2130903152, 2130903153, 2130903154, 2130903155, 2130903160, 2130903161, 2130903162, 2130903166, 2130903167, 2130903168, 2130903169, 2130903170, 2130903171, 2130903172, 2130903287, 2130903299, 2130903304, 2130903412, 2130903430, 2130903516, 2130903518, R.attr.textAppearance, R.attr.ellipsize, R.attr.maxWidth, R.attr.text, R.attr.checkable};
+    public static int[] B = {2130903140, 2130903156, 2130903157, 2130903158, 2130903434, 2130903435};
+    public static int[] C = {2130903146, 2130903163, 2130903210, 2130903301, 2130903307, 2130903402, 2130903412, 2130903422, 2130903551};
+    public static int[] D = {2130903245, 2130903290, 2130903293};
+    public static int[] E = {2130903176, 2130903177, 2130903207, 2130903248, 2130903249, 2130903250, 2130903251, 2130903252, 2130903253, 2130903254, 2130903415, 2130903417, 2130903452, 2130903529, 2130903530, 2130903540};
+    public static int[] F = {2130903336, 2130903337};
+    public static int[] G = {2130903079, R.attr.color, R.attr.alpha};
+    public static int[] H = {2130903130, 2130903131, R.attr.button};
+    public static int[] I = {2130903328, 2130903451};
+
+    /* JADX INFO: renamed from: J, reason: collision with root package name */
+    public static int[] f23J = {2130903333, 2130903334, 2130903335, 2130903338, 2130903339, 2130903340, R.attr.layout_gravity};
+    public static int[] K = {2130903105, 2130903106};
+    public static int[] L = {2130903081, 2130903082, 2130903094, 2130903178, 2130903231, 2130903280, 2130903439, 2130903520};
+    public static int[] M = {2130903116, 2130903236, 2130903237, 2130903400, 2130903421, 2130903445};
+    public static int[] N = {2130903092, 2130903093, 2130903101, 2130903241, 2130903259, 2130903260, 2130903287, 2130903297, 2130903367, 2130903399, 2130903412, 2130903430, 2130903550};
+    public static int[] O = {2130903095};
+    public static int[] P = {2130903323, 2130903346};
+    public static int[] Q = {2130903270, 2130903271, 2130903272, 2130903273, 2130903274, 2130903275};
+    public static int[] R = {2130903268, 2130903276, 2130903277, 2130903278, 2130903549, R.attr.font, R.attr.fontWeight, R.attr.fontStyle, R.attr.ttcIndex, R.attr.fontVariationSettings};
+    public static int[] S = {2130903279, R.attr.foreground, R.attr.foregroundGravity};
+    public static int[] T = {R.attr.startColor, R.attr.endColor, R.attr.type, R.attr.centerX, R.attr.centerY, R.attr.gradientRadius, R.attr.tileMode, R.attr.centerColor, R.attr.startX, R.attr.startY, R.attr.endX, R.attr.endY};
+    public static int[] U = {R.attr.color, R.attr.offset};
+    public static int[] V = {2130903226, 2130903228, 2130903370, 2130903429, R.attr.gravity, R.attr.orientation, R.attr.baselineAligned, R.attr.baselineAlignedChildIndex, R.attr.weightSum};
+    public static int[] W = {R.attr.layout_gravity, R.attr.layout_width, R.attr.layout_height, R.attr.layout_weight};
+    public static int[] X = {2130903372, 2130903373, 2130903374, 2130903375};
+    public static int[] Y = {R.attr.dropDownHorizontalOffset, R.attr.dropDownVerticalOffset};
+    public static int[] Z = {2130903165, 2130903309, 2130903310};
+    public static int[] a0 = {2130903092, 2130903093, 2130903210, 2130903298, 2130903300, 2130903302, 2130903303, 2130903305, 2130903306, 2130903412, 2130903453, 2130903454, R.attr.insetLeft, R.attr.insetRight, R.attr.insetTop, R.attr.insetBottom};
+    public static int[] b0 = {2130903453, 2130903454};
+    public static int[] c0 = {2130903105, 2130903106, 2130903149, 2130903159, 2130903163, 2130903179, 2130903181, 2130903187, 2130903188, 2130903191, 2130903240, 2130903267, 2130903360, 2130903361, 2130903380, 2130903416, 2130903436, 2130903488, 2130903493, 2130903494, 2130903495, 2130903496, 2130903497, 2130903498, 2130903499, 2130903500, 2130903501, 2130903502, 2130903507, 2130903512, 2130903513, 2130903517};
+    public static int[] d0 = {2130903180, 2130903189, 2130903192};
+    public static int[] e0 = {R.attr.enabled, R.attr.id, R.attr.visible, R.attr.menuCategory, R.attr.orderInCategory, R.attr.checkableBehavior};
+    public static int[] f0 = {2130903053, 2130903071, 2130903072, 2130903080, 2130903195, 2130903305, 2130903306, 2130903381, 2130903428, 2130903545, R.attr.icon, R.attr.enabled, R.attr.id, R.attr.checked, R.attr.visible, R.attr.menuCategory, R.attr.orderInCategory, R.attr.title, R.attr.titleCondensed, R.attr.alphabeticShortcut, R.attr.numericShortcut, R.attr.checkable, R.attr.onClick};
+    public static int[] g0 = {2130903398, 2130903455, R.attr.windowAnimationStyle, R.attr.itemTextAppearance, R.attr.horizontalDivider, R.attr.verticalDivider, R.attr.headerBackground, R.attr.itemBackground, R.attr.itemIconDisabledAlpha};
+    public static int[] h0 = {2130903241, 2130903282, 2130903316, 2130903317, 2130903319, 2130903321, 2130903324, 2130903327, 2130903371, R.attr.background, R.attr.fitsSystemWindows, R.attr.maxWidth};
+    public static int[] i0 = {2130903364, 2130903365};
+    public static int[] j0 = {2130903382, R.attr.popupBackground, R.attr.popupAnimationStyle};
+    public static int[] k0 = {2130903446};
+    public static int[] l0 = {2130903221, 2130903401};
+    public static int[] m0 = {R.attr.hint, R.attr.inputType};
+    public static int[] n0 = {2130903383, 2130903386};
+    public static int[] o0 = {2130903261, 2130903262, 2130903263, 2130903264, 2130903265, 2130903332, 2130903411, 2130903438, 2130903444, R.attr.orientation, R.attr.descendantFocusability};
+    public static int[] p0 = {2130903211, 2130903212, 2130903213, 2130903214, 2130903413};
+    public static int[] q0 = {2130903314};
+    public static int[] r0 = {2130903098};
+    public static int[] s0 = {2130903166, 2130903194, 2130903220, 2130903281, 2130903308, 2130903331, 2130903405, 2130903406, 2130903418, 2130903419, 2130903456, 2130903461, 2130903554, R.attr.focusable, R.attr.maxWidth, R.attr.inputType, R.attr.imeOptions};
+    public static int[] t0 = {2130903127, 2130903190, 2130903414};
+    public static int[] u0 = {2130903436, 2130903437};
+    public static int[] v0 = {2130903241, 2130903362, R.attr.maxWidth};
+    public static int[] w0 = {2130903396, R.attr.entries, R.attr.popupBackground, R.attr.prompt, R.attr.dropDownWidth};
+    public static int[] x0 = {R.attr.dither, R.attr.visible, R.attr.variablePadding, R.attr.constantSize, R.attr.enterFadeDuration, R.attr.exitFadeDuration};
+    public static int[] y0 = {R.attr.drawable};
+    public static int[] z0 = {2130903431, 2130903442, 2130903462, 2130903463, 2130903465, 2130903521, 2130903522, 2130903523, 2130903546, 2130903547, 2130903548, R.attr.textOn, R.attr.textOff, R.attr.thumb};
+    public static int[] A0 = {R.attr.icon, R.attr.layout, R.attr.text};
+    public static int[] B0 = {2130903466, 2130903467, 2130903468, 2130903469, 2130903470, 2130903471, 2130903472, 2130903473, 2130903474, 2130903475, 2130903476, 2130903477, 2130903478, 2130903479, 2130903480, 2130903481, 2130903482, 2130903483, 2130903484, 2130903485, 2130903486, 2130903487, 2130903489, 2130903490, 2130903491};
+    public static int[] C0 = {2130903269, 2130903492, R.attr.textSize, R.attr.typeface, R.attr.textStyle, R.attr.textColor, R.attr.textColorHint, R.attr.textColorLink, R.attr.shadowColor, R.attr.shadowDx, R.attr.shadowDy, R.attr.shadowRadius, R.attr.fontFamily};
+    public static int[] D0 = {2130903107, 2130903108, 2130903109, 2130903110, 2130903111, 2130903112, 2130903113, 2130903114, 2130903115, 2130903215, 2130903216, 2130903217, 2130903218, 2130903244, 2130903245, 2130903284, 2130903285, 2130903286, 2130903291, 2130903292, 2130903293, 2130903390, 2130903391, 2130903392, 2130903393, 2130903394, R.attr.textColorHint, R.attr.hint};
+    public static int[] E0 = {2130903164, 2130903230, 2130903232};
+    public static int[] F0 = {2130903343};
+    public static int[] G0 = {2130903242, 2130903243, R.attr.textAppearance};
+    public static int[] H0 = {2130903123, 2130903174, 2130903175, 2130903196, 2130903197, 2130903198, 2130903199, 2130903200, 2130903201, 2130903358, 2130903359, 2130903363, 2130903377, 2130903378, 2130903396, 2130903457, 2130903458, 2130903459, 2130903529, 2130903531, 2130903532, 2130903533, 2130903534, 2130903535, 2130903536, 2130903537, 2130903538, R.attr.gravity, R.attr.minHeight};
+    public static int[] I0 = {2130903384, 2130903385, 2130903519, R.attr.theme, R.attr.focusable};
+    public static int[] J0 = {2130903092, 2130903093, R.attr.background};
+    public static int[] K0 = {R.attr.id, R.attr.layout, R.attr.inflatedId};
+    public static int[] L0 = {2130903296, 2130903552};
+}

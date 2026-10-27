@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <org.chromium.components.browser_ui.settings.LongSummaryTextMessagePreference
+        android:selectable="false"
+        android:summary="@string/privacy_sandbox_remove_interest_description"
+        app:allowDividerBelow="false"/>
+    <PreferenceCategory
+        android:title="@string/privacy_sandbox_topic_interests_subtitle"
+        android:key="topic_interests"/>
+    <Preference
+        android:selectable="false"
+        android:key="empty_topics"
+        android:summary="@string/privacy_sandbox_removed_topics_empty_state"
+        app:allowDividerBelow="false"/>
+    <PreferenceCategory
+        android:title="@string/privacy_sandbox_fledge_subtitle"
+        android:key="fledge_interests"/>
+    <Preference
+        android:selectable="false"
+        android:key="empty_fledge"
+        android:summary="@string/privacy_sandbox_removed_sites_empty_state"
+        app:allowDividerBelow="false"/>
+</PreferenceScreen>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<org.chromium.chrome.browser.keyboard_accessory.sheet_component.AccessorySheetView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_gravity="start|top"
+    android:orientation="vertical"
+    android:id="@+id/keyboard_accessory_sheet_container"
+    android:background="?attr/colorSurface"
+    android:visibility="gone"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_gravity="start|bottom"
+        android:orientation="horizontal"
+        android:id="@+id/sheet_header"
+        android:background="?attr/colorSurface"
+        android:focusable="true"
+        android:visibility="gone"
+        android:clickable="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/keyboard_accessory_height">
+        <include layout="@layout/accessory_sheet_header"/>
+    </LinearLayout>
+    <FrameLayout
+        android:layout_gravity="start|top"
+        android:id="@+id/keyboard_accessory_sheet_frame"
+        android:paddingTop="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/keyboard_accessory_sheet_height"
+        android:fillViewport="true">
+        <org.chromium.chrome.browser.keyboard_accessory.sheet_component.NoSwipeViewPager
+            android:id="@+id/keyboard_accessory_sheet"
+            android:background="?attr/colorSurface"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"/>
+        <ImageView
+            android:id="@+id/accessory_sheet_shadow"
+            android:visibility="invisible"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/keyboard_accessory_shadow"
+            android:src="@drawable/modern_toolbar_shadow"
+            android:scaleType="fitXY"
+            android:importantForAccessibility="no"/>
+    </FrameLayout>
+</org.chromium.chrome.browser.keyboard_accessory.sheet_component.AccessorySheetView>

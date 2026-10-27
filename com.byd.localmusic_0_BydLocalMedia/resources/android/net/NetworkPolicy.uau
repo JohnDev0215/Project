@@ -1,0 +1,12 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/net/NetworkPolicy;->template:Landroid/net/NetworkTemplate;,frameworks/base/core/java/android/net/NetworkPolicy.java,53,5,53,25,
+Landroid/net/NetworkPolicy;->warningBytes:J,frameworks/base/core/java/android/net/NetworkPolicy.java,56,5,56,25,
+Landroid/net/NetworkPolicy;->limitBytes:J,frameworks/base/core/java/android/net/NetworkPolicy.java,58,5,58,25,
+Landroid/net/NetworkPolicy;->metered:Z,frameworks/base/core/java/android/net/NetworkPolicy.java,63,5,63,25,
+Landroid/net/NetworkPolicy;->inferred:Z,frameworks/base/core/java/android/net/NetworkPolicy.java,65,5,65,25,
+Landroid/net/NetworkPolicy;-><init>(Landroid/net/NetworkTemplate;ILjava/lang/String;JJJJZZ)V,frameworks/base/core/java/android/net/NetworkPolicy.java,86,5,86,25,
+Landroid/net/NetworkPolicy;->isOverWarning(J)Z,frameworks/base/core/java/android/net/NetworkPolicy.java,153,5,153,25,
+Landroid/net/NetworkPolicy;->isOverLimit(J)Z,frameworks/base/core/java/android/net/NetworkPolicy.java,162,5,162,25,
+Landroid/net/NetworkPolicy;->clearSnooze()V,frameworks/base/core/java/android/net/NetworkPolicy.java,173,5,173,25,
+Landroid/net/NetworkPolicy;->compareTo(Landroid/net/NetworkPolicy;)I,frameworks/base/core/java/android/net/NetworkPolicy.java,188,5,188,25,
+Landroid/net/NetworkPolicy;->CREATOR:Landroid/os/Parcelable$Creator;,frameworks/base/core/java/android/net/NetworkPolicy.java,239,5,239,25,

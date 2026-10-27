@@ -1,0 +1,16 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/view/Choreographer;->USE_VSYNC:Z,frameworks/base/core/java/android/view/Choreographer.java,139,5,139,88,maxTargetSdk=28&trackingBug=123769497L
+Landroid/view/Choreographer;->mLock:Ljava/lang/Object;,frameworks/base/core/java/android/view/Choreographer.java,161,5,161,88,maxTargetSdk=28&trackingBug=115609023L
+Landroid/view/Choreographer;->mDisplayEventReceiver:Landroid/view/Choreographer$FrameDisplayEventReceiver;,frameworks/base/core/java/android/view/Choreographer.java,170,5,170,25,
+Landroid/view/Choreographer;->mCallbackQueues:[Landroid/view/Choreographer$CallbackQueue;,frameworks/base/core/java/android/view/Choreographer.java,175,5,175,25,
+Landroid/view/Choreographer;->mLastFrameTimeNanos:J,frameworks/base/core/java/android/view/Choreographer.java,180,5,180,25,
+Landroid/view/Choreographer;->mFrameIntervalNanos:J,frameworks/base/core/java/android/view/Choreographer.java,182,5,182,25,
+Landroid/view/Choreographer;->getSfInstance()Landroid/view/Choreographer;,frameworks/base/core/java/android/view/Choreographer.java,296,5,296,25,
+Landroid/view/Choreographer;->getFrameDelay()J,frameworks/base/core/java/android/view/Choreographer.java,337,5,337,25,
+Landroid/view/Choreographer;->postCallback(ILjava/lang/Runnable;Ljava/lang/Object;)V,frameworks/base/core/java/android/view/Choreographer.java,420,5,420,25,
+Landroid/view/Choreographer;->postCallbackDelayed(ILjava/lang/Runnable;Ljava/lang/Object;J)V,frameworks/base/core/java/android/view/Choreographer.java,440,5,440,25,
+Landroid/view/Choreographer;->removeCallbacks(ILjava/lang/Runnable;Ljava/lang/Object;)V,frameworks/base/core/java/android/view/Choreographer.java,491,5,491,25,
+Landroid/view/Choreographer;->getFrameTime()J,frameworks/base/core/java/android/view/Choreographer.java,592,5,592,25,
+Landroid/view/Choreographer;->getFrameTimeNanos()J,frameworks/base/core/java/android/view/Choreographer.java,605,5,605,25,
+Landroid/view/Choreographer;->doFrame(JI)V,frameworks/base/core/java/android/view/Choreographer.java,665,5,665,25,
+Landroid/view/Choreographer;->scheduleVsyncLocked()V,frameworks/base/core/java/android/view/Choreographer.java,832,5,832,25,

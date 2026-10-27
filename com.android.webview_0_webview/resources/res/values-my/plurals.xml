@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="cookie_controls_blocked_cookies">
+        <item quantity="one">ကွတ်ကီး ၁ ခု ကို ပိတ်ထားသည်</item>
+        <item quantity="other">ကွတ်ကီး %d ခု ကို ပိတ်ထားသည်</item>
+    </plurals>
+    <plurals name="selected_items">
+        <item quantity="one">၁ ခု ရွေးချယ်ထားပါသည်</item>
+        <item quantity="other">%d ခု ရွေးချယ်ထားပါသည်</item>
+    </plurals>
+</resources>

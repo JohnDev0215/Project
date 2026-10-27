@@ -1,0 +1,10 @@
+signature,file,startline,startcol,endline,endcol,properties
+Lcom/android/internal/telephony/SmsApplication;->getApplicationCollection(Landroid/content/Context;)Ljava/util/Collection;,frameworks/base/telephony/common/com/android/internal/telephony/SmsApplication.java,226,5,226,25,
+Lcom/android/internal/telephony/SmsApplication;->setDefaultApplication(Ljava/lang/String;Landroid/content/Context;)V,frameworks/base/telephony/common/com/android/internal/telephony/SmsApplication.java,583,5,583,25,
+Lcom/android/internal/telephony/SmsApplication;->configurePreferredActivity(Landroid/content/pm/PackageManager;Landroid/content/ComponentName;)V,frameworks/base/telephony/common/com/android/internal/telephony/SmsApplication.java,852,5,852,25,
+Lcom/android/internal/telephony/SmsApplication;->getSmsApplicationData(Ljava/lang/String;Landroid/content/Context;)Lcom/android/internal/telephony/SmsApplication$SmsApplicationData;,frameworks/base/telephony/common/com/android/internal/telephony/SmsApplication.java,890,5,890,25,
+Lcom/android/internal/telephony/SmsApplication;->getDefaultSmsApplication(Landroid/content/Context;Z)Landroid/content/ComponentName;,frameworks/base/telephony/common/com/android/internal/telephony/SmsApplication.java,902,5,902,25,
+Lcom/android/internal/telephony/SmsApplication;->getDefaultMmsApplication(Landroid/content/Context;Z)Landroid/content/ComponentName;,frameworks/base/telephony/common/com/android/internal/telephony/SmsApplication.java,938,5,938,25,
+Lcom/android/internal/telephony/SmsApplication;->getDefaultRespondViaMessageApplication(Landroid/content/Context;Z)Landroid/content/ComponentName;,frameworks/base/telephony/common/com/android/internal/telephony/SmsApplication.java,962,5,962,25,
+Lcom/android/internal/telephony/SmsApplication;->shouldWriteMessageForPackage(Ljava/lang/String;Landroid/content/Context;)Z,frameworks/base/telephony/common/com/android/internal/telephony/SmsApplication.java,1063,5,1063,25,
+Lcom/android/internal/telephony/SmsApplication;->isDefaultSmsApplication(Landroid/content/Context;Ljava/lang/String;)Z,frameworks/base/telephony/common/com/android/internal/telephony/SmsApplication.java,1075,5,1075,25,

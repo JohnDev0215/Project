@@ -1,0 +1,193 @@
+package android.os;
+
+import android.annotation.SystemApi;
+import android.security.keystore.KeyProperties;
+import android.util.Log;
+import android.util.MutableInt;
+import com.bydux.api.common.tools.cmd.BydAdbHelper;
+import dalvik.annotation.optimization.CriticalNative;
+import dalvik.annotation.optimization.FastNative;
+import java.nio.charset.StandardCharsets;
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.HashMap;
+import libcore.util.HexEncoding;
+
+/* JADX INFO: loaded from: classes2.dex */
+@SystemApi
+public class SystemProperties {
+    public static final int PROP_NAME_MAX = Integer.MAX_VALUE;
+    public static final int PROP_VALUE_MAX = 91;
+    private static final String TAG = "SystemProperties";
+    private static final boolean TRACK_KEY_ACCESS = false;
+    private static final ArrayList<Runnable> sChangeCallbacks = new ArrayList<>();
+    private static final HashMap<String, MutableInt> sRoReads = null;
+
+    private static native void native_add_change_callback();
+
+    @FastNative
+    private static native long native_find(String str);
+
+    /* JADX INFO: Access modifiers changed from: private */
+    @FastNative
+    public static native String native_get(long j);
+
+    @FastNative
+    private static native String native_get(String str, String str2);
+
+    /* JADX INFO: Access modifiers changed from: private */
+    @CriticalNative
+    public static native boolean native_get_boolean(long j, boolean z);
+
+    @FastNative
+    private static native boolean native_get_boolean(String str, boolean z);
+
+    /* JADX INFO: Access modifiers changed from: private */
+    @CriticalNative
+    public static native int native_get_int(long j, int i);
+
+    @FastNative
+    private static native int native_get_int(String str, int i);
+
+    /* JADX INFO: Access modifiers changed from: private */
+    @CriticalNative
+    public static native long native_get_long(long j, long j2);
+
+    @FastNative
+    private static native long native_get_long(String str, long j);
+
+    private static native void native_report_sysprop_change();
+
+    private static native void native_set(String str, String str2);
+
+    private static void onKeyAccess(String str) {
+    }
+
+    private static String native_get(String str) {
+        return native_get(str, "");
+    }
+
+    @SystemApi
+    public static String get(String str) {
+        return native_get(str);
+    }
+
+    @SystemApi
+    public static String get(String str, String str2) {
+        return native_get(str, str2);
+    }
+
+    @SystemApi
+    public static int getInt(String str, int i) {
+        return native_get_int(str, i);
+    }
+
+    @SystemApi
+    public static long getLong(String str, long j) {
+        return native_get_long(str, j);
+    }
+
+    @SystemApi
+    public static boolean getBoolean(String str, boolean z) {
+        return native_get_boolean(str, z);
+    }
+
+    public static void set(String str, String str2) {
+        if (str2 != null && !str2.startsWith("ro.") && str2.length() > 91) {
+            throw new IllegalArgumentException("value of system property '" + str + "' is longer than 91 characters: " + str2);
+        }
+        native_set(str, str2);
+    }
+
+    public static void addChangeCallback(Runnable runnable) {
+        synchronized (sChangeCallbacks) {
+            if (sChangeCallbacks.size() == 0) {
+                native_add_change_callback();
+            }
+            sChangeCallbacks.add(runnable);
+        }
+    }
+
+    public static void removeChangeCallback(Runnable runnable) {
+        synchronized (sChangeCallbacks) {
+            if (sChangeCallbacks.contains(runnable)) {
+                sChangeCallbacks.remove(runnable);
+            }
+        }
+    }
+
+    private static void callChangeCallbacks() {
+        synchronized (sChangeCallbacks) {
+            if (sChangeCallbacks.size() == 0) {
+                return;
+            }
+            ArrayList arrayList = new ArrayList(sChangeCallbacks);
+            long jClearCallingIdentity = Binder.clearCallingIdentity();
+            for (int i = 0; i < arrayList.size(); i++) {
+                try {
+                    try {
+                        ((Runnable) arrayList.get(i)).run();
+                    } catch (Throwable th) {
+                        Log.e(TAG, "Exception in SystemProperties change callback", th);
+                    }
+                } finally {
+                    Binder.restoreCallingIdentity(jClearCallingIdentity);
+                }
+            }
+        }
+    }
+
+    public static void reportSyspropChanged() {
+        native_report_sysprop_change();
+    }
+
+    public static String digestOf(String... strArr) {
+        Arrays.sort(strArr);
+        try {
+            MessageDigest messageDigest = MessageDigest.getInstance(KeyProperties.DIGEST_SHA1);
+            for (String str : strArr) {
+                messageDigest.update((str + "=" + get(str) + BydAdbHelper.COMMAND_LINE_END).getBytes(StandardCharsets.UTF_8));
+            }
+            return HexEncoding.encodeToString(messageDigest.digest()).toLowerCase();
+        } catch (NoSuchAlgorithmException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    private SystemProperties() {
+    }
+
+    public static Handle find(String str) {
+        long jNative_find = native_find(str);
+        if (jNative_find == 0) {
+            return null;
+        }
+        return new Handle(jNative_find);
+    }
+
+    public static final class Handle {
+        private final long mNativeHandle;
+
+        public String get() {
+            return SystemProperties.native_get(this.mNativeHandle);
+        }
+
+        public int getInt(int i) {
+            return SystemProperties.native_get_int(this.mNativeHandle, i);
+        }
+
+        public long getLong(long j) {
+            return SystemProperties.native_get_long(this.mNativeHandle, j);
+        }
+
+        public boolean getBoolean(boolean z) {
+            return SystemProperties.native_get_boolean(this.mNativeHandle, z);
+        }
+
+        private Handle(long j) {
+            this.mNativeHandle = j;
+        }
+    }
+}

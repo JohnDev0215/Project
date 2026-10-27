@@ -1,0 +1,3 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/hardware/camera2/CaptureRequest;->mLogicalCameraSettings:Landroid/hardware/camera2/impl/CameraMetadataNative;,frameworks/base/core/java/android/hardware/camera2/CaptureRequest.java,232,5,232,25,
+Landroid/hardware/camera2/CaptureRequest;->getTargets()Ljava/util/Collection;,frameworks/base/core/java/android/hardware/camera2/CaptureRequest.java,664,5,664,25,

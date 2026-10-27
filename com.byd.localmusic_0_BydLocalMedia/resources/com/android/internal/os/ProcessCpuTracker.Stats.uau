@@ -1,0 +1,5 @@
+signature,file,startline,startcol,endline,endcol,properties
+Lcom/android/internal/os/ProcessCpuTracker$Stats;->name:Ljava/lang/String;,frameworks/base/core/java/com/android/internal/os/ProcessCpuTracker.java,203,9,203,29,
+Lcom/android/internal/os/ProcessCpuTracker$Stats;->rel_uptime:J,frameworks/base/core/java/com/android/internal/os/ProcessCpuTracker.java,219,9,219,29,
+Lcom/android/internal/os/ProcessCpuTracker$Stats;->rel_utime:I,frameworks/base/core/java/com/android/internal/os/ProcessCpuTracker.java,235,9,235,29,
+Lcom/android/internal/os/ProcessCpuTracker$Stats;->rel_stime:I,frameworks/base/core/java/com/android/internal/os/ProcessCpuTracker.java,241,9,241,29,

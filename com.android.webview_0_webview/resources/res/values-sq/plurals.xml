@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="cookie_controls_blocked_cookies">
+        <item quantity="one">1 kuki është bllokuar</item>
+        <item quantity="other">%d kuki janë bllokuar</item>
+    </plurals>
+    <plurals name="selected_items">
+        <item quantity="one">1 i zgjedhur</item>
+        <item quantity="other">%d të zgjedhur</item>
+    </plurals>
+</resources>

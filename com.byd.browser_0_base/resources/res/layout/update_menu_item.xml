@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingVertical="@dimen/overflow_menu_update_padding"
+    style="@style/AppMenuItem">
+    <LinearLayout
+        android:layout_gravity="start"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/overflow_menu_update_min_height"
+        android:layout_weight="1"
+        android:paddingEnd="9dp">
+        <TextView
+            android:textAppearance="@style/TextAppearance.UpdateMenuItem"
+            android:gravity="center_vertical"
+            android:id="@+id/menu_item_text"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:textAppearance="@style/TextAppearance.TextSmall.Secondary"
+            android:gravity="center_vertical"
+            android:id="@+id/menu_item_summary"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+    <org.chromium.ui.widget.ChromeImageView
+        android:gravity="center_vertical"
+        android:layout_gravity="end"
+        android:id="@+id/menu_item_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="0"
+        android:importantForAccessibility="no"
+        app:tint="@null"/>
+</LinearLayout>

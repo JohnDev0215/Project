@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="cookie_controls_blocked_cookies">
+        <item quantity="one">Lokað á eitt fótspor</item>
+        <item quantity="other">Lokað á %d fótspor</item>
+    </plurals>
+    <plurals name="selected_items">
+        <item quantity="one">1 valið</item>
+        <item quantity="other">%d valin</item>
+    </plurals>
+</resources>

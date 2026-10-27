@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<org.chromium.chrome.browser.ntp.NewTabPageLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:layout_gravity="center_horizontal"
+    android:orientation="vertical"
+    android:id="@+id/ntp_content"
+    android:paddingTop="@dimen/toolbar_height_no_shadow"
+    android:visibility="gone"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <FrameLayout
+        android:id="@+id/logo_holder"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ViewStub
+            android:layout_gravity="start|bottom"
+            android:id="@+id/cryptid_holder"
+            android:layout="@layout/new_tab_page_cryptid_holder"
+            android:layout_width="@dimen/cryptid_width_in_logo_wrapper"
+            android:layout_height="@dimen/cryptid_height_in_logo_wrapper"/>
+        <include layout="@layout/logo_view_layout"/>
+    </FrameLayout>
+    <include layout="@layout/fake_search_box_layout"/>
+    <FrameLayout
+        android:id="@+id/query_tiles"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"/>
+    <View
+        android:id="@+id/ntp_middle_spacer"
+        android:visibility="invisible"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="0"/>
+    <ViewStub
+        android:id="@+id/tile_grid_placeholder_stub"
+        android:layout="@layout/new_tab_page_tile_grid_placeholder"
+        android:inflatedId="@+id/tile_grid_placeholder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"/>
+    <ViewStub
+        android:id="@+id/search_resumption_module_container_stub"
+        android:layout="@layout/search_resumption_module_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/search_resumption_module_margin_top"/>
+    <ViewStub
+        android:id="@+id/video_iph_stub"
+        android:layout="@layout/video_tutorial_iph_card"
+        android:inflatedId="@+id/video_iph_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp"/>
+    <View
+        android:id="@+id/no_search_logo_spacer"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+</org.chromium.chrome.browser.ntp.NewTabPageLayout>

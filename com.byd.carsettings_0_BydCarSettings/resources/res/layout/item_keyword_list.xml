@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:ellipsize="end"
+    android:id="@+id/btn_keyword_list"
+    android:layout_width="match_parent"
+    android:minWidth="@dimen/dp_144"
+    android:minHeight="@dimen/dp_40"
+    android:singleLine="true"
+    android:paddingStart="@dimen/dp_10"
+    android:paddingEnd="@dimen/dp_10"
+    style="@style/btn_search_keyword"/>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.byd.carsettings.ui.widget.EqualizerView
+        android:id="@+id/ev_equalizer_music_style"
+        android:paddingTop="@dimen/dp_42"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        app:range_max_array="@array/equalizer_freq_band_range_max_array"
+        app:range_min_array="@array/equalizer_freq_band_range_min_array"
+        app:seekbar_id="@+id/sbar_view_equalizer_seekbar"
+        app:seekbar_layout_item_id="@layout/view_equalizer_seekbar"
+        app:seekbar_margin_end="@dimen/dp_70"
+        app:seekbar_title_layout_id="@layout/view_sound_freq_band_title"
+        app:title_arr_seek_bar="@array/freq_band_list"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcv_equalizer_music_style"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_120"
+        android:layout_marginTop="@dimen/dp_30"/>
+</LinearLayout>

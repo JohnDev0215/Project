@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="start|bottom"
+    android:orientation="vertical"
+    style="@style/AlertDialogContent">
+    <org.chromium.ui.widget.TextViewWithClickableSpans
+        android:id="@+id/summary"
+        style="@style/AlertDialogSummaryViewItem"/>
+</LinearLayout>

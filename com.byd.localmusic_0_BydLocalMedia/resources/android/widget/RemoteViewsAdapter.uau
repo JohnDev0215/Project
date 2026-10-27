@@ -1,0 +1,8 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/widget/RemoteViewsAdapter;->mCache:Landroid/widget/RemoteViewsAdapter$FixedSizeRemoteViewsCache;,frameworks/base/core/java/android/widget/RemoteViewsAdapter.java,109,5,109,25,
+Landroid/widget/RemoteViewsAdapter;->mWorkerThread:Landroid/os/HandlerThread;,frameworks/base/core/java/android/widget/RemoteViewsAdapter.java,118,5,118,25,
+Landroid/widget/RemoteViewsAdapter;->isDataReady()Z,frameworks/base/core/java/android/widget/RemoteViewsAdapter.java,898,5,898,25,
+Landroid/widget/RemoteViewsAdapter;->setRemoteViewsOnClickHandler(Landroid/widget/RemoteViews$OnClickHandler;)V,frameworks/base/core/java/android/widget/RemoteViewsAdapter.java,903,5,903,25,
+Landroid/widget/RemoteViewsAdapter;->saveRemoteViewsCache()V,frameworks/base/core/java/android/widget/RemoteViewsAdapter.java,908,5,908,25,
+Landroid/widget/RemoteViewsAdapter;->getRemoteViewsServiceIntent()Landroid/content/Intent;,frameworks/base/core/java/android/widget/RemoteViewsAdapter.java,1053,5,1053,25,
+Landroid/widget/RemoteViewsAdapter;->setVisibleRangeHint(II)V,frameworks/base/core/java/android/widget/RemoteViewsAdapter.java,1100,5,1100,25,

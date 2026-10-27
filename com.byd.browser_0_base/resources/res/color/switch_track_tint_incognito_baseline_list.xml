@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:state_enabled="false"
+        android:color="@color/switch_track_disabled_color_baseline_light"
+        android:alpha="@dimen/switch_track_disabled_alpha"/>
+    <item
+        android:state_checked="true"
+        android:color="@color/default_control_color_active_dark"
+        android:alpha="@dimen/switch_track_enabled_alpha"/>
+    <item
+        android:color="@color/switch_enabled_unchecked_color_baseline_light"
+        android:alpha="@dimen/switch_track_enabled_alpha"/>
+</selector>

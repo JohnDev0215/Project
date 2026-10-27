@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="cookie_controls_blocked_cookies">
+        <item quantity="one">1 cookie geblokkeerd</item>
+        <item quantity="other">%d cookies geblokkeerd</item>
+    </plurals>
+    <plurals name="selected_items">
+        <item quantity="one">1 geselecteerd</item>
+        <item quantity="other">%d geselecteerd</item>
+    </plurals>
+</resources>

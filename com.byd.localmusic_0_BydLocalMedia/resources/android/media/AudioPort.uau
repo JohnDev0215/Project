@@ -1,0 +1,8 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/media/AudioPort;->mHandle:Landroid/media/AudioHandle;,frameworks/base/media/java/android/media/AudioPort.java,71,5,71,25,
+Landroid/media/AudioPort;->mRole:I,frameworks/base/media/java/android/media/AudioPort.java,73,5,73,25,
+Landroid/media/AudioPort;->mGains:[Landroid/media/AudioGain;,frameworks/base/media/java/android/media/AudioPort.java,80,5,80,25,
+Landroid/media/AudioPort;->mActiveConfig:Landroid/media/AudioPortConfig;,frameworks/base/media/java/android/media/AudioPort.java,82,5,82,25,
+Landroid/media/AudioPort;-><init>(Landroid/media/AudioHandle;ILjava/lang/String;[I[I[I[I[Landroid/media/AudioGain;)V,frameworks/base/media/java/android/media/AudioPort.java,85,5,85,25,
+Landroid/media/AudioPort;->id()I,frameworks/base/media/java/android/media/AudioPort.java,107,5,107,25,
+Landroid/media/AudioPort;->role()I,frameworks/base/media/java/android/media/AudioPort.java,116,5,116,25,

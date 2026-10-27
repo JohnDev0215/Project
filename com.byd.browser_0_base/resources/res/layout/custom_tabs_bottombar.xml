@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<org.chromium.chrome.browser.customtabs.CustomTabBottomBarView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:maxHeight="@dimen/custom_tabs_bottom_bar_max_height">
+    <View
+        android:id="@+id/bottombar_shadow"
+        android:background="@drawable/infobar_shadow_top"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"/>
+</org.chromium.chrome.browser.customtabs.CustomTabBottomBarView>

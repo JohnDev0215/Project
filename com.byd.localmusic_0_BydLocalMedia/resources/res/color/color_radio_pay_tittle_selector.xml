@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:state_selected="false"
+        android:color="@color/color_radio_my_pay_item_tittle_selected_false"/>
+    <item
+        android:state_selected="true"
+        android:color="@color/color_radio_my_pay_item_tittle_selected_true"/>
+</selector>

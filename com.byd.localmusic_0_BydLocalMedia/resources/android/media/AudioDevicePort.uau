@@ -1,0 +1,3 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/media/AudioDevicePort;-><init>(Landroid/media/AudioHandle;Ljava/lang/String;[I[I[I[I[Landroid/media/AudioGain;ILjava/lang/String;[I[I)V,frameworks/base/media/java/android/media/AudioDevicePort.java,44,5,44,25,
+Landroid/media/AudioDevicePort;->type()I,frameworks/base/media/java/android/media/AudioDevicePort.java,62,5,62,25,

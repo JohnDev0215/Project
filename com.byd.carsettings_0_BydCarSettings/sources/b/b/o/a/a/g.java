@@ -1,0 +1,208 @@
+package b.b.o.a.a;
+
+import com.byd.car.theme.vehiclelibrary.R$drawable;
+import com.byd.car.theme.vehiclelibrary.R$raw;
+
+/* JADX INFO: compiled from: TangCarType.java */
+/* JADX INFO: loaded from: classes.dex */
+public class g extends a {
+    @Override // b.b.o.a.a.b
+    public int A(int i) {
+        return R$drawable.uke_door_lock_car_four_img;
+    }
+
+    @Override // b.b.o.a.a.b
+    public int B(int i) {
+        return R$drawable.uke_carlight_car_height_1;
+    }
+
+    @Override // b.b.o.a.a.b
+    public int C(int i) {
+        return R$drawable.uke_ai_dynamic_img_com;
+    }
+
+    @Override // b.b.o.a.a.a, b.b.o.a.a.b
+    public int D(int i) {
+        return R$drawable.uke_trailer_state_unconnected;
+    }
+
+    @Override // b.b.o.a.a.a, b.b.o.a.a.b
+    public int E(int i) {
+        return R$drawable.uke_carlight_car_img;
+    }
+
+    @Override // b.b.o.a.a.b
+    public int F(int i) {
+        return R$drawable.uke_door_lock_car_knob_img;
+    }
+
+    @Override // b.b.o.a.a.b
+    public int G(int i) {
+        return p(i);
+    }
+
+    @Override // b.b.o.a.a.b
+    public int H(int i) {
+        return R$drawable.uke_ai_brake_img_sport;
+    }
+
+    @Override // b.b.o.a.a.b
+    public int J(int i) {
+        return R$drawable.uke_comfortable_filp_img;
+    }
+
+    @Override // b.b.o.a.a.b
+    public int K(int i) {
+        return R$drawable.uke_ai_dynamic_img_sport;
+    }
+
+    @Override // b.b.o.a.a.b
+    public int L(int i) {
+        return R$drawable.uke_ai_turn_img_sport;
+    }
+
+    @Override // b.b.o.a.a.b
+    public int O(int i) {
+        return E(i);
+    }
+
+    @Override // b.b.o.a.a.b
+    public int P(int i) {
+        return R$drawable.uke_carlight_car_height_2;
+    }
+
+    @Override // b.b.o.a.a.b
+    public int Q(int i) {
+        return R$drawable.uke_comfortable_safe_belt_img;
+    }
+
+    @Override // b.b.o.a.a.b
+    public int R(int i) {
+        return R$drawable.uke_cockpit_img;
+    }
+
+    @Override // b.b.o.a.a.a, b.b.o.a.a.b
+    public int S(int i) {
+        return R$drawable.uke_comfortable_rear_welcome_img;
+    }
+
+    @Override // b.b.o.a.a.b
+    public int T(int i) {
+        return R$drawable.uke_comfortable_main_welcome;
+    }
+
+    @Override // b.b.o.a.a.b
+    public int U(int i) {
+        return R$drawable.uke_carlight_car_smart_light;
+    }
+
+    @Override // b.b.o.a.a.b
+    public int V(int i) {
+        return R$drawable.uke_airconditioner_car_com;
+    }
+
+    @Override // b.b.o.a.a.a, b.b.o.a.a.b
+    public int X(int i) {
+        return R$drawable.uke_carlight_car_height_6;
+    }
+
+    @Override // b.b.o.a.a.b
+    public int Y(int i) {
+        return R$drawable.uke_comfortable_auto_rain_wipe;
+    }
+
+    @Override // b.b.o.a.a.b
+    public int a(int i) {
+        return R$drawable.uke_airconditioner_car_eco;
+    }
+
+    @Override // b.b.o.a.a.b
+    public int b(int i) {
+        return X(i);
+    }
+
+    @Override // b.b.o.a.a.b
+    public int c(int i) {
+        return R(i);
+    }
+
+    @Override // b.b.o.a.a.b
+    public int d(int i) {
+        return R$drawable.img_smart_reminder;
+    }
+
+    @Override // b.b.o.a.a.a, b.b.o.a.a.b
+    public int f(int i) {
+        return R$drawable.uke_trailer_state_connected;
+    }
+
+    @Override // b.b.o.a.a.b
+    public int i(int i) {
+        return R$drawable.uke_comfortable_rear_turn_img;
+    }
+
+    @Override // b.b.o.a.a.b
+    public int j(int i) {
+        return R$drawable.uke_carlight_car_height_3;
+    }
+
+    @Override // b.b.o.a.a.b
+    public int k(int i) {
+        return R$drawable.uke_comfortable_steer_img;
+    }
+
+    @Override // b.b.o.a.a.a, b.b.o.a.a.b
+    public int m(int i) {
+        return R$raw.uke_trailer_check_state;
+    }
+
+    @Override // b.b.o.a.a.b
+    public int n(int i) {
+        return R$drawable.uke_door_lock_open_window_img;
+    }
+
+    @Override // b.b.o.a.a.b
+    public int o(int i) {
+        return R$drawable.uke_carlight_car_height_5;
+    }
+
+    @Override // b.b.o.a.a.b
+    public int p(int i) {
+        return R$drawable.uke_hud_on_img;
+    }
+
+    @Override // b.b.o.a.a.a, b.b.o.a.a.b
+    public int q(int i) {
+        return R$drawable.uke_door_lock_car_back_img;
+    }
+
+    @Override // b.b.o.a.a.b
+    public int t(int i) {
+        return R$drawable.uke_hud_off_img;
+    }
+
+    @Override // b.b.o.a.a.b
+    public int v(int i) {
+        return R$drawable.uke_carlight_car_img;
+    }
+
+    @Override // b.b.o.a.a.b
+    public int w(int i) {
+        return R$drawable.uke_carlight_car_height_4;
+    }
+
+    @Override // b.b.o.a.a.b
+    public int x(int i) {
+        return R$drawable.uke_door_lock_car_main_img;
+    }
+
+    @Override // b.b.o.a.a.b
+    public int y(int i) {
+        return R$drawable.uke_ai_brake_img;
+    }
+
+    @Override // b.b.o.a.a.b
+    public int z(int i) {
+        return R$drawable.uke_ai_turn_img;
+    }
+}

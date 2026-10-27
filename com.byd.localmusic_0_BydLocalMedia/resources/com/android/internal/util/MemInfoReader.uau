@@ -1,0 +1,7 @@
+signature,file,startline,startcol,endline,endcol,properties
+Lcom/android/internal/util/MemInfoReader;-><init>()V,frameworks/base/core/java/com/android/internal/util/MemInfoReader.java,26,5,26,25,
+Lcom/android/internal/util/MemInfoReader;->readMemInfo()V,frameworks/base/core/java/com/android/internal/util/MemInfoReader.java,30,5,30,25,
+Lcom/android/internal/util/MemInfoReader;->getTotalSize()J,frameworks/base/core/java/com/android/internal/util/MemInfoReader.java,46,5,46,25,
+Lcom/android/internal/util/MemInfoReader;->getFreeSize()J,frameworks/base/core/java/com/android/internal/util/MemInfoReader.java,54,5,54,25,
+Lcom/android/internal/util/MemInfoReader;->getCachedSize()J,frameworks/base/core/java/com/android/internal/util/MemInfoReader.java,63,5,63,25,
+Lcom/android/internal/util/MemInfoReader;->getRawInfo()[J,frameworks/base/core/java/com/android/internal/util/MemInfoReader.java,130,5,130,25,

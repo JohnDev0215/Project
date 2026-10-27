@@ -1,0 +1,4 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/net/NetworkState;->network:Landroid/net/Network;,frameworks/base/core/java/android/net/NetworkState.java,38,5,38,88,maxTargetSdk=28&trackingBug=115609023L
+Landroid/net/NetworkState;-><init>(Landroid/os/Parcel;)V,frameworks/base/core/java/android/net/NetworkState.java,64,5,64,25,
+Landroid/net/NetworkState;->CREATOR:Landroid/os/Parcelable$Creator;,frameworks/base/core/java/android/net/NetworkState.java,89,5,89,25,

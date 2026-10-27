@@ -1,0 +1,10 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/nfc/NfcAdapter;->sService:Landroid/nfc/INfcAdapter;,frameworks/base/core/java/android/nfc/NfcAdapter.java,368,5,368,25,
+Landroid/nfc/NfcAdapter;->getNfcAdapter(Landroid/content/Context;)Landroid/nfc/NfcAdapter;,frameworks/base/core/java/android/nfc/NfcAdapter.java,593,5,593,25,
+Landroid/nfc/NfcAdapter;->getDefaultAdapter()Landroid/nfc/NfcAdapter;,frameworks/base/core/java/android/nfc/NfcAdapter.java,704,5,704,25,
+Landroid/nfc/NfcAdapter;->getContext()Landroid/content/Context;,frameworks/base/core/java/android/nfc/NfcAdapter.java,727,5,727,25,
+Landroid/nfc/NfcAdapter;->getService()Landroid/nfc/INfcAdapter;,frameworks/base/core/java/android/nfc/NfcAdapter.java,736,5,736,25,
+Landroid/nfc/NfcAdapter;->attemptDeadServiceRecovery(Ljava/lang/Exception;)V,frameworks/base/core/java/android/nfc/NfcAdapter.java,790,5,790,25,
+Landroid/nfc/NfcAdapter;->getAdapterState()I,frameworks/base/core/java/android/nfc/NfcAdapter.java,861,5,861,25,
+Landroid/nfc/NfcAdapter;->setNdefPushMessageCallback(Landroid/nfc/NfcAdapter$CreateNdefMessageCallback;Landroid/app/Activity;I)V,frameworks/base/core/java/android/nfc/NfcAdapter.java,1367,5,1367,25,
+Landroid/nfc/NfcAdapter;->getNfcAdapterExtrasInterface()Landroid/nfc/INfcAdapterExtras;,frameworks/base/core/java/android/nfc/NfcAdapter.java,2086,5,2086,25,

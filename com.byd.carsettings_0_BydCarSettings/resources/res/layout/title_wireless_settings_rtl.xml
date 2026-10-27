@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/iv_back_wireless"
+        android:layout_width="@dimen/dp_48"
+        android:layout_height="@dimen/dp_48"
+        android:src="@drawable/icon_public_close_48"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/dp_16"
+        android:layout_alignParentStart="true"/>
+    <TextView
+        android:textSize="@dimen/sp_20"
+        android:textColor="@color/text_color_main"
+        android:gravity="start|center_vertical"
+        android:id="@+id/tv_title_wireless"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:maxWidth="@dimen/dp_120"
+        android:text="@string/wireless_net_link"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/dp_2"
+        android:layout_toEndOf="@+id/iv_back_wireless"/>
+    <com.byd.base.view.BydSwitch
+        android:id="@+id/switch_title_wireless"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/dp_252"
+        android:layout_alignParentStart="true"
+        style="@style/byd_switch_on_service"/>
+</RelativeLayout>

@@ -1,0 +1,11 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/widget/HorizontalScrollView;->mScroller:Landroid/widget/OverScroller;,frameworks/base/core/java/android/widget/HorizontalScrollView.java,82,5,82,25,
+Landroid/widget/HorizontalScrollView;->mEdgeGlowLeft:Landroid/widget/EdgeEffect;,frameworks/base/core/java/android/widget/HorizontalScrollView.java,91,5,91,88,maxTargetSdk=28&trackingBug=124053130L
+Landroid/widget/HorizontalScrollView;->mEdgeGlowRight:Landroid/widget/EdgeEffect;,frameworks/base/core/java/android/widget/HorizontalScrollView.java,100,5,100,88,maxTargetSdk=28&trackingBug=124052619L
+Landroid/widget/HorizontalScrollView;->mLastMotionX:I,frameworks/base/core/java/android/widget/HorizontalScrollView.java,106,5,106,25,
+Landroid/widget/HorizontalScrollView;->mChildToScrollTo:Landroid/view/View;,frameworks/base/core/java/android/widget/HorizontalScrollView.java,120,5,120,25,
+Landroid/widget/HorizontalScrollView;->mIsBeingDragged:Z,frameworks/base/core/java/android/widget/HorizontalScrollView.java,128,5,128,25,
+Landroid/widget/HorizontalScrollView;->mVelocityTracker:Landroid/view/VelocityTracker;,frameworks/base/core/java/android/widget/HorizontalScrollView.java,134,5,134,25,
+Landroid/widget/HorizontalScrollView;->mOverscrollDistance:I,frameworks/base/core/java/android/widget/HorizontalScrollView.java,153,5,153,25,
+Landroid/widget/HorizontalScrollView;->mOverflingDistance:I,frameworks/base/core/java/android/widget/HorizontalScrollView.java,155,5,155,25,
+Landroid/widget/HorizontalScrollView;->recycleVelocityTracker()V,frameworks/base/core/java/android/widget/HorizontalScrollView.java,537,5,537,25,

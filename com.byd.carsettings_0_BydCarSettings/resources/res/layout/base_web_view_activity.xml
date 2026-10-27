@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WebView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:scrollbarThumbVertical="@drawable/base_bar_thumb"
+    android:scrollbarTrackVertical="@drawable/base_bar_track"
+    android:id="@+id/web_view_activity"
+    android:background="@android:color/transparent"
+    android:paddingBottom="@dimen/dp_24"
+    android:fadingEdge="none"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:overScrollMode="never"
+    android:layerType="software"
+    android:layout_marginStart="@dimen/dp_30"
+    android:layout_marginEnd="@dimen/dp_30"/>

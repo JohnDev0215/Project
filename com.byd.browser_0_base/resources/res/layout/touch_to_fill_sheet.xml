@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/drag_handlebar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/ttf_drag_handlebar_margin"
+        android:layout_marginBottom="@dimen/ttf_drag_handlebar_margin"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:importantForAccessibility="no"
+        android:layout_marginStart="@dimen/touch_to_fill_sheet_margin_modern"
+        android:layout_marginEnd="@dimen/touch_to_fill_sheet_margin_modern"
+        app:srcCompat="@drawable/drag_handlebar"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/sheet_item_list"
+        android:clipToPadding="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@null"
+        android:layout_below="@+id/drag_handlebar"
+        android:layout_marginStart="@dimen/touch_to_fill_sheet_margin_modern"
+        android:layout_marginEnd="@dimen/touch_to_fill_sheet_margin_modern"/>
+</RelativeLayout>

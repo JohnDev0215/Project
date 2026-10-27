@@ -1,0 +1,47 @@
+package android.os;
+
+import java.util.function.Supplier;
+
+/* JADX INFO: loaded from: classes2.dex */
+public final class ThreadLocalWorkSource {
+    public static final int UID_NONE = -1;
+    private static final ThreadLocal<Integer> sWorkSourceUid = ThreadLocal.withInitial(new Supplier() { // from class: android.os.-$$Lambda$ThreadLocalWorkSource$IP9vRFCDG5YwbWbXAEGHH52B9IE
+        @Override // java.util.function.Supplier
+        public final Object get() {
+            return ThreadLocalWorkSource.lambda$static$0();
+        }
+    });
+
+    private static int parseUidFromToken(long j) {
+        return (int) j;
+    }
+
+    static /* synthetic */ Integer lambda$static$0() {
+        return -1;
+    }
+
+    public static int getUid() {
+        return sWorkSourceUid.get().intValue();
+    }
+
+    public static long setUid(int i) {
+        long token = getToken();
+        sWorkSourceUid.set(Integer.valueOf(i));
+        return token;
+    }
+
+    public static void restore(long j) {
+        sWorkSourceUid.set(Integer.valueOf(parseUidFromToken(j)));
+    }
+
+    public static long clear() {
+        return setUid(-1);
+    }
+
+    private static long getToken() {
+        return sWorkSourceUid.get().intValue();
+    }
+
+    private ThreadLocalWorkSource() {
+    }
+}

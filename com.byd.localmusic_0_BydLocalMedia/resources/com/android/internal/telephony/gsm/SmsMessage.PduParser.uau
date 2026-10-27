@@ -1,0 +1,8 @@
+signature,file,startline,startcol,endline,endcol,properties
+Lcom/android/internal/telephony/gsm/SmsMessage$PduParser;->mPdu:[B,frameworks/base/telephony/java/com/android/internal/telephony/gsm/SmsMessage.java,806,9,806,29,
+Lcom/android/internal/telephony/gsm/SmsMessage$PduParser;->mCur:I,frameworks/base/telephony/java/com/android/internal/telephony/gsm/SmsMessage.java,808,9,808,29,
+Lcom/android/internal/telephony/gsm/SmsMessage$PduParser;->mUserDataSeptetPadding:I,frameworks/base/telephony/java/com/android/internal/telephony/gsm/SmsMessage.java,812,9,812,29,
+Lcom/android/internal/telephony/gsm/SmsMessage$PduParser;-><init>([B)V,frameworks/base/telephony/java/com/android/internal/telephony/gsm/SmsMessage.java,815,9,815,29,
+Lcom/android/internal/telephony/gsm/SmsMessage$PduParser;->getByte()I,frameworks/base/telephony/java/com/android/internal/telephony/gsm/SmsMessage.java,855,9,855,29,
+Lcom/android/internal/telephony/gsm/SmsMessage$PduParser;->getUserData()[B,frameworks/base/telephony/java/com/android/internal/telephony/gsm/SmsMessage.java,997,9,997,29,
+Lcom/android/internal/telephony/gsm/SmsMessage$PduParser;->getUserDataUCS2(I)Ljava/lang/String;,frameworks/base/telephony/java/com/android/internal/telephony/gsm/SmsMessage.java,1054,9,1054,29,

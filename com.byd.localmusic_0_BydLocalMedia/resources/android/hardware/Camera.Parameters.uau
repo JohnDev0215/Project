@@ -1,0 +1,4 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/hardware/Camera$Parameters;->copyFrom(Landroid/hardware/Camera$Parameters;)V,frameworks/base/core/java/android/hardware/Camera.java,2699,9,2699,29,
+Landroid/hardware/Camera$Parameters;->dump()V,frameworks/base/core/java/android/hardware/Camera.java,2731,9,2731,29,
+Landroid/hardware/Camera$Parameters;->splitArea(Ljava/lang/String;)Ljava/util/ArrayList;,frameworks/base/core/java/android/hardware/Camera.java,4480,9,4480,29,

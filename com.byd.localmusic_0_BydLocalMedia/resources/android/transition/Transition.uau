@@ -1,0 +1,4 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/transition/Transition;->getRunningAnimators()Landroid/util/ArrayMap;,frameworks/base/core/java/android/transition/Transition.java,851,5,851,25,
+Landroid/transition/Transition;->end()V,frameworks/base/core/java/android/transition/Transition.java,1916,5,1916,25,
+Landroid/transition/Transition;->cancel()V,frameworks/base/core/java/android/transition/Transition.java,1974,5,1974,25,

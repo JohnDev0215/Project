@@ -1,0 +1,5 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/graphics/drawable/DrawableContainer$DrawableContainerState;->mDrawables:[Landroid/graphics/drawable/Drawable;,frameworks/base/graphics/java/android/graphics/drawable/DrawableContainer.java,693,9,693,29,
+Landroid/graphics/drawable/DrawableContainer$DrawableContainerState;->mConstantPadding:Landroid/graphics/Rect;,frameworks/base/graphics/java/android/graphics/drawable/DrawableContainer.java,699,9,699,29,
+Landroid/graphics/drawable/DrawableContainer$DrawableContainerState;->mHasColorFilter:Z,frameworks/base/graphics/java/android/graphics/drawable/DrawableContainer.java,729,9,729,29,
+Landroid/graphics/drawable/DrawableContainer$DrawableContainerState;-><init>(Landroid/graphics/drawable/DrawableContainer$DrawableContainerState;Landroid/graphics/drawable/DrawableContainer;Landroid/content/res/Resources;)V,frameworks/base/graphics/java/android/graphics/drawable/DrawableContainer.java,740,9,740,92,maxTargetSdk=28&trackingBug=115609023L

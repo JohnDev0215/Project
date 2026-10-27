@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:title="@string/all_sites">
+    <org.chromium.components.browser_ui.settings.TextMessagePreferenceSettings
+        android:key="info_text"
+        android:paddingStart="@dimen/dp_0_dp"
+        android:paddingEnd="@dimen/dp_0_dp"
+        app:summaryTextColor="@color/preference_setting_text_message_color"
+        app:summaryTextSize="@dimen/preference_title_text_size"/>
+    <org.chromium.components.browser_ui.settings.ChromeSwitchPreferenceSecondary
+        android:key="binary_toggle"
+        android:defaultValue="true"/>
+    <org.chromium.components.browser_ui.site_settings.TriStateSiteSettingsPreference android:key="tri_state_toggle"/>
+    <org.chromium.components.browser_ui.site_settings.FourStateCookieSettingsPreference android:key="four_state_cookie_toggle"/>
+    <org.chromium.components.browser_ui.site_settings.TriStateCookieSettingsPreference android:key="tri_state_cookie_toggle"/>
+    <org.chromium.components.browser_ui.settings.ChromeSwitchPreferenceSecondary
+        android:persistent="false"
+        android:title="@string/website_settings_category_notifications_quiet"
+        android:key="notifications_quiet_ui"
+        android:defaultValue="false"
+        app:layout="@layout/preference_settings_no_padding"/>
+    <org.chromium.components.browser_ui.settings.ChromeBaseCheckBoxPreference
+        android:title="@string/enable_notifications_vibrate_title"
+        android:key="notifications_vibrate"
+        android:summary="@string/enable_notifications_vibrate_summary"
+        android:defaultValue="true"/>
+    <org.chromium.components.browser_ui.settings.ChromeBaseCheckBoxPreference
+        android:persistent="false"
+        android:title="@string/enable_desktop_site_peripheral_title"
+        android:key="desktop_site_peripheral"
+        android:summary="@string/enable_desktop_site_peripheral_summary"
+        android:defaultValue="false"/>
+    <org.chromium.components.browser_ui.settings.ChromeBaseCheckBoxPreference
+        android:persistent="false"
+        android:title="@string/enable_desktop_site_external_display_title"
+        android:key="desktop_site_display"
+        android:summary="@string/enable_desktop_site_external_display_summary"
+        android:defaultValue="false"/>
+    <org.chromium.components.browser_ui.settings.LearnMorePreference android:key="protected_content_learn_more"/>
+    <org.chromium.components.browser_ui.settings.ExpandablePreferenceGroup android:key="managed_group"/>
+    <org.chromium.components.browser_ui.settings.ExpandablePreferenceGroup
+        android:layout="@layout/preference_settings_no_padding"
+        android:key="blocked_group"/>
+    <org.chromium.components.browser_ui.settings.ExpandablePreferenceGroup
+        android:layout="@layout/preference_settings_no_padding"
+        android:key="allowed_group"/>
+    <PreferenceCategory
+        android:layout="@layout/preference_category_chrome_setting"
+        android:title="@string/anti_abuse_when_on_header"
+        android:key="anti_abuse_when_on_header"/>
+    <org.chromium.components.browser_ui.settings.TextMessagePreference
+        android:icon="@drawable/ic_dashboard"
+        android:layout="@layout/preference_settings_no_padding"
+        android:title="@string/anti_abuse_when_on_section_one"
+        android:key="anti_abuse_when_on_section_one"
+        app:allowDividerBelow="false"/>
+    <org.chromium.components.browser_ui.settings.TextMessagePreference
+        android:icon="@drawable/ic_background_replace"
+        android:layout="@layout/preference_settings_no_padding"
+        android:title="@string/anti_abuse_when_on_section_two"
+        android:key="anti_abuse_when_on_section_two"
+        app:allowDividerBelow="false"/>
+    <PreferenceCategory
+        android:layout="@layout/preference_category_chrome_setting_for_notice"
+        android:title="@string/anti_abuse_things_to_consider_header"
+        android:key="anti_abuse_things_to_consider_header"/>
+    <org.chromium.components.browser_ui.settings.TextMessagePreference
+        android:icon="@drawable/ic_account_attention"
+        android:layout="@layout/preference_settings_no_padding"
+        android:title="@string/anti_abuse_things_to_consider_section_one"
+        android:key="anti_abuse_things_to_consider_section_one"
+        app:allowDividerBelow="false"/>
+</PreferenceScreen>

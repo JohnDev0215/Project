@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:id="@+id/app_manage_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="@dimen/dp_468"
+        android:layout_height="match_parent">
+        <com.bydux.api.common.views.window.DampingScrollView
+            android:orientation="vertical"
+            android:id="@+id/scv_app_manage_pager"
+            android:scrollbars="none"
+            android:fadingEdge="vertical"
+            android:fadingEdgeLength="@dimen/dp_24"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_6"
+            android:requiresFadingEdge="vertical">
+            <include layout="@layout/subview_pager_app_manage"/>
+        </com.bydux.api.common.views.window.DampingScrollView>
+    </LinearLayout>
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+        <ImageView
+            android:id="@+id/iv_app_manage_pager"
+            android:layout_width="@dimen/dp_556"
+            android:layout_height="@dimen/dp_468"
+            android:src="@drawable/img_empty_app_manage"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:height="@dimen/dp_20"
+        android:width="@dimen/dp_20"
+        android:top="@dimen/dp_3">
+        <shape android:shape="oval">
+            <gradient
+                android:startColor="@color/black"
+                android:endColor="@color/white"
+                android:angle="0"
+                android:type="radial"
+                android:gradientRadius="@dimen/dp_15"/>
+            <corners android:radius="@dimen/dp_10"/>
+        </shape>
+    </item>
+    <item
+        android:height="@dimen/dp_20"
+        android:width="@dimen/dp_20">
+        <shape android:shape="oval">
+            <solid android:color="@color/bg_switch_thumb_point"/>
+            <corners android:radius="@dimen/dp_9"/>
+            <stroke
+                android:width="@dimen/dp_1"
+                android:color="@color/boundary_switch_thumb_point"/>
+        </shape>
+    </item>
+</layer-list>

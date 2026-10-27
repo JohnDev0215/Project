@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<view xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:id="@+id/search_box"
+    android:background="@drawable/ntp_search_box"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/ntp_search_box_height"
+    android:layout_marginTop="0dp"
+    android:layout_marginBottom="@dimen/ntp_search_box_bottom_margin"
+    android:paddingStart="@dimen/fake_search_box_lateral_padding"
+    android:layout_marginStart="10dp"
+    android:layout_marginEnd="10dp"
+    class="org.chromium.chrome.browser.ntp.search.SearchBoxContainerView">
+    <RelativeLayout
+        android:gravity="center_vertical"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_marginEnd="12dp">
+        <EditText
+            android:ellipsize="end"
+            android:id="@+id/search_box_text"
+            android:background="@null"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="@string/search_or_type_web_address"
+            android:singleLine="true"
+            android:inputType="text"
+            style="@style/TextAppearance.SearchBoxText.NewTabPage"/>
+    </RelativeLayout>
+    <org.chromium.ui.widget.ChromeImageView
+        android:id="@+id/voice_search_button"
+        android:src="@drawable/btn_mic"
+        android:contentDescription="@string/accessibility_toolbar_btn_mic"
+        style="@style/LocationBarActionButton"/>
+    <org.chromium.ui.widget.ChromeImageView
+        android:id="@+id/lens_camera_button"
+        android:visibility="gone"
+        android:src="@drawable/lens_camera_icon"
+        android:contentDescription="@string/accessibility_btn_lens_camera"
+        style="@style/LocationBarActionButton"/>
+</view>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt"
+    android:layout_width="match_parent"
+    android:layout_height="0px"
+    style="@style/PreferenceLayout">
+    <org.chromium.chrome.browser.ui.signin.PersonalizedSigninPromoView
+        android:id="@+id/signin_promo_view_container"
+        android:layout_width="match_parent"
+        android:layout_height="0px"/>
+</FrameLayout>

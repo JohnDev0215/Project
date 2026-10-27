@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/page_zoom_view_padding"
+    android:paddingRight="@dimen/page_zoom_view_padding"
+    android:clipToPadding="false"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/page_zoom_current_zoom_level"
+        android:background="@drawable/page_zoom_background"
+        android:padding="@dimen/page_zoom_view_level_padding"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/page_zoom_view_level_margin"
+        android:textAlignment="center"
+        android:accessibilityLiveRegion="assertive"
+        android:elevation="@dimen/page_zoom_view_elevation"
+        style="@style/TextAppearance.TextLarge"/>
+    <include layout="@layout/page_zoom_slider"/>
+</LinearLayout>

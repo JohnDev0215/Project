@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="cookie_controls_blocked_cookies">
+        <item quantity="one">បាន​ទប់ស្កាត់​ខូគី 1</item>
+        <item quantity="other">បាន​ទប់ស្កាត់​ខូគី %d</item>
+    </plurals>
+    <plurals name="selected_items">
+        <item quantity="one">បានជ្រើសរើស 1</item>
+        <item quantity="other">បានជ្រើសរើស %d</item>
+    </plurals>
+</resources>

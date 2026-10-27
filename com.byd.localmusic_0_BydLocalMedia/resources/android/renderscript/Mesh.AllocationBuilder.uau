@@ -1,0 +1,6 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/renderscript/Mesh$AllocationBuilder;-><init>(Landroid/renderscript/RenderScript;)V,frameworks/base/rs/java/android/renderscript/Mesh.java,432,9,432,29,
+Landroid/renderscript/Mesh$AllocationBuilder;->addVertexAllocation(Landroid/renderscript/Allocation;)Landroid/renderscript/Mesh$AllocationBuilder;,frameworks/base/rs/java/android/renderscript/Mesh.java,467,9,467,29,
+Landroid/renderscript/Mesh$AllocationBuilder;->addIndexSetAllocation(Landroid/renderscript/Allocation;Landroid/renderscript/Mesh$Primitive;)Landroid/renderscript/Mesh$AllocationBuilder;,frameworks/base/rs/java/android/renderscript/Mesh.java,489,9,489,29,
+Landroid/renderscript/Mesh$AllocationBuilder;->addIndexSetType(Landroid/renderscript/Mesh$Primitive;)Landroid/renderscript/Mesh$AllocationBuilder;,frameworks/base/rs/java/android/renderscript/Mesh.java,506,9,506,29,
+Landroid/renderscript/Mesh$AllocationBuilder;->create()Landroid/renderscript/Mesh;,frameworks/base/rs/java/android/renderscript/Mesh.java,520,9,520,29,

@@ -1,0 +1,4 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/security/keymaster/KeymasterIntArgument;->value:I,frameworks/base/core/java/android/security/keymaster/KeymasterIntArgument.java,26,5,26,25,
+Landroid/security/keymaster/KeymasterIntArgument;-><init>(II)V,frameworks/base/core/java/android/security/keymaster/KeymasterIntArgument.java,29,5,29,25,
+Landroid/security/keymaster/KeymasterIntArgument;-><init>(ILandroid/os/Parcel;)V,frameworks/base/core/java/android/security/keymaster/KeymasterIntArgument.java,44,5,44,25,

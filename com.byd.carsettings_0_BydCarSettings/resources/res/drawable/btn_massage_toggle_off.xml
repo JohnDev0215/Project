@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners
+        android:topLeftRadius="@dimen/dp_24"
+        android:topRightRadius="@dimen/dp_24"
+        android:bottomLeftRadius="@dimen/dp_24"
+        android:bottomRightRadius="@dimen/dp_24"/>
+    <solid android:color="@color/btn_massage_toggle_off"/>
+    <stroke
+        android:width="@dimen/dp_1"
+        android:color="@color/btn_massage_toggle_off_stroke"/>
+</shape>

@@ -1,0 +1,13 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/hardware/Camera;->mNativeContext:J,frameworks/base/core/java/android/hardware/Camera.java,175,5,175,88,maxTargetSdk=28&trackingBug=115609023L
+Landroid/hardware/Camera;->CAMERA_HAL_API_VERSION_1_0:I,frameworks/base/core/java/android/hardware/Camera.java,248,5,248,25,
+Landroid/hardware/Camera;->openLegacy(II)Landroid/hardware/Camera;,frameworks/base/core/java/android/hardware/Camera.java,464,5,464,25,
+Landroid/hardware/Camera;->native_setup(Ljava/lang/Object;IILjava/lang/String;)I,frameworks/base/core/java/android/hardware/Camera.java,618,5,618,25,
+Landroid/hardware/Camera;->setPreviewSurface(Landroid/view/Surface;)V,frameworks/base/core/java/android/hardware/Camera.java,731,5,731,88,maxTargetSdk=28&trackingBug=115609023L
+Landroid/hardware/Camera;->previewEnabled()Z,frameworks/base/core/java/android/hardware/Camera.java,858,5,858,25,
+Landroid/hardware/Camera;->addRawImageCallbackBuffer([B)V,frameworks/base/core/java/android/hardware/Camera.java,1032,5,1032,25,
+Landroid/hardware/Camera;->addCallbackBuffer([BI)V,frameworks/base/core/java/android/hardware/Camera.java,1038,5,1038,25,
+Landroid/hardware/Camera;->postEventFromNative(Ljava/lang/Object;IIILjava/lang/Object;)V,frameworks/base/core/java/android/hardware/Camera.java,1286,5,1286,25,
+Landroid/hardware/Camera;->native_setParameters(Ljava/lang/String;)V,frameworks/base/core/java/android/hardware/Camera.java,2099,5,2099,25,
+Landroid/hardware/Camera;->native_getParameters()Ljava/lang/String;,frameworks/base/core/java/android/hardware/Camera.java,2101,5,2101,25,
+Landroid/hardware/Camera;->getEmptyParameters()Landroid/hardware/Camera$Parameters;,frameworks/base/core/java/android/hardware/Camera.java,2150,5,2150,25,

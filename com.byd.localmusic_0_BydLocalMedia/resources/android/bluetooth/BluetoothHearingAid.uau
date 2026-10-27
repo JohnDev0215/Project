@@ -1,0 +1,4 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/bluetooth/BluetoothHearingAid;->ACTION_ACTIVE_DEVICE_CHANGED:Ljava/lang/String;,frameworks/base/core/java/android/bluetooth/BluetoothHearingAid.java,88,5,88,25,
+Landroid/bluetooth/BluetoothHearingAid;->setActiveDevice(Landroid/bluetooth/BluetoothDevice;)Z,frameworks/base/core/java/android/bluetooth/BluetoothHearingAid.java,305,5,305,25,
+Landroid/bluetooth/BluetoothHearingAid;->getActiveDevices()Ljava/util/List;,frameworks/base/core/java/android/bluetooth/BluetoothHearingAid.java,331,5,331,25,

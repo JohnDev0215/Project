@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="@dimen/dp_612"
+    android:layout_height="@dimen/dp_560"
+    style="@style/vehicle_setting_dialog_background_container">
+    <FrameLayout
+        android:id="@+id/fl_title__permission_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_71"/>
+    <View
+        android:id="@+id/v_title_line_disk_statistics"
+        android:background="@color/bg_color_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:layout_below="@+id/rl_title_permission"/>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <com.byd.mvp.ui.widget.BydViewPager
+            android:id="@+id/vp_permissions_apps_permission"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+</LinearLayout>

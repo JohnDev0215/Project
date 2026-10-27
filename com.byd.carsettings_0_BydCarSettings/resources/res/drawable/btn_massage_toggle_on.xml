@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <gradient
+        android:startColor="@color/start_color_dilink_pagers"
+        android:endColor="@color/end_color_dilink_pagers"
+        android:angle="0"/>
+    <corners
+        android:topLeftRadius="@dimen/dp_24"
+        android:topRightRadius="@dimen/dp_24"
+        android:bottomLeftRadius="@dimen/dp_24"
+        android:bottomRightRadius="@dimen/dp_24"/>
+</shape>

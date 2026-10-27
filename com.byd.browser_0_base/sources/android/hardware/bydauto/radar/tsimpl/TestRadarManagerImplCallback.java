@@ -1,0 +1,88 @@
+package android.hardware.bydauto.radar.tsimpl;
+
+import android.hardware.bydauto.radar.AbsBYDAutoRadarListener;
+import android.os.Handler;
+import android.os.Message;
+import android.util.Log;
+import defpackage.C0173a;
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
+import java.util.ArrayList;
+
+/* JADX INFO: loaded from: classes.dex */
+public class TestRadarManagerImplCallback extends AbsBYDAutoRadarListener {
+    protected static final String TAG = "TestRadarManagerImplCallback";
+    private AbsBYDAutoRadarListener mAbsBYDAutoRadarListener;
+    private Handler mHandler = new Handler(C0173a.h(TAG).getLooper()) { // from class: android.hardware.bydauto.radar.tsimpl.TestRadarManagerImplCallback.1
+        @Override // android.os.Handler
+        public void handleMessage(Message message) {
+            super.handleMessage(message);
+            TestRadarManagerImplCallback.this.dispatchMessageCallBack(message);
+        }
+    };
+
+    public static class InvokeMethod {
+        private Method method;
+        private ArrayList<Object> params;
+
+        private InvokeMethod() {
+            this.params = new ArrayList<>();
+        }
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public void dispatchMessageCallBack(Message message) {
+        if (this.mAbsBYDAutoRadarListener != null) {
+            InvokeMethod invokeMethod = (InvokeMethod) message.obj;
+            invokeMethod.method.getName();
+            String.valueOf(invokeMethod.params);
+            try {
+                invokeMethod.method.invoke(this.mAbsBYDAutoRadarListener, invokeMethod.params.toArray());
+            } catch (IllegalAccessException e) {
+                e.printStackTrace();
+            } catch (InvocationTargetException e2) {
+                e2.printStackTrace();
+            }
+        }
+    }
+
+    private Method getMethod(Class cls, String str, int i) {
+        ArrayList arrayList = new ArrayList();
+        for (Method method : cls.getMethods()) {
+            if (method.getName().equals(str) && method.getParameters().length == i) {
+                arrayList.add(method);
+            }
+        }
+        if (arrayList.size() == 0) {
+            return null;
+        }
+        if (arrayList.size() == 1) {
+            return (Method) arrayList.get(0);
+        }
+        try {
+            throw new Exception("size>1");
+        } catch (Exception e) {
+            e.printStackTrace();
+            return null;
+        }
+    }
+
+    @Override // android.hardware.bydauto.radar.AbsBYDAutoRadarListener
+    public void onReverseRadarSwitchStateChanged(int i) {
+        Method method = getMethod(AbsBYDAutoRadarListener.class, "onReverseRadarSwitchStateChanged", 1);
+        if (method == null) {
+            Log.e(TAG, "method==null ");
+            return;
+        }
+        Message messageObtain = Message.obtain();
+        InvokeMethod invokeMethod = new InvokeMethod();
+        invokeMethod.method = method;
+        invokeMethod.params.add(Integer.valueOf(i));
+        messageObtain.obj = invokeMethod;
+        this.mHandler.sendMessage(messageObtain);
+    }
+
+    public void setAbsBYDAutoRadarListener(AbsBYDAutoRadarListener absBYDAutoRadarListener) {
+        this.mAbsBYDAutoRadarListener = absBYDAutoRadarListener;
+    }
+}

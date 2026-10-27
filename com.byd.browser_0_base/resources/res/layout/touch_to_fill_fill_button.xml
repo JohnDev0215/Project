@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<org.chromium.ui.widget.ButtonCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:ellipsize="end"
+    android:gravity="center"
+    android:id="@+id/touch_to_fill_button_title"
+    android:background="@drawable/touch_to_fill_credential_background"
+    android:descendantFocusability="blocksDescendants"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="2dp"
+    android:minHeight="48dp"
+    android:singleLine="true"
+    android:layout_marginHorizontal="8dp"
+    style="@style/FilledButton.Flat"/>

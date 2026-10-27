@@ -1,0 +1,22 @@
+package com.sun.xml.bind.v2.schemagen.xmlschema;
+
+import com.sun.xml.txw2.TypedXmlWriter;
+import com.sun.xml.txw2.annotation.XmlElement;
+
+/* JADX INFO: loaded from: classes3.dex */
+public interface ContentModelContainer extends TypedXmlWriter {
+    @XmlElement
+    ExplicitGroup all();
+
+    @XmlElement
+    Any any();
+
+    @XmlElement
+    ExplicitGroup choice();
+
+    @XmlElement
+    LocalElement element();
+
+    @XmlElement
+    ExplicitGroup sequence();
+}

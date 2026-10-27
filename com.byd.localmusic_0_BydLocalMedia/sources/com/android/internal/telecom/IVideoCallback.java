@@ -1,0 +1,319 @@
+package com.android.internal.telecom;
+
+import android.os.Binder;
+import android.os.IBinder;
+import android.os.IInterface;
+import android.os.Parcel;
+import android.os.RemoteException;
+import android.telecom.VideoProfile;
+
+/* JADX INFO: loaded from: classes4.dex */
+public interface IVideoCallback extends IInterface {
+
+    public static class Default implements IVideoCallback {
+        @Override // android.os.IInterface
+        public IBinder asBinder() {
+            return null;
+        }
+
+        @Override // com.android.internal.telecom.IVideoCallback
+        public void changeCallDataUsage(long j) throws RemoteException {
+        }
+
+        @Override // com.android.internal.telecom.IVideoCallback
+        public void changeCameraCapabilities(VideoProfile.CameraCapabilities cameraCapabilities) throws RemoteException {
+        }
+
+        @Override // com.android.internal.telecom.IVideoCallback
+        public void changePeerDimensions(int i, int i2) throws RemoteException {
+        }
+
+        @Override // com.android.internal.telecom.IVideoCallback
+        public void changeVideoQuality(int i) throws RemoteException {
+        }
+
+        @Override // com.android.internal.telecom.IVideoCallback
+        public void handleCallSessionEvent(int i) throws RemoteException {
+        }
+
+        @Override // com.android.internal.telecom.IVideoCallback
+        public void receiveSessionModifyRequest(VideoProfile videoProfile) throws RemoteException {
+        }
+
+        @Override // com.android.internal.telecom.IVideoCallback
+        public void receiveSessionModifyResponse(int i, VideoProfile videoProfile, VideoProfile videoProfile2) throws RemoteException {
+        }
+    }
+
+    void changeCallDataUsage(long j) throws RemoteException;
+
+    void changeCameraCapabilities(VideoProfile.CameraCapabilities cameraCapabilities) throws RemoteException;
+
+    void changePeerDimensions(int i, int i2) throws RemoteException;
+
+    void changeVideoQuality(int i) throws RemoteException;
+
+    void handleCallSessionEvent(int i) throws RemoteException;
+
+    void receiveSessionModifyRequest(VideoProfile videoProfile) throws RemoteException;
+
+    void receiveSessionModifyResponse(int i, VideoProfile videoProfile, VideoProfile videoProfile2) throws RemoteException;
+
+    public static abstract class Stub extends Binder implements IVideoCallback {
+        private static final String DESCRIPTOR = "com.android.internal.telecom.IVideoCallback";
+        static final int TRANSACTION_changeCallDataUsage = 5;
+        static final int TRANSACTION_changeCameraCapabilities = 6;
+        static final int TRANSACTION_changePeerDimensions = 4;
+        static final int TRANSACTION_changeVideoQuality = 7;
+        static final int TRANSACTION_handleCallSessionEvent = 3;
+        static final int TRANSACTION_receiveSessionModifyRequest = 1;
+        static final int TRANSACTION_receiveSessionModifyResponse = 2;
+
+        public static String getDefaultTransactionName(int i) {
+            switch (i) {
+                case 1:
+                    return "receiveSessionModifyRequest";
+                case 2:
+                    return "receiveSessionModifyResponse";
+                case 3:
+                    return "handleCallSessionEvent";
+                case 4:
+                    return "changePeerDimensions";
+                case 5:
+                    return "changeCallDataUsage";
+                case 6:
+                    return "changeCameraCapabilities";
+                case 7:
+                    return "changeVideoQuality";
+                default:
+                    return null;
+            }
+        }
+
+        @Override // android.os.IInterface
+        public IBinder asBinder() {
+            return this;
+        }
+
+        public Stub() {
+            attachInterface(this, DESCRIPTOR);
+        }
+
+        public static IVideoCallback asInterface(IBinder iBinder) {
+            if (iBinder == null) {
+                return null;
+            }
+            IInterface iInterfaceQueryLocalInterface = iBinder.queryLocalInterface(DESCRIPTOR);
+            if (iInterfaceQueryLocalInterface != null && (iInterfaceQueryLocalInterface instanceof IVideoCallback)) {
+                return (IVideoCallback) iInterfaceQueryLocalInterface;
+            }
+            return new Proxy(iBinder);
+        }
+
+        @Override // android.os.Binder
+        public String getTransactionName(int i) {
+            return getDefaultTransactionName(i);
+        }
+
+        @Override // android.os.Binder
+        public boolean onTransact(int i, Parcel parcel, Parcel parcel2, int i2) throws RemoteException {
+            if (i == 1598968902) {
+                parcel2.writeString(DESCRIPTOR);
+                return true;
+            }
+            switch (i) {
+                case 1:
+                    parcel.enforceInterface(DESCRIPTOR);
+                    receiveSessionModifyRequest(parcel.readInt() != 0 ? VideoProfile.CREATOR.createFromParcel(parcel) : null);
+                    return true;
+                case 2:
+                    parcel.enforceInterface(DESCRIPTOR);
+                    receiveSessionModifyResponse(parcel.readInt(), parcel.readInt() != 0 ? VideoProfile.CREATOR.createFromParcel(parcel) : null, parcel.readInt() != 0 ? VideoProfile.CREATOR.createFromParcel(parcel) : null);
+                    return true;
+                case 3:
+                    parcel.enforceInterface(DESCRIPTOR);
+                    handleCallSessionEvent(parcel.readInt());
+                    return true;
+                case 4:
+                    parcel.enforceInterface(DESCRIPTOR);
+                    changePeerDimensions(parcel.readInt(), parcel.readInt());
+                    return true;
+                case 5:
+                    parcel.enforceInterface(DESCRIPTOR);
+                    changeCallDataUsage(parcel.readLong());
+                    return true;
+                case 6:
+                    parcel.enforceInterface(DESCRIPTOR);
+                    changeCameraCapabilities(parcel.readInt() != 0 ? VideoProfile.CameraCapabilities.CREATOR.createFromParcel(parcel) : null);
+                    return true;
+                case 7:
+                    parcel.enforceInterface(DESCRIPTOR);
+                    changeVideoQuality(parcel.readInt());
+                    return true;
+                default:
+                    return super.onTransact(i, parcel, parcel2, i2);
+            }
+        }
+
+        private static class Proxy implements IVideoCallback {
+            public static IVideoCallback sDefaultImpl;
+            private IBinder mRemote;
+
+            public String getInterfaceDescriptor() {
+                return Stub.DESCRIPTOR;
+            }
+
+            Proxy(IBinder iBinder) {
+                this.mRemote = iBinder;
+            }
+
+            @Override // android.os.IInterface
+            public IBinder asBinder() {
+                return this.mRemote;
+            }
+
+            @Override // com.android.internal.telecom.IVideoCallback
+            public void receiveSessionModifyRequest(VideoProfile videoProfile) throws RemoteException {
+                Parcel parcelObtain = Parcel.obtain();
+                try {
+                    parcelObtain.writeInterfaceToken(Stub.DESCRIPTOR);
+                    if (videoProfile != null) {
+                        parcelObtain.writeInt(1);
+                        videoProfile.writeToParcel(parcelObtain, 0);
+                    } else {
+                        parcelObtain.writeInt(0);
+                    }
+                    if (this.mRemote.transact(1, parcelObtain, null, 1) || Stub.getDefaultImpl() == null) {
+                        return;
+                    }
+                    Stub.getDefaultImpl().receiveSessionModifyRequest(videoProfile);
+                } finally {
+                    parcelObtain.recycle();
+                }
+            }
+
+            @Override // com.android.internal.telecom.IVideoCallback
+            public void receiveSessionModifyResponse(int i, VideoProfile videoProfile, VideoProfile videoProfile2) throws RemoteException {
+                Parcel parcelObtain = Parcel.obtain();
+                try {
+                    parcelObtain.writeInterfaceToken(Stub.DESCRIPTOR);
+                    parcelObtain.writeInt(i);
+                    if (videoProfile != null) {
+                        parcelObtain.writeInt(1);
+                        videoProfile.writeToParcel(parcelObtain, 0);
+                    } else {
+                        parcelObtain.writeInt(0);
+                    }
+                    if (videoProfile2 != null) {
+                        parcelObtain.writeInt(1);
+                        videoProfile2.writeToParcel(parcelObtain, 0);
+                    } else {
+                        parcelObtain.writeInt(0);
+                    }
+                    if (this.mRemote.transact(2, parcelObtain, null, 1) || Stub.getDefaultImpl() == null) {
+                        return;
+                    }
+                    Stub.getDefaultImpl().receiveSessionModifyResponse(i, videoProfile, videoProfile2);
+                } finally {
+                    parcelObtain.recycle();
+                }
+            }
+
+            @Override // com.android.internal.telecom.IVideoCallback
+            public void handleCallSessionEvent(int i) throws RemoteException {
+                Parcel parcelObtain = Parcel.obtain();
+                try {
+                    parcelObtain.writeInterfaceToken(Stub.DESCRIPTOR);
+                    parcelObtain.writeInt(i);
+                    if (this.mRemote.transact(3, parcelObtain, null, 1) || Stub.getDefaultImpl() == null) {
+                        return;
+                    }
+                    Stub.getDefaultImpl().handleCallSessionEvent(i);
+                } finally {
+                    parcelObtain.recycle();
+                }
+            }
+
+            @Override // com.android.internal.telecom.IVideoCallback
+            public void changePeerDimensions(int i, int i2) throws RemoteException {
+                Parcel parcelObtain = Parcel.obtain();
+                try {
+                    parcelObtain.writeInterfaceToken(Stub.DESCRIPTOR);
+                    parcelObtain.writeInt(i);
+                    parcelObtain.writeInt(i2);
+                    if (this.mRemote.transact(4, parcelObtain, null, 1) || Stub.getDefaultImpl() == null) {
+                        return;
+                    }
+                    Stub.getDefaultImpl().changePeerDimensions(i, i2);
+                } finally {
+                    parcelObtain.recycle();
+                }
+            }
+
+            @Override // com.android.internal.telecom.IVideoCallback
+            public void changeCallDataUsage(long j) throws RemoteException {
+                Parcel parcelObtain = Parcel.obtain();
+                try {
+                    parcelObtain.writeInterfaceToken(Stub.DESCRIPTOR);
+                    parcelObtain.writeLong(j);
+                    if (this.mRemote.transact(5, parcelObtain, null, 1) || Stub.getDefaultImpl() == null) {
+                        return;
+                    }
+                    Stub.getDefaultImpl().changeCallDataUsage(j);
+                } finally {
+                    parcelObtain.recycle();
+                }
+            }
+
+            @Override // com.android.internal.telecom.IVideoCallback
+            public void changeCameraCapabilities(VideoProfile.CameraCapabilities cameraCapabilities) throws RemoteException {
+                Parcel parcelObtain = Parcel.obtain();
+                try {
+                    parcelObtain.writeInterfaceToken(Stub.DESCRIPTOR);
+                    if (cameraCapabilities != null) {
+                        parcelObtain.writeInt(1);
+                        cameraCapabilities.writeToParcel(parcelObtain, 0);
+                    } else {
+                        parcelObtain.writeInt(0);
+                    }
+                    if (this.mRemote.transact(6, parcelObtain, null, 1) || Stub.getDefaultImpl() == null) {
+                        return;
+                    }
+                    Stub.getDefaultImpl().changeCameraCapabilities(cameraCapabilities);
+                } finally {
+                    parcelObtain.recycle();
+                }
+            }
+
+            @Override // com.android.internal.telecom.IVideoCallback
+            public void changeVideoQuality(int i) throws RemoteException {
+                Parcel parcelObtain = Parcel.obtain();
+                try {
+                    parcelObtain.writeInterfaceToken(Stub.DESCRIPTOR);
+                    parcelObtain.writeInt(i);
+                    if (this.mRemote.transact(7, parcelObtain, null, 1) || Stub.getDefaultImpl() == null) {
+                        return;
+                    }
+                    Stub.getDefaultImpl().changeVideoQuality(i);
+                } finally {
+                    parcelObtain.recycle();
+                }
+            }
+        }
+
+        public static boolean setDefaultImpl(IVideoCallback iVideoCallback) {
+            if (Proxy.sDefaultImpl != null) {
+                throw new IllegalStateException("setDefaultImpl() called twice");
+            }
+            if (iVideoCallback == null) {
+                return false;
+            }
+            Proxy.sDefaultImpl = iVideoCallback;
+            return true;
+        }
+
+        public static IVideoCallback getDefaultImpl() {
+            return Proxy.sDefaultImpl;
+        }
+    }
+}

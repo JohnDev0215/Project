@@ -1,0 +1,20 @@
+package com.sun.xml.bind.v2.schemagen.xmlschema;
+
+import com.sun.xml.txw2.TypedXmlWriter;
+import com.sun.xml.txw2.annotation.XmlAttribute;
+import javax.xml.namespace.QName;
+
+/* JADX INFO: loaded from: classes3.dex */
+public interface Element extends Annotated, ComplexTypeHost, FixedOrDefault, SimpleTypeHost, TypedXmlWriter {
+    @XmlAttribute
+    Element block(String str);
+
+    @XmlAttribute
+    Element block(String[] strArr);
+
+    @XmlAttribute
+    Element nillable(boolean z);
+
+    @XmlAttribute
+    Element type(QName qName);
+}

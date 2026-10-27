@@ -1,0 +1,13 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/bluetooth/BluetoothHeadset;->ACTION_ACTIVE_DEVICE_CHANGED:Ljava/lang/String;,frameworks/base/core/java/android/bluetooth/BluetoothHeadset.java,115,5,115,25,
+Landroid/bluetooth/BluetoothHeadset;->close()V,frameworks/base/core/java/android/bluetooth/BluetoothHeadset.java,404,5,404,25,
+Landroid/bluetooth/BluetoothHeadset;->getPriority(Landroid/bluetooth/BluetoothDevice;)I,frameworks/base/core/java/android/bluetooth/BluetoothHeadset.java,638,5,638,25,
+Landroid/bluetooth/BluetoothHeadset;->getAudioState(Landroid/bluetooth/BluetoothDevice;)I,frameworks/base/core/java/android/bluetooth/BluetoothHeadset.java,785,5,785,25,
+Landroid/bluetooth/BluetoothHeadset;->connectAudio()Z,frameworks/base/core/java/android/bluetooth/BluetoothHeadset.java,913,5,913,25,
+Landroid/bluetooth/BluetoothHeadset;->disconnectAudio()Z,frameworks/base/core/java/android/bluetooth/BluetoothHeadset.java,940,5,940,25,
+Landroid/bluetooth/BluetoothHeadset;->startScoUsingVirtualVoiceCall()Z,frameworks/base/core/java/android/bluetooth/BluetoothHeadset.java,978,5,978,25,
+Landroid/bluetooth/BluetoothHeadset;->stopScoUsingVirtualVoiceCall()Z,frameworks/base/core/java/android/bluetooth/BluetoothHeadset.java,1008,5,1008,25,
+Landroid/bluetooth/BluetoothHeadset;->phoneStateChanged(IIILjava/lang/String;ILjava/lang/String;)V,frameworks/base/core/java/android/bluetooth/BluetoothHeadset.java,1033,5,1033,25,
+Landroid/bluetooth/BluetoothHeadset;->setActiveDevice(Landroid/bluetooth/BluetoothDevice;)Z,frameworks/base/core/java/android/bluetooth/BluetoothHeadset.java,1132,5,1132,25,
+Landroid/bluetooth/BluetoothHeadset;->getActiveDevice()Landroid/bluetooth/BluetoothDevice;,frameworks/base/core/java/android/bluetooth/BluetoothHeadset.java,1158,5,1158,25,
+Landroid/bluetooth/BluetoothHeadset;->isEnabled()Z,frameworks/base/core/java/android/bluetooth/BluetoothHeadset.java,1235,5,1235,25,

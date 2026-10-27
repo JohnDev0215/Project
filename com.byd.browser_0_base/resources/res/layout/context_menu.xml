@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_gravity="center"
+    android:id="@+id/context_menu_frame"
+    android:background="@drawable/menu_bg_tinted"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="@dimen/context_menu_lateral_margin"
+    android:layout_marginVertical="@dimen/context_menu_vertical_margin">
+    <org.chromium.chrome.browser.contextmenu.ContextMenuListView
+        android:id="@+id/context_menu_list_view"
+        android:paddingBottom="@dimen/context_menu_bottom_padding"
+        android:clipToPadding="false"
+        android:layout_width="@dimen/context_menu_max_width"
+        android:layout_height="wrap_content"
+        android:listSelector="@android:color/transparent"
+        android:divider="@null"
+        android:fadeScrollbars="false"/>
+</FrameLayout>

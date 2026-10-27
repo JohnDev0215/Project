@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<org.chromium.components.browser_ui.widget.RadioButtonWithDescriptionLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:focusable="false"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <org.chromium.components.browser_ui.widget.RadioButtonWithDescription
+        android:id="@+id/no_preloading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:descriptionText="@string/preload_pages_no_preloading_summary"
+        app:primaryText="@string/preload_pages_no_preloading_title"/>
+    <org.chromium.components.browser_ui.widget.RadioButtonWithDescriptionAndAuxButton
+        android:id="@+id/standard_preloading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:descriptionText="@string/preload_pages_standard_preloading_summary"
+        app:primaryText="@string/preload_pages_standard_preloading_title"/>
+    <org.chromium.components.browser_ui.widget.RadioButtonWithDescriptionAndAuxButton
+        android:id="@+id/extended_preloading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:descriptionText="@string/preload_pages_extended_preloading_summary"
+        app:primaryText="@string/preload_pages_extended_preloading_title"/>
+</org.chromium.components.browser_ui.widget.RadioButtonWithDescriptionLayout>

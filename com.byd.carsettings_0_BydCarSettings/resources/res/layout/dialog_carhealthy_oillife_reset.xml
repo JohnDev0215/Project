@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="@dimen/dp_39"
+    android:paddingEnd="@dimen/dp_39">
+    <TextView
+        android:textSize="@dimen/sp_16"
+        android:textColor="?attr/dialog_text_color_tips"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_30"
+        android:text="@string/carhealthy_change_tips"/>
+    <TextView
+        android:textSize="@dimen/sp_20"
+        android:textColor="?attr/dialog_text_color_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_8"
+        android:layout_marginBottom="@dimen/dp_16"
+        android:text="@string/carhealthy_change_content"/>
+</LinearLayout>

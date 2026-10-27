@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+    <gradient
+        android:startColor="?attr/carsetting_text_color_blue2"
+        android:endColor="?attr/carsetting_text_color_blue"
+        android:angle="180"/>
+    <corners android:radius="?attr/byd_vehicle_button_background_shape_radius"/>
+</shape>

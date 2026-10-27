@@ -1,0 +1,9 @@
+package androidx.mediarouter;
+
+/* JADX INFO: loaded from: classes.dex */
+public final class R$bool {
+    public static final int is_tablet = 2131034116;
+
+    private R$bool() {
+    }
+}

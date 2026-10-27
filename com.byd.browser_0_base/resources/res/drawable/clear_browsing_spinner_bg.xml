@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/settings_spinner_bg"/>
+            <corners android:radius="@dimen/settings_spinner_radius"/>
+            <stroke
+                android:width="1dp"
+                android:color="@color/settings_spinner_stroke_color"/>
+        </shape>
+    </item>
+    <item
+        android:gravity="end|center_vertical"
+        android:height="@dimen/settings_ic_spinner_down_width_height"
+        android:width="@dimen/settings_ic_spinner_down_width_height"
+        android:drawable="@drawable/ic_spinner_down"
+        android:end="@dimen/settings_spinner_icon_padding_end"/>
+</layer-list>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="cookie_controls_blocked_cookies">
+        <item quantity="one">쿠키 1개 차단됨</item>
+        <item quantity="other">쿠키 %d개 차단됨</item>
+    </plurals>
+    <plurals name="selected_items">
+        <item quantity="one">1개 선택됨</item>
+        <item quantity="other">%d개 선택됨</item>
+    </plurals>
+</resources>

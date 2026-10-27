@@ -1,0 +1,4 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/hardware/SystemSensorManager$BaseEventQueue;->dispatchSensorEvent(I[FIJ)V,frameworks/base/core/java/android/hardware/SystemSensorManager.java,762,9,762,29,
+Landroid/hardware/SystemSensorManager$BaseEventQueue;->dispatchFlushCompleteEvent(I)V,frameworks/base/core/java/android/hardware/SystemSensorManager.java,765,9,765,29,
+Landroid/hardware/SystemSensorManager$BaseEventQueue;->dispatchAdditionalInfoEvent(III[F[I)V,frameworks/base/core/java/android/hardware/SystemSensorManager.java,768,9,768,29,

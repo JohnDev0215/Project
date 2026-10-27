@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="cookie_controls_blocked_cookies">
+        <item quantity="zero">تم حظر %d ملف تعريف ارتباط.</item>
+        <item quantity="one">تم حظر ملف تعريف ارتباط واحد.</item>
+        <item quantity="two">تم حظر ملفَّي تعريف ارتباط.</item>
+        <item quantity="few">تم حظر %d ملفات تعريف ارتباط.</item>
+        <item quantity="many">تم حظر %d ملف تعريف ارتباط.</item>
+        <item quantity="other">تم حظر %d ملف تعريف ارتباط.</item>
+    </plurals>
+    <plurals name="selected_items">
+        <item quantity="zero">تم اختيار %d عنصر</item>
+        <item quantity="one">تم اختيار عنصر واحد</item>
+        <item quantity="two">تم اختيار عنصرين (%d)</item>
+        <item quantity="few">تم اختيار %d عناصر</item>
+        <item quantity="many">تم اختيار %d عنصرًا</item>
+        <item quantity="other">تم اختيار %d عنصر</item>
+    </plurals>
+</resources>

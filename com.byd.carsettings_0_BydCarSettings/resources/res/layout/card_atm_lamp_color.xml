@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@drawable/bg_frame_gray_a"
+        android:layout_width="@dimen/dp_490"
+        android:layout_height="@dimen/dp_144"
+        android:minWidth="@dimen/dp_490"
+        android:minHeight="@dimen/dp_144"
+        android:layout_centerHorizontal="true"
+        android:paddingStart="@dimen/dp_24">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_26">
+            <TextView
+                android:textSize="@dimen/sp_20"
+                android:textColor="@color/text_color_main"
+                android:id="@+id/tv_title_card_atm_lamp_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/brightness_adjust_of_media_display"
+                android:layout_alignParentStart="true"/>
+        </RelativeLayout>
+        <com.byd.base.view.BydSeekBar
+            android:id="@+id/sbar_card_atm_lamp_color"
+            android:background="@drawable/img_carsetting_ambient_light_slider_bg"
+            android:layout_width="@dimen/dp_440"
+            android:layout_height="@dimen/dp_44"
+            android:layout_marginTop="@dimen/dp_23"
+            android:max="7"
+            android:progress="1"
+            android:thumb="@drawable/ambient_lighting_seekbar_color_thumb"
+            android:thumbOffset="@dimen/dp_0"
+            android:splitTrack="false"
+            app:bacgroudRadius="@dimen/dp_22"
+            app:backgroundBottom="@dimen/dp_7"
+            app:backgroundLeft="@dimen/dp_8"
+            app:backgroundRight="@dimen/dp_8"
+            app:backgroundTop="@dimen/dp_7"
+            app:linearColors="@array/linearColors"
+            app:linearOrientaion="horiziton"/>
+    </LinearLayout>
+</RelativeLayout>

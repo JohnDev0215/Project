@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:state_checked="true"
+        android:drawable="@drawable/shape_gradient_bg_blue_radio_button"/>
+    <item android:drawable="@drawable/bg_btn_frame_gray_50dp_corner"/>
+</selector>

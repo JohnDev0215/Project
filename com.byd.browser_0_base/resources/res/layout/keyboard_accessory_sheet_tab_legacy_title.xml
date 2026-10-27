@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="start|center_vertical"
+    android:orientation="vertical"
+    android:padding="0dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true">
+    <View
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="@dimen/keyboard_accessory_sheet_padding"
+        style="@style/HorizontalDivider"/>
+    <org.chromium.ui.widget.TextViewWithLeading
+        android:textAppearance="@style/TextAppearance.TextLarge.Secondary"
+        android:gravity="start|center_vertical"
+        android:id="@+id/tab_title"
+        android:paddingTop="@dimen/keyboard_accessory_suggestion_offset"
+        android:paddingBottom="@dimen/keyboard_accessory_suggestion_offset"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/keyboard_accessory_height"
+        android:paddingStart="@dimen/keyboard_accessory_suggestion_padding"
+        android:paddingEnd="@dimen/keyboard_accessory_suggestion_padding"
+        app:leading="@dimen/text_size_large_leading"/>
+    <View
+        android:id="@+id/title_divider"
+        android:layout_marginTop="@dimen/keyboard_accessory_sheet_padding"
+        android:layout_marginBottom="@dimen/keyboard_accessory_sheet_padding"
+        android:layout_marginStart="@dimen/keyboard_accessory_suggestion_padding"
+        android:layout_marginEnd="@dimen/keyboard_accessory_suggestion_padding"
+        style="@style/HorizontalDivider"/>
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="cookie_controls_blocked_cookies">
+        <item quantity="one">1 കുക്കി ബ്ലോക്ക് ചെയ്തു</item>
+        <item quantity="other">%d കുക്കികൾ ബ്ലോക്ക് ചെയ്തു</item>
+    </plurals>
+    <plurals name="selected_items">
+        <item quantity="one">1 തിരഞ്ഞെടുത്തു</item>
+        <item quantity="other">%d തിരഞ്ഞെടുത്തു</item>
+    </plurals>
+</resources>

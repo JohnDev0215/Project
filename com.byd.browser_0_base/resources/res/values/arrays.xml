@@ -1,0 +1,787 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="AccessControlAllowMethodsInCORSPreflightSpecConformantEntries">
+        <item>Do not uppercase request methods except for DELETE/GET/HEAD/OPTIONS/POST/PUT</item>
+        <item>Always uppercase request methods</item>
+    </array>
+    <array name="AccessControlAllowMethodsInCORSPreflightSpecConformantValues">
+        <item>True</item>
+        <item>False</item>
+    </array>
+    <array name="AdditionalDnsQueryTypesEnabledEntries">
+        <item>Allow additional DNS query types</item>
+        <item>Prevent additional DNS query types</item>
+    </array>
+    <array name="AdditionalDnsQueryTypesEnabledValues">
+        <item>True</item>
+        <item>False</item>
+    </array>
+    <array name="AllowWebAuthnWithBrokenTlsCertsEntries">
+        <item>Allow WebAuthn API requests on sites with broken TLS certificates.</item>
+        <item>Do not allow WebAuthn API requests on sites with broken TLS certificates.</item>
+    </array>
+    <array name="AllowWebAuthnWithBrokenTlsCertsValues">
+        <item>True</item>
+        <item>False</item>
+    </array>
+    <array name="AlternateErrorPagesEnabledEntries">
+        <item>Enable alternate error pages</item>
+        <item>Disable alternate error pages</item>
+    </array>
+    <array name="AlternateErrorPagesEnabledValues">
+        <item>True</item>
+        <item>False</item>
+    </array>
+    <array name="AutofillAddressEnabledEntries">
+        <item>Enable AutoFill for addresses</item>
+        <item>Disable AutoFill for addresses</item>
+    </array>
+    <array name="AutofillAddressEnabledValues">
+        <item>True</item>
+        <item>False</item>
+    </array>
+    <array name="AutofillCreditCardEnabledEntries">
+        <item>Enable AutoFill for credit cards</item>
+        <item>Disable AutoFill for credit cards</item>
+    </array>
+    <array name="AutofillCreditCardEnabledValues">
+        <item>True</item>
+        <item>False</item>
+    </array>
+    <array name="BackForwardCacheEnabledEntries">
+        <item>Allow the back-forward cache to be used</item>
+        <item>Do not allow the back-forward cache to be used</item>
+    </array>
+    <array name="BackForwardCacheEnabledValues">
+        <item>True</item>
+        <item>False</item>
+    </array>
+    <array name="BlockThirdPartyCookiesEntries">
+        <item>Block 3rd party cookies</item>
+        <item>Allow 3rd party cookies</item>
+        <item>Allow 3rd party cookies, but allow the user to change this setting</item>
+    </array>
+    <array name="BlockThirdPartyCookiesValues">
+        <item>True</item>
+        <item>False</item>
+        <item>None</item>
+    </array>
+    <array name="BrowserSigninEntries">
+        <item>Disable browser sign-in</item>
+        <item>Enable browser sign-in</item>
+    </array>
+    <array name="BrowserSigninValues">
+        <item>0</item>
+        <item>1</item>
+    </array>
+    <array name="BuiltInDnsClientEnabledEntries">
+        <item>Always use the built-in DNS client if available</item>
+        <item>Never use the built-in DNS client</item>
+        <item>Use the built-in DNS client on Windows, macOS, Android and ChromeOS</item>
+    </array>
+    <array name="BuiltInDnsClientEnabledValues">
+        <item>True</item>
+        <item>False</item>
+        <item>None</item>
+    </array>
+    <array name="CECPQ2EnabledEntries">
+        <item>Enable default CECPQ2 rollout process</item>
+        <item>Disable CECPQ2</item>
+    </array>
+    <array name="CECPQ2EnabledValues">
+        <item>True</item>
+        <item>False</item>
+    </array>
+    <array name="CORSNonWildcardRequestHeadersSupportEntries">
+        <item>Support CORS non-wildcard request headers.</item>
+        <item>Do not support CORS non-wildcard request headers.</item>
+    </array>
+    <array name="CORSNonWildcardRequestHeadersSupportValues">
+        <item>True</item>
+        <item>False</item>
+    </array>
+    <array name="ChromeVariationsEntries">
+        <item>Enable all variations</item>
+        <item>Enable variations concerning critical fixes only</item>
+        <item>Disable all variations</item>
+    </array>
+    <array name="ChromeVariationsValues">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </array>
+    <array name="CloudPolicyOverridesPlatformPolicyEntries">
+        <item>Cloud machine policies take precedence over platform machine policies</item>
+        <item>Platform machine policies take precedence over cloud machine policies</item>
+    </array>
+    <array name="CloudPolicyOverridesPlatformPolicyValues">
+        <item>True</item>
+        <item>False</item>
+    </array>
+    <array name="CloudUserPolicyMergeEntries">
+        <item>Enable merging of user-level cloud policies.</item>
+        <item>Disable merging of user-level cloud policies.</item>
+    </array>
+    <array name="CloudUserPolicyMergeValues">
+        <item>True</item>
+        <item>False</item>
+    </array>
+    <array name="CloudUserPolicyOverridesCloudMachinePolicyEntries">
+        <item>Allow user cloud policies to override machine cloud policies.</item>
+        <item>Prevent user cloud policies from overriding machine cloud policies.</item>
+    </array>
+    <array name="CloudUserPolicyOverridesCloudMachinePolicyValues">
+        <item>True</item>
+        <item>False</item>
+    </array>
+    <array name="ComponentUpdatesEnabledEntries">
+        <item>Enable updates for all components</item>
+        <item>Disable updates for non-critical components</item>
+    </array>
+    <array name="ComponentUpdatesEnabledValues">
+        <item>True</item>
+        <item>False</item>
+    </array>
+    <array name="ContextualSearchEnabledEntries">
+        <item>Allow users to use Touch to Search</item>
+        <item>Prevent users from using Touch to Search</item>
+    </array>
+    <array name="ContextualSearchEnabledValues">
+        <item>True</item>
+        <item>False</item>
+    </array>
+    <array name="DefaultCookiesSettingEntries">
+        <item>Allow all sites to set local data</item>
+        <item>Do not allow any site to set local data</item>
+        <item>Keep cookies for the duration of the session</item>
+    </array>
+    <array name="DefaultCookiesSettingValues">
+        <item>1</item>
+        <item>2</item>
+        <item>4</item>
+    </array>
+    <array name="DefaultGeolocationSettingEntries">
+        <item>Allow sites to track the users\' physical location</item>
+        <item>Do not allow any site to track the users\' physical location</item>
+        <item>Ask whenever a site wants to track the users\' physical location</item>
+    </array>
+    <array name="DefaultGeolocationSettingValues">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </array>
+    <array name="DefaultJavaScriptJitSettingEntries">
+        <item>Allow any site to run JavaScript JIT</item>
+        <item>Do not allow any site to run JavaScript JIT</item>
+    </array>
+    <array name="DefaultJavaScriptJitSettingValues">
+        <item>1</item>
+        <item>2</item>
+    </array>
+    <array name="DefaultJavaScriptSettingEntries">
+        <item>Allow all sites to run JavaScript</item>
+        <item>Do not allow any site to run JavaScript</item>
+    </array>
+    <array name="DefaultJavaScriptSettingValues">
+        <item>1</item>
+        <item>2</item>
+    </array>
+    <array name="DefaultPopupsSettingEntries">
+        <item>Allow all sites to show pop-ups</item>
+        <item>Do not allow any site to show pop-ups</item>
+    </array>
+    <array name="DefaultPopupsSettingValues">
+        <item>1</item>
+        <item>2</item>
+    </array>
+    <array name="DefaultSearchProviderEnabledEntries">
+        <item>Enable the default search provider</item>
+        <item>Disable the default search provider</item>
+        <item>Enable the default search provider and allow users to modify the search provier list</item>
+    </array>
+    <array name="DefaultSearchProviderEnabledValues">
+        <item>True</item>
+        <item>False</item>
+        <item>None</item>
+    </array>
+    <array name="DefaultSensorsSettingEntries">
+        <item>Allow sites to access sensors</item>
+        <item>Do not allow any site to access sensors</item>
+    </array>
+    <array name="DefaultSensorsSettingValues">
+        <item>1</item>
+        <item>2</item>
+    </array>
+    <array name="DefaultThirdPartyStoragePartitioningSettingEntries">
+        <item>Allow third-party storage partitioning to be enabled.</item>
+        <item>Block third-party storage partitioning from being enabled.</item>
+    </array>
+    <array name="DefaultThirdPartyStoragePartitioningSettingValues">
+        <item>1</item>
+        <item>2</item>
+    </array>
+    <array name="DefaultWebBluetoothGuardSettingEntries">
+        <item>Do not allow any site to request access to Bluetooth devices via the Web Bluetooth API</item>
+        <item>Allow sites to ask the user to grant access to a nearby Bluetooth device</item>
+    </array>
+    <array name="DefaultWebBluetoothGuardSettingValues">
+        <item>2</item>
+        <item>3</item>
+    </array>
+    <array name="DefaultWebUsbGuardSettingEntries">
+        <item>Do not allow any site to request access to USB devices via the WebUSB API</item>
+        <item>Allow sites to ask the user to grant access to a connected USB device</item>
+    </array>
+    <array name="DefaultWebUsbGuardSettingValues">
+        <item>2</item>
+        <item>3</item>
+    </array>
+    <array name="DisableAuthNegotiateCnameLookupEntries">
+        <item>Disable CNAME lookup during Kerberos authentication</item>
+        <item>Use CNAME lookup during Kerberos authentication</item>
+    </array>
+    <array name="DisableAuthNegotiateCnameLookupValues">
+        <item>True</item>
+        <item>False</item>
+    </array>
+    <array name="DisableSafeBrowsingProceedAnywayEntries">
+        <item>Do not allow user to bypass Safe Browsing warning</item>
+        <item>Allow user to bypass Safe Browsing warning</item>
+    </array>
+    <array name="DisableSafeBrowsingProceedAnywayValues">
+        <item>True</item>
+        <item>False</item>
+    </array>
+    <array name="DnsOverHttpsModeEntries">
+        <item>Disable DNS-over-HTTPS</item>
+        <item>Enable DNS-over-HTTPS with insecure fallback</item>
+        <item>Enable DNS-over-HTTPS without insecure fallback</item>
+    </array>
+    <array name="DnsOverHttpsModeValues">
+        <item>off</item>
+        <item>automatic</item>
+        <item>secure</item>
+    </array>
+    <array name="DomainReliabilityAllowedEntries">
+        <item>Domain Reliability data may be sent to Google depending on Chrome User Metrics (UMA) policy</item>
+        <item>Never send domain reliability data to Google</item>
+    </array>
+    <array name="DomainReliabilityAllowedValues">
+        <item>True</item>
+        <item>False</item>
+    </array>
+    <array name="EditBookmarksEnabledEntries">
+        <item>Enable bookmark editing</item>
+        <item>Disable bookmark editing</item>
+    </array>
+    <array name="EditBookmarksEnabledValues">
+        <item>True</item>
+        <item>False</item>
+    </array>
+    <array name="EnableMediaRouterEntries">
+        <item>Allow users to use Google Cast</item>
+        <item>Do not allow users to use Google Cast</item>
+    </array>
+    <array name="EnableMediaRouterValues">
+        <item>True</item>
+        <item>False</item>
+    </array>
+    <array name="EncryptedClientHelloEnabledEntries">
+        <item>Enable the TLS Encrypted ClientHello experiment</item>
+        <item>Disable the TLS Encrypted ClientHello experiment</item>
+    </array>
+    <array name="EncryptedClientHelloEnabledValues">
+        <item>True</item>
+        <item>False</item>
+    </array>
+    <array name="EnterpriseHardwarePlatformAPIEnabledEntries">
+        <item>Allow managed extensions to use the Enterprise Hardware Platform API</item>
+        <item>Do not allow managed extensions to use the Enterprise Hardware Platform API</item>
+    </array>
+    <array name="EnterpriseHardwarePlatformAPIEnabledValues">
+        <item>True</item>
+        <item>False</item>
+    </array>
+    <array name="EventPathEnabledEntries">
+        <item>Event.path API will be available.</item>
+        <item>Event.path API will be unavailable.</item>
+        <item>Event.path API will be in the default status: available before M109, and unavailable in M109 to 114.</item>
+    </array>
+    <array name="EventPathEnabledValues">
+        <item>True</item>
+        <item>False</item>
+        <item>None</item>
+    </array>
+    <array name="ExplicitlyAllowedNetworkPortsEntries">
+    </array>
+    <array name="ExplicitlyAllowedNetworkPortsValues">
+    </array>
+    <array name="FirstPartySetsEnabledEntries">
+        <item>Enable First-Party Sets for all affected users</item>
+        <item>Disable First-Party Sets for all affected users</item>
+    </array>
+    <array name="FirstPartySetsEnabledValues">
+        <item>True</item>
+        <item>False</item>
+    </array>
+    <array name="ForceGoogleSafeSearchEntries">
+        <item>Force the use of SafeSearch in Google Search</item>
+        <item>Do not enforce the use of SafeSearch in Google Search</item>
+    </array>
+    <array name="ForceGoogleSafeSearchValues">
+        <item>True</item>
+        <item>False</item>
+    </array>
+    <array name="ForceMajorVersionToMinorPositionInUserAgentEntries">
+        <item>Default to browser settings for User-Agent string version.</item>
+        <item>The User-Agent string will not freeze the major version.</item>
+        <item>The User-Agent string will freeze the major version as 99 and include the browser\'s major version in the minor position.</item>
+    </array>
+    <array name="ForceMajorVersionToMinorPositionInUserAgentValues">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </array>
+    <array name="ForceYouTubeRestrictEntries">
+        <item>Do not enforce Restricted Mode on YouTube</item>
+        <item>Enforce at least Moderate Restricted Mode on YouTube</item>
+        <item>Enforce Strict Restricted Mode for YouTube</item>
+    </array>
+    <array name="ForceYouTubeRestrictValues">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </array>
+    <array name="HistoryClustersVisibleEntries">
+        <item>Journeys will be visible at chrome://history/journeys.</item>
+        <item>Journeys will not be visible at chrome://history/journeys.</item>
+        <item>Journeys will be visible at chrome://history/journeys by default and users can change the visibility of Journeys.</item>
+    </array>
+    <array name="HistoryClustersVisibleValues">
+        <item>True</item>
+        <item>False</item>
+        <item>None</item>
+    </array>
+    <array name="HttpsOnlyModeEntries">
+        <item>Allow users to enable HTTPS-Only Mode</item>
+        <item>Do not allow users to enable HTTPS-Only Mode</item>
+        <item>Force enable HTTPS-Only Mode</item>
+    </array>
+    <array name="HttpsOnlyModeValues">
+        <item>allowed</item>
+        <item>disallowed</item>
+        <item>force_enabled</item>
+    </array>
+    <array name="HttpsUpgradesEnabledEntries">
+        <item>HTTPS Upgrades may be applied depending on feature launch status.</item>
+        <item>Disable HTTPS Upgrades.</item>
+        <item>HTTPS Upgrades may be applied depending on feature launch status.</item>
+    </array>
+    <array name="HttpsUpgradesEnabledValues">
+        <item>True</item>
+        <item>False</item>
+        <item>None</item>
+    </array>
+    <array name="IncognitoModeAvailabilityEntries">
+        <item>Incognito mode available</item>
+        <item>Incognito mode disabled</item>
+    </array>
+    <array name="IncognitoModeAvailabilityValues">
+        <item>0</item>
+        <item>1</item>
+    </array>
+    <array name="InsecureFormsWarningsEnabledEntries">
+        <item>Show warnings and disable autofill on insecure forms</item>
+        <item>Do not show warnings or disable autofill on insecure forms</item>
+    </array>
+    <array name="InsecureFormsWarningsEnabledValues">
+        <item>True</item>
+        <item>False</item>
+    </array>
+    <array name="InsecurePrivateNetworkRequestsAllowedEntries">
+        <item>Allow insecure websites to make requests to any network endpoint</item>
+        <item>Use default behavior when determining if insecure websites can make requests to any network endpoint</item>
+    </array>
+    <array name="InsecurePrivateNetworkRequestsAllowedValues">
+        <item>True</item>
+        <item>False</item>
+    </array>
+    <array name="IntensiveWakeUpThrottlingEnabledEntries">
+        <item>Force throttling of background JavaScript timers</item>
+        <item>Force no throttling of background JavaScript timers</item>
+        <item>Allow throttling of background JavaScript timers to be controlled by Chrome logic and configured by users</item>
+    </array>
+    <array name="IntensiveWakeUpThrottlingEnabledValues">
+        <item>True</item>
+        <item>False</item>
+        <item>None</item>
+    </array>
+    <array name="LensCameraAssistedSearchEnabledEntries">
+        <item>Enable Google Lens camera assisted search for Enterprise user</item>
+        <item>Disable Google Lens camera assisted search for Enterprise user</item>
+    </array>
+    <array name="LensCameraAssistedSearchEnabledValues">
+        <item>True</item>
+        <item>False</item>
+    </array>
+    <array name="MetricsReportingEnabledEntries">
+        <item>Enable reporting of usage and crash-related data</item>
+        <item>Disable reporting of usage and crash-related data</item>
+    </array>
+    <array name="MetricsReportingEnabledValues">
+        <item>True</item>
+        <item>False</item>
+    </array>
+    <array name="NTPContentSuggestionsEnabledEntries">
+        <item>Show content suggestions on the New Tab page</item>
+        <item>Do not show content suggestions on the New Tab page</item>
+    </array>
+    <array name="NTPContentSuggestionsEnabledValues">
+        <item>True</item>
+        <item>False</item>
+    </array>
+    <array name="NetworkPredictionOptionsEntries">
+        <item>Predict network actions on any network connection</item>
+        <item>Predict network actions on any network that is not cellular. (Deprecated in 50, removed in 52. After 52, if value 1 is set, it will be treated as 0 - predict network actions on any network connection.)</item>
+        <item>Do not predict network actions on any network connection</item>
+    </array>
+    <array name="NetworkPredictionOptionsValues">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </array>
+    <array name="NewBaseUrlInheritanceBehaviorAllowedEntries">
+        <item>NewBaseUrlInheritanceBehavior feature available</item>
+        <item>NewBaseUrlInheritanceBehavior feature disabled</item>
+    </array>
+    <array name="NewBaseUrlInheritanceBehaviorAllowedValues">
+        <item>True</item>
+        <item>False</item>
+    </array>
+    <array name="NtlmV2EnabledEntries">
+        <item>Turn NTLMv2 on</item>
+        <item>Turn NTLMv2 off</item>
+    </array>
+    <array name="NtlmV2EnabledValues">
+        <item>True</item>
+        <item>False</item>
+    </array>
+    <array name="OffsetParentNewSpecBehaviorEnabledEntries">
+        <item>New offsetParent behavior will be used.</item>
+        <item>Old offsetParent behavior will be used.</item>
+        <item>New offsetParent behavior will be used by default.</item>
+    </array>
+    <array name="OffsetParentNewSpecBehaviorEnabledValues">
+        <item>True</item>
+        <item>False</item>
+        <item>None</item>
+    </array>
+    <array name="OutOfProcessSystemDnsResolutionEnabledEntries">
+        <item>System DNS resolution may be run in or out of the network process depending on system configuration and feature flags.</item>
+        <item>System DNS resolution will be run in the network process.</item>
+        <item>System DNS resolution may be run in or out of the network process, or partially in and partially out of the network process, depending on system configuration and feature flags.</item>
+    </array>
+    <array name="OutOfProcessSystemDnsResolutionEnabledValues">
+        <item>True</item>
+        <item>False</item>
+        <item>None</item>
+    </array>
+    <array name="PasswordLeakDetectionEnabledEntries">
+        <item>Enable password leak detection</item>
+        <item>Disable password leak detection</item>
+    </array>
+    <array name="PasswordLeakDetectionEnabledValues">
+        <item>True</item>
+        <item>False</item>
+    </array>
+    <array name="PasswordManagerEnabledEntries">
+        <item>Enable saving passwords using the password manager</item>
+        <item>Disable saving passwords using the password manager</item>
+    </array>
+    <array name="PasswordManagerEnabledValues">
+        <item>True</item>
+        <item>False</item>
+    </array>
+    <array name="PaymentMethodQueryEnabledEntries">
+        <item>Allow websites to check if the user has payment methods saved</item>
+        <item>Always tell websites that no payment methods are saved</item>
+    </array>
+    <array name="PaymentMethodQueryEnabledValues">
+        <item>True</item>
+        <item>False</item>
+    </array>
+    <array name="PolicyAtomicGroupsEnabledEntries">
+        <item>Enable policy atomic groups</item>
+        <item>Disable policy atomic groups</item>
+    </array>
+    <array name="PolicyAtomicGroupsEnabledValues">
+        <item>True</item>
+        <item>False</item>
+    </array>
+    <array name="PolicyDictionaryMultipleSourceMergeListEntries">
+        <item>Managed user manual exception URLs</item>
+        <item>Power management on the login screen</item>
+        <item>Extension management settings</item>
+        <item>Key Permissions</item>
+        <item>Power management settings when the user becomes idle</item>
+        <item>Screen brightness percent</item>
+        <item>Screen lock delays</item>
+    </array>
+    <array name="PolicyDictionaryMultipleSourceMergeListValues">
+        <item>ContentPackManualBehaviorURLs</item>
+        <item>DeviceLoginScreenPowerManagement</item>
+        <item>ExtensionSettings</item>
+        <item>KeyPermissions</item>
+        <item>PowerManagementIdleSettings</item>
+        <item>ScreenBrightnessPercent</item>
+        <item>ScreenLockDelays</item>
+    </array>
+    <array name="PrintingEnabledEntries">
+        <item>Enable printing</item>
+        <item>Disable printing</item>
+    </array>
+    <array name="PrintingEnabledValues">
+        <item>True</item>
+        <item>False</item>
+    </array>
+    <array name="PrivacySandboxAdMeasurementEnabledEntries">
+        <item>Allow users to turn on or off the Privacy Sandbox Ad measurement setting on their device.</item>
+        <item>Disable Privacy Sandbox Ad measurement setting for your users.</item>
+    </array>
+    <array name="PrivacySandboxAdMeasurementEnabledValues">
+        <item>True</item>
+        <item>False</item>
+    </array>
+    <array name="PrivacySandboxAdTopicsEnabledEntries">
+        <item>Allow users to to turn on or off the Privacy Sandbox Ad topics setting on their device.</item>
+        <item>Disable Privacy Sandbox Ad topics setting for your users.</item>
+    </array>
+    <array name="PrivacySandboxAdTopicsEnabledValues">
+        <item>True</item>
+        <item>False</item>
+    </array>
+    <array name="PrivacySandboxPromptEnabledEntries">
+        <item>Allow Google Chrome to determine whether to show the Privacy Sandbox prompt.</item>
+        <item>Do not show the Privacy Sandbox prompt to users.</item>
+    </array>
+    <array name="PrivacySandboxPromptEnabledValues">
+        <item>True</item>
+        <item>False</item>
+    </array>
+    <array name="PrivacySandboxSiteEnabledAdsEnabledEntries">
+        <item>Allow users to turn on or off the Privacy Sandbox Site-suggested ads setting on their device.</item>
+        <item>Disable Privacy Sandbox Site-suggested ads setting for your users.</item>
+    </array>
+    <array name="PrivacySandboxSiteEnabledAdsEnabledValues">
+        <item>True</item>
+        <item>False</item>
+    </array>
+    <array name="PromptForDownloadLocationEntries">
+        <item>Ask the user where to save the file before downloading</item>
+        <item>Do not ask the user (downloads start immediately)</item>
+        <item>Allow the user to decide</item>
+    </array>
+    <array name="PromptForDownloadLocationValues">
+        <item>True</item>
+        <item>False</item>
+        <item>None</item>
+    </array>
+    <array name="SSLErrorOverrideAllowedEntries">
+        <item>Allow users to click through SSL warning pages</item>
+        <item>Prevent users from clicking through SSL warning pages</item>
+    </array>
+    <array name="SSLErrorOverrideAllowedValues">
+        <item>True</item>
+        <item>False</item>
+    </array>
+    <array name="SSLVersionMinEntries">
+        <item>TLS 1.2</item>
+    </array>
+    <array name="SSLVersionMinValues">
+        <item>tls1.2</item>
+    </array>
+    <array name="SafeBrowsingExtendedReportingEnabledEntries">
+        <item>Enable reporting of system information and page content to help improve Safe Browsing</item>
+        <item>Disable reporting of system information and page content which are used to help improve Safe Browsing</item>
+        <item>Allow the user to decide</item>
+    </array>
+    <array name="SafeBrowsingExtendedReportingEnabledValues">
+        <item>True</item>
+        <item>False</item>
+        <item>None</item>
+    </array>
+    <array name="SafeBrowsingProtectionLevelEntries">
+        <item>Safe Browsing is never active.</item>
+        <item>Safe Browsing is active in the standard mode.</item>
+        <item>Safe Browsing is active in the enhanced mode. This mode provides better security, but requires sharing more browsing information with Google.</item>
+    </array>
+    <array name="SafeBrowsingProtectionLevelValues">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </array>
+    <array name="SavingBrowserHistoryDisabledEntries">
+        <item>Disable saving browser history</item>
+        <item>Enable saving browser history</item>
+    </array>
+    <array name="SavingBrowserHistoryDisabledValues">
+        <item>True</item>
+        <item>False</item>
+    </array>
+    <array name="ScrollToTextFragmentEnabledEntries">
+        <item>Allow sites to scroll to specific text fragments via URL</item>
+        <item>Do not allow sites to scroll to specific text fragments via URL</item>
+    </array>
+    <array name="ScrollToTextFragmentEnabledValues">
+        <item>True</item>
+        <item>False</item>
+    </array>
+    <array name="SearchSuggestEnabledEntries">
+        <item>Enable search suggestions</item>
+        <item>Disable search suggestions</item>
+    </array>
+    <array name="SearchSuggestEnabledValues">
+        <item>True</item>
+        <item>False</item>
+    </array>
+    <array name="SendMouseEventsDisabledFormControlsEnabledEntries">
+        <item>New event dispatching on disabled form controls behavior will be used.</item>
+        <item>Old event dispatching on disabled form controls behavior will be used.</item>
+        <item>New event dispatching on disabled form controls behavior will be used by default.</item>
+    </array>
+    <array name="SendMouseEventsDisabledFormControlsEnabledValues">
+        <item>True</item>
+        <item>False</item>
+        <item>None</item>
+    </array>
+    <array name="SharedClipboardEnabledEntries">
+        <item>Enable the shared clipboard feature</item>
+        <item>Disable the shared clipboard feature</item>
+    </array>
+    <array name="SharedClipboardEnabledValues">
+        <item>True</item>
+        <item>False</item>
+    </array>
+    <array name="ShoppingListEnabledEntries">
+        <item>The shopping list feature will be available to users.</item>
+        <item>The shopping list feature will not be available to users.</item>
+    </array>
+    <array name="ShoppingListEnabledValues">
+        <item>True</item>
+        <item>False</item>
+    </array>
+    <array name="SitePerProcessAndroidEntries">
+        <item>Require site isolation for all websites</item>
+        <item>Disable site isolation for all websites, but allow the user to enable it</item>
+        <item>Allow the user to decide</item>
+    </array>
+    <array name="SitePerProcessAndroidValues">
+        <item>True</item>
+        <item>False</item>
+        <item>None</item>
+    </array>
+    <array name="StrictMimetypeCheckForWorkerScriptsEnabledEntries">
+        <item>Scripts for workers (Web Workers, Service Workers, etc.) require a JavaScript MIME type, like text/javascript. Worker scripts with legacy MIME types, like text/ascii, will be rejected.</item>
+        <item>Scripts for workers (Web Workers, Service Workers, etc.) use lax MIME type checking. Worker scripts with legacy MIME types, like text/ascii, will work.</item>
+    </array>
+    <array name="StrictMimetypeCheckForWorkerScriptsEnabledValues">
+        <item>True</item>
+        <item>False</item>
+    </array>
+    <array name="SuppressDifferentOriginSubframeDialogsEntries">
+        <item>Block JavaScript dialogs triggered from a different origin subframe.</item>
+        <item>Allow JavaScript dialogs triggered from a different origin subframe.</item>
+    </array>
+    <array name="SuppressDifferentOriginSubframeDialogsValues">
+        <item>True</item>
+        <item>False</item>
+    </array>
+    <array name="ThrottleNonVisibleCrossOriginIframesAllowedEntries">
+        <item>ThrottleDisplayNoneAndVisibilityHiddenCrossOriginIframes feature available</item>
+        <item>ThrottleDisplayNoneAndVisibilityHiddenCrossOriginIframes feature disabled</item>
+    </array>
+    <array name="ThrottleNonVisibleCrossOriginIframesAllowedValues">
+        <item>True</item>
+        <item>False</item>
+    </array>
+    <array name="TosDialogBehaviorEntries">
+        <item>Use default browser behavior, shows the ToS and waits for the user to accept.</item>
+        <item>Automatically skips ToS and loads the browser.</item>
+    </array>
+    <array name="TosDialogBehaviorValues">
+        <item>1</item>
+        <item>2</item>
+    </array>
+    <array name="TranslateEnabledEntries">
+        <item>Always offer translation</item>
+        <item>Never offer translation</item>
+        <item>Allow the user to decide</item>
+    </array>
+    <array name="TranslateEnabledValues">
+        <item>True</item>
+        <item>False</item>
+        <item>None</item>
+    </array>
+    <array name="UrlKeyedAnonymizedDataCollectionEnabledEntries">
+        <item>URL-keyed anonymized data collection is always active</item>
+        <item>URL-keyed anonymized data collection is never active</item>
+        <item>Allow the user to decide</item>
+    </array>
+    <array name="UrlKeyedAnonymizedDataCollectionEnabledValues">
+        <item>True</item>
+        <item>False</item>
+        <item>None</item>
+    </array>
+    <array name="UserAgentClientHintsGREASEUpdateEnabledEntries">
+        <item>Allow the updated User-Agent GREASE algorithm to be run.</item>
+        <item>Force the prior User-Agent GREASE algorithm to be used.</item>
+    </array>
+    <array name="UserAgentClientHintsGREASEUpdateEnabledValues">
+        <item>True</item>
+        <item>False</item>
+    </array>
+    <array name="UserAgentReductionEntries">
+        <item>User Agent reduction will be controllable via Field-Trials and Origin-Trials.</item>
+        <item>User Agent reduction disabled, and not enabled by Field-Trials or Origin-Trials.</item>
+        <item>User Agent reduction will be enabled for all origins.</item>
+    </array>
+    <array name="UserAgentReductionValues">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </array>
+    <array name="VirtualKeyboardResizesLayoutByDefaultEntries">
+        <item>The default virtual keyboard resize behavior is changed to resize the layout viewport</item>
+        <item>The default virtual keyboard resize behavior is not modified</item>
+    </array>
+    <array name="VirtualKeyboardResizesLayoutByDefaultValues">
+        <item>True</item>
+        <item>False</item>
+    </array>
+    <array name="WebSQLAccessEntries">
+        <item>Force WebSQL to be enabled.</item>
+        <item>Allow WebSQL to be disabled by Chrome flag.</item>
+    </array>
+    <array name="WebSQLAccessValues">
+        <item>True</item>
+        <item>False</item>
+    </array>
+    <array name="WebXRImmersiveArEnabledEntries">
+        <item>Allow creating WebXR\'s \"immersive-ar\" sessions</item>
+        <item>Prevent creating WebXR\'s \"immersive-ar\" sessions</item>
+    </array>
+    <array name="WebXRImmersiveArEnabledValues">
+        <item>True</item>
+        <item>False</item>
+    </array>
+    <array name="ui_com_google_android_gms_fonts_certs">
+        <item>@array/ui_com_google_android_gms_fonts_certs_dev</item>
+        <item>@array/ui_com_google_android_gms_fonts_certs_prod</item>
+    </array>
+    <array name="ui_com_google_android_gms_fonts_certs_dev">
+        <item>MIIEqDCCA5CgAwIBAgIJANWFuGx90071MA0GCSqGSIb3DQEBBAUAMIGUMQswCQYDVQQGEwJVUzETMBEGA1UECBMKQ2FsaWZvcm5pYTEWMBQGA1UEBxMNTW91bnRhaW4gVmlldzEQMA4GA1UEChMHQW5kcm9pZDEQMA4GA1UECxMHQW5kcm9pZDEQMA4GA1UEAxMHQW5kcm9pZDEiMCAGCSqGSIb3DQEJARYTYW5kcm9pZEBhbmRyb2lkLmNvbTAeFw0wODA0MTUyMzM2NTZaFw0zNTA5MDEyMzM2NTZaMIGUMQswCQYDVQQGEwJVUzETMBEGA1UECBMKQ2FsaWZvcm5pYTEWMBQGA1UEBxMNTW91bnRhaW4gVmlldzEQMA4GA1UEChMHQW5kcm9pZDEQMA4GA1UECxMHQW5kcm9pZDEQMA4GA1UEAxMHQW5kcm9pZDEiMCAGCSqGSIb3DQEJARYTYW5kcm9pZEBhbmRyb2lkLmNvbTCCASAwDQYJKoZIhvcNAQEBBQADggENADCCAQgCggEBANbOLggKv+IxTdGNs8/TGFy0PTP6DHThvbbR24kT9ixcOd9W+EaBPWW+wPPKQmsHxajtWjmQwWfna8mZuSeJS48LIgAZlKkpFeVyxW0qMBujb8X8ETrWy550NaFtI6t9+u7hZeTfHwqNvacKhp1RbE6dBRGWynwMVX8XW8N1+UjFaq6GCJukT4qmpN2afb8sCjUigq0GuMwYXrFVee74bQgLHWGJwPmvmLHC69EH6kWr22ijx4OKXlSIx2xT1AsSHee70w5iDBiK4aph27yH3TxkXy9V89TDdexAcKk/cVHYNnDBapcavl7y0RiQ4biu8ymM8Ga/nmzhRKya6G0cGw8CAQOjgfwwgfkwHQYDVR0OBBYEFI0cxb6VTEM8YYY6FbBMvAPyT+CyMIHJBgNVHSMEgcEwgb6AFI0cxb6VTEM8YYY6FbBMvAPyT+CyoYGapIGXMIGUMQswCQYDVQQGEwJVUzETMBEGA1UECBMKQ2FsaWZvcm5pYTEWMBQGA1UEBxMNTW91bnRhaW4gVmlldzEQMA4GA1UEChMHQW5kcm9pZDEQMA4GA1UECxMHQW5kcm9pZDEQMA4GA1UEAxMHQW5kcm9pZDEiMCAGCSqGSIb3DQEJARYTYW5kcm9pZEBhbmRyb2lkLmNvbYIJANWFuGx90071MAwGA1UdEwQFMAMBAf8wDQYJKoZIhvcNAQEEBQADggEBABnTDPEF+3iSP0wNfdIjIz1AlnrPzgAIHVvXxunW7SBrDhEglQZBbKJEk5kT0mtKoOD1JMrSu1xuTKEBahWRbqHsXclaXjoBADb0kkjVEJu/Lh5hgYZnOjvlba8Ld7HCKePCVePoTJBdI4fvugnL8TsgK05aIskyY0hKI9L8KfqfGTl1lzOv2KoWD0KWwtAWPoGChZxmQ+nBli+gwYMzM1vAkP+aayLe0a1EQimlOalO762r0GXO0ks+UeXde2Z4e+8S/pf7pITEI/tP+MxJTALw9QUWEv9lKTk+jkbqxbsh8nfBUapfKqYn0eidpwq2AzVp3juYl7//fKnaPhJD9gs=</item>
+    </array>
+    <array name="ui_com_google_android_gms_fonts_certs_prod">
+        <item>MIIEQzCCAyugAwIBAgIJAMLgh0ZkSjCNMA0GCSqGSIb3DQEBBAUAMHQxCzAJBgNVBAYTAlVTMRMwEQYDVQQIEwpDYWxpZm9ybmlhMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtHb29nbGUgSW5jLjEQMA4GA1UECxMHQW5kcm9pZDEQMA4GA1UEAxMHQW5kcm9pZDAeFw0wODA4MjEyMzEzMzRaFw0zNjAxMDcyMzEzMzRaMHQxCzAJBgNVBAYTAlVTMRMwEQYDVQQIEwpDYWxpZm9ybmlhMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtHb29nbGUgSW5jLjEQMA4GA1UECxMHQW5kcm9pZDEQMA4GA1UEAxMHQW5kcm9pZDCCASAwDQYJKoZIhvcNAQEBBQADggENADCCAQgCggEBAKtWLgDYO6IIrgqWbxJOKdoR8qtW0I9Y4sypEwPpt1TTcvZApxsdyxMJZ2JORland2qSGT2y5b+3JKkedxiLDmpHpDsz2WCbdxgxRczfey5YZnTJ4VZbH0xqWVW/8lGmPav5xVwnIiJS6HXk+BVKZF+JcWjAsb/GEuq/eFdpuzSqeYTcfi6idkyugwfYwXFU1+5fZKUaRKYCwkkFQVfcAs1fXA5V+++FGfvjJ/CxURaSxaBvGdGDhfXE28LWuT9ozCl5xw4Yq5OGazvV24mZVSoOO0yZ31j7kYvtwYK6NeADwbSxDdJEqO4k//0zOHKrUiGYXtqw/A0LFFtqoZKFjnkCAQOjgdkwgdYwHQYDVR0OBBYEFMd9jMIhF1Ylmn/Tgt9r45jk14alMIGmBgNVHSMEgZ4wgZuAFMd9jMIhF1Ylmn/Tgt9r45jk14aloXikdjB0MQswCQYDVQQGEwJVUzETMBEGA1UECBMKQ2FsaWZvcm5pYTEWMBQGA1UEBxMNTW91bnRhaW4gVmlldzEUMBIGA1UEChMLR29vZ2xlIEluYy4xEDAOBgNVBAsTB0FuZHJvaWQxEDAOBgNVBAMTB0FuZHJvaWSCCQDC4IdGZEowjTAMBgNVHRMEBTADAQH/MA0GCSqGSIb3DQEBBAUAA4IBAQBt0lLO74UwLDYKqs6Tm8/yzKkEu116FmH4rkaymUIE0P9KaMftGlMexFlaYjzmB2OxZyl6euNXEsQH8gjwyxCUKRJNexBiGcCEyj6z+a1fuHHvkiaai+KL8W1EyNmgjmyy8AW7P+LLlkR+ho5zEHatRbM/YAnqGcFh5iZBqpknHf1SKMXFh4dd239FJ1jWYfbMDMy3NS5CTMQ2XFI1MvcyUTdZPErjQfTbQe3aDQsQcafEQPD+nqActifKZ0Np0IS9L9kR/wbNvyz6ENwPiTrjV2KRkEjH78ZMcUQXg0L3BYHJ3lc69Vs5Ddf9uUGGMYldX3WfMBEmh/9iFBDAaTCK</item>
+    </array>
+</resources>

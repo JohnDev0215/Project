@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:focusable="true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <EditText
+        android:gravity="center_horizontal"
+        android:id="@+id/cc_month_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/autofill_expiration_date_month_hint"
+        android:width="50sp"
+        android:maxLength="2"
+        android:inputType="number"
+        android:imeOptions="actionNext"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/autofill_expiration_date_separator"/>
+    <EditText
+        android:gravity="center_horizontal"
+        android:id="@+id/cc_year_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/autofill_expiration_date_year_hint"
+        android:width="50sp"
+        android:maxLength="2"
+        android:inputType="number"
+        android:imeOptions="actionDone"/>
+</LinearLayout>

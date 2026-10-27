@@ -1,0 +1,123 @@
+package com.android.internal.policy;
+
+import android.os.Binder;
+import android.os.IBinder;
+import android.os.IInterface;
+import android.os.Parcel;
+import android.os.RemoteException;
+
+/* JADX INFO: loaded from: classes4.dex */
+public interface IKeyguardExitCallback extends IInterface {
+
+    public static class Default implements IKeyguardExitCallback {
+        @Override // android.os.IInterface
+        public IBinder asBinder() {
+            return null;
+        }
+
+        @Override // com.android.internal.policy.IKeyguardExitCallback
+        public void onKeyguardExitResult(boolean z) throws RemoteException {
+        }
+    }
+
+    void onKeyguardExitResult(boolean z) throws RemoteException;
+
+    public static abstract class Stub extends Binder implements IKeyguardExitCallback {
+        private static final String DESCRIPTOR = "com.android.internal.policy.IKeyguardExitCallback";
+        static final int TRANSACTION_onKeyguardExitResult = 1;
+
+        public static String getDefaultTransactionName(int i) {
+            if (i != 1) {
+                return null;
+            }
+            return "onKeyguardExitResult";
+        }
+
+        @Override // android.os.IInterface
+        public IBinder asBinder() {
+            return this;
+        }
+
+        public Stub() {
+            attachInterface(this, DESCRIPTOR);
+        }
+
+        public static IKeyguardExitCallback asInterface(IBinder iBinder) {
+            if (iBinder == null) {
+                return null;
+            }
+            IInterface iInterfaceQueryLocalInterface = iBinder.queryLocalInterface(DESCRIPTOR);
+            if (iInterfaceQueryLocalInterface != null && (iInterfaceQueryLocalInterface instanceof IKeyguardExitCallback)) {
+                return (IKeyguardExitCallback) iInterfaceQueryLocalInterface;
+            }
+            return new Proxy(iBinder);
+        }
+
+        @Override // android.os.Binder
+        public String getTransactionName(int i) {
+            return getDefaultTransactionName(i);
+        }
+
+        @Override // android.os.Binder
+        public boolean onTransact(int i, Parcel parcel, Parcel parcel2, int i2) throws RemoteException {
+            if (i == 1) {
+                parcel.enforceInterface(DESCRIPTOR);
+                onKeyguardExitResult(parcel.readInt() != 0);
+                return true;
+            }
+            if (i == 1598968902) {
+                parcel2.writeString(DESCRIPTOR);
+                return true;
+            }
+            return super.onTransact(i, parcel, parcel2, i2);
+        }
+
+        private static class Proxy implements IKeyguardExitCallback {
+            public static IKeyguardExitCallback sDefaultImpl;
+            private IBinder mRemote;
+
+            public String getInterfaceDescriptor() {
+                return Stub.DESCRIPTOR;
+            }
+
+            Proxy(IBinder iBinder) {
+                this.mRemote = iBinder;
+            }
+
+            @Override // android.os.IInterface
+            public IBinder asBinder() {
+                return this.mRemote;
+            }
+
+            @Override // com.android.internal.policy.IKeyguardExitCallback
+            public void onKeyguardExitResult(boolean z) throws RemoteException {
+                Parcel parcelObtain = Parcel.obtain();
+                try {
+                    parcelObtain.writeInterfaceToken(Stub.DESCRIPTOR);
+                    parcelObtain.writeInt(z ? 1 : 0);
+                    if (this.mRemote.transact(1, parcelObtain, null, 1) || Stub.getDefaultImpl() == null) {
+                        return;
+                    }
+                    Stub.getDefaultImpl().onKeyguardExitResult(z);
+                } finally {
+                    parcelObtain.recycle();
+                }
+            }
+        }
+
+        public static boolean setDefaultImpl(IKeyguardExitCallback iKeyguardExitCallback) {
+            if (Proxy.sDefaultImpl != null) {
+                throw new IllegalStateException("setDefaultImpl() called twice");
+            }
+            if (iKeyguardExitCallback == null) {
+                return false;
+            }
+            Proxy.sDefaultImpl = iKeyguardExitCallback;
+            return true;
+        }
+
+        public static IKeyguardExitCallback getDefaultImpl() {
+            return Proxy.sDefaultImpl;
+        }
+    }
+}

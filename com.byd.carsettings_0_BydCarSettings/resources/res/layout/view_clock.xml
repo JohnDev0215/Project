@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/img_screensaver_classics_clock"
+    android:layout_width="@dimen/dp_384"
+    android:layout_height="@dimen/dp_384">
+    <com.byd.mvp.ui.widget.BydClockView
+        android:id="@+id/bcv_clock_screen"
+        android:background="@drawable/img_screensaver_classics_glass"
+        android:layout_width="@dimen/dp_320"
+        android:layout_height="@dimen/dp_320"
+        android:layout_centerInParent="true"
+        app:byd_clock_hour="@drawable/img_screensaver_classics_hour"
+        app:byd_clock_minute="@drawable/img_screensaver_classics_minute"
+        app:byd_clock_second="@drawable/img_screensaver_classics_second"/>
+</RelativeLayout>

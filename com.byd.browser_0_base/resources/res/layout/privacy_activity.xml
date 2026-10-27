@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/color_surface"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.google.android.material.appbar.AppBarLayout
+        android:theme="@style/ThemeOverlay.Settings.DisableElevationOverlay"
+        android:id="@+id/app_bar_layout"
+        android:background="@color/color_surface"
+        android:fitsSystemWindows="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:liftOnScroll="true">
+        <org.chromium.chrome.browser.ui.widget.SkinMaterialToolbar
+            android:id="@+id/action_bar"
+            android:background="@color/color_surface"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:contentInsetStartWithNavigation="@dimen/dp_0_dp"
+            app:navigationIcon="@drawable/ic_back"
+            app:titleMarginStart="@dimen/dp_0_dp"/>
+    </com.google.android.material.appbar.AppBarLayout>
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:fillViewport="true"
+        android:layout_weight="1"
+        android:requiresFadingEdge="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+    <Button
+        android:textColor="@color/page_button_true_text_color"
+        android:ellipsize="end"
+        android:layout_gravity="bottom|center_horizontal"
+        android:id="@+id/bt_privacy_cancel"
+        android:background="@drawable/page_button_bg_true"
+        android:visibility="visible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="50dp"
+        android:text="@string/revoke_consent"
+        android:singleLine="true"
+        style="@style/ButtonTrue"/>
+</LinearLayout>

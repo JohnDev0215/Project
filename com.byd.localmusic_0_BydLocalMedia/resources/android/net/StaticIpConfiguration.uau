@@ -1,0 +1,5 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/net/StaticIpConfiguration;->ipAddress:Landroid/net/LinkAddress;,frameworks/base/core/java/android/net/StaticIpConfiguration.java,58,5,58,25,
+Landroid/net/StaticIpConfiguration;->gateway:Ljava/net/InetAddress;,frameworks/base/core/java/android/net/StaticIpConfiguration.java,62,5,62,25,
+Landroid/net/StaticIpConfiguration;->dnsServers:Ljava/util/ArrayList;,frameworks/base/core/java/android/net/StaticIpConfiguration.java,66,5,66,25,
+Landroid/net/StaticIpConfiguration;->domains:Ljava/lang/String;,frameworks/base/core/java/android/net/StaticIpConfiguration.java,70,5,70,25,

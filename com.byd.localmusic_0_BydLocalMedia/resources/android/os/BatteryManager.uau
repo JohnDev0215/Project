@@ -1,0 +1,5 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/os/BatteryManager;->EXTRA_INVALID_CHARGER:Ljava/lang/String;,frameworks/base/core/java/android/os/BatteryManager.java,116,5,116,25,
+Landroid/os/BatteryManager;->EXTRA_MAX_CHARGING_CURRENT:Ljava/lang/String;,frameworks/base/core/java/android/os/BatteryManager.java,124,5,124,25,
+Landroid/os/BatteryManager;->EXTRA_MAX_CHARGING_VOLTAGE:Ljava/lang/String;,frameworks/base/core/java/android/os/BatteryManager.java,132,5,132,25,
+Landroid/os/BatteryManager;->EXTRA_CHARGE_COUNTER:Ljava/lang/String;,frameworks/base/core/java/android/os/BatteryManager.java,140,6,140,26,

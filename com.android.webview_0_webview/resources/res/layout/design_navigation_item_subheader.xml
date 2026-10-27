@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+    android:textColor="?android:attr/textColorSecondary"
+    android:gravity="start|center_vertical"
+    android:paddingLeft="?unknown_attr_ref: 203013c"
+    android:paddingRight="?unknown_attr_ref: 203013d"
+    android:layout_width="match_parent"
+    android:layout_height="?unknown_attr_ref: 203013b"
+    android:maxLines="1"/>

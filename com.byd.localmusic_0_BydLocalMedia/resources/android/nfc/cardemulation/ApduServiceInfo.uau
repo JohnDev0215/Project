@@ -1,0 +1,13 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/nfc/cardemulation/ApduServiceInfo;->mService:Landroid/content/pm/ResolveInfo;,frameworks/base/core/java/android/nfc/cardemulation/ApduServiceInfo.java,57,5,57,25,
+Landroid/nfc/cardemulation/ApduServiceInfo;->mStaticAidGroups:Ljava/util/HashMap;,frameworks/base/core/java/android/nfc/cardemulation/ApduServiceInfo.java,85,5,85,25,
+Landroid/nfc/cardemulation/ApduServiceInfo;->mDynamicAidGroups:Ljava/util/HashMap;,frameworks/base/core/java/android/nfc/cardemulation/ApduServiceInfo.java,91,5,91,25,
+Landroid/nfc/cardemulation/ApduServiceInfo;-><init>(Landroid/content/pm/ResolveInfo;ZLjava/lang/String;Ljava/util/ArrayList;Ljava/util/ArrayList;ZIILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)V,frameworks/base/core/java/android/nfc/cardemulation/ApduServiceInfo.java,117,5,117,25,
+Landroid/nfc/cardemulation/ApduServiceInfo;-><init>(Landroid/content/pm/PackageManager;Landroid/content/pm/ResolveInfo;Z)V,frameworks/base/core/java/android/nfc/cardemulation/ApduServiceInfo.java,141,5,141,25,
+Landroid/nfc/cardemulation/ApduServiceInfo;->isOnHost()Z,frameworks/base/core/java/android/nfc/cardemulation/ApduServiceInfo.java,412,5,412,25,
+Landroid/nfc/cardemulation/ApduServiceInfo;->requiresUnlock()Z,frameworks/base/core/java/android/nfc/cardemulation/ApduServiceInfo.java,417,5,417,25,
+Landroid/nfc/cardemulation/ApduServiceInfo;->getDescription()Ljava/lang/String;,frameworks/base/core/java/android/nfc/cardemulation/ApduServiceInfo.java,422,5,422,25,
+Landroid/nfc/cardemulation/ApduServiceInfo;->getUid()I,frameworks/base/core/java/android/nfc/cardemulation/ApduServiceInfo.java,427,5,427,25,
+Landroid/nfc/cardemulation/ApduServiceInfo;->loadBanner(Landroid/content/pm/PackageManager;)Landroid/graphics/drawable/Drawable;,frameworks/base/core/java/android/nfc/cardemulation/ApduServiceInfo.java,474,5,474,25,
+Landroid/nfc/cardemulation/ApduServiceInfo;->getSettingsActivityName()Ljava/lang/String;,frameworks/base/core/java/android/nfc/cardemulation/ApduServiceInfo.java,490,5,490,25,
+Landroid/nfc/cardemulation/ApduServiceInfo;->CREATOR:Landroid/os/Parcelable$Creator;,frameworks/base/core/java/android/nfc/cardemulation/ApduServiceInfo.java,550,5,550,25,

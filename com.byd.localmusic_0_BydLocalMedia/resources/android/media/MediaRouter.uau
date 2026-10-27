@@ -1,0 +1,3 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/media/MediaRouter;->getSelectedRoute()Landroid/media/MediaRouter$RouteInfo;,frameworks/base/media/java/android/media/MediaRouter.java,851,5,851,25,
+Landroid/media/MediaRouter;->selectRouteInt(ILandroid/media/MediaRouter$RouteInfo;Z)V,frameworks/base/media/java/android/media/MediaRouter.java,1024,5,1024,25,

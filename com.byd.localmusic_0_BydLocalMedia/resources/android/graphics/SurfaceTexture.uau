@@ -1,0 +1,7 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/graphics/SurfaceTexture;->mOnFrameAvailableHandler:Landroid/os/Handler;,frameworks/base/graphics/java/android/graphics/SurfaceTexture.java,72,5,72,25,
+Landroid/graphics/SurfaceTexture;->mSurfaceTexture:J,frameworks/base/graphics/java/android/graphics/SurfaceTexture.java,78,5,78,25,
+Landroid/graphics/SurfaceTexture;->mProducer:J,frameworks/base/graphics/java/android/graphics/SurfaceTexture.java,80,5,80,25,
+Landroid/graphics/SurfaceTexture;->mFrameAvailableListener:J,frameworks/base/graphics/java/android/graphics/SurfaceTexture.java,82,5,82,25,
+Landroid/graphics/SurfaceTexture;->postEventFromNative(Ljava/lang/ref/WeakReference;)V,frameworks/base/graphics/java/android/graphics/SurfaceTexture.java,393,5,393,25,
+Landroid/graphics/SurfaceTexture;->nativeDetachFromGLContext()I,frameworks/base/graphics/java/android/graphics/SurfaceTexture.java,421,5,421,25,

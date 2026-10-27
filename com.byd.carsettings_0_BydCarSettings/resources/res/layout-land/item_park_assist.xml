@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cl_park_assist_container"
+    android:background="@drawable/bg_frame_gray_a"
+    android:paddingTop="@dimen/dp_24"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_200"
+    android:paddingStart="@dimen/dp_24">
+    <TextView
+        android:textSize="@dimen/sp_20"
+        android:textColor="@color/dialog_text_color_main"
+        android:gravity="center"
+        android:id="@+id/tv_assist_title"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_48"
+        android:text="@string/dipilot_highway_navigation_title"/>
+    <TextView
+        android:textSize="@dimen/sp_14"
+        android:textColor="@color/dialog_text_color_tips"
+        android:ellipsize="end"
+        android:id="@+id/tv_assist_des"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dipilot_highway_navigation_desc"
+        android:lines="1"
+        android:singleLine="true"
+        app:layout_constraintTop_toBottomOf="@+id/tv_assist_title"/>
+    <ImageView
+        android:layout_width="@dimen/dp_320"
+        android:layout_height="@dimen/dp_108"
+        android:src="@drawable/img_light_carsetting_city"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

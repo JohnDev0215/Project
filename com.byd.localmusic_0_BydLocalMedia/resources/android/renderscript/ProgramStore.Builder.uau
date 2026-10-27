@@ -1,0 +1,7 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/renderscript/ProgramStore$Builder;-><init>(Landroid/renderscript/RenderScript;)V,frameworks/base/rs/java/android/renderscript/ProgramStore.java,341,9,341,29,
+Landroid/renderscript/ProgramStore$Builder;->setDepthFunc(Landroid/renderscript/ProgramStore$DepthFunc;)Landroid/renderscript/ProgramStore$Builder;,frameworks/base/rs/java/android/renderscript/ProgramStore.java,361,9,361,29,
+Landroid/renderscript/ProgramStore$Builder;->setDepthMaskEnabled(Z)Landroid/renderscript/ProgramStore$Builder;,frameworks/base/rs/java/android/renderscript/ProgramStore.java,375,9,375,29,
+Landroid/renderscript/ProgramStore$Builder;->setBlendFunc(Landroid/renderscript/ProgramStore$BlendSrcFunc;Landroid/renderscript/ProgramStore$BlendDstFunc;)Landroid/renderscript/ProgramStore$Builder;,frameworks/base/rs/java/android/renderscript/ProgramStore.java,410,9,410,29,
+Landroid/renderscript/ProgramStore$Builder;->setDitherEnabled(Z)Landroid/renderscript/ProgramStore$Builder;,frameworks/base/rs/java/android/renderscript/ProgramStore.java,425,9,425,29,
+Landroid/renderscript/ProgramStore$Builder;->create()Landroid/renderscript/ProgramStore;,frameworks/base/rs/java/android/renderscript/ProgramStore.java,434,9,434,29,

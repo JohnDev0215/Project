@@ -1,0 +1,11 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/database/sqlite/SQLiteDatabase;->mThreadSession:Ljava/lang/ThreadLocal;,frameworks/base/core/java/android/database/sqlite/SQLiteDatabase.java,106,5,106,25,
+Landroid/database/sqlite/SQLiteDatabase;->mConfigurationLocked:Landroid/database/sqlite/SQLiteDatabaseConfiguration;,frameworks/base/core/java/android/database/sqlite/SQLiteDatabase.java,140,5,140,25,
+Landroid/database/sqlite/SQLiteDatabase;->mConnectionPoolLocked:Landroid/database/sqlite/SQLiteConnectionPool;,frameworks/base/core/java/android/database/sqlite/SQLiteDatabase.java,147,5,147,25,
+Landroid/database/sqlite/SQLiteDatabase;->CONFLICT_VALUES:[Ljava/lang/String;,frameworks/base/core/java/android/database/sqlite/SQLiteDatabase.java,208,5,208,25,
+Landroid/database/sqlite/SQLiteDatabase;->getThreadSession()Landroid/database/sqlite/SQLiteSession;,frameworks/base/core/java/android/database/sqlite/SQLiteDatabase.java,422,5,422,25,
+Landroid/database/sqlite/SQLiteDatabase;->beginTransaction(Landroid/database/sqlite/SQLiteTransactionListener;Z)V,frameworks/base/core/java/android/database/sqlite/SQLiteDatabase.java,566,5,566,25,
+Landroid/database/sqlite/SQLiteDatabase;->openDatabase(Ljava/lang/String;Landroid/database/sqlite/SQLiteDatabase$OpenParams;)Landroid/database/sqlite/SQLiteDatabase;,frameworks/base/core/java/android/database/sqlite/SQLiteDatabase.java,754,5,754,25,
+Landroid/database/sqlite/SQLiteDatabase;->reopenReadWrite()V,frameworks/base/core/java/android/database/sqlite/SQLiteDatabase.java,873,5,873,25,
+Landroid/database/sqlite/SQLiteDatabase;->collectDbStats(Ljava/util/ArrayList;)V,frameworks/base/core/java/android/database/sqlite/SQLiteDatabase.java,2293,5,2293,25,
+Landroid/database/sqlite/SQLiteDatabase;->getActiveDatabases()Ljava/util/ArrayList;,frameworks/base/core/java/android/database/sqlite/SQLiteDatabase.java,2302,5,2302,25,

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="@dimen/dp_560"
+    android:layout_height="wrap_content"
+    style="@style/vehicle_setting_dialog_background_container">
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_72"
+        layout="@layout/dialog_common_title"/>
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/dp_38"
+        android:layout_weight="1"
+        layout="@layout/view_media_version_details"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_40"
+        android:layout_marginBottom="@dimen/dp_30">
+        <com.byd.carsettings.ui.widget.BydInvalidButton
+            android:id="@+id/btn_ok_dialog_media_version"
+            android:text="@string/dialog_btn_ok"
+            android:layout_centerInParent="true"
+            android:textAllCaps="false"
+            android:stateListAnimator="@drawable/anim_btn_scale_alpha_enable"
+            style="@style/dialog_btn_ok_dilink"/>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,9 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/app/AlarmManager;->WINDOW_EXACT:J,frameworks/base/core/java/android/app/AlarmManager.java,134,5,134,25,
+Landroid/app/AlarmManager;->WINDOW_HEURISTIC:J,frameworks/base/core/java/android/app/AlarmManager.java,137,5,137,25,
+Landroid/app/AlarmManager;->FLAG_STANDALONE:I,frameworks/base/core/java/android/app/AlarmManager.java,145,5,145,25,
+Landroid/app/AlarmManager;->FLAG_WAKE_FROM_IDLE:I,frameworks/base/core/java/android/app/AlarmManager.java,153,5,153,25,
+Landroid/app/AlarmManager;->FLAG_ALLOW_WHILE_IDLE_UNRESTRICTED:I,frameworks/base/core/java/android/app/AlarmManager.java,174,5,174,25,
+Landroid/app/AlarmManager;->FLAG_IDLE_UNTIL:I,frameworks/base/core/java/android/app/AlarmManager.java,184,5,184,25,
+Landroid/app/AlarmManager;->mService:Landroid/app/IAlarmManager;,frameworks/base/core/java/android/app/AlarmManager.java,187,5,187,25,
+Landroid/app/AlarmManager;->set(IJJJLjava/lang/String;Landroid/app/AlarmManager$OnAlarmListener;Landroid/os/Handler;Landroid/os/WorkSource;)V,frameworks/base/core/java/android/app/AlarmManager.java,631,5,631,25,

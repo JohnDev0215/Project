@@ -1,0 +1,12 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/text/SpannableStringBuilder;->sendToSpanWatchers(III)V,frameworks/base/core/java/android/text/SpannableStringBuilder.java,599,5,599,25,
+Landroid/text/SpannableStringBuilder;->getSpans(IILjava/lang/Class;Z)[Ljava/lang/Object;,frameworks/base/core/java/android/text/SpannableStringBuilder.java,866,5,866,25,
+Landroid/text/SpannableStringBuilder;->substring(II)Ljava/lang/String;,frameworks/base/core/java/android/text/SpannableStringBuilder.java,1236,5,1236,25,
+Landroid/text/SpannableStringBuilder;->mText:[C,frameworks/base/core/java/android/text/SpannableStringBuilder.java,1780,5,1780,25,
+Landroid/text/SpannableStringBuilder;->mGapStart:I,frameworks/base/core/java/android/text/SpannableStringBuilder.java,1782,5,1782,25,
+Landroid/text/SpannableStringBuilder;->mGapLength:I,frameworks/base/core/java/android/text/SpannableStringBuilder.java,1784,5,1784,25,
+Landroid/text/SpannableStringBuilder;->mSpans:[Ljava/lang/Object;,frameworks/base/core/java/android/text/SpannableStringBuilder.java,1787,5,1787,25,
+Landroid/text/SpannableStringBuilder;->mSpanStarts:[I,frameworks/base/core/java/android/text/SpannableStringBuilder.java,1789,5,1789,25,
+Landroid/text/SpannableStringBuilder;->mSpanEnds:[I,frameworks/base/core/java/android/text/SpannableStringBuilder.java,1791,5,1791,25,
+Landroid/text/SpannableStringBuilder;->mSpanFlags:[I,frameworks/base/core/java/android/text/SpannableStringBuilder.java,1794,5,1794,25,
+Landroid/text/SpannableStringBuilder;->mSpanCount:I,frameworks/base/core/java/android/text/SpannableStringBuilder.java,1799,5,1799,25,

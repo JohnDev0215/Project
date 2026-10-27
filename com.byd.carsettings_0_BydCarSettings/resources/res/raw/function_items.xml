@@ -1,0 +1,1548 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+    <!-- 文件版本号  -->
+    <version>37</version>
+
+    <!--  内容 功能项列表，有新增的功能项，希望能够搜索到，就此按格式添加  -->
+    <content>
+        <!--#################################### DiLink 部分 START ####################################-->
+        <!--DiLink 模块 -->
+        <module0
+            name="@string/dilink_main_v2"
+            index="1">
+            <!--DiLink/互联 -->
+            <module1
+                name="@string/link_dilink"
+                index="0">
+                <!-- 互联/蓝牙 -->
+                <item>
+                    <name>@string/bluetooth_link</name>
+                    <keywords>hulian,hl,lanya,ly,bt,bluetooth</keywords>
+                    <index>0</index>
+                </item>
+                <!-- 互联/wifi -->
+                <item>
+                    <name>@string/wireless_net_link</name>
+                    <keywords>hulian,hl,WiFi，Wi-Fi，wf,添加网络,wuxianwangluo,tianjiawangluo,wxwl,tjwl</keywords>
+                    <index>1</index>
+                </item>
+                <!-- 互联/热点 -->
+                <item>
+                    <name>@string/hotspot_link</name>
+                    <keywords>hulian,hl,移动WiFi,gerenredian,yidongwifi,grrd</keywords>
+                    <index>2</index>
+                </item>
+                <!-- 互联/CP/AA -->
+                <item>
+                    <name>@string/carplay_link</name>
+                    <keywords>hulian,hl,设备连接，cp,aa,carplay,android auto，shebeilianjie，sblj,yilianjieshebei,yljsb</keywords>
+                    <index>3</index>
+                </item>
+                <!-- 互联/移动数据开关 -->
+                <item>
+                    <name>@string/mobile_data_link</name>
+                    <keywords>hulian,hl,数据流量,shujuliuliang,yidongshuju,sjll,ydsj,</keywords>
+                    <index>4</index>
+                </item>
+            </module1>
+            <!--DiLink/音响 -->
+            <module1
+                name="@string/sound_dilink"
+                index="1">
+                <!-- 丹拿音响 -->
+                <item>
+                    <name>@string/sound_field_focusing_dynaudio_sound</name>
+                    <keywords>yinxiang,yx,声场聚焦，Dynaudio， 音效,yinxiao,shengchangjujiao,scjj</keywords>
+                    <index>0</index>
+                </item>
+                <item>
+                    <name>@string/sound_charact_dynaudio_sound</name>
+                    <keywords>yinxiang,yx,声音特色，Dynaudio，音效,yinxiao,shengyintese,syts</keywords>
+                    <index>1</index>
+                </item>
+                <item>
+                    <name>@string/title_dialog_sound_regulate_dynaudio_sound</name>
+                    <keywords>yinxiang,yx,哈曼,丹拿，Harman，Dynaudio，音量,yinliangsuisutiaojie,ylsstj</keywords>
+                    <index>2</index>
+                </item>
+                <item>
+                    <name>@string/title_simulate_sound_of_wave_dynaudio_sound</name>
+                    <keywords>yinxiang,yx,丹拿,Dynaudio,sound wave,monishenglang,moniyinlang,mnsl</keywords>
+                    <index>3</index>
+                </item>
+                <!-- 媒体音量 -->
+                <item>
+                    <name>@string/media_volume_sound</name>
+                    <keywords>yinxiang,yx,meitiyinliang，mtyl</keywords>
+                    <index>4</index>
+                </item>
+                <!-- 音响/电话音量 -->
+                <item>
+                    <name>@string/phone_volume_sound</name>
+                    <keywords>yinxiang,yx,dianhuayinliang，dhyl，phone</keywords>
+                    <index>5</index>
+                </item>
+                <!-- 铃声音量 -->
+                <item>
+                    <name>@string/ringtone_volume_sound</name>
+                    <keywords>yinxiang,yx,lingshengyinliang，lsyl</keywords>
+                    <index>6</index>
+                </item>
+                <!-- 音响/智能语音音量 -->
+                <item>
+                    <name>@string/tts_volume_sound</name>
+                    <keywords>yinxiang,yx,zhinengyuyinyinliang，znyyyl</keywords>
+                    <index>7</index>
+                </item>
+                <!-- 音响/导航音量 -->
+                <item>
+                    <name>@string/navi_volume_sound</name>
+                    <keywords>yinxiang,yx,daohangyinliang，dhyl</keywords>
+                    <index>8</index>
+                </item>
+            </module1>
+
+            <!--   DiLink/显示 -->
+            <module1
+                name="@string/display_dilink"
+                index="2">
+                <!--   DiLink/显示 多媒体亮度调节 -->
+                <item>
+                    <name>@string/brightness_adjust_of_media_display</name>
+                    <keywords>xianshi,xs,亮度调节，liangdutiaojie,ldtj,duomeitilaingdutiaojie,dmtldtj</keywords>
+                    <index>0</index>
+                </item>
+                <!--   DiLink/显示 多媒体屏保 -->
+                <item>
+                    <name>@string/screen_saver_media_display</name>
+                    <keywords>xianshi,xs,屏保，时钟样式,pingbao,pb,shizhongyangshi,szys</keywords>
+                    <index>1</index>
+                </item>
+                <!--   DiLink/显示 多媒体亮度联动 -->
+                <item>
+                    <name>@string/multimedia_brightness_linkage_media_display</name>
+                    <keywords>xianshi,xs,duomeitiliangdulaindong,dmtldld</keywords>
+                    <index>2</index>
+                </item>
+                <!--   DiLink/显示 深浅模式 -->
+                <item>
+                    <name>@string/dark_light_mode_display</name>
+                    <keywords>xianshi,xs,深色，浅色,shenqianmoshi,sqms,shense,ss,qianse,qs</keywords>
+                    <index>3</index>
+                </item>
+                <!--   DiLink/显示 桌面选择 -->
+                <item>
+                    <name>@string/launcher_setting_display</name>
+                    <keywords>xianshi,xs,zhuomianxuanze,zmxz,dituzhuomian,dtzm,bizhizhuomian,bzzm</keywords>
+                    <index>4</index>
+                </item>
+            </module1>
+
+            <!--   DiLink/版本管理  -->
+            <module1
+                name="@string/version_manage_dilink"
+                index="3">
+                <!--   DiLink/版本管理 车辆版本 -->
+                <item>
+                    <name>@string/version_car</name>
+                    <keywords>升级，shengji,sj,banbenguanli,bbgl</keywords>
+                    <index>0</index>
+                </item>
+                <!--   DiLink/版本管理 多媒体详情 -->
+                <item>
+                    <name>@string/version_media_detail</name>
+                    <keywords>duomeitixiangqing,dmtxq,banbenguanli,bbgl</keywords>
+                    <index>2</index>
+                </item>
+                <!--   DiLink/版本管理 还原设置项 -->
+                <item>
+                    <name>@string/version_recover_setting</name>
+                    <keywords>huanyuanshezhixiang,hyszx,banbenguanli,bbgl</keywords>
+                    <index>3</index>
+                </item>
+                <!--   DiLink/版本管理 恢复出厂设置 -->
+                <item>
+                    <name>@string/version_recover_factory</name>
+                    <keywords>huifuchuchangshezhi,hfccsz,banbenguanli,bbgl</keywords>
+                    <index>4</index>
+                </item>
+            </module1>
+            <!--   DiLink/系统  -->
+            <module1
+                name="@string/system_dilink"
+                index="4">
+                <!--   DiLink/系统  时间自动同步-->
+                <item>
+                    <name>@string/time_auto_sync_system</name>
+                    <keywords>xitong,xt,zidongtongbu,zdtb,shijiantongbu,sjtb</keywords>
+                    <index>0</index>
+                </item>
+                <!--   DiLink/系统  时区-->
+                <item>
+                    <name>@string/time_zone_system</name>
+                    <keywords>xitong,xt,shiqu,sq,时间,shijian</keywords>
+                    <index>2</index>
+                </item>
+                <!--   DiLink/系统  时制-->
+                <item>
+                    <name>@string/time_system_system</name>
+                    <keywords>xitong,xt,shizhi,sz,时间,shijian</keywords>
+                    <index>3</index>
+                </item>
+                <!--   DiLink/系统  语言-->
+                <item>
+                    <name>@string/language_system</name>
+                    <keywords>xitong,xt,yuyan,yy,Language</keywords>
+                    <index>4</index>
+                </item>
+                <!--   DiLink/系统  默认输入法-->
+                <item>
+                    <name>@string/def_input_method</name>
+                    <keywords>xitong,xt,shurufa,srf</keywords>
+                    <index>5</index>
+                </item>
+                <!--   DiLink/系统  键盘语言设置-->
+                <item>
+                    <name>@string/key_input_settings</name>
+                    <keywords>jianpan,jp,jpyy,yy</keywords>
+                    <index>5</index>
+                </item>
+                <!--   DiLink/系统  输入法设置 占位 -->
+                <!--   DiLink/系统  记忆播放-->
+                <item>
+                    <name>@string/memory_playback</name>
+                    <keywords>xitong,xt,jiyibofang,jybf</keywords>
+                    <index>6</index>
+                </item>
+                <!--   DiLink/系统  单位设置-->
+                <item>
+                    <name>@string/unit_setting_system</name>
+                    <keywords>xitong,xt,danweishezhi,dw</keywords>
+                    <index>7</index>
+                </item>
+                <!--   DiLink/系统  用户协议-->
+                <item>
+                    <name>@string/user_agreement_system</name>
+                    <keywords>xitong,xt,yonghuxieyi,yhxy</keywords>
+                    <index>8</index>
+                </item>
+                <!--   DiLink/系统  隐私政策-->
+                <item>
+                    <name>@string/privacy_policy_system</name>
+                    <keywords>xitong,xt,yinsizhengce,yszc</keywords>
+                    <index>9</index>
+                </item>
+                <!--   DiLink/系统  开源许可/开源声明 -->
+                <item>
+                    <name>@string/open_source_licenses</name>
+                    <keywords>xitong,xt,kaiyuanxuke,kyxk,kaiyuanshengming,kysm</keywords>
+                    <index>10</index>
+                </item>
+            </module1>
+            <!--   DiLink/应用管理 -->
+            <module1
+                name="@string/app_manage_dilink"
+                index="5">
+                <!--  应用-->
+                <item>
+                    <name>@string/dilink_application</name>
+                    <keywords>yingyongguanli,yygl</keywords>
+                    <index>0</index>
+                </item>
+                <!-- 存储 -->
+                <item>
+                    <name>@string/storage_app_details</name>
+                    <keywords>yingyongguanli,yygl,cunchu,cc</keywords>
+                    <index>1</index>
+                </item>
+                <!--   DiLink/应用管理 安全-->
+                <item>
+                    <name>@string/security_app_manage</name>
+                    <keywords>yingyongguanli,yygl,anquan,aq</keywords>
+                    <index>2</index>
+                </item>
+                <!--   DiLink/应用管理 权限-->
+                <item>
+                    <name>@string/permission_app_details</name>
+                    <keywords>yingyongguanli,yygl,quanxian,qx</keywords>
+                    <index>3</index>
+                </item>
+                <!--   DiLink/应用管理 隐私管理-->
+                <item>
+                    <name>@string/privacy_manage_app_manage</name>
+                    <keywords>yingyongguanli,yygl,yinsiguanli,ysgl</keywords>
+                    <index>4</index>
+                </item>
+                <!--   DiLink/应用管理 辅助功能-->
+                <item>
+                    <name>@string/accessibility_app_manage</name>
+                    <keywords>yingyongguanli,yygl,fuzhugongneng,fzgn</keywords>
+                    <index>5</index>
+                </item>
+                <!--   DiLink/应用管理 禁止自启动-->
+                <item>
+                    <name>@string/disable_auto_start_app_manage</name>
+                    <keywords>yingyongguanli,yygl,jinzhiziqidong,jzzqd</keywords>
+                    <index>6</index>
+                </item>
+                <!--   DiLink/应用管理 通知-->
+                <item>
+                    <name>@string/notification_app_manage</name>
+                    <keywords>yingyongguanli,yygl,tongzhi,tz</keywords>
+                    <index>7</index>
+                </item>
+            </module1>
+        </module0>
+        <!--#################################### DiLink 部分 END ####################################-->
+
+
+        <!--#################################### DiPilot部分 START ####################################-->
+        <!--   DiPilot/驾驶辅助 -->
+        <module0
+            name="@string/dipilot_main"
+            index="2">
+            <!--   DiPilot/驾驶辅助  -->
+            <module1
+                name="@string/dipilot_tablayout_title_driving_assist"
+                index="0">
+
+                <!-- DiPilot/驾驶辅助 高快领航 -->
+                <item>
+                    <name>@string/dipilot_highway_navigation_title</name>
+                    <keywords>jiashifuzhu,jsfz,gklh,gaokuailinghang,高快领航</keywords>
+                    <index>64</index>
+                </item>
+
+                <!-- DiPilot/驾驶辅助 城市领航-->
+                <item>
+                    <name>@string/dipilot_urban_navigation_title</name>
+                    <keywords>jiashifuzhu,jsfz,cslh,chengshilinghang,城市领航</keywords>
+                    <index>65</index>
+                </item>
+
+                <!-- Dipilot/驾驶辅助 智驾领航-->
+                <item>
+                    <name>@string/dipilot_end_to_end_navigation_title</name>
+                    <keywords>jiashifuzhu,jsfz,zjlh,zhijialinghang,智驾领航</keywords>
+                    <index>66</index>
+                </item>
+
+                <!-- DiPilot/驾驶辅助 车道领航 -->
+                <item>
+                    <name>@string/dipilot_smart_navigation_title</name>
+                    <keywords>jiashifuzhu,jsfz,cdlh,chedaolinghang,车道领航</keywords>
+                    <index>68</index>
+                </item>
+
+                <!-- DiPilot/驾驶辅助 避免慢车道超车-->
+                <item>
+                    <name>@string/dipilot_iop_title</name>
+                    <keywords>jiashifuzhu,jsfz,bmmcdcc,bimianmanchedaochaoche,避免慢车道超车</keywords>
+                    <index>69</index>
+                </item>
+
+                <!-- DiPilot/驾驶辅助 拨杆变道-->
+                <item>
+                    <name>@string/dipilot_interactive_lane_title</name>
+                    <keywords>jiashifuzhu,jsfz,bgbd,boganbiandao,拨杆变道</keywords>
+                    <index>67</index>
+                </item>
+
+                <!-- DiPilot/驾驶辅助 踩加速踏板调整巡航车速-->
+                <item>
+                    <name>@string/dipilot_acc_title</name>
+                    <keywords>jiashifuzhu,jsfz,cjstb,caijiasutabantiaozhengxunhangchesu,踩加速踏板调整巡航车速</keywords>
+                    <index>70</index>
+                </item>
+            </module1>
+
+            <!--   Dipilot/安全辅助  -->
+            <module1
+                name="@string/dipilot_tablayout_title_active_safety"
+                index="1">
+
+                <!--   DiPilot/安全辅助 邻车靠近避让-->
+                <item>
+                    <name>@string/dipilot_urgent_lane_title</name>
+                    <keywords>anquanfuzh,aqfz,lckjbr,linchekaojinbirang,邻车靠近避让</keywords>
+                    <index>0</index>
+                </item>
+
+                <!--   DiPilot/安全辅助 盲区监测 -->
+                <item>
+                    <name>@string/dipilot_blind_spot_detection</name>
+                    <keywords>anquanfuzh,aqfz,mqjc,mangqujiance,盲区监测</keywords>
+                    <index>1</index>
+                </item>
+
+                <!--   DiPilot/安全辅助 开门安全提醒 -->
+                <item>
+                    <name>@string/dipilot_title_open_door_warning</name>
+                    <keywords>anquanfuzh,aqfz,kmaqtx,kaimenanquantixing,开门安全提醒</keywords>
+                    <index>2</index>
+                </item>
+
+                <!--   DiPilot/安全辅助 交通灯提醒 -->
+                <item>
+                    <name>@string/dipilot_traffic_light_title</name>
+                    <keywords>anquanfuzh,aqfz,jtdtx,jiaotongdengtixing,交通灯提醒</keywords>
+                    <index>3</index>
+                </item>
+
+                <!--   DiPilot/安全辅助 智能远光灯 -->
+                <item>
+                    <name>@string/dipilot_high_beam_title</name>
+                    <keywords>anquanfuzh,aqfz,znygd,zhinengyuanguangdeng,智能远光灯</keywords>
+                    <index>4</index>
+                </item>
+
+                <!--   DiPilot/安全辅助 电子车身稳定系统关闭 -->
+                <item>
+                    <name>@string/dipilot_title_steady_body_system</name>
+                    <keywords>anquanfuzh,aqfz,dzcswdxtgb,dianzicheshenwendingxitongguanbi,电子车身稳定系统关闭</keywords>
+                    <index>5</index>
+                </item>
+
+                <!--   DiPilot/安全辅助 陡坡缓降 -->
+                <item>
+                    <name>@string/dipilot_title_HDC</name>
+                    <keywords>anquanfuzh,aqfz,dphj,doupohuanjiang,陡坡缓降</keywords>
+                    <index>6</index>
+                </item>
+
+                <!--   DiPilot/安全辅助 加速踏板防误踩 -->
+                <item>
+                    <name>@string/dipilot_title_mistake_gas</name>
+                    <keywords>anquanfuzh,aqfz,jstbfwc,jiasutabanfangwucai,加速踏板防误踩</keywords>
+                    <index>7</index>
+                </item>
+
+                <!--   DiPilot/安全辅助 自动驻车 -->
+                <item>
+                    <name>@string/dipilot_title_auto_parking</name>
+                    <keywords>anquanfuzh,aqfz,zcfz,zhuchefuzhu,驻车辅助,zdzc,zidongzhuche,自动驻车</keywords>
+                    <index>9</index>
+                </item>
+
+                <!--   DiPilot/安全辅助 电子驻车制动 -->
+                <item>
+                    <name>@string/dipilot_electronic_parking_brake</name>
+                    <keywords>anquanfuzh,aqfz,zcfz,zhuchefuzhu,驻车辅助,dzzczd,dianzizhuchezhidong,电子驻车制动</keywords>
+                    <index>10</index>
+                </item>
+
+                <!--   DiPilot/安全辅助 辅助模式 -->
+                <item>
+                    <name>@string/dipilot_lane_assist_text</name>
+                    <keywords>anquanfuzh,aqfz,cdplfz,chedaopianlifuzhu,车道偏离辅助,fzms,fuzhumoshi,辅助模式</keywords>
+                    <index>11</index>
+                </item>
+
+                <!--   DiPilot/安全辅助 提醒模式-->
+                <item>
+                    <name>@string/dipilot_alarm_mode</name>
+                    <keywords>anquanfuzh,aqfz,cdplfz,chedaopianlifuzhu,车道偏离辅助,txms,tixingmoshi,提醒模式</keywords>
+                    <index>12</index>
+                </item>
+
+                <!--   DiPilot/安全辅助 弯道降速-->
+                <item>
+                    <name>@string/dipilot_saoc</name>
+                    <keywords>anquanfuzh,aqfz,wdfz,wandaofuzhu,弯道辅助,wdjs,wandaojiangsu,弯道降速</keywords>
+                    <index>33</index>
+                </item>
+
+                <!--   DiPilot/安全辅助 自动紧急制动 -->
+                <item>
+                    <name>@string/dipilot_new_ergency_braking_message_title</name>
+                    <keywords>anquanfuzh,aqfz,fzfz,fangzhuangfuzhu,防撞辅助,zdjjzd,zidongjinjizhidong,自动紧急制动</keywords>
+                    <index>13</index>
+                </item>
+
+                <!--   DiPilot/安全辅助 后向碰撞提醒 -->
+                <item>
+                    <name>@string/dipilot_title_rear_collision_warning</name>
+                    <keywords>anquanfuzh,aqfz,fzfz,fangzhuangfuzhu,防撞辅助,hxpztx,houxiangpengzhuangtixing,后向碰撞提醒</keywords>
+                    <index>14</index>
+                </item>
+
+                <!--   DiPilot/安全辅助 前向碰撞提醒 -->
+                <item>
+                    <name>@string/dipilot_new_urgent_warning_message_title</name>
+                    <keywords>anquanfuzh,aqfz,fzfz,fangzhuangfuzhu,防撞辅助,qxpztx,qianxiangpengzhuangtixing,前向碰撞提醒</keywords>
+                    <index>15</index>
+                </item>
+
+                <!--   DiPilot/安全辅助 前方横向碰撞提醒 -->
+                <item>
+                    <name>@string/dipilot_title_ahead_traffic_crossing_warning</name>
+                    <keywords>anquanfuzh,aqfz,hxpzfz,hengxiangpengzhuangfuzhu,横向碰撞辅助,qfhxpztx,qianfanghengxiangpengzhuangtixing,前方横向碰撞提醒</keywords>
+                    <index>16</index>
+                </item>
+
+                <!--   DiPilot/安全辅助 前方横向碰撞制动 -->
+                <item>
+                    <name>@string/dipilot_title_forward_traffic_crossing_brake</name>
+                    <keywords>anquanfuzh,aqfz,hxpzfz,hengxiangpengzhuangfuzhu,横向碰撞辅助,qfhxpzzd,qianfanghengxiangpengzhuangzhidong,前方横向碰撞制动</keywords>
+                    <index>17</index>
+                </item>
+
+                <!--   DiPilot/安全辅助 后方横向碰撞提醒 -->
+                <item>
+                    <name>@string/dipilot_title_rear_traffic_crossing_alert</name>
+                    <keywords>anquanfuzh,aqfz,hxpzfz,hengxiangpengzhuangfuzhu,横向碰撞辅助,hfhxpztx,houfanghengxiangpengzhuangtixing,后方横向碰撞提醒</keywords>
+                    <index>18</index>
+                </item>
+
+                <!--   DiPilot/安全辅助 后方横向碰撞制动 -->
+                <item>
+                    <name>@string/dipilot_title_rear_traffic_crossing_brake</name>
+                    <keywords>anquanfuzh,aqfz,hxpzfz,hengxiangpengzhuangfuzhu,横向碰撞辅助,hfhxpzzd,houfanghengxiangpengzhuangzhidong,后方横向碰撞制动</keywords>
+                    <index>19</index>
+                </item>
+
+                <!--   DiPilot/安全辅助 交通标志识别 -->
+                <item>
+                    <name>@string/dipilot_traffic_sign_title</name>
+                    <keywords>anquanfuzh,aqfz,jtbzsb,jiaotongbiaozhishibie,交通标志识别</keywords>
+                    <index>20</index>
+                </item>
+
+                <!--   DiPilot/安全辅助 限速信息预告 -->
+                <item>
+                    <name>@string/dipilot_slif</name>
+                    <keywords>anquanfuzh,aqfz,jtbzsb,jiaotongbiaozhishibie,交通标志识别,xsxxyg,xiansuxinxiyugao,限速信息预告</keywords>
+                    <index>32</index>
+                </item>
+
+                <!--   DiPilot/安全辅助 限速变化声音提示 -->
+                <item>
+                    <name>@string/dipilot_traffic_sound_remind</name>
+                    <keywords>anquanfuzh,aqfz,jtbzsb,jiaotongbiaozhishibie,交通标志识别,xsbhsyts,xiansubianhuashengyintishi,限速变化声音提示</keywords>
+                    <index>21</index>
+                </item>
+
+                <!--   DiPilot/安全辅助 智能限速提醒 -->
+                <item>
+                    <name>@string/dipilot_intelligent_speed_limit_alert</name>
+                    <keywords>anquanfuzh,aqfz,jtbzsb,jiaotongbiaozhishibie,交通标志识别,znxstx,zhinengxiansutixing,智能限速提醒</keywords>
+                    <index>22</index>
+                </item>
+
+                <!--   DiPilot/安全辅助 智能限速 -->
+                <item>
+                    <name>@string/dipilot_limit_control_title</name>
+                    <keywords>anquanfuzh,aqfz,jtbzsb,jiaotongbiaozhishibie,交通标志识别,znxs,zhinengxiansu,智能限速</keywords>
+                    <index>24</index>
+                </item>
+
+                <!--   DiPilot/安全辅助 TSR移动数据 -->
+                <item>
+                    <name>@string/adas_tsr_flow_title</name>
+                    <keywords>anquanfuzh,aqfz,tsrydsj,jtbzsb,jiaotongbiaozhishibie,交通标志识别,tsryidongshuju,TSR移动数据,yidongshuju,ydsj,移动数据</keywords>
+                    <index>28</index>
+                </item>
+
+                <!--   DiPilot/安全辅助 限速控制方式 -->
+                <item>
+                    <name>@string/dipilot_intelligent_speed_limit_control_type</name>
+                    <keywords>anquanfuzh,aqfz,xskzfs,xiansukongzhifangshi,限速控制方式</keywords>
+                    <index>25</index>
+                </item>
+
+                <!--   DiPilot/安全辅助 限速提醒灵敏度 -->
+                <item>
+                    <name>@string/dipilot_speed_limit_range</name>
+                    <keywords>anquanfuzh,aqfz,xstxlmd,xiansutixinglingmindu,限速提醒灵敏度</keywords>
+                    <index>23</index>
+                </item>
+
+                <!--   DiPilot/安全辅助 BSIS碰撞提醒 -->
+                <item>
+                    <name>@string/dipilot_bsis_collision_pre_warm</name>
+                    <keywords>anquanfuzh,aqfz,bsispztx,bsispengzhuangtixing,BSIS碰撞提醒</keywords>
+                    <index>26</index>
+                </item>
+
+                <!--   DiPilot/安全辅助 行驶区域信息系统-->
+                <item>
+                    <name>@string/dipilot_mois_area_info_system</name>
+                    <keywords>anquanfuzh,aqfz,xsqyxxxt,xingshiquyuxinxixitong,行驶区域信息系统</keywords>
+                    <index>27</index>
+                </item>
+
+                <!--   DiPilot/驾驶辅助 油门踏板抑制系统 -->
+                <item>
+                    <name>@string/gas_pedal_restrain_system</name>
+                    <keywords>jiashifuzhu,aqfz,ymtbyzxt,youmentabanyizhixitong,油门踏板抑制系统</keywords>
+                    <index>30</index>
+                </item>
+            </module1>
+
+            <!--   DiPilot/泊车辅助  -->
+            <module1
+                name="@string/dipilot_tablayout_title_parking_assist"
+                index="2">
+
+                <!--  DiPilot/泊车辅助 全景影像 -->
+                <item>
+                    <name>@string/dipilot_title_panoramic_images</name>
+                    <keywords>bochefuzhu,bcfz,qjyx,quanjingyingxiang,avm,全景影像</keywords>
+                    <index>80</index>
+                </item>
+
+                <!--  DiPilot/泊车辅助 倒车雷达 -->
+                <item>
+                    <name>@string/dipilot_title_parking_sensor</name>
+                    <keywords>bochefuzhu,bcfz,dcld,daocheleida,倒车雷达</keywords>
+                    <index>81</index>
+                </item>
+            </module1>
+        </module0>
+        <!--#################################### DiPilot部分 END ####################################-->
+
+
+        <!--#################################### 新能源 部分 START ####################################-->
+        <module0
+            name="@string/new_energy_main_v2"
+            index="3">
+            <!--   新能源/能量管理 -->
+            <module1
+                name="@string/newenergy_tablayout_label_energy_management"
+                index="0">
+                <!--   新能源/能量管理 SOC设置-->
+                <item>
+                    <name>@string/newenergy_power_protect_force</name>
+                    <keywords>nengliangguanli,nlgl,强制保电</keywords>
+                    <index>0</index>
+                </item>
+                <!--   新能源/能量管理 能量回馈强度-->
+                <item>
+                    <name>@string/newenergy_energy_recycle</name>
+                    <keywords>nengliangguanli,nlgl,能量回馈强度</keywords>
+                    <index>1</index>
+                </item>
+                <!--   新能源/能量管理 能量显示模式-->
+                <item>
+                    <name>@string/newenergy_energy_display_type_title</name>
+                    <keywords>nengliangguanli,nlgl,能量显示方式</keywords>
+                    <index>2</index>
+                </item>
+                <!--   新能源/能量管理 续航里程显示模式-->
+                <item>
+                    <name>@string/newenergy_ev_mileage_display_mode</name>
+                    <keywords>nengliangguanli,nlgl,续航里程显示模式</keywords>
+                    <index>3</index>
+                </item>
+                <!--   新能源/能量管理 续航里程显示标准-->
+                <item>
+                    <name>@string/newenergy_ev_mileage_display_standard</name>
+                    <keywords>nengliangguanli,nlgl,续航里程显示标准</keywords>
+                    <index>4</index>
+                </item>
+                <!--   新能源/能量管理 sport模式记忆 -->
+                <item>
+                    <name>@string/newenergy_memory_mode_sport</name>
+                    <keywords>nengliangguanli,nlgl,Sport模式记忆</keywords>
+                    <index>5</index>
+                </item>
+                <!--   新能源/能量管理 MAX EV模式记忆 -->
+                <item>
+                    <name>@string/newenergy_memory_mode_max_ev</name>
+                    <keywords>nengliangguanli,nlgl,MAX EV模式记忆</keywords>
+                    <index>6</index>
+                </item>
+                <!--   新能源/能量管理 强制保电记忆 -->
+                <item>
+                    <name>@string/newenergy_memory_mode_save</name>
+                    <keywords>nengliangguanli,nlgl,强制保电记忆</keywords>
+                    <index>7</index>
+                </item>
+                <!--   新能源/能量管理 E-Pedal模式 -->
+                <item>
+                    <name>@string/newenergy_e_pedal_mode</name>
+                    <keywords>nengliangguanli,nlgl,E-Pedal模式</keywords>
+                    <index>8</index>
+                </item>
+                <!--   新能源/能量管理 原地补电 -->
+                <item>
+                    <name>@string/energy_situ_elec</name>
+                    <keywords>nengliangguanli,nlgl,原地补电</keywords>
+                    <index>9</index>
+                </item>
+                <!--   新能源/能量管理 目标电量-->
+                <item>
+                    <name>@string/newenergy_soc_target_elec</name>
+                    <keywords>nengliangguanli,nlgl,目标电量</keywords>
+                    <index>10</index>
+                </item>
+            </module1>
+
+            <!--   新能源/充电与放电 -->
+            <module1
+                name="@string/newenergy_tablayout_label_charge_and_discharge"
+                index="1">
+                <!--   新能源/充电与放电 智慧充电-->
+                <item>
+                    <name>@string/newenergy_smart_charging</name>
+                    <keywords>chongdianyufangdian,cdyfd,cdfd,智慧充电</keywords>
+                    <index>0</index>
+                </item>
+                <!--   新能源/充电与放电 充电限值-->
+                <item>
+                    <name>@string/newenergy_charging_limit</name>
+                    <keywords>chongdianyufangdian,cdyfd,cdfd,充电限值</keywords>
+                    <index>1</index>
+                </item>
+                <!--   新能源/充电与放电 充电口防盗-->
+                <item>
+                    <name>@string/newenergy_charging_port_electric_lock_anti_theft</name>
+                    <keywords>chongdianyufangdian,cdyfd,cdfd,充电口电锁防盗</keywords>
+                    <index>2</index>
+                </item>
+                <!--   新能源/充电与放电 充电智能维温模式-->
+                <item>
+                    <name>@string/newenergy_charge_temp_ctl_state</name>
+                    <keywords>chongdianyufangdian,cdyfd,cdfd,充电智能维温模式</keywords>
+                    <index>3</index>
+                </item>
+                <!--   新能源/充电与放电 充电预热 -->
+                <item>
+                    <name>@string/electricity_charge_preheat</name>
+                    <keywords>chongdianyufangdian,cdyfd,cdfd,充电预热</keywords>
+                    <index>4</index>
+                </item>
+                <!--   新能源/充电与放电 售前模式 -->
+                <item>
+                    <name>@string/newenergy_charging_pre_sale_mode</name>
+                    <keywords>chongdianyufangdian,cdyfd,cdfd,售前模式</keywords>
+                    <index>5</index>
+                </item>
+                <!--   新能源/充电与放电 对外放电 -->
+                <item>
+                    <name>@string/electricity_external_discharge</name>
+                    <keywords>chongdianyufangdian,cdyfd,cdfd,对外放电</keywords>
+                    <index>6</index>
+                </item>
+
+                <!--   新能源/充电与放电 移动电站 -->
+                <item>
+                    <name>@string/newenergy_discharge_mps_setting</name>
+                    <keywords>chongdianyufangdian,cdyfd,cdfd,移动电站</keywords>
+                    <index>7</index>
+                </item>
+                <!--   新能源/充电与放电 交流充电电流限值 -->
+                <item>
+                    <name>@string/electricity_aclimit</name>
+                    <keywords>chongdianyufangdian,cdyfd,cdfd,交流充电电流限值</keywords>
+                    <index>8</index>
+                </item>
+            </module1>
+
+            <!--   新能源/能耗 -->
+            <module1
+                name="@string/newenergy_tablayout_label_energy_consumption"
+                index="2">
+                <!--   新能源/能耗 能耗清单-->
+                <item>
+                    <name>@string/newenergy_consumption_list_table</name>
+                    <keywords>nenghao,nh,能耗清单</keywords>
+                    <index>0</index>
+                </item>
+                <!--   新能源/能耗 总燃油消耗量-->
+                <item>
+                    <name>@string/newenergy_consumption_list_total_fuel_consumption</name>
+                    <keywords>nenghao,nh,总燃油消耗量，油耗</keywords>
+                    <index>1</index>
+                </item>
+                <!--   新能源/能耗 能耗曲线-->
+                <item>
+                    <name>@string/newenergy_consumption_line_table</name>
+                    <keywords>nenghao,nh,能耗曲线</keywords>
+                    <index>2</index>
+                </item>
+            </module1>
+
+            <!--   新能源/iTAC -->
+            <module1
+                name="@string/newenergy_tablayout_label_itac"
+                index="3">
+                <!--   新能源/iTAC Tab-->
+                <item>
+                    <name>@string/newenergy_tablayout_label_itac</name>
+                    <keywords>iTAC</keywords>
+                    <index>0</index>
+                </item>
+                <!--   新能源/iTAC 基础iTAC-->
+                <item>
+                    <name>@string/itac_switch_title</name>
+                    <keywords>iTAC智能扭矩控制系统</keywords>
+                    <index>1</index>
+                </item>
+                <!--   新能源/iTAC 超级iTAC-->
+                <item>
+                    <name>@string/itac_mode_title</name>
+                    <keywords>超级iTAC</keywords>
+                    <index>2</index>
+                </item>
+            </module1>
+
+        </module0>
+        <!--#################################### 新能源 部分 END ####################################-->
+
+        <!--#################################### 车辆设置 部分 START ####################################-->
+        <module0
+            name="@string/car_setting_main_v2"
+            index="4">
+
+            <!--   车辆设置/智能底盘 -->
+            <module1
+                name="@string/vehiclesettings_tablayout_title_smart_chassis"
+                index="0">
+                <item>
+                    <name>@string/vehiclesettings_dynamic_suspension_c_mode;@string/vehiclesettings_dynamic_suspension_p_mode;@string/vehiclesettings_dynamic_suspension_a_mode</name>
+                    <keywords>zhinengdipan,zndp,dongtaixuanjia,dtxj,yunnian,yn,云辇，模式，舒适，运动</keywords>
+                    <index>0</index>
+                    <subindex>0</subindex>
+                </item>
+                <item>
+                    <name>@string/vehiclesettings_comfortable_control</name>
+                    <keywords>zhinengdipan,zndp,舒适控制，舒适，控制</keywords>
+                    <index>0</index>
+                    <subindex>1</subindex>
+                </item>
+                <item>
+                    <name>@string/vehiclesettings_steering_assist</name>
+                    <keywords>zhinengdipan,zndp,主动架悬模式，转向，助力，模式，舒适，运动</keywords>
+                    <index>1</index>
+                </item>
+                <item>
+                    <name>@string/vehiclesettings_brake_assist_mode</name>
+                    <keywords>zhinengdipan,zndp,主动架悬模式，制动，助力，模式，舒适，运动</keywords>
+                    <index>2</index>
+                </item>
+                <item>
+                    <name>@string/vehiclesettings_comfortable_parking</name>
+                    <keywords>zhinengdipan,zndp,舒适停车，舒适，停车</keywords>
+                    <index>3</index>
+                </item>
+            </module1>
+
+<!--               车辆设置/氛围灯 -->
+<!--            <module1-->
+<!--                name="@string/vehiclesettings_tablayout_title_ambient_light"-->
+<!--                index="1">-->
+<!--                <item>-->
+<!--                    <name>@string/vehiclesettings_tablayout_title_ambient_light</name>-->
+<!--                    <keywords>fenweideng,fwd,氛围灯</keywords>-->
+<!--                    <index>0</index>-->
+<!--                </item>-->
+<!--            </module1>-->
+
+            <!--   车辆设置/灯光 -->
+            <module1
+                name="@string/vehiclesettings_tablayout_title_outside_light"
+                index="1">
+                <item>
+                    <name>@string/vehiclesettings_light_control</name>
+                    <keywords>大灯控制,ddkz,dd,灯光</keywords>
+                    <index>0</index>
+                </item>
+                <item>
+                    <name>@string/vehiclesettings_amb_light</name>
+                    <keywords>fenweideng,fwd,dg,氛围灯</keywords>
+                    <index>1</index>
+                </item>
+                <item>
+                    <name>@string/vehiclesettings_day_driving_lighting</name>
+                    <keywords>dengguang,dg,灯光</keywords>
+                    <index>2</index>
+                </item>
+                <item>
+                    <name>@string/vehiclesettings_exlight_intelligent_near_light</name>
+                    <keywords>dengguang,dg,随动，转向，智能近光灯，智能，近光灯</keywords>
+                    <index>3</index>
+                </item>
+                <item>
+                    <name>@string/vehiclesettings_lamp_height_adjust</name>
+                    <keywords>dengguang,dg,灯光，高度</keywords>
+                    <index>4</index>
+                    <subindex>0</subindex>
+                </item>
+                <item>
+                    <name>@string/vehiclesettings_back_home_delay_time_title</name>
+                    <keywords>dengguang,dg,灯光，照明，回家</keywords>
+                    <index>4</index>
+                    <subindex>1</subindex>
+                </item>
+                <item>
+                    <name>@string/vehiclesettings_leave_home_delay_time_title</name>
+                    <keywords>dengguang,dg,灯光，照明，离家</keywords>
+                    <index>4</index>
+                    <subindex>2</subindex>
+                </item>
+
+                <item>
+                    <name>@string/vehiclesettings_lantern_language</name>
+                    <keywords>dengguang,dg,灯光，迎宾，灯语，解锁，闭锁</keywords>
+                    <index>5</index>
+                    <subindex>0</subindex>
+                </item>
+                <item>
+                    <name>@string/vehiclesettings_smart_welcome_guest</name>
+                    <keywords>dengguang,dg,灯光，迎宾，智能，迎宾灯</keywords>
+                    <index>5</index>
+                    <subindex>1</subindex>
+                </item>
+            </module1>
+
+            <!--   车辆设置/舒适驾驶 -->
+            <module1
+                name="@string/vehiclesettings_tablayout_title_usecar_comfortably"
+                index="2">
+
+                <item>
+                    <name>@string/vehiclesettings_pretightened_seat_belt</name>
+                    <keywords>shushijiashi,ssjs,舒适用车，预紧，安全带，用车，舒适</keywords>
+                    <index>0</index>
+                    <subindex>0</subindex>
+                </item>
+                <item>
+                    <name>@string/vehiclesettings_automatic_wiper</name>
+                    <keywords>shushijiashi,ssjs,舒适用车，雨刷，自动，用车，舒适</keywords>
+                    <index>0</index>
+                    <subindex>1</subindex>
+                </item>
+                <item>
+                    <name>@string/vehiclesettings_comfortable_wading_protection</name>
+                    <keywords>sheshuibaohu,涉水保护，涉水，保护</keywords>
+                    <index>1</index>
+                    <subindex>0</subindex>
+                </item>
+                <item>
+                    <name>@string/vehiclesettings_comfortable_sand_abs_mode</name>
+                    <keywords>sheshuibaohu,沙地ABS，沙地，abs</keywords>
+                    <index>1</index>
+                    <subindex>1</subindex>
+                </item>
+                <item>
+                    <name>@string/vehiclesettings_seat_welcome</name>
+                    <keywords>shushijiashi,ssjs,舒适用车，主驾，座椅，迎宾，用车，舒适</keywords>
+                    <index>2</index>
+                    <subindex>0</subindex>
+                </item>
+                <item>
+                    <name>@string/vehiclesettings_passenger_seat_welcome</name>
+                    <keywords>shushijiashi,ssjs,舒适用车，后排，座椅，迎宾，用车，舒适</keywords>
+                    <index>2</index>
+                    <subindex>1</subindex>
+                </item>
+                <item>
+                    <name>@string/vehiclesettings_steering_wheel_welcome</name>
+                    <keywords>shushijiashi,ssjs,舒适用车，方向盘，迎宾，用车，舒适</keywords>
+                    <index>2</index>
+                    <subindex>2</subindex>
+                </item>
+                <item>
+                    <name>@string/vehiclesettings_automatic_folding</name>
+                    <keywords>shushijiashi,ssjs,舒适用车，后视镜，自动，折叠，用车，舒适</keywords>
+                    <index>3</index>
+                    <subindex>0</subindex>
+                </item>
+                <item>
+                    <name>@string/vehiclesettings_reverse_flip</name>
+                    <keywords>shushijiashi,ssjs,舒适用车，后视镜，倒车，翻转，用车，舒适</keywords>
+                    <index>3</index>
+                    <subindex>1</subindex>
+                </item>
+
+            </module1>
+            <!--   车辆设置/迪吧 -->
+            <module1
+                name="@string/vehiclesettings_tablayout_magic_cube"
+                index="3">
+                <item>
+                    <name>@string/vehiclesettings_diba_tray_title</name>
+                    <keywords>diba,db,至臻魔方，伸出，缩回</keywords>
+                    <index>0</index>
+                </item>
+                <item>
+                    <name>@string/vehiclesettings_diba_dc_thermoelectric_cooler</name>
+                    <keywords>diba,db,至臻魔方，关闭，加热，智能，冷暖箱</keywords>
+                    <index>1</index>
+                    <subindex>0</subindex>
+                </item>
+                <item>
+                    <name>@string/vehiclesettings_diba_pdm</name>
+                    <keywords>diba,db,至臻魔方，记忆，退电，记忆退电</keywords>
+                    <index>1</index>
+                    <subindex>1</subindex>
+                </item>
+                <item>
+                    <name>@string/vehiclesettings_diba_disinfectings</name>
+                    <keywords>diba,db,至臻魔方，杀菌消毒</keywords>
+                    <index>2</index>
+                </item>
+            </module1>
+            <!--            冰箱-->
+            <module1
+                name="@string/vehiclesettings_tablayout_compression_refrigerator_door_state"
+                index="4">
+                <item>
+                    <name>@string/vehiclesettings_compression_refrigerator_door_state</name>
+                    <keywords>bingxiangkaiguanmen,bx,bxkgm,冰箱，开，关，门，冰箱门开关</keywords>
+                    <index>0</index>
+                </item>
+                <item>
+                    <name>@string/vehiclesettings_compression_refrigerator_work_state</name>
+                    <keywords>bxgzms,bx,bxgzms,冰箱，工作，模式，冰箱工作模式，制冷，制热</keywords>
+                    <index>1</index>
+                </item>
+                <item>
+                    <name>@string/vehiclesettings_compression_refrigerator_work_delay_power_off</name>
+                    <keywords>yanshiduandian,ys,ysdd,延时，断电，延时断电</keywords>
+                    <index>2</index>
+                </item>
+                <item>
+                    <name>@string/vehiclesettings_compression_refrigerator_work_delay_power_off_set</name>
+                    <keywords>yanshiduandianshezhi,ys,ysdd,ysddsz,延时，断电，延时断电，设置</keywords>
+                    <index>3</index>
+                </item>
+                <item>
+                    <name>@string/vehiclesettings_diba_pdm</name>
+                    <keywords>tuidianjiyi,td,tdjy,退电，记忆，退电记忆</keywords>
+                    <index>4</index>
+                </item>
+                <item>
+                    <name>@string/vehiclesettings_diba_disinfectings</name>
+                    <keywords>shajunxiaodu,sjxd,sj,xd,杀菌，消毒，杀菌消毒</keywords>
+                    <index>5</index>
+                </item>
+                <item>
+                    <name>@string/vehiclesettings_compression_refrigerator_child_lock</name>
+                    <keywords>bingxiangertongsuo,bxets,bx,ets,冰箱，儿童锁，儿童，锁</keywords>
+                    <index>6</index>
+                </item>
+            </module1>
+            <!--   车辆设置/抬头显示 -->
+            <module1
+                name="@string/vehiclesettings_tablayout_title__hud"
+                index="5">
+                <item>
+                    <name>@string/vehiclesettings_hud_switch_name</name>
+                    <keywords>taitouxianshi,ttxs,hud,开关</keywords>
+                    <index>0</index>
+                </item>
+                <item>
+                    <name>@string/vehiclesettings_hud_brightness_adjustment</name>
+                    <keywords>taitouxianshi,ttxs,高度调节，高度</keywords>
+                    <index>1</index>
+                    <subindex>0</subindex>
+                </item>
+                <item>
+                    <name>@string/vehiclesettings_hud_height_adjustment</name>
+                    <keywords>taitouxianshi,ttxs,高度调节，亮度</keywords>
+                    <index>1</index>
+                    <subindex>1</subindex>
+                </item>
+                <item>
+                    <name>@string/vehiclesettings_hud_height_rotation_adjust</name>
+                    <keywords>taitouxianshi,ttxs,高度调节，角度，旋转</keywords>
+                    <index>1</index>
+                    <subindex>2</subindex>
+                </item>
+                <item>
+                    <name>@string/vehiclesettings_hud_mode_setting</name>
+                    <keywords>taitouxianshi,ttxs,高度调节，模式，设置，经典，雪地，沙地</keywords>
+                    <index>2</index>
+                </item>
+                <item>
+                    <name>@string/vehiclesettings_hud_optional_display_content</name>
+                    <keywords>taitouxianshi,ttxs,高度调节，可选，显示，内容，安全驾驶辅助，导航</keywords>
+                    <index>3</index>
+                </item>
+            </module1>
+
+
+            <!--   车辆设置/仪表 -->
+            <module1
+                name="@string/vehiclesettings_tablayout_title_meter"
+                index="6">
+                <item>
+                    <name>@string/vehiclesettings_instrument_brightness_adjust</name>
+                    <keywords>yibiao,yb,仪表，高度，调节</keywords>
+                    <index>0</index>
+                </item>
+
+                <item>
+                    <name>@string/vehiclesettings_instrument_navigation_display</name>
+                    <keywords>yibiao,yb,仪表，导航，显示，小屏， 全屏</keywords>
+                    <index>1</index>
+                </item>
+                <item>
+                    <name>@string/vehiclesettings_instrument_miles_always_display</name>
+                    <keywords>yibiao,yb,仪表，里程，信息，显示，总里程，HEV里程，EV里程，里程</keywords>
+                    <index>2</index>
+                </item>
+
+            </module1>
+
+            <!--   车辆设置/空调 -->
+            <module1
+                name="@string/vehiclesettings_tablayout_title_air_conditioning"
+                index="7">
+                <item>
+                    <name>@string/vehiclesettings_air_conditioner_automatic_mode</name>
+                    <keywords>kongtiao,kt,ac,空调，模式，自动</keywords>
+                    <index>0</index>
+                    <subindex>0</subindex>
+                </item>
+                <item>
+                    <name>@string/vehiclesettings_air_conditioning_heating_mode</name>
+                    <keywords>kongtiao,kt,ac,空调，模式，加热</keywords>
+                    <index>0</index>
+                    <subindex>1</subindex>
+                </item>
+                <item>
+                    <name>@string/vehiclesettings_remotely_turn_on_air_conditioner_running_time</name>
+                    <keywords>kongtiao,kt,ac,空调，遥控，时间</keywords>
+                    <index>1</index>
+                    <subindex>0</subindex>
+                </item>
+                <item>
+                    <name>@string/vehiclesettings_rear_ac_panel_auto_lock_time</name>
+                    <keywords>kongtiao,kt,ac,空调，后面板，锁定</keywords>
+                    <index>1</index>
+                    <subindex>1</subindex>
+                </item>
+                <item>
+                    <name>@string/vehiclesettings_automatic_air_detection_on_power_up</name>
+                    <keywords>kongtiao,kt,ac,空调，上电，空气检测，空气，检测</keywords>
+                    <index>2</index>
+                    <subindex>0</subindex>
+                </item>
+                <item>
+                    <name>@string/vehiclesettings_30_minutes_air_detection</name>
+                    <keywords>kongtiao,kt,ac,空调，30分钟，空气检测，空气，检测</keywords>
+                    <index>2</index>
+                    <subindex>1</subindex>
+                </item>
+                <item>
+                    <name>@string/vehiclesettings_automatic_air_detection_of_switch_door</name>
+                    <keywords>kongtiao,kt,ac,空调，开关门，开，关，空气检测，空气，检测</keywords>
+                    <index>2</index>
+                    <subindex>2</subindex>
+                </item>
+                <item>
+                    <name>@string/vehiclesettings_automatic_purification</name>
+                    <keywords>kongtiao,kt,ac,空调，自动净化，自动，净化</keywords>
+                    <index>2</index>
+                    <subindex>3</subindex>
+                </item>
+                <item>
+                    <name>@string/vehiclesettings_parking_automatic_inner_circulation</name>
+                    <keywords>kongtiao,kt,ac,空调，内循环，自动，驻车</keywords>
+                    <index>3</index>
+                    <subindex>0</subindex>
+                </item>
+                <item>
+                    <name>@string/vehiclesettings_automatic_internal_circulation_of_tunnel</name>
+                    <keywords>kongtiao,kt,ac,空调，内循环，自动，隧道</keywords>
+                    <index>3</index>
+                    <subindex>1</subindex>
+                </item>
+                <item>
+                    <name>@string/vehiclesettings_bluetooth_call_automatically_reduces_wind_speed</name>
+                    <keywords>kongtiao,kt,ac,空调，蓝牙，通话，自动，风速，自动</keywords>
+                    <index>3</index>
+                    <subindex>2</subindex>
+                </item>
+                <item>
+                    <name>@string/vehiclesettings_intelligent_partition</name>
+                    <keywords>kongtiao,kt,ac,空调，智能分区，智能，分区</keywords>
+                    <index>4</index>
+                </item>
+            </module1>
+
+
+            <!--   车辆设置/座椅 -->
+            <module1
+                name="@string/vehiclesettings_tablayout_title_carseat"
+                index="8">
+                <item>
+                    <name>@string/vehiclesettings_seat_turn_titile</name>
+                    <keywords>zuoyi,zy,座椅，调节，座椅调节</keywords>
+                    <index>0</index>
+                </item>
+                <item>
+                    <name>@string/vehiclesettings_carseat_seat_wind_hot;@string/seat_ventilation;@string/seat_heat</name>
+                    <keywords>zuoyi,zy,座椅，通风，加热，通风加热</keywords>
+                    <index>1</index>
+                </item>
+                <item>
+                    <name>@string/vehiclesettings_carseat_massage_seat_massage</name>
+                    <keywords>zuoyi,zy,座椅，按摩，座椅按摩</keywords>
+                    <index>2</index>
+                </item>
+            </module1>
+
+            <!--   车辆设置/门窗与锁 -->
+            <module1
+                name="@string/vehiclesettings_tablayout_title_door_window_lock"
+                index="9">
+                <item>
+                    <name>@string/nfc_key_mode_nfc</name>
+                    <keywords>menchuanghyusuo,mcys,数字钥匙，数字，钥匙</keywords>
+                    <index>0</index>
+                </item>
+                <item>
+                    <name>@string/vehiclesettings_opening_height_of_back_door</name>
+                    <keywords>menchuanghyusuo,mcys,后背门开启高度，后背门，高度， 开启</keywords>
+                    <index>1</index>
+                    <subindex>0</subindex>
+                </item>
+                <item>
+                    <name>@string/vehiclesettings_handle_auto_retraction</name>
+                    <keywords>menchuanghyusuo,mcys,门把手自动缩回，门把手，自动，缩回</keywords>
+                    <index>1</index>
+                    <subindex>1</subindex>
+                </item>
+                <item>
+                    <name>@string/vehiclesettings_remote_unlock</name>
+                    <keywords>menchuanghyusuo,mcys,遥控解锁，四门，遥控，解锁</keywords>
+                    <index>2</index>
+                    <subindex>0</subindex>
+                </item>
+                <item>
+                    <name>@string/vehiclesettings_long_press_the_remote_control_key_to_lock_and_close_the_window</name>
+                    <keywords>menchuanghyusuo,mcys,长按遥控钥匙闭锁关窗，钥匙，闭锁，关窗</keywords>
+                    <index>2</index>
+                    <subindex>1</subindex>
+                </item>
+                <item>
+                    <name>@string/vehiclesettings_long_press_the_remote_control_key_to_unlock_the_window</name>
+                    <keywords>menchuanghyusuo,mcys,长按遥控钥匙解锁开窗，钥匙，解锁，开窗</keywords>
+                    <address>车辆设置>门窗与锁>长按遥控钥匙解锁开窗</address>
+                    <index>2</index>
+                    <subindex>2</subindex>
+                </item>
+                <item>
+                    <name>@string/vehiclesettings_lp_micro_switch_lock_window</name>
+                    <keywords>menchuanghyusuo,mcys,门窗和锁，长按微动开关闭锁关窗，开关，闭锁，关窗</keywords>
+                    <index>2</index>
+                    <subindex>3</subindex>
+                </item>
+                <item>
+                    <name>@string/vehiclesettings_lp_micro_switch_unlock_window</name>
+                    <keywords>menchuanghyusuo,mcys,门窗和锁，长按微动开关解锁开窗，开关，解锁，开窗</keywords>
+                    <index>2</index>
+                    <subindex>4</subindex>
+                </item>
+
+                <item>
+                    <name>@string/vehiclesettings_intelligent_unlock</name>
+                    <keywords>menchuanghyusuo,mcys,门窗和锁，智能解锁，智能，解锁</keywords>
+                    <index>3</index>
+                    <subindex>0</subindex>
+                </item>
+
+                <item>
+                    <name>@string/vehiclesettings_intelligent_lock</name>
+                    <keywords>menchuanghyusuo,mcys,门窗和锁，智能闭锁，智能，闭锁</keywords>
+                    <index>3</index>
+                    <subindex>1</subindex>
+                </item>
+
+                <item>
+                    <name>@string/vehiclesettings_driving_automatically_lock_down</name>
+                    <keywords>menchuanghyusuo,mcys,行车自动落锁，自动，行车，落锁</keywords>
+                    <index>4</index>
+                    <subindex>0</subindex>
+                </item>
+                <item>
+                    <name>@string/vehiclesettings_automatic_window_closing_on_rainy_days</name>
+                    <keywords>menchuanghyusuo,mcys,雨天自动关窗，雨，自动，关窗</keywords>
+                    <index>4</index>
+                    <subindex>1</subindex>
+                </item>
+                <item>
+                    <name>@string/vehiclesettings_lock_the_window_automatically</name>
+                    <keywords>menchuanghyusuo,mcys,锁车自动升窗，锁车，升窗</keywords>
+                    <index>4</index>
+                    <subindex>2</subindex>
+                </item>
+                <item>
+                    <name>@string/vehiclesettings_comfortable_high_speed_auto_close</name>
+                    <keywords>menchuanghyusuo,mcys,门窗和锁，高速， 自动，关窗</keywords>
+                    <index>4</index>
+                    <subindex>3</subindex>
+                </item>
+                <item>
+                    <name>@string/vehiclesettings_rear_control_panel_lock</name>
+                    <keywords>menchuanghyusuo,mcys,门窗和锁，后排控制屏锁，后排，控制，屏锁</keywords>
+                    <index>5</index>
+                </item>
+
+                <item>
+                    <name>@string/vehiclesettings_door_lock_electric_door_state</name>
+                    <keywords>menchuanghyusuo,mcys,门窗和锁，滑门电动功能，滑门，电动</keywords>
+                    <index>6</index>
+                </item>
+                <item>
+                    <name>@string/vehiclesettings_comfortable_run_auto_close_door</name>
+                    <keywords>menchuanghyusuo,mcys,门窗和锁，行车，自动，关门</keywords>
+                    <index>7</index>
+                </item>
+
+                <item>
+                    <name>@string/vehiclesettings_doorlock_power_on</name>
+                    <keywords>menchuanghyusuo,mcys,门窗和锁，智能上电</keywords>
+                    <index>8</index>
+                    <subindex>0</subindex>
+                </item>
+                <item>
+                    <name>@string/vehiclesettings_doorlock_power_off</name>
+                    <keywords>menchuanghyusuo,mcys,门窗和锁，智能，下电</keywords>
+                    <index>8</index>
+                    <subindex>1</subindex>
+                </item>
+            </module1>
+
+
+            <!--   车辆设置/智能提醒 -->
+            <module1
+                name="@string/vehiclesettings_tablayout_title_reminder"
+                index="10">
+                <item>
+                    <name>@string/vehiclesettings_smart_broadcast</name>
+                    <keywords>zhinengtixing,zntx,智能提醒，播报内容，播报音量，播报，音量，内容</keywords>
+                    <index>0</index>
+                </item>
+                <item>
+                    <name>@string/vehiclesettings_tip_sound_source</name>
+                    <keywords>zhinengtixing,zntx,车辆设置，智能提醒，车辆，提示，音源，标准，科技</keywords>
+                    <index>1</index>
+                    <subindex>0</subindex>
+                </item>
+                <item>
+                    <name>@string/vehiclesettings_tip_sound_source_level</name>
+                    <keywords>zhinengtixing,zntx,车辆提示音量，车辆，提示，音量</keywords>
+                    <index>1</index>
+                    <subindex>1</subindex>
+                </item>
+
+                <item>
+                    <name>@string/vehiclesettings_navigation_volume</name>
+                    <keywords>zhinengtixing,zntx,智能提醒，导航，音压，低媒体音</keywords>
+                    <index>2</index>
+                </item>
+
+                <item>
+                    <name>@string/vehiclesettings_smart_reminder_safe_belt_warn</name>
+                    <keywords>zhinengtixing,zntx,智能提醒，后排，安全带，报警</keywords>
+                    <index>3</index>
+                </item>
+                <item>
+                    <name>@string/vehiclesettings_voice_skills_center_set</name>
+                    <keywords>zhinengtixing,zntx,智能提醒，智能，语音，设置</keywords>
+                    <index>4</index>
+                </item>
+
+                <item>
+                    <name>@string/vehiclesettings_system_key_voice</name>
+                    <keywords>zhinengtixing,zntx,智能提醒，系统，按键音，系统按键音</keywords>
+                    <index>5</index>
+                </item>
+
+                <item>
+                    <name>@string/vehiclesettings_control_touch_level</name>
+                    <keywords>zhinengtixing,zntx,智能提醒，方控按键触摸强度，方控，触摸，按键，强度</keywords>
+                    <index>6</index>
+                </item>
+            </module1>
+
+            <module1
+                name="@string/vehiclesettings_tablayout_title_trailer"
+                index="11">
+                <item>
+                    <name>@string/vehiclesettings_trailer_drive_mode_with_trailer_signal</name>
+                    <keywords>tuozhuaimoshi,tzms,xinhaodengzidongjiance,xhdzdjc,拖车，拖拽，拖拽功能，模式，拖车灯，检测，信号，信号灯，自动，自动检测，信号灯自动检测</keywords>
+                    <index>0</index>
+                </item>
+                <!--   车辆设置/后排头枕屏 -->
+                <!--        <item>-->
+                <!--            <name>后排头枕屏</name>-->
+                <!--            <keywords>车辆设置，后排头枕屏</keywords>-->
+                <!--            <index>0</index>-->
+                <!--        </item>-->
+            </module1>
+
+            <!--           车辆设置/后排头枕屏 -->
+            <module1
+                name="@string/vehiclesettings_tablayout_title_cockpit_perception"
+                index="12">
+                <item>
+                    <name>@string/vehiclesettings_cockpitper_driver_monitor_assist</name>
+                    <keywords>zuocangganzhi,zcgz,dms,辅助，驾驶，驾驶员</keywords>
+                    <index>0</index>
+                </item>
+                <item>
+                    <name>@string/vehiclesettings_cockpitper_driver_tired_reminder</name>
+                    <keywords>zuocangganzhi,zcgz,dms,疲劳，检测</keywords>
+                    <index>0</index>
+                </item>
+                <item>
+                    <name>@string/vehiclesettings_cockpitper_driver_distraction_monitor_reminder</name>
+                    <keywords>zuocangganzhi,zcgz,dms,分心，检测，辅助</keywords>
+                    <index>0</index>
+                </item>
+                <item>
+                    <name>@string/vehiclesettings_legacy_detection_in_children</name>
+                    <keywords>zuocangganzhi,zcgz,cpd,儿童，遗留，检测</keywords>
+                    <index>1</index>
+                </item>
+                <item>
+                    <name>@string/vehiclesettings_legacy_detection_system_interior_motion_sensor</name>
+                    <keywords>cangneiyidongjiance,cnydjc,ims,座舱，舱内，移动，检测</keywords>
+                    <index>2</index>
+                </item>
+                <!--   车辆设置/后排头枕屏 -->
+                <!--        <item>-->
+                <!--            <name>后排头枕屏</name>-->
+                <!--            <keywords>车辆设置，后排头枕屏</keywords>-->
+                <!--            <index>0</index>-->
+                <!--        </item>-->
+            </module1>
+<!--            流媒体后视镜-->
+            <module1
+                name="@string/vehiclesettings_tablayout_title_rear_view_mirror"
+                index="13">
+                <item>
+                    <name>@string/vehiclesettings_title_inner_rear_view_mirror</name>
+                    <keywords>liumeitineihoushijing,lmt,lmthsj,流媒体，内后视镜，流媒体内后视镜</keywords>
+                    <index>0</index>
+                    <subindex>0</subindex>
+                </item>
+                <item>
+                    <name>@string/vehiclesettings_rear_view_mirror_screen_turn</name>
+                    <keywords>pingmutiaojie,pm,pmtj,屏幕，调节，屏幕调节</keywords>
+                    <index>0</index>
+                    <subindex>1</subindex>
+                </item>
+                <item>
+                    <name>@string/vehiclesettings_rear_view_mirror_reset_brightness_view</name>
+                    <keywords>huifumorenshiyeheliangdu,hf,hfm,hfmr,恢复，视野，亮度，恢复默认视野和亮度</keywords>
+                    <index>0</index>
+                    <subindex>2</subindex>
+                </item>
+            </module1>
+
+        </module0>
+        <!--#################################### 车辆设置 部分 END ####################################-->
+
+
+        <!--#################################### 车辆健康 部分 START ####################################-->
+        <!--   车辆健康/智能保养 -->
+        <module0
+            name="@string/car_healthy_main_v2"
+            index="5">
+            <!--   车辆健康/智能保养 -->
+            <module1
+                name="@string/carhealthy_maintain_service"
+                index="0">
+                <!--   车辆健康/智能保养 油液寿命 -->
+                <item>
+                    <name>@string/carhealthy_oil_life</name>
+                    <keywords>zhinengbaoyang,znby,油液寿命，重置</keywords>
+                    <index>1</index>
+                </item>
+                <!--   车辆健康/智能保养 油液保养记录 -->
+                <item>
+                    <name>@string/carhealthy_maintain_record</name>
+                    <keywords>zhinengbaoyang,znby,油液保养记录</keywords>
+                    <index>2</index>
+                </item>
+                <!--   车辆健康/智能保养 机油油位表检测 -->
+                <item>
+                    <name>@string/carhealthy_oil_level_gauge</name>
+                    <keywords>zhinengbaoyang,znby,机油油位表检测</keywords>
+                    <index>3</index>
+                </item>
+                <!--   车辆健康/智能保养 保养时间 -->
+                <item>
+                    <name>@string/carhealthy_maintain_time</name>
+                    <keywords>zhinengbaoyang,znby,保养时间</keywords>
+                    <index>4</index>
+                </item>
+                <!--   车辆健康/智能保养 保养里程 -->
+                <item>
+                    <name>@string/carhealthy_maintain_mile</name>
+                    <keywords>zhinengbaoyang,znby,保养里程</keywords>
+                    <index>5</index>
+                </item>
+            </module1>
+
+            <!--   车辆健康/检修 -->
+            <module1
+                name="@string/carhealthy_overhaul"
+                index="1">
+                <!--   车辆健康/保养与维修 前雨刮检修 -->
+                <item>
+                    <name>@string/vehiclehealth_front_wiper</name>
+                    <keywords>jianxiu,jx,前雨刮检修</keywords>
+                    <index>1</index>
+                </item>
+                <!--   车辆健康/保养与维修 后雨刮检修 -->
+                <item>
+                    <name>@string/vehiclehealth_rear_wiper</name>
+                    <keywords>jianxiu,jx,后雨刮检修</keywords>
+                    <index>2</index>
+                </item>
+                <!--   车辆健康/保养与维修 胎压复位 -->
+                <item>
+                    <name>@string/vehiclehealth_tyre_pressure</name>
+                    <keywords>jianxiu,jx,胎压复位</keywords>
+                    <index>3</index>
+                </item>
+                <!--   车辆健康/保养与维修 电子驻车（EPB）拖车模式 -->
+                <item>
+                    <name>@string/carhealthy_epb</name>
+                    <keywords>jianxiu,jx,电子驻车（EPB）拖车模式</keywords>
+                    <index>4</index>
+                </item>
+                <!--   车辆健康/保养与维修 举升模式 -->
+                <item>
+                    <name>@string/carhealthy_jack</name>
+                    <keywords>jianxiu,jx,举升模式</keywords>
+                    <index>5</index>
+                </item>
+                <!--   车辆健康/保养与维修 举升模式 -->
+                <item>
+                    <name>@string/carhealthy_user_manual</name>
+                    <keywords>jianxiu,jx,用户手册</keywords>
+                    <index>6</index>
+                </item>
+            </module1>
+
+            <!--   车辆健康/车辆信息 -->
+            <module1
+                name="@string/vehiclehealth_vehicle_information"
+                index="2">
+                <item>
+                    <name>@string/vehiclehealth_vehicle_information</name>
+                    <keywords>cheliangxinxi,clxx,车辆健康，车辆信息，故障</keywords>
+                    <index>0</index>
+                </item>
+                <item>
+                    <name>@string/carhealthy_battery_health</name>
+                    <keywords>cheliangxinxi,clxx,电池健康状态</keywords>
+                    <index>1</index>
+                </item>
+            </module1>
+        </module0>
+        <!--#################################### 车辆健康 部分 END ####################################-->
+
+    </content>
+
+
+</root>

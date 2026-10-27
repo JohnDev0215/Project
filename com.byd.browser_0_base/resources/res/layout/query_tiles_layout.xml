@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:id="@+id/query_tiles_layout"
+    android:paddingBottom="@dimen/tasks_view_items_vertical_spacing"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"/>

@@ -1,0 +1,6 @@
+signature,file,startline,startcol,endline,endcol,properties
+Lcom/android/internal/os/RuntimeInit;->initialized:Z,frameworks/base/core/java/com/android/internal/os/RuntimeInit.java,60,5,60,25,
+Lcom/android/internal/os/RuntimeInit;->mApplicationObject:Landroid/os/IBinder;,frameworks/base/core/java/com/android/internal/os/RuntimeInit.java,63,5,63,25,
+Lcom/android/internal/os/RuntimeInit;->commonInit()V,frameworks/base/core/java/com/android/internal/os/RuntimeInit.java,253,5,253,25,
+Lcom/android/internal/os/RuntimeInit;->main([Ljava/lang/String;)V,frameworks/base/core/java/com/android/internal/os/RuntimeInit.java,383,5,383,25,
+Lcom/android/internal/os/RuntimeInit;->getApplicationObject()Landroid/os/IBinder;,frameworks/base/core/java/com/android/internal/os/RuntimeInit.java,510,5,510,25,

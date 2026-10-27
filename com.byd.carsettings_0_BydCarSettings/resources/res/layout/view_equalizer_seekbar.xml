@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minWidth="@dimen/dp_40">
+    <TextView
+        android:textSize="@dimen/sp_16"
+        android:textColor="@color/text_color_main_dilink_pagers"
+        android:id="@+id/tv_value_equalizer_seekbar"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <com.byd.carsettings.ui.widget.BydVerticalSeekBar
+        android:id="@+id/sbar_view_equalizer_seekbar"
+        android:background="@color/transparent_100"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:progressDrawable="@drawable/layer_blue_gray_seekbar_track"
+        android:layout_weight="1"
+        android:splitTrack="false"
+        app:byd_thumb_drawable="@drawable/seekbar_thumb_point"
+        app:byd_thumb_height="@dimen/dp_20"
+        app:byd_thumb_width="@dimen/dp_20"/>
+    <TextView
+        android:textSize="@dimen/sp_16"
+        android:textColor="@color/text_color_main_dilink_pagers"
+        android:id="@+id/tv_title_equalizer_seekbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

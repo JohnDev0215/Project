@@ -1,0 +1,50 @@
+package defpackage;
+
+import android.R;
+import android.content.Context;
+import android.os.Build;
+import android.util.Log;
+import android.util.TypedValue;
+import android.view.ViewConfiguration;
+import java.lang.reflect.Method;
+
+/* JADX INFO: renamed from: p3, reason: case insensitive filesystem */
+/* JADX INFO: compiled from: chromium-SystemWebView.apk-default-410412053 */
+/* JADX INFO: loaded from: classes.dex */
+public abstract class AbstractC1306p3 {
+    public static Method a;
+
+    static {
+        if (Build.VERSION.SDK_INT == 25) {
+            try {
+                a = ViewConfiguration.class.getDeclaredMethod("getScaledScrollFactor", new Class[0]);
+            } catch (Exception unused) {
+                Log.i("ViewConfigCompat", "Could not find method getScaledScrollFactor() on ViewConfiguration");
+            }
+        }
+    }
+
+    public static float a(ViewConfiguration viewConfiguration, Context context) {
+        Method method;
+        if (Build.VERSION.SDK_INT >= 25 && (method = a) != null) {
+            try {
+                return ((Integer) method.invoke(viewConfiguration, new Object[0])).intValue();
+            } catch (Exception unused) {
+                Log.i("ViewConfigCompat", "Could not find method getScaledScrollFactor() on ViewConfiguration");
+            }
+        }
+        TypedValue typedValue = new TypedValue();
+        if (context.getTheme().resolveAttribute(R.attr.listPreferredItemHeight, typedValue, true)) {
+            return typedValue.getDimension(context.getResources().getDisplayMetrics());
+        }
+        return 0.0f;
+    }
+
+    public static float b(ViewConfiguration viewConfiguration, Context context) {
+        return Build.VERSION.SDK_INT >= 26 ? viewConfiguration.getScaledHorizontalScrollFactor() : a(viewConfiguration, context);
+    }
+
+    public static int c(ViewConfiguration viewConfiguration) {
+        return Build.VERSION.SDK_INT >= 28 ? viewConfiguration.getScaledHoverSlop() : viewConfiguration.getScaledTouchSlop() / 2;
+    }
+}

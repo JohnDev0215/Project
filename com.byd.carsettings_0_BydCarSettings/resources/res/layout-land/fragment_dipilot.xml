@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.byd.dipilot.widget.InterceptTouchRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/adas_parent_car_common"
+    android:tag="layout-land/fragment_dipilot_0"
+    android:clipChildren="false"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.bydux.api.common.views.window.DampingScrollView
+        android:id="@+id/adas_damping_horizontal_scrollview"
+        android:scrollbars="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_16"
+        android:layout_marginStart="@dimen/dp_8"
+        app:orientation="horiziton">
+        <com.google.android.material.tabs.TabLayout
+            android:layout_gravity="start"
+            android:id="@+id/adas_car_tablayout"
+            style="@style/byd_tablayout_adas_style"/>
+    </com.bydux.api.common.views.window.DampingScrollView>
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/adas_car_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/dp_60"
+        android:layout_marginStart="@dimen/dp_32"/>
+</com.byd.dipilot.widget.InterceptTouchRelativeLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/payment_request_spinny"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/editor_dialog_section_large_spacing">
+    <ProgressBar
+        android:layout_gravity="top|center_horizontal"
+        android:id="@+id/waiting_progress"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="28dp"/>
+    <TextView
+        android:textAppearance="@style/TextAppearance.TextLarge.Secondary"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="@dimen/editor_dialog_section_large_spacing"
+        android:layout_marginStart="@dimen/editor_dialog_section_large_spacing"
+        android:layout_marginEnd="@dimen/editor_dialog_section_large_spacing"/>
+</FrameLayout>

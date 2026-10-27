@@ -1,0 +1,14 @@
+package com.google.type;
+
+import com.google.protobuf.MessageOrBuilder;
+
+/* JADX INFO: loaded from: classes3.dex */
+public interface QuaternionOrBuilder extends MessageOrBuilder {
+    double getW();
+
+    double getX();
+
+    double getY();
+
+    double getZ();
+}

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="16dp"
+    android:layout_marginBottom="15dp">
+    <ImageView
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/touch_to_fill_sheet_header_image"
+        android:layout_width="@dimen/touch_to_fill_favicon_size_modern"
+        android:layout_height="@dimen/touch_to_fill_favicon_size_modern"
+        android:layout_marginBottom="8dp"
+        android:importantForAccessibility="no"/>
+    <androidx.appcompat.widget.DialogTitle
+        android:textAppearance="@style/TextAppearance.AlertDialogTitleStyle"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/touch_to_fill_sheet_title"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"/>
+    <org.chromium.ui.widget.TextViewWithLeading
+        android:textAppearance="@style/TextAppearance.TextMedium.Secondary"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/touch_to_fill_sheet_subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="86dp"
+    android:layout_height="86dp">
+    <org.chromium.components.browser_ui.widget.RoundedCornerImageView
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/thumbnail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:importantForAccessibility="no"
+        app:cornerRadiusBottomEnd="@dimen/default_rounded_corner_radius"
+        app:cornerRadiusBottomStart="@dimen/default_rounded_corner_radius"
+        app:cornerRadiusTopEnd="@dimen/default_rounded_corner_radius"
+        app:cornerRadiusTopStart="@dimen/default_rounded_corner_radius"/>
+    <ImageView
+        android:id="@+id/gradient_overlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:importantForAccessibility="no"
+        app:srcCompat="@drawable/query_tile_overlay"/>
+    <TextView
+        android:textAppearance="@style/TextAppearance.TextSmall.Primary.Baseline.Light"
+        android:id="@+id/title"
+        android:paddingBottom="6dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:breakStrategy="balanced"/>
+</RelativeLayout>

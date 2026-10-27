@@ -1,0 +1,10 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/media/MediaRouter$RouteInfo;->mNameResId:I,frameworks/base/media/java/android/media/MediaRouter.java,1613,9,1613,29,
+Landroid/media/MediaRouter$RouteInfo;->STATUS_CONNECTING:I,frameworks/base/media/java/android/media/MediaRouter.java,1646,9,1646,29,
+Landroid/media/MediaRouter$RouteInfo;->getName(Landroid/content/res/Resources;)Ljava/lang/CharSequence;,frameworks/base/media/java/android/media/MediaRouter.java,1764,9,1764,29,
+Landroid/media/MediaRouter$RouteInfo;->getStatusCode()I,frameworks/base/media/java/android/media/MediaRouter.java,1860,9,1860,29,
+Landroid/media/MediaRouter$RouteInfo;->matchesTypes(I)Z,frameworks/base/media/java/android/media/MediaRouter.java,1885,9,1885,29,
+Landroid/media/MediaRouter$RouteInfo;->getDeviceAddress()Ljava/lang/String;,frameworks/base/media/java/android/media/MediaRouter.java,2119,9,2119,29,
+Landroid/media/MediaRouter$RouteInfo;->isSelected()Z,frameworks/base/media/java/android/media/MediaRouter.java,2144,9,2144,29,
+Landroid/media/MediaRouter$RouteInfo;->isDefault()Z,frameworks/base/media/java/android/media/MediaRouter.java,2150,9,2150,92,maxTargetSdk=28&trackingBug=115609023L
+Landroid/media/MediaRouter$RouteInfo;->select()V,frameworks/base/media/java/android/media/MediaRouter.java,2161,9,2161,29,

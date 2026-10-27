@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android" android:oneshot="true">
+    <item
+        android:duration="34"
+        android:drawable="@drawable/bg_listen_to_speak_blue_000"/>
+    <item
+        android:duration="34"
+        android:drawable="@drawable/bg_listen_to_speak_blue_001"/>
+    <item
+        android:duration="34"
+        android:drawable="@drawable/bg_listen_to_speak_blue_002"/>
+    <item
+        android:duration="34"
+        android:drawable="@drawable/bg_listen_to_speak_blue_003"/>
+    <item
+        android:duration="34"
+        android:drawable="@drawable/bg_listen_to_speak_blue_004"/>
+    <item
+        android:duration="34"
+        android:drawable="@drawable/bg_listen_to_speak_blue_005"/>
+    <item
+        android:duration="34"
+        android:drawable="@drawable/bg_listen_to_speak_blue_006"/>
+    <item
+        android:duration="34"
+        android:drawable="@drawable/bg_listen_to_speak_blue_007"/>
+    <item
+        android:duration="34"
+        android:drawable="@drawable/bg_listen_to_speak_blue_008"/>
+    <item
+        android:duration="34"
+        android:drawable="@drawable/bg_listen_to_speak_blue_009"/>
+</animation-list>

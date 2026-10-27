@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:paddingBottom="8dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include
+        android:id="@+id/header_view_item"
+        layout="@layout/account_selection_header_item"/>
+    <FrameLayout
+        android:id="@+id/sheet_item_list_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/sheet_item_list"
+            android:clipToPadding="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@null"/>
+    </FrameLayout>
+    <include
+        android:id="@+id/account_selection_continue_btn"
+        android:visibility="gone"
+        layout="@layout/account_selection_continue_button"/>
+    <include
+        android:id="@+id/user_data_sharing_consent"
+        android:visibility="gone"
+        layout="@layout/account_selection_data_sharing_consent_item"/>
+</LinearLayout>

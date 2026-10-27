@@ -1,0 +1,7 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/app/DownloadManager;->UNDERLYING_COLUMNS:[Ljava/lang/String;,frameworks/base/core/java/android/app/DownloadManager.java,354,5,354,25,
+Landroid/app/DownloadManager;->setAccessAllDownloads(Z)V,frameworks/base/core/java/android/app/DownloadManager.java,1063,5,1063,25,
+Landroid/app/DownloadManager;->setAccessFilename(Z)V,frameworks/base/core/java/android/app/DownloadManager.java,1073,5,1073,88,maxTargetSdk=28&trackingBug=115609023L
+Landroid/app/DownloadManager;->restartDownload([J)V,frameworks/base/core/java/android/app/DownloadManager.java,1248,5,1248,25,
+Landroid/app/DownloadManager;->getWhereClauseForIds([J)Ljava/lang/String;,frameworks/base/core/java/android/app/DownloadManager.java,1649,5,1649,25,
+Landroid/app/DownloadManager;->getWhereArgsForIds([J)[Ljava/lang/String;,frameworks/base/core/java/android/app/DownloadManager.java,1667,5,1667,25,

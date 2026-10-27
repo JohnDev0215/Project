@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:paddingStart="@dimen/dp_38"
+        android:paddingEnd="@dimen/dp_24">
+        <com.byd.carsettings.ui.widget.LengthMaxTextView
+            android:textSize="@dimen/sp_20"
+            android:textColor="@color/text_color_main"
+            android:id="@+id/tv_bt_name_bt_pair_failed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxWidth="@dimen/dp_390"
+            android:text="@string/title_bt_pair_failed"/>
+        <TextView
+            android:textSize="@dimen/sp_16"
+            android:textColor="@color/text_color_main_gray"
+            android:id="@+id/tv_failed_hint_bt_pair_failed"
+            android:layout_width="@dimen/dp_390"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_8"
+            android:text="@string/tips_bt_pair_failed"/>
+    </LinearLayout>
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:id="@+id/ll_operation_bottom_bt_pair_failed"
+        android:layout_width="@dimen/dp_392"
+        android:layout_height="@dimen/dp_104"
+        android:layout_alignParentBottom="true"
+        android:paddingStart="@dimen/dp_29">
+        <com.byd.carsettings.ui.widget.BydInvalidButton
+            android:id="@+id/btn_repair_bt_pair_failed"
+            android:text="@string/link_repair"
+            style="@style/dialog_btn_cancel_dilink_bt"/>
+        <com.byd.carsettings.ui.widget.BydInvalidButton
+            android:id="@+id/btn_cancel_bt_pair_failed"
+            android:text="@string/cancel_btn"
+            android:layout_marginStart="@dimen/dp_40"
+            style="@style/dialog_btn_cancel_dilink_bt"/>
+    </LinearLayout>
+</RelativeLayout>

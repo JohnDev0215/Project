@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/sb_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/welcome_main_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:animateLayoutChanges="true">
+        <ImageView
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/image"
+            android:layout_width="@dimen/setting_step_illustration_width"
+            android:layout_height="@dimen/setting_step_illustration_height"
+            android:src="@drawable/privacy_guide_sb_image"
+            android:importantForAccessibility="no"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/privacy_guide_safe_browsing_intro"
+            android:drawablePadding="16dp"
+            android:layout_marginHorizontal="@dimen/all_content_marginHorizontal"
+            android:layout_marginVertical="8dp"
+            style="@style/TextAppearance.TextLarge.Primary"/>
+        <org.chromium.components.browser_ui.widget.RadioButtonWithDescriptionLayout
+            android:id="@+id/sb_radio_button"
+            android:focusable="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <org.chromium.components.browser_ui.widget.RadioButtonWithDescriptionAndAuxButton
+                android:id="@+id/enhanced_option"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:descriptionText="@string/privacy_guide_safe_browsing_enhanced_description"
+                app:primaryText="@string/privacy_guide_safe_browsing_enhanced_title"/>
+            <org.chromium.components.browser_ui.widget.RadioButtonWithDescriptionAndAuxButton
+                android:id="@+id/standard_option"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:descriptionText="@string/privacy_guide_safe_browsing_standard_description"
+                app:primaryText="@string/privacy_guide_safe_browsing_standard_title"/>
+        </org.chromium.components.browser_ui.widget.RadioButtonWithDescriptionLayout>
+    </LinearLayout>
+</ScrollView>

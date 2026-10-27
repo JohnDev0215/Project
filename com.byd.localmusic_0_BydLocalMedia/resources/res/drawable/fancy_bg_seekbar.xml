@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@android:id/background">
+        <shape>
+            <gradient
+                android:startColor="@color/fancy_bg_seekbar"
+                android:endColor="@color/fancy_bg_seekbar"
+                android:angle="270"
+                android:centerY="0.75"
+                android:centerColor="@color/fancy_bg_seekbar"/>
+        </shape>
+    </item>
+    <item android:id="@android:id/secondaryProgress">
+        <clip>
+            <shape>
+                <solid android:color="@color/fancy_bg_color_item_music_name"/>
+            </shape>
+        </clip>
+    </item>
+    <item android:id="@android:id/progress">
+        <clip>
+            <shape>
+                <gradient
+                    android:startColor="@color/fancy_top_text_color_white"
+                    android:endColor="#ccffffff"
+                    android:angle="0"/>
+            </shape>
+        </clip>
+    </item>
+</layer-list>

@@ -1,0 +1,3 @@
+signature,file,startline,startcol,endline,endcol,properties
+Lcom/android/internal/view/IInputConnectionWrapper;->mInputConnection:Landroid/view/inputmethod/InputConnection;,frameworks/base/core/java/com/android/internal/view/IInputConnectionWrapper.java,76,5,76,88,maxTargetSdk=28&trackingBug=115609023L
+Lcom/android/internal/view/IInputConnectionWrapper;->mLock:Ljava/lang/Object;,frameworks/base/core/java/com/android/internal/view/IInputConnectionWrapper.java,81,5,81,25,

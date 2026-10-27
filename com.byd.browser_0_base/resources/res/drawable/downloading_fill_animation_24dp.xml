@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" android:drawable="@drawable/_downloading_fill_animation_24dp__0_res_0x7f080017">
+    <target
+        android:name="arrow_clip"
+        android:animation="@drawable/_downloading_fill_animation_24dp__1_res_0x7f080018"/>
+    <target
+        android:name="arrow_blue"
+        android:animation="@drawable/_downloading_fill_animation_24dp__2_res_0x7f080019"/>
+    <target
+        android:name="bar"
+        android:animation="@drawable/_downloading_fill_animation_24dp__3_res_0x7f08001a"/>
+</animated-vector>

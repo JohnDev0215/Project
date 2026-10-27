@@ -1,0 +1,7 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/app/TaskInfo;->userId:I,frameworks/base/core/java/android/app/TaskInfo.java,42,5,42,25,
+Landroid/app/TaskInfo;->stackId:I,frameworks/base/core/java/android/app/TaskInfo.java,49,5,49,25,
+Landroid/app/TaskInfo;->lastActiveTime:J,frameworks/base/core/java/android/app/TaskInfo.java,106,5,106,25,
+Landroid/app/TaskInfo;->supportsSplitScreenMultiWindow:Z,frameworks/base/core/java/android/app/TaskInfo.java,126,5,126,25,
+Landroid/app/TaskInfo;->resizeMode:I,frameworks/base/core/java/android/app/TaskInfo.java,133,5,133,25,
+Landroid/app/TaskInfo;->configuration:Landroid/content/res/Configuration;,frameworks/base/core/java/android/app/TaskInfo.java,141,5,141,25,

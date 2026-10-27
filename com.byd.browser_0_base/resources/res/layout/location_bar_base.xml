@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <Space
+        android:id="@+id/location_bar_status_view_left_space"
+        android:focusable="false"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"/>
+    <include layout="@layout/location_status"/>
+    <Space
+        android:id="@+id/location_bar_status_view_right_space"
+        android:focusable="false"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"/>
+    <include
+        android:layout_gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="3dp"
+        android:nextFocusForward="@+id/tab_switcher_button"
+        android:layout_marginStart="@dimen/location_bar_icon_width"
+        layout="@layout/url_bar"/>
+    <include layout="@layout/url_action_container"/>
+</merge>

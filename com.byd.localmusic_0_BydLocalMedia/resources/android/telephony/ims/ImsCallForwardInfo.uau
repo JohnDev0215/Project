@@ -1,0 +1,8 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/telephony/ims/ImsCallForwardInfo;->mCondition:I,frameworks/base/telephony/java/android/telephony/ims/ImsCallForwardInfo.java,133,5,133,25,
+Landroid/telephony/ims/ImsCallForwardInfo;->mStatus:I,frameworks/base/telephony/java/android/telephony/ims/ImsCallForwardInfo.java,136,5,136,25,
+Landroid/telephony/ims/ImsCallForwardInfo;->mToA:I,frameworks/base/telephony/java/android/telephony/ims/ImsCallForwardInfo.java,139,5,139,25,
+Landroid/telephony/ims/ImsCallForwardInfo;->mServiceClass:I,frameworks/base/telephony/java/android/telephony/ims/ImsCallForwardInfo.java,142,5,142,25,
+Landroid/telephony/ims/ImsCallForwardInfo;->mNumber:Ljava/lang/String;,frameworks/base/telephony/java/android/telephony/ims/ImsCallForwardInfo.java,145,5,145,25,
+Landroid/telephony/ims/ImsCallForwardInfo;->mTimeSeconds:I,frameworks/base/telephony/java/android/telephony/ims/ImsCallForwardInfo.java,148,5,148,25,
+Landroid/telephony/ims/ImsCallForwardInfo;-><init>()V,frameworks/base/telephony/java/android/telephony/ims/ImsCallForwardInfo.java,152,5,152,25,

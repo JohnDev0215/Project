@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <org.chromium.components.browser_ui.accessibility.TextScalePreference
+        android:title="@string/font_size"
+        android:selectable="false"
+        android:key="text_scale"/>
+    <org.chromium.components.browser_ui.accessibility.PageZoomPreference
+        android:selectable="false"
+        android:key="page_zoom_default_zoom"/>
+    <org.chromium.components.browser_ui.settings.ChromeSwitchPreferenceSecondary
+        android:title="@string/page_zoom_always_show_preference_title"
+        android:key="page_zoom_always_show"
+        android:summary="@string/page_zoom_always_show_preference_summary"/>
+    <org.chromium.components.browser_ui.settings.ChromeSwitchPreferenceSecondary
+        android:title="@string/force_enable_zoom_title"
+        android:key="force_enable_zoom"
+        android:summary="@string/force_enable_zoom_summary"/>
+    <org.chromium.components.browser_ui.settings.ChromeSwitchPreferenceSecondary
+        android:title="@string/reader_for_accessibility_title"
+        android:key="reader_for_accessibility"
+        android:summary="@string/reader_for_accessibility_summary"/>
+    <org.chromium.components.browser_ui.settings.ChromeSwitchPreferenceSecondary
+        android:title="@string/accessibility_tab_switcher_title"
+        android:key="accessibility_tab_switcher"
+        android:summary="@string/accessibility_tab_switcher_summary"/>
+    <Preference
+        android:layout="@layout/preference_settings_no_padding"
+        android:title="@string/accessibility_captions_title"
+        android:key="captions"
+        app:isPreferenceVisible="false"/>
+</PreferenceScreen>

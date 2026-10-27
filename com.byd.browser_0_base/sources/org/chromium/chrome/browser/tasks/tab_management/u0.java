@@ -1,0 +1,106 @@
+package org.chromium.chrome.browser.tasks.tab_management;
+
+import android.content.res.ColorStateList;
+import android.util.Size;
+import android.view.View;
+import defpackage.v62;
+import org.chromium.chrome.browser.tasks.tab_management.h0;
+import org.chromium.chrome.browser.tasks.tab_management.j0;
+import org.chromium.chrome.browser.tasks.tab_management.n0;
+import org.chromium.ui.modelutil.PropertyModel;
+
+/* JADX INFO: compiled from: TabProperties.java */
+/* JADX INFO: loaded from: classes2.dex */
+public final class u0 {
+    public static final PropertyModel.r<String> A;
+    public static final PropertyModel.n B;
+    public static final v62[] C;
+    public static final v62[] D;
+    public static final PropertyModel.p a;
+    public static final PropertyModel.r<j0.l> b;
+    public static final PropertyModel.r<j0.l> c;
+    public static final PropertyModel.r<h0.c> d;
+    public static final PropertyModel.n e;
+    public static final PropertyModel.r<h0.d> f;
+    public static final PropertyModel.r<j0.o> g;
+    public static final PropertyModel.r<Size> h;
+    public static final PropertyModel.r<j0.i> i;
+    public static final PropertyModel.r<String> j;
+    public static final PropertyModel.n k;
+    public static final PropertyModel.r<ColorStateList> l;
+    public static final PropertyModel.r<j0.l> m;
+    public static final PropertyModel.p n;
+    public static final PropertyModel.r<j0.l> o;
+    public static final PropertyModel.r<org.chromium.components.browser_ui.widget.selectable_list.a<Integer>> p;
+    public static final PropertyModel.h q;
+    public static final PropertyModel.j r;
+    public static final PropertyModel.j s;
+    public static final PropertyModel.r<ColorStateList> t;
+    public static final PropertyModel.r<ColorStateList> u;
+    public static final PropertyModel.r<String> v;
+    public static final PropertyModel.r<View.AccessibilityDelegate> w;
+    public static final PropertyModel.r<j0.k> x;
+    public static final PropertyModel.r<j0.g> y;
+    public static final PropertyModel.r<String> z;
+
+    static {
+        PropertyModel.p pVar = new PropertyModel.p();
+        a = pVar;
+        PropertyModel.r<j0.l> rVar = new PropertyModel.r<>();
+        b = rVar;
+        PropertyModel.r<j0.l> rVar2 = new PropertyModel.r<>();
+        c = rVar2;
+        PropertyModel.r<h0.c> rVar3 = new PropertyModel.r<>();
+        d = rVar3;
+        PropertyModel.n nVar = new PropertyModel.n();
+        e = nVar;
+        PropertyModel.r<h0.d> rVar4 = new PropertyModel.r<>();
+        f = rVar4;
+        PropertyModel.r<j0.o> rVar5 = new PropertyModel.r<>(null, true);
+        g = rVar5;
+        PropertyModel.r<Size> rVar6 = new PropertyModel.r<>();
+        h = rVar6;
+        PropertyModel.r<j0.i> rVar7 = new PropertyModel.r<>();
+        i = rVar7;
+        PropertyModel.r<String> rVar8 = new PropertyModel.r<>();
+        j = rVar8;
+        PropertyModel.n nVar2 = new PropertyModel.n();
+        k = nVar2;
+        PropertyModel.r<ColorStateList> rVar9 = new PropertyModel.r<>();
+        l = rVar9;
+        PropertyModel.r<j0.l> rVar10 = new PropertyModel.r<>();
+        m = rVar10;
+        PropertyModel.p pVar2 = new PropertyModel.p();
+        n = pVar2;
+        PropertyModel.r<j0.l> rVar11 = new PropertyModel.r<>();
+        o = rVar11;
+        PropertyModel.r<org.chromium.components.browser_ui.widget.selectable_list.a<Integer>> rVar12 = new PropertyModel.r<>();
+        p = rVar12;
+        PropertyModel.h hVar = new PropertyModel.h();
+        q = hVar;
+        PropertyModel.j jVar = new PropertyModel.j();
+        r = jVar;
+        PropertyModel.j jVar2 = new PropertyModel.j();
+        s = jVar2;
+        PropertyModel.r<ColorStateList> rVar13 = new PropertyModel.r<>();
+        t = rVar13;
+        PropertyModel.r<ColorStateList> rVar14 = new PropertyModel.r<>();
+        u = rVar14;
+        PropertyModel.r<String> rVar15 = new PropertyModel.r<>();
+        v = rVar15;
+        PropertyModel.r<View.AccessibilityDelegate> rVar16 = new PropertyModel.r<>();
+        w = rVar16;
+        PropertyModel.r<j0.k> rVar17 = new PropertyModel.r<>(null, true);
+        x = rVar17;
+        PropertyModel.r<j0.g> rVar18 = new PropertyModel.r<>(null, true);
+        y = rVar18;
+        PropertyModel.r<String> rVar19 = new PropertyModel.r<>();
+        z = rVar19;
+        PropertyModel.r<String> rVar20 = new PropertyModel.r<>();
+        A = rVar20;
+        PropertyModel.n nVar3 = new PropertyModel.n();
+        B = nVar3;
+        C = new v62[]{pVar, rVar, rVar2, rVar3, nVar, rVar4, nVar2, hVar, rVar6, rVar5, rVar7, rVar8, rVar9, rVar10, n0.a.b, pVar2, rVar11, rVar12, jVar, jVar2, rVar13, rVar14, rVar15, rVar16, n0.a.a, rVar19, rVar20, rVar17, rVar18, nVar3};
+        D = new v62[]{pVar, rVar, rVar2, rVar3, nVar, rVar4, nVar2, rVar8, jVar2, hVar};
+    }
+}

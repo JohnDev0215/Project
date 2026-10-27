@@ -1,0 +1,8 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/content/ContextWrapper;->mBase:Landroid/content/Context;,frameworks/base/core/java/android/content/ContextWrapper.java,62,5,62,25,
+Landroid/content/ContextWrapper;->getThemeResId()I,frameworks/base/core/java/android/content/ContextWrapper.java,132,5,132,25,
+Landroid/content/ContextWrapper;->getBasePackageName()Ljava/lang/String;,frameworks/base/core/java/android/content/ContextWrapper.java,154,5,154,25,
+Landroid/content/ContextWrapper;->registerReceiverAsUser(Landroid/content/BroadcastReceiver;Landroid/os/UserHandle;Landroid/content/IntentFilter;Ljava/lang/String;Landroid/os/Handler;)Landroid/content/Intent;,frameworks/base/core/java/android/content/ContextWrapper.java,705,5,705,25,
+Landroid/content/ContextWrapper;->startServiceAsUser(Landroid/content/Intent;Landroid/os/UserHandle;)Landroid/content/ComponentName;,frameworks/base/core/java/android/content/ContextWrapper.java,735,5,735,25,
+Landroid/content/ContextWrapper;->startForegroundServiceAsUser(Landroid/content/Intent;Landroid/os/UserHandle;)Landroid/content/ComponentName;,frameworks/base/core/java/android/content/ContextWrapper.java,742,5,742,25,
+Landroid/content/ContextWrapper;->createApplicationContext(Landroid/content/pm/ApplicationInfo;I)Landroid/content/Context;,frameworks/base/core/java/android/content/ContextWrapper.java,945,5,945,25,

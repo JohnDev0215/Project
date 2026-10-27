@@ -1,0 +1,8 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/content/pm/PackageParser$IntentInfo;->hasDefault:Z,frameworks/base/core/java/android/content/pm/PackageParser.java,8403,9,8403,29,
+Landroid/content/pm/PackageParser$IntentInfo;->labelRes:I,frameworks/base/core/java/android/content/pm/PackageParser.java,8405,9,8405,29,
+Landroid/content/pm/PackageParser$IntentInfo;->nonLocalizedLabel:Ljava/lang/CharSequence;,frameworks/base/core/java/android/content/pm/PackageParser.java,8407,9,8407,29,
+Landroid/content/pm/PackageParser$IntentInfo;->icon:I,frameworks/base/core/java/android/content/pm/PackageParser.java,8409,9,8409,29,
+Landroid/content/pm/PackageParser$IntentInfo;->logo:I,frameworks/base/core/java/android/content/pm/PackageParser.java,8411,9,8411,29,
+Landroid/content/pm/PackageParser$IntentInfo;->banner:I,frameworks/base/core/java/android/content/pm/PackageParser.java,8413,9,8413,29,
+Landroid/content/pm/PackageParser$IntentInfo;-><init>()V,frameworks/base/core/java/android/content/pm/PackageParser.java,8417,9,8417,29,

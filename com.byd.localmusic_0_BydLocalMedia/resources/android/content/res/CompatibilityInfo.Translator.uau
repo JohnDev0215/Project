@@ -1,0 +1,11 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/content/res/CompatibilityInfo$Translator;->applicationScale:F,frameworks/base/core/java/android/content/res/CompatibilityInfo.java,312,9,312,29,
+Landroid/content/res/CompatibilityInfo$Translator;->applicationInvertedScale:F,frameworks/base/core/java/android/content/res/CompatibilityInfo.java,314,9,314,29,
+Landroid/content/res/CompatibilityInfo$Translator;->translateRectInScreenToAppWinFrame(Landroid/graphics/Rect;)V,frameworks/base/core/java/android/content/res/CompatibilityInfo.java,334,9,334,29,
+Landroid/content/res/CompatibilityInfo$Translator;->translateRegionInWindowToScreen(Landroid/graphics/Region;)V,frameworks/base/core/java/android/content/res/CompatibilityInfo.java,342,9,342,29,
+Landroid/content/res/CompatibilityInfo$Translator;->translateCanvas(Landroid/graphics/Canvas;)V,frameworks/base/core/java/android/content/res/CompatibilityInfo.java,350,9,350,29,
+Landroid/content/res/CompatibilityInfo$Translator;->translateEventInScreenToAppWindow(Landroid/view/MotionEvent;)V,frameworks/base/core/java/android/content/res/CompatibilityInfo.java,377,9,377,29,
+Landroid/content/res/CompatibilityInfo$Translator;->translateWindowLayout(Landroid/view/WindowManager$LayoutParams;)V,frameworks/base/core/java/android/content/res/CompatibilityInfo.java,386,9,386,29,
+Landroid/content/res/CompatibilityInfo$Translator;->translateRectInAppWindowToScreen(Landroid/graphics/Rect;)V,frameworks/base/core/java/android/content/res/CompatibilityInfo.java,394,9,394,29,
+Landroid/content/res/CompatibilityInfo$Translator;->translateRectInScreenToAppWindow(Landroid/graphics/Rect;)V,frameworks/base/core/java/android/content/res/CompatibilityInfo.java,402,9,402,29,
+Landroid/content/res/CompatibilityInfo$Translator;->getTranslatedContentInsets(Landroid/graphics/Rect;)Landroid/graphics/Rect;,frameworks/base/core/java/android/content/res/CompatibilityInfo.java,430,9,430,29,

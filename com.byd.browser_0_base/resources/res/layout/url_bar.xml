@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <org.chromium.chrome.browser.omnibox.UrlBarApi26
+        android:textSize="@dimen/location_bar_url_text_size"
+        android:textColorHint="@color/color_url_hint"
+        android:gravity="center_vertical"
+        android:id="@+id/url_bar"
+        android:background="@null"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:singleLine="true"
+        android:imeOptions="flagNoExtractUi|flagNoFullscreen|actionGo"
+        android:importantForAutofill="no"/>
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:id="@+id/url_bar_linearlayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/url_bar_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/search_url_bar"
+            app:tint="@color/search_url_bar_color"/>
+        <TextView
+            android:textSize="@dimen/location_bar_url_text_size"
+            android:textColorHint="@color/color_url_hint"
+            android:gravity="center"
+            android:id="@+id/url_bar_hint"
+            android:background="@android:color/transparent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/search_or_type_web_address"
+            android:singleLine="true"
+            android:drawablePadding="4dp"
+            android:imeOptions="flagNoExtractUi|flagNoFullscreen|actionGo"
+            android:layout_marginStart="@dimen/dimen_7_dp"
+            android:importantForAutofill="no"/>
+    </LinearLayout>
+</merge>

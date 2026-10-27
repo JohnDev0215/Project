@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<org.chromium.chrome.browser.keyboard_accessory.bar_component.KeyboardAccessoryView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_gravity="start|bottom"
+    android:orientation="vertical"
+    android:id="@+id/keyboard_accessory"
+    android:focusable="true"
+    android:visibility="gone"
+    android:scrollbars="none"
+    android:clickable="true"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/keyboard_accessory_height_with_shadow"
+    android:contentDescription="@string/autofill_keyboard_accessory_content_description"
+    android:paddingEnd="0dp">
+    <ImageView
+        android:id="@+id/accessory_shadow"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_shadow_height"
+        android:src="@drawable/modern_toolbar_shadow"
+        android:scaleType="fitXY"
+        android:scaleY="-1"/>
+    <LinearLayout
+        android:layout_gravity="start|bottom"
+        android:orientation="horizontal"
+        android:id="@+id/accessory_bar_contents"
+        android:background="@drawable/rectangle_surface_1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/keyboard_accessory_height">
+        <include
+            android:id="@+id/tabs"
+            layout="@layout/keyboard_accessory_tabs"/>
+        <View style="@style/VerticalDivider"/>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/bar_items_view"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+</org.chromium.chrome.browser.keyboard_accessory.bar_component.KeyboardAccessoryView>

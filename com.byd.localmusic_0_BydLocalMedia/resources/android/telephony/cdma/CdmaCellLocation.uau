@@ -1,0 +1,7 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/telephony/cdma/CdmaCellLocation;->mBaseStationId:I,frameworks/base/telephony/java/android/telephony/cdma/CdmaCellLocation.java,28,5,28,88,maxTargetSdk=28&trackingBug=115609023L
+Landroid/telephony/cdma/CdmaCellLocation;->mBaseStationLatitude:I,frameworks/base/telephony/java/android/telephony/cdma/CdmaCellLocation.java,42,5,42,88,maxTargetSdk=28&trackingBug=115609023L
+Landroid/telephony/cdma/CdmaCellLocation;->mBaseStationLongitude:I,frameworks/base/telephony/java/android/telephony/cdma/CdmaCellLocation.java,51,5,51,88,maxTargetSdk=28&trackingBug=115609023L
+Landroid/telephony/cdma/CdmaCellLocation;->mSystemId:I,frameworks/base/telephony/java/android/telephony/cdma/CdmaCellLocation.java,54,5,54,88,maxTargetSdk=28&trackingBug=115609023L
+Landroid/telephony/cdma/CdmaCellLocation;->mNetworkId:I,frameworks/base/telephony/java/android/telephony/cdma/CdmaCellLocation.java,56,5,56,88,maxTargetSdk=28&trackingBug=115609023L
+Landroid/telephony/cdma/CdmaCellLocation;->equalsHandlesNulls(Ljava/lang/Object;Ljava/lang/Object;)Z,frameworks/base/telephony/java/android/telephony/cdma/CdmaCellLocation.java,210,5,210,88,maxTargetSdk=28&trackingBug=115609023L

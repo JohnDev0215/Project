@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:id="@+id/app_language_prompt_row"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    style="@style/ListItemContainer">
+    <RadioButton
+        android:id="@+id/app_language_prompt_radiobutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingEnd="8dp"/>
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:importantForAccessibility="noHideDescendants">
+        <TextView
+            android:textAppearance="@style/TextAppearance.TextLarge.Primary"
+            android:ellipsize="end"
+            android:id="@+id/primary_language_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:singleLine="true"/>
+        <TextView
+            android:textAppearance="@style/TextAppearance.TextMedium.Secondary"
+            android:ellipsize="end"
+            android:id="@+id/secondary_language_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:singleLine="true"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,231 @@
+{
+    "version": "1.0.0",
+    "update_date": "2023/12/08",
+    "rules": [
+        {
+            "note": "【本地默认集成】空调 + 车控 域命令上云端识别",
+            "country_codes": [
+                "default"
+            ],
+            "vehicle_codes": [
+                "default"
+            ],
+            "language_rules": [
+                {
+                    "languages": [
+                        "eng-USA"
+                    ],
+                    "rule": {
+                        "generic:close:connection_type": {
+                            "timeout": 1000
+                        },
+                        "generic:get:connection_type": {
+                            "timeout": 1000
+                        },
+                        "generic:na": {
+                            "timeout": 1000
+                        },
+                        "generic:set": {
+                            "timeout": 1000
+                        },
+                        "settings_and_control:change:fan": {
+                            "timeout": 1000
+                        },
+                        "settings_and_control:change:setting": {
+                            "timeout": 1000
+                        },
+                        "settings_and_control:change:theme": {
+                            "timeout": 1000
+                        },
+                        "settings_and_control:close:blinds": {
+                            "timeout": 1000
+                        },
+                        "settings_and_control:close:menu": {
+                            "timeout": 1000
+                        },
+                        "settings_and_control:close:windows": {
+                            "timeout": 1000
+                        },
+                        "settings_and_control:decrease:brightness": {
+                            "timeout": 1000
+                        },
+                        "settings_and_control:decrease:cooling": {
+                            "timeout": 1000
+                        },
+                        "settings_and_control:decrease:fan": {
+                            "timeout": 1000
+                        },
+                        "settings_and_control:decrease:heating": {
+                            "timeout": 1000
+                        },
+                        "settings_and_control:decrease:lights": {
+                            "timeout": 1000
+                        },
+                        "settings_and_control:decrease:temperature": {
+                            "timeout": 1000
+                        },
+                        "settings_and_control:desynchronize:climate_control": {
+                            "timeout": 1000
+                        },
+                        "settings_and_control:desynchronize:cooling": {
+                            "timeout": 1000
+                        },
+                        "settings_and_control:disable": {
+                            "timeout": 1000
+                        },
+                        "settings_and_control:disable:climate_control": {
+                            "timeout": 1000
+                        },
+                        "settings_and_control:disable:cooling": {
+                            "timeout": 1000
+                        },
+                        "settings_and_control:disable:defrost_mode": {
+                            "timeout": 1000
+                        },
+                        "settings_and_control:disable:demist_mode": {
+                            "timeout": 1000
+                        },
+                        "settings_and_control:disable:fan": {
+                            "timeout": 1000
+                        },
+                        "settings_and_control:disable:heating": {
+                            "timeout": 1000
+                        },
+                        "settings_and_control:disable:inside_air_mode": {
+                            "timeout": 1000
+                        },
+                        "settings_and_control:disable:lights": {
+                            "timeout": 1000
+                        },
+                        "settings_and_control:disable:outside_air_mode": {
+                            "timeout": 1000
+                        },
+                        "settings_and_control:enable": {
+                            "timeout": 1000
+                        },
+                        "settings_and_control:enable:climate_control": {
+                            "timeout": 1000
+                        },
+                        "settings_and_control:enable:cooling": {
+                            "timeout": 1000
+                        },
+                        "settings_and_control:enable:defrost_mode": {
+                            "timeout": 1000
+                        },
+                        "settings_and_control:enable:demist_mode": {
+                            "timeout": 1000
+                        },
+                        "settings_and_control:enable:fan": {
+                            "timeout": 1000
+                        },
+                        "settings_and_control:enable:heating": {
+                            "timeout": 1000
+                        },
+                        "settings_and_control:enable:inside_air_mode": {
+                            "timeout": 1000
+                        },
+                        "settings_and_control:enable:lights": {
+                            "timeout": 1000
+                        },
+                        "settings_and_control:enable:outside_air_mode": {
+                            "timeout": 1000
+                        },
+                        "settings_and_control:get:cooling": {
+                            "timeout": 1000
+                        },
+                        "settings_and_control:increase:brightness": {
+                            "timeout": 1000
+                        },
+                        "settings_and_control:increase:cooling": {
+                            "timeout": 1000
+                        },
+                        "settings_and_control:increase:fan": {
+                            "timeout": 1000
+                        },
+                        "settings_and_control:increase:lights": {
+                            "timeout": 1000
+                        },
+                        "settings_and_control:increase:temperature": {
+                            "timeout": 1000
+                        },
+                        "settings_and_control:maximize:brightness": {
+                            "timeout": 1000
+                        },
+                        "settings_and_control:maximize:lights": {
+                            "timeout": 1000
+                        },
+                        "settings_and_control:minimize:brightness": {
+                            "timeout": 1000
+                        },
+                        "settings_and_control:minimize:lights": {
+                            "timeout": 1000
+                        },
+                        "settings_and_control:na:lights": {
+                            "timeout": 1000
+                        },
+                        "settings_and_control:na:setting": {
+                            "timeout": 1000
+                        },
+                        "settings_and_control:na:theme": {
+                            "timeout": 1000
+                        },
+                        "settings_and_control:open:blinds": {
+                            "timeout": 1000
+                        },
+                        "settings_and_control:open:menu": {
+                            "timeout": 1000
+                        },
+                        "settings_and_control:open:setting": {
+                            "timeout": 1000
+                        },
+                        "settings_and_control:open:windows": {
+                            "timeout": 1000
+                        },
+                        "settings_and_control:set:brightness": {
+                            "timeout": 1000
+                        },
+                        "settings_and_control:set:cooling": {
+                            "timeout": 1000
+                        },
+                        "settings_and_control:set:fan": {
+                            "timeout": 1000
+                        },
+                        "settings_and_control:set:heating": {
+                            "timeout": 1000
+                        },
+                        "settings_and_control:set:light_color": {
+                            "timeout": 1000
+                        },
+                        "settings_and_control:set:lights": {
+                            "timeout": 1000
+                        },
+                        "settings_and_control:set:setting": {
+                            "timeout": 1000
+                        },
+                        "settings_and_control:set:temperature": {
+                            "timeout": 1000
+                        },
+                        "settings_and_control:set:windows": {
+                            "timeout": 1000
+                        },
+                        "settings_and_control:synchronize:climate_control": {
+                            "timeout": 1000
+                        },
+                        "settings_and_control:synchronize:cooling": {
+                            "timeout": 1000
+                        },
+                        "settings_and_control:tilt:windows": {
+                            "timeout": 1000
+                        },
+                        "statement:cold": {
+                            "timeout": 1000
+                        },
+                        "statement:hot": {
+                            "timeout": 1000
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}

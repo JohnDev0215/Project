@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingTop="4dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <org.chromium.components.browser_ui.widget.text.TextViewWithCompoundDrawables
+        android:gravity="start|center_vertical"
+        android:id="@+id/running_in_chrome_footer_text"
+        android:paddingTop="@dimen/custom_tabs_menu_footer_margin_vertical"
+        android:paddingBottom="@dimen/custom_tabs_menu_footer_margin_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:drawablePadding="@dimen/custom_tabs_menu_footer_margin_horizontal"
+        android:drawableStart="@mipmap/app_icon"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        app:drawableHeight="@dimen/custom_tabs_menu_footer_icon_size"
+        app:drawableWidth="@dimen/custom_tabs_menu_footer_icon_size"
+        style="@style/TextAppearance.TextSmall.Secondary"/>
+    <View
+        android:background="?attr/colorSurfaceVariant"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+</FrameLayout>

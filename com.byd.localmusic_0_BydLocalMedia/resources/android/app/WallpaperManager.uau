@@ -1,0 +1,12 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/app/WallpaperManager;->sGlobals:Landroid/app/WallpaperManager$Globals;,frameworks/base/core/java/android/app/WallpaperManager.java,220,5,220,25,
+Landroid/app/WallpaperManager;->getIWallpaperManager()Landroid/app/IWallpaperManager;,frameworks/base/core/java/android/app/WallpaperManager.java,758,5,758,25,
+Landroid/app/WallpaperManager;->getBitmap()Landroid/graphics/Bitmap;,frameworks/base/core/java/android/app/WallpaperManager.java,1109,5,1109,25,
+Landroid/app/WallpaperManager;->getBitmap(Z)Landroid/graphics/Bitmap;,frameworks/base/core/java/android/app/WallpaperManager.java,1121,5,1121,25,
+Landroid/app/WallpaperManager;->getBitmapList(IIZZ)Ljava/util/Map;,frameworks/base/core/java/android/app/WallpaperManager.java,1145,5,1145,25,
+Landroid/app/WallpaperManager;->addOnColorsChangedListener(Landroid/app/WallpaperManager$OnColorsChangedListener;Landroid/os/Handler;I)V,frameworks/base/core/java/android/app/WallpaperManager.java,1202,5,1202,25,
+Landroid/app/WallpaperManager;->getWallpaperColors(II)Landroid/app/WallpaperColors;,frameworks/base/core/java/android/app/WallpaperManager.java,1270,5,1270,25,
+Landroid/app/WallpaperManager;->getWallpaperFile(II)Landroid/os/ParcelFileDescriptor;,frameworks/base/core/java/android/app/WallpaperManager.java,1290,5,1290,25,
+Landroid/app/WallpaperManager;->setBitmap(Landroid/graphics/Bitmap;Landroid/graphics/Rect;ZII)I,frameworks/base/core/java/android/app/WallpaperManager.java,1613,5,1613,88,maxTargetSdk=28&trackingBug=115609023L
+Landroid/app/WallpaperManager;->setWallpaperComponent(Landroid/content/ComponentName;I)Z,frameworks/base/core/java/android/app/WallpaperManager.java,2104,5,2104,25,
+Landroid/app/WallpaperManager;->openDefaultWallpaper(Landroid/content/Context;I)Ljava/io/InputStream;,frameworks/base/core/java/android/app/WallpaperManager.java,2299,5,2299,25,

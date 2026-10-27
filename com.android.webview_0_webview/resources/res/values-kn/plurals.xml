@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="cookie_controls_blocked_cookies">
+        <item quantity="one">1 ಕುಕೀಯನ್ನು ನಿರ್ಬಂಧಿಸಲಾಗಿದೆ</item>
+        <item quantity="other">%d ಕುಕೀಗಳನ್ನು ನಿರ್ಬಂಧಿಸಲಾಗಿದೆ</item>
+    </plurals>
+    <plurals name="selected_items">
+        <item quantity="one">1 ಆಯ್ಕೆ ಮಾಡಲಾಗಿದೆ</item>
+        <item quantity="other">%d ಆಯ್ಕೆ ಮಾಡಲಾಗಿದೆ</item>
+    </plurals>
+</resources>

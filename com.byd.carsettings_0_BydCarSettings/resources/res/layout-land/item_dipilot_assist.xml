@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/adas_assist_container"
+    android:tag="layout-land/item_dipilot_assist_0"
+    android:background="@drawable/bg_frame_gray_a"
+    android:paddingTop="@dimen/dp_20"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_192"
+    android:maxWidth="@dimen/dp_490"
+    android:layoutDirection="ltr"
+    android:paddingStart="@dimen/dp_16">
+    <TextView
+        android:textSize="@dimen/sp_20"
+        android:textColor="@color/dialog_text_color_main"
+        android:ellipsize="end"
+        android:id="@+id/tv_assist_title"
+        android:tag="binding_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="3"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintEnd_toStartOf="@+id/iv_assist_notice"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <ImageView
+        android:id="@+id/iv_assist_notice"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_assist_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tv_assist_title"
+        app:layout_constraintTop_toTopOf="@+id/tv_assist_title"
+        style="@style/dipilot_notice_style"/>
+    <com.byd.base.view.BydSwitch
+        android:id="@+id/switch_recognition_intelligent_speed_control"
+        android:tag="binding_2"
+        android:layout_marginTop="@dimen/dp_20"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_assist_title"
+        style="@style/adas_switch_style"/>
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/iv_assist"
+        android:layout_width="@dimen/dp_320"
+        android:layout_height="@dimen/dp_124"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center"
+    android:id="@+id/fullscreen_notification"
+    android:paddingBottom="24dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:textAppearance="@style/TextAppearance.Toast"
+        android:layout_gravity="bottom|center_horizontal"
+        android:id="@+id/text"
+        android:background="@drawable/pill_background"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxWidth="@dimen/fullscreen_notification_max_width"
+        android:text="@string/immersive_fullscreen_api_notification"
+        android:textAlignment="center"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"/>
+</FrameLayout>

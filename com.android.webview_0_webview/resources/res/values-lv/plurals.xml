@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="cookie_controls_blocked_cookies">
+        <item quantity="zero">Bloķēti %d sīkfaili.</item>
+        <item quantity="one">Bloķēts 1 sīkfails.</item>
+        <item quantity="other">Bloķēti %d sīkfaili.</item>
+    </plurals>
+    <plurals name="selected_items">
+        <item quantity="zero">Atlasīti %d vienumi</item>
+        <item quantity="one">Atlasīts 1 vienums</item>
+        <item quantity="other">Atlasīti %d vienumi</item>
+    </plurals>
+</resources>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="start"
+    style="@style/AlertDialogContent">
+    <org.chromium.ui.widget.ChromeImageView
+        app:tint="@color/default_icon_color"
+        android:id="@id/icon"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/exclamation_triangle"/>
+    <org.chromium.ui.widget.TextViewWithLeading
+        app:leading="@dimen/text_size_large_leading"
+        android:textAppearance="@style/TextAppearance.TextLarge.Primary"
+        android:id="@id/text"
+        android:paddingTop="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="48dp"/>
+</FrameLayout>

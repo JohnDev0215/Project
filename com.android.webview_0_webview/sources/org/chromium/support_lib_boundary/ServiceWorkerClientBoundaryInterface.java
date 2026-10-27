@@ -1,0 +1,10 @@
+package org.chromium.support_lib_boundary;
+
+import android.webkit.WebResourceRequest;
+import android.webkit.WebResourceResponse;
+
+/* JADX INFO: compiled from: chromium-SystemWebView.apk-default-410412053 */
+/* JADX INFO: loaded from: classes.dex */
+public interface ServiceWorkerClientBoundaryInterface extends FeatureFlagHolderBoundaryInterface {
+    WebResourceResponse shouldInterceptRequest(WebResourceRequest webResourceRequest);
+}

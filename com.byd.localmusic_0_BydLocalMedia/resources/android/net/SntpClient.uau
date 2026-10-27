@@ -1,0 +1,6 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/net/SntpClient;-><init>()V,frameworks/base/core/java/android/net/SntpClient.java,81,5,81,25,
+Landroid/net/SntpClient;->requestTime(Ljava/lang/String;I)Z,frameworks/base/core/java/android/net/SntpClient.java,183,5,183,25,
+Landroid/net/SntpClient;->getNtpTime()J,frameworks/base/core/java/android/net/SntpClient.java,194,5,194,25,
+Landroid/net/SntpClient;->getNtpTimeReference()J,frameworks/base/core/java/android/net/SntpClient.java,205,5,205,25,
+Landroid/net/SntpClient;->getRoundTripTime()J,frameworks/base/core/java/android/net/SntpClient.java,215,5,215,25,

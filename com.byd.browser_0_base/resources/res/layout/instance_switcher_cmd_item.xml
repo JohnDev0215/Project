@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center_horizontal"
+    android:id="@+id/content"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    style="@style/ListItemContainer">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/new_window"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_gravity="center_vertical"
+            android:id="@+id/favicon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_add"
+            android:scaleType="fitCenter"
+            android:importantForAccessibility="no"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginVertical="20dp"
+            app:tint="?attr/colorPrimary"/>
+        <org.chromium.ui.widget.TextViewWithLeading
+            android:textAppearance="@style/TextAppearance.TextLarge.Primary"
+            android:layout_gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/menu_new_window"
+            app:leading="@dimen/text_size_large_leading"/>
+    </LinearLayout>
+    <TextView
+        android:textAppearance="@style/TextAppearance.TextMedium.Secondary"
+        android:gravity="center"
+        android:id="@+id/max_info"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="64dp"
+        android:text="@string/max_number_of_windows"/>
+</RelativeLayout>

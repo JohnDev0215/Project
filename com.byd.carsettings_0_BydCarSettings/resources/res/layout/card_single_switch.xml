@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:background="@drawable/bg_frame_gray_a"
+        android:layout_width="@dimen/dp_490"
+        android:layout_height="@dimen/dp_144"
+        android:minWidth="@dimen/dp_490"
+        android:minHeight="@dimen/dp_144"
+        android:layout_centerInParent="true"
+        android:paddingStart="@dimen/dp_26">
+        <com.byd.base.view.BydSwitch
+            android:id="@+id/switch_card_single_switch"
+            style="@style/byd_switch"/>
+        <TextView
+            android:textSize="@dimen/sp_20"
+            android:textColor="@color/text_color_item_left_dilink_link"
+            android:id="@+id/tv_title_card_single_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_16"/>
+    </LinearLayout>
+</RelativeLayout>

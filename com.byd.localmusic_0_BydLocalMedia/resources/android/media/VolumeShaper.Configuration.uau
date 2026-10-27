@@ -1,0 +1,9 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/media/VolumeShaper$Configuration;->mType:I,frameworks/base/media/java/android/media/VolumeShaper.java,416,9,416,29,
+Landroid/media/VolumeShaper$Configuration;->mId:I,frameworks/base/media/java/android/media/VolumeShaper.java,420,9,420,29,
+Landroid/media/VolumeShaper$Configuration;->mOptionFlags:I,frameworks/base/media/java/android/media/VolumeShaper.java,424,9,424,29,
+Landroid/media/VolumeShaper$Configuration;->mDurationMs:D,frameworks/base/media/java/android/media/VolumeShaper.java,426,9,426,29,
+Landroid/media/VolumeShaper$Configuration;->mInterpolatorType:I,frameworks/base/media/java/android/media/VolumeShaper.java,428,9,428,29,
+Landroid/media/VolumeShaper$Configuration;->mTimes:[F,frameworks/base/media/java/android/media/VolumeShaper.java,430,9,430,29,
+Landroid/media/VolumeShaper$Configuration;->mVolumes:[F,frameworks/base/media/java/android/media/VolumeShaper.java,432,9,432,29,
+Landroid/media/VolumeShaper$Configuration;-><init>(IIIDI[F[F)V,frameworks/base/media/java/android/media/VolumeShaper.java,575,9,575,29,

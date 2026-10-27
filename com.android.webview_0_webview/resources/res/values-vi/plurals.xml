@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="cookie_controls_blocked_cookies">
+        <item quantity="one">Đã chặn 1 cookie</item>
+        <item quantity="other">Đã chặn %d cookie</item>
+    </plurals>
+    <plurals name="selected_items">
+        <item quantity="one">Đã chọn 1 mục</item>
+        <item quantity="other">Đã chọn %d mục</item>
+    </plurals>
+</resources>

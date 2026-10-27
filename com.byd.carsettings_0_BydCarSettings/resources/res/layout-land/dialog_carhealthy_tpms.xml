@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="@dimen/dp_39"
+    android:paddingEnd="@dimen/dp_39">
+    <ImageView
+        android:id="@+id/iv_dialog_tpms"
+        android:visibility="gone"
+        android:layout_width="@dimen/dp_72"
+        android:layout_height="@dimen/dp_72"
+        android:layout_marginTop="@dimen/dp_24"/>
+    <ProgressBar
+        android:id="@+id/progressbar"
+        android:layout_width="@dimen/dp_72"
+        android:layout_height="@dimen/dp_72"
+        android:layout_marginTop="@dimen/dp_24"
+        android:indeterminateDrawable="@drawable/progressbar_bg2"/>
+    <TextView
+        android:textSize="@dimen/sp_18"
+        android:textColor="?attr/dialog_text_color_main"
+        android:id="@+id/tv_dialog_tpms_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_16"
+        android:text="@string/vehiclehealth_tyre_pressure_resetting"/>
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:state_checked="true"
+        android:color="@color/left_bar_btn_text_color_s"/>
+    <item
+        android:state_selected="true"
+        android:color="?attr/byd_vehicle_massage_mode_selected_text_color"/>
+    <item android:color="?attr/byd_vehicle_massage_mode_normal_text_color"/>
+</selector>

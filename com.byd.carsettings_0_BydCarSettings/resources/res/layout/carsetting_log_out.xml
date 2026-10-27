@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="@dimen/dp_320"
+    android:layout_height="@dimen/dp_357">
+    <ImageView
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/img_empty_people"/>
+    <TextView
+        android:textSize="@dimen/sp_16"
+        android:textColor="@color/dialog_text_color_tips"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dipilot_carsetting_log_out"/>
+    <Button
+        android:textSize="@dimen/sp_18"
+        android:textColor="@color/white"
+        android:layout_gravity="center"
+        android:id="@+id/btn_positive"
+        android:background="@drawable/shape_bg_blue_radio_button"
+        android:layout_width="@dimen/dp_160"
+        android:layout_height="@dimen/dp_48"
+        android:layout_marginTop="@dimen/dp_40"
+        android:text="@string/dipilot_common_dialog_confirm"/>
+</LinearLayout>

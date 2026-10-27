@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<org.chromium.chrome.browser.keyboard_accessory.sheet_tabs.AccessorySheetTabView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/addresses_sheet"
+    android:background="?attr/colorSurface"
+    android:paddingBottom="@dimen/keyboard_accessory_sheet_footer_trailing_margin"
+    android:clipToPadding="false"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"/>

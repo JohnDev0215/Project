@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/accept_language_list_container"
+    android:padding="0dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="0dp"
+    android:paddingEnd="0dp"
+    style="@style/PreferenceLayout">
+    <TextView
+        android:padding="@dimen/draggable_list_item_padding"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/languages_list_description"/>
+    <FrameLayout
+        android:id="@android:id/widget_frame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:gravity="center_vertical"
+        android:id="@+id/add_language"
+        android:background="?attr/selectableItemBackground"
+        android:padding="@dimen/draggable_list_item_padding"
+        android:focusable="true"
+        android:clickable="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/add_language"
+        android:drawablePadding="@dimen/pref_languages_add_button_padding"
+        android:paddingStart="@dimen/pref_languages_add_button_padding"
+        style="@style/PreferenceTitle"/>
+</LinearLayout>

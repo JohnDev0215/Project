@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <org.chromium.components.browser_ui.settings.TextMessagePreference
+        android:layout="@layout/page_info_summary"
+        android:key="personalization_summary"/>
+    <Preference
+        android:key="topic_info"
+        app:iconSpaceReserved="false"/>
+    <org.chromium.components.browser_ui.settings.ButtonPreference
+        android:key="manage_interest_button"
+        app:buttonLayout="@layout/button_preference_text_button"/>
+</PreferenceScreen>

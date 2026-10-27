@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    style="@style/AppMenuItem">
+    <TextView
+        android:textAppearance="?android:attr/textAppearanceLargePopupMenu"
+        android:gravity="center_vertical"
+        android:layout_gravity="start"
+        android:id="@+id/menu_item_text"
+        android:paddingTop="13dp"
+        android:paddingBottom="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:gravity="center_vertical"
+        android:layout_gravity="start"
+        android:id="@+id/menu_item_secondary_text"
+        android:paddingTop="6dp"
+        android:paddingBottom="13dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <View
+        android:id="@+id/menu_item_list_divider"
+        android:background="?attr/colorSurfaceVariant"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+</LinearLayout>

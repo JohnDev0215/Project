@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+    <size
+        android:height="@dimen/preference_setting_switch_compat_min_height"
+        android:width="@dimen/preference_setting_switch_compat_min_width"/>
+    <solid android:color="@color/settings_preference_switch_track_off_color"/>
+    <corners android:radius="@dimen/preference_setting_switch_compat_radius"/>
+</shape>

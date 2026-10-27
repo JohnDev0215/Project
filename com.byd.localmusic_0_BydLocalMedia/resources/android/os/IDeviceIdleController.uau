@@ -1,0 +1,4 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/os/IDeviceIdleController;->getFullPowerWhitelistExceptIdle()[Ljava/lang/String;,frameworks/base/apex/jobscheduler/framework/java/android/os/IDeviceIdleController.aidl,34,1,34,25,
+Landroid/os/IDeviceIdleController;->getAppIdTempWhitelist()[I,frameworks/base/apex/jobscheduler/framework/java/android/os/IDeviceIdleController.aidl,40,1,40,25,
+Landroid/os/IDeviceIdleController;->addPowerSaveTempWhitelistApp(Ljava/lang/String;JILjava/lang/String;)V,frameworks/base/apex/jobscheduler/framework/java/android/os/IDeviceIdleController.aidl,44,1,44,25,

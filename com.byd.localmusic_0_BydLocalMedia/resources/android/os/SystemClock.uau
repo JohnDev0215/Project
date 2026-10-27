@@ -1,0 +1,4 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/os/SystemClock;-><init>()V,frameworks/base/core/java/android/os/SystemClock.java,110,5,110,25,
+Landroid/os/SystemClock;->currentThreadTimeMicro()J,frameworks/base/core/java/android/os/SystemClock.java,241,5,241,25,
+Landroid/os/SystemClock;->currentTimeMicro()J,frameworks/base/core/java/android/os/SystemClock.java,252,5,252,25,

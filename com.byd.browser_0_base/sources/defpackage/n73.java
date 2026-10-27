@@ -1,0 +1,104 @@
+package defpackage;
+
+import android.text.TextWatcher;
+import android.view.View;
+import android.widget.CompoundButton;
+import org.chromium.chrome.browser.ntp.a;
+import org.chromium.ui.modelutil.PropertyModel;
+
+/* JADX INFO: compiled from: TasksSurfaceProperties.java */
+/* JADX INFO: loaded from: classes2.dex */
+public final class n73 {
+    public static final PropertyModel.p A;
+    public static final PropertyModel.p B;
+    public static final PropertyModel.r C;
+    public static final v62[] D;
+    public static final PropertyModel.n a;
+    public static final PropertyModel.n b;
+    public static final PropertyModel.n c;
+    public static final PropertyModel.n d;
+    public static final PropertyModel.n e;
+    public static final PropertyModel.n f;
+    public static final PropertyModel.n g;
+    public static final PropertyModel.n h;
+    public static final PropertyModel.n i;
+    public static final PropertyModel.r<View.OnClickListener> j;
+    public static final PropertyModel.n k;
+    public static final PropertyModel.r<CompoundButton.OnCheckedChangeListener> l;
+    public static final PropertyModel.p m;
+    public static final PropertyModel.r<a> n;
+    public static final PropertyModel.r<View.OnClickListener> o;
+    public static final PropertyModel.r<View.OnClickListener> p;
+    public static final PropertyModel.r<TextWatcher> q;
+    public static final PropertyModel.r<View.OnClickListener> r;
+    public static final PropertyModel.r<View.OnClickListener> s;
+    public static final PropertyModel.n t;
+    public static final PropertyModel.n u;
+    public static final PropertyModel.r<View.OnClickListener> v;
+    public static final PropertyModel.p w;
+    public static final PropertyModel.p x;
+    public static final PropertyModel.p y;
+    public static final PropertyModel.p z;
+
+    static {
+        PropertyModel.n nVar = new PropertyModel.n();
+        a = nVar;
+        PropertyModel.n nVar2 = new PropertyModel.n();
+        b = nVar2;
+        PropertyModel.n nVar3 = new PropertyModel.n();
+        c = nVar3;
+        PropertyModel.n nVar4 = new PropertyModel.n();
+        d = nVar4;
+        PropertyModel.n nVar5 = new PropertyModel.n();
+        e = nVar5;
+        PropertyModel.n nVar6 = new PropertyModel.n();
+        f = nVar6;
+        PropertyModel.n nVar7 = new PropertyModel.n();
+        g = nVar7;
+        PropertyModel.n nVar8 = new PropertyModel.n();
+        h = nVar8;
+        PropertyModel.n nVar9 = new PropertyModel.n();
+        i = nVar9;
+        PropertyModel.r<View.OnClickListener> rVar = new PropertyModel.r<>();
+        j = rVar;
+        PropertyModel.n nVar10 = new PropertyModel.n();
+        k = nVar10;
+        PropertyModel.r<CompoundButton.OnCheckedChangeListener> rVar2 = new PropertyModel.r<>();
+        l = rVar2;
+        PropertyModel.p pVar = new PropertyModel.p();
+        m = pVar;
+        PropertyModel.r<a> rVar3 = new PropertyModel.r<>();
+        n = rVar3;
+        PropertyModel.r<View.OnClickListener> rVar4 = new PropertyModel.r<>();
+        o = rVar4;
+        PropertyModel.r<View.OnClickListener> rVar5 = new PropertyModel.r<>();
+        p = rVar5;
+        PropertyModel.r<TextWatcher> rVar6 = new PropertyModel.r<>();
+        q = rVar6;
+        PropertyModel.r<View.OnClickListener> rVar7 = new PropertyModel.r<>();
+        r = rVar7;
+        PropertyModel.r<View.OnClickListener> rVar8 = new PropertyModel.r<>();
+        s = rVar8;
+        PropertyModel.n nVar11 = xi1.a;
+        t = nVar11;
+        PropertyModel.n nVar12 = new PropertyModel.n();
+        u = nVar12;
+        PropertyModel.r<View.OnClickListener> rVar9 = new PropertyModel.r<>();
+        v = rVar9;
+        PropertyModel.p pVar2 = new PropertyModel.p();
+        w = pVar2;
+        PropertyModel.p pVar3 = new PropertyModel.p();
+        x = pVar3;
+        PropertyModel.p pVar4 = new PropertyModel.p();
+        y = pVar4;
+        PropertyModel.p pVar5 = new PropertyModel.p();
+        z = pVar5;
+        PropertyModel.p pVar6 = new PropertyModel.p();
+        A = pVar6;
+        PropertyModel.p pVar7 = new PropertyModel.p();
+        B = pVar7;
+        PropertyModel.r rVar10 = new PropertyModel.r(null, true);
+        C = rVar10;
+        D = new v62[]{nVar, nVar2, nVar3, nVar4, nVar5, nVar6, nVar7, nVar8, nVar9, rVar, nVar10, rVar2, pVar, rVar3, rVar4, rVar5, rVar6, rVar7, rVar8, nVar11, nVar12, rVar9, pVar2, pVar3, pVar4, pVar5, pVar6, rVar10, pVar7};
+    }
+}

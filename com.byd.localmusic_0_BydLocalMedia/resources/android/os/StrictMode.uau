@@ -1,0 +1,12 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/os/StrictMode;->getThreadPolicyMask()I,frameworks/base/core/java/android/os/StrictMode.java,1255,5,1255,25,
+Landroid/os/StrictMode;->enableDeathOnFileUriExposure()V,frameworks/base/core/java/android/os/StrictMode.java,1462,5,1462,25,
+Landroid/os/StrictMode;->disableDeathOnFileUriExposure()V,frameworks/base/core/java/android/os/StrictMode.java,1480,5,1480,25,
+Landroid/os/StrictMode;->violationsBeingTimed:Ljava/lang/ThreadLocal;,frameworks/base/core/java/android/os/StrictMode.java,1492,5,1492,25,
+Landroid/os/StrictMode;->conditionallyCheckInstanceCounts()V,frameworks/base/core/java/android/os/StrictMode.java,1947,5,1947,25,
+Landroid/os/StrictMode;->onWebViewMethodCalledOnWrongThread(Ljava/lang/Throwable;)V,frameworks/base/core/java/android/os/StrictMode.java,2122,5,2122,25,
+Landroid/os/StrictMode;->sLastVmViolationTime:Ljava/util/HashMap;,frameworks/base/core/java/android/os/StrictMode.java,2232,5,2232,25,
+Landroid/os/StrictMode;->onBinderStrictModePolicyChange(I)V,frameworks/base/core/java/android/os/StrictMode.java,2379,5,2379,25,
+Landroid/os/StrictMode;->sWindowManager:Landroid/util/Singleton;,frameworks/base/core/java/android/os/StrictMode.java,2488,5,2488,25,
+Landroid/os/StrictMode;->enterCriticalSpan(Ljava/lang/String;)Landroid/os/StrictMode$Span;,frameworks/base/core/java/android/os/StrictMode.java,2509,5,2509,25,
+Landroid/os/StrictMode;->incrementExpectedActivityCount(Ljava/lang/Class;)V,frameworks/base/core/java/android/os/StrictMode.java,2619,5,2619,25,

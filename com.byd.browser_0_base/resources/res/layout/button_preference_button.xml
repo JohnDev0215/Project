@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Button xmlns:android="http://schemas.android.com/apk/res/android"
+    android:textColor="@color/page_button_true_text_color"
+    android:layout_gravity="center"
+    android:id="@+id/button_preference"
+    android:background="@drawable/page_button_bg_true"
+    android:focusable="true"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    style="@style/ButtonTrue"/>

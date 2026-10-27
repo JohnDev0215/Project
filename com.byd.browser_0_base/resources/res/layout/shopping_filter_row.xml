@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/content"
+    style="@style/ListItemContainerV2">
+    <org.chromium.ui.widget.ChromeImageView
+        android:id="@+id/start_icon"
+        android:src="@drawable/price_tracking_enabled_outline"
+        android:importantForAccessibility="no"
+        style="@style/ListItemStartIcon"/>
+    <TextView
+        android:textAppearance="@style/TextAppearance.TextLarge.Primary"
+        android:ellipsize="end"
+        android:id="@+id/title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/price_tracking_bookmarks_filter_title"
+        android:maxLines="1"
+        android:layout_weight="1"/>
+    <org.chromium.ui.widget.ChromeImageView
+        android:id="@+id/end_icon"
+        android:src="@drawable/outline_chevron_right_24dp"
+        android:importantForAccessibility="no"
+        style="@style/ListItemEndIcon"/>
+</LinearLayout>

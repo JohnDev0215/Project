@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/bg_frame_gray_a"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.byd.carsettings.ui.widget.LinearItem
+        android:id="@+id/item_dirac_equalizer_sound_pager"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_88"
+        app:textLeft="@string/equalizer_sound"
+        app:textRight="@string/custom_sound_focus_dynaudio_sound"/>
+    <com.byd.carsettings.ui.widget.LinearItem
+        android:id="@+id/item_dirac_sound_field_balance_sound_pager"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_88"
+        app:textLeft="@string/sound_field_balance_sound"/>
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:height="@dimen/dp_80"
+        android:width="@dimen/dp_4"
+        android:bottom="@dimen/dp_8">
+        <shape>
+            <corners android:radius="@dimen/dp_2"/>
+            <gradient
+                android:startColor="@color/color_scroll_bg"
+                android:endColor="@color/color_scroll_bg"
+                android:angle="0"/>
+        </shape>
+    </item>
+</layer-list>

@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="accessibility_dialog_back_button">
+        <item quantity="one">Thu gọn %1$d thẻ.</item>
+        <item quantity="other">Thu gọn nhóm thẻ có %1$d thẻ.</item>
+    </plurals>
+    <plurals name="accessibility_dialog_back_button_with_group_name">
+        <item quantity="one">Thu gọn %1$d thẻ.</item>
+        <item quantity="other">Thu gọn nhóm thẻ %1$s có %2$d thẻ.</item>
+    </plurals>
+    <plurals name="accessibility_download_manager_ui_audio">
+        <item quantity="one">%d tệp âm thanh</item>
+        <item quantity="other">%d tệp âm thanh</item>
+    </plurals>
+    <plurals name="accessibility_download_manager_ui_generic">
+        <item quantity="one">%d tệp</item>
+        <item quantity="other">%d tệp</item>
+    </plurals>
+    <plurals name="accessibility_download_manager_ui_images">
+        <item quantity="one">%d hình ảnh</item>
+        <item quantity="other">%d hình ảnh</item>
+    </plurals>
+    <plurals name="accessibility_download_manager_ui_pages">
+        <item quantity="one">%d trang</item>
+        <item quantity="other">%d trang</item>
+    </plurals>
+    <plurals name="accessibility_download_manager_ui_video">
+        <item quantity="one">%d video</item>
+        <item quantity="other">%d video</item>
+    </plurals>
+    <plurals name="accessibility_merchant_viewer_message_description">
+        <item quantity="one"> Điểm xếp hạng: %1$s/%2$s, %3$d bài đánh giá</item>
+        <item quantity="other">Điểm xếp hạng: %1$s/%2$s, %3$d bài đánh giá</item>
+    </plurals>
+    <plurals name="accessibility_remove_selected_items">
+        <item quantity="one">Xóa 1 mục đã chọn</item>
+        <item quantity="other">Xóa %d mục đã chọn</item>
+    </plurals>
+    <plurals name="accessibility_share_selected_items">
+        <item quantity="one">Chia sẻ 1 mục đã chọn</item>
+        <item quantity="other">Chia sẻ %d mục đã chọn</item>
+    </plurals>
+    <plurals name="accessibility_tab_selection_dialog_remove_button">
+        <item quantity="one">Xóa %1$d thẻ đã chọn khỏi nhóm.</item>
+        <item quantity="other">Xóa %1$d thẻ đã chọn khỏi nhóm.</item>
+    </plurals>
+    <plurals name="accessibility_tab_selection_editor_bookmark_tabs_action_button">
+        <item quantity="one">Đánh dấu %1$d thẻ đã chọn</item>
+        <item quantity="other">Đánh dấu %1$d thẻ đã chọn</item>
+    </plurals>
+    <plurals name="accessibility_tab_selection_editor_close_tabs">
+        <item quantity="one">Đóng %1$d thẻ đã chọn</item>
+        <item quantity="other">Đóng %1$d thẻ đã chọn</item>
+    </plurals>
+    <plurals name="accessibility_tab_selection_editor_group_button">
+        <item quantity="one">Nhóm %1$d thẻ đã chọn</item>
+        <item quantity="other">Nhóm %1$d thẻ đã chọn</item>
+    </plurals>
+    <plurals name="accessibility_tab_selection_editor_group_tabs">
+        <item quantity="one">Nhóm %1$d thẻ đã chọn</item>
+        <item quantity="other">Nhóm %1$d thẻ đã chọn</item>
+    </plurals>
+    <plurals name="accessibility_tab_selection_editor_share_tabs_action_button">
+        <item quantity="one">Chia sẻ %1$d thẻ được chọn</item>
+        <item quantity="other">Chia sẻ %1$d thẻ được chọn</item>
+    </plurals>
+    <plurals name="accessibility_tab_selection_editor_ungroup_tabs">
+        <item quantity="one">Huỷ nhóm %1$d thẻ đã chọn</item>
+        <item quantity="other">Huỷ nhóm %1$d thẻ đã chọn</item>
+    </plurals>
+    <plurals name="accessibility_tab_suggestion_close_tab_action_button">
+        <item quantity="one">Đóng %1$d thẻ đã chọn</item>
+        <item quantity="other">Đóng %1$d thẻ đã chọn</item>
+    </plurals>
+    <plurals name="allsites_fps_list_summary">
+        <item quantity="one">Đã cho phép cookie cho trang web của %1$s %2$s</item>
+        <item quantity="other">Đã cho phép cookie cho các trang web của %1$s %2$s</item>
+    </plurals>
+    <plurals name="allsites_fps_summary">
+        <item quantity="one">%1$s trang web trong nhóm các trang web của %2$s có thể xem hoạt động của bạn trong nhóm</item>
+        <item quantity="other">%1$s trang web trong nhóm các trang web của %2$s có thể xem hoạt động của bạn trong nhóm</item>
+    </plurals>
+    <plurals name="bookmarks_count">
+        <item quantity="one">%1$d dấu trang</item>
+        <item quantity="other">%1$d dấu trang</item>
+    </plurals>
+    <plurals name="bottom_tab_grid_title_placeholder">
+        <item quantity="one">%1$d tab</item>
+        <item quantity="other">%1$d tab</item>
+    </plurals>
+    <plurals name="contacts_picker_more_details">
+        <item quantity="one">(+ 1 lựa chọn khác)</item>
+        <item quantity="other">(+ %d lựa chọn khác)</item>
+    </plurals>
+    <plurals name="cookie_controls_blocked_cookies">
+        <item quantity="one">Đã chặn 1 cookie</item>
+        <item quantity="other">Đã chặn %d cookie</item>
+    </plurals>
+    <plurals name="cookies_count">
+        <item quantity="one">%d cookie</item>
+        <item quantity="other">%d cookie</item>
+    </plurals>
+    <plurals name="download_manager_n_hours">
+        <item quantity="one">%d giờ</item>
+        <item quantity="other">%d giờ</item>
+    </plurals>
+    <plurals name="download_message_multiple_download_complete">
+        <item quantity="one">Đã tải tệp xuống</item>
+        <item quantity="other">Đã tải xong %d tệp xuống</item>
+    </plurals>
+    <plurals name="download_message_multiple_download_failed">
+        <item quantity="one">1 tệp tải xuống không thành công</item>
+        <item quantity="other">%d tệp tải xuống không thành công</item>
+    </plurals>
+    <plurals name="download_message_multiple_download_in_progress">
+        <item quantity="one">Đang tải tệp xuống…</item>
+        <item quantity="other">Đang tải %d tệp xuống…</item>
+    </plurals>
+    <plurals name="download_message_multiple_download_pending">
+        <item quantity="one">1 tệp đang chờ tải xuống</item>
+        <item quantity="other">%d tệp đang chờ tải xuống</item>
+    </plurals>
+    <plurals name="download_ui_files_downloaded">
+        <item quantity="one">Đã tải %1$d tệp xuống</item>
+        <item quantity="other">Đã tải %1$d tệp xuống</item>
+    </plurals>
+    <plurals name="history_clusters_n_matches">
+        <item quantity="one">%d kết quả phù hợp</item>
+        <item quantity="other">%d kết quả phù hợp</item>
+    </plurals>
+    <plurals name="instance_switcher_close_confirm_deleted_incognito">
+        <item quantity="one">%1$s thẻ ẩn danh sẽ đóng</item>
+        <item quantity="other">%1$s thẻ ẩn danh sẽ đóng</item>
+    </plurals>
+    <plurals name="instance_switcher_close_confirm_deleted_incognito_mixed">
+        <item quantity="one">%1$s thẻ ẩn danh và %2$s thẻ nữa sẽ đóng</item>
+        <item quantity="other">%1$s thẻ ẩn danh và %2$s thẻ nữa sẽ đóng</item>
+    </plurals>
+    <plurals name="instance_switcher_close_confirm_deleted_tabs_many">
+        <item quantity="one">Thẻ %1$s và %2$s thẻ khác sẽ đóng</item>
+        <item quantity="other">Thẻ %1$s và %2$s thẻ khác sẽ đóng</item>
+    </plurals>
+    <plurals name="instance_switcher_desc_incognito">
+        <item quantity="one">%1$s thẻ ẩn danh</item>
+        <item quantity="other">%1$s thẻ ẩn danh</item>
+    </plurals>
+    <plurals name="instance_switcher_desc_mixed">
+        <item quantity="one">%1$s thẻ</item>
+        <item quantity="other">%2$s thẻ, %1$s ẩn danh</item>
+    </plurals>
+    <plurals name="instance_switcher_tab_count_nonzero">
+        <item quantity="one">1 thẻ</item>
+        <item quantity="other">%d thẻ</item>
+    </plurals>
+    <plurals name="merchant_viewer_message_description_reviews">
+        <item quantity="one">(%1$s bài đánh giá)</item>
+        <item quantity="other">(%1$s bài đánh giá)</item>
+    </plurals>
+    <plurals name="merchant_viewer_message_description_reviews_from_google">
+        <item quantity="one">%1$s bài đánh giá trên Google</item>
+        <item quantity="other">%1$s bài đánh giá trên Google</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">%d thông báo mới</item>
+        <item quantity="other">%d thông báo mới</item>
+    </plurals>
+    <plurals name="n_days_ago">
+        <item quantity="one">%d ngày trước</item>
+        <item quantity="other">%d ngày trước</item>
+    </plurals>
+    <plurals name="n_hours_ago">
+        <item quantity="one">%d giờ trước</item>
+        <item quantity="other">%d giờ trước</item>
+    </plurals>
+    <plurals name="n_minutes_ago">
+        <item quantity="one">%d phút trước</item>
+        <item quantity="other">%d phút trước</item>
+    </plurals>
+    <plurals name="offline_pages_auto_fetch_in_progress_notification_text">
+        <item quantity="one">Chrome sẽ tải trang của bạn khi sẵn sàng</item>
+        <item quantity="other">Chrome sẽ tải trang của bạn khi sẵn sàng</item>
+    </plurals>
+    <plurals name="page_info_cookies_in_use">
+        <item quantity="one">1 cookie đang được sử dụng</item>
+        <item quantity="other">%d cookie đang được sử dụng</item>
+    </plurals>
+    <plurals name="page_info_permissions_summary_more_allowed">
+        <item quantity="one">Đã cho phép %1$s, %2$s và %3$s quyền khác</item>
+        <item quantity="other">Đã cho phép %1$s, %2$s và %3$s quyền khác</item>
+    </plurals>
+    <plurals name="page_info_permissions_summary_more_blocked">
+        <item quantity="one">Đã chặn %1$s, %2$s và %3$s quyền khác</item>
+        <item quantity="other">Đã chặn %1$s, %2$s và %3$s quyền khác</item>
+    </plurals>
+    <plurals name="page_info_permissions_summary_more_mixed">
+        <item quantity="one">%1$s, %2$s và %3$s quyền khác</item>
+        <item quantity="other">%1$s, %2$s và %3$s quyền khác</item>
+    </plurals>
+    <plurals name="password_check_status_message_idle_with_leaks">
+        <item quantity="one">%d mật khẩu bị lộ</item>
+        <item quantity="other">%d mật khẩu bị lộ</item>
+    </plurals>
+    <plurals name="payment_request_contacts_preview">
+        <item quantity="one">%1$s… và %2$s tùy chọn khác</item>
+        <item quantity="other">%1$s… và %2$s tùy chọn khác</item>
+    </plurals>
+    <plurals name="payment_request_payment_methods_preview">
+        <item quantity="one">%1$s… và %2$s tùy chọn khác</item>
+        <item quantity="other">%1$s… và %2$s tùy chọn khác</item>
+    </plurals>
+    <plurals name="payment_request_shipping_addresses_preview">
+        <item quantity="one">%1$s… và %2$s tùy chọn khác</item>
+        <item quantity="other">%1$s… và %2$s tùy chọn khác</item>
+    </plurals>
+    <plurals name="payment_request_shipping_options_preview">
+        <item quantity="one">%1$s… và %2$s tùy chọn khác</item>
+        <item quantity="other">%1$s… và %2$s tùy chọn khác</item>
+    </plurals>
+    <plurals name="reading_list_reminder_notification_subtitle">
+        <item quantity="one">Bạn chưa đọc %1$d trang</item>
+        <item quantity="other">Bạn chưa đọc %1$d trang</item>
+    </plurals>
+    <plurals name="reading_list_unread_page_count">
+        <item quantity="one">%1$d trang chưa đọc</item>
+        <item quantity="other">%1$d trang chưa đọc</item>
+    </plurals>
+    <plurals name="safety_check_passwords_compromised_exist">
+        <item quantity="one">1 mật khẩu bị lộ</item>
+        <item quantity="other">%d mật khẩu bị lộ</item>
+    </plurals>
+    <plurals name="safety_check_timestamp_after_days">
+        <item quantity="one">Đã kiểm tra 1 ngày trước</item>
+        <item quantity="other">Đã kiểm tra %d ngày trước</item>
+    </plurals>
+    <plurals name="safety_check_timestamp_after_hours">
+        <item quantity="one">Đã kiểm tra 1 giờ trước</item>
+        <item quantity="other">Đã kiểm tra %d giờ trước</item>
+    </plurals>
+    <plurals name="safety_check_timestamp_after_mins">
+        <item quantity="one">Đã kiểm tra 1 phút trước</item>
+        <item quantity="other">Đã kiểm tra %d phút trước</item>
+    </plurals>
+    <plurals name="selected_items">
+        <item quantity="one">Đã chọn 1 mục</item>
+        <item quantity="other">Đã chọn %d mục</item>
+    </plurals>
+    <plurals name="signal_strength_level_n_bars">
+        <item quantity="one">Mức cường độ tín hiệu: %d vạch</item>
+        <item quantity="other">Mức cường độ tín hiệu: %d vạch</item>
+    </plurals>
+    <plurals name="tab_selection_editor_bookmark_tabs_action_button">
+        <item quantity="one">Đánh dấu thẻ</item>
+        <item quantity="other">Đánh dấu các thẻ</item>
+    </plurals>
+    <plurals name="tab_selection_editor_close_tabs">
+        <item quantity="one">Đóng thẻ</item>
+        <item quantity="other">Đóng các thẻ</item>
+    </plurals>
+    <plurals name="tab_selection_editor_group_tabs">
+        <item quantity="one">Nhóm thẻ</item>
+        <item quantity="other">Nhóm các thẻ</item>
+    </plurals>
+    <plurals name="tab_selection_editor_share_sheet_preview_message">
+        <item quantity="one">%1$d đường liên kết từ Chrome</item>
+        <item quantity="other">%1$d đường liên kết từ Chrome</item>
+    </plurals>
+    <plurals name="tab_selection_editor_share_tabs_action_button">
+        <item quantity="one">Chia sẻ thẻ</item>
+        <item quantity="other">Chia sẻ các thẻ</item>
+    </plurals>
+    <plurals name="tab_selection_editor_tabs_count">
+        <item quantity="one">%1$d thẻ</item>
+        <item quantity="other">%1$d thẻ</item>
+    </plurals>
+    <plurals name="tab_selection_editor_ungroup_tabs">
+        <item quantity="one">Bỏ thẻ khỏi nhóm</item>
+        <item quantity="other">Bỏ thẻ khỏi nhóm</item>
+    </plurals>
+</resources>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="cookie_controls_blocked_cookies">
+        <item quantity="one">1 કુકીને બ્લૉક કરેલી છે</item>
+        <item quantity="other">%d કુકીને બ્લૉક કરેલી છે</item>
+    </plurals>
+    <plurals name="selected_items">
+        <item quantity="one">1 પસંદ કરી</item>
+        <item quantity="other">%d પસંદ કરી</item>
+    </plurals>
+</resources>

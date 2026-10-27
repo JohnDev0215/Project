@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="cookie_controls_blocked_cookies">
+        <item quantity="one">1 cookie файлы бөгөттөлдү</item>
+        <item quantity="other">%d cookie файлы бөгөттөлдү</item>
+    </plurals>
+    <plurals name="selected_items">
+        <item quantity="one">1 тандалды</item>
+        <item quantity="other">%d тандалды</item>
+    </plurals>
+</resources>

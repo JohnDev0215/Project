@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+    <solid android:color="@color/dialog_reset_bg"/>
+    <stroke
+        android:width="@dimen/dp_1"
+        android:color="#1a6a8497"/>
+    <corners android:radius="@dimen/dp_4"/>
+</shape>

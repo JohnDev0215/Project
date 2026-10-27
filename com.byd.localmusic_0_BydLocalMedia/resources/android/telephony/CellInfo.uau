@@ -1,0 +1,6 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/telephony/CellInfo;->TIMESTAMP_TYPE_UNKNOWN:I,frameworks/base/telephony/java/android/telephony/CellInfo.java,103,5,103,25,
+Landroid/telephony/CellInfo;->TIMESTAMP_TYPE_ANTENNA:I,frameworks/base/telephony/java/android/telephony/CellInfo.java,106,5,106,25,
+Landroid/telephony/CellInfo;->TIMESTAMP_TYPE_MODEM:I,frameworks/base/telephony/java/android/telephony/CellInfo.java,109,5,109,25,
+Landroid/telephony/CellInfo;->TIMESTAMP_TYPE_OEM_RIL:I,frameworks/base/telephony/java/android/telephony/CellInfo.java,112,5,112,25,
+Landroid/telephony/CellInfo;->TIMESTAMP_TYPE_JAVA_RIL:I,frameworks/base/telephony/java/android/telephony/CellInfo.java,115,5,115,25,
