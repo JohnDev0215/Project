@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="car_body_data_array">
+        <item>@string/car_light</item>
+        <item>@string/car_body_lock</item>
+        <item>@string/car_body_accessory</item>
+        <item>@string/car_body_suspension</item>
+        <item>@string/car_body_charge_title</item>
+    </array>
+    <array name="car_chair_data_array">
+        <item>@string/hvac_setting</item>
+        <item>@string/seat_setting</item>
+    </array>
+    <array name="driving_help_data_array">
+        <item>@string/assist_tips_setting</item>
+        <item>@string/assist_endwise_setting</item>
+        <item>@string/assist_broadwise_setting</item>
+        <item>@string/assist_stability_setting</item>
+        <item>@string/assist_park_setting</item>
+    </array>
+</resources>
