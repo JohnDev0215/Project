@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/swipeable_pages_mini_player_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ProgressBar
+        android:id="@+id/swipeable_pages_mini_player_progress_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/swipeable_pages_miniplayer_progress_bar_height"
+        style="?android:attr/progressBarStyleHorizontal"/>
+    <FrameLayout
+        android:id="@+id/swipeable_pages_mini_player_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

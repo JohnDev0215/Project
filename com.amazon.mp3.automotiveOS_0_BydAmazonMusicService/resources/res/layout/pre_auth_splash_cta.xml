@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/buttonRow"
+    android:paddingTop="@dimen/spacing_40dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/dialog_bottom_margin"
+    android:layout_marginRight="@dimen/dialog_bottom_margin">
+    <com.google.android.material.button.MaterialButton
+        android:textColor="@color/black"
+        android:id="@+id/signInSplashPrimaryButton"
+        android:tag="pre_auth_splash_signin_t1"
+        android:padding="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/pre_auth_splash_cta"
+        android:onClick="signInOnInteraction"
+        app:backgroundTint="@color/bauhaus_accent_primary_glass_1"
+        app:cornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonRow"
+        app:layout_constraintLeft_toLeftOf="@+id/buttonRow"
+        app:layout_constraintRight_toRightOf="@+id/buttonRow"
+        app:layout_constraintTop_toTopOf="@+id/buttonRow"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

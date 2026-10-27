@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android" android:oneshot="false">
+    <item
+        android:duration="160"
+        android:drawable="@drawable/podcast_transcript_equalizer_step_1_primary"/>
+    <item
+        android:duration="160"
+        android:drawable="@drawable/podcast_transcript_equalizer_step_2_primary"/>
+    <item
+        android:duration="160"
+        android:drawable="@drawable/podcast_transcript_equalizer_step_3_primary"/>
+    <item
+        android:duration="160"
+        android:drawable="@drawable/podcast_transcript_equalizer_step_4_primary"/>
+    <item
+        android:duration="160"
+        android:drawable="@drawable/podcast_transcript_equalizer_step_5_primary"/>
+    <item
+        android:duration="160"
+        android:drawable="@drawable/podcast_transcript_equalizer_step_6_primary"/>
+</animation-list>

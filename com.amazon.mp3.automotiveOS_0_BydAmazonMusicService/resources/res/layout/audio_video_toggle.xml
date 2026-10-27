@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_gravity="center"
+    android:id="@+id/audioVideoToggleView"
+    android:background="@drawable/toggle_background"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <View
+        android:id="@+id/selected_background"
+        android:background="@drawable/toggle_background_default"
+        android:layout_width="@dimen/toggle_container_width"
+        android:layout_height="@dimen/toggle_container_height"/>
+    <LinearLayout
+        android:gravity="center"
+        android:id="@+id/audioIconContainer"
+        android:layout_width="@dimen/toggle_container_width"
+        android:layout_height="@dimen/toggle_container_height">
+        <ImageView
+            android:id="@+id/audioIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_toggle_audio_white"/>
+    </LinearLayout>
+    <LinearLayout
+        android:gravity="center"
+        android:id="@+id/videoIconContainer"
+        android:layout_width="@dimen/toggle_container_width"
+        android:layout_height="@dimen/toggle_container_height"
+        android:layout_toEndOf="@+id/audioIconContainer">
+        <ImageView
+            android:id="@+id/videoIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_toggle_video_white"/>
+    </LinearLayout>
+</RelativeLayout>

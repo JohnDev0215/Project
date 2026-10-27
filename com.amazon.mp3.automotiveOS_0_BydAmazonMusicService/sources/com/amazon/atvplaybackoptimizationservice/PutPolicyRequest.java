@@ -1,0 +1,178 @@
+package com.amazon.atvplaybackoptimizationservice;
+
+import com.amazon.avod.servicetypes.ServiceTypesProxy;
+import com.amazon.avod.util.json.JacksonJsonParserBase;
+import com.amazon.avod.util.json.JsonContractException;
+import com.amazon.avod.util.json.JsonParsingUtils;
+import com.amazon.avod.util.json.JsonValidator;
+import com.amazon.avod.util.json.SimpleParsers;
+import com.fasterxml.jackson.core.JsonParser;
+import com.fasterxml.jackson.core.JsonToken;
+import com.fasterxml.jackson.databind.JsonNode;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.google.common.base.MoreObjects;
+import com.google.common.base.Objects;
+import com.google.common.base.Preconditions;
+import java.io.IOException;
+import java.util.Iterator;
+import javax.annotation.Nonnull;
+import javax.annotation.concurrent.NotThreadSafe;
+
+/* JADX INFO: loaded from: classes2.dex */
+public class PutPolicyRequest {
+    public final String name;
+    public final String payload;
+
+    private PutPolicyRequest(Builder builder) {
+        this.payload = (String) Preconditions.checkNotNull(builder.payload, "Unexpected null field: payload");
+        this.name = (String) Preconditions.checkNotNull(builder.name, "Unexpected null field: name");
+    }
+
+    public boolean equals(Object obj) {
+        if (obj == this) {
+            return true;
+        }
+        if (!(obj instanceof PutPolicyRequest)) {
+            return false;
+        }
+        PutPolicyRequest putPolicyRequest = (PutPolicyRequest) obj;
+        return Objects.equal(this.payload, putPolicyRequest.payload) && Objects.equal(this.name, putPolicyRequest.name);
+    }
+
+    public int hashCode() {
+        return Objects.hashCode(this.payload, this.name);
+    }
+
+    public String toString() {
+        return MoreObjects.toStringHelper(this).add("payload", this.payload).add("name", this.name).toString();
+    }
+
+    @NotThreadSafe
+    public static class Builder {
+        public String name;
+        public String payload;
+
+        public PutPolicyRequest build() {
+            return new PutPolicyRequest(this);
+        }
+    }
+
+    public static class Parser extends JacksonJsonParserBase<PutPolicyRequest> {
+        private final SimpleParsers.StringParser mstringTargetParser;
+
+        public Parser(@Nonnull ObjectMapper objectMapper) {
+            super(objectMapper);
+            this.mstringTargetParser = SimpleParsers.StringParser.INSTANCE;
+        }
+
+        @Override // com.amazon.avod.util.json.JacksonJsonParserBase, com.amazon.avod.util.json.JacksonJsonNodeParser
+        @Nonnull
+        public PutPolicyRequest parse(@Nonnull JsonNode jsonNode) throws JsonContractException, IOException {
+            ServiceTypesProxy serviceTypesProxy = ServiceTypesProxy.getInstance();
+            Object objBeginTrace = serviceTypesProxy.beginTrace("PutPolicyRequest:ParseTree");
+            try {
+                return parseInternal(jsonNode);
+            } finally {
+                serviceTypesProxy.endTrace(objBeginTrace);
+            }
+        }
+
+        @Override // com.amazon.avod.util.json.JacksonJsonParserBase, com.amazon.avod.util.json.JacksonJsonStreamParser
+        @Nonnull
+        public PutPolicyRequest parse(@Nonnull JsonParser jsonParser) throws JsonContractException, IOException {
+            ServiceTypesProxy serviceTypesProxy = ServiceTypesProxy.getInstance();
+            Object objBeginTrace = serviceTypesProxy.beginTrace("PutPolicyRequest:Parse");
+            try {
+                return parseInternal(jsonParser);
+            } finally {
+                serviceTypesProxy.endTrace(objBeginTrace);
+            }
+        }
+
+        @Nonnull
+        private PutPolicyRequest parseInternal(@Nonnull JsonNode jsonNode) throws JsonContractException, IOException {
+            JsonParsingUtils.throwIfNotObject(jsonNode, "PutPolicyRequest");
+            Builder builder = new Builder();
+            Iterator<String> itFieldNames = jsonNode.fieldNames();
+            while (itFieldNames.hasNext()) {
+                String next = itFieldNames.next();
+                JsonNode jsonNode2 = jsonNode.get(next);
+                byte b = -1;
+                try {
+                    int iHashCode = next.hashCode();
+                    if (iHashCode != -786701938) {
+                        if (iHashCode == 3373707 && next.equals("name")) {
+                            b = 1;
+                        }
+                    } else if (next.equals("payload")) {
+                        b = 0;
+                    }
+                    String str = null;
+                    if (b == 0) {
+                        if (!jsonNode2.isNull()) {
+                            str = this.mstringTargetParser.parse(jsonNode2);
+                        }
+                        builder.payload = str;
+                    } else if (b == 1) {
+                        if (!jsonNode2.isNull()) {
+                            str = this.mstringTargetParser.parse(jsonNode2);
+                        }
+                        builder.name = str;
+                    }
+                } catch (JsonContractException e) {
+                    ServiceTypesProxy.getInstance().exception(e, next + " failed to parse when parsing PutPolicyRequest so we may drop this from the response (if field was required). Will try to continue parsing.", new Object[0]);
+                }
+            }
+            JsonParsingUtils.checkNotNull(builder.payload, this, "payload");
+            JsonParsingUtils.checkNotNull(builder.name, this, "name");
+            return builder.build();
+        }
+
+        @Nonnull
+        private PutPolicyRequest parseInternal(@Nonnull JsonParser jsonParser) throws JsonContractException, IOException {
+            Builder builder = new Builder();
+            JsonValidator.checkEqual(JsonToken.START_OBJECT, jsonParser.getCurrentToken(), jsonParser);
+            while (true) {
+                JsonToken jsonTokenNextToken = jsonParser.nextToken();
+                if (JsonValidator.isInsideObject(jsonTokenNextToken)) {
+                    if (jsonTokenNextToken == JsonToken.FIELD_NAME) {
+                        String currentName = jsonParser.getCurrentName();
+                        jsonParser.nextToken();
+                        JsonToken currentToken = jsonParser.getCurrentToken();
+                        byte b = -1;
+                        try {
+                            int iHashCode = currentName.hashCode();
+                            if (iHashCode != -786701938) {
+                                if (iHashCode == 3373707 && currentName.equals("name")) {
+                                    b = 1;
+                                }
+                            } else if (currentName.equals("payload")) {
+                                b = 0;
+                            }
+                            String str = null;
+                            if (b == 0) {
+                                if (currentToken != JsonToken.VALUE_NULL) {
+                                    str = this.mstringTargetParser.parse(jsonParser);
+                                }
+                                builder.payload = str;
+                            } else if (b == 1) {
+                                if (currentToken != JsonToken.VALUE_NULL) {
+                                    str = this.mstringTargetParser.parse(jsonParser);
+                                }
+                                builder.name = str;
+                            } else {
+                                jsonParser.skipChildren();
+                            }
+                        } catch (JsonContractException e) {
+                            ServiceTypesProxy.getInstance().exception(e, currentName + " failed to parse when parsing PutPolicyRequest so we may drop this from the response (if field was required). Will try to continue parsing.", new Object[0]);
+                        }
+                    }
+                } else {
+                    JsonParsingUtils.checkNotNull(builder.payload, this, "payload");
+                    JsonParsingUtils.checkNotNull(builder.name, this, "name");
+                    return builder.build();
+                }
+            }
+        }
+    }
+}

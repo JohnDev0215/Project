@@ -1,0 +1,849 @@
+{
+  "uiClick": {
+    "com.amazon.mp3:id/Search": {
+      "actionType": "GO_SEARCH"
+    },
+    "selectAlbum": {
+      "actionType": "SELECT_ALBUM"
+    },
+    "clickAdImage": {
+      "actionType": "AD_LINK_CLICK"
+    },
+    "clickSkipInAd": {
+      "actionType": "AD_SKIP_CLICK"
+    },
+    "selectCuratedPlaylist": {
+      "actionType": "SELECT_CURATED_PLAYLIST"
+    },
+    "selectPlaylist": {
+      "actionType": "SELECT_PLAYLIST"
+    },
+    "selectVideoPlaylist": {
+      "actionType": "SELECT_VIDEO_PLAYLIST"
+    },
+    "selectPodcastShow": {
+      "actionType": "SELECT_PODCAST_SHOW"
+    },
+    "selectPodcastEpisode": {
+      "actionType": "SELECT_PODCAST_EPISODE"
+    },
+    "selectOk": {
+      "actionType": "SELECT_OK"
+    },
+    "selectCancel": {
+      "actionType": "SELECT_CANCEL"
+    },
+    "playStation": {
+      "actionType": "PLAY_STATION"
+    },
+    "playSong": {
+      "actionType": "PLAY_SONG"
+    },
+    "playVideo": {
+      "actionType": "PLAY_VIDEO"
+    },
+    "playShuffleAll": {
+      "actionType": "PLAY_SHUFFLE_ALL"
+    },
+    "shuffleOn": {
+      "actionType": "SHUFFLE_ON"
+    },
+    "shuffleOff": {
+      "actionType": "SHUFFLE_OFF"
+    },
+    "createPlaylist": {
+      "actionType": "CREATE_PLAYLIST"
+    },
+    "createPlaylistAttempt": {
+      "actionType": "CREATE_PLAYLIST_ATTEMPT"
+    },
+    "addToPlaylist": {
+      "actionType": "ADD_TO_PLAYLIST"
+    },
+    "removeFromPlaylist": {
+      "actionType": "REMOVE_FROM_PLAYLIST"
+    },
+    "editPlaylist": {
+      "actionType": "EDIT_PLAYLIST"
+    },
+    "playlistEmptyAdd": {
+      "actionType": "PLAYLIST_EMPTY_ADD"
+    },
+    "share": {
+      "actionType": "SHARE"
+    },
+    "downloadAll": {
+      "actionType": "DOWNLOAD_ALL"
+    },
+    "addPlaylistToLibrary": {
+      "actionType": "ADD_PLAYLIST_TO_LIBRARY"
+    },
+    "playCuratedPlaylist": {
+      "actionType": "PLAY_CURATED_PLAYLIST"
+    },
+    "playPlaylist": {
+      "actionType": "PLAY_PLAYLIST"
+    },
+    "playAlbum": {
+      "actionType": "PLAY_ALBUM"
+    },
+    "com.amazon.mp3:id/footer": {
+      "actionType": "SHOW_OVERFLOW"
+    },
+    "com.amazon.mp3:id/AddToLibraryButton": {
+      "actionType": "ADD_TRACK_TO_LIBRARY"
+    },
+    "com.amazon.mp3:id/PersistentPlayerPrevButton": {
+      "actionType": "SKIP_PREVIOUS"
+    },
+    "prev": {
+      "actionType": "SKIP_PREVIOUS"
+    },
+    "com.amazon.mp3:id/PersistentPlayerNextButton": {
+      "actionType": "SKIP_NEXT"
+    },
+    "next": {
+      "actionType": "SKIP_NEXT"
+    },
+    "minimizeLyricsPartial": {
+      "actionType": "MINIMIZE_LYRICS_PARTIAL"
+    },
+    "minimizeLyricsFull": {
+      "actionType": "MINIMIZE_LYRICS_FULL"
+    },
+    "expandLyricsFull": {
+      "actionType": "EXPAND_LYRICS_FULL"
+    },
+    "expandLyricsPartial": {
+      "actionType": "EXPAND_LYRICS_PARTIAL"
+    },
+    "play": {
+      "actionType": "PLAY_EACH"
+    },
+    "pause": {
+      "actionType": "PLAY_PAUSE"
+    },
+    "com.amazon.mp3.id/PersistentPlayerThumbsUpButton": {
+      "actionType": "THUMBS_UP"
+    },
+    "thumbsUp": {
+      "actionType": "THUMBS_UP"
+    },
+    "com.amazon.mp3.id/PersistentPlayerThumbsDownButton": {
+      "actionType": "THUMBS_DOWN"
+    },
+    "thumbsDown": {
+      "actionType": "THUMBS_DOWN"
+    },
+    "fastForward": {
+      "actionType": "FAST_FORWARD"
+    },
+    "rewind": {
+      "actionType": "REWIND"
+    },
+    "selectSearchHistory": {
+      "actionType": "SELECT_SEARCH_HISTORY"
+    },
+    "selectISS": {
+      "actionType": "SELECT_ISS"
+    },
+    "executeSearch": {
+      "actionType": "EXECUTE_SEARCH"
+    },
+    "goSearch" : {
+      "actionType": "GO_SEARCH"
+    },
+    "searchMoreBrowse": {
+      "actionType": "SEARCH_MORE_BROWSE"
+    },
+    "searchMoreLibrary": {
+      "actionType": "SEARCH_MORE_LIBRARY"
+    },
+    "searchMoreStore": {
+      "actionType": "SEARCH_MORE_STORE"
+    },
+    "com.amazon.mp3:id/AddOrFollowButton": {
+      "actionType": "ADD_ALBUM_TO_LIBRARY"
+    },
+    "com.amazon.mp3:id/footer": {
+      "actionType": "SELECT_SEE_ALL"
+    },
+    "selectSeeAll": {
+      "actionType": "SELECT_SEE_ALL"
+    },
+    "selectArtist": {
+      "actionType": "SELECT_ARTIST"
+    },
+    "addTrackToLibrary": {
+      "actionType": "ADD_TRACK_TO_LIBRARY"
+    },
+    "downloadOverflow": {
+      "actionType": "DOWNLOAD_OVERFLOW"
+    },
+    "coachmarkAcknowledged": {
+      "actionType": "ACKNOWLEDGE_COACHMARK"
+    },
+    "acknowledgeCoachmark": {
+      "actionType": "ACKNOWLEDGE_COACHMARK"
+    },
+    "browseSubRibbonUpsell": {
+      "actionType": "BROWSE_SUB_RIBBON_UPSELL"
+    },
+    "noThanksUpsellDialog": {
+      "actionType": "NO_THANKS_UPSELL_DIALOG"
+    },
+    "PrimeBrowseUpsellFTU": {
+      "actionType": "PRIME_BROWSE_UPSELL_FTU"
+    },
+    "noThanksPrimeBrowseUpsellFTU": {
+      "actionType": "NO_THANKS_PRIME_BROWSE_UPSELL_FTU"
+    },
+    "PrimeFTU": {
+      "actionType": "PRIME_FTU"
+    },
+    "noThanksPrimeFTU": {
+      "actionType": "NO_THANKS_PRIME_FTU"
+    },
+    "startTrialUpsellDialog": {
+      "actionType": "START_TRIAL_UPSELL_DIALOG"
+    },
+    "startPaidUpsellDialog": {
+      "actionType": "START_PAID_UPSELL_DIALOG"
+    },
+    "noThanksUpsellDialogAmf": {
+      "actionType": "NO_THANKS_BAUHAUS_BLOCKING_HAWKFIRE_UPSELL_DIALOG"
+    },
+    "startPaidUpsellDialogAmf": {
+      "actionType": "START_PAID_BAUHAUS_BLOCKING_HAWKFIRE_UPSELL_DIALOG"
+    },
+    "startTrialUpsellDialogAmf": {
+      "actionType": "START_TRIAL_BAUHAUS_BLOCKING_HAWKFIRE_UPSELL_DIALOG"
+    },
+    "noThanksNonBlockingUpsellDialogAmf": {
+      "actionType": "NO_THANKS_BAUHAUS_NONBLOCKING_UPSELL_DIALOG"
+    },
+    "startPaidNonBlockingUpsellDialogAmf": {
+      "actionType": "START_PAID_BAUHAUS_NONBLOCKING_UPSELL_DIALOG"
+    },
+    "startTrialNonBlockingUpsellDialogAmf": {
+      "actionType": "START_TRIAL_BAUHAUS_NONBLOCKING_UPSELL_DIALOG"
+    },
+    "startPaidAdUpsellDialogAmf": {
+      "actionType": "START_PAID_BAUHAUS_ADS_UPSELL_DIALOG"
+    },
+    "startTrialAdUpsellDialogAmf": {
+      "actionType": "START_TRIAL_BAUHAUS_ADS_UPSELL_DIALOG"
+    },
+    "noThanksAdUpsellDialogAmf": {
+      "actionTyle": "NO_THANKS_BAUHAUS_ADS_UPSELL_DIALOG"
+    },
+    "AccountInformationMissingOk": {
+      "actionType": "ACCOUNT_INFORMATION_MISSING_OK"
+    },
+    "AccountInformationMissingCancel": {
+      "actionType": "ACCOUNT_INFORMATION_MISSING_CANCEL"
+    },
+    "ManageAccount": {
+      "actionType": "MANAGE_ACCOUNT"
+    },
+    "goBack": {
+      "actionType": "GO_BACK"
+    },
+    "tab_bar_browse_tab": {
+      "actionType": "GO_BROWSE"
+    },
+    "tab_bar_recents_tab": {
+      "actionType": "GO_RECENTS"
+    },
+    "tab_bar_library_tab": {
+      "actionType": "GO_MY_MUSIC"
+    },
+    "tab_bar_search_tab": {
+      "actionType": "GO_SEARCH"
+    },
+    "goSettings": {
+      "actionType": "GO_SETTINGS"
+    },
+    "goNowPlaying": {
+      "actionType": "GO_NOW_PLAYING"
+    },
+    "repeatOne": {
+      "actionType": "REPEAT_ONE"
+    },
+    "repeatAllOn": {
+      "actionType": "REPEAT_ALL_ON"
+    },
+    "repeatOff": {
+      "actionType": "REPEAT_OFF"
+    },
+    "jewelButtonSeekLeft": {
+      "actionType": "REWIND"
+    },
+    "jewelButtonSeekRight": {
+      "actionType": "FAST_FORWARD"
+    },
+    "jewelButtonGoNowPlaying": {
+      "actionType": "GO_NOW_PLAYING"
+    },
+    "jewelButtonPause": {
+      "actionType": "PLAY_PAUSE"
+    },
+    "jewelButtonPlay": {
+      "actionType": "PLAY_EACH"
+    },
+    "jewel_button_prev": {
+      "actionType": "SKIP_PREVIOUS"
+    },
+    "jewel_button_next": {
+      "actionType": "SKIP_NEXT"
+    },
+    "jewel_button_thumbUp": {
+      "actionType": "THUMBS_UP"
+    },
+    "jewel_button_thumbDown": {
+      "actionType": "THUMBS_DOWN"
+    },
+    "expandTransportControls": {
+      "actionType": "EXPAND_TRANSPORT_CONTROLS"
+    },
+    "collapseTransportControls": {
+      "actionType": "COLLAPSE_TRANSPORT_CONTROLS"
+    },
+    "jewelButtonShuffleOn": {
+      "actionType": "SHUFFLE_ON"
+    },
+    "jewelButtonShuffleOff": {
+      "actionType": "SHUFFLE_OFF"
+    },
+    "jewelButtonRepeatAll": {
+      "actionType": "REPEAT_ALL_ON"
+    },
+    "jewelButtonRepeatOne": {
+      "actionType": "REPEAT_ONE"
+    },
+    "jewelButtonRepeatNone": {
+      "actionType": "REPEAT_OFF"
+    },
+    "subSettingsUpsell": {
+      "actionType": "SUB_SETTINGS_UPSELL"
+    },
+    "playArtist": {
+      "actionType": "PLAY_ARTIST"
+    },
+    "playGenre": {
+      "actionType": "PLAY_GENRE"
+    },
+    "selectRecentlyPlayed": {
+      "actionType": "SELECT_RECENTLY_PLAYED"
+    },
+    "playRecentlyPlayed": {
+      "actionType": "PLAY_RECENTLY_PLAYED"
+    },
+    "tab_bar_alexa_tab": {
+      "actionType": "GO_ALEXA"
+    },
+    "dismissGhostListening": {
+      "actionType": "DISMISS"
+    },
+    "continueListeningGhostListening": {
+      "actionType": "CONTINUE_LISTENING"
+    },
+    "selectLearnMore": {
+      "actionType": "SELECT_LEARN_MORE"
+    },
+    "unlimitedTrialFTU": {
+      "actionType": "UNLIMITED_TRIAL_FTU"
+    },
+    "noThanksUnlimitedFTU": {
+      "actionType": "NO_THANKS_UNLIMITED_FTU"
+    },
+    "goAlexaNowPlaying": {
+      "actionType": "GO_ALEXA_NOW_PLAYING"
+    },
+    "alexaAcceptTerms": {
+      "actionType": "ALEXA_ACCEPT_TERMS"
+    },
+    "alexaCancelListening": {
+      "actionType": "ALEXA_CANCEL_LISTENING"
+    },
+    "alexaCancelThinking": {
+      "actionType": "ALEXA_CANCEL_THINKING"
+    },
+    "alexaCancelTalking": {
+      "actionType": "ALEXA_CANCEL_TALKING"
+    },
+    "alexaCancelError": {
+      "actionType": "ALEXA_CANCEL_ERROR"
+    },
+    "alexaHelp": {
+      "actionType": "ALEXA_HELP"
+    },
+    "alexaLocationCompanionLink": {
+      "actionType": "ALEXA_LOCATION_COMPANION_LINK"
+    },
+    "alexaSettings": {
+      "actionType": "ALEXA_SETTINGS"
+    },
+    "languagePreferenceDone": {
+      "actionType": "LANGUAGE_PREFERENCE_DONE"
+    },
+    "languagePreferenceClearAll": {
+      "actionType": "LANGUAGE_PREFERENCE_CLEAR_ALL"
+    },
+    "selectChromecast": {
+      "actionType": "SHOW_CHROMECAST_DIALOG"
+    },
+    "goCastingDeviceList": {
+      "actionType": "GO_CASTING_DEVICE_LIST"
+    },
+    "refreshCastingDeviceList": {
+      "actionType": "REFRESH_CASTING_DEVICE_LIST"
+    },
+    "connectCastingDevice": {
+      "actionType": "CONNECT_CASTING_DEVICE"
+    },
+    "disconnectCastingDevice": {
+      "actionType": "DISCONNECT_CASTING_DEVICE"
+    },
+    "controlCastingDevice": {
+      "actionType": "CONTROL_CASTING_DEVICE"
+    },
+    "castToCastingDevice": {
+      "actionType": "CAST_TO_CASTING_DEVICE"
+    },
+    "castingHelp": {
+      "actionType": "CASTING_HELP"
+    },
+    "handsfreeModeOn": {
+      "actionType": "HANDS_FREE_MODE_ON"
+    },
+    "handsfreeModeOff": {
+      "actionType": "HANDS_FREE_MODE_OFF"
+    },
+    "showOverflow": {
+      "actionType": "SHOW_OVERFLOW"
+    },
+    "clearSearchHistory": {
+      "actionType": "CLEAR_SEARCH_HISTORY"
+    },
+    "searchDidYouMean": {
+      "actionType": "SEARCH_DID_YOU_MEAN"
+    },
+    "searchAutocorrectOriginal": {
+      "actionType": "SEARCH_AUTO_CORRECT_ORIGINAL"
+    },
+    "widgetInteraction": {
+      "actionType": "WIDGET_INTERACTION"
+    },
+    "goAppRating": {
+      "actionType": "GO_APP_RATING"
+    },
+    "selectDeferAppRating": {
+      "actionType": "SELECT_DEFER_APP_RATING"
+    },
+    "selectNoAppRating": {
+      "actionType": "SELECT_NO_APP_RATING"
+    },
+    "selectNormalizationOn": {
+      "actionType": "SELECT_NORMALIZATION_ON"
+    },
+    "selectNormalizationOff": {
+      "actionType": "SELECT_NORMALIZATION_OFF"
+    },
+    "goDownloadQueue": {
+      "actionType": "GO_DOWNLOAD_QUEUE"
+    },
+    "selectUpdateDownloadsWifiOn": {
+      "actionType": "SELECT_DOWNLOAD_ON_WIFI_ON"
+    },
+    "selectUpdateDownloadsWifiOff": {
+      "actionType": "SELECT_DOWNLOAD_ON_WIFI_OFF"
+    },
+    "selectQueueForDownload": {
+      "actionType": "SELECT_QUEUE_FOR_DOWNLOAD"
+    },
+    "selectDismiss": {
+      "actionType": "SELECT_DISMISS"
+    },
+    "selectRemoveUnavailableDownloads": {
+      "actionType": "SELECT_REMOVE_UNAVAILABLE_DOWNLOADS"
+    },
+    "selectConfirm": {
+      "actionType": "SELECT_CONFIRM"
+    },
+    "learnMoreBetaBanner": {
+      "actionType": "LEARN_MORE_BETA_BANNER"
+    },
+    "goAudioQualitySettings" : {
+      "actionType": "GO_AUDIO_QUALITY_SETTINGS"
+    },
+    "selectAudioQualityAuto" : {
+      "actionType": "SELECT_AUDIO_QUALITY_AUTO"
+    },
+    "selectAudioQualityHD" : {
+      "actionType": "SELECT_AUDIO_QUALITY_HD"
+    },
+    "selectAudioQualityStandard" : {
+      "actionType": "SELECT_AUDIO_QUALITY_STANDARD"
+    },
+    "selectAudioQualityDataSaver" : {
+      "actionType": "SELECT_AUDIO_QUALITY_DATA_SAVER"
+    },
+    "selectAudioQualityOnWiFiAuto" : {
+      "actionType": "SELECT_AUDIO_QUALITY_AUTO_WIFI"
+    },
+    "selectAudioQualityOnWiFiHD" : {
+      "actionType": "SELECT_AUDIO_QUALITY_HD_WIFI"
+    },
+    "selectAudioQualityOnWiFiStandard" : {
+      "actionType": "SELECT_AUDIO_QUALITY_STANDARD_WIFI"
+    },
+    "selectAudioQualityOnWiFiDataSaver" : {
+      "actionType": "SELECT_AUDIO_QUALITY_DATA_SAVER_WIFI"
+    },
+    "goDownloadSettings" : {
+      "actionType": "GO_DOWNLOAD_SETTINGS"
+    },
+    "selectDownloadQualityAuto" : {
+      "actionType": "SELECT_DOWNLOAD_QUALITY_AUTO"
+    },
+    "selectDownloadQualityHD" : {
+      "actionType": "SELECT_DOWNLOAD_QUALITY_HD"
+    },
+    "selectDownloadQualityStandard" : {
+      "actionType": "SELECT_DOWNLOAD_QUALITY_STANDARD"
+    },
+    "selectDownloadQualityDataSaver" : {
+      "actionType": "SELECT_DOWNLOAD_QUALITY_DATA_SAVER"
+    },
+    "selectDownloadOnWifiOn" : {
+      "actionType": "SELECT_DOWNLOAD_ON_WIFI_ON_SETTINGS"
+    },
+    "selectDownloadOnWifiOff" : {
+      "actionType": "SELECT_DOWNLOAD_ON_WIFI_OFF_SETTINGS"
+    },
+    "selectSave" : {
+      "actionType": "SELECT_SAVE"
+    },
+    "selectGotIt" : {
+      "actionType": "SELECT_GOT_IT"
+    },
+    "selectStreamingInformation" : {
+      "actionType": "SELECT_STREAMING_INFORMATION"
+    },
+    "goNew": {
+      "actionType": "GO_NEW"
+    },
+    "goPopular": {
+      "actionType": "GO_POPULAR"
+    },
+    "goPlaylists": {
+      "actionType": "GO_PLAYLISTS"
+    },
+    "goStations": {
+      "actionType": "GO_STATION"
+    },
+    "goRecommended": {
+      "actionType": "GO_RECOMMENDED"
+    },
+    "goSpotlight": {
+      "actionType": "GO_SPOTLIGHT"
+    },
+    "seeMorePlansSubscribeDialog": {
+      "actionType": "SEE_MORE_PLAN"
+    },
+    "tryItFreeSubscribeDialog": {
+      "actionType": "START_ONE_CLICK_UPSELL_DIALOG"
+    },
+    "noThanksSubscribeDialog": {
+      "actionType": "NO_THANKS_ONE_CLICK_UPSELL_DIALOG"
+    },
+    "settingsSubscribeDialogHoliday": {
+      "actionType": "MUSIC_SETTINGS_HOLIDAY_ONE_CLICK"
+    },
+    "settingsSubscribeDialogBounceback": {
+      "actionType": "MUSIC_SETTING_ONE_BOUNCEBACK_ONE_CLICK"
+    },
+    "settingsSubscribeDialog": {
+      "actionType": "MUSIC_SETTING_ONE_CLICK"
+    },
+    "seeMorePlansSubscribeDialogHardOffer": {
+      "actionType": "SEE_MORE_PLAN_HARD_OFFER"
+    },
+    "subscribeDialogHardOffer": {
+      "actionType": "START_ONE_CLICK_UPSELL_DIALOG_HARD_OFFER"
+    },
+    "noThanksSubscribeDialogHardOffer": {
+      "actionType": "NO_THANKS_ONE_CLICK_UPSELL_DIALOG_HARD_OFFER"
+    },
+    "settingsSubscribeDialogHardOffer": {
+      "actionType": "MUSIC_SETTING_ONE_CLICK_HARD_OFFER"
+    },
+    "startListeningPrimeWelcomeDialogHardOffer": {
+      "actionType": "START_LISTENING_HARD_OFFER"
+    },
+    "noThanksUpsellDialogOneClickHardOffer": {
+      "actionType": "NO_THANKS_BLOCKING_HAWKFIRE_UPSELL_DIALOG_ONECLICK_HARD_OFFER"
+    },
+    "startPaidUpsellDialogOneClickHardOffer": {
+      "actionType": "START_PAID_BLOCKING_HAWKFIRE_UPSELL_DIALOG_ONECLICK_HARD_OFFER"
+    },
+    "musicSettingsUpsellDialogOneClickHardOffer": {
+      "actionType": "MUSIC_SETTINGS_BLOCKING_HAWKFIRE_UPSELL_DIALOG_ONECLICK_HARD_OFFER"
+    },
+    "seeMorePlansUpsellDialogOneClickHardOffer": {
+      "actionType": "SEE_MORE_PLANS_BLOCKING_HAWKFIRE_UPSELL_DIALOG_ONECLICK_HARD_OFFER"
+    },
+    "manageSubscriptionWelcomeDialogOneClickHardOffer": {
+      "actionType": "MANAGE_SUBSCRIPTION_WELCOME_DIALOG_ONECLICK_HARD_OFFER"
+    },
+    "settingsWelcomeDialogHardOffer": {
+      "actionType": "SETTINGS_WELCOME_DIALOG_HARD_OFFER"
+    },
+    "startListeningWelcomeDialogHardOffer": {
+      "actionType": "START_LISTENING_WELCOME_DIALOG_HARD_OFFER"
+    },
+    "detailUserPlaylistSeeRecsToast": {
+      "actionType": "DETAIL_USER_PLAYLIST_SEE_RECS_TOAST"
+    },
+    "detailUserPlaylistSeeMoreRecs": {
+      "actionType": "DETAIL_USER_PLAYLIST_SEE_MORE_RECS"
+    }
+  },
+  "uiPageView": {
+    "browseHome": {
+      "pageType": "browseHome"
+    },
+    "settings": {
+      "pageType": "settings"
+    },
+    "settingsSleepTime": {
+      "pageType": "settings-sleepTime"
+    },
+    "settingsMusicQuality": {
+      "pageType": "settings-musicQuality"
+    },
+    "settingsMusicCache": {
+      "pageType": "settings-musicCache"
+    },
+    "browseRecommended": {
+      "pageType": "browseRecommended"
+    },
+    "browseStations": {
+      "pageType": "browseStations"
+    },
+    "browsePlaylists": {
+      "pageType": "browsePlaylists"
+    },
+    "browseNew": {
+      "pageType": "browseNew"
+    },
+    "browsePopular": {
+      "pageType": "browsePopular"
+    },
+    "SEARCH_TAB_PRIME": {
+      "pageType": "browseSearch"
+    },
+    "SEARCH_TAB_LIBRARY": {
+      "pageType": "cloudLibrarySearch"
+    },
+    "detailBrowseArtist": {
+      "pageType": "detail-browseArtist"
+    },
+    "artistDetail": {
+      "pageType": "artistDetail"
+    },
+    "libraryArtistDetail": {
+      "pageType": "detail-libraryArtist"
+    },
+    "offlineLibrarySearch": {
+      "pageType": "offlineLibrarySearch"
+    },
+    "userPlaylistDetail": {
+      "pageType": "userPlaylistDetail"
+    },
+    "autoPlaylistDetail": {
+      "pageType": "autoPlaylistDetail"
+    },
+    "playlistDetail": {
+      "pageType": "playlistDetail"
+    },
+    "albumDetail": {
+      "pageType": "albumDetail"
+    },
+    "nowPlaying": {
+      "pageType": "nowPlaying"
+    },
+    "playQueue": {
+      "pageType": "playQueue"
+    },
+    "detailGenre": {
+      "pageType": "detail-genre"
+    },
+    "cloudLibraryPlaylists": {
+      "pageType": "cloudLibrary-playlists"
+    },
+    "cloudLibraryArtists": {
+      "pageType": "cloudLibrary-artists"
+    },
+    "cloudLibraryAlbums": {
+      "pageType": "cloudLibrary-albums"
+    },
+    "cloudLibrarySongs": {
+      "pageType": "cloudLibrary-songs"
+    },
+    "cloudLibraryGenres": {
+      "pageType": "cloudLibrary-genres"
+    },
+    "offlineLibraryPlaylists": {
+      "pageType": "offlineLibrary-playlists"
+    },
+    "offlineLibraryArtists": {
+      "pageType": "offlineLibrary-artists"
+    },
+    "offlineLibraryAlbums": {
+      "pageType": "offlineLibrary-albums"
+    },
+    "offlineLibrarySongs": {
+      "pageType": "offlineLibrary-songs"
+    },
+    "offlineLibraryGenres": {
+      "pageType": "offlineLibrary-genres"
+    },
+    "recentPlayed": {
+      "pageType": "recentActivity"
+    },
+    "recentAdded": {
+      "pageType": "recentlyAddedSongs"
+    },
+    "recentDownloaded": {
+      "pageType": "recentlyDownloadedSongs"
+    },
+    "recentlyPlayedSongs": {
+      "pageType": "recentlyPlayedSongs"
+    },
+    "editPlaylist": {
+      "pageType": "editPlaylist"
+    },
+    "seeAllBrowseHome": {
+      "pageType": "seeAll-browseHome"
+    },
+    "seeAllSearchStations": {
+      "pageType": "seeAll-searchStations"
+    },
+    "seeAllArtistImages": {
+      "pageType": "seeAll-artistImages"
+    },
+    "seeAllArtistTracks": {
+      "pageType": "seeAll-artistTracks"
+    },
+    "seeAllArtistAlbums": {
+      "pageType": "seeAll-artistAlbums"
+    },
+    "seeAllSearchArtists": {
+      "pageType": "seeAll-searchArtists"
+    },
+    "seeAllSearchPlaylists": {
+      "pageType": "seeAll-searchPlaylists"
+    },
+    "seeAllSearchAlbums": {
+      "pageType": "seeAll-searchAlbums"
+    },
+    "seeAllSearchTracks": {
+      "pageType": "seeAll-searchTracks"
+    },
+    "seeAllSearchPodcastShows": {
+      "pageType": "seeAll-searchPodcastShows"
+    },
+    "seeAllSearchPodcastEpisodes": {
+      "pageType": "seeAll-searchPodcastEpisodes"
+    },
+    "addToPlaylistSelectPlaylist": {
+      "pageType": "addToPlaylist-selectPlaylist"
+    },
+    "addtoPlaylistArtists": {
+      "pageType": "addtoPlaylist-artists"
+    },
+    "addtoPlaylistAlbums": {
+      "pageType": "addtoPlaylist-albums"
+    },
+    "addtoPlaylistSongs": {
+      "pageType": "addtoPlaylist-songs"
+    },
+    "addtoPlaylistGenres": {
+      "pageType": "addtoPlaylist-genres"
+    },
+    "OFFLINE_LIBRARY_SEARCH": {
+      "pageType": "OFFLINE_LIBRARY_SEARCH"
+    },
+    "SEARCH_TAB_OFFLINE": {
+      "pageType": "offlineLibrarySearch"
+    },
+    "ghostListeningDialog": {
+      "pageType": "ghostListeningDialog"
+    },
+    "seeAllArtistDetail": {
+      "pageType": "seeAll-artistDetail"
+    },
+    "unlimitedUpsellFTU": {
+      "pageType": "unlimitedUpsellFTU"
+    },
+    "PrimeBrowseUpsellFTU": {
+      "pageType": "PrimeBrowseUpsellFTU"
+    },
+    "AccountInformationMissing": {
+      "pageType": "AccountInformationMissing"
+    },
+    "ManageAccount": {
+      "pageType": "ManageAccount"
+    },
+    "voiceInteraction": {
+      "pageType": "voiceInteraction"
+    },
+    "alexaNowPlaying": {
+      "pageType": "alexaNowPlaying"
+    },
+    "alexaFirstTimeUse": {
+      "pageType": "alexaFirstTimeUse"
+    },
+    "alexaTerms": {
+      "pageType": "alexaTerms"
+    },
+    "alexaListening": {
+      "pageType": "alexaListening"
+    },
+    "alexaThinking": {
+      "pageType": "alexaThinking"
+    },
+    "alexaTalking": {
+      "pageType": "alexaTalking"
+    },
+    "alexaError-generic": {
+      "pageType": "alexaError-unsupportedContent"
+    },
+    "alexaError-offlineMode": {
+      "pageType": "alexaError-offlineMode"
+    },
+    "alexaError-network": {
+      "pageType": "alexaError-network"
+    },
+    "alexaError-carplay": {
+      "pageType": "alexaError-carplay"
+    },
+    "alexaFirstTimeWeather": {
+      "pageType": "alexaFirstTimeWeather"
+    },
+    "languagePreference": {
+      "pageType": "LanguagePreferenceWindow"
+    },
+    "castingDeviceList": {
+      "pageType": "castingDeviceList"
+    },
+    "castingHelp": {
+      "pageType": "castingHelp"
+    },
+    "castingCoachmark": {
+      "pageType": "castingCoachmark"
+    }
+  }
+}

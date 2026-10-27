@@ -1,0 +1,14 @@
+package com.facebook.react.common;
+
+/* JADX INFO: loaded from: classes6.dex */
+public interface SurfaceDelegate {
+    void createContentView(String str);
+
+    void destroyContentView();
+
+    void hide();
+
+    boolean isContentViewReady();
+
+    void show();
+}

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/large_upsell_button_view"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <com.amazon.podcast.views.EmberTextView
+        android:gravity="center"
+        android:id="@+id/large_upsell_button_text"
+        android:paddingTop="@dimen/podcast_spacer_milli"
+        android:paddingBottom="@dimen/podcast_spacer_milli"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/podcast_spacer_base"
+        android:paddingEnd="@dimen/podcast_spacer_base"
+        android:paddingVertical="@dimen/podcast_spacer_milli"
+        style="@style/PodcastAppTheme.TextView.UpsellButton"/>
+</RelativeLayout>

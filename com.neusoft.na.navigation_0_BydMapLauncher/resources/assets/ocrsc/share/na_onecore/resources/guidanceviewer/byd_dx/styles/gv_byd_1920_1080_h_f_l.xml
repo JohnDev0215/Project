@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<style>
+   <widget WidgetId="gv_main" PositionX ="40" PositionY ="244" Width="640" Height="480" ShownForNonGuided="false">
+      <layer Kind="INTERSECTION" PositionX ="40" PositionY ="244" Width="640" Height="480" WidgetId="gv_main">
+         <item LaneItemKind="IK_UNKNOWN" PositionX ="0" PositionY ="0" Width="640" Height="480">
+         </item >
+         <pattern ShowNaturalGuidanceIcon="false" ShowNoEntryIcon="false" ShowRoadNumIcon="false" ShowManeuverOrTrafficLightIcon="true" RoundaboutHeightRadio="1.334" ArrowAlongLengthRatio="0.55" PitchAngle="69">
+         </pattern >
+      </layer>
+      <layer Kind="JUNCTION" PositionX ="0" PositionY ="0" Width="640" Height="480" WidgetId="gv_main">
+         <item LaneItemKind="IK_UNKNOWN" PositionX ="0" PositionY ="0" Width="640" Height="480">
+         </item >
+      </layer>
+   </widget>
+</style>

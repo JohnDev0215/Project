@@ -1,0 +1,22 @@
+package com.amazon.atvplaybackresource;
+
+import com.amazon.atvplaybackresource.PRSCacheLoadShedException;
+import com.amazon.atvplaybackresource.PRSConcurrencyException;
+import com.amazon.atvplaybackresource.PRSDependencyException;
+import com.amazon.atvplaybackresource.PRSFairPlayLicenseChallengeException;
+import com.amazon.atvplaybackresource.PRSGeoIpException;
+import com.amazon.atvplaybackresource.PRSInvalidRequestException;
+import com.amazon.atvplaybackresource.PRSLowerTierPlanConcurrencyException;
+import com.amazon.atvplaybackresource.PRSLowerTierPrimeDeviceNotAuthorizedException;
+import com.amazon.atvplaybackresource.PRSOwnershipException;
+import com.amazon.atvplaybackresource.PRSResourceShedException;
+import com.amazon.atvplaybackresource.PRSRightsAndPoliciesException;
+import com.amazon.atvplaybackresource.PRSTermsAndConditionsException;
+import com.amazon.atvplaybackresource.PRSWidevine2LicenseDeniedException;
+import com.amazon.avod.util.json.ParserMapFunction;
+import com.amazon.identity.auth.device.utils.AccountConstants;
+
+/* JADX INFO: loaded from: classes2.dex */
+public class ParserConstants {
+    public static final ParserMapFunction<PRSException> PRSEXCEPTION_TYPE_PARSER_MAP_FUNCTION = ParserMapFunction.Builder.newBuilder().addMatch(PRSDependencyException.Parser.class, AccountConstants.SUB_AUTHENTICATOR_TYPE_ATTRIBUTE, "PRSDependencyException").addMatch(PRSFairPlayLicenseChallengeException.Parser.class, AccountConstants.SUB_AUTHENTICATOR_TYPE_ATTRIBUTE, "PRSFairPlayLicenseChallengeException").addMatch(PRSWidevine2LicenseDeniedException.Parser.class, AccountConstants.SUB_AUTHENTICATOR_TYPE_ATTRIBUTE, "PRSWidevine2LicenseDeniedException").addMatch(PRSRightsAndPoliciesException.Parser.class, AccountConstants.SUB_AUTHENTICATOR_TYPE_ATTRIBUTE, "PRSRightsAndPoliciesException").addMatch(PRSGeoIpException.Parser.class, AccountConstants.SUB_AUTHENTICATOR_TYPE_ATTRIBUTE, "PRSGeoIpException").addMatch(PRSConcurrencyException.Parser.class, AccountConstants.SUB_AUTHENTICATOR_TYPE_ATTRIBUTE, "PRSConcurrencyException").addMatch(PRSTermsAndConditionsException.Parser.class, AccountConstants.SUB_AUTHENTICATOR_TYPE_ATTRIBUTE, "PRSTermsAndConditionsException").addMatch(PRSOwnershipException.Parser.class, AccountConstants.SUB_AUTHENTICATOR_TYPE_ATTRIBUTE, "PRSOwnershipException").addMatch(PRSCacheLoadShedException.Parser.class, AccountConstants.SUB_AUTHENTICATOR_TYPE_ATTRIBUTE, "PRSCacheLoadShedException").addMatch(PRSResourceShedException.Parser.class, AccountConstants.SUB_AUTHENTICATOR_TYPE_ATTRIBUTE, "PRSResourceShedException").addMatch(PRSInvalidRequestException.Parser.class, AccountConstants.SUB_AUTHENTICATOR_TYPE_ATTRIBUTE, "PRSInvalidRequestException").addMatch(PRSLowerTierPlanConcurrencyException.Parser.class, AccountConstants.SUB_AUTHENTICATOR_TYPE_ATTRIBUTE, "PRSLowerTierPlanConcurrencyException").addMatch(PRSLowerTierPrimeDeviceNotAuthorizedException.Parser.class, AccountConstants.SUB_AUTHENTICATOR_TYPE_ATTRIBUTE, "PRSLowerTierPrimeDeviceNotAuthorizedException").build();
+}

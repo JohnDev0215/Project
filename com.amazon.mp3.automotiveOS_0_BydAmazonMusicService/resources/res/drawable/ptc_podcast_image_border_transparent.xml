@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+    <stroke
+        android:width="@dimen/podcast_spacer_micro"
+        android:color="@color/transparent"/>
+    <padding
+        android:left="@dimen/podcast_spacer_micro"
+        android:top="@dimen/podcast_spacer_micro"
+        android:right="@dimen/podcast_spacer_micro"
+        android:bottom="@dimen/podcast_spacer_micro"/>
+    <corners
+        android:topLeftRadius="@dimen/podcast_spacer_mini"
+        android:topRightRadius="@dimen/podcast_spacer_mini"
+        android:bottomLeftRadius="@dimen/podcast_spacer_mini"
+        android:bottomRightRadius="@dimen/ptc_grid_item_radius_transformation"/>
+</shape>

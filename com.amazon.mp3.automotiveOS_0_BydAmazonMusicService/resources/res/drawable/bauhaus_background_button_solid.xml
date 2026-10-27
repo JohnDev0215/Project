@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="false">
+        <shape>
+            <solid android:color="@color/bauhaus_accent_secondary_glass_4"/>
+            <corners android:radius="36dp"/>
+            <padding
+                android:left="0dp"
+                android:top="0dp"
+                android:right="0dp"
+                android:bottom="0dp"/>
+        </shape>
+    </item>
+    <item android:state_pressed="true">
+        <shape>
+            <solid android:color="@color/bauhaus_accent_secondary_glass_3"/>
+            <corners android:radius="36dp"/>
+            <padding
+                android:left="0dp"
+                android:top="0dp"
+                android:right="0dp"
+                android:bottom="0dp"/>
+        </shape>
+    </item>
+    <item android:state_focused="true">
+        <layer-list>
+            <item
+                android:left="4dp"
+                android:top="4dp"
+                android:right="4dp"
+                android:bottom="4dp">
+                <shape>
+                    <solid android:color="@color/bauhaus_accent_primary_glass_4"/>
+                    <corners android:radius="36dp"/>
+                    <padding
+                        android:left="0dp"
+                        android:top="0dp"
+                        android:right="0dp"
+                        android:bottom="0dp"/>
+                </shape>
+            </item>
+            <item>
+                <shape>
+                    <corners android:radius="36dp"/>
+                    <stroke
+                        android:width="2dp"
+                        android:color="@color/bauhaus_accent"/>
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+    <item android:state_hovered="true">
+        <shape>
+            <solid android:color="@color/bauhaus_accent_primary_glass_4"/>
+            <corners android:radius="36dp"/>
+            <padding
+                android:left="0dp"
+                android:top="0dp"
+                android:right="0dp"
+                android:bottom="0dp"/>
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <solid android:color="@color/bauhaus_accent"/>
+            <corners android:radius="36dp"/>
+            <padding
+                android:left="0dp"
+                android:top="0dp"
+                android:right="0dp"
+                android:bottom="0dp"/>
+        </shape>
+    </item>
+</selector>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <corners android:radius="@dimen/wake_word_splash_screen_positive_button_corner_radius"/>
+            <solid android:color="@color/wake_word_splash_screen_positive_button_background"/>
+            <stroke
+                android:width="@dimen/wake_word_splash_screen_positive_button_border_width"
+                android:color="@color/pure_white"/>
+        </shape>
+    </item>
+</selector>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:id="@+id/overlay_button_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:weightSum="2">
+    <com.amazon.ui.foundations.views.BaseButton
+        android:id="@+id/lyricsOverlayButton"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginEnd="@dimen/stage_overlay_button_margin"/>
+</LinearLayout>

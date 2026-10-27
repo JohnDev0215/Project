@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="dmusic_all_prime_songs_added_to_library">
+        <item quantity="one">%1$d song added to your music.</item>
+        <item quantity="other">%1$d songs added to your music.</item>
+    </plurals>
+    <plurals name="dmusic_artist_confirm_delete_cloud_msg">
+        <item quantity="one">Are you sure you want to delete this artist?</item>
+        <item quantity="other">Are you sure you want to delete this artist and all %d songs?</item>
+    </plurals>
+    <plurals name="dmusic_download_str_to_download">
+        <item quantity="one">%1$d song to download</item>
+        <item quantity="other">%1$d songs to download</item>
+    </plurals>
+    <plurals name="dmusic_duration_hours">
+        <item quantity="one">%1$d HR</item>
+        <item quantity="other">%1$d HRS</item>
+    </plurals>
+    <plurals name="dmusic_duration_minutes">
+        <item quantity="one">%1$d MIN</item>
+        <item quantity="other">%1$d MINS</item>
+    </plurals>
+    <plurals name="dmusic_genre_confirm_delete_cloud_msg">
+        <item quantity="one">Are you sure you want to delete this genre?</item>
+        <item quantity="other">Are you sure you want to delete this genre and all %d songs?</item>
+    </plurals>
+    <plurals name="dmusic_library_albums_count">
+        <item quantity="one">%1$d album</item>
+        <item quantity="other">%1$d albums</item>
+    </plurals>
+    <plurals name="dmusic_library_songs_count">
+        <item quantity="one">%1$d song</item>
+        <item quantity="other">%1$d songs</item>
+    </plurals>
+    <plurals name="dmusic_library_songs_duration_minutes">
+        <item quantity="one">%1$d minute</item>
+        <item quantity="other">%1$d minutes</item>
+    </plurals>
+    <plurals name="dmusic_library_udo_playlists_add_to_toast">
+        <item quantity="one">%1$d song added to &quot;%2$s&quot;</item>
+        <item quantity="other">%1$d songs added to &quot;%2$s&quot;</item>
+    </plurals>
+    <plurals name="dmusic_library_videos_count">
+        <item quantity="one">%1$d Video</item>
+        <item quantity="other">%1$d Videos</item>
+    </plurals>
+    <plurals name="dmusic_playlist_album_already_in_playlist">
+        <item quantity="one">Album song already in playlist</item>
+        <item quantity="other">Album songs already in playlist</item>
+    </plurals>
+    <plurals name="dmusic_playlist_artist_already_in_playlist">
+        <item quantity="one">Artist song already in playlist</item>
+        <item quantity="other">Artist songs already in playlist</item>
+    </plurals>
+    <plurals name="dmusic_playlist_genre_already_in_playlist">
+        <item quantity="one">Genre song already in playlist</item>
+        <item quantity="other">Genre songs already in playlist</item>
+    </plurals>
+    <plurals name="dmusic_playlist_playlist_already_in_playlist">
+        <item quantity="one">Playlist song already in playlist</item>
+        <item quantity="other">Playlist songs already in playlist</item>
+    </plurals>
+    <plurals name="dmusic_playlist_track_already_in_playlist">
+        <item quantity="one">Song already in playlist</item>
+        <item quantity="other">Songs already in playlist</item>
+    </plurals>
+    <plurals name="dmusic_sleep_timer_minutes">
+        <item quantity="one">%1$s minute</item>
+        <item quantity="other">%1$s minutes</item>
+    </plurals>
+    <plurals name="dmusic_track_count">
+        <item quantity="one">%1$d SONG</item>
+        <item quantity="other">%1$d SONGS</item>
+    </plurals>
+    <plurals name="dmusic_unable_to_add_songs_message">
+        <item quantity="one">A song could not be added. Try again.</item>
+        <item quantity="other">%d songs could not be added. Try again.</item>
+    </plurals>
+    <plurals name="find_library_albums_count">
+        <item quantity="one">%1$d album</item>
+        <item quantity="other">%1$d albums</item>
+    </plurals>
+    <plurals name="find_library_songs_count">
+        <item quantity="one">%1$d song</item>
+        <item quantity="other">%1$d songs</item>
+    </plurals>
+    <plurals name="playlist_duration_hours">
+        <item quantity="one">%1$d hour</item>
+        <item quantity="other">%1$d hours</item>
+    </plurals>
+    <plurals name="playlist_duration_minutes">
+        <item quantity="one">%1$d minute</item>
+        <item quantity="other">%1$d minutes</item>
+    </plurals>
+    <plurals name="playlist_song_count">
+        <item quantity="one">%1$d song</item>
+        <item quantity="other">%1$d songs</item>
+    </plurals>
+</resources>

@@ -1,0 +1,9 @@
+package com.amazon.mp3.audioquality.nerdstats.models;
+
+import kotlin.Metadata;
+
+/* JADX INFO: compiled from: NerdStatsInjectedAccess.kt */
+/* JADX INFO: loaded from: classes3.dex */
+@Metadata(d1 = {"\u0000.\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\bf\u0018\u00002\u00020\u00012\u00020\u00022\u00020\u00032\u00020\u00042\u00020\u00052\u00020\u00062\u00020\u00072\u00020\b2\u00020\t2\u00020\n¨\u0006\u000b"}, d2 = {"Lcom/amazon/mp3/audioquality/nerdstats/models/InjectedAccess;", "Lcom/amazon/mp3/audioquality/nerdstats/models/InjectedCastingSessionManager;", "Lcom/amazon/mp3/audioquality/nerdstats/models/InjectedCastingUtil;", "Lcom/amazon/mp3/audioquality/nerdstats/models/InjectedChromecastController;", "Lcom/amazon/mp3/audioquality/nerdstats/models/InjectedConnectivityUtil;", "Lcom/amazon/mp3/audioquality/nerdstats/models/InjectedContentEncodingDecoder;", "Lcom/amazon/mp3/audioquality/nerdstats/models/InjectedContext;", "Lcom/amazon/mp3/audioquality/nerdstats/models/InjectedKatanaNPSBadgeProvider;", "Lcom/amazon/mp3/audioquality/nerdstats/models/InjectedPlaybackController;", "Lcom/amazon/mp3/audioquality/nerdstats/models/InjectedSettingsUtil;", "Lcom/amazon/mp3/audioquality/nerdstats/models/InjectedUserPreferenceProvider;", "DigitalMusicAndroid3P_automotiveProdRelease"}, k = 1, mv = {1, 6, 0}, xi = 48)
+public interface InjectedAccess extends InjectedCastingSessionManager, InjectedCastingUtil, InjectedChromecastController, InjectedConnectivityUtil, InjectedContentEncodingDecoder, InjectedContext, InjectedKatanaNPSBadgeProvider, InjectedPlaybackController, InjectedSettingsUtil, InjectedUserPreferenceProvider {
+}

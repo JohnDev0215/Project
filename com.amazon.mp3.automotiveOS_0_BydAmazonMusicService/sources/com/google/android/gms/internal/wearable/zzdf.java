@@ -1,0 +1,34 @@
+package com.google.android.gms.internal.wearable;
+
+import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.ConcurrentMap;
+
+/* JADX INFO: compiled from: com.google.android.gms:play-services-wearable@@17.1.0 */
+/* JADX INFO: loaded from: classes6.dex */
+final class zzdf {
+    private static final zzdf zza = new zzdf();
+    private final ConcurrentMap<Class<?>, zzdi<?>> zzc = new ConcurrentHashMap();
+    private final zzdj zzb = new zzcp();
+
+    private zzdf() {
+    }
+
+    public static zzdf zza() {
+        return zza;
+    }
+
+    public final <T> zzdi<T> zzb(Class<T> cls) {
+        zzca.zzb(cls, "messageType");
+        zzdi<T> zzdiVarZza = (zzdi) this.zzc.get(cls);
+        if (zzdiVarZza == null) {
+            zzdiVarZza = this.zzb.zza(cls);
+            zzca.zzb(cls, "messageType");
+            zzca.zzb(zzdiVarZza, "schema");
+            zzdi<T> zzdiVar = (zzdi) this.zzc.putIfAbsent(cls, zzdiVarZza);
+            if (zzdiVar != null) {
+                return zzdiVar;
+            }
+        }
+        return zzdiVarZza;
+    }
+}

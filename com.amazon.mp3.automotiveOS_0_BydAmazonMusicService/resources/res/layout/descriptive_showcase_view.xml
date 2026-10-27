@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingStart="@dimen/margin"
+    android:paddingEnd="@dimen/margin">
+    <com.amazon.podcast.views.EmberTextView
+        android:gravity="start"
+        android:id="@+id/podcast_descriptive_showcase_title"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/podcast_spacer_mini"
+        android:maxLines="2"
+        android:layout_marginStart="@dimen/podcast_spacer_mini"
+        android:layout_marginEnd="@dimen/podcast_spacer_mini"
+        style="@style/PodcastAppTheme.TextView.Headline4"/>
+    <com.amazon.podcast.views.EmberTextView
+        android:gravity="start"
+        android:id="@+id/podcast_descriptive_showcase_subtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/PodcastAppTheme.TextView.Tertiary"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/podcast_descriptive_showcase_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/podcast_spacer_mini"
+        android:nestedScrollingEnabled="false"/>
+</LinearLayout>

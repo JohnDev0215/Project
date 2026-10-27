@@ -1,0 +1,38 @@
+package com.amazon.mp3.prime.upsell.nightwing.model;
+
+import UpsellInterface.v1_0.UpsellTriggerType;
+
+/* JADX INFO: loaded from: classes4.dex */
+public enum UpsellReason {
+    CUSTOMER_HAS_HAWKFIRE_HOME_SUBSCRIPTION("CUSTOMER_HAS_HAWKFIRE_HOME_SUBSCRIPTION"),
+    CUSTOMER_HAS_NO_HAWKFIRE_SUBSCRIPTION("CUSTOMER_HAS_NO_HAWKFIRE_SUBSCRIPTION"),
+    DEEPLINK_SIGNUP("DEEPLINK_SIGNUP"),
+    BROWSE_ALBUM("BROWSE_ALBUM"),
+    PLAY("PLAY"),
+    VIDEO_PLAY("VIDEO_PLAY"),
+    DOWNLOAD_CONTENT("DOWNLOAD_CONTENT"),
+    ADD_TO_LIBRARY("ADD_TO_LIBRARY_OR_PLAYLIST"),
+    TRACK_SKIP_LIMIT("TRACK_SKIP_LIMIT"),
+    AD_SKIP("AD_SKIP"),
+    SHUFFLE_ALL("SHUFFLE_ALL"),
+    TRACK_SEEK("TRACK_SEEK"),
+    TRACK_PREVIOUS("TRACK_PREVIOUS"),
+    TRACK_REPEAT("TRACK_PREVIOUS"),
+    TRACK_SHUFFLE_PLAY("TRACK_SHUFFLE_PLAY"),
+    TRACK_NEXT("TRACK_NEXT"),
+    ADD_TO_PLAY_QUEUE("ADD_TO_PLAY_QUEUE"),
+    PERSISTENT_UPSELL(UpsellTriggerType.PERSISTENT_UPSELL),
+    PERSISTENT_UPGRADE("PERSISTENT_UPGRADE"),
+    STREAM_UPSELL("STREAM_UPSELL"),
+    OTHER("OTHER");
+
+    private final String value;
+
+    UpsellReason(String value) {
+        this.value = value;
+    }
+
+    public String getValue() {
+        return this.value;
+    }
+}

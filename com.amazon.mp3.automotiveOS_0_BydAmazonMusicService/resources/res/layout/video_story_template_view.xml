@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/video_story_layout_view"
+    android:background="@android:color/black"
+    android:focusable="true"
+    android:clickable="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:keepScreenOn="true"
+    android:elevation="@dimen/bottom_bar_elevation">
+    <com.amazon.mp3.BounceBackViewPager
+        android:id="@+id/video_story_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <com.amazon.music.skyfire.ui.widgets.views.IconButtonView
+        android:id="@+id/video_story_close_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacer_base"
+        android:layout_marginStart="@dimen/spacer_large"
+        app:iconButtonSize="@dimen/playback_icon_button_size"/>
+    <LinearLayout
+        android:layout_gravity="bottom"
+        android:orientation="horizontal"
+        android:id="@+id/video_story_progress_bar_container"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/videoQueueProgressBarContainerHeight"
+        android:layout_marginBottom="@dimen/spacer_medium"
+        android:layout_marginStart="@dimen/spacer_large"
+        android:layout_marginEnd="@dimen/spacer_large"
+        app:layout_anchorGravity="bottom"/>
+    <com.amazon.music.views.library.views.BauhausLoadingView
+        android:layout_gravity="center"
+        android:id="@+id/video_playback_loading_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminateDrawable="@drawable/small_spinner"
+        android:indeterminateDuration="1000"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

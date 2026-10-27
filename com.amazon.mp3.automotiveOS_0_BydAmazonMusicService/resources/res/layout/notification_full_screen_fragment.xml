@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/notification_full_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"/>
+    <RelativeLayout
+        android:layout_gravity="bottom|center_horizontal"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/fullscreen_space_between_bottom_and_buttons">
+        <Button
+            android:id="@+id/notification_full_button_left"
+            android:paddingLeft="@dimen/fullscreen_left_button_padding"
+            android:paddingRight="@dimen/fullscreen_left_button_padding"
+            style="@style/NotificationStyle.Button"/>
+        <Button
+            android:id="@+id/notification_full_button_right"
+            android:paddingLeft="@dimen/fullscreen_right_button_padding"
+            android:paddingRight="@dimen/fullscreen_right_button_padding"
+            android:visibility="gone"
+            android:layout_marginLeft="@dimen/fullscreen_space_between_buttons"
+            android:layout_toRightOf="@+id/notification_full_button_left"
+            style="@style/NotificationStyle.Button.Prime"/>
+    </RelativeLayout>
+</FrameLayout>

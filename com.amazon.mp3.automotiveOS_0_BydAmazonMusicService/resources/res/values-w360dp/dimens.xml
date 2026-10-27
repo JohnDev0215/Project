@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="gutter">16dp</dimen>
+    <dimen name="margin">4dp</dimen>
+    <dimen name="podcast_fast_forward_icon_dimension">@dimen/podcast_large_icon_button</dimen>
+    <dimen name="podcast_play_pause_icon_dimension">@dimen/podcast_large_icon_button</dimen>
+    <dimen name="podcast_rewind_icon_dimension">@dimen/podcast_large_icon_button</dimen>
+</resources>

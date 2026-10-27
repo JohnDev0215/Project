@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/stage_swipeable_sections_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerVertical="true">
+    <FrameLayout
+        android:id="@+id/stage_swipeable_pages_images_container"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.amazon.music.explore.views.swipeablePages.pages.StageSwipeablePageImageView
+            android:id="@+id/stage_swipeable_sections_background_copy"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"/>
+        <com.amazon.music.explore.views.swipeablePages.pages.StageSwipeablePageImageView
+            android:id="@+id/stage_swipeable_sections_background"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"/>
+        <com.amazon.music.explore.views.swipeablePages.pages.StageSwipeablePageImageView
+            android:id="@+id/stage_swipeable_sections_background_overlay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </FrameLayout>
+    <com.amazon.music.explore.views.swipeablePages.pages.verticalContainer.StageSwipeableSectionsVerticalContainer
+        android:id="@+id/stage_swipeable_sections_vertical_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"/>
+    <com.amazon.music.explore.views.swipeablePages.pages.StageXrayFullScreenProgressBarsView
+        android:orientation="vertical"
+        android:id="@+id/stage_x_ray_full_screen_progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/spacer_4"
+        android:layout_marginEnd="@dimen/spacer_12"
+        android:layout_alignEnd="@+id/stage_swipeable_sections_vertical_container"
+        android:layout_alignParentEnd="true"/>
+</RelativeLayout>

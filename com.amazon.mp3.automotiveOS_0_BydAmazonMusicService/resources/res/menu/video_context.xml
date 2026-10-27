@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/MenuVideoPlay"
+        android:title="@string/dmusic_prime_menu_play"/>
+    <item
+        android:id="@+id/MenuVideoAddToPlayqueue"
+        android:title="@string/dmusic_context_add_to_play_queue"/>
+    <item
+        android:id="@+id/MenuVideoPlayNext"
+        android:title="@string/dmusic_context_play_next"/>
+    <item
+        android:id="@+id/MenuVideoContextGoToArtist"
+        android:title="@string/dmusic_context_artist_detail"/>
+</menu>

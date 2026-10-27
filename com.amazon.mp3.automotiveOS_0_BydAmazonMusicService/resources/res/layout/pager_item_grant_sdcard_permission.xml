@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/hint_step_page_image_view"
+        android:layout_width="@dimen/grant_sdcard_permission_pager_item_image_view_width"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/grant_sdcard_permission_pager_item_image_view_margin_top"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:textAppearance="@style/TextAppearance.Medium"
+        android:textSize="@dimen/grant_sdcard_permission_pager_item_text_size"
+        android:textColor="@color/white"
+        android:gravity="center_horizontal"
+        android:id="@+id/hint_step_page_text_view"
+        android:layout_width="@dimen/grant_sdcard_permission_pager_item_text_view_width"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/grant_sdcard_permission_pager_item_text_view_margin_top"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>

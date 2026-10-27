@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="@dimen/wake_word_splash_screen_chat_bubble_layout_width"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:background="@drawable/white_rounded_rectangle"
+        android:layout_width="@dimen/wake_word_splash_screen_chat_bubble_width"
+        android:layout_height="@dimen/wake_word_splash_screen_chat_bubble_height"/>
+    <ImageView
+        android:background="@drawable/ic_bubble_tail_white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/wake_word_splash_screen_chat_bubble_tail_margin_top"
+        android:layout_marginStart="@dimen/wake_word_splash_screen_chat_bubble_tail_margin_start"/>
+</LinearLayout>

@@ -1,0 +1,43 @@
+package api.notifications.com.neusoft.common.commonsysapiinverse;
+
+import api.structs.com.neusoft.common.NavAPPActivityStatus;
+import com.google.gson.annotations.SerializedName;
+import com.neusoft.de.nts.OneCoreTest.communication.messageModel.BaseNotification;
+import com.neusoft.de.nts.OneCoreTest.communication.messageModel.EMessageType;
+import com.neusoft.de.nts.OneCoreTest.utils.EProjectInterfaceType;
+
+/* JADX INFO: loaded from: classes.dex */
+public class NotifyNavigationActivityStatus extends BaseNotification {
+    private static final long serialVersionUID = -1478141529;
+
+    @SerializedName("args")
+    private NavAPPActivityStatus navigationActivityStatus;
+
+    public NotifyNavigationActivityStatus() {
+        super(EMessageType.Signal, "MotsBl", "com.neusoft.common.CommonSysApiInverse.NavigationActivityStatus");
+    }
+
+    public NotifyNavigationActivityStatus(NavAPPActivityStatus navAPPActivityStatus) {
+        this();
+        this.navigationActivityStatus = navAPPActivityStatus;
+    }
+
+    public NavAPPActivityStatus getNavigationActivityStatus() {
+        return this.navigationActivityStatus;
+    }
+
+    public NotifyNavigationActivityStatus setNavigationActivityStatus(NavAPPActivityStatus navAPPActivityStatus) {
+        this.navigationActivityStatus = navAPPActivityStatus;
+        return this;
+    }
+
+    @Override // com.neusoft.de.nts.OneCoreTest.communication.messageModel.BaseCommand
+    public EProjectInterfaceType getProjectInterfaceType() {
+        return EProjectInterfaceType.OneCore;
+    }
+
+    @Override // com.neusoft.de.nts.OneCoreTest.communication.messageModel.BaseCommand
+    public String toString() {
+        return getProjectInterfaceType().getGson().toJson(this);
+    }
+}

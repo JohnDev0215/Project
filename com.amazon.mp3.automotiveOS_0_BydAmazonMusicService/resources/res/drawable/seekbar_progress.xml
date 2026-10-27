@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:gravity="center"
+        android:id="@android:id/background">
+        <shape>
+            <corners
+                android:topLeftRadius="@dimen/zero_dp"
+                android:topRightRadius="@dimen/zero_dp"
+                android:bottomLeftRadius="@dimen/podcast_now_playing_seekbar_rounded_corner_radius"
+                android:bottomRightRadius="@dimen/podcast_now_playing_seekbar_rounded_corner_radius"/>
+            <solid android:color="@color/horizontal_progress_bar_base"/>
+        </shape>
+    </item>
+    <item
+        android:gravity="center"
+        android:id="@android:id/secondaryProgress">
+        <clip>
+            <shape>
+                <corners
+                    android:topLeftRadius="@dimen/zero_dp"
+                    android:topRightRadius="@dimen/zero_dp"
+                    android:bottomLeftRadius="@dimen/podcast_now_playing_seekbar_rounded_corner_radius"
+                    android:bottomRightRadius="@dimen/podcast_now_playing_seekbar_rounded_corner_radius"/>
+                <solid android:color="@color/primary_glass_3"/>
+            </shape>
+        </clip>
+    </item>
+    <item
+        android:gravity="center"
+        android:id="@android:id/progress">
+        <clip>
+            <shape>
+                <corners
+                    android:topLeftRadius="@dimen/zero_dp"
+                    android:topRightRadius="@dimen/zero_dp"
+                    android:bottomLeftRadius="@dimen/podcast_now_playing_seekbar_rounded_corner_radius"
+                    android:bottomRightRadius="@dimen/podcast_now_playing_seekbar_rounded_corner_radius"/>
+                <solid android:color="@color/horizontal_progress_bar_progress"/>
+            </shape>
+        </clip>
+    </item>
+</layer-list>

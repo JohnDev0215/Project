@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/background_gradient"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ViewStub
+        android:id="@+id/PlaylistHeaderViewStub"
+        android:inflatedId="@+id/PlaylistHeaderViewStub"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"/>
+    <ViewStub
+        android:id="@+id/HeaderViewStub"
+        android:inflatedId="@+id/HeaderViewStub"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/PlaylistHeaderViewStub"/>
+    <com.amazon.mp3.view.DragDropListView
+        android:id="@+id/ListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/HeaderViewStub"
+        style="@style/ListView"/>
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/libary_loading_footer_height"
+        android:layout_alignParentBottom="true"
+        layout="@layout/library_listview_loading_footer"/>
+</RelativeLayout>

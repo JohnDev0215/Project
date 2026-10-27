@@ -1,0 +1,170 @@
+{
+            "interface": "Touch.SyncInterface.v1_0.SetWidgetSyncElementsMethod",
+            "elements": [
+                {
+                    "interface": "Touch.SyncInterface.v1_0.WidgetSyncElement",
+                    "widgetContext": "NAVIGATION_LIBRARY_CONTENT",
+                    "items": [
+                        {
+                            "interface": "Touch.SyncInterface.v1_0.WidgetItemSyncElement",
+                            "widgetItemContext": "ACTION_NAVIGATION_PODCASTS",
+                            "entityIdType": null,
+                            "entityId": null,
+                            "primaryText": "Podcasts",
+                            "secondaryText": null,
+                            "tertiaryText": null,
+                            "label": null,
+                            "image": null,
+                            "contentEncoding": null,
+                            "contentSrc": null,
+                            "contentInfoInstId": null,
+                            "playMode": null
+                        },
+                        {
+                            "interface": "Touch.SyncInterface.v1_0.WidgetItemSyncElement",
+                            "widgetItemContext": "ACTION_NAVIGATION_PLAYLISTS",
+                            "entityIdType": null,
+                            "entityId": null,
+                            "primaryText": "Playlists",
+                            "secondaryText": null,
+                            "tertiaryText": null,
+                            "label": null,
+                            "image": null,
+                            "contentEncoding": null,
+                            "contentSrc": null,
+                            "contentInfoInstId": null,
+                            "playMode": null
+                        },
+                        {
+                            "interface": "Touch.SyncInterface.v1_0.WidgetItemSyncElement",
+                            "widgetItemContext": "ACTION_NAVIGATION_SONGS",
+                            "entityIdType": null,
+                            "entityId": null,
+                            "primaryText": "Songs",
+                            "secondaryText": null,
+                            "tertiaryText": null,
+                            "label": null,
+                            "image": null,
+                            "contentEncoding": null,
+                            "contentSrc": null,
+                            "contentInfoInstId": null,
+                            "playMode": null
+                        },
+                        {
+                            "interface": "Touch.SyncInterface.v1_0.WidgetItemSyncElement",
+                            "widgetItemContext": "ACTION_NAVIGATION_ARTISTS",
+                            "entityIdType": null,
+                            "entityId": null,
+                            "primaryText": "Artists",
+                            "secondaryText": null,
+                            "tertiaryText": null,
+                            "label": null,
+                            "image": null,
+                            "contentEncoding": null,
+                            "contentSrc": null,
+                            "contentInfoInstId": null,
+                            "playMode": null
+                        },
+                        {
+                            "interface": "Touch.SyncInterface.v1_0.WidgetItemSyncElement",
+                            "widgetItemContext": "ACTION_NAVIGATION_ALBUMS",
+                            "entityIdType": null,
+                            "entityId": null,
+                            "primaryText": "Albums",
+                            "secondaryText": null,
+                            "tertiaryText": null,
+                            "label": null,
+                            "image": null,
+                            "contentEncoding": null,
+                            "contentSrc": null,
+                            "contentInfoInstId": null,
+                            "playMode": null
+                        }
+                    ],
+                    "primaryHeader": "Library",
+                    "secondaryHeader": null
+                },
+                {
+                    "interface": "Touch.SyncInterface.v1_0.WidgetSyncElement",
+                    "widgetContext": "SHOVELER_MADE_FOR_YOU",
+                    "items": [
+                        {
+                            "interface": "Touch.SyncInterface.v1_0.WidgetItemSyncElement",
+                            "widgetItemContext": "ENTITY_STATION",
+                            "entityIdType": "STATION_KEY",
+                            "entityId": "A1ESXGJW9GSMCX",
+                            "primaryText": "My Soundtrack",
+                            "secondaryText": null,
+                            "tertiaryText": null,
+                            "label": "Station",
+                            "image": "https://images-na.ssl-images-amazon.com/images/G/01/MySoundtrack/060320_EN_MySoundtrack_PL_Tile_2400x2400.jpg",
+                            "contentEncoding": null,
+                            "contentSrc": null,
+                            "contentInfoInstId": null,
+                            "playMode": "FULL_ACCESS"
+                        }
+                    ],
+                    "primaryHeader": "Made for You",
+                    "secondaryHeader": null
+                },
+                {
+                    "interface": "Touch.SyncInterface.v1_0.WidgetSyncElement",
+                    "widgetContext": "NAVIGATION_RECENTS",
+                    "items": [
+                        {
+                            "interface": "Touch.SyncInterface.v1_0.WidgetItemSyncElement",
+                            "widgetItemContext": "ACTION_NAVIGATION_RECENTS_SONGS_HISTORY",
+                            "entityIdType": null,
+                            "entityId": null,
+                            "primaryText": "Song History",
+                            "secondaryText": null,
+                            "tertiaryText": null,
+                            "label": null,
+                            "image": null,
+                            "contentEncoding": null,
+                            "contentSrc": null,
+                            "contentInfoInstId": null,
+                            "playMode": null
+                        },
+                        {
+                            "interface": "Touch.SyncInterface.v1_0.WidgetItemSyncElement",
+                            "widgetItemContext": "ACTION_NAVIGATION_RECENTS_ADDED_SONGS",
+                            "entityIdType": null,
+                            "entityId": null,
+                            "primaryText": "Recently Added",
+                            "secondaryText": null,
+                            "tertiaryText": null,
+                            "label": null,
+                            "image": null,
+                            "contentEncoding": null,
+                            "contentSrc": null,
+                            "contentInfoInstId": null,
+                            "playMode": null
+                        },
+                        {
+                            "interface": "Touch.SyncInterface.v1_0.WidgetItemSyncElement",
+                            "widgetItemContext": "ACTION_NAVIGATION_RECENTS_DOWNLOADED_SONGS",
+                            "entityIdType": null,
+                            "entityId": null,
+                            "primaryText": "Recently Downloaded",
+                            "secondaryText": null,
+                            "tertiaryText": null,
+                            "label": null,
+                            "image": null,
+                            "contentEncoding": null,
+                            "contentSrc": null,
+                            "contentInfoInstId": null,
+                            "playMode": null
+                        }
+                    ],
+                    "primaryHeader": "Recents",
+                    "secondaryHeader": null
+                }
+            ],
+            "pageContext": "LIBRARY_FRONT_PAGE",
+            "queue": {
+                "interface": "QueuesInterface.v1_0.SingleThreadedQueue",
+                "id": "TEMPLATE"
+            },
+            "forced": false
+        }

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt"
+    android:name="add_button"
+    android:height="120dp"
+    android:width="120dp"
+    android:viewportWidth="120"
+    android:viewportHeight="120">
+    <path
+        android:name="oval"
+        android:fillColor="#ff363636"
+        android:pathData="M 120,60 C 120,93.14 93.14,120 60,120 C 26.86,120 0,93.14 0,60 C 0,26.86 26.86,0 60,0 C 93.14,0 120,26.86 120,60 Z"/>
+    <group android:name="addsvgGroup">
+        <path
+            android:name="bezier"
+            android:fillColor="#ffffffff"
+            android:pathData="M 73.5,58.5 L 61.5,58.5 L 61.5,46.5 C 61.5,45.67 60.83,45 60,45 C 59.17,45 58.5,45.67 58.5,46.5 L 58.5,58.5 L 46.5,58.5 C 45.67,58.5 45,59.17 45,60 C 45,60.83 45.67,61.5 46.5,61.5 L 58.5,61.5 L 58.5,73.5 C 58.5,74.33 59.17,75 60,75 C 60.83,75 61.5,74.33 61.5,73.5 L 61.5,61.5 L 73.5,61.5 C 74.33,61.5 75,60.83 75,60 C 75,59.17 74.33,58.5 73.5,58.5 Z"
+            android:fillType="evenOdd"/>
+    </group>
+</vector>

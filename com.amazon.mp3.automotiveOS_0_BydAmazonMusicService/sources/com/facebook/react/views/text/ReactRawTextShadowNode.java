@@ -1,0 +1,33 @@
+package com.facebook.react.views.text;
+
+import androidx.annotation.Nullable;
+import com.facebook.react.uimanager.ReactShadowNodeImpl;
+import com.facebook.react.uimanager.annotations.ReactProp;
+
+/* JADX INFO: loaded from: classes6.dex */
+public class ReactRawTextShadowNode extends ReactShadowNodeImpl {
+
+    @Nullable
+    private String mText = null;
+
+    @Override // com.facebook.react.uimanager.ReactShadowNodeImpl, com.facebook.react.uimanager.ReactShadowNode
+    public boolean isVirtual() {
+        return true;
+    }
+
+    @ReactProp(name = "text")
+    public void setText(@Nullable String str) {
+        this.mText = str;
+        markUpdated();
+    }
+
+    @Nullable
+    public String getText() {
+        return this.mText;
+    }
+
+    @Override // com.facebook.react.uimanager.ReactShadowNodeImpl
+    public String toString() {
+        return getViewClass() + " [text: " + this.mText + "]";
+    }
+}

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/podcast_featured_single_row_item"
+    android:background="@drawable/primary_glass_1"
+    android:paddingTop="@dimen/podcast_spacer_small"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.amazon.podcast.views.EmberTextView
+        android:layout_gravity="start"
+        android:id="@+id/podcast_feature_single_row_item_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:paddingStart="@dimen/gutter"
+        android:paddingEnd="@dimen/gutter"
+        android:layout_marginStart="@dimen/margin"
+        android:layout_marginEnd="@dimen/margin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        style="@style/PodcastAppTheme.TextView.Headline4"/>
+    <com.amazon.podcast.views.episodeRowItemsListView.EpisodeRowItemView
+        android:id="@+id/podcast_featured_single_row_episode_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/podcast_feature_single_row_item_label"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

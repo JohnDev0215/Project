@@ -1,0 +1,32 @@
+package com.facebook.imagepipeline.memory;
+
+import android.util.SparseIntArray;
+import com.facebook.common.internal.Preconditions;
+import javax.annotation.Nullable;
+
+/* JADX INFO: loaded from: classes5.dex */
+public class PoolParams {
+
+    @Nullable
+    public final SparseIntArray bucketSizes;
+    public boolean fixBucketsReinitialization;
+    public final int maxBucketSize;
+    public final int maxNumThreads;
+    public final int maxSizeHardCap;
+    public final int maxSizeSoftCap;
+    public final int minBucketSize;
+
+    public PoolParams(int maxSizeSoftCap, int maxSizeHardCap, @Nullable SparseIntArray bucketSizes) {
+        this(maxSizeSoftCap, maxSizeHardCap, bucketSizes, 0, Integer.MAX_VALUE, -1);
+    }
+
+    public PoolParams(int maxSizeSoftCap, int maxSizeHardCap, @Nullable SparseIntArray bucketSizes, int minBucketSize, int maxBucketSize, int maxNumThreads) {
+        Preconditions.checkState(maxSizeSoftCap >= 0 && maxSizeHardCap >= maxSizeSoftCap);
+        this.maxSizeSoftCap = maxSizeSoftCap;
+        this.maxSizeHardCap = maxSizeHardCap;
+        this.bucketSizes = bucketSizes;
+        this.minBucketSize = minBucketSize;
+        this.maxBucketSize = maxBucketSize;
+        this.maxNumThreads = maxNumThreads;
+    }
+}

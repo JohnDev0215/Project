@@ -1,0 +1,282 @@
+<labeling_config>
+	<layer name="label">
+		<layer_settings>
+			<thread_pool>
+				<value ident="depth">3</value>
+			</thread_pool>
+			<language_selector>
+				<!--
+				0: MatchBest; accept all name alternatives, use best (or least-worst) matching one
+				1: MatchExactScript; accept only names with same script code as selected language (no transliterations)
+				2: MatchExactLanguage; accept only names that match the selected language code (not necessarily country code) exactly
+				3: MatchExactScriptAndLanguage; accept only names with same script and same language code as selected language
+				-->
+				<value ident="matching">2</value>
+			</language_selector>
+		</layer_settings>
+		<factorysets>
+			<!-- register poi factory set -->
+			<factoryset type="NdsPoiFactory">
+				<factory type="FactoryPoiLabel">
+					<label_settings>
+						<value ident="priority" type="float">1.2</value>
+						<value ident="clearance" type="float">25</value>
+						<value ident="icon_scaling" type="float">0.5</value>						
+						<value ident="brand_icon" type="bool">true</value>
+						<value ident="max_overlapping" type="float">0.0</value>
+						<value ident="max_overlapping_other" type="float">1.0</value>
+						<value ident="layer">4</value>
+					</label_settings>
+				</factory>
+			</factoryset>
+			<!-- register OnlineCharging factory set -->
+			<factoryset type="NdsOnlineChargingFactory">
+				<factoryset_settings>
+				<value ident="adjust_priority_with_distance" type="bool">false</value>
+				</factoryset_settings>
+				<factory type="FactoryOnlineChargingLabel">
+					<label_settings>
+						<value ident="priority" type="float">1.2</value>
+						<value ident="clearance" type="float">10</value>
+						<value ident="icon_scaling" type="float">0.75</value>
+						<value ident="brand_icon" type="bool">true</value>
+						<!-- do not overlapp other POI or LandmarkIcons -->
+						<value ident="max_overlapping" type="float">0.0</value>
+						<!-- allow full overlapping to other labels -->
+						<value ident="max_overlapping_other" type="float">1.0</value>
+						<!-- place as last elements -->
+						<value ident="layer">4</value>
+					</label_settings>
+				</factory>
+			</factoryset>
+			<!-- register line factory set -->
+			<factoryset type="NdsBmdLineFactory">
+				<factoryset_settings>
+					<line_name_selector type="JapanLineNameSelector"/>
+					<value ident="max_labels_per_line" type="size_t">40</value>
+				</factoryset_settings>
+				<factory type="FactoryBMDIconStreetLine">
+					<!-- configure layout to use for street names -->
+					<layout_settings>
+						<layout type="CenterTopTextLayouter" selector="LayoutSelector3D"/>
+						<!--layout type="CenterTopTextLayouter" selector="LayoutSelector2D"/-->
+						<layout type="LineGradeAllignedTextLayouter" selector="LayoutSelector2D"/>
+					</layout_settings>
+					<label_settings>
+					    <value ident="icon_scaling" type="float">0.5</value>
+						<!-- base priority of label created by this factory -->
+						<value ident="priority" type="float">1.3</value>
+						<!-- clearance to next label need to comply to place a label -->
+						<value ident="clearance" type="float">20</value>
+						<!-- show max 2 labels with same text -->
+						<value ident="max_count_same" type="bool">2</value>
+						<!-- minmal distance to labels with same text and other streetname labels -->
+						<value ident="min_distance" type="int">150</value>
+						<value ident="min_distance_others" type="int">120</value>
+						<!-- do not overlapp other street names -->
+						<value ident="max_overlapping" type="float">0.0</value>
+						<!-- allow full overlapping to other labels -->
+						<value ident="max_overlapping_other" type="float">1.0</value>
+						<!-- angles to flip text drawing order along the line in rad in range of PI..-PI -->
+						<value ident="angle_max" type="float">0.5</value>
+ 						<value ident="angle_min" type="float">-2.6</value>
+						<!-- place after some other stuf -->
+						<value ident="layer">3</value>
+					</label_settings>
+				</factory>
+				<factory type="FactoryBMDRoadNumber">
+				    <!-- select fixedsize_icon_matcher or textsize_road_icon_matcher icon matcher-->
+				    <icon_matcher type="fixedsize_icon_matcher">
+					    <value ident="width" type="int">48</value>
+					    <value ident="height" type="int">48</value>
+					</icon_matcher>
+					<label_settings>
+						<!-- base priority of label created by this factory -->
+						<value ident="priority" type="float">1.1</value>
+						<!-- clearance to next label need to comply to place a label -->
+						<value ident="clearance" type="float">20</value>
+						<value ident="font_size_plain" type="int">12</value>
+						<value ident="font_size_selected" type="int">12</value>
+						<!-- define a minimal distance between roadnumber labels of same road class and text -->
+						<value ident="min_distance" type="int">300</value>
+						<!-- define a minimal distance between roadnumber labels of differnt road class and text -->
+						<value ident="min_distance_others" type="int">280</value>
+						<!-- allow full overlapping with labels of other classes -->
+						<value ident="max_overlapping_other" type="float">1.0</value>												
+						<value ident="layer">3</value>
+					</label_settings>
+				</factory>
+				<factory type="FactoryBMDWaterLine">
+					<label_settings>
+						<!-- base priority of label created by this factory -->
+						<value ident="priority" type="float">0.5</value>
+						<!-- clearance to next label need to comply to place a label -->
+						<value ident="clearance" type="float">25</value>
+						<value ident="color_fg" type="color">#1050A0FF</value>
+						<value ident="color_bg" type="color">#E0F0FFFF</value>
+						<value ident="layer">3</value>
+					</label_settings>
+				</factory>
+			</factoryset>
+			<!-- register line factory set -->
+			<factoryset type="NdsBmdPointFactory">
+				<factory type="FactoryBMDCityDistrictCenter">
+					<label_settings>
+						<!-- base priority of label created by this factory -->
+						<value ident="priority" type="float">1.15</value>
+						<!-- clearance to next label need to comply to place a label -->
+						<value ident="clearance" type="float">10</value>	
+						<value ident="layer">2</value>						
+                        <value ident="mandatory" type="bool" languages="jpn" min_pitch="0" max_pitch="10">true</value>
+						<value ident="mandatory" type="bool" languages="jpn" min_pitch="10" max_pitch="90">false</value>
+						<value ident="mandatory" type="bool" languages="eng">false</value>
+					</label_settings>
+				</factory>
+				<factory type="FactoryBMDSettlementName">
+					<label_settings>
+						<!-- base priority of label created by this factory -->
+						<value ident="priority" type="float">1.5</value>
+						<!-- clearance to next label need to comply to place a label -->
+						<value ident="clearance" type="float">20</value>		
+						<value ident="layer">2</value>						
+                        <value ident="mandatory" type="bool" languages="jpn" min_pitch="0" max_pitch="10">true</value>
+						<value ident="mandatory" type="bool" languages="jpn" min_pitch="10" max_pitch="90">false</value>
+						<value ident="mandatory" type="bool" languages="eng">false</value>
+						<!-- allow full overlapping with labels of other classes -->
+						<value ident="max_overlapping_other" type="float">0.0</value>            
+					</label_settings>
+				</factory>
+				<factory type="FactoryBMDMandatoryIsland">
+					<label_settings>
+						<!-- base priority of label created by this factory -->
+						<value ident="priority" type="float">2.0</value>
+						<!-- clearance to next label need to comply to place a label -->
+						<value ident="clearance" type="float">25</value>
+						<value ident="layer">2</value>
+                  <value ident="icon_scaling" type="float">0.5</value>
+					</label_settings>
+				</factory>
+				<factory type="FactoryBMDHamletName">
+					<label_settings>
+						<value ident="priority" type="float">1.0</value>
+						<value ident="clearance" type="float">30</value>
+						<value ident="layer">2</value>
+						<value ident="mandatory" type="bool">false</value>
+						<!-- allow full overlapping with labels of other classes -->
+						<value ident="max_overlapping_other" type="float">0.0</value>						
+					</label_settings>
+				</factory>
+				<factory type="FactoryBMDMountainPeak">				
+					<label_settings>
+						<!-- base priority of label created by this factory -->
+						<value ident="priority" type="float">1.1</value>
+						<!-- clearance to next label need to comply to place a label -->
+						<value ident="clearance" type="float">25</value>
+						<value ident="layer">0</value>
+                  <value ident="icon_scaling" type="float">0.5</value>
+					</label_settings>
+				</factory>
+				<factory type="FactoryBMDOrder0">
+					<label_settings>
+						<!-- base priority of label created by this factory -->
+						<value ident="priority" type="float">1.2</value>
+						<!-- clearance to next label need to comply to place a label -->
+						<value ident="clearance" type="float">1</value>						
+                        <value ident="mandatory" type="bool" languages="jpn" min_pitch="0" max_pitch="10">true</value>
+						<value ident="mandatory" type="bool" languages="jpn" min_pitch="10" max_pitch="90">false</value>
+						<value ident="mandatory" type="bool" languages="eng">false</value>
+						<value ident="layer">2</value>
+						<!-- allow full overlapping with labels of other classes -->
+						<value ident="max_overlapping_other" type="float">0.0</value>						
+					</label_settings>
+				</factory>
+				<factory type="FactoryBMDOrder1">
+					<label_settings>
+						<!-- base priority of label created by this factory -->
+						<value ident="priority" type="float">1.6</value>
+						<!-- clearance to next label need to comply to place a label -->
+						<value ident="clearance" type="float">1</value>	
+                        <value ident="mandatory" type="bool" languages="jpn" min_pitch="0" max_pitch="10">true</value>
+						<value ident="mandatory" type="bool" languages="jpn" min_pitch="10" max_pitch="90">false</value>
+						<value ident="mandatory" type="bool" languages="eng">false</value>
+						<value ident="layer">2</value>			
+						<!-- allow full overlapping with labels of other classes -->
+						<value ident="max_overlapping_other" type="float">0.0</value>
+					</label_settings>					
+				</factory>
+				<factory type="FactoryBMDSimplePoint">
+					<label_settings>
+						<!-- base priority of label created by this factory -->
+						<value ident="priority" type="float">1.02</value>
+						<!-- clearance to next label need to comply to place a label -->
+						<value ident="clearance" type="float">40</value>
+						<!-- move labels to higher sublayer to calculate overlapping -->
+						<value ident="layer">1</value>
+					</label_settings>
+				</factory>
+				<factory type="FactoryBMDExitPoint">
+					<label_settings>
+						<value ident="priority" type="float">1.7</value>
+						<value ident="clearance" type="float">10</value>
+						<value ident="layer">0</value>
+						<layout_settings>
+							<layout type="CenterTopTextLayout" selector="NullLayoutSelector"/>
+						</layout_settings>								
+					</label_settings>
+				</factory>
+				<factory type="FactoryBMDEntryPoint">
+					<label_settings>
+						<value ident="priority" type="float">1.8</value>
+						<value ident="clearance" type="float">10</value>
+						<value ident="layer">0</value>	
+						<layout_settings>
+							<layout type="CenterTopTextLayout" selector="NullLayoutSelector"/>
+						</layout_settings>								
+					</label_settings>
+				</factory>
+				<factory type="FactoryBMDInterchangePoint">
+					<label_settings>
+						<value ident="priority" type="float">1.9</value>
+						<value ident="clearance" type="float">10</value>
+						<value ident="layer">0</value>		
+						<layout_settings>
+							<layout type="CenterTopTextLayout" selector="NullLayoutSelector"/>
+						</layout_settings>								
+					</label_settings>
+				</factory>	
+			</factoryset>
+		</factorysets>
+		<!-- define factories and setting for MainWindow -->
+		<view name="MapWindow">
+			<placement>
+				<!-- maximal scale to build and show stacks for stackable labels -->
+				<value ident="max_stacking_scale" type="int">5000000</value>
+			</placement>
+			<label_scale_processor>
+				<text_scaling>LinearLabelScaleProcessor</text_scaling>
+				<icon_scaling>LinearLabelScaleProcessor</icon_scaling>
+			</label_scale_processor>
+			<background_treebuilding>true</background_treebuilding>
+			<!-- select factories to use for this view -->
+			<factory_usage>
+            	<factory type="FactoryBMDIconStreetLine"></factory>
+				<factory type="FactoryBMDSimplePoint"></factory>
+				<factory type="FactoryBMDMountainPeak"></factory>
+				<factory type="FactoryPoiLabel"></factory>
+				<factory type="FactoryBgLandmarkLabel"></factory>
+				<factory type="FactoryBMDSettlementName"></factory>
+				<factory type="FactoryBMDCityDistrictCenter"></factory>
+				<factory type="FactoryBMDHamletName"></factory>
+				<factory type="FactoryBMDRoadNumber"></factory>
+				<factory type="FactoryBMDWaterLine"></factory>
+				<factory type="FactoryBMDMandatoryIsland"></factory>
+				<factory type="FactoryBMDOrder0"></factory>
+				<factory type="FactoryBMDOrder1"></factory>
+				<factory type="FactoryBMDExitPoint"></factory>
+				<factory type="FactoryBMDEntryPoint"></factory>
+				<factory type="FactoryBMDInterchangePoint"></factory>
+				<factory type="FactoryOnlineChargingLabel"></factory>
+			</factory_usage>
+		</view>
+	</layer>
+</labeling_config>

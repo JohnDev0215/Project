@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rotate xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fromDegrees="@integer/circle_progress_bar_from_degree"
+    android:toDegrees="@integer/circle_progress_bar_to_degree">
+    <shape
+        android:shape="ring"
+        android:useLevel="true"
+        android:thickness="@dimen/circle_progress_bar_thickness">
+        <solid android:color="@color/progress_bar_stroke"/>
+    </shape>
+</rotate>

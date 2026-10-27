@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="HighLevelClient" class="com.neusoft.de.nts.OneCoreTest.communication.transports.AmqpClient.RxAmqpClient">
+        <constructor-arg value="highlevel.#"/>
+    </bean>
+
+    <bean id="DestinationInputClient" class="com.neusoft.de.nts.OneCoreTest.communication.transports.AmqpClient.RxAmqpClient">
+        <constructor-arg value="destinationinput.#"/>
+    </bean>
+
+    <bean id="MapViewerClient" class="com.neusoft.de.nts.OneCoreTest.communication.transports.AmqpClient.RxAmqpClient">
+        <constructor-arg value="mapviewer.#"/>
+    </bean>
+
+    <bean id="RoutingClient" class="com.neusoft.de.nts.OneCoreTest.communication.transports.AmqpClient.RxAmqpClient">
+        <constructor-arg value="routing.#"/>
+    </bean>
+
+    <bean id="SettingsClient" class="com.neusoft.de.nts.OneCoreTest.communication.transports.AmqpClient.RxAmqpClient">
+        <constructor-arg value="settings.#"/>
+    </bean>
+
+    <bean id="ControllerClient" class="com.neusoft.de.nts.OneCoreTest.communication.transports.AmqpClient.RxAmqpClient">
+        <constructor-arg value="controller.#"/>
+    </bean>
+
+    <bean id="StatusClient" class="com.neusoft.de.nts.OneCoreTest.communication.transports.AmqpClient.RxAmqpClient">
+        <constructor-arg value="#.status.#"/>
+    </bean>
+
+</beans>
+
+

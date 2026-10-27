@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/MenuTransfer"
+        android:title="@string/cloudqueue_menu_transfer"/>
+    <item
+        android:id="@+id/MenuControlPlayback"
+        android:title="@string/cloudqueue_menu_remote_control"/>
+    <item
+        android:id="@+id/MenuConnectToPlay"
+        android:title="@string/cloudqueue_menu_connect_to_play"/>
+</menu>

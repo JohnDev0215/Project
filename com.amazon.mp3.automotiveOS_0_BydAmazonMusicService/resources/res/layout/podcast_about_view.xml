@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/detail_summary"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/podcast_spacer_large"
+    android:layout_marginBottom="@dimen/podcast_spacer_large"
+    android:paddingStart="@dimen/margin"
+    android:paddingEnd="@dimen/margin">
+    <com.amazon.podcast.views.galleryTemplate.TrailerButton
+        android:id="@+id/about_view_trailer_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/podcast_spacer_large"
+        android:layout_marginStart="@dimen/gutter"
+        android:layout_marginEnd="@dimen/gutter"/>
+    <com.amazon.podcast.views.ExpandableTextView
+        android:id="@+id/about_view_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/podcast_spacer_micro"
+        android:layout_below="@+id/about_view_trailer_button"
+        android:layout_marginStart="@dimen/gutter"
+        android:layout_marginEnd="@dimen/gutter"
+        app:isCollapsed="true"
+        app:trimCollapsedText="@string/podcast_read_more"
+        app:trimExpandedText="@string/podcast_read_less"
+        style="@style/PodcastAppTheme.TextView.AboutDescriptionText"/>
+    <com.amazon.podcast.views.galleryTemplate.CompactPillListingView
+        android:id="@+id/about_view_pills_listing"
+        android:clipToPadding="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/about_view_description"
+        android:paddingStart="@dimen/gutter"/>
+</RelativeLayout>

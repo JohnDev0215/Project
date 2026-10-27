@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.amazon.mp3.playback.view.lyrics.LyricsLineContainer xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:textSize="@dimen/tiny_text_size"
+        android:textColor="@color/grey"
+        android:gravity="center"
+        android:id="@+id/LyricsTextView"
+        android:paddingLeft="@dimen/tiny_padding"
+        android:paddingTop="@dimen/large_padding"
+        android:paddingRight="@dimen/tiny_padding"
+        android:paddingBottom="@dimen/large_padding"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</com.amazon.mp3.playback.view.lyrics.LyricsLineContainer>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ImageView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/Store"
+    android:background="@drawable/ripple_background_no_mask"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/ic_store_andanteblue"
+    android:layout_centerVertical="true"
+    android:contentDescription="@string/store"
+    android:layout_marginEnd="@dimen/action_bar_side_padding"
+    android:layout_alignParentEnd="true"/>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center"
+    android:layout_gravity="center_horizontal"
+    android:orientation="horizontal"
+    android:id="@+id/MainButtonContainer"
+    android:background="@drawable/follow_outline"
+    android:paddingTop="12dp"
+    android:paddingBottom="12dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingStart="18dp"
+    android:paddingEnd="18dp">
+    <ImageView
+        android:layout_gravity="center_vertical"
+        android:id="@+id/MainButtonStation"
+        android:background="@drawable/ripple_background_no_mask"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_playback_station_svg"
+        android:contentDescription="@string/dmusic_detail_page_start_station"/>
+    <TextView
+        android:textSize="@dimen/follow_text_size"
+        android:textColor="@android:color/white"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:id="@+id/MainButtonTextView"
+        android:background="@android:color/transparent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/follow_text_bottom_margin"
+        android:text="@string/dmusic_detail_page_start_station"
+        android:maxLines="1"
+        android:layout_marginStart="@dimen/follow_text_start_margin"/>
+</LinearLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/backgroundView"
+        android:background="@drawable/signin_splash_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="signInOnInteraction">
+        <include layout="@layout/pre_auth_splash_logo"/>
+        <TextView
+            android:textSize="36sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:id="@+id/headline"
+            android:paddingTop="@dimen/dialog_textview_padding"
+            android:paddingBottom="@dimen/dialog_margin_and_padding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dialog_bottom_margin"
+            android:layout_marginRight="@dimen/dialog_bottom_margin"
+            android:text="@string/pre_auth_splash_title"
+            android:textAllCaps="true"
+            android:fontFamily="@font/ember_display_condensed_heavy"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toTopOf="@+id/signin_splash_byline"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/musicLogo"/>
+        <TextView
+            android:gravity="center"
+            android:id="@+id/signin_splash_byline"
+            android:paddingBottom="@dimen/dialog_textview_padding"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dialog_byline_margin"
+            android:layout_marginRight="@dimen/dialog_byline_margin"
+            android:text="@string/pre_auth_splash_body"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/headline"/>
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dialog_bottom_margin"
+            android:layout_marginRight="@dimen/dialog_bottom_margin"
+            app:layout_constraintTop_toBottomOf="@+id/signin_splash_byline"
+            layout="@layout/pre_auth_splash_cta"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

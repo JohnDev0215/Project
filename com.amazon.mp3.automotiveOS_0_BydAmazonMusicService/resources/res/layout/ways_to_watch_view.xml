@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingTop="@dimen/spacer_large"
+    android:paddingBottom="@dimen/spacer_large"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:gravity="center"
+        android:id="@+id/ways_to_watch_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacer_epic"
+        android:layout_marginBottom="@dimen/spacer_mini"
+        android:maxLines="1"
+        app:layout_constraintBottom_toTopOf="@+id/ways_to_watch"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <LinearLayout
+        android:gravity="center"
+        android:id="@+id/ways_to_watch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacer_base"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ways_to_watch_title">
+        <com.amazon.music.alps.liveevent.view.VerticalIconLinkItemView
+            android:id="@+id/watch_on_prime_video"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <com.amazon.music.alps.liveevent.view.VerticalIconLinkItemView
+            android:id="@+id/watch_on_amazon_music"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/spacer_small"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,8 @@
+package com.facebook.react.uimanager;
+
+/* JADX INFO: loaded from: classes6.dex */
+public class FloatUtil {
+    public static boolean floatsEqual(float f, float f2) {
+        return (Float.isNaN(f) || Float.isNaN(f2)) ? Float.isNaN(f) && Float.isNaN(f2) : Math.abs(f2 - f) < 1.0E-5f;
+    }
+}

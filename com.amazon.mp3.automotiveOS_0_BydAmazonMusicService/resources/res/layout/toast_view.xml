@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/toast_background_view"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="@dimen/toast_width"
+        android:layout_height="@dimen/toast_height">
+        <ImageView
+            android:id="@+id/toast_image_view"
+            android:layout_width="@dimen/toast_image_width"
+            android:layout_height="@dimen/toast_image_height"
+            android:layout_marginTop="@dimen/podcast_spacer_epic"
+            android:layout_marginStart="@dimen/podcast_spacer_giant"
+            android:layout_marginEnd="@dimen/podcast_spacer_giant"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+        <TextView
+            android:textStyle="bold"
+            android:gravity="center"
+            android:id="@+id/toast_text_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/podcast_spacer_huge"
+            android:layout_marginBottom="@dimen/podcast_spacer_epic"
+            android:layout_marginStart="@dimen/podcast_spacer_large"
+            android:layout_marginEnd="@dimen/podcast_spacer_large"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toast_image_view"
+            style="@style/PodcastAppTheme.TextView.Primary"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

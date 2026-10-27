@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/MenuGenreAddToPlayQueue"
+        android:title="@string/dmusic_context_add_to_play_queue"/>
+    <item
+        android:id="@+id/MenuGenrePlayNext"
+        android:title="@string/dmusic_context_play_next"/>
+    <item
+        android:id="@+id/MenuGenreAddToPlaylist"
+        android:title="@string/dmusic_context_add_to_playlist"/>
+    <item
+        android:id="@+id/MenuGenreContextDownload"
+        android:title="@string/dmusic_context_download"/>
+    <item
+        android:id="@+id/MenuGenreContextCancelDownload"
+        android:title="@string/dmusic_download_item_context_remove_item"/>
+    <item
+        android:id="@+id/MenuGenreContextDelete"
+        android:title="@string/dmusic_context_delete_device"/>
+    <item
+        android:id="@+id/MenuGenreContextDeleteFromCirrus"
+        android:title="@string/dmusic_context_delete_cloud"/>
+</menu>

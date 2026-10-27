@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/MenuPlaylistAddToPlayQueue"
+        android:title="@string/dmusic_context_add_to_play_queue"/>
+    <item
+        android:id="@+id/MenuPlaylistPlayNext"
+        android:title="@string/dmusic_context_play_next"/>
+    <item
+        android:id="@+id/MenuDownload"
+        android:title="@string/dmusic_context_download"/>
+    <item
+        android:id="@+id/MenuUserPlaylistStationFromAnything"
+        android:title="@string/start_station_from_anything"/>
+    <item
+        android:id="@+id/MenuShare"
+        android:title="@string/dmusic_context_share"/>
+    <item
+        android:id="@+id/MenuPlaylistMakePrivate"
+        android:title="@string/dmusic_playlist_context_make_playlist_private"/>
+    <item
+        android:id="@+id/MenuPlaylistMakePublic"
+        android:title="@string/dmusic_playlist_context_make_playlist_public"/>
+    <item
+        android:id="@+id/MenuPlaylistContextAddToLibrary"
+        android:title="@string/follow_content_description"/>
+    <item
+        android:enabled="false"
+        android:id="@+id/MenuPlaylistContextInLibrary"
+        android:title="@string/dmusic_prime_menu_in_library"/>
+</menu>

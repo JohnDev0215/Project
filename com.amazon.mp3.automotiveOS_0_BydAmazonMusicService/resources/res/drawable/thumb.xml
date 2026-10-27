@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="oval">
+    <gradient
+        android:startColor="@color/horizontal_progress_bar_progress"
+        android:endColor="@color/horizontal_progress_bar_progress"
+        android:angle="270"/>
+    <size
+        android:height="@dimen/podcast_tiny_icon"
+        android:width="@dimen/podcast_tiny_icon"/>
+</shape>

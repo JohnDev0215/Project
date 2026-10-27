@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/spotlight_carousel_slide"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/spotlight_carousel_slide_primary_text"
+        android:layout_above="@+id/spotlight_carousel_slide_secondary_text"
+        style="@style/SpotlightCarouselPrimaryText"/>
+    <TextView
+        android:id="@+id/spotlight_carousel_slide_secondary_text"
+        android:layout_above="@+id/spotlight_carousel_slide_tertiary_text"
+        style="@style/SpotlightCarouselSecondaryText"/>
+    <TextView
+        android:id="@+id/spotlight_carousel_slide_tertiary_text"
+        style="@style/SpotlightCarouselTertiaryText"/>
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spotlight_carousel_slide_tertiary_text"
+        android:layout_centerHorizontal="true">
+        <TextView
+            android:id="@+id/spotlight_carousel_slide_primary_call_to_action"
+            android:layout_marginEnd="@dimen/spacer_small"
+            style="@style/PillNavigatorWidgetItem"/>
+        <TextView
+            android:id="@+id/spotlight_carousel_slide_secondary_call_to_action"
+            style="@style/PillNavigatorWidgetItem"/>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,53 @@
+package com.amazon.avod.perf;
+
+/* JADX INFO: loaded from: classes2.dex */
+public class PlaybackMarkers {
+    public static final Marker PLAYBACK_ONPREPARED = new Marker("PLAYBACK_ONPREPARED");
+    public static final Marker PLAYBACK_PRE_INIT = new Marker("PLAYBACK_PRE_INIT");
+    public static final Marker PLAYBACK_ONSTARTBUFFERING = new Marker("PLAYBACK_ONSTARTBUFFERING");
+    public static final Marker PLAYBACK_START = new Marker("PLAYBACK_START");
+    public static final Marker PLAYBACK_PAUSE = new Marker("PLAYBACK_PAUSE");
+    public static final Marker PLAYBACK_RESUME = new Marker("PLAYBACK_RESUME");
+    public static final Marker PLAYBACK_STOP = new Marker("PLAYBACK_STOP");
+    public static final Marker PLAYBACK_ACTIVITY_STOP = new Marker("PLAYBACK_ACTIVITY_STOP");
+    public static final Marker PLAYBACK_AD_PRESENTATION_CREATED = new Marker("PLAYBACK_AD_PRESENTATION_CREATED");
+    public static final Marker PLAYBACK_IS_CONTINUOUS_PLAY = new Marker("PLAYBACK_IS_CONTINUOUS_PLAY");
+    public static final Marker PLAYBACK_IS_ACTIVITY_REUSE = new Marker("PLAYBACK_IS_ACTIVITY_REUSE");
+    public static final Marker PLAYBACK_IS_DEEP_LINK = new Marker("PLAYBACK_IS_DEEP_LINK");
+    public static final Marker PLAYBACK_IS_PUSH_NOTIFICATION = new Marker("PLAYBACK_IS_PUSH_NOTIFICATION");
+    public static final Marker PLAYBACK_CLIENT_PRS_CACHE_MISS = new Marker("PLAYBACK_CLIENT_PRS_CACHE_MISS");
+    public static final Marker PLAYBACK_VDSM_DIALOG_SHOWN = new Marker("PLAYBACK_VDSM_DIALOG_SHOWN");
+    public static final Marker PLAYBACK_VDSM_RESTRICTION_CHECK_NEEDED = new Marker("PLAYBACK_VDSM_RESTRICTION_CHECK_NEEDED");
+    public static final Marker PLAYBACK_VDSM_RESTRICTIONS_CHECK_NO_UI = new Marker("PLAYBACK_VDSM_RESTRICTIONS_CHECK_NO_UI");
+    public static final Marker PLAYBACK_VIDEOMATERIALTYPE_MISSING = new Marker("PLAYBACK_VIDEOMATERIALTYPE_MISSING");
+    public static final Marker PLAYBACK_IS_SEASON_TITLE_ID = new Marker("PLAYBACK_IS_SEASON_TITLE_ID");
+    public static final Marker PLAYBACKACTIVITY_TERMINATEPLAYBACK = new Marker("PLAYBACKACTIVITY_TERMINATEPLAYBACK");
+    public static final Marker PLAYBACK_PLAY_BUTTON_CLICK = new Marker("PLAYBACK_PLAY_BUTTON_CLICK");
+    public static final Marker PLAYBACK_PLAY_MEDIA_COMMAND = new Marker("PLAYBACK_PLAY_MEDIA_COMMAND");
+    public static final Marker PLAYBACK_PAUSE_BUTTON_CLICK = new Marker("PLAYBACK_PAUSE_BUTTON_CLICK");
+    public static final Marker PLAYBACK_PAUSE_MEDIA_COMMAND = new Marker("PLAYBACK_PAUSE_MEDIA_COMMAND");
+    public static final Marker PLAYBACK_BACK_BUTTON_CLICK = new Marker("PLAYBACK_BACK_BUTTON_CLICK");
+    public static final Marker PLAYBACK_HOME_BUTTON_CLICK = new Marker("PLAYBACK_HOME_BUTTON_CLICK");
+    public static final Marker PLAYBACK_SKIPBACK_BUTTON_CLICK = new Marker("PLAYBACK_SKIPBACK_BUTTON_CLICK");
+    public static final Marker PLAYBACK_SKIPBACK_DPAD_CLICK = new Marker("PLAYBACK_SKIPBACK_DPAD_CLICK");
+    public static final Marker PLAYBACK_SKIPFORWARD_BUTTON_CLICK = new Marker("PLAYBACK_SKIPFORWARD_BUTTON_CLICK");
+    public static final Marker PLAYBACK_SKIPFORWARD_DPAD_CLICK = new Marker("PLAYBACK_SKIPFORWARD_DPAD_CLICK");
+    public static final Marker PLAYBACK_SEEK_TO_MEDIA_COMMAND = new Marker("PLAYBACK_SEEK_TO_MEDIA_COMMAND");
+    public static final Marker PLAYBACK_NEXTUP_BUTTON_CLICK = new Marker("PLAYBACK_NEXTUP_BUTTON_CLICK");
+    public static final Marker PLAYBACK_ZOOM_BUTTON_CLICK = new Marker("PLAYBACK_ZOOM_BUTTON_CLICK");
+    public static final Marker PLAYBACK_SUBTITLE_MENU_BUTTON_CLICK = new Marker("PLAYBACK_CLOSECAPTIONS_QUICK_MENU_BUTTON_CLICK");
+    public static final Marker PLAYBACK_SUBTITLE_SETTINGS_SWITCH_BUTTON_CLICK = new Marker("PLAYBACK_CLOSECAPTIONS_SETTINGS_SWITCH_BUTTON_CLICK");
+    public static final Marker PLAYSTATE_CHANGED_TO_PLAYING = new Marker("PLAYSTATE_CHANGED_TO_PLAYING");
+    public static final Marker PLAYSTATE_CHANGED_TO_PAUSED = new Marker("PLAYSTATE_CHANGED_TO_PAUSED");
+    public static final Marker PLAYSTATE_CHANGED_TO_LAUNCH_NEXT_TITLE = new Marker("PLAYSTATE_CHANGED_TO_LAUNCH_NEXT_TITLE");
+    public static final Marker PLAYSTATE_CHANGED_FROM_RELAUNCH_COMMAND = new Marker("PLAYSTATE_CHANGED_FROM_RELAUNCH_COMMAND");
+    public static final Marker PLAYSTATE_FALLBACK_FROM_SYE_PLAYER = new Marker("PLAYSTATE_FALLBACK_FROM_SYE_PLAYER");
+    public static final Marker PLAYSTATE_CHANGED_TO_ZOOMED_IN = new Marker("PLAYSTATE_CHANGED_TO_ZOOMED_IN");
+    public static final Marker PLAYSTATE_CHANGED_TO_ZOOMED_OUT = new Marker("PLAYSTATE_CHANGED_TO_ZOOMED_OUT");
+    public static final Marker PLAYSTATE_CHANGED_TO_SUBTITLE_MENU_SHOWN = new Marker("PLAYSTATE_CHANGED_TO_CLOSED_CAPTIONS_QUICK_MENU_SHOWN");
+    public static final Marker PLAYSTATE_CHANGED_TO_SUBTITLE_MENU_HIDDEN = new Marker("PLAYSTATE_CHANGED_TO_CLOSED_CAPTIONS_QUICK_MENU_HIDDEN");
+    public static final Marker PLAYBACK_TAP_BEFORE_CONTROLS_HIDDEN = new Marker("PLAYBACK_TAP_BEFORE_CONTROLS_HIDDEN");
+    public static final Marker PLAYBACK_TAP_BEFORE_CONTROLS_SHOWN = new Marker("PLAYBACK_TAP_BEFORE_CONTROLS_SHOWN");
+    public static final Marker PLAYBACK_CONTROLS_SHOWN = new Marker("PLAYBACK_CONTROLS_SHOWN");
+    public static final Marker PLAYBACK_CONTROLS_HIDDEN = new Marker("PLAYBACK_CONTROLS_HIDDEN");
+}

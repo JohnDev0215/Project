@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/lyrics_feedback_text_box_fill_color"/>
+    <corners android:radius="3dp"/>
+    <padding
+        android:left="@dimen/bauhaus_spacer_mini"
+        android:top="@dimen/bauhaus_spacer_mini"
+        android:right="@dimen/bauhaus_spacer_mini"
+        android:bottom="@dimen/bauhaus_spacer_mini"/>
+    <stroke
+        android:width="2dp"
+        android:color="@color/lyrics_feedback_text_box_stroke_color"/>
+</shape>

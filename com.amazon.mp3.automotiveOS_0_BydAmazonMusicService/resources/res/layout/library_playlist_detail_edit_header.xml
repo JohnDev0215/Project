@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/detail_view_margin"
+    android:paddingTop="@dimen/detail_view_top_padding"
+    android:paddingRight="@dimen/detail_view_margin"
+    android:paddingBottom="@dimen/detail_view_bottom_padding"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ViewStub
+        android:id="@+id/PlaylistHeaderViewStub"
+        android:inflatedId="@+id/PlaylistHeaderViewStub"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:ellipsize="end"
+        android:gravity="center"
+        android:id="@+id/ThePlaylistName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/standard_padding"
+        android:maxLines="2"
+        style="@style/DetailViewContentName"/>
+</LinearLayout>

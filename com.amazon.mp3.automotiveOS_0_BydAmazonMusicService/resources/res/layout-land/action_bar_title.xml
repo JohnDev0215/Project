@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_vertical"
+    android:id="@+id/action_bar_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:textSize="@dimen/action_bar_title_text_size"
+        android:textColor="@color/white"
+        android:ellipsize="end"
+        android:id="@+id/Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:layout_centerVertical="true"
+        android:layout_alignWithParentIfMissing="true"
+        android:paddingEnd="@dimen/standard_padding"
+        android:layout_toStartOf="@+id/Action_Button_Casting"
+        android:layout_alignParentStart="true"
+        style="@style/AmazonMusic.EmberRegularText"/>
+    <RelativeLayout
+        android:id="@+id/ActionBarDetailPlayerControlsFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignWithParentIfMissing="true"
+        android:paddingEnd="@dimen/small_padding"
+        android:layout_toStartOf="@+id/Action_Button_Casting"/>
+    <include
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toStartOf="@+id/Action_Button_Profile"
+        layout="@layout/feed_button"
+        style="@style/ActionBarProfileButtonStyle"/>
+    <com.amazon.mp3.actionbar.view.ActionBarRightButton
+        android:id="@+id/Action_Button_Profile"
+        android:layout_toStartOf="@+id/Action_Button_Overflow"
+        app:style="profile"
+        style="@style/ActionBarProfileButtonStyle"/>
+    <com.amazon.mp3.actionbar.view.ActionBarRightButton
+        android:id="@+id/Action_Button_Overflow"
+        app:style="overflow"
+        style="@style/ActionBarStoreButtonStyle"/>
+</RelativeLayout>

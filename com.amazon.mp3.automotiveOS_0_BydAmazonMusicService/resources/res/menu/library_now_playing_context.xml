@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/MenuNowPlayingContextClearNowPlaying"
+        android:title="@string/dmusic_now_playing_context_clear_now_playing_queue"/>
+    <item
+        android:id="@+id/MenuNowPlayingContextAddToPlaylist"
+        android:title="@string/dmusic_context_add_to_playlist"/>
+    <item
+        android:id="@+id/MenuNowPlayingContextExploreArtist"
+        android:title="@string/dmusic_context_shop_for"/>
+    <item
+        android:id="@+id/MenuNowPlayingContextAlbumDetail"
+        android:title="@string/dmusic_context_album_detail"/>
+    <item
+        android:id="@+id/MenuNowPlayingContextDelete"
+        android:title="@string/dmusic_context_delete_device"/>
+    <item
+        android:id="@+id/MenuNowPlayingContextDeleteFromCirrus"
+        android:title="@string/dmusic_context_delete_cloud"/>
+    <item
+        android:id="@+id/MenuNowPlayingContextGoToArtist"
+        android:title="@string/dmusic_context_artist_detail"/>
+</menu>

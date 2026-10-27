@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:rabbit="http://www.springframework.org/schema/rabbit"
+       xsi:schemaLocation="http://www.springframework.org/schema/rabbit
+           http://www.springframework.org/schema/rabbit/spring-rabbit-1.5.xsd
+           http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+    <!--=====================RabbitMQ config=============================================== -->
+
+    <rabbit:connection-factory id="connectionFactory" host="127.0.0.1"/>
+    <rabbit:admin connection-factory="connectionFactory" />
+
+    <rabbit:queue name="settings" auto-delete="true" durable="false"/>
+    <rabbit:queue name="destination" auto-delete="true" durable="false"/>
+    <rabbit:queue name="mapviewer" auto-delete="true" durable="false"/>
+    <rabbit:queue name="controller" auto-delete="true" durable="false"/>
+    <rabbit:queue name="status" auto-delete="true" durable="false"/>
+
+    <rabbit:topic-exchange name="FrameworkExchange">
+        <rabbit:bindings>
+            <rabbit:binding queue="settings" pattern="settings.#"/>
+            <rabbit:binding queue="controller" pattern="controller.#"/>
+            <rabbit:binding queue="destination" pattern="destination.#"/>
+            <rabbit:binding queue="mapviewer" pattern="mapviewer.#"/>
+            <rabbit:binding queue="status" pattern="#.status.#"/>
+        </rabbit:bindings>
+    </rabbit:topic-exchange>
+
+
+    <rabbit:listener-container connection-factory="connectionFactory">
+        <rabbit:listener ref="SettingsClient" method="onMessage" queue-names="settings" />
+        <rabbit:listener ref="DestinationClient" method="onMessage" queue-names="destination" />
+        <rabbit:listener ref="MapViewerClient" method="onMessage" queue-names="mapviewer" />
+        <rabbit:listener ref="ControllerClient" method="onMessage" queue-names="controller" />
+        <rabbit:listener ref="StatusClient" method="onMessage" queue-names="status" />
+    </rabbit:listener-container>
+
+    <rabbit:template id="settingsTemplate" connection-factory="connectionFactory"
+                     exchange="FrameworkExchange" routing-key="controller.Settings"/>
+
+    <rabbit:template id="mapViewerTemplate" connection-factory="connectionFactory"
+                     exchange="FrameworkExchange" routing-key="controller.mapviweer"/>
+
+    <rabbit:template id="destinationsTemplate" connection-factory="connectionFactory"
+                     exchange="FrameworkExchange" routing-key="controller.destination"/>
+
+    <rabbit:template id="controllerTemplate" connection-factory="connectionFactory"
+                     exchange="FrameworkExchange"/>
+
+    <bean id="SettingsClient" class="com.neusoft.de.nts.OneCoreTest.communication.transports.AmqpClient.FrameworkAmqpClient">
+        <constructor-arg ref="settingsTemplate"/>
+    </bean>
+
+    <bean id="DestinationClient" class="com.neusoft.de.nts.OneCoreTest.communication.transports.AmqpClient.FrameworkAmqpClient">
+        <constructor-arg ref="destinationsTemplate"/>
+    </bean>
+
+    <bean id="MapViewerClient" class="com.neusoft.de.nts.OneCoreTest.communication.transports.AmqpClient.FrameworkAmqpClient">
+        <constructor-arg ref="mapViewerTemplate"/>
+    </bean>
+
+    <bean id="ControllerClient" class="com.neusoft.de.nts.OneCoreTest.communication.transports.AmqpClient.FrameworkAmqpClient">
+        <constructor-arg ref="controllerTemplate"/>
+    </bean>
+
+    <bean id="StatusClient" class="com.neusoft.de.nts.OneCoreTest.communication.transports.AmqpClient.FrameworkAmqpClient">
+        <constructor-arg ref="controllerTemplate"/>
+    </bean>
+
+</beans>
+
+

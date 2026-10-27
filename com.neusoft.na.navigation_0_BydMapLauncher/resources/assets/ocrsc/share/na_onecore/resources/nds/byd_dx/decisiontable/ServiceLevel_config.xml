@@ -1,0 +1,696 @@
+
+<ServiceLevelConfig>
+   <readme>
+      <!-- ******************************************************************************* -->
+      <!-- This file configures the service level for component features.                  -->
+      <!-- Optional attribute could be added under <RuleStatusAttribute> for specific      -->
+      <!-- ServiceLevel if needed;The Optional setting under <default> is effective to     -->
+      <!-- all <ServiceLevel> which own attribute is absence.                              -->
+      <!--                                                                                 -->
+      <!-- Supported configuration for <Component>:                                        -->
+      <!--     name     : the component name(e.g. DI,TRAFFIC,GUIDANCE)                     -->
+      <!--     feature  : the component feature(e.g. WHERE_AM_I,GUIDANCE_ELEMENT)          -->
+      <!-- e.g.: <Component name="GUIDANCE" feature="GUIDANCE_ELEMENT"></Component>        -->
+      <!-- the combination of [name] and [feature](e.g. GUIDANCE_GUIDANCE_ELEMENT) is      -->
+      <!-- used for the name of enumeration ComponentFeature in ServiceLevelTypes.fidl     -->
+      <!-- see: https://review.nts.neusoft.local/#/c/iface/mgr/+/153856/                   -->
+      <!--                                                                                 -->
+      <!-- Supported configuration for <ServiceLevel>:                                     -->
+      <!--     Database : Local_Hybrid,Fresh_Hybrid,Autonomous                             -->
+      <!--     Provider : Local,Remote,Autonomous                                          -->
+      <!-- e.g.: <ServiceLevel Database="Local_Hybrid" Provider="Remote" > </ServiceLevel> -->
+      <!--                                                                                 -->
+      <!-- Supported configuration for <RuleStatus>:                                       -->
+      <!--     RuleOnlineConnection : unknown,connected,unconnected                        -->
+      <!--     RuleRemoteData       : invalid,valid,canceled,lost                          -->
+      <!--     RuleActiveRoute      : invalid,local,cloud                                  -->
+      <!--     RuleStrippedDBSync   : unknown,local,remote,error                           -->
+      <!--     RulePartialDB        : true,false                                           -->
+      <!-- e.g.: <RuleStatus                                                               -->
+      <!--           RuleOnlineConnection="connected" RuleRemoteData="invalid"             -->
+      <!--           RuleActiveRoute="invalid" RuleStrippedDBSync="unknown">               -->
+      <!--       </RuleStatus>                                                             -->
+      <!--                                                                                 -->
+      <!-- Supported configuration for <RuleStatusAttribute>:                              -->
+      <!--     AttrOnlineConnection : "1","0"                                              -->
+      <!--     AttrRemoteData       : "1","0"                                              -->
+      <!--     AttrActiveRoute      : "1","0"                                              -->
+      <!--     AttrStrippedDBSync   : "1","0"                                              -->
+      <!-- e.g.: <RuleStatusAttribute>                                                     -->
+      <!--           <Optional AttrRemoteData="1" />                                       -->
+      <!--       </RuleStatusAttribute>                                                    -->
+      <!-- ******************************************************************************* -->
+   </readme>
+
+   <!-- ********************  DI_FTS     *********************** -->
+   <Component name="DI" feature="FTS">
+      <!-- default setting -->
+      <default>
+         <ServiceLevel Database="Local_Hybrid" Provider="Local" > </ServiceLevel>
+         <!-- there is no <RuleStatus> setting for the default ServiceLevel use default value:   -->
+         <!--     default value of RuleOnlineConnection   : "unknown"                            -->
+         <!--     default value of RuleRemoteData         : "invalid"                            -->
+         <!--     default value of RuleActiveRoute        : "invalid"                            -->
+         <!--     default value of RuleStrippedDBSync     : "unknown"                            -->
+
+         <RuleStatusAttribute>
+            <!-- set default Optional attribute : 1-true,0-false -->
+            <Optional AttrRemoteData="1" />
+         </RuleStatusAttribute>
+      </default>
+
+      <ServiceLevel Database="Fresh_Hybrid" Provider="Remote" >
+         <RuleStatus RulePartialDB="false" RuleOnlineConnection="connected" RuleActiveRoute="cloud" RuleStrippedDBSync="remote">  </RuleStatus>
+         <RuleStatus RulePartialDB="false" RuleOnlineConnection="connected" RuleActiveRoute="cloud" RuleStrippedDBSync="remote">  </RuleStatus>
+         <RuleStatus RulePartialDB="true" RuleOnlineConnection="connected" RuleStrippedDBSync="remote">   </RuleStatus>
+         <!-- there is no specific RuleStatusAttribute setting for current ServiceLevel,use default-->
+      </ServiceLevel>
+   </Component>
+
+   <!-- ********************  DI_WHERE_AM_I     *********************** -->
+   <Component name="DI" feature="WHERE_AM_I">
+      <!-- default setting -->
+      <default>
+         <ServiceLevel Database="Local_Hybrid" Provider="Local" > </ServiceLevel>
+         <!-- there is no <RuleStatus> setting for the default ServiceLevel use default value:   -->
+         <!--     default value of RuleOnlineConnection   : "unknown"                            -->
+         <!--     default value of RuleRemoteData         : "invalid"                            -->
+         <!--     default value of RuleActiveRoute        : "invalid"                            -->
+         <!--     default value of RuleStrippedDBSync     : "unknown"                            -->
+
+         <RuleStatusAttribute>
+            <!-- set default Optional attribute : 1-true,0-false -->
+            <Optional AttrRemoteData="1" />
+         </RuleStatusAttribute>
+      </default>
+
+      <ServiceLevel Database="Fresh_Hybrid" Provider="Remote" >
+         <RuleStatus RulePartialDB="false" RuleOnlineConnection="connected" RuleActiveRoute="cloud" RuleStrippedDBSync="remote">  </RuleStatus>
+         <RuleStatus RulePartialDB="false" RuleOnlineConnection="connected" RuleActiveRoute="cloud" RuleStrippedDBSync="remote">  </RuleStatus>
+         <RuleStatus RulePartialDB="true" RuleOnlineConnection="connected" RuleStrippedDBSync="remote">   </RuleStatus>
+         <!-- there is no specific RuleStatusAttribute setting for current ServiceLevel,use default-->
+      </ServiceLevel>
+   </Component>
+
+   <!-- ********************  DI_SEARCH_ALONG_ROUTE     *********************** -->
+   <Component name="DI" feature="SEARCH_ALONG_ROUTE">
+      <!-- default setting -->
+      <default>
+         <ServiceLevel Database="Local_Hybrid" Provider="Local" > </ServiceLevel>
+         <!-- there is no <RuleStatus> setting for the default ServiceLevel use default value:   -->
+         <!--     default value of RuleOnlineConnection   : "unknown"                            -->
+         <!--     default value of RuleRemoteData         : "invalid"                            -->
+         <!--     default value of RuleActiveRoute        : "invalid"                            -->
+         <!--     default value of RuleStrippedDBSync     : "unknown"                            -->
+
+         <RuleStatusAttribute>
+            <!-- set default Optional attribute : 1-true,0-false -->
+            <Optional AttrRemoteData="1" />
+         </RuleStatusAttribute>
+      </default>
+
+      <ServiceLevel Database="Fresh_Hybrid" Provider="Remote" >
+         <RuleStatus RulePartialDB="false" RuleOnlineConnection="connected" RuleActiveRoute="cloud" RuleStrippedDBSync="remote">  </RuleStatus>
+         <RuleStatus RulePartialDB="false" RuleOnlineConnection="connected" RuleActiveRoute="cloud" RuleStrippedDBSync="remote">  </RuleStatus>
+         <RuleStatus RulePartialDB="true" RuleOnlineConnection="connected" RuleStrippedDBSync="remote">   </RuleStatus>
+         <!-- there is no specific RuleStatusAttribute setting for current ServiceLevel,use default-->
+      </ServiceLevel>
+   </Component>
+
+   <!-- ********************  DI_SEARCH_BY_CATEGORY     *********************** -->
+   <Component name="DI" feature="SEARCH_BY_CATEGORY">
+      <!-- default setting -->
+      <default>
+         <ServiceLevel Database="Local_Hybrid" Provider="Local" > </ServiceLevel>
+         <!-- there is no <RuleStatus> setting for the default ServiceLevel use default value:   -->
+         <!--     default value of RuleOnlineConnection   : "unknown"                            -->
+         <!--     default value of RuleRemoteData         : "invalid"                            -->
+         <!--     default value of RuleActiveRoute        : "invalid"                            -->
+         <!--     default value of RuleStrippedDBSync     : "unknown"                            -->
+
+         <RuleStatusAttribute>
+            <!-- set default Optional attribute : 1-true,0-false -->
+            <Optional AttrRemoteData="1" />
+         </RuleStatusAttribute>
+      </default>
+
+      <ServiceLevel Database="Fresh_Hybrid" Provider="Remote" >
+         <RuleStatus RulePartialDB="false" RuleOnlineConnection="connected" RuleActiveRoute="cloud" RuleStrippedDBSync="remote">  </RuleStatus>
+         <RuleStatus RulePartialDB="false" RuleOnlineConnection="connected" RuleActiveRoute="cloud" RuleStrippedDBSync="remote">  </RuleStatus>
+         <RuleStatus RulePartialDB="true" RuleOnlineConnection="connected" RuleStrippedDBSync="remote">   </RuleStatus>
+         <!-- there is no specific RuleStatusAttribute setting for current ServiceLevel,use default-->
+      </ServiceLevel>
+   </Component>
+
+   <!-- ********************  DI_LOCATION     *********************** -->
+   <Component name="DI" feature="LOCATION">
+      <!-- default setting -->
+      <default>
+         <ServiceLevel Database="Local_Hybrid" Provider="Local" > </ServiceLevel>
+         <!-- there is no <RuleStatus> setting for the default ServiceLevel use default value:   -->
+         <!--     default value of RuleOnlineConnection   : "unknown"                            -->
+         <!--     default value of RuleRemoteData         : "invalid"                            -->
+         <!--     default value of RuleActiveRoute        : "invalid"                            -->
+         <!--     default value of RuleStrippedDBSync     : "unknown"                            -->
+
+         <RuleStatusAttribute>
+            <!-- set default Optional attribute : 1-true,0-false -->
+            <Optional AttrRemoteData="1" />
+         </RuleStatusAttribute>
+      </default>
+
+      <ServiceLevel Database="Fresh_Hybrid" Provider="Remote" >
+         <RuleStatus RulePartialDB="false" RuleOnlineConnection="connected" RuleActiveRoute="cloud" RuleStrippedDBSync="remote">  </RuleStatus>
+         <RuleStatus RulePartialDB="false" RuleOnlineConnection="connected" RuleActiveRoute="cloud" RuleStrippedDBSync="remote">  </RuleStatus>
+         <RuleStatus RulePartialDB="true" RuleOnlineConnection="connected" RuleStrippedDBSync="remote">   </RuleStatus>
+         <!-- there is no specific RuleStatusAttribute setting for current ServiceLevel,use default-->
+      </ServiceLevel>
+   </Component>
+
+   <!-- ********************  DI_ADDRESS     *********************** -->
+   <Component name="DI" feature="ADDRESS">
+      <!-- default setting -->
+      <default>
+         <ServiceLevel Database="Local_Hybrid" Provider="Local" > </ServiceLevel>
+         <!-- there is no <RuleStatus> setting for the default ServiceLevel use default value:   -->
+         <!--     default value of RuleOnlineConnection   : "unknown"                            -->
+         <!--     default value of RuleRemoteData         : "invalid"                            -->
+         <!--     default value of RuleActiveRoute        : "invalid"                            -->
+         <!--     default value of RuleStrippedDBSync     : "unknown"                            -->
+
+         <RuleStatusAttribute>
+            <!-- set default Optional attribute : 1-true,0-false -->
+            <Optional AttrRemoteData="1" />
+         </RuleStatusAttribute>
+      </default>
+
+      <ServiceLevel Database="Fresh_Hybrid" Provider="Remote" >
+         <RuleStatus RulePartialDB="false" RuleOnlineConnection="connected" RuleActiveRoute="cloud" RuleStrippedDBSync="remote">  </RuleStatus>
+         <RuleStatus RulePartialDB="false" RuleOnlineConnection="connected" RuleActiveRoute="cloud" RuleStrippedDBSync="remote">  </RuleStatus>
+         <RuleStatus RulePartialDB="true" RuleOnlineConnection="connected" RuleStrippedDBSync="remote">   </RuleStatus>
+         <!-- there is no specific RuleStatusAttribute setting for current ServiceLevel,use default-->
+      </ServiceLevel>
+   </Component>
+
+   <!-- ********************  TRAFFIC_TI_FLOW     *********************** -->
+   <Component name="TRAFFIC" feature="TI_FLOW">
+      <!-- default setting -->
+      <default>
+         <ServiceLevel Database="Local_Hybrid" Provider="Local" > </ServiceLevel>
+         <!-- there is no <RuleStatus> setting for the default ServiceLevel use default value:   -->
+         <!--     default value of RuleOnlineConnection   : "unknown"                            -->
+         <!--     default value of RuleRemoteData         : "invalid"                            -->
+         <!--     default value of RuleActiveRoute        : "invalid"                            -->
+         <!--     default value of RuleStrippedDBSync     : "unknown"                            -->
+
+         <RuleStatusAttribute>
+            <!-- set default Optional attribute : 1-true,0-false -->
+            <Optional AttrRemoteData="1" />
+         </RuleStatusAttribute>
+      </default>
+
+      <ServiceLevel Database="Fresh_Hybrid" Provider="Remote" >
+         <RuleStatus RulePartialDB="false" RuleOnlineConnection="connected" RuleActiveRoute="cloud" RuleStrippedDBSync="remote">  </RuleStatus>
+         <RuleStatus RulePartialDB="false" RuleOnlineConnection="connected" RuleActiveRoute="cloud" RuleStrippedDBSync="remote">  </RuleStatus>
+         <RuleStatus RulePartialDB="true" RuleOnlineConnection="connected" RuleStrippedDBSync="remote">   </RuleStatus>
+         <!-- there is no specific RuleStatusAttribute setting for current ServiceLevel,use default-->
+      </ServiceLevel>
+   </Component>
+
+   <!-- ********************  TRAFFIC_TI_MESSAGE     *********************** -->
+   <Component name="TRAFFIC" feature="TI_MESSAGE">
+      <!-- default setting -->
+      <default>
+         <ServiceLevel Database="Local_Hybrid" Provider="Local" > </ServiceLevel>
+         <!-- there is no <RuleStatus> setting for the default ServiceLevel use default value:   -->
+         <!--     default value of RuleOnlineConnection   : "unknown"                            -->
+         <!--     default value of RuleRemoteData         : "invalid"                            -->
+         <!--     default value of RuleActiveRoute        : "invalid"                            -->
+         <!--     default value of RuleStrippedDBSync     : "unknown"                            -->
+
+         <RuleStatusAttribute>
+            <!-- set default Optional attribute : 1-true,0-false -->
+            <Optional AttrRemoteData="1" />
+         </RuleStatusAttribute>
+      </default>
+
+      <ServiceLevel Database="Fresh_Hybrid" Provider="Remote" >
+         <RuleStatus RulePartialDB="false" RuleOnlineConnection="connected" RuleActiveRoute="cloud" RuleStrippedDBSync="remote">  </RuleStatus>
+         <RuleStatus RulePartialDB="false" RuleOnlineConnection="connected" RuleActiveRoute="cloud" RuleStrippedDBSync="remote">  </RuleStatus>
+         <RuleStatus RulePartialDB="true" RuleOnlineConnection="connected" RuleStrippedDBSync="remote">   </RuleStatus>
+         <!-- there is no specific RuleStatusAttribute setting for current ServiceLevel,use default-->
+      </ServiceLevel>
+   </Component>
+
+   <!-- ********************  GUIDANCE_GUIDANCE_ELEMENT     *********************** -->
+   <Component name="GUIDANCE" feature="GUIDANCE_ELEMENT">
+      <!-- default setting -->
+      <default>
+         <ServiceLevel Database="Local_Hybrid" Provider="Local" > </ServiceLevel>
+         <!-- there is no <RuleStatus> setting for the default ServiceLevel use default value:   -->
+         <!--     default value of RuleOnlineConnection   : "unknown"                            -->
+         <!--     default value of RuleRemoteData         : "invalid"                            -->
+         <!--     default value of RuleActiveRoute        : "invalid"                            -->
+         <!--     default value of RuleStrippedDBSync     : "unknown"                            -->
+
+         <RuleStatusAttribute>
+            <!-- set default Optional attribute : 1-true,0-false -->
+            <Optional AttrRemoteData="1" />
+         </RuleStatusAttribute>
+      </default>
+
+      <ServiceLevel Database="Fresh_Hybrid" Provider="Remote" >
+         <RuleStatus RulePartialDB="false" RuleOnlineConnection="connected" RuleActiveRoute="cloud" RuleStrippedDBSync="remote">  </RuleStatus>
+         <RuleStatus RulePartialDB="false" RuleOnlineConnection="connected" RuleActiveRoute="cloud" RuleStrippedDBSync="remote">  </RuleStatus>
+         <RuleStatus RulePartialDB="true" RuleOnlineConnection="connected" RuleStrippedDBSync="remote">   </RuleStatus>
+         <!-- there is no specific RuleStatusAttribute setting for current ServiceLevel,use default-->
+      </ServiceLevel>
+   </Component>
+
+   <!-- ********************  GUIDANCE_TRIGGER_REROUTE     *********************** -->
+   <Component name="GUIDANCE" feature="TRIGGER_REROUTE">
+      <!-- default setting -->
+      <default>
+         <ServiceLevel Database="Local_Hybrid" Provider="Local" > </ServiceLevel>
+         <!-- there is no <RuleStatus> setting for the default ServiceLevel use default value:   -->
+         <!--     default value of RuleOnlineConnection   : "unknown"                            -->
+         <!--     default value of RuleRemoteData         : "invalid"                            -->
+         <!--     default value of RuleActiveRoute        : "invalid"                            -->
+         <!--     default value of RuleStrippedDBSync     : "unknown"                            -->
+
+         <RuleStatusAttribute>
+            <!-- set default Optional attribute : 1-true,0-false -->
+            <Optional AttrRemoteData="1" />
+         </RuleStatusAttribute>
+      </default>
+
+      <ServiceLevel Database="Fresh_Hybrid" Provider="Remote" >
+         <RuleStatus RulePartialDB="false" RuleOnlineConnection="connected" RuleActiveRoute="cloud" RuleStrippedDBSync="remote">  </RuleStatus>
+         <RuleStatus RulePartialDB="false" RuleOnlineConnection="connected" RuleActiveRoute="cloud" RuleStrippedDBSync="remote">  </RuleStatus>
+         <RuleStatus RulePartialDB="true" RuleOnlineConnection="connected" RuleStrippedDBSync="remote">   </RuleStatus>
+         <!-- there is no specific RuleStatusAttribute setting for current ServiceLevel,use default-->
+      </ServiceLevel>
+   </Component>
+
+   <!-- ********************  GUIDANCE_GUIDANCE_VIEW     *********************** -->
+   <Component name="GUIDANCE" feature="GUIDANCE_VIEW">
+      <!-- default setting -->
+      <default>
+         <ServiceLevel Database="Local_Hybrid" Provider="Local" > </ServiceLevel>
+         <!-- there is no <RuleStatus> setting for the default ServiceLevel use default value:   -->
+         <!--     default value of RuleOnlineConnection   : "unknown"                            -->
+         <!--     default value of RuleRemoteData         : "invalid"                            -->
+         <!--     default value of RuleActiveRoute        : "invalid"                            -->
+         <!--     default value of RuleStrippedDBSync     : "unknown"                            -->
+
+         <RuleStatusAttribute>
+            <!-- set default Optional attribute : 1-true,0-false -->
+            <Optional AttrRemoteData="1" />
+         </RuleStatusAttribute>
+      </default>
+
+      <ServiceLevel Database="Fresh_Hybrid" Provider="Remote" >
+         <RuleStatus RulePartialDB="false" RuleOnlineConnection="connected" RuleActiveRoute="cloud" RuleStrippedDBSync="remote">  </RuleStatus>
+         <RuleStatus RulePartialDB="false" RuleOnlineConnection="connected" RuleActiveRoute="cloud" RuleStrippedDBSync="remote">  </RuleStatus>
+         <RuleStatus RulePartialDB="true" RuleOnlineConnection="connected" RuleStrippedDBSync="remote">   </RuleStatus>
+         <!-- there is no specific RuleStatusAttribute setting for current ServiceLevel,use default-->
+      </ServiceLevel>
+   </Component>
+
+   <!-- ********************  GUIDANCE_ROADBOOK     *********************** -->
+   <Component name="GUIDANCE" feature="ROADBOOK">
+      <!-- default setting -->
+      <default>
+         <ServiceLevel Database="Local_Hybrid" Provider="Local" > </ServiceLevel>
+         <!-- there is no <RuleStatus> setting for the default ServiceLevel use default value:   -->
+         <!--     default value of RuleOnlineConnection   : "unknown"                            -->
+         <!--     default value of RuleRemoteData         : "invalid"                            -->
+         <!--     default value of RuleActiveRoute        : "invalid"                            -->
+         <!--     default value of RuleStrippedDBSync     : "unknown"                            -->
+
+         <RuleStatusAttribute>
+            <!-- set default Optional attribute : 1-true,0-false -->
+            <Optional AttrRemoteData="1" />
+         </RuleStatusAttribute>
+      </default>
+
+      <ServiceLevel Database="Fresh_Hybrid" Provider="Remote" >
+         <RuleStatus RulePartialDB="false" RuleOnlineConnection="connected" RuleActiveRoute="cloud" RuleStrippedDBSync="remote">  </RuleStatus>
+         <RuleStatus RulePartialDB="false" RuleOnlineConnection="connected" RuleActiveRoute="cloud" RuleStrippedDBSync="remote">  </RuleStatus>
+         <RuleStatus RulePartialDB="true" RuleOnlineConnection="connected" RuleStrippedDBSync="remote">   </RuleStatus>
+         <!-- there is no specific RuleStatusAttribute setting for current ServiceLevel,use default-->
+      </ServiceLevel>
+   </Component>
+
+   <!-- ********************  GUIDANCE_WARNING     *********************** -->
+   <Component name="GUIDANCE" feature="WARNING">
+      <!-- default setting -->
+      <default>
+         <ServiceLevel Database="Local_Hybrid" Provider="Local" > </ServiceLevel>
+         <!-- there is no <RuleStatus> setting for the default ServiceLevel use default value:   -->
+         <!--     default value of RuleOnlineConnection   : "unknown"                            -->
+         <!--     default value of RuleRemoteData         : "invalid"                            -->
+         <!--     default value of RuleActiveRoute        : "invalid"                            -->
+         <!--     default value of RuleStrippedDBSync     : "unknown"                            -->
+
+         <RuleStatusAttribute>
+            <!-- set default Optional attribute : 1-true,0-false -->
+            <Optional AttrRemoteData="1" />
+         </RuleStatusAttribute>
+      </default>
+
+      <ServiceLevel Database="Fresh_Hybrid" Provider="Remote" >
+         <RuleStatus RulePartialDB="false" RuleOnlineConnection="connected" RuleActiveRoute="cloud" RuleStrippedDBSync="remote">  </RuleStatus>
+         <RuleStatus RulePartialDB="false" RuleOnlineConnection="connected" RuleActiveRoute="cloud" RuleStrippedDBSync="remote">  </RuleStatus>
+         <RuleStatus RulePartialDB="true" RuleOnlineConnection="connected" RuleStrippedDBSync="remote">   </RuleStatus>
+         <!-- there is no specific RuleStatusAttribute setting for current ServiceLevel,use default-->
+      </ServiceLevel>
+   </Component>
+
+   <!-- ********************  ADAS_TREE     *********************** -->
+   <Component name="ADAS" feature="TREE">
+      <!-- default setting -->
+      <default>
+         <ServiceLevel Database="Local_Hybrid" Provider="Local" > </ServiceLevel>
+         <!-- there is no <RuleStatus> setting for the default ServiceLevel use default value:   -->
+         <!--     default value of RuleOnlineConnection   : "unknown"                            -->
+         <!--     default value of RuleRemoteData         : "invalid"                            -->
+         <!--     default value of RuleActiveRoute        : "invalid"                            -->
+         <!--     default value of RuleStrippedDBSync     : "unknown"                            -->
+
+         <RuleStatusAttribute>
+            <!-- set default Optional attribute : 1-true,0-false -->
+            <Optional AttrRemoteData="1" />
+         </RuleStatusAttribute>
+      </default>
+
+      <ServiceLevel Database="Fresh_Hybrid" Provider="Local" >
+         <RuleStatus RulePartialDB="false" RuleOnlineConnection="connected" RuleActiveRoute="cloud" RuleStrippedDBSync="remote">  </RuleStatus>
+         <RuleStatus RulePartialDB="false" RuleOnlineConnection="connected" RuleActiveRoute="cloud" RuleStrippedDBSync="remote">  </RuleStatus>
+         <RuleStatus RulePartialDB="true" RuleOnlineConnection="connected" RuleStrippedDBSync="remote">   </RuleStatus>
+         <!-- there is no specific RuleStatusAttribute setting for current ServiceLevel,use default-->
+      </ServiceLevel>
+   </Component>
+
+   <!-- ********************  ADAS_ATTRIBUTE     *********************** -->
+   <Component name="ADAS" feature="ATTRIBUTE">
+      <!-- default setting -->
+      <default>
+         <ServiceLevel Database="Local_Hybrid" Provider="Local" > </ServiceLevel>
+         <!-- there is no <RuleStatus> setting for the default ServiceLevel use default value:   -->
+         <!--     default value of RuleOnlineConnection   : "unknown"                            -->
+         <!--     default value of RuleRemoteData         : "invalid"                            -->
+         <!--     default value of RuleActiveRoute        : "invalid"                            -->
+         <!--     default value of RuleStrippedDBSync     : "unknown"                            -->
+
+         <RuleStatusAttribute>
+            <!-- set default Optional attribute : 1-true,0-false -->
+            <Optional AttrRemoteData="1" />
+         </RuleStatusAttribute>
+      </default>
+
+      <ServiceLevel Database="Fresh_Hybrid" Provider="Local" >
+         <RuleStatus RulePartialDB="false" RuleOnlineConnection="connected" RuleActiveRoute="cloud" RuleStrippedDBSync="remote">  </RuleStatus>
+         <RuleStatus RulePartialDB="false" RuleOnlineConnection="connected" RuleActiveRoute="cloud" RuleStrippedDBSync="remote">  </RuleStatus>
+         <RuleStatus RulePartialDB="true" RuleOnlineConnection="connected" RuleStrippedDBSync="remote">   </RuleStatus>
+         <!-- there is no specific RuleStatusAttribute setting for current ServiceLevel,use default-->
+      </ServiceLevel>
+   </Component>
+
+   <!-- ********************  ADAS_ROUTE     *********************** -->
+   <Component name="ADAS" feature="ROUTE">
+      <!-- default setting -->
+      <default>
+         <ServiceLevel Database="Local_Hybrid" Provider="Local" > </ServiceLevel>
+         <!-- there is no <RuleStatus> setting for the default ServiceLevel use default value:   -->
+         <!--     default value of RuleOnlineConnection   : "unknown"                            -->
+         <!--     default value of RuleRemoteData         : "invalid"                            -->
+         <!--     default value of RuleActiveRoute        : "invalid"                            -->
+         <!--     default value of RuleStrippedDBSync     : "unknown"                            -->
+
+         <RuleStatusAttribute>
+            <!-- set default Optional attribute : 1-true,0-false -->
+            <Optional AttrRemoteData="1" />
+         </RuleStatusAttribute>
+      </default>
+
+      <ServiceLevel Database="Fresh_Hybrid" Provider="Local" >
+         <RuleStatus RulePartialDB="false" RuleOnlineConnection="connected" RuleActiveRoute="cloud" RuleStrippedDBSync="remote">  </RuleStatus>
+         <RuleStatus RulePartialDB="false" RuleOnlineConnection="connected" RuleActiveRoute="cloud" RuleStrippedDBSync="remote">  </RuleStatus>
+         <RuleStatus RulePartialDB="true" RuleOnlineConnection="connected" RuleStrippedDBSync="remote">   </RuleStatus>
+         <!-- there is no specific RuleStatusAttribute setting for current ServiceLevel,use default-->
+      </ServiceLevel>
+   </Component>
+
+   <!-- ********************  ADAS_TRAFFIC     *********************** -->
+   <Component name="ADAS" feature="TRAFFIC">
+      <!-- default setting -->
+      <default>
+         <ServiceLevel Database="Local_Hybrid" Provider="Local" > </ServiceLevel>
+         <!-- there is no <RuleStatus> setting for the default ServiceLevel use default value:   -->
+         <!--     default value of RuleOnlineConnection   : "unknown"                            -->
+         <!--     default value of RuleRemoteData         : "invalid"                            -->
+         <!--     default value of RuleActiveRoute        : "invalid"                            -->
+         <!--     default value of RuleStrippedDBSync     : "unknown"                            -->
+
+         <RuleStatusAttribute>
+            <!-- set default Optional attribute : 1-true,0-false -->
+            <Optional AttrRemoteData="1" />
+         </RuleStatusAttribute>
+      </default>
+
+      <ServiceLevel Database="Fresh_Hybrid" Provider="Local" >
+         <RuleStatus RulePartialDB="false" RuleOnlineConnection="connected" RuleActiveRoute="cloud" RuleStrippedDBSync="remote">  </RuleStatus>
+         <RuleStatus RulePartialDB="false" RuleOnlineConnection="connected" RuleActiveRoute="cloud" RuleStrippedDBSync="remote">  </RuleStatus>
+         <RuleStatus RulePartialDB="true" RuleOnlineConnection="connected" RuleStrippedDBSync="remote">   </RuleStatus>
+         <!-- there is no specific RuleStatusAttribute setting for current ServiceLevel,use default-->
+      </ServiceLevel>
+   </Component>
+
+   <!-- ********************  MAPVIEWER_ROUTE_RENDER     *********************** -->
+   <Component name="MAPVIEWER" feature="ROUTE_RENDER">
+      <!-- default setting -->
+      <default>
+         <ServiceLevel Database="Local_Hybrid" Provider="Local" > </ServiceLevel>
+         <!-- there is no <RuleStatus> setting for the default ServiceLevel use default value:   -->
+         <!--     default value of RuleOnlineConnection   : "unknown"                            -->
+         <!--     default value of RuleRemoteData         : "invalid"                            -->
+         <!--     default value of RuleActiveRoute        : "invalid"                            -->
+         <!--     default value of RuleStrippedDBSync     : "unknown"                            -->
+
+         <RuleStatusAttribute>
+            <!-- set default Optional attribute : 1-true,0-false -->
+            <Optional AttrRemoteData="1" />
+         </RuleStatusAttribute>
+      </default>
+
+      <ServiceLevel Database="Fresh_Hybrid" Provider="Local" >
+         <RuleStatus RulePartialDB="false" RuleOnlineConnection="connected" RuleActiveRoute="cloud" RuleStrippedDBSync="remote">  </RuleStatus>
+         <RuleStatus RulePartialDB="false" RuleOnlineConnection="connected" RuleActiveRoute="cloud" RuleStrippedDBSync="remote">  </RuleStatus>
+         <RuleStatus RulePartialDB="true" RuleOnlineConnection="connected" RuleStrippedDBSync="remote">   </RuleStatus>
+         <!-- there is no specific RuleStatusAttribute setting for current ServiceLevel,use default-->
+      </ServiceLevel>
+   </Component>
+
+   <!-- ********************  MAPVIEWER_ROUTE_TILE_RENDER     *********************** -->
+   <Component name="MAPVIEWER" feature="ROUTE_TILE_RENDER">
+      <!-- default setting -->
+      <default>
+         <ServiceLevel Database="Local_Hybrid" Provider="Local" > </ServiceLevel>
+         <!-- there is no <RuleStatus> setting for the default ServiceLevel use default value:   -->
+         <!--     default value of RuleOnlineConnection   : "unknown"                            -->
+         <!--     default value of RuleRemoteData         : "invalid"                            -->
+         <!--     default value of RuleActiveRoute        : "invalid"                            -->
+         <!--     default value of RuleStrippedDBSync     : "unknown"                            -->
+
+         <RuleStatusAttribute>
+            <!-- set default Optional attribute : 1-true,0-false -->
+            <Optional AttrRemoteData="1" />
+         </RuleStatusAttribute>
+      </default>
+
+      <ServiceLevel Database="Fresh_Hybrid" Provider="Local" >
+         <RuleStatus RulePartialDB="false" RuleOnlineConnection="connected" RuleActiveRoute="cloud" RuleStrippedDBSync="remote">  </RuleStatus>
+         <RuleStatus RulePartialDB="false" RuleOnlineConnection="connected" RuleActiveRoute="cloud" RuleStrippedDBSync="remote">  </RuleStatus>
+         <RuleStatus RulePartialDB="true" RuleOnlineConnection="connected" RuleStrippedDBSync="remote">   </RuleStatus>
+         <!-- there is no specific RuleStatusAttribute setting for current ServiceLevel,use default-->
+      </ServiceLevel>
+   </Component>
+
+   <!-- ********************  MAPVIEWER_MAP_TILE_RENDER     *********************** -->
+   <Component name="MAPVIEWER" feature="MAP_TILE_RENDER">
+      <!-- default setting -->
+      <default>
+         <ServiceLevel Database="Local_Hybrid" Provider="Local" > </ServiceLevel>
+         <!-- there is no <RuleStatus> setting for the default ServiceLevel use default value:   -->
+         <!--     default value of RuleOnlineConnection   : "unknown"                            -->
+         <!--     default value of RuleRemoteData         : "invalid"                            -->
+         <!--     default value of RuleActiveRoute        : "invalid"                            -->
+         <!--     default value of RuleStrippedDBSync     : "unknown"                            -->
+
+         <RuleStatusAttribute>
+            <!-- set default Optional attribute : 1-true,0-false -->
+            <Optional AttrRemoteData="1" />
+            <Optional AttrActiveRoute="1" />
+         </RuleStatusAttribute>
+      </default>
+
+      <ServiceLevel Database="Fresh_Hybrid" Provider="Local" >
+         <RuleStatus RulePartialDB="false" RuleOnlineConnection="connected" RuleActiveRoute="cloud" RuleStrippedDBSync="remote">  </RuleStatus>
+         <RuleStatus RulePartialDB="false" RuleOnlineConnection="connected" RuleActiveRoute="cloud" RuleStrippedDBSync="remote">  </RuleStatus>
+         <RuleStatus RulePartialDB="true" RuleOnlineConnection="connected" RuleStrippedDBSync="remote">   </RuleStatus>
+         <!-- there is no specific RuleStatusAttribute setting for current ServiceLevel,use default-->
+      </ServiceLevel>
+   </Component>
+
+   <!-- ********************  ROUTE_ROUTING     *********************** -->
+   <Component name="ROUTE" feature="ROUTING">
+      <!-- default setting -->
+      <default>
+         <ServiceLevel Database="Local_Hybrid" Provider="Local" > </ServiceLevel>
+         <!-- there is no <RuleStatus> setting for the default ServiceLevel use default value:   -->
+         <!--     default value of RuleOnlineConnection   : "unknown"                            -->
+         <!--     default value of RuleRemoteData         : "invalid"                            -->
+         <!--     default value of RuleActiveRoute        : "invalid"                            -->
+         <!--     default value of RuleStrippedDBSync     : "unknown"                            -->
+
+         <RuleStatusAttribute>
+            <!-- set default Optional attribute : 1-true,0-false -->
+            <Optional AttrRemoteData="1" />
+         </RuleStatusAttribute>
+      </default>
+
+      <ServiceLevel Database="Fresh_Hybrid" Provider="Remote" >
+         <RuleStatus RulePartialDB="false" RuleOnlineConnection="connected" RuleActiveRoute="cloud" RuleStrippedDBSync="remote">  </RuleStatus>
+         <RuleStatus RulePartialDB="false" RuleOnlineConnection="connected" RuleActiveRoute="cloud" RuleStrippedDBSync="remote">  </RuleStatus>
+         <RuleStatus RulePartialDB="true" RuleOnlineConnection="connected" RuleStrippedDBSync="remote">   </RuleStatus>
+         <!-- there is no specific RuleStatusAttribute setting for current ServiceLevel,use default-->
+      </ServiceLevel>
+   </Component>
+
+   <!-- ********************  POS_MAPMATCH     *********************** -->
+   <Component name="POS" feature="MAPMATCH">
+      <!-- default setting -->
+      <default>
+         <ServiceLevel Database="Local_Hybrid" Provider="Local" > </ServiceLevel>
+         <!-- there is no <RuleStatus> setting for the default ServiceLevel use default value:   -->
+         <!--     default value of RuleOnlineConnection   : "unknown"                            -->
+         <!--     default value of RuleRemoteData         : "invalid"                            -->
+         <!--     default value of RuleActiveRoute        : "invalid"                            -->
+         <!--     default value of RuleStrippedDBSync     : "unknown"                            -->
+
+         <RuleStatusAttribute>
+            <!-- set default Optional attribute : 1-true,0-false -->
+            <Optional AttrRemoteData="1" />
+         </RuleStatusAttribute>
+      </default>
+
+      <ServiceLevel Database="Fresh_Hybrid" Provider="Local" >
+         <RuleStatus RulePartialDB="false" RuleOnlineConnection="connected" RuleActiveRoute="cloud" RuleStrippedDBSync="remote">  </RuleStatus>
+         <RuleStatus RulePartialDB="false" RuleOnlineConnection="connected" RuleActiveRoute="cloud" RuleStrippedDBSync="remote">  </RuleStatus>
+         <RuleStatus RulePartialDB="true" RuleOnlineConnection="connected" RuleStrippedDBSync="remote">   </RuleStatus>
+         <!-- there is no specific RuleStatusAttribute setting for current ServiceLevel,use default-->
+      </ServiceLevel>
+   </Component>
+
+   <!-- ********************  POS_ROUTEMATCH     *********************** -->
+   <Component name="POS" feature="ROUTEMATCH">
+      <!-- default setting -->
+      <default>
+         <ServiceLevel Database="Local_Hybrid" Provider="Local" > </ServiceLevel>
+         <!-- there is no <RuleStatus> setting for the default ServiceLevel use default value:   -->
+         <!--     default value of RuleOnlineConnection   : "unknown"                            -->
+         <!--     default value of RuleRemoteData         : "invalid"                            -->
+         <!--     default value of RuleActiveRoute        : "invalid"                            -->
+         <!--     default value of RuleStrippedDBSync     : "unknown"                            -->
+
+         <RuleStatusAttribute>
+            <!-- set default Optional attribute : 1-true,0-false -->
+            <Optional AttrRemoteData="1" />
+         </RuleStatusAttribute>
+      </default>
+
+      <ServiceLevel Database="Fresh_Hybrid" Provider="Local" >
+         <RuleStatus RulePartialDB="false" RuleOnlineConnection="connected" RuleActiveRoute="cloud" RuleStrippedDBSync="remote">  </RuleStatus>
+         <RuleStatus RulePartialDB="false" RuleOnlineConnection="connected" RuleActiveRoute="cloud" RuleStrippedDBSync="remote">  </RuleStatus>
+         <RuleStatus RulePartialDB="true" RuleOnlineConnection="connected" RuleStrippedDBSync="remote">   </RuleStatus>
+         <!-- there is no specific RuleStatusAttribute setting for current ServiceLevel,use default-->
+      </ServiceLevel>
+   </Component>
+
+   <!-- ********************  POS_DEMOMODE     *********************** -->
+   <Component name="POS" feature="DEMOMODE">
+      <!-- default setting -->
+      <default>
+         <ServiceLevel Database="Local_Hybrid" Provider="Local" > </ServiceLevel>
+         <!-- there is no <RuleStatus> setting for the default ServiceLevel use default value:   -->
+         <!--     default value of RuleOnlineConnection   : "unknown"                            -->
+         <!--     default value of RuleRemoteData         : "invalid"                            -->
+         <!--     default value of RuleActiveRoute        : "invalid"                            -->
+         <!--     default value of RuleStrippedDBSync     : "unknown"                            -->
+
+         <RuleStatusAttribute>
+            <!-- set default Optional attribute : 1-true,0-false -->
+            <Optional AttrRemoteData="1" />
+         </RuleStatusAttribute>
+      </default>
+
+      <ServiceLevel Database="Fresh_Hybrid" Provider="Local" >
+         <RuleStatus RulePartialDB="false" RuleOnlineConnection="connected" RuleActiveRoute="cloud" RuleStrippedDBSync="remote">  </RuleStatus>
+         <RuleStatus RulePartialDB="false" RuleOnlineConnection="connected" RuleActiveRoute="cloud" RuleStrippedDBSync="remote">  </RuleStatus>
+         <RuleStatus RulePartialDB="true" RuleOnlineConnection="connected" RuleStrippedDBSync="remote">   </RuleStatus>
+         <!-- there is no specific RuleStatusAttribute setting for current ServiceLevel,use default-->
+      </ServiceLevel>
+   </Component>
+
+   <!-- ********************  IMGCOMPOSER_IMAGE_COMPOSE     *********************** -->
+   <Component name="IMGCOMPOSER" feature="IMAGE_COMPOSE">
+      <!-- default setting -->
+      <default>
+         <ServiceLevel Database="Local_Hybrid" Provider="Local" > </ServiceLevel>
+         <!-- there is no <RuleStatus> setting for the default ServiceLevel use default value:   -->
+         <!--     default value of RuleOnlineConnection   : "unknown"                            -->
+         <!--     default value of RuleRemoteData         : "invalid"                            -->
+         <!--     default value of RuleActiveRoute        : "invalid"                            -->
+         <!--     default value of RuleStrippedDBSync     : "unknown"                            -->
+
+         <RuleStatusAttribute>
+            <!-- set default Optional attribute : 1-true,0-false -->
+            <Optional AttrRemoteData="1" />
+         </RuleStatusAttribute>
+      </default>
+
+      <ServiceLevel Database="Fresh_Hybrid" Provider="Local" >
+         <RuleStatus RulePartialDB="false" RuleOnlineConnection="connected" RuleActiveRoute="cloud" RuleStrippedDBSync="remote">  </RuleStatus>
+         <RuleStatus RulePartialDB="false" RuleOnlineConnection="connected" RuleActiveRoute="cloud" RuleStrippedDBSync="remote">  </RuleStatus>
+         <RuleStatus RulePartialDB="true" RuleOnlineConnection="connected" RuleStrippedDBSync="remote">   </RuleStatus>
+         <!-- there is no specific RuleStatusAttribute setting for current ServiceLevel,use default-->
+      </ServiceLevel>
+   </Component>
+
+   <!-- ********************  DBMAP_TRANSACTION     *********************** -->
+   <Component name="DBMAP" feature="TRANSACTION">
+      <!-- default setting -->
+      <default>
+         <ServiceLevel Database="Local_Hybrid" Provider="Local" > </ServiceLevel>
+         <!-- there is no <RuleStatus> setting for the default ServiceLevel use default value:   -->
+         <!--     default value of RuleOnlineConnection   : "unknown"                             -->
+         <!--     default value of RuleRemoteData         : "invalid"                            -->
+         <!--     default value of RuleActiveRoute        : "invalid"                            -->
+         <!--     default value of RuleStrippedDBSync     : "unknown"                             -->
+         <!--     default value of RulePartialDB          : "false"                             -->
+         <RuleStatusAttribute>
+            <!-- set default Optional attribute : 1-true,0-false -->
+            <Optional AttrRemoteData="1" />
+         </RuleStatusAttribute>
+      </default>
+      <ServiceLevel Database="Fresh_Hybrid" Provider="Local" >
+         <RuleStatus RulePartialDB="false" RuleOnlineConnection="connected" RuleActiveRoute="cloud" RuleStrippedDBSync="remote">  </RuleStatus>
+         <RuleStatus RulePartialDB="false" RuleOnlineConnection="connected" RuleActiveRoute="cloud" RuleStrippedDBSync="remote">  </RuleStatus>
+         <RuleStatus RulePartialDB="true" RuleOnlineConnection="connected" RuleStrippedDBSync="remote">  </RuleStatus>
+         <!-- there is no specific RuleStatusAttribute setting for current ServiceLevel,use default-->
+      </ServiceLevel>
+   </Component>
+
+</ServiceLevelConfig>
+

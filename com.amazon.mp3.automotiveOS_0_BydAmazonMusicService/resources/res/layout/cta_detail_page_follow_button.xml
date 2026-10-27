@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center"
+    android:layout_gravity="center_horizontal"
+    android:orientation="horizontal"
+    android:id="@+id/followButtonContainer"
+    android:background="@drawable/follow_outline"
+    android:padding="@dimen/artist_detail_page_icon_size"
+    android:visibility="gone"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:layout_gravity="center_vertical"
+        android:id="@+id/heartButtonFollow"
+        android:background="@drawable/ripple_background_no_mask"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_action_favorite_svg"
+        android:contentDescription="@string/dmusic_follow_text"/>
+</LinearLayout>

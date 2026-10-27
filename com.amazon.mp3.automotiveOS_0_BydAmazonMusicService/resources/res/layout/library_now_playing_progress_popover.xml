@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center"
+    android:background="@drawable/player_counter"
+    android:layout_width="@dimen/now_playing_popover_width"
+    android:layout_height="@dimen/now_playing_popover_height">
+    <TextView
+        android:textColor="@color/player_scrubber_popover_text_color"
+        android:gravity="center"
+        android:id="@+id/NowPlayingProgressPopoverText"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"/>
+    <TextView
+        android:textColor="@color/player_scrubber_popover_duration_text_color"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="@string/dmusic_player_now_playing_time_duration_separator"/>
+    <TextView
+        android:textColor="@color/player_scrubber_popover_duration_text_color"
+        android:gravity="center"
+        android:id="@+id/NowPlayingDurationPopoverText"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"/>
+</LinearLayout>

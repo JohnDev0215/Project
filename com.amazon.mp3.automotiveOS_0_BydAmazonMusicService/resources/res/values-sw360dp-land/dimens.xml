@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="generic_header_horizontal_padding">@dimen/spacer_giant</dimen>
+    <dimen name="playback_progress_bar_container_padding">@dimen/spacer_base</dimen>
+    <dimen name="playback_progress_bar_horizontal_padding">@dimen/spacer_base</dimen>
+    <dimen name="player_album_art_height">50dp</dimen>
+    <dimen name="widget_song_info_text">9sp</dimen>
+</resources>

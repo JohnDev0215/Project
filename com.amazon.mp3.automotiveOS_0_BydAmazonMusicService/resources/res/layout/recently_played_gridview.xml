@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RecentlyPlayedGridViewLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <GridView
+        android:scrollbarStyle="outsideOverlay"
+        android:id="@+id/GridView"
+        android:paddingLeft="@dimen/album_tab_outside_padding"
+        android:paddingTop="@dimen/tab_top_spacer_height"
+        android:paddingRight="@dimen/album_tab_outside_padding"
+        android:clipToPadding="false"
+        android:descendantFocusability="beforeDescendants"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:listSelector="@drawable/selector_item_background_color"
+        android:horizontalSpacing="@dimen/album_tab_inside_padding"
+        android:verticalSpacing="@dimen/album_tab_inside_padding"
+        android:stretchMode="columnWidth"
+        android:numColumns="@integer/grid_tile_num_columns"/>
+</FrameLayout>

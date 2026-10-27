@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <stroke
+                android:width="@dimen/spacer_1"
+                android:color="@color/primary_glass_2"/>
+            <corners android:radius="@dimen/lyrics_card_corner_radius_20"/>
+            <padding
+                android:left="0dp"
+                android:top="0dp"
+                android:right="0dp"
+                android:bottom="0dp"/>
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <gradient
+                android:startColor="@color/secondary_glass_4"
+                android:endColor="@color/secondary_glass_4"
+                android:angle="-90"
+                android:type="linear"
+                android:centerX="0.5"
+                android:centerY="0.3"
+                android:centerColor="@color/secondary_glass_3"/>
+        </shape>
+    </item>
+</layer-list>

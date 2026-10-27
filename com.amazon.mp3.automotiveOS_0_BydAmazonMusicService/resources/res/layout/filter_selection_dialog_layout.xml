@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/filter_dialog"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <FrameLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:id="@+id/back_button"
+        android:background="@drawable/pill_shape"
+        android:paddingTop="@dimen/spacing_8dp"
+        android:paddingBottom="@dimen/spacing_8dp"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:foreground="@drawable/ripple_pill_shape"
+        android:paddingStart="@dimen/spacing_8dp"
+        android:paddingEnd="@dimen/spacing_8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <ImageView
+            android:id="@+id/back_button_view"
+            android:layout_width="@dimen/prime_filter_icon_size"
+            android:layout_height="@dimen/prime_filter_icon_size"
+            android:src="@drawable/ic_navigation_goback"/>
+    </FrameLayout>
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/header_buttons_barrier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="bottom"
+        app:constraint_referenced_ids="back_button, dismiss_button"/>
+    <FrameLayout
+        android:background="@color/refinement_actionsheet_background"
+        android:focusable="true"
+        android:clickable="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+        <View
+            android:orientation="vertical"
+            android:id="@+id/refinement_container_top_stroke"
+            android:background="@color/primary_glass_3"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/spacing_1dp"/>
+        <com.amazon.music.views.library.views.RefinementOverflowView
+            android:layout_gravity="bottom"
+            android:id="@+id/refinement_overflow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

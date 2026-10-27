@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Base.Theme.AppCompat" parent="@style/Base.V28.Theme.AppCompat">
+    </style>
+    <style name="Base.Theme.AppCompat.Light" parent="@style/Base.V28.Theme.AppCompat.Light">
+    </style>
+    <style name="Base.V28.Theme.AppCompat" parent="@style/Base.V26.Theme.AppCompat">
+        <item name="dialogCornerRadius">?android:attr/dialogCornerRadius</item>
+    </style>
+    <style name="Base.V28.Theme.AppCompat.Light" parent="@style/Base.V26.Theme.AppCompat.Light">
+        <item name="dialogCornerRadius">?android:attr/dialogCornerRadius</item>
+    </style>
+    <style name="PodcastAppTheme.TextAppearance.T2" parent="@style/PodcastAppTheme.TextAppearance">
+        <item name="android:textSize">@dimen/podcast_text_size_t2</item>
+        <item name="android:lineHeight">@dimen/refresh_line_height_t2</item>
+    </style>
+    <style name="PodcastAppTheme.TextAppearance.T3" parent="@style/PodcastAppTheme.TextAppearance">
+        <item name="android:textSize">@dimen/podcast_text_size_t3</item>
+        <item name="android:lineHeight">@dimen/refresh_line_height_t3</item>
+    </style>
+    <style name="PodcastAppTheme.TextView.AboutDescriptionText" parent="@style/PodcastAppTheme.TextView">
+        <item name="android:textSize">@dimen/podcast_text_size_t1</item>
+        <item name="android:textColor">@color/primary_glass_5</item>
+        <item name="android:lineHeight">@dimen/refresh_line_height_t1</item>
+        <item name="fontPath">fonts/AmazonEmber_Rg.ttf</item>
+    </style>
+    <style name="PodcastAppTheme.TextView.CastingDeviceName" parent="@style/PodcastAppTheme.TextView">
+        <item name="android:textSize">@dimen/podcast_text_size_t2</item>
+        <item name="android:textStyle">0x1</item>
+        <item name="android:textColor">@color/blue_accent_60</item>
+        <item name="android:lineHeight">@dimen/refresh_line_height_t2</item>
+        <item name="fontPath">fonts/AmazonEmber_Rg.ttf</item>
+    </style>
+    <style name="PodcastAppTheme.TextView.DPTertiary" parent="@style/PodcastAppTheme.TextView">
+        <item name="android:textSize">@dimen/podcast_text_size_t3</item>
+        <item name="android:textColor">@color/primary_glass_4</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:lineHeight">@dimen/refresh_line_height_t3</item>
+        <item name="fontPath">fonts/AmazonEmber_Rg.ttf</item>
+    </style>
+    <style name="PodcastAppTheme.TextView.Headline1" parent="@style/PodcastAppTheme.TextView">
+        <item name="android:textSize">@dimen/refresh_text_size_h1</item>
+        <item name="android:textColor">@color/primary</item>
+        <item name="android:lineHeight">@dimen/refresh_line_height_h1</item>
+        <item name="fontPath">fonts/SharpGroteskPanEuroBold20.ttf</item>
+    </style>
+    <style name="PodcastAppTheme.TextView.Headline2" parent="@style/PodcastAppTheme.TextView">
+        <item name="android:textSize">@dimen/refresh_text_size_h2</item>
+        <item name="android:textColor">@color/primary</item>
+        <item name="android:lineHeight">@dimen/refresh_line_height_h2</item>
+        <item name="fontPath">fonts/SharpGroteskPanEuroBold20.ttf</item>
+    </style>
+    <style name="PodcastAppTheme.TextView.Headline3" parent="@style/PodcastAppTheme.TextView">
+        <item name="android:textSize">@dimen/podcast_text_size_h3</item>
+        <item name="android:textColor">@color/primary</item>
+        <item name="android:lineHeight">@dimen/refresh_line_height_h3</item>
+        <item name="fontPath">fonts/SharpGroteskPanEuroSmBld20.ttf</item>
+    </style>
+    <style name="PodcastAppTheme.TextView.Headline4" parent="@style/PodcastAppTheme.TextView">
+        <item name="android:textSize">@dimen/podcast_text_size_h4</item>
+        <item name="android:textColor">@color/primary</item>
+        <item name="android:lineHeight">@dimen/refresh_line_height_h4</item>
+        <item name="fontPath">fonts/SharpGroteskPanEuroSmBld20.ttf</item>
+    </style>
+    <style name="PodcastAppTheme.TextView.ImageBadge" parent="@style/PodcastAppTheme.TextView">
+        <item name="android:textSize">@dimen/podcast_text_size_9</item>
+        <item name="android:textStyle">0x1</item>
+        <item name="android:textColor">@color/secondary</item>
+        <item name="android:background">@drawable/redhood_plus_regular_badge_background</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:lineHeight">@dimen/refresh_line_height_t4</item>
+        <item name="fontPath">fonts/AmazonEmber_Bd.ttf</item>
+    </style>
+    <style name="PodcastAppTheme.TextView.Index" parent="@style/PodcastAppTheme.TextView">
+        <item name="android:textSize">@dimen/podcast_text_size_t1</item>
+        <item name="android:textColor">@color/primary</item>
+        <item name="android:lineHeight">@dimen/refresh_line_height_t1</item>
+        <item name="fontPath">fonts/AmazonEmber_Rg.ttf</item>
+        <item name="textAllCaps">true</item>
+    </style>
+    <style name="PodcastAppTheme.TextView.IndexPrimary" parent="@style/PodcastAppTheme.TextView">
+        <item name="android:textSize">@dimen/podcast_text_size_t4</item>
+        <item name="android:textColor">@color/primary</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:lineHeight">@dimen/refresh_line_height_t4</item>
+        <item name="fontPath">fonts/AmazonEmber_Bd.ttf</item>
+    </style>
+    <style name="PodcastAppTheme.TextView.IndexSecondary" parent="@style/PodcastAppTheme.TextView">
+        <item name="android:textSize">@dimen/podcast_text_size_t4</item>
+        <item name="android:textColor">@color/secondary</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:lineHeight">@dimen/refresh_line_height_t4</item>
+        <item name="fontPath">fonts/AmazonEmber_Bd.ttf</item>
+    </style>
+    <style name="PodcastAppTheme.TextView.Label" parent="@style/PodcastAppTheme.TextView">
+        <item name="android:textSize">@dimen/podcast_text_size_t4</item>
+        <item name="android:textColor">@color/podcast_accent</item>
+        <item name="android:lineHeight">@dimen/refresh_line_height_t4</item>
+        <item name="fontPath">fonts/AmazonEmber_Bd.ttf</item>
+        <item name="textAllCaps">true</item>
+    </style>
+    <style name="PodcastAppTheme.TextView.Primary" parent="@style/PodcastAppTheme.TextView">
+        <item name="android:textSize">@dimen/podcast_text_size_t1</item>
+        <item name="android:textColor">@color/primary</item>
+        <item name="android:lineHeight">@dimen/refresh_line_height_t1</item>
+        <item name="fontPath">fonts/AmazonEmber_Rg.ttf</item>
+    </style>
+    <style name="PodcastAppTheme.TextView.PrimaryItalicized" parent="@style/PodcastAppTheme.TextView">
+        <item name="android:textSize">@dimen/podcast_text_size_t1</item>
+        <item name="android:textColor">@color/primary</item>
+        <item name="android:lineHeight">@dimen/refresh_line_height_t1</item>
+        <item name="fontPath">fonts/AmazonEmber_LtIt.ttf</item>
+    </style>
+    <style name="PodcastAppTheme.TextView.RefreshLabel" parent="@style/PodcastAppTheme.TextView">
+        <item name="android:textSize">@dimen/podcast_text_size_t4</item>
+        <item name="android:textColor">@color/refresh_podcast_accent</item>
+        <item name="android:lineHeight">@dimen/refresh_line_height_t4</item>
+        <item name="fontPath">fonts/AmazonEmber_Bd.ttf</item>
+        <item name="textAllCaps">true</item>
+    </style>
+    <style name="PodcastAppTheme.TextView.Secondary" parent="@style/PodcastAppTheme.TextView">
+        <item name="android:textSize">@dimen/podcast_text_size_t2</item>
+        <item name="android:textColor">@color/primary_glass_4</item>
+        <item name="android:lineHeight">@dimen/refresh_line_height_t2</item>
+        <item name="fontPath">fonts/AmazonEmber_Rg.ttf</item>
+    </style>
+    <style name="PodcastAppTheme.TextView.Tabs" parent="@style/PodcastAppTheme.TextView">
+        <item name="android:textSize">@dimen/podcast_text_size_t2</item>
+        <item name="android:textColor">@color/primary_glass_4</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:lineHeight">@dimen/refresh_line_height_t2</item>
+    </style>
+    <style name="PodcastAppTheme.TextView.Tertiary" parent="@style/PodcastAppTheme.TextView">
+        <item name="android:textSize">@dimen/podcast_text_size_t3</item>
+        <item name="android:textColor">@color/primary_glass_4</item>
+        <item name="android:lineHeight">@dimen/refresh_line_height_t3</item>
+        <item name="fontPath">fonts/AmazonEmber_Rg.ttf</item>
+    </style>
+    <style name="PodcastAppTheme.TextView.TertiaryItalic" parent="@style/PodcastAppTheme.TextView">
+        <item name="android:textSize">@dimen/podcast_text_size_t3</item>
+        <item name="android:textColor">@color/primary_glass_4</item>
+        <item name="android:lineHeight">@dimen/refresh_line_height_t3</item>
+        <item name="fontPath">fonts/AmazonEmber_RgIt.ttf</item>
+    </style>
+    <style name="PodcastAppTheme.TextView.UpsellButton" parent="@style/PodcastAppTheme.TextView">
+        <item name="android:textSize">@dimen/podcast_text_size_t3</item>
+        <item name="android:textStyle">0x1</item>
+        <item name="android:textColor">@color/primary_glass_5</item>
+        <item name="android:background">@drawable/redhood_plus_upsell_button_background</item>
+        <item name="android:capitalize">1</item>
+        <item name="android:lineHeight">@dimen/refresh_line_height_t3</item>
+        <item name="fontPath">fonts/AmazonEmber_Bd.ttf</item>
+    </style>
+    <style name="PodcastAppTheme.TextView.UpsellText" parent="@style/PodcastAppTheme.TextView">
+        <item name="android:textSize">@dimen/podcast_text_size_t3</item>
+        <item name="android:textStyle">0x2</item>
+        <item name="android:textColor">@color/primary</item>
+        <item name="android:lineHeight">@dimen/refresh_line_height_t3</item>
+        <item name="fontPath">fonts/AmazonEmber_RgIt.ttf</item>
+    </style>
+    <style name="PodcastAppTheme.TextView.VisualRowItemDescriptionText" parent="@style/PodcastAppTheme.TextView">
+        <item name="android:textSize">@dimen/podcast_text_size_t2</item>
+        <item name="android:textColor">@color/primary_glass_5</item>
+        <item name="android:lineHeight">@dimen/refresh_line_height_t2</item>
+        <item name="fontPath">fonts/AmazonEmber_Rg.ttf</item>
+    </style>
+</resources>

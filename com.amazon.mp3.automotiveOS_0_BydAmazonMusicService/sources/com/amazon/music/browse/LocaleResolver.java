@@ -1,0 +1,206 @@
+package com.amazon.music.browse;
+
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.Locale;
+import java.util.Map;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+/* JADX INFO: loaded from: classes4.dex */
+public final class LocaleResolver {
+    static final Locale DEFAULT;
+    private static final Locale IMPROPER_ar_AE;
+    private static final Locale IMPROPER_ar_EG;
+    private static final Locale IMPROPER_ar_SA;
+    private static final Locale IMPROPER_en_CA;
+    private static final Locale IMPROPER_en_GB;
+    private static final Locale IMPROPER_en_IN;
+    private static final Locale IMPROPER_es_MX;
+    private static final Locale IMPROPER_fr_CA;
+    private static final Locale IMPROPER_hi_IN;
+    static final Pattern LANGUAGE_REGEX = Pattern.compile("^([a-zA-Z]+)((_[a-zA-Z]*)?)$");
+    static final Map<String, Locale> SUPPORTED_LANGUAGES;
+    static final Map<Locale, Locale> SUPPORTED_LOCALES;
+    private static final Locale ar_AE;
+    private static final Locale ar_EG;
+    private static final Locale ar_SA;
+    private static final Locale bn_IN;
+    private static final Locale de;
+    private static final Locale de_DE;
+    private static final Locale en;
+    private static final Locale en_AU;
+    private static final Locale en_CA;
+    private static final Locale en_GB;
+    private static final Locale en_IN;
+    private static final Locale en_NZ;
+    private static final Locale en_US;
+    private static final Locale es;
+    private static final Locale es_ES;
+    private static final Locale es_MX;
+    private static final Locale es_US;
+    private static final Locale fr;
+    private static final Locale fr_CA;
+    private static final Locale fr_FR;
+    private static final Locale hi_IN;
+    private static final Locale it;
+    private static final Locale it_IT;
+    private static final Locale ja;
+    private static final Locale ja_JP;
+    private static final Locale kn_IN;
+    private static final Locale ml_IN;
+    private static final Locale mr_IN;
+    private static final Locale pa_IN;
+    private static final Locale pt_BR;
+    private static final Locale ta_IN;
+    private static final Locale te_IN;
+
+    static {
+        Locale locale = new Locale("en_GB");
+        IMPROPER_en_GB = locale;
+        Locale locale2 = new Locale("en_IN");
+        IMPROPER_en_IN = locale2;
+        Locale locale3 = new Locale("hi_IN");
+        IMPROPER_hi_IN = locale3;
+        Locale locale4 = new Locale("ar_AE");
+        IMPROPER_ar_AE = locale4;
+        Locale locale5 = new Locale("ar_SA");
+        IMPROPER_ar_SA = locale5;
+        Locale locale6 = new Locale("ar_EG");
+        IMPROPER_ar_EG = locale6;
+        Locale locale7 = new Locale("en_CA");
+        IMPROPER_en_CA = locale7;
+        Locale locale8 = new Locale("fr_CA");
+        IMPROPER_fr_CA = locale8;
+        Locale locale9 = new Locale("es_MX");
+        IMPROPER_es_MX = locale9;
+        Locale locale10 = new Locale("en", "US");
+        en_US = locale10;
+        Locale locale11 = new Locale("en", "GB");
+        en_GB = locale11;
+        Locale locale12 = new Locale("en", "IN");
+        en_IN = locale12;
+        Locale locale13 = new Locale("hi", "IN");
+        hi_IN = locale13;
+        Locale locale14 = new Locale("bn", "IN");
+        bn_IN = locale14;
+        Locale locale15 = new Locale("te", "IN");
+        te_IN = locale15;
+        Locale locale16 = new Locale("ta", "IN");
+        ta_IN = locale16;
+        Locale locale17 = new Locale("kn", "IN");
+        kn_IN = locale17;
+        Locale locale18 = new Locale("pa", "IN");
+        pa_IN = locale18;
+        Locale locale19 = new Locale("ml", "IN");
+        ml_IN = locale19;
+        Locale locale20 = new Locale("mr", "IN");
+        mr_IN = locale20;
+        Locale locale21 = new Locale("ar", "AE");
+        ar_AE = locale21;
+        Locale locale22 = new Locale("ar", "SA");
+        ar_SA = locale22;
+        Locale locale23 = new Locale("ar", "EG");
+        ar_EG = locale23;
+        Locale locale24 = new Locale("en", "CA");
+        en_CA = locale24;
+        Locale locale25 = new Locale("fr", "CA");
+        fr_CA = locale25;
+        Locale locale26 = new Locale("es", "MX");
+        es_MX = locale26;
+        Locale locale27 = new Locale("pt", "BR");
+        pt_BR = locale27;
+        Locale locale28 = new Locale("es", "US");
+        es_US = locale28;
+        Locale locale29 = new Locale("en", "NZ");
+        en_NZ = locale29;
+        Locale locale30 = new Locale("en", "AU");
+        en_AU = locale30;
+        Locale locale31 = new Locale("ja", "JP");
+        ja_JP = locale31;
+        Locale locale32 = new Locale("es", "ES");
+        es_ES = locale32;
+        Locale locale33 = new Locale("it", "IT");
+        it_IT = locale33;
+        Locale locale34 = new Locale("fr", "FR");
+        fr_FR = locale34;
+        Locale locale35 = new Locale("de", "DE");
+        de_DE = locale35;
+        Locale locale36 = new Locale("en");
+        en = locale36;
+        Locale locale37 = new Locale("ja");
+        ja = locale37;
+        Locale locale38 = new Locale("de");
+        de = locale38;
+        Locale locale39 = new Locale("fr");
+        fr = locale39;
+        Locale locale40 = new Locale("es");
+        es = locale40;
+        Locale locale41 = new Locale("it");
+        it = locale41;
+        DEFAULT = locale36;
+        HashMap map = new HashMap();
+        map.put(locale10, locale10);
+        map.put(locale11, locale11);
+        map.put(locale12, locale12);
+        map.put(locale13, locale13);
+        map.put(locale14, locale14);
+        map.put(locale15, locale15);
+        map.put(locale16, locale16);
+        map.put(locale19, locale19);
+        map.put(locale20, locale20);
+        map.put(locale18, locale18);
+        map.put(locale17, locale17);
+        map.put(locale21, locale21);
+        map.put(locale22, locale22);
+        map.put(locale23, locale23);
+        map.put(locale24, locale24);
+        map.put(locale25, locale25);
+        map.put(locale26, locale26);
+        map.put(locale27, locale27);
+        map.put(locale28, locale28);
+        map.put(locale30, locale30);
+        map.put(locale29, locale29);
+        map.put(locale31, locale31);
+        map.put(locale32, locale32);
+        map.put(locale33, locale33);
+        map.put(locale34, locale34);
+        map.put(locale35, locale35);
+        map.put(locale, locale11);
+        map.put(locale2, locale12);
+        map.put(locale3, locale13);
+        map.put(locale4, locale21);
+        map.put(locale5, locale22);
+        map.put(locale6, locale23);
+        map.put(locale7, locale24);
+        map.put(locale8, locale25);
+        map.put(locale9, locale26);
+        SUPPORTED_LOCALES = Collections.unmodifiableMap(map);
+        HashMap map2 = new HashMap();
+        map2.put(locale36.getLanguage(), locale36);
+        map2.put(locale37.getLanguage(), locale37);
+        map2.put(locale38.getLanguage(), locale38);
+        map2.put(locale39.getLanguage(), locale39);
+        map2.put(locale40.getLanguage(), locale40);
+        map2.put(locale41.getLanguage(), locale41);
+        SUPPORTED_LANGUAGES = Collections.unmodifiableMap(map2);
+    }
+
+    public static Locale resolveLocale(Locale locale) {
+        Map<Locale, Locale> map = SUPPORTED_LOCALES;
+        if (map.containsKey(locale)) {
+            return map.get(locale);
+        }
+        if (locale == null) {
+            return null;
+        }
+        Matcher matcher = LANGUAGE_REGEX.matcher(locale.getLanguage());
+        if (matcher.matches()) {
+            Map<String, Locale> map2 = SUPPORTED_LANGUAGES;
+            if (map2.containsKey(matcher.group(1))) {
+                return map2.get(matcher.group(1));
+            }
+        }
+        return DEFAULT;
+    }
+}

@@ -1,0 +1,101 @@
+package Podcast.PlaybackInterface.v1_0;
+
+import SOACoreInterface.v1_0.MethodsDeserializer;
+import com.amazon.cloud9.jackson.SimpleDeserializers;
+import com.fasterxml.jackson.core.JsonParseException;
+import com.fasterxml.jackson.core.JsonParser;
+import com.fasterxml.jackson.core.JsonToken;
+import com.fasterxml.jackson.core.Version;
+import com.fasterxml.jackson.databind.DeserializationContext;
+import com.fasterxml.jackson.databind.JsonDeserializer;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.module.SimpleModule;
+import com.google.android.gms.cast.MediaTrack;
+import java.io.IOException;
+import javax.annotation.CheckForNull;
+
+/* JADX INFO: loaded from: classes.dex */
+public class MediaMetadataElementDeserializer extends JsonDeserializer<MediaMetadataElement> {
+    public static final MediaMetadataElementDeserializer INSTANCE;
+    public static final SimpleModule MODULE;
+
+    static {
+        MediaMetadataElementDeserializer mediaMetadataElementDeserializer = new MediaMetadataElementDeserializer();
+        INSTANCE = mediaMetadataElementDeserializer;
+        SimpleModule simpleModule = new SimpleModule("Podcast.PlaybackInterface.v1_0.MediaMetadataElementDeserializer", new Version(1, 0, 0, null, null, null));
+        MODULE = simpleModule;
+        simpleModule.addDeserializer(MediaMetadataElement.class, mediaMetadataElementDeserializer);
+    }
+
+    private MediaMetadataElementDeserializer() {
+    }
+
+    public static void register(ObjectMapper objectMapper) {
+        objectMapper.registerModule(MODULE);
+    }
+
+    /* JADX WARN: Can't rename method to resolve collision */
+    @Override // com.fasterxml.jackson.databind.JsonDeserializer
+    @CheckForNull
+    public MediaMetadataElement deserialize(JsonParser jsonParser, DeserializationContext deserializationContext) throws IOException {
+        JsonToken currentToken = jsonParser.getCurrentToken();
+        if (currentToken == JsonToken.VALUE_NULL) {
+            return null;
+        }
+        if (currentToken != JsonToken.START_OBJECT) {
+            throw new JsonParseException(jsonParser, "Expected start of object, got " + currentToken, jsonParser.getTokenLocation());
+        }
+        if (jsonParser.nextToken() == JsonToken.FIELD_NAME && "__type".equals(jsonParser.getCurrentName())) {
+            if (jsonParser.nextToken() == null) {
+                throw new JsonParseException(jsonParser, "Unexpected end of input", jsonParser.getTokenLocation());
+            }
+            String text = jsonParser.getText();
+            jsonParser.nextToken();
+            if ("Podcast.PlaybackInterface.v1_0#MediaMetadataElement".equals(text)) {
+                return INSTANCE.deserializeFields(jsonParser, deserializationContext);
+            }
+            throw new UnsupportedOperationException("Deserialization for the Sub-Type not supported: " + text);
+        }
+        return deserializeFields(jsonParser, deserializationContext);
+    }
+
+    public MediaMetadataElement deserializeFields(JsonParser jsonParser, DeserializationContext deserializationContext) throws IOException {
+        MediaMetadataElement mediaMetadataElement = new MediaMetadataElement();
+        while (jsonParser.getCurrentToken() != JsonToken.END_OBJECT) {
+            if (jsonParser.getCurrentToken() != JsonToken.FIELD_NAME) {
+                throw new JsonParseException(jsonParser, "Expected field name, got " + jsonParser.getCurrentToken(), jsonParser.getTokenLocation());
+            }
+            String currentName = jsonParser.getCurrentName();
+            if (jsonParser.nextToken() == null) {
+                throw new JsonParseException(jsonParser, "Unexpected end of input", jsonParser.getTokenLocation());
+            }
+            if ("podcastDeeplink".equals(currentName)) {
+                mediaMetadataElement.setPodcastDeeplink(SimpleDeserializers.deserializeString(jsonParser, deserializationContext));
+            } else if (MediaTrack.ROLE_DESCRIPTION.equals(currentName)) {
+                mediaMetadataElement.setDescription(SimpleDeserializers.deserializeString(jsonParser, deserializationContext));
+            } else if ("logo".equals(currentName)) {
+                mediaMetadataElement.setLogo(SimpleDeserializers.deserializeString(jsonParser, deserializationContext));
+            } else if ("mediaId".equals(currentName)) {
+                mediaMetadataElement.setMediaId(SimpleDeserializers.deserializeString(jsonParser, deserializationContext));
+            } else if ("onAdditionalMetadataRequired".equals(currentName)) {
+                mediaMetadataElement.setOnAdditionalMetadataRequired(MethodsDeserializer.INSTANCE.deserialize(jsonParser, deserializationContext));
+            } else if ("mediaCollectionId".equals(currentName)) {
+                mediaMetadataElement.setMediaCollectionId(SimpleDeserializers.deserializeString(jsonParser, deserializationContext));
+            } else if ("artwork".equals(currentName)) {
+                mediaMetadataElement.setArtwork(SimpleDeserializers.deserializeString(jsonParser, deserializationContext));
+            } else if ("durationSeconds".equals(currentName)) {
+                mediaMetadataElement.setDurationSeconds(SimpleDeserializers.deserializeLong(jsonParser, deserializationContext));
+            } else if (MediaTrack.ROLE_SUBTITLE.equals(currentName)) {
+                mediaMetadataElement.setSubtitle(SimpleDeserializers.deserializeString(jsonParser, deserializationContext));
+            } else if ("title".equals(currentName)) {
+                mediaMetadataElement.setTitle(SimpleDeserializers.deserializeString(jsonParser, deserializationContext));
+            } else if ("onTranscriptsRequired".equals(currentName)) {
+                mediaMetadataElement.setOnTranscriptsRequired(MethodsDeserializer.INSTANCE.deserialize(jsonParser, deserializationContext));
+            } else {
+                jsonParser.skipChildren();
+            }
+            jsonParser.nextToken();
+        }
+        return mediaMetadataElement;
+    }
+}

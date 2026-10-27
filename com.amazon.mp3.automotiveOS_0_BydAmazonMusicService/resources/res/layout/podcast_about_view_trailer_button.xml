@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/trailer_button"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/podcast_trailer_button_touch_area_height">
+    <RelativeLayout
+        android:background="@drawable/primary_glass_2_rounded_corners"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/podcast_trailer_button_height"
+        android:foreground="@drawable/ripple"
+        android:layout_centerInParent="true">
+        <ImageView
+            android:id="@+id/trailer_button_image"
+            android:layout_width="@dimen/podcast_trailer_button_image_dimension"
+            android:layout_height="@dimen/podcast_trailer_button_image_dimension"
+            android:src="@drawable/ic_playinline"
+            android:layout_alignTop="@+id/trailer_button_text"
+            android:layout_alignBottom="@+id/trailer_button_text"
+            android:layout_marginStart="@dimen/podcast_trailer_button_image_margin"
+            android:layout_marginEnd="@dimen/podcast_trailer_button_image_margin"
+            android:layout_alignParentStart="true"/>
+        <com.amazon.podcast.views.EmberTextView
+            android:id="@+id/trailer_button_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/podcast_trailer_button_text_margin_end"
+            android:layout_toEndOf="@+id/trailer_button_image"
+            style="@style/PodcastAppTheme.TextView.Primary"/>
+    </RelativeLayout>
+</RelativeLayout>

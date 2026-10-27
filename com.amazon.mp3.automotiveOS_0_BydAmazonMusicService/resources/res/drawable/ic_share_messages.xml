@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt"
+    android:height="40dp"
+    android:width="40dp"
+    android:viewportWidth="40"
+    android:viewportHeight="40">
+    <path
+        android:fillColor="@drawable/_ic_share_messages__0_res_0x7f080014"
+        android:pathData="M20,37.998C29.941,37.998 38,29.939 38,19.998C38,10.057 29.941,1.998 20,1.998C10.059,1.998 2,10.057 2,19.998C2,29.939 10.059,37.998 20,37.998Z"/>
+    <path
+        android:fillColor="#ffffff"
+        android:pathData="M18.44,28.858L18.453,28.863C18.453,28.863 18.435,28.859 18.4,28.853C18.321,28.843 18.242,28.832 18.163,28.821C17.599,28.761 16.316,28.727 15.24,29.454C14.049,30.265 12.269,30.773 11.705,30.553C11.64,30.525 13.163,29.089 13.445,28.222C13.792,27.16 13.073,26.928 13.073,26.928L13.177,26.965C10.504,25.239 8.78,22.606 8.78,19.953C8.78,14.982 13.804,10.953 20,10.953C26.197,10.953 31.22,14.982 31.22,19.953C31.22,24.924 26.197,28.953 20,28.953C19.471,28.953 18.95,28.92 18.44,28.858Z"
+        android:fillType="evenOdd"/>
+</vector>

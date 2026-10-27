@@ -1,0 +1,117 @@
+<labeling_config>
+	<layer name="routeInfo">
+		<layer_settings>
+			<thread_pool>
+				<value ident="depth">3</value>
+			</thread_pool>
+			<language_selector>
+				<!--
+				0: MatchBest; accept all name alternatives, use best (or least-worst) matching one
+				1: MatchExactScript; accept only names with same script code as selected language (no transliterations)
+				2: MatchExactLanguage; accept only names that match the selected language code (not necessarily country code) exactly
+				3: MatchExactScriptAndLanguage; accept only names with same script and same language code as selected language
+				-->
+				<value ident="matching">2</value>
+			</language_selector>
+		</layer_settings>
+		<text_additional_attr>
+			<text_additional_offset>
+				<value ident="additional_offset" language_name="eng" line_distance="25"/><!-- English -->
+				<value ident="additional_offset" language_name="tha" line_distance="22"/><!-- Thailand -->
+				<value ident="additional_offset" language_name="zho" line_distance="25"/><!-- Chinese -->
+				<value ident="additional_offset" language_name="deu" line_distance="25"/><!-- German -->
+				<value ident="additional_offset" language_name="fra" line_distance="25"/><!-- French -->
+				<value ident="additional_offset" language_name="ita" line_distance="25"/><!-- Italian -->
+				<value ident="additional_offset" language_name="spa" line_distance="25"/><!-- Spanish -->
+				<value ident="additional_offset" language_name="por" line_distance="25"/><!-- Portuguese -->
+				<value ident="additional_offset" language_name="nor" line_distance="25"/><!-- Norwegian -->
+				<value ident="additional_offset" language_name="ara" line_distance="32"/><!-- Arabic -->
+				<value ident="additional_offset" language_name="nld" line_distance="25"/><!-- Dutch -->
+				<value ident="additional_offset" language_name="dan" line_distance="25"/><!-- Dansk -->
+				<value ident="additional_offset" language_name="swe" line_distance="25"/><!-- Swedish -->
+			</text_additional_offset>
+		</text_additional_attr>
+		<align_type_attr>
+			<align_type>
+				<!--  0: Center:Align strings to center
+				      1: Left:Align strings to left
+				      2: Right:Align strings to right	-->
+				<value ident="align" language_name="eng" align_type="1"/>
+				<value ident="align" language_name="tha" align_type="1"/>
+				<value ident="align" language_name="zho" align_type="1"/>
+				<value ident="align" language_name="deu" align_type="1"/>
+				<value ident="align" language_name="fra" align_type="1"/>
+				<value ident="align" language_name="ita" align_type="1"/>
+				<value ident="align" language_name="spa" align_type="1"/>
+				<value ident="align" language_name="por" align_type="1"/>
+				<value ident="align" language_name="rus" align_type="1"/>
+				<value ident="align" language_name="nor" align_type="1"/>
+				<value ident="align" language_name="ara" align_type="2"/>
+				<value ident="align" language_name="nld" align_type="1"/>
+				<value ident="align" language_name="dan" align_type="1"/>
+				<value ident="align" language_name="swe" align_type="1"/>
+			</align_type>
+		</align_type_attr>
+		<factorysets>
+			<factoryset type="NdsRouteInfoFactory">
+				<factory type="FactoryRouteInfo">
+					<routeinfo_settings>
+						<value ident="routeinfo" routeinfo_name="R_RT_S" fontSize="6" icon_offset_x="-0.5" icon_offset_y="0" name_offset_x_alignleft="40" name_offset_y_alignleft="40" name_offset_x_alignright="96" name_offset_y_alignright="32" colorForeground_day="#585C62FF" colorForeground_night="#B0B0B4FF"/>
+						<value ident="routeinfo" routeinfo_name="R_RT_B" fontSize="6" icon_offset_x="-0.5" icon_offset_y="0" name_offset_x_alignleft="40" name_offset_y_alignleft="40" name_offset_x_alignright="112" name_offset_y_alignright="32" colorForeground_day="#585C62FF" colorForeground_night="#B0B0B4FF"/>
+						<value ident="routeinfo" routeinfo_name="R_RB_S" fontSize="6" icon_offset_x="0" icon_offset_y="-0.5" name_offset_x_alignleft="40" name_offset_y_alignleft="40" name_offset_x_alignright="96" name_offset_y_alignright="32" colorForeground_day="#585C62FF" colorForeground_night="#B0B0B4FF"/>
+						<value ident="routeinfo" routeinfo_name="R_RB_B" fontSize="6" icon_offset_x="0" icon_offset_y="-0.5" name_offset_x_alignleft="40" name_offset_y_alignleft="40" name_offset_x_alignright="112" name_offset_y_alignright="32" colorForeground_day="#585C62FF" colorForeground_night="#B0B0B4FF"/>
+						<value ident="routeinfo" routeinfo_name="R_LT_S" fontSize="6" icon_offset_x="-0.5" icon_offset_y="-1" name_offset_x_alignleft="40" name_offset_y_alignleft="40" name_offset_x_alignright="96" name_offset_y_alignright="32" colorForeground_day="#585C62FF" colorForeground_night="#B0B0B4FF"/>
+						<value ident="routeinfo" routeinfo_name="R_LT_B" fontSize="6" icon_offset_x="-0.5" icon_offset_y="-1" name_offset_x_alignleft="40" name_offset_y_alignleft="40" name_offset_x_alignright="112" name_offset_y_alignright="32" colorForeground_day="#585C62FF" colorForeground_night="#B0B0B4FF"/>
+						<value ident="routeinfo" routeinfo_name="R_LB_S" fontSize="6" icon_offset_x="-1" icon_offset_y="-0.5" name_offset_x_alignleft="40" name_offset_y_alignleft="40" name_offset_x_alignright="96" name_offset_y_alignright="32" colorForeground_day="#585C62FF" colorForeground_night="#B0B0B4FF"/>
+						<value ident="routeinfo" routeinfo_name="R_LB_B" fontSize="6" icon_offset_x="-1" icon_offset_y="-0.5" name_offset_x_alignleft="40" name_offset_y_alignleft="40" name_offset_x_alignright="112" name_offset_y_alignright="32" colorForeground_day="#585C62FF" colorForeground_night="#B0B0B4FF"/>
+						<value ident="routeinfo" routeinfo_name="D_RT_S" fontSize="6" icon_offset_x="-1.4" icon_offset_y="-1" name_offset_x_alignleft="40" name_offset_y_alignleft="40" name_offset_x_alignright="88" name_offset_y_alignright="32" colorForeground_day="#FFFFFFFF" colorForeground_night="#FFFFFFFF"/>
+						<value ident="routeinfo" routeinfo_name="D_RT_B" fontSize="6" icon_offset_x="-1.4" icon_offset_y="-1" name_offset_x_alignleft="40" name_offset_y_alignleft="40" name_offset_x_alignright="108" name_offset_y_alignright="32" colorForeground_day="#FFFFFFFF" colorForeground_night="#FFFFFFFF"/>
+						<value ident="routeinfo" routeinfo_name="D_RB_S" fontSize="6" icon_offset_x="0.4" icon_offset_y="-1" name_offset_x_alignleft="40" name_offset_y_alignleft="40" name_offset_x_alignright="88" name_offset_y_alignright="32" colorForeground_day="#FFFFFFFF" colorForeground_night="#FFFFFFFF"/>
+						<value ident="routeinfo" routeinfo_name="D_RB_B" fontSize="6" icon_offset_x="0.4" icon_offset_y="-1" name_offset_x_alignleft="40" name_offset_y_alignleft="40" name_offset_x_alignright="108" name_offset_y_alignright="32" colorForeground_day="#FFFFFFFF" colorForeground_night="#FFFFFFFF"/>
+						<!-- <value ident="routeinfo" routeinfo_name="D_LT_S" fontSize="6" icon_offset_x="-0.5" icon_offset_y="-1.6" name_offset_x_alignleft="40" name_offset_y_alignleft="40" name_offset_x_alignright="40" name_offset_y_alignright="40" colorForeground_day="#FFFFFFFF" colorForeground_night="#FFFFFFFF"/> -->
+						<!-- <value ident="routeinfo" routeinfo_name="D_LT_B" fontSize="6" icon_offset_x="-0.5" icon_offset_y="-1.6" name_offset_x_alignleft="40" name_offset_y_alignleft="40" name_offset_x_alignright="40" name_offset_y_alignright="40" colorForeground_day="#FFFFFFFF" colorForeground_night="#FFFFFFFF"/> -->
+						<value ident="routeinfo" routeinfo_name="D_LB_S" fontSize="6" icon_offset_x="-0.5" icon_offset_y="0.1" name_offset_x_alignleft="40" name_offset_y_alignleft="40" name_offset_x_alignright="88" name_offset_y_alignright="32" colorForeground_day="#FFFFFFFF" colorForeground_night="#FFFFFFFF"/>
+						<value ident="routeinfo" routeinfo_name="D_LB_B" fontSize="6" icon_offset_x="-0.5" icon_offset_y="0.1" name_offset_x_alignleft="40" name_offset_y_alignleft="40" name_offset_x_alignright="108" name_offset_y_alignright="32" colorForeground_day="#FFFFFFFF" colorForeground_night="#FFFFFFFF"/>
+					</routeinfo_settings>
+					<label_settings>
+						<value ident="priority" type="float">1.0</value>
+						<value ident="is_selectable" type="bool">true</value>
+						<value ident="font_size_plain" type="int">5</value>
+						<value ident="font_size_selected" type="int">12</value>
+						<!-- minimal scale from which a line label shall be visible in meter -->
+						<value ident="min_scale" type="size_t">0</value>
+						<!-- maximal scale up to which a line label shall be visible in meter -->
+						<value ident="max_scale" type="size_t">2000000</value>
+						<value ident="icon_scaling" type="float">0.22</value>
+						<value ident="clearance" type="float">1</value>
+						<value ident="max_count_same" type="int">0</value>
+						<value ident="layer" type="int">1</value>
+					</label_settings>
+				</factory>
+			</factoryset>
+		</factorysets>
+		<!-- define factories and setting for MainWindow -->
+		<view name="MapWindow">
+			<placement>
+				<!-- maximal scale to build and show stacks for stackable labels -->
+				<value ident="max_stacking_scale" type="int">2000000</value>
+				<value ident="log_tree_building" type="bool">true</value>
+				<value ident="allow_partial_label_presentation" type="bool">true</value>
+				<value ident="sleep_time" type="size_t">1</value>
+			</placement>
+			<perspective>
+				<value ident="label_opacity_3d">1.0</value>
+			</perspective>
+			<label_scale_processor>
+				<text_scaling>LinearLabelScaleProcessor</text_scaling>
+				<icon_scaling>LinearLabelScaleProcessor</icon_scaling>
+			</label_scale_processor>
+			<background_treebuilding>false</background_treebuilding>
+			<!-- select factories to use for this view -->
+			<factory_usage>
+				<factory type="FactoryRouteInfo"></factory>
+			</factory_usage>
+		</view>
+	</layer>
+</labeling_config>
+

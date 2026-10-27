@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:paddingTop="@dimen/playback_progress_bar_container_padding"
+    android:paddingBottom="@dimen/playback_progress_bar_container_padding"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingVertical="@dimen/playback_progress_bar_container_padding">
+    <SeekBar
+        android:id="@+id/playback_progress_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/playback_progress_bar_padding"
+        android:paddingEnd="@dimen/playback_progress_bar_padding"
+        android:progressTint="@color/white"
+        android:progressBackgroundTint="@color/primary_glass_2"
+        android:thumbTint="@color/white"/>
+</LinearLayout>

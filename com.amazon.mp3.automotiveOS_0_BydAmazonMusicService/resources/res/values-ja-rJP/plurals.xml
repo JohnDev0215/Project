@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="dmusic_all_prime_songs_added_to_library">
+        <item quantity="one">%1$d曲が追加されました。</item>
+        <item quantity="other">%1$d曲が追加されました。</item>
+    </plurals>
+    <plurals name="dmusic_artist_confirm_delete_cloud_msg">
+        <item quantity="one">このアーティストを削除しますか。</item>
+        <item quantity="other">このアーティストと全%d曲を削除しますか。</item>
+    </plurals>
+    <plurals name="dmusic_download_str_to_download">
+        <item quantity="one">ダウンロード待ち %1$d曲</item>
+        <item quantity="other">ダウンロード待ち %1$d曲</item>
+    </plurals>
+    <plurals name="dmusic_genre_confirm_delete_cloud_msg">
+        <item quantity="one">このジャンルを削除しますか。</item>
+        <item quantity="other">このジャンルと全%d曲を削除しますか。</item>
+    </plurals>
+    <plurals name="dmusic_library_albums_count">
+        <item quantity="one">%1$dアルバム</item>
+        <item quantity="other">%1$dアルバム</item>
+    </plurals>
+    <plurals name="dmusic_library_songs_count">
+        <item quantity="one">%1$d曲</item>
+        <item quantity="other">%1$d曲</item>
+    </plurals>
+    <plurals name="dmusic_library_songs_duration_minutes">
+        <item quantity="one">%1$d分</item>
+        <item quantity="other">%1$d分</item>
+    </plurals>
+    <plurals name="dmusic_library_udo_playlists_add_to_toast">
+        <item quantity="one">%1$d曲を「%2$s」に追加しました。</item>
+        <item quantity="other">%1$d曲を「%2$s」に追加しました。</item>
+    </plurals>
+    <plurals name="dmusic_library_videos_count">
+        <item quantity="one">%1$d 本のビデオ</item>
+        <item quantity="other">%1$d 本のビデオ</item>
+    </plurals>
+    <plurals name="dmusic_playlist_album_already_in_playlist">
+        <item quantity="one">すでにプレイリストに入っています。</item>
+        <item quantity="other">すでにプレイリストに入っています。</item>
+    </plurals>
+    <plurals name="dmusic_playlist_artist_already_in_playlist">
+        <item quantity="one">すでにプレイリストに入っています。</item>
+        <item quantity="other">すでにプレイリストに入っています。</item>
+    </plurals>
+    <plurals name="dmusic_playlist_genre_already_in_playlist">
+        <item quantity="one">すでにプレイリストに入っています。</item>
+        <item quantity="other">すでにプレイリストに入っています。</item>
+    </plurals>
+    <plurals name="dmusic_playlist_playlist_already_in_playlist">
+        <item quantity="one">すでにプレイリストに入っています。</item>
+        <item quantity="other">すでにプレイリストに入っています。</item>
+    </plurals>
+    <plurals name="dmusic_playlist_track_already_in_playlist">
+        <item quantity="one">すでにプレイリストに入っています。</item>
+        <item quantity="other">すでにプレイリストに入っています。</item>
+    </plurals>
+    <plurals name="dmusic_sleep_timer_minutes">
+        <item quantity="one">%1$s分</item>
+        <item quantity="other">%1$s分</item>
+    </plurals>
+    <plurals name="dmusic_unable_to_add_songs_message">
+        <item quantity="one">楽曲を追加できませんでした。再度お試しください。</item>
+        <item quantity="other">楽曲を追加できませんでした。再度お試しください。</item>
+    </plurals>
+    <plurals name="find_library_albums_count">
+        <item quantity="one">%1$dアルバム</item>
+        <item quantity="other">%1$dアルバム</item>
+    </plurals>
+    <plurals name="find_library_songs_count">
+        <item quantity="one">%1$d曲</item>
+        <item quantity="other">%1$d曲</item>
+    </plurals>
+    <plurals name="playlist_duration_hours">
+        <item quantity="other">%1$s時間</item>
+    </plurals>
+    <plurals name="playlist_duration_minutes">
+        <item quantity="other">%1$d分</item>
+    </plurals>
+    <plurals name="playlist_song_count">
+        <item quantity="other">%1$d曲</item>
+    </plurals>
+</resources>

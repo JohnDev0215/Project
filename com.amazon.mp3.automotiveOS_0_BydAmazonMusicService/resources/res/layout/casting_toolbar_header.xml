@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/casting_header_container"
+    android:background="@drawable/casting_toolbar_header_background"
+    android:visibility="gone"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/casting_toolbar_header_height"
+    android:layout_alignParentTop="true">
+    <TextView
+        android:ellipsize="end"
+        android:gravity="center"
+        android:id="@+id/casting_header_textview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/casting_toolbar_header_side_margin"
+        android:layout_marginRight="@dimen/casting_toolbar_header_side_margin"
+        android:maxLines="1"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        style="@style/AmazonMusic.Casting.TitleText"/>
+</RelativeLayout>

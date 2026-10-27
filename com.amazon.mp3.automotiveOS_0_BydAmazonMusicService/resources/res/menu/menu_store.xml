@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/store_home"
+        android:title="@string/dmusic_menu_main_store_home"/>
+    <item
+        android:id="@+id/store_recommended"
+        android:title="@string/dmusic_store_recommended_tab"/>
+    <item
+        android:id="@+id/store_best_sellers"
+        android:title="@string/dmusic_store_best_sellers_tab"/>
+    <item
+        android:id="@+id/store_new_releases"
+        android:title="@string/dmusic_store_new_releases_tab"/>
+    <item
+        android:id="@+id/store_browse_genres"
+        android:title="@string/dmusic_store_browse_genres_tab"/>
+</menu>

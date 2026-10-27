@@ -1,0 +1,69 @@
+package org.apache.http.impl.client;
+
+import com.amazonaws.http.HttpHeader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.OutputStream;
+import org.apache.http.Header;
+import org.apache.http.HttpEntity;
+import org.apache.http.HttpEntityEnclosingRequest;
+import org.apache.http.ProtocolException;
+import org.apache.http.entity.HttpEntityWrapper;
+
+/* JADX INFO: loaded from: classes7.dex */
+@Deprecated
+public class EntityEnclosingRequestWrapper extends RequestWrapper implements HttpEntityEnclosingRequest {
+    private boolean consumed;
+    private HttpEntity entity;
+
+    public EntityEnclosingRequestWrapper(HttpEntityEnclosingRequest httpEntityEnclosingRequest) throws ProtocolException {
+        super(httpEntityEnclosingRequest);
+        setEntity(httpEntityEnclosingRequest.getEntity());
+    }
+
+    @Override // org.apache.http.HttpEntityEnclosingRequest
+    public HttpEntity getEntity() {
+        return this.entity;
+    }
+
+    public void setEntity(HttpEntity httpEntity) {
+        this.entity = httpEntity != null ? new EntityWrapper(httpEntity) : null;
+        this.consumed = false;
+    }
+
+    @Override // org.apache.http.HttpEntityEnclosingRequest
+    public boolean expectContinue() {
+        Header firstHeader = getFirstHeader(HttpHeader.EXPECT);
+        return firstHeader != null && "100-continue".equalsIgnoreCase(firstHeader.getValue());
+    }
+
+    @Override // org.apache.http.impl.client.RequestWrapper
+    public boolean isRepeatable() {
+        HttpEntity httpEntity = this.entity;
+        return httpEntity == null || httpEntity.isRepeatable() || !this.consumed;
+    }
+
+    class EntityWrapper extends HttpEntityWrapper {
+        EntityWrapper(HttpEntity httpEntity) {
+            super(httpEntity);
+        }
+
+        @Override // org.apache.http.entity.HttpEntityWrapper, org.apache.http.HttpEntity
+        public void consumeContent() throws IOException {
+            EntityEnclosingRequestWrapper.this.consumed = true;
+            super.consumeContent();
+        }
+
+        @Override // org.apache.http.entity.HttpEntityWrapper, org.apache.http.HttpEntity
+        public InputStream getContent() throws IOException {
+            EntityEnclosingRequestWrapper.this.consumed = true;
+            return super.getContent();
+        }
+
+        @Override // org.apache.http.entity.HttpEntityWrapper, org.apache.http.HttpEntity
+        public void writeTo(OutputStream outputStream) throws IOException {
+            EntityEnclosingRequestWrapper.this.consumed = true;
+            super.writeTo(outputStream);
+        }
+    }
+}

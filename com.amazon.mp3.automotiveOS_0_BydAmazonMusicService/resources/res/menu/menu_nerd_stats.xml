@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:icon="@drawable/ic_other_devices"
+        android:id="@+id/NerdStatsMenuCastToDevice"
+        android:title="@string/dmusic_nerd_stats_context_cast_to_device"/>
+    <item
+        android:icon="@drawable/mp3_icon_songplaying_4_grid"
+        android:id="@+id/NerdStatsMenuStreamingQualitySettings"
+        android:title="@string/dmusic_nerd_stats_context_streaming_quality"/>
+    <item
+        android:icon="@drawable/ic_download"
+        android:id="@+id/NerdStatsMenuDownloadQualitySettings"
+        android:title="@string/dmusic_nerd_stats_context_download_quality"/>
+    <item
+        android:icon="@drawable/podcast_ic_equalizer_step_2_primary"
+        android:id="@+id/NerdStatsMenuEqualizer"
+        android:title="@string/dmusic_context_equalizer"/>
+    <item
+        android:icon="@drawable/ic_alerts_help"
+        android:id="@+id/NerdStatsMenuLearnMore"
+        android:title="@string/dmusic_nerd_stats_context_learn_more"/>
+</menu>

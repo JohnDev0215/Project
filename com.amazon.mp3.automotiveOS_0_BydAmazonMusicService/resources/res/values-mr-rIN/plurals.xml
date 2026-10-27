@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="dmusic_all_prime_songs_added_to_library">
+        <item quantity="one">तुमच्या म्युझिकमध्ये %1$d गाणे जोडले आहे.</item>
+        <item quantity="other">तुमच्या म्युझिकमध्ये %1$d गाणी जोडली आहेत.</item>
+    </plurals>
+    <plurals name="dmusic_artist_confirm_delete_cloud_msg">
+        <item quantity="one">तुमची खात्री आहे की तुम्ही हा कलाकार डिलीट करू इच्छिता?</item>
+        <item quantity="other">तुमची खात्री आहे की तुम्ही हा कलाकार आणि सर्व %d गाणी डिलीट करू इच्छिता?</item>
+    </plurals>
+    <plurals name="dmusic_download_str_to_download">
+        <item quantity="one">डाउनलोड करण्यासाठी %1$d गाणे</item>
+        <item quantity="other">डाउनलोड करण्यासाठी %1$d गाणी</item>
+    </plurals>
+    <plurals name="dmusic_duration_hours">
+        <item quantity="one">%1$d तास</item>
+        <item quantity="other">%1$d तास</item>
+    </plurals>
+    <plurals name="dmusic_duration_minutes">
+        <item quantity="one">%1$d मिनिट</item>
+        <item quantity="other">%1$d मिनिटे</item>
+    </plurals>
+    <plurals name="dmusic_genre_confirm_delete_cloud_msg">
+        <item quantity="one">तुमची खात्री आहे की तुम्ही ही शैली डिलीट करू इच्छिता?</item>
+        <item quantity="other">तुमची खात्री आहे की तुम्ही ही शैली आणि सर्व %d गाणी डिलीट करू इच्छिता?</item>
+    </plurals>
+    <plurals name="dmusic_library_albums_count">
+        <item quantity="one">%1$d अल्बम</item>
+        <item quantity="other">%1$d अल्बम्स</item>
+    </plurals>
+    <plurals name="dmusic_library_songs_count">
+        <item quantity="one">%1$d गाणे</item>
+        <item quantity="other">%1$d गाणी</item>
+    </plurals>
+    <plurals name="dmusic_library_songs_duration_minutes">
+        <item quantity="one">%1$d मिनिट</item>
+        <item quantity="other">%1$d मिनिटे</item>
+    </plurals>
+    <plurals name="dmusic_library_udo_playlists_add_to_toast">
+        <item quantity="one">%1$d गाणे &quot;%2$s&quot; मध्ये जोडले</item>
+        <item quantity="other">%1$d गाणी &quot;%2$s&quot; मध्ये जोडले</item>
+    </plurals>
+    <plurals name="dmusic_library_videos_count">
+        <item quantity="one">%1$d व्हिडिओ</item>
+        <item quantity="other">%1$d व्हिडिओज</item>
+    </plurals>
+    <plurals name="dmusic_playlist_album_already_in_playlist">
+        <item quantity="one">अल्बममधील गाणे आधीच प्लेलिस्टमध्ये आहे</item>
+        <item quantity="other">अल्बममधील गाणी आधीच प्लेलिस्टमध्ये आहेत</item>
+    </plurals>
+    <plurals name="dmusic_playlist_artist_already_in_playlist">
+        <item quantity="one">कलाकाराचे गाणे आधीच प्लेलिस्टमध्ये आहे</item>
+        <item quantity="other">कलाकाराची गाणी आधीच प्लेलिस्टमध्ये आहेत</item>
+    </plurals>
+    <plurals name="dmusic_playlist_genre_already_in_playlist">
+        <item quantity="one">शैलीचे गाणे आधीच प्लेलिस्टमध्ये आहे</item>
+        <item quantity="other">शैलीची गाणी आधीच प्लेलिस्टमध्ये आहेत</item>
+    </plurals>
+    <plurals name="dmusic_playlist_playlist_already_in_playlist">
+        <item quantity="one">प्लेलिस्टमधील गाणे आधीच प्लेलिस्टमध्ये आहे</item>
+        <item quantity="other">प्लेलिस्टमधील गाणी आधीच प्लेलिस्टमध्ये आहेत</item>
+    </plurals>
+    <plurals name="dmusic_playlist_track_already_in_playlist">
+        <item quantity="one">गाणे आधीच प्लेलिस्टमध्ये आहे</item>
+        <item quantity="other">गाणी आधीच प्लेलिस्टमध्ये आहेत.</item>
+    </plurals>
+    <plurals name="dmusic_sleep_timer_minutes">
+        <item quantity="one">%1$s मिनिट</item>
+        <item quantity="other">%1$s मिनिटे</item>
+    </plurals>
+    <plurals name="dmusic_track_count">
+        <item quantity="one">%1$d गाणे</item>
+        <item quantity="other">%1$d गाणी</item>
+    </plurals>
+    <plurals name="dmusic_unable_to_add_songs_message">
+        <item quantity="one">गाणे जोडता आले नाही. पुन्हा प्रयत्न करा.</item>
+        <item quantity="other">%d गाणी जोडता आली नाहीत. पुन्हा प्रयत्न करा.</item>
+    </plurals>
+    <plurals name="find_library_albums_count">
+        <item quantity="one">%1$d अल्बम</item>
+        <item quantity="other">%1$d अल्बम्स</item>
+    </plurals>
+    <plurals name="find_library_songs_count">
+        <item quantity="one">%1$d गाणे</item>
+        <item quantity="other">%1$d गाणी</item>
+    </plurals>
+    <plurals name="playlist_duration_hours">
+        <item quantity="one">%1$d तास</item>
+        <item quantity="other">%1$d तास</item>
+    </plurals>
+    <plurals name="playlist_duration_minutes">
+        <item quantity="one">%1$d मिनिट</item>
+        <item quantity="other">%1$d मिनिटे</item>
+    </plurals>
+    <plurals name="playlist_song_count">
+        <item quantity="one">%1$d गाणे</item>
+        <item quantity="other">%1$d गाणी</item>
+    </plurals>
+</resources>

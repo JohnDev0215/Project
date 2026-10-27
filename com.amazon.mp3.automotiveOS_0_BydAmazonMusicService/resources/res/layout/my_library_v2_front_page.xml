@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/curate_my_library_home_layout"
+    android:background="@android:color/transparent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="vertical"
+            android:id="@+id/curate_my_library_home_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:id="@+id/import_playlists_banner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <include layout="@layout/import_playlists_banner"/>
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <FrameLayout
+                    android:orientation="vertical"
+                    android:id="@+id/curate_my_library_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+                <com.amazon.mp3.view.BauhausRibbon
+                    android:id="@+id/playlist_privacy_enforcement_ribbon"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/bauhaus_spacer_small"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="@dimen/bauhaus_spacer_mini"
+                    android:layout_marginEnd="@dimen/bauhaus_spacer_mini"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+</androidx.core.widget.NestedScrollView>

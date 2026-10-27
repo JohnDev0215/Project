@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AmazonMusic.FeatureBarker" parent="@style/AmazonMusic">
+        <item name="android:paddingRight">@dimen/column_half</item>
+    </style>
+    <style name="AmazonMusic.FeatureBarkerArt" parent="@style/AmazonMusic">
+        <item name="android:layout_width">@dimen/album_artwork_normal_size</item>
+        <item name="android:layout_height">@dimen/album_artwork_normal_size</item>
+        <item name="android:layout_margin">@dimen/album_artwork_normal_margin</item>
+    </style>
+    <style name="AmazonMusic.FeatureBarkerArtLandscape" parent="@style/AmazonMusic">
+        <item name="android:layout_width">@dimen/column_x_1_5_single_gutter</item>
+        <item name="android:layout_height">@dimen/column_x_1_5_single_gutter</item>
+        <item name="android:layout_margin">@dimen/column_half</item>
+    </style>
+    <style name="AmazonMusic.FeatureBarkerMainText" parent="@style/AmazonMusic.MainText">
+        <item name="android:textSize">@dimen/t8</item>
+    </style>
+    <style name="AmazonMusic.FeatureBarkerSubText" parent="@style/AmazonMusic.SubText">
+        <item name="android:textSize">@dimen/t9</item>
+    </style>
+    <style name="NavButtonGrid" parent="">
+        <item name="navigation_num_columns">2</item>
+    </style>
+</resources>

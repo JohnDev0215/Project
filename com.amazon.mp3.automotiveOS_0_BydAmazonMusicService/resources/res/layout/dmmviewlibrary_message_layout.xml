@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerHorizontal="true">
+    <TextView
+        android:gravity="center"
+        android:id="@+id/message_text"
+        android:paddingTop="@dimen/dialog_small_circular_icon_diameter"
+        android:paddingBottom="@dimen/dialog_small_circular_icon_diameter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxWidth="@dimen/message_txt_max_width"
+        android:paddingStart="@dimen/title_margin"
+        android:paddingEnd="@dimen/title_margin"
+        style="@style/AmazonMusic.MessageHeaderText"/>
+    <com.amazon.ui.foundations.views.BaseButton
+        android:id="@+id/message_view_button"
+        android:visibility="gone"
+        android:layout_width="@dimen/size_100"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/message_text"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>

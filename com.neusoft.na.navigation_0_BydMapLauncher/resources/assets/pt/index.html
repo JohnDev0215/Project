@@ -1,0 +1,1210 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+      <link rel="stylesheet" href="../css/index.css" />
+      <style>
+         table {
+            border-collapse: collapse;
+            border-spacing: 0;
+         }
+
+         #privacy ::-webkit-scrollbar {
+            width: 4px;
+            background-color: transparent !important;
+            display: none;
+         }
+
+         #privacy ::-webkit-scrollbar-thumb {
+            background-color: transparent;
+         }
+
+         #privacy .arabic {
+            font-size: 1rem;
+            direction: rtl;
+            text-align: initial;
+         }
+
+         #privacy .arabic .content-paragraph {
+            padding-right: unset !important;
+         }
+
+         #privacy .arabic .indent-level2 {
+            margin-right: 0.3rem;
+            margin-left: unset;
+         }
+
+         #privacy {
+            width: 100%;
+            height: 100%;
+            overflow-y: auto;
+            color: rgba(38, 45, 51, 0.65);
+            user-select: none;
+            pointer-events: all;
+            /* text-align: justify; */
+         }
+
+         #privacy .weight-bold {
+            font-weight: bold !important;
+         }
+
+         #privacy .indent-level1 {
+            margin-left: 0.3rem;
+            margin-right: unset;
+            color: rgba(38, 45, 51, 0.85);
+         }
+
+         #privacy .indent-level2 {
+            margin-left: 0.6rem;
+            /* margin-left: 0.8rem; */
+            margin-right: unset;
+         }
+
+         #privacy .indent-level3 {
+            margin-left: 0.9rem;
+            /* margin-left: 1.5rem; */
+            margin-right: unset;
+         }
+
+         #privacy .indent-level4 {
+            margin-left: 1.2rem;
+            margin-right: unset;
+         }
+
+         #privacy .tableContainer {
+            width: 100%;
+            overflow-x: auto;
+         }
+
+         #privacy .table {
+            table-layout: fixed;
+            width: max-content;
+            margin: 0.4rem auto;
+            border: 1px solid rgb(210, 216, 221);
+         }
+
+         #privacy .table tbody {
+            background-color: #fff;
+         }
+
+         #privacy .table tbody tr td,
+         #privacy th {
+            font-size: 0.28rem;
+            line-height: 0.36rem;
+            margin: 0;
+            font-weight: 400;
+            padding: 0.2rem 0.4rem;
+            text-align: left;
+         }
+
+         #privacy .table .thead .first-line-width {
+            width: 6.16rem;
+            text-align: initial;
+            word-wrap: break-word;
+         }
+
+         #privacy .table .thead {
+            color: #262d33;
+         }
+
+         #privacy .table .thead .mid-line-width {
+            width: 3.3rem;
+         }
+
+         #privacy .table .thead .last-line-width {
+            width: 3.61rem;
+         }
+
+         #privacy .table .thead th {
+            background: #eaf1f7;
+            font-size: 0.32rem;
+         }
+
+         #privacy .content-paragraph {
+            margin-top: 0.4rem;
+         }
+
+         #privacy .content-paragraph .time {
+            font-size: 0.32rem;
+            line-height: 0.4rem;
+            font-weight: 400;
+            margin: unset;
+         }
+
+         #privacy .content-paragraph .time:first-child {
+            margin-bottom: 0.2rem;
+         }
+
+         #privacy .content-paragraph:last-child {
+            margin-bottom: 0.4rem;
+         }
+
+         #privacy .content-paragraph .firstLevelTitle {
+            font-size: 0.36rem;
+            line-height: 0.44rem;
+            margin-bottom: 0.2rem;
+            margin-top: unset;
+            font-weight: 500;
+            color: rgba(38, 45, 51, 0.85);
+         }
+
+         #privacy .content-paragraph .secondaryTitle {
+            font-size: 0.32rem;
+            line-height: 0.4rem;
+            margin-bottom: 0.1rem;
+            margin-top: 0.2rem;
+            font-weight: 400;
+            color: #24313f;
+         }
+
+         #privacy .content-paragraph .paragraph {
+            font-size: 0.28rem;
+            line-height: 0.36rem;
+            font-weight: 400;
+         }
+
+         #privacy .content-paragraph .retraction {
+            text-indent: 2em;
+            margin-top: 0.1rem;
+         }
+
+         #privacy .paragraph-level1 {
+            color: rgba(38, 45, 51, 0.85);
+         }
+
+         .dark #privacy ::-webkit-scrollbar-thumb {
+            background-color: #dae1eb;
+            opacity: 0.4;
+         }
+
+         .dark #privacy {
+            color: rgba(218, 225, 235, 0.60);
+         }
+
+         .dark #privacy .indent-level1 {
+            color: #DAE1EB;
+         }
+
+         .dark #privacy .paragraph-level1 {
+            color: #DAE1EB;
+         }
+
+         .dark #privacy .firstLevelTitle {
+            color: rgba(218, 225, 235, 0.85);
+         }
+
+         .dark #privacy .table {
+            border: 1px solid rgb(48, 57, 70);
+         }
+
+         .dark #privacy .table .thead {
+            color: #dae1eb;
+         }
+
+         .dark #privacy .table tbody {
+            background-color: rgba(28, 36, 44, 0.7);
+         }
+
+         .dark #privacy .table .thead th {
+            background-color: rgba(0, 0, 0, 0.3);
+         }
+
+         /*denza dark*/
+
+         .dark.denza #privacy {
+            color: rgba(218, 225, 235, 0.85);
+         }
+
+         .dark.denza #privacy .indent-level1 {
+            color: #dae1eb;
+         }
+
+         .dark.denza #privacy .indent-level2 {
+            color: rgba(218, 225, 235, 0.7);
+         }
+
+         .dark.denza #privacy .indent-level3 {
+            color: rgba(218, 225, 235, 0.7);
+         }
+
+         .dark.denza #privacy .indent-level4 {
+            color: rgba(218, 225, 235, 0.7);
+         }
+
+         .dark.denza #privacy .paragraph-level1 {
+            color: #dae1eb;
+         }
+
+         .dark.denza #privacy .firstLevelTitle {
+            color: rgba(218, 225, 235, 0.85);
+         }
+
+         .dark.denza #privacy .table {
+            border: 1px solid #303946;
+         }
+
+         .dark.denza #privacy .table .thead {
+            color: #dae1eb;
+         }
+
+         .dark.denza #privacy .table tbody {
+            background-color: #1c242c;
+         }
+
+         .dark.denza #privacy .table .thead th {
+            background-color: rgba(0, 0, 0, 0.3);
+         }
+      </style>
+   </head>
+
+   <body>
+      <div id="privacyWarp">
+         <div class="content" id="privacy" style="font-size: 1rem">
+            <div class="content-paragraph">
+               <p class="time">Atualizado em: 30 de setembro de 2024</p>
+               <p class="time">Efetivo em: 30 de setembro de 2024</p>
+            </div>
+
+            <div class="content-paragraph">
+               <p class="paragraph">
+                  Como operador da Neusoft Navigation, a Neusoft Group Co., Ltd. (com sede social na Rua Xinxiu N.º 2,
+                  Novo
+                  Distrito de Hunnan, Cidade de Shenyang, doravante designado por "nós") está plenamente consciente da
+                  importância das suas informações pessoais e faremos o nosso melhor para proteger a segurança e
+                  confiabilidade das suas informações pessoais.
+               </p>
+               <p class="paragraph">
+                  Por favor, leia atentamente e entenda a Política de Privacidade do Neusoft Navigation (doravante
+                  designado por "Política de Privacidade") antes de usar os nossos produtos ou serviços. Use os nossos
+                  produtos (ou serviços) somente com o seu consentimento para os conteúdos acordados nesta Política de
+                  Privacidade.
+               </p>
+               <p class="paragraph">
+                  Em caso de dúvidas, comentários ou sugestões, por favor contacte-nos através das informações de
+                  contacto:
+               </p>
+               <p class="paragraph">Controlador de dados: BYD Auto Industry Co., Ltd.</p>
+               <p class="paragraph">E-mail: - para [países da UE], contacte [privacy.eu@byd.com]</p>
+               <p class="paragraph">- para [países do Sudeste Asiático], contacte [auto.asia@byd.com];</p>
+               <p class="paragraph">- para [Austrália e Nova Zelândia], contacte [info.au@byd.com];</p>
+               <p class="paragraph">- para [países da América do Norte e do Sul], contacte [bydautoservice@byd.com];</p>
+               <p class="paragraph">- para [países do Oriente Médio e da África], contacte [InfoMEA@byd.com];</p>
+               <p class="paragraph">
+                  Endereço: Estrada HengPing, N.º 3001, 3007, Pingshan, Shenzhen, República Popular da China
+               </p>
+               <p class="paragraph">Processador de Dados: Neusoft Group Co., Ltd.</p>
+               <p class="paragraph">E-mail: OneCoreGo.Care@neusoft.com</p>
+               <p class="paragraph">
+                  Endereço: Rua Xinxiu N.º 2, Novo Distrito de Hunnan, Shenyang, Liaoning, República Popular da China
+               </p>
+               <p class="paragraph weight-bold">Esta Política ajudará você compreender o seguinte:</p>
+               <p class="paragraph weight-bold">1. Como nós coletamos e usamos as suas informações pessoais</p>
+               <p class="paragraph weight-bold">
+                  2. Como nós processamos, partilhamos, transferimos e divulgamos as suas informações pessoais por meio
+                  de
+                  subcontratação
+               </p>
+               <p class="paragraph weight-bold">3. Como nós protegemos as suas informações pessoais</p>
+               <p class="paragraph weight-bold">4. Seus direitos</p>
+               <p class="paragraph weight-bold">5. Como nós processamos as informações pessoais das crianças</p>
+               <p class="paragraph weight-bold">
+                  6. Como as suas informações pessoais são armazenadas e transferidas globalmente
+               </p>
+               <p class="paragraph weight-bold">7. Como nós atualizamos esta Política</p>
+               <p class="paragraph weight-bold">8. Como contactar-nos</p>
+            </div>
+            <div class="content-paragraph">
+               <p class="weight-bold firstLevelTitle">1. Como nós coletamos e usamos as suas informações pessoais</p>
+               <p class="paragraph indent-level1">
+                  1.1 A função básica que fornecemos depende de algumas informações para funcionar. Se você optar por
+                  usar
+                  esta função de navegação básica, deve fornecer-nos ou permitir-nos para coletar e usar as informações
+                  necessárias, incluindo:
+               </p>
+               <p class="paragraph indent-level2">
+                  1.1.1 Ao usar o Neusoft Navigation pela primeira vez, você tem a opção de utilizar a função de
+                  ativação. Recolheremos o
+                  ID de IVI virtual Encriptado, as suas informações de localização, a hora de ativação, o estado de
+                  ativação, o tempo de
+                  expiração, o código do país e a versão dos dados do mapa. As informações de localização serão
+                  utilizadas para determinar
+                  se se encontra dentro da área de cobertura dos dados do mapa previamente armazenados, para realizar a
+                  primeira ativação
+                  do Neusoft Navigation, permitindo-lhe acesso normal ao Neusoft Navigation.
+               </p>
+               <p class="paragraph indent-level2">
+                  1.1.2 Quando utiliza a função de posicionamento, recolheremos as suas informações de localização e de
+                  velocidade do
+                  veículo para lhe mostrar a sua localização atual.
+               </p>
+               <p class="paragraph indent-level2">
+                  1.1.3 Quando você usar as funções de planejamento de rota ou navegação, nós coletaremos as informações
+                  sobre a sua localização e o seu destino.
+               </p>
+               <p class="paragraph indent-level3">
+                  1.1.3.1 Quando você usa as funções mencionadas acima, nós precisamos da sua autorização para habilitar
+                  a
+                  permissão de localização e acesso ao disco e permissões de acesso de leitura e gravação. Você pode
+                  desativar as permissões acima mencionadas através da autorização do sistema para nos impedir de
+                  coletar
+                  as informações acima mencionadas, mas você pode não ser capaz de acessar serviços ou funções
+                  relevantes
+                  ou alcançar os efeitos pretendidos desses serviços.
+               </p>
+               <p class="paragraph indent-level1">
+                  1.2 Para habilitar funções adicionais ,você pode optar por fornecer-nos ou permitir-nos para coletar
+                  as
+                  seguintes informações.
+               </p>
+               <p class="paragraph indent-level2">
+                  1.2.1 Quando utiliza a função de Trânsito, recolheremos as suas informações de localização e
+                  informações de Trânsito
+                  para apresentar o congestionamento de trânsito nas proximidades.
+               </p>
+               <p class="paragraph indent-level2">
+                  1.2.2 Quando utiliza a função de atualização on-line dos dados do mapa, recolheremos o ID de IVI
+                  virtual Encriptado do
+                  veículo e a versão dos dados do mapa para atualizar a versão mais recente.
+               </p>
+               <p class="paragraph indent-level2">
+                  1.2.3 Quando você usar a função de pesquisa, nós coletaremos as suas informações de localização e o
+                  conteúdo procurado, para lhe fornecer informações sobre a localização próxima que corresponda ao
+                  conteúdo
+                  procurado.
+               </p>
+               <p class="paragraph indent-level2">
+                  1.2.4 Quando utiliza a função de pesquisa de Google, recolheremos os resultados da pesquisa de Google,
+                  as suas informações de
+                  localização, o conteúdo pesquisado, o ID de IVI virtual Encriptado, a versão do sistema operacional, a
+                  versão da
+                  plataforma, a versão da aplicação, o tipo de marca, a marca, o ID do modelo do veículo, o ID do ecrã,
+                  o IMEI, o ID do
+                  fornecedor, o carimbo de data/hora, para lhe fornecer informações sobre a localização nas proximidades
+                  que corresponde
+                  ao conteúdo pesquisado.
+               </p>
+               <p class="paragraph indent-level2">
+                  1.2.5 Quando você usar a função de energia nova, nós coletaremos as informações sobre o modelo do seu
+                  veículo (elétrico puro ou híbrido), informações da bateria do veículo (carga total, carga restante e
+                  percentagem da carga restante da bateria, autonomia com base na carga restante da bateria, estado de
+                  bateria fraca) e informações de combustível do veículo (baixo nível de combustível), para lhe mostrar
+                  o
+                  estado atual do veículo de energia nova.
+               </p>
+               <p class="paragraph indent-level1">1.3 Servidor de serviço pós-venda</p>
+               <p class="paragraph indent-level2">
+                  Durante o uso do Neusoft Navigation, registraremos a operação do Neusoft Navigation na forma de logs
+                  no
+                  seu caminho IVI/sdcard/logs e sdcard/navilog.
+               </p>
+               <p class="paragraph indent-level2">
+                  1.3.1 Quando houver um problema que exija a nossa análise e investigação, pode entrar em contato com o
+                  revendedor local. Após obter a sua autorização, o revendedor extrairá os seus logs e enviá-los para o
+                  servidor de serviço pós-venda na Alemanha. Usaremos os logs no servidor de serviço pós-venda para
+                  analisar o problema.
+               </p>
+               <p class="paragraph indent-level2">
+                  As informações pessoais que podem estar envolvidas incluem: ID de IVI virtual Encriptado, hora de
+                  ativação, estado de
+                  ativação, hora de expiração, código do país, número da versão dos dados do mapa; informações sobre a
+                  sua localização,
+                  informações sobre a velocidade do veículo, informações sobre o trânsito, conteúdos pesquisados,
+                  informações sobre o
+                  destino, informações sobre o endereço de casa que definiu, informações sobre o endereço do trabalho
+                  que definiu e
+                  informações sobre o endereço que guardou; informações sobre o modelo do seu veículo (elétrico puro,
+                  híbrido),
+                  informações sobre o combustível do veículo (informações sobre o estado do óleo baixo); velocidade do
+                  veículo;
+                  informações sobre a energia do veículo; definições do sistema (modo de luz, idioma, tempo, sistema de
+                  tempo, estado do
+                  ecrã, modo de condução, unidade, permissões); resultados da pesquisa de Google, versão do sistema
+                  operacional, versão da
+                  plataforma, versão da aplicação, tipo de marca, marca, ID do modelo do veículo, ID do ecrã, IMEI, ID
+                  do fornecedor,
+                  carimbo de data/hora;
+               </p>
+               <p class="paragraph indent-level1">1.4 Base legal para o processamento de dados pessoais</p>
+
+               <p class="paragraph indent-level2">
+                  Processaremos os seus dados pessoais de acordo com as leis de proteção de dados aplicáveis. Portanto,
+                  processaremos os seus dados pessoais com base nos seguintes fundamentos legais:
+               </p>
+               <p class="paragraph indent-level2">
+                  1.4.1 Para executar o contrato do qual você faz parte, ou para tomar medidas de acordo com os seus
+                  requisitos antes de assinarmos o contrato;
+               </p>
+               <p class="paragraph indent-level2">1.4.2 Para o benefício legítimo nosso ou de terceiros;</p>
+               <p class="paragraph indent-level2">1.4.3 Para cumprir as nossas obrigações legais;</p>
+               <p class="paragraph indent-level2">1.4.4 Com base no seu consentimento.</p>
+            </div>
+
+            <div class="content-paragraph">
+               <p class="firstLevelTitle weight-bold">
+                  2. Como nós processamos, partilhamos, transferimos e divulgamos publicamente as suas informações
+                  pessoais
+                  por meio de subcontratação
+               </p>
+               <p class="paragraph indent-level1">2.1 Processamento confiado</p>
+               <p class="paragraph indent-level2">
+                  2.1.1 A fim de lhe fornecer produtos e serviços mais perfeitos e de alta qualidade, alguns módulos ou
+                  funções específicas nesta função básica são fornecidos por fornecedores externos. Por exemplo, podemos
+                  contratar um provedor de serviços para nos ajudar a fornecer suporte ao cliente.
+               </p>
+               <p class="paragraph indent-level2">
+                  2.1.2 Para empresas, organizações e indivíduos confiados por nós para processar informações pessoais,
+                  assinaremos acordos de confidencialidade estritos com eles, e exigiremos que processem informações
+                  pessoais de acordo com nossos requisitos, esta Política de Privacidade e quaisquer outras medidas
+                  relevantes de confidencialidade e segurança.
+               </p>
+               <p class="paragraph indent-level1">2.2 Partilha</p>
+               <p class="paragraph indent-level2">
+                  2.2.1 A fim de lhe fornecer produtos e serviços mais perfeitos e de alta qualidade, alguns dos nossos
+                  serviços serão fornecidos pelos nossos parceiros. Nós poderemos partilhar algumas das suas informações
+                  pessoais com os nossos parceiros para fornecer um melhor serviço ao cliente e experiência do
+                  utilizador.
+                  Nós só partilharemos as suas informações pessoais para fins legais, justos, necessários, específicos e
+                  claros, e só partilharemos as informações pessoais necessárias para a prestação do serviço. Nós
+                  monitoraremos estritamente o kit de desenvolvimento de software (SDK) e a interface do programa de
+                  aplicação (API) dos nossos parceiros para proteger a segurança dos dados. Além disso, assinaremos um
+                  acordo de confidencialidade estrito com os nossos parceiros, e exigiremos que eles processem as suas
+                  informações pessoais em estrita conformidade com as nossas instruções, esta Política, e quaisquer
+                  outras
+                  medidas relevantes de confidencialidade e segurança. Nós exigiremos que os nossos parceiros não usem
+                  as
+                  informações pessoais partilhadas para qualquer outra finalidade.
+               </p>
+               <p class="paragraph indent-level2">
+                  Atualmente, como fornecedor do aplicativo de navegação, fornecemos suporte ao serviço de navegação
+                  para o
+                  sistema BYD IVI.
+               </p>
+               <p class="paragraph indent-level2">
+                  Os nossos parceiros incluem a HERE, um provedor de serviços de dados online, que nos fornece suporte
+                  de
+                  serviços de dados online. Quando você usar o Neusoft Navigation online, nós partilharemos informações
+                  relevantes com a HERE nos seguintes cenários.
+               </p>
+               <p class="paragraph indent-level3">
+                  2.2.1.1 Quando você usar a função de Tráfego, nós partilharemos as suas informações de localização com
+                  a
+                  HERE para obter informações de tráfego ao seu redor.
+               </p>
+               <p class="paragraph indent-level3">
+                  2.2.1.2 Quando utilizar a função de pesquisa, recolheremos as suas informações de localização e o
+                  conteúdo pesquisado,
+                  para lhe fornecer informações sobre a localização nas proximidades que corresponda ao conteúdo
+                  pesquisado.
+               </p>
+               <p class="paragraph indent-level2">
+                  Os nossos parceiros incluem a BYD, que nos fornece o apoio do serviço de pesquisa on-line de Google.
+                  Quando utiliza a
+                  função de pesquisa de Google, partilharemos informações relevantes com a BYD nos seguintes cenários.
+               </p>
+               <p class="paragraph indent-level3">
+                  2.2.1.3 Quando utiliza a função de pesquisa de Google, partilharemos os resultados da pesquisa de
+                  Google, as suas
+                  informações de localização, o conteúdo pesquisado, a versão do sistema operacional a versão da
+                  plataforma, a versão da
+                  aplicação, o tipo de marca, a marca, o ID do modelo do veículo, o ID do ecrã, o IMEI, o ID do
+                  fornecedor, o carimbo de
+                  data/hora com a BYD, para lhe fornecer informações sobre a localização nas proximidades que
+                  corresponde ao conteúdo
+                  pesquisado.
+               </p>
+               <p class="paragraph indent-level3">
+                  2.2.1.4 Quando o sistema estiver ligado à Internet, todas as funcionalidades de pesquisa, incluindo a
+                  introdução de
+                  palavras-chave, a receção de sugestões de palavras e a obtenção de sugestões de resultados, serão
+                  fornecidas ao
+                  utilizador poro Google. Todos os dados recolhidos neste modo são tratados de acordo com (i) a Política
+                  de Privacidade de
+                  Google e o Cliente concorda com os Termos de Proteção de Dados do Controlador-Controlador de Google
+                  Maps em vigor na
+                  altura, disponíveis em https://business.safety.google/gdprcontrollerterms/, conforme possam ser
+                  atualizados
+                  periodicamente por Google, e com (ii) os Termos de Serviço Adicionais de Google Maps/Google Earth
+                  disponíveis em
+                  https://maps.google.com/help/terms_maps.html.
+               </p>
+               <p class="paragraph indent-level3">
+                  2.2.1.5 Partilha de Dados com Google: Os dados recolhidos no âmbito deste módulo são partilhados com
+                  Google para
+                  facilitar a funcionalidade de pesquisa. Google trata estes dados de acordo com a sua Política de
+                  Privacidade disponível
+                  em https://www.google.com/policies/privacy/..
+               </p>
+               <p class="paragraph indent-level3">
+                  2.2.1.6 Período de Retenção: Os dados são conservados apenas durante o tempo necessário para fornecer
+                  a funcionalidade
+                  de pesquisa e melhorar os serviços. Os períodos específicos de conservação de dados incluem:
+               </p>
+               <p class="paragraph indent-level3">
+                  2.2.1.7 Os dados armazenados em cache, como os resultados de pesquisa, podem ser guardados localmente
+                  no seu dispositivo
+                  durante um máximo de 30 dias para melhorar a experiência do utilizador durante interrupções do
+                  serviço.
+               </p>
+               <p class="paragraph indent-level3">
+                  2.2.1.8 Os endereços IP e os termos de pesquisa são conservados de acordo com as políticas de dados de
+                  Google.
+               </p>
+               <p class="paragraph indent-level1">2.3 Transferência</p>
+               <p class="paragraph indent-level2">
+                  Em caso de fusão, aquisição ou liquidação por falência, cumpriremos todos os requisitos legais
+                  aplicáveis
+                  no que diz respeito à transferência de informações pessoais. Nós exigiremos que a nova empresa ou
+                  organização que detém as suas informações pessoais continue a estar vinculada pela Política de
+                  Privacidade, caso contrário, exigiremos que a empresa ou organização solicite novamente a sua
+                  autorização
+                  e consentimento.
+               </p>
+               <p class="paragraph indent-level1">2.4 Divulgação pública</p>
+               <p class="paragraph indent-level2">
+                  Nós só divulgaremos as suas informações pessoais nas seguintes circunstâncias:
+               </p>
+               <p class="paragraph indent-level3">2.4.1 Com seu consentimento expresso;</p>
+               <p class="paragraph indent-level3">
+                  2.4.2 Divulgação com base na lei: Nós podemos divulgar publicamente as suas informações pessoais sob
+                  os
+                  requisitos obrigatórios de leis, procedimentos legais, processos judiciais ou autoridades
+                  governamentais.
+               </p>
+            </div>
+            <div class="content-paragraph">
+               <p class="firstLevelTitle weight-bold">3. Como nós protegemos as suas informações pessoais</p>
+               <p class="paragraph indent-level1">
+                  3.1 Nós adotamos medidas de proteção de segurança em conformidade com os padrões da indústria para
+                  proteger as informações pessoais fornecidas contra acesso, divulgação pública, uso ou modificação não
+                  autorizados, bem como contra danos ou perda.
+               </p>
+               <p class="paragraph indent-level1">
+                  3.2 Nós estabelecemos um sistema avançado de gestão de segurança de dados com os dados como núcleo e
+                  com
+                  foco no ciclo de vida dos dados na indústria para melhorar a segurança de informações pessoais das
+                  dimensões da construção de organização, design do sistema, gestão de pessoal e tecnologia do produto.
+                  Através de cursos de formação e exames, melhoramos continuamente a consciência dos empregados sobre a
+                  importância de proteger as informações pessoais.
+               </p>
+               <p class="paragraph indent-level1 weight-bold">
+                  3.3 O ambiente da Internet não é 100% seguro, pelo que faremos o nosso melhor para assegurar ou
+                  garantir
+                  a segurança de qualquer informação que nos envie. Se as nossas instalações de proteção física, técnica
+                  ou
+                  gerencial forem danificadas, resultando em danos aos seus direitos e interesses legítimos, iniciaremos
+                  o
+                  plano de emergência a tempo e tomaremos as medidas razoáveis e necessárias para minimizar o impacto
+                  sobre
+                  si.
+               </p>
+               <p class="paragraph indent-level1">
+                  3.4 Em caso de qualquer incidente de segurança infeliz, nós informaremos prontamente sobre as
+                  informações
+                  básicas e os possíveis efeitos do incidente, as medidas que foram ou serão tomadas, as sugestões sobre
+                  prevenção e redução de riscos e as medidas corretivas, etc. para você, de acordo com as leis e
+                  regulamentos. Nós o notificaremos sobre as informações relacionadas por correio, correspondência,
+                  telefone, notificação por push, etc. Quando for difícil notificar o sujeito das informações pessoais,
+                  um
+                  a um, divulgaremos os anúncios correspondentes através de métodos razoáveis e eficazes. Enquanto isso,
+                  nós relataremos a resolução de tais incidentes de segurança de acordo com os requisitos das
+                  autoridades
+                  reguladoras.
+               </p>
+               <p class="paragraph indent-level1">3.5 Aviso especial:</p>
+               <p class="paragraph indent-level2">
+                  3.5.1 Quando você fornece sua localização geográfica ou seu paradeiro através de software de
+                  terceiros,
+                  proteja suas informações pessoais.
+               </p>
+               <p class="paragraph indent-level2">
+                  3.5.2 Por favor, compreende que vários ataques maliciosos ou não maliciosos podem existir ou ocorrer
+                  devido ao rápido desenvolvimento da tecnologia de computador e Internet e à limitação da velocidade de
+                  sincronização. Nós fazemos tudo o que podemos para melhorar as medidas de segurança, mas nem sempre é
+                  possível assegurar que a informação seja 100% segura.
+               </p>
+               <p class="paragraph indent-level2">
+                  3.5.3 Neusoft Navigation não pode controlar o sistema e a rede de comunicação, ou os dispositivos de
+                  hardware que você usa para os nossos produtos ou serviços. Por favor, compreende e proteja as suas
+                  informações pessoais.
+               </p>
+               <p class="paragraph indent-level2">
+                  3.5.4 Suas informações pessoais, após anonimizadas, serão os dados que poderão ser utilizados e
+                  difundidos. Para o armazenamento e processamento desses dados, o Neusoft Navigation não tem
+                  necessidade
+                  de o informar ou de obter o seu consentimento.
+               </p>
+            </div>
+
+            <div class="content-paragraph">
+               <p class="firstLevelTitle weight-bold">4. Seus direitos</p>
+               <p class="paragraph indent-level1">
+                  Esta secção descreve os seus direitos aos dados pessoais que coletaremos ao abrigo das Leis de
+                  Proteção
+                  de Dados Aplicadas (qualquer legislação aplicável ou sistema de supervisão estabelecido por um governo
+                  reconhecido, entidade governamental ou administrativa reconhecida para proteger os direitos de
+                  privacidade de pessoas físicas ou famílias compostas por pessoas físicas). Se você precisar exercer
+                  direitos relevantes ou tiver dúvidas, por favor, contacte-nos através das informações de contacto
+                  nesta
+                  Política. Se o seu pedido for manifestamente infundado ou excessivo, reservamo-nos o direito de cobrar
+                  uma taxa razoável (tendo em conta os custos administrativos de fornecer informações ou correspondência
+                  ou
+                  de tomar as medidas solicitadas) ou de recusar a tomada de medidas sobre o pedido.
+               </p>
+               <p class="paragraph indent-level2 paragraph-level1">4.1 Direitos de acesso</p>
+               <p class="paragraph indent-level3">
+                  Você tem o direito de acesso às suas informações pessoais, salvo disposição em contrário nas leis e
+                  regulamentos. Se você deseja exercer o direito de acesso aos dados, pode fazê-lo através dos seguintes
+                  métodos de acesso. Por exemplo:
+               </p>
+               <p class="paragraph indent-level3">
+                  Você pode observar a posição do ícone do seu veículo para visualizar suas informações de localização;
+               </p>
+               <p class="paragraph indent-level3">
+                  Você pode visualizar as informações históricas do destino a que chegou clicando em Caixa de Pesquisa;
+               </p>
+               <p class="paragraph indent-level3">
+                  Você pode visualizar o seu endereço residencial/local de trabalho/favoritos clicando em Caixa de
+                  Pesquisa
+                  - Casa/Empresa/Favoritos;
+               </p>
+               <p class="paragraph indent-level3">
+                  Você pode visualizar seu histórico de pesquisa clicando em Caixa de Pesquisa - Teclado Pop-up.
+               </p>
+               <p class="paragraph indent-level3">
+                  Se você não conseguir acessar às suas informações pessoais da forma acima, pode contactar-nos através
+                  das
+                  informações de contacto aqui contidas. Nós responderemos ao seu pedido de acesso dentro do prazo
+                  estipulado por lei.
+               </p>
+               <p class="paragraph indent-level2 paragraph-level1">4.2 Direitos de correção</p>
+               <p class="paragraph indent-level3">
+                  Se você encontrar erros nas informações pessoais que processamos sobre você, você tem o direito de nos
+                  pedir para fazer correções.
+               </p>
+               <p class="paragraph indent-level3">
+                  Você pode corrigir seu endereço residencial/local de trabalho/favoritos clicando em Caixa de Pesquisa
+                  -
+                  Casa/Empresa/Favoritos;
+               </p>
+               <p class="paragraph indent-level3">
+                  Se você não conseguir corrigir as suas informações pessoais da forma acima, pode contactar-nos através
+                  das informações de contacto aqui contidas. Nós responderemos ao seu pedido de correção dentro do prazo
+                  estipulado por lei.
+               </p>
+               <p class="paragraph indent-level2 paragraph-level1">4.3 Direito de excluir</p>
+               <p class="paragraph indent-level3">
+                  Você pode contactar-nos através das informações de contacto aqui contidas. Quando nós recebermos o seu
+                  pedido, todos os dados serão excluídos, exceto os dados que somos legalmente obrigados a manter.
+               </p>
+
+               <p class="paragraph indent-level3">
+                  Nós somos obrigados a excluir as suas informações pessoais imediatamente em qualquer um dos seguintes
+                  casos:
+               </p>
+               <p class="paragraph indent-level3">
+                  Os seus dados pessoais já não são mais utilizados para efeitos de coleta ou outro processamento.
+               </p>
+               <p class="paragraph indent-level3">
+                  Você retira o seu consentimento e não existe outra base legal para processar os dados.
+               </p>
+               <p class="paragraph indent-level3">Você se opõe ao processamento dos dados (veja abaixo).</p>
+               <p class="paragraph indent-level3">Os seus dados pessoais são processados de forma ilegal.</p>
+               <p class="paragraph indent-level2 paragraph-level1">4.4 Direitos de restrição</p>
+               <p class="paragraph indent-level3">
+                  Você pode contactar-nos através das informações de contacto aqui contidas
+               </p>
+               <p class="paragraph indent-level3">
+                  Você tem o direito de restringir o nosso processamento de dados quando uma das seguintes condições for
+                  atendida:
+               </p>
+               <p class="paragraph indent-level3">Você contesta a exatidão dos seus dados pessoais,</p>
+               <p class="paragraph indent-level3">
+                  O processamento dos dados seria ilegal, mas você ainda não deseja excluir os dados pessoais, e em vez
+                  disso, solicita restringir o seu uso,
+               </p>
+               <p class="paragraph indent-level3">
+                  Os dados pessoais não são mais necessários para os nossos fins de processamento, e você precisa dos
+                  dados
+                  para estabelecer, executar ou defender reivindicações legais;
+               </p>
+               <p class="paragraph indent-level3">
+                  Você se opõe ao processamento (veja abaixo) e não está claro se os nossos interesses legítimos
+                  prevalecerão.
+               </p>
+               <p class="paragraph indent-level2 paragraph-level1">4.5 Direitos de objeção</p>
+               <p class="paragraph indent-level3">
+                  Se você se opõe ao processamento dos seus dados pessoais, você pode contactar-nos através das
+                  informações
+                  de contacto aqui contidas. A objeção será concedida, a menos que seja baseada num dos seguintes
+                  motivos:
+               </p>
+               <p class="paragraph indent-level3">
+                  Nós precisamos processar os seus dados pessoais para realizar tarefas de interesse público ou para
+                  exercer poderes públicos delegados a nós;
+               </p>
+               <p class="paragraph indent-level3">
+                  Quando os seus interesses ou direitos básicos são baseados na proteção dos seus dados pessoais, o
+                  processamento é necessário para proteger os interesses legítimos nossos e de terceiros.
+               </p>
+               <p class="paragraph indent-level3">
+                  O direito de objeção também se aplica às análises com base nesses processos.
+               </p>
+               <p class="paragraph indent-level3">
+                  Se os dados pessoais forem processados para fins de marketing direto, você tem o direito de se opor ao
+                  processamento dos seus dados pessoais para tais fins de marketing. Isso também se aplica às análises
+                  relacionadas a esse marketing direto.
+               </p>
+               <p class="paragraph indent-level3">
+                  Você também tem o direito, com base nas suas circunstâncias pessoais específicas, de se opor ao nosso
+                  processamento dos seus dados pessoais para fins de pesquisa científica ou histórica ou para fins
+                  estatísticos, a menos que tal processamento seja necessário para realizar tarefas de interesse
+                  público.
+               </p>
+               <p class="paragraph indent-level2 paragraph-level1">4.6 Alteração do escopo da sua autorização</p>
+               <p class="paragraph indent-level3">
+                  Algumas informações pessoais básicas são necessárias para o funcionamento de cada função de navegação.
+                  Para a coleta e uso de informações pessoais coletadas adicionalmente, você pode oferecer ou retirar a
+                  sua
+                  autorização a qualquer momento.
+               </p>
+               <p class="paragraph indent-level3">Você pode realizar essas operações das seguintes formas:</p>
+               <p class="paragraph indent-level3">Clique em "Definições" - "Política de Privacidade" - "Cancelar".</p>
+               <p class="paragraph indent-level3">
+                  Uma vez que o seu consentimento autorizado for retirada, nós não processaremos mais as informações
+                  pessoais correspondentes. No entanto, a sua decisão de retirar a sua autorização não afeta o
+                  processamento das informações pessoais feito com base na sua autorização anterior.
+               </p>
+               <p class="paragraph indent-level3">
+                  Você pode encerrar a sua conta registada anteriormente a qualquer momento e pode contactar-nos através
+                  dos detalhes de contacto aqui neste artigo.
+               </p>
+               <p class="paragraph indent-level3">
+                  Após o encerramento da conta, nós deixaremos de fornecer produtos ou serviços a você e excluiremos as
+                  suas informações pessoais conforme necessário, salvo disposição em contrário em leis e regulamentos.
+               </p>
+               <p class="paragraph indent-level2 paragraph-level1">4.7 Portabilidade</p>
+               <p class="paragraph indent-level3">
+                  Você tem o direito de obter uma cópia das suas informações pessoais. Você pode contactar-nos através
+                  das
+                  informações de contacto aqui contidas.
+               </p>
+               <p class="paragraph indent-level3">
+                  Desde que seja tecnicamente viável, por exemplo, interfaces de dados mutuamente compatíveis, nós
+                  também
+                  podemos transferir diretamente uma cópia das suas informações pessoais para um terceiro designado por
+                  si,
+                  conforme necessário.
+               </p>
+               <p class="paragraph indent-level2 paragraph-level1">
+                  4.8 Restrição na tomada de decisão automática de sistemas de informação
+               </p>
+               <p class="paragraph indent-level3">
+                  Em algumas funções de navegação, as decisões podem ser tomadas apenas com base em mecanismos de tomada
+                  de
+                  decisão automáticos não artificiais, incluindo sistemas de informação e algoritmos. Se tais decisões
+                  afetarem significativamente os seus direitos e interesses legítimos, você tem o direito de solicitar
+                  explicações de nós, e nós também forneceremos as soluções adequadas.
+               </p>
+               <p class="paragraph indent-level2 paragraph-level1">4.9 Responder aos seus pedidos acima</p>
+               <p class="paragraph indent-level3">
+                  Para garantir a segurança, você pode precisar apresentar um pedido por escrito ou provar a sua
+                  identidade
+                  de outras maneiras. Nós podemos verificar a sua identidade antes de responder aos sues pedidos.
+               </p>
+               <p class="paragraph indent-level3">Nós responderemos dentro do prazo estipulado por lei.</p>
+               <p class="paragraph indent-level3">
+                  Para pedidos razoáveis, nós não lhe cobraremos nenhuma taxa em princípio, mas para pedidos repetidos
+                  para
+                  além do limite razoável, cobraremos uma determinada taxa, conforme o caso. Nós podemos rejeitar os
+                  pedidos que repetidamente ocorrem sem motivo justificado, exijam demasiadas medidas técnicas (por
+                  exemplo, seja necessário desenvolver novos sistemas ou alterar fundamentalmente as práticas
+                  existentes),
+                  representem riscos para os direitos e interesses legítimos de terceiros ou sejam muito impraticáveis
+                  (por
+                  exemplo, envolvendo informações armazenadas em fitas de backup).
+               </p>
+            </div>
+
+            <div class="content-paragraph">
+               <p class="firstLevelTitle weight-bold">5. Como nós processamos as informações pessoais das crianças</p>
+               <p class="paragraph indent-level1">
+                  Os nossos produtos, websites e serviços são destinados principalmente a adultos. Crianças não devem
+                  criar
+                  suas próprias contas de assuntos de informações pessoais sem o consentimento de seus pais ou tutores.
+               </p>
+               <p class="paragraph indent-level1">
+                  Para a coleta de informações pessoais de crianças com o consentimento dos pais, só usaremos ou
+                  divulgaremos publicamente estas informações se permitido por lei, expressamente acordado pelos pais ou
+                  tutores ou necessário para proteger as crianças.
+               </p>
+               <p class="paragraph indent-level1">
+                  Embora as leis e costumes locais definam crianças de forma diferente, tratamos qualquer pessoa com
+                  menos
+                  de 16 anos como criança.
+               </p>
+               <p class="paragraph indent-level1">
+                  No caso de termos alguma informação pessoal coletada sobre crianças sem o consentimento prévio dos
+                  seus
+                  pais, procuraremos removê-la o mais rápido possível.
+               </p>
+            </div>
+            <div class="content-paragraph">
+               <p class="firstLevelTitle weight-bold">
+                  6. Como as suas informações pessoais são armazenadas e transferidas globalmente
+               </p>
+               <p class="paragraph indent-level1">6.1 Período de armazenamento</p>
+               <p class="paragraph indent-level2">
+                  A menos que estipulado de outra forma por leis e regulamentos, o Neusoft Navigation armazenará as suas
+                  informações pessoais pelo seguinte período:
+               </p>
+               <div class="tableContainer">
+                  <table border="1px" class="table">
+                     <colgroup class="thead">
+                        <col class="first-line-width" />
+                        <col class="mid-line-width" />
+                        <col class="mid-line-width" />
+                        <col class="last-line-width" />
+                     </colgroup>
+                     <thead>
+                        <tr class="thead">
+                           <th>Informações</th>
+                           <th>Condição de serviço</th>
+                           <th>Local de armazenamento</th>
+                           <th>Período de armazenamento</th>
+                        </tr>
+                     </thead>
+                     <tbody>
+                        <tr>
+                           <td>
+                              <p>ID de IVI virtual Encriptado</p>
+                              <p>Tempo de ativação</p>
+                              <p>Estado de ativação</p>
+                              <p>Data de expiração</p>
+                              <p>Código do país</p>
+                              <p>Versão dos dados do mapa</p>
+                           </td>
+                           <td>Recolha e armazenamento</td>
+                           <td>Nuvem</td>
+                           <td>3 anos</td>
+                        </tr>
+                        <tr>
+                           <td rowspan="2">Informações de localização</td>
+                           <td rowspan="2">Recolha e armazenamento</td>
+                           <td>Nuvem</td>
+                           <td>Apagam-se após o uso</td>
+                        </tr>
+                        <tr>
+                           <td>Terminal</td>
+                           <td>
+                              <p>Armazenam-se em terminais;</p>
+                              <p>Não aplicável</p>
+                           </td>
+                        </tr>
+
+                        <tr>
+                           <td rowspan="2">Conteúdos pesquisados</td>
+                           <td rowspan="2">Recolha e armazenamento</td>
+                           <td>Nuvem</td>
+                           <td>Apagam-se após o uso</td>
+                        </tr>
+                        <tr>
+                           <td>Terminal</td>
+                           <td>
+                              <p>Armazenam-se em terminais;</p>
+                              <p>Não aplicável</p>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td>Informações sobre o destino</td>
+                           <td>Recolha e armazenamento</td>
+                           <td>Terminal</td>
+                           <td>
+                              <p>Armazenam-se em terminais;</p>
+                              <p>Não aplicável</p>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td>
+                              <p>Informações do endereço residencial definido</p>
+                              <p>Informações sobre o local de trabalho definido</p>
+                              <p>Informações de endereço salvas</p>
+                           </td>
+                           <td>Recolha e armazenamento</td>
+                           <td>Terminal</td>
+                           <td>
+                              <p>Armazenam-se em terminais;</p>
+                              <p>Não aplicável</p>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td>
+                              <p>Informação sobre a velocidade do veículo</p>
+                              <p>Informações sobre o trânsito</p>
+                              <p>Informações sobre o modelo do seu veículo (elétrico puro ou híbrido)</p>
+                              <p>Informações de combustível do veículo (baixo nível de combustível)</p>
+                              <p>informação sobre a energia do veículo;</p>
+                              <p>definições do sistema (modo de luz, idioma, tempo, sistema de tempo, estado do ecrã,
+                                 modo de condução, unidade,
+                                 permissões) ;</p>
+                           </td>
+                           <td>Recolha</td>
+                           <td>Não armazenados</td>
+                           <td>
+                              <p>Dados recolhidos não armazenados;</p>
+                              <p>Não aplicável,</p>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td rowspan="2">Resultados da pesquisa de Google</td>
+                           <td rowspan="2">Recolha e armazenamento</td>
+                           <td>Nuvem</td>
+                           <td>Apagam-se após o uso</td>
+                        </tr>
+                        <tr>
+                           <td>Terminal</td>
+                           <td>30 dias</td>
+                        </tr>
+                        <tr>
+                           <td>
+                              <p>versão do sistema operacional, versão da plataforma, versão da aplicação, tipo de
+                                 marca, marca, ID do modelo do veículo,
+                                 ID do ecrã, IMEI, ID do fornecedor, carimbo de data/hora;</p>
+                           </td>
+                           <td>Recolha</td>
+                           <td>Não armazenados</td>
+                           <td>
+                              <p>Os dados recolhidos não são armazenados;</p>
+                              <p>Não aplicável,</p>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+               <p class="paragraph indent-level2">
+                  Se os serviços pós-venda estiverem envolvidos e precisar que o Neusoft Navigation investigue o
+                  problema,
+                  você pode transferir os logs para o servidor de serviço pós-venda, e as informações nos logs devem
+                  incluir as seguintes informações:
+               </p>
+               <div class="tableContainer">
+                  <table border="1px" class="table">
+                     <colgroup class="thead">
+                        <col class="first-line-width" />
+                        <col class="mid-line-width" />
+                        <col class="mid-line-width" />
+                        <col class="last-line-width" />
+                     </colgroup>
+                     <thead>
+                        <tr class="thead">
+                           <th>Informações</th>
+                           <th>Condição de serviço</th>
+                           <th>Local de armazenamento</th>
+                           <th>Período de armazenamento</th>
+                        </tr>
+                     </thead>
+                     <tbody>
+                        <tr>
+                           <td>
+                              <p>ID de IVI virtual Encriptado</p>
+                              <p>Tempo de ativação</p>
+                              <p>Estado de ativação</p>
+                              <p>Data de expiração</p>
+                              <p>Código do país</p>
+                              <p>Versão dos dados do mapa</p>
+                              <p>Informações de localização</p>
+                              <p>Informação sobre a velocidade do veículo</p>
+                              <p>Informações sobre o trânsito</p>
+                              <p>Conteúdos pesquisados</p>
+                              <p>Informações sobre o destino</p>
+                              <p>Informações do endereço residencial definido</p>
+                              <p>Informações sobre o local de trabalho definido</p>
+                              <p>Informações de endereço salvas</p>
+
+                              <p>Informações sobre o modelo do seu veículo (elétrico puro ou híbrido)</p>
+                              <p>Informações de combustível do veículo (baixo nível de combustível)</p>
+                              <p>velocidade do veículo;</p>
+                              <p>informação sobre a energia do veículo;
+                                 definições do sistema (modo de luz, idioma, tempo, sistema de tempo, estado do ecrã,
+                                 modo de condução, unidade,
+                                 permissões);</p>
+                              <p>Resultados da pesquisa de Google;</p>
+                              <p>versão do sistema operacional, versão da plataforma, versão da aplicação, tipo de
+                                 marca, marca, ID do modelo do veículo,
+                                 ID do ecrã, IMEI, ID do fornecedor, carimbo de data/hora;</p>
+                           </td>
+                           <td>Recolha e armazenamento</td>
+                           <td>Nuvem</td>
+                           <td>30 dias</td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+               <p class="paragraph indent-level2">
+                  Nós determinamos o período de retenção dos dados pessoais com base na sua natureza e cenário de uso.
+                  Nós
+                  manteremos as informações sobre registos de atividades por um curto período de tempo e
+                  desidentificaremos
+                  os dados para posterior autorização. Nós podemos reter os seus dados pessoais para outros fins
+                  permitidos
+                  por lei, por exemplo, para defender qualquer reivindicação legal. Nós podemos reter os seus dados
+                  pessoais, dependendo do seu uso de produtos ou serviços.
+               </p>
+               <p class="paragraph indent-level1">6.2 Área de armazenamento</p>
+               <p class="paragraph indent-level2">
+                  6.2.1 Quando estiver usando a aplicação de navegação, as áreas de armazenamento do servidor online são
+                  as
+                  seguintes;
+               </p>
+               <p class="paragraph indent-level3">
+                  6.2.1.1 Se sua localização estiver nos seguintes países, suas informações pessoais serão armazenadas
+                  na
+                  Alemanha.
+               </p>
+               <p class="paragraph indent-level4">
+                  Noruega, Dinamarca, Holanda, Portugal, Bélgica, Suécia, Suíça, Áustria, Itália, Espanha, Finlândia,
+                  Irlanda, Grécia, Alemanha, França, Grã-Bretanha, Bulgária, Croácia, República Checa, Estónia, Hungria,
+                  Letónia, Lituânia, Luxemburgo, Malta, Polónia, Roménia, Eslováquia, Eslovénia, Islândia,
+                  Liechtenstein,
+                  Albânia, Mónaco Vaticano, Turquia, Montenegro, Sérvia, Chipre
+               </p>
+               <p class="paragraph indent-level3">
+                  6.2.1.2 Se sua localização estiver nos seguintes países, suas informações pessoais serão armazenadas
+                  na
+                  Alemanha.
+               </p>
+               <p class="paragraph indent-level4">
+                  Emirados Árabes Unidos, Omã, Bahrein, Catar, Kuwait, Arábia Saudita, Egito, Líbano,
+               </p>
+               <p class="paragraph indent-level4">Egito, Marrocos, Tunísia, Cabo Verde</p>
+               <p class="paragraph indent-level4">
+                  República da África do Sul, Botswana, Reunião, Zimbabué, Zâmbia, Maurícia, Madagáscar, Angola
+               </p>
+               <p class="paragraph indent-level3">
+                  6.2.1.3 Se sua localização estiver nos seguintes países, suas informações pessoais serão armazenadas
+                  nos
+                  Estados Unidos.
+               </p>
+               <p class="paragraph indent-level4">EUA, Canadá</p>
+               <p class="paragraph indent-level3">
+                  6.2.1.4 Se sua localização estiver nos seguintes países, suas informações pessoais serão armazenadas
+                  na
+                  Austrália:
+               </p>
+               <p class="paragraph indent-level4">Austrália, Nova Zelândia</p>
+               <p class="paragraph indent-level3">
+                  6.2.1.5 Se sua localização estiver nos seguintes países, suas informações pessoais serão armazenadas
+                  na
+                  Singapura:
+               </p>
+               <p class="paragraph indent-level4">
+                  Singapura, Tailândia, Indonésia, Malásia, Vietname, Filipinas, Nepal, Paquistão
+               </p>
+               <p class="paragraph indent-level3">
+                  6.2.1.6 Se sua localização estiver nos seguintes países, suas informações pessoais serão armazenadas
+                  no
+                  Brasil:
+               </p>
+               <p class="paragraph indent-level4">Colômbia, Equador, Peru, Bolívia, Brasil, Paraguai, Uruguai, Chile</p>
+               <p class="paragraph indent-level2">
+                  6.2.2 Se precisar que investiguemos o problema relacionado ao nosso servidor de
+               </p>
+               <p class="paragraph indent-level3">
+                  serviço pós-venda, as áreas de armazenamento do servidor de serviço pós-venda são as seguintes.
+               </p>
+               <p class="paragraph indent-level3">
+                  Quando houver um problema que exija a nossa análise e investigação, pode entrar em contato com o
+                  revendedor local. Após obter a sua autorização, o revendedor extrairá os seus logs e enviá-los para o
+                  servidor de serviço pós-venda na Alemanha. Usaremos os logs no servidor de serviço pós-venda para
+                  analisar o problema.
+               </p>
+               <p class="paragraph indent-level3">
+                  Se sua localização estiver nos seguintes países, suas informações pessoais serão armazenadas na
+                  Alemanha:
+               </p>
+               <p class="paragraph indent-level3">
+                  Noruega, Dinamarca, Holanda, Portugal, Bélgica, Suécia, Suíça, Áustria, Itália, Espanha, Finlândia,
+                  Irlanda, Grécia, Alemanha, França, Grã-Bretanha, Bulgária, Croácia, República Checa, Estônia, Hungria,
+                  Letônia, Lituânia, Luxemburgo, Malta, Polônia, Romênia, Eslováquia, Eslovênia, Islândia,
+                  Liechtenstein,
+                  Albânia, Mônaco Vaticano, Turquia, Montenegro, Sérvia, Chipre, Emirados Árabes Unidos, Omã, Bahrein,
+                  Catar, Kuwait, Arábia Saudita, Jordânia, Líbano, Egito, Marrocos, Tunísia, Cabo Verde, República da
+                  África do Sul, Botswana, Reunião, Zimbabué, Zâmbia, Maurícia, Madagáscar, Angola, EUA, Canadá,
+                  Austrália,
+                  Nova Zelândia, Singapura, Tailândia, Indonésia, Malásia, Vietname, Filipinas, Nepal, Paquistão,
+                  Colômbia,
+                  Equador, Peru, Bolívia, Brasil, Paraguai, Uruguai, Chile
+               </p>
+               <p class="paragraph indent-level3">
+                  Se a transmissão transfronteiriça for necessária ao usar o serviço de navegação online, esperamos
+                  informá-lo e obter a sua autorização e consentimento através deste acordo.
+               </p>
+            </div>
+            <div class="content-paragraph">
+               <p class="firstLevelTitle weight-bold">7. Como nós atualizamos esta Política de Privacidade</p>
+               <p class="paragraph indent-level1">Nossa Política de Privacidade está sujeita a alterações.</p>
+               <p class="paragraph indent-level1">
+                  Nós não comprometeremos os seus direitos aqui enunciados sem o seu consentimento expresso. Nós
+                  publicaremos quaisquer alterações a esta Política nesta página.
+               </p>
+               <p class="paragraph indent-level1">
+                  Para principais alterações, também forneceremos avisos mais proeminentes (para determinados serviços,
+                  enviaremos avisos por e-mail, especificando as alterações específicas desta Política de Privacidade).
+               </p>
+               <p class="paragraph indent-level1">
+                  As principais alterações a esta Política incluem, mas não se limitam a:
+               </p>
+               <p class="paragraph indent-level2">
+                  1. Alterações significativas no nosso modo de serviço, tais como a finalidade do processamento de
+                  informações pessoais, o tipo de informações pessoais processadas, e a maneira de usar as informações
+                  pessoais;
+               </p>
+               <p class="paragraph indent-level2">
+                  2. Alterações significativas na nossa estrutura de propriedade e estrutura organizacional, etc., tais
+                  como alterações de proprietários causadas por ajuste de negócios, falência, fusões e aquisições;
+               </p>
+               <p class="paragraph indent-level2">
+                  3. Alterações nos principais objetos com os quais as informações pessoais são partilhadas,
+                  transferidas
+                  ou divulgadas publicamente;
+               </p>
+               <p class="paragraph indent-level2">
+                  4. Alterações significativas no seu direito de participar do processamento de informações pessoais,
+                  bem
+                  como ao modo de exercício desse direito;
+               </p>
+               <p class="paragraph indent-level2">
+                  5. Alterações no departamento responsável pela segurança de informações pessoais, nas suas informações
+                  de
+                  contacto e no canal de reclamação; e
+               </p>
+               <p class="paragraph indent-level2">
+                  6. O relatório de avaliação de impacto sobre a segurança de informações pessoais indica um alto risco.
+               </p>
+               <p class="paragraph indent-level2">
+                  As versões antigas desta Política também serão arquivadas para sua referência.
+               </p>
+            </div>
+            <div class="content-paragraph">
+               <p class="firstLevelTitle weight-bold">8. Como contactar-nos</p>
+               <p class="paragraph indent-level1">
+                  Se você tiver alguma dúvida, comentário ou recomendação sobre esta Política de Privacidade, por favor,
+                  contacte-nos através de um dos seguintes métodos:
+               </p>
+               <p class="paragraph indent-level1">E-mail: OneCoreGo.Care@neusoft.com</p>
+               <p class="paragraph indent-level1">Geralmente, responderemos dentro de 5 dias.</p>
+               <p class="paragraph indent-level1">
+                  Nós verificaremos a sua identidade com "certeza razoável" ou "certeza alta razoável" com base na
+                  sensibilidade dos dados pessoais e no risco de lhe causar danos devido a divulgação ou exclusão não
+                  autorizada (conforme aplicável). Antes de processarmos o seu pedido, podemos pedir-lhe que forneça
+                  dados
+                  pessoais adicionais para verificar a sua identidade.
+               </p>
+            </div>
+         </div>
+      </div>
+      <script src="../js/index.js"></script>
+   </body>
+</html>

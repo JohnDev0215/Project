@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="ring"
+    android:useLevel="false"
+    android:innerRadius="@dimen/grant_sdcard_permission_main_page_tab_innerRadius"
+    android:thickness="@dimen/grant_sdcard_permission_main_page_tab_thickness">
+    <solid android:color="@color/grant_sdcard_permission_tab_indicator_grey"/>
+</shape>

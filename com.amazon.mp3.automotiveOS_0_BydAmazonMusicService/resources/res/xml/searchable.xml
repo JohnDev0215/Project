@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<searchable xmlns:android="http://schemas.android.com/apk/res/android"
+    android:label="@string/dmusic_search_label"
+    android:hint="@string/dmusic_search_hint"
+    android:searchMode="queryRewriteFromText"
+    android:searchSuggestAuthority="com.amazon.mp3.content"
+    android:searchSuggestIntentAction="android.intent.action.VIEW"
+    android:searchSuggestThreshold="1"
+    android:includeInGlobalSearch="true"
+    android:searchSettingsDescription="@string/dmusic_search_description"/>

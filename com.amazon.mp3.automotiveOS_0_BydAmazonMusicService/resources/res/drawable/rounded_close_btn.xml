@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="oval">
+    <solid android:color="@color/darker_gray"/>
+    <corners android:radius="@dimen/dialog_small_circular_icon_enclosement_radius"/>
+    <padding
+        android:left="@dimen/icon_spacing"
+        android:top="@dimen/icon_spacing"
+        android:right="@dimen/icon_spacing"
+        android:bottom="@dimen/icon_spacing"/>
+</shape>

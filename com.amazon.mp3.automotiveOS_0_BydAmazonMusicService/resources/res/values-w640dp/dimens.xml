@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="compact_detail_template_header_image_dimension">256dp</dimen>
+    <dimen name="compact_detail_template_image_with_button_element_bottom_margin">@dimen/podcast_spacer_small</dimen>
+    <dimen name="compact_detail_template_primary_text_with_badge_element_top_margin">0dp</dimen>
+    <dimen name="podcast_detail_template_header_image_dimension">256dp</dimen>
+    <dimen name="podcast_dialog_width">448dp</dimen>
+</resources>

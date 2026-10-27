@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.amazon.music.views.library.views.PlayNotificationIcon
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/EqualizerView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:ellipsize="end"
+        android:gravity="center"
+        android:layout_gravity="center_vertical"
+        android:id="@+id/CurrentPlayingLineText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="2"/>
+    <TextSwitcher
+        android:layout_gravity="center_vertical"
+        android:id="@+id/CurrentPlayingLineTextSwitcher"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inAnimation="@anim/slide_in_up"/>
+</merge>

@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "path": "find",
+      "presentationStyle": "page"
+    },
+    {
+      "path": "find/groupings/:id",
+      "presentationStyle": "page"
+    },
+    {
+      "path": "report",
+      "presentationStyle": "modal"
+    },
+    {
+      "path": "activityFeed",
+      "presentationStyle": "page"
+    },
+    {
+      "path": "my/playlists/:playlistId/add",
+      "presentationStyle": "modal"
+    },
+    {
+      "path": "tracks/:trackId",
+      "presentationStyle": "page"
+    }
+  ]
+}

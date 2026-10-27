@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center"
+    android:layout_gravity="center_horizontal"
+    android:orientation="horizontal"
+    android:id="@+id/BauhausIconButtonSolidLarge"
+    android:background="@drawable/bauhaus_background_button_solid"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/bauhaus_spacer_epic"
+    android:minHeight="@dimen/bauhaus_spacer_epic"
+    android:paddingStart="@dimen/bauhaus_spacer_base"
+    android:paddingEnd="@dimen/bauhaus_spacer_large">
+    <ImageView
+        android:layout_gravity="center_vertical"
+        android:id="@+id/BauhausIconButtonSolidLargeIcon"
+        android:background="@android:color/transparent"
+        android:layout_width="@dimen/bauhaus_spacer_large"
+        android:layout_height="@dimen/bauhaus_spacer_large"
+        android:src="@android:drawable/ic_lock_lock"
+        android:tint="@color/bauhaus_secondary"/>
+    <TextView
+        android:textSize="@dimen/bauhaus_typography_t1_touch"
+        android:textColor="@color/bauhaus_secondary"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:id="@+id/BauhausIconButtonSolidLargeText"
+        android:background="@android:color/transparent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp"
+        android:maxLines="1"
+        android:layout_marginStart="@dimen/bauhaus_spacer_small"/>
+</LinearLayout>

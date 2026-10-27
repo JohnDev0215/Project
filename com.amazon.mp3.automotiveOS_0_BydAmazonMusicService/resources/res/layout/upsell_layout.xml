@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:id="@+id/UpsellContainer"
+    android:visibility="gone"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <TextView
+        android:textSize="@dimen/upsell_text_size"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/upsell_availability_title_margin_top"
+        android:layout_marginBottom="@dimen/upsell_availability_title_margin_bottom"
+        android:text="@string/dmusic_amp_sports_upsell_availability_title"
+        android:textAllCaps="true"/>
+    <FrameLayout
+        android:background="@color/vivace_blue"
+        android:layout_width="@dimen/upsell_background_width"
+        android:layout_height="@dimen/upsell_background_height">
+        <ImageView
+            android:layout_gravity="center"
+            android:id="@+id/UpsellImage"
+            android:layout_width="@dimen/upsell_image_width"
+            android:layout_height="@dimen/upsell_image_height"/>
+    </FrameLayout>
+</LinearLayout>

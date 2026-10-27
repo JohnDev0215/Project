@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:state_enabled="false"
+        android:color="@color/white"
+        android:alpha="0.12"/>
+    <item
+        android:color="@color/alexa_button_positive_background"
+        android:alpha="1"/>
+</selector>

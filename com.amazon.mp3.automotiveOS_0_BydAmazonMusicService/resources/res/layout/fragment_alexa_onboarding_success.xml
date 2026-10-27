@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bauhaus_gradient_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingStart="@dimen/spacer_medium"
+    android:paddingEnd="@dimen/spacer_medium">
+    <ImageButton
+        android:id="@+id/alexa_success_close_button"
+        android:layout_width="@dimen/dialog_close_button_size"
+        android:layout_height="@dimen/dialog_close_button_size"
+        android:layout_marginBottom="@dimen/spacer_16"
+        android:src="@drawable/ic_dialog_close_dark"
+        app:layout_constraintBottom_toTopOf="@+id/alexa_success_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        style="@style/BauhausCloseButton"/>
+    <ImageView
+        android:id="@+id/alexa_success_image"
+        android:layout_width="@dimen/alexa_onboarding_success_image_size"
+        android:layout_height="@dimen/alexa_onboarding_success_image_size"
+        android:layout_marginTop="@dimen/spacer_base"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_alexa_onboarding_success"/>
+    <TextView
+        android:id="@+id/alexa_success_hint_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacer_base"
+        android:text="@string/try_alexa_play_music"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/alexa_success_image"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

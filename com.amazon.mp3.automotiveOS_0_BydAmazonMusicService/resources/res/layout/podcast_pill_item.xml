@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/podcast_pill_item_view"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/podcast_button_medium"
+    android:layout_marginBottom="@dimen/podcast_spacer_medium"
+    android:layout_marginEnd="@dimen/podcast_spacer_small">
+    <com.amazon.podcast.views.EmberTextView
+        android:gravity="center"
+        android:id="@+id/pill_item"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/podcast_button_medium"
+        style="@style/PodcastAppTheme.TextView.ButtonMediumGlass"/>
+</RelativeLayout>

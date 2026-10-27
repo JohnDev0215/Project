@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="dmusic_all_prime_songs_added_to_library">
+        <item quantity="one">%1$dটি গান আপনার মিউজিকে যোগ করা হয়েছে।</item>
+        <item quantity="other">%1$dটি গান আপনার মিউজিকে যোগ করা হয়েছে।</item>
+    </plurals>
+    <plurals name="dmusic_artist_confirm_delete_cloud_msg">
+        <item quantity="one">আপনি কি এই শিল্পী মুছে ফেলার বিষয়ে নিশ্চিত?</item>
+        <item quantity="other">আপনি কি এই শিল্পী এবং সকল %d মুছে ফেলার বিষয়ে নিশ্চিত?</item>
+    </plurals>
+    <plurals name="dmusic_download_str_to_download">
+        <item quantity="one">%1$dটি গান ডাউনলোড করা হবে</item>
+        <item quantity="other">%1$dটি গান ডাউনলোড করা হবে</item>
+    </plurals>
+    <plurals name="dmusic_duration_hours">
+        <item quantity="one">%1$d ঘণ্টা</item>
+        <item quantity="other">%1$d ঘণ্টা</item>
+    </plurals>
+    <plurals name="dmusic_duration_minutes">
+        <item quantity="one">%1$d মিনিট</item>
+        <item quantity="other">%1$d মিনিট</item>
+    </plurals>
+    <plurals name="dmusic_genre_confirm_delete_cloud_msg">
+        <item quantity="one">আপনি কি নিশ্চিত যে আপনি এই ঘরানা মুছতে চান?</item>
+        <item quantity="other">আপনি কি নিশ্চিত যে আপনি এই ঘরানা এবং সবকটি %d মুছতে চান?</item>
+    </plurals>
+    <plurals name="dmusic_library_albums_count">
+        <item quantity="one">%1$dটি অ্যালবাম</item>
+        <item quantity="other">%1$dটি অ্যালবাম</item>
+    </plurals>
+    <plurals name="dmusic_library_songs_count">
+        <item quantity="one">%1$dটি গান</item>
+        <item quantity="other">%1$dটি গান</item>
+    </plurals>
+    <plurals name="dmusic_library_songs_duration_minutes">
+        <item quantity="one">%1$d মিনিট</item>
+        <item quantity="other">%1$d মিনিট</item>
+    </plurals>
+    <plurals name="dmusic_library_udo_playlists_add_to_toast">
+        <item quantity="one">%1$dটি গান &quot;%2$s&quot;-তে যোগ করা হয়েছে</item>
+        <item quantity="other">%1$dটি গান &quot;%2$s&quot;-তে যোগ করা হয়েছে</item>
+    </plurals>
+    <plurals name="dmusic_library_videos_count">
+        <item quantity="one">%1$dটি ভিডিও</item>
+        <item quantity="other">%1$dটি ভিডিও</item>
+    </plurals>
+    <plurals name="dmusic_playlist_album_already_in_playlist">
+        <item quantity="one">অ্যালবামের গান ইতিমধ্যে এই প্লেলিস্টে রয়েছে</item>
+        <item quantity="other">অ্যালবামের গানগুলি ইতিমধ্যে এই প্লেলিস্টে রয়েছে</item>
+    </plurals>
+    <plurals name="dmusic_playlist_artist_already_in_playlist">
+        <item quantity="one">শিল্পীর গান ইতিমধ্যে এই প্লেলিস্টে রয়েছে</item>
+        <item quantity="other">শিল্পীর গানগুলি ইতিমধ্যে এই প্লেলিস্টে রয়েছে</item>
+    </plurals>
+    <plurals name="dmusic_playlist_genre_already_in_playlist">
+        <item quantity="one">ঘরানার গানগুলি ইতিমধ্যেই প্লেলিস্টে রয়েছে</item>
+        <item quantity="other">ঘরানার গান ইতিমধ্যেই প্লেলিস্টে রয়েছে</item>
+    </plurals>
+    <plurals name="dmusic_playlist_playlist_already_in_playlist">
+        <item quantity="one">প্লেলিস্টের গান ইতিমধ্যেই প্লেলিস্টে রয়েছে</item>
+        <item quantity="other">প্লেলিস্টের গানগুলি ইতিমধ্যেই প্লেলিস্টে রয়েছে</item>
+    </plurals>
+    <plurals name="dmusic_playlist_track_already_in_playlist">
+        <item quantity="one">গান ইতিমধ্যে এই প্লেলিস্টে রয়েছে</item>
+        <item quantity="other">গানগুলি ইতিমধ্যে এই প্লেলিস্টে রয়েছে</item>
+    </plurals>
+    <plurals name="dmusic_sleep_timer_minutes">
+        <item quantity="one">%1$s মিনিট</item>
+        <item quantity="other">%1$s মিনিট</item>
+    </plurals>
+    <plurals name="dmusic_track_count">
+        <item quantity="one">%1$d গান</item>
+        <item quantity="other">%1$d গানগুলি</item>
+    </plurals>
+    <plurals name="dmusic_unable_to_add_songs_message">
+        <item quantity="one">একটি গান যোগ করা যায়নি। আবার চেষ্টা করুন।</item>
+        <item quantity="other">%dটি গান যোগ করা যায়নি। আবার চেষ্টা করুন।</item>
+    </plurals>
+    <plurals name="find_library_albums_count">
+        <item quantity="one">%1$d টি অ্যালবাম</item>
+        <item quantity="other">%1$d টি অ্যালবাম</item>
+    </plurals>
+    <plurals name="find_library_songs_count">
+        <item quantity="one">%1$d টি গান</item>
+        <item quantity="other">%1$d টি গান</item>
+    </plurals>
+    <plurals name="playlist_duration_hours">
+        <item quantity="one">%1$d ঘন্টা</item>
+        <item quantity="other">%1$d ঘন্টা</item>
+    </plurals>
+    <plurals name="playlist_duration_minutes">
+        <item quantity="one">%1$d মিনিট</item>
+        <item quantity="other">%1$d মিনিট</item>
+    </plurals>
+    <plurals name="playlist_song_count">
+        <item quantity="one">%1$dটি গান</item>
+        <item quantity="other">%1$dটি গান</item>
+    </plurals>
+</resources>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_gravity="center"
+    android:id="@+id/add_button_holder"
+    android:focusable="false"
+    android:visibility="visible"
+    android:layout_width="@dimen/song_tile_add_button_size"
+    android:layout_height="@dimen/song_tile_add_button_size">
+    <com.amazon.mp3.view.DownloadProgressBadgeView
+        android:layout_gravity="center"
+        android:id="@+id/DownloadProgress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/downloading_content_description"/>
+    <ImageView
+        android:layout_gravity="center"
+        android:id="@+id/AddButton"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/add_to_library_button"
+        android:scaleType="centerInside"
+        android:contentDescription="@string/add_to_library_content_description"/>
+</FrameLayout>

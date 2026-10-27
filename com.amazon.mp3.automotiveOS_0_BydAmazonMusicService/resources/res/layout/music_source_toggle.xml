@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <Button
+        android:textColor="@color/tertiary"
+        android:gravity="start|center_vertical"
+        android:id="@+id/CloudToggleButton"
+        android:background="@drawable/global_toggle_background"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dmusic_library_header_switcher_cirrus"
+        android:drawablePadding="@dimen/standard_padding"
+        android:drawableStart="@drawable/source_toggle_knob"
+        android:paddingStart="@dimen/source_toggle_slider_padding"
+        android:paddingEnd="@dimen/source_toggle_slider_padding"/>
+    <Button
+        android:textColor="@color/tertiary"
+        android:gravity="end|center_vertical"
+        android:id="@+id/DeviceToggleButton"
+        android:background="@drawable/global_toggle_background"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dmusic_library_header_switcher_local"
+        android:drawablePadding="@dimen/standard_padding"
+        android:drawableEnd="@drawable/source_toggle_knob"
+        android:paddingStart="@dimen/source_toggle_slider_padding"
+        android:paddingEnd="@dimen/source_toggle_slider_padding"/>
+</merge>

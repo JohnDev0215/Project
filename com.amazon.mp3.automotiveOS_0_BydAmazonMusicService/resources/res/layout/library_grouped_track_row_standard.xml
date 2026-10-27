@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.amazon.mp3.view.LibraryGroupedTrackRow xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/TrackRowViewGroup"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/library_list_view_item_height_2_lines"/>

@@ -1,0 +1,72 @@
+package com.amazon.music.metrics.mts.event.types.uiinteraction;
+
+import com.amazon.music.metrics.mts.event.types.core.MetricValueType;
+import com.amazon.music.skyfire.ui.skyfire.Contexts;
+
+/* JADX INFO: loaded from: classes4.dex */
+public enum PageEntityType implements MetricValueType {
+    AD_INSTANCE("AD_INSTANCE"),
+    ALBUM("ALBUM"),
+    AMF("AMF"),
+    AMF_PLAYLIST_ENT("AMF_PLAYLIST_ENT"),
+    AMF_STATION("AMF_STATION"),
+    AMF_STATION_SEED("AMF_STATION_SEED"),
+    AMU_PLAYLIST_ENT("AMU_PLAYLIST_ENT"),
+    ARTIST("ARTIST"),
+    AUDIO("AUDIO"),
+    AUDIO_AD("AUDIO_AD"),
+    AUTO_PLAYLIST("AUTO_PLAYLIST"),
+    BID_RESPONSE("BID_RESPONSE"),
+    COMPETITION("COMPETITION"),
+    CONFERENCE("CONFERENCE"),
+    CUSTOMER("CUSTOMER"),
+    DEVICE("DEVICE"),
+    FIND_CATEGORY("FIND_CATEGORY"),
+    FIND_GROUPING("FIND_GROUPING"),
+    GENRE("GENRE"),
+    GOLDEN_PLAYLIST("GOLDEN_PLAYLIST"),
+    GNO_PRIME_PLAYLIST("GNO_PRIME_PLAYLIST"),
+    GNO_UNL_PLAYLIST("GNO_UNL_PLAYLIST"),
+    PLAYBACK_CONTAINER("PLAYBACK_CONTAINER"),
+    PRIME_PLAYLIST_ENT("PRIME_PLAYLIST_ENT"),
+    PROFILE_ID("PROFILE_ID"),
+    INTERLUDE("INTERLUDE"),
+    LIVE_STREAM("LIVE_STREAM"),
+    MATCH("MATCH"),
+    MERCH("MERCH"),
+    NAVIGATION(Contexts.Upsell.navigation),
+    PLAYLIST("PLAYLIST"),
+    PERSONALIZE_PLAYLIST("PERSONALIZE_PLAYLIST"),
+    PRIME_PLAYLIST("PRIME_PLAYLIST"),
+    PRIME_STATION("PRIME_STATION"),
+    PRIME_STATION_SEED("PRIME_STATION_SEED"),
+    PODCAST_BITE("PODCAST_BITE"),
+    PODCAST_CATEGORY("PODCAST_CATEGORY"),
+    PODCAST_EPISODE("PODCAST_EPISODE"),
+    PODCAST_SHOW("PODCAST_SHOW"),
+    PROFILE("PROFILE"),
+    SEARCH_SUGGESTION("SEARCH_SUGGESTION"),
+    SEARCH_QUERY("SEARCH_QUERY"),
+    SHARED_PLAYLIST("SHARED_PLAYLIST"),
+    SHOW("SHOW"),
+    STATION("STATION"),
+    SUBS_PLAN_SCHEDULE("SUBS_PLAN_SCHEDULE"),
+    TRACK("TRACK"),
+    UNLIMITED_PLAYLIST("UNLIMITED_PLAYLIST"),
+    UNLIMITED_STATION("UNLIMITED_STATION"),
+    UNLIMITED_STATION_SEED("UNLIMITED_STATION_SEED"),
+    USER_PLAYLIST("USER_PLAYLIST"),
+    VIDEO("VIDEO"),
+    VISUAL_AD("VISUAL_AD");
+
+    private final String mMetricValue;
+
+    PageEntityType(String str) {
+        this.mMetricValue = str;
+    }
+
+    @Override // com.amazon.music.metrics.mts.event.types.core.MetricValueType
+    public String getMetricValue() {
+        return this.mMetricValue;
+    }
+}

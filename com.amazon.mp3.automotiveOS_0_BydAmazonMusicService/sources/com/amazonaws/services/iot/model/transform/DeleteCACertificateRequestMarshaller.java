@@ -1,0 +1,27 @@
+package com.amazonaws.services.iot.model.transform;
+
+import com.amazonaws.AmazonClientException;
+import com.amazonaws.DefaultRequest;
+import com.amazonaws.Request;
+import com.amazonaws.http.HttpHeader;
+import com.amazonaws.http.HttpMethodName;
+import com.amazonaws.services.iot.model.DeleteCACertificateRequest;
+import com.amazonaws.transform.Marshaller;
+import com.amazonaws.util.StringUtils;
+
+/* JADX INFO: loaded from: classes5.dex */
+public class DeleteCACertificateRequestMarshaller implements Marshaller<Request<DeleteCACertificateRequest>, DeleteCACertificateRequest> {
+    @Override // com.amazonaws.transform.Marshaller
+    public Request<DeleteCACertificateRequest> marshall(DeleteCACertificateRequest deleteCACertificateRequest) {
+        if (deleteCACertificateRequest == null) {
+            throw new AmazonClientException("Invalid argument passed to marshall(DeleteCACertificateRequest)");
+        }
+        DefaultRequest defaultRequest = new DefaultRequest(deleteCACertificateRequest, "AWSIot");
+        defaultRequest.setHttpMethod(HttpMethodName.DELETE);
+        defaultRequest.setResourcePath("/cacertificate/{caCertificateId}".replace("{caCertificateId}", deleteCACertificateRequest.getCertificateId() == null ? "" : StringUtils.fromString(deleteCACertificateRequest.getCertificateId())));
+        if (!defaultRequest.getHeaders().containsKey(HttpHeader.CONTENT_TYPE)) {
+            defaultRequest.addHeader(HttpHeader.CONTENT_TYPE, "application/x-amz-json-1.0");
+        }
+        return defaultRequest;
+    }
+}

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="equalizer_band_and_db_container_layout_gravity">@integer/layout_gravity_top</integer>
+    <integer name="equalizer_band_and_db_container_layout_weight">1</integer>
+    <integer name="equalizer_band_and_knob_layout_orientation">@integer/orientation_horizontal</integer>
+    <integer name="equalizer_knob_container_layout_gravity">@integer/layout_gravity_top</integer>
+    <integer name="equalizer_knob_container_orientation">@integer/orientation_vertical</integer>
+    <integer name="grid_tile_num_columns">3</integer>
+</resources>

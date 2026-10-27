@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:focusable="true"
+    android:clickable="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/gradient"/>
+    <ImageView
+        android:id="@+id/overlay_loading_view_spinner"
+        android:layout_width="@dimen/overlay_small_icon_loading_button"
+        android:layout_height="@dimen/overlay_small_icon_loading_button"
+        android:src="@drawable/dmmviewlibrary_ic_loader"
+        android:layout_centerInParent="true"/>
+</RelativeLayout>

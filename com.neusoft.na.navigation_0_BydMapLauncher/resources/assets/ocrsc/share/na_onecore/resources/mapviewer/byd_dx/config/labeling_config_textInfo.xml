@@ -1,0 +1,101 @@
+<labeling_config>
+	<layer name="textInfo">
+		<layer_settings>
+			<thread_pool>
+				<value ident="depth">3</value>
+			</thread_pool>
+			<language_selector>
+				<!--
+				0: MatchBest; accept all name alternatives, use best (or least-worst) matching one
+				1: MatchExactScript; accept only names with same script code as selected language (no transliterations)
+				2: MatchExactLanguage; accept only names that match the selected language code (not necessarily country code) exactly
+				3: MatchExactScriptAndLanguage; accept only names with same script and same language code as selected language
+				-->
+				<value ident="matching">2</value>
+			</language_selector>
+		</layer_settings>
+		<text_additional_attr>
+			<text_additional_offset>
+				<value ident="additional_offset" language_name="eng" line_distance="25"/>
+				<value ident="additional_offset" language_name="tha" line_distance="22"/>
+				<value ident="additional_offset" language_name="zho" line_distance="25"/>
+			</text_additional_offset>
+		</text_additional_attr>
+		<factorysets>
+			<factoryset type="NdsTextInfoFactory">
+				<factory type="FactoryTextInfo">
+					<textinfo_settings>
+						<value ident="textinfo" textinfo_name="SPEEDING_RT_S" fontSize="5" icon_offset_x="0" icon_offset_y="-1" name_offset_x="21" name_offset_y="14" colorForeground_day="#585C62FF" colorForeground_night="#B0B0B4FF"/>
+						<value ident="textinfo" textinfo_name="SPEEDING_RT_B" fontSize="5" icon_offset_x="0" icon_offset_y="-1" name_offset_x="21" name_offset_y="14" colorForeground_day="#585C62FF" colorForeground_night="#B0B0B4FF"/>
+						<value ident="textinfo" textinfo_name="SPEEDING_RB_S" fontSize="5" icon_offset_x="0" icon_offset_y="0" name_offset_x="21" name_offset_y="20" colorForeground_day="#585C62FF" colorForeground_night="#B0B0B4FF"/>
+						<value ident="textinfo" textinfo_name="SPEEDING_RB_B" fontSize="5" icon_offset_x="0" icon_offset_y="0" name_offset_x="21" name_offset_y="20" colorForeground_day="#585C62FF" colorForeground_night="#B0B0B4FF"/>
+						<value ident="textinfo" textinfo_name="SPEEDING_LT_S" fontSize="5" icon_offset_x="-1" icon_offset_y="-1" name_offset_x="13" name_offset_y="14" colorForeground_day="#585C62FF" colorForeground_night="#B0B0B4FF"/>
+						<value ident="textinfo" textinfo_name="SPEEDING_LT_B" fontSize="5" icon_offset_x="-1" icon_offset_y="-1" name_offset_x="13" name_offset_y="14" colorForeground_day="#585C62FF" colorForeground_night="#B0B0B4FF"/>
+						<value ident="textinfo" textinfo_name="SPEEDING_LB_S" fontSize="5" icon_offset_x="-1" icon_offset_y="0" name_offset_x="13" name_offset_y="20" colorForeground_day="#585C62FF" colorForeground_night="#B0B0B4FF"/>
+						<value ident="textinfo" textinfo_name="SPEEDING_LB_B" fontSize="5" icon_offset_x="-1" icon_offset_y="0" name_offset_x="13" name_offset_y="20" colorForeground_day="#585C62FF" colorForeground_night="#B0B0B4FF"/>
+					</textinfo_settings>
+					<label_settings>
+						<value ident="priority" type="float">1.0</value>
+						<value ident="is_selectable" type="bool">false</value>
+						<value ident="font_size_plain" type="int">5</value>
+						<value ident="font_size_selected" type="int">12</value>
+						<!-- minimal scale from which a line label shall be visible in meter -->
+						<value ident="min_scale" type="size_t">0</value>
+						<!-- maximal scale up to which a line label shall be visible in meter -->
+						<value ident="max_scale" type="size_t">5000000</value>
+						<value ident="icon_scaling" type="float">1</value>
+						<value ident="clearance" type="float">1</value>
+						<value ident="max_count_same" type="int">0</value>
+						<value ident="layer" type="int">2</value>
+                                                <value ident="mandatory" type="bool">false</value>
+					</label_settings>
+				</factory>
+				<factory type="FactoryOverlappingInputIcon">
+					<textinfo_settings>
+						<value ident="textinfo" textinfo_name="SPEEDING_UNSELECTED" fontSize="6" icon_offset_x="0" icon_offset_y="0" name_offset_x="0" name_offset_y="0" colorForeground_day="#FFFFFFFF" colorForeground_night="#FFFFFFFF"/>
+						<value ident="textinfo" textinfo_name="SPEEDING_SELECTED" fontSize="6" icon_offset_x="0" icon_offset_y="0" name_offset_x="0" name_offset_y="0" colorForeground_day="#FFFFFFFF" colorForeground_night="#FFFFFFFF"/>
+					</textinfo_settings>
+					<label_settings>
+						<value ident="priority" type="float">1.0</value>
+						<value ident="is_selectable" type="bool">true</value>
+						<value ident="font_size_plain" type="int">5</value>
+						<value ident="font_size_selected" type="int">12</value>
+						<!-- minimal scale from which a line label shall be visible in meter -->
+						<value ident="min_scale" type="size_t">0</value>
+						<!-- maximal scale up to which a line label shall be visible in meter -->
+						<value ident="max_scale" type="size_t">5000000</value>
+						<value ident="icon_scaling" type="float">1</value>
+						<value ident="clearance" type="float">1</value>
+						<value ident="max_count_same" type="int">0</value>
+						<value ident="layer" type="int">1</value>
+                                                <value ident="mandatory" type="bool">false</value>
+					</label_settings>
+				</factory>
+			</factoryset>
+		</factorysets>
+		<!-- define factories and setting for MainWindow -->
+		<view name="MapWindow">
+			<placement>
+				<!-- maximal scale to build and show stacks for stackable labels -->
+				<value ident="max_stacking_scale" type="int">5000000</value>
+				<value ident="log_tree_building" type="bool">true</value>
+				<value ident="allow_partial_label_presentation" type="bool">true</value>
+				<value ident="sleep_time" type="size_t">1</value>
+			</placement>
+			<perspective>
+				<value ident="label_opacity_3d">1.0</value>
+			</perspective>
+			<label_scale_processor>
+				<text_scaling>LinearLabelScaleProcessor</text_scaling>
+				<icon_scaling>LinearLabelScaleProcessor</icon_scaling>
+			</label_scale_processor>
+			<background_treebuilding>false</background_treebuilding>
+			<!-- select factories to use for this view -->
+			<factory_usage>
+				<factory type="FactoryTextInfo"></factory>
+				<factory type="FactoryOverlappingInputIcon"></factory>
+			</factory_usage>
+		</view>
+	</layer>
+</labeling_config>
+

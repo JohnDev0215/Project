@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<string_id_reason_code_link>
+    <entry
+        allowedAction="submit"
+        key="lyrics_hmd_wrong_lyrics">LYRICS_TRANSCRIPT_TEXT
+    </entry>
+    <entry
+        allowedAction="submit"
+        key="lyrics_hmd_incorrect_time_sync">LYRICS_TRANSCRIPT_SYNC
+    </entry>
+    <entry
+        allowedAction="submit_with_text"
+        key="lyrics_hmd_other">OTHER
+    </entry>
+</string_id_reason_code_link>

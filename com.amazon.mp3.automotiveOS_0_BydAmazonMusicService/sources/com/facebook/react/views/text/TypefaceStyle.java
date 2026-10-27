@@ -1,0 +1,34 @@
+package com.facebook.react.views.text;
+
+import android.graphics.Typeface;
+import android.os.Build;
+import com.google.firebase.perf.util.Constants;
+
+/* JADX INFO: loaded from: classes6.dex */
+class TypefaceStyle {
+    private final boolean mItalic;
+    private final int mWeight;
+
+    public TypefaceStyle(int i) {
+        i = i == -1 ? 0 : i;
+        this.mItalic = (i & 2) != 0;
+        this.mWeight = (i & 1) != 0 ? Constants.FROZEN_FRAME_TIME : 400;
+    }
+
+    public TypefaceStyle(int i, int i2) {
+        i = i == -1 ? 0 : i;
+        this.mItalic = (i & 2) != 0;
+        this.mWeight = i2 == -1 ? (i & 1) != 0 ? Constants.FROZEN_FRAME_TIME : 400 : i2;
+    }
+
+    public int getNearestStyle() {
+        return this.mWeight < 700 ? this.mItalic ? 2 : 0 : this.mItalic ? 3 : 1;
+    }
+
+    public Typeface apply(Typeface typeface) {
+        if (Build.VERSION.SDK_INT < 28) {
+            return Typeface.create(typeface, getNearestStyle());
+        }
+        return Typeface.create(typeface, this.mWeight, this.mItalic);
+    }
+}

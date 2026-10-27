@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge>
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/barker_container"
+        android:paddingTop="@dimen/spacer_12"
+        android:paddingBottom="@dimen/spacer_12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.amazon.ui.foundations.views.BaseImage
+            android:id="@+id/barker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/horizontal_tile_container"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/spacer_small"
+            app:layout_constraintBottom_toBottomOf="@+id/barker"
+            app:layout_constraintEnd_toEndOf="@+id/barker"
+            app:layout_constraintStart_toStartOf="@+id/barker"
+            app:layout_constraintTop_toTopOf="@+id/barker"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</merge>

@@ -1,0 +1,285 @@
+<labeling_config>
+	<layer name="label">
+		<layer_settings>
+			<thread_pool>
+				<value ident="depth">3</value>
+			</thread_pool>
+			<language_selector>
+				<!--
+				0: MatchBest; accept all name alternatives, use best (or least-worst) matching one
+				1: MatchExactScript; accept only names with same script code as selected language (no transliterations)
+				2: MatchExactLanguage; accept only names that match the selected language code (not necessarily country code) exactly
+				3: MatchExactScriptAndLanguage; accept only names with same script and same language code as selected language
+				-->
+				<value ident="matching">0</value>
+			</language_selector>
+			 <material_size>
+					 <value ident="material" material_name="TrafficIconMaterial"		  material_size_x="512" material_size_y="586"/>
+					 <value ident="material" material_name="PoiIconMaterial"				  material_size_x="0" material_size_y="0"/>
+					 <value ident="material" material_name="RoadIconMaterial"			  material_size_x="512"	 material_size_y="512"/>
+					 <value ident="material" material_name="BmdSimplePointIconMaterial" material_size_x="1024"	 material_size_y="512"/>
+					 <value ident="material" material_name="OnlineChargingIconMaterial" material_size_x="0"	 material_size_y="0"/>
+				</material_size>
+		</layer_settings>
+		<factorysets>
+			<!-- register line factory set -->
+			<factoryset type="NdsBmdLineFactory">
+				<factoryset_settings>
+					<line_name_selector type="ProtonLineNameSelector"/>
+					<value ident="max_labels_per_line" type="size_t">10</value>
+					<!-- max_schedule_time_ms is max schedule time between sleep (ms)-->
+					<value ident="max_schedule_time_ms" type="size_t">20</value>
+					<!-- overtime_sleep_time_ms is sleep time in once sleep (ms)-->
+					<value ident="overtime_sleep_time_ms" type="size_t">0</value>
+				</factoryset_settings>
+				<factory type="FactoryBMDIconStreetLine">
+					<!-- configure layout to use for street names -->
+					<layout_settings>
+						<layout type="CenterTopTextLayouter" selector="LayoutSelector3D">
+						   <settings>
+							<value ident="angle_max" type="float">4.71</value>
+							<value ident="angle_min" type="float">1.57</value>
+						   	<value ident="perpendicular_road" type="bool">true</value>
+						   	<value ident="center_on_road" type="bool">true</value>
+						   </settings>
+					</layout>
+						<layout type="LineGradeAllignedTextLayouter" selector="LayoutSelector2D">
+						   <settings>
+							<value ident="angle_max" type="float">4.71</value>
+							<value ident="angle_min" type="float">1.57</value>
+						   	<value ident="perpendicular_road" type="bool">true</value>
+						   	<value ident="center_on_road" type="bool">true</value>
+						   </settings>
+					</layout>
+					</layout_settings>
+					<label_settings>
+						<!-- base priority of label created by this factory -->
+						<value ident="priority" type="float">1.03</value>
+						<!-- clearance to next label need to comply to place a label -->
+						<value ident="clearance" type="float">20</value>
+						<value ident="icon_scaling" type="float">0.5</value>
+						<!-- show max 4 labels with same text -->
+						<value ident="max_count_same" type="int">2</value>
+						<!-- minimal distance to labels with same text and other street name labels -->
+						<value ident="min_distance" type="int">100</value>
+						<value ident="min_distance_others" type="int">50</value>
+						<value ident="layer" type="int">1</value>
+					</label_settings>
+				</factory>
+				<factory type="FactoryBMDRoadNumber">
+					<!-- select fixedsize_icon_matcher or textsize_icon_matcher icon matcher-->
+					<icon_matcher type="textsize_icon_matcher"></icon_matcher>
+					<label_settings>
+						<!-- base priority of label created by this factory -->
+						<value ident="priority" type="float">1.3</value>
+						<!-- clearance to next label need to comply to place a label -->
+						<value ident="clearance" type="float">2</value>
+						<!-- show max 4 labels with same text -->
+						<value ident="max_count_same" type="int">2</value>
+						<!-- minimal distance to labels with same text and other street name labels -->
+						<value ident="min_distance" type="int">200</value>
+						<value ident="min_distance_others" type="int">100</value>
+						<!-- grow or shrink the presented icon by configured scale factor -->
+								<value ident="icon_scaling" type="float">0.20</value>
+						<value ident="font_size_plain" type="int">4</value>
+						<value ident="font_size_selected" type="int">5</value>
+						<value ident="layer" type="int">3</value>
+					</label_settings>
+				</factory>
+			</factoryset>
+			<!-- register route line factory set -->
+			<factoryset type="NdsRouteLineFactory">
+				<factoryset_settings>
+					<line_name_selector type="ProtonLineNameSelector"/>
+					<value ident="max_labels_per_line" type="size_t">20</value>
+					<!-- max_schedule_time_ms is max schedule time between sleep (ms)-->
+					<value ident="max_schedule_time_ms" type="size_t">1</value>
+					<!-- overtime_sleep_time_ms is sleep time in once sleep (ms)-->
+					<value ident="overtime_sleep_time_ms" type="size_t">1</value>
+				</factoryset_settings>
+				<factory type="FactoryRouteIconStreetLine">
+					<!-- configure layout to use for street names -->
+					<layout_settings>
+						<layout type="LineGradeAllignedTextLayouter" selector="LayoutSelector3D">
+						   <settings>
+							<value ident="angle_max" type="float">4.71</value>
+							<value ident="angle_min" type="float">1.57</value>
+						   	<value ident="perpendicular_road" type="bool">true</value>
+						   	<value ident="center_on_road" type="bool">true</value>
+						   </settings>
+						</layout>
+						<layout type="LineGradeAllignedTextLayouter" selector="LayoutSelector2D">
+						   <settings>
+							<value ident="angle_max" type="float">4.71</value>
+							<value ident="angle_min" type="float">1.57</value>
+						   	<value ident="perpendicular_road" type="bool">true</value>
+						   	<value ident="center_on_road" type="bool">true</value>
+						   </settings>
+						</layout>
+					</layout_settings>
+					<routename_settings>
+						<value ident="routename" colorForeground_day="#000000FF" colorForeground_night="#E8E9EBFF" colorBackground_day="#FFFFFFFF" colorBackground_night="#000000CD"/>
+					</routename_settings>
+					<label_settings>
+						<!-- base priority of label created by this factory -->
+						<value ident="priority" type="float">1.03</value>
+						<!-- clearance to next label need to comply to place a label -->
+						<value ident="clearance" type="float">1</value>
+						<value ident="icon_scaling" type="float">0.5</value>
+						<!-- show max 4 labels with same text -->
+						<value ident="max_count_same" type="int">0</value>
+						<!-- minimal distance to labels with same text and other street name labels -->
+						<value ident="min_distance" type="int">1</value>
+						<value ident="min_distance_others" type="int">1</value>
+						<!-- font size to draw text in regular and in selected state -->
+						<value ident="font_size_plain" type="int">7</value>
+						<value ident="font_size_selected" type="int">7</value>
+						<!-- minimal scale from which a line label shall be visible in meter -->
+						<value ident="min_scale" type="size_t">0</value>
+						<!-- maximal scale up to which a line label shall be visible in meter -->
+						<value ident="max_scale" type="size_t">10000</value>
+						<value ident="layer" type="int">0</value>
+					</label_settings>
+				</factory>
+			</factoryset>
+			<!-- register line factory set -->
+			<factoryset type="NdsBmdPointFactory">
+				<factoryset_settings>
+					<value ident="placing_alt_scale" type="float">0.0</value>
+				</factoryset_settings>
+				<factory type="FactoryBMDCityDistrictCenter">
+					<label_settings>
+						<!-- base priority of label created by this factory -->
+						<value ident="priority" type="float">1.15</value>
+						<!-- clearance to next label need to comply to place a label -->
+						<value ident="clearance" type="float">20</value>
+						<value ident="icon_scaling" type="float">0.5</value>
+						<!-- show those names in upper case -->
+						<value ident="show_uppercase" type="bool">false</value>
+						<value ident="layer">5</value>
+					</label_settings>
+				</factory>
+				<factory type="FactoryBMDSettlement">
+					<label_settings>
+						<!-- base priority of label created by this factory -->
+						<value ident="priority" type="float">1.5</value>
+						<!-- clearance to next label need to comply to place a label -->
+						<value ident="clearance" type="float">2</value>
+						<value ident="icon_scaling" type="float">0.2</value>
+						<!-- show those names in upper case -->
+						<value ident="show_capital_uppercase" type="bool">true</value>
+						<!-- maximal scale up to which a BMDSettlement label shall be visible in meter -->
+						<value ident="max_scale" type="size_t">199999</value>
+					</label_settings>
+				</factory>
+				<factory type="FactoryBMDOrder0">
+					<label_settings>
+						<!-- base priority of label created by this factory -->
+						<value ident="priority" type="float">1.7</value>
+						<!-- clearance to next label need to comply to place a label -->
+						<value ident="clearance" type="float">2</value>
+					</label_settings>
+				</factory>
+				<factory type="FactoryBMDOrder1">
+					<label_settings>
+						<!-- base priority of label created by this factory -->
+						<value ident="priority" type="float">1.7</value>
+						<!-- clearance to next label need to comply to place a label -->
+						<value ident="clearance" type="float">2</value>
+						<value ident="layer">2</value>
+					</label_settings>
+				</factory>
+				<factory type="FactoryBMDSimplePoint">
+					<label_settings>
+						<!-- base priority of label created by this factory -->
+						<value ident="priority" type="float">4.5</value>
+						<!-- clearance to next label need to comply to place a label -->
+						<value ident="clearance" type="float">30</value>
+						<value ident="icon_scaling" type="float">1</value>
+						<value ident="is_selectable" type="bool">true</value>
+						<value ident="is_usePriorityInStyle" type="bool">false</value>
+						<!-- move labels to higher sublayer to calculate overlapping -->
+						<value ident="layer">2</value>
+					</label_settings>
+				</factory>
+			</factoryset>
+			<factoryset type="NdsBmdAreaFactory">
+				<factoryset_settings>
+					<value ident="max_labels_per_area" type="size_t">10</value>
+				</factoryset_settings>
+				<!-- area label, just for testing  -->
+				<factory type="FactoryBMDArea">
+					<factory_settings>
+						<!-- means only the following listed area names are visible with specified priority
+								e.g.: "148@1.2" or "148:1.2" or "148/1.2" means area feature class 148 shall be visible and gets a priority factor of 1.2 
+								The priortiy is optional and will be set to 1.0 if not specified. -->
+						<value ident="visible_features" type="stringlist">74/1.2, 82/1.4, 149/1.1, 151/0.9, 91/1.2, 177/1.6, 179/1.4, 172/1.4, 85/1.6, 83/1.4, 155/1.4, 154/1.4, 146/1.8</value>
+					</factory_settings>
+					<label_settings>
+						<value ident="is_selectable" type="bool">true</value>
+						<value ident="font_size_plain" type="int">8</value>
+						<value ident="font_size_selected" type="int">11</value>
+						<!-- minimal distance to labels with same text and other street name labels -->
+						<value ident="min_distance" type="int">10</value>
+						<value ident="min_distance_others" type="int">1</value>
+						<value ident="clearance" type="float">2</value>
+						<value ident="layer" type="int">1</value>
+					</label_settings>
+				</factory>
+			</factoryset>
+		</factorysets>
+		<!-- define factories and setting for MainWindow -->
+		<view name="MapWindow">
+			<placement>
+				<!-- maximal scale to build and show stacks for stackable labels -->
+				<value ident="max_stacking_scale" type="int">5000000</value>
+				<value ident="log_tree_building" type="bool">true</value>
+				<value ident="sleep_time" type="size_t">0</value>
+			</placement>
+			<perspective>
+				<value ident="label_opacity_3d">1.0</value>
+			</perspective>
+			<label_scale_processor>
+				<text_scaling>LinearLabelScaleProcessor</text_scaling>
+				<icon_scaling>LinearLabelScaleProcessor</icon_scaling>
+			</label_scale_processor>
+			<background_treebuilding>false</background_treebuilding>
+			<!-- select factories to use for this view -->
+			<factory_usage>
+				<factory type="FactoryBMDIconStreetLine"></factory>
+				<factory type="FactoryRouteIconStreetLine"></factory>
+				<factory type="FactoryBMDSettlement"></factory>
+				<factory type="FactoryBMDCityDistrictCenter"></factory>
+				<factory type="FactoryBMDRoadNumber"></factory>
+				<factory type="FactoryBMDArea"></factory>
+				<factory type="FactoryBMDOrder0"></factory>
+				<factory type="FactoryBMDOrder1"></factory>
+				<factory type="FactoryBMDSimplePoint"></factory>
+			</factory_usage>
+		</view>
+		<view name="CityMapWindow">
+			<placement>
+				<!-- maximal scale to build and show stacks for stackable labels -->
+				<value ident="max_stacking_scale" type="int">5000000</value>
+				<value ident="log_tree_building" type="bool">true</value>
+				<value ident="sleep_time" type="size_t">0</value>
+			</placement>
+			<perspective>
+				<value ident="label_opacity_3d">1.0</value>
+			</perspective>
+			<label_scale_processor>
+				<text_scaling>LinearLabelScaleProcessor</text_scaling>
+				<icon_scaling>LinearLabelScaleProcessor</icon_scaling>
+			</label_scale_processor>
+			<background_treebuilding>false</background_treebuilding>
+			<!-- select factories to use for this view -->
+			<factory_usage>
+				<factory type="FactoryBMDSettlement"></factory>
+				<factory type="FactoryBMDCityDistrictCenter"></factory>
+				<factory type="FactoryBMDArea"></factory>
+				<factory type="FactoryBMDOrder0"></factory>
+			</factory_usage>
+		</view>
+	</layer>
+</labeling_config>
+

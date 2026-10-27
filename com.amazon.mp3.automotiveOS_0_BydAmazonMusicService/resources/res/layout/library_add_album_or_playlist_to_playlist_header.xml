@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/headerbar_library_height"
+    android:paddingStart="@dimen/small_padding"
+    android:paddingEnd="@dimen/small_padding">
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/TopRow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toStartOf="@+id/DoneButton"
+        android:layout_alignParentStart="true">
+        <TextView
+            android:ellipsize="end"
+            android:id="@+id/PlaylistName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            style="@style/EditPlaylistHeaderText"/>
+        <TextView
+            android:id="@+id/TrackCount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/EditPlaylistBodyText"/>
+    </LinearLayout>
+    <Button
+        android:id="@+id/DoneButton"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/headerbar_library_height"
+        android:text="@string/dmusic_button_done"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/small_padding"
+        android:layout_alignParentEnd="true"
+        style="@style/Widget.AmazonMP3.Button.Done"/>
+</RelativeLayout>

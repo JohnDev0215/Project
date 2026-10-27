@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:rabbit="http://www.springframework.org/schema/rabbit"
+       xsi:schemaLocation="http://www.springframework.org/schema/rabbit
+           http://www.springframework.org/schema/rabbit/spring-rabbit-1.5.xsd
+           http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans.xsd">
+        
+
+    <!--=====================RabbiMQ config=============================================== -->
+
+    <rabbit:connection-factory id="connectionFactory" />
+
+    <rabbit:template id="dltTemplate" connection-factory="connectionFactory"
+                     exchange="DLTExchangeOut" routing-key="dlt"/>
+
+    <rabbit:admin connection-factory="connectionFactory" />
+
+    <rabbit:queue name="DLTQueueIn" auto-delete="true" durable="false"/>
+    <rabbit:topic-exchange name="DLTExchangeOut" />
+
+    <rabbit:topic-exchange name="DLTExchangeIn">
+        <rabbit:bindings>
+            <rabbit:binding queue="DLTQueueIn" pattern="dlt.*"/>
+        </rabbit:bindings>
+    </rabbit:topic-exchange>
+
+
+    <rabbit:listener-container connection-factory="connectionFactory">
+        <rabbit:listener ref="dltClient" method="onMessage" queue-names="DLTQueueIn" />
+    </rabbit:listener-container>
+
+
+    <bean id="dltClient" class="com.neusoft.de.nts.OneCoreTest.communication.transports.AmqpClient.DltAmqpClient">
+        <constructor-arg ref="dltTemplate"/>
+    </bean>
+
+    <bean id="dltSimuLogger" class="com.neusoft.de.nts.OneCoreTest.communication.transports.AmqpClient.DltAmqpClient">
+        <constructor-arg ref="dltSimuLoggerTemplate"/>
+    </bean>
+
+    <rabbit:template id="dltSimuLoggerTemplate" connection-factory="connectionFactory"
+                     exchange="DLTExchangeIn" routing-key="dlt.test"/>
+
+
+</beans>

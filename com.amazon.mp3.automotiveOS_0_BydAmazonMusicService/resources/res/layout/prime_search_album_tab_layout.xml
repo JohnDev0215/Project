@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true">
+    <GridView
+        android:scrollbarStyle="outsideOverlay"
+        android:id="@+id/list_view"
+        android:paddingLeft="@dimen/album_tab_outside_padding"
+        android:paddingTop="@dimen/album_tab_outside_padding"
+        android:paddingRight="@dimen/album_tab_outside_padding"
+        android:clipToPadding="false"
+        android:descendantFocusability="beforeDescendants"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:listSelector="@drawable/selector_item_background_color"
+        android:horizontalSpacing="@dimen/album_tab_inside_padding"
+        android:verticalSpacing="@dimen/album_tab_inside_padding"
+        android:stretchMode="columnWidth"
+        android:numColumns="@integer/grid_tile_num_columns"/>
+    <include
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/libary_loading_footer_height"
+        layout="@layout/library_listview_loading_footer"/>
+</FrameLayout>

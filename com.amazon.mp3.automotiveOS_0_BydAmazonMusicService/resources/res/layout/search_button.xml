@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.amazon.ui.foundations.views.BaseButton xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/Search"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:maxWidth="@dimen/spacer_48"
+    android:maxHeight="@dimen/spacer_48"
+    android:contentDescription="@string/search"/>

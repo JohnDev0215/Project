@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.amazon.music.views.library.views.TransparentGradientImageView
+        android:id="@+id/collection_artwork"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"/>
+    <include
+        android:id="@+id/metadata_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/collection_artwork"
+        android:layout_centerHorizontal="true"
+        layout="@layout/dmmviewlibrary_page_header_metadata_container"/>
+</RelativeLayout>

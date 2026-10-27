@@ -1,0 +1,48 @@
+<labeling_config>
+	<!-- ti-icon layer -->
+	<layer name="trafficicon">
+		<layer_settings>
+			<thread_pool>
+				<value ident="depth">1</value>
+			</thread_pool>
+			<value ident="max_tiles" type="int">5</value>
+			<value ident="prefetch_views" type="int">5</value>
+		</layer_settings>
+		<factorysets>
+			<!-- traffic icon labels with background -->
+			<factoryset type="NdsTrafficFactory">
+				<!-- traffic icon labels with background -->
+				<factory type="FactoryTiLabel">
+					<label_settings>
+					    <value ident="priority" type="float">1.0</value>
+						<!-- grow or shrink the presented icon by configured scale factor -->
+						<value ident="icon_scaling" type="float">0.2</value>
+						<!-- base priority of label created by this factory -->
+						<value ident="is_stackable" type="bool">true</value>
+						<value ident="max_presentation_scale" type="int">250000</value>
+						<value ident="pick_offset_x" type="float">0</value>
+						<value ident="pick_offset_y" type="float">-39</value>
+						<value ident="render_offset_x" type="float">0</value>
+						<value ident="render_offset_y" type="float">8</value>
+					</label_settings>
+				</factory>
+			</factoryset>
+		</factorysets>
+		<!-- configure main view -->
+		<view name="MapWindow">
+			<placement>
+				<!-- maximal scale to build and show stacks for stackable labels -->
+				<value ident="max_stacking_scale" type="int">5000</value>
+			</placement>
+			<label_scale_processor>
+				<text_scaling>LinearLabelScaleProcessor</text_scaling>
+				<icon_scaling>LinearLabelScaleProcessor</icon_scaling>
+			</label_scale_processor>
+			<!-- select factories to use for this view -->
+			<factory_usage>
+				<factory type="FactoryTiLabel"></factory>
+			</factory_usage>
+		</view>
+	</layer>
+</labeling_config>
+

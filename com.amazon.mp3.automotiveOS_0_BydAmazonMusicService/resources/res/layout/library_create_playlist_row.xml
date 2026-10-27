@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center_horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:background="@color/create_new_playlist_color"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/library_create_playlist_row_height"
+        style="@style/ButtonBarOneButton">
+        <ImageView
+            android:id="@+id/AddIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/add_to_library_button"
+            android:paddingEnd="@dimen/tiny_padding"/>
+        <TextView
+            android:id="@+id/PlaylistName"
+            android:text="@string/dmusic_playlist_create_playlist"
+            style="@style/ButtonBarOneButtonText"/>
+    </LinearLayout>
+</RelativeLayout>

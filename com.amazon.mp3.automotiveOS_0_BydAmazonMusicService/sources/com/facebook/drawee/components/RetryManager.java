@@ -1,0 +1,38 @@
+package com.facebook.drawee.components;
+
+/* JADX INFO: loaded from: classes5.dex */
+public class RetryManager {
+    private int mMaxTapToRetryAttempts;
+    private int mTapToRetryAttempts;
+    private boolean mTapToRetryEnabled;
+
+    public RetryManager() {
+        init();
+    }
+
+    public void init() {
+        this.mTapToRetryEnabled = false;
+        this.mMaxTapToRetryAttempts = 4;
+        reset();
+    }
+
+    public void reset() {
+        this.mTapToRetryAttempts = 0;
+    }
+
+    public void setTapToRetryEnabled(boolean tapToRetryEnabled) {
+        this.mTapToRetryEnabled = tapToRetryEnabled;
+    }
+
+    public void setMaxTapToRetryAttemps(int maxTapToRetryAttemps) {
+        this.mMaxTapToRetryAttempts = maxTapToRetryAttemps;
+    }
+
+    public boolean shouldRetryOnTap() {
+        return this.mTapToRetryEnabled && this.mTapToRetryAttempts < this.mMaxTapToRetryAttempts;
+    }
+
+    public void notifyTapToRetry() {
+        this.mTapToRetryAttempts++;
+    }
+}

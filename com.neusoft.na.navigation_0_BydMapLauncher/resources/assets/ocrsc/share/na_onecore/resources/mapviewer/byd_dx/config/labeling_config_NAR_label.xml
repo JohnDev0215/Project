@@ -1,0 +1,203 @@
+<labeling_config>
+	<layer name="label">
+		<layer_settings>
+			<thread_pool>
+				<value ident="depth">3</value>
+			</thread_pool>
+			<language_selector>
+				<!--
+				0: MatchBest; accept all name alternatives, use best (or least-worst) matching one
+				1: MatchExactScript; accept only names with same script code as selected language (no transliterations)
+				2: MatchExactLanguage; accept only names that match the selected language code (not necessarily country code) exactly
+				3: MatchExactScriptAndLanguage; accept only names with same script and same language code as selected language
+				-->
+				<value ident="matching">0</value>
+			</language_selector>
+		</layer_settings>
+		<factorysets>
+      
+			<!-- register poi factory set -->
+			<factoryset type="NdsPoiFactory">
+				<!-- poi label except Landmark criteria matchings -->
+				<factory type="FactoryBgPoiLabel">
+					<label_settings>
+						<!-- base priority of label created by this factory -->
+						<value ident="priority" type="float">1.1</value>
+						<!-- clearance to next label need to comply to place a label -->
+						<value ident="clearance" type="float">30</value>
+						<!-- grow or shrink the presented icon by configured scale factor -->
+						<value ident="icon_scaling" type="float">1.5</value>
+						<!-- show brand icon if available -->
+						<value ident="brand_icon" type="bool">true</value>
+						<!-- declare animations -->
+						<animations>
+								<animation usage="on_select" type="AnimationScale">
+									<value ident="duration" type="timespan">800</value>
+									<value ident="start" type="float">1.0</value>
+									<value ident="end" type="float">1.3</value>
+								</animation>
+								<animation usage="on_deselect" type="AnimationScale">
+									<value ident="duration" type="timespan">500</value>
+									<value ident="start" type="float">1.3</value>
+									<value ident="end" type="float">1.0</value>
+								</animation>
+								<animation usage="on_show" type="Animation">
+									<value ident="start" type="float"></value>
+									<value ident="end" type="float"></value>
+								</animation>
+								<animation usage="on_hide" type="">
+									<value ident="start" type="float"></value>
+									<value ident="end" type="float"></value>
+								</animation>
+						</animations>
+					</label_settings>
+				</factory>
+				<!-- show landmarks -->
+				<factory type="FactoryBgLandmarkLabel">
+					<label_settings>
+						<!-- base priority of label created by this factory -->
+						<value ident="priority" type="float">1.15</value>
+						<!-- clearance to next label need to comply to place a label -->
+						<value ident="clearance" type="float">25</value>
+						<!-- icon scaling -->
+						<value ident="icon_scaling" type="float">1.0</value>
+						<!-- landmark labels may show the real landmark icon and the POI category icon.
+							This switch specifies the scale level at which the visible icon is switched from landmark to plain POI category.
+							So if the scale is lower than the configured value the plain POI icon is presented -->
+						<value ident="cat_icon_switch_scale" type="int">1000</value>
+						<animations>
+						</animations>
+					</label_settings>
+				</factory>
+			</factoryset>
+			<!-- register line factory set -->
+			<factoryset type="NdsBmdLineFactory">
+				<factoryset_settings>
+					<value ident="max_labels_per_line" type="size_t">40</value>
+				</factoryset_settings>
+				<factory type="FactoryBMDIconStreetLine">
+					<!-- configure layout to use for street names -->					
+					<layout_settings>
+						<layout type="CenterTopTextLayouter" selector="LayoutSelector3D"/>
+						<layout type="CenterTopTextLayouter" selector="LayoutSelector2D"/>
+					</layout_settings>
+					<label_settings>
+						<!-- base priority of label created by this factory -->
+						<value ident="priority" type="float">1.03</value>
+						<!-- clearance to next label need to comply to place a label -->
+						<value ident="clearance" type="float">10</value>
+						<value ident="max_count_same" type="int">2</value>
+						<!-- minimal distance to labels with same text and other street name labels -->
+						<value ident="min_distance" type="int">200</value>
+						<value ident="min_distance_others" type="int">100</value>
+					</label_settings>
+				</factory>
+				<factory type="FactoryBMDRoadNumber">
+					<label_settings>
+						<!-- base priority of label created by this factory -->
+						<value ident="priority" type="float">1.3</value>
+						<!-- clearance to next label need to comply to place a label -->
+						<value ident="clearance" type="float">20</value>
+						<!-- grow or shrink the presented icon by configured scale factor -->
+                        <value ident="icon_scaling" type="float">2.5</value>
+						<value ident="font_size_plain" type="int">12</value>
+						<value ident="font_size_selected" type="int">10</value>
+						<value ident="min_distance" type="int">200</value>
+						<value ident="min_distance_others" type="int">100</value>
+					</label_settings>
+				</factory>
+				<factory type="FactoryBMDWaterLine">
+					<label_settings>
+						<!-- base priority of label created by this factory -->
+						<value ident="priority" type="float">0.5</value>
+						<!-- clearance to next label need to comply to place a label -->
+						<value ident="clearance" type="float">25</value>
+						<value ident="color_fg" type="color">#1050A0FF</value>
+						<value ident="color_bg" type="color">#E0F0FFFF</value>
+					</label_settings>
+				</factory>
+			</factoryset>
+			<!-- register line factory set -->
+			<factoryset type="NdsBmdPointFactory">
+				<factory type="FactoryBMDCityDistrictCenter">
+					<label_settings>
+						<!-- base priority of label created by this factory -->
+						<value ident="priority" type="float">1.15</value>
+						<!-- clearance to next label need to comply to place a label -->
+						<value ident="clearance" type="float">20</value>
+					</label_settings>
+				</factory>
+				<factory type="FactoryBMDSettlement">
+					<label_settings>
+						<!-- base priority of label created by this factory -->
+						<value ident="priority" type="float">1.5</value>
+						<!-- clearance to next label need to comply to place a label -->
+						<value ident="clearance" type="float">20</value>
+					</label_settings>
+				</factory>
+				<factory type="FactoryBMDMandatoryIsland">
+					<label_settings>
+						<!-- base priority of label created by this factory -->
+						<value ident="priority" type="float">2.0</value>
+						<!-- clearance to next label need to comply to place a label -->
+						<value ident="clearance" type="float">25</value>
+                  <value ident="icon_scaling" type="float">0.5</value>
+					</label_settings>
+				</factory>
+				<factory type="FactoryBMDMountainPeak">
+					<label_settings>
+						<!-- base priority of label created by this factory -->
+						<value ident="priority" type="float">.7</value>
+						<!-- clearance to next label need to comply to place a label -->
+						<value ident="clearance" type="float">25</value>
+                  <value ident="icon_scaling" type="float">0.5</value>
+					</label_settings>
+				</factory>
+				<factory type="FactoryBMDOrder0">
+					<label_settings>
+						<!-- base priority of label created by this factory -->
+						<value ident="priority" type="float">1.7</value>
+						<!-- clearance to next label need to comply to place a label -->
+						<value ident="clearance" type="float">20</value>
+					</label_settings>
+				</factory>
+				<factory type="FactoryBMDOrder1">
+					<label_settings>
+						<!-- base priority of label created by this factory -->
+						<value ident="priority" type="float">1.6</value>
+						<!-- clearance to next label need to comply to place a label -->
+						<value ident="clearance" type="float">20</value>
+					</label_settings>
+				</factory>
+			</factoryset>
+		</factorysets>
+		<!-- define factories and setting for MainWindow -->
+		<view name="MapWindow">
+			<placement>
+				<!-- maximal scale to build and show stacks for stackable labels -->
+				<value ident="max_stacking_scale" type="int">5000000</value>
+            <value ident="log_tree_building" type="bool">true</value>
+			</placement>
+			<label_scale_processor>
+				<text_scaling>LinearLabelScaleProcessor</text_scaling>
+				<icon_scaling>LinearLabelScaleProcessor</icon_scaling>
+			</label_scale_processor>
+			<background_treebuilding>true</background_treebuilding>
+			<!-- select factories to use for this view -->
+			<factory_usage>
+                <factory type="FactoryBMDIconStreetLine"></factory>
+				<factory type="FactoryBMDMountainPeak"></factory>
+				<factory type="FactoryBgPoiLabel"></factory>
+				<factory type="FactoryBgLandmarkLabel"></factory>
+				<factory type="FactoryBMDSettlement"></factory>
+				<factory type="FactoryBMDCityDistrictCenter"></factory>
+				<factory type="FactoryBMDHamlet"></factory>
+				<factory type="FactoryBMDRoadNumber"></factory>
+				<factory type="FactoryBMDWaterLine"></factory>
+				<factory type="FactoryBMDMandatoryIsland"></factory>
+				<factory type="FactoryBMDOrder0"></factory>
+				<factory type="FactoryBMDOrder1"></factory>
+			</factory_usage>
+		</view>
+	</layer>
+</labeling_config>

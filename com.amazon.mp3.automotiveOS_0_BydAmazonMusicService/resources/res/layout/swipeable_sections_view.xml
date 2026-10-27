@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.amazon.music.explore.views.swipeablePages.pages.SwipeablePageImageView
+        android:id="@+id/swipeable_sections_background_copy"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"/>
+    <com.amazon.music.explore.views.swipeablePages.pages.SwipeablePageImageView
+        android:id="@+id/swipeable_sections_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"/>
+    <com.amazon.music.explore.views.swipeablePages.pages.SwipeablePageImageView
+        android:id="@+id/swipeable_sections_background_overlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <com.amazon.music.explore.views.swipeablePages.pages.verticalContainer.SwipeableSectionsVerticalContainer
+        android:id="@+id/swipeable_sections_vertical_container"
+        android:padding="@dimen/swipeable_pages_vertical_container_padding"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/swipeable_pages_mini_player_thumbnail_end"/>
+</RelativeLayout>

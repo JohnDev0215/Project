@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:layout_gravity="top|center_horizontal"
+        android:id="@+id/arrow"
+        android:background="@drawable/onboarding_arrow_bottom"
+        android:layout_width="@dimen/tool_tip_arrow_width"
+        android:layout_height="@dimen/tool_tip_arrow_height"
+        android:layout_marginBottom="@dimen/tool_tip_overlap_margin"
+        android:scaleType="center"
+        android:elevation="100dp"/>
+    <TextView
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:id="@+id/tooltip_text"
+        android:background="@drawable/onboarding_tip_bottom"
+        android:padding="@dimen/podcast_spacer_small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/PodcastAppTheme.TextView.Primary"/>
+</LinearLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:textSize="@dimen/recents_stations_text_size"
+        android:paddingBottom="@dimen/recent_stations_text_spacing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dmusic_recently_played"
+        android:paddingStart="@dimen/album_tab_outside_padding"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recent_stations_list_view"
+        android:clipToPadding="false"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:listSelector="@drawable/grid_tile_background"
+        android:paddingStart="@dimen/album_tab_outside_padding"
+        android:paddingEnd="@dimen/album_tab_outside_padding"/>
+</merge>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <bool name="ALEXAEnabled">true</bool>
+    <bool name="AmazonAdsEnabled">true</bool>
+    <bool name="AppRatingEnabled">true</bool>
+    <bool name="Casting">true</bool>
+    <bool name="CrashHandlingEnabled">true</bool>
+    <bool name="FireOS">false</bool>
+    <bool name="MerlockEnabled">false</bool>
+    <bool name="NotificationPreference">true</bool>
+    <bool name="ParallelDownload">true</bool>
+    <bool name="PushEnabled">true</bool>
+    <bool name="SecondaryLogin">true</bool>
+    <bool name="SignOutInSettingEnabled">true</bool>
+    <bool name="StandaloneExperience">false</bool>
+    <bool name="VideosEnabled">true</bool>
+    <bool name="abc_action_bar_embed_tabs">true</bool>
+    <bool name="abc_allow_stacked_button_bar">false</bool>
+    <bool name="abc_config_actionMenuItemAllCaps">true</bool>
+    <bool name="config_materialPreferenceIconSpaceReserved">false</bool>
+    <bool name="enable_system_alarm_service_default">false</bool>
+    <bool name="enable_system_foreground_service_default">true</bool>
+    <bool name="enable_system_job_service_default">true</bool>
+    <bool name="is_compact">true</bool>
+    <bool name="is_tablet">false</bool>
+    <bool name="mtrl_btn_textappearance_all_caps">true</bool>
+    <bool name="touchpoint_disable_all_logs">false</bool>
+    <bool name="touchpoint_disable_api_filter">true</bool>
+    <bool name="touchpoint_disable_caching">false</bool>
+    <bool name="touchpoint_enable_debug_logs">true</bool>
+    <bool name="use_grid_view">false</bool>
+    <bool name="workmanager_test_configuration">false</bool>
+</resources>

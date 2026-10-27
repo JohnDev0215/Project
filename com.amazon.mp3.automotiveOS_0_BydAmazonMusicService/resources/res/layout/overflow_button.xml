@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ImageView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/overflow_button_open"
+    android:background="@drawable/ripple_background_no_mask"
+    android:focusable="false"
+    android:layout_width="@dimen/overflow_button_clickable_size"
+    android:layout_height="@dimen/overflow_button_clickable_size"
+    android:src="@drawable/action_bar_overflow_open"
+    android:scaleType="center"
+    android:maxWidth="@dimen/overflow_button_clickable_size"
+    android:maxHeight="@dimen/overflow_button_clickable_size"
+    android:contentDescription="@string/overflow_button_content_description"
+    android:paddingStart="4dp"
+    android:paddingEnd="16dp"/>

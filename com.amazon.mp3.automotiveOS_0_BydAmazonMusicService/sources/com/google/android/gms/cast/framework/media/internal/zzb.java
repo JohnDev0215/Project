@@ -1,0 +1,91 @@
+package com.google.android.gms.cast.framework.media.internal;
+
+import android.content.Context;
+import android.graphics.Bitmap;
+import android.net.Uri;
+import android.os.AsyncTask;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import com.google.android.gms.cast.framework.media.ImageHints;
+import com.google.android.gms.common.internal.Preconditions;
+
+/* JADX INFO: compiled from: com.google.android.gms:play-services-cast-framework@@21.1.0 */
+/* JADX INFO: loaded from: classes6.dex */
+public final class zzb {
+    private final Context zza;
+    private final ImageHints zzb;
+
+    @Nullable
+    private Uri zzc;
+
+    @Nullable
+    private zzf zzd;
+    private zzc zze;
+
+    @Nullable
+    private Bitmap zzf;
+    private boolean zzg;
+
+    @Nullable
+    private zza zzh;
+
+    public zzb(Context context) {
+        this(context, new ImageHints(-1, 0, 0));
+    }
+
+    private final void zze() {
+        zzf zzfVar = this.zzd;
+        if (zzfVar != null) {
+            zzfVar.cancel(true);
+            this.zzd = null;
+        }
+        this.zzc = null;
+        this.zzf = null;
+        this.zzg = false;
+    }
+
+    public final void zza() {
+        zze();
+        this.zzh = null;
+    }
+
+    public final void zzb(Bitmap bitmap) {
+        this.zzf = bitmap;
+        this.zzg = true;
+        zza zzaVar = this.zzh;
+        if (zzaVar != null) {
+            zzaVar.zza(bitmap);
+        }
+        this.zzd = null;
+    }
+
+    public final void zzc(zza zzaVar) {
+        this.zzh = zzaVar;
+    }
+
+    public final boolean zzd(@Nullable Uri uri) {
+        if (uri == null) {
+            zze();
+            return true;
+        }
+        if (uri.equals(this.zzc)) {
+            return this.zzg;
+        }
+        zze();
+        this.zzc = uri;
+        if (this.zzb.getWidthInPixels() == 0 || this.zzb.getHeightInPixels() == 0) {
+            this.zzd = new zzf(this.zza, 0, 0, false, 2097152L, 5, 333, 10000, this, null);
+        } else {
+            this.zzd = new zzf(this.zza, this.zzb.getWidthInPixels(), this.zzb.getHeightInPixels(), false, 2097152L, 5, 333, 10000, this, null);
+        }
+        ((zzf) Preconditions.checkNotNull(this.zzd)).executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR, (Uri) Preconditions.checkNotNull(this.zzc));
+        return false;
+    }
+
+    public zzb(Context context, @NonNull ImageHints imageHints) {
+        this.zza = context;
+        this.zzb = imageHints;
+        this.zze = new zzc();
+        zze();
+    }
+}

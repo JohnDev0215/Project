@@ -1,0 +1,14 @@
+{
+   "logger": {
+      "level": "debug",
+      "backends": {
+         "console": {
+            "enabled": false
+         },
+         "dlt": {
+            "enabled": true
+         }
+      },
+      "redirectConsole": false
+   }
+}

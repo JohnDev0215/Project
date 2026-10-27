@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:widget="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/my_music_detail_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <FrameLayout
+        android:id="@+id/container_header"
+        android:background="@color/background_dark_blue"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:minHeight="@dimen/prime_tab_bar_height"
+        android:paddingStart="@dimen/abc_select_dialog_padding_start_material">
+        <Space
+            android:background="@color/background_color"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/tab_top_spacer_height"/>
+        <TextView
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/category_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </FrameLayout>
+    <FrameLayout
+        android:id="@+id/contentView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/feature_banner_container"
+        android:layout_below="@+id/container_header"/>
+    <com.amazon.mp3.view.BauhausRibbon
+        android:id="@+id/bauhaus_ribbon"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/bauhaus_spacer_small"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="@dimen/bauhaus_spacer_mini"
+        android:layout_marginEnd="@dimen/bauhaus_spacer_mini"/>
+    <include
+        android:id="@+id/feature_banner_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        layout="@layout/feature_banner"/>
+</RelativeLayout>

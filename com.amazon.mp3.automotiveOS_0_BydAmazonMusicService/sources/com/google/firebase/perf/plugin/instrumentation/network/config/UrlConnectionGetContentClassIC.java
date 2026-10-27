@@ -1,0 +1,29 @@
+package com.google.firebase.perf.plugin.instrumentation.network.config;
+
+import com.google.firebase.perf.plugin.instrumentation.network.NetworkObjectInstrumentationConfig;
+import com.google.firebase.perf.plugin.instrumentation.network.hook.UrlConnectionGetContentClassInstrumentation;
+import java.lang.reflect.Method;
+import java.net.URL;
+import org.objectweb.asm.Type;
+
+/* JADX INFO: loaded from: classes6.dex */
+public class UrlConnectionGetContentClassIC extends NetworkObjectInstrumentationConfig {
+    private static final String CLASS_NAME;
+    private static final String METHOD_DESC;
+    private static final String METHOD_NAME;
+
+    static {
+        try {
+            CLASS_NAME = Type.getInternalName(URL.class);
+            Method declaredMethod = URL.class.getDeclaredMethod("getContent", Class[].class);
+            METHOD_NAME = declaredMethod.getName();
+            METHOD_DESC = Type.getType(declaredMethod).getDescriptor();
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    public UrlConnectionGetContentClassIC() {
+        super(new UrlConnectionGetContentClassInstrumentation.Factory(), CLASS_NAME, METHOD_NAME, METHOD_DESC);
+    }
+}

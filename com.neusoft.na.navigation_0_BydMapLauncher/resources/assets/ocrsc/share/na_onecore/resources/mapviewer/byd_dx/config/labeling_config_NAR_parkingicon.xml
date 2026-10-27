@@ -1,0 +1,76 @@
+<labeling_config>
+	<!-- parking layer -->
+	<layer name="parkingicon">
+		<layer_settings>
+			<thread_pool>
+				<value ident="depth">3</value>
+			</thread_pool>
+			<value ident="max_tiles" type="int">3</value>
+			<value ident="prefetch_views" type="int">5</value>
+		</layer_settings>
+		<!-- list all factory sets to use in this layer -->
+		<factorysets>
+			<factoryset type="NdsParkingFactory">
+				<!-- parking icon labels with background -->
+				<factory type="FactoryBgParkingLabel">
+					<label_settings>
+					    <value ident="priority" type="float">1.0</value>
+						<!-- configure stacking capabillity -->
+						<value ident="is_stackable" type="bool">true</value>
+						<value ident="max_presentation_scale" type="int">5000000</value>
+					</label_settings>
+				</factory>
+			</factoryset>
+		</factorysets>
+		<!-- configure main view -->
+		<view name="MapWindow">
+			<placement>
+				<!-- maximal scale to build and show stacks for stackable labels -->
+				<value ident="max_stacking_scale" type="int">5000</value>
+			</placement>
+			<label_scale_processor>
+				<text_scaling>LinearLabelScaleProcessor</text_scaling>
+				<icon_scaling>LinearLabelScaleProcessor</icon_scaling>
+			</label_scale_processor>
+			<!-- select factories to use for this view -->
+			<factory_usage>
+				<factory type="FactoryBgParkingLabel"></factory>
+			</factory_usage>
+         
+         <!-- additional configuartion for online parking data -->
+			<online_parking>
+				<areas>
+				   <value ident="visible" type="bool">true</value>
+					<!-- max scale level up to which the parking polygons shall be visible -->
+					<value ident="max_scale" type="float">10000</value>
+				</areas>
+
+				<lines>
+				   <value ident="visible" type="bool">true</value>
+					<!-- max scale level up to which the parking lines shall be visible -->
+					<value ident="max_scale" type="float">15000</value>
+				</lines>
+
+				<icons>
+				   <value ident="visible" type="bool">true</value>
+					<value ident="icon_scaling" type="float">1.0</value>
+               <value ident="show_tariff" type="bool">false</value>
+               
+  					<value ident="color_fg" type="color">#1050A0FF</value>
+               <value ident="color_bg" type="color">#E0F0FFFF</value>
+
+					<!-- max scale level up to which the parking polygons shall be visible -->
+					<value ident="max_scale" type="float">15000</value>
+				</icons>
+            
+            <charging>
+				   <value ident="visible" type="bool">true</value>
+               <value ident="icon_scaling" type="float">1.0</value>
+					<!-- max scale level up to which the charging icons shall be visible -->
+					<value ident="max_scale" type="float">30000</value>
+            </charging>
+			</online_parking>
+         
+		</view>
+	</layer>
+</labeling_config>

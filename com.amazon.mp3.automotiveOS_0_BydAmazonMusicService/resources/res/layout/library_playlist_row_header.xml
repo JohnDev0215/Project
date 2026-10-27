@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:textSize="@dimen/text_size_small"
+        android:textColor="@color/grey"
+        android:gravity="start|center_vertical"
+        android:id="@+id/PlaylistName"
+        android:paddingTop="@dimen/section_header_top_padding"
+        android:paddingBottom="@dimen/section_header_top_padding"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/library_list_view_header_item_height"
+        android:layout_marginStart="@dimen/screen_margin"
+        android:layout_marginEnd="@dimen/screen_margin"/>
+</FrameLayout>

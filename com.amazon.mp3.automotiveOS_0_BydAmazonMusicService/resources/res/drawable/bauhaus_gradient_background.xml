@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <gradient
+                android:startColor="@color/bauhaus_upsell_background_start_color"
+                android:endColor="@color/bauhaus_upsell_background_end_color"
+                android:angle="270"
+                android:type="linear"
+                android:centerX="57%"
+                android:centerColor="@color/bauhaus_upsell_background_center_color"/>
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <gradient
+                android:startColor="@color/bauhaus_upsell_background_start_color"
+                android:endColor="@color/bauhaus_upsell_background_end_color"
+                android:angle="270"
+                android:type="linear"
+                android:centerX="70%"
+                android:centerColor="@color/bauhaus_upsell_background_center_color"/>
+        </shape>
+    </item>
+</layer-list>

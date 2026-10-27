@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/transparent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="@dimen/refinement_spinner_height">
+    <View
+        android:layout_marginStart="@dimen/divider_left_padding"
+        android:layout_marginEnd="@dimen/divider_right_padding"
+        style="@style/HorizontalSeparator"/>
+    <TextView
+        android:id="@+id/refinement_submenu_text"
+        android:paddingTop="24dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/refinement_spinner_item_side_padding"
+        android:paddingEnd="@dimen/refinement_spinner_item_side_padding"
+        style="@style/RefinementSubmenuItemStyle"/>
+</LinearLayout>

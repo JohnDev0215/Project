@@ -1,0 +1,16 @@
+package org.joda.time.format;
+
+/* JADX INFO: loaded from: classes6.dex */
+public class ISOPeriodFormat {
+    private static PeriodFormatter cStandard;
+
+    protected ISOPeriodFormat() {
+    }
+
+    public static PeriodFormatter standard() {
+        if (cStandard == null) {
+            cStandard = new PeriodFormatterBuilder().appendLiteral("P").appendYears().appendSuffix("Y").appendMonths().appendSuffix("M").appendWeeks().appendSuffix("W").appendDays().appendSuffix("D").appendSeparatorIfFieldsAfter("T").appendHours().appendSuffix("H").appendMinutes().appendSuffix("M").appendSecondsWithOptionalMillis().appendSuffix("S").toFormatter();
+        }
+        return cStandard;
+    }
+}

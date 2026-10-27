@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tooltip_displayer_container"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/tooltip_arrow_top"
+        android:layout_width="@dimen/spacing_8dp"
+        android:layout_height="@dimen/spacing_8dp"
+        android:src="@drawable/tooltip_displayer_arrow"
+        android:rotation="-90"/>
+    <ImageView
+        android:id="@+id/tooltip_rectangle"
+        android:layout_width="@dimen/now_playing_tooltip_rectangle_width"
+        android:layout_height="@dimen/now_playing_tooltip_rectangle_height"
+        android:layout_marginTop="@dimen/spacing_8dp"
+        android:src="@drawable/tooltip_displayer_rectangle"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:textSize="@dimen/text_size_medium"
+        android:id="@+id/tooltip_displayer_text"
+        android:clickable="false"
+        android:layout_width="@dimen/now_playing_tooltip_text_width"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/spacing_10dp"
+        android:text="@string/dmusic_now_playing_playlist_tooltip"
+        android:layout_alignTop="@+id/tooltip_rectangle"
+        android:layout_centerHorizontal="true"/>
+    <ImageView
+        android:id="@+id/tooltip_arrow_bottom"
+        android:layout_width="@dimen/spacing_8dp"
+        android:layout_height="@dimen/spacing_8dp"
+        android:src="@drawable/tooltip_displayer_arrow"
+        android:layout_below="@+id/tooltip_rectangle"
+        android:rotation="90"/>
+</RelativeLayout>

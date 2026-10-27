@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/spacing_0dp"
+    android:paddingTop="@dimen/spacing_4dp"
+    android:paddingBottom="@dimen/spacing_0dp"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/default_preference_min_height">
+    <TextView
+        android:textSize="@dimen/text_size_medium"
+        android:textColor="@color/bauhaus_accent"
+        android:layout_gravity="center"
+        android:id="@android:id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAllCaps="true"
+        android:fontFamily="@font/amazon_ember_bold"
+        style="@style/PreferenceSummary"/>
+    <TextView
+        android:layout_gravity="center"
+        android:id="@android:id/summary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textIsSelectable="true"
+        android:textAllCaps="true"
+        style="@style/PreferenceSummary"/>
+</LinearLayout>

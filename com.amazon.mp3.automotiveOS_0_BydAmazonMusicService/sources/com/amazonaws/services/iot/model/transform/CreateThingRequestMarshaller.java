@@ -1,0 +1,60 @@
+package com.amazonaws.services.iot.model.transform;
+
+import com.amazonaws.AmazonClientException;
+import com.amazonaws.DefaultRequest;
+import com.amazonaws.Request;
+import com.amazonaws.http.HttpHeader;
+import com.amazonaws.http.HttpMethodName;
+import com.amazonaws.services.iot.model.AttributePayload;
+import com.amazonaws.services.iot.model.CreateThingRequest;
+import com.amazonaws.transform.Marshaller;
+import com.amazonaws.util.StringInputStream;
+import com.amazonaws.util.StringUtils;
+import com.amazonaws.util.json.AwsJsonWriter;
+import com.amazonaws.util.json.JsonUtils;
+import java.io.StringWriter;
+
+/* JADX INFO: loaded from: classes5.dex */
+public class CreateThingRequestMarshaller implements Marshaller<Request<CreateThingRequest>, CreateThingRequest> {
+    @Override // com.amazonaws.transform.Marshaller
+    public Request<CreateThingRequest> marshall(CreateThingRequest createThingRequest) {
+        if (createThingRequest == null) {
+            throw new AmazonClientException("Invalid argument passed to marshall(CreateThingRequest)");
+        }
+        DefaultRequest defaultRequest = new DefaultRequest(createThingRequest, "AWSIot");
+        defaultRequest.setHttpMethod(HttpMethodName.POST);
+        defaultRequest.setResourcePath("/things/{thingName}".replace("{thingName}", createThingRequest.getThingName() == null ? "" : StringUtils.fromString(createThingRequest.getThingName())));
+        try {
+            StringWriter stringWriter = new StringWriter();
+            AwsJsonWriter jsonWriter = JsonUtils.getJsonWriter(stringWriter);
+            jsonWriter.beginObject();
+            if (createThingRequest.getThingTypeName() != null) {
+                String thingTypeName = createThingRequest.getThingTypeName();
+                jsonWriter.name("thingTypeName");
+                jsonWriter.value(thingTypeName);
+            }
+            if (createThingRequest.getAttributePayload() != null) {
+                AttributePayload attributePayload = createThingRequest.getAttributePayload();
+                jsonWriter.name("attributePayload");
+                AttributePayloadJsonMarshaller.getInstance().marshall(attributePayload, jsonWriter);
+            }
+            if (createThingRequest.getBillingGroupName() != null) {
+                String billingGroupName = createThingRequest.getBillingGroupName();
+                jsonWriter.name("billingGroupName");
+                jsonWriter.value(billingGroupName);
+            }
+            jsonWriter.endObject();
+            jsonWriter.close();
+            String string = stringWriter.toString();
+            byte[] bytes = string.getBytes(StringUtils.UTF8);
+            defaultRequest.setContent(new StringInputStream(string));
+            defaultRequest.addHeader(HttpHeader.CONTENT_LENGTH, Integer.toString(bytes.length));
+            if (!defaultRequest.getHeaders().containsKey(HttpHeader.CONTENT_TYPE)) {
+                defaultRequest.addHeader(HttpHeader.CONTENT_TYPE, "application/x-amz-json-1.0");
+            }
+            return defaultRequest;
+        } catch (Throwable th) {
+            throw new AmazonClientException("Unable to marshall request to JSON: " + th.getMessage(), th);
+        }
+    }
+}

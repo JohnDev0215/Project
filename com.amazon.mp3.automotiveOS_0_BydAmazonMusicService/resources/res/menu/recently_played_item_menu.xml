@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/MenuViewDetails"
+        android:title="@string/dmusic_music_screen_view_details"/>
+    <item
+        android:id="@+id/MenuAddToPresets"
+        android:title="@string/dmusic_context_add_to_presets"/>
+    <item
+        android:id="@+id/MenuRemoveFromPresets"
+        android:title="@string/dmusic_remove_from_presets"/>
+    <item
+        android:id="@+id/MenuDownload"
+        android:title="@string/dmusic_context_download"/>
+    <item
+        android:id="@+id/MenuStationFromAnything"
+        android:title="@string/start_station_from_anything"/>
+    <item
+        android:id="@+id/MenuShare"
+        android:title="@string/dmusic_context_share"/>
+</menu>

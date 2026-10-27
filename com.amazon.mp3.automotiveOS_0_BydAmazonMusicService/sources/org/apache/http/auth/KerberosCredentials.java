@@ -1,0 +1,24 @@
+package org.apache.http.auth;
+
+import java.io.Serializable;
+import java.security.Principal;
+import org.ietf.jgss.GSSCredential;
+
+/* JADX INFO: loaded from: classes7.dex */
+public class KerberosCredentials implements Credentials, Serializable {
+    private final GSSCredential gssCredential;
+
+    @Override // org.apache.http.auth.Credentials
+    public String getPassword() {
+        return null;
+    }
+
+    @Override // org.apache.http.auth.Credentials
+    public Principal getUserPrincipal() {
+        return null;
+    }
+
+    public GSSCredential getGSSCredential() {
+        return this.gssCredential;
+    }
+}

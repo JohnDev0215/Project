@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="album_detail_artwork_size">320dp</dimen>
+    <dimen name="button_height">105dp</dimen>
+    <dimen name="dialog_button_margin_right">25dp</dimen>
+    <dimen name="dialog_button_text_size">30sp</dimen>
+    <dimen name="dialog_caption_bottom_margin">12dp</dimen>
+    <dimen name="dialog_caption_horizontal_padding">62dp</dimen>
+    <dimen name="dialog_caption_text_size">25sp</dimen>
+    <dimen name="dialog_caption_vertical_padding">12dp</dimen>
+    <dimen name="dialog_header2_text_size">30sp</dimen>
+    <dimen name="dialog_header_margin_top">36dp</dimen>
+    <dimen name="dialog_header_text_size">40sp</dimen>
+    <dimen name="dialog_image_size">375dp</dimen>
+    <dimen name="dialog_min_height">612dp</dimen>
+    <dimen name="dialog_width">700dp</dimen>
+    <dimen name="download_notification_title_text_size">18dp</dimen>
+    <dimen name="gridview_griditem_size">60dp</dimen>
+    <dimen name="notification_downloading_text_size">13.5dp</dimen>
+    <dimen name="notification_progress_text_size">13.5dp</dimen>
+    <dimen name="now_playing_album_art_size">800dp</dimen>
+    <dimen name="progress_bar_padding">0dp</dimen>
+    <dimen name="showcase_custom_button">18sp</dimen>
+    <dimen name="showcase_custom_detail">24sp</dimen>
+    <dimen name="showcase_custom_title">36sp</dimen>
+    <dimen name="tablet_padding">20dp</dimen>
+</resources>

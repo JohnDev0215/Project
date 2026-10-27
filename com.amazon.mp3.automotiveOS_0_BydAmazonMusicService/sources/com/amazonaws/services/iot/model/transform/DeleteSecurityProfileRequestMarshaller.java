@@ -1,0 +1,31 @@
+package com.amazonaws.services.iot.model.transform;
+
+import com.amazonaws.AmazonClientException;
+import com.amazonaws.DefaultRequest;
+import com.amazonaws.Request;
+import com.amazonaws.http.HttpHeader;
+import com.amazonaws.http.HttpMethodName;
+import com.amazonaws.services.iot.model.DeleteSecurityProfileRequest;
+import com.amazonaws.transform.Marshaller;
+import com.amazonaws.util.StringUtils;
+
+/* JADX INFO: loaded from: classes5.dex */
+public class DeleteSecurityProfileRequestMarshaller implements Marshaller<Request<DeleteSecurityProfileRequest>, DeleteSecurityProfileRequest> {
+    @Override // com.amazonaws.transform.Marshaller
+    public Request<DeleteSecurityProfileRequest> marshall(DeleteSecurityProfileRequest deleteSecurityProfileRequest) {
+        if (deleteSecurityProfileRequest == null) {
+            throw new AmazonClientException("Invalid argument passed to marshall(DeleteSecurityProfileRequest)");
+        }
+        DefaultRequest defaultRequest = new DefaultRequest(deleteSecurityProfileRequest, "AWSIot");
+        defaultRequest.setHttpMethod(HttpMethodName.DELETE);
+        String strReplace = "/security-profiles/{securityProfileName}".replace("{securityProfileName}", deleteSecurityProfileRequest.getSecurityProfileName() == null ? "" : StringUtils.fromString(deleteSecurityProfileRequest.getSecurityProfileName()));
+        if (deleteSecurityProfileRequest.getExpectedVersion() != null) {
+            defaultRequest.addParameter("expectedVersion", StringUtils.fromLong(deleteSecurityProfileRequest.getExpectedVersion()));
+        }
+        defaultRequest.setResourcePath(strReplace);
+        if (!defaultRequest.getHeaders().containsKey(HttpHeader.CONTENT_TYPE)) {
+            defaultRequest.addHeader(HttpHeader.CONTENT_TYPE, "application/x-amz-json-1.0");
+        }
+        return defaultRequest;
+    }
+}

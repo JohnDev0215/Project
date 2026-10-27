@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/transparent"
+    android:paddingTop="@dimen/podcast_spacer_small"
+    android:paddingBottom="@dimen/podcast_spacer_small"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:foreground="@drawable/ripple">
+    <ImageView
+        android:id="@+id/podcast_context_menu_item_image"
+        android:layout_width="@dimen/podcast_small_icon"
+        android:layout_height="@dimen/podcast_small_icon"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/podcast_spacer_small"
+        android:layout_marginEnd="@dimen/podcast_spacer_base"/>
+    <com.amazon.podcast.views.EmberTextView
+        android:id="@+id/podcast_context_menu_item_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="2"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/podcast_context_menu_item_image"
+        style="@style/PodcastAppTheme.TextView.Primary"/>
+    <ImageView
+        android:id="@+id/podcast_context_menu_item_chevron_caret_right"
+        android:visibility="gone"
+        android:layout_width="@dimen/podcast_small_icon"
+        android:layout_height="@dimen/podcast_small_icon"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/podcast_spacer_base"
+        android:layout_marginEnd="@dimen/podcast_spacer_small"
+        android:layout_alignParentEnd="true"/>
+</RelativeLayout>

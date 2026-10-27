@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/swipeable_pages_clickable_text_container"
+    style="@style/StageSwipeablePages.TextContainer">
+    <com.amazon.music.explore.views.swipeablePages.pages.verticalContainer.elements.WrapWidthTextView
+        android:id="@+id/swipeable_pages_clickable_text"
+        style="@style/StageSwipeablePages.Text.SecondaryStyle"/>
+    <ImageButton
+        android:id="@+id/swipeable_pages_clickable_text_link"
+        android:layout_toEndOf="@+id/swipeable_pages_clickable_text"
+        style="@style/StageLink"/>
+</RelativeLayout>

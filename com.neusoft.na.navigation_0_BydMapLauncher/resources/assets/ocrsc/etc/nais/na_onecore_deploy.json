@@ -1,0 +1,291 @@
+{
+  "Watchdog": {
+    "comment 1": "default service- and worker-agent timeout in ms, set to 0 to disable",
+    "comment 2": "any agent is able to overwrite the default timeout",
+    "ServiceAgentTimeout": 7500,
+    "WorkerAgentTimeout": 20000,
+    "comment 3": "how often in ms the watchdog thread inspect all current running agent procedures, set to 0 to disable",
+    "CycleTime": 1000,
+    "comment 4": "log some agent statistic in ms, set to 0 to disable",
+    "StatisticCycleTime": 1200000
+  },
+
+  "FinishTimeout": 300000,
+  "DrainTimeout": 300000,
+
+  "Agents": [
+    {
+      "comment 1": "overwrite default agent behaviour",
+      "Name": "Finders",
+      "AgentTimeout": 40000
+    }
+  ],
+
+   "SharedLibraries": [
+      { "Name": "na_onecore_adaptors_fcall", "Enabled": "${interface.cpp}" },
+      { "Name": "na_onecore_adaptors_dbus",  "Enabled": "${interface.dbus}" },
+      { "Name": "na_onecore_adaptors_json",  "Enabled": "${interface.json}" }
+   ],
+
+  "Instances": [
+    {
+      "Comment": "start infrastructure manager first",
+      "Name": "MemTrackerManagerImpl"
+    },
+    {
+      "Comment": "start infrastructure manager first",
+      "Name": "MemoryStatMgrImpl"
+    },
+    {
+      "Comment": "start infrastructure manager first",
+      "Name": "CPUTrackerManagerImpl"
+    },
+    {
+      "Comment": "The NdsLibraryProvider should be the first manager to guarantee NDS pointer vality for long time as possible",
+      "Name": "NdsLibraryProvider"
+    },
+    {
+      "Name": "KPIMonitorsProvider"
+    },
+    {
+      "Comment": "instrumentation and console debug output for nacl models, please enable only for testing purpose",
+      "Name": "ModelRegistrationDebugManager",
+      "Enabled": false,
+      "Optional": true
+    },
+    {
+      "Comment": "start infrastructure manager first",
+      "Name": "TimerManagerInstance"
+    },
+    {
+      "Comment": "start infrastructure manager first",
+      "Name": "TimerServiceManagerInstance"
+    },
+    {
+      "Comment": "start infrastructure manager first",
+      "Name": "ProviderCoordinatorMgr"
+    },
+    {
+      "Comment": "start infrastructure manager first",
+      "Name": "FilePersistenceManager",
+      "Enabled": true
+    },
+    {
+      "Comment": "start infrastructure manager first",
+      "Name": "WidgetManager",
+      "ServiceAgent": "noQtMainAgent"
+    },
+    {
+      "Name": "MapViewerManager"
+    },
+    {
+      "Name": "GuidanceViewerManager",
+      "Enabled": true
+    },
+    {
+      "Name": "StreetViewManager",
+      "Enabled": true
+    },
+    {
+      "Name": "ParkingManager",
+      "Enabled": true
+    },
+    {
+      "Name": "WeatherManager",
+      "Enabled": true
+    },
+    {
+      "Name": "DBMapManager",
+      "Enabled": true
+    },
+    {
+      "Name": "PositioningMgr"
+    },
+    {
+      "Names": [ "MpdManager", "MpdProviderManager", "MpdConfig", "SystemInformationServer" ]
+    },
+    {
+      "Name": "AdasManager"
+    },
+    {
+      "Name": "LocationInputManager"
+    },
+    {
+      "Name": "LocalizationManagerImpl"
+    },
+    {
+      "Name": "DestStorageManagerImpl"
+    },
+    {
+      "Name": "FreeTextSearchManager"
+    },
+    {
+      "Name": "GuidanceManager"
+    },
+    {
+      "Name": "LocationManager"
+    },
+    {
+      "Name": "DatabaseMgrImpl"
+    },
+    {
+      "Name": "RouteOttoManager"
+    },
+    {
+      "Name": "PoiManager",
+      "Optional": true
+    },
+    {
+      "Name": "RoadbookManager"
+    },
+    {
+      "Name": "WarningManager"
+    },
+    {
+      "Name": "RoutingManager"
+    },
+    {
+      "Name": "BlockingManager"
+    },
+    {
+      "Name": "TollManager"
+    },
+    {
+      "Name": "ImageComposerManager"
+    },
+    {
+      "Name": "TITextListManager"
+    },
+    {
+      "Name": "TrafficManager"
+    },
+    {
+      "Name": "TrafficOnlineManager"
+    },
+    {
+      "Name": "TrafficRemoteManager"
+    },
+    {
+      "Comment": "Vics works only well with Japan DB, with Europe DB we have some shutdown problems, so we disable it as default",
+      "Name": "VicsManager",
+      "Enabled": true
+    },
+    {
+      "Comment": "Manager provides mesh travel time and distance to destination info along the guiding route, will work with Japan DB only.",
+      "Name": "CarwingsRouteInfoManager"
+    },
+    {
+      "Comment": "Vics works only well with Japan DB, with Europe DB we have some shutdown problems, so we disable it as default",
+      "Name": "DSSSServiceManager",
+      "Enabled": true
+    },
+    {
+      "Name": "AndroidManagerImpl",
+      "ServiceAgent": "AndroidManager",
+      "Comment": "this manager is only sometimes deployed, but when existing an instance should be started",
+      "Optional": true
+    },
+    {
+      "Name": "PointerAdaptorAndroidManager",
+      "Comment": "required to create the Java peer class for this manager",
+      "ServiceAgent": "AndroidManager",
+      "Optional": true
+    },
+    {
+      "Name": "WidgetControlProxyFCallAdaptor",
+      "Optional": true
+    },
+    {
+      "Regex": "ProxyAdaptor.*",
+      "ServiceAgent": "AdaptorAgent",
+      "Optional": true
+    },
+    {
+      "Regex": "FCallCppProvider.*",
+      "Comment": "deploy all FCallCppProviders",
+      "ServiceAgent": "AdaptorAgent",
+      "Optional": true,
+      "Enabled": "${interface.cpp}"
+    },
+    {
+      "Regex": "FCallCppFacade.*",
+      "Comment": "deploy add FCallCppFacades",
+      "ServiceAgent": "AdaptorAgent",
+      "Optional": true,
+      "Enabled": false
+    },
+    {
+      "Name": "DBusCommunication",
+      "ServiceAgent": "AdaptorAgent",
+      "Optional": true,
+      "Enabled": "${interface.dbus}"
+    },
+    {
+      "Regex": "DBusProvider.*",
+      "Comment": "deploy all DBusProviders",
+      "ServiceAgent": "AdaptorAgent",
+      "Optional": true,
+      "Enabled": "${interface.dbus}"
+    },
+    {
+      "Regex": "DBusFacade.*",
+      "Comment": "deploy all DBusFacades",
+      "ServiceAgent": "AdaptorAgent",
+      "Optional": true,
+      "Enabled": false
+    },
+    {
+      "Name": "JsonWsCommunication",
+      "ServiceAgent": "AdaptorAgent",
+      "Optional": true,
+      "Enabled": "${interface.json}"
+    },
+    {
+      "Regex": "JsonWsProvider.*",
+      "Comment": "deploy all JsonWsProviders",
+      "ServiceAgent": "AdaptorAgent",
+      "Optional": true,
+      "Enabled": "${interface.json}"
+    },
+    {
+      "Regex": "JsonWsFacade.*",
+      "Comment": "deploy all JsonWsFacades",
+      "ServiceAgent": "AdaptorAgent",
+      "Optional": true,
+      "Enabled": false
+    },
+    {
+      "Name": "JNICommunication",
+      "ServiceAgent": "AdaptorAgent",
+      "Optional": true,
+      "Enabled": "${interface.jni}"
+    },
+    {
+      "Name": "PointerAdaptorJNICommunicationTask",
+      "Comment": "required to create the Java peer class for this manager",
+      "ServiceAgent": "AdaptorAgent",
+      "Optional": true,
+      "Enabled": "${interface.jni}"
+    },
+    {
+      "Regex": "JNIProvider.*",
+      "Comment": "deploy all JNI adaptor",
+      "ServiceAgent": "AdaptorAgent",
+      "Optional": true,
+      "Enabled": "${interface.jni}"
+    },
+    {
+      "Name": "TrackerManager"
+    },
+    {
+      "Name": "LearningManager"
+    },
+    {
+      "Name": "AdasisMultiplexerManager",
+      "Optional": true
+    },
+    {
+      "Name": "LaneManager"
+    }
+  ]
+}

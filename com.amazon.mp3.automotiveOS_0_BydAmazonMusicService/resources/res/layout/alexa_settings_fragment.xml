@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:customAttrs="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/alexa_settings_background"
+    android:paddingLeft="@dimen/alexa_settings_padding_side"
+    android:paddingTop="@dimen/alexa_settings_padding_top"
+    android:paddingRight="@dimen/alexa_settings_padding_side"
+    android:paddingBottom="@dimen/alexa_settings_title_padding_bottom"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:textSize="@dimen/alexa_settings_title_text_size"
+        android:textColor="@color/alexa_settings_title"
+        android:id="@+id/settings_text"
+        android:paddingBottom="@dimen/alexa_settings_body_padding_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/alexa_settings_text"/>
+    <TextView
+        android:textSize="@dimen/alexa_settings_button_text_size"
+        android:textColor="@color/alexa_settings_link_text"
+        android:id="@+id/alexa_app_button"
+        android:background="@drawable/alexa_settings_link_button_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/alexa_settings_link_button"
+        android:textAllCaps="false"
+        style="@style/Widget.AppCompat.Button.Borderless"/>
+    <TextView
+        android:textSize="@dimen/alexa_settings_button_text_size"
+        android:textColor="@color/alexa_settings_button_text"
+        android:id="@+id/dismiss_button"
+        android:background="@android:color/transparent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/alexa_settings_notNow_button"
+        style="@style/Widget.AppCompat.Button.Borderless"/>
+</LinearLayout>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/podcast_download_button_small"
+    android:layout_height="@dimen/podcast_download_button_small">
+    <ImageView
+        android:id="@+id/podcast_download_button_small_image"
+        android:layout_width="@dimen/podcast_download_button_small_image"
+        android:layout_height="@dimen/podcast_download_button_small_image"
+        android:layout_centerInParent="true"/>
+    <ProgressBar
+        android:id="@+id/podcast_download_button_small_progress_bar"
+        android:background="@drawable/download_progress_bar_background_small"
+        android:visibility="invisible"
+        android:layout_width="@dimen/podcast_download_button_small_progress"
+        android:layout_height="@dimen/podcast_download_button_small_progress"
+        android:indeterminate="false"
+        android:layout_centerInParent="true"
+        style="?android:attr/progressBarStyleHorizontal"/>
+    <ProgressBar
+        android:id="@+id/podcast_download_button_small_loading_bar"
+        android:visibility="invisible"
+        android:layout_width="@dimen/podcast_download_button_small_progress"
+        android:layout_height="@dimen/podcast_download_button_small_progress"
+        android:indeterminate="true"
+        android:layout_centerInParent="true"/>
+</RelativeLayout>

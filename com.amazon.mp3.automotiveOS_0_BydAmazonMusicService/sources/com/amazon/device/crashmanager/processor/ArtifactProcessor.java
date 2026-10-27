@@ -1,0 +1,13 @@
+package com.amazon.device.crashmanager.processor;
+
+import com.amazon.device.crashmanager.Artifact;
+import java.io.InputStream;
+
+/* JADX INFO: loaded from: classes2.dex */
+public interface ArtifactProcessor {
+    boolean canProcessTag(String str);
+
+    InputStream processArtifact(Artifact artifact) throws Exception;
+
+    InputStream processArtifact(Artifact artifact, String str) throws Exception;
+}

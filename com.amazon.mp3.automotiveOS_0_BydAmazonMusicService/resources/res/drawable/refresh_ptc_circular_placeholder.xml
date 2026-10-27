@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:height="@dimen/ptc_header_circle_diameter"
+        android:width="@dimen/ptc_header_circle_diameter"
+        android:drawable="@drawable/refresh_ptc_circular_background"/>
+    <item
+        android:gravity="center"
+        android:height="@dimen/podcast_spacer_medium"
+        android:width="@dimen/podcast_spacer_medium"
+        android:drawable="@drawable/refresh_ic_empty_state_image"/>
+</layer-list>

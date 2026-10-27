@@ -1,0 +1,41 @@
+{
+  "Instances": [
+    {
+      "Name": "FilePersistenceManager",
+      "Enabled":  true
+    },
+    {
+      "Name": "FCallCppFacadePersistence",
+      "Comment": "as an alternative to FilePersistenceManager",
+      "Optional": true,
+      "Enabled": false
+    },
+    {
+      "Regex": "FCallCppProvider.*",
+      "ServiceAgent": "Pos_CommAgent",
+      "Optional": true
+    },
+    {
+      "Name": "JsonWsCommunication",
+      "ServiceAgent": "Pos_CommAgent",
+      "Optional": true,
+      "Enabled": true
+    },
+    {
+      "Regex": "JsonWsProvider.*",
+      "ServiceAgent": "Pos_CommAgent",
+      "Optional": true,
+      "Enabled": true
+    },
+    {
+      "Regex": "JsonWsFacade.*",
+      "ServiceAgent": "Pos_CommAgent",
+      "Optional": true,
+      "Enabled": true
+    },
+    {
+      "Names": [ "PosPhysicalMgr", "MpdManager", "MpdProviderManager", "MpdConfig"]
+    }
+    
+  ]
+}

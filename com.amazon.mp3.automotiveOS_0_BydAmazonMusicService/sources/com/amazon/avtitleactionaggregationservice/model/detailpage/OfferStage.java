@@ -1,0 +1,275 @@
+package com.amazon.avtitleactionaggregationservice.model.detailpage;
+
+import com.amazon.avod.servicetypes.ServiceTypesProxy;
+import com.amazon.avod.util.json.EnumParser;
+import com.amazon.avod.util.json.JacksonJsonParserBase;
+import com.amazon.avod.util.json.JsonContractException;
+import com.amazon.avod.util.json.JsonParsingUtils;
+import com.amazon.avod.util.json.JsonValidator;
+import com.amazon.avtitleactionaggregationservice.model.detailpage.Period;
+import com.amazon.avtitleactionaggregationservice.model.detailpage.Price;
+import com.amazon.avtitleactionaggregationservice.model.detailpage.Promotion;
+import com.amazon.avtitleactionaggregationservice.model.detailpage.Settings;
+import com.amazon.avtitleactionaggregationservice.model.detailpage.acquisition.OfferStageType;
+import com.amazon.identity.auth.device.utils.AccountConstants;
+import com.fasterxml.jackson.core.JsonParser;
+import com.fasterxml.jackson.core.JsonToken;
+import com.fasterxml.jackson.databind.JsonNode;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.google.common.base.MoreObjects;
+import com.google.common.base.Objects;
+import com.google.common.base.Optional;
+import java.io.IOException;
+import java.util.Iterator;
+import javax.annotation.Nonnull;
+import javax.annotation.concurrent.NotThreadSafe;
+
+/* JADX INFO: loaded from: classes2.dex */
+public class OfferStage {
+    public final Optional<Period> period;
+    public final Optional<Price> price;
+    public final Optional<Promotion> promotion;
+    public final Optional<Settings> settings;
+    public final Optional<OfferStageType> type;
+
+    private OfferStage(Builder builder) {
+        this.period = Optional.fromNullable(builder.period);
+        this.type = Optional.fromNullable(builder.type);
+        this.promotion = Optional.fromNullable(builder.promotion);
+        this.settings = Optional.fromNullable(builder.settings);
+        this.price = Optional.fromNullable(builder.price);
+    }
+
+    public boolean equals(Object obj) {
+        if (obj == this) {
+            return true;
+        }
+        if (!(obj instanceof OfferStage)) {
+            return false;
+        }
+        OfferStage offerStage = (OfferStage) obj;
+        return Objects.equal(this.period, offerStage.period) && Objects.equal(this.type, offerStage.type) && Objects.equal(this.promotion, offerStage.promotion) && Objects.equal(this.settings, offerStage.settings) && Objects.equal(this.price, offerStage.price);
+    }
+
+    public int hashCode() {
+        return Objects.hashCode(this.period, this.type, this.promotion, this.settings, this.price);
+    }
+
+    public String toString() {
+        return MoreObjects.toStringHelper(this).add("period", this.period).add(AccountConstants.SUB_AUTHENTICATOR_TYPE_ATTRIBUTE, this.type).add("promotion", this.promotion).add("settings", this.settings).add("price", this.price).toString();
+    }
+
+    @NotThreadSafe
+    public static class Builder {
+        public Period period;
+        public Price price;
+        public Promotion promotion;
+        public Settings settings;
+        public OfferStageType type;
+
+        public OfferStage build() {
+            return new OfferStage(this);
+        }
+    }
+
+    public static class Parser extends JacksonJsonParserBase<OfferStage> {
+        private final EnumParser<OfferStageType> mOfferStageTypeParser;
+        private final Period.Parser mPeriodParser;
+        private final Price.Parser mPriceParser;
+        private final Promotion.Parser mPromotionParser;
+        private final Settings.Parser mSettingsParser;
+
+        public Parser(@Nonnull ObjectMapper objectMapper) {
+            super(objectMapper);
+            this.mPromotionParser = new Promotion.Parser(objectMapper);
+            this.mPeriodParser = new Period.Parser(objectMapper);
+            this.mOfferStageTypeParser = EnumParser.newParser(OfferStageType.class);
+            this.mSettingsParser = new Settings.Parser(objectMapper);
+            this.mPriceParser = new Price.Parser(objectMapper);
+        }
+
+        @Override // com.amazon.avod.util.json.JacksonJsonParserBase, com.amazon.avod.util.json.JacksonJsonNodeParser
+        @Nonnull
+        public OfferStage parse(@Nonnull JsonNode jsonNode) throws JsonContractException, IOException {
+            ServiceTypesProxy serviceTypesProxy = ServiceTypesProxy.getInstance();
+            Object objBeginTrace = serviceTypesProxy.beginTrace("OfferStage:ParseTree");
+            try {
+                return parseInternal(jsonNode);
+            } finally {
+                serviceTypesProxy.endTrace(objBeginTrace);
+            }
+        }
+
+        @Override // com.amazon.avod.util.json.JacksonJsonParserBase, com.amazon.avod.util.json.JacksonJsonStreamParser
+        @Nonnull
+        public OfferStage parse(@Nonnull JsonParser jsonParser) throws JsonContractException, IOException {
+            ServiceTypesProxy serviceTypesProxy = ServiceTypesProxy.getInstance();
+            Object objBeginTrace = serviceTypesProxy.beginTrace("OfferStage:Parse");
+            try {
+                return parseInternal(jsonParser);
+            } finally {
+                serviceTypesProxy.endTrace(objBeginTrace);
+            }
+        }
+
+        /* JADX WARN: Failed to restore switch over string. Please report as a decompilation issue */
+        @Nonnull
+        private OfferStage parseInternal(@Nonnull JsonNode jsonNode) throws JsonContractException, IOException {
+            JsonParsingUtils.throwIfNotObject(jsonNode, "OfferStage");
+            Builder builder = new Builder();
+            Iterator<String> itFieldNames = jsonNode.fieldNames();
+            while (itFieldNames.hasNext()) {
+                String next = itFieldNames.next();
+                JsonNode jsonNode2 = jsonNode.get(next);
+                byte b = -1;
+                try {
+                    switch (next.hashCode()) {
+                        case -991726143:
+                            if (next.equals("period")) {
+                                b = 0;
+                            }
+                            break;
+                        case -799212381:
+                            if (next.equals("promotion")) {
+                                b = 2;
+                            }
+                            break;
+                        case 3575610:
+                            if (next.equals(AccountConstants.SUB_AUTHENTICATOR_TYPE_ATTRIBUTE)) {
+                                b = 1;
+                            }
+                            break;
+                        case 106934601:
+                            if (next.equals("price")) {
+                                b = 4;
+                            }
+                            break;
+                        case 1434631203:
+                            if (next.equals("settings")) {
+                                b = 3;
+                            }
+                            break;
+                    }
+                    Price price = null;
+                    Period period = null;
+                    OfferStageType offerStageType = null;
+                    Promotion promotion = null;
+                    Settings settings = null;
+                    if (b == 0) {
+                        if (!jsonNode2.isNull()) {
+                            period = this.mPeriodParser.parse(jsonNode2);
+                        }
+                        builder.period = period;
+                    } else if (b == 1) {
+                        if (!jsonNode2.isNull()) {
+                            offerStageType = (OfferStageType) this.mOfferStageTypeParser.parse(jsonNode2);
+                        }
+                        builder.type = offerStageType;
+                    } else if (b == 2) {
+                        if (!jsonNode2.isNull()) {
+                            promotion = this.mPromotionParser.parse(jsonNode2);
+                        }
+                        builder.promotion = promotion;
+                    } else if (b == 3) {
+                        if (!jsonNode2.isNull()) {
+                            settings = this.mSettingsParser.parse(jsonNode2);
+                        }
+                        builder.settings = settings;
+                    } else if (b == 4) {
+                        if (!jsonNode2.isNull()) {
+                            price = this.mPriceParser.parse(jsonNode2);
+                        }
+                        builder.price = price;
+                    }
+                } catch (JsonContractException e) {
+                    ServiceTypesProxy.getInstance().exception(e, next + " failed to parse when parsing OfferStage so we may drop this from the response (if field was required). Will try to continue parsing.", new Object[0]);
+                }
+            }
+            return builder.build();
+        }
+
+        /* JADX WARN: Failed to restore switch over string. Please report as a decompilation issue */
+        @Nonnull
+        private OfferStage parseInternal(@Nonnull JsonParser jsonParser) throws JsonContractException, IOException {
+            Builder builder = new Builder();
+            JsonValidator.checkEqual(JsonToken.START_OBJECT, jsonParser.getCurrentToken(), jsonParser);
+            while (true) {
+                JsonToken jsonTokenNextToken = jsonParser.nextToken();
+                if (JsonValidator.isInsideObject(jsonTokenNextToken)) {
+                    if (jsonTokenNextToken == JsonToken.FIELD_NAME) {
+                        String currentName = jsonParser.getCurrentName();
+                        jsonParser.nextToken();
+                        JsonToken currentToken = jsonParser.getCurrentToken();
+                        byte b = -1;
+                        try {
+                            switch (currentName.hashCode()) {
+                                case -991726143:
+                                    if (currentName.equals("period")) {
+                                        b = 0;
+                                    }
+                                    break;
+                                case -799212381:
+                                    if (currentName.equals("promotion")) {
+                                        b = 2;
+                                    }
+                                    break;
+                                case 3575610:
+                                    if (currentName.equals(AccountConstants.SUB_AUTHENTICATOR_TYPE_ATTRIBUTE)) {
+                                        b = 1;
+                                    }
+                                    break;
+                                case 106934601:
+                                    if (currentName.equals("price")) {
+                                        b = 4;
+                                    }
+                                    break;
+                                case 1434631203:
+                                    if (currentName.equals("settings")) {
+                                        b = 3;
+                                    }
+                                    break;
+                            }
+                            Price price = null;
+                            Period period = null;
+                            OfferStageType offerStageType = null;
+                            Promotion promotion = null;
+                            Settings settings = null;
+                            if (b == 0) {
+                                if (currentToken != JsonToken.VALUE_NULL) {
+                                    period = this.mPeriodParser.parse(jsonParser);
+                                }
+                                builder.period = period;
+                            } else if (b == 1) {
+                                if (currentToken != JsonToken.VALUE_NULL) {
+                                    offerStageType = (OfferStageType) this.mOfferStageTypeParser.parse(jsonParser);
+                                }
+                                builder.type = offerStageType;
+                            } else if (b == 2) {
+                                if (currentToken != JsonToken.VALUE_NULL) {
+                                    promotion = this.mPromotionParser.parse(jsonParser);
+                                }
+                                builder.promotion = promotion;
+                            } else if (b == 3) {
+                                if (currentToken != JsonToken.VALUE_NULL) {
+                                    settings = this.mSettingsParser.parse(jsonParser);
+                                }
+                                builder.settings = settings;
+                            } else if (b == 4) {
+                                if (currentToken != JsonToken.VALUE_NULL) {
+                                    price = this.mPriceParser.parse(jsonParser);
+                                }
+                                builder.price = price;
+                            } else {
+                                jsonParser.skipChildren();
+                            }
+                        } catch (JsonContractException e) {
+                            ServiceTypesProxy.getInstance().exception(e, currentName + " failed to parse when parsing OfferStage so we may drop this from the response (if field was required). Will try to continue parsing.", new Object[0]);
+                        }
+                    }
+                } else {
+                    return builder.build();
+                }
+            }
+        }
+    }
+}

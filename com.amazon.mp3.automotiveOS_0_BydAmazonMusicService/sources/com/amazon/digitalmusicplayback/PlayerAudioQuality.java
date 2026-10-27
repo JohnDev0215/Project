@@ -1,0 +1,31 @@
+package com.amazon.digitalmusicplayback;
+
+/* JADX INFO: loaded from: classes2.dex */
+public enum PlayerAudioQuality {
+    UNKNOWN,
+    LOW,
+    MEDIUM,
+    HIGH,
+    HD44,
+    HD48,
+    HD96,
+    HD192,
+    UHD44,
+    UHD48,
+    UHD96,
+    UHD192,
+    THREED_DATMOS_LOW,
+    THREED_DATMOS_MED,
+    THREED_DATMOS_HIGH,
+    THREED_S360RA_L0,
+    THREED_S360RA_L1,
+    THREED_S360RA_L2,
+    THREED_S360RA_L3,
+    THREED_DDPLUSJOC_LOW,
+    THREED_DDPLUSJOC_MID,
+    THREED_DDPLUSJOC_HIGH,
+    THREED_S360DIRECT_L0,
+    THREED_S360DIRECT_L1,
+    THREED_S360DIRECT_L2,
+    THREED_S360DIRECT_L3
+}

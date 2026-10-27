@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/gallery_template_header"
+    android:focusable="true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/podcast_spacer_large"
+    android:layout_marginBottom="@dimen/podcast_spacer_large"
+    android:paddingStart="@dimen/gutter"
+    android:paddingEnd="@dimen/gutter"
+    android:layout_marginStart="@dimen/margin"
+    android:layout_marginEnd="@dimen/margin">
+    <com.amazon.podcast.views.EmberTextView
+        android:id="@+id/gallery_template_header_text"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        style="@style/PodcastAppTheme.TextView.Headline2"/>
+    <com.amazon.podcast.views.EmberTextView
+        android:id="@+id/gallery_template_subheader_text"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/podcast_spacer_micro"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gallery_template_header_text"
+        style="@style/PodcastAppTheme.TextView.Secondary"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

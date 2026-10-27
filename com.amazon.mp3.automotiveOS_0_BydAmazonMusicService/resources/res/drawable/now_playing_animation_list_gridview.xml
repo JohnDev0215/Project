@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android" android:oneshot="false">
+    <item
+        android:duration="100"
+        android:drawable="@drawable/mp3_icon_songplaying_1_grid"/>
+    <item
+        android:duration="100"
+        android:drawable="@drawable/mp3_icon_songplaying_2_grid"/>
+    <item
+        android:duration="100"
+        android:drawable="@drawable/mp3_icon_songplaying_3_grid"/>
+    <item
+        android:duration="100"
+        android:drawable="@drawable/mp3_icon_songplaying_4_grid"/>
+    <item
+        android:duration="100"
+        android:drawable="@drawable/mp3_icon_songplaying_5_grid"/>
+    <item
+        android:duration="100"
+        android:drawable="@drawable/mp3_icon_songplaying_6_grid"/>
+</animation-list>

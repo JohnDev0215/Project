@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:gravity="center"
+        android:id="@android:id/background">
+        <shape android:shape="line">
+            <stroke
+                android:width="@dimen/podcast_miniplayer_progress_bar_height"
+                android:color="@color/horizontal_progress_bar_base"/>
+        </shape>
+    </item>
+    <item
+        android:gravity="center"
+        android:id="@android:id/secondaryProgress">
+        <clip>
+            <shape android:shape="line">
+                <stroke
+                    android:width="@dimen/podcast_miniplayer_progress_bar_height"
+                    android:color="@color/primary_glass_3"/>
+            </shape>
+        </clip>
+    </item>
+    <item
+        android:gravity="center"
+        android:id="@android:id/progress">
+        <clip>
+            <shape android:shape="line">
+                <stroke
+                    android:width="@dimen/podcast_miniplayer_progress_bar_height"
+                    android:color="@color/horizontal_progress_bar_progress"/>
+            </shape>
+        </clip>
+    </item>
+</layer-list>

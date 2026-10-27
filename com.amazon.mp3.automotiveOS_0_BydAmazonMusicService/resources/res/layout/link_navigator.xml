@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/link_navigator"
+    android:background="@null"
+    android:paddingBottom="@dimen/spacer_large"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/spacer_large"
+    android:paddingEnd="@dimen/margin"
+    android:layout_marginStart="@dimen/margin">
+    <com.amazon.music.curate.skyfire.views.EmberTextView
+        android:id="@+id/link_navigator_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/spacer_small"
+        android:layout_marginStart="@dimen/margin"
+        android:layout_marginEnd="@dimen/margin"
+        style="@style/CurateTheme.TextView.Headline4"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/link_navigator_recycler_view"
+        android:background="@null"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin"
+        android:layout_marginEnd="@dimen/margin"/>
+</LinearLayout>

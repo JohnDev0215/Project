@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@drawable/listview_item_background"
+    android:padding="@dimen/spacing_16dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:textSize="@dimen/text_size_small"
+        android:textColor="@color/listview_item_normal_secondary_text"
+        android:id="@+id/EmptySearchNoResultsError"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/dmusic_library_empty_filter_no_music_found"/>
+    <TextView
+        android:textSize="@dimen/text_size_small"
+        android:id="@+id/EmptySearchShopStore"
+        android:paddingTop="@dimen/spacing_16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/dmusic_library_empty_filter_shop_store"
+        android:drawablePadding="8dp"
+        android:drawableStart="@drawable/btn_search"/>
+</LinearLayout>

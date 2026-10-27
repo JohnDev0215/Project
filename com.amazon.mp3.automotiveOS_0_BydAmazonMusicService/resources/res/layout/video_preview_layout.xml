@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/video_queue_preview_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <TextureView
+        android:id="@+id/video_queue_texture_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/video_preview_gradient_mask"/>
+    <com.amazon.music.explore.views.videoPreview.CoachMarkCircleView
+        android:id="@+id/coach_mark_circle_view"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</FrameLayout>

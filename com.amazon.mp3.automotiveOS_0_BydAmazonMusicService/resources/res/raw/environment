@@ -1,0 +1,99 @@
+{
+     "custombuildby": "config 05/13/2014",
+
+     "marketplace": [
+         {
+             "countryCode": "US",
+             "id": "1",
+             "obfuscatedId": "ATVPDKIKX0DER",
+             "locale":"en_US"
+         },
+         {
+             "countryCode": "UK",
+             "id": "3",
+             "obfuscatedId": "A1F83G8C2ARO7P",
+             "locale":"en_UK"
+         },
+         {
+             "countryCode": "DE",
+             "id": "4",
+             "obfuscatedId": "A1PA6795UKMFR9",
+             "locale":"de_DE"
+         },
+         {
+             "countryCode": "FR",
+             "id": "5",
+             "obfuscatedId": "A13V1IB3VIYZZH",
+             "locale":"fr_FR"
+         },
+         {
+             "countryCode": "JP",
+             "id": "6",
+             "obfuscatedId": "A1VC38T7YXB528",
+             "locale":"ja_JP"
+         },
+         {
+             "countryCode": "ES",
+             "id": "44551",
+             "obfuscatedId": "A1RKKUPIHCS9HS",
+             "locale":"es_ES"
+         },
+         {
+             "countryCode": "IT",
+             "id": "35691",
+             "obfuscatedId": "APJ6JRA9NG5V4",
+             "locale":"it_IT"
+         }
+     ],
+
+     "endpoint": [
+         {
+             "id": "prod",
+             "domainName": {
+                 "US": "amazon.com",
+                 "UK": "amazon.co.uk",
+                 "DE": "amazon.de",
+                 "FR": "amazon.fr",
+                 "JP": "amazon.co.jp",
+                 "ES": "amazon.es",
+                 "IT": "amazon.it"
+             },
+             "subdomainPrefix": "www",
+             "port": "443",
+             "protocol":"https",
+             "path": {
+                 "cirrus":"cirrus/",
+                 "cb" : "clientbuddy/",
+                 "muse": "muse/",
+                 "v3" : "cirrus/v3/",
+                 "playlist" : "cloudplayer/playlists/",
+                 "dmls" : "dmls/",
+                 "stratus" : "cloudplayer/accounts/",
+                 "nautilus" : "music/subscriptions/",
+                 "explore_artist" : "gp/dmusic/explorer-artist/"
+             },
+             "url_params" : {
+                 "robinEnabled":"1",
+                 "version":"e278e5a"
+             },
+             "authportal": {
+                 "US": "www.amazon.com",
+                 "UK": "www.amazon.co.uk",
+                 "DE": "www.amazon.de",
+                 "FR": "www.amazon.fr",
+                 "JP": "www.amazon.co.jp",
+                 "ES": "www.amazon.es",
+                 "IT": "www.amazon.it"
+             },
+             "assochandle": {
+                 "US": "amzn_greenpoint_us",
+                 "UK": "amzn_greenpoint_uk",
+                 "DE": "amzn_greenpoint_de",
+                 "FR": "amzn_greenpoint_fr",
+                 "JP": "amzn_greenpoint_jp",
+                 "ES": "amzn_greenpoint_es",
+                 "IT": "amzn_greenpoint_it"
+             }
+         }
+     ]
+ }

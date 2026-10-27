@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <fraction name="aspect_ratio_16_9">177.9999%</fraction>
+    <fraction name="aspect_ratio_1_1">100%</fraction>
+    <fraction name="aspect_ratio_4_1">400%</fraction>
+    <fraction name="audio_aspect_ratio">100%</fraction>
+    <fraction name="default_fixed_aspect_imageview_scaling_factor">100%</fraction>
+    <fraction name="feature_barker_aspect_ratio">177.9999%</fraction>
+    <fraction name="feature_play_landscape_height">60%</fraction>
+    <fraction name="feature_play_landscape_width">50%</fraction>
+    <fraction name="feature_play_playIcon_dimen">15%</fraction>
+    <fraction name="feature_play_portrait_height">75%</fraction>
+    <fraction name="video_aspect_ratio">56%</fraction>
+</resources>

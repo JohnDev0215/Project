@@ -1,0 +1,8 @@
+package com.amazon.mp3.service.metrics;
+
+/* JADX INFO: loaded from: classes4.dex */
+public interface RecurrentUseMetrics {
+    void recordUserSignedIn();
+
+    void recordUserSignedOut();
+}

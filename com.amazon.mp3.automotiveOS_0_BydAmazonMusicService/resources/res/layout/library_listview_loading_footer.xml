@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_gravity="bottom"
+    android:id="@+id/ListActivityLoading"
+    android:background="@color/black"
+    android:visibility="gone"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/libary_loading_footer_height"
+    android:alpha="0.9">
+    <LinearLayout
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/libary_loading_footer_height"
+        android:alpha="1">
+        <ProgressBar
+            android:layout_gravity="center"
+            android:id="@+id/ListActivityLoadingSpinner"
+            android:layout_width="@dimen/loading_spinner_height_and_width"
+            android:layout_height="@dimen/loading_spinner_height_and_width"
+            android:indeterminate="true"
+            style="@style/dmmviewlibrary_progress_bar_small"/>
+        <TextView
+            android:layout_gravity="center"
+            android:id="@+id/ListActivityLoadingText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dmusic_library_no_listiew_items_syncing"
+            android:layout_marginStart="@dimen/loading_spinner_spacing"
+            style="@style/DetailViewBodyText.Tertiary"/>
+    </LinearLayout>
+</FrameLayout>

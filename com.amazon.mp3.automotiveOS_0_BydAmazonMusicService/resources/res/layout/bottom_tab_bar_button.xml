@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bottom_button_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:textSize="@dimen/text_t3"
+        android:textStyle="bold"
+        android:textColor="@color/primary_glass_4"
+        android:id="@+id/bottom_button_textView"
+        android:paddingTop="@dimen/spacer_4"
+        android:paddingBottom="@dimen/spacer_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:lineSpacingExtra="2sp"
+        android:textAllCaps="true"
+        android:paddingStart="@dimen/spacer_12"
+        android:paddingEnd="@dimen/spacer_12"/>
+</FrameLayout>

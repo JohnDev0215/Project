@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="dmusic_all_prime_songs_added_to_library">
+        <item quantity="one">നിങ്ങളുടെ സംഗീതത്തിലേക്ക് %1$d ഗാനം ചേർത്തു.</item>
+        <item quantity="other">നിങ്ങളുടെ സംഗീതത്തിലേക്ക് %1$d ഗാനങ്ങൾ ചേർത്തു.</item>
+    </plurals>
+    <plurals name="dmusic_artist_confirm_delete_cloud_msg">
+        <item quantity="one">ഈ ആർട്ടിസ്റ്റിനെ ഇല്ലാതാക്കണമെന്ന് ഉറപ്പാണോ?</item>
+        <item quantity="other">ഈ ആർട്ടിസ്റ്റിനെയും എല്ലാ %d ഗാനങ്ങളെയും ഇല്ലാതാക്കണമെന്ന് ഉറപ്പാണോ?</item>
+    </plurals>
+    <plurals name="dmusic_download_str_to_download">
+        <item quantity="one">ഡൗൺലോഡ് ചെയ്യാൻ %1$d ഗാനം</item>
+        <item quantity="other">ഡൗൺലോഡ് ചെയ്യാൻ %1$d ഗാനങ്ങൾ</item>
+    </plurals>
+    <plurals name="dmusic_duration_hours">
+        <item quantity="one">%1$d മണിക്കൂർ</item>
+        <item quantity="other">%1$d മണിക്കൂർ</item>
+    </plurals>
+    <plurals name="dmusic_duration_minutes">
+        <item quantity="one">%1$d മിനിറ്റ്</item>
+        <item quantity="other">%1$d മിനിറ്റ്</item>
+    </plurals>
+    <plurals name="dmusic_genre_confirm_delete_cloud_msg">
+        <item quantity="one">ഈ വിഭാഗം ഇല്ലാതാക്കണമെന്ന് ഉറപ്പാണോ?</item>
+        <item quantity="other">ഈ വിഭാഗവും എല്ലാ %d ഗാനങ്ങളും ഇല്ലാതാക്കണമെന്ന് ഉറപ്പാണോ?</item>
+    </plurals>
+    <plurals name="dmusic_library_albums_count">
+        <item quantity="one">%1$d ആൽബം</item>
+        <item quantity="other">%1$d ആൽബങ്ങൾ</item>
+    </plurals>
+    <plurals name="dmusic_library_songs_count">
+        <item quantity="one">%1$d ഗാനം</item>
+        <item quantity="other">%1$d ഗാനങ്ങൾ</item>
+    </plurals>
+    <plurals name="dmusic_library_songs_duration_minutes">
+        <item quantity="one">%1$d മിനിറ്റ്</item>
+        <item quantity="other">%1$d മിനിറ്റുകൾ</item>
+    </plurals>
+    <plurals name="dmusic_library_udo_playlists_add_to_toast">
+        <item quantity="one">&quot;%2$s&quot; എന്നതിലേക്ക് %1$d ഗാനം ചേർത്തു</item>
+        <item quantity="other">&quot;%2$s&quot; എന്നതിലേക്ക് %1$d ഗാനങ്ങൾ ചേർത്തു</item>
+    </plurals>
+    <plurals name="dmusic_library_videos_count">
+        <item quantity="one">%1$d വീഡിയോ</item>
+        <item quantity="other">%1$d വീഡിയോകൾ</item>
+    </plurals>
+    <plurals name="dmusic_playlist_album_already_in_playlist">
+        <item quantity="one">ആൽബം ഗാനം ഇതിനകം തന്നെ പ്ലേലിസ്റ്റിൽ ഉണ്ട്</item>
+        <item quantity="other">ആൽബം ഗാനങ്ങൾ ഇതിനകം തന്നെ പ്ലേലിസ്റ്റിൽ ഉണ്ട്</item>
+    </plurals>
+    <plurals name="dmusic_playlist_artist_already_in_playlist">
+        <item quantity="one">ആര്‍ട്ടിസ്റ്റ് ഗാനം ഇതിനകം തന്നെ പ്ലേലിസ്റ്റിലുണ്ട്</item>
+        <item quantity="other">ആര്‍ട്ടിസ്റ്റ് ഗാനങ്ങൾ ഇതിനകം തന്നെ പ്ലേലിസ്റ്റിലുണ്ട്</item>
+    </plurals>
+    <plurals name="dmusic_playlist_genre_already_in_playlist">
+        <item quantity="one">വിഭാഗ ഗാനം ഇതിനകം തന്നെ പ്ലേലിസ്റ്റിലുണ്ട്</item>
+        <item quantity="other">വിഭാഗ ഗാനങ്ങൾ ഇതിനകം തന്നെ പ്ലേലിസ്റ്റിലുണ്ട്</item>
+    </plurals>
+    <plurals name="dmusic_playlist_playlist_already_in_playlist">
+        <item quantity="one">പ്ലേലിസ്റ്റ് ഗാനം ഇതിനകം തന്നെ പ്ലേലിസ്റ്റിൽ ഉണ്ട്</item>
+        <item quantity="other">പ്ലേലിസ്റ്റ് ഗാനങ്ങൾ ഇതിനകം തന്നെ പ്ലേലിസ്റ്റിൽ ഉണ്ട്</item>
+    </plurals>
+    <plurals name="dmusic_playlist_track_already_in_playlist">
+        <item quantity="one">ഗാനം ഇതിനകം തന്നെ പ്ലേലിസ്റ്റിലുണ്ട്</item>
+        <item quantity="other">ഗാനങ്ങൾ ഇതിനകം തന്നെ പ്ലേലിസ്റ്റിലുണ്ട്</item>
+    </plurals>
+    <plurals name="dmusic_sleep_timer_minutes">
+        <item quantity="one">%1$s മിനിറ്റ്</item>
+        <item quantity="other">%1$s മിനിറ്റുകൾ</item>
+    </plurals>
+    <plurals name="dmusic_track_count">
+        <item quantity="one">%1$d ഗാനം</item>
+        <item quantity="other">%1$d ഗാനങ്ങൾ</item>
+    </plurals>
+    <plurals name="dmusic_unable_to_add_songs_message">
+        <item quantity="one">ഒരു ഗാനം ചേർക്കാൻ കഴിഞ്ഞില്ല. വീണ്ടും ശ്രമിക്കുക.</item>
+        <item quantity="other">%d ഗാനങ്ങൾ ചേർക്കാനായില്ല. വീണ്ടും ശ്രമിക്കുക.</item>
+    </plurals>
+    <plurals name="find_library_albums_count">
+        <item quantity="one">%1$d ആൽബം</item>
+        <item quantity="other">%1$d ആൽബങ്ങൾ</item>
+    </plurals>
+    <plurals name="find_library_songs_count">
+        <item quantity="one">%1$d ഗാനം</item>
+        <item quantity="other">%1$d ഗാനങ്ങൾ</item>
+    </plurals>
+    <plurals name="playlist_duration_hours">
+        <item quantity="one">%1$d മണിക്കൂർ</item>
+        <item quantity="other">%1$d മണിക്കൂർ</item>
+    </plurals>
+    <plurals name="playlist_duration_minutes">
+        <item quantity="one">%1$d മിനിറ്റ്</item>
+        <item quantity="other">%1$d മിനിറ്റുകൾ</item>
+    </plurals>
+    <plurals name="playlist_song_count">
+        <item quantity="one">%1$d ഗാനം</item>
+        <item quantity="other">%1$d ഗാനങ്ങൾ</item>
+    </plurals>
+</resources>

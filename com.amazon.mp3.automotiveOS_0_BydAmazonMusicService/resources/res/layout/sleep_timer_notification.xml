@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:gravity="center"
+        android:background="@drawable/blue_circle"
+        android:layout_width="@dimen/sleep_timer_notification_icon_background_size"
+        android:layout_height="@dimen/sleep_timer_notification_icon_background_size"
+        android:layout_marginLeft="@dimen/sleep_timer_notification_icon_margin"
+        android:layout_marginRight="@dimen/sleep_timer_notification_icon_margin">
+        <ImageView
+            android:layout_gravity="center_vertical"
+            android:id="@+id/icon"
+            android:background="@drawable/notification_icon_alarm"
+            android:layout_width="@dimen/sleep_timer_notification_icon_size"
+            android:layout_height="@dimen/sleep_timer_notification_icon_size"/>
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@android:style/TextAppearance.StatusBar.EventContent"/>
+</LinearLayout>

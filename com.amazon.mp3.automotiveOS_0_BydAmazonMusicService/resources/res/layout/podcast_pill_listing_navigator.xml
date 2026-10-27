@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/podcast_pill_listing_navigator_view"
+    android:paddingTop="@dimen/podcast_spacer_large"
+    android:paddingBottom="@dimen/podcast_spacer_large"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingStart="@dimen/margin"
+    android:paddingEnd="@dimen/margin">
+    <com.amazon.podcast.views.EmberTextView
+        android:id="@+id/pill_listing_navigator_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/podcast_spacer_large"
+        android:layout_marginStart="@dimen/gutter"
+        android:layout_marginEnd="@dimen/gutter"
+        style="@style/PodcastAppTheme.TextView.Headline4"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/pill_listing_navigator_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/gutter"
+        android:layout_marginEnd="@dimen/gutter"/>
+</LinearLayout>

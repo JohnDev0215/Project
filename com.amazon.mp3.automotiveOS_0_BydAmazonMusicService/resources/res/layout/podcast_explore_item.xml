@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.amazon.podcast.views.EmberTextView
+        android:gravity="center"
+        android:id="@+id/podcast_explore_button"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/podcast_button_medium"
+        android:layout_marginTop="@dimen/podcast_spacer_epic"
+        android:layout_marginBottom="@dimen/podcast_spacer_epic"
+        android:text="@string/podcast_explore_more"
+        style="@style/PodcastAppTheme.TextView.ButtonMediumGlass"/>
+</LinearLayout>

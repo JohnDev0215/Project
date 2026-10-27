@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:background="@color/white_04"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/casting_tile_height">
+    <ImageView
+        android:id="@+id/volumeMuteIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/casting_volume_icon_top_bottom_margin"
+        android:layout_marginRight="@dimen/casting_volume_icon_left_right_margin"
+        android:layout_marginBottom="@dimen/casting_volume_icon_top_bottom_margin"
+        android:src="@drawable/ic_volume_min"/>
+    <SeekBar
+        android:id="@+id/volumeSeekBar"
+        android:layout_width="@dimen/casting_seekbar_width"
+        android:layout_height="wrap_content"
+        android:progressTint="@color/seekbar_color"
+        android:thumbTint="@color/seekbar_color"/>
+    <ImageView
+        android:id="@+id/volumeUpIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/casting_volume_icon_left_right_margin"
+        android:layout_marginTop="@dimen/casting_volume_icon_top_bottom_margin"
+        android:layout_marginBottom="@dimen/casting_volume_icon_top_bottom_margin"
+        android:src="@drawable/ic_volume_max"/>
+</LinearLayout>

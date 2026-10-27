@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:height="24dp"
+    android:width="24dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+    <group
+        android:translateX="12"
+        android:translateY="12">
+        <path
+            android:fillColor="#ffffff"
+            android:pathData="M0,0h24v24h-24z"
+            android:strokeColor="#00000000"
+            android:strokeWidth="1"
+            android:fillAlpha="0"
+            android:fillType="nonZero"/>
+        <path
+            android:fillColor="#ffffff"
+            android:pathData="M12.4,15.2C12.212,14.948 11.789,14.948 11.6,15.2C10.63,16.493 10.188,18.231 10.446,19.737C10.612,20.704 11.065,21.477 11.723,21.916C11.807,21.971 11.903,22 12,22C12.097,22 12.193,21.971 12.277,21.916C12.935,21.477 13.389,20.704 13.554,19.737C13.812,18.231 13.37,16.493 12.4,15.2"
+            android:strokeColor="#00000000"
+            android:strokeWidth="1"
+            android:strokeAlpha="0.5"
+            android:fillAlpha="0.5"
+            android:fillType="nonZero"/>
+        <path
+            android:fillColor="#ffffff"
+            android:pathData="M16.533,7.333C14.925,5.477 13.535,3.874 13.99,1.598C14.03,1.4 13.946,1.197 13.778,1.084C13.61,0.972 13.39,0.972 13.222,1.084C10.46,2.926 10.006,6.39 10.679,8.749C9.603,8.066 9,6.186 9,5.5C9,5.298 8.878,5.115 8.691,5.038C8.504,4.96 8.29,5.004 8.146,5.146C5.433,7.859 4,11.093 4,14.5C4,18.879 6.325,21.972 10.379,22.985C10.597,23.038 10.825,22.941 10.935,22.746C11.046,22.551 11.012,22.306 10.853,22.146C8.3,19.594 9.817,15.486 11.646,13.514C11.827,13.318 12.173,13.318 12.353,13.514C14.182,15.486 15.699,19.594 13.146,22.146C12.987,22.306 12.954,22.551 13.064,22.746C13.155,22.905 13.323,23 13.5,23C13.54,23 13.581,22.995 13.621,22.985C17.675,21.972 20,18.879 20,14.5C20,11.333 18.158,9.208 16.533,7.333"
+            android:strokeColor="#00000000"
+            android:strokeWidth="1"
+            android:fillType="nonZero"/>
+    </group>
+</vector>

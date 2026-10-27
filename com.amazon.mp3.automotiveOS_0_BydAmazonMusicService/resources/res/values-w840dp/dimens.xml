@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="podcast_card_bottom_margin">@dimen/podcast_spacer_giant</dimen>
+    <dimen name="podcast_card_left_margin">@dimen/podcast_spacer_giant</dimen>
+    <dimen name="podcast_card_outside_left_margin">@dimen/gutter</dimen>
+    <dimen name="podcast_card_outside_right_margin">@dimen/gutter</dimen>
+    <dimen name="podcast_card_right_margin">@dimen/podcast_spacer_giant</dimen>
+</resources>

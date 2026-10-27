@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:tag="now_playing_transcript_frag"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/transcript_badging"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/podcast_spacer_base"
+        android:layout_marginBottom="@dimen/podcast_spacer_base"
+        android:text="@string/auto_transcription"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        style="@style/PodcastAppTheme.TextView.TranscriptBadging"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/transcript_recyclerview"
+        android:fadingEdgeLength="150dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/transcript_badging"
+        android:requiresFadingEdge="vertical"/>
+</RelativeLayout>

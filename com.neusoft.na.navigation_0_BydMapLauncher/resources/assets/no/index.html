@@ -1,0 +1,1149 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+      <link rel="stylesheet" href="../css/index.css" />
+      <style>
+         table {
+            border-collapse: collapse;
+            border-spacing: 0;
+         }
+
+         #privacy ::-webkit-scrollbar {
+            width: 4px;
+            background-color: transparent !important;
+            display: none;
+         }
+
+         #privacy ::-webkit-scrollbar-thumb {
+            background-color: transparent;
+         }
+
+         #privacy .arabic {
+            font-size: 1rem;
+            direction: rtl;
+            text-align: initial;
+         }
+
+         #privacy .arabic .content-paragraph {
+            padding-right: unset !important;
+         }
+
+         #privacy .arabic .indent-level2 {
+            margin-right: 0.3rem;
+            margin-left: unset;
+         }
+
+         #privacy {
+            width: 100%;
+            height: 100%;
+            overflow-y: auto;
+            color: rgba(38, 45, 51, 0.65);
+            user-select: none;
+            pointer-events: all;
+            /* text-align: justify; */
+         }
+
+         #privacy .weight-bold {
+            font-weight: bold !important;
+         }
+
+         #privacy .indent-level1 {
+            margin-left: 0.3rem;
+            margin-right: unset;
+            color: rgba(38, 45, 51, 0.85);
+         }
+
+         #privacy .indent-level2 {
+            margin-left: 0.6rem;
+            /* margin-left: 0.8rem; */
+            margin-right: unset;
+         }
+
+         #privacy .indent-level3 {
+            margin-left: 0.9rem;
+            /* margin-left: 1.5rem; */
+            margin-right: unset;
+         }
+
+         #privacy .indent-level4 {
+            margin-left: 1.2rem;
+            margin-right: unset;
+         }
+
+         #privacy .tableContainer {
+            width: 100%;
+            overflow-x: auto;
+         }
+
+         #privacy .table {
+            table-layout: fixed;
+            width: max-content;
+            margin: 0.4rem auto;
+            border: 1px solid rgb(210, 216, 221);
+         }
+
+         #privacy .table tbody {
+            background-color: #fff;
+         }
+
+         #privacy .table tbody tr td,
+         #privacy th {
+            font-size: 0.28rem;
+            line-height: 0.36rem;
+            margin: 0;
+            font-weight: 400;
+            padding: 0.2rem 0.4rem;
+            text-align: left;
+         }
+
+         #privacy .table .thead .first-line-width {
+            width: 6.16rem;
+            text-align: initial;
+            word-wrap: break-word;
+         }
+
+         #privacy .table .thead {
+            color: #262d33;
+         }
+
+         #privacy .table .thead .mid-line-width {
+            width: 3.3rem;
+         }
+
+         #privacy .table .thead .last-line-width {
+            width: 3.61rem;
+         }
+
+         #privacy .table .thead th {
+            background: #eaf1f7;
+            font-size: 0.32rem;
+         }
+
+         #privacy .content-paragraph {
+            margin-top: 0.4rem;
+         }
+
+         #privacy .content-paragraph .time {
+            font-size: 0.32rem;
+            line-height: 0.4rem;
+            font-weight: 400;
+            margin: unset;
+         }
+
+         #privacy .content-paragraph .time:first-child {
+            margin-bottom: 0.2rem;
+         }
+
+         #privacy .content-paragraph:last-child {
+            margin-bottom: 0.4rem;
+         }
+
+         #privacy .content-paragraph .firstLevelTitle {
+            font-size: 0.36rem;
+            line-height: 0.44rem;
+            margin-bottom: 0.2rem;
+            margin-top: unset;
+            font-weight: 500;
+            color: rgba(38, 45, 51, 0.85);
+         }
+
+         #privacy .content-paragraph .secondaryTitle {
+            font-size: 0.32rem;
+            line-height: 0.4rem;
+            margin-bottom: 0.1rem;
+            margin-top: 0.2rem;
+            font-weight: 400;
+            color: #24313f;
+         }
+
+         #privacy .content-paragraph .paragraph {
+            font-size: 0.28rem;
+            line-height: 0.36rem;
+            font-weight: 400;
+         }
+
+         #privacy .content-paragraph .retraction {
+            text-indent: 2em;
+            margin-top: 0.1rem;
+         }
+
+         #privacy .paragraph-level1 {
+            color: rgba(38, 45, 51, 0.85);
+         }
+
+         .dark #privacy ::-webkit-scrollbar-thumb {
+            background-color: #dae1eb;
+            opacity: 0.4;
+         }
+
+         .dark #privacy {
+            color: rgba(218, 225, 235, 0.60);
+         }
+
+         .dark #privacy .indent-level1 {
+            color: #DAE1EB;
+         }
+
+         .dark #privacy .paragraph-level1 {
+            color: #DAE1EB;
+         }
+
+         .dark #privacy .firstLevelTitle {
+            color: rgba(218, 225, 235, 0.85);
+         }
+
+         .dark #privacy .table {
+            border: 1px solid rgb(48, 57, 70);
+         }
+
+         .dark #privacy .table .thead {
+            color: #dae1eb;
+         }
+
+         .dark #privacy .table tbody {
+            background-color: rgba(28, 36, 44, 0.7);
+         }
+
+         .dark #privacy .table .thead th {
+            background-color: rgba(0, 0, 0, 0.3);
+         }
+
+         /*denza dark*/
+
+         .dark.denza #privacy {
+            color: rgba(218, 225, 235, 0.85);
+         }
+
+         .dark.denza #privacy .indent-level1 {
+            color: #dae1eb;
+         }
+
+         .dark.denza #privacy .indent-level2 {
+            color: rgba(218, 225, 235, 0.7);
+         }
+
+         .dark.denza #privacy .indent-level3 {
+            color: rgba(218, 225, 235, 0.7);
+         }
+
+         .dark.denza #privacy .indent-level4 {
+            color: rgba(218, 225, 235, 0.7);
+         }
+
+         .dark.denza #privacy .paragraph-level1 {
+            color: #dae1eb;
+         }
+
+         .dark.denza #privacy .firstLevelTitle {
+            color: rgba(218, 225, 235, 0.85);
+         }
+
+         .dark.denza #privacy .table {
+            border: 1px solid #303946;
+         }
+
+         .dark.denza #privacy .table .thead {
+            color: #dae1eb;
+         }
+
+         .dark.denza #privacy .table tbody {
+            background-color: #1c242c;
+         }
+
+         .dark.denza #privacy .table .thead th {
+            background-color: rgba(0, 0, 0, 0.3);
+         }
+      </style>
+   </head>
+
+   <body>
+      <div id="privacyWarp">
+         <div class="content" id="privacy" style="font-size: 1rem">
+            <div class="content-paragraph">
+               <p class="time">Oppdatert den: 30. september 2024</p>
+               <p class="time">Gyldig fra: 30. september 2024</p>
+            </div>
+
+            <div class="content-paragraph">
+               <p class="paragraph">
+                  Neusoft Group Co., Ltd. er som operatør av Neusoft Navigation fullstendig klar over viktigheten av
+                  dine
+                  personopplysninger, og vi vil gjøre vårt ytterste for å beskytte sikkerheten og påliteligheten av
+                  disse
+                  opplysningene. Som lokalisert på nr. 2, Xinxiu Street, Hunnan New District, Shenyang City, refererer
+                  "vi"
+                  til Neusoft Group Co., Ltd.
+               </p>
+               <p class="paragraph">
+                  Vennligst les og forstå Neusoft Navigation Personvernpolicy (heretter referert til som
+                  "Personvernpolicy") før du bruker våre produkter eller tjenester. Vennligst bare bruk våre produktene
+                  (eller tjenester) med ditt samtykke til innholdet som avtalt i denne personvernerklæringen.
+               </p>
+               <p class="paragraph">
+                  Hvis du har spørsmål, kommentarer eller forslag, kan du kontakte oss via kontaktinformasjonen:
+               </p>
+               <p class="paragraph">Databehandlingsansvarlig: BYD Auto Industry Co, Ltd.</p>
+               <p class="paragraph">E-mail: -for [EU-land], vennligst kontakt [privacy.eu@byd.com]</p>
+               <p class="paragraph">-for [SEA-land], vennligst kontakt [auto.asia@byd.com];</p>
+               <p class="paragraph">-for [Australia og New Zealand], vennligst kontakt [info.au@byd.com];</p>
+               <p class="paragraph">-for [nord- og søramerikanske land], vennligst kontakt [bydautoservice@byd.com];</p>
+               <p class="paragraph">-for [land i Midtøsten og Afrika], vennligst kontakt [InfoMEA@byd.com];</p>
+               <p class="paragraph">Adresse: No. 3001, 3007, HengPing Road, Pingshan, Shenzhen, P.R. Kina</p>
+               <p class="paragraph">Databehandleren: Neusoft Group Co., Ltd.</p>
+               <p class="paragraph">E-mail: OneCoreGo.Care@neusoft.com</p>
+               <p class="paragraph">Adresse: No. 2 Xinxiu Rd, Hunnan District, Shenyang, Liaoning, Kina</p>
+               <p class="paragraph weight-bold">Denne policyen vil hjelpe deg å forstå følgende:</p>
+               <p class="paragraph weight-bold">1. Hvordan vi samler inn og bruker din personopplysninger</p>
+               <p class="paragraph weight-bold">
+                  2. Hvordan vi behandler, utveksler, overfører og utleverer personopplysninger ved å overlate dem til
+                  andre
+               </p>
+               <p class="paragraph weight-bold">3. Hvordan vi beskytter din personopplysninger</p>
+               <p class="paragraph weight-bold">4. Dine rettigheter</p>
+               <p class="paragraph weight-bold">5. Hvordan vi behandler barns personopplysninger</p>
+               <p class="paragraph weight-bold">6. Hvordan din personopplysninger lagres og overføres globalt</p>
+               <p class="paragraph weight-bold">7. Hvordan vi oppdaterer disse retningslinjene</p>
+               <p class="paragraph weight-bold">8. Hvordan kontakte oss</p>
+            </div>
+            <div class="content-paragraph">
+               <p class="weight-bold firstLevelTitle">1. Hvordan vi samler inn og bruker din personopplysninger</p>
+               <p class="paragraph indent-level1">
+                  1.1 Forretningsfunksjonen vi tilbyr, avhenger av noe informasjon for å kjøre. Hvis du velger å bruke
+                  denne grunnleggende navigasjonsfunksjonen, må du gi oss eller tillate oss å samle inn og bruke
+                  nødvendig
+                  informasjon, inkludert:
+               </p>
+               <p class="paragraph indent-level2">
+                  1.1.1 Når du bruker Neusoft Navigation for første gang, kan du bruke aktiveringsfunksjonen. Vi vil
+                  samle kryptert
+                  virtuell IVI-ID, din lokasjonsinformasjon, aktiveringstidspunkt, aktiveringsstatus, utløpstid,
+                  landskode og
+                  kartdata-versjon. Vi vil bruke posisjonsinformasjonen din til å vurdere om du befinner deg innenfor
+                  det forhåndslagrede
+                  kartdatadekningsområdet, slik at vi kan fullføre den første aktiveringen av Neusoft Navigation, som
+                  gir deg normal
+                  tilgang til Neusoft Navigation.
+               </p>
+               <p class="paragraph indent-level2">
+                  1.1.2 Når du bruker posisjoneringsfunksjonen, vil vi samle din lokasjonsinformasjon og kjøretøyets
+                  hastighetsinformasjon
+                  for å vise deg din nåværende lokasjon.
+               </p>
+               <p class="paragraph indent-level2">
+                  1.1.3 Når du bruker ruteplanleggingsfunksjonen eller navigasjonsfunksjonen, samler vi inn informasjon
+                  om
+                  stedet og destinasjonen din.
+               </p>
+               <p class="paragraph indent-level3">
+                  1.1.3.1 Når du bruker de ovennevnte funksjonene , trenger vi din autorisasjon for å aktiverelocation
+                  permission and disk access and read-write access permissions. posisjonstillatelse og tilgang til disk
+                  og
+                  lese- og skrivetillatelser. Du kan innstille de ovennevnte rettighetene gjennom systemautorisasjon for
+                  å
+                  hindre oss i å samle inn den ovennevnte informasjonen, men det kan hende at du ikke får tilgang til
+                  relevante tjenester eller funksjoner eller oppnår de tiltenkte effektene av disse tjenestene.
+               </p>
+               <p class="paragraph indent-level1">
+                  1.2 For å aktivere tilleggsfunksjoner kan du velge å gi oss eller tillate oss å samle inn følgende
+                  opplysninger.
+               </p>
+               <p class="paragraph indent-level2">
+                  1.2.1 Når du bruker trafikkfunksjonen, vil vi samle din lokasjonsinformasjon og trafikkinformasjon for
+                  å vise
+                  nærliggende trafikktetthet.
+               </p>
+               <p class="paragraph indent-level2">
+                  1.2.2 Når du bruker oppdateringsfunksjonen for kartdata på nett, vil vi samle kryptert virtuell IVI-ID
+                  og
+                  kartdata-versjon for å oppdatere til den nyeste versjonen for deg.
+               </p>
+               <p class="paragraph indent-level2">
+                  1.2.3 Når du benytter søkefunksjonen, samler vi inn posisjonsinformasjon og innholdet du søker etter,
+                  for
+                  å gi deg informasjon om steder i nærområdet som samsvarer med innholdet du søker etter.
+               </p>
+               <p class="paragraph indent-level2">
+                  1.2.4 Når du bruker Google søkefunksjonen, vil vi samle Google søkeresultater, din
+                  lokasjonsinformasjon, innholdet du søker
+                  etter, kryptert virtuell IVI-ID, OS-versjon, plattformversjon, app-versjon, merketype, merke,
+                  bilmodell-ID, skjerm-ID,
+                  IMEI, leverandør-ID, tidsstempel for å gi deg informasjon om nærliggende lokasjoner som matcher
+                  innholdet du søker
+                  etter.
+               </p>
+               <p class="paragraph indent-level2">
+                  1.2.5 Når du benytter den nye energifunksjonen, vil vi samle inn informasjon om kjøretøymodellen din
+                  (ren
+                  elektrisk, hybrid), informasjon om kjøretøyets batteri (total mengde, gjenværende batterikapasitet og
+                  prosentandel, kjørelengde for resterende batterikapasitet, opplysninger om lavt batterinivå) og
+                  informasjon om kjøretøyets drivstoff (lavt drivstoffinformasjon) for å vise deg den nåværende
+                  tilstanden
+                  til det nye energikjøretøyet.
+               </p>
+               <p class="paragraph indent-level1">1.3 Etter-salgsservicetjener</p>
+               <p class="paragraph indent-level2">
+                  Under din bruk av Neusoft Navigation, vil vi registrere driften av Neusoft Navigation i form av logger
+                  under din IVI-bane /sdcard/logs og sdcard/navilog.
+               </p>
+               <p class="paragraph indent-level2">
+                  1.3.1 Når det oppstår et problem som krever analyse og undersøkelse, kan du kontakte den lokale
+                  forhandleren. Etter å ha fått din tillatelse vil forhandleren hente ut dine logger og sende dem til
+                  etter-salgs service serveren i Tyskland. Vi vil bruke loggene på etter-salgs service serveren til å
+                  analysere problemet.
+               </p>
+               <p class="paragraph indent-level2">
+                  Personlig informasjon som kan være involvert inkluderer: Kryptert virtuell IVI-ID,
+                  aktiveringstidspunkt,
+                  aktiveringsstatus, utløpstid, landskode, kartdata-versjonsnummer; din lokasjonsinformasjon,
+                  kjøretøyets
+                  hastighetsinformasjon, trafikkinformasjon; innholdet du søker etter, destinasjonsinformasjon,
+                  hjemadresseinformasjon du
+                  har satt, arbeidsadresseinformasjon du har satt, og adresseinformasjon du har lagret; din
+                  bilmodellinformasjon (ren
+                  elektrisk, hybrid), kjøretøyets brenselinformasjon (lav oljestatusinformasjon); kjøretøyets hastighet;
+                  kjøretøyets
+                  energiinformasjon; systeminnstillinger (lydmodus, språk, tid, tidsystem, skjermstatus, kjøremodus,
+                  enhet, tillatelser);
+                  Google søkeresultater, OS-versjon, plattformversjon, app-versjon, merketype, merke, bilmodell-ID,
+                  skjerm-ID, IMEI,
+                  leverandør-ID, tidsstempel;
+               </p>
+               <p class="paragraph indent-level1">1.4 Behandlingsgrunnlag for behandling av personopplysninger</p>
+
+               <p class="paragraph indent-level2">
+                  Vi vil håndtere personopplysninger dine i samsvar med gjeldende personvernlovgivning. Derfor vil vi
+                  behandler personopplysninger dine på følgende rettslige grunnlag:
+               </p>
+               <p class="paragraph indent-level2">
+                  1.4.1 For å gjennomføre kontrakten som du er part i, eller for å treffe tiltak i henhold til dine krav
+                  før vi signerer kontrakt;
+               </p>
+               <p class="paragraph indent-level2">1.4.2 For vår eller tredjeparters legitime fordel;</p>
+               <p class="paragraph indent-level2">1.4.3 For å oppfylle våre juridiske forpliktelser;</p>
+               <p class="paragraph indent-level2">1.4.4 Basert på ditt samtykke.</p>
+            </div>
+
+            <div class="content-paragraph">
+               <p class="firstLevelTitle weight-bold">
+                  2. Måten vi behandler, deler, overfører og offentliggjør personopplysninger dine på gjennom betrodd
+                  behandling
+               </p>
+               <p class="paragraph indent-level1">2.1 Overlatt behandling</p>
+               <p class="paragraph indent-level2">
+                  2.1.1 For å gi deg mer perfekte og bedre produkter og tjenester, leveres noen spesifikke moduler eller
+                  funksjoner i denne forretningsfunksjonen av eksterne leverandører. Vi kan for eksempel leie inn en
+                  tjenesteleverandør for å hjelpe oss med å tilby kundestøtte.
+               </p>
+               <p class="paragraph indent-level2">
+                  2.1.2 For selskaper, organisasjoner og enkeltpersoner som er betrodd av oss å behandle personlig
+                  informasjon, vil vi signere strenge konfidensialitetsavtaler med dem, og kreve at de behandler
+                  personlig
+                  informasjon i samsvar med våre krav, denne personvernreglene og andre relevante konfidensialitets- og
+                  sikkerhetstiltak.
+               </p>
+               <p class="paragraph indent-level1">2.2 Deling</p>
+               <p class="paragraph indent-level2">
+                  2.2.1 For å gi deg mer perfekte produkter og tjenester av høy kvalitet, vil noen av våre tjenester bli
+                  levert av våre partnere. Vi kan dele noen av dine personopplysninger med våre partnere for å gi bedre
+                  kundeservice og brukeropplevelse. Vi vil bare dele dine personopplysninger for juridiske, rettferdige,
+                  nødvendige, spesifikke og klare formål, og vil bare dele den personopplysninger som er nødvendig for
+                  levering av tjenesten. Vi vil strengt overvåke programvareutviklingssettet (SDK) og
+                  applikasjonsprogramgrensesnittet (API) til våre partnere for å beskytte datasikkerheten. Samtidig vil
+                  vi
+                  signere en streng konfidensialitetsavtale med våre partnere, og kreve at de behandler dine
+                  personopplysninger i strengt samsvar med våre instruksjoner, denne policyen og andre relevante
+                  konfidensialitets- og sikkerhetstiltak. Vi vil kreve at våre partnere ikke bruker den delte
+                  personopplysninger til noe annet formål.
+               </p>
+               <p class="paragraph indent-level2">
+                  Som leverandøren av navigasjonsapplikasjonen tilbyr vi for tiden navigasjonsstøtte for BYD
+                  IVI-systemet.
+               </p>
+               <p class="paragraph indent-level2">
+                  Våre samarbeidspartnere inkluderer HERE, en online datatjenesteleverandør, som gir oss online
+                  datastøtte.
+                  Når du benytter Neusoft Navigation på nett, vil vi dele relevant informasjon med HERE i følgende
+                  situasjoner.
+               </p>
+               <p class="paragraph indent-level3">
+                  2.2.1.1 Når du bruker trafikkfunksjonen, deler vi posisjonsinformasjonen din med HERE for å få
+                  trafikkinformasjon rundt deg.
+               </p>
+               <p class="paragraph indent-level3">
+                  2.2.1.2 Når du bruker søkefunksjonen, vil vi samle din lokasjonsinformasjon og innholdet du søker
+                  etter, for å gi deg
+                  informasjon om nærliggende lokasjoner som matcher innholdet du søker etter.
+               </p>
+               <p class="paragraph indent-level2">
+                  Våre partnere inkluderer BYD, som gir oss støtte til Google søketjeneste på nett. Når du bruker Google
+                  søkefunksjonen,
+                  vil vi dele relevant informasjon med BYD i følgende scenarier.
+               </p>
+               <p class="paragraph indent-level3">
+                  2.2.1.3 Når du bruker Google søkefunksjonen, vil vi dele Google søkeresultater, din
+                  lokasjonsinformasjon, innholdet du
+                  søker etter, OS-versjon, plattformversjon, app-versjon, merketype, merke, bilmodell-ID, skjerm-ID,
+                  IMEI, leverandør-ID,
+                  tidsstempel med BYD, for å gi deg informasjon om nærliggende lokasjoner som matcher innholdet du søker
+                  etter.
+               </p>
+               <p class="paragraph indent-level3">
+                  2.2.1.4 Når systemet er koblet til internett, skal alle søkefunksjoner, inkludert å legge inn søkeord,
+                  motta ordforslag,
+                  og få resultatforslag, tilbys brukeren av Google. Når systemet er koblet til internett, skal alle
+                  søkefunksjoner,
+                  inkludert å legge inn søkeord, motta ordforslag, og få resultatforslag, tilbys brukeren av Google.
+                  Alle data samlet i
+                  denne modusen håndteres i samsvar med (i) Googles personvernregler og kunden samtykker til de
+                  gjeldende Google Maps
+                  kontrollør-kontrollør databeskyttelsesvilkårene tilgjengelig på
+                  https://business.safety.google/gdprcontrollerterms/ som
+                  kan oppdateres av Google fra tid til annen, og med (ii) Google Maps/Google Earth Tilleggsbetingelser
+                  tilgjengelig på
+                  https://maps.google.com/help/terms_maps.html.
+               </p>
+               <p class="paragraph indent-level3">
+                  2.2.1.5 Deling av data med Google: Dataene som samles inn under denne modulen, deles med Google for å
+                  legge til rette
+                  for søkefunksjonaliteten. Google håndterer disse dataene i henhold til sin personvernspolicy,
+                  tilgjengelig på
+                  https://www.google.com/policies/privacy/..
+               </p>
+               <p class="paragraph indent-level3">
+                  2.2.1.6 Oppbevaringsperiode: Data oppbevares kun så lenge det er nødvendig for å tilby
+                  søkefunksjonalitet og forbedre
+                  tjenester. Spesifikke oppbevaringsperioder inkluderer:
+               </p>
+               <p class="paragraph indent-level3">
+                  2.2.1.7 Bufrede data som søkeresultater kan lagres lokalt på enheten din i maksimalt 30 dager for å
+                  forbedre
+                  brukeropplevelsen under tjenesteavbrudd.
+               </p>
+               <p class="paragraph indent-level3">
+                  2.2.1.8 IP-adresser og søkeord oppbevares i henhold til Googles datapolitikker.
+               </p>
+               <p class="paragraph indent-level1">2.3 Overføring</p>
+               <p class="paragraph indent-level2">
+                  I forbindelse med fusjon, oppkjøp eller konkursbehandling vil vi oppfylle alle gjeldende juridiske
+                  krav
+                  når det gjelder overføring av personopplysninger. Vi vil pålegge det nye selskapet eller den nye
+                  organisasjonen som har personopplysninger dine, å fortsette å være bundet av personvernerklæringen,
+                  hvis
+                  ikke vil vi kreve at selskapet eller organisasjonen ber deg om autorisasjon og samtykke på nytt.
+               </p>
+               <p class="paragraph indent-level1">2.4 Offentlighet</p>
+               <p class="paragraph indent-level2">
+                  Vi vil bare avsløre din personopplysninger under følgende omstendigheter:
+               </p>
+               <p class="paragraph indent-level2">2.4.1 Med ditt uttrykkelige samtykke;</p>
+               <p class="paragraph indent-level2">
+                  2.4.2 Utlevering basert på lov: Vi kan offentliggjøre din personopplysninger i henhold til de
+                  obligatoriske kravene i lover, juridiske prosedyrer, søksmål eller offentlige myndigheter.
+               </p>
+            </div>
+            <div class="content-paragraph">
+               <p class="firstLevelTitle weight-bold">3. Hvordan vi beskytter din personopplysninger</p>
+               <p class="paragraph indent-level1">
+                  3.1 Vi har benyttet sikkerhetstiltak som er i overensstemmelse med bransjestandarder for å beskytte
+                  personopplysninger du oppgir mot uautorisert tilgang, offentliggjøring, bruk, endring, ødeleggelse
+                  eller
+                  tap.
+               </p>
+               <p class="paragraph indent-level1">
+                  3.2 Vi har etablert et avansert datasikkerhetsstyringssystem med data som kjerne og fokuserer på
+                  datalivssyklusen i bransjen for å forbedre sikkerheten til personlig informasjon fra dimensjonene av
+                  organisasjonskonstruksjon, systemdesign, personalstyring og produktteknologi. Gjennom opplæringskurs
+                  og
+                  eksamener øker vi kontinuerlig ansattes bevissthet om viktigheten av å beskytte personopplysninger.
+               </p>
+               <p class="paragraph indent-level1 weight-bold">
+                  3.3 Internettmiljøet er ikke 100 % sikkert, så vi vil gjøre vårt beste for å garantere sikkerheten til
+                  all informasjon du oversender til oss. Hvis våre fysiske, tekniske eller ledelsesmessige
+                  beskyttelsesfasiliteter blir ødelagt, noe som fører til skade på dine legitime rettigheter og
+                  interesserer, vil vi igangsette beredskapsplanen i tide og treffe rimelige og nødvendige tiltak for å
+                  minimere innvirkningen på deg.
+               </p>
+               <p class="paragraph indent-level1">
+                  3.4 I tilfelle en uheldig sikkerhetshendelse vil vi omgående underrette deg om den grunnleggende
+                  informasjonen og mulige virkninger av hendelsen, tiltakene vi har truffet eller vil treffe, forslagene
+                  til forebygging og reduksjon av risiko, avhjelpende tiltak for deg osv. i overensstemmelse med lover
+                  og
+                  forskrifter. Vi vil underrette deg om den relaterte informasjonen via post, korrespondanse, telefon,
+                  push-varsel osv. Når det er vanskelig å varsle om personopplysninger en etter en, vil vi gi ut
+                  kunngjøringer gjennom rimelige og effektive metoder. I mellomtiden vil vi rapportere avhendingen av
+                  slike
+                  sikkerhetshendelser i henhold til reguleringsmyndighetenes krav.
+               </p>
+               <p class="paragraph indent-level1">3.5 Spesiell kunngjøring:</p>
+               <p class="paragraph indent-level2">
+                  3.5.1 Når du oppgir din geografiske plassering eller oppholdssted gjennom tredjeparts programvare, må
+                  du
+                  beskytte dine personlige opplysninger.
+               </p>
+               <p class="paragraph indent-level2">
+                  3.5.2 Vær oppmerksom på at ulike ondsinnede eller ikke-ondsinnede angrep kan eksistere eller oppstå på
+                  grunn av den raske utviklingen av data- og Internett-teknologi og begrensningen av
+                  synkroniseringshastigheten. Vi gjør alt vi kan for å forbedre sikkerhetstiltakene, men det er ikke
+                  alltid
+                  mulig å sikre at informasjonen er 100 % sikker.
+               </p>
+               <p class="paragraph indent-level2">
+                  3.5.3 Neusoft Navigation kan ikke kontrollere systemet og kommunikasjonsnettverket du bruker for våre
+                  produkter eller tjenester, eller maskinvareenheter. Vennligst forstå og beskytt din
+                  personopplysninger.
+               </p>
+               <p class="paragraph indent-level2">
+                  3.5.4 Din personlige informasjon, etter å ha blitt anonymisert, vil være dataene som kan brukes og
+                  sirkuleres. For lagring og behandling av slike data har Neusoft Navigation ikke behov for å informere
+                  deg
+                  eller innhente ditt samtykke.
+               </p>
+            </div>
+
+            <div class="content-paragraph">
+               <p class="firstLevelTitle weight-bold">4. Dine rettigheter</p>
+               <p class="paragraph indent-level1">
+                  Dette avsnittet omhandler dine rettigheter til personopplysninger vi innhenter i henhold til gjeldende
+                  personvernlovgivning (enhver lovgivning eller ethvert tilsynssystem som er etablert av en anerkjent
+                  regjering, myndigheter eller administrativ virksomhet for å beskytte personvernrettighetene til
+                  fysiske
+                  personer eller familier som består av fysiske personer). Hvis du har spørsmål eller ønsker å utøve
+                  relevante rettigheter, kan du kontakte oss via kontaktinformasjonen i disse retningslinjene. Hvis
+                  forespørselen din er åpenbart ubegrunnet eller overdreven, forbeholder vi oss retten til å kreve et
+                  rimelig gebyr (med tanke på de administrative kostnadene ved å gi informasjon eller korrespondanse
+                  eller
+                  ta den forespurte handlingen) eller å nekte å iverksette tiltak på forespørselen.
+               </p>
+               <p class="paragraph indent-level2 paragraph-level1">4.1 Tilgangsrettigheter</p>
+               <p class="paragraph indent-level3">
+                  Du har rett til adgang til personopplysninger dine med forbehold om at annet er fastsatt i lover og
+                  forskrifter. Hvis du ønsker å utøve retten til datatilgang, kan du selv få datatilgang ved hjelp av
+                  følgende tilgangsmetoder. For eksempel:
+               </p>
+               <p class="paragraph indent-level3">
+                  Du kan observere ikonposisjonen til kjøretøyet ditt for å se posisjonsinformasjonen din;
+               </p>
+               <p class="paragraph indent-level3">
+                  Du kan se den historiske informasjonen om destinasjonen du har nådd ved å klikke på Søkeboks;
+               </p>
+               <p class="paragraph indent-level3">
+                  Du kan se din hjemmeadresse/arbeidsplass/favoritter ved å klikke på søkeboksen-
+                  Hjem/Selskap/Favoritter;
+               </p>
+               <p class="paragraph indent-level3">Du kan se søkeloggen ved å klikke på Søkeboks - Pop-up tastatur.</p>
+               <p class="paragraph indent-level3">
+                  Hvis du likevel ikke får tilgang til personopplysninger dine på ovenstående måte, kan du henvende deg
+                  til
+                  oss via kontaktinformasjonen her. Vi vil svare på din tilgangsforespørsel innen fristen fastsatt ved
+                  lov.
+               </p>
+               <p class="paragraph indent-level2 paragraph-level1">4.2 Rettigheter til korrigering</p>
+               <p class="paragraph indent-level3">
+                  Hvis du finner feil i personopplysninger vi har registrert om deg, har du rett til å be oss om å
+                  gjennomføre rettelser.
+               </p>
+               <p class="paragraph indent-level3">
+                  Du kan korrigere hjemmeadressen/arbeidsplassen/favorittene dine ved å klikke på Søkeboks -
+                  Hjem/Selskap/Favoritter;
+               </p>
+               <p class="paragraph indent-level3">
+                  Hvis du likevel ikke er i stand til å beriktige personopplysninger dine på ovennevnte måte, kan du
+                  henvende deg til oss via kontaktinformasjonen her. Vi vil besvare din anmodning om korrigering innen
+                  den
+                  tidsfristen som er fastsatt i loven.
+               </p>
+               <p class="paragraph indent-level2 paragraph-level1">4.3 Retten til sletting</p>
+               <p class="paragraph indent-level3">
+                  Du kan kontakte oss via kontaktopplysningene her. Når vi mottatt forespørselen din, vil alle
+                  opplysninger
+                  bli slettet, med unntak av de som vi er rettslig forpliktet til å oppbevare.
+               </p>
+
+               <p class="paragraph indent-level3">
+                  Vi er forpliktet til å slette personopplysninger dine umiddelbart i følgende tilfeller:
+               </p>
+               <p class="paragraph indent-level3">
+                  Personopplysningene brukes ikke lengre til innsamling eller annen databehandling.
+               </p>
+               <p class="paragraph indent-level3">
+                  Du tilbakekaller samtykket ditt, og det finnes ikke noe annet rettslig grunnlag for behandlingen av
+                  opplysningene.
+               </p>
+               <p class="paragraph indent-level3">Du kommer med motforestillinger mot databehandlingen (se nedenfor).
+               </p>
+               <p class="paragraph indent-level3">Personopplysningene dine behandles ulovlig.</p>
+               <p class="paragraph indent-level2 paragraph-level1">4.4 Begrensning av rettigheter</p>
+               <p class="paragraph indent-level3">Du kan kontakte oss via kontaktopplysningene her</p>
+               <p class="paragraph indent-level3">
+                  Du har rett til å be om begrensninger i vår databehandling når ett av følgende vilkår er oppfylt:
+               </p>
+               <p class="paragraph indent-level3">Du betviler riktigheten av personopplysningene dine,</p>
+               <p class="paragraph indent-level3">
+                  Hvis opplysningene behandles ulovlig, godtar du ikke å slette personopplysningene, men ber i stedet om
+                  at
+                  bruken av dem begrenses,
+               </p>
+               <p class="paragraph indent-level3">
+                  Hvis personopplysningene ikke trengs for behandlingsformålene våre trenger du dem for å fastsette,
+                  gjøre
+                  gjeldende eller forsvare rettskrav;
+               </p>
+               <p class="paragraph indent-level3">
+                  du har innvendinger mot databehandlingen (se nedenfor) og det er uklart om våre berettigede grunner
+                  går
+                  foran.
+               </p>
+               <p class="paragraph indent-level2 paragraph-level1">4.5 Innsigelsesrettigheter</p>
+               <p class="paragraph indent-level3">
+                  Hvis du har motforestillinger mot behandlingen av personopplysningene dine, du kan kontakte oss via
+                  kontaktopplysningene her. En innsigelse vil bli tatt til følge med mindre den er basert på ett av
+                  følgende grunnlag:
+               </p>
+               <p class="paragraph indent-level3">
+                  Vi må behandle personopplysningene dine for å utføre oppgaver i allmennhetens interesse eller for å
+                  utøve
+                  offentlig myndighet som er delegert til oss;
+               </p>
+               <p class="paragraph indent-level3">
+                  Når dine grunnleggende interesser eller rettigheter er basert på beskyttelse av personopplysningene
+                  dine,
+                  er behandlingen nødvendig for å beskytte våre og tredjeparters berettigede interesser.
+               </p>
+               <p class="paragraph indent-level3">
+                  Innvendingsretten omfatter også analyser utført på grunnlag av disse fremgangsmåtene.
+               </p>
+               <p class="paragraph indent-level3">
+                  Hvis personopplysninger registreres for direktemarkedsføringsformål, har du rett til å protestere mot
+                  behandlingen av personopplysningene med henblikk på slik markedsføring. Retten gjelder også analyser
+                  knyttet til slik direkte markedsføring.
+               </p>
+               <p class="paragraph indent-level3">
+                  Du har også rett til, på grunnlag av din særlige personlige situasjon, å motsette deg at vi behandler
+                  personopplysningene dine for vitenskapelige eller historiske forskningsformål eller for statistiske
+                  formål, med mindre slik behandling er nødvendig for å utføre oppgaver i allmennhetens interesse.
+               </p>
+               <p class="paragraph indent-level2 paragraph-level1">4.6 Endringen av omfanget av autorisasjonen din</p>
+               <p class="paragraph indent-level3">
+                  Enkelte grunnleggende personopplysninger er nødvendige for utførelsen av hver navigasjonsfunksjon. For
+                  innhenting og bruk av personopplysninger som innhentes i tillegg, kan du når som helst tilby eller
+                  trekke
+                  tilbake autorisasjonen din.
+               </p>
+               <p class="paragraph indent-level3">Du kan utføre operasjoner på følgende måter:</p>
+               <p class="paragraph indent-level3">Klikk på "Innstillinger"-"Personvernerklæringen"-"Avbryt"</p>
+               <p class="paragraph indent-level3">
+                  Når ditt autoriserte samtykke er tilbaketrukket, vil vi ikke lenger behandle de tilsvarende
+                  personopplysninger. Din beslutningen om å trekke samtykket tilbake påvirker imidlertid ikke tidligere
+                  behandling av personopplysninger basert på din autorisasjon.
+               </p>
+               <p class="paragraph indent-level3">
+                  Du kan når som helst kansellere din tidligere registrerte brukerkonto, og du kan kontakte oss via
+                  kontaktinformasjonen i denne artikkelen.
+               </p>
+               <p class="paragraph indent-level3">
+                  Etter at tjenesten er kansellert, vil vi slutte å levere produkter eller tjenester til deg og slette
+                  personopplysninger dine som påkrevd, med mindre annet er foreskrevet i lover og forskrifter.
+               </p>
+               <p class="paragraph indent-level2 paragraph-level1">4.7 Portabilitet</p>
+               <p class="paragraph indent-level3">
+                  Du har rett til å få en kopi av personopplysninger dine. Du kan kontakte oss via kontaktopplysningene
+                  her.
+               </p>
+               <p class="paragraph indent-level3">
+                  Så lenge det er teknisk gjennomførbart, for eksempel gjensidig samsvarende datagrensesnitt, kan vi
+                  også
+                  overføre en kopi av personopplysninger direkte til en tredjepart utpekt av deg etter behov.
+               </p>
+               <p class="paragraph indent-level2 paragraph-level1">
+                  4.8 Begrensning på automatisk beslutningstaking i informasjonssystemer
+               </p>
+               <p class="paragraph indent-level3">
+                  I noen navigasjonsfunksjoner kan det forekomme at beslutninger bare tas på grunnlag av ikke-kunstige
+                  mekanismer for automatisk beslutningstaking, herunder informasjonssystemer og algoritmer. Hvis slike
+                  beslutninger påvirker dine legitime rettigheter og interesser i betydelig grad, har du rett til å be
+                  om
+                  forklaringer fra oss, og vi vil også gi deg passende rettsmidler.
+               </p>
+               <p class="paragraph indent-level2 paragraph-level1">4.9 Svare på forespørselen ovenfor</p>
+               <p class="paragraph indent-level3">
+                  Av sikkerhetshensyn kan det hende at du må sende inn en skriftlig forespørsel eller bevise identiteten
+                  din på andre måter. Vi kan verifisere identiteten din før vi svarer på forespørslene dine.
+               </p>
+               <p class="paragraph indent-level3">
+                  Vi vil besvare din henvendelse innen den fristen som er fastsatt ved lov.
+               </p>
+               <p class="paragraph indent-level3">
+                  For begrunnet begjæring vil vi i utgangspunktet ikke kreve noe gebyr, men for gjentatte begjæringer
+                  utover den rimelige grensen vil vi kreve en viss kostnad etter behov. Vi kan avslå forespørsler som
+                  forekommer uten berettiget begrunnelse, krever for mange tekniske tiltak (for eksempel at det er
+                  nødvendig å utvikle nye systemer eller fundamentalt endre eksisterende praksis), utgjør en risiko for
+                  andres rettmessige rettigheter og interesser eller er svært upraktiske (for eksempel involverer
+                  informasjon som er oppbevart på sikkerhetskopieringsbånd).
+               </p>
+            </div>
+
+            <div class="content-paragraph">
+               <p class="firstLevelTitle weight-bold">5. Hvordan vi behandler barns personopplysninger</p>
+               <p class="paragraph indent-level1">
+                  Våre produkter, nettsteder og tjenester er primært beregnet for voksne. Barn skal ikke opprette sine
+                  egne
+                  kontoer med personopplysninger uten samtykke fra foreldre eller foresatte.
+               </p>
+               <p class="paragraph indent-level1">
+                  For innsamling av barns personopplysninger med samtykke fra foreldre, vil vi bare bruke eller
+                  offentliggjøre denne informasjonen hvis loven tillater det, uttrykkelig avtalt av foreldre eller
+                  foresatte eller nødvendig for å beskytte barn.
+               </p>
+               <p class="paragraph indent-level1">
+                  Selv om lokale lover og skikker definerer barn forskjellig, behandler vi alle under 16 år som barn.
+               </p>
+               <p class="paragraph indent-level1">
+                  I tilfelle vi finner oss selv har noen personopplysninger samlet om barn uten forutgående samtykke fra
+                  foreldrene deres, vil vi forsøke å fjerne den så snart som mulig.
+               </p>
+            </div>
+            <div class="content-paragraph">
+               <p class="firstLevelTitle weight-bold">6. Hvordan din personopplysninger lagres og overføres globalt</p>
+               <p class="paragraph indent-level1">6.1 Lagringsperiode</p>
+               <p class="paragraph indent-level2">
+                  Med mindre annet er fastsatt i lover og forskrifter, vil Neusoft Navigation lagre dine
+                  personopplysninger
+                  i følgende periode:
+               </p>
+               <div class="tableContainer">
+                  <table border="1px" class="table">
+                     <colgroup class="thead">
+                        <col class="first-line-width" />
+                        <col class="mid-line-width" />
+                        <col class="mid-line-width" />
+                        <col class="last-line-width" />
+                     </colgroup>
+                     <thead>
+                        <tr class="thead">
+                           <th>Informasjon</th>
+                           <th>Tjenestetilstand</th>
+                           <th>Lagringssted</th>
+                           <th>Lagringsperiode</th>
+                        </tr>
+                     </thead>
+                     <tbody>
+                        <tr>
+                           <td>
+                              <p>Kryptert virtuell IVI-ID</p>
+                              <p>Aktiveringstidspunkt</p>
+                              <p>Aktiveringsstatus</p>
+                              <p>Utløpstid</p>
+                              <p>Landkode</p>
+                              <p>Kartdata versjon</p>
+                           </td>
+                           <td>Innsamling og lagring</td>
+                           <td>Sky</td>
+                           <td>3 år</td>
+                        </tr>
+                        <tr>
+                           <td rowspan="2">Din lokasjonsinformasjon</td>
+                           <td rowspan="2">Innsamling og lagring</td>
+                           <td>Sky</td>
+                           <td>Slettes etter bruk</td>
+                        </tr>
+                        <tr>
+                           <td>Terminal</td>
+                           <td>
+                              <p>Oppbevares i terminaler;</p>
+                              <p>Ikke aktuelt</p>
+                           </td>
+                        </tr>
+
+                        <tr>
+                           <td rowspan="2">Innhold du søker etter</td>
+                           <td rowspan="2">Innsamling og lagring</td>
+                           <td>Sky</td>
+                           <td>Slettes etter bruk</td>
+                        </tr>
+                        <tr>
+                           <td>Terminal</td>
+                           <td>
+                              <p>Oppbevares i terminaler;</p>
+                              <p>Ikke aktuelt</p>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td>Destinasjonsinformasjon</td>
+                           <td>Innsamling og lagring</td>
+                           <td>Terminal</td>
+                           <td>
+                              <p>Oppbevares i terminaler;</p>
+                              <p>Ikke aktuelt</p>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td>
+                              <p>Hjemmeadresseinformasjon du har satt</p>
+                              <p>Arbeidsadresseinformasjon du har satt</p>
+                              <p>Adresseinformasjon du har lagret</p>
+                           </td>
+                           <td>Innsamling og lagring</td>
+                           <td>Terminal</td>
+                           <td>
+                              <p>Oppbevares i terminaler;</p>
+                              <p>Ikke aktuelt</p>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td>
+                              <p>Kjøretøyets hastighetsinformasjon</p>
+                              <p>Trafikkinformasjon</p>
+                              <p>Kjøretøy-modellinformasjon (ren elektrisk, hybrid)</p>
+                              <p>Kjøretøydrivstoffinformasjon (lav drivstoffinformasjon)</p>
+                              <p>kjøretøyenergiinformasjon;</p>
+                              <p>Systeminnstillinger (Lysmodus,Språk,Tid,Tidsystem, Skjermstatus, Kjøremodus,
+                                 Enhet,Tillatelse);</p>
+                           </td>
+                           <td>Innsamling</td>
+                           <td>Ikke lagret</td>
+                           <td>
+                              <p>Innsamlede data oppbevares ikke;</p>
+                              <p>Ikke relevant,</p>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td rowspan="2">Google søkeresultater</td>
+                           <td rowspan="2">Innsamling og lagring</td>
+                           <td>Sky</td>
+                           <td>Slettes etter bruk</td>
+                        </tr>
+                        <tr>
+                           <td>Terminal</td>
+                           <td>30 dager</td>
+                        </tr>
+                        <tr>
+                           <td>
+                              <p>OS-versjon, plattformversjon, app-versjon, merketype, merke, bilmodell-ID, skjerm-ID,
+                                 IMEI, leverandør-ID, tidsstempel;</p>
+                           </td>
+                           <td>Innsamling</td>
+                           <td>Ikke lagret</td>
+                           <td>
+                              <p>Data samlet ikke lagret;</p>
+                              <p>Ikke aktuelt,</p>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+               <p class="paragraph indent-level2">
+                  Hvis det er involvert etter-salgstjenester og du trenger at Neusoft Navigation undersøker problemet,
+                  kan
+                  du overføre loggene til etter-salgstjeneste serveren, og informasjonen i loggene bør inkludere
+                  følgende
+                  informasjon:
+               </p>
+               <div class="tableContainer">
+                  <table border="1px" class="table">
+                     <colgroup class="thead">
+                        <col class="first-line-width" />
+                        <col class="mid-line-width" />
+                        <col class="mid-line-width" />
+                        <col class="last-line-width" />
+                     </colgroup>
+                     <thead>
+                        <tr class="thead">
+                           <th>Informasjon</th>
+                           <th>Tjenestetilstand</th>
+                           <th>Lagringssted</th>
+                           <th>Lagringsperiode</th>
+                        </tr>
+                     </thead>
+                     <tbody>
+                        <tr>
+                           <td>
+                              <p>Kryptert virtuell IVI-ID</p>
+                              <p>Aktiveringstidspunkt</p>
+                              <p>Aktiveringsstatus</p>
+                              <p>Utløpstid</p>
+                              <p>Landkode</p>
+                              <p>Kartdata versjon</p>
+                              <p>Din lokasjonsinformasjon</p>
+
+                              <p>Kjøretøyets hastighetsinformasjon</p>
+                              <p>Trafikkinformasjon</p>
+                              <p>Innhold du søker etter</p>
+                              <p>Destinasjonsinformasjon</p>
+                              <p>Hjemmeadresseinformasjon du har satt</p>
+                              <p>Arbeidsadresseinformasjon du har satt</p>
+                              <p>Adresseinformasjon du har lagret</p>
+
+                              <p>Kjøretøy-modellinformasjon (ren elektrisk, hybrid)</p>
+                              <p>Kjøretøydrivstoffinformasjon (lav drivstoffinformasjon)</p>
+                              <p>kjøretøyhastighet;</p>
+                              <p>kjøretøyenergiinformasjon</p>
+                              <p>
+                                 Systeminnstillinger (Lysmodus, Språk, Tid, Tidsystem, Skjermstatus,
+                                 Kjøremodus,Enhet,Tillatelse)
+                              </p>
+                              <p>Google søkeresultater;</p>
+                              <p>OS-versjon, plattformversjon, app-versjon, merketype, merke, bilmodell-ID, skjerm-ID,
+                                 IMEI, leverandør-ID, tidsstempel;</p>
+                           </td>
+                           <td>Innsamling og lagring</td>
+                           <td>Sky</td>
+                           <td>30 dager</td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+               <p class="paragraph indent-level2">
+                  Vi fastsetter oppbevaringsperioden for personopplysninger avhengig av deres art og bruksområde. Vi vil
+                  beholde aktivitetsregistreringsinformasjonen i en kort periode og avidentifisere dataene for videre
+                  autorisasjon. Vi kan oppbevare personopplysningene dine for andre lovbestemte formål, for eksempel for
+                  å
+                  forsvare eventuelle rettslige krav. Vi kan beholde dine personopplysninger avhengig av din bruk av
+                  produkter eller tjenester.
+               </p>
+               <p class="paragraph indent-level1">6.2 Lagringsområde</p>
+               <p class="paragraph indent-level2">
+                  6.2.1 Når du bruker navigasjonsapplikasjonen, er følgende lagringsområder tilgjengelige på den online
+                  serveren;
+               </p>
+               <p class="paragraph indent-level3">
+                  6.2.1.1 Hvis posisjonen din er i følgende land, blir dine personlige opplysninger lagret i Tyskland.
+               </p>
+               <p class="paragraph indent-level4">
+                  Norge, Danmark, Nederland, Portugal, Belgia, Sverige, Sveits, Østerrike, Italia, Spania, Finland,
+                  Irland,
+                  Hellas, Tyskland, Frankrike, Storbritannia, Bulgaria, Kroatia, Tsjekkia, Estland, Ungarn, Latvia,
+                  Litauen, Luxembourg, Malta, Polen, Romania, Slovakia, Slovenia, Island, Liechtenstein, Albania, Monaco
+                  Vatikanet, Tyrkia, Montenegro, Serbia, Kypros
+               </p>
+               <p class="paragraph indent-level3">
+                  6.2.1.2 Hvis posisjonen din er i følgende land, blir dine personlige opplysninger lagret i Tyskland.
+               </p>
+               <p class="paragraph indent-level4">UAE, Oman, Bahrain, Qatar, Kuwait, Saudi-Arabia, Jordan, Libanon,</p>
+               <p class="paragraph indent-level4">Egypt, Marokko, Tunisia, Kapp Verde</p>
+               <p class="paragraph indent-level4">
+                  Republikken Sør-Afrika, Botswana, Réunion, Zimbabwe, Zambia, Mauritius, Madagaskar, Angola
+               </p>
+               <p class="paragraph indent-level3">
+                  6.2.1.3 Hvis du befinner deg i følgende land, lagres personopplysninger dine i USA.
+               </p>
+               <p class="paragraph indent-level4">USA, Canada</p>
+               <p class="paragraph indent-level3">
+                  6.2.1.4 Hvis posisjonen din er i følgende land, blir dine personlige opplysninger lagret i Australia:
+               </p>
+               <p class="paragraph indent-level4">Australia, New Zealand</p>
+               <p class="paragraph indent-level3">
+                  6.2.1.5 Hvis posisjonen din er i følgende land, blir dine personlige opplysninger lagret i Singapore:
+               </p>
+               <p class="paragraph indent-level4">
+                  Singapore, Thailand, Indonesia, Malaysia, Vietnam, Filippinene, Nepal, Pakistan
+               </p>
+               <p class="paragraph indent-level3">
+                  6.2.1.6 Hvis posisjonen din er i følgende land, blir dine personlige opplysninger lagret i Brasil:
+               </p>
+               <p class="paragraph indent-level4">Colombia, Ecuador, Peru, Bolivia, Brasil, Paraguay, Uruguay, Chile</p>
+               <p class="paragraph indent-level2">
+                  6.2.2 Når du trenger at vi undersøker et problem relatert til vår etter-salg-service
+               </p>
+               <p class="paragraph indent-level3">
+                  server, er følgende områder hvor dataene er lagret på etter-salg-service serveren.
+               </p>
+               <p class="paragraph indent-level3">
+                  Når det oppstår et problem som krever analyse og undersøkelse, kan du kontakte den lokale
+                  forhandleren.
+                  Etter å ha fått din tillatelse vil forhandleren hente ut dine logger og sende dem til etter-salgs
+                  service
+                  serveren i Tyskland. Vi vil bruke loggene på etter-salgs service serveren til å analysere problemet.
+               </p>
+               <p class="paragraph indent-level3">
+                  Hvis posisjonen din er i følgende land, blir dine personlige opplysninger lagret i Tyskland:
+               </p>
+               <p class="paragraph indent-level3">
+                  Norge, Danmark, Nederland, Portugal, Belgia, Sverige, Sveits, Østerrike, Italia, Spania, Finland,
+                  Irland,
+                  Hellas, Tyskland, Frankrike, Storbritannia, Bulgaria, Kroatia, Tsjekkia, Estland, Ungarn, Latvia,
+                  Litauen, Luxembourg, Malta, Polen, Romania, Slovakia, Slovenia, Island, Liechtenstein, Albania,
+                  Monaco,
+                  Vatikanet, Tyrkia, Montenegro, Serbia, Kypros, UAE, Oman, Bahrain, Qatar, Kuwait, Saudi-Arabia,
+                  Jordan,
+                  Libanon, Egypt, Marokko, Tunisia, Kapp Verde, Sør-Afrika, Botswana, Reunion, Zimbabwe, Zambia,
+                  Mauritius,
+                  Madagaskar, Angola, USA, Canada, Australia, New Zealand, Singapore, Thailand, Indonesia, Malaysia,
+                  Vietnam, Filippinene, Nepal, Pakistan, Colombia, Ecuador, Peru, Bolivia, Brasil, Paraguay, Uruguay,
+                  Chile
+               </p>
+               <p class="paragraph indent-level3">
+                  Hvis grenseoverskridende overføring er nødvendig når du bruker den elektroniske navigasjonstjenesten,
+                  håper vi å informere deg og få din autorisasjon og samtykke gjennom denne avtalen.
+               </p>
+            </div>
+            <div class="content-paragraph">
+               <p class="firstLevelTitle weight-bold">7. Hvordan oppdatere denne personvernerklæringen</p>
+               <p class="paragraph indent-level1">Våre personvernerklæringen kan endres.</p>
+               <p class="paragraph indent-level1">
+                  Vi vil ikke kompromittere rettighetene dine i henhold til dette uten ditt uttrykkelige samtykke. Vi
+                  vil
+                  legge ut eventuelle endringer i denne policyen på denne siden.
+               </p>
+               <p class="paragraph indent-level1">
+                  For større endringer vil vi også gi mer fremtredende varsler (for visse tjenester vil vi sende varsler
+                  via e-post, og spesifisere de spesifikke endringene i denne personvernerklæringen).
+               </p>
+               <p class="paragraph indent-level1">
+                  Store endringer i disse retningslinjene inkluderer, men er ikke begrenset til:
+               </p>
+               <p class="paragraph indent-level2">
+                  1. Vesentlige forandringer i vår tjenestemodus, f.eks. hensikten med behandlingen av
+                  personopplysninger,
+                  typen personopplysninger som behandles, og måten personopplysninger brukes på;
+               </p>
+               <p class="paragraph indent-level2">
+                  2. Vesentlige endringer i vår eierstruktur og organisasjonsstruktur osv., for eksempel endringer i
+                  eiere
+                  forårsaket av forretningsjustering, konkurs, fusjoner og oppkjøp;
+               </p>
+               <p class="paragraph indent-level2">
+                  3. Forandringer i hovedobjekter som personopplysninger deles med, overføres til eller offentliggjøres
+                  for;
+               </p>
+               <p class="paragraph indent-level2">
+                  4. Vesentlige forandringer i din rett til å delta i behandlingen av personopplysninger samt måten du
+                  utøver denne retten på;
+               </p>
+               <p class="paragraph indent-level2">
+                  5. Endringer i avdelingen som er ansvarlige for personopplysningssikkerheten, dens kontaktinformasjon
+                  og
+                  klagekanalen, og
+               </p>
+               <p class="paragraph indent-level2">
+                  6. Konsekvensutredningsrapporten om personopplysningssikkerhet antyder en høy risiko.
+               </p>
+               <p class="paragraph indent-level2">
+                  Gamle versjoner av denne policyen vil også bli arkivert for din referanse.
+               </p>
+            </div>
+            <div class="content-paragraph">
+               <p class="firstLevelTitle weight-bold">8. Hvordan kontakte oss</p>
+               <p class="paragraph indent-level1">
+                  Hvis du har spørsmål, bemerkninger eller anbefalinger om personvernerklæringen, kan du kontakter oss
+                  på
+                  en av følgende måter:
+               </p>
+               <p class="paragraph indent-level1">E-mail: OneCoreGo.Care@neusoft.com</p>
+               <p class="paragraph indent-level1">Generelt sett vil vi svare deg innen 5 dager.</p>
+               <p class="paragraph indent-level1">
+                  Vi vil bekrefte identiteten din med "rimelig sikkerhet" eller "rimelig høy sikkerhet" basert på
+                  sensitiviteten til personopplysninger og risikoen for skade for deg fra uautorisert avsløring eller
+                  sletting (der det er aktuelt). Før vi behandler forespørselen din, kan vi be deg om å oppgi
+                  ytterligere
+                  personopplysninger for å bekrefte identiteten din.
+               </p>
+            </div>
+         </div>
+      </div>
+      <script src="../js/index.js"></script>
+   </body>
+</html>

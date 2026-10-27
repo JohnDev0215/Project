@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_gravity="center_horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true">
+        <ImageView
+            android:layout_width="@dimen/library_empty_image_width"
+            android:layout_height="@dimen/library_empty_image_width"
+            android:src="@drawable/empty_recs_placeholder"/>
+        <TextView
+            android:gravity="center"
+            android:paddingLeft="@dimen/empty_list_txt_padding"
+            android:paddingTop="@dimen/empty_state_text_spacing"
+            android:paddingRight="@dimen/empty_list_txt_padding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxWidth="@dimen/library_empty_bottom_txt_max_width"
+            android:text="@string/dmusic_recommended_playlist_detail_empty"
+            style="@style/LibraryEmptyHeaderText"/>
+    </LinearLayout>
+</RelativeLayout>

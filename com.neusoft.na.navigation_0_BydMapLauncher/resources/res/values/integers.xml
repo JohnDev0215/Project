@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="abc_config_activityDefaultDur">220</integer>
+    <integer name="abc_config_activityShortDur">150</integer>
+    <integer name="cancel_button_image_alpha">127</integer>
+    <integer name="config_tooltipAnimTime">150</integer>
+    <integer name="const_logger_port_default">4711</integer>
+    <integer name="const_logger_ws_port_4717">4717</integer>
+    <integer name="const_logger_ws_port_default">4712</integer>
+    <integer name="const_logsink_file_maxFileLen_defaut">512</integer>
+    <integer name="const_logsink_tcpip_port_default">3490</integer>
+    <integer name="google_play_services_version">12451000</integer>
+    <integer name="status_bar_notification_info_maxnum">999</integer>
+</resources>

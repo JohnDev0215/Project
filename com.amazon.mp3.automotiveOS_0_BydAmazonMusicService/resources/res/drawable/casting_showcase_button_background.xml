@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+    <solid android:color="@color/vivace_blue"/>
+    <corners android:radius="@dimen/casting_showcase_button_corner"/>
+    <padding
+        android:left="@dimen/casting_showcase_button_padding_left"
+        android:top="@dimen/casting_showcase_button_padding_top"
+        android:right="@dimen/casting_showcase_button_padding_right"
+        android:bottom="@dimen/casting_showcase_button_padding_bottom"/>
+</shape>

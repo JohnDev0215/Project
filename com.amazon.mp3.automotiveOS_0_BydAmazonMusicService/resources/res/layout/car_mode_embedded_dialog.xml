@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/car_mode_embedded_dialog_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/car_mode_embedded_dialog_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/bauhaus_spacer_base"
+        android:layout_marginBottom="@dimen/bauhaus_spacer_base"
+        android:layout_marginVertical="@dimen/bauhaus_spacer_base"/>
+    <com.amazon.ui.foundations.views.BaseButton
+        android:id="@+id/car_mode_embedded_dialog_positive_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/find_alexa_floating_action_button"
+    android:layout_width="@dimen/find_alexa_floating_action_btn_width"
+    android:layout_height="@dimen/find_alexa_floating_action_btn_height">
+    <com.amazon.ui.foundations.views.BaseButton
+        android:id="@+id/find_alexa_fab_button"
+        android:background="@drawable/ripple_background_no_mask"
+        android:visibility="visible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/spacer_large"
+        android:src="@drawable/ic_alexa_bauhaus"
+        android:layout_marginEnd="@dimen/spacer_large"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/ic_action_share_toolbar_sized"
+        android:height="20dp"
+        android:width="20dp"
+        android:drawable="@drawable/ic_action_share"/>
+</layer-list>

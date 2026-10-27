@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/swipeable_pages_clickable_text_container"
+    style="@style/SwipeablePages.TextContainer">
+    <TextView
+        android:id="@+id/swipeable_pages_partitioned_clickable_text"
+        style="@style/SwipeablePages.Text.SecondaryText"/>
+    <LinearLayout
+        android:id="@+id/swipeable_pages_clickable_text_link_container"
+        android:layout_below="@+id/swipeable_pages_partitioned_clickable_text"
+        style="@style/SwipeablePages.LinearLayout.ClickableTextLink">
+        <TextView
+            android:id="@+id/swipeable_pages_clickable_text"
+            style="@style/SwipeablePages.Text.SecondaryText"/>
+        <ImageButton
+            android:id="@+id/swipeable_pages_clickable_text_link"
+            style="@style/Link"/>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,514 @@
+{
+  "ARTIST_RELEASE_AMU_SONG": {
+    "bn_IN": {
+      "text": "{ARTIST_NAME} এর নতুন গান {ALBUM_OR_SONG_NAME} এখন Amazon Music Unlimited পাওয়া যাচ্ছে।",
+      "title": "নতুন রিলিজ"
+    },
+    "de_DE": {
+      "text": "Ein neuer Song von {ARTIST_NAME} ist jetzt verfügbar auf Amazon Music Unlimited. Er heißt: {ALBUM_OR_SONG_NAME}",
+      "title": "Neuerscheinung"
+    },
+    "en_AU": {
+      "text": "The new song {ALBUM_OR_SONG_NAME} by {ARTIST_NAME} is available now in Amazon Music Unlimited.",
+      "title": "New Release"
+    },
+    "en_CA": {
+      "text": "The new song {ALBUM_OR_SONG_NAME} by {ARTIST_NAME} is available now in Amazon Music Unlimited.",
+      "title": "New Release"
+    },
+    "en_US": {
+      "text": "The new song {ALBUM_OR_SONG_NAME} by {ARTIST_NAME} is available now in Amazon Music Unlimited.",
+      "title": "New Release"
+    },
+    "es_ES": {
+      "text": "La nueva canción {ALBUM_OR_SONG_NAME} de {ARTIST_NAME} ya está disponible en Amazon Music Unlimited.",
+      "title": "Nuevo lanzamiento"
+    },
+    "es_US": {
+      "text": "La nueva canción de {ARTIST_NAME} {ALBUM_OR_SONG_NAME} ya está disponible en Amazon Music Unlimited.",
+      "title": "Nuevo lanzamiento"
+    },
+    "es_MX": {
+      "text": "La nueva canción de {ARTIST_NAME} {ALBUM_OR_SONG_NAME} ya está disponible en Amazon Music Unlimited.",
+      "title": "Nuevo lanzamiento"
+    },
+    "en_ES": {
+      "text": "El nuevo álbum {ALBUM_OR_SONG_NAME} de {ARTIST_NAME} ya está disponible.",
+      "title": "New Release"
+    },
+    "en_GB": {
+      "text": "The new song {ALBUM_OR_SONG_NAME} by {ARTIST_NAME} is available now on Amazon Music Unlimited.",
+      "title": "New Release"
+    },
+    "en_IN": {
+      "text": "The new song {ALBUM_OR_SONG_NAME} by {ARTIST_NAME} is available now in Amazon Music Unlimited.",
+      "title": "New Release"
+    },
+    "ja_JP": {
+      "text": "{ARTIST_NAME}の新曲、「{ALBUM_OR_SONG_NAME}」をAmazon Music Unlimitedで配信中。",
+      "title": "新曲を配信開始"
+    },
+    "fr_CA": {
+      "text": "Le nouveau titre {ALBUM_OR_SONG_NAME} de {ARTIST_NAME}  est dorénavant disponible sur Amazon Music Unlimited.",
+      "title": "Nouvelle sortie"
+    },
+    "fr_FR": {
+      "text": "Le nouveau titre {ALBUM_OR_SONG_NAME} de {ARTIST_NAME}  est dorénavant disponible sur Amazon Music Unlimited.",
+      "title": "Nouvelle sortie"
+    },
+    "pt_BR": {
+      "text": "A nova música {ALBUM_OR_SONG_NAME} de {ARTIST_NAME} está disponível agora no Amazon Music Unlimited.",
+      "title": "Novo lançamento"
+    },
+    "pt_PT": {
+      "text": "A nova música {ALBUM_OR_SONG_NAME} de {ARTIST_NAME} já está disponível no Amazon Music Unlimited.",
+      "title": "Novo lançamento"
+    },
+    "gu_IN": {
+      "text": "The new song {ALBUM_OR_SONG_NAME} by {ARTIST_NAME} is available now in Amazon Music Unlimited.",
+      "title": "New Release"
+    },
+    "hi_IN": {
+      "text": "The new song {ALBUM_OR_SONG_NAME} by {ARTIST_NAME} is available now in Amazon Music Unlimited.",
+      "title": "New Release"
+    },
+    "it_IT": {
+      "text": "{ALBUM_OR_SONG_NAME}, il nuovo brano di {ARTIST_NAME}, è ora disponibile su Amazon Music Unlimited.",
+      "title": "Nuova uscita"
+    },
+    "kn_IN": {
+      "text": "The new song {ALBUM_OR_SONG_NAME} by {ARTIST_NAME} is available now in Amazon Music Unlimited.",
+      "title": "New Release"
+    },
+    "ml_IN": {
+      "text": "The new song {ALBUM_OR_SONG_NAME} by {ARTIST_NAME} is available now in Amazon Music Unlimited.",
+      "title": "New Release"
+    },
+    "mr_IN": {
+      "text": "{ARTIST_NAME} {ALBUM_OR_SONG_NAME} हे नवीन गाणे आता Amazon Music अनलिमिटेडवर उपलब्ध आहे.",
+      "title": "नवीन प्रदर्शित"
+    },
+    "pa_IN": {
+      "text": "The new song {ALBUM_OR_SONG_NAME} by {ARTIST_NAME} is available now in Amazon Music Unlimited.",
+      "title": "New Release"
+    },
+    "ta_IN": {
+      "text": "The new song {ALBUM_OR_SONG_NAME} by {ARTIST_NAME} is available now in Amazon Music Unlimited.",
+      "title": "New Release"
+    },
+    "te_IN": {
+      "text": "The new song {ALBUM_OR_SONG_NAME} by {ARTIST_NAME} is available now in Amazon Music Unlimited.",
+      "title": "New Release"
+    }
+  },
+  "ARTIST_RELEASE_AMU_ALBUM": {
+    "bn_IN": {
+      "text": "{ARTIST_NAME} এর নতুন অ্যালবাম {ALBUM_OR_SONG_NAME} এখন Amazon Music Unlimited-এ পাওয়া যাচ্ছে।",
+      "title": "নতুন রিলিজ"
+    },
+    "de_DE": {
+      "text": "Ein neues Album  von {ARTIST_NAME} ist jetzt verfügbar auf Amazon Music Unlimited. Es heißt: {ALBUM_OR_SONG_NAME}",
+      "title": "Neuerscheinung"
+    },
+    "en_AU": {
+      "text": "The new album {ALBUM_OR_SONG_NAME} by {ARTIST_NAME} is available now in Amazon Music Unlimited.",
+      "title": "New Release"
+    },
+    "en_CA": {
+      "text": "The new album {ALBUM_OR_SONG_NAME} by {ARTIST_NAME} is available now in Amazon Music Unlimited.",
+      "title": "New Release"
+    },
+    "en_US": {
+      "text": "The new album {ALBUM_OR_SONG_NAME} by {ARTIST_NAME} is available now in Amazon Music Unlimited.",
+      "title": "New Release"
+    },
+    "es_ES": {
+      "text": "El nuevo álbum {ALBUM_OR_SONG_NAME} de {ARTIST_NAME} ya está disponible en Amazon Music Unlimited.",
+      "title": "Nuevo lanzamiento"
+    },
+    "es_US": {
+      "text": "El nuevo álbum de {ARTIST_NAME} {ALBUM_OR_SONG_NAME} ya está disponible en Amazon Music Unlimited.",
+      "title": "Nuevo lanzamiento"
+    },
+    "es_MX": {
+      "text": "El nuevo álbum de {ARTIST_NAME} {ALBUM_OR_SONG_NAME} ya está disponible en Amazon Music Unlimited.",
+      "title": "Nuevo lanzamiento"
+    },
+    "en_ES": {
+      "text": "El nuevo álbum {ALBUM_OR_SONG_NAME} de {ARTIST_NAME} ya está disponible en Amazon Music Unlimited.",
+      "title": "New Release"
+    },
+    "en_GB": {
+      "text": "The new album {ALBUM_OR_SONG_NAME} by {ARTIST_NAME} is available now on Amazon Music Unlimited.",
+      "title": "New Release"
+    },
+    "en_IN": {
+      "text": "The new album {ALBUM_OR_SONG_NAME} by {ARTIST_NAME} is available now in Amazon Music Unlimited.",
+      "title": "New Release"
+    },
+    "ja_JP": {
+      "text": "{ARTIST_NAME}の最新アルバム、「{ALBUM_OR_SONG_NAME}」をAmazon Music Unlimitedで配信中。",
+      "title": "新曲を配信開始"
+    },
+    "fr_CA": {
+      "text": "Le nouvel album {ALBUM_OR_SONG_NAME} de {ARTIST_NAME}  est dorénavant disponible sur Amazon Music Unlimited.",
+      "title": "Nouvelle sortie"
+    },
+    "fr_FR": {
+      "text": "Le nouvel album {ALBUM_OR_SONG_NAME} de {ARTIST_NAME}  est dorénavant disponible sur Amazon Music Unlimited.",
+      "title": "Nouvelle sortie"
+    },
+    "pt_BR": {
+      "text": "O novo álbum {ALBUM_OR_SONG_NAME} de {ARTIST_NAME} está disponível agora no Amazon Music Unlimited.",
+      "title": "Novo lançamento"
+    },
+    "gu_IN": {
+      "text": "The new album {ALBUM_OR_SONG_NAME} by {ARTIST_NAME} is available now in Amazon Music Unlimited.",
+      "title": "New Release"
+    },
+    "hi_IN": {
+      "text": "The new album {ALBUM_OR_SONG_NAME} by {ARTIST_NAME} is available now in Amazon Music Unlimited.",
+      "title": "New Release"
+    },
+    "it_IT": {
+      "text": "{ALBUM_OR_SONG_NAME}, il nuovo album di {ARTIST_NAME}, è ora disponibile su Amazon Music Unlimited.",
+      "title": "Nuova uscita"
+    },
+    "kn_IN": {
+      "text": "The new album {ALBUM_OR_SONG_NAME} by {ARTIST_NAME} is available now in Amazon Music Unlimited.",
+      "title": "New Release"
+    },
+    "ml_IN": {
+      "text": "The new album {ALBUM_OR_SONG_NAME} by {ARTIST_NAME} is available now in Amazon Music Unlimited.",
+      "title": "New Release"
+    },
+    "mr_IN": {
+      "text": "{ARTIST_NAME} {ALBUM_OR_SONG_NAME} हा नवा अल्बम आता Amazon Music Unlimited मध्ये उपलब्ध आहे.",
+      "title": "नवीन प्रदर्शित"
+    },
+    "pa_IN": {
+      "text": "The new album {ALBUM_OR_SONG_NAME} by {ARTIST_NAME} is available now in Amazon Music Unlimited.",
+      "title": "New Release"
+    },
+    "ta_IN": {
+      "text": "The new album {ALBUM_OR_SONG_NAME} by {ARTIST_NAME} is available now in Amazon Music Unlimited.",
+      "title": "New Release"
+    },
+    "te_IN": {
+      "text": "The new album {ALBUM_OR_SONG_NAME} by {ARTIST_NAME} is available now in Amazon Music Unlimited.",
+      "title": "New Release"
+    }
+  },
+  "ARTIST_RELEASE_SONG": {
+    "bn_IN": {
+      "text": "{ARTIST_NAME} এর নতুন গান {ALBUM_OR_SONG_NAME} এসেছে।",
+      "title": "নতুন রিলিজ"
+    },
+    "de_DE": {
+      "text": "Der neue Song von {ARTIST_NAME} ist da: {ALBUM_OR_SONG_NAME}",
+      "title": "Neuerscheinung"
+    },
+    "en_AU": {
+      "text": "The new song {ALBUM_OR_SONG_NAME} by {ARTIST_NAME} has arrived.",
+      "title": "New Release"
+    },
+    "en_CA": {
+      "text": "The new song {ALBUM_OR_SONG_NAME} by {ARTIST_NAME} has arrived.",
+      "title": "New Release"
+    },
+    "en_US": {
+      "text": "The new song {ALBUM_OR_SONG_NAME} by {ARTIST_NAME} has arrived.",
+      "title": "New Release"
+    },
+    "es_ES": {
+      "text": "La nueva canción {ALBUM_OR_SONG_NAME} de {ARTIST_NAME} ya está disponible.",
+      "title": "Nuevo lanzamiento"
+    },
+    "es_MX": {
+      "text": "La nueva canción de {ARTIST_NAME} {ALBUM_OR_SONG_NAME} ya está disponible.",
+      "title": "Nuevo lanzamiento"
+    },
+    "es_US": {
+      "text": "Escucha la nueva canción de {ARTIST_NAME} {ALBUM_OR_SONG_NAME}.",
+      "title": "Nuevo lanzamiento"
+    },
+    "en_ES": {
+      "text": "El nuevo álbum {ALBUM_OR_SONG_NAME} de {ARTIST_NAME} ya está disponible.",
+      "title": "New Release"
+    },
+    "en_GB": {
+      "text": "The new song {ALBUM_OR_SONG_NAME} by {ARTIST_NAME} has arrived.",
+      "title": "New Release"
+    },
+    "en_IN": {
+      "text": "The new song {ALBUM_OR_SONG_NAME} by {ARTIST_NAME} has arrived.",
+      "title": "New Release"
+    },
+    "ja_JP": {
+      "text": "{ARTIST_NAME}の新曲、「{ALBUM_OR_SONG_NAME}」を配信開始。",
+      "title": "新曲を配信開始"
+    },
+    "fr_CA": {
+      "text": "Le nouvel titre {ALBUM_OR_SONG_NAME} de {ARTIST_NAME}  est paru.",
+      "title": "Nouvelle sortie"
+    },
+    "fr_FR": {
+      "text": "Le nouveau titre {ALBUM_OR_SONG_NAME} de {ARTIST_NAME} est disponible.",
+      "title": "Nouvelle sortie"
+    },
+    "pt_BR": {
+      "text": "A nova música {ALBUM_OR_SONG_NAME} de {ARTIST_NAME} já está disponível.",
+      "title": "Novo lançamento"
+    },
+    "pt_PT": {
+      "text": "A nova música {ALBUM_OR_SONG_NAME} de {ARTIST_NAME} chegou.",
+      "title": "Novo lançamento"
+    },
+    "gu_IN": {
+      "text": "The new song {ALBUM_OR_SONG_NAME} by {ARTIST_NAME} has arrived.",
+      "title": "New Release"
+    },
+    "hi_IN": {
+      "text": "The new song {ALBUM_OR_SONG_NAME} by {ARTIST_NAME} has arrived.",
+      "title": "New Release"
+    },
+    "it_IT": {
+      "text": "{ALBUM_OR_SONG_NAME}, il nuovo brano di {ARTIST_NAME}, è disponibile ora",
+      "title": "Nuova uscita"
+    },
+    "kn_IN": {
+      "text": "The new song {ALBUM_OR_SONG_NAME} by {ARTIST_NAME} has arrived.",
+      "title": "New Release"
+    },
+    "ml_IN": {
+      "text": "The new song {ALBUM_OR_SONG_NAME} by {ARTIST_NAME} has arrived.",
+      "title": "New Release"
+    },
+    "mr_IN": {
+      "text": "{ARTIST_NAME}चे {ALBUM_OR_SONG_NAME} हे नवीन गाणं आलं आहे.",
+      "title": "नवीन प्रदर्शित"
+    },
+    "pa_IN": {
+      "text": "The new song {ALBUM_OR_SONG_NAME} by {ARTIST_NAME} has arrived.",
+      "title": "New Release"
+    },
+    "ta_IN": {
+      "text": "The new song {ALBUM_OR_SONG_NAME} by {ARTIST_NAME} has arrived.",
+      "title": "New Release"
+    },
+    "te_IN": {
+      "text": "The new song {ALBUM_OR_SONG_NAME} by {ARTIST_NAME} has arrived.",
+      "title": "New Release"
+    }
+  },
+  "ARTIST_RELEASE_ALBUM": {
+    "bn_IN": {
+      "text": "{ARTIST_NAME} এর নতুন অ্যালবাম {ALBUM_OR_SONG_NAME} এসেছে।",
+      "title": "নতুন রিলিজ"
+    },
+    "de_DE": {
+      "text": "Das neue Album von {ARTIST_NAME} ist da: {ALBUM_OR_SONG_NAME}",
+      "title": "Neuerscheinung"
+    },
+    "en_AU": {
+      "text": "The new album {ALBUM_OR_SONG_NAME} by {ARTIST_NAME} has arrived.",
+      "title": "New Release"
+    },
+    "en_CA": {
+      "text": "The new album {ALBUM_OR_SONG_NAME} by {ARTIST_NAME} has arrived.",
+      "title": "New Release"
+    },
+    "en_US": {
+      "text": "The new album {ALBUM_OR_SONG_NAME} by {ARTIST_NAME} has arrived.",
+      "title": "New Release"
+    },
+    "es_ES": {
+      "text": "El nuevo álbum {ALBUM_OR_SONG_NAME} de {ARTIST_NAME} ya está disponible.",
+      "title": "Nuevo lanzamiento"
+    },
+    "es_MX": {
+      "text": "El nuevo álbum {ALBUM_OR_SONG_NAME} de {ARTIST_NAME} ya está disponible.",
+      "title": "Nuevo lanzamiento"
+    },
+    "es_US": {
+      "text": "Escucha el nuevo álbum {ALBUM_OR_SONG_NAME} de {ARTIST_NAME}.",
+      "title": "Nuevo lanzamiento"
+    },
+    "en_ES": {
+      "text": "El nuevo álbum {ALBUM_OR_SONG_NAME} de {ARTIST_NAME} ya está disponible.",
+      "title": "New Release"
+    },
+    "en_GB": {
+      "text": "The new album {ALBUM_OR_SONG_NAME} by {ARTIST_NAME} has arrived.",
+      "title": "New Release"
+    },
+    "en_IN": {
+      "text": "The new album {ALBUM_OR_SONG_NAME} by {ARTIST_NAME} has arrived.",
+      "title": "New Release"
+    },
+    "ja_JP": {
+      "text": "{ARTIST_NAME}の最新アルバム、「{ALBUM_OR_SONG_NAME}」を配信開始。",
+      "title": "新曲を配信開始"
+    },
+    "fr_CA": {
+      "text": "Le nouvel album {ALBUM_OR_SONG_NAME} de {ARTIST_NAME} est paru.",
+      "title": "Nouvelle sortie"
+    },
+    "fr_FR": {
+      "text": "Le nouvel album {ALBUM_OR_SONG_NAME} de {ARTIST_NAME} est paru.",
+      "title": "Nouvelle sortie"
+    },
+    "pt_BR": {
+      "text": "O novo álbum {ALBUM_OR_SONG_NAME} de {ARTIST_NAME} já está disponível.",
+      "title": "Novo lançamento"
+    },
+    "gu_IN": {
+      "text": "The new album {ALBUM_OR_SONG_NAME} by {ARTIST_NAME} has arrived.",
+      "title": "New Release"
+    },
+    "hi_IN": {
+      "text": "The new album {ALBUM_OR_SONG_NAME} by {ARTIST_NAME} has arrived.",
+      "title": "New Release"
+    },
+    "it_IT": {
+      "text": "{ALBUM_OR_SONG_NAME} , il nuovo album di {ARTIST_NAME}, è disponibile ora.",
+      "title": "Nuova uscita"
+    },
+    "kn_IN": {
+      "text": "The new album {ALBUM_OR_SONG_NAME} by {ARTIST_NAME} has arrived.",
+      "title": "New Release"
+    },
+    "ml_IN": {
+      "text": "The new album {ALBUM_OR_SONG_NAME} by {ARTIST_NAME} has arrived.",
+      "title": "New Release"
+    },
+    "mr_IN": {
+      "text": "{ARTIST_NAME} {ALBUM_OR_SONG_NAME} हा नवा अल्बम आला आहे.",
+      "title": "नवीन प्रदर्शित"
+    },
+    "pa_IN": {
+      "text": "The new album {ALBUM_OR_SONG_NAME} by {ARTIST_NAME} has arrived.",
+      "title": "New Release"
+    },
+    "ta_IN": {
+      "text": "The new album {ALBUM_OR_SONG_NAME} by {ARTIST_NAME} has arrived.",
+      "title": "New Release"
+    },
+    "te_IN": {
+      "text": "The new album {ALBUM_OR_SONG_NAME} by {ARTIST_NAME} has arrived.",
+      "title": "New Release"
+    }
+  },
+  "CUSTOMER_FOLLOW": {
+    "de_DE": {
+      "title": "Du hast einen neuen Follower!",
+      "text": "{placeHolderName} folgt dir jetzt."
+    },
+    "en_AU": {
+      "title": "You have a new follower!",
+      "text": "{placeHolderName} started following you."
+    },
+    "en_CA": {
+      "title": "You have a new follower!",
+      "text": "{placeHolderName} started following you."
+    },
+    "en_GB": {
+      "title": "You have a new follower!",
+      "text": "{placeHolderName} started following you."
+    },
+    "en_IN": {
+      "title": "You have a new follower!",
+      "text": "{placeHolderName} started following you."
+    },
+    "en_NZ": {
+      "title": "You have a new follower!",
+      "text": "{placeHolderName} started following you."
+    },
+    "en_US": {
+      "title": "You have a new follower!",
+      "text": "{placeHolderName} started following you."
+    },
+    "es_ES": {
+      "title": "¡Tienes un nuevo seguidor!",
+      "text": "{placeHolderName} comenzó a seguirte."
+    },
+    "es_MX": {
+      "title": "¡Tienes un nuevo seguidor!",
+      "text": "{placeHolderName} comenzó a seguirte."
+    },
+    "fr_FR": {
+      "title": "Vous avez un nouveau follower!",
+      "text": "{placeHolderName} a commencé à vous suivre."
+    },
+    "fr_CA": {
+      "title": "Vous avez un nouveau follower!",
+      "text": "{placeHolderName} a commencé à vous suivre."
+    },
+    "it_IT": {
+      "title": "Hai un nuovo follower",
+      "text": "{placeHolderName} ha iniziato a seguirti."
+    },
+    "ja_JP": {
+      "title": "新しいフォロワーがいます😃",
+      "text": "{placeHolderName} にフォローされました"
+    },
+    "pt_BR": {
+      "title": "Você tem um novo seguidor!",
+      "text": "{placeHolderName} começou a seguir você."
+    }
+  },
+  "ARTIST_STREAMING": {
+    "de_DE": {
+      "title": "{placeHolderName} ist jetzt live",
+      "text": "Wird in der App abgespielt \uD83D\uDC40. Jetzt ansehen."
+    },
+    "en_CA": {
+      "title": "{placeHolderName} is live now",
+      "text": "Streaming in the app \uD83D\uDC40. Watch now."
+    },
+    "en_GB": {
+      "title": "{placeHolderName} is live now",
+      "text": "Streaming in the app \uD83D\uDC40. Watch now."
+    },
+    "en_IN": {
+      "title": "{placeHolderName} is live now",
+      "text": "Streaming in the app \uD83D\uDC40. Watch now."
+    },
+    "en_US": {
+      "title": "{placeHolderName} is live now",
+      "text": "Streaming in the app \uD83D\uDC40. Watch now."
+    },
+    "es_US": {
+      "title": "{placeHolderName} está en vivo",
+      "text": "Transmitiendo en la app \uD83D\uDC40. Ver ahora."
+    },
+    "es_ES": {
+      "title": "{placeHolderName} está en directo",
+      "text": "Transmitiendo en la app \uD83D\uDC40. Ver ahora."
+    },
+    "es_MX": {
+      "title": "{placeHolderName} está en vivo ahora",
+      "text": "Transmitiéndose en la app \uD83D\uDC40. Ver ahora."
+    },
+    "fr_FR": {
+      "title": "{placeHolderName} est en direct",
+      "text": "En diffusion dans l’application \uD83D\uDC40. Regarder maintenant."
+    },
+    "fr_CA": {
+      "title": "{placeHolderName} est présentement en direct",
+      "text": "En diffusion en continu dans l’application \uD83D\uDC40. Regardez maintenant."
+    },
+    "it_IT": {
+      "title": "{placeHolderName} è live",
+      "text": "In diretta streaming nell\\'app \uD83D\uDC40. Guarda ora."
+    },
+    "ja_JP": {
+      "title": "{placeHolderName} がライブになりました",
+      "text": "アプリでストリーミング中 \uD83D\uDC40。今すぐご覧ください。"
+    },
+    "pt_BR": {
+      "title": "{placeHolderName} está ao vivo agora",
+      "text": "Streaming no aplicativo \uD83D\uDC40. Assista agora."
+    }
+  }
+}

@@ -1,0 +1,15 @@
+package com.google.android.exoplayer2.source.hls.playlist;
+
+import java.util.Collections;
+import java.util.List;
+
+/* JADX INFO: loaded from: classes6.dex */
+public abstract class HlsPlaylist {
+    public final String baseUri;
+    public final List<String> tags;
+
+    protected HlsPlaylist(String str, List<String> list) {
+        this.baseUri = str;
+        this.tags = Collections.unmodifiableList(list);
+    }
+}

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true">
+    <ListView
+        android:id="@+id/list_view"
+        android:clickable="true"
+        android:descendantFocusability="beforeDescendants"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/divider"
+        android:dividerHeight="@dimen/default_divider_height"
+        android:headerDividersEnabled="false"
+        android:footerDividersEnabled="true"/>
+    <include
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/libary_loading_footer_height"
+        layout="@layout/library_listview_loading_footer"/>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/browse_loader_top_margin">
+        <ProgressBar
+            android:layout_gravity="center"
+            android:id="@+id/loading_spinner"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/dmmviewlibrary_progress_bar_large"/>
+    </FrameLayout>
+</FrameLayout>

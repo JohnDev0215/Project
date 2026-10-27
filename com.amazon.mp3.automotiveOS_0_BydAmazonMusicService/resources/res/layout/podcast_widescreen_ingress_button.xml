@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center"
+    android:id="@+id/ingress_play_button"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/podcast_spacer_epic">
+    <ImageView
+        android:id="@+id/podcast_widescreen_ingress_button_image"
+        android:layout_width="@dimen/podcast_spacer_large"
+        android:layout_height="@dimen/podcast_spacer_large"
+        android:layout_alignTop="@+id/podcast_widescreen_ingress_button_text"
+        android:layout_alignBottom="@+id/podcast_widescreen_ingress_button_text"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/podcast_spacer_base"
+        android:layout_marginEnd="@dimen/podcast_spacer_small"
+        android:layout_alignParentStart="true"/>
+    <com.amazon.podcast.views.EmberTextView
+        android:gravity="center"
+        android:id="@+id/podcast_widescreen_ingress_button_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="@dimen/podcast_spacer_large"
+        android:layout_toEndOf="@+id/podcast_widescreen_ingress_button_image"
+        style="@style/PodcastAppTheme.TextAppearance.FollowButton"/>
+</RelativeLayout>

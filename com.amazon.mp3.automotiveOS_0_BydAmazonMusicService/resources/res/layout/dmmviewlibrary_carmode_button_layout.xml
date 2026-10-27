@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/more_container"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/spacer_72">
+    <TextView
+        android:ellipsize="end"
+        android:id="@+id/more_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:textAlignment="viewStart"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/more_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <androidx.appcompat.widget.AppCompatImageView
+        android:gravity="right"
+        android:id="@+id/more_button"
+        android:visibility="visible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/more_section_caret"
+        android:layout_marginEnd="@dimen/spacer_20"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <View
+        android:id="@+id/item_divider"
+        android:background="@color/white_30"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/spacer_1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/more_button"
+        app:layout_constraintStart_toStartOf="@+id/more_title"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

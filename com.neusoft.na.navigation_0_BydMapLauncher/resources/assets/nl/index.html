@@ -1,0 +1,1192 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+      <link rel="stylesheet" href="../css/index.css" />
+      <style>
+         table {
+            border-collapse: collapse;
+            border-spacing: 0;
+         }
+
+         #privacy ::-webkit-scrollbar {
+            width: 4px;
+            background-color: transparent !important;
+            display: none;
+         }
+
+         #privacy ::-webkit-scrollbar-thumb {
+            background-color: transparent;
+         }
+
+         #privacy .arabic {
+            font-size: 1rem;
+            direction: rtl;
+            text-align: initial;
+         }
+
+         #privacy .arabic .content-paragraph {
+            padding-right: unset !important;
+         }
+
+         #privacy .arabic .indent-level2 {
+            margin-right: 0.3rem;
+            margin-left: unset;
+         }
+
+         #privacy {
+            width: 100%;
+            height: 100%;
+            overflow-y: auto;
+            color: rgba(38, 45, 51, 0.65);
+            user-select: none;
+            pointer-events: all;
+            /* text-align: justify; */
+         }
+
+         #privacy .weight-bold {
+            font-weight: bold !important;
+         }
+
+         #privacy .indent-level1 {
+            margin-left: 0.3rem;
+            margin-right: unset;
+            color: rgba(38, 45, 51, 0.85);
+         }
+
+         #privacy .indent-level2 {
+            margin-left: 0.6rem;
+            /* margin-left: 0.8rem; */
+            margin-right: unset;
+         }
+
+         #privacy .indent-level3 {
+            margin-left: 0.9rem;
+            /* margin-left: 1.5rem; */
+            margin-right: unset;
+         }
+
+         #privacy .indent-level4 {
+            margin-left: 1.2rem;
+            margin-right: unset;
+         }
+
+         #privacy .tableContainer {
+            width: 100%;
+            overflow-x: auto;
+         }
+
+         #privacy .table {
+            table-layout: fixed;
+            width: max-content;
+            margin: 0.4rem auto;
+            border: 1px solid rgb(210, 216, 221);
+         }
+
+         #privacy .table tbody {
+            background-color: #fff;
+         }
+
+         #privacy .table tbody tr td,
+         #privacy th {
+            font-size: 0.28rem;
+            line-height: 0.36rem;
+            margin: 0;
+            font-weight: 400;
+            padding: 0.2rem 0.4rem;
+            text-align: left;
+         }
+
+         #privacy .table .thead .first-line-width {
+            width: 6.16rem;
+            text-align: initial;
+            word-wrap: break-word;
+         }
+
+         #privacy .table .thead {
+            color: #262d33;
+         }
+
+         #privacy .table .thead .mid-line-width {
+            width: 3.3rem;
+         }
+
+         #privacy .table .thead .last-line-width {
+            width: 3.61rem;
+         }
+
+         #privacy .table .thead th {
+            background: #eaf1f7;
+            font-size: 0.32rem;
+         }
+
+         #privacy .content-paragraph {
+            margin-top: 0.4rem;
+         }
+
+         #privacy .content-paragraph .time {
+            font-size: 0.32rem;
+            line-height: 0.4rem;
+            font-weight: 400;
+            margin: unset;
+         }
+
+         #privacy .content-paragraph .time:first-child {
+            margin-bottom: 0.2rem;
+         }
+
+         #privacy .content-paragraph:last-child {
+            margin-bottom: 0.4rem;
+         }
+
+         #privacy .content-paragraph .firstLevelTitle {
+            font-size: 0.36rem;
+            line-height: 0.44rem;
+            margin-bottom: 0.2rem;
+            margin-top: unset;
+            font-weight: 500;
+            color: rgba(38, 45, 51, 0.85);
+         }
+
+         #privacy .content-paragraph .secondaryTitle {
+            font-size: 0.32rem;
+            line-height: 0.4rem;
+            margin-bottom: 0.1rem;
+            margin-top: 0.2rem;
+            font-weight: 400;
+            color: #24313f;
+         }
+
+         #privacy .content-paragraph .paragraph {
+            font-size: 0.28rem;
+            line-height: 0.36rem;
+            font-weight: 400;
+         }
+
+         #privacy .content-paragraph .retraction {
+            text-indent: 2em;
+            margin-top: 0.1rem;
+         }
+
+         #privacy .paragraph-level1 {
+            color: rgba(38, 45, 51, 0.85);
+         }
+
+         .dark #privacy ::-webkit-scrollbar-thumb {
+            background-color: #dae1eb;
+            opacity: 0.4;
+         }
+
+         .dark #privacy {
+            color: rgba(218, 225, 235, 0.60);
+         }
+
+         .dark #privacy .indent-level1 {
+            color: #DAE1EB;
+         }
+
+         #privacy .paragraph-level1 {
+            color: rgba(38, 45, 51, 0.85);
+         }
+
+         .dark #privacy .firstLevelTitle {
+            color: rgba(218, 225, 235, 0.85);
+         }
+
+         .dark #privacy .table {
+            border: 1px solid rgb(48, 57, 70);
+         }
+
+         .dark #privacy .table .thead {
+            color: #dae1eb;
+         }
+
+         .dark #privacy .table tbody {
+            background-color: rgba(28, 36, 44, 0.7);
+         }
+
+         .dark #privacy .table .thead th {
+            background-color: rgba(0, 0, 0, 0.3);
+         }
+
+         /*denza dark*/
+
+         .dark.denza #privacy {
+            color: rgba(218, 225, 235, 0.85);
+         }
+
+         .dark.denza #privacy .indent-level1 {
+            color: #dae1eb;
+         }
+
+         .dark.denza #privacy .indent-level2 {
+            color: rgba(218, 225, 235, 0.7);
+         }
+
+         .dark.denza #privacy .indent-level3 {
+            color: rgba(218, 225, 235, 0.7);
+         }
+
+         .dark.denza #privacy .indent-level4 {
+            color: rgba(218, 225, 235, 0.7);
+         }
+
+         .dark.denza #privacy .paragraph-level1 {
+            color: #dae1eb;
+         }
+
+         .dark.denza #privacy .firstLevelTitle {
+            color: rgba(218, 225, 235, 0.85);
+         }
+
+         .dark.denza #privacy .table {
+            border: 1px solid #303946;
+         }
+
+         .dark.denza #privacy .table .thead {
+            color: #dae1eb;
+         }
+
+         .dark.denza #privacy .table tbody {
+            background-color: #1c242c;
+         }
+
+         .dark.denza #privacy .table .thead th {
+            background-color: rgba(0, 0, 0, 0.3);
+         }
+      </style>
+   </head>
+
+   <body>
+      <div id="privacyWarp">
+         <div class="content" id="privacy" style="font-size: 1rem">
+            <div class="content-paragraph">
+               <p class="time">Geupdated op: 30 september 2024</p>
+               <p class="time">Ingangsdatum: 30 september 2024</p>
+            </div>
+
+            <div class="content-paragraph">
+               <p class="paragraph">
+                  Als exploitant van Neusoft Navigatie is Neusoft Group Co. (geregistreerd op No. 2, Xinxiu Street,
+                  Hunnan
+                  New District, Shenyang City, hierna te noemen "wij") zich terdege bewust van het belang van
+                  persoonsgegevens voor u en zullen wij ons best doen om de veiligheid en betrouwbaarheid van uw
+                  persoonsgegevens te beschermen.
+               </p>
+               <p class="paragraph">
+                  Gelieve het Neusoft Navigatie Privacybeleid (hierna te noemen "het Privacybeleid") grondig te lezen en
+                  begrijpen voordat u onze producten of diensten gebruikt. Gebruik onze producten (of diensten) alleen
+                  met
+                  uw toestemming voor de inhoud zoals overeengekomen in dit Privacybeleid.
+               </p>
+               <p class="paragraph">
+                  Heeft u vragen, opmerkingen of suggesties, neem dan contact met ons op via de contactgegevens:
+               </p>
+               <p class="paragraph">Gegevensbeheerder: BYD Auto Industry Co., Ltd.</p>
+               <p class="paragraph">E-mail: -voor [EU-landen], neem contact op via [privacy.eu@byd.com]</p>
+               <p class="paragraph">-voor [landen van Zuidoost-Azië], neem contact op via [auto.asia@byd.com];</p>
+               <p class="paragraph">-voor [Australië en Nieuw-Zeeland], neem contact op via [info.au@byd.com];</p>
+               <p class="paragraph">
+                  -voor [landen van Noord- en Zuid-Amerika], neem contact op via [bydautoservice@byd.com];
+               </p>
+               <p class="paragraph">-voor [landen van Midden-Oost-Afrika], neem contact op via [InfoMEA@byd.com];</p>
+               <p class="paragraph">Adres: No. 3001, 3007, HengPing Road, Pingshan, Shenzhen, P.R. China</p>
+               <p class="paragraph">Gegevensverwerker: Neusoft Group Co., Ltd.</p>
+               <p class="paragraph">E-mail: OneCoreGo.Care@neusoft.com</p>
+               <p class="paragraph">Adres: No. 2 Xinxiu Rd, Hunnan District, Shenyang, Liaoning, P.R. China</p>
+               <p class="paragraph weight-bold">Dit beleid helpt u het volgende te begrijpen:</p>
+               <p class="paragraph weight-bold">1. Hoe wij uw persoonsgegevens verzamelen en gebruiken</p>
+               <p class="paragraph weight-bold">
+                  2. Hoe wij uw persoonsgegevens verwerken, delen, overdragen en openbaar maken door middel van
+                  toevertrouwen
+               </p>
+               <p class="paragraph weight-bold">3. Hoe wij uw persoonsgegevens beschermen</p>
+               <p class="paragraph weight-bold">4. Uw rechten</p>
+               <p class="paragraph weight-bold">5. Hoe wij persoonsgegevens van kinderen verwerken</p>
+               <p class="paragraph weight-bold">6. Hoe uw persoonsgegevens wereldwijd wordt opgeslagen en overgedragen
+               </p>
+               <p class="paragraph weight-bold">7. Hoe wij dit beleid bijwerken</p>
+               <p class="paragraph weight-bold">8. Hoe contact met ons opnemen</p>
+            </div>
+            <div class="content-paragraph">
+               <p class="weight-bold firstLevelTitle">1. Hoe wij uw persoonsgegevens verzamelen en gebruiken</p>
+               <p class="paragraph indent-level1">
+                  1.1 De bedrijfsfunctie die wij leveren is afhankelijk van bepaalde gegevens. Als u ervoor kiest deze
+                  basisnavigatiefunctie te gebruiken, moet u ons de noodzakelijke gegevens leveren of ons toestaan deze
+                  te
+                  verzamelen, waaronder:
+               </p>
+               <p class="paragraph indent-level2">
+                  1.1.1 Wanneer u Neusoft Navigatie voor het eerst gebruikt, kunt u de activeringsfunctie gebruiken. We
+                  verzamelen
+                  gecodeerde virtuele IVI-ID, uw locatie-informatie, activeringstijd, activeringsstatus, vervaltijd,
+                  landcode en
+                  kaartdata-versie. Wij zullen uw locatiegegevens gebruiken om te beoordelen of u zich binnen het
+                  dekkingsgebied van de
+                  vooraf opgeslagen kaartgegevens bevindt, zodat de eerste activering van Neusoft Navigatie kan worden
+                  voltooid, waardoor
+                  u normale toegang tot Neusoft Navigatie krijgt.
+               </p>
+               <p class="paragraph indent-level2">
+                  1.1.2 Wanneer u de positioneringsfunctie gebruikt, verzamelen we uw locatie-informatie en informatie
+                  over
+                  voertuigsnelheid om uw huidige locatie te tonen.
+               </p>
+               <p class="paragraph indent-level2">
+                  1.1.3 Wanneer u de routeplanning functie of de navigatiefunctie gebruikt, zullen wij gegevens over uw
+                  locatie en uw bestemming verzamelen.
+               </p>
+               <p class="paragraph indent-level3">
+                  1.1.3.1 Wanneer u de bovenstaande functies gebruikt, hebben wij uw goedkeuring nodig om de
+                  locatietoestemming en toestemmingen voor schijftoegang en lees-schrijftoegang in te schakelen. U kunt
+                  de
+                  bovenstaande toestemmingen uitschakelen via systeemautorisatie om ons te beletten de bovenstaande
+                  gegevens te verzamelen, maar het is mogelijk dat u geen toegang meer krijgt tot relevante diensten of
+                  functies of dat u de bedoelde effecten van deze diensten niet kunt bereiken.
+               </p>
+               <p class="paragraph indent-level1">
+                  1.2 Om aanvullende functies in te schakelen kunt u ervoor kiezen ons de volgende gegevens te
+                  verstrekken
+                  of ons toe te staan deze te verzamelen.
+               </p>
+               <p class="paragraph indent-level2">
+                  1.2.1 Wanneer u de verkeersfunctie gebruikt, verzamelen we uw locatie-informatie en verkeersinformatie
+                  om nabijgelegen
+                  verkeersopstoppingen weer te geven.
+               </p>
+               <p class="paragraph indent-level2">
+                  1.2.2 Wanneer u de online updatefunctie voor kaartgegevens gebruikt, verzamelen we uw gecodeerde
+                  virtuele IVI-ID en
+                  kaartdata-versie om de nieuwste versie voor u bij te werken.
+               </p>
+               <p class="paragraph indent-level2">
+                  1.2.3 Wanneer u de zoekfunctie gebruikt, zullen wij uw locatiegegevens en de inhoud waarnaar u zoekt
+                  verzamelen om u voorzien van gegevens over de nabijgelegen locatie die overeenkomen met de inhoud
+                  waarnaar u zoekt.
+               </p>
+               <p class="paragraph indent-level2">
+                  1.2.4 Wanneer u de Google zoekfunctie gebruikt, verzamelen we Google zoekresultaten, uw
+                  locatie-informatie, de inhoud die u
+                  zoekt, gecodeerde virtuele IVI-ID, OS-versie, platformversie, app-versie, merktype, merk, autotype-ID,
+                  scherm-ID, IMEI,
+                  leverancier-ID, tijdstempel om u informatie te verstrekken over de nabije locatie die overeenkomt met
+                  de inhoud die u
+                  zoekt.
+               </p>
+               <p class="paragraph indent-level2">
+                  1.2.5 Wanneer u de nieuwe energiefunctie gebruikt, verzamelen wij informatie over uw voertuigmodel
+                  (puur
+                  elektrisch, hybride), informatie over de voertuigaccu (totale hoeveelheid, resterende accucapaciteit
+                  en
+                  percentage, uithoudingskilometers van de resterende accucapaciteit, informatie over bijna lege accu),
+                  en
+                  informatie over de voertuigbrandstof (informatie over laag brandstof) om de huidige stand van het
+                  nieuwe
+                  energievoertuig aan u te tonen.
+               </p>
+
+               <p class="paragraph indent-level1">1.3 After-sales service server</p>
+               <p class="paragraph indent-level2">
+                  Wij registreren tijdens uw gebruik van Neusoft Navigatie de werking van Neusoft Navigatie in de vorm
+                  van
+                  logboeken onder uw IVI-pad /SD-kaart/logboeken en SD-kaart/navilog.
+               </p>
+               <p class="paragraph indent-level2">
+                  1.3.1 Als er een probleem is dat geanalyseerd en onderzocht moet worden, kunt u terecht bij de lokale
+                  dealer. Na het verkrijgen van uw toestemming haalt de dealer uw logboeken eruit en stuurt ze naar de
+                  after-sales service server in Duitsland. Wij gebruiken de logboeken in de after-sales service server
+                  om
+                  het probleem te analyseren.
+               </p>
+               <p class="paragraph indent-level2">
+                  Betrokken persoonlijke informatie kan zijn: Gecodeerde virtuele IVI-ID, activeringstijd,
+                  activeringsstatus, vervaltijd,
+                  landcode, kaartdata-versienummer; uw locatie-informatie, informatie over voertuigsnelheid,
+                  verkeersinformatie; de inhoud
+                  die u zoekt, bestemmingsinformatie, thuisadresinformatie die u heeft ingesteld, werkadresinformatie
+                  die u heeft
+                  ingesteld, en opgeslagen adresinformatie; uw voertuigmodelinformatie (puur elektrisch, hybride),
+                  voertuigbrandstofinformatie (lage olie-statusinformatie); voertuigsnelheid;
+                  voertuigenergie-informatie;
+                  systeeminstellingen (lichtmodus, taal, tijd, tijdssysteem, schermstatus, rijmodus, eenheid,
+                  toestemmingen); Google
+                  zoekresultaten, OS-versie, platformversie, app-versie, merktype, merk, automodel-ID, scherm-ID, IMEI,
+                  leveranciers-ID,
+                  tijdstempel;
+               </p>
+
+               <p class="paragraph indent-level1">1.4 Rechtsgrondslag voor het verwerken van persoonsgegevens</p>
+               <p class="paragraph indent-level2">
+                  Wij zullen uw persoonsgegevens verwerken in overeenstemming met de toepasselijke wetgeving inzake
+                  gegevensbescherming. Daarom verwerken wij uw persoonsgegevens op de volgende rechtsgronden:
+               </p>
+               <p class="paragraph indent-level2">
+                  1.4.1 Om het contract uit te voeren waarvan u deel uitmaakt, of om maatregelen te nemen volgens uw
+                  vereisten voordat wij het contract ondertekenen;
+               </p>
+               <p class="paragraph indent-level2">1.4.2 Ten behoeve van legitieme doeleinden van ons of van derden;</p>
+               <p class="paragraph indent-level2">1.4.3 Om te voldoen aan onze wettelijke verplichtingen;</p>
+               <p class="paragraph indent-level2">1.4.4 Op basis van uw toestemming.</p>
+            </div>
+
+            <div class="content-paragraph">
+               <p class="firstLevelTitle weight-bold">
+                  2. Hoe wij uw persoonsgegevens verwerken, delen, overdragen en openbaar maken door middel van
+                  toevertrouwen
+               </p>
+               <p class="paragraph indent-level1">2.1 Toevertrouwde verwerking</p>
+               <p class="paragraph indent-level2">
+                  2.1.1 Om u perfectere en betere producten en diensten te kunnen leveren, worden sommige specifieke
+                  modules of functies in deze bedrijfsfunctie geleverd door externe leveranciers. Wij kunnen
+                  bijvoorbeeld
+                  een dienstverlener inhuren om ons te helpen bij het verlenen van klantenondersteuning.
+               </p>
+               <p class="paragraph indent-level2">
+                  2.1.2 Voor bedrijven, organisaties en personen aan wie wij de verwerking van persoonsgegevens
+                  toevertrouwen, zullen wij strikte geheimhoudingsovereenkomsten met hen ondertekenen en van hen eisen
+                  dat
+                  zij persoonsgegevens verwerken in overeenstemming met onze vereisten, dit Privacybeleid en andere
+                  relevante vertrouwelijkheids- en veiligheidsmaatregelen.
+               </p>
+               <p class="paragraph indent-level1">2.2 Delen</p>
+               <p class="paragraph indent-level2">
+                  2.2.1 Om u perfectere en hoogwaardige producten en diensten te leveren, worden sommige van onze
+                  diensten
+                  door onze partners geleverd. Wij kunnen sommige van uw persoonsgegevens delen met onze partners om
+                  betere
+                  klantenservice en gebruikerservaring te bieden. Wij zullen uw persoonsgegevens alleen delen voor
+                  juridische, rechtvaardigde, noodzakelijke, specifieke en duidelijke doeleinden, en zullen alleen de
+                  persoonsgegevens delen die nodig is voor het verlenen van de dienst. Wij zullen de
+                  softwareontwikkelingskit (SDK) en interface voor toepassingsprogramma's (API) van onze partners strikt
+                  controleren om gegevensbeveiliging te beschermen. Tegelijkertijd zullen wij met onze partners een
+                  strikte
+                  vertrouwelijkheidsovereenkomst ondertekenen en van hen eisen dat zij uw persoonsgegevens verwerken in
+                  strikte overeenstemming met onze instructies, dit Beleid en alle andere relevante vertrouwelijkheids-
+                  en
+                  veiligheidsmaatregelen. Wij zullen van onze partners eisen dat zij de gedeelde persoonsgegevens niet
+                  voor
+                  andere doeleinden gebruiken.
+               </p>
+               <p class="paragraph indent-level2">
+                  Momenteel bieden wij als de leverancier van de navigatietoepassing ondersteuning van navigatiediensten
+                  voor het BYD IVI-systeem.
+               </p>
+               <p class="paragraph indent-level2">
+                  Onze partners zijn onder andere HERE, een online gegevensdienstverlener die ons voorziet van
+                  ondersteuning voor online gegevensservice. Wanneer u Neusoft Navigatie online gebruikt, delen wij
+                  relevante gegevens met HERE in de volgende scenario's.
+               </p>
+               <p class="paragraph indent-level3">
+                  2.2.1.1 Wanneer u de Verkeersfunctie gebruikt, delen wij uw locatiegegevens met HERE om
+                  Verkeersinformatie om u heen te verkrijgen.
+               </p>
+               <p class="paragraph indent-level3">
+                  2.2.1.2 Wanneer u de zoekfunctie gebruikt, verzamelen we uw locatie-informatie en de inhoud die u
+                  zoekt, om u informatie
+                  te verstrekken over de nabije locatie die overeenkomt met de inhoud die u zoekt.
+               </p>
+               <p class="paragraph indent-level2">
+                  Onze partners omvatten BYD, dat ons ondersteuning biedt voor de Google zoekdienst online. Wanneer u de
+                  Google
+                  zoekfunctie gebruikt, delen we relevante informatie met BYD in de volgende scenario's.
+               </p>
+               <p class="paragraph indent-level3">
+                  2.2.1.3 Wanneer u de Google zoekfunctie gebruikt, delen we Google zoekresultaten, uw
+                  locatie-informatie, de inhoud die u
+                  zoekt, OS-versie, platformversie, app-versie, merktype, merk, autotype-ID, scherm-ID, IMEI,
+                  leverancier-ID, tijdstempel
+                  met BYD, om u informatie te verstrekken over de nabije locatie die overeenkomt met de inhoud die u
+                  zoekt.
+               </p>
+               <p class="paragraph indent-level3">
+                  2.2.1.4 Wanneer het systeem met het internet is verbonden, worden alle zoekfunctionaliteiten,
+                  inclusief het invoeren van
+                  trefwoorden, het ontvangen van woordsuggesties en het verkrijgen van resultaatsuggesties, door Google
+                  aan de gebruiker
+                  verstrekt. Alle verzamelde gegevens worden behandeld in overeenstemming met (i) het privacybeleid van
+                  Google en de klant
+                  gaat akkoord met de huidige Google Maps Controller-Controller Gegevensbeschermingsvoorwaarden
+                  beschikbaar op
+                  https://business.safety.google/gdprcontrollerterms/ die door Google van tijd tot tijd kunnen worden
+                  bijgewerkt. en met
+                  (ii) de aanvullende servicevoorwaarden van Google Maps/Google Earth beschikbaar op
+                  https://maps.google.com/help/terms_maps.html.
+               </p>
+               <p class="paragraph indent-level3">
+                  2.2.1.5 Delen van gegevens met Google: De onder dit module verzamelde gegevens worden gedeeld met
+                  Google om de
+                  zoekfunctionaliteit te faciliteren. Google verwerkt deze gegevens in overeenstemming met zijn
+                  privacybeleid, beschikbaar
+                  op https://www.google.com/policies/privacy/..
+               </p>
+               <p class="paragraph indent-level3">
+                  2.2.1.6 Bewaarperiode: Gegevens worden alleen bewaard zolang nodig is om de zoekfunctionaliteit te
+                  bieden en diensten te
+                  verbeteren. Specifieke bewaarperioden zijn onder meer:
+               </p>
+               <p class="paragraph indent-level3">
+                  2.2.1.7 Gecachte gegevens zoals zoekresultaten kunnen maximaal 30 dagen lokaal op uw apparaat worden
+                  opgeslagen om de
+                  gebruikerservaring tijdens dienstonderbrekingen te verbeteren.
+               </p>
+               <p class="paragraph indent-level3">
+                  2.2.1.8 IP-adressen en zoektermen worden bewaard volgens de gegevensbeleid van Google.
+               </p>
+               <p class="paragraph indent-level1">2.3 Overdragen</p>
+               <p class="paragraph indent-level2">
+                  In geval van fusie, overname of faillissement zullen wij voldoen aan alle toepasselijke wettelijke
+                  vereisten inzake de overdracht van persoonsgegevens. Wij zullen vereisen dat het nieuwe bedrijf of de
+                  nieuwe organisatie die uw persoonsgegevens bewaart, gebonden blijft aan het Privacybeleid, anders
+                  zullen
+                  wij vereisen dat het bedrijf of de organisatie u nogmaals om goedkeuring en toestemming vraagt.
+               </p>
+               <p class="paragraph indent-level1">2.4 Openbaarmaking</p>
+               <p class="paragraph indent-level2">
+                  Wij zullen uw persoonsgegevens alleen onder de volgende omstandigheden openbaar maken:
+               </p>
+               <p class="paragraph indent-level3">2.4.1 Met uw uitdrukkelijke toestemming;</p>
+               <p class="paragraph indent-level3">
+                  2.4.2 Openbaarmaking op grond van de wet: Wij kunnen uw persoonsgegevens openbaar maken op grond van
+                  verplichte vereisten van wetten, juridische procedures, rechtszaken of overheidsinstanties.
+               </p>
+            </div>
+            <div class="content-paragraph">
+               <p class="firstLevelTitle weight-bold">3. Hoe wij uw persoonsgegevens beschermen</p>
+               <p class="paragraph indent-level1">
+                  3.1 Wij hebben beveiligingsmaatregelen genomen die voldoen aan de industrienormen om de door u
+                  verstrekte
+                  persoonsgegevens te beschermen tegen onrechtmatige toegang, openbaarmaking, gebruik, wijziging,
+                  beschadiging of verlies.
+               </p>
+               <p class="paragraph indent-level1">
+                  3.2 Wij hebben een geavanceerd beheersysteem voor gegevensbeveiliging opgezet met gegevens als kern en
+                  gericht op de levenscyclus van gegevens in de industrie om de beveiliging van persoonsgegevens te
+                  verbeteren vanuit de dimensies organisatiebouw, systeemontwerp, personeelsbeheer en
+                  producttechnologie.
+                  Door middel van cursussen en examens maken wij de werknemers voortdurend bewust van het belang van de
+                  bescherming van persoonsgegevens.
+               </p>
+               <p class="paragraph indent-level1 weight-bold">
+                  3.3 De internetomgeving is niet 100% veilig, dus we doen ons best om de veiligheid van de gegevens die
+                  u
+                  ons stuurt te garanderen. Indien onze fysieke, technische of beheersbeveiligingsvoorzieningen
+                  beschadigd
+                  raken, waardoor uw legitieme rechten en belangen worden geschaad, zullen wij het noodplan tijdig in
+                  werking stellen en redelijke en noodzakelijke maatregelen nemen om de gevolgen voor u te
+                  minimaliseren.
+               </p>
+               <p class="paragraph indent-level1">
+                  3.4 In geval van een ongelukkig veiligheidsincident zullen wij u meteen op de hoogte brengen van de
+                  basisgegevens en mogelijke gevolgen van het incident, de maatregelen die wij hebben genomen of zullen
+                  nemen, de suggesties voor uw risicopreventie en risicobeperking, de corrigerende maatregelen voor u,
+                  enz.
+                  overeenkomstig de wet- en regelgeving. Wij stellen u op de hoogte van de gerelateerde informatie per
+                  mail, correspondentie, telefoon, pushmelding, enz. Wanneer het moeilijk is om het onderwerp van
+                  persoonsgegevens één voor één op de hoogte te brengen, zullen we overeenkomstige aankondigingen
+                  vrijgeven
+                  via redelijke en efficiënte methoden. Ondertussen zullen wij de verwijdering van zulke
+                  veiligheidsincidenten rapporteren volgens de vereisten van de regelgevende instanties.
+               </p>
+               <p class="paragraph indent-level1">3.5 Speciale opmerking:</p>
+               <p class="paragraph indent-level2">
+                  3.5.1 Wanneer u uw geografische locatie of verblijfplaats doorgeeft via software van derden, moet u uw
+                  persoonsgegevens beschermen.
+               </p>
+               <p class="paragraph indent-level2">
+                  3.5.2 Gelieve te begrijpen dat er verschillende kwaadaardige of niet-kwaadaardige aanvallen kunnen
+                  bestaan of plaatsvinden als gevolg van de snelle ontwikkeling van computer- en internettechnologie en
+                  de
+                  beperking van de synchronisatiesnelheid. Wij doen er alles aan om de veiligheidsmaatregelen te
+                  verbeteren, maar het is niet altijd mogelijk ervoor te zorgen dat gegevens 100% veilig is.
+               </p>
+               <p class="paragraph indent-level2">
+                  3.5.3 Neusoft Navigatie heeft geen controle over het systeem en het communicatienetwerk dat u voor
+                  onze
+                  producten, diensten of hardwareapparaten gebruikt. Gelieve uw persoonsgegevens te begrijpen en te
+                  beschermen.
+               </p>
+               <p class="paragraph indent-level2">
+                  3.5.4 Uw persoonsgegevens zal na het anonimiseren de gegevens zijn die kunnen worden gebruikt en
+                  verspreid. Voor de opslag en verwerking van dergelijke gegevens hoeft Neusoft Navigatie u niet te
+                  informeren of uw toestemming te verkrijgen.
+               </p>
+            </div>
+
+            <div class="content-paragraph">
+               <p class="firstLevelTitle weight-bold">4. Uw rechten</p>
+               <p class="paragraph indent-level1">
+                  Dit gedeelte beschrijft uw rechten op de persoonsgegevens die wij onder de Toegepaste Wetgeving inzake
+                  Gegevensbescherming verzamelen (elke toepasselijke wetgeving of toezichtsysteem die zijn vastgesteld
+                  door
+                  een erkende regering, overheid of administratieve entiteit om de privacyrechten van natuurlijke
+                  personen
+                  of families samengesteld uit natuurlijke personen te beschermen). Als u relevante rechten wilt
+                  uitoefenen
+                  of vragen hebt, neem dan contact met ons op via de contactgegevens in dit Beleid. Indien uw verzoek
+                  duidelijk ongegrond of buitensporig is, behouden wij ons het recht voor een redelijke vergoeding in
+                  rekening te brengen (rekening houdend met de administratieve kosten van het verstrekken van gegevens
+                  of
+                  correspondentie of het nemen van de gevraagde maatregel) of te weigeren maatregel te nemen.
+               </p>
+               <p class="paragraph indent-level2 paragraph-level1">4.1 Toegangsrechten</p>
+               <p class="paragraph indent-level3">
+                  U hebt recht op toegang tot uw persoonsgegevens, tenzij anders bepaald in wet- en regelgeving. Als u
+                  het
+                  recht op de gegevenstoegang wilt uitoefenen, kunt u zelf toegang krijgen via de volgende
+                  toegangsmethoden. Bijvoorbeeld:
+               </p>
+               <p class="paragraph indent-level3">
+                  U kunt de icoonpositie van uw voertuig waarnemen om uw locatiegegevens te bekijken;
+               </p>
+               <p class="paragraph indent-level3">
+                  U kunt de historische gegevens bekijken van de bestemming die u hebt bereikt door op het zoekvak te
+                  klikken;
+               </p>
+               <p class="paragraph indent-level3">
+                  U kunt uw huisadres/werkplek/favorieten bekijken door op het Zoekvak te klikken -
+                  Thuis/Bedrijf/Favorieten;
+               </p>
+               <p class="paragraph indent-level3">
+                  U kunt uw zoekgeschiedenis bekijken door op Zoekvak - Pop-up toetsenbord te klikken.
+               </p>
+               <p class="paragraph indent-level3">
+                  Als u op de bovenstaande manier geen toegang kunt krijgen tot uw persoonsgegevens, kunt u contact met
+                  ons
+                  opnemen via de hierin vermelde contactgegevens. Wij zullen uw toegangsverzoek binnen de wettelijk
+                  vastgestelde termijn beantwoorden.
+               </p>
+               <p class="paragraph indent-level2 paragraph-level1">4.2 Correctierechten</p>
+               <p class="paragraph indent-level3">
+                  Als u fouten vindt in uw persoonsgegevens die wij hebben verwerkt, hebt u het recht ons te vragen
+                  correcties aan te brengen.
+               </p>
+               <p class="paragraph indent-level3">
+                  U kunt uw huisadres/werkplek/favorieten corrigeren door op Zoekvak te klikken -
+                  Thuis/Bedrijf/Favorieten;
+               </p>
+               <p class="paragraph indent-level3">
+                  Als u uw persoonsgegevens niet op de bovenstaande manier kunt corrigeren, kunt u contact met ons
+                  opnemen
+                  via de hierin vermelde contactgegevens. Wij zullen uw correctieverzoek binnen de wettelijk
+                  vastgestelde
+                  termijn beantwoorden.
+               </p>
+               <p class="paragraph indent-level2 paragraph-level1">4.3 Recht op verwijdering</p>
+               <p class="paragraph indent-level3">
+                  U kunt contact met ons opnemen via de hierin vermelde contactgegevens. Wanneer wij uw verzoek
+                  ontvangen,
+                  worden alle gegevens verwijderd behalve diegene die wij wettelijk verplicht zijn te bewaren.
+               </p>
+               <p class="paragraph indent-level3">
+                  Wij zijn verplicht uw persoonsgegevens onmiddellijk te verwijderen in elk van de volgende gevallen:
+               </p>
+               <p class="paragraph indent-level3">
+                  Uw persoonsgegevens worden niet meer gebruikt met het doel van verzameling of andere verwerking.
+               </p>
+               <p class="paragraph indent-level3">
+                  U trekt uw toestemming in en er is geen andere rechtsgrondslag voor de verwerking van de gegevens.
+               </p>
+               <p class="paragraph indent-level3">U maakt bezwaar tegen de verwerking van de gegevens (zie hieronder).
+               </p>
+               <p class="paragraph indent-level3">Uw persoonsgegevens worden onrechtmatig verwerkt.</p>
+               <p class="paragraph indent-level2 paragraph-level1">4.4 Beperkingsrechten</p>
+               <p class="paragraph indent-level3">U kunt contact met ons opnemen via de hierin vermelde contactgegevens
+               </p>
+               <p class="paragraph indent-level3">
+                  U hebt het recht om beperkingen van onze gegevensverwerking te vragen indien aan één van de volgende
+                  voorwaarden is voldaan:
+               </p>
+               <p class="paragraph indent-level3">U twijfelt aan de nauwkeurigheid van uw persoonsgegevens,</p>
+               <p class="paragraph indent-level3">
+                  Wanneer gegevens onrechtmatig worden verwerkt, gaat u niet akkoord met het verwijderen van
+                  persoonsgegevens, maar vraagt u om beperkingen van het gebruik ervan,
+               </p>
+               <p class="paragraph indent-level3">
+                  Wanneer persoonsgegevens niet meer nodig zijn voor onze verwerkingsdoeleinden, heeft u de gegevens
+                  nodig
+                  om rechtsvorderingen vast te stellen, uit te voeren of te verdedigen;
+               </p>
+               <p class="paragraph indent-level3">
+                  U maakt bezwaar tegen de verwerking (zie hieronder) en het is onduidelijk of onze gerechtvaardigde
+                  belangen zullen prevaleren.
+               </p>
+               <p class="paragraph indent-level2 paragraph-level1">4.5 Rechten van bezwaar</p>
+               <p class="paragraph indent-level3">
+                  Als u bezwaar maakt tegen de verwerking van uw persoonsgegevens, kunt u contact met ons opnemen via de
+                  hierin vermelde contactgegevens. De bezwaar zal ingewilligd worden, tenzij het is gebaseerd op een van
+                  de
+                  volgende gronden:
+               </p>
+               <p class="paragraph indent-level3">
+                  Wij moeten uw persoonsgegevens verwerken om taken van algemeen belang te vervullen of om aan ons
+                  gedelegeerde overheidsbevoegdheden uit te oefenen;
+               </p>
+               <p class="paragraph indent-level3">
+                  Wanneer uw belangen of grondrechten gebaseerd zijn op de bescherming van uw persoonsgegevens, is de
+                  verwerking noodzakelijk om de gerechtvaardigde belangen van ons en van derden te beschermen.
+               </p>
+               <p class="paragraph indent-level3">
+                  Het recht van bezwaar geldt ook voor analyses op basis van deze processen.
+               </p>
+               <p class="paragraph indent-level3">
+                  Indien persoonsgegevens worden verwerkt voor direct marketingdoeleinden, hebt u het recht bezwaar te
+                  maken tegen de verwerking van uw persoonsgegevens voor zulke marketingdoeleinden. Dit geldt ook voor
+                  analyses met betrekking tot zulke direct marketing.
+               </p>
+               <p class="paragraph indent-level3">
+                  U hebt ook het recht om op basis van uw bijzondere persoonlijke omstandigheden bezwaar te maken tegen
+                  onze verwerking van uw persoonsgegevens voor wetenschappelijk, historisch onderzoek of voor
+                  statistische
+                  doeleinden, tenzij een dergelijke verwerking noodzakelijk is voor het uitvoeren van taken in het
+                  algemeen
+                  belang.
+               </p>
+               <p class="paragraph indent-level2 paragraph-level1">4.6 Wijziging van de reikwijdte van uw goedkeuring
+               </p>
+               <p class="paragraph indent-level3">
+                  Voor de uitvoering van elke navigatiefunctie is sommige basis persoonsgegevens vereist. Voor het
+                  verzamelen en gebruiken van persoonsgegevens die aanvullend is verzameld, kunt u uw goedkeuring te
+                  allen
+                  tijde bieden of intrekken.
+               </p>
+               <p class="paragraph indent-level3">U kunt bewerkingen uitvoeren op de volgende manieren:</p>
+               <p class="paragraph indent-level3">Klik op "Instellingen"-"Privacybeleid"-"Annuleren"</p>
+               <p class="paragraph indent-level3">
+                  Zodra uw toestemming is ingetrokken, zullen wij de betreffende persoonsgegevens niet meer verwerken.
+                  Uw
+                  besluit tot intrekking heeft echter geen invloed op de eerdere verwerking van persoonsgegevens op
+                  basis
+                  van uw goedkeuring.
+               </p>
+               <p class="paragraph indent-level3">
+                  U kunt uw eerder geregistreerde account te allen tijde opzeggen, en u kunt contact met ons opnemen via
+                  de
+                  contactgegevens in dit artikel.
+               </p>
+               <p class="paragraph indent-level3">
+                  Nadat de account is opgezegd, zullen wij de levering van producten of diensten beëindigen en uw
+                  persoonsgegevens verwijderen, tenzij anders voorgeschreven door wet- en regelgeving.
+               </p>
+               <p class="paragraph indent-level2 paragraph-level1">4.7 Overdraagbaarheid</p>
+               <p class="paragraph indent-level3">
+                  U heeft het recht om een kopie van uw persoonsgegevens te krijgen. U kunt contact met ons opnemen via
+                  de
+                  hierin vermelde contactgegevens.
+               </p>
+               <p class="paragraph indent-level3">
+                  Zolang het technisch haalbaar is, bijvoorbeeld onderling overeenstemmende gegevensinterfaces, kunnen
+                  wij
+                  ook rechtstreeks een kopie van uw persoonsgegevens overdragen aan een door u aangewezen derde partij.
+               </p>
+               <p class="paragraph indent-level2 paragraph-level1">
+                  4.8 Beperking voor de automatische besluitvorming van informatiesystemen
+               </p>
+               <p class="paragraph indent-level3">
+                  In sommige navigatiefuncties kunnen besluiten uitsluitend worden genomen op basis van niet-kunstmatige
+                  automatische besluitvormingsmechanismen, waaronder informatiesystemen en algoritmen. Indien zulke
+                  besluiten aanzienlijk afbreuk doen aan uw legitieme rechten en belangen, hebt u het recht om ons om
+                  uitleg te vragen, en zullen wij ook gepaste oplossingen bieden.
+               </p>
+               <p class="paragraph indent-level2 paragraph-level1">4.9 Antwoord op uw bovenstaande verzoek</p>
+               <p class="paragraph indent-level3">
+                  Om de veiligheid te garanderen kan het mogelijk zijn dat u een schriftelijk verzoek indient of uw
+                  identiteit op andere manieren bewijst. Wij kunnen uw identiteit verifiëren alvorens uw verzoeken te
+                  beantwoorden.
+               </p>
+               <p class="paragraph indent-level3">
+                  In het algemeen beantwoorden wij binnen de wettelijk vastgestelde termijn.
+               </p>
+               <p class="paragraph indent-level3">
+                  Voor uw redelijk verzoek zullen wij u in principe geen kosten in rekening brengen, maar voor herhaalde
+                  verzoeken buiten de grenzen van redelijke limiet, zullen wij een bepaalde kostprijs in rekening
+                  brengen.
+                  Wij kunnen de verzoeken afwijzen die herhaaldelijk zonder geldige reden voorkomen, te veel technische
+                  maatregelen vergen (er moeten bijvoorbeeld nieuwe systemen worden ontwikkeld of de bestaande
+                  praktijken
+                  moeten fundamenteel worden gewijzigd), risico's opleveren voor de legitieme rechten en belangen van
+                  anderen, of zeer onpraktisch zijn (bijvoorbeeld gegevens die op back-upbanden zijn opgeslagen).
+               </p>
+            </div>
+
+            <div class="content-paragraph">
+               <p class="firstLevelTitle weight-bold">5. Hoe wij persoonsgegevens van kinderen verwerken</p>
+               <p class="paragraph indent-level1">
+                  Onze producten, websites en diensten zijn in de eerste plaats bedoeld voor volwassenen. Kinderen mogen
+                  zonder toestemming van hun ouders of voogden geen eigen accounts met persoonsgegevens aanmaken.
+               </p>
+               <p class="paragraph indent-level1">
+                  Voor het verzamelen van persoonsgegevens van kinderen met toestemming van ouders zullen wij deze
+                  gegevens
+                  alleen gebruiken of openbaar maken indien dit wettelijk is toegestaan, indien ouders of voogden
+                  hiermee
+                  uitdrukkelijk hebben ingestemd of indien dit noodzakelijk is om kinderen te beschermen.
+               </p>
+               <p class="paragraph indent-level1">
+                  Hoewel lokale wetten en gwoontes kinderen anders definiëren, behandelen wij iedereen onder de 16 jaar
+                  als
+                  een kind.
+               </p>
+               <p class="paragraph indent-level1">
+                  In het geval dat wij persoonsgegevens over kinderen hebben verzameld zonder voorafgaande toestemming
+                  van
+                  hun ouders, zullen wij proberen deze zo snel mogelijk te verwijderen.
+               </p>
+            </div>
+            <div class="content-paragraph">
+               <p class="firstLevelTitle weight-bold">
+                  6. Hoe uw persoonsgegevens wereldwijd wordt opgeslagen en overgedragen
+               </p>
+               <p class="paragraph indent-level1">6.1 Bewaartermijn</p>
+               <p class="paragraph indent-level2">
+                  Tenzij de wet- en regelgeving anders bepaalt, bewaart Neusoft Navigatie uw persoonsgegevens gedurende
+                  de
+                  volgende periode:
+               </p>
+               <div class="tableContainer">
+                  <table border="1px" class="table">
+                     <colgroup class="thead">
+                        <col class="first-line-width" />
+                        <col class="mid-line-width" />
+                        <col class="mid-line-width" />
+                        <col class="last-line-width" />
+                     </colgroup>
+                     <thead>
+                        <tr class="thead">
+                           <th>Informatie</th>
+                           <th>Dienstvoorwaarde</th>
+                           <th>Opslaglocatie</th>
+                           <th>Bewaartermijn</th>
+                        </tr>
+                     </thead>
+                     <tbody>
+                        <tr>
+                           <td>
+                              <p>Gecodeerde virtuele IVI-ID</p>
+                              <p>Activeringstijd</p>
+                              <p>Activeringsstatus</p>
+                              <p>Vervaltijd</p>
+                              <p>Landcode</p>
+                              <p>Versie kaartgegevens</p>
+                           </td>
+                           <td>Verzameling en opslag</td>
+                           <td>Cloud</td>
+                           <td>3 jaar</td>
+                        </tr>
+                        <tr>
+                           <td rowspan="2">Uw locatiegegevens</td>
+                           <td rowspan="2">Verzameling en opslag</td>
+                           <td>Cloud</td>
+                           <td>Verwijderd na gebruik</td>
+                        </tr>
+                        <tr>
+                           <td>Terminal</td>
+                           <td>
+                              <p>Opgeslagen in terminals;</p>
+                              <p>Niet van toepassing</p>
+                           </td>
+                        </tr>
+
+                        <tr>
+                           <td rowspan="2">Inhoud waarnaar u zoekt</td>
+                           <td rowspan="2">Verzameling en opslag</td>
+                           <td>Cloud</td>
+                           <td>Verwijderd na gebruik</td>
+                        </tr>
+                        <tr>
+                           <td>Terminal</td>
+                           <td>
+                              <p>Opgeslagen in terminals;</p>
+                              <p>Niet van toepassing</p>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td>Bestemmingsinformatie</td>
+                           <td>Verzameling en opslag</td>
+                           <td>Terminal</td>
+                           <td>
+                              <p>Opgeslagen in terminals;</p>
+                              <p>Niet van toepassing</p>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td>
+                              <p>Thuisadresgegevens die u instelt</p>
+                              <p>Werkadresgegevens die u instelt</p>
+                              <p>Opgeslagen adresgegevens</p>
+                           </td>
+                           <td>Verzameling en opslag</td>
+                           <td>Terminal</td>
+                           <td>
+                              <p>Opgeslagen in terminals;</p>
+                              <p>Niet van toepassing</p>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td>
+                              <p>Informatie over voertuigsnelheid</p>
+                              <p>Verkeersinformatie</p>
+                              <p>De informatie over uw voertuigmodel (puur elektrisch, hybride)</p>
+                              <p>Informatie over de voertuigbrandstof (informatie over laag brandstof)</p>
+                              <p>informatie over voertuigenergie;</p>
+                              <p>systeeminstellingen (lichtmodus, taal, tijd, tijdsysteem, schermstatus, rijmodus,
+                                 eenheid, toestemmingen);</p>
+                           </td>
+                           <td>Verzameling</td>
+                           <td>Niet opgeslagen</td>
+                           <td>
+                              <p>Verzamelde gegevens niet opgeslagen;</p>
+                              <p>Niet van toepassing,</p>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td rowspan="2">Google zoekresultaten</td>
+                           <td rowspan="2">Verzameling en opslag</td>
+                           <td>Cloud</td>
+                           <td>Verwijderd na gebruik</td>
+                        </tr>
+                        <tr>
+                           <td>Terminal</td>
+                           <td>30 dagen</td>
+                        </tr>
+                        <tr>
+                           <td>
+                              <p>OS-versie, platformversie, app-versie, merktype, merk, automodel-ID, scherm-ID, IMEI,
+                                 leveranciers-ID, tijdstempel;</p>
+                           </td>
+                           <td>Verzameling</td>
+                           <td>Niet opgeslagen</td>
+                           <td>
+                              <p>Verzamelde gegevens niet opgeslagen;</p>
+                              <p>Niet van toepassing,</p>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+               <p class="paragraph indent-level2">
+                  Als de after-sales services erbij betrokken zijn en u Neusoft Navigatie nodig heeft om het probleem te
+                  onderzoeken, kunt u de logbestanden naar de after-sales service server overdragen, en de logboeken
+                  moeten
+                  de volgende informatie bevatten:
+               </p>
+               <div class="tableContainer">
+                  <table border="1px" class="table">
+                     <colgroup class="thead">
+                        <col class="first-line-width" />
+                        <col class="mid-line-width" />
+                        <col class="mid-line-width" />
+                        <col class="last-line-width" />
+                     </colgroup>
+                     <thead>
+                        <tr class="thead">
+                           <th>Informatie</th>
+                           <th>Dienstvoorwaarde</th>
+                           <th>Opslaglocatie</th>
+                           <th>Bewaartermijn</th>
+                        </tr>
+                     </thead>
+                     <tbody>
+                        <tr>
+                           <td>
+                              <p>Gecodeerde virtuele IVI-ID</p>
+                              <p>Activeringstijd</p>
+                              <p>Activeringsstatus</p>
+                              <p>Vervaltijd</p>
+                              <p>Landcode</p>
+                              <p>Versie kaartgegevens</p>
+                              <p>Uw locatiegegevens</p>
+                              <p>Informatie over voertuigsnelheid</p>
+                              <p>Verkeersinformatie</p>
+
+                              <p>Inhoud waarnaar u zoekt</p>
+                              <p>Bestemmingsinformatie</p>
+                              <p>Thuisadresgegevens die u instelt</p>
+                              <p>Werkadresgegevens die u instelt</p>
+                              <p>Opgeslagen adresgegevens</p>
+
+                              <p>De informatie over uw voertuigmodel (puur elektrisch, hybride)</p>
+                              <p>Informatie over de voertuigbrandstof (informatie over laag brandstof)</p>
+                              <p>voertuigsnelheid;</p>
+
+                              <p>informatie over voertuigenergie;</p>
+                              <p>
+                                 systeeminstellingen (lichtmodus, taal, tijd, tijdsysteem, schermstatus, rijmodus,
+                                 eenheid,
+                                 toestemmingen);
+                              </p>
+                              <p>Google zoekresultaten;</p>
+                              <p>OS-versie, platformversie, app-versie, merktype, merk, automodel-ID, scherm-ID, IMEI,
+                                 leveranciers-ID, tijdstempel;</p>
+                           </td>
+                           <td>Verzameling en opslag</td>
+                           <td>Cloud</td>
+                           <td>30 dagen</td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+               <p class="paragraph indent-level2">
+                  Wij bepalen de bewaartermijn van persoonsgegevens op basis van de aard en het gebruiksscenario. Wij
+                  bewaren korte tijd de gegevens over de activiteitenrecord en de-identificeren de gegevens voor verdere
+                  autorisatie. Wij kunnen uw persoonsgegevens bewaren voor andere wettelijk toegestane doeleinden,
+                  bijvoorbeeld om een rechtsvordering te verdedigen. Wij kunnen uw persoonsgegevens bewaren afhankelijk
+                  van
+                  uw gebruik van producten of diensten.
+               </p>
+               <p class="paragraph indent-level1">6.2 Opslagruimte</p>
+               <p class="paragraph indent-level2">
+                  6.2.1 When you are using the navigation application, the following are the storage areas of the online
+                  server;
+               </p>
+               <p class="paragraph indent-level3">
+                  6.2.1.1 Als uw locatie zich in de volgende landen bevindt, worden uw persoonsgegevens in Duitsland
+                  opgeslagen.
+               </p>
+               <p class="paragraph indent-level4">
+                  Noorwegen, Denemarken, Nederland, Portugal, België, Zweden, Zwitserland, Oostenrijk, Italië, Spanje,
+                  Finland, Ierland, Griekenland, Duitsland, Frankrijk, Groot-Brittannië, Bulgarije, Kroatië, Tsjechië,
+                  Estland, Hongarije, Letland, Litouwen, Luxemburg, Malta, Polen, Roemenië, Slowakije, Slovenië,
+                  IJsland,
+                  Liechtenstein, Albanië, Monaco, Vaticaan, Turkije, Montenegro, Servië, Cyprus
+               </p>
+               <p class="paragraph indent-level3">
+                  6.2.1.2 Als uw locatie zich in de volgende landen bevindt, worden uw persoonsgegevens in Duitsland
+                  opgeslagen.
+               </p>
+               <p class="paragraph indent-level4">VAE, Oman, Bahrein, Qatar, Koeweit, Saudi-Arabië, Jordanië, Libanon,
+               </p>
+               <p class="paragraph indent-level4">Egypte, Marokko, Tunesië, Kaapverdië</p>
+               <p class="paragraph indent-level4">
+                  Republiek Zuid-Afrika, Botswana, Réunion, Zimbabwe, Zambia, Mauritius, Madagaskar, Angola
+               </p>
+               <p class="paragraph indent-level3">
+                  6.2.1.3 Als uw locatie zich in de volgende landen bevindt, worden uw persoonsgegevens in de Verenigde
+                  Staten opgeslagen.
+               </p>
+               <p class="paragraph indent-level4">VS, Canada</p>
+
+               <p class="paragraph indent-level3">
+                  6.2.1.4 Als uw locatie zich in de volgende landen bevindt, worden uw persoonsgegevens in Australië
+                  opgeslagen:
+               </p>
+               <p class="paragraph indent-level4">Australië, Nieuw-Zeeland</p>
+               <p class="paragraph indent-level3">
+                  6.2.1.5 Als uw locatie zich in de volgende landen bevindt, worden uw persoonsgegevens in Singapore
+                  opgeslagen:
+               </p>
+               <p class="paragraph indent-level4">
+                  Singapore, Thailand, Indonesië, Maleisië, Vietnam, Filippijnen, Nepal, Pakistan
+               </p>
+               <p class="paragraph indent-level3">
+                  6.2.1.6 Als uw locatie zich in de volgende landen bevindt, worden uw persoonsgegevens in Brazilië
+                  opgeslagen:
+               </p>
+               <p class="paragraph indent-level4">Colombia, Ecuador, Peru, Bolivia, Brazilië, Paraguay, Uruguay, Chili
+               </p>
+               <p class="paragraph indent-level2">
+                  6.2.2 Wanneer u ons nodig hebt om het probleem te onderzoeken in verband met
+               </p>
+               <p class="paragraph indent-level3">
+                  onze after-sales service server, zijn de volgende opslagruimtes van de after-sales service server.
+               </p>
+               <p class="paragraph indent-level3">
+                  Als er een probleem is dat geanalyseerd en onderzocht moet worden, kunt u terecht bij de lokale
+                  dealer.
+                  Na het verkrijgen van uw toestemming haalt de dealer uw logboeken eruit en stuurt ze naar de
+                  after-sales
+                  service server in Duitsland. Wij gebruiken de logboeken in de after-sales service server om het
+                  probleem
+                  te analyseren.
+               </p>
+               <p class="paragraph indent-level3">
+                  Als uw locatie zich in de volgende landen bevindt, worden uw persoonsgegevens in Duitsland opgeslagen:
+               </p>
+               <p class="paragraph indent-level3">
+                  Noorwegen, Denemarken, Nederland, Portugal, België, Zweden, Zwitserland, Oostenrijk, Italië, Spanje,
+                  Finland, Ierland, Griekenland, Duitsland, Frankrijk, Groot-Brittannië, Bulgarije, Kroatië, Tsjechië,
+                  Estland, Hongarije, Letland, Litouwen, Luxemburg, Malta, Polen, Roemenië, Slowakije, Slovenië,
+                  IJsland,
+                  Liechtenstein, Albanië, Monaco, Vaticaanstad, Turkije, Montenegro, Servië, Cyprus, VAE, Oman, Bahrein,
+                  Qatar, Koeweit, Saoedi-Arabië, Jordanië, Libanon, Egypte, Marokko, Tunesië, Kaapverdië, Republiek
+                  Zuid-Afrika, Botswana, Réunion, Zimbabwe, Zambia, Mauritius, Madagaskar, Angola, VS, Canada,
+                  Australië,
+                  Nieuw-Zeeland, Singapore, Thailand, Indonesië, Maleisië, Vietnam, Filippijnen, Nepal, Pakistan,
+                  Colombia,
+                  Ecuador, Peru, Bolivia, Brazilië, Paraguay, Uruguay, Chili
+               </p>
+               <p class="paragraph indent-level3">
+                  Indien bij het gebruik van de online navigatiedienst grensoverschrijdende transmissie vereist is,
+                  hopen
+                  wij u daarover te informeren en uw goedkeuring en toestemming te verkrijgen via deze overeenkomst.
+               </p>
+            </div>
+            <div class="content-paragraph">
+               <p class="firstLevelTitle weight-bold">7. Hoe dit Privacybeleid bijwerken</p>
+               <p class="paragraph indent-level1">Ons privacybeleid kan worden gewijzigd.</p>
+               <p class="paragraph indent-level1">
+                  Wij zullen uw rechten uit hoofde hiervan niet schenden zonder uw uitdrukkelijke toestemming. Wij
+                  zullen
+                  de wijzigingen van dit beleid op deze pagina bekendmaken.
+               </p>
+               <p class="paragraph indent-level1">
+                  Voor grote wijzigingen zullen wij ook duidelijkere kennisgevingen verstrekken (voor bepaalde diensten
+                  zullen wij kennisgevingen per e-mail sturen, met vermelding van de specifieke wijzigingen in dit
+                  Privacybeleid).
+               </p>
+               <p class="paragraph indent-level1">
+                  Grote wijzigingen in dit Beleid zijn met inbegrip van, maar niet beperkt tot:
+               </p>
+               <p class="paragraph indent-level2">
+                  1. Belangrijke wijzigingen in ons dienstenpatroon, zoals het doel van de verwerking van
+                  persoonsgegevens,
+                  het type verwerkte persoonsgegevens en de wijze waarop persoonsgegevens worden gebruikt;
+               </p>
+               <p class="paragraph indent-level2">
+                  2. Belangrijke wijzigingen in onze eigendomsstructuur en organisatiestructuur, enz. zoals wijzigingen
+                  in
+                  eigenaars door bedrijfsaanpassing, faillissement, fusies en overnames;
+               </p>
+               <p class="paragraph indent-level2">
+                  3. Wijzigingen van hoofdobjecten waarmee de persoonsgegevens gedeeld, overgedragen of openbaar gemaakt
+                  worden;
+               </p>
+               <p class="paragraph indent-level2">
+                  4. Belangrijke wijzigingen in uw recht op deelname aan de verwerking van persoonsgegevens en de wijze
+                  van
+                  uitoefening van dat recht;
+               </p>
+               <p class="paragraph indent-level2">
+                  5. Wijzigingen in de afdeling die verantwoordelijk is voor de beveiliging van persoonsgegevens, de
+                  contactgegevens ervan en het klachtenkanaal; en
+               </p>
+               <p class="paragraph indent-level2">
+                  6. Het effectbeoordelingsverslag over de beveiliging van persoonsgegevens duidt op een hoog risico.
+               </p>
+               <p class="paragraph indent-level2">
+                  Oude versies van dit Beleid zullen ook worden gearchiveerd voor uw referentie.
+               </p>
+            </div>
+            <div class="content-paragraph">
+               <p class="firstLevelTitle weight-bold">8. Hoe contact met ons opnemen</p>
+               <p class="paragraph indent-level1">
+                  Als u vragen, opmerkingen of aanbevelingen hebt over dit Privacybeleid, kunt u contact met ons opnemen
+                  via een van de volgende methoden:
+               </p>
+               <p class="paragraph indent-level1">E-mail: OneCoreGo.Care@neusoft.com</p>
+               <p class="paragraph indent-level1">Over het algemeen reageren we binnen 5 dagen.</p>
+               <p class="paragraph indent-level1">
+                  Wij zullen uw identiteit met "redelijke zekerheid" of "redelijke hoge zekerheid" verifiëren op basis
+                  van
+                  de gevoeligheid van persoonsgegevens en het risico dat u schade ondervindt van ongeoorloofde
+                  openbaarmaking of verwijdering (indien van toepassing). Voordat wij uw verzoek verwerken, kunnen wij u
+                  vragen aanvullende persoonsgegevens te verstrekken om uw identiteit te verifiëren.
+               </p>
+            </div>
+         </div>
+      </div>
+      <script src="../js/index.js"></script>
+   </body>
+</html>

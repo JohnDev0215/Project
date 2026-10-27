@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/new_playlist_suggested_songs_text_view_padding_top"
+    android:paddingBottom="@dimen/new_playlist_suggested_songs_text_view_padding_bottom"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="15dp">
+    <TextView
+        android:textSize="@dimen/medium_text_size"
+        android:textColor="@color/library_swatch_white"
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/playlist_curate_recents_header"/>
+</LinearLayout>

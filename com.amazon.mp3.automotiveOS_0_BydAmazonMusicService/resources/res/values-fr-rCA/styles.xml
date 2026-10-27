@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="PlaylistDetailHeaderButtonCirrus" parent="@style/PlaylistDetailHeaderButton">
+        <item name="android:layout_height">@dimen/download_button_height</item>
+    </style>
+</resources>

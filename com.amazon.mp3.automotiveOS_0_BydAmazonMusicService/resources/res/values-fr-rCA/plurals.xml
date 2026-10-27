@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="dmusic_all_prime_songs_added_to_library">
+        <item quantity="one">%1$d titre ajouté à votre musique.</item>
+        <item quantity="other">%1$d titres ajoutés à votre musique.</item>
+    </plurals>
+    <plurals name="dmusic_artist_confirm_delete_cloud_msg">
+        <item quantity="one">Voulez-vous vraiment supprimer cet artiste?</item>
+        <item quantity="other">Voulez-vous vraiment supprimer cet artiste et les %d titres correspondants?</item>
+    </plurals>
+    <plurals name="dmusic_download_str_to_download">
+        <item quantity="one">%1$d titre à télécharger</item>
+        <item quantity="other">%1$d titres à télécharger</item>
+    </plurals>
+    <plurals name="dmusic_genre_confirm_delete_cloud_msg">
+        <item quantity="one">Voulez-vous vraiment supprimer ce genre?</item>
+        <item quantity="other">Voulez-vous vraiment supprimer ce genre et les %d titres correspondants?</item>
+    </plurals>
+    <plurals name="dmusic_library_albums_count">
+        <item quantity="one">%1$d album</item>
+        <item quantity="other">%1$d albums</item>
+    </plurals>
+    <plurals name="dmusic_library_songs_count">
+        <item quantity="one">%1$d titre</item>
+        <item quantity="other">%1$d titres</item>
+    </plurals>
+    <plurals name="dmusic_library_songs_duration_minutes">
+        <item quantity="one">%1$d minute</item>
+        <item quantity="other">%1$d minutes</item>
+    </plurals>
+    <plurals name="dmusic_library_udo_playlists_add_to_toast">
+        <item quantity="one">%1$d titre ajouté à &quot;%2$s&quot;</item>
+        <item quantity="other">%1$d titres ajoutés à &quot;%2$s&quot;</item>
+    </plurals>
+    <plurals name="dmusic_library_videos_count">
+        <item quantity="one">%1$d Vidéo</item>
+        <item quantity="other">%1$d Vidéos</item>
+    </plurals>
+    <plurals name="dmusic_playlist_album_already_in_playlist">
+        <item quantity="one">Titre de l’album déjà dans la liste de lecture</item>
+        <item quantity="other">Titres de l’album déjà dans la liste de lecture</item>
+    </plurals>
+    <plurals name="dmusic_playlist_artist_already_in_playlist">
+        <item quantity="one">Titre de l’artiste déjà dans la liste de lecture</item>
+        <item quantity="other">Titres de l’artiste déjà dans la liste de lecture</item>
+    </plurals>
+    <plurals name="dmusic_playlist_genre_already_in_playlist">
+        <item quantity="one">Titre du genre déjà dans la liste de lecture</item>
+        <item quantity="other">Titres du genre déjà dans la liste de lecture</item>
+    </plurals>
+    <plurals name="dmusic_playlist_playlist_already_in_playlist">
+        <item quantity="one">Titre de la liste de lecture déjà dans la liste de lecture</item>
+        <item quantity="other">Titres de la liste de lecture déjà dans la liste de lecture</item>
+    </plurals>
+    <plurals name="dmusic_playlist_track_already_in_playlist">
+        <item quantity="one">Titre déjà dans la liste de lecture</item>
+        <item quantity="other">Titres déjà dans la liste de lecture</item>
+    </plurals>
+    <plurals name="dmusic_sleep_timer_minutes">
+        <item quantity="one">%1$s minute</item>
+        <item quantity="other">%1$s minutes</item>
+    </plurals>
+    <plurals name="dmusic_unable_to_add_songs_message">
+        <item quantity="one">Le titre n&apos;a pas pu être ajouté. Veuillez réessayer.</item>
+        <item quantity="other">%d titres n&apos;ont pas pu être ajoutés. Veuillez réessayer.</item>
+    </plurals>
+</resources>

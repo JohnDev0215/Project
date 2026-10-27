@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:gravity="center_vertical"
+        android:id="@+id/library_add_to_playlist_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/library_popup_listview_row_height"
+        android:divider="@color/divider"
+        android:dividerHeight="@dimen/spacing_1dp"
+        style="@style/LibraryPopupTop"/>
+    <com.amazon.mp3.view.SafeListView
+        android:id="@+id/ListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/divider"
+        android:dividerHeight="@dimen/spacing_1dp"/>
+</LinearLayout>

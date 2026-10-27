@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/thumbnail"
+    style="@style/ImageWithShadow">
+    <com.amazon.ui.foundations.views.BaseImageShadow
+        android:id="@+id/thumbnail_shadow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/spacer_small"/>
+    <ImageView
+        android:id="@+id/thumbnail_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <ImageButton
+        android:id="@+id/thumbnail_link"
+        android:layout_toEndOf="@+id/thumbnail_image"
+        style="@style/Link.Primary"/>
+</RelativeLayout>

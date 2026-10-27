@@ -1,0 +1,64 @@
+{
+  "Instances": [
+    {
+      "Regex": "FCallCppProvider.*",
+      "ServiceAgent": "Dbu_CommAgent",
+      "Optional":  true,
+      "Enabled": "${interface.cpp}"
+    },
+    {
+      "Regex": "FCallCppFacade.*",
+      "ServiceAgent": "Dbu_CommAgent",
+      "Optional": true,
+      "Enabled": false
+    },
+    {
+      "Name": "DBusCommunication",
+      "ServiceAgent": "Dbu_CommAgent",
+      "Optional": true,
+      "Enabled": "${interface.dbus}"
+    },
+    {
+      "Regex": "DBusProvider.*",
+      "ServiceAgent": "Dbu_CommAgent",
+      "Optional": true,
+      "Enabled": "${interface.dbus}"
+    },
+    {
+      "Regex": "DBusFacade.*",
+      "ServiceAgent": "Dbu_CommAgent",
+      "Optional": true,
+      "Enabled": false
+    },
+    {
+      "Name": "JsonWsCommunication",
+      "ServiceAgent": "Dbu_CommAgent",
+      "Optional": true,
+      "Enabled": "${interface.json}"
+    },
+    {
+      "Regex": "JsonWsProvider.*",
+      "ServiceAgent": "Dbu_CommAgent",
+      "Optional": true,
+      "Enabled": "${interface.json}"
+    },
+    {
+      "Regex": "JsonWsFacade.*",
+      "ServiceAgent": "Dbu_CommAgent",
+      "Optional": true,
+      "Enabled": false
+    },
+    {
+      "Name": "DBUpdateManager"
+    },
+    {
+        "Comment": "start infrastructure manager first",
+        "Name": "TimerServiceManagerInstance"
+    },
+    {
+        "Comment": "online dbupdate implementation in onecore",
+        "Name": "OnlineDBUManager",
+        "Enabled":  true
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:icon="?android:attr/actionModeCutDrawable"
+        android:id="@+id/select_action_menu_cut"
+        android:title="@android:string/cut"
+        android:alphabeticShortcut="x"
+        android:showAsAction="withText|always"/>
+    <item
+        android:icon="?android:attr/actionModeCopyDrawable"
+        android:id="@+id/select_action_menu_copy"
+        android:title="@android:string/copy"
+        android:alphabeticShortcut="c"
+        android:showAsAction="withText|always"/>
+    <item
+        android:icon="?android:attr/actionModePasteDrawable"
+        android:id="@+id/select_action_menu_paste"
+        android:title="@android:string/paste"
+        android:alphabeticShortcut="v"
+        android:showAsAction="withText|always"/>
+    <item
+        android:id="@+id/select_action_menu_share"
+        android:title="@string/actionbar_share"
+        android:showAsAction="withText|always"
+        style="@style/SelectActionMenuShare"/>
+    <item
+        android:icon="?android:attr/actionModeSelectAllDrawable"
+        android:id="@+id/select_action_menu_select_all"
+        android:title="@android:string/selectAll"
+        android:alphabeticShortcut="a"
+        android:showAsAction="withText|always"/>
+    <group android:id="@+id/select_action_menu_text_processing_menus"/>
+    <item
+        android:id="@+id/select_action_menu_web_search"
+        android:title="@string/actionbar_web_search"
+        android:showAsAction="withText|always"
+        style="@style/SelectActionMenuWebSearch"/>
+</menu>

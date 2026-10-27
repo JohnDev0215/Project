@@ -1,0 +1,9 @@
+package com.neusoft.optimus.utility.offlineconfig;
+
+/* JADX INFO: loaded from: classes2.dex */
+public class OffCfg_SX12 extends AbsVehicleConfig {
+    @Override // com.neusoft.optimus.utility.offlineconfig.AbsVehicleConfig
+    protected String[] getArray() {
+        return new String[]{"9C808001002828005480080000000000", "9C808001002829595480080000000000", "9D8080010FE82959548C080000000000", "9C808001002828005480080000000000", "9C808001002829595480080000000000", "9D8080010FE82959548C080000000000", "9C808001002828005480080000000000", "9C808001002829595480080000000000", "9D8080010FE82959548C080000000000"};
+    }
+}

@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <ScrollView
+        android:scrollbars="none"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/DiagnosticOptions"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Diagnostic Options:"
+                    style="@android:style/TextAppearance.Large"/>
+                <CheckBox
+                    android:id="@+id/CompactView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Compact View"
+                    style="@android:style/TextAppearance.Small"/>
+                <CheckBox
+                    android:id="@+id/ShowGraphLinear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Show graph (linear scale)"
+                    style="@android:style/TextAppearance.Small"/>
+                <CheckBox
+                    android:id="@+id/ShowGraphLogarithmic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Show graph (logarithmic scale)"
+                    style="@android:style/TextAppearance.Small"/>
+                <CheckBox
+                    android:id="@+id/ShowGraphEqualBandwidthSpaced"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Show graph (equispaced scale)"
+                    style="@android:style/TextAppearance.Small"/>
+                <CheckBox
+                    android:id="@+id/ShowText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Show text"
+                    style="@android:style/TextAppearance.Small"/>
+                <CheckBox
+                    android:id="@+id/ShowToast"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Show toast"
+                    style="@android:style/TextAppearance.Small"/>
+                <CheckBox
+                    android:id="@+id/ShowCDN"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Show CDN graph"
+                    style="@android:style/TextAppearance.Small"/>
+                <CheckBox
+                    android:id="@+id/ShowQualityScore"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Show quality score"
+                    style="@android:style/TextAppearance.Small"/>
+                <CheckBox
+                    android:id="@+id/ShowInternalState"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Show internal state"
+                    style="@android:style/TextAppearance.Small"/>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/ServiceEndpointOverrides"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Endpoint Override Options:"
+                    style="@android:style/TextAppearance.Large"/>
+                <CheckBox
+                    android:id="@+id/EnableEndpointOverrides"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Enable Gamma Overrides"
+                    style="@android:style/TextAppearance.Small"/>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:id="@+id/EndpointOverridesContainer"
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Location: "/>
+                        <Spinner
+                            android:id="@+id/EndpointLocationDropdown"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:spinnerMode="dropdown"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:id="@+id/EndpointOverridesList"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/ControlsDebuggingOptions"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Controls Debugging Options:"
+                    style="@android:style/TextAppearance.Large"/>
+                <TextView
+                    android:id="@+id/ControlsSurface"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@android:style/TextAppearance.Small"/>
+                <Button
+                    android:id="@+id/SwitchControlsSurface"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Switch Surface"
+                    style="@android:style/TextAppearance.Small"/>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/ControlsDebuggingCDNSwitch"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Manually Trigger Failover:"
+                    style="@android:style/TextAppearance.Large"/>
+                <Button
+                    android:id="@+id/CDNSwitchButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Manually Trigger CDN Failover"
+                    style="@android:style/TextAppearance.Small"/>
+                <Button
+                    android:id="@+id/ManifestSwitchButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Manually Trigger Manifest Failover"
+                    style="@android:style/TextAppearance.Small"/>
+                <Button
+                    android:id="@+id/OriginSwitchButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Manually Trigger Origin Failover"
+                    style="@android:style/TextAppearance.Small"/>
+                <Spinner
+                    android:id="@+id/OverrideFailoverMode"
+                    android:visibility="visible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:spinnerMode="dialog"/>
+                <TextView
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ZigZag Origin Failover:"
+                    style="@android:style/TextAppearance.Large"/>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Failover Enabled: "
+                        android:labelFor="@+id/ZigZagEnabled"/>
+                    <ToggleButton
+                        android:id="@+id/ZigZagEnabled"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@android:style/TextAppearance.Small"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Failover Interval (seconds): "
+                        android:labelFor="@+id/ZigZagFrequency"/>
+                    <EditText
+                        android:id="@+id/ZigZagFrequency"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        style="@android:style/TextAppearance.Small"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Override Video Bitrate:"
+                        style="@android:style/TextAppearance.Large"/>
+                    <Spinner
+                        android:id="@+id/OverrideVideoBitrateDropdown"
+                        android:visibility="visible"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:spinnerMode="dialog"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Set Playback Speed:"
+                        style="@android:style/TextAppearance.Large"/>
+                    <SeekBar
+                        android:layout_gravity="center"
+                        android:id="@+id/PlaybackSpeedSeekBar"
+                        android:focusable="true"
+                        android:clickable="true"
+                        android:layout_width="160dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:progressDrawable="@drawable/playback_speed_seek_style"
+                        android:thumb="@drawable/playback_speed_seek"/>
+                    <TextView
+                        android:textStyle="bold"
+                        android:id="@+id/PlaybackSpeedValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1.0"
+                        style="@android:style/TextAppearance.Large"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center"
+    android:id="@+id/follow_button"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/podcast_spacer_giant">
+    <ImageView
+        android:id="@+id/podcast_follow_button_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/podcast_follow_button_text"
+        android:layout_alignBottom="@+id/podcast_follow_button_text"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/podcast_spacer_small"
+        android:layout_marginEnd="@dimen/podcast_spacer_mini"
+        android:layout_alignParentStart="true"/>
+    <com.amazon.podcast.views.EmberTextView
+        android:id="@+id/podcast_follow_button_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="@dimen/podcast_spacer_base"
+        android:layout_toEndOf="@+id/podcast_follow_button_image"
+        style="@style/PodcastAppTheme.TextAppearance.OutlinedFollowButton"/>
+</RelativeLayout>

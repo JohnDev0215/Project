@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.amazon.video.sdk.avod.widget.FitInFrameLayout
+        android:id="@+id/SubtitleContainer"
+        android:background="@color/avod_transparent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/PlaybackSurfaceBottomPadding"
+        android:layout_below="@+id/PlaybackSurfaceTopPadding">
+        <TextView
+            android:layout_gravity="bottom|center_horizontal"
+            android:id="@+id/SubtitleView"
+            android:background="@drawable/window_with_border"
+            android:padding="@dimen/avod_spacing_xxsmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </com.amazon.video.sdk.avod.widget.FitInFrameLayout>
+</merge>

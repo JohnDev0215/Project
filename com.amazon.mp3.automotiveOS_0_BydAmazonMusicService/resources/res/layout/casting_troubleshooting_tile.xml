@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/helpTileLayout"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/casting_tile_height"
+    android:layout_marginTop="@dimen/casting_troubleshooting_tile_top_margin"
+    android:foreground="@drawable/ripple"
+    android:layout_alignParentTop="true">
+    <com.amazon.ui.foundations.views.BaseButton
+        android:id="@+id/helpButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <TextView
+        android:gravity="start|center_vertical"
+        android:id="@+id/helpTileText"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/casting_tile_height"
+        android:text="@string/casting_troubleshooting_device_list_text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/helpButton"
+        app:layout_constraintTop_toTopOf="parent"
+        style="@style/AmazonMusic.Casting.TitleText"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

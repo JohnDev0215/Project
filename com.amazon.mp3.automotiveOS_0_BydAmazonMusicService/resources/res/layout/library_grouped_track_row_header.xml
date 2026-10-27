@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:paddingTop="@dimen/medium_padding"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:id="@+id/AlbumItemTitle"
+            android:background="@color/transparent"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/library_list_view_header_item_height"
+            android:singleLine="true"
+            android:paddingStart="@dimen/screen_margin"
+            android:paddingEnd="@dimen/standard_padding"
+            android:layout_marginEnd="@dimen/library_detail_padding"
+            style="@style/LibraryGroupedListItemHeader"/>
+        <com.amazon.mp3.view.LibraryGroupedTrackRow
+            android:id="@+id/TrackRowViewGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/library_list_view_item_height_2_lines"/>
+    </LinearLayout>
+</LinearLayout>

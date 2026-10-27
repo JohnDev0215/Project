@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.amazon.music.curate.skyfire.views.EmberTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/library_header_text"
+    android:focusable="true"
+    android:clickable="true"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/spacer_large"
+    android:layout_marginBottom="@dimen/spacer_large"
+    android:paddingStart="@dimen/gutter"
+    android:layout_marginStart="@dimen/margin"
+    style="@style/CurateTheme.TextView.Headline1"/>

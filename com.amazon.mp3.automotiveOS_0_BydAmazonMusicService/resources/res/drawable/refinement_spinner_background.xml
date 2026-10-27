@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <selector>
+            <item
+                android:state_pressed="true"
+                android:drawable="@color/refinement_spinner_background_pressed_color"/>
+            <item android:drawable="@color/refinement_spinner_background_color"/>
+        </selector>
+    </item>
+    <item>
+        <selector>
+            <item
+                android:state_focused="true"
+                android:left="8dp">
+                <bitmap
+                    android:gravity="right"
+                    android:src="@drawable/arrow_drop_down"/>
+            </item>
+        </selector>
+    </item>
+</layer-list>

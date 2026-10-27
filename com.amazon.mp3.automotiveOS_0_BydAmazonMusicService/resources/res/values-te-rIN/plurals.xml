@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="dmusic_all_prime_songs_added_to_library">
+        <item quantity="one">%1$d పాటను మీ మ్యూజిక్‍కు జోడించారు.</item>
+        <item quantity="other">%1$d పాటలను మీ మ్యూజిక్‍కు జోడించారు.</item>
+    </plurals>
+    <plurals name="dmusic_artist_confirm_delete_cloud_msg">
+        <item quantity="one">మీరు ఈ ఆర్టిస్ట్‌ను ఖచ్చితంగా తొలగించాలనుకుంటున్నారా?</item>
+        <item quantity="other">మీరు ఈ ఆర్టిస్ట్ మరియు అన్ని %d పాటలను ఖచ్చితంగా తొలగించాలనుకుంటున్నారా?</item>
+    </plurals>
+    <plurals name="dmusic_download_str_to_download">
+        <item quantity="one">డౌన్‌లోడ్ చేయడానికి %1$d పాట</item>
+        <item quantity="other">డౌన్‌లోడ్ చేయడానికి %1$d పాటలు</item>
+    </plurals>
+    <plurals name="dmusic_duration_hours">
+        <item quantity="one">%1$d గం.</item>
+        <item quantity="other">%1$d గం.</item>
+    </plurals>
+    <plurals name="dmusic_duration_minutes">
+        <item quantity="one">%1$d నిమి.</item>
+        <item quantity="other">%1$d నిమి.</item>
+    </plurals>
+    <plurals name="dmusic_genre_confirm_delete_cloud_msg">
+        <item quantity="one">మీరు ఈ జోనర్‌ను ఖచ్చితంగా తొలగించాలనుకుంటున్నారా?</item>
+        <item quantity="other">మీరు ఈ జోనర్ మరియు అన్ని %d పాటలను ఖచ్చితంగా తొలగించాలనుకుంటున్నారా?</item>
+    </plurals>
+    <plurals name="dmusic_library_albums_count">
+        <item quantity="one">%1$d ఆల్బమ్</item>
+        <item quantity="other">%1$d ఆల్బమ్‌లు</item>
+    </plurals>
+    <plurals name="dmusic_library_songs_count">
+        <item quantity="one">%1$d పాట</item>
+        <item quantity="other">%1$d పాటలు</item>
+    </plurals>
+    <plurals name="dmusic_library_songs_duration_minutes">
+        <item quantity="one">%1$d నిమిషం</item>
+        <item quantity="other">%1$d నిమిషాలు</item>
+    </plurals>
+    <plurals name="dmusic_library_udo_playlists_add_to_toast">
+        <item quantity="one">%1$d పాటను &quot;%2$s&quot;కు జోడించారు</item>
+        <item quantity="other">%1$d పాటలను &quot;%2$s&quot;కు జోడించారు</item>
+    </plurals>
+    <plurals name="dmusic_library_videos_count">
+        <item quantity="one">%1$d వీడియో</item>
+        <item quantity="other">%1$d వీడియోలు</item>
+    </plurals>
+    <plurals name="dmusic_playlist_album_already_in_playlist">
+        <item quantity="one">ఆల్బమ్ పాట ఇప్పటికే మీ ప్లేలిస్ట్‌లో ఉంది</item>
+        <item quantity="other">ఆల్బమ్ పాటలు ఇప్పటికే ప్లేలిస్ట్‌లో ఉన్నాయి</item>
+    </plurals>
+    <plurals name="dmusic_playlist_artist_already_in_playlist">
+        <item quantity="one">ఆర్టిస్ట్ పాట ఇప్పటికే ఈ ప్లేలిస్ట్‌లో ఉంది</item>
+        <item quantity="other">ఆర్టిస్ట్ పాటలు ఇప్పటికే ఈ ప్లేలిస్ట్‌లో ఉన్నాయి</item>
+    </plurals>
+    <plurals name="dmusic_playlist_genre_already_in_playlist">
+        <item quantity="one">జోనర్ పాట ఇప్పటికే ఈ ప్లేలిస్ట్‌లో ఉంది</item>
+        <item quantity="other">జోనర్ పాటలు ఇప్పటికే ప్లేలిస్ట్‌లో ఉన్నాయి</item>
+    </plurals>
+    <plurals name="dmusic_playlist_playlist_already_in_playlist">
+        <item quantity="one">ప్లేలిస్ట్ పాట ఇప్పటికే ప్లేలిస్ట్‌లో ఉంది</item>
+        <item quantity="other">ప్లేలిస్ట్ పాటలు ఇప్పటికే ప్లేలిస్ట్‌లో ఉన్నాయి</item>
+    </plurals>
+    <plurals name="dmusic_playlist_track_already_in_playlist">
+        <item quantity="one">పాట ఇప్పటికే ప్లేలిస్ట్‌లో ఉంది</item>
+        <item quantity="other">పాటలు ఇప్పటికే ప్లేలిస్ట్‌లో ఉన్నాయి</item>
+    </plurals>
+    <plurals name="dmusic_sleep_timer_minutes">
+        <item quantity="one">%1$s నిమిషం</item>
+        <item quantity="other">%1$s నిమిషాలు</item>
+    </plurals>
+    <plurals name="dmusic_track_count">
+        <item quantity="one">%1$d పాట</item>
+        <item quantity="other">%1$d పాటలు</item>
+    </plurals>
+    <plurals name="dmusic_unable_to_add_songs_message">
+        <item quantity="one">ఒక పాటను జోడించడం సాధ్యపడదు. మళ్ళీ ప్రయత్నించండి.</item>
+        <item quantity="other">%d పాటలను జోడించడం సాధ్యపడదు. మళ్ళీ ప్రయత్నించండి.</item>
+    </plurals>
+    <plurals name="find_library_albums_count">
+        <item quantity="one">%1$d ఆల్బమ్</item>
+        <item quantity="other">%1$d ఆల్బమ్‌లు</item>
+    </plurals>
+    <plurals name="find_library_songs_count">
+        <item quantity="one">%1$d పాట</item>
+        <item quantity="other">%1$d పాటలు</item>
+    </plurals>
+    <plurals name="playlist_duration_hours">
+        <item quantity="one">%1$d గంట</item>
+        <item quantity="other">%1$d గంటలు</item>
+    </plurals>
+    <plurals name="playlist_duration_minutes">
+        <item quantity="one">%1$d నిమిషం</item>
+        <item quantity="other">%1$d నిమిషాలు</item>
+    </plurals>
+    <plurals name="playlist_song_count">
+        <item quantity="one">%1$d పాట</item>
+        <item quantity="other">%1$d పాటలు</item>
+    </plurals>
+</resources>

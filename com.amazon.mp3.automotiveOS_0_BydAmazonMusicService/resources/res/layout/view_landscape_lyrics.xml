@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.amazon.mp3.playback.view.lyrics.LyricsLineView
+        android:gravity="center"
+        android:layout_gravity="center_vertical"
+        android:id="@+id/TopLyricsLine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <com.amazon.mp3.playback.view.lyrics.LyricsLineView
+        android:gravity="center"
+        android:layout_gravity="center_vertical"
+        android:id="@+id/MiddleLyricsLine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <com.amazon.mp3.playback.view.lyrics.LyricsLineView
+        android:gravity="center"
+        android:layout_gravity="center_vertical"
+        android:id="@+id/BottomLyricsLine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</merge>

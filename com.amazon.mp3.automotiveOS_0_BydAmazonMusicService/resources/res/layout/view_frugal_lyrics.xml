@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/FrugalLyricsView"
+    android:visibility="gone"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <com.amazon.ui.foundations.views.BaseButton
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/FrugalLyricsBadge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:textColor="@color/white"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/FrugalLyricsTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dmusic_now_playing_frugal_lyrics"/>
+</LinearLayout>

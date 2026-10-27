@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.amazon.music.views.library.views.PlayNotificationIcon
+        android:layout_gravity="center"
+        android:id="@+id/equalizer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:tint="@color/blue_accent"/>
+    <TextView
+        android:ellipsize="end"
+        android:layout_gravity="center"
+        android:id="@+id/row_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="1"/>
+    <com.amazon.ui.foundations.views.BaseButton
+        android:layout_gravity="center"
+        android:id="@+id/row_cta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <com.amazon.ui.foundations.views.BaseButton
+        android:layout_gravity="center"
+        android:id="@+id/instant_play_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/action_bar_overflow_open"/>
+</merge>

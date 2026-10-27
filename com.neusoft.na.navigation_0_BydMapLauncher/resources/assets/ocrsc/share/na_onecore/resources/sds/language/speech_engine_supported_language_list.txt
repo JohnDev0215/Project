@@ -1,0 +1,181 @@
+# This file contains all of the supported language information from speech engine
+# The format of the language information:
+# [language]=[isoCountryCode],[isoLanguageCode],[isoScriptCode]
+# if the one/some section above is empty, just keep a spcace for it
+# e.g. speech engine supports language ALB(Albanian) and DUT(Danish), then the format shall be
+# ALB=ALB,sqi,Latn
+# DUT=,,,
+
+# ALBANIAN
+ALB=ALB,sqi,Latn
+
+# ARABIC (isoCountryCode pool: EGY, MAR, DZA, SAU, YEM, TUN, JOR, ARE, LBN, OMN, KWT, QAT, BHR)
+ar_AR=EGY,ara,Arab
+
+# BASQUE
+BAQ=ESP,baq,Latn
+
+# BELARUSIAN (isoScriptCode pool: Cyrl, Latn)
+BEL=BLR,bel,Cyrl
+
+# BOSNIAN
+BOS=BIH,bos,Latn
+
+# BULGARIAN (isoScriptCode pool: Cyrl, Latn)
+BUL=BGR,bul,Cyrl
+
+# CATALAN (isoCountryCode pool: AND, ESP)
+CAT=AND,cat,Latn
+
+# SIMPLIFIED CHINESE
+zh_CN=CHN,zho,Hans
+
+# CHINESE PINYIN(transliterated latin Chinese (Pinyin))
+#zh_CN=CHN,chn,Latn
+
+# TRADITIONAL CHINESE(not an ISO code)
+CHT=CHN,chn,Hant
+
+# CZECH
+CZE=CZE,ces,Latn
+
+# DANISH
+DAN=DNK,dan,Latn
+
+# DUTCH
+DUT=,,,
+
+# ENGLISH (British English as default)
+en_GB=GBR,eng,Latn
+
+# ENGLISH USA
+en_US=USA,eng,Latn
+
+# ESTONIAN
+EST=EST,est,Latn
+
+# FINNISH
+FIN=FIN,fin,Latn
+
+# FRENCH FRANCE
+fr_FR=FRA,fra,Latn
+
+# FRENCH CANADA
+fr_CA=CAN,fra,Latn
+
+# GERMAN
+de_DE=DEU,deu,Latn
+
+# GAELIC
+GLA=,,,
+
+# GALICIAN
+GLG=ESP,glg,Latn
+
+# GREEK
+GRE=,,,
+
+# HEBREW
+HEB=,,,
+
+#HINDI
+HIN=,,,
+
+#CROATIAN (isoCountryCode pool: HRV, BIH)
+HRV=HRV,hrv,Latn
+
+#HUNGARIAN
+HUN=HUN,hun,Latn
+
+#ICELANDIC
+ICE=,,,
+
+#INDONESIAN
+IND=IND,ind,Latn
+
+#ITALIAN (isoCountryCode pool: ITA, SMR, VAT, CHE)
+it_IT=ITA,ita,Latn
+
+#JAPANESE
+jp_JP=JPN,jpn,Jpan
+
+#KAZAKH
+KAZ=,,,
+
+#KOREAN
+KOR=,,,
+
+#LATVIAN
+LAV=LVA,lav,Latn
+
+#LITHUANIAN
+LIT=LTU,lit,Latn
+
+#MACEDONIAN
+MAC=MAC,por,Latn
+
+#MALAY(not an ISO code)
+MAY=,,,
+
+#MALTESE
+MLT=MLT,mlt,Latn
+
+#MONTENEGRIN(not an ISO code) (isoScriptCode pool: Latn, Cyrl)
+MNE=MNE,srp,Cyrl
+
+#MOLDAVIAN(not an ISO code)
+MOL=MDA,mol,Latn
+
+#NORWEGIAN
+NOR=NOR,nor,Latn
+
+#POLISH
+POL=POL,pol,Latn
+
+#PORTUGESE (isoCountryCode pool: BRA, MOZ, AGO, PRT)
+pt_PT=PRT,por,Latn
+
+#TRANSLITERATED RUSSIAN
+RUL=,,,
+
+#ROMANIAN
+RUM=,,,
+
+#RUSSIAN (isoCountryCode pool: RUS, BLR; isoScriptCode pool: Cyrl, Latn)
+ru_RU=RUS,rus,Cyrl
+
+#SLOVAK
+SLO=,,,
+
+#SLOVENIAN
+SLV=SVN,slv,Latn
+
+#SPANISH (isoCountryCode pool: a lot)
+es_ES=ESP,spa,Latn
+
+#SPANISH MEXICAN (isoCountryCode pool: a lot)
+es_MX=MEX,spa,Latn
+
+#SERBIAN (isoCountryCode pool: SRB, MNE, BIH, isoScriptCode pool: Latn, Cyrl)
+SRP=SRB,srp,Cyrl
+
+#SWEDISH
+SWE=SWE,swe,Latn
+
+#THAI
+THA=THA,tha,Latn
+
+#TURKISH
+tr_TR=TUR,tur,Latn
+
+#UKRAINIAN
+UKR=UKR,ukr,Latn
+
+#VIETNAMESE
+VIE=VNM,vie,Tavt
+
+#WELSH
+WEL=,,,
+
+#NONE
+UND=,,,

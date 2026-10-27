@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center"
+    android:layout_gravity="center_horizontal"
+    android:orientation="horizontal"
+    android:background="@drawable/follow_outline"
+    android:padding="@dimen/spacing_6dp"
+    android:visibility="visible"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <ImageButton
+        android:layout_gravity="center_vertical"
+        android:id="@+id/PersistentPlayerPlayButton"
+        android:background="@color/transparent"
+        android:visibility="visible"
+        android:clickable="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_playback_play"
+        android:contentDescription="@string/turn_on_shuffle_content_description"/>
+</LinearLayout>

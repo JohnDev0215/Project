@@ -1,0 +1,6127 @@
+{
+  "configuration": {
+    "cacheDuration": 43200.0,
+    "throttleDuration": 60.0,
+    "customRegions": [
+      {
+        "regions": [
+          "BE",
+          "BG",
+          "CY",
+          "CZ",
+          "DE",
+          "EE",
+          "GR",
+          "ES",
+          "FI",
+          "FR",
+          "HU",
+          "IE",
+          "IS",
+          "IT",
+          "LI",
+          "LT",
+          "LU",
+          "LV",
+          "MT",
+          "NL",
+          "PL",
+          "PT",
+          "SE",
+          "SK",
+          "GB"
+        ],
+        "value": "COOKIE_CONSENT"
+      },
+      {
+        "regions": [
+          "IT",
+          "ES",
+          "FR",
+          "US",
+          "CO",
+          "CL",
+          "GB",
+          "AU",
+          "MX",
+          "DE",
+          "BR",
+          "JP",
+          "CA",
+          "AR",
+          "AE",
+          "SA",
+          "EG"
+        ],
+        "value": "NIGHTWING"
+      },
+      {
+        "regions": [
+          "IT",
+          "ES",
+          "FR",
+          "US",
+          "CO",
+          "CL",
+          "NZ",
+          "IN",
+          "GB",
+          "AU",
+          "MX",
+          "DE",
+          "BR",
+          "JP",
+          "IE",
+          "CA",
+          "AR",
+          "PE",
+          "EC",
+          "CR",
+          "BO",
+          "GT",
+          "NI",
+          "PA",
+          "SV",
+          "UY",
+          "PY",
+          "DO",
+          "HN"
+        ],
+        "value": "PODCASTS"
+      },
+      {
+        "regions": [
+          "AE",
+          "SA",
+          "EG"
+        ],
+        "value": "SPIRITUAL"
+      },
+      {
+        "regions": [
+          "AU",
+          "NZ",
+          "FR",
+          "IT",
+          "ES",
+          "US",
+          "GB",
+          "MX",
+          "DE",
+          "BR",
+          "JP",
+          "CA",
+          "IN"
+        ],
+        "value": "VIDEOS"
+      }
+    ],
+    "marketplaces": [
+      {
+        "name": "US",
+        "id": "ATVPDKIKX0DER"
+      },
+      {
+        "name": "GB",
+        "id": "A1F83G8C2ARO7P"
+      },
+      {
+        "name": "DE",
+        "id": "A1PA6795UKMFR9"
+      },
+      {
+        "name": "FR",
+        "id": "A13V1IB3VIYZZH"
+      },
+      {
+        "name": "IT",
+        "id": "APJ6JRA9NG5V4"
+      },
+      {
+        "name": "ES",
+        "id": "A1RKKUPIHCS9HS"
+      },
+      {
+        "name": "JP",
+        "id": "A1VC38T7YXB528"
+      },
+      {
+        "name": "ROW-NA",
+        "id": "ART4WZ8MWBX2Y"
+      },
+      {
+        "name": "ROW-FE",
+        "id": "A15PK738MTQHSO"
+      },
+      {
+        "name": "ROE-EU",
+        "id": "A3K6Y4MI8GDYMT"
+      }
+    ]
+  },
+  "unlimited": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": true
+    },
+    {
+      "regions": [
+        "IN"
+      ],
+      "value": false
+    }
+  ],
+  "prime": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": false
+    },
+    {
+      "regions": [
+        "ES",
+        "IT",
+        "IN",
+        "CA",
+        "US",
+        "GB",
+        "JP",
+        "MX",
+        "DE",
+        "AU",
+        "FR",
+        "BR"
+      ],
+      "value": true
+    }
+  ],
+  "sonic_rush": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": true
+    }
+  ],
+  "browse": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": true
+    }
+  ],
+  "store": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": false
+    }
+  ],
+  "lyrics": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": false
+    },
+    {
+      "regions": [
+        "IT",
+        "ES",
+        "FR",
+        "US",
+        "CO",
+        "CL",
+        "NZ",
+        "IN",
+        "GB",
+        "AR",
+        "AU",
+        "MX",
+        "DE",
+        "BR",
+        "JP",
+        "IE",
+        "CA"
+      ],
+      "value": true
+    }
+  ],
+  "lyrics_marketplace_check": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": true
+    },
+    {
+      "regions": [
+        "IT",
+        "ES",
+        "FR",
+        "CO",
+        "AR",
+        "CL",
+        "NZ",
+        "IN",
+        "AU",
+        "MX",
+        "BR",
+        "IE",
+        "CA"
+      ],
+      "value": false
+    }
+  ],
+  "prime_badging": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": false
+    }
+  ],
+  "language_preferences": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": false
+    },
+    {
+      "regions": [
+        "IN"
+      ],
+      "value": true
+    }
+  ],
+  "unauthenticated_push": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": false
+    }
+  ],
+  "in_app_messaging": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": true
+    }
+  ],
+  "recommendation_for_prime": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "subscriptions": [
+        "prime",
+        "sonic_rush"
+      ],
+      "value": true
+    },
+    {
+      "regions": [
+        "IT",
+        "ES",
+        "FR",
+        "NZ",
+        "IN",
+        "AU",
+        "MX",
+        "BR"
+      ],
+      "value": false
+    }
+  ],
+  "recommendation_for_unlimited": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": true
+    },
+    {
+      "regions": [
+        "BR"
+      ],
+      "value": false
+    }
+  ],
+  "bundesliga": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": false
+    }
+  ],
+  "casting": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": true
+    }
+  ],
+  "artist_follow": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": false
+    },
+    {
+      "regions": [
+        "IT",
+        "ES",
+        "FR",
+        "US",
+        "CO",
+        "AR",
+        "CL",
+        "NZ",
+        "IN",
+        "GB",
+        "AU",
+        "MX",
+        "DE",
+        "BR",
+        "JP",
+        "CA"
+      ],
+      "value": true
+    }
+  ],
+  "sync_recents": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": true
+    }
+  ],
+  "equalizer": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": false
+    }
+  ],
+  "equalizer_android_api": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": true
+    }
+  ],
+  "equalizer_harley_api": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": true
+    }
+  ],
+  "sync_recent_tracks": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": true
+    }
+  ],
+  "new_releases": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": true
+    },
+    {
+      "regions": [
+        "IN"
+      ],
+      "value": false
+    }
+  ],
+  "charts": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": true
+    },
+    {
+      "regions": [
+        "IN"
+      ],
+      "value": false
+    }
+  ],
+  "nightwing": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": false
+    },
+    {
+      "regions": [
+        "IT",
+        "ES",
+        "FR",
+        "US",
+        "CO",
+        "AR",
+        "CL",
+        "GB",
+        "AU",
+        "MX",
+        "DE",
+        "BR",
+        "JP",
+        "CA"
+      ],
+      "value": true
+    }
+  ],
+  "app_rating": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": true
+    }
+  ],
+  "katana": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": true
+    },
+    {
+      "regions": [
+        "IN"
+      ],
+      "value": false
+    }
+  ],
+  "track_popularity_bar": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": true
+    }
+  ],
+  "ivy": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "subscriptions": [
+        "no_subscription",
+        "free",
+        "prime",
+        "music_home",
+        "music_hd",
+        "music_unlimited"
+      ],
+      "value": true
+    },
+    {
+      "regions": [
+        "IN"
+      ],
+      "value": false
+    }
+  ],
+  "ivy_refinement_pills": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "subscriptions": [
+        "no_subscription",
+        "free",
+        "prime",
+        "music_home",
+        "music_hd",
+        "music_unlimited"
+      ],
+      "value": true
+    }
+  ],
+  "hide_track_numbers_playlists": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "subscriptions": [
+        "music_unlimited"
+      ],
+      "value": true
+    }
+  ],
+  "ivy_catalog_suppress_non_track_album_filtering": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "subscriptions": [
+        "no_subscription",
+        "free",
+        "prime",
+        "music_home",
+        "music_hd",
+        "music_unlimited"
+      ],
+      "value": true
+    }
+  ],
+  "customer_profile": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": true
+    }
+  ],
+  "customer_profile_picture_upload": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": false
+    },
+    {
+      "regions": [
+        "IT",
+        "ES",
+        "FR",
+        "US",
+        "NZ",
+        "IN",
+        "GB",
+        "AU",
+        "MX",
+        "DE",
+        "BR",
+        "JP",
+        "CA"
+      ],
+      "value": true
+    }
+  ],
+  "album_badging_library": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": false
+    }
+  ],
+  "library_sync_api_dialing": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": true
+    }
+  ],
+  "purchased_track_playback_in_katana_quality": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": true
+    }
+  ],
+  "display_queue_view": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "subscriptions": [
+        "prime",
+        "music_home",
+        "music_hd",
+        "music_unlimited"
+      ],
+      "value": true
+    }
+  ],
+  "badging_in_recents_track": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": true
+    },
+    {
+      "regions": [
+        "IN"
+      ],
+      "value": false
+    }
+  ],
+  "activity_feed": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": false
+    },
+    {
+      "regions": [
+        "IT",
+        "ES",
+        "FR",
+        "US",
+        "NZ",
+        "IN",
+        "GB",
+        "AU",
+        "MX",
+        "DE",
+        "BR",
+        "ROE-EU",
+        "ROW-NA",
+        "ROW-FE",
+        "JP",
+        "IE",
+        "CA"
+      ],
+      "value": true
+    }
+  ],
+  "should_check_MFA": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": false
+    },
+    {
+      "regions": [
+        "IT",
+        "ES",
+        "FR",
+        "GB",
+        "DE"
+      ],
+      "value": true
+    }
+  ],
+  "upload_log_after_crash": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": true
+    }
+  ],
+  "compressed_coral_requests": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": true
+    }
+  ],
+  "app_rating_no_incident_threshold": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": 3
+    }
+  ],
+  "iot_skip_limit": [
+    {
+      "regions": [
+        "IT",
+        "ES",
+        "FR",
+        "US",
+        "CO",
+        "AR",
+        "CL",
+        "GB",
+        "AU",
+        "MX",
+        "DE",
+        "BR",
+        "JP",
+        "CA"
+      ],
+      "value": true
+    }
+  ],
+  "behavioral_ads_notification": [
+    {
+      "regions": [
+        "IT",
+        "ES",
+        "FR",
+        "GB",
+        "DE",
+        "BR"
+      ],
+      "subscriptions": [
+        "free",
+        "music_hd",
+        "music_home",
+        "music_unlimited",
+        "no_subscription",
+        "prime"
+      ],
+      "value": true
+    }
+  ],
+  "notification_iot": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": true
+    }
+  ],
+  "recommendation_for_free_tier": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": true
+    }
+  ],
+  "artist_taste_collection": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": false
+    },
+    {
+      "regions": [
+        "IT",
+        "ES",
+        "FR",
+        "US",
+        "CO",
+        "AR",
+        "CL",
+        "NZ",
+        "GB",
+        "AU",
+        "MX",
+        "DE",
+        "BR",
+        "JP",
+        "CA"
+      ],
+      "value": true
+    }
+  ],
+  "dynamic_messaging_v2": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": true
+    }
+  ],
+  "music_never_stops": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": true
+    }
+  ],
+  "download_track_button": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": false
+    }
+  ],
+  "hybrid_queue_lookahead_window_size": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": 10
+    }
+  ],
+  "hybrid_queue_batch_size": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": 100
+    }
+  ],
+  "free_tier_persistent_upsell": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": true
+    }
+  ],
+  "detail_page_upsell_v2": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "subscriptions": [
+        "sonic_rush",
+        "free"
+      ],
+      "value": true
+    }
+  ],
+  "follow_artists_widget": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": false
+    },
+    {
+      "regions": [
+        "US"
+      ],
+      "value": true
+    }
+  ],
+  "skip_web_view": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": false
+    },
+    {
+      "regions": [
+        "IN"
+      ],
+      "value": true
+    }
+  ],
+  "page_latency_sampling_rate": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": 100
+    }
+  ],
+  "is_merch_enabled": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": false
+    },
+    {
+      "regions": [
+        "US"
+      ],
+      "value": true
+    }
+  ],
+  "live_event_phase": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": 0
+    }
+  ],
+  "is_live_event_enabled": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": true
+    }
+  ],
+  "videos": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": false
+    },
+    {
+      "regions": [
+        "VIDEOS"
+      ],
+      "value": true
+    }
+  ],
+  "bop_videos": [
+    {
+      "regions": [
+        "VIDEOS"
+      ],
+      "subscriptions": [
+        "prime",
+        "sonic_rush",
+        "music_unlimited",
+        "music_home",
+        "music_hd",
+        "free"
+      ],
+      "value": true
+    }
+  ],
+  "free_tier_contextual_upsells": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": true
+    }
+  ],
+  "cloud_queue_enabled": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": false
+    }
+  ],
+  "cq_pull_and_transfer": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": false
+    }
+  ],
+  "t1r_using_cloud_queue": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": true
+    }
+  ],
+  "waze_integration": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": true
+    }
+  ],
+  "free_tier_user_playlist_editing": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": true
+    }
+  ],
+  "bauhaus_top_app_bar": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": true
+    }
+  ],
+  "bauhaus_in_app_messaging": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": true
+    }
+  ],
+  "signin_splash_page": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": 8
+    },
+    {
+      "regions": [
+        "IN",
+        "ROE-EU",
+        "ROW-NA",
+        "ROW-FE",
+        "IE"
+      ],
+      "value": 0
+    }
+  ],
+  "video_landing_page": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": false
+    },
+    {
+      "regions": [
+        "VIDEOS"
+      ],
+      "value": true
+    }
+  ],
+  "manage_app_display_language": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": false
+    },
+    {
+      "regions": [
+        "US",
+        "IN",
+        "DE",
+        "GB",
+        "JP",
+        "MX",
+        "IT",
+        "BR",
+        "ES",
+        "CA",
+        "FR",
+        "AU",
+        "NZ",
+        "CO",
+        "CL",
+        "AR"
+      ],
+      "value": true
+    }
+  ],
+  "launch_brush_v3_category_landing_pages": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": false
+    }
+  ],
+  "cache_search_results": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": true
+    }
+  ],
+  "bauhaus_playlist_detail_page": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": true
+    }
+  ],
+  "bauhaus_album_detail_page": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": true
+    }
+  ],
+  "bauhaus_library_pages": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": true
+    }
+  ],
+  "bauhaus_library_artist_dp": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": true
+    }
+  ],
+  "pre_auth_splash_page": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": false
+    },
+    {
+      "regions": [
+        "IT",
+        "ES",
+        "FR",
+        "US",
+        "NZ",
+        "GB",
+        "AU",
+        "MX",
+        "DE",
+        "BR",
+        "JP",
+        "CA"
+      ],
+      "value": false
+    }
+  ],
+  "is_trickplay_supported": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": true
+    }
+  ],
+  "free_tier_on_demand_playlists": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": true
+    },
+    {
+      "regions": [
+        "JP"
+      ],
+      "value": false
+    }
+  ],
+  "nps_likes": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": false
+    },
+    {
+      "regions": [
+        "MX",
+        "CA"
+      ],
+      "value": true
+    }
+  ],
+  "manage_retail_lop_sync_notification": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": false
+    },
+    {
+      "regions": [
+        "US",
+        "IN",
+        "DE",
+        "GB",
+        "JP",
+        "MX",
+        "IT",
+        "BR",
+        "ES",
+        "CA",
+        "FR",
+        "AU",
+        "NZ",
+        "CO",
+        "CL",
+        "AR"
+      ],
+      "value": true
+    }
+  ],
+  "in_extended_language_list": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": false
+    },
+    {
+      "regions": [
+        "IN"
+      ],
+      "value": true
+    }
+  ],
+  "in_extended_language_list_phase_2": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": false
+    },
+    {
+      "regions": [
+        "IN"
+      ],
+      "value": true
+    }
+  ],
+  "early_use_notification": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": false
+    },
+    {
+      "regions": [
+        "IT",
+        "ES",
+        "FR",
+        "US",
+        "NZ",
+        "GB",
+        "AU",
+        "MX",
+        "DE",
+        "BR",
+        "JP",
+        "CA"
+      ],
+      "value": true
+    }
+  ],
+  "bauhaus_pagination": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": true
+    }
+  ],
+  "top_video_rec": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": false
+    },
+    {
+      "regions": [
+        "US"
+      ],
+      "value": true
+    }
+  ],
+  "enable_free_tier_for_sdp": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": false
+    },
+    {
+      "regions": [
+        "IT",
+        "ES",
+        "FR",
+        "US",
+        "CO",
+        "AR",
+        "CL",
+        "GB",
+        "AU",
+        "MX",
+        "DE",
+        "BR",
+        "JP",
+        "CA"
+      ],
+      "value": true
+    }
+  ],
+  "ivy_learn_more_url": [
+    {
+      "regions": [
+        "US"
+      ],
+      "value": "https://www.amazon.com/help/3daudio"
+    },
+    {
+      "regions": [
+        "GB"
+      ],
+      "value": "https://www.amazon.co.uk/help/3daudio"
+    },
+    {
+      "regions": [
+        "DE"
+      ],
+      "value": "https://www.amazon.de/help/3daudio"
+    },
+    {
+      "regions": [
+        "FR"
+      ],
+      "value": "https://www.amazon.fr/help/3daudio"
+    },
+    {
+      "regions": [
+        "IT"
+      ],
+      "value": "https://www.amazon.it/help/3daudio"
+    },
+    {
+      "regions": [
+        "ES"
+      ],
+      "value": "https://www.amazon.es/help/3daudio"
+    },
+    {
+      "regions": [
+        "JP"
+      ],
+      "value": "https://www.amazon.co.jp/help/3daudio"
+    },
+    {
+      "regions": [
+        "ROW-NA"
+      ],
+      "value": "https://music.amazon.com/NA/help?nodeId=GMCGJGBTMLHSUE6W&pop-up=1&view-type=content-only"
+    },
+    {
+      "regions": [
+        "ROE-EU"
+      ],
+      "value": "https://music.amazon.com/EU/help?nodeId=GMCGJGBTMLHSUE6W&pop-up=1&view-type=content-only"
+    },
+    {
+      "regions": [
+        "ROW-FE"
+      ],
+      "value": "https://music.amazon.com/FE/help?nodeId=GMCGJGBTMLHSUE6W&pop-up=1&view-type=content-only"
+    },
+    {
+      "regions": [
+        "AU",
+        "NZ"
+      ],
+      "value": "https://www.amazon.com.au/help/3daudio"
+    },
+    {
+      "regions": [
+        "BR"
+      ],
+      "value": "https://www.amazon.com.br/help/3daudio"
+    },
+    {
+      "regions": [
+        "MX"
+      ],
+      "value": "https://www.amazon.com.mx/help/3daudio"
+    }
+  ],
+  "musichd_learn_more_url": [
+    {
+      "regions": [
+        "US"
+      ],
+      "value": "https://www.amazon.com/help/musicaudioquality"
+    },
+    {
+      "regions": [
+        "GB"
+      ],
+      "value": "https://www.amazon.co.uk/help/musicaudioquality"
+    },
+    {
+      "regions": [
+        "DE"
+      ],
+      "value": "https://www.amazon.de/help/musicaudioquality"
+    },
+    {
+      "regions": [
+        "FR"
+      ],
+      "value": "https://www.amazon.fr/help/musicaudioquality"
+    },
+    {
+      "regions": [
+        "IT"
+      ],
+      "value": "https://www.amazon.it/help/musicaudioquality"
+    },
+    {
+      "regions": [
+        "ES"
+      ],
+      "value": "https://www.amazon.es/help/musicaudioquality"
+    },
+    {
+      "regions": [
+        "JP"
+      ],
+      "value": "https://www.amazon.co.jp/help/musicaudioquality"
+    },
+    {
+      "regions": [
+        "ROW-NA"
+      ],
+      "value": "https://music.amazon.com/NA/help?nodeId=GBDVZ8C4MLWDM4QY&pop-up=1&view-type=content-only"
+    },
+    {
+      "regions": [
+        "ROE-EU"
+      ],
+      "value": "https://music.amazon.com/EU/help?nodeId=GBDVZ8C4MLWDM4QY&pop-up=1&view-type=content-only"
+    },
+    {
+      "regions": [
+        "ROW-FE"
+      ],
+      "value": "https://music.amazon.com/FE/help?nodeId=GBDVZ8C4MLWDM4QY&pop-up=1&view-type=content-only"
+    },
+    {
+      "regions": [
+        "AU",
+        "NZ"
+      ],
+      "value": "https://www.amazon.com.au/help/musicaudioquality"
+    },
+    {
+      "regions": [
+        "BR"
+      ],
+      "value": "https://www.amazon.com.br/help/musicaudioquality"
+    },
+    {
+      "regions": [
+        "MX"
+      ],
+      "value": "https://www.amazon.com.mx/help/musicaudioquality"
+    }
+  ],
+  "free_tier_skips_remaining_tooltip": [
+    {
+      "regions": [
+        "US",
+        "GB",
+        "DE",
+        "FR",
+        "IT",
+        "ES",
+        "CA",
+        "MX",
+        "AU",
+        "JP",
+        "BR",
+        "CO",
+        "CL",
+        "AR"
+      ],
+      "value": true
+    }
+  ],
+  "aom_free_tier_v2": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": false
+    },
+    {
+      "regions": [
+        "IT",
+        "ES",
+        "FR",
+        "US",
+        "CO",
+        "AR",
+        "CL",
+        "GB",
+        "AU",
+        "MX",
+        "DE",
+        "BR",
+        "JP",
+        "CA"
+      ],
+      "value": true
+    }
+  ],
+  "playlist_follow_text_change": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": false
+    },
+    {
+      "regions": [
+        "IT",
+        "ES",
+        "FR",
+        "US",
+        "CO",
+        "AR",
+        "CL",
+        "GB",
+        "AU",
+        "MX",
+        "DE",
+        "BR",
+        "JP",
+        "CA"
+      ],
+      "value": true
+    }
+  ],
+  "ya_immerse": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": true
+    }
+  ],
+  "ya_immerse_on_large_screen_devices": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": true
+    }
+  ],
+  "artist_upsell": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "subscriptions": [
+        "prime"
+      ],
+      "value": true
+    }
+  ],
+  "upsell_tab": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "subscriptions": [
+        "prime",
+        "sonic_rush"
+      ],
+      "value": true
+    }
+  ],
+  "sfa_station": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "subscriptions": [
+        "music_unlimited",
+        "music_hd",
+        "music_home",
+        "prime",
+        "free",
+        "sonic_rush"
+      ],
+      "value": true
+    }
+  ],
+  "skip_limit_blocking_upsell": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "subscriptions": [
+        "free",
+        "sonic_rush",
+        "no_subscription"
+      ],
+      "value": true
+    }
+  ],
+  "store_icon": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "subscriptions": [
+        "prime",
+        "free",
+        "no_subscription"
+      ],
+      "value": true
+    }
+  ],
+  "prime_branding": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "subscriptions": [
+        "prime"
+      ],
+      "value": true
+    }
+  ],
+  "unlimited_family_upsell": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "subscriptions": [
+        "prime",
+        "free"
+      ],
+      "value": true
+    }
+  ],
+  "hawkfire_all_devices_upsell_dialog_discount_message": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "subscriptions": [
+        "prime"
+      ],
+      "value": true
+    }
+  ],
+  "reduce_friction_upsell": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "subscriptions": [
+        "prime"
+      ],
+      "value": true
+    }
+  ],
+  "hawkfire_account_upsell_dialog_message": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "subscriptions": [
+        "prime"
+      ],
+      "value": true
+    }
+  ],
+  "library_tracks_ad_content": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "subscriptions": [
+        "prime"
+      ],
+      "value": true
+    }
+  ],
+  "is_in_app_survey_enabled": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": false
+    }
+  ],
+  "cloud_queue_auth_url": [
+    {
+      "regions": [
+        "US",
+        "CA",
+        "MX",
+        "BR",
+        "ROW-NA"
+      ],
+      "value": "https://iad.prod.auth.cloud-queue.music.amazon.dev"
+    },
+    {
+      "regions": [
+        "GB",
+        "DE",
+        "FR",
+        "IT",
+        "ES",
+        "IN",
+        "NL",
+        "ROE-EU"
+      ],
+      "value": "https://dub.prod.auth.cloud-queue.music.amazon.dev"
+    },
+    {
+      "regions": [
+        "ROW-FE",
+        "JP",
+        "AU",
+        "NZ"
+      ],
+      "value": "https://pdx.prod.auth.cloud-queue.music.amazon.dev"
+    },
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": "https://iad.prod.auth.cloud-queue.music.amazon.dev"
+    }
+  ],
+  "url_legal_imprint": [
+    {
+      "regions": [
+        "DE"
+      ],
+      "value": "https://www.amazon.de/gp/help/customer/display.html?nodeId=505050&view-type=content-only"
+    }
+  ],
+  "supports_eligibility_v2": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "subscriptions": [
+        "sonic_rush",
+        "free"
+      ],
+      "value": true
+    },
+    {
+      "regions": [
+        "ALL"
+      ],
+      "subscriptions": [
+        "prime",
+        "music_home",
+        "music_hd",
+        "music_unlimited",
+        "no_subscription"
+      ],
+      "value": false
+    }
+  ],
+  "eligibility_based_playback_icon_v2": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "subscriptions": [
+        "sonic_rush",
+        "free"
+      ],
+      "value": true
+    }
+  ],
+  "track_number_capability": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "subscriptions": [
+        "prime",
+        "music_home",
+        "music_hd",
+        "music_unlimited",
+        "no_subscription"
+      ],
+      "value": true
+    }
+  ],
+  "cq_non_station_playback_restoration_v2": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": false
+    }
+  ],
+  "shuffle_text_visibility": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "subscriptions": [
+        "sonic_rush",
+        "free"
+      ],
+      "value": true
+    }
+  ],
+  "is_visual_refresh_enabled": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": false
+    }
+  ],
+  "skip_limits_using_cloud_queue": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "subscriptions": [
+        "free",
+        "music_home",
+        "sonic_rush"
+      ],
+      "value": true
+    },
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": false
+    }
+  ],
+  "row_cta_visibility": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "subscriptions": [
+        "sonic_rush",
+        "free"
+      ],
+      "value": true
+    }
+  ],
+  "library_page_header_toolbar_visibility": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "subscriptions": [
+        "free",
+        "prime",
+        "music_home",
+        "music_hd",
+        "music_unlimited",
+        "no_subscription"
+      ],
+      "value": true
+    }
+  ],
+  "SR_page_headers": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "subscriptions": [
+        "free",
+        "prime",
+        "sonic_rush",
+        "music_unlimited"
+      ],
+      "value": true
+    }
+  ],
+  "supports_download_text_button": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "subscriptions": [
+        "free",
+        "sonic_rush"
+      ],
+      "value": true
+    }
+  ],
+  "supports_legacy_checks_for_capabilities": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "subscriptions": [
+        "free"
+      ],
+      "value": true
+    }
+  ],
+  "library_context_menu_play_v2": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "subscriptions": [
+        "sonic_rush",
+        "free"
+      ],
+      "value": true
+    }
+  ],
+  "context_menu_shuffle_v2": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "subscriptions": [
+        "sonic_rush",
+        "free"
+      ],
+      "value": true
+    }
+  ],
+  "album_context_menu_add_to_playlist_v2": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "subscriptions": [
+        "sonic_rush",
+        "music_hd",
+        "music_unlimited",
+        "free"
+      ],
+      "value": true
+    }
+  ],
+  "playlist_context_menu_download_v2": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "subscriptions": [
+        "prime",
+        "sonic_rush",
+        "music_home",
+        "music_hd",
+        "music_unlimited",
+        "free"
+      ],
+      "value": true
+    }
+  ],
+  "track_context_menu_add_to_my_music": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "subscriptions": [
+        "prime",
+        "music_home",
+        "music_hd",
+        "music_unlimited"
+      ],
+      "value": true
+    }
+  ],
+  "cloud_queue_content_v2": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "subscriptions": [
+        "prime",
+        "music_home",
+        "music_hd",
+        "music_unlimited",
+        "sonic_rush",
+        "free"
+      ],
+      "value": true
+    }
+  ],
+  "context_menu_delete_from_library": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "subscriptions": [
+        "sonic_rush"
+      ],
+      "value": true
+    }
+  ],
+  "not_library_or_detail_container_on_demand_context_menu_play_v2": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "subscriptions": [
+        "sonic_rush",
+        "free"
+      ],
+      "value": true
+    }
+  ],
+  "context_menu_play_queue": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "subscriptions": [
+        "prime",
+        "music_home",
+        "music_hd",
+        "music_unlimited",
+        "no_subscription"
+      ],
+      "value": true
+    }
+  ],
+  "not_library_or_detail_track_context_menu_add_to_my_music": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "subscriptions": [
+        "free",
+        "prime",
+        "music_home",
+        "music_hd",
+        "music_unlimited"
+      ],
+      "value": true
+    }
+  ],
+  "not_library_or_detail_track_context_menu_customers_also_listened_to_v2": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "subscriptions": [
+        "free",
+        "sonic_rush",
+        "prime",
+        "music_home",
+        "music_hd",
+        "music_unlimited"
+      ],
+      "value": true
+    }
+  ],
+  "casting_v2": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": true
+    }
+  ],
+  "horizontal_row_station_icon": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "subscriptions": [
+        "free"
+      ],
+      "value": true
+    }
+  ],
+  "share_base_url": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": "https://music.amazon.com/"
+    },
+    {
+      "regions": [
+        "US"
+      ],
+      "value": "https://music.amazon.com/"
+    },
+    {
+      "regions": [
+        "GB"
+      ],
+      "value": "https://music.amazon.co.uk/"
+    },
+    {
+      "regions": [
+        "DE"
+      ],
+      "value": "https://music.amazon.de/"
+    },
+    {
+      "regions": [
+        "FR"
+      ],
+      "value": "https://music.amazon.fr/"
+    },
+    {
+      "regions": [
+        "IT"
+      ],
+      "value": "https://music.amazon.it/"
+    },
+    {
+      "regions": [
+        "ES"
+      ],
+      "value": "https://music.amazon.es/"
+    },
+    {
+      "regions": [
+        "JP"
+      ],
+      "value": "https://music.amazon.co.jp/"
+    },
+    {
+      "regions": [
+        "IN"
+      ],
+      "value": "https://music.amazon.in/"
+    },
+    {
+      "regions": [
+        "CA"
+      ],
+      "value": "https://music.amazon.ca/"
+    },
+    {
+      "regions": [
+        "BR"
+      ],
+      "value": "https://music.amazon.com.br/"
+    },
+    {
+      "regions": [
+        "MX"
+      ],
+      "value": "https://music.amazon.com.mx/"
+    },
+    {
+      "regions": [
+        "AU",
+        "NZ"
+      ],
+      "value": "https://music.amazon.com.au/"
+    },
+    {
+      "regions": [
+        "AE"
+      ],
+      "value": "https://music.amazon.ae/"
+    },
+    {
+      "regions": [
+        "SA"
+      ],
+      "value": "https://music.amazon.sa/"
+    },
+    {
+      "regions": [
+        "EG"
+      ],
+      "value": "https://music.amazon.eg/"
+    }
+  ],
+  "playlist_filter_context_menu_button": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "subscriptions": [
+        "free",
+        "prime",
+        "music_home",
+        "music_hd",
+        "music_unlimited",
+        "no_subscription"
+      ],
+      "value": true
+    }
+  ],
+  "album_filter_context_menu_button": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "subscriptions": [
+        "free",
+        "prime",
+        "music_home",
+        "music_hd",
+        "music_unlimited",
+        "no_subscription",
+        "sonic_rush"
+      ],
+      "value": true
+    }
+  ],
+  "player_context_menu_download_button": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "subscriptions": [
+        "free",
+        "prime",
+        "music_home",
+        "music_hd",
+        "music_unlimited"
+      ],
+      "value": true
+    }
+  ],
+  "entity_skippable_check": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "subscriptions": [
+        "free",
+        "sonic_rush"
+      ],
+      "value": true
+    }
+  ],
+  "library_songs_page_header_visibility_v2": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "subscriptions": [
+        "prime",
+        "music_hd",
+        "music_unlimited"
+      ],
+      "value": true
+    },
+    {
+      "regions": [
+        "ALL"
+      ],
+      "subscriptions": [
+        "free",
+        "music_home"
+      ],
+      "value": false
+    }
+  ],
+  "is_locale_supported": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": {
+        "locales": [
+          "ar_EG",
+          "ar_AE",
+          "ar_SA"
+        ],
+        "is_enabled": false
+      }
+    },
+    {
+      "regions": [
+        "AE",
+        "EG",
+        "SA"
+      ],
+      "value": {
+        "locales": [
+          "ar_AE",
+          "ar_EG",
+          "ar_SA"
+        ],
+        "is_enabled": true
+      }
+    }
+  ],
+  "amplifyqueue_timeout_default": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": 7
+    }
+  ],
+  "amplifyqueue_timeout_connect": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": 3
+    }
+  ],
+  "use_dynamic_messaging_for_non_blocking_upsell": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "subscriptions": [
+        "sonic_rush"
+      ],
+      "value": true
+    }
+  ],
+  "track_augmented_shuffle": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "subscriptions": [
+        "sonic_rush"
+      ],
+      "value": true
+    }
+  ],
+  "resume_playqueue_seed_playback": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "subscriptions": [
+        "sonic_rush",
+        "free"
+      ],
+      "value": true
+    }
+  ],
+  "Hide_Mini_Player_PlayQueue": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "subscriptions": [
+        "sonic_rush",
+        "free"
+      ],
+      "value": true
+    }
+  ],
+  "player_context_menu_view_play_queue_button": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "subscriptions": [
+        "music_hd",
+        "music_unlimited",
+        "prime"
+      ],
+      "value": true
+    }
+  ],
+  "prev_button_enabled": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "subscriptions": [
+        "music_hd",
+        "music_unlimited",
+        "music_home",
+        "prime"
+      ],
+      "value": true
+    },
+    {
+      "regions": [
+        "ALL"
+      ],
+      "subscriptions": [
+        "sonic_rush"
+      ],
+      "value": false
+    }
+  ],
+  "start_foreground_on_update_notification": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": false
+    }
+  ],
+  "url_legal_terms_of_use": [
+    {
+      "regions": [
+        "NZ",
+        "AU"
+      ],
+      "value": "https://www.amazon.com.au/gp/help/customer/display.html?nodeId=202197050&pop-up=1&view-type=content-only"
+    },
+    {
+      "regions": [
+        "ROW-FE"
+      ],
+      "value": "https://www.amazon.com/gp/help/customer/display.html?nodeId=202197050&pop-up=1&view-type=content-only"
+    },
+    {
+      "regions": [
+        "ES"
+      ],
+      "value": "http://www.amazon.es/gp/help/customer/display.html?nodeId=201380010&pop-up=1"
+    },
+    {
+      "regions": [
+        "IT"
+      ],
+      "value": "http://www.amazon.it/gp/help/customer/display.html?nodeId=201380010&pop-up=1"
+    },
+    {
+      "regions": [
+        "IN"
+      ],
+      "value": "https://www.amazon.in/gp/help/customer/display.html?nodeId=201380010&pop-up=1&view-type=content-only"
+    },
+    {
+      "regions": [
+        "CA"
+      ],
+      "value": "https://www.amazon.ca/gp/help/customer/display.html?nodeId=201380010&language=en_CA&pop-up=1&view-type=content-only"
+    },
+    {
+      "regions": [
+        "US"
+      ],
+      "value": "http://www.amazon.com/gp/help/customer/display.html/?ie=UTF8&nodeId=201380010&pop-up=1"
+    },
+    {
+      "regions": [
+        "GB"
+      ],
+      "value": "http://www.amazon.co.uk/gp/help/customer/display.html?nodeId=201380010&pop-up=1"
+    },
+    {
+      "regions": [
+        "JP"
+      ],
+      "value": "http://www.amazon.co.jp/gp/help/customer/display.html?nodeId=201380010&pop-up=1"
+    },
+    {
+      "regions": [
+        "MX"
+      ],
+      "value": "https://www.amazon.com.mx/gp/help/customer/display.html?nodeId=201380010&pop-up=1&view-type=content-only"
+    },
+    {
+      "regions": [
+        "DE"
+      ],
+      "value": "http://www.amazon.de/gp/help/customer/display.html?nodeId=201380010&pop-up=1"
+    },
+    {
+      "regions": [
+        "BR"
+      ],
+      "value": "http://www.amazon.com.br/gp/help/customer/display.html?nodeId=201380010&pop-up=1&view-type=content-only"
+    },
+    {
+      "regions": [
+        "ROE-EU",
+        "ROW-NA"
+      ],
+      "value": "https://music.amazon.com/help?nodeId=202197050&pop-up=1"
+    },
+    {
+      "regions": [
+        "FR"
+      ],
+      "value": "http://www.amazon.fr/gp/help/customer/display.html?nodeId=201380010&pop-up=1"
+    }
+  ],
+  "url_legal_privacy_notes": [
+    {
+      "regions": [
+        "NZ",
+        "AU"
+      ],
+      "value": "https://www.amazon.com.au/gp/help/customer/display.html/ref=footer_privacy?ie=UTF8&nodeId=468496&pop-up=1&view-type=content-only"
+    },
+    {
+      "regions": [
+        "ROW-FE",
+        "ROW-NA"
+      ],
+      "value": "https://www.amazon.com/gp/help/customer/display.html?nodeId=201909010&pop-up=1&view-type=content-only"
+    },
+    {
+      "regions": [
+        "ES"
+      ],
+      "value": "http://www.amazon.es/gp/help/customer/display.html?nodeId=200545460&pop-up=1"
+    },
+    {
+      "regions": [
+        "IT"
+      ],
+      "value": "https://www.amazon.it/gp/help/customer/display.html?nodeId=200545460&pop-up=1"
+    },
+    {
+      "regions": [
+        "IN"
+      ],
+      "value": "https://www.amazon.in/gp/help/customer/display.html?nodeId=200534380&pop-up=1&view-type=content-only"
+    },
+    {
+      "regions": [
+        "CA"
+      ],
+      "value": "https://www.amazon.ca/gp/help/customer/display.html?nodeId=918814&pop-up=1&view-type=content-only"
+    },
+    {
+      "regions": [
+        "US"
+      ],
+      "value": "https://www.amazon.com/gp/help/customer/display.html?nodeId=468496&pop-up=1"
+    },
+    {
+      "regions": [
+        "GB"
+      ],
+      "value": "https://www.amazon.co.uk/gp/help/customer/display.html/ref=footer_privacy?ie=UTF8&nodeId=201909010&pop-up=1"
+    },
+    {
+      "regions": [
+        "JP"
+      ],
+      "value": "https://www.amazon.co.jp/gp/help/customer/display.html?nodeId=643000&pop-up=1"
+    },
+    {
+      "regions": [
+        "MX"
+      ],
+      "value": "https://www.amazon.com.mx/gp/help/customer/display.html?nodeId=201909010&pop-up=1&view-type=content-only"
+    },
+    {
+      "regions": [
+        "DE"
+      ],
+      "value": "https://www.amazon.de/gp/help/customer/display.html?nodeId=201909010&pop-up=1"
+    },
+    {
+      "regions": [
+        "ROE-EU"
+      ],
+      "value": "https://www.amazon.co.uk/gp/help/customer/display.html?nodeId=201909010&pop-up=1&view-type=content-only"
+    },
+    {
+      "regions": [
+        "FR"
+      ],
+      "value": "https://www.amazon.fr/gp/help/customer/display.html?nodeId=201909010&pop-up=1"
+    },
+    {
+      "regions": [
+        "BR"
+      ],
+      "value": "https://www.amazon.com.br/gp/help/customer/display.html?nodeId=201909010&pop-up=1&view-type=content-only"
+    }
+  ],
+  "url_legal_alexa_device_terms": [
+    {
+      "regions": [
+        "ROW-FE",
+        "JP"
+      ],
+      "value": "https://www.amazon.co.jp/gp/help/customer/display.html/?nodeId=201566380&pop-up=1"
+    },
+    {
+      "regions": [
+        "ES"
+      ],
+      "value": "https://www.amazon.es/gp/help/customer/display.html?nodeId=201566380&pop-up=1"
+    },
+    {
+      "regions": [
+        "IT"
+      ],
+      "value": "https://www.amazon.it/gp/help/customer/display.html?nodeId=201566380&pop-up=1"
+    },
+    {
+      "regions": [
+        "IN"
+      ],
+      "value": "https://www.amazon.in/gp/help/customer/display.html?pop-up=1&nodeId=201566380"
+    },
+    {
+      "regions": [
+        "CA"
+      ],
+      "value": "https://www.amazon.ca/gp/help/customer/display.html?nodeId=201566380&language=en_CA&pop-up=1"
+    },
+    {
+      "regions": [
+        "US",
+        "CO",
+        "CL",
+        "CR",
+        "PE",
+        "AR",
+        "UY",
+        "BO",
+        "EC",
+        "SV",
+        "PA"
+      ],
+      "value": "https://www.amazon.com/gp/help/customer/display.html?nodeId=201566380&pop-up=1"
+    },
+    {
+      "regions": [
+        "NL"
+      ],
+      "value": "https://www.amazon.nl/gp/help/customer/display.html?nodeId=201566380&pop-up=1"
+    },
+    {
+      "regions": [
+        "GB",
+        "IE"
+      ],
+      "value": "https://www.amazon.co.uk/gp/help/customer/display.html?nodeId=201566380&pop-up=1"
+    },
+    {
+      "regions": [
+        "MX"
+      ],
+      "value": "https://www.amazon.com.mx/gp/help/customer/display.html?nodeId=201566380&pop-up=1"
+    },
+    {
+      "regions": [
+        "DE"
+      ],
+      "value": "https://www.amazon.de/gp/help/customer/display.html?nodeId=201566380&pop-up=1"
+    },
+    {
+      "regions": [
+        "AU",
+        "NZ"
+      ],
+      "value": "https://www.amazon.com.au/gp/help/customer/display.html?nodeId=201566380&pop-up=1"
+    },
+    {
+      "regions": [
+        "FR"
+      ],
+      "value": "https://www.amazon.fr/gp/help/customer/display.html?nodeId=201566380&pop-up=1"
+    },
+    {
+      "regions": [
+        "BR"
+      ],
+      "value": "https://www.amazon.com.br/gp/help/customer/display.html?nodeId=201566380&pop-up=1&view-type=content-only"
+    }
+  ],
+  "url_legal_ad_privacy_choices": [
+    {
+      "regions": [
+        "US"
+      ],
+      "value": "https://www.amazon.com/privacyprefs"
+    }
+  ],
+  "url_legal_children_privacy_notice": [
+    {
+      "regions": [
+        "GB"
+      ],
+      "value": "https://www.amazon.co.uk/gp/help/customer/display.html/ref=hp_left_v4_sib?ie=UTF8&nodeId=GUS8KF6DQCW5GYVG"
+    }
+  ],
+  "url_legal_attribution_notices": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": "http://www.amazon.com/gp/help/customer/display.html?nodeId=201482810&pop-up=1"
+    }
+  ],
+  "url_legal_account_deletion": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": "https://www.amazon.com/gp/help/customer/display.html?nodeId=GDK92DNLSGWTV6MP"
+    }
+  ],
+  "hide_artist_context_menu_play_and_download": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "subscriptions": [
+        "sonic_rush"
+      ],
+      "value": true
+    }
+  ],
+  "casting_previous_button_clickability_override": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "subscriptions": [
+        "sonic_rush"
+      ],
+      "value": true
+    }
+  ],
+  "cloud_queue_appsync_endpoint": [
+    {
+      "regions": [
+        "US",
+        "CA",
+        "MX",
+        "BR",
+        "ROW-NA"
+      ],
+      "value": "https://ygf52iv26zfnxdocs4kfzcalfa.appsync-api.us-east-1.amazonaws.com/graphql"
+    },
+    {
+      "regions": [
+        "GB",
+        "DE",
+        "FR",
+        "IT",
+        "ES",
+        "IN",
+        "NL",
+        "ROE-EU"
+      ],
+      "value": "https://c3sqztsvera5dh7p2kpc56alwe.appsync-api.eu-west-1.amazonaws.com/graphql"
+    },
+    {
+      "regions": [
+        "ROW-FE",
+        "JP",
+        "AU",
+        "NZ"
+      ],
+      "value": "https://vcybggm6hne7xcob4pwdaag6ie.appsync-api.us-west-2.amazonaws.com/graphql"
+    },
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": "https://ygf52iv26zfnxdocs4kfzcalfa.appsync-api.us-east-1.amazonaws.com/graphql"
+    }
+  ],
+  "cloud_queue_appsync_region": [
+    {
+      "regions": [
+        "US",
+        "CA",
+        "MX",
+        "BR",
+        "ROW-NA"
+      ],
+      "value": "us-east-1"
+    },
+    {
+      "regions": [
+        "GB",
+        "DE",
+        "FR",
+        "IT",
+        "ES",
+        "IN",
+        "NL",
+        "ROE-EU"
+      ],
+      "value": "eu-west-1"
+    },
+    {
+      "regions": [
+        "ROW-FE",
+        "JP",
+        "AU",
+        "NZ"
+      ],
+      "value": "us-west-2"
+    },
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": "us-east-1"
+    }
+  ],
+  "update_purchased_track_asin_substitution": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": true
+    }
+  ],
+  "error_180_flex_event": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": true
+    }
+  ],
+  "cookie_consent_eu_workflow": [
+    {
+      "regions": [
+        "COOKIE_CONSENT"
+      ],
+      "value": true
+    },
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": false
+    }
+  ],
+  "cookie_consent_preference_url": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": "https://www.amazon.com/privacyprefs/music"
+    },
+    {
+      "regions": [
+        "GB"
+      ],
+      "value": "https://www.amazon.co.uk/privacyprefs/music"
+    },
+    {
+      "regions": [
+        "DE"
+      ],
+      "value": "https://www.amazon.de/privacyprefs/music"
+    },
+    {
+      "regions": [
+        "IT"
+      ],
+      "value": "https://www.amazon.it/privacyprefs/music"
+    },
+    {
+      "regions": [
+        "FR"
+      ],
+      "value": "https://www.amazon.fr/privacyprefs/music"
+    },
+    {
+      "regions": [
+        "ES"
+      ],
+      "value": "https://www.amazon.es/privacyprefs/music"
+    }
+  ],
+  "cookie_consent_top_level_domains": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": "com"
+    },
+    {
+      "regions": [
+        "GB"
+      ],
+      "value": "co.uk"
+    },
+    {
+      "regions": [
+        "DE"
+      ],
+      "value": "de"
+    },
+    {
+      "regions": [
+        "IT"
+      ],
+      "value": "it"
+    },
+    {
+      "regions": [
+        "FR"
+      ],
+      "value": "fr"
+    },
+    {
+      "regions": [
+        "ES"
+      ],
+      "value": "es"
+    }
+  ],
+  "artist_studio_shuffle": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "subscriptions": [
+        "music_home",
+        "music_unlimited",
+        "music_hd",
+        "no_subscription",
+        "prime",
+        "free"
+      ],
+      "value": false
+    },
+    {
+      "regions": [
+        "US",
+        "CA",
+        "MX",
+        "BR"
+      ],
+      "subscriptions": [
+        "sonic_rush"
+      ],
+      "value": true
+    }
+  ],
+  "is_pca_enabled": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": false
+    }
+  ],
+  "update_contributors_with_firefly": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": true
+    }
+  ],
+  "bugsnag_api_key": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": "45e1202e1cdea3b1a52d70bd9e998540"
+    }
+  ],
+  "use_optimized_observable_browse_views_factory": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": true
+    }
+  ],
+  "use_date_added_default_refinement": [
+    {
+      "regions": [
+        "JP"
+      ],
+      "value": true
+    }
+  ],
+  "preload_associate_tag_without_region_id": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": true
+    }
+  ],
+  "use_22_14_10_weblab": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": false
+    }
+  ],
+  "is_skip_limit_supported": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "subscriptions": [
+        "free",
+        "sonic_rush"
+      ],
+      "value": true
+    }
+  ],
+  "can_bypass_seek_capability_checks": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "subscriptions": [
+        "prime",
+        "sonic_rush"
+      ],
+      "value": false
+    }
+  ],
+  "error_cloud_queue_flex_event": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": true
+    }
+  ],
+  "is_pre_auth_splash_enabled": [
+    {
+      "regions": [
+        "US",
+        "GB",
+        "DE",
+        "JP",
+        "FR",
+        "IT",
+        "ES",
+        "CA",
+        "MX",
+        "BR",
+        "AU",
+        "NZ"
+      ],
+      "value": true
+    }
+  ],
+  "cqe_auth_threshold_config": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": 25
+    }
+  ],
+  "cqe_datastore_operation_threshold_config": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": 25
+    }
+  ],
+  "cqe_get_next_entities_threshold_config": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": 25
+    }
+  ],
+  "should_enable_playback_notification_prev_button": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "subscriptions": [
+        "prime",
+        "music_hd",
+        "music_unlimited",
+        "sonic_rush"
+      ],
+      "value": true
+    },
+    {
+      "regions": [
+        "ALL"
+      ],
+      "subscriptions": [
+        "free"
+      ],
+      "value": false
+    }
+  ],
+  "aom_free_tier": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": false
+    },
+    {
+      "regions": [
+        "NIGHTWING"
+      ],
+      "value": true
+    }
+  ],
+  "project_phoenix_disable_upsell_cta": [
+    {
+      "regions": [
+        "MX"
+      ],
+      "value": false
+    },
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": false
+    }
+  ],
+  "free_tier_to_cqe": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": false
+    },
+    {
+      "regions": [
+        "NIGHTWING"
+      ],
+      "subscriptions": [
+        "free"
+      ],
+      "value": true
+    }
+  ],
+  "is_rerouted_to_playlist_landing_page": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "subscriptions": [
+        "prime",
+        "music_unlimited"
+      ],
+      "value": true
+    },
+    {
+      "regions": [
+        "ALL"
+      ],
+      "subscriptions": [
+        "free",
+        "sonic_rush"
+      ],
+      "value": false
+    }
+  ],
+  "on_demand_genre_id": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": "mwXZ32AJ"
+    }
+  ],
+  "on_demand_genre_id_alias": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": "all-access"
+    }
+  ],
+  "is_on_demand_marquee_playlist_tracks_widget_enabled_v2": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "subscriptions": [
+        "sonic_rush",
+        "free"
+      ],
+      "value": true
+    }
+  ],
+  "is_redirect_atc_to_aap_enabled": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "subscriptions": [
+        "sonic_rush",
+        "free"
+      ],
+      "value": true
+    }
+  ],
+  "free_tier_scrubbing_on_demand_playlists": [
+    {
+      "regions": [
+        "NIGHTWING"
+      ],
+      "subscriptions": [
+        "free"
+      ],
+      "value": true
+    }
+  ],
+  "show_track_details_page": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "subscriptions": [
+        "free",
+        "sonic_rush"
+      ],
+      "value": false
+    }
+  ],
+  "show_track_details_page_fast_follow": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "subscriptions": [
+        "free",
+        "sonic_rush"
+      ],
+      "value": true
+    }
+  ],
+  "show_track_details_react_native_page": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "subscriptions": [
+        "free",
+        "sonic_rush"
+      ],
+      "value": false
+    }
+  ],
+  "enable_playlist_follow": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "subscriptions": [
+        "free"
+      ],
+      "value": true
+    }
+  ],
+  "on_demand_playlists": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "subscriptions": [
+        "free",
+        "sonic_rush"
+      ],
+      "value": true
+    }
+  ],
+  "is_search_on_demand_related_playlist_tracks_widget_enabled": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "subscriptions": [
+        "sonic_rush",
+        "free"
+      ],
+      "value": true
+    }
+  ],
+  "is_hotspot_enabled": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "subscriptions": [
+        "sonic_rush",
+        "free"
+      ],
+      "value": false
+    }
+  ],
+  "is_hotspot_refactor_enabled": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "subscriptions": [
+        "sonic_rush",
+        "free"
+      ],
+      "value": true
+    }
+  ],
+  "hotspots": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "subscriptions": [
+        "sonic_rush",
+        "free"
+      ],
+      "value": [
+        {
+          "cacheStateKey": "hotspot-on-demand-playlists-cache-key",
+          "tagIdentifier": "hotspot-on-demand-playlists",
+          "metadata": {
+            "en_US": {
+              "title": "Play any song and download to listen offline",
+              "text": "Enjoy unlimited skips on these playlists, picked based on your likes and listens",
+              "buttonText": "OK"
+            },
+            "en_CA": {
+              "title": "Play any song and download to listen offline",
+              "text": "Enjoy unlimited skips on these playlists, picked based on your likes and listens",
+              "buttonText": "OK"
+            },
+            "en_GB": {
+              "title": "Play any song and download to listen offline",
+              "text": "Enjoy unlimited skips on these playlists, picked based on your likes and listens",
+              "buttonText": "OK"
+            },
+            "en_AU": {
+              "title": "Play any song and download to listen offline",
+              "text": "Enjoy unlimited skips on these playlists, picked based on your likes and listens",
+              "buttonText": "OK"
+            },
+            "fr_CA": {
+              "title": "Écoutez instantanément vos chansons préférées et téléchargez pour une écoute hors ligne",
+              "text": "Profitez de sauts illimités sur ces listes de lecture en fonction de vos mentions J’aime et de vos écoutes",
+              "buttonText": "OK"
+            },
+            "fr_FR": {
+              "title": "Écoutez vos titres préférés et téléchargez-les pour les écouter hors connexion",
+              "text": "Profitez de sauts illimités sur ces listes de lecture en fonction de vos mentions J’aime et de vos écoutes",
+              "buttonText": "OK"
+            },
+            "es_US": {
+              "title": "Reproduce cualquier canción y descárgala para escucharla sin conexión a Internet",
+              "text": "Cambia de canción cuantas veces quieras en estas playlists seleccionadas según tus gustos y lo que escuchas",
+              "buttonText": "Aceptar"
+            },
+            "es_MX": {
+              "title": "Reproduce tus canciones favoritas y descárgalas para escucharlas sin conexión a Internet",
+              "text": "Cambia de canción cuantas veces quieras en estas playlists seleccionadas según tus gustos y lo que escuchas",
+              "buttonText": "Aceptar"
+            },
+            "es_ES": {
+              "title": "Reproduce tus canciones favoritas y descárgalas para escucharlas sin conexión",
+              "text": "Cambia de canción cuando quieras en estas playlists seleccionadas según tus gustos y lo que escuchas",
+              "buttonText": "Aceptar"
+            },
+            "de_DE": {
+              "title": "Spiele Millionen Songs und lade sie herunter, um sie offline zu hören.",
+              "text": "Genieße Playlists, die basierend auf deinen Favoriten und Hörgewohnheiten ausgewählt wurden, und bei welchen du Songs unbegrenzt überspringen kannst",
+              "buttonText": "OK"
+            },
+            "pt_BR": {
+              "title": "Reproduza suas músicas favoritas e baixe para ouvir offline",
+              "text": "Aproveite para trocar de música quantas vezes quiser nessas playlists, escolhidas com base em suas curtidas e no que você ouve.",
+              "buttonText": "OK"
+            },
+            "it_IT": {
+              "title": "Riproduci i tuoi brani preferiti e scarica per ascoltare offline",
+              "text": "Goditi gli skip illimitati su queste playlist, scelte in base ai tuoi gusti e ai tuoi ascolti",
+              "buttonText": "OK"
+            },
+            "ja_JP": {
+              "title": "自由に曲を選んで再生、オフライン再生も可能",
+              "text": "好みや履歴に合わせておすすめ。厳選プレイリストはスキップ制限なし",
+              "buttonText": "OK"
+            }
+          }
+        },
+        {
+          "cacheStateKey": "hotspot-on-demand-playlist-tracks-cache-key",
+          "tagIdentifier": "hotspot-on-demand-playlist-tracks",
+          "metadata": {
+            "en_US": {
+              "title": "All-access playlist picked for you",
+              "text": "Pick and play any track",
+              "buttonText": "OK"
+            },
+            "en_CA": {
+              "title": "All-access playlist picked for you",
+              "text": "Pick and play any track",
+              "buttonText": "OK"
+            },
+            "en_GB": {
+              "title": "All-access playlist picked for you",
+              "text": "Pick and play any track",
+              "buttonText": "OK"
+            },
+            "en_AU": {
+              "title": "All-access playlist picked for you",
+              "text": "Pick and play any track",
+              "buttonText": "OK"
+            },
+            "fr_CA": {
+              "title": "Liste de lecture à accès illimité choisie pour vous",
+              "text": "Écoutez vos chansons préférées",
+              "buttonText": "OK"
+            },
+            "fr_FR": {
+              "title": "Playlist en libre accès choisie pour vous",
+              "text": "Choisissez un titre et écoutez-le",
+              "buttonText": "OK"
+            },
+            "es_US": {
+              "title": "Playlist de acceso sin restricciones seleccionada para ti",
+              "text": "Selecciona y reproduce cualquier canción",
+              "buttonText": "Aceptar"
+            },
+            "es_MX": {
+              "title": "Playlist de acceso sin restricciones seleccionada para ti",
+              "text": "Selecciona y reproduce cualquier canción",
+              "buttonText": "Aceptar"
+            },
+            "es_ES": {
+              "title": "Playlist de acceso sin restricciones seleccionada para ti",
+              "text": "Selecciona y reproduce cualquier canción",
+              "buttonText": "Aceptar"
+            },
+            "de_DE": {
+              "title": "Playlists on-demand, die für dich ausgewählt wurden",
+              "text": "Beliebige Songs auswählen und abspielen",
+              "buttonText": "OK"
+            },
+            "pt_BR": {
+              "title": "Playlist com acesso total escolhida para você",
+              "text": "Escolha e reproduza qualquer música",
+              "buttonText": "OK"
+            },
+            "it_IT": {
+              "title": "Playlist con accesso illimitato scelta per te",
+              "text": "Scegli e riproduci i tuoi brani preferiti",
+              "buttonText": "OK"
+            },
+            "ja_JP": {
+              "title": "好みや履歴に合わせておすすめした厳選プレイリスト",
+              "text": "自由に曲を選んで再生",
+              "buttonText": "OK"
+            }
+          }
+        },
+        {
+          "cacheStateKey": "hotspot_search_page_top_results_ondemand_widget_cache_key",
+          "tagIdentifier": "hotspot_search_page_top_results_ondemand_widget",
+          "metadata": {
+            "en_US": {
+              "title": "Play this song now",
+              "text": "Songs with a Play button are available instantly on one of your All-Access Playlists",
+              "buttonText": "OK"
+            },
+            "en_CA": {
+              "title": "Play this song now",
+              "text": "Songs with a Play button are available instantly on one of your All-Access Playlists",
+              "buttonText": "OK"
+            },
+            "en_GB": {
+              "title": "Play this song now",
+              "text": "Songs with a Play button are available instantly on one of your All-Access Playlists",
+              "buttonText": "OK"
+            },
+            "en_AU": {
+              "title": "Play this song now",
+              "text": "Songs with a Play button are available instantly on one of your All-Access Playlists",
+              "buttonText": "OK"
+            },
+            "fr_CA": {
+              "title": "Écoutez cette chanson maintenant",
+              "text": "Les chansons avec un bouton Jouer sont disponibles instantanément sur l’une de vos listes de lecture à accès illimité",
+              "buttonText": "OK"
+            },
+            "fr_FR": {
+              "title": "Écoutez ce titre dès maintenant",
+              "text": "Les titres accompagnés du bouton de Lecture sont disponibles instantanément sur l’une de vos playlists en accès libre.",
+              "buttonText": "OK"
+            },
+            "es_US": {
+              "title": "Reproduce esta canción ahora",
+              "text": "Puedes escuchar las canciones con el botón de reproducir en cualquier momento en tus playlists de acceso sin restricciones",
+              "buttonText": "Aceptar"
+            },
+            "es_MX": {
+              "title": "Reproduce esta canción ahora",
+              "text": "Puedes escuchar las canciones con el botón de reproducir en cualquier momento en tus playlists de acceso sin restricciones",
+              "buttonText": "Aceptar"
+            },
+            "es_ES": {
+              "title": "Reproduce esta canción ahora",
+              "text": "Puedes escuchar las canciones con el botón de reproducir en cualquier momento en tus playlists de acceso ilimitado",
+              "buttonText": "Aceptar"
+            },
+            "de_DE": {
+              "title": "Diesen Song jetzt abspielen",
+              "text": "Songs mit Wiedergabe-Button sind sofort in einer deiner Playlists on-demand verfügbar.",
+              "buttonText": "OK"
+            },
+            "pt_BR": {
+              "title": "Reproduza esta música agora",
+              "text": "As músicas com o botão Reproduzir estão disponíveis instantaneamente em uma de suas playlists com acesso total",
+              "buttonText": "OK"
+            },
+            "it_IT": {
+              "title": "Riproduci questo brano ora",
+              "text": "I brani con il pulsante Riproduci sono disponibili all'istante in una delle playlist ad accesso illimitato",
+              "buttonText": "OK"
+            },
+            "ja_JP": {
+              "title": "この楽曲を今すぐ再生",
+              "text": "再生ボタンのある楽曲は、曲を選んで再生できる厳選プレイリストに含まれ、自由に再生できます",
+              "buttonText": "OK"
+            }
+          }
+        },
+        {
+          "cacheStateKey": "hotspot_search_page_top_results_shuffle_track_cache_key",
+          "tagIdentifier": "hotspot_search_page_top_results_shuffle_track",
+          "metadata": {
+            "en_US": {
+              "title": "Listen to this song shuffled with others",
+              "text": "Select the song you searched for and it will be queued up in a mix of similar music.",
+              "buttonText": "OK"
+            },
+            "en_CA": {
+              "title": "Listen to this song shuffled with others",
+              "text": "Select the song you searched for and it will be queued up in a mix of similar music.",
+              "buttonText": "OK"
+            },
+            "en_GB": {
+              "title": "Listen to this song shuffled with others",
+              "text": "Select the song that you searched for and it will be queued up in a mix of similar music.",
+              "buttonText": "OK"
+            },
+            "en_AU": {
+              "title": "Listen to this song shuffled with others",
+              "text": "Select the song that you searched for and it will be queued up in a mix of similar music.",
+              "buttonText": "OK"
+            },
+            "fr_CA": {
+              "title": "Écoutez cette chanson en mode aléatoire parmi d'autres",
+              "text": "Choisissez la chanson que vous avez cherchée et elle sera mise dans la file d’attente dans une compilation de musique semblable.",
+              "buttonText": "OK"
+            },
+            "fr_FR": {
+              "title": "Écoutez ce titre en mode aléatoire parmi d’autres",
+              "text": "Sélectionnez le titre que vous recherchez, il sera ajouté à un mix de titres similaires.",
+              "buttonText": "OK"
+            },
+            "es_US": {
+              "title": "Escucha esta canción en modo aleatorio junto con otras similares",
+              "text": "Selecciona la canción que buscaste y se pondrá en la cola de reproducción mezclada con música similar.",
+              "buttonText": "Aceptar"
+            },
+            "es_MX": {
+              "title": "Escucha esta canción en modo aleatorio junto con otras similares",
+              "text": "Selecciona la canción que buscaste y se pondrá en la cola de reproducción mezclada con música similar.",
+              "buttonText": "Aceptar"
+            },
+            "es_ES": {
+              "title": "Escucha esta canción en modo aleatorio junto con otras similares",
+              "text": "Selecciona la canción que buscaste y se pondrá en la cola de reproducción mezclada con música similar.",
+              "buttonText": "Aceptar"
+            },
+            "de_DE": {
+              "title": "Diesen Song in Zufallswiedergabe mit anderen Titeln anhören",
+              "text": "Wähle den gesuchten Song aus und er wird in die Warteschlange mit ähnlicher Musik aufgenommen.",
+              "buttonText": "OK"
+            },
+            "pt_BR": {
+              "title": "Ouça essa música em ordem aleatória com outras",
+              "text": "Selecione a música que você pesquisou e ela será colocada na fila de um mix de músicas semelhantes.",
+              "buttonText": "OK"
+            },
+            "it_IT": {
+              "title": "Ascolta questo brano riprodotto casualmente",
+              "text": "Seleziona il brano cercato che verrà messo in coda a un mix di musica simile.",
+              "buttonText": "OK"
+            },
+            "ja_JP": {
+              "title": "この楽曲を他の曲とミックスしてシャッフル再生",
+              "text": "検索結果の楽曲を選択すると、似た楽曲とミックスして再生待ちになります。",
+              "buttonText": "OK"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "song_history_toolbar_disabled": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "subscriptions": [
+        "free"
+      ],
+      "value": true
+    }
+  ],
+  "all_access_playlists_highlight": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "subscriptions": [
+        "sonic_rush",
+        "free"
+      ],
+      "value": [
+        {
+          "tagIdentifier": "highlight-on-demand-playlists",
+          "metadata": {
+            "en_US": {
+              "title": "All-Access Playlists",
+              "highlight": "All-Access"
+            },
+            "en_CA": {
+              "title": "All-Access Playlists",
+              "highlight": "All-Access"
+            },
+            "en_GB": {
+              "title": "All-Access Playlists",
+              "highlight": "All-Access"
+            },
+            "en_AU": {
+              "title": "All-Access Playlists",
+              "highlight": "All-Access"
+            },
+            "fr_CA": {
+              "title": "Listes de lecture à accès illimité",
+              "highlight": "accès illimité"
+            },
+            "fr_FR": {
+              "title": "Playlists en accès illimité",
+              "highlight": "accès illimité"
+            },
+            "es_US": {
+              "title": "Playlists sin restricciones",
+              "highlight": "sin restricciones"
+            },
+            "es_MX": {
+              "title": "Playlists sin restricciones",
+              "highlight": "sin restricciones"
+            },
+            "es_ES": {
+              "title": "Playlists de acceso ilimitado",
+              "highlight": "acceso ilimitado"
+            },
+            "de_DE": {
+              "title": "Playlists on-demand",
+              "highlight": "on-demand"
+            },
+            "pt_BR": {
+              "title": "Playlists com acesso total",
+              "highlight": "acesso total"
+            },
+            "it_IT": {
+              "title": "Playlists con accesso libero",
+              "highlight": "accesso libero"
+            },
+            "ja_JP": {
+              "title": "曲を選んで再生できる厳選プレイリスト",
+              "highlight": "曲を選んで再生"
+            },
+            "arabic": {
+              "title": "القوائم التي يمكن الوصول إليها بالكامل",
+              "highlight": "لكامل _ الوصول"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "is_all_access_title_highlighting_enabled": [
+    {
+      "regions": [
+        "US",
+        "JP"
+      ],
+      "subscriptions": [
+        "sonic_rush",
+        "free"
+      ],
+      "value": false
+    },
+    {
+      "regions": [
+        "ALL"
+      ],
+      "subscriptions": [
+        "sonic_rush",
+        "free"
+      ],
+      "value": true
+    }
+  ],
+  "is_skips_remaining_tooltip_enabled": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "subscriptions": [
+        "free",
+        "sonic_rush"
+      ],
+      "value": true
+    }
+  ],
+  "splash_screen_animation_v2_timeout_millisecond": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": 2100
+    }
+  ],
+  "is_free_tier_deeplinking_enabled": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "subscriptions": [
+        "free"
+      ],
+      "value": true
+    }
+  ],
+  "should_inject_ads": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "subscriptions": [
+        "sonic_rush",
+        "prime",
+        "music_home",
+        "music_hd",
+        "music_unlimited",
+        "no_subscription"
+      ],
+      "value": false
+    },
+    {
+      "regions": [
+        "ALL"
+      ],
+      "subscriptions": [
+        "free"
+      ],
+      "value": true
+    }
+  ],
+  "is_all_access_badging_enabled_v2": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "subscriptions": [
+        "sonic_rush",
+        "free"
+      ],
+      "value": true
+    }
+  ],
+  "should_override_augmented_shuffle_with_sfa": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "subscriptions": [
+        "free"
+      ],
+      "value": true
+    }
+  ],
+  "should_migrate_free_to_cq_for_non_station": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "subscriptions": [
+        "free"
+      ],
+      "value": true
+    }
+  ],
+  "should_create_entity_item_identifier_by_luid": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "subscriptions": [
+        "sonic_rush"
+      ],
+      "value": true
+    }
+  ],
+  "should_bring_purchased_filter_to_front": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "subscriptions": [
+        "sonic_rush",
+        "free"
+      ],
+      "value": true
+    }
+  ],
+  "uipageview_should_send_pagesubtype": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "subscriptions": [
+        "prime",
+        "music_home",
+        "music_hd",
+        "music_unlimited",
+        "no_subscription"
+      ],
+      "value": false
+    },
+    {
+      "regions": [
+        "ALL"
+      ],
+      "subscriptions": [
+        "sonic_rush",
+        "free"
+      ],
+      "value": true
+    }
+  ],
+  "is_album_on_demand_badging_enabled": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "subscriptions": [
+        "prime",
+        "music_home",
+        "music_hd",
+        "music_unlimited",
+        "no_subscription",
+        "free"
+      ],
+      "value": false
+    },
+    {
+      "regions": [
+        "ALL"
+      ],
+      "subscriptions": [
+        "sonic_rush"
+      ],
+      "value": true
+    }
+  ],
+  "is_cta_play_icon_enabled": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "subscriptions": [
+        "prime",
+        "music_home",
+        "music_hd",
+        "music_unlimited",
+        "no_subscription"
+      ],
+      "value": false
+    },
+    {
+      "regions": [
+        "ALL"
+      ],
+      "subscriptions": [
+        "sonic_rush",
+        "free"
+      ],
+      "value": true
+    }
+  ],
+  "is_hide_or_remove_track_list_details_enabled": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "subscriptions": [
+        "sonic_rush",
+        "free"
+      ],
+      "value": true
+    }
+  ],
+  "is_add_to_library_button_enabled": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "subscriptions": [
+        "free"
+      ],
+      "value": false
+    },
+    {
+      "regions": [
+        "ALL"
+      ],
+      "subscriptions": [
+        "prime",
+        "music_home",
+        "music_hd",
+        "music_unlimited",
+        "no_subscription",
+        "sonic_rush"
+      ],
+      "value": true
+    }
+  ],
+  "is_search_aap_instant_unlock_enabled": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "subscriptions": [
+        "sonic_rush"
+      ],
+      "value": true
+    },
+    {
+      "regions": [
+        "ALL"
+      ],
+      "subscriptions": [
+        "free",
+        "prime",
+        "music_home",
+        "music_hd",
+        "music_unlimited",
+        "no_subscription"
+      ],
+      "value": false
+    }
+  ],
+  "is_all_access_user_playlist_restrictions_enabled": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "subscriptions": [
+        "sonic_rush"
+      ],
+      "value": true
+    },
+    {
+      "regions": [
+        "ALL"
+      ],
+      "subscriptions": [
+        "free",
+        "prime",
+        "music_home",
+        "music_hd",
+        "music_unlimited",
+        "no_subscription"
+      ],
+      "value": false
+    }
+  ],
+  "is_all_access_user_playlist_pdp_messaging_enabled": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "subscriptions": [
+        "sonic_rush"
+      ],
+      "value": true
+    },
+    {
+      "regions": [
+        "ALL"
+      ],
+      "subscriptions": [
+        "free",
+        "prime",
+        "music_home",
+        "music_hd",
+        "music_unlimited",
+        "no_subscription"
+      ],
+      "value": false
+    }
+  ],
+  "all_access_user_playlists_limits_config": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": {
+        "minNumTracks": 15,
+        "maxNumTracks": 50,
+        "maxEditsPerDay": 10
+      }
+    }
+  ],
+  "is_all_access_user_playlist_selection_toggle_enabled": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": false
+    }
+  ],
+  "all_access_user_playlist_max_count": [
+    {
+      "regions": [
+        "JP"
+      ],
+      "value": 2
+    },
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": 1
+    }
+  ],
+  "is_prioritize_downloads_supported": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "subscriptions": [
+        "music_unlimited",
+        "prime",
+        "music_hd",
+        "sonic_rush"
+      ],
+      "value": true
+    }
+  ],
+  "video_stories_supported": [
+    {
+      "regions": [
+        "US",
+        "GB",
+        "DE",
+        "FR",
+        "JP",
+        "BR",
+        "IE",
+        "MX",
+        "IT",
+        "ES",
+        "AU",
+        "NZ",
+        "CA",
+        "IN"
+      ],
+      "value": true
+    }
+  ],
+  "video_stories_muted_autoplay_supported": [
+    {
+      "regions": [
+        "US",
+        "GB",
+        "DE",
+        "FR",
+        "JP",
+        "BR",
+        "IE",
+        "MX",
+        "IT",
+        "ES",
+        "AU",
+        "NZ",
+        "CA",
+        "IN"
+      ],
+      "subscriptions": [
+        "music_unlimited",
+        "prime",
+        "free",
+        "sonic_rush"
+      ],
+      "value": true
+    },
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": false
+    }
+  ],
+  "muted_autoplay_feature_config": [
+    {
+      "regions": [
+        "US",
+        "GB",
+        "DE",
+        "FR",
+        "JP",
+        "BR",
+        "IE",
+        "MX",
+        "IT",
+        "ES",
+        "AU",
+        "NZ",
+        "CA",
+        "IN"
+      ],
+      "subscriptions": [
+        "music_unlimited",
+        "prime",
+        "free",
+        "sonic_rush"
+      ],
+      "value": {
+        "startTime": 0,
+        "endTime": 3
+      }
+    }
+  ],
+  "video_stories_artist_follow_supported": [
+    {
+      "regions": [
+        "US",
+        "GB",
+        "DE",
+        "FR",
+        "JP",
+        "BR",
+        "IE",
+        "MX",
+        "IT",
+        "ES",
+        "AU",
+        "NZ",
+        "CA",
+        "IN"
+      ],
+      "subscriptions": [
+        "music_unlimited",
+        "prime",
+        "free",
+        "sonic_rush"
+      ],
+      "value": true
+    },
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": false
+    }
+  ],
+  "lyrics_sharing": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": true
+    }
+  ],
+  "shareSheetV2": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": true
+    }
+  ],
+  "videos_cache_config": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": {
+        "maxCacheSize": 20,
+        "ttlSeconds": 600
+      }
+    }
+  ],
+  "video_stories_v2_supported": [
+    {
+      "regions": [
+        "US",
+        "GB",
+        "DE",
+        "FR",
+        "JP",
+        "BR",
+        "IE",
+        "MX",
+        "IT",
+        "ES",
+        "AU",
+        "NZ",
+        "CA",
+        "IN"
+      ],
+      "value": false
+    }
+  ],
+  "dmvds_playback_url_endpoint": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": "dmvds/videoDelivery/playbackUrl"
+    }
+  ],
+  "disable_song_history_link": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "subscriptions": [
+        "sonic_rush"
+      ],
+      "value": true
+    },
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": false
+    }
+  ],
+  "show_new_playlist_button_library": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": true
+    }
+  ],
+  "show_new_playlist_button_library_online": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": true
+    }
+  ],
+  "podcast": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": false
+    },
+    {
+      "regions": [
+        "PODCASTS"
+      ],
+      "value": true
+    }
+  ],
+  "podcast_sharing": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": false
+    },
+    {
+      "regions": [
+        "PODCASTS"
+      ],
+      "value": true
+    }
+  ],
+  "podcast_follow_enhancements_library": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": false
+    },
+    {
+      "regions": [
+        "PODCASTS"
+      ],
+      "value": true
+    }
+  ],
+  "podcast_taste_collection": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": false
+    },
+    {
+      "regions": [
+        "PODCASTS"
+      ],
+      "value": true
+    }
+  ],
+  "podcast_curated_content": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": false
+    },
+    {
+      "regions": [
+        "PODCASTS"
+      ],
+      "value": true
+    }
+  ],
+  "podcast_user_content": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": false
+    },
+    {
+      "regions": [
+        "PODCASTS"
+      ],
+      "value": true
+    }
+  ],
+  "podcast_feature_play": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": false
+    },
+    {
+      "regions": [
+        "PODCASTS"
+      ],
+      "value": true
+    }
+  ],
+  "podcast_scrub_transcription": [
+    {
+      "regions": [
+        "JP"
+      ],
+      "value": false
+    },
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": false
+    },
+    {
+      "regions": [
+        "PODCASTS"
+      ],
+      "value": true
+    }
+  ],
+  "podcast_heartbeat": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": false
+    },
+    {
+      "regions": [
+        "PODCASTS"
+      ],
+      "value": true
+    }
+  ],
+  "podcast_local_heartbeat": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": false
+    },
+    {
+      "regions": [
+        "PODCASTS"
+      ],
+      "value": true
+    }
+  ],
+  "podcast_on_page_viewed_incremental_sync": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": false
+    },
+    {
+      "regions": [
+        "PODCASTS"
+      ],
+      "value": true
+    }
+  ],
+  "podcast_on_page_viewed_incremental_sync_with_offline_fix": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": false
+    },
+    {
+      "regions": [
+        "PODCASTS"
+      ],
+      "value": true
+    }
+  ],
+  "podcast_incremental_sync_on_miniplayer_viewed": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": false
+    },
+    {
+      "regions": [
+        "PODCASTS"
+      ],
+      "value": true
+    }
+  ],
+  "podcast_player_bookmark_db_bindings": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": false
+    },
+    {
+      "regions": [
+        "PODCASTS"
+      ],
+      "value": true
+    }
+  ],
+  "podcast_requests_filter": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": false
+    },
+    {
+      "regions": [
+        "PODCASTS"
+      ],
+      "value": true
+    }
+  ],
+  "podcast_compress_requests": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": false
+    },
+    {
+      "regions": [
+        "PODCASTS"
+      ],
+      "value": true
+    }
+  ],
+  "podcast_add_to_presets": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": false
+    },
+    {
+      "regions": [
+        "PODCASTS"
+      ],
+      "value": true
+    }
+  ],
+  "podcast_on_harley": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": false
+    },
+    {
+      "regions": [
+        "PODCASTS"
+      ],
+      "value": true
+    }
+  ],
+  "appsflyer_dmmap_gamma_url": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": "https://f6mt140a2c.execute-api.us-east-1.amazonaws.com/prod"
+    }
+  ],
+  "appsflyer_dmmap_prod_url": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": "https://aj1dlvksl5.execute-api.us-east-1.amazonaws.com/prod"
+    }
+  ],
+  "appsflyer_compass_gamma_url": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": "https://c3ep9tiny8.execute-api.us-east-1.amazonaws.com/prod"
+    }
+  ],
+  "appsflyer_compass_prod_url": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": "https://t2k4oiwi0i.execute-api.us-east-1.amazonaws.com/prod"
+    }
+  ],
+  "persistent_upsell_prime_sonic_rush_only": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "subscriptions": [
+        "prime",
+        "sonic_rush"
+      ],
+      "value": true
+    }
+  ],
+  "personalized_playlists_schemas": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": [
+        {
+          "my-discovery-mix": "WEEKLY_MIXTAPE",
+          "my-frequent-plays": "MY_FREQUENT_PLAYS",
+          "year-in-review-2019": "YEAR_IN_REVIEW_2019_MEMORY",
+          "year-in-review-2020": "YEAR_IN_REVIEW_2020_MEMORY",
+          "year-in-review-2021": "YEAR_IN_REVIEW_2021_MEMORY",
+          "year-in-review-2022": "YEAR_IN_REVIEW_2022_MEMORY",
+          "my-likes": "LIKES",
+          "recent-plays-and-more": "SONGS_FOR_YOU",
+          "my-trending-songs": "MY_TRENDING_SONGS"
+        }
+      ]
+    }
+  ],
+  "citadel_endpoint_na_prod": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": "https://prod.us-east-1.api.ccmp-citadel.music.amazon.dev/updateCitadelMobile"
+    }
+  ],
+  "citadel_endpoint_na_gamma": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": "https://gamma.us-east-1.api.ccmp-citadel.music.amazon.dev/updateCitadelMobile"
+    }
+  ],
+  "citadel_endpoint_eu_prod": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": "https://prod.eu-west-1.api.ccmp-citadel.music.amazon.dev/updateCitadelMobile"
+    }
+  ],
+  "citadel_endpoint_eu_gamma": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": "https://gamma.eu-west-1.api.ccmp-citadel.music.amazon.dev/updateCitadelMobile"
+    }
+  ],
+  "citadel_endpoint_fe_prod": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": "https://prod.us-west-2.api.ccmp-citadel.music.amazon.dev/updateCitadelMobile"
+    }
+  ],
+  "citadel_endpoint_fe_gamma": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": "https://gamma.us-west-2.api.ccmp-citadel.music.amazon.dev/updateCitadelMobile"
+    }
+  ],
+  "is_track_shuffle_playback_upsell_sonic_rush_enabled": [
+    {
+      "regions": [
+        "US",
+        "GB",
+        "DE",
+        "JP",
+        "FR",
+        "IT",
+        "ES",
+        "CA",
+        "BR",
+        "AU"
+      ],
+      "subscriptions": [
+        "sonic_rush"
+      ],
+      "value": true
+    }
+  ],
+  "is_track_shuffle_playback_upsell_nightwing_enabled": [
+    {
+      "regions": [
+        "US",
+        "GB",
+        "DE",
+        "JP",
+        "FR",
+        "IT",
+        "ES",
+        "CA",
+        "BR",
+        "AU",
+        "CO",
+        "CL",
+        "AR"
+      ],
+      "subscriptions": [
+        "free"
+      ],
+      "value": true
+    }
+  ],
+  "is_browse_home_playback_upsell_enabled": [
+    {
+      "regions": [
+        "US",
+        "CA",
+        "GB",
+        "DE",
+        "FR",
+        "IT",
+        "ES",
+        "JP",
+        "AU",
+        "BR"
+      ],
+      "subscriptions": [
+        "free",
+        "sonic_rush"
+      ],
+      "value": true
+    }
+  ],
+  "is_now_playing_screen_contextual_upsell_enabled": [
+    {
+      "regions": [
+        "US",
+        "CA",
+        "GB",
+        "DE",
+        "FR",
+        "IT",
+        "ES",
+        "JP",
+        "AU",
+        "BR"
+      ],
+      "subscriptions": [
+        "free",
+        "sonic_rush"
+      ],
+      "value": true
+    }
+  ],
+  "is_push_mts_enabled": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": true
+    }
+  ],
+  "is_concurrency_upsell_sonic_rush_enabled": [
+    {
+      "regions": [
+        "US",
+        "GB",
+        "DE",
+        "FR",
+        "IT",
+        "ES",
+        "JP"
+      ],
+      "subscriptions": [
+        "sonic_rush"
+      ],
+      "value": true
+    }
+  ],
+  "is_concurrency_upsell_amu_enabled": [
+    {
+      "regions": [
+        "US",
+        "GB",
+        "DE",
+        "FR",
+        "IT",
+        "ES",
+        "JP"
+      ],
+      "subscriptions": [
+        "music_unlimited"
+      ],
+      "value": true
+    }
+  ],
+  "is_empty_control_supported": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": true
+    }
+  ],
+  "is_dynamic_messaging_splash_v2_enabled": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": true
+    }
+  ],
+  "is_onboarding_optimization_enabled": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": false
+    },
+    {
+      "regions": [
+        "US",
+        "CA",
+        "BR",
+        "MX",
+        "GB",
+        "DE",
+        "FR",
+        "IT",
+        "ES",
+        "AU",
+        "JP"
+      ],
+      "value": true
+    }
+  ],
+  "is_atc_react_native_migration_enabled": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": false
+    },
+    {
+      "regions": [
+        "US",
+        "CA",
+        "BR",
+        "MX",
+        "GB",
+        "DE",
+        "FR",
+        "IT",
+        "ES",
+        "AU",
+        "JP"
+      ],
+      "value": true
+    }
+  ],
+  "playlist_import_endpoint_url": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": "https://www.amazon.com/gp/help/customer/display.html?nodeId=GSC84ZE725QPVRBU&view-type=content-only"
+    },
+    {
+      "regions": [
+        "GB"
+      ],
+      "value": "https://www.amazon.co.uk/gp/help/customer/display.html?nodeId=GSC84ZE725QPVRBU&view-type=content-only"
+    },
+    {
+      "regions": [
+        "DE"
+      ],
+      "value": "https://www.amazon.de/gp/help/customer/display.html?nodeId=GSC84ZE725QPVRBU&view-type=content-only"
+    },
+    {
+      "regions": [
+        "JP"
+      ],
+      "value": "https://www.amazon.co.jp/gp/help/customer/display.html?nodeId=GSC84ZE725QPVRBU&view-type=content-only"
+    },
+    {
+      "regions": [
+        "FR"
+      ],
+      "value": "https://www.amazon.fr/gp/help/customer/display.html?nodeId=GSC84ZE725QPVRBU&view-type=content-only"
+    },
+    {
+      "regions": [
+        "IT"
+      ],
+      "value": "https://www.amazon.it/gp/help/customer/display.html?nodeId=GSC84ZE725QPVRBU&view-type=content-only"
+    },
+    {
+      "regions": [
+        "ES"
+      ],
+      "value": "https://www.amazon.es/gp/help/customer/display.html?nodeId=GSC84ZE725QPVRBU&view-type=content-only"
+    },
+    {
+      "regions": [
+        "CA"
+      ],
+      "value": "https://www.amazon.ca/gp/help/customer/display.html?nodeId=GSC84ZE725QPVRBU&view-type=content-only"
+    },
+    {
+      "regions": [
+        "MX"
+      ],
+      "value": "https://www.amazon.com.mx/gp/help/customer/display.html?nodeId=GSC84ZE725QPVRBU&view-type=content-only"
+    },
+    {
+      "regions": [
+        "BR"
+      ],
+      "value": "https://www.amazon.com.br/gp/help/customer/display.html?nodeId=GSC84ZE725QPVRBU&view-type=content-only"
+    },
+    {
+      "regions": [
+        "AU",
+        "NZ"
+      ],
+      "value": "https://www.amazon.com.au/gp/help/customer/display.html?nodeId=GSC84ZE725QPVRBU&view-type=content-only"
+    },
+    {
+      "regions": [
+        "IN"
+      ],
+      "value": "https://www.amazon.in/gp/help/customer/display.html?nodeId=GSC84ZE725QPVRBU&view-type=content-only"
+    }
+  ],
+  "playlist_import": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": true
+    }
+  ],
+  "album_detail_performance_phase1": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": true
+    }
+  ],
+  "album_detail_performance_phase1B": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": true
+    }
+  ],
+  "album_detail_telemetry_correction": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": true
+    }
+  ],
+  "is_include_amp_shows_enabled": [
+    {
+      "regions": [
+        "US"
+      ],
+      "value": true
+    },
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": false
+    }
+  ],
+  "is_spiritual_enabled": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": false
+    },
+    {
+      "regions": [
+        "SPIRITUAL"
+      ],
+      "value": true
+    }
+  ],
+  "alexa": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": false
+    },
+    {
+      "regions": [
+        "IT",
+        "ES",
+        "FR",
+        "US",
+        "CO",
+        "AR",
+        "CL",
+        "NZ",
+        "IN",
+        "GB",
+        "AU",
+        "NL",
+        "MX",
+        "DE",
+        "BR",
+        "JP",
+        "IE",
+        "CA",
+        "PE",
+        "CR"
+      ],
+      "value": true
+    }
+  ],
+  "wakeword": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": false
+    },
+    {
+      "regions": [
+        "IT",
+        "ES",
+        "FR",
+        "US",
+        "CO",
+        "AR",
+        "CL",
+        "IN",
+        "GB",
+        "AU",
+        "NL",
+        "MX",
+        "DE",
+        "BR",
+        "JP",
+        "IE",
+        "CA",
+        "PE",
+        "CR"
+      ],
+      "value": true
+    }
+  ],
+  "alexa_emp_playback": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": true
+    }
+  ],
+  "aom_text_capability": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": true
+    }
+  ],
+  "hyperloop_capability": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": false
+    },
+    {
+      "regions": [
+        "US"
+      ],
+      "value": true
+    }
+  ],
+  "aom_hindi_support": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": true
+    }
+  ],
+  "play_back_state_reporter": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": false
+    }
+  ],
+  "detection_sensitivity": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": 1
+    }
+  ],
+  "is_comment_feature_enabled_for_this_asin": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": [
+      ]
+    }
+  ],
+  "explicit_language_filter": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": false
+    },
+    {
+      "regions": [
+        "US",
+        "IN",
+        "GB",
+        "JP"
+      ],
+      "value": true
+    }
+  ],
+  "is_entity_playlist_feature_enabled": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "subscriptions": [
+        "music_unlimited"
+      ],
+      "value": true
+    },
+    {
+      "regions": [
+        "ALL"
+      ],
+      "subscriptions": [
+        "prime",
+        "music_home",
+        "free",
+        "no_subscription"
+      ],
+      "value": false
+    },
+    {
+      "regions": [
+        "IN"
+      ],
+      "subscriptions": [
+        "prime"
+      ],
+      "value": true
+    }
+  ],
+  "google_in_app_billing": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": false
+    },
+    {
+      "regions": [
+        "US",
+        "GB",
+        "DE",
+        "JP",
+        "FR",
+        "IT",
+        "ES",
+        "CA",
+        "AU",
+        "CL",
+        "CO",
+        "AR",
+        "BR",
+        "MX"
+      ],
+      "value": true
+    }
+  ],
+  "terms_and_conditions_optimization_supported": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": true
+    }
+  ],
+  "cfy_playlists_sorting": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": true
+    }
+  ],
+  "artist_commentary": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": false
+    }
+  ],
+  "pdp_add_songs_button_enabled": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": true
+    }
+  ],
+  "user_playlists_eligibility_override": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": true
+    }
+  ],
+  "is_custom_share_menu_enabled": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": false
+    },
+    {
+      "regions": [
+        "CA",
+        "FR",
+        "US",
+        "DE",
+        "GB",
+        "BR",
+        "MX",
+        "JP",
+        "IT",
+        "AU",
+        "ES",
+        "IN"
+      ],
+      "value": true
+    }
+  ],
+  "share_content_to_snapchat": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": false
+    },
+    {
+      "regions": [
+        "CA",
+        "FR",
+        "US",
+        "DE",
+        "GB",
+        "BR",
+        "MX",
+        "JP",
+        "IT",
+        "AU",
+        "ES",
+        "IN"
+      ],
+      "value": true
+    }
+  ],
+  "playlists_privacy_enforcement": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": false
+    }
+  ],
+  "playlist_detail_page_follower_count": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": true
+    }
+  ],
+  "playlists_privacy_enforcement_followed_playlist_count": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": 5
+    }
+  ],
+  "playlists_privacy_enforcement_followed_ribbon_experience_name": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": "com.amazon.mp3.playlist_privacy_ribbon"
+    }
+  ],
+  "playlists_sync_include_follow_count": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": true
+    }
+  ],
+  "playlists_privacy_enforcement_followed_ribbon_feature": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": true
+    }
+  ],
+  "playlists_privacy_enforcement_privacy_status": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": true
+    }
+  ],
+  "add_sharing_to_top_level_action": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": true
+    }
+  ],
+  "google_assistant_voice_integration": [
+    {
+      "regions": [
+        "US"
+      ],
+      "value": true
+    }
+  ],
+  "google_assistant_queue_based_playback": [
+    {
+      "regions": [
+        "US"
+      ],
+      "value": true
+    }
+  ],
+  "media_browser_library_tab": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": true
+    }
+  ],
+  "media_browser_text_search": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": true
+    }
+  ],
+  "is_car_mode_remote_user_presets": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": true
+    }
+  ],
+  "is_my_presets_enabled": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": false
+    }
+  ],
+  "google_assistant_3p_voice_gateway_uri": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": "https://us.api.prod.gateway.music.amazon.dev/graphql"
+    }
+  ],
+  "media_browser_library_tab_skyfire_url": [
+    {
+      "regions": [
+        "US",
+        "CA",
+        "MX",
+        "BR",
+        "ROW-NA"
+      ],
+      "value": "https://na.mobilemesk.skill.music.a2z.com/api/auto/showLibraryHome"
+    },
+    {
+      "regions": [
+        "GB",
+        "DE",
+        "FR",
+        "IT",
+        "ES",
+        "IN",
+        "NL",
+        "ROE-EU"
+      ],
+      "value": "https://eu.mobilemesk.skill.music.a2z.com/api/auto/showLibraryHome"
+    },
+    {
+      "regions": [
+        "ROW-FE",
+        "JP",
+        "AU",
+        "NZ"
+      ],
+      "value": "https://fe.mobilemesk.skill.music.a2z.com/api/auto/showLibraryHome"
+    },
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": "https://na.mobilemesk.skill.music.a2z.com/api/auto/showLibraryHome"
+    }
+  ],
+  "media_browser_home_tab_mesk_url": [
+    {
+      "regions": [
+        "US",
+        "CA",
+        "MX",
+        "BR",
+        "ROW-NA"
+      ],
+      "value": "https://na.mobilemesk.skill.music.a2z.com/api/auto/showHome"
+    },
+    {
+      "regions": [
+        "GB",
+        "DE",
+        "FR",
+        "IT",
+        "ES",
+        "IN",
+        "NL",
+        "ROE-EU"
+      ],
+      "value": "https://eu.mobilemesk.skill.music.a2z.com/api/auto/showHome"
+    },
+    {
+      "regions": [
+        "ROW-FE",
+        "JP",
+        "AU",
+        "NZ"
+      ],
+      "value": "https://fe.mobilemesk.skill.music.a2z.com/api/auto/showHome"
+    },
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": "https://na.mobilemesk.skill.music.a2z.com/api/auto/showHome"
+    }
+  ],
+  "media_browser_podcast_tab_mesk_url": [
+    {
+      "regions": [
+        "US",
+        "CA",
+        "MX",
+        "BR",
+        "ROW-NA"
+      ],
+      "value": "https://na.mobilemesk.skill.music.a2z.com/api/auto/showPodcast"
+    },
+    {
+      "regions": [
+        "GB",
+        "DE",
+        "FR",
+        "IT",
+        "ES",
+        "IN",
+        "NL",
+        "ROE-EU"
+      ],
+      "value": "https://eu.mobilemesk.skill.music.a2z.com/api/auto/showPodcast"
+    },
+    {
+      "regions": [
+        "ROW-FE",
+        "JP",
+        "AU",
+        "NZ"
+      ],
+      "value": "https://fe.mobilemesk.skill.music.a2z.com/api/auto/showPodcast"
+    },
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": "https://na.mobilemesk.skill.music.a2z.com/api/auto/showPodcast"
+    }
+  ],
+  "is_car_mode_presets_update_enabled": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": true
+    }
+  ],
+  "is_car_mode_play_queue_enabled": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": true
+    }
+  ],
+  "car_mode": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": true
+    },
+    {
+      "regions": [
+        "CA"
+      ],
+      "value": false
+    }
+  ],
+  "car_mode_always_show_disclaimer": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": false
+    },
+    {
+      "regions": [
+        "IT"
+      ],
+      "value": true
+    }
+  ],
+  "car_mode_additional_disclaimer": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": false
+    },
+    {
+      "regions": [
+        "IN"
+      ],
+      "value": true
+    }
+  ],
+  "car_mode_auto_launch": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": true
+    },
+    {
+      "regions": [
+        "AU",
+        "PY"
+      ],
+      "value": false
+    }
+  ],
+  "legal_terms_and_policies_uri": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": "https://www.amazon.com/gp/help/customer/display.html?nodeId=200738950&amp;view-type=content-only"
+    }
+  ],
+  "car_detection_bluetooth_event_throttle_ms": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": 200
+    }
+  ],
+  "car_mode_page_request_timeout_ms": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": 20000
+    }
+  ],
+  "car_mode_detail_page_request_timeout_ms": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": 15000
+    }
+  ],
+  "car_detection_throttle_ms": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": 1000
+    }
+  ],
+  "is_car_mode_v2_enabled": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": true
+    }
+  ],
+  "car_mode_v2_presets_limit": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": 15
+    }
+  ],
+  "car_mode_v2_add_to_presets_limit": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": 12
+    }
+  ],
+  "is_car_mode_podcast_episode_list_enabled": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": false
+    }
+  ],
+  "is_media_browser_connectivity_reload_enabled": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": false
+    }
+  ],
+  "category_page_post": [
+    {
+      "regions": [
+        "DE",
+        "ES",
+        "FR",
+        "GB",
+        "IT",
+        "JP",
+        "US",
+        "AU",
+        "CA",
+        "IE",
+        "IN",
+        "MX",
+        "NZ"
+      ],
+      "value": true
+    }
+  ],
+  "is_lyrics_feedback_enabled": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": true
+    }
+  ],
+  "is_merch_on_browse_home_enabled": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": false
+    }
+  ],
+  "is_merch_on_event_detail_enabled": [
+    {
+      "regions": [
+        "US"
+      ],
+      "value": true
+    },
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": false
+    }
+  ],
+  "is_woodstock_enabled": [
+    {
+      "regions": [
+        "IN"
+      ],
+      "value": false
+    },
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": true
+    }
+  ],
+  "is_woodstock_on_event_detail_enabled": [
+    {
+      "regions": [
+        "IN"
+      ],
+      "value": false
+    },
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": true
+    }
+  ],
+  "is_live_event_on_search_enabled": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": true
+    }
+  ],
+  "is_live_event_detail_enabled": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": true
+    }
+  ],
+  "blended_search_history": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": true
+    }
+  ],
+  "artist_image_caching_improvement": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": true
+    }
+  ],
+  "find_landing_skyfire": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": true
+    }
+  ],
+  "related_entity_search": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "subscriptions": [
+        "sonic_rush"
+      ],
+      "value": true
+    }
+  ],
+  "related_entity_search_free": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "subscriptions": [
+        "free"
+      ],
+      "value": true
+    }
+  ],
+  "community_playlist_enabled": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "subscriptions": [
+        "music_unlimited",
+        "prime",
+        "sonic_rush"
+      ],
+      "value": true
+    }
+  ],
+  "community_playlist_free_tier_enabled": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "subscriptions": [
+        "free"
+      ],
+      "value": true
+    }
+  ],
+  "user_playlist_for_offline_search_enabled": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": true
+    }
+  ],
+  "user_playlist_show_upsell_enabled": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "subscriptions": [
+        "sonic_rush",
+        "free"
+      ],
+      "value": true
+    }
+  ],
+  "instant_search_max_suggestion_results": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": 10
+    }
+  ],
+  "instant_search_min_entity_query_length": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": 2
+    }
+  ],
+  "instant_search_entity_query_size": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": 250
+    }
+  ],
+  "instant_search_entity_result_count_basis": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": 3
+    }
+  ],
+  "instant_search_recent_entity_date_range": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": 90
+    }
+  ],
+  "instant_search_api_level": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": [
+        "TEXT"
+      ]
+    }
+  ],
+  "instant_search_api_level_entities": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "subscriptions": [
+        "music_unlimited"
+      ],
+      "value": [
+        "TEXT",
+        "ARTIST",
+        "TRACK",
+        "PODCAST_SHOW"
+      ]
+    },
+    {
+      "regions": [
+        "IN"
+      ],
+      "subscriptions": [
+        "prime"
+      ],
+      "value": [
+        "TEXT",
+        "ARTIST",
+        "TRACK",
+        "PODCAST_SHOW"
+      ]
+    },
+    {
+      "regions": [
+        "ALL"
+      ],
+      "subscriptions": [
+        "free",
+        "prime",
+        "music_hd",
+        "music_home",
+        "sonic_rush",
+        "no_subscription"
+      ],
+      "value": [
+        "TEXT"
+      ]
+    }
+  ],
+  "instant_search_api_level_entities_including_sr_ft": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "subscriptions": [
+        "music_unlimited"
+      ],
+      "value": [
+        "TEXT",
+        "ARTIST",
+        "TRACK",
+        "PODCAST_SHOW"
+      ]
+    },
+    {
+      "regions": [
+        "IN"
+      ],
+      "subscriptions": [
+        "prime"
+      ],
+      "value": [
+        "TEXT",
+        "ARTIST",
+        "TRACK",
+        "PODCAST_SHOW"
+      ]
+    },
+    {
+      "regions": [
+        "ALL"
+      ],
+      "subscriptions": [
+        "free",
+        "prime",
+        "music_hd",
+        "music_home",
+        "sonic_rush",
+        "no_subscription"
+      ],
+      "value": [
+        "TEXT",
+        "ARTIST",
+        "PODCAST_SHOW"
+      ]
+    }
+  ],
+  "hide_history_and_local_suggestion_track_entities": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "subscriptions": [
+        "sonic_rush",
+        "free"
+      ],
+      "value": true
+    },
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": false
+    }
+  ],
+  "alexa_search_ordinal_playback": [
+    {
+      "regions": [
+        "US"
+      ],
+      "subscriptions": [
+        "music_unlimited",
+        "music_hd",
+        "music_home",
+        "prime"
+      ],
+      "value": true
+    },
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": false
+    }
+  ],
+  "alexa_search_find_browse_car_mode": [
+    {
+      "regions": [
+        "US"
+      ],
+      "value": true
+    }
+  ],
+  "video_search": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "subscriptions": [
+        "music_unlimited",
+        "music_hd",
+        "sonic_rush"
+      ],
+      "value": true
+    }
+  ],
+  "video_playlist_search": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "subscriptions": [
+        "music_unlimited",
+        "music_hd"
+      ],
+      "value": true
+    }
+  ],
+  "upsell_on_find_page": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "subscriptions": [
+        "sonic_rush",
+        "free"
+      ],
+      "value": true
+    }
+  ],
+  "search_history_ttl_days": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": 90
+    }
+  ],
+  "search_history_eviction_cadence_days": [
+    {
+      "regions": [
+        "ALL"
+      ],
+      "value": 1
+    }
+  ]
+}

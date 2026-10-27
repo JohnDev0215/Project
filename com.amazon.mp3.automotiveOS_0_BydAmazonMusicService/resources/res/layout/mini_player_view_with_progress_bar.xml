@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <ProgressBar
+        android:id="@+id/mini_player_progress_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/miniplayer_progress_bar_height"
+        style="?android:attr/progressBarStyleHorizontal"/>
+    <com.amazon.mp3.playback.view.MiniPlayerView
+        android:id="@+id/mini_player_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</merge>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/feature_banner"
+    style="@style/BottomBanner">
+    <TextView
+        android:layout_gravity="bottom|center_horizontal"
+        android:id="@+id/feature_banner_message"
+        android:layout_toLeftOf="@+id/icon_container"
+        style="@style/BottomBannerText"/>
+    <RelativeLayout
+        android:id="@+id/icon_container"
+        style="@style/BottomBannerIconContainer">
+        <ImageView
+            android:id="@+id/feature_banner_icon"
+            android:src="@drawable/ic_exit_to_app"
+            style="@style/BottomBannerIcon"/>
+        <ImageView
+            android:id="@+id/feature_banner_icon_dismiss"
+            android:visibility="gone"
+            android:src="@drawable/close_normal"
+            style="@style/BottomBannerIcon"/>
+        <TextView
+            android:textStyle="bold"
+            android:id="@+id/feature_banner_view"
+            android:visibility="gone"
+            android:layout_centerVertical="true"
+            style="@style/BottomBannerIcon"/>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AmazonMusic.FeatureBarkerMainText" parent="@style/AmazonMusic.MainText">
+        <item name="android:textSize">@dimen/t6</item>
+    </style>
+    <style name="AmazonMusic.FeatureBarkerSubText" parent="@style/AmazonMusic.SubText">
+        <item name="android:textSize">@dimen/t7</item>
+    </style>
+</resources>

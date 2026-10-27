@@ -1,0 +1,229 @@
+syntax = "proto3";
+package na.pb;
+
+
+/**
+*  There has two parts of the message.
+*  One is named 'Header' and the other is 'DataBlob'.
+*  'Header' shows that the base infomation.
+*  'DataBlob' shows that the details.
+**/
+message DataCollection
+{
+  Header header = 1;
+  repeated DataBlob dataBlob = 2; // this is a list, means that it will be push to server with a batch.
+}
+
+/**
+ *  Define the header part of the message.
+**/
+message Header
+{
+  OEM     oem = 1; // vehicle factory, reference OEM
+  string  country = 2; // the first letter keep upper, e.g.  Thailand
+  string  deviceId = 3; // e.g. XE1115HK0021885
+  string  carMode = 4; // e.g. X70/X11, keep the alphabet upper
+  string  collectTime = 5; // indicate to start collecting data. It is an UTC timestamp and unit is millisenconds.
+  string  appVersion = 6; // software version. e.g. 0.01.01.02.20.27.3b.01
+  string  language = 7; // system language. "de" | "en" | "es" | "zh" | "ru" | "ar" | "th"
+  string  userId = 8; // current login user id
+  string  dbVersion = 9; // database version e.g. N.P.B2.20.00.05.00
+}
+
+/**
+*	Defind the data body.
+**/
+message DataBlob
+{
+  EventComponent eventComponent = 1;
+  EventID        eventId = 2;
+  EventType      eventType = 3;
+  string         dataBlob = 4; //	special business data prototal buffer according to the 'event_component' and 'event_id'
+}
+
+
+enum OEM
+{
+  OEM_RESERVE = 0;
+  PROTON = 1;
+  GREATWALL = 2;
+}
+
+/**
+*	Defind which component the collection event belongs to.
+**/
+enum EventComponent
+{
+  EVENTCOMPONENT_RESERVE = 0;
+  COMMON = 1;
+  GUIDANCE = 2;
+  ROUTE = 3;
+  SEARCH = 4;
+  MAP = 5;
+  POSITION = 6;
+  TRAFFIC = 7;
+  MAPUPDATE = 8;
+}
+
+/**
+*	Defind the data collection event id.
+**/
+enum EventID
+{
+  EVENTID_RESERVE = 0;
+  GUIDANCE_START = 1; // GuidanceStart
+  GUIDANCE_END = 2; // GuidanceEnd
+  NAVI_STARUP = 3; // navigation system start up. please refer to message 'NavigationAppStart'
+  CALC_ROUTE_END = 4; // CalculateRouteEnd
+  MAPUPDATE_START = 5; // MapUpdateStart
+  MAPUPDATE_END = 6; // MapUpdateEnd
+}
+
+/**
+*	Defind where the collection event comes from.
+**/
+enum EventType
+{
+  EVENTTYPE_RESERVE = 0;
+  PAGE = 1;
+  CLICK = 2;
+  CUSTOMIZE = 3; // such as the system start up should use it.
+}
+
+message GuidanceStart
+{
+  string timeStamp = 1;
+  string eta = 2;
+}
+
+message GuidanceEnd
+{
+  string timeStamp = 1;
+  string eta = 2;
+}
+
+message NavigationAppStart
+{
+  string timeStamp = 1;
+}
+
+enum RouteSrc
+{
+  ROUTESRC_RESERVE = 0;
+  ONLINE_ROUTE = 1;
+  OFFLINE_ROUTE = 2;
+}
+
+enum DestType
+{
+  DESTTYPE_RESERVE = 0;
+  POI = 1;
+  ADDRESS = 2;
+  DESTTYPE_OTHER = 3;
+}
+
+enum PoiSrc
+{
+  POISRC_RESERVE = 0;
+  HERE = 1;
+  OSM = 2;
+  POISRC_OTHER = 3;
+}
+
+message NameInfo
+{
+  string languageCode = 1; //GB_ENG_THAI
+  string name = 2; //neusoft
+}
+
+message CalculateRouteEnd
+{
+  string timeStamp = 1;
+  RouteSrc routeSource = 2; //RouteSrc
+  string  lat = 3;   // keep 5 decimal
+  string  lon = 4;   // keep 5 decimal
+  DestType destType = 5;     //DestType
+  string address = 6;
+  PoiSrc poiSrc = 7;     //PoiSrc
+  uint32 poiCategory = 8;
+  repeated NameInfo nameInfos = 9;     //NameInfo
+}
+
+enum UpdateType
+{
+  UPDATETYPE_RESERVE = 0;
+  FU = 1;          //Full update
+  IU = 2;          //Incremental update
+  PU = 3;          //Partial update
+}
+
+enum UpdateSource
+{
+  UPDATESOURCE_RESERVE = 0;
+  USB = 1;
+  ONLINE = 2;
+  UPDATESOURCE_OTHER = 3;
+}
+
+enum UpdateResult
+{
+  UPDATERESULT_RESERVE = 0;
+  SUCCESS = 1;
+  CANCEL = 2;
+  FAILED = 3;
+}
+
+message RegionInfo
+{
+  string productName = 1; // get from DB, e.g. WORLD MAP, NAV, ADAS from DB
+  string regionName = 2; // get from DB, e.g. north west, liaoning
+  uint32 regionId = 3;
+  string versionId = 4;
+}
+
+message MapUpdateStart
+{
+  string           	timeStamp = 1;
+  string           	currentMapVersion = 2; //database version e.g. N.P.B2.20.00.05.00
+  UpdateType        updateType = 3;
+  UpdateSource      updateSource = 4;
+  string            mapVersion = 5; //database version e.g. N.P.B2.20.00.05.00
+  uint32            regionCount = 6; //how many UR regions have bean update
+  repeated RegionInfo        regionInfo = 7;
+}
+
+enum UpdateStatus
+{
+  UPDATESTATUS_RESERVE = 0;
+  STATUS_IDLE = 1;
+  STATUS_DOWNLOADING = 2;
+  STATUS_INSTALLING = 3;
+  STATUS_CANCELED = 4;
+  STATUS_ERROR = 5;
+  STATUS_BACKUP = 6;
+  STATUS_NO_NETWORK = 7;
+  STATUS_FAIL_NETWORK_COMMUNICATION = 8;
+  STATUS_NOT_SUPPORTED = 9;
+  STATUS_GETTING_AVAILABLEUPDATES = 10;
+  STATUS_VACUUMING = 11;
+  STATUS_DOWNLOAD_FINISHED = 12;
+  STATUS_INSTALL_FINISHED = 13;
+  STATUS_BACKUP_FINISHED = 14;
+  STATUS_VACUUM_FINISHED = 15;
+  STATUS_DB_INCONSISTENT = 16;
+  STATUS_EXTRACTING = 17;
+  STATUS_EXTRACT_FINISHED = 18;
+  STATUS_UPDATES_AVAILABLE = 19;
+  STATUS_DISK_SPACE_NOT_ENOUGH = 20;
+  STATUS_NO_UPDATE_DATA = 21;
+  STATUS_INVALID_UPDATE_DATA = 22;
+}
+
+message MapUpdateEnd
+{
+  string          timeStamp = 1;
+  UpdateType      updateType = 2;
+  UpdateSource    updateSource = 3;
+  UpdateResult    updateResult = 4;
+  UpdateStatus    updateStatus = 5;
+}

@@ -1,0 +1,41 @@
+package com.facebook.common.memory;
+
+import androidx.annotation.VisibleForTesting;
+import com.facebook.common.internal.Preconditions;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.OutputStream;
+
+/* JADX INFO: loaded from: classes5.dex */
+public class PooledByteStreams {
+    private final ByteArrayPool mByteArrayPool;
+    private final int mTempBufSize;
+
+    public PooledByteStreams(ByteArrayPool byteArrayPool) {
+        this(byteArrayPool, 16384);
+    }
+
+    @VisibleForTesting
+    public PooledByteStreams(ByteArrayPool byteArrayPool, int tempBufSize) {
+        Preconditions.checkArgument(Boolean.valueOf(tempBufSize > 0));
+        this.mTempBufSize = tempBufSize;
+        this.mByteArrayPool = byteArrayPool;
+    }
+
+    public long copy(final InputStream from, final OutputStream to) throws IOException {
+        byte[] bArr = this.mByteArrayPool.get(this.mTempBufSize);
+        long j = 0;
+        while (true) {
+            try {
+                int i = from.read(bArr, 0, this.mTempBufSize);
+                if (i == -1) {
+                    return j;
+                }
+                to.write(bArr, 0, i);
+                j += (long) i;
+            } finally {
+                this.mByteArrayPool.release(bArr);
+            }
+        }
+    }
+}

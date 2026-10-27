@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:widget="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.amazon.mp3.prime.browse.pager.SwipeableViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/feature_banner_container"/>
+    <FrameLayout
+        android:id="@+id/feature_banner_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+        <include layout="@layout/feature_banner"/>
+    </FrameLayout>
+    <com.amazon.mp3.view.SlidingTabLayout
+        android:id="@+id/sliding_tabs"
+        android:background="@color/background_dark_blue"
+        android:paddingLeft="@dimen/abc_action_bar_default_padding_start_material"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:minHeight="@dimen/prime_tab_bar_height"/>
+</RelativeLayout>

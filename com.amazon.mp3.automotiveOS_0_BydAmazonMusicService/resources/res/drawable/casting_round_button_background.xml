@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:height="@dimen/casting_button_height"
+    android:width="@dimen/casting_button_width"
+    android:viewportWidth="@dimen/casting_button_viewport_width"
+    android:viewportHeight="@dimen/casting_button_viewport_height">
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M18,1L81,1A17,17 0,0 1,98 18L98,18A17,17 0,0 1,81 35L18,35A17,17 0,0 1,1 18L1,18A17,17 0,0 1,18 1z"
+        android:strokeColor="@color/vivace_blue"
+        android:strokeWidth="2"/>
+</vector>
