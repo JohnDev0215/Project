@@ -1,0 +1,4 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/graphics/ColorMatrixColorFilter;->mMatrix:Landroid/graphics/ColorMatrix;,frameworks/base/graphics/java/android/graphics/ColorMatrixColorFilter.java,30,5,30,25,
+Landroid/graphics/ColorMatrixColorFilter;->setColorMatrix(Landroid/graphics/ColorMatrix;)V,frameworks/base/graphics/java/android/graphics/ColorMatrixColorFilter.java,81,5,81,25,
+Landroid/graphics/ColorMatrixColorFilter;->setColorMatrixArray([F)V,frameworks/base/graphics/java/android/graphics/ColorMatrixColorFilter.java,110,5,110,25,

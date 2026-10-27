@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.android.car.ui.recyclerview.CarUiRecyclerViewContainer
+        android:id="@+id/car_ui_recycler_view"
+        android:tag="carUiRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingStart="@dimen/car_ui_scrollbar_margin"
+        android:paddingEnd="@dimen/car_ui_scrollbar_margin"/>
+    <FrameLayout
+        android:layout_gravity="left"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+        <include layout="@layout/car_ui_recyclerview_scrollbar"/>
+    </FrameLayout>
+</merge>

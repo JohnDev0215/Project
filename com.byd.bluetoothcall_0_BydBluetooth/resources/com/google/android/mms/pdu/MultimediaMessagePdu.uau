@@ -1,0 +1,13 @@
+signature,file,startline,startcol,endline,endcol,properties
+Lcom/google/android/mms/pdu/MultimediaMessagePdu;-><init>()V,frameworks/base/telephony/common/com/google/android/mms/pdu/MultimediaMessagePdu.java,36,5,36,25,
+Lcom/google/android/mms/pdu/MultimediaMessagePdu;-><init>(Lcom/google/android/mms/pdu/PduHeaders;Lcom/google/android/mms/pdu/PduBody;)V,frameworks/base/telephony/common/com/google/android/mms/pdu/MultimediaMessagePdu.java,47,5,47,25,
+Lcom/google/android/mms/pdu/MultimediaMessagePdu;->getBody()Lcom/google/android/mms/pdu/PduBody;,frameworks/base/telephony/common/com/google/android/mms/pdu/MultimediaMessagePdu.java,67,5,67,25,
+Lcom/google/android/mms/pdu/MultimediaMessagePdu;->setBody(Lcom/google/android/mms/pdu/PduBody;)V,frameworks/base/telephony/common/com/google/android/mms/pdu/MultimediaMessagePdu.java,77,5,77,25,
+Lcom/google/android/mms/pdu/MultimediaMessagePdu;->getSubject()Lcom/google/android/mms/pdu/EncodedStringValue;,frameworks/base/telephony/common/com/google/android/mms/pdu/MultimediaMessagePdu.java,87,5,87,25,
+Lcom/google/android/mms/pdu/MultimediaMessagePdu;->setSubject(Lcom/google/android/mms/pdu/EncodedStringValue;)V,frameworks/base/telephony/common/com/google/android/mms/pdu/MultimediaMessagePdu.java,98,5,98,25,
+Lcom/google/android/mms/pdu/MultimediaMessagePdu;->getTo()[Lcom/google/android/mms/pdu/EncodedStringValue;,frameworks/base/telephony/common/com/google/android/mms/pdu/MultimediaMessagePdu.java,108,5,108,25,
+Lcom/google/android/mms/pdu/MultimediaMessagePdu;->addTo(Lcom/google/android/mms/pdu/EncodedStringValue;)V,frameworks/base/telephony/common/com/google/android/mms/pdu/MultimediaMessagePdu.java,119,5,119,25,
+Lcom/google/android/mms/pdu/MultimediaMessagePdu;->getPriority()I,frameworks/base/telephony/common/com/google/android/mms/pdu/MultimediaMessagePdu.java,129,5,129,25,
+Lcom/google/android/mms/pdu/MultimediaMessagePdu;->setPriority(I)V,frameworks/base/telephony/common/com/google/android/mms/pdu/MultimediaMessagePdu.java,140,5,140,25,
+Lcom/google/android/mms/pdu/MultimediaMessagePdu;->getDate()J,frameworks/base/telephony/common/com/google/android/mms/pdu/MultimediaMessagePdu.java,150,5,150,25,
+Lcom/google/android/mms/pdu/MultimediaMessagePdu;->setDate(J)V,frameworks/base/telephony/common/com/google/android/mms/pdu/MultimediaMessagePdu.java,160,5,160,25,

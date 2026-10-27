@@ -1,0 +1,6 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/app/IApplicationThread;->scheduleCreateService(Landroid/os/IBinder;Landroid/content/pm/ServiceInfo;Landroid/content/res/CompatibilityInfo;I)V,frameworks/base/core/java/android/app/IApplicationThread.aidl,64,1,64,25,
+Landroid/app/IApplicationThread;->scheduleStopService(Landroid/os/IBinder;)V,frameworks/base/core/java/android/app/IApplicationThread.aidl,67,1,67,25,
+Landroid/app/IApplicationThread;->scheduleBindService(Landroid/os/IBinder;Landroid/content/Intent;ZI)V,frameworks/base/core/java/android/app/IApplicationThread.aidl,83,1,83,25,
+Landroid/app/IApplicationThread;->scheduleUnbindService(Landroid/os/IBinder;Landroid/content/Intent;)V,frameworks/base/core/java/android/app/IApplicationThread.aidl,86,1,86,25,
+Landroid/app/IApplicationThread;->scheduleTrimMemory(I)V,frameworks/base/core/java/android/app/IApplicationThread.aidl,113,1,113,25,

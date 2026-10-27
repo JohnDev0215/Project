@@ -1,0 +1,4 @@
+signature,file,startline,startcol,endline,endcol,properties
+Lcom/android/internal/app/LocaleHelper;->normalizeForSearch(Ljava/lang/String;Ljava/util/Locale;)Ljava/lang/String;,frameworks/base/core/java/com/android/internal/app/LocaleHelper.java,88,5,88,25,
+Lcom/android/internal/app/LocaleHelper;->getDisplayName(Ljava/util/Locale;Ljava/util/Locale;Z)Ljava/lang/String;,frameworks/base/core/java/com/android/internal/app/LocaleHelper.java,114,5,114,25,
+Lcom/android/internal/app/LocaleHelper;->getDisplayCountry(Ljava/util/Locale;Ljava/util/Locale;)Ljava/lang/String;,frameworks/base/core/java/com/android/internal/app/LocaleHelper.java,141,5,141,25,

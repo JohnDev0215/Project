@@ -1,0 +1,5 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/telephony/ims/ImsStreamMediaProfile;->mAudioQuality:I,frameworks/base/telephony/java/android/telephony/ims/ImsStreamMediaProfile.java,89,5,89,25,
+Landroid/telephony/ims/ImsStreamMediaProfile;->mAudioDirection:I,frameworks/base/telephony/java/android/telephony/ims/ImsStreamMediaProfile.java,92,5,92,25,
+Landroid/telephony/ims/ImsStreamMediaProfile;->mVideoDirection:I,frameworks/base/telephony/java/android/telephony/ims/ImsStreamMediaProfile.java,98,5,98,25,
+Landroid/telephony/ims/ImsStreamMediaProfile;-><init>()V,frameworks/base/telephony/java/android/telephony/ims/ImsStreamMediaProfile.java,169,5,169,25,

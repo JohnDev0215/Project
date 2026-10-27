@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@drawable/shape_dialog_bg"
+    android:layout_width="@dimen/dp_560"
+    android:layout_height="wrap_content">
+    <TextView
+        android:textStyle="bold"
+        android:id="@+id/dialog_title"
+        android:text="@string/normal_title"
+        style="@style/dialog_title"/>
+    <View
+        android:id="@+id/dialog_title_divider"
+        style="@style/dialog_title_divider"/>
+    <TextView
+        android:textSize="@dimen/sp_20"
+        android:textColor="?attr/normal_text_color"
+        android:gravity="center"
+        android:id="@+id/dialog_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_24"
+        android:paddingHorizontal="@dimen/dp_48"
+        android:paddingVertical="@dimen/dp_16"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_104">
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/dialog_confirm_btn"
+            android:text="@string/confirm"
+            android:layout_centerInParent="true"
+            style="@style/confirmBtn"/>
+    </RelativeLayout>
+</LinearLayout>

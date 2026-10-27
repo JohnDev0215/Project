@@ -1,0 +1,8 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/media/AudioTrack;->mStreamType:I,frameworks/base/media/java/android/media/AudioTrack.java,510,5,510,25,
+Landroid/media/AudioTrack;->mNativeTrackInJavaObj:J,frameworks/base/media/java/android/media/AudioTrack.java,575,5,575,25,
+Landroid/media/AudioTrack;->mJniData:J,frameworks/base/media/java/android/media/AudioTrack.java,582,5,582,25,
+Landroid/media/AudioTrack;->deferred_connect(J)V,frameworks/base/media/java/android/media/AudioTrack.java,878,5,878,25,
+Landroid/media/AudioTrack;->getLatency()I,frameworks/base/media/java/android/media/AudioTrack.java,2112,5,2112,50,trackingBug=130237544L
+Landroid/media/AudioTrack;->postEventFromNative(Ljava/lang/Object;IIILjava/lang/Object;)V,frameworks/base/media/java/android/media/AudioTrack.java,4009,5,4009,25,
+Landroid/media/AudioTrack;->native_release()V,frameworks/base/media/java/android/media/AudioTrack.java,4075,5,4075,25,

@@ -1,0 +1,6 @@
+signature,file,startline,startcol,endline,endcol,properties
+Lcom/android/internal/os/BatteryStatsImpl$Uid$Pkg$Serv;->startLaunchedLocked()V,frameworks/base/core/java/com/android/internal/os/BatteryStatsImpl.java,9354,17,9354,37,
+Lcom/android/internal/os/BatteryStatsImpl$Uid$Pkg$Serv;->stopLaunchedLocked()V,frameworks/base/core/java/com/android/internal/os/BatteryStatsImpl.java,9363,17,9363,37,
+Lcom/android/internal/os/BatteryStatsImpl$Uid$Pkg$Serv;->startRunningLocked()V,frameworks/base/core/java/com/android/internal/os/BatteryStatsImpl.java,9376,17,9376,37,
+Lcom/android/internal/os/BatteryStatsImpl$Uid$Pkg$Serv;->stopRunningLocked()V,frameworks/base/core/java/com/android/internal/os/BatteryStatsImpl.java,9385,17,9385,37,
+Lcom/android/internal/os/BatteryStatsImpl$Uid$Pkg$Serv;->getBatteryStats()Lcom/android/internal/os/BatteryStatsImpl;,frameworks/base/core/java/com/android/internal/os/BatteryStatsImpl.java,9398,17,9398,37,

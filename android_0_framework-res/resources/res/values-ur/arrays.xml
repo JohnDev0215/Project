@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="emailAddressTypes">
+        <item>گھر</item>
+        <item>دفتر</item>
+        <item>دیگر</item>
+        <item>حسب ضرورت</item>
+    </array>
+    <array name="imProtocols">
+        <item>AIM</item>
+        <item>Windows Live</item>
+        <item>Yahoo</item>
+        <item>Skype</item>
+        <item>QQ</item>
+        <item>Google Talk</item>
+        <item>ICQ</item>
+        <item>Jabber</item>
+    </array>
+    <array name="organizationTypes">
+        <item>دفتر</item>
+        <item>دیگر</item>
+        <item>حسب ضرورت</item>
+    </array>
+    <array name="phoneTypes">
+        <item>گھر</item>
+        <item>موبائل</item>
+        <item>دفتر</item>
+        <item>دفتر کا فیکس</item>
+        <item>گھر کا فیکس</item>
+        <item>پیجر</item>
+        <item>دیگر</item>
+        <item>حسب ضرورت</item>
+    </array>
+    <array name="postalAddressTypes">
+        <item>گھر</item>
+        <item>دفتر</item>
+        <item>دیگر</item>
+        <item>حسب ضرورت</item>
+    </array>
+    <array name="face_acquired_vendor">
+    </array>
+    <array name="face_error_vendor">
+    </array>
+    <array name="fingerprint_acquired_vendor">
+    </array>
+    <array name="fingerprint_error_vendor">
+    </array>
+    <array name="imAddressTypes">
+        <item>گھر</item>
+        <item>دفتر</item>
+        <item>دیگر</item>
+        <item>حسب ضرورت</item>
+    </array>
+    <array name="network_switch_type_name">
+        <item>موبائل ڈیٹا</item>
+        <item>Wi-Fi</item>
+        <item>بلوٹوتھ</item>
+        <item>ایتھرنیٹ</item>
+        <item>VPN</item>
+    </array>
+    <array name="wfcOperatorErrorAlertMessages">
+        <item>‏Wi-Fi سے کالز کرنے اور پیغامات بھیجنے کے لیے، پہلے اپنے کیریئر سے اس سروس کو سیٹ اپ کرنے کے لیے کہیں۔ پھر ترتیبات سے دوبارہ Wi-Fi کالنگ آن کریں۔ (خراب کوڈ: %1$s)</item>
+    </array>
+    <array name="wfcOperatorErrorNotificationMessages">
+        <item>‏آپ کے کیریئر کے ساتھ Wi‑Fi کالنگ رجسٹر کرنے میں مسئلہ درپیش ہے: %1$s</item>
+    </array>
+</resources>

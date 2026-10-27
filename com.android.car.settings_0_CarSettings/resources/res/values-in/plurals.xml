@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="billing_cycle_days_left">
+        <item quantity="one">%d hari lagi</item>
+        <item quantity="other">%d hari lagi</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_letters">
+        <item quantity="one">Minimal berisi 1 huruf</item>
+        <item quantity="other">Minimal berisi %d huruf</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_lowercase">
+        <item quantity="one">Minimal berisi 1 huruf kecil</item>
+        <item quantity="other">Minimal berisi %d huruf kecil</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_nonletter">
+        <item quantity="one">Minimal berisi 1 karakter bukan huruf</item>
+        <item quantity="other">Minimal berisi %d karakter bukan huruf</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_numeric">
+        <item quantity="one">Minimal berisi 1 digit angka</item>
+        <item quantity="other">Minimal berisi %d digit angka</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_symbols">
+        <item quantity="one">Minimal berisi 1 simbol khusus</item>
+        <item quantity="other">Minimal berisi %d simbol khusus</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_uppercase">
+        <item quantity="one">Minimal berisi 1 huruf besar</item>
+        <item quantity="other">Minimal berisi %d huruf besar</item>
+    </plurals>
+    <plurals name="mobile_network_summary_count">
+        <item quantity="one">%1$d SIM</item>
+        <item quantity="other">%1$d SIM</item>
+    </plurals>
+    <plurals name="runtime_permissions_additional_count">
+        <item quantity="one">%d izin tambahan</item>
+        <item quantity="other">%d izin tambahan</item>
+    </plurals>
+    <plurals name="show_dev_countdown">
+        <item quantity="one">Tinggal %1$d langkah untuk menjadi developer.</item>
+        <item quantity="other">Tinggal %1$d langkah untuk menjadi developer.</item>
+    </plurals>
+    <plurals name="user_limit_reached_message">
+        <item quantity="one">Hanya dapat membuat satu pengguna.</item>
+        <item quantity="other">Anda dapat membuat hingga %d pengguna.</item>
+    </plurals>
+    <plurals name="wifi_tether_connected_summary">
+        <item quantity="one">%1$d perangkat terhubung</item>
+        <item quantity="other">%1$d perangkat terhubung</item>
+    </plurals>
+</resources>

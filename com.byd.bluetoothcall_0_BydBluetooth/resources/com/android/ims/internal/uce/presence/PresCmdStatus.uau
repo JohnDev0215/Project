@@ -1,0 +1,6 @@
+signature,file,startline,startcol,endline,endcol,properties
+Lcom/android/ims/internal/uce/presence/PresCmdStatus;->setCmdId(Lcom/android/ims/internal/uce/presence/PresCmdId;)V,frameworks/base/core/java/com/android/ims/internal/uce/presence/PresCmdStatus.java,46,5,46,25,
+Lcom/android/ims/internal/uce/presence/PresCmdStatus;->setUserData(I)V,frameworks/base/core/java/com/android/ims/internal/uce/presence/PresCmdStatus.java,63,5,63,25,
+Lcom/android/ims/internal/uce/presence/PresCmdStatus;->setStatus(Lcom/android/ims/internal/uce/common/StatusCode;)V,frameworks/base/core/java/com/android/ims/internal/uce/presence/PresCmdStatus.java,79,5,79,25,
+Lcom/android/ims/internal/uce/presence/PresCmdStatus;->setRequestId(I)V,frameworks/base/core/java/com/android/ims/internal/uce/presence/PresCmdStatus.java,96,5,96,25,
+Lcom/android/ims/internal/uce/presence/PresCmdStatus;-><init>()V,frameworks/base/core/java/com/android/ims/internal/uce/presence/PresCmdStatus.java,105,5,105,25,

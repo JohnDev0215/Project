@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="control_ac_array">
+        <item>Slå på aircondition</item>
+        <item>Juster temperaturen til 25 grader</item>
+        <item>Stopp innvendig luftsirkulasjon</item>
+        <item>Det er for varmt</item>
+        <item>Skru ned viftehastigheten</item>
+        <item>Still viftehastigheten til nivå 3</item>
+        <item>Slå på defroster foran</item>
+        <item>Sett på ventilasjonsmodus</item>
+        <item>Slå på viften</item>
+    </array>
+    <array name="control_seat_array">
+        <item>Slå på setevarme i baksetene</item>
+        <item>Skru på seteventilasjon</item>
+        <item>Skru av seteventilasjonen i førersetet</item>
+        <item>Slå av ventilasjonsmodus</item>
+    </array>
+    <array name="control_sunshade_array">
+        <item>Åpne solskjermen i taket</item>
+        <item>Lukk soltaket</item>
+    </array>
+    <array name="offline_other_operations_array">
+        <item>Slå på bluetooth</item>
+        <item>Aktiver Wifi</item>
+        <item>Lysne skjermen</item>
+        <item>Åpne kjøretøyinnstillinger</item>
+        <item>Gå tilbake til hjemmesiden</item>
+    </array>
+    <array name="offline_window_array">
+        <item>Åpne vinduer</item>
+        <item>Lukk vinduene ved baksetene</item>
+        <item>Lukk opp vinduet høyre bak</item>
+        <item>Lukk alle vinduene</item>
+    </array>
+    <array name="rotate_screen_arrays">
+        <item>Roter skjermen</item>
+    </array>
+    <array name="system_app_operations">
+        <item>Åpne Spotify</item>
+        <item>Åpne kjøretøyinnstillinger</item>
+    </array>
+    <array name="system_other_operations_array">
+        <item>Slå på bluetooth</item>
+        <item>Aktiver Wifi</item>
+        <item>Lysne skjermen</item>
+        <item>Gå tilbake til hjemmesiden</item>
+    </array>
+</resources>

@@ -1,0 +1,5 @@
+signature,file,startline,startcol,endline,endcol,properties
+Lcom/android/internal/os/ProcessCpuTracker;-><init>(Z)V,frameworks/base/core/java/com/android/internal/os/ProcessCpuTracker.java,312,5,312,25,
+Lcom/android/internal/os/ProcessCpuTracker;->update()V,frameworks/base/core/java/com/android/internal/os/ProcessCpuTracker.java,332,5,332,25,
+Lcom/android/internal/os/ProcessCpuTracker;->countWorkingStats()I,frameworks/base/core/java/com/android/internal/os/ProcessCpuTracker.java,735,5,735,25,
+Lcom/android/internal/os/ProcessCpuTracker;->getWorkingStats(I)Lcom/android/internal/os/ProcessCpuTracker$Stats;,frameworks/base/core/java/com/android/internal/os/ProcessCpuTracker.java,741,5,741,25,

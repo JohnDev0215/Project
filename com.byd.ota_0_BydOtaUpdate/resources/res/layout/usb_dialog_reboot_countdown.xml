@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/usb_shape_dialog_bg"
+    android:layout_width="@dimen/dp_560"
+    android:layout_height="@dimen/dp_312">
+    <TextView
+        android:id="@+id/dialog_title"
+        android:text="@string/usb_tips"
+        style="@style/usb_dialog_title"/>
+    <TextView
+        android:layout_below="@+id/dialog_title"
+        style="@style/usb_dialog_title_divider"/>
+    <TextView
+        android:textSize="@dimen/sp_20"
+        android:textColor="?attr/usb_normal_text_color"
+        android:gravity="center"
+        android:id="@+id/dialog_message"
+        android:scrollbars="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_29"
+        android:layout_marginTop="@dimen/dp_136"
+        android:text="@string/usb_update_success_and_reboot"
+        android:layout_centerHorizontal="true"
+        android:fadeScrollbars="false"/>
+    <Button
+        android:id="@+id/reboot"
+        android:text="@string/usb_reboot"
+        style="@style/actionBtn"/>
+</RelativeLayout>

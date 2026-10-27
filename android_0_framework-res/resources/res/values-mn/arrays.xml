@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="emailAddressTypes">
+        <item>Гэрийн</item>
+        <item>Ажлын</item>
+        <item>Бусад</item>
+        <item>Тусгай</item>
+    </array>
+    <array name="imProtocols">
+        <item>AIM</item>
+        <item>Windows Live</item>
+        <item>Yahoo</item>
+        <item>Skype</item>
+        <item>QQ</item>
+        <item>Google Talk</item>
+        <item>ICQ</item>
+        <item>Jabber</item>
+    </array>
+    <array name="organizationTypes">
+        <item>Ажлын</item>
+        <item>Бусад</item>
+        <item>Тусгай</item>
+    </array>
+    <array name="phoneTypes">
+        <item>Гэрийн</item>
+        <item>Мобайл</item>
+        <item>Ажлын</item>
+        <item>Ажлын факс</item>
+        <item>Гэрийн Факс</item>
+        <item>Пэйжер</item>
+        <item>Бусад</item>
+        <item>Тусгай</item>
+    </array>
+    <array name="postalAddressTypes">
+        <item>Гэрийн</item>
+        <item>Ажлын</item>
+        <item>Бусад</item>
+        <item>Тусгай</item>
+    </array>
+    <array name="face_acquired_vendor">
+    </array>
+    <array name="face_error_vendor">
+    </array>
+    <array name="fingerprint_acquired_vendor">
+    </array>
+    <array name="fingerprint_error_vendor">
+    </array>
+    <array name="imAddressTypes">
+        <item>Гэрийн</item>
+        <item>Ажлын</item>
+        <item>Бусад</item>
+        <item>Тусгай</item>
+    </array>
+    <array name="network_switch_type_name">
+        <item>мобайл дата</item>
+        <item>Wi-Fi</item>
+        <item>Bluetooth</item>
+        <item>Этернэт</item>
+        <item>VPN</item>
+    </array>
+    <array name="wfcOperatorErrorAlertMessages">
+        <item>Wi-Fi-аар дуудлага хийх, мессеж илгээх бол эхлээд оператор компаниасаа энэ үйлчилгээг тохируулж өгөхийг хүснэ үү. Дараа нь Тохиргооноос Wi-Fi дуудлага хийх үйлдлийг асаана уу. (Алдааны код: %1$s)</item>
+    </array>
+    <array name="wfcOperatorErrorNotificationMessages">
+        <item>Таны оператор компанийн Wi‑Fi дуудлагыг бүртгэхэд асуудал гарлаа: %1$s</item>
+    </array>
+</resources>

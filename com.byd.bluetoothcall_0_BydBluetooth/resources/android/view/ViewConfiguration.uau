@@ -1,0 +1,11 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/view/ViewConfiguration;->SCROLL_FRICTION:F,frameworks/base/core/java/android/view/ViewConfiguration.java,246,5,246,25,
+Landroid/view/ViewConfiguration;->mFadingMarqueeEnabled:Z,frameworks/base/core/java/android/view/ViewConfiguration.java,330,5,330,25,
+Landroid/view/ViewConfiguration;->sHasPermanentMenuKey:Z,frameworks/base/core/java/android/view/ViewConfiguration.java,338,5,338,88,maxTargetSdk=28&trackingBug=123768915L
+Landroid/view/ViewConfiguration;->sHasPermanentMenuKeySet:Z,frameworks/base/core/java/android/view/ViewConfiguration.java,340,5,340,25,
+Landroid/view/ViewConfiguration;->sConfigurations:Landroid/util/SparseArray;,frameworks/base/core/java/android/view/ViewConfiguration.java,343,5,343,25,
+Landroid/view/ViewConfiguration;->getDoubleTapMinTime()I,frameworks/base/core/java/android/view/ViewConfiguration.java,660,5,660,25,
+Landroid/view/ViewConfiguration;->getHoverTapSlop()I,frameworks/base/core/java/android/view/ViewConfiguration.java,681,5,681,25,
+Landroid/view/ViewConfiguration;->getScaledDoubleTapTouchSlop()I,frameworks/base/core/java/android/view/ViewConfiguration.java,735,5,735,25,
+Landroid/view/ViewConfiguration;->getDoubleTapSlop()I,frameworks/base/core/java/android/view/ViewConfiguration.java,756,5,756,25,
+Landroid/view/ViewConfiguration;->isFadingMarqueeEnabled()Z,frameworks/base/core/java/android/view/ViewConfiguration.java,1065,5,1065,25,

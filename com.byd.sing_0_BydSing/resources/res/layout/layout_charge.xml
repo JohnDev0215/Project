@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bg_frame"
+    android:layout_width="@dimen/dp_560"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/iv_charge"
+        android:layout_width="@dimen/dp_140"
+        android:layout_height="@dimen/dp_136"
+        android:layout_marginTop="@dimen/dp_22"
+        android:src="@drawable/img_ksong_microphone_low_power"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <TextView
+        android:textSize="@dimen/sp_18"
+        android:textColor="@color/text_main"
+        android:id="@+id/tv_charge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_164"
+        android:text="@string/no_power"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <Button
+        android:textSize="@dimen/sp_18"
+        android:textColor="@color/color_button_text"
+        android:id="@+id/btn_i_know"
+        android:background="@drawable/bg_button_default"
+        android:layout_width="@dimen/dp_176"
+        android:layout_height="@dimen/dp_48"
+        android:layout_marginBottom="@dimen/dp_28"
+        android:text="@string/btn_i_know"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

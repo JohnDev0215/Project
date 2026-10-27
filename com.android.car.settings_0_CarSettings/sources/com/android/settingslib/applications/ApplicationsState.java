@@ -1,0 +1,1402 @@
+package com.android.settingslib.applications;
+
+import android.R;
+import android.app.ActivityManager;
+import android.app.AppGlobals;
+import android.app.Application;
+import android.app.usage.StorageStats;
+import android.app.usage.StorageStatsManager;
+import android.content.BroadcastReceiver;
+import android.content.Context;
+import android.content.Intent;
+import android.content.IntentFilter;
+import android.content.pm.ApplicationInfo;
+import android.content.pm.IPackageManager;
+import android.content.pm.IPackageStatsObserver;
+import android.content.pm.ModuleInfo;
+import android.content.pm.PackageManager;
+import android.content.pm.PackageStats;
+import android.graphics.drawable.Drawable;
+import android.net.Uri;
+import android.os.Handler;
+import android.os.HandlerThread;
+import android.os.Looper;
+import android.os.Message;
+import android.os.Process;
+import android.os.RemoteException;
+import android.os.UserHandle;
+import android.os.UserManager;
+import android.text.format.Formatter;
+import android.util.IconDrawableFactory;
+import android.util.Log;
+import android.util.SparseArray;
+import androidx.lifecycle.Lifecycle;
+import androidx.lifecycle.LifecycleObserver;
+import androidx.lifecycle.OnLifecycleEvent;
+import com.android.car.ui.utils.RotaryConstants;
+import com.android.internal.util.ArrayUtils;
+import com.android.settingslib.Utils;
+import com.android.settingslib.utils.ThreadUtils;
+import java.io.File;
+import java.io.IOException;
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
+import java.lang.ref.WeakReference;
+import java.text.Collator;
+import java.text.Normalizer;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Objects;
+import java.util.UUID;
+import java.util.regex.Pattern;
+
+/* JADX INFO: loaded from: classes6.dex */
+public class ApplicationsState {
+    private static final boolean DEBUG = false;
+    private static final boolean DEBUG_LOCKING = false;
+    public static final int DEFAULT_SESSION_FLAGS = 15;
+    public static final int FLAG_SESSION_REQUEST_HOME_APP = 1;
+    public static final int FLAG_SESSION_REQUEST_ICONS = 2;
+    public static final int FLAG_SESSION_REQUEST_LAUNCHER = 8;
+    public static final int FLAG_SESSION_REQUEST_LEANBACK_LAUNCHER = 16;
+    public static final int FLAG_SESSION_REQUEST_SIZES = 4;
+    public static final int SIZE_INVALID = -2;
+    public static final int SIZE_UNKNOWN = -1;
+    private static final String TAG = "ApplicationsState";
+    static ApplicationsState sInstance;
+    final int mAdminRetrieveFlags;
+    final BackgroundHandler mBackgroundHandler;
+    final Context mContext;
+    String mCurComputingSizePkg;
+    int mCurComputingSizeUserId;
+    UUID mCurComputingSizeUuid;
+    final IconDrawableFactory mDrawableFactory;
+    boolean mHaveDisabledApps;
+    boolean mHaveInstantApps;
+    final IPackageManager mIpm;
+    PackageIntentReceiver mPackageIntentReceiver;
+    final PackageManager mPm;
+    boolean mResumed;
+    final int mRetrieveFlags;
+    boolean mSessionsChanged;
+    final StorageStatsManager mStats;
+    final HandlerThread mThread;
+    final UserManager mUm;
+    private static final Object sLock = new Object();
+    private static final Pattern REMOVE_DIACRITICALS_PATTERN = Pattern.compile("\\p{InCombiningDiacriticalMarks}+");
+    public static final Comparator<AppEntry> ALPHA_COMPARATOR = new Comparator<AppEntry>() { // from class: com.android.settingslib.applications.ApplicationsState.1
+        private final Collator sCollator = Collator.getInstance();
+
+        @Override // java.util.Comparator
+        public int compare(AppEntry object1, AppEntry object2) {
+            int compareResult;
+            int compareResult2 = this.sCollator.compare(object1.label, object2.label);
+            if (compareResult2 != 0) {
+                return compareResult2;
+            }
+            if (object1.info != null && object2.info != null && (compareResult = this.sCollator.compare(object1.info.packageName, object2.info.packageName)) != 0) {
+                return compareResult;
+            }
+            return object1.info.uid - object2.info.uid;
+        }
+    };
+    public static final Comparator<AppEntry> SIZE_COMPARATOR = new Comparator<AppEntry>() { // from class: com.android.settingslib.applications.ApplicationsState.2
+        @Override // java.util.Comparator
+        public int compare(AppEntry object1, AppEntry object2) {
+            if (object1.size < object2.size) {
+                return 1;
+            }
+            if (object1.size > object2.size) {
+                return -1;
+            }
+            return ApplicationsState.ALPHA_COMPARATOR.compare(object1, object2);
+        }
+    };
+    public static final Comparator<AppEntry> INTERNAL_SIZE_COMPARATOR = new Comparator<AppEntry>() { // from class: com.android.settingslib.applications.ApplicationsState.3
+        @Override // java.util.Comparator
+        public int compare(AppEntry object1, AppEntry object2) {
+            if (object1.internalSize < object2.internalSize) {
+                return 1;
+            }
+            if (object1.internalSize > object2.internalSize) {
+                return -1;
+            }
+            return ApplicationsState.ALPHA_COMPARATOR.compare(object1, object2);
+        }
+    };
+    public static final Comparator<AppEntry> EXTERNAL_SIZE_COMPARATOR = new Comparator<AppEntry>() { // from class: com.android.settingslib.applications.ApplicationsState.4
+        @Override // java.util.Comparator
+        public int compare(AppEntry object1, AppEntry object2) {
+            if (object1.externalSize < object2.externalSize) {
+                return 1;
+            }
+            if (object1.externalSize > object2.externalSize) {
+                return -1;
+            }
+            return ApplicationsState.ALPHA_COMPARATOR.compare(object1, object2);
+        }
+    };
+    public static final AppFilter FILTER_PERSONAL = new AppFilter() { // from class: com.android.settingslib.applications.ApplicationsState.5
+        private int mCurrentUser;
+
+        @Override // com.android.settingslib.applications.ApplicationsState.AppFilter
+        public void init() {
+            this.mCurrentUser = ActivityManager.getCurrentUser();
+        }
+
+        @Override // com.android.settingslib.applications.ApplicationsState.AppFilter
+        public boolean filterApp(AppEntry entry) {
+            return UserHandle.getUserId(entry.info.uid) == this.mCurrentUser;
+        }
+    };
+    public static final AppFilter FILTER_WITHOUT_DISABLED_UNTIL_USED = new AppFilter() { // from class: com.android.settingslib.applications.ApplicationsState.6
+        @Override // com.android.settingslib.applications.ApplicationsState.AppFilter
+        public void init() {
+        }
+
+        @Override // com.android.settingslib.applications.ApplicationsState.AppFilter
+        public boolean filterApp(AppEntry entry) {
+            return entry.info.enabledSetting != 4;
+        }
+    };
+    public static final AppFilter FILTER_WORK = new AppFilter() { // from class: com.android.settingslib.applications.ApplicationsState.7
+        private int mCurrentUser;
+
+        @Override // com.android.settingslib.applications.ApplicationsState.AppFilter
+        public void init() {
+            this.mCurrentUser = ActivityManager.getCurrentUser();
+        }
+
+        @Override // com.android.settingslib.applications.ApplicationsState.AppFilter
+        public boolean filterApp(AppEntry entry) {
+            return UserHandle.getUserId(entry.info.uid) != this.mCurrentUser;
+        }
+    };
+    public static final AppFilter FILTER_DOWNLOADED_AND_LAUNCHER = new AppFilter() { // from class: com.android.settingslib.applications.ApplicationsState.8
+        @Override // com.android.settingslib.applications.ApplicationsState.AppFilter
+        public void init() {
+        }
+
+        @Override // com.android.settingslib.applications.ApplicationsState.AppFilter
+        public boolean filterApp(AppEntry entry) {
+            if (AppUtils.isInstant(entry.info)) {
+                return false;
+            }
+            if (ApplicationsState.hasFlag(entry.info.flags, 128) || !ApplicationsState.hasFlag(entry.info.flags, 1) || entry.hasLauncherEntry) {
+                return true;
+            }
+            return ApplicationsState.hasFlag(entry.info.flags, 1) && entry.isHomeApp;
+        }
+    };
+    public static final AppFilter FILTER_DOWNLOADED_AND_LAUNCHER_AND_INSTANT = new AppFilter() { // from class: com.android.settingslib.applications.ApplicationsState.9
+        @Override // com.android.settingslib.applications.ApplicationsState.AppFilter
+        public void init() {
+        }
+
+        @Override // com.android.settingslib.applications.ApplicationsState.AppFilter
+        public boolean filterApp(AppEntry entry) {
+            return AppUtils.isInstant(entry.info) || ApplicationsState.FILTER_DOWNLOADED_AND_LAUNCHER.filterApp(entry);
+        }
+    };
+    public static final AppFilter FILTER_THIRD_PARTY = new AppFilter() { // from class: com.android.settingslib.applications.ApplicationsState.10
+        @Override // com.android.settingslib.applications.ApplicationsState.AppFilter
+        public void init() {
+        }
+
+        @Override // com.android.settingslib.applications.ApplicationsState.AppFilter
+        public boolean filterApp(AppEntry entry) {
+            return ApplicationsState.hasFlag(entry.info.flags, 128) || !ApplicationsState.hasFlag(entry.info.flags, 1);
+        }
+    };
+    public static final AppFilter FILTER_DISABLED = new AppFilter() { // from class: com.android.settingslib.applications.ApplicationsState.11
+        @Override // com.android.settingslib.applications.ApplicationsState.AppFilter
+        public void init() {
+        }
+
+        @Override // com.android.settingslib.applications.ApplicationsState.AppFilter
+        public boolean filterApp(AppEntry entry) {
+            return (entry.info.enabled || AppUtils.isInstant(entry.info)) ? false : true;
+        }
+    };
+    public static final AppFilter FILTER_INSTANT = new AppFilter() { // from class: com.android.settingslib.applications.ApplicationsState.12
+        @Override // com.android.settingslib.applications.ApplicationsState.AppFilter
+        public void init() {
+        }
+
+        @Override // com.android.settingslib.applications.ApplicationsState.AppFilter
+        public boolean filterApp(AppEntry entry) {
+            return AppUtils.isInstant(entry.info);
+        }
+    };
+    public static final AppFilter FILTER_ALL_ENABLED = new AppFilter() { // from class: com.android.settingslib.applications.ApplicationsState.13
+        @Override // com.android.settingslib.applications.ApplicationsState.AppFilter
+        public void init() {
+        }
+
+        @Override // com.android.settingslib.applications.ApplicationsState.AppFilter
+        public boolean filterApp(AppEntry entry) {
+            return entry.info.enabled && !AppUtils.isInstant(entry.info);
+        }
+    };
+    public static final AppFilter FILTER_EVERYTHING = new AppFilter() { // from class: com.android.settingslib.applications.ApplicationsState.14
+        @Override // com.android.settingslib.applications.ApplicationsState.AppFilter
+        public void init() {
+        }
+
+        @Override // com.android.settingslib.applications.ApplicationsState.AppFilter
+        public boolean filterApp(AppEntry entry) {
+            return true;
+        }
+    };
+    public static final AppFilter FILTER_WITH_DOMAIN_URLS = new AppFilter() { // from class: com.android.settingslib.applications.ApplicationsState.15
+        @Override // com.android.settingslib.applications.ApplicationsState.AppFilter
+        public void init() {
+        }
+
+        @Override // com.android.settingslib.applications.ApplicationsState.AppFilter
+        public boolean filterApp(AppEntry entry) {
+            return !AppUtils.isInstant(entry.info) && ApplicationsState.hasFlag(entry.info.privateFlags, 16);
+        }
+    };
+    public static final AppFilter FILTER_NOT_HIDE = new AppFilter() { // from class: com.android.settingslib.applications.ApplicationsState.16
+        private String[] mHidePackageNames;
+
+        @Override // com.android.settingslib.applications.ApplicationsState.AppFilter
+        public void init(Context context) {
+            this.mHidePackageNames = context.getResources().getStringArray(R.array.config_deviceTabletopRotations);
+        }
+
+        @Override // com.android.settingslib.applications.ApplicationsState.AppFilter
+        public void init() {
+        }
+
+        @Override // com.android.settingslib.applications.ApplicationsState.AppFilter
+        public boolean filterApp(AppEntry entry) {
+            if (ArrayUtils.contains(this.mHidePackageNames, entry.info.packageName)) {
+                return entry.info.enabled && entry.info.enabledSetting != 4;
+            }
+            return true;
+        }
+    };
+    public static final AppFilter FILTER_GAMES = new AppFilter() { // from class: com.android.settingslib.applications.ApplicationsState.17
+        @Override // com.android.settingslib.applications.ApplicationsState.AppFilter
+        public void init() {
+        }
+
+        @Override // com.android.settingslib.applications.ApplicationsState.AppFilter
+        public boolean filterApp(AppEntry info) {
+            boolean isGame;
+            synchronized (info.info) {
+                isGame = ApplicationsState.hasFlag(info.info.flags, RotaryConstants.ACTION_NUDGE_TO_ANOTHER_FOCUS_AREA) || info.info.category == 0;
+            }
+            return isGame;
+        }
+    };
+    public static final AppFilter FILTER_AUDIO = new AppFilter() { // from class: com.android.settingslib.applications.ApplicationsState.18
+        @Override // com.android.settingslib.applications.ApplicationsState.AppFilter
+        public void init() {
+        }
+
+        @Override // com.android.settingslib.applications.ApplicationsState.AppFilter
+        public boolean filterApp(AppEntry entry) {
+            boolean isMusicApp;
+            synchronized (entry) {
+                boolean z = true;
+                if (entry.info.category != 1) {
+                    z = false;
+                }
+                isMusicApp = z;
+            }
+            return isMusicApp;
+        }
+    };
+    public static final AppFilter FILTER_MOVIES = new AppFilter() { // from class: com.android.settingslib.applications.ApplicationsState.19
+        @Override // com.android.settingslib.applications.ApplicationsState.AppFilter
+        public void init() {
+        }
+
+        @Override // com.android.settingslib.applications.ApplicationsState.AppFilter
+        public boolean filterApp(AppEntry entry) {
+            boolean isMovieApp;
+            synchronized (entry) {
+                isMovieApp = entry.info.category == 2;
+            }
+            return isMovieApp;
+        }
+    };
+    public static final AppFilter FILTER_PHOTOS = new AppFilter() { // from class: com.android.settingslib.applications.ApplicationsState.20
+        @Override // com.android.settingslib.applications.ApplicationsState.AppFilter
+        public void init() {
+        }
+
+        @Override // com.android.settingslib.applications.ApplicationsState.AppFilter
+        public boolean filterApp(AppEntry entry) {
+            boolean isPhotosApp;
+            synchronized (entry) {
+                isPhotosApp = entry.info.category == 3;
+            }
+            return isPhotosApp;
+        }
+    };
+    public static final AppFilter FILTER_OTHER_APPS = new AppFilter() { // from class: com.android.settingslib.applications.ApplicationsState.21
+        @Override // com.android.settingslib.applications.ApplicationsState.AppFilter
+        public void init() {
+        }
+
+        @Override // com.android.settingslib.applications.ApplicationsState.AppFilter
+        public boolean filterApp(AppEntry entry) {
+            boolean isCategorized;
+            synchronized (entry) {
+                isCategorized = ApplicationsState.FILTER_AUDIO.filterApp(entry) || ApplicationsState.FILTER_GAMES.filterApp(entry) || ApplicationsState.FILTER_MOVIES.filterApp(entry) || ApplicationsState.FILTER_PHOTOS.filterApp(entry);
+            }
+            return !isCategorized;
+        }
+    };
+    final ArrayList<Session> mSessions = new ArrayList<>();
+    final ArrayList<Session> mRebuildingSessions = new ArrayList<>();
+    private InterestingConfigChanges mInterestingConfigChanges = new InterestingConfigChanges();
+    final SparseArray<HashMap<String, AppEntry>> mEntriesMap = new SparseArray<>();
+    final ArrayList<AppEntry> mAppEntries = new ArrayList<>();
+    List<ApplicationInfo> mApplications = new ArrayList();
+    long mCurId = 1;
+    final HashMap<String, Boolean> mSystemModules = new HashMap<>();
+    final ArrayList<WeakReference<Session>> mActiveSessions = new ArrayList<>();
+    final MainHandler mMainHandler = new MainHandler(Looper.getMainLooper());
+
+    public interface Callbacks {
+        void onAllSizesComputed();
+
+        void onLauncherInfoChanged();
+
+        void onLoadEntriesCompleted();
+
+        void onPackageIconChanged();
+
+        void onPackageListChanged();
+
+        void onPackageSizeChanged(String str);
+
+        void onRebuildComplete(ArrayList<AppEntry> arrayList);
+
+        void onRunningStateChanged(boolean z);
+    }
+
+    @Retention(RetentionPolicy.SOURCE)
+    public @interface SessionFlags {
+    }
+
+    public static class SizeInfo {
+        public long cacheSize;
+        public long codeSize;
+        public long dataSize;
+        public long externalCacheSize;
+        public long externalCodeSize;
+        public long externalDataSize;
+    }
+
+    public static ApplicationsState getInstance(Application app) {
+        return getInstance(app, AppGlobals.getPackageManager());
+    }
+
+    static ApplicationsState getInstance(Application app, IPackageManager iPackageManager) {
+        ApplicationsState applicationsState;
+        synchronized (sLock) {
+            if (sInstance == null) {
+                sInstance = new ApplicationsState(app, iPackageManager);
+            }
+            applicationsState = sInstance;
+        }
+        return applicationsState;
+    }
+
+    void setInterestingConfigChanges(InterestingConfigChanges interestingConfigChanges) {
+        this.mInterestingConfigChanges = interestingConfigChanges;
+    }
+
+    private ApplicationsState(Application app, IPackageManager iPackageManager) {
+        this.mContext = app;
+        this.mPm = app.getPackageManager();
+        this.mDrawableFactory = IconDrawableFactory.newInstance(this.mContext);
+        this.mIpm = iPackageManager;
+        this.mUm = (UserManager) this.mContext.getSystemService(UserManager.class);
+        this.mStats = (StorageStatsManager) this.mContext.getSystemService(StorageStatsManager.class);
+        for (int userId : this.mUm.getProfileIdsWithDisabled(UserHandle.myUserId())) {
+            this.mEntriesMap.put(userId, new HashMap<>());
+        }
+        HandlerThread handlerThread = new HandlerThread("ApplicationsState.Loader");
+        this.mThread = handlerThread;
+        handlerThread.start();
+        this.mBackgroundHandler = new BackgroundHandler(this.mThread.getLooper());
+        this.mAdminRetrieveFlags = 4227584;
+        this.mRetrieveFlags = 33280;
+        List<ModuleInfo> moduleInfos = this.mPm.getInstalledModules(0);
+        for (ModuleInfo info : moduleInfos) {
+            this.mSystemModules.put(info.getPackageName(), Boolean.valueOf(info.isHidden()));
+        }
+        synchronized (this.mEntriesMap) {
+            try {
+                this.mEntriesMap.wait(1L);
+            } catch (InterruptedException e) {
+            }
+        }
+    }
+
+    public Looper getBackgroundLooper() {
+        return this.mThread.getLooper();
+    }
+
+    public Session newSession(Callbacks callbacks) {
+        return newSession(callbacks, null);
+    }
+
+    public Session newSession(Callbacks callbacks, Lifecycle lifecycle) {
+        Session s = new Session(callbacks, lifecycle);
+        synchronized (this.mEntriesMap) {
+            this.mSessions.add(s);
+        }
+        return s;
+    }
+
+    /* JADX WARN: Removed duplicated region for block: B:42:0x00d0  */
+    /* JADX WARN: Removed duplicated region for block: B:43:0x00d9  */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+        To view partially-correct code enable 'Show inconsistent code' option in preferences
+    */
+    void doResumeIfNeededLocked() {
+        /*
+            Method dump skipped, instruction units count: 285
+            To view this dump change 'Code comments level' option to 'DEBUG'
+        */
+        throw new UnsupportedOperationException("Method not decompiled: com.android.settingslib.applications.ApplicationsState.doResumeIfNeededLocked():void");
+    }
+
+    private static boolean anyAppIsRemoved(List<ApplicationInfo> prevApplications, List<ApplicationInfo> applications) {
+        HashSet<String> packagesSet;
+        if (prevApplications.size() == 0) {
+            return false;
+        }
+        if (applications.size() < prevApplications.size()) {
+            return true;
+        }
+        HashMap<String, HashSet<String>> packageMap = new HashMap<>();
+        for (ApplicationInfo application : applications) {
+            String userId = String.valueOf(UserHandle.getUserId(application.uid));
+            HashSet<String> appPackages = packageMap.get(userId);
+            if (appPackages == null) {
+                appPackages = new HashSet<>();
+                packageMap.put(userId, appPackages);
+            }
+            if (hasFlag(application.flags, 8388608)) {
+                appPackages.add(application.packageName);
+            }
+        }
+        for (ApplicationInfo prevApplication : prevApplications) {
+            if (hasFlag(prevApplication.flags, 8388608) && ((packagesSet = packageMap.get(String.valueOf(UserHandle.getUserId(prevApplication.uid)))) == null || !packagesSet.remove(prevApplication.packageName))) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    void clearEntries() {
+        for (int i = 0; i < this.mEntriesMap.size(); i++) {
+            this.mEntriesMap.valueAt(i).clear();
+        }
+        this.mAppEntries.clear();
+    }
+
+    public boolean haveDisabledApps() {
+        return this.mHaveDisabledApps;
+    }
+
+    public boolean haveInstantApps() {
+        return this.mHaveInstantApps;
+    }
+
+    boolean isHiddenModule(String packageName) {
+        Boolean isHidden = this.mSystemModules.get(packageName);
+        if (isHidden == null) {
+            return false;
+        }
+        return isHidden.booleanValue();
+    }
+
+    boolean isSystemModule(String packageName) {
+        return this.mSystemModules.containsKey(packageName);
+    }
+
+    void doPauseIfNeededLocked() {
+        if (!this.mResumed) {
+            return;
+        }
+        for (int i = 0; i < this.mSessions.size(); i++) {
+            if (this.mSessions.get(i).mResumed) {
+                return;
+            }
+        }
+        doPauseLocked();
+    }
+
+    void doPauseLocked() {
+        this.mResumed = false;
+        PackageIntentReceiver packageIntentReceiver = this.mPackageIntentReceiver;
+        if (packageIntentReceiver != null) {
+            packageIntentReceiver.unregisterReceiver();
+            this.mPackageIntentReceiver = null;
+        }
+    }
+
+    public AppEntry getEntry(String packageName, int userId) {
+        AppEntry entry;
+        synchronized (this.mEntriesMap) {
+            entry = this.mEntriesMap.get(userId).get(packageName);
+            if (entry == null) {
+                ApplicationInfo info = getAppInfoLocked(packageName, userId);
+                if (info == null) {
+                    try {
+                        info = this.mIpm.getApplicationInfo(packageName, 0, userId);
+                    } catch (RemoteException e) {
+                        Log.w(TAG, "getEntry couldn't reach PackageManager", e);
+                        return null;
+                    }
+                }
+                if (info != null) {
+                    entry = getEntryLocked(info);
+                }
+            }
+        }
+        return entry;
+    }
+
+    private ApplicationInfo getAppInfoLocked(String pkg, int userId) {
+        for (int i = 0; i < this.mApplications.size(); i++) {
+            ApplicationInfo info = this.mApplications.get(i);
+            if (pkg.equals(info.packageName) && userId == UserHandle.getUserId(info.uid)) {
+                return info;
+            }
+        }
+        return null;
+    }
+
+    public void ensureIcon(AppEntry entry) {
+        if (entry.icon != null) {
+            return;
+        }
+        synchronized (entry) {
+            entry.ensureIconLocked(this.mContext);
+        }
+    }
+
+    public void ensureLabelDescription(AppEntry entry) {
+        if (entry.labelDescription != null) {
+            return;
+        }
+        synchronized (entry) {
+            entry.ensureLabelDescriptionLocked(this.mContext);
+        }
+    }
+
+    public void requestSize(final String packageName, final int userId) {
+        synchronized (this.mEntriesMap) {
+            final AppEntry entry = this.mEntriesMap.get(userId).get(packageName);
+            if (entry != null && hasFlag(entry.info.flags, 8388608)) {
+                this.mBackgroundHandler.post(new Runnable() { // from class: com.android.settingslib.applications.-$$Lambda$ApplicationsState$LuXUFbWTiS5lu-nO9WUp0g2nHmU
+                    @Override // java.lang.Runnable
+                    public final void run() {
+                        this.f$0.lambda$requestSize$0$ApplicationsState(entry, packageName, userId);
+                    }
+                });
+            }
+        }
+    }
+
+    public /* synthetic */ void lambda$requestSize$0$ApplicationsState(AppEntry entry, String packageName, int userId) {
+        try {
+            StorageStats stats = this.mStats.queryStatsForPackage(entry.info.storageUuid, packageName, UserHandle.of(userId));
+            long cacheQuota = this.mStats.getCacheQuotaBytes(entry.info.storageUuid.toString(), entry.info.uid);
+            PackageStats legacy = new PackageStats(packageName, userId);
+            legacy.codeSize = stats.getCodeBytes();
+            legacy.dataSize = stats.getDataBytes();
+            legacy.cacheSize = Math.min(stats.getCacheBytes(), cacheQuota);
+            try {
+                this.mBackgroundHandler.mStatsObserver.onGetStatsCompleted(legacy, true);
+            } catch (RemoteException e) {
+            }
+        } catch (PackageManager.NameNotFoundException | IOException e2) {
+            Log.w(TAG, "Failed to query stats: " + e2);
+            try {
+                this.mBackgroundHandler.mStatsObserver.onGetStatsCompleted((PackageStats) null, false);
+            } catch (RemoteException e3) {
+            }
+        }
+    }
+
+    long sumCacheSizes() {
+        long sum = 0;
+        synchronized (this.mEntriesMap) {
+            for (int i = this.mAppEntries.size() - 1; i >= 0; i--) {
+                sum += this.mAppEntries.get(i).cacheSize;
+            }
+        }
+        return sum;
+    }
+
+    int indexOfApplicationInfoLocked(String pkgName, int userId) {
+        for (int i = this.mApplications.size() - 1; i >= 0; i--) {
+            ApplicationInfo appInfo = this.mApplications.get(i);
+            if (appInfo.packageName.equals(pkgName) && UserHandle.getUserId(appInfo.uid) == userId) {
+                return i;
+            }
+        }
+        return -1;
+    }
+
+    void addPackage(String pkgName, int userId) {
+        try {
+            synchronized (this.mEntriesMap) {
+                if (this.mResumed) {
+                    if (indexOfApplicationInfoLocked(pkgName, userId) >= 0) {
+                        return;
+                    }
+                    ApplicationInfo info = this.mIpm.getApplicationInfo(pkgName, this.mUm.isUserAdmin(userId) ? this.mAdminRetrieveFlags : this.mRetrieveFlags, userId);
+                    if (info == null) {
+                        return;
+                    }
+                    if (!info.enabled) {
+                        if (info.enabledSetting != 3) {
+                            return;
+                        } else {
+                            this.mHaveDisabledApps = true;
+                        }
+                    }
+                    if (AppUtils.isInstant(info)) {
+                        this.mHaveInstantApps = true;
+                    }
+                    this.mApplications.add(info);
+                    if (!this.mBackgroundHandler.hasMessages(2)) {
+                        this.mBackgroundHandler.sendEmptyMessage(2);
+                    }
+                    if (!this.mMainHandler.hasMessages(2)) {
+                        this.mMainHandler.sendEmptyMessage(2);
+                    }
+                }
+            }
+        } catch (RemoteException e) {
+        }
+    }
+
+    public void removePackage(String pkgName, int userId) {
+        synchronized (this.mEntriesMap) {
+            int idx = indexOfApplicationInfoLocked(pkgName, userId);
+            if (idx >= 0) {
+                AppEntry entry = this.mEntriesMap.get(userId).get(pkgName);
+                if (entry != null) {
+                    this.mEntriesMap.get(userId).remove(pkgName);
+                    this.mAppEntries.remove(entry);
+                }
+                ApplicationInfo info = this.mApplications.get(idx);
+                this.mApplications.remove(idx);
+                if (!info.enabled) {
+                    this.mHaveDisabledApps = false;
+                    Iterator<ApplicationInfo> it = this.mApplications.iterator();
+                    while (true) {
+                        if (!it.hasNext()) {
+                            break;
+                        }
+                        ApplicationInfo otherInfo = it.next();
+                        if (!otherInfo.enabled) {
+                            this.mHaveDisabledApps = true;
+                            break;
+                        }
+                    }
+                }
+                if (AppUtils.isInstant(info)) {
+                    this.mHaveInstantApps = false;
+                    Iterator<ApplicationInfo> it2 = this.mApplications.iterator();
+                    while (true) {
+                        if (!it2.hasNext()) {
+                            break;
+                        }
+                        ApplicationInfo otherInfo2 = it2.next();
+                        if (AppUtils.isInstant(otherInfo2)) {
+                            this.mHaveInstantApps = true;
+                            break;
+                        }
+                    }
+                }
+                if (!this.mMainHandler.hasMessages(2)) {
+                    this.mMainHandler.sendEmptyMessage(2);
+                }
+            }
+        }
+    }
+
+    public void invalidatePackage(String pkgName, int userId) {
+        removePackage(pkgName, userId);
+        addPackage(pkgName, userId);
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public void addUser(int userId) {
+        int[] profileIds = this.mUm.getProfileIdsWithDisabled(UserHandle.myUserId());
+        if (ArrayUtils.contains(profileIds, userId)) {
+            synchronized (this.mEntriesMap) {
+                this.mEntriesMap.put(userId, new HashMap<>());
+                if (this.mResumed) {
+                    doPauseLocked();
+                    doResumeIfNeededLocked();
+                }
+                if (!this.mMainHandler.hasMessages(2)) {
+                    this.mMainHandler.sendEmptyMessage(2);
+                }
+            }
+        }
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public void removeUser(int userId) {
+        synchronized (this.mEntriesMap) {
+            HashMap<String, AppEntry> userMap = this.mEntriesMap.get(userId);
+            if (userMap != null) {
+                for (AppEntry appEntry : userMap.values()) {
+                    this.mAppEntries.remove(appEntry);
+                    this.mApplications.remove(appEntry.info);
+                }
+                this.mEntriesMap.remove(userId);
+                if (!this.mMainHandler.hasMessages(2)) {
+                    this.mMainHandler.sendEmptyMessage(2);
+                }
+            }
+        }
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public AppEntry getEntryLocked(ApplicationInfo info) {
+        int userId = UserHandle.getUserId(info.uid);
+        AppEntry entry = this.mEntriesMap.get(userId).get(info.packageName);
+        if (entry == null) {
+            if (isHiddenModule(info.packageName)) {
+                return null;
+            }
+            Context context = this.mContext;
+            long j = this.mCurId;
+            this.mCurId = 1 + j;
+            AppEntry entry2 = new AppEntry(context, info, j);
+            this.mEntriesMap.get(userId).put(info.packageName, entry2);
+            this.mAppEntries.add(entry2);
+            return entry2;
+        }
+        if (entry.info != info) {
+            entry.info = info;
+            return entry;
+        }
+        return entry;
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public long getTotalInternalSize(PackageStats ps) {
+        if (ps != null) {
+            return (ps.codeSize + ps.dataSize) - ps.cacheSize;
+        }
+        return -2L;
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public long getTotalExternalSize(PackageStats ps) {
+        if (ps != null) {
+            return ps.externalCodeSize + ps.externalDataSize + ps.externalCacheSize + ps.externalMediaSize + ps.externalObbSize;
+        }
+        return -2L;
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public String getSizeStr(long size) {
+        if (size >= 0) {
+            return Formatter.formatFileSize(this.mContext, size);
+        }
+        return null;
+    }
+
+    void rebuildActiveSessions() {
+        synchronized (this.mEntriesMap) {
+            if (this.mSessionsChanged) {
+                this.mActiveSessions.clear();
+                for (int i = 0; i < this.mSessions.size(); i++) {
+                    Session s = this.mSessions.get(i);
+                    if (s.mResumed) {
+                        this.mActiveSessions.add(new WeakReference<>(s));
+                    }
+                }
+            }
+        }
+    }
+
+    public static String normalize(String str) {
+        String tmp = Normalizer.normalize(str, Normalizer.Form.NFD);
+        return REMOVE_DIACRITICALS_PATTERN.matcher(tmp).replaceAll("").toLowerCase();
+    }
+
+    public class Session implements LifecycleObserver {
+        final Callbacks mCallbacks;
+        private final boolean mHasLifecycle;
+        ArrayList<AppEntry> mLastAppList;
+        boolean mRebuildAsync;
+        Comparator<AppEntry> mRebuildComparator;
+        AppFilter mRebuildFilter;
+        boolean mRebuildForeground;
+        boolean mRebuildRequested;
+        ArrayList<AppEntry> mRebuildResult;
+        boolean mResumed;
+        final Object mRebuildSync = new Object();
+        private int mFlags = 15;
+
+        Session(Callbacks callbacks, Lifecycle lifecycle) {
+            this.mCallbacks = callbacks;
+            if (lifecycle != null) {
+                lifecycle.addObserver(this);
+                this.mHasLifecycle = true;
+            } else {
+                this.mHasLifecycle = false;
+            }
+        }
+
+        public int getSessionFlags() {
+            return this.mFlags;
+        }
+
+        public void setSessionFlags(int flags) {
+            this.mFlags = flags;
+        }
+
+        @OnLifecycleEvent(Lifecycle.Event.ON_RESUME)
+        public void onResume() {
+            synchronized (ApplicationsState.this.mEntriesMap) {
+                if (!this.mResumed) {
+                    this.mResumed = true;
+                    ApplicationsState.this.mSessionsChanged = true;
+                    ApplicationsState.this.doPauseLocked();
+                    ApplicationsState.this.doResumeIfNeededLocked();
+                }
+            }
+        }
+
+        @OnLifecycleEvent(Lifecycle.Event.ON_PAUSE)
+        public void onPause() {
+            synchronized (ApplicationsState.this.mEntriesMap) {
+                if (this.mResumed) {
+                    this.mResumed = false;
+                    ApplicationsState.this.mSessionsChanged = true;
+                    ApplicationsState.this.mBackgroundHandler.removeMessages(1, this);
+                    ApplicationsState.this.doPauseIfNeededLocked();
+                }
+            }
+        }
+
+        public ArrayList<AppEntry> getAllApps() {
+            ArrayList<AppEntry> arrayList;
+            synchronized (ApplicationsState.this.mEntriesMap) {
+                arrayList = new ArrayList<>(ApplicationsState.this.mAppEntries);
+            }
+            return arrayList;
+        }
+
+        public ArrayList<AppEntry> rebuild(AppFilter filter, Comparator<AppEntry> comparator) {
+            return rebuild(filter, comparator, true);
+        }
+
+        public ArrayList<AppEntry> rebuild(AppFilter filter, Comparator<AppEntry> comparator, boolean foreground) {
+            synchronized (this.mRebuildSync) {
+                synchronized (ApplicationsState.this.mRebuildingSessions) {
+                    ApplicationsState.this.mRebuildingSessions.add(this);
+                    this.mRebuildRequested = true;
+                    this.mRebuildAsync = true;
+                    this.mRebuildFilter = filter;
+                    this.mRebuildComparator = comparator;
+                    this.mRebuildForeground = foreground;
+                    this.mRebuildResult = null;
+                    if (!ApplicationsState.this.mBackgroundHandler.hasMessages(1)) {
+                        Message msg = ApplicationsState.this.mBackgroundHandler.obtainMessage(1);
+                        ApplicationsState.this.mBackgroundHandler.sendMessage(msg);
+                    }
+                }
+            }
+            return null;
+        }
+
+        void handleRebuildList() {
+            List<AppEntry> apps;
+            if (!this.mResumed) {
+                return;
+            }
+            synchronized (this.mRebuildSync) {
+                if (this.mRebuildRequested) {
+                    AppFilter filter = this.mRebuildFilter;
+                    Comparator<AppEntry> comparator = this.mRebuildComparator;
+                    this.mRebuildRequested = false;
+                    this.mRebuildFilter = null;
+                    this.mRebuildComparator = null;
+                    if (this.mRebuildForeground) {
+                        Process.setThreadPriority(-2);
+                        this.mRebuildForeground = false;
+                    }
+                    if (filter != null) {
+                        filter.init(ApplicationsState.this.mContext);
+                    }
+                    synchronized (ApplicationsState.this.mEntriesMap) {
+                        apps = new ArrayList<>(ApplicationsState.this.mAppEntries);
+                    }
+                    ArrayList<AppEntry> filteredApps = new ArrayList<>();
+                    for (AppEntry entry : apps) {
+                        if (entry != null && (filter == null || filter.filterApp(entry))) {
+                            synchronized (ApplicationsState.this.mEntriesMap) {
+                                if (comparator != null) {
+                                    entry.ensureLabel(ApplicationsState.this.mContext);
+                                }
+                                filteredApps.add(entry);
+                            }
+                        }
+                    }
+                    if (comparator != null) {
+                        synchronized (ApplicationsState.this.mEntriesMap) {
+                            Collections.sort(filteredApps, comparator);
+                        }
+                    }
+                    synchronized (this.mRebuildSync) {
+                        if (!this.mRebuildRequested) {
+                            this.mLastAppList = filteredApps;
+                            if (!this.mRebuildAsync) {
+                                this.mRebuildResult = filteredApps;
+                                this.mRebuildSync.notifyAll();
+                            } else if (!ApplicationsState.this.mMainHandler.hasMessages(1, this)) {
+                                Message msg = ApplicationsState.this.mMainHandler.obtainMessage(1, this);
+                                ApplicationsState.this.mMainHandler.sendMessage(msg);
+                            }
+                        }
+                    }
+                    Process.setThreadPriority(10);
+                }
+            }
+        }
+
+        @OnLifecycleEvent(Lifecycle.Event.ON_DESTROY)
+        public void onDestroy() {
+            if (!this.mHasLifecycle) {
+                onPause();
+            }
+            synchronized (ApplicationsState.this.mEntriesMap) {
+                ApplicationsState.this.mSessions.remove(this);
+            }
+        }
+    }
+
+    class MainHandler extends Handler {
+        static final int MSG_ALL_SIZES_COMPUTED = 5;
+        static final int MSG_LAUNCHER_INFO_CHANGED = 7;
+        static final int MSG_LOAD_ENTRIES_COMPLETE = 8;
+        static final int MSG_PACKAGE_ICON_CHANGED = 3;
+        static final int MSG_PACKAGE_LIST_CHANGED = 2;
+        static final int MSG_PACKAGE_SIZE_CHANGED = 4;
+        static final int MSG_REBUILD_COMPLETE = 1;
+        static final int MSG_RUNNING_STATE_CHANGED = 6;
+
+        public MainHandler(Looper looper) {
+            super(looper);
+        }
+
+        @Override // android.os.Handler
+        public void handleMessage(Message msg) {
+            ApplicationsState.this.rebuildActiveSessions();
+            switch (msg.what) {
+                case 1:
+                    Session s = (Session) msg.obj;
+                    for (WeakReference<Session> sessionRef : ApplicationsState.this.mActiveSessions) {
+                        Session session = sessionRef.get();
+                        if (session != null && session == s) {
+                            s.mCallbacks.onRebuildComplete(s.mLastAppList);
+                        }
+                    }
+                    break;
+                case 2:
+                    for (WeakReference<Session> sessionRef2 : ApplicationsState.this.mActiveSessions) {
+                        Session session2 = sessionRef2.get();
+                        if (session2 != null) {
+                            session2.mCallbacks.onPackageListChanged();
+                        }
+                    }
+                    break;
+                case 3:
+                    for (WeakReference<Session> sessionRef3 : ApplicationsState.this.mActiveSessions) {
+                        Session session3 = sessionRef3.get();
+                        if (session3 != null) {
+                            session3.mCallbacks.onPackageIconChanged();
+                        }
+                    }
+                    break;
+                case 4:
+                    for (WeakReference<Session> sessionRef4 : ApplicationsState.this.mActiveSessions) {
+                        Session session4 = sessionRef4.get();
+                        if (session4 != null) {
+                            session4.mCallbacks.onPackageSizeChanged((String) msg.obj);
+                        }
+                    }
+                    break;
+                case 5:
+                    for (WeakReference<Session> sessionRef5 : ApplicationsState.this.mActiveSessions) {
+                        Session session5 = sessionRef5.get();
+                        if (session5 != null) {
+                            session5.mCallbacks.onAllSizesComputed();
+                        }
+                    }
+                    break;
+                case 6:
+                    for (WeakReference<Session> sessionRef6 : ApplicationsState.this.mActiveSessions) {
+                        Session session6 = sessionRef6.get();
+                        if (session6 != null) {
+                            session6.mCallbacks.onRunningStateChanged(msg.arg1 != 0);
+                        }
+                    }
+                    break;
+                case 7:
+                    for (WeakReference<Session> sessionRef7 : ApplicationsState.this.mActiveSessions) {
+                        Session session7 = sessionRef7.get();
+                        if (session7 != null) {
+                            session7.mCallbacks.onLauncherInfoChanged();
+                        }
+                    }
+                    break;
+                case 8:
+                    for (WeakReference<Session> sessionRef8 : ApplicationsState.this.mActiveSessions) {
+                        Session session8 = sessionRef8.get();
+                        if (session8 != null) {
+                            session8.mCallbacks.onLoadEntriesCompleted();
+                        }
+                    }
+                    break;
+            }
+        }
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    class BackgroundHandler extends Handler {
+        static final int MSG_LOAD_ENTRIES = 2;
+        static final int MSG_LOAD_HOME_APP = 3;
+        static final int MSG_LOAD_ICONS = 6;
+        static final int MSG_LOAD_LAUNCHER = 4;
+        static final int MSG_LOAD_LEANBACK_LAUNCHER = 5;
+        static final int MSG_LOAD_SIZES = 7;
+        static final int MSG_REBUILD_LIST = 1;
+        boolean mRunning;
+        final IPackageStatsObserver.Stub mStatsObserver;
+
+        BackgroundHandler(Looper looper) {
+            super(looper);
+            this.mStatsObserver = new IPackageStatsObserver.Stub() { // from class: com.android.settingslib.applications.ApplicationsState.BackgroundHandler.1
+                /* JADX WARN: Removed duplicated region for block: B:41:0x00dd A[Catch: all -> 0x0137, TRY_ENTER, TRY_LEAVE, TryCatch #3 {all -> 0x0137, blocks: (B:41:0x00dd, B:52:0x0102, B:54:0x010a, B:56:0x0118, B:58:0x0122, B:59:0x012f, B:63:0x0135, B:48:0x00fc), top: B:73:0x000f }] */
+                /*
+                    Code decompiled incorrectly, please refer to instructions dump.
+                    To view partially-correct code enable 'Show inconsistent code' option in preferences
+                */
+                public void onGetStatsCompleted(android.content.pm.PackageStats r18, boolean r19) throws java.lang.Throwable {
+                    /*
+                        Method dump skipped, instruction units count: 313
+                        To view this dump change 'Code comments level' option to 'DEBUG'
+                    */
+                    throw new UnsupportedOperationException("Method not decompiled: com.android.settingslib.applications.ApplicationsState.BackgroundHandler.AnonymousClass1.onGetStatsCompleted(android.content.pm.PackageStats, boolean):void");
+                }
+            };
+        }
+
+        /* JADX WARN: Unsupported multi-entry loop pattern (BACK_EDGE: B:216:? -> B:126:0x027d). Please report as a decompilation issue!!! */
+        /*  JADX ERROR: JadxRuntimeException in pass: RegionMakerVisitor
+            jadx.core.utils.exceptions.JadxRuntimeException: Can't find top splitter block for handler:B:198:0x03dc
+            	at jadx.core.utils.BlockUtils.getTopSplitterForHandler(BlockUtils.java:1182)
+            	at jadx.core.dex.visitors.regions.maker.ExcHandlersRegionMaker.collectHandlerRegions(ExcHandlersRegionMaker.java:53)
+            	at jadx.core.dex.visitors.regions.maker.ExcHandlersRegionMaker.process(ExcHandlersRegionMaker.java:38)
+            	at jadx.core.dex.visitors.regions.RegionMakerVisitor.visit(RegionMakerVisitor.java:27)
+            */
+        @Override // android.os.Handler
+        public void handleMessage(android.os.Message r25) {
+            /*
+                Method dump skipped, instruction units count: 1008
+                To view this dump change 'Code comments level' option to 'DEBUG'
+            */
+            throw new UnsupportedOperationException("Method not decompiled: com.android.settingslib.applications.ApplicationsState.BackgroundHandler.handleMessage(android.os.Message):void");
+        }
+
+        public /* synthetic */ void lambda$handleMessage$0$ApplicationsState$BackgroundHandler() {
+            try {
+                StorageStats stats = ApplicationsState.this.mStats.queryStatsForPackage(ApplicationsState.this.mCurComputingSizeUuid, ApplicationsState.this.mCurComputingSizePkg, UserHandle.of(ApplicationsState.this.mCurComputingSizeUserId));
+                PackageStats legacy = new PackageStats(ApplicationsState.this.mCurComputingSizePkg, ApplicationsState.this.mCurComputingSizeUserId);
+                legacy.codeSize = stats.getCodeBytes();
+                legacy.dataSize = stats.getDataBytes();
+                legacy.cacheSize = stats.getCacheBytes();
+                try {
+                    this.mStatsObserver.onGetStatsCompleted(legacy, true);
+                } catch (RemoteException e) {
+                }
+            } catch (PackageManager.NameNotFoundException | IOException e2) {
+                Log.w(ApplicationsState.TAG, "Failed to query stats: " + e2);
+                try {
+                    this.mStatsObserver.onGetStatsCompleted((PackageStats) null, false);
+                } catch (RemoteException e3) {
+                }
+            }
+        }
+
+        private int getCombinedSessionFlags(List<Session> sessions) {
+            int flags;
+            synchronized (ApplicationsState.this.mEntriesMap) {
+                flags = 0;
+                for (Session session : sessions) {
+                    flags |= session.mFlags;
+                }
+            }
+            return flags;
+        }
+    }
+
+    private class PackageIntentReceiver extends BroadcastReceiver {
+        private PackageIntentReceiver() {
+        }
+
+        void registerReceiver() {
+            IntentFilter filter = new IntentFilter("android.intent.action.PACKAGE_ADDED");
+            filter.addAction("android.intent.action.PACKAGE_REMOVED");
+            filter.addAction("android.intent.action.PACKAGE_CHANGED");
+            filter.addDataScheme("package");
+            ApplicationsState.this.mContext.registerReceiver(this, filter);
+            IntentFilter sdFilter = new IntentFilter();
+            sdFilter.addAction("android.intent.action.EXTERNAL_APPLICATIONS_AVAILABLE");
+            sdFilter.addAction("android.intent.action.EXTERNAL_APPLICATIONS_UNAVAILABLE");
+            ApplicationsState.this.mContext.registerReceiver(this, sdFilter);
+            IntentFilter userFilter = new IntentFilter();
+            userFilter.addAction("android.intent.action.USER_ADDED");
+            userFilter.addAction("android.intent.action.USER_REMOVED");
+            ApplicationsState.this.mContext.registerReceiver(this, userFilter);
+        }
+
+        void unregisterReceiver() {
+            ApplicationsState.this.mContext.unregisterReceiver(this);
+        }
+
+        @Override // android.content.BroadcastReceiver
+        public void onReceive(Context context, Intent intent) {
+            String actionStr = intent.getAction();
+            if ("android.intent.action.PACKAGE_ADDED".equals(actionStr)) {
+                Uri data = intent.getData();
+                String pkgName = data.getEncodedSchemeSpecificPart();
+                for (int i = 0; i < ApplicationsState.this.mEntriesMap.size(); i++) {
+                    ApplicationsState applicationsState = ApplicationsState.this;
+                    applicationsState.addPackage(pkgName, applicationsState.mEntriesMap.keyAt(i));
+                }
+                return;
+            }
+            if ("android.intent.action.PACKAGE_REMOVED".equals(actionStr)) {
+                Uri data2 = intent.getData();
+                String pkgName2 = data2.getEncodedSchemeSpecificPart();
+                for (int i2 = 0; i2 < ApplicationsState.this.mEntriesMap.size(); i2++) {
+                    ApplicationsState applicationsState2 = ApplicationsState.this;
+                    applicationsState2.removePackage(pkgName2, applicationsState2.mEntriesMap.keyAt(i2));
+                }
+                return;
+            }
+            if ("android.intent.action.PACKAGE_CHANGED".equals(actionStr)) {
+                Uri data3 = intent.getData();
+                String pkgName3 = data3.getEncodedSchemeSpecificPart();
+                for (int i3 = 0; i3 < ApplicationsState.this.mEntriesMap.size(); i3++) {
+                    ApplicationsState applicationsState3 = ApplicationsState.this;
+                    applicationsState3.invalidatePackage(pkgName3, applicationsState3.mEntriesMap.keyAt(i3));
+                }
+                return;
+            }
+            if ("android.intent.action.EXTERNAL_APPLICATIONS_AVAILABLE".equals(actionStr) || "android.intent.action.EXTERNAL_APPLICATIONS_UNAVAILABLE".equals(actionStr)) {
+                String[] pkgList = intent.getStringArrayExtra("android.intent.extra.changed_package_list");
+                if (pkgList == null || pkgList.length == 0) {
+                    return;
+                }
+                boolean avail = "android.intent.action.EXTERNAL_APPLICATIONS_AVAILABLE".equals(actionStr);
+                if (avail) {
+                    for (String pkgName4 : pkgList) {
+                        for (int i4 = 0; i4 < ApplicationsState.this.mEntriesMap.size(); i4++) {
+                            ApplicationsState applicationsState4 = ApplicationsState.this;
+                            applicationsState4.invalidatePackage(pkgName4, applicationsState4.mEntriesMap.keyAt(i4));
+                        }
+                    }
+                    return;
+                }
+                return;
+            }
+            if ("android.intent.action.USER_ADDED".equals(actionStr)) {
+                ApplicationsState.this.addUser(intent.getIntExtra("android.intent.extra.user_handle", -10000));
+            } else if ("android.intent.action.USER_REMOVED".equals(actionStr)) {
+                ApplicationsState.this.removeUser(intent.getIntExtra("android.intent.extra.user_handle", -10000));
+            }
+        }
+    }
+
+    public static class AppEntry extends SizeInfo {
+        public final File apkFile;
+        public long externalSize;
+        public String externalSizeStr;
+        public Object extraInfo;
+        public boolean hasLauncherEntry;
+        public Drawable icon;
+        public final long id;
+        public ApplicationInfo info;
+        public long internalSize;
+        public String internalSizeStr;
+        public boolean isHomeApp;
+        public String label;
+        public String labelDescription;
+        public boolean launcherEntryEnabled;
+        public boolean mounted;
+        public String normalizedLabel;
+        public long sizeLoadStart;
+        public String sizeStr;
+        public long size = -1;
+        public boolean sizeStale = true;
+
+        public String getNormalizedLabel() {
+            String str = this.normalizedLabel;
+            if (str != null) {
+                return str;
+            }
+            String strNormalize = ApplicationsState.normalize(this.label);
+            this.normalizedLabel = strNormalize;
+            return strNormalize;
+        }
+
+        public AppEntry(final Context context, ApplicationInfo info, long id) {
+            this.apkFile = new File(info.sourceDir);
+            this.id = id;
+            this.info = info;
+            ensureLabel(context);
+            ThreadUtils.postOnBackgroundThread(new Runnable() { // from class: com.android.settingslib.applications.-$$Lambda$ApplicationsState$AppEntry$CHcrAV6RtpyvpsjQKTHb_OQPQ1I
+                @Override // java.lang.Runnable
+                public final void run() {
+                    this.f$0.lambda$new$0$ApplicationsState$AppEntry(context);
+                }
+            });
+        }
+
+        public /* synthetic */ void lambda$new$0$ApplicationsState$AppEntry(Context context) {
+            if (this.icon == null) {
+                ensureIconLocked(context);
+            }
+            if (this.labelDescription == null) {
+                ensureLabelDescriptionLocked(context);
+            }
+        }
+
+        public void ensureLabel(Context context) {
+            if (this.label == null || !this.mounted) {
+                if (!this.apkFile.exists()) {
+                    this.mounted = false;
+                    this.label = this.info.packageName;
+                } else {
+                    this.mounted = true;
+                    CharSequence label = this.info.loadLabel(context.getPackageManager());
+                    this.label = label != null ? label.toString() : this.info.packageName;
+                }
+            }
+        }
+
+        boolean ensureIconLocked(Context context) {
+            if (this.icon == null) {
+                if (this.apkFile.exists()) {
+                    this.icon = Utils.getBadgedIcon(context, this.info);
+                    return true;
+                }
+                this.mounted = false;
+                this.icon = context.getDrawable(R.drawable.pointer_wait_vector_59);
+            } else if (!this.mounted && this.apkFile.exists()) {
+                this.mounted = true;
+                this.icon = Utils.getBadgedIcon(context, this.info);
+                return true;
+            }
+            return false;
+        }
+
+        public String getVersion(Context context) {
+            try {
+                return context.getPackageManager().getPackageInfo(this.info.packageName, 0).versionName;
+            } catch (PackageManager.NameNotFoundException e) {
+                return "";
+            }
+        }
+
+        public void ensureLabelDescriptionLocked(Context context) {
+            int userId = UserHandle.getUserId(this.info.uid);
+            if (!UserManager.get(context).isManagedProfile(userId)) {
+                this.labelDescription = this.label;
+            } else {
+                this.labelDescription = context.getString(com.android.settingslib.R.string.accessibility_work_profile_app_description, this.label);
+            }
+        }
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public static boolean hasFlag(int flags, int flag) {
+        return (flags & flag) != 0;
+    }
+
+    public interface AppFilter {
+        boolean filterApp(AppEntry appEntry);
+
+        void init();
+
+        default void init(Context context) {
+            init();
+        }
+    }
+
+    public static class VolumeFilter implements AppFilter {
+        private final String mVolumeUuid;
+
+        public VolumeFilter(String volumeUuid) {
+            this.mVolumeUuid = volumeUuid;
+        }
+
+        @Override // com.android.settingslib.applications.ApplicationsState.AppFilter
+        public void init() {
+        }
+
+        @Override // com.android.settingslib.applications.ApplicationsState.AppFilter
+        public boolean filterApp(AppEntry info) {
+            return Objects.equals(info.info.volumeUuid, this.mVolumeUuid);
+        }
+    }
+
+    public static class CompoundFilter implements AppFilter {
+        private final AppFilter mFirstFilter;
+        private final AppFilter mSecondFilter;
+
+        public CompoundFilter(AppFilter first, AppFilter second) {
+            this.mFirstFilter = first;
+            this.mSecondFilter = second;
+        }
+
+        @Override // com.android.settingslib.applications.ApplicationsState.AppFilter
+        public void init(Context context) {
+            this.mFirstFilter.init(context);
+            this.mSecondFilter.init(context);
+        }
+
+        @Override // com.android.settingslib.applications.ApplicationsState.AppFilter
+        public void init() {
+            this.mFirstFilter.init();
+            this.mSecondFilter.init();
+        }
+
+        @Override // com.android.settingslib.applications.ApplicationsState.AppFilter
+        public boolean filterApp(AppEntry info) {
+            return this.mFirstFilter.filterApp(info) && this.mSecondFilter.filterApp(info);
+        }
+    }
+}

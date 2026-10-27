@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/setup_step_title"
+        android:paddingTop="@dimen/setup_step_vertical_padding"
+        android:paddingBottom="@dimen/setup_step_vertical_padding"
+        style="@style/setupStepTitleStyle"/>
+    <TextView
+        android:id="@+id/setup_step_instruction"
+        android:paddingBottom="@dimen/setup_step_vertical_padding"
+        style="@style/setupStepInstructionStyle"/>
+    <TextView
+        android:id="@+id/setup_step_action_label"
+        android:layout_marginTop="@dimen/setup_step_horizontal_line_height"
+        style="@style/setupStepActionLabelStyle"/>
+</LinearLayout>

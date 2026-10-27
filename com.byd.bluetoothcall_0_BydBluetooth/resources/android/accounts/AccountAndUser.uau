@@ -1,0 +1,4 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/accounts/AccountAndUser;->account:Landroid/accounts/Account;,frameworks/base/core/java/android/accounts/AccountAndUser.java,27,5,27,25,
+Landroid/accounts/AccountAndUser;->userId:I,frameworks/base/core/java/android/accounts/AccountAndUser.java,29,5,29,25,
+Landroid/accounts/AccountAndUser;-><init>(Landroid/accounts/Account;I)V,frameworks/base/core/java/android/accounts/AccountAndUser.java,32,5,32,25,

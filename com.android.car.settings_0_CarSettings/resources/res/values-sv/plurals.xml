@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="billing_cycle_days_left">
+        <item quantity="one">%d dag kvar</item>
+        <item quantity="other">%d dagar kvar</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_letters">
+        <item quantity="one">Lösenordet måste innehålla minst en bokstav</item>
+        <item quantity="other">Lösenordet måste innehålla minst %d bokstäver</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_lowercase">
+        <item quantity="one">Lösenordet måste innehålla minst en liten bokstav</item>
+        <item quantity="other">Lösenordet måste innehålla minst %d små bokstäver</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_nonletter">
+        <item quantity="one">Lösenordet måste innehålla minst ett tecken som inte är en bokstav</item>
+        <item quantity="other">Lösenordet måste innehålla minst %d tecken som inte är bokstäver</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_numeric">
+        <item quantity="one">Lösenordet måste innehålla minst en siffra</item>
+        <item quantity="other">Lösenordet måste innehålla minst %d siffror</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_symbols">
+        <item quantity="one">Lösenordet måste innehålla minst en specialsymbol</item>
+        <item quantity="other">Lösenordet måste innehålla minst %d specialsymboler</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_uppercase">
+        <item quantity="one">Lösenordet måste innehålla minst en stor bokstav</item>
+        <item quantity="other">Lösenordet måste innehålla minst %d stora bokstäver</item>
+    </plurals>
+    <plurals name="mobile_network_summary_count">
+        <item quantity="one">%1$d SIM-kort</item>
+        <item quantity="other">%1$d SIM-kort</item>
+    </plurals>
+    <plurals name="runtime_permissions_additional_count">
+        <item quantity="one">%d behörighet till</item>
+        <item quantity="other">%d behörigheter till</item>
+    </plurals>
+    <plurals name="show_dev_countdown">
+        <item quantity="one">Du är nu %1$d steg från att bli utvecklare.</item>
+        <item quantity="other">Du är nu %1$d steg från att bli utvecklare.</item>
+    </plurals>
+    <plurals name="user_limit_reached_message">
+        <item quantity="one">Det går bara att skapa en användare.</item>
+        <item quantity="other">Det går att skapa upp till %d användare.</item>
+    </plurals>
+    <plurals name="wifi_tether_connected_summary">
+        <item quantity="one">%1$d enhet är ansluten</item>
+        <item quantity="other">%1$d enheter är anslutna</item>
+    </plurals>
+</resources>

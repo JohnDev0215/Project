@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/start_all_item_height">
+    <TextView
+        android:textSize="@dimen/start_all_item_number_text_size"
+        android:textColor="@color/start_all_item_number_text_color"
+        android:gravity="center"
+        android:id="@+id/sub_number"
+        android:background="@drawable/icon_start_all_number_background"
+        android:layout_width="@dimen/start_all_item_number_size"
+        android:layout_height="@dimen/start_all_item_number_size"/>
+    <View
+        android:id="@+id/line"
+        android:background="@color/start_line_color"
+        android:layout_width="@dimen/start_all_item_line_width"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/start_all_item_number_size"
+        android:layout_marginStart="@dimen/start_all_item_line_margin_start"/>
+    <TextView
+        android:textSize="@dimen/start_all_item_number_text_size"
+        android:textColor="@color/start_all_item_title_text_color"
+        android:gravity="center_vertical"
+        android:id="@+id/start_all_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/start_all_item_number_size"
+        android:layout_marginStart="@dimen/start_all_item_title_margin_start"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/start_sub"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/start_all_item_sub_item_margin_top"
+        android:layout_marginStart="@dimen/start_all_item_title_margin_start"/>
+</RelativeLayout>

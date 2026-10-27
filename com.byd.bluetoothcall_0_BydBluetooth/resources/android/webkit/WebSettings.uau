@@ -1,0 +1,5 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/webkit/WebSettings;->setUseDoubleTree(Z)V,frameworks/base/core/java/android/webkit/WebSettings.java,640,5,640,25,
+Landroid/webkit/WebSettings;->getUseDoubleTree()Z,frameworks/base/core/java/android/webkit/WebSettings.java,653,5,653,25,
+Landroid/webkit/WebSettings;->setPluginsPath(Ljava/lang/String;)V,frameworks/base/core/java/android/webkit/WebSettings.java,1082,5,1082,25,
+Landroid/webkit/WebSettings;->getPluginsPath()Ljava/lang/String;,frameworks/base/core/java/android/webkit/WebSettings.java,1288,5,1288,25,

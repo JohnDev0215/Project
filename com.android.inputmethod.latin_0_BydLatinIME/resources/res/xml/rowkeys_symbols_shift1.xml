@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:latin="http://schemas.android.com/apk/res/com.android.inputmethod.latin">
+    <Key latin:keySpec="~"/>
+    <Key latin:keySpec="`"/>
+    <Key latin:keySpec="|"/>
+    <Key
+        latin:keySpec="•"
+        latin:moreKeys="!text/morekeys_bullet"/>
+    <Key latin:keySpec="√"/>
+    <Key
+        latin:keySpec="π"
+        latin:moreKeys="Π"/>
+    <Key latin:keySpec="÷"/>
+    <Key latin:keySpec="×"/>
+    <Key
+        latin:keySpec="¶"
+        latin:moreKeys="§"/>
+    <Key latin:keySpec="∆"/>
+</merge>

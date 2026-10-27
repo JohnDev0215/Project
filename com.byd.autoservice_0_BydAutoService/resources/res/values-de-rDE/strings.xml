@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="audio_muted">Audio stummgeschaltet</string>
+    <string name="audio_removed">Stummschaltung aufgehoben.</string>
+    <string name="btn_comfirm">OK</string>
+    <string name="btn_reset">Zurücksetzen</string>
+    <string name="call_mode">Im Anruf. Bedienung deaktiviert.</string>
+    <string name="cancel">Abbrechen</string>
+    <string name="carplay_androidauto_land">Der aktuelle Bildschirm unterstützt keinen Bildschirmwechsel.</string>
+    <string name="dialog_title_user">Benutzerdefinierte Tasteneinstellungen</string>
+    <string name="dialog_title_user_left">Benutzerdefinierte Einstellungen der linken Tasten</string>
+    <string name="dialog_title_user_right">Benutzerdefinierte Einstellungen der rechten Tasten</string>
+    <string name="mode_am_music">AM</string>
+    <string name="mode_amazon_music">Amazon Musik</string>
+    <string name="mode_bt_music">Musik</string>
+    <string name="mode_button_androidauto">Android Auto</string>
+    <string name="mode_button_carplay">Apple CarPlay</string>
+    <string name="mode_dab_music">DAB+</string>
+    <string name="mode_fm_music">FM</string>
+    <string name="mode_local_music">Lokale Medien</string>
+    <string name="mode_music">Lokal</string>
+    <string name="mode_sd">SD-Karte</string>
+    <string name="mode_spotify_music">Spotify</string>
+    <string name="mode_usb">USB</string>
+    <string name="mode_usb_music">Musik auf USB-Flash-Laufwerk</string>
+    <string name="mode_usb_text">Kein USB erkannt.</string>
+    <string name="mode_usb_video">USB-Flash-Laufwerk Video</string>
+    <string name="radio_button_ac">Klimaanlage</string>
+    <string name="radio_button_music">Musik</string>
+    <string name="radio_button_navi_home">Zuhause</string>
+    <string name="radio_button_play_pause">Medien pausieren/wiedergeben</string>
+    <string name="radio_button_radio">Radio</string>
+    <string name="radio_button_rotate">Drehung des Zentralbildschirms</string>
+    <string name="radio_button_source">Medien-Audioquelle wechseln</string>
+    <string name="reset_country">Das System wird konfiguriert. Bitte warten.</string>
+    <string name="restart_efect">Funktion erfolgreich eingerichtet. Zur Aktivierung ist ein Neustart erforderlich!</string>
+    <string name="restart_now">Jetzt neustarten</string>
+    <string name="restart_time">Countdown neustarten</string>
+    <string name="warring_mode">Bitte die Anleitung durchführen, bevor Sie IVI verwenden!</string>
+    <string name="warring_navi_mode">Aktueller Zustand unterstützt diesen Vorgang nicht!</string>
+    <string name="warring_power">Diese Funktion ist nur im Gang P verfügbar.</string>
+</resources>

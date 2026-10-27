@@ -1,0 +1,55 @@
+package com.byd.dilink.hardware.camera;
+
+/* JADX INFO: loaded from: classes.dex */
+public class DiLinkCameraConstants {
+    public static final String CAMERA_CAR_D954_H_MAIN = "d954_h_m";
+    public static final String CAMERA_CAR_D954_H_SUB = "d954_h_s";
+    public static final String CAMERA_CAR_D954_L_MAIN = "d954_l_m";
+    public static final String CAMERA_CAR_D954_L_SUB = "d954_l_s";
+    public static final String CAMERA_CAR_DMS = "dms";
+    public static final String CAMERA_CAR_FACE = "faceid";
+    public static final String CAMERA_CAR_FRONT = "ims";
+    public static final String CAMERA_CAR_NVS = "nvs";
+    public static final String CAMERA_CAR_OMS = "oms";
+    public static final String CAMERA_CAR_PANO_APA = "apa";
+    public static final String CAMERA_CAR_PANO_H = "pano_h";
+    public static final String CAMERA_CAR_PANO_L = "pano_l";
+    public static final String CAMERA_CAR_REAR = "rear";
+    public static final String CAMERA_CAR_RF = "rf";
+    public static final String CAMERA_CAR_RVS = "rvs";
+    public static final String CAMERA_CAR_UAV = "uav";
+    public static final int EVT_TYPE_AUTO_FOCUS_DONE = 2;
+    public static final int EVT_TYPE_CAC_DONE = 128;
+    public static final int EVT_TYPE_DAEMON_DIED = 8;
+    public static final int EVT_TYPE_DAEMON_PULL_REQ = 64;
+    public static final int EVT_TYPE_DEQUEUE_INPUT_BUFFER_FAIL = 1007;
+    public static final int EVT_TYPE_DEVICE_FREE = 1009;
+    public static final int EVT_TYPE_DEVICE_PREEMPT = 1008;
+    public static final int EVT_TYPE_DIAGNOSTIC_VOLTAGE_STATUS = 1011;
+    public static final int EVT_TYPE_ERR = 1000;
+    public static final int EVT_TYPE_FIRST_FRAME = 1003;
+    public static final int EVT_TYPE_FRAME_UPDATE = 1001;
+    public static final int EVT_TYPE_GRALLOC_BAD_BUFFER_ERR = 1005;
+    public static final int EVT_TYPE_HAL_SERVICE_DIED = 1010;
+    public static final int EVT_TYPE_INT_TAKE_JPEG = 16;
+    public static final int EVT_TYPE_INT_TAKE_RAW = 32;
+    public static final int EVT_TYPE_MAP_UNMAP_DONE = 1;
+    public static final int EVT_TYPE_NOT_USER_CAMERA_PERMISSION = 1006;
+    public static final int EVT_TYPE_SENSORLOCK = 1004;
+    public static final int EVT_TYPE_SERVER_DIED = 1002;
+    public static final int EVT_TYPE_STATUS_CHANGE = 129;
+    public static final int EVT_TYPE_ZOOM_DONE = 4;
+    public static final int VIEW_CHANNEL_1 = 1;
+    public static final int VIEW_CHANNEL_2 = 2;
+    public static final int VIEW_CHANNEL_3 = 3;
+    public static final int VIEW_CHANNEL_4 = 4;
+    public static final int VIEW_DECUSSATION_3124 = 3124;
+    public static final int VIEW_DECUSSATION_4123 = 4123;
+    public static final int VIEW_DECUSSATION_HFLIP = 6;
+    public static final int VIEW_DECUSSATION_VFLIP = 7;
+    public static final int VIEW_DEFAULT = 0;
+    public static final int VIEW_MIN = 0;
+    public static final int VIEW_TYPE_DECUSSATION = 1;
+    public static final int VIEW_TYPE_LINE = 0;
+    public static final int sEVT_TYPE_MAX = 130;
+}

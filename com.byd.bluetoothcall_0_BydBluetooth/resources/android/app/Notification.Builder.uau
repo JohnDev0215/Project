@@ -1,0 +1,5 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/app/Notification$Builder;->mActions:Ljava/util/ArrayList;,frameworks/base/core/java/android/app/Notification.java,3473,9,3473,29,
+Landroid/app/Notification$Builder;->loadHeaderAppName()Ljava/lang/String;,frameworks/base/core/java/android/app/Notification.java,5248,9,5248,29,
+Landroid/app/Notification$Builder;->makePublicContentView(Z)Landroid/widget/RemoteViews;,frameworks/base/core/java/android/app/Notification.java,5598,9,5598,29,
+Landroid/app/Notification$Builder;->getBaseLayoutResource()I,frameworks/base/core/java/android/app/Notification.java,6138,9,6138,29,

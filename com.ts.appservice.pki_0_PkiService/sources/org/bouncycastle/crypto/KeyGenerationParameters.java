@@ -1,0 +1,23 @@
+package org.bouncycastle.crypto;
+
+import java.security.SecureRandom;
+
+/* JADX INFO: compiled from: caradapter-bug */
+/* JADX INFO: loaded from: classes.dex */
+public class KeyGenerationParameters {
+    private SecureRandom random;
+    private int strength;
+
+    public KeyGenerationParameters(SecureRandom secureRandom, int i) {
+        this.random = secureRandom;
+        this.strength = i;
+    }
+
+    public SecureRandom getRandom() {
+        return this.random;
+    }
+
+    public int getStrength() {
+        return this.strength;
+    }
+}

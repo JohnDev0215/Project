@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="avas_country_code">
+        <item>27</item>
+        <item>51</item>
+        <item>52</item>
+        <item>55</item>
+        <item>57</item>
+        <item>60</item>
+        <item>63</item>
+        <item>64</item>
+        <item>66</item>
+        <item>84</item>
+        <item>91</item>
+        <item>92</item>
+        <item>94</item>
+        <item>95</item>
+        <item>212</item>
+        <item>216</item>
+        <item>230</item>
+        <item>263</item>
+        <item>260</item>
+        <item>267</item>
+        <item>355</item>
+        <item>373</item>
+        <item>377</item>
+        <item>379</item>
+        <item>502</item>
+        <item>505</item>
+        <item>506</item>
+        <item>507</item>
+        <item>591</item>
+        <item>593</item>
+        <item>595</item>
+        <item>598</item>
+        <item>599</item>
+        <item>673</item>
+        <item>687</item>
+        <item>689</item>
+        <item>853</item>
+        <item>855</item>
+        <item>856</item>
+        <item>961</item>
+        <item>962</item>
+        <item>965</item>
+        <item>966</item>
+        <item>968</item>
+        <item>971</item>
+        <item>973</item>
+        <item>974</item>
+        <item>975</item>
+        <item>976</item>
+        <item>977</item>
+        <item>997</item>
+        <item>998</item>
+        <item>1242</item>
+        <item>1876</item>
+        <item>1890</item>
+    </array>
+    <array name="bt_hci_snoop_log_entries">
+        <item>Disabled</item>
+        <item>Enabled Filtered</item>
+        <item>Enabled</item>
+    </array>
+    <array name="bt_hci_snoop_log_values">
+        <item>disabled</item>
+        <item>filtered</item>
+        <item>full</item>
+    </array>
+</resources>

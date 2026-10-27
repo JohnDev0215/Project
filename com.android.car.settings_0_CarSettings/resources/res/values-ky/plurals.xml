@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="billing_cycle_days_left">
+        <item quantity="one">%d күн калды</item>
+        <item quantity="other">%d күн калды</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_letters">
+        <item quantity="one">Кеминде 1 тамга болушу керек</item>
+        <item quantity="other">Кеминде %d тамга болушу керек</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_lowercase">
+        <item quantity="one">Кеминде 1 кичине тамга болушу керек</item>
+        <item quantity="other">Кеминде %d кичине тамга болушу керек</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_nonletter">
+        <item quantity="one">Тамгадан башка кеминде 1 белги болушу керек</item>
+        <item quantity="other">Тамгадан башка кеминде %d белги болушу керек</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_numeric">
+        <item quantity="one">Кеминде 1 сан болушу керек</item>
+        <item quantity="other">Кеминде %d сан болушу керек</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_symbols">
+        <item quantity="one">Кеминде 1 өзгөчө белги болушу керек</item>
+        <item quantity="other">Кеминде %d өзгөчө белги болушу керек</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_uppercase">
+        <item quantity="one">Кеминде 1 баш тамга болушу керек</item>
+        <item quantity="other">Кеминде %d баш тамга болушу керек</item>
+    </plurals>
+    <plurals name="mobile_network_summary_count">
+        <item quantity="one">%1$d SIM карта</item>
+        <item quantity="other">%1$d SIM карта</item>
+    </plurals>
+    <plurals name="runtime_permissions_additional_count">
+        <item quantity="one">%d кошумча уруксат берилди</item>
+        <item quantity="other">%d кошумча уруксат берилди</item>
+    </plurals>
+    <plurals name="show_dev_countdown">
+        <item quantity="one">Сиздин иштеп чыгуучу болушуңузга %1$d кадам калды.</item>
+        <item quantity="other">Сиздин иштеп чыгуучу болушуңузга %1$d кадам калды.</item>
+    </plurals>
+    <plurals name="user_limit_reached_message">
+        <item quantity="one">Бир колдонуучуну гана кошууга болот.</item>
+        <item quantity="other">%d колдонуучуга чейин кошууга болот.</item>
+    </plurals>
+    <plurals name="wifi_tether_connected_summary">
+        <item quantity="one">%1$d түзмөк туташып турат</item>
+        <item quantity="other">%1$d түзмөк туташып турат</item>
+    </plurals>
+</resources>

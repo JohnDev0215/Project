@@ -1,0 +1,6 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/accounts/AccountManager;->mContext:Landroid/content/Context;,frameworks/base/core/java/android/accounts/AccountManager.java,337,5,337,25,
+Landroid/accounts/AccountManager;-><init>(Landroid/content/Context;Landroid/accounts/IAccountManager;)V,frameworks/base/core/java/android/accounts/AccountManager.java,411,5,411,25,
+Landroid/accounts/AccountManager;-><init>(Landroid/content/Context;Landroid/accounts/IAccountManager;Landroid/os/Handler;)V,frameworks/base/core/java/android/accounts/AccountManager.java,421,5,421,25,
+Landroid/accounts/AccountManager;->getAccountsByTypeAsUser(Ljava/lang/String;Landroid/os/UserHandle;)[Landroid/accounts/Account;,frameworks/base/core/java/android/accounts/AccountManager.java,715,5,715,25,
+Landroid/accounts/AccountManager;->confirmCredentialsAsUser(Landroid/accounts/Account;Landroid/os/Bundle;Landroid/app/Activity;Landroid/accounts/AccountManagerCallback;Landroid/os/Handler;Landroid/os/UserHandle;)Landroid/accounts/AccountManagerFuture;,frameworks/base/core/java/android/accounts/AccountManager.java,2006,5,2006,25,

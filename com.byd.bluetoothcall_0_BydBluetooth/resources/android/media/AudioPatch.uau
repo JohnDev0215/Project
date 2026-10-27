@@ -1,0 +1,5 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/media/AudioPatch;->mHandle:Landroid/media/AudioHandle;,frameworks/base/media/java/android/media/AudioPatch.java,34,5,34,25,
+Landroid/media/AudioPatch;-><init>(Landroid/media/AudioHandle;[Landroid/media/AudioPortConfig;[Landroid/media/AudioPortConfig;)V,frameworks/base/media/java/android/media/AudioPatch.java,39,5,39,25,
+Landroid/media/AudioPatch;->sources()[Landroid/media/AudioPortConfig;,frameworks/base/media/java/android/media/AudioPatch.java,49,5,49,25,
+Landroid/media/AudioPatch;->sinks()[Landroid/media/AudioPortConfig;,frameworks/base/media/java/android/media/AudioPatch.java,57,5,57,25,

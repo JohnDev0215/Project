@@ -1,0 +1,13 @@
+package org.slf4j.helpers;
+
+import org.slf4j.ILoggerFactory;
+import org.slf4j.Logger;
+
+/* JADX INFO: compiled from: caradapter-bug */
+/* JADX INFO: loaded from: classes.dex */
+public class NOPLoggerFactory implements ILoggerFactory {
+    @Override // org.slf4j.ILoggerFactory
+    public Logger getLogger(String str) {
+        return NOPLogger.NOP_LOGGER;
+    }
+}

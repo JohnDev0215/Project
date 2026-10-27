@@ -1,0 +1,4 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/app/job/JobParameters;->jobId:I,frameworks/base/apex/jobscheduler/framework/java/android/app/job/JobParameters.java,104,5,104,25,
+Landroid/app/job/JobParameters;->callback:Landroid/os/IBinder;,frameworks/base/apex/jobscheduler/framework/java/android/app/job/JobParameters.java,110,5,110,25,
+Landroid/app/job/JobParameters;->getCallback()Landroid/app/job/IJobCallback;,frameworks/base/apex/jobscheduler/framework/java/android/app/job/JobParameters.java,320,5,320,25,

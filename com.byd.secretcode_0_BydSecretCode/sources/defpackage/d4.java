@@ -1,0 +1,229 @@
+package defpackage;
+
+/* JADX INFO: compiled from: LongSparseArray.java */
+/* JADX INFO: loaded from: classes.dex */
+public class d4<E> implements Cloneable {
+    public static final Object b = new Object();
+    public boolean c;
+    public long[] d;
+    public Object[] e;
+    public int f;
+
+    public d4() {
+        this(10);
+    }
+
+    public void a(long j, E e) {
+        int i = this.f;
+        if (i != 0 && j <= this.d[i - 1]) {
+            i(j, e);
+            return;
+        }
+        if (this.c && i >= this.d.length) {
+            d();
+        }
+        int i2 = this.f;
+        if (i2 >= this.d.length) {
+            int iF = c4.f(i2 + 1);
+            long[] jArr = new long[iF];
+            Object[] objArr = new Object[iF];
+            long[] jArr2 = this.d;
+            System.arraycopy(jArr2, 0, jArr, 0, jArr2.length);
+            Object[] objArr2 = this.e;
+            System.arraycopy(objArr2, 0, objArr, 0, objArr2.length);
+            this.d = jArr;
+            this.e = objArr;
+        }
+        this.d[i2] = j;
+        this.e[i2] = e;
+        this.f = i2 + 1;
+    }
+
+    public void b() {
+        int i = this.f;
+        Object[] objArr = this.e;
+        for (int i2 = 0; i2 < i; i2++) {
+            objArr[i2] = null;
+        }
+        this.f = 0;
+        this.c = false;
+    }
+
+    /* JADX INFO: renamed from: c, reason: merged with bridge method [inline-methods] */
+    public d4<E> clone() {
+        try {
+            d4<E> d4Var = (d4) super.clone();
+            d4Var.d = (long[]) this.d.clone();
+            d4Var.e = (Object[]) this.e.clone();
+            return d4Var;
+        } catch (CloneNotSupportedException e) {
+            throw new AssertionError(e);
+        }
+    }
+
+    public final void d() {
+        int i = this.f;
+        long[] jArr = this.d;
+        Object[] objArr = this.e;
+        int i2 = 0;
+        for (int i3 = 0; i3 < i; i3++) {
+            Object obj = objArr[i3];
+            if (obj != b) {
+                if (i3 != i2) {
+                    jArr[i2] = jArr[i3];
+                    objArr[i2] = obj;
+                    objArr[i3] = null;
+                }
+                i2++;
+            }
+        }
+        this.c = false;
+        this.f = i2;
+    }
+
+    public E e(long j) {
+        return f(j, null);
+    }
+
+    public E f(long j, E e) {
+        int iB = c4.b(this.d, this.f, j);
+        if (iB >= 0) {
+            Object[] objArr = this.e;
+            if (objArr[iB] != b) {
+                return (E) objArr[iB];
+            }
+        }
+        return e;
+    }
+
+    public int g(long j) {
+        if (this.c) {
+            d();
+        }
+        return c4.b(this.d, this.f, j);
+    }
+
+    public long h(int i) {
+        if (this.c) {
+            d();
+        }
+        return this.d[i];
+    }
+
+    public void i(long j, E e) {
+        int iB = c4.b(this.d, this.f, j);
+        if (iB >= 0) {
+            this.e[iB] = e;
+            return;
+        }
+        int i = ~iB;
+        int i2 = this.f;
+        if (i < i2) {
+            Object[] objArr = this.e;
+            if (objArr[i] == b) {
+                this.d[i] = j;
+                objArr[i] = e;
+                return;
+            }
+        }
+        if (this.c && i2 >= this.d.length) {
+            d();
+            i = ~c4.b(this.d, this.f, j);
+        }
+        int i3 = this.f;
+        if (i3 >= this.d.length) {
+            int iF = c4.f(i3 + 1);
+            long[] jArr = new long[iF];
+            Object[] objArr2 = new Object[iF];
+            long[] jArr2 = this.d;
+            System.arraycopy(jArr2, 0, jArr, 0, jArr2.length);
+            Object[] objArr3 = this.e;
+            System.arraycopy(objArr3, 0, objArr2, 0, objArr3.length);
+            this.d = jArr;
+            this.e = objArr2;
+        }
+        int i4 = this.f;
+        if (i4 - i != 0) {
+            long[] jArr3 = this.d;
+            int i5 = i + 1;
+            System.arraycopy(jArr3, i, jArr3, i5, i4 - i);
+            Object[] objArr4 = this.e;
+            System.arraycopy(objArr4, i, objArr4, i5, this.f - i);
+        }
+        this.d[i] = j;
+        this.e[i] = e;
+        this.f++;
+    }
+
+    public void j(long j) {
+        int iB = c4.b(this.d, this.f, j);
+        if (iB >= 0) {
+            Object[] objArr = this.e;
+            Object obj = objArr[iB];
+            Object obj2 = b;
+            if (obj != obj2) {
+                objArr[iB] = obj2;
+                this.c = true;
+            }
+        }
+    }
+
+    public void k(int i) {
+        Object[] objArr = this.e;
+        Object obj = objArr[i];
+        Object obj2 = b;
+        if (obj != obj2) {
+            objArr[i] = obj2;
+            this.c = true;
+        }
+    }
+
+    public int l() {
+        if (this.c) {
+            d();
+        }
+        return this.f;
+    }
+
+    public E m(int i) {
+        if (this.c) {
+            d();
+        }
+        return (E) this.e[i];
+    }
+
+    public String toString() {
+        if (l() <= 0) {
+            return "{}";
+        }
+        StringBuilder sb = new StringBuilder(this.f * 28);
+        sb.append('{');
+        for (int i = 0; i < this.f; i++) {
+            if (i > 0) {
+                sb.append(", ");
+            }
+            sb.append(h(i));
+            sb.append('=');
+            E eM = m(i);
+            if (eM != this) {
+                sb.append(eM);
+            } else {
+                sb.append("(this Map)");
+            }
+        }
+        sb.append('}');
+        return sb.toString();
+    }
+
+    public d4(int i) {
+        this.c = false;
+        if (i == 0) {
+            this.d = c4.b;
+            this.e = c4.c;
+        } else {
+            int iF = c4.f(i);
+            this.d = new long[iF];
+            this.e = new Object[iF];
+        }
+    }
+}

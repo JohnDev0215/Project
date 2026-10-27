@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="install">Installazione dell\'app</string>
+    <string name="qrcode_expired">Operazione scaduta. Tocca per aggiornare</string>
+    <string name="qrcode_network_warning">Rete attuale non disponibile. Controlla le impostazioni di rete</string>
+    <string name="qrcode_refresh_fail">Operazione non riuscita. Tocca per aggiornare</string>
+    <string name="qrcode_scan_type_vds">Scansione VDS</string>
+    <string name="qrcode_scan_type_wechat">Scansione WeCom</string>
+    <string name="qrcode_success">Scansione riuscita</string>
+    <string name="qrcode_time">%d s rimasto/i</string>
+    <string name="qrcode_tip">Scansiona il codice QR per ottenere l\'autorizzazione</string>
+    <string name="qrcode_title">Verifica</string>
+    <string name="qrcode_title_with_module">Verifica di %s</string>
+</resources>

@@ -1,0 +1,8 @@
+package org.bouncycastle.crypto.tls;
+
+/* JADX INFO: compiled from: caradapter-bug */
+/* JADX INFO: loaded from: classes.dex */
+public class ConnectionEnd {
+    public static final int client = 1;
+    public static final int server = 0;
+}

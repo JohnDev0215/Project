@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="@dimen/dp_560"
+    android:layout_height="@dimen/dp_384"
+    style="@style/vehicle_setting_dialog_background_container">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_71">
+        <ImageView
+            android:id="@+id/iv_back_dialog_hint"
+            android:layout_width="@dimen/dp_48"
+            android:layout_height="@dimen/dp_48"
+            android:src="@drawable/icon_public_leftarrow_48"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/dp_16"
+            android:layout_alignParentStart="true"/>
+        <TextView
+            android:textSize="@dimen/sp_20"
+            android:textColor="@color/text_color_main_dilink_pagers"
+            android:gravity="center"
+            android:id="@+id/tv_title_dialog_hint"
+            android:layout_width="@dimen/dp_512"
+            android:layout_height="@dimen/dp_29"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <View
+        android:background="@color/bg_color_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_40"
+        android:layout_marginBottom="@dimen/dp_40">
+        <TextView
+            android:textSize="@dimen/sp_20"
+            android:textColor="@color/text_color_main_dilink_pagers"
+            android:id="@+id/tv_msg_dialog_hint"
+            android:layout_width="@dimen/dp_464"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+</LinearLayout>

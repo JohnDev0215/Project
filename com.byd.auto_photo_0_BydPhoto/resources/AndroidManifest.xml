@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="18"
+    android:versionName="5.0.2_2503131335_2"
+    android:compileSdkVersion="32"
+    android:compileSdkVersionCodename="12"
+    package="com.byd.auto_photo"
+    platformBuildVersionCode="32"
+    platformBuildVersionName="12">
+    <uses-sdk
+        android:minSdkVersion="24"
+        android:targetSdkVersion="29"/>
+    <uses-permission android:name="android.permission.BYDAUTO_GEARBOX_GET"/>
+    <uses-permission android:name="android.permission.BYDAUTO_GEARBOX_COMMON"/>
+    <uses-permission android:name="android.car.permission.CAR_CONTROL_AUDIO_VOLUME"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.READ_PRIVILEGED_PHONE_STATE"/>
+    <uses-feature
+        android:glEsVersion="0x20000"
+        android:required="true"/>
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_VISUAL_USER_SELECTED"/>
+    <uses-permission android:name="android.permission.WRITE_MEDIA_STORAGE"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.SET_WALLPAPER"/>
+    <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES"/>
+    <uses-permission android:name="android.permission.START_ACTIVITIES_FROM_BACKGROUND"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.SYSTEM_OVERLAY_WINDOW"/>
+    <uses-permission android:name="android.permission.ACCESS_MEDIA_LOCATION"/>
+    <uses-permission android:name="com.byd.multipletheme.Permission.write"/>
+    <uses-permission android:name="android.permission.BROADCAST_CLOSE_SYSTEM_DIALOGS"/>
+    <uses-permission android:name="no.INTERNET"/>
+    <uses-permission android:name="android.permission.DEVICE_POWER"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT"/>
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL"/>
+    <uses-permission android:name="android.permission.OBSERVE_SENSOR_PRIVACY"/>
+    <application
+        android:theme="@style/AppTheme"
+        android:label="@string/app_name"
+        android:icon="@drawable/icon_photo3_app"
+        android:name="com.byd.auto_photo.PhotoApp"
+        android:persistent="false"
+        android:allowBackup="false"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:extractNativeLibs="false"
+        android:resizeableActivity="false"
+        android:networkSecurityConfig="@null"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+        android:requestLegacyExternalStorage="true">
+        <meta-data
+            android:name="CHANNEL_NAME"
+            android:value="photo8155f"/>
+        <meta-data
+            android:name="SUPPORT_DYNAMIC_CONFIGURATION_IN_APP_LIST"
+            android:value="true"/>
+        <meta-data
+            android:name="COMPILE_SDK_VERSION"
+            android:value="31"/>
+        <provider
+            android:name="com.byd.auto_photo.DynaConfigContentProvider"
+            android:enabled="true"
+            android:exported="true"
+            android:authorities="com.byd.auto_photo.DynaConfigContentProvider"/>
+        <activity
+            android:label="@string/app_name"
+            android:icon="@drawable/icon_photo3_app"
+            android:name="com.byd.auto_photo.MainActivity"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:configChanges="layoutDirection|screenSize|uiMode|screenLayout|orientation|keyboard|locale"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="@string/pic_view"
+            android:icon="@drawable/icon_photo3_app"
+            android:name="com.byd.auto_photo.ImageShowActivity"
+            android:exported="true"
+            android:configChanges="layoutDirection|screenSize|uiMode|screenLayout|orientation|keyboard|locale"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden">
+            <intent-filter android:priority="999">
+                <action android:name="android.intent.action.VIEW"/>
+                <data android:mimeType="image/*"/>
+                <category android:name="android.intent.category.OPENABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.byd.auto_photo.AboutActivity"
+            android:configChanges="layoutDirection|screenSize|uiMode|screenLayout|orientation|keyboard|locale"/>
+        <activity
+            android:name="com.byd.auto_photo.ImageEditActivity"
+            android:exported="true"
+            android:configChanges="layoutDirection|screenSize|uiMode|screenLayout|orientation|keyboard|locale">
+            <intent-filter>
+                <action android:name="com.android.media.action.IMAGE_EDIT"/>
+                <action android:name="android.intent.action.MAIN"/>
+                <data android:mimeType="image/*"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.byd.auto_photo.BurstshootManagerActivity"
+            android:configChanges="layoutDirection|screenSize|uiMode|screenLayout|orientation|keyboard|locale"/>
+        <activity
+            android:label="@string/crop"
+            android:icon="@drawable/icon_edit_crop"
+            android:name="com.byd.auto_photo.CropActivity"
+            android:exported="true"
+            android:configChanges="layoutDirection|screenSize|uiMode|screenLayout|orientation|keyboard|locale">
+            <intent-filter>
+                <action android:name="com.android.camera.action.CROP"/>
+                <action android:name="android.intent.action.MAIN"/>
+                <data android:mimeType="image/*"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.byd.auto_photo.WatermarkActivity"
+            android:configChanges="layoutDirection|screenSize|uiMode|screenLayout|orientation|keyboard|locale"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden"/>
+        <activity
+            android:name="com.byd.auto_photo.ImageSelectActivity"
+            android:exported="true"
+            android:configChanges="layoutDirection|screenSize|uiMode|screenLayout|orientation|keyboard|locale"
+            android:windowSoftInputMode="adjustNothing|stateHidden">
+            <intent-filter android:priority="999">
+                <action android:name="android.intent.action.GET_CONTENT"/>
+                <category android:name="android.intent.category.OPENABLE"/>
+                <data android:mimeType="vnd.android.cursor.dir/image"/>
+            </intent-filter>
+            <intent-filter android:priority="999">
+                <action android:name="android.intent.action.GET_CONTENT"/>
+                <category android:name="android.intent.category.OPENABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="image/*"/>
+                <data android:mimeType="video/*"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PICK"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="image/*"/>
+                <data android:mimeType="video/*"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PICK"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="vnd.android.cursor.dir/image"/>
+            </intent-filter>
+            <intent-filter android:priority="999">
+                <action android:name="android.intent.action.OPEN_DOCUMENT"/>
+                <category android:name="android.intent.category.OPENABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="image/*"/>
+                <data android:mimeType="video/*"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.byd.auto_photo.ScrawlActivity"
+            android:configChanges="layoutDirection|screenSize|uiMode|screenLayout|orientation|keyboard|locale"/>
+        <activity
+            android:name="com.byd.auto_photo.MosicActivity"
+            android:configChanges="layoutDirection|screenSize|uiMode|screenLayout|orientation|keyboard|locale"/>
+        <activity
+            android:name="com.byd.auto_photo.BlurActivity"
+            android:configChanges="layoutDirection|screenSize|uiMode|screenLayout|orientation|keyboard|locale"/>
+        <activity
+            android:name="com.byd.auto_photo.Filter2Activity"
+            android:configChanges="layoutDirection|screenSize|uiMode|screenLayout|orientation|keyboard|locale"/>
+        <activity
+            android:label="@string/video_play"
+            android:icon="@drawable/icon_photo3_app"
+            android:name="com.byd.auto_photo.VideoPlayActivity"
+            android:exported="true"
+            android:configChanges="layoutDirection|screenSize|uiMode|screenLayout|orientation|keyboard|locale">
+            <intent-filter android:priority="999">
+                <action android:name="android.intent.action.VIEW"/>
+                <data android:mimeType="video/*"/>
+                <category android:name="android.intent.category.OPENABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.INFO"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.byd.auto_photo.VideoEditActivity"
+            android:configChanges="layoutDirection|screenSize|uiMode|screenLayout|orientation|keyboard|locale"/>
+        <activity
+            android:theme="@style/CustomDialog"
+            android:name="com.byd.auto_photo.StartServiceActivity"
+            android:taskAffinity=".SDKStarter"
+            android:excludeFromRecents="true"
+            android:launchMode="singleInstance"/>
+        <activity
+            android:theme="@style/CustomDialogTheme"
+            android:name="com.byd.auto_photo.AutoFinishActivity"
+            android:taskAffinity=".autofinish"
+            android:excludeFromRecents="true"
+            android:launchMode="singleInstance"
+            android:configChanges="layoutDirection|screenSize|uiMode|screenLayout|orientation|keyboard|locale"/>
+        <activity
+            android:theme="@style/CustomDialogTheme"
+            android:name="com.byd.auto_photo.VideoEditExportActivity"
+            android:excludeFromRecents="true"
+            android:configChanges="layoutDirection|screenSize|uiMode|screenLayout|orientation|keyboard|locale"/>
+        <activity
+            android:theme="@style/CustomDialogTheme"
+            android:name="com.byd.auto_photo.ShareToOtherDevActivity"
+            android:excludeFromRecents="true"
+            android:configChanges="layoutDirection|screenSize|uiMode|screenLayout|orientation|keyboard|locale"/>
+        <activity
+            android:theme="@style/CustomDialogTheme"
+            android:name="com.byd.auto_photo.QrCodeShareActivity"
+            android:excludeFromRecents="true"
+            android:configChanges="layoutDirection|screenSize|uiMode|screenLayout|orientation|keyboard|locale"/>
+        <service
+            android:name="com.byd.auto_photo.ApiService"
+            android:enabled="true"
+            android:exported="false"/>
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:exported="false"
+            android:authorities="com.byd.auto_photo.fileProvider"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths"/>
+        </provider>
+        <receiver
+            android:name="com.byd.auto_photo.MountedStateReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_MOUNTED"/>
+                <action android:name="android.intent.action.MEDIA_EJECT"/>
+                <data android:scheme="file"/>
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.byd.auto_photo.BootReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+        <service
+            android:name="com.byd.auto_photo.MoreDevShareService"
+            android:enabled="true"
+            android:exported="false"/>
+        <provider
+            android:name="com.byd.provider.PhotoProvider"
+            android:exported="true"
+            android:authorities="com.byd.auto_photo"/>
+        <provider
+            android:name="androidx.startup.InitializationProvider"
+            android:exported="false"
+            android:authorities="com.byd.auto_photo.androidx-startup">
+            <meta-data
+                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+                android:value="androidx.startup"/>
+            <meta-data
+                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+                android:value="androidx.startup"/>
+        </provider>
+    </application>
+</manifest>

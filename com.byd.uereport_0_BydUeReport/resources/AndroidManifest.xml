@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    android:sharedUserId="android.uid.system"
+    android:process="system"
+    android:versionCode="146"
+    android:versionName="1.19.2-202506241153"
+    android:compileSdkVersion="30"
+    android:compileSdkVersionCodename="11"
+    package="com.byd.uereport"
+    platformBuildVersionCode="30"
+    platformBuildVersionName="11">
+    <uses-sdk
+        android:minSdkVersion="26"
+        android:targetSdkVersion="29"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.SYSTEM_OVERLAY_WINDOW"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE"/>
+    <uses-permission android:name="car.permission.ANDROIDAUTO_APP"/>
+    <uses-permission android:name="car.permission.ANDROIDAUTO_DEVICELIST"/>
+    <uses-permission android:name="car.permission.CARPLAY"/>
+    <uses-permission android:name="car.permission.CARPLAY_APP"/>
+    <uses-permission android:name="car.permission.CARPLAY_DEVICE_LIST"/>
+    <uses-permission android:name="android.permission.BYDAUTO_XCALL_GET"/>
+    <uses-permission android:name="android.permission.BYDAUTO_XCALL_SET"/>
+    <uses-permission android:name="android.permission.BYDAUTO_XCALL_COMMON"/>
+    <uses-permission android:name="android.Manifest.permission.MODIFY_AUDIO_ROUTING"/>
+    <uses-permission android:name="android.permission.BYDAUTO_OTA_SET"/>
+    <uses-permission android:name="android.permission.BYDAUTO_OTA_COMMON"/>
+    <uses-permission android:name="android.permission.DEVICE_ACC"/>
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM"/>
+    <uses-permission android:name="android.permission.SET_ALARM"/>
+    <uses-permission android:name="com.byd.smartcharge.plan"/>
+    <uses-permission android:name="com.byd.smartcharge.plan_change"/>
+    <queries>
+        <package android:name="com.byd.datashared"/>
+    </queries>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.BYDAUTO_VERSION_GET"/>
+    <uses-permission android:name="android.permission.BYDAUTO_VERSION_COMMON"/>
+    <uses-permission android:name="android.permission.READ_NETWORK_USAGE_HISTORY"/>
+    <uses-permission android:name="android.permission.READ_PRIVILEGED_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_PRIVILEGED"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.TETHER_PRIVILEGED"/>
+    <uses-permission android:name="android.permission.OVERRIDE_WIFI_CONFIG"/>
+    <uses-permission android:name="android.permission.NETWORK_SETTINGS"/>
+    <uses-permission android:name="android.permission.NETWORK_SETUP_WIZARD"/>
+    <uses-permission android:name="android.permission.LOCAL_MAC_ADDRESS"/>
+    <uses-permission android:name="android.permission.UPDATE_DEVICE_STATS"/>
+    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS"/>
+    <permission android:name="android.permission.DEVICE_POWER "/>
+    <permission android:name="android.permission.READ_PHONE_STATE"/>
+    <application
+        android:theme="@style/byd_dynasty"
+        android:label="@string/app_name"
+        android:icon="@mipmap/app_icon"
+        android:name="com.byd.uereport.UeReportApplication"
+        android:persistent="true"
+        android:allowBackup="false"
+        android:supportsRtl="true"
+        android:extractNativeLibs="false"
+        android:usesCleartextTraffic="true"
+        android:roundIcon="@mipmap/app_icon"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory">
+        <activity android:name="com.byd.uereport.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+        <service android:name="com.byd.uereport.VehicleService">
+            <intent-filter>
+                <action android:name="com.byd.aidl.dialog"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </service>
+        <service android:name="com.byd.cpaa.service.CpaaActionService"/>
+        <service android:name="com.byd.uereport.CpaaService">
+            <intent-filter>
+                <action android:name="com.byd.cpaa.action"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </service>
+        <service android:name="com.byd.uereport.MultiModuleService">
+            <intent-filter>
+                <action android:name="com.byd.traffic.service.action"/>
+                <action android:name="com.byd.aidl"/>
+                <action android:name="com.byd.charge.service.action"/>
+                <action android:name="com.byd.screensaver.service.action"/>
+                <action android:name="com.byd.digitalkey.action"/>
+                <action android:name="com.byd.action.ACTION_BYD_SYSTEM_SETTING"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </service>
+        <receiver android:name="com.byd.uereport.CPAAReceiver">
+            <intent-filter>
+                <action android:name="com.byd.card.open.carplay"/>
+                <action android:name="com.byd.carplay.data.protection"/>
+                <action android:name="com.byd.card.open.auto"/>
+                <action android:name="com.byd.uereport.xcall.test"/>
+                <action android:name="carsettings_device_connect_carplay_action"/>
+                <action android:name="carsettings_device_connect_androidauto_action"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.hardware.usb.action.USB_DEVICE_DETACHED"/>
+            </intent-filter>
+        </receiver>
+        <uses-library android:name="ts.platform.library"/>
+        <receiver
+            android:name="com.byd.systemsettings.btsetting.receiver.BtPairRequestReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.bluetooth.device.action.PAIRING_REQUEST"/>
+                <action android:name="android.bluetooth.device.action.ACL_CONNECTED"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </receiver>
+        <service
+            android:name="com.byd.systemsettings.service.ReceiverActionService"
+            android:exported="false"/>
+        <service
+            android:name="com.byd.systemsettings.hotspot.service.HotspotService"
+            android:exported="false"/>
+        <service
+            android:name="com.byd.bt.service.BtActionService"
+            android:exported="false"/>
+        <service
+            android:name="androidx.room.MultiInstanceInvalidationService"
+            android:exported="false"
+            android:directBootAware="true"/>
+    </application>
+</manifest>

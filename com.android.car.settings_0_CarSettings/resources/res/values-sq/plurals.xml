@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="billing_cycle_days_left">
+        <item quantity="one">%d ditë e mbetur</item>
+        <item quantity="other">%d ditë të mbetura</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_letters">
+        <item quantity="one">Duhet të përmbajë të paktën 1 shkronjë</item>
+        <item quantity="other">Duhet të përmbajë të paktën %d shkronja</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_lowercase">
+        <item quantity="one">Duhet të përmbajë të paktën 1 shkronjë të vogël</item>
+        <item quantity="other">Duhet të përmbajë të paktën %d shkronja të vogla</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_nonletter">
+        <item quantity="one">Duhet të përmbajë të paktën 1 karakter që nuk është shkronjë</item>
+        <item quantity="other">Duhet të përmbajë të paktën %d karaktere që nuk janë shkronja</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_numeric">
+        <item quantity="one">Duhet të përmbajë të paktën 1 shifër numerike</item>
+        <item quantity="other">Duhet të përmbajë të paktën %d shifra numerike</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_symbols">
+        <item quantity="one">Duhet të përmbajë të paktën 1 simbol të veçantë</item>
+        <item quantity="other">Duhet të përmbajë të paktën %d simbole të veçanta</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_uppercase">
+        <item quantity="one">Duhet të përmbajë të paktën 1 shkronjë të madhe</item>
+        <item quantity="other">Duhet të përmbajë të paktën %d shkronja të mëdha</item>
+    </plurals>
+    <plurals name="mobile_network_summary_count">
+        <item quantity="one">%1$d kartë SIM</item>
+        <item quantity="other">%1$d karta SIM</item>
+    </plurals>
+    <plurals name="runtime_permissions_additional_count">
+        <item quantity="one">%d autorizim shtesë</item>
+        <item quantity="other">%d autorizime shtesë</item>
+    </plurals>
+    <plurals name="show_dev_countdown">
+        <item quantity="one">Tani të duhet edhe %1$d hap për t&apos;u bërë zhvillues.</item>
+        <item quantity="other">Tani të duhen edhe %1$d hapa për t&apos;u bërë zhvillues.</item>
+    </plurals>
+    <plurals name="user_limit_reached_message">
+        <item quantity="one">Mund të krijohet vetëm një përdorues.</item>
+        <item quantity="other">Mund të krijosh deri në %d përdorues.</item>
+    </plurals>
+    <plurals name="wifi_tether_connected_summary">
+        <item quantity="one">%1$d pajisje e lidhur</item>
+        <item quantity="other">%1$d pajisje të lidhura</item>
+    </plurals>
+</resources>

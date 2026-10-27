@@ -1,0 +1,4 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/media/audiopolicy/AudioMixingRule;->mCriteria:Ljava/util/ArrayList;,frameworks/base/media/java/android/media/audiopolicy/AudioMixingRule.java,204,5,204,25,
+Landroid/media/audiopolicy/AudioMixingRule;->mAllowPrivilegedPlaybackCapture:Z,frameworks/base/media/java/android/media/audiopolicy/AudioMixingRule.java,208,5,208,25,
+Landroid/media/audiopolicy/AudioMixingRule;->mVoiceCommunicationCaptureAllowed:Z,frameworks/base/media/java/android/media/audiopolicy/AudioMixingRule.java,210,5,210,25,

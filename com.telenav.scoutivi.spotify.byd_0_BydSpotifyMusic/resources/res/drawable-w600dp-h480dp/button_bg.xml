@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android" android:color="?attr/tab_item_bg_color_pressed">
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="@color/colorBackBtnBg"/>
+        </shape>
+        <size
+            android:height="@dimen/common_btn_size"
+            android:width="@dimen/common_btn_size"/>
+    </item>
+</ripple>

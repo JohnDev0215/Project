@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.android.car.ui.FocusArea
+        android:paddingTop="@dimen/edit_username_text_padding_top"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:paddingStart="@dimen/edit_username_padding_start"
+        android:paddingEnd="@dimen/edit_username_padding_end">
+        <EditText
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/user_name_text_edit"
+            android:focusableInTouchMode="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/user_name_label"
+            android:maxLines="1"
+            android:inputType="text"
+            android:imeOptions="flagNoExtractUi|actionDone"/>
+    </com.android.car.ui.FocusArea>
+</FrameLayout>

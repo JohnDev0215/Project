@@ -1,0 +1,10 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/graphics/LinearGradient;->mX0:F,frameworks/base/graphics/java/android/graphics/LinearGradient.java,27,5,27,25,
+Landroid/graphics/LinearGradient;->mY0:F,frameworks/base/graphics/java/android/graphics/LinearGradient.java,29,5,29,25,
+Landroid/graphics/LinearGradient;->mX1:F,frameworks/base/graphics/java/android/graphics/LinearGradient.java,31,5,31,25,
+Landroid/graphics/LinearGradient;->mY1:F,frameworks/base/graphics/java/android/graphics/LinearGradient.java,33,5,33,25,
+Landroid/graphics/LinearGradient;->mPositions:[F,frameworks/base/graphics/java/android/graphics/LinearGradient.java,35,5,35,25,
+Landroid/graphics/LinearGradient;->mTileMode:Landroid/graphics/Shader$TileMode;,frameworks/base/graphics/java/android/graphics/LinearGradient.java,37,5,37,25,
+Landroid/graphics/LinearGradient;->mColors:[I,frameworks/base/graphics/java/android/graphics/LinearGradient.java,41,5,41,25,
+Landroid/graphics/LinearGradient;->mColor0:I,frameworks/base/graphics/java/android/graphics/LinearGradient.java,44,5,44,25,
+Landroid/graphics/LinearGradient;->mColor1:I,frameworks/base/graphics/java/android/graphics/LinearGradient.java,47,5,47,25,

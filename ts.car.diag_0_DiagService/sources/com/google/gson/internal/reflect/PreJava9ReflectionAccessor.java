@@ -1,0 +1,15 @@
+package com.google.gson.internal.reflect;
+
+import java.lang.reflect.AccessibleObject;
+
+/* JADX INFO: compiled from: caradapter-bug */
+/* JADX INFO: loaded from: classes3.dex */
+final class PreJava9ReflectionAccessor extends ReflectionAccessor {
+    PreJava9ReflectionAccessor() {
+    }
+
+    @Override // com.google.gson.internal.reflect.ReflectionAccessor
+    public void makeAccessible(AccessibleObject accessibleObject) {
+        accessibleObject.setAccessible(true);
+    }
+}

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/ui_guides"/>
+    <com.android.car.ui.rotary.FocusArea
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/fragment_cl_error"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintVertical_chainStyle="packed">
+            <ImageView
+                android:id="@+id/error_logo"
+                android:background="@drawable/amazon_logo_circle"
+                android:focusable="false"
+                android:layout_width="@dimen/error_screen_logo_size"
+                android:layout_height="@dimen/error_screen_logo_size"
+                android:layout_marginTop="@dimen/error_screen_logo_margin_top"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+            <com.android.car.apps.common.UxrTextView
+                android:id="@+id/error_message"
+                android:layout_marginTop="@dimen/byd_fragment_error_message_margin_x"
+                app:layout_constraintBottom_toTopOf="@+id/error_button"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/error_logo"
+                style="@style/BydFullScreenErrorMessageStyle"/>
+            <com.android.car.apps.common.UxrButton
+                android:id="@+id/error_button"
+                android:layout_marginTop="@dimen/byd_fragment_error_button_margin_top"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/error_message"
+                style="@style/BydFullScreenErrorButtonStyle"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <com.android.car.apps.common.UxrTextView
+            android:gravity="center"
+            android:id="@+id/error_message_only"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/byd_fragment_error_message_margin_x"
+            app:layout_constraintVertical_chainStyle="packed"
+            style="@style/BydFullScreenErrorMessageStyle"/>
+    </com.android.car.ui.rotary.FocusArea>
+</androidx.constraintlayout.widget.ConstraintLayout>

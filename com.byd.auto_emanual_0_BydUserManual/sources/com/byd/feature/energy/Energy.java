@@ -1,0 +1,56 @@
+package com.byd.feature.energy;
+
+/* JADX INFO: loaded from: classes.dex */
+public final class Energy {
+    public static final String ENERGY_AVERAGE_CONSUMPTION_CURVE_MARK_FLAG = "0x35903817";
+    public static final String ENERGY_AVERAGE_CONSUMPTION_VERTICAL_AXIS_LIMIT = "0x3590583C";
+    public static final String ENERGY_BCM_STATE = "0x12D00012";
+    public static final String ENERGY_BCM_STATE_2nd = "0x12D0000E";
+    public static final String ENERGY_BCM_STATE_ALL = "0x9900020D";
+    public static final String ENERGY_CONSUMPTION_DISPLAY_NEW_OLD_SCHEME_CONFIG = "0x3590483E";
+    public static final String ENERGY_CONSUMPTION_DISTRIBUTION_AND_COMPARE_CONFIG = "0x35905826";
+    public static final String ENERGY_CURRENT_ITINERARY_AC_CONSUMPTION_PERCENT = "0x35903818";
+    public static final String ENERGY_CURRENT_ITINERARY_AVERAGE_ELECTRICITY_CONSUMPTION = "0x3590581B";
+    public static final String ENERGY_CURRENT_ITINERARY_AVERAGE_FUEL_CONSUMPTION = "0x3590481F";
+    public static final String ENERGY_CURRENT_ITINERARY_CONFIG = "0x3590381F";
+    public static final String ENERGY_CURRENT_ITINERARY_DRIVE_CONSUMPTION_PERCENT = "0x35903810";
+    public static final String ENERGY_CURRENT_ITINERARY_ELECTRIC_EQUIPMENT_CONSUMPTION_PERCENT = "0x35903821";
+    public static final String ENERGY_CURRENT_ITINERARY_EQUIVALENT_AVERAGE_ENERGY_CONSUMPTION = "0x35904833";
+    public static final String ENERGY_CURRENT_ITINERARY_OTHER_CONSUMPTION_PERCENT = "0x35903828";
+    public static final String ENERGY_DC_WORK_MODE = "0x36D00030";
+    public static final String ENERGY_EV_HEV_SHIFT_KEY = "0x4A900015";
+    public static final String ENERGY_FUNCTION_SMALL_VERSION_SET = "0x40904040";
+    public static final String ENERGY_FUNCTION_VERSION_NUMBER_STATUS = "0x4BD03825";
+    public static final String ENERGY_FUNCTION_VERSION_SET = "0x40904038";
+    public static final String ENERGY_HISTORY_CONSUMPTION_CONFIG_FLAG = "0x3590583A";
+    public static final String ENERGY_HISTORY_CONSUMPTION_STATISTICS_CONFIG = "0x35905838";
+    public static final String ENERGY_LOW_VOLTAGE_POWER_LIMIT = "0x3410003E";
+    public static final String ENERGY_LOW_VOLTAGE_SIDE_CURRENT = "0x36D00028";
+    public static final String ENERGY_LOW_VOLTAGE_SIDE_VOLTAGE = "0x36D00020";
+    public static final String ENERGY_MODE_INSTRUMENT = "0x34200024";
+    public static final String ENERGY_MODE_INSTRUMENT_50 = "0x34200028";
+    public static final String ENERGY_MODE_SET = "0x2BC00036";
+    public static final String ENERGY_OPERATION_MODE = "0x2120000E";
+    public static final String ENERGY_OPERATION_MODE_2nd = "0x3420001C";
+    public static final String ENERGY_OPERATION_MODE_SET = "0x2BC0001D";
+    public static final String ENERGY_OPERATION_MODE_ev = "0x3420001E";
+    public static final String ENERGY_POWER_GENERATION_STATE = "0x34F0000A";
+    public static final String ENERGY_POWER_GENERATION_VALUE = "0x2610001F";
+    public static final String ENERGY_RECENTLY_50KM_AC_CONSUMPTION_PERCENT = "0x35903838";
+    public static final String ENERGY_RECENTLY_50KM_AVERAGE_CONSUMPTION_SET = "0x3590681D";
+    public static final String ENERGY_RECENTLY_50KM_AVERAGE_ELECTRICITY_CONSUMPTION_SET = "0x35906830";
+    public static final String ENERGY_RECENTLY_50KM_CONFIG = "0x3590382F";
+    public static final String ENERGY_RECENTLY_50KM_DRIVE_CONSUMPTION_PERCENT = "0x35903831";
+    public static final String ENERGY_RECENTLY_50KM_ELECTRIC_EQUIPMENT_CONSUMPTION_PERCENT = "0x35903841";
+    public static final String ENERGY_RECENTLY_50KM_EQUIVALENT_CONSUMPTION_SET = "0x35906826";
+    public static final String ENERGY_RECENTLY_50KM_OTHER_CONSUMPTION_PERCENT = "0x35904810";
+    public static final String ENERGY_ROAD_SURFACE_KIND = "0x46C0003E";
+    public static final String ENERGY_ROAD_SURFACE_MODE = "0x24000033";
+    public static final String ENERGY_ROAD_SURFACE_MODE_2nd = "0x3420002d";
+    public static final String ENERGY_STATE = "0x34100018";
+    public static final String ENERGY_SUBTOTAL_ITINERARY_SIGNAL_RESET = "0x4C10C01F";
+    public static final String ENERGY_VEHICLE_CONFIGURATION_CODE = "0x4BD03828";
+    public static final String ENERGY_VEHICLE_CONFIGURATION_CODE_STATUS_SET = "0x40905043";
+    public static final String ENERGY_VEHICLE_CONFIG_CODE_SET = "0x40904018";
+    public static final String ENERGY_VERTICAL_AXIS_CONSUMPTION_INFO = "0x35905810";
+}

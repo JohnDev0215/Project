@@ -1,0 +1,6 @@
+signature,file,startline,startcol,endline,endcol,properties
+Lcom/google/android/collect/Sets;->newHashSet()Ljava/util/HashSet;,frameworks/base/core/java/com/google/android/collect/Sets.java,46,5,46,25,
+Lcom/google/android/collect/Sets;->newHashSet([Ljava/lang/Object;)Ljava/util/HashSet;,frameworks/base/core/java/com/google/android/collect/Sets.java,68,5,68,25,
+Lcom/google/android/collect/Sets;->newSortedSet()Ljava/util/SortedSet;,frameworks/base/core/java/com/google/android/collect/Sets.java,81,5,81,25,
+Lcom/google/android/collect/Sets;->newArraySet()Landroid/util/ArraySet;,frameworks/base/core/java/com/google/android/collect/Sets.java,102,5,102,25,
+Lcom/google/android/collect/Sets;->newArraySet([Ljava/lang/Object;)Landroid/util/ArraySet;,frameworks/base/core/java/com/google/android/collect/Sets.java,110,5,110,25,

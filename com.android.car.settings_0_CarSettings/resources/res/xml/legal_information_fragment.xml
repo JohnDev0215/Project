@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" xmlns:settings="http://schemas.android.com/apk/res-auto"
+    android:title="@string/legal_information"
+    android:key="@string/psk_legal_information">
+    <Preference
+        android:title="@string/terms_title"
+        android:key="terms"
+        settings:controller="com.android.car.settings.system.legal.TermsPreferenceController"/>
+    <Preference
+        android:title="@string/webview_license_title"
+        android:key="@string/pk_system_license_entry"
+        settings:controller="com.android.car.settings.system.legal.WebViewLicensePreferenceController"/>
+    <Preference
+        android:title="@string/settings_license_activity_title"
+        android:key="@string/pk_third_party_license_entry"
+        settings:controller="com.android.car.settings.system.legal.ThirdPartyLicensePreferenceController"/>
+</PreferenceScreen>

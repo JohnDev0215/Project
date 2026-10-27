@@ -1,0 +1,8 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/net/EthernetManager;->getConfiguration(Ljava/lang/String;)Landroid/net/IpConfiguration;,frameworks/base/core/java/android/net/EthernetManager.java,101,5,101,25,
+Landroid/net/EthernetManager;->setConfiguration(Ljava/lang/String;Landroid/net/IpConfiguration;)V,frameworks/base/core/java/android/net/EthernetManager.java,114,5,114,25,
+Landroid/net/EthernetManager;->isAvailable()Z,frameworks/base/core/java/android/net/EthernetManager.java,127,5,127,25,
+Landroid/net/EthernetManager;->isAvailable(Ljava/lang/String;)Z,frameworks/base/core/java/android/net/EthernetManager.java,138,5,138,25,
+Landroid/net/EthernetManager;->addListener(Landroid/net/EthernetManager$Listener;)V,frameworks/base/core/java/android/net/EthernetManager.java,153,5,153,25,
+Landroid/net/EthernetManager;->getAvailableInterfaces()[Ljava/lang/String;,frameworks/base/core/java/android/net/EthernetManager.java,172,5,172,25,
+Landroid/net/EthernetManager;->removeListener(Landroid/net/EthernetManager$Listener;)V,frameworks/base/core/java/android/net/EthernetManager.java,187,5,187,25,

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <public type="color" name="colorAccent" id="0x7f010000" />
+    <public type="color" name="colorPrimary" id="0x7f010001" />
+    <public type="color" name="colorPrimaryDark" id="0x7f010002" />
+    <public type="color" name="color_background" id="0x7f010003" />
+    <public type="dimen" name="surface_height" id="0x7f020000" />
+    <public type="dimen" name="surface_height_margin" id="0x7f020001" />
+    <public type="dimen" name="surface_width" id="0x7f020002" />
+    <public type="drawable" name="allmenu_carplay" id="0x7f030000" />
+    <public type="id" name="btn_connect" id="0x7f040000" />
+    <public type="id" name="btn_disconnect" id="0x7f040001" />
+    <public type="id" name="fragment" id="0x7f040002" />
+    <public type="id" name="layout_display_area" id="0x7f040003" />
+    <public type="id" name="surface_cluster_projection" id="0x7f040004" />
+    <public type="id" name="surface_projection" id="0x7f040005" />
+    <public type="id" name="textView" id="0x7f040006" />
+    <public type="layout" name="activity_display" id="0x7f050000" />
+    <public type="layout" name="connect_toast" id="0x7f050001" />
+    <public type="layout" name="fragment_display_surface" id="0x7f050002" />
+    <public type="layout" name="fragment_display_surface_view_area" id="0x7f050003" />
+    <public type="layout" name="layout_cluster_navi" id="0x7f050004" />
+    <public type="string" name="app_name" id="0x7f060000" />
+    <public type="string" name="carplay_connect_canel" id="0x7f060001" />
+    <public type="string" name="carplay_connect_ok" id="0x7f060002" />
+    <public type="string" name="carplay_connect_title" id="0x7f060003" />
+    <public type="string" name="carplay_nocapabality" id="0x7f060004" />
+    <public type="style" name="AppTheme" id="0x7f070000" />
+    <public type="style" name="CarplayToastConnect" id="0x7f070001" />
+    <public type="style" name="DisplayTheme" id="0x7f070002" />
+    <public type="style" name="notAnimation" id="0x7f070003" />
+</resources>

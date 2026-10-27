@@ -1,0 +1,4 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/database/AbstractWindowedCursor;->closeWindow()V,frameworks/base/core/java/android/database/AbstractWindowedCursor.java,184,5,184,25,
+Landroid/database/AbstractWindowedCursor;->clearOrCreateWindow(Ljava/lang/String;)V,frameworks/base/core/java/android/database/AbstractWindowedCursor.java,199,5,199,25,
+Landroid/database/AbstractWindowedCursor;->onDeactivateOrClose()V,frameworks/base/core/java/android/database/AbstractWindowedCursor.java,210,5,210,25,

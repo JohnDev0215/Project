@@ -1,0 +1,10 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/graphics/drawable/Icon;->mType:I,frameworks/base/graphics/java/android/graphics/drawable/Icon.java,111,5,111,88,maxTargetSdk=28&trackingBug=115609023L
+Landroid/graphics/drawable/Icon;->mString1:Ljava/lang/String;,frameworks/base/graphics/java/android/graphics/drawable/Icon.java,130,5,130,88,maxTargetSdk=28&trackingBug=115609023L
+Landroid/graphics/drawable/Icon;->getBitmap()Landroid/graphics/Bitmap;,frameworks/base/graphics/java/android/graphics/drawable/Icon.java,156,5,156,25,
+Landroid/graphics/drawable/Icon;->getDataLength()I,frameworks/base/graphics/java/android/graphics/drawable/Icon.java,172,5,172,25,
+Landroid/graphics/drawable/Icon;->getDataOffset()I,frameworks/base/graphics/java/android/graphics/drawable/Icon.java,187,5,187,88,maxTargetSdk=28&trackingBug=115609023L
+Landroid/graphics/drawable/Icon;->getDataBytes()[B,frameworks/base/graphics/java/android/graphics/drawable/Icon.java,202,5,202,88,maxTargetSdk=28&trackingBug=115609023L
+Landroid/graphics/drawable/Icon;->getResources()Landroid/content/res/Resources;,frameworks/base/graphics/java/android/graphics/drawable/Icon.java,216,5,216,88,maxTargetSdk=28&trackingBug=115609023L
+Landroid/graphics/drawable/Icon;->createWithResource(Landroid/content/res/Resources;I)Landroid/graphics/drawable/Icon;,frameworks/base/graphics/java/android/graphics/drawable/Icon.java,600,5,600,25,
+Landroid/graphics/drawable/Icon;->hasTint()Z,frameworks/base/graphics/java/android/graphics/drawable/Icon.java,772,5,772,25,

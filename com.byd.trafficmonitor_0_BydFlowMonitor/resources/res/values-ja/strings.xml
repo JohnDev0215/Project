@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="abc_action_bar_home_description">ホームに戻る</string>
+    <string name="abc_action_bar_up_description">前に戻る</string>
+    <string name="abc_action_menu_overflow_description">その他のオプション</string>
+    <string name="abc_action_mode_done">完了</string>
+    <string name="abc_activity_chooser_view_see_all">すべて表示</string>
+    <string name="abc_activitychooserview_choose_application">アプリの選択</string>
+    <string name="abc_capital_off">OFF</string>
+    <string name="abc_capital_on">ON</string>
+    <string name="abc_menu_alt_shortcut_label">Alt+</string>
+    <string name="abc_menu_ctrl_shortcut_label">Ctrl+</string>
+    <string name="abc_menu_delete_shortcut_label">Delete</string>
+    <string name="abc_menu_enter_shortcut_label">Enter</string>
+    <string name="abc_menu_function_shortcut_label">Function+</string>
+    <string name="abc_menu_meta_shortcut_label">Meta+</string>
+    <string name="abc_menu_shift_shortcut_label">Shift+</string>
+    <string name="abc_menu_space_shortcut_label">Space</string>
+    <string name="abc_menu_sym_shortcut_label">Sym+</string>
+    <string name="abc_prepend_shortcut_label">Menu+</string>
+    <string name="abc_search_hint">検索…</string>
+    <string name="abc_searchview_description_clear">検索キーワードを削除</string>
+    <string name="abc_searchview_description_query">検索キーワード</string>
+    <string name="abc_searchview_description_search">検索</string>
+    <string name="abc_searchview_description_submit">検索キーワードを送信</string>
+    <string name="abc_searchview_description_voice">音声検索</string>
+    <string name="abc_shareactionprovider_share_with">共有</string>
+    <string name="abc_shareactionprovider_share_with_application">%sと共有</string>
+    <string name="abc_toolbar_collapse_description">折りたたむ</string>
+    <string name="app_name">データモニター</string>
+    <string name="flow_5g_des">役立つ情報：上記の情報は参考用で変更される可能性があります。詳しくは月々の請求書をご覧ください</string>
+    <string name="flow_5g_remain">データが利用可能です</string>
+    <string name="flow_expire_time">有効期限：\t</string>
+    <string name="flow_month_total">月間データパック</string>
+    <string name="flow_month_use">今月</string>
+    <string name="flow_quxiang">データ使用量</string>
+    <string name="flow_switch">データ ON/OFF</string>
+    <string name="flow_today_use">その日の使用</string>
+    <string name="flow_where_about_title">データ使用量</string>
+    <string name="flow_where_app">アプリ</string>
+    <string name="flow_where_app_down">ダウンロード</string>
+    <string name="flow_where_app_up">アップロード</string>
+    <string name="search_menu_title">検索</string>
+    <string name="status_bar_notification_info_overflow">999+</string>
+</resources>

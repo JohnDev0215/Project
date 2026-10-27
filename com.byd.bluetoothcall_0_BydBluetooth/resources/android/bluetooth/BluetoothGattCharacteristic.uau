@@ -1,0 +1,5 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/bluetooth/BluetoothGattCharacteristic;->mInstance:I,frameworks/base/core/java/android/bluetooth/BluetoothGattCharacteristic.java,186,5,186,25,
+Landroid/bluetooth/BluetoothGattCharacteristic;->mService:Landroid/bluetooth/BluetoothGattService;,frameworks/base/core/java/android/bluetooth/BluetoothGattCharacteristic.java,223,5,223,25,
+Landroid/bluetooth/BluetoothGattCharacteristic;->setService(Landroid/bluetooth/BluetoothGattService;)V,frameworks/base/core/java/android/bluetooth/BluetoothGattCharacteristic.java,387,5,387,25,
+Landroid/bluetooth/BluetoothGattCharacteristic;->setKeySize(I)V,frameworks/base/core/java/android/bluetooth/BluetoothGattCharacteristic.java,471,5,471,25,

@@ -1,0 +1,13 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/view/MotionEvent;->HISTORY_CURRENT:I,frameworks/base/core/java/android/view/MotionEvent.java,1486,5,1486,25,
+Landroid/view/MotionEvent;->mNativePtr:J,frameworks/base/core/java/android/view/MotionEvent.java,1519,5,1519,63,maxTargetSdk=28
+Landroid/view/MotionEvent;->nativeGetRawAxisValue(JIII)F,frameworks/base/core/java/android/view/MotionEvent.java,1553,5,1553,25,
+Landroid/view/MotionEvent;->obtain()Landroid/view/MotionEvent;,frameworks/base/core/java/android/view/MotionEvent.java,1652,5,1652,25,
+Landroid/view/MotionEvent;->copy()Landroid/view/MotionEvent;,frameworks/base/core/java/android/view/MotionEvent.java,2004,5,2004,25,
+Landroid/view/MotionEvent;->scale(F)V,frameworks/base/core/java/android/view/MotionEvent.java,2037,5,2037,25,
+Landroid/view/MotionEvent;->setDownTime(J)V,frameworks/base/core/java/android/view/MotionEvent.java,2199,5,2199,25,
+Landroid/view/MotionEvent;->getEventTimeNano()J,frameworks/base/core/java/android/view/MotionEvent.java,2231,5,2231,25,
+Landroid/view/MotionEvent;->setActionButton(I)V,frameworks/base/core/java/android/view/MotionEvent.java,2650,5,2650,25,
+Landroid/view/MotionEvent;->addBatch(Landroid/view/MotionEvent;)Z,frameworks/base/core/java/android/view/MotionEvent.java,3309,5,3309,25,
+Landroid/view/MotionEvent;->getPointerIdBits()I,frameworks/base/core/java/android/view/MotionEvent.java,3425,5,3425,25,
+Landroid/view/MotionEvent;->split(I)Landroid/view/MotionEvent;,frameworks/base/core/java/android/view/MotionEvent.java,3439,5,3439,25,

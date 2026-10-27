@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="color_gray">#b3dae1eb</color>
+    <color name="color_no_new_version">#b3dae1eb</color>
+    <color name="dialog_text_gray">#d9dae1eb</color>
+    <color name="dialog_text_gray_press">#8ddae1eb</color>
+    <color name="dialog_text_gray_unenable">#62dae1eb</color>
+    <color name="dialog_text_white">#ffffffff</color>
+    <color name="dialog_text_white_press">#a6ffffff</color>
+    <color name="dialog_text_white_unenable">#73dae1eb</color>
+    <color name="divider">#12ffffff</color>
+    <color name="gradient_bg_frame_end_color">#f51c252e</color>
+    <color name="gradient_bg_frame_start_color">#f50f1821</color>
+    <color name="progress_bar_background_color">#403e4a59</color>
+    <color name="progress_bar_progress_color">#ffdae1eb</color>
+    <color name="solid_button_agree_bg_disable">#662270be</color>
+    <color name="solid_button_agree_bg_enable">#ff2270be</color>
+    <color name="solid_button_normal">#406a8497</color>
+    <color name="solid_seek_bar_progress_bg_color">#406a8497</color>
+    <color name="solid_seek_bar_progress_progress_color">#ffdae1eb</color>
+    <color name="stroke_bg_frame_color">#1fb3d0e6</color>
+    <color name="text_button_agree_color_disable">#80ffffff</color>
+    <color name="text_main">#ffdae1eb</color>
+    <color name="text_setting_item">#ffffff</color>
+    <color name="text_tip">#8cdae1eb</color>
+    <color name="text_title">#ffdae1eb</color>
+</resources>

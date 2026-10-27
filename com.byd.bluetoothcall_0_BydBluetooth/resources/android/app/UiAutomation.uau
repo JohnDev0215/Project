@@ -1,0 +1,4 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/app/UiAutomation;-><init>(Landroid/os/Looper;Landroid/app/IUiAutomationConnection;)V,frameworks/base/core/java/android/app/UiAutomation.java,200,5,200,88,maxTargetSdk=28&trackingBug=115609023L
+Landroid/app/UiAutomation;->connect()V,frameworks/base/core/java/android/app/UiAutomation.java,217,5,217,88,maxTargetSdk=28&trackingBug=115609023L
+Landroid/app/UiAutomation;->disconnect()V,frameworks/base/core/java/android/app/UiAutomation.java,289,5,289,88,maxTargetSdk=28&trackingBug=115609023L

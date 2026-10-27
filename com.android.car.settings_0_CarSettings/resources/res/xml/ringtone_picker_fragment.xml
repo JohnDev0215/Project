@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" xmlns:settings="http://schemas.android.com/apk/res-auto" android:key="@string/psk_sound_ringtone_picker">
+    <com.android.car.settings.common.LogicalPreferenceGroup
+        android:key="@string/pk_ringtone_picker"
+        settings:controller="com.android.car.settings.sound.RingtonePickerPreferenceController"/>
+</PreferenceScreen>

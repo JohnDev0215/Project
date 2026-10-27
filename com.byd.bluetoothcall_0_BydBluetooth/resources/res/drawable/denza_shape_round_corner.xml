@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/ts_goto_connect_btn_bg"/>
+    <stroke
+        android:width="@dimen/dimens_1"
+        android:color="#1a6a8497"/>
+    <corners android:radius="@dimen/dimens_4"/>
+</shape>

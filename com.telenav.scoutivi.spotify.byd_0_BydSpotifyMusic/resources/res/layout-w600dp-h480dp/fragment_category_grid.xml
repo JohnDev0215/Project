@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:tag="layout-w600dp-h480dp/fragment_category_grid_0"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.vivid.spotify.common.ui.shimmer.ShimmerRecyclerView
+        android:scrollbarSize="@dimen/scrollbar_width"
+        android:scrollbarThumbVertical="?attr/common_scroll_bar_bg"
+        android:scrollbarStyle="outsideOverlay"
+        android:id="@+id/list"
+        android:tag="binding_1"
+        android:paddingBottom="@dimen/now_playing_bar_height"
+        android:scrollbars="vertical"
+        android:clipToPadding="false"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:verticalScrollbarPosition="defaultPosition"
+        android:paddingStart="@dimen/category_grid_rv_margin_start"
+        android:paddingEnd="@dimen/media_cover_grid_padding_end"
+        app:limit_item_size="true"
+        app:pagination_on="false"
+        app:shimmer_grid_child_count="@integer/list_span_count"
+        app:shimmer_layout="@layout/media_cover_item_viewholder"
+        app:shimmer_layout_manager_type="grid"
+        app:view_offset_size="@dimen/category_grid_rv_margin_end"
+        style="@style/scroll_bar_style"/>
+    <include layout="@layout/common_error_layout"/>
+</RelativeLayout>

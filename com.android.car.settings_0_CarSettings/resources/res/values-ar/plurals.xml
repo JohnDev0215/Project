@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="billing_cycle_days_left">
+        <item quantity="zero">يتبقى %d يوم.</item>
+        <item quantity="one">يتبقى %d يوم.</item>
+        <item quantity="two">يتبقى يومان (%d).</item>
+        <item quantity="few">يتبقى %d أيام.</item>
+        <item quantity="many">يتبقى %d يومًا.</item>
+        <item quantity="other">يتبقى %d يوم.</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_letters">
+        <item quantity="zero">يجب أن تحتوي كلمة المرور على %d حرف على الأقل.</item>
+        <item quantity="one">يجب أن تحتوي كلمة المرور على حرف واحد على الأقل.</item>
+        <item quantity="two">يجب أن تحتوي كلمة المرور على حرفين (%d) على الأقل.</item>
+        <item quantity="few">يجب أن تحتوي كلمة المرور على %d أحرف على الأقل.</item>
+        <item quantity="many">يجب أن تحتوي كلمة المرور على %d حرفًا على الأقل.</item>
+        <item quantity="other">يجب أن تحتوي كلمة المرور على %d حرف على الأقل.</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_lowercase">
+        <item quantity="zero">يجب أن تحتوي كلمة المرور على %d حرف صغير على الأقل.</item>
+        <item quantity="one">يجب أن تحتوي كلمة المرور على حرف صغير واحد على الأقل.</item>
+        <item quantity="two">يجب أن تحتوي كلمة المرور على حرفين صغيرين (%d) على الأقل.</item>
+        <item quantity="few">يجب أن تحتوي كلمة المرور على %d أحرف صغيرة على الأقل.</item>
+        <item quantity="many">يجب أن تحتوي كلمة المرور على %d حرفًا صغيرًا على الأقل.</item>
+        <item quantity="other">يجب أن تحتوي كلمة المرور على %d حرف صغير على الأقل.</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_nonletter">
+        <item quantity="zero">يجب أن تحتوي كلمة المرور على %d حرف ليس من الأحرف الأبجدية على الأقل.</item>
+        <item quantity="one">يجب أن تحتوي كلمة المرور على حرف واحد ليس من الأحرف الأبجدية على الأقل.</item>
+        <item quantity="two">يجب أن تحتوي كلمة المرور على حرفين (%d) ليسا من الأحرف الأبجدية على الأقل.</item>
+        <item quantity="few">يجب أن تحتوي كلمة المرور على %d أحرف ليست من الأحرف الأبجدية على الأقل.</item>
+        <item quantity="many">يجب أن تحتوي كلمة المرور على %d حرفًا ليس من الأحرف الأبجدية على الأقل.</item>
+        <item quantity="other">يجب أن تحتوي كلمة المرور على %d حرف ليس من الأحرف الأبجدية على الأقل.</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_numeric">
+        <item quantity="zero">يجب أن تحتوي كلمة المرور على %d رقم عددي على الأقل.</item>
+        <item quantity="one">يجب أن تحتوي كلمة المرور على رقم عددي واحد على الأقل.</item>
+        <item quantity="two">يجب أن تحتوي كلمة المرور على رقمين عددين (%d) على الأقل.</item>
+        <item quantity="few">يجب أن تحتوي كلمة المرور على %d أرقام عددية على الأقل.</item>
+        <item quantity="many">يجب أن تحتوي كلمة المرور على %d رقمًا عدديًا على الأقل.</item>
+        <item quantity="other">يجب أن تحتوي كلمة المرور على %d رقم عددي على الأقل.</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_symbols">
+        <item quantity="zero">يجب أن تحتوي كلمة المرور على %d رمز خاص على الأقل.</item>
+        <item quantity="one">يجب أن تحتوي كلمة المرور على رمز خاص واحد على الأقل.</item>
+        <item quantity="two">يجب أن تحتوي كلمة المرور على رمزين خاصين (%d) على الأقل.</item>
+        <item quantity="few">يجب أن تحتوي كلمة المرور على %d رموز خاصة على الأقل.</item>
+        <item quantity="many">يجب أن تحتوي كلمة المرور على %d رمزًا خاصًا على الأقل.</item>
+        <item quantity="other">يجب أن تحتوي كلمة المرور على %d رمز خاص على الأقل.</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_uppercase">
+        <item quantity="zero">يجب أن تحتوي كلمة المرور على %d حرف كبير على الأقل.</item>
+        <item quantity="one">يجب أن تحتوي كلمة المرور على حرف كبير واحد على الأقل.</item>
+        <item quantity="two">يجب أن تحتوي كلمة المرور على حرفين كبيرين (%d) على الأقل.</item>
+        <item quantity="few">يجب أن تحتوي كلمة المرور على %d أحرف كبيرة على الأقل.</item>
+        <item quantity="many">يجب أن تحتوي كلمة المرور على %d حرفًا كبيرًا على الأقل.</item>
+        <item quantity="other">يجب أن تحتوي كلمة المرور على %d حرف كبير على الأقل.</item>
+    </plurals>
+    <plurals name="mobile_network_summary_count">
+        <item quantity="zero">%1$d شريحة SIM</item>
+        <item quantity="one">%1$d شريحة SIM</item>
+        <item quantity="two">شريحتا SIM %1$d</item>
+        <item quantity="few">%1$d شرائح SIM</item>
+        <item quantity="many">%1$d شريحة SIM</item>
+        <item quantity="other">%1$d شريحة SIM</item>
+    </plurals>
+    <plurals name="runtime_permissions_additional_count">
+        <item quantity="zero">%d إذن إضافي</item>
+        <item quantity="one">إذن واحد إضافي (%d)</item>
+        <item quantity="two">إذنان (%d) إضافيان</item>
+        <item quantity="few">%d أذونات إضافية</item>
+        <item quantity="many">%d إذنًا إضافيًا</item>
+        <item quantity="other">%d إذن إضافي</item>
+    </plurals>
+    <plurals name="show_dev_countdown">
+        <item quantity="zero">لا يفصلك الآن عن الوصول إلى مرحلة مطوّري البرامج سوى %1$d خطوة.</item>
+        <item quantity="one">لا يفصلك الآن عن الوصول إلى مرحلة مطوّري البرامج سوى خطوة (%1$d).</item>
+        <item quantity="two">لا يفصلك الآن عن الوصول إلى مرحلة مطوّري البرامج سوى خطوتين (%1$d).</item>
+        <item quantity="few">لا يفصلك الآن عن الوصول إلى مرحلة مطوّري البرامج سوى %1$d خطوات.</item>
+        <item quantity="many">لا يفصلك الآن عن الوصول إلى مرحلة مطوّري البرامج سوى %1$d خطوة.</item>
+        <item quantity="other">لا يفصلك الآن عن الوصول إلى مرحلة مطوّري البرامج سوى %1$d خطوة.</item>
+    </plurals>
+    <plurals name="user_limit_reached_message">
+        <item quantity="zero">يمكنك إنشاء ما يصل إلى %d مستخدم.</item>
+        <item quantity="one">يمكن إنشاء مستخدم واحد فقط.</item>
+        <item quantity="two">يمكنك إنشاء ما يصل إلى مستخدمينِ (%d).</item>
+        <item quantity="few">يمكنك إنشاء ما يصل إلى %d مستخدمين.</item>
+        <item quantity="many">يمكنك إنشاء ما يصل إلى %d مستخدمًا.</item>
+        <item quantity="other">يمكنك إنشاء ما يصل إلى %d مستخدم.</item>
+    </plurals>
+    <plurals name="wifi_tether_connected_summary">
+        <item quantity="zero">‏عدد الأجهزة المتصلة ‎%1$d</item>
+        <item quantity="one">‏عدد الأجهزة المتصلة ‎%1$d</item>
+        <item quantity="two">‏عدد الأجهزة المتصلة ‎%1$d</item>
+        <item quantity="few">‏عدد الأجهزة المتصلة ‎%1$d</item>
+        <item quantity="many">‏عدد الأجهزة المتصلة ‎%1$d</item>
+        <item quantity="other">‏عدد الأجهزة المتصلة ‎%1$d</item>
+    </plurals>
+</resources>

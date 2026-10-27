@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:color="@color/byd_bg_error_btn_text_restricted_color"
+        app:state_ux_restricted="true"/>
+    <item
+        android:state_pressed="true"
+        android:color="@color/byd_bg_error_btn_text_pressed_color"
+        app:state_ux_restricted="false"/>
+    <item
+        android:state_pressed="false"
+        android:color="@color/byd_bg_error_btn_text_color"
+        app:state_ux_restricted="false"/>
+    <item android:color="@color/byd_bg_error_btn_text_color"/>
+</selector>

@@ -1,0 +1,4 @@
+signature,file,startline,startcol,endline,endcol,properties
+Lcom/android/internal/util/IndentingPrintWriter;-><init>(Ljava/io/Writer;Ljava/lang/String;)V,frameworks/base/core/java/com/android/internal/util/IndentingPrintWriter.java,52,5,52,25,
+Lcom/android/internal/util/IndentingPrintWriter;->increaseIndent()Lcom/android/internal/util/IndentingPrintWriter;,frameworks/base/core/java/com/android/internal/util/IndentingPrintWriter.java,78,5,78,25,
+Lcom/android/internal/util/IndentingPrintWriter;->decreaseIndent()Lcom/android/internal/util/IndentingPrintWriter;,frameworks/base/core/java/com/android/internal/util/IndentingPrintWriter.java,85,5,85,25,

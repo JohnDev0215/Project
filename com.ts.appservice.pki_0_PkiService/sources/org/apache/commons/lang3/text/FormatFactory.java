@@ -1,0 +1,11 @@
+package org.apache.commons.lang3.text;
+
+import java.text.Format;
+import java.util.Locale;
+
+/* JADX INFO: compiled from: caradapter-bug */
+/* JADX INFO: loaded from: classes.dex */
+@Deprecated
+public interface FormatFactory {
+    Format getFormat(String str, String str2, Locale locale);
+}

@@ -1,0 +1,8 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/os/BatteryStats$Uid$Proc;-><init>()V,frameworks/base/core/java/android/os/BatteryStats.java,1016,13,1016,71,maxTargetSdk=28
+Landroid/os/BatteryStats$Uid$Proc;->getUserTime(I)J,frameworks/base/core/java/android/os/BatteryStats.java,1046,13,1046,33,
+Landroid/os/BatteryStats$Uid$Proc;->getSystemTime(I)J,frameworks/base/core/java/android/os/BatteryStats.java,1054,13,1054,33,
+Landroid/os/BatteryStats$Uid$Proc;->getStarts(I)I,frameworks/base/core/java/android/os/BatteryStats.java,1062,13,1062,33,
+Landroid/os/BatteryStats$Uid$Proc;->getForegroundTime(I)J,frameworks/base/core/java/android/os/BatteryStats.java,1084,13,1084,33,
+Landroid/os/BatteryStats$Uid$Proc;->countExcessivePowers()I,frameworks/base/core/java/android/os/BatteryStats.java,1087,13,1087,33,
+Landroid/os/BatteryStats$Uid$Proc;->getExcessivePower(I)Landroid/os/BatteryStats$Uid$Proc$ExcessivePower;,frameworks/base/core/java/android/os/BatteryStats.java,1090,13,1090,33,

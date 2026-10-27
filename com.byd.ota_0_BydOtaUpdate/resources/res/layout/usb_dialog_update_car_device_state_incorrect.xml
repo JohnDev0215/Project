@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/usb_shape_dialog_bg"
+    android:layout_width="@dimen/dp_560"
+    android:layout_height="@dimen/dp_406">
+    <TextView
+        android:id="@+id/dialog_title"
+        style="@style/usb_dialog_title"/>
+    <TextView
+        android:layout_below="@+id/dialog_title"
+        style="@style/usb_dialog_title_divider"/>
+    <TextView
+        android:textSize="@dimen/sp_20"
+        android:textColor="?attr/usb_normal_text_color"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/usb_update_car_device_state_incorrect"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="@dimen/dp_48"/>
+    <Button
+        android:id="@+id/normal_dialog_i_know"
+        android:text="@string/usb_confirm"
+        style="@style/actionBtn"/>
+</RelativeLayout>

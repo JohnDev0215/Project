@@ -1,0 +1,8 @@
+package com.android.settingslib.core.lifecycle.events;
+
+import androidx.preference.PreferenceScreen;
+
+/* JADX INFO: loaded from: classes6.dex */
+public interface SetPreferenceScreen {
+    void setPreferenceScreen(PreferenceScreen preferenceScreen);
+}

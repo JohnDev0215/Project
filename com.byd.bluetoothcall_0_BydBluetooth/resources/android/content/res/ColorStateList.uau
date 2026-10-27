@@ -1,0 +1,11 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/content/res/ColorStateList;->mFactory:Landroid/content/res/ColorStateList$ColorStateListFactory;,frameworks/base/core/java/android/content/res/ColorStateList.java,135,5,135,25,
+Landroid/content/res/ColorStateList;->mStateSpecs:[[I,frameworks/base/core/java/android/content/res/ColorStateList.java,141,5,141,25,
+Landroid/content/res/ColorStateList;->mColors:[I,frameworks/base/core/java/android/content/res/ColorStateList.java,143,5,143,25,
+Landroid/content/res/ColorStateList;->mDefaultColor:I,frameworks/base/core/java/android/content/res/ColorStateList.java,145,5,145,25,
+Landroid/content/res/ColorStateList;-><init>()V,frameworks/base/core/java/android/content/res/ColorStateList.java,149,5,149,25,
+Landroid/content/res/ColorStateList;->canApplyTheme()Z,frameworks/base/core/java/android/content/res/ColorStateList.java,402,5,402,25,
+Landroid/content/res/ColorStateList;->obtainForTheme(Landroid/content/res/Resources$Theme;)Landroid/content/res/ColorStateList;,frameworks/base/core/java/android/content/res/ColorStateList.java,483,5,483,25,
+Landroid/content/res/ColorStateList;->getStates()[[I,frameworks/base/core/java/android/content/res/ColorStateList.java,589,5,589,25,
+Landroid/content/res/ColorStateList;->getColors()[I,frameworks/base/core/java/android/content/res/ColorStateList.java,601,5,601,25,
+Landroid/content/res/ColorStateList;->onColorsChanged()V,frameworks/base/core/java/android/content/res/ColorStateList.java,646,5,646,25,

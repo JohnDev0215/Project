@@ -1,0 +1,3 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/app/KeyguardManager;->isDeviceLocked(I)Z,frameworks/base/core/java/android/app/KeyguardManager.java,508,5,508,88,maxTargetSdk=28&trackingBug=115609023L
+Landroid/app/KeyguardManager;->isDeviceSecure(I)Z,frameworks/base/core/java/android/app/KeyguardManager.java,534,5,534,25,

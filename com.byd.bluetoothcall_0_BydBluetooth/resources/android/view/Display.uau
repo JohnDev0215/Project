@@ -1,0 +1,11 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/view/Display;->mDisplayInfo:Landroid/view/DisplayInfo;,frameworks/base/core/java/android/view/Display.java,90,5,90,25,
+Landroid/view/Display;->TYPE_UNKNOWN:I,frameworks/base/core/java/android/view/Display.java,276,5,276,25,
+Landroid/view/Display;->TYPE_EXTERNAL:I,frameworks/base/core/java/android/view/Display.java,291,5,291,25,
+Landroid/view/Display;->TYPE_WIFI:I,frameworks/base/core/java/android/view/Display.java,299,5,299,25,
+Landroid/view/Display;->TYPE_VIRTUAL:I,frameworks/base/core/java/android/view/Display.java,314,5,314,25,
+Landroid/view/Display;->getDisplayInfo(Landroid/view/DisplayInfo;)Z,frameworks/base/core/java/android/view/Display.java,550,5,550,63,maxTargetSdk=28
+Landroid/view/Display;->getType()I,frameworks/base/core/java/android/view/Display.java,599,5,599,25,
+Landroid/view/Display;->getOwnerPackageName()Ljava/lang/String;,frameworks/base/core/java/android/view/Display.java,638,5,638,25,
+Landroid/view/Display;->getDisplayAdjustments()Landroid/view/DisplayAdjustments;,frameworks/base/core/java/android/view/Display.java,649,5,649,25,
+Landroid/view/Display;->getMaximumSizeDimension()I,frameworks/base/core/java/android/view/Display.java,778,5,778,25,

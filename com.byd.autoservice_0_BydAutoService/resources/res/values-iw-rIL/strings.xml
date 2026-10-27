@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">BydAutoService</string>
+    <string name="audio_muted">מערכת השמע הושתקה</string>
+    <string name="audio_removed">ההשתקה בוטלה</string>
+    <string name="btn_comfirm">OK</string>
+    <string name="btn_reset">איפוס</string>
+    <string name="call_mode">בשיחה. הפעולה מושבתת</string>
+    <string name="cancel">ביטול</string>
+    <string name="carplay_androidauto_land">המסך הנוכחי אינו תומך בהחלפת מסך</string>
+    <string name="dialog_title_user">הגדרות לחצן מותאמות אישית</string>
+    <string name="dialog_title_user_left">הגדרות לחצן מותאם אישית שמאלי</string>
+    <string name="dialog_title_user_right">הגדרות כפתור מותאם אישית ימני</string>
+    <string name="mode_am_music">AM</string>
+    <string name="mode_amazon_music">אמזון מוזיקה</string>
+    <string name="mode_bt_music">מוזיקה</string>
+    <string name="mode_button_androidauto">אנדרואיד אוטומטי</string>
+    <string name="mode_button_carplay">Apple CarPlay</string>
+    <string name="mode_dab_music">DAB</string>
+    <string name="mode_fm_music">FM</string>
+    <string name="mode_local_music">המדיה המקומית</string>
+    <string name="mode_music">מקומי</string>
+    <string name="mode_sd">כרטיס זיכרון SD</string>
+    <string name="mode_spotify_music">Spotify</string>
+    <string name="mode_usb">USB</string>
+    <string name="mode_usb_music">מוזיקה בכונן הבזק מסוג USB</string>
+    <string name="mode_usb_text">לא זוהה USB</string>
+    <string name="mode_usb_video">וידאו של כונן הבזק מסוג USB</string>
+    <string name="radio_button_ac">A/C</string>
+    <string name="radio_button_music">מוזיקה</string>
+    <string name="radio_button_navi_home">בית</string>
+    <string name="radio_button_play_pause">השהה/הפעל את המדיה</string>
+    <string name="radio_button_radio">רדיו</string>
+    <string name="radio_button_rotate">לסובב את המסך המרכז</string>
+    <string name="radio_button_source">החלף את מקור אודיו המדיה</string>
+    <string name="reset_country">המערכת בתהליך הגדרה. יש להמתין</string>
+    <string name="restart_efect">תצורת הפונקציה הוגדרה בהצלחה. הפעל מחדש כדי להפעיל אותה!</string>
+    <string name="restart_now">הפעל מחדש עכשיו</string>
+    <string name="restart_time">ספירה לאחר עבור ההפעלה מחדש</string>
+    <string name="warring_mode">אנא השלם את המדריך לפני השימוש ב-IVI!</string>
+    <string name="warring_navi_mode">המצב הנוכחי אינו תומך במבצע!</string>
+    <string name="warring_power">פונקציה זו זמינה רק ברמת הילוך P</string>
+</resources>

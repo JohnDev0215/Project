@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="@dimen/classify_item_width"
+    android:layout_height="@dimen/classify_item_height"
+    android:layout_marginBottom="@dimen/classify_item_interval"
+    android:layout_marginEnd="@dimen/classify_item_interval">
+    <include
+        android:id="@+id/video_view_item"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/dp_15"
+        android:layout_marginStart="@dimen/classify_item_outline_size"
+        layout="@layout/content_item"/>
+    <ImageView
+        android:id="@+id/foreground"
+        android:background="@drawable/classify_item_background"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</RelativeLayout>

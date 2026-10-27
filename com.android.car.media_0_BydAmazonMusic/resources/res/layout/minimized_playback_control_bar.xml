@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/ll_mini_playback_control_bar"
+    android:background="@drawable/minimized_control_bar_background"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ProgressBar
+        android:id="@+id/linear_progress_bar"
+        android:background="@null"
+        android:focusable="false"
+        android:clickable="false"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/linear_progress_bar_height"
+        android:progressDrawable="@drawable/bg_linear_progress_bar"
+        android:splitTrack="false"
+        style="?android:attr/progressBarStyleHorizontal"/>
+    <com.android.car.apps.common.MinimizedControlBar
+        android:id="@+id/minimized_control_bar"
+        style="@style/MinimizedControlBar"/>
+</LinearLayout>

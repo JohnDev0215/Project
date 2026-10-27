@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="?attr/land_activity_bg"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/include_tab_layout"
+        android:layout_width="@dimen/dimens_249"
+        android:layout_height="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        layout="@layout/bt_tablehost_layout"/>
+    <FrameLayout
+        android:id="@+id/contacts_search_layout"
+        android:visibility="gone"
+        android:layout_width="@dimen/dimens_974"
+        android:layout_height="@dimen/dimens_410"
+        android:layout_marginTop="@dimen/dimens_12"
+        android:layout_marginBottom="@dimen/dimens_156"
+        app:layout_constraintLeft_toRightOf="@+id/include_tab_layout"
+        app:layout_constraintTop_toTopOf="parent">
+        <include layout="@layout/search_contacts_layout"/>
+    </FrameLayout>
+    <com.byd.bluetoothcall.view.ui.CustomViewPager
+        android:id="@+id/view_pager"
+        android:visibility="visible"
+        android:layout_width="@dimen/dimens_524"
+        android:layout_height="@dimen/dimens_448"
+        app:layout_constraintLeft_toRightOf="@+id/include_tab_layout"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <include
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/view_pager"
+        app:layout_constraintLeft_toRightOf="@+id/view_pager"
+        app:layout_constraintRight_toRightOf="parent"
+        layout="@layout/dial_keyboard_layout"/>
+    <include
+        android:id="@+id/not_connect_layout"
+        layout="@layout/bt_not_connect_layout"/>
+    <include
+        android:id="@+id/contacts_permission_layout"
+        android:visibility="gone"
+        layout="@layout/sync_contacts_permission_tips"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

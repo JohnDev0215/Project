@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include
+        android:id="@+id/obd_cheack_imei"
+        android:visibility="visible"
+        layout="@layout/obd_cheack_imei_layout"/>
+    <include
+        android:id="@+id/obd_main_view"
+        android:visibility="gone"
+        layout="@layout/obd_main_layout"/>
+    <include
+        android:id="@+id/obd_data_mapping_view"
+        android:visibility="gone"
+        layout="@layout/obd_data_mapping_layout"/>
+    <include
+        android:id="@+id/obd_network_segment_mapping_view"
+        android:visibility="gone"
+        layout="@layout/obd_network_segment_mapping_layout"/>
+    <include
+        android:id="@+id/obd_id_segment_mapping_view"
+        android:visibility="gone"
+        layout="@layout/obd_id_segment_mapping_layout"/>
+</RelativeLayout>

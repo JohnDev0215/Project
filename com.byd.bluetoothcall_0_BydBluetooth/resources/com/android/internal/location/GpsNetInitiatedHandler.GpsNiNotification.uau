@@ -1,0 +1,6 @@
+signature,file,startline,startcol,endline,endcol,properties
+Lcom/android/internal/location/GpsNetInitiatedHandler$GpsNiNotification;-><init>()V,frameworks/base/location/java/com/android/internal/location/GpsNetInitiatedHandler.java,124,9,124,55,
+Lcom/android/internal/location/GpsNetInitiatedHandler$GpsNiNotification;->requestorId:Ljava/lang/String;,frameworks/base/location/java/com/android/internal/location/GpsNetInitiatedHandler.java,134,9,134,29,
+Lcom/android/internal/location/GpsNetInitiatedHandler$GpsNiNotification;->text:Ljava/lang/String;,frameworks/base/location/java/com/android/internal/location/GpsNetInitiatedHandler.java,136,9,136,29,
+Lcom/android/internal/location/GpsNetInitiatedHandler$GpsNiNotification;->requestorIdEncoding:I,frameworks/base/location/java/com/android/internal/location/GpsNetInitiatedHandler.java,138,9,138,29,
+Lcom/android/internal/location/GpsNetInitiatedHandler$GpsNiNotification;->textEncoding:I,frameworks/base/location/java/com/android/internal/location/GpsNetInitiatedHandler.java,140,9,140,29,

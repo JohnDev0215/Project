@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="billing_cycle_days_left">
+        <item quantity="zero">Atlikušas vēl %d dienas</item>
+        <item quantity="one">Atlikusi vēl %d diena</item>
+        <item quantity="other">Atlikušas vēl %d dienas</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_letters">
+        <item quantity="zero">Ir jāietver vismaz %d burti.</item>
+        <item quantity="one">Ir jāietver vismaz %d burts.</item>
+        <item quantity="other">Ir jāietver vismaz %d burti.</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_lowercase">
+        <item quantity="zero">Ir jāietver vismaz %d mazie burti.</item>
+        <item quantity="one">Ir jāietver vismaz %d mazais burts.</item>
+        <item quantity="other">Ir jāietver vismaz %d mazie burti.</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_nonletter">
+        <item quantity="zero">Ir jāietver vismaz %d rakstzīmes, kas nav burti.</item>
+        <item quantity="one">Ir jāietver vismaz %d rakstzīme, kas nav burts.</item>
+        <item quantity="other">Ir jāietver vismaz %d rakstzīmes, kas nav burti.</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_numeric">
+        <item quantity="zero">Ir jāietver vismaz %d cipari.</item>
+        <item quantity="one">Ir jāietver vismaz %d cipars.</item>
+        <item quantity="other">Ir jāietver vismaz %d cipari.</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_symbols">
+        <item quantity="zero">Ir jāietver vismaz %d īpašie simboli.</item>
+        <item quantity="one">Ir jāietver vismaz %d īpašais simbols.</item>
+        <item quantity="other">Ir jāietver vismaz %d īpašie simboli.</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_uppercase">
+        <item quantity="zero">Ir jāietver vismaz %d lielie burti.</item>
+        <item quantity="one">Ir jāietver vismaz %d lielais burts.</item>
+        <item quantity="other">Ir jāietver vismaz %d lielie burti.</item>
+    </plurals>
+    <plurals name="mobile_network_summary_count">
+        <item quantity="zero">%1$d SIM karšu</item>
+        <item quantity="one">%1$d SIM karte</item>
+        <item quantity="other">%1$d SIM kartes</item>
+    </plurals>
+    <plurals name="runtime_permissions_additional_count">
+        <item quantity="zero">%d papildu atļauju</item>
+        <item quantity="one">%d papildu atļauja</item>
+        <item quantity="other">%d papildu atļaujas</item>
+    </plurals>
+    <plurals name="show_dev_countdown">
+        <item quantity="zero">Lai jūs kļūtu par izstrādātāju, atlikušas %1$d darbības.</item>
+        <item quantity="one">Lai jūs kļūtu par izstrādātāju, atlikusi %1$d darbība.</item>
+        <item quantity="other">Lai jūs kļūtu par izstrādātāju, atlikušas %1$d darbības.</item>
+    </plurals>
+    <plurals name="user_limit_reached_message">
+        <item quantity="zero">Var izveidot ne vairāk kā %d lietotājus.</item>
+        <item quantity="one">Var izveidot ne vairāk kā %d lietotāju.</item>
+        <item quantity="other">Var izveidot ne vairāk kā %d lietotājus.</item>
+    </plurals>
+    <plurals name="wifi_tether_connected_summary">
+        <item quantity="zero">Pievienotas %1$d ierīces</item>
+        <item quantity="one">Pievienota %1$d ierīce</item>
+        <item quantity="other">Pievienotas %1$d ierīces</item>
+    </plurals>
+</resources>

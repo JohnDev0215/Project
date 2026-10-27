@@ -1,0 +1,7 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/net/NetworkStatsHistory$Entry;->bucketDuration:J,frameworks/base/core/java/android/net/NetworkStatsHistory.java,93,9,93,29,
+Landroid/net/NetworkStatsHistory$Entry;->bucketStart:J,frameworks/base/core/java/android/net/NetworkStatsHistory.java,95,9,95,29,
+Landroid/net/NetworkStatsHistory$Entry;->rxBytes:J,frameworks/base/core/java/android/net/NetworkStatsHistory.java,98,9,98,29,
+Landroid/net/NetworkStatsHistory$Entry;->rxPackets:J,frameworks/base/core/java/android/net/NetworkStatsHistory.java,100,9,100,29,
+Landroid/net/NetworkStatsHistory$Entry;->txBytes:J,frameworks/base/core/java/android/net/NetworkStatsHistory.java,102,9,102,29,
+Landroid/net/NetworkStatsHistory$Entry;->txPackets:J,frameworks/base/core/java/android/net/NetworkStatsHistory.java,104,9,104,29,

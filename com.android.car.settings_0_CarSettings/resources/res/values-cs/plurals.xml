@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="billing_cycle_days_left">
+        <item quantity="one">Zbývá %d den</item>
+        <item quantity="few">Zbývají %d dny</item>
+        <item quantity="many">Zbývá %d dne</item>
+        <item quantity="other">Zbývá %d dní</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_letters">
+        <item quantity="one">Heslo musí obsahovat alespoň 1 písmeno</item>
+        <item quantity="few">Heslo musí obsahovat alespoň %d písmena</item>
+        <item quantity="many">Heslo musí obsahovat alespoň %d písmena</item>
+        <item quantity="other">Heslo musí obsahovat alespoň %d písmen</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_lowercase">
+        <item quantity="one">Heslo musí obsahovat alespoň 1 malé písmeno</item>
+        <item quantity="few">Heslo musí obsahovat alespoň %d malá písmena</item>
+        <item quantity="many">Heslo musí obsahovat alespoň %d malého písmena</item>
+        <item quantity="other">Heslo musí obsahovat alespoň %d malých písmen</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_nonletter">
+        <item quantity="one">Heslo musí obsahovat alespoň 1 znak jiný než písmeno</item>
+        <item quantity="few">Heslo musí obsahovat alespoň %d znaky jiné než písmeno</item>
+        <item quantity="many">Heslo musí obsahovat alespoň %d znaku jiného než písmeno</item>
+        <item quantity="other">Heslo musí obsahovat alespoň %d znaků jiných než písmeno</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_numeric">
+        <item quantity="one">Heslo musí obsahovat alespoň 1 číslici</item>
+        <item quantity="few">Heslo musí obsahovat alespoň %d číslice</item>
+        <item quantity="many">Heslo musí obsahovat alespoň %d číslice</item>
+        <item quantity="other">Heslo musí obsahovat alespoň %d číslic</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_symbols">
+        <item quantity="one">Heslo musí obsahovat alespoň 1 speciální symbol</item>
+        <item quantity="few">Heslo musí obsahovat alespoň %d speciální symboly</item>
+        <item quantity="many">Heslo musí obsahovat alespoň %d speciálního symbolu</item>
+        <item quantity="other">Heslo musí obsahovat alespoň %d speciálních symbolů</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_uppercase">
+        <item quantity="one">Heslo musí obsahovat alespoň 1 velké písmeno</item>
+        <item quantity="few">Heslo musí obsahovat alespoň %d velká písmena</item>
+        <item quantity="many">Heslo musí obsahovat alespoň %d velkého písmena</item>
+        <item quantity="other">Heslo musí obsahovat alespoň %d velkých písmen</item>
+    </plurals>
+    <plurals name="mobile_network_summary_count">
+        <item quantity="one">%1$d SIM karta</item>
+        <item quantity="few">%1$d SIM karty</item>
+        <item quantity="many">%1$d SIM karty</item>
+        <item quantity="other">%1$d SIM karet</item>
+    </plurals>
+    <plurals name="runtime_permissions_additional_count">
+        <item quantity="one">%d další oprávnění</item>
+        <item quantity="few">%d další oprávnění</item>
+        <item quantity="many">%d dalšího oprávnění</item>
+        <item quantity="other">%d dalších oprávnění</item>
+    </plurals>
+    <plurals name="show_dev_countdown">
+        <item quantity="one">Jste %1$d klepnutí od toho, abyste se stali vývojářem.</item>
+        <item quantity="few">Jste %1$d klepnutí od toho, abyste se stali vývojářem.</item>
+        <item quantity="many">Jste %1$d klepnutí od toho, abyste se stali vývojářem.</item>
+        <item quantity="other">Jste %1$d klepnutí od toho, abyste se stali vývojářem.</item>
+    </plurals>
+    <plurals name="user_limit_reached_message">
+        <item quantity="one">Lze vytvořit jen jednoho uživatele.</item>
+        <item quantity="few">Lze vytvořit až %d uživatele.</item>
+        <item quantity="many">Lze vytvořit až %d uživatele.</item>
+        <item quantity="other">Lze vytvořit až %d uživatelů.</item>
+    </plurals>
+    <plurals name="wifi_tether_connected_summary">
+        <item quantity="one">Připojeno %1$d zařízení</item>
+        <item quantity="few">Připojena %1$d zařízení</item>
+        <item quantity="many">Připojeno %1$d zařízení</item>
+        <item quantity="other">Připojeno %1$d zařízení</item>
+    </plurals>
+</resources>

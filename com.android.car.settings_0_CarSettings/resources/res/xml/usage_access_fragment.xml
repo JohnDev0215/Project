@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" xmlns:settings="http://schemas.android.com/apk/res-auto"
+    android:title="@string/usage_access_title"
+    android:key="@string/psk_usage_access">
+    <Preference
+        android:selectable="false"
+        android:key="@string/pk_usage_access_description"
+        android:summary="@string/usage_access_description"/>
+    <com.android.car.settings.common.LogicalPreferenceGroup
+        android:key="@string/pk_usage_access"
+        settings:controller="com.android.car.settings.applications.specialaccess.AppOpsPreferenceController"/>
+</PreferenceScreen>

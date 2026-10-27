@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="billing_cycle_days_left">
+        <item quantity="one">Залишився %d день</item>
+        <item quantity="few">Залишилося %d дні</item>
+        <item quantity="many">Залишилося %d днів</item>
+        <item quantity="other">Залишилося %d дня</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_letters">
+        <item quantity="one">Має містити принаймні %d літеру</item>
+        <item quantity="few">Має містити принаймні %d літери</item>
+        <item quantity="many">Має містити принаймні %d літер</item>
+        <item quantity="other">Має містити принаймні %d літери</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_lowercase">
+        <item quantity="one">Має містити принаймні %d малу літеру</item>
+        <item quantity="few">Має містити принаймні %d малі літери</item>
+        <item quantity="many">Має містити принаймні %d малих літер</item>
+        <item quantity="other">Має містити принаймні %d малої літери</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_nonletter">
+        <item quantity="one">Має містити принаймні %d символ, який не є літерою</item>
+        <item quantity="few">Має містити принаймні %d символи, які не є літерами</item>
+        <item quantity="many">Має містити принаймні %d символів, які не є літерами</item>
+        <item quantity="other">Має містити принаймні %d символу, які не є літерами</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_numeric">
+        <item quantity="one">Має містити принаймні %d цифру</item>
+        <item quantity="few">Має містити принаймні %d цифри</item>
+        <item quantity="many">Має містити принаймні %d цифр</item>
+        <item quantity="other">Має містити принаймні %d цифри</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_symbols">
+        <item quantity="one">Має містити принаймні %d спеціальний символ</item>
+        <item quantity="few">Має містити принаймні %d спеціальні символи</item>
+        <item quantity="many">Має містити принаймні %d спеціальних символів</item>
+        <item quantity="other">Має містити принаймні %d спеціального символу</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_uppercase">
+        <item quantity="one">Має містити принаймні %d велику літеру</item>
+        <item quantity="few">Має містити принаймні %d великі літери</item>
+        <item quantity="many">Має містити принаймні %d великих літер</item>
+        <item quantity="other">Має містити принаймні %d великої літери</item>
+    </plurals>
+    <plurals name="mobile_network_summary_count">
+        <item quantity="one">%1$d SIM-карта</item>
+        <item quantity="few">%1$d SIM-карти</item>
+        <item quantity="many">%1$d SIM-карт</item>
+        <item quantity="other">%1$d SIM-карти</item>
+    </plurals>
+    <plurals name="runtime_permissions_additional_count">
+        <item quantity="one">%d додатковий дозвіл</item>
+        <item quantity="few">%d додаткові дозволи</item>
+        <item quantity="many">%d додаткових дозволів</item>
+        <item quantity="other">%d додаткового дозволу</item>
+    </plurals>
+    <plurals name="show_dev_countdown">
+        <item quantity="one">Залишився лише %1$d крок, щоб стати розробником.</item>
+        <item quantity="few">Залишилося лише %1$d кроки, щоб стати розробником.</item>
+        <item quantity="many">Залишилося лише %1$d кроків, щоб стати розробником.</item>
+        <item quantity="other">Залишилося лише %1$d кроку, щоб стати розробником.</item>
+    </plurals>
+    <plurals name="user_limit_reached_message">
+        <item quantity="one">Можна створити до %d користувача.</item>
+        <item quantity="few">Можна створити до %d користувачів.</item>
+        <item quantity="many">Можна створити до %d користувачів.</item>
+        <item quantity="other">Можна створити до %d користувача.</item>
+    </plurals>
+    <plurals name="wifi_tether_connected_summary">
+        <item quantity="one">Під’єднано %1$d пристрій</item>
+        <item quantity="few">Під’єднано %1$d пристрої</item>
+        <item quantity="many">Під’єднано %1$d пристроїв</item>
+        <item quantity="other">Під’єднано %1$d пристрою</item>
+    </plurals>
+</resources>

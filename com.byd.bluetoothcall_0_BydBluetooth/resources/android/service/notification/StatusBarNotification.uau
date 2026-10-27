@@ -1,0 +1,11 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/service/notification/StatusBarNotification;->pkg:Ljava/lang/String;,frameworks/base/core/java/android/service/notification/StatusBarNotification.java,50,5,50,25,
+Landroid/service/notification/StatusBarNotification;->id:I,frameworks/base/core/java/android/service/notification/StatusBarNotification.java,52,5,52,25,
+Landroid/service/notification/StatusBarNotification;->tag:Ljava/lang/String;,frameworks/base/core/java/android/service/notification/StatusBarNotification.java,54,5,54,88,maxTargetSdk=28&trackingBug=115609023L
+Landroid/service/notification/StatusBarNotification;->uid:I,frameworks/base/core/java/android/service/notification/StatusBarNotification.java,60,5,60,25,
+Landroid/service/notification/StatusBarNotification;->initialPid:I,frameworks/base/core/java/android/service/notification/StatusBarNotification.java,63,5,63,88,maxTargetSdk=28&trackingBug=115609023L
+Landroid/service/notification/StatusBarNotification;->notification:Landroid/app/Notification;,frameworks/base/core/java/android/service/notification/StatusBarNotification.java,65,5,65,88,maxTargetSdk=28&trackingBug=115609023L
+Landroid/service/notification/StatusBarNotification;->user:Landroid/os/UserHandle;,frameworks/base/core/java/android/service/notification/StatusBarNotification.java,67,5,67,88,maxTargetSdk=28&trackingBug=115609023L
+Landroid/service/notification/StatusBarNotification;->postTime:J,frameworks/base/core/java/android/service/notification/StatusBarNotification.java,69,5,69,88,maxTargetSdk=28&trackingBug=115609023L
+Landroid/service/notification/StatusBarNotification;->getInitialPid()I,frameworks/base/core/java/android/service/notification/StatusBarNotification.java,342,5,342,25,
+Landroid/service/notification/StatusBarNotification;->getPackageContext(Landroid/content/Context;)Landroid/content/Context;,frameworks/base/core/java/android/service/notification/StatusBarNotification.java,435,5,435,25,

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <Button
+        android:textSize="@dimen/sp_20"
+        android:id="@+id/test_pass_btn"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/test_pass"
+        android:layout_weight="1"
+        android:onClick="OnButtonClick"
+        android:textAllCaps="false"
+        android:layout_marginEnd="@dimen/dp_10"/>
+    <Button
+        android:textSize="@dimen/sp_20"
+        android:id="@+id/test_retry_btn"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/test_again"
+        android:layout_weight="1"
+        android:onClick="OnButtonClick"
+        android:textAllCaps="false"
+        android:layout_marginStart="@dimen/dp_5"
+        android:layout_marginEnd="@dimen/dp_5"/>
+    <Button
+        android:textSize="@dimen/sp_20"
+        android:id="@+id/test_fail_btn"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/test_fail"
+        android:layout_weight="1"
+        android:onClick="OnButtonClick"
+        android:textAllCaps="false"
+        android:layout_marginStart="@dimen/dp_10"/>
+</LinearLayout>

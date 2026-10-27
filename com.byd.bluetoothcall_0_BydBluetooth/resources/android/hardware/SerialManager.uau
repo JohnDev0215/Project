@@ -1,0 +1,3 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/hardware/SerialManager;->getSerialPorts()[Ljava/lang/String;,frameworks/base/core/java/android/hardware/SerialManager.java,50,5,50,25,
+Landroid/hardware/SerialManager;->openSerialPort(Ljava/lang/String;I)Landroid/hardware/SerialPort;,frameworks/base/core/java/android/hardware/SerialManager.java,70,5,70,25,

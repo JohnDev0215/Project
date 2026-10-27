@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    android:sharedUserId="android.uid.system"
+    android:versionCode="1"
+    android:versionName="1.0"
+    android:compileSdkVersion="30"
+    android:compileSdkVersionCodename="11"
+    package="com.ts.appservice.atmospherelamp"
+    platformBuildVersionCode="30"
+    platformBuildVersionName="11">
+    <uses-sdk
+        android:minSdkVersion="30"
+        android:targetSdkVersion="30"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.car.permission.CAR_VENDOR_EXTENSION"/>
+    <uses-permission android:name="android.car.permission.CAR_CONTROL_AUDIO_VOLUME"/>
+    <uses-permission android:name="android.car.permission.CAR_CONTROL_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.car.permission.CAR_CONTROL_ENHANCED_AUDIO"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS"/>
+    <uses-permission android:name="android.permission.READ_SETTINGS"/>
+    <application
+        android:allowBackup="false"
+        android:extractNativeLibs="true"
+        android:defaultToDeviceProtectedStorage="true"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+        android:usesNonSdkApi="true">
+        <service
+            android:name="com.ts.appservice.atmospherelamp.AtmosphereLampService"
+            android:enabled="true"
+            android:exported="true"/>
+        <uses-library android:name="ts.framework"/>
+    </application>
+</manifest>

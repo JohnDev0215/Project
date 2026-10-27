@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <corners android:radius="@dimen/auto_dimen2_16"/>
+            <gradient
+                android:startColor="@color/error_dialog_bg_start_color"
+                android:endColor="@color/error_dialog_bg_end_color"
+                android:angle="270"
+                android:centerX="0.5"/>
+            <stroke
+                android:width="@dimen/auto_dimen2_1"
+                android:color="@color/error_dialog_bg_side_color"/>
+        </shape>
+    </item>
+</layer-list>

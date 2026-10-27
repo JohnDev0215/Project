@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">BydAutoService</string>
+    <string name="audio_muted">Звукът е заглушен</string>
+    <string name="audio_removed">Включен звук</string>
+    <string name="btn_comfirm">OK</string>
+    <string name="btn_reset">Нулиране</string>
+    <string name="call_mode">Операцията е забранена по време на разговор</string>
+    <string name="cancel">Отказ</string>
+    <string name="carplay_androidauto_land">Текущият екран не поддържа превключване на екрана</string>
+    <string name="dialog_title_user">Персонализирана настройка на бутон</string>
+    <string name="dialog_title_user_left">Настройки на левия персонализиран бутон</string>
+    <string name="dialog_title_user_right">Настройки на десния персонализиран бутон</string>
+    <string name="mode_am_music">AM</string>
+    <string name="mode_amazon_music">Amazon Music</string>
+    <string name="mode_bt_music">Музика</string>
+    <string name="mode_button_androidauto">Android Auto</string>
+    <string name="mode_button_carplay">Apple CarPlay</string>
+    <string name="mode_dab_music">DAB</string>
+    <string name="mode_fm_music">FM</string>
+    <string name="mode_local_music">Локални медии</string>
+    <string name="mode_music">Локална</string>
+    <string name="mode_sd">SD</string>
+    <string name="mode_spotify_music">Spotify</string>
+    <string name="mode_usb">USB</string>
+    <string name="mode_usb_music">Музика на USB флаш диск</string>
+    <string name="mode_usb_text">Не е открит USB</string>
+    <string name="mode_usb_video">Видео на USB флаш диск</string>
+    <string name="radio_button_ac">Климатик</string>
+    <string name="radio_button_music">Музика</string>
+    <string name="radio_button_navi_home">Вкъщи</string>
+    <string name="radio_button_play_pause">Пауза/възпроизвеждане на медия</string>
+    <string name="radio_button_radio">Радио</string>
+    <string name="radio_button_rotate">Завъртане на централния екран</string>
+    <string name="radio_button_source">Превключване на аудио източник на мултимедия</string>
+    <string name="reset_country">Конфигуриране на системата. Моля, изчакайте</string>
+    <string name="restart_efect">Функцията е конфигурирана успешно. Рестартирайте, за да я активирате!</string>
+    <string name="restart_now">Рестартирай сега</string>
+    <string name="restart_time">Отброяване на рестартирането</string>
+    <string name="warring_mode">Моля, завършете процеса на ръководство, преди да използвате IVI!</string>
+    <string name="warring_navi_mode">Текущото състояние не поддържа тази операция!</string>
+    <string name="warring_power">Тази функция е налична само при предавка P</string>
+</resources>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android" android:color="?attr/tab_item_bg_color_pressed">
+    <item
+        android:top="@dimen/list_item_bg_padding"
+        android:bottom="@dimen/list_item_bg_padding">
+        <shape android:shape="rectangle">
+            <solid android:color="?attr/now_playing_cover_bg"/>
+            <corners android:radius="@dimen/small_radius"/>
+        </shape>
+    </item>
+</ripple>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="billing_cycle_days_left">
+        <item quantity="one">%d päivä jäljellä</item>
+        <item quantity="other">%d päivää jäljellä</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_letters">
+        <item quantity="one">Salasanassa on oltava vähintään 1 kirjain.</item>
+        <item quantity="other">Salasanassa on oltava vähintään %d kirjainta.</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_lowercase">
+        <item quantity="one">Salasanassa on oltava vähintään 1 pieni kirjain.</item>
+        <item quantity="other">Salasanassa on oltava vähintään %d pientä kirjainta.</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_nonletter">
+        <item quantity="one">Salasanassa on oltava vähintään 1 merkki, joka ei ole kirjain.</item>
+        <item quantity="other">Salasanassa on oltava vähintään %d merkkiä, jotka eivät ole kirjaimia.</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_numeric">
+        <item quantity="one">Salasanassa on oltava vähintään 1 numero.</item>
+        <item quantity="other">Salasanassa on oltava vähintään %d numeroa.</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_symbols">
+        <item quantity="one">Salasanassa on oltava vähintään 1 erikoismerkki.</item>
+        <item quantity="other">Salasanassa on oltava vähintään %d erikoismerkkiä.</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_uppercase">
+        <item quantity="one">Salasanassa on oltava vähintään 1 iso kirjain.</item>
+        <item quantity="other">Salasanassa on oltava vähintään %d isoa kirjainta.</item>
+    </plurals>
+    <plurals name="mobile_network_summary_count">
+        <item quantity="one">%1$d SIM-kortti</item>
+        <item quantity="other">%1$d SIM-korttia</item>
+    </plurals>
+    <plurals name="runtime_permissions_additional_count">
+        <item quantity="one">%d lisäkäyttölupa</item>
+        <item quantity="other">%d lisäkäyttölupaa</item>
+    </plurals>
+    <plurals name="show_dev_countdown">
+        <item quantity="one">Enää %1$d vaihe, niin sinusta tulee kehittäjä.</item>
+        <item quantity="other">Enää %1$d vaihetta, niin sinusta tulee kehittäjä.</item>
+    </plurals>
+    <plurals name="user_limit_reached_message">
+        <item quantity="one">Käyttäjiä voi olla vain yksi.</item>
+        <item quantity="other">Voit lisätä korkeintaan %d käyttäjää.</item>
+    </plurals>
+    <plurals name="wifi_tether_connected_summary">
+        <item quantity="one">%1$d laite yhdistettynä</item>
+        <item quantity="other">%1$d laitetta yhdistettynä</item>
+    </plurals>
+</resources>

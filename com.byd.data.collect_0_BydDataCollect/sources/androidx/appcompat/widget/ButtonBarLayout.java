@@ -1,0 +1,122 @@
+package androidx.appcompat.widget;
+
+import android.content.Context;
+import android.content.res.TypedArray;
+import android.util.AttributeSet;
+import android.view.View;
+import android.widget.LinearLayout;
+
+/* JADX INFO: loaded from: classes.dex */
+public class ButtonBarLayout extends LinearLayout {
+
+    /* JADX INFO: renamed from: b, reason: collision with root package name */
+    private boolean f467b;
+
+    /* JADX INFO: renamed from: c, reason: collision with root package name */
+    private int f468c;
+
+    /* JADX INFO: renamed from: d, reason: collision with root package name */
+    private int f469d;
+
+    public ButtonBarLayout(Context context, AttributeSet attributeSet) {
+        super(context, attributeSet);
+        this.f468c = -1;
+        this.f469d = 0;
+        int[] iArr = b.a.j.ButtonBarLayout;
+        TypedArray typedArrayObtainStyledAttributes = context.obtainStyledAttributes(attributeSet, iArr);
+        b.g.k.t.h0(this, context, iArr, attributeSet, typedArrayObtainStyledAttributes, 0, 0);
+        this.f467b = typedArrayObtainStyledAttributes.getBoolean(b.a.j.ButtonBarLayout_allowStacking, true);
+        typedArrayObtainStyledAttributes.recycle();
+    }
+
+    private int a(int i2) {
+        int childCount = getChildCount();
+        while (i2 < childCount) {
+            if (getChildAt(i2).getVisibility() == 0) {
+                return i2;
+            }
+            i2++;
+        }
+        return -1;
+    }
+
+    private boolean b() {
+        return getOrientation() == 1;
+    }
+
+    private void setStacked(boolean z) {
+        setOrientation(z ? 1 : 0);
+        setGravity(z ? 5 : 80);
+        View viewFindViewById = findViewById(b.a.f.spacer);
+        if (viewFindViewById != null) {
+            viewFindViewById.setVisibility(z ? 8 : 4);
+        }
+        for (int childCount = getChildCount() - 2; childCount >= 0; childCount--) {
+            bringChildToFront(getChildAt(childCount));
+        }
+    }
+
+    @Override // android.view.View
+    public int getMinimumHeight() {
+        return Math.max(this.f469d, super.getMinimumHeight());
+    }
+
+    @Override // android.widget.LinearLayout, android.view.View
+    protected void onMeasure(int i2, int i3) {
+        int iMakeMeasureSpec;
+        boolean z;
+        int size = View.MeasureSpec.getSize(i2);
+        int paddingBottom = 0;
+        if (this.f467b) {
+            if (size > this.f468c && b()) {
+                setStacked(false);
+            }
+            this.f468c = size;
+        }
+        if (b() || View.MeasureSpec.getMode(i2) != 1073741824) {
+            iMakeMeasureSpec = i2;
+            z = false;
+        } else {
+            iMakeMeasureSpec = View.MeasureSpec.makeMeasureSpec(size, Integer.MIN_VALUE);
+            z = true;
+        }
+        super.onMeasure(iMakeMeasureSpec, i3);
+        if (this.f467b && !b()) {
+            if ((getMeasuredWidthAndState() & (-16777216)) == 16777216) {
+                setStacked(true);
+                z = true;
+            }
+        }
+        if (z) {
+            super.onMeasure(i2, i3);
+        }
+        int iA = a(0);
+        if (iA >= 0) {
+            View childAt = getChildAt(iA);
+            LinearLayout.LayoutParams layoutParams = (LinearLayout.LayoutParams) childAt.getLayoutParams();
+            int paddingTop = getPaddingTop() + childAt.getMeasuredHeight() + layoutParams.topMargin + layoutParams.bottomMargin + 0;
+            if (b()) {
+                int iA2 = a(iA + 1);
+                if (iA2 >= 0) {
+                    paddingTop += getChildAt(iA2).getPaddingTop() + ((int) (getResources().getDisplayMetrics().density * 16.0f));
+                }
+                paddingBottom = paddingTop;
+            } else {
+                paddingBottom = paddingTop + getPaddingBottom();
+            }
+        }
+        if (b.g.k.t.A(this) != paddingBottom) {
+            setMinimumHeight(paddingBottom);
+        }
+    }
+
+    public void setAllowStacking(boolean z) {
+        if (this.f467b != z) {
+            this.f467b = z;
+            if (!z && getOrientation() == 1) {
+                setStacked(false);
+            }
+            requestLayout();
+        }
+    }
+}

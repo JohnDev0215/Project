@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android" android:color="?attr/tab_item_bg_color_pressed">
+    <item>
+        <shape android:shape="rectangle">
+            <stroke
+                android:width="@dimen/labels_item_stroke_width"
+                android:color="?attr/label_item_bg_color"/>
+            <corners android:radius="@dimen/labels_item_radius"/>
+            <solid android:color="?attr/app_bg_color"/>
+        </shape>
+    </item>
+</ripple>

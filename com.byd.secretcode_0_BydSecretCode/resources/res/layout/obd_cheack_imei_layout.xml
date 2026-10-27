@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:textSize="@dimen/text_size_32sp"
+        android:textColor="@color/black"
+        android:id="@+id/obd_imei_tv"
+        android:layout_width="@dimen/dp_368"
+        android:layout_height="wrap_content"
+        android:text="@string/imei"/>
+    <EditText
+        android:textSize="@dimen/text_size_32sp"
+        android:id="@+id/obd_et_password"
+        android:layout_width="@dimen/dp_368"
+        android:layout_height="@dimen/dp_100"
+        android:layout_marginTop="@dimen/dp_40"
+        android:hint="@string/str_please_enter_password"/>
+    <Button
+        android:textSize="@dimen/text_size_28sp"
+        android:id="@+id/obd_ok_btn"
+        android:layout_width="@dimen/dp_150"
+        android:layout_height="@dimen/dp_70"
+        android:layout_marginTop="@dimen/dp_40"
+        android:text="@string/confirm"/>
+</LinearLayout>

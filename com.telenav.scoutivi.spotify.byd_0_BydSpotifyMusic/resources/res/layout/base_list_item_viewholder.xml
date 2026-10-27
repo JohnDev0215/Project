@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:tag="layout/base_list_item_viewholder_0"
+    android:background="?attr/list_item_bg"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/base_list_item_height"
+    android:layout_marginTop="@dimen/base_list_item_decoration_size"
+    android:layout_marginBottom="@dimen/base_list_item_decoration_size"
+    android:paddingStart="@dimen/base_list_item_padding"
+    android:paddingEnd="@dimen/base_list_item_padding">
+    <ImageView
+        android:id="@+id/img_cover"
+        android:background="?attr/viewholder_img_bg"
+        android:layout_width="@dimen/base_list_item_img_size"
+        android:layout_height="@dimen/base_list_item_img_size"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <TextView
+        android:id="@+id/title"
+        android:background="?attr/viewholder_title_bg"
+        android:layout_width="@dimen/base_list_item_viewholder_title_width"
+        android:layout_height="@dimen/media_cover_item_title_height"
+        android:layout_marginTop="@dimen/base_list_item_viewholder_title_margin_top"
+        android:layout_marginStart="@dimen/base_list_item_padding"
+        app:layout_constraintStart_toEndOf="@+id/img_cover"
+        app:layout_constraintTop_toTopOf="@+id/img_cover"/>
+    <TextView
+        android:id="@+id/subtitle"
+        android:background="?attr/viewholder_title_bg"
+        android:layout_width="@dimen/base_list_item_viewholder_subtitle_width"
+        android:layout_height="@dimen/media_cover_item_title_height"
+        android:layout_marginTop="@dimen/media_cover_item_viewholder_subtitle_margin_top"
+        android:layout_marginStart="@dimen/base_list_item_padding"
+        app:layout_constraintStart_toEndOf="@+id/img_cover"
+        app:layout_constraintTop_toBottomOf="@+id/title"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

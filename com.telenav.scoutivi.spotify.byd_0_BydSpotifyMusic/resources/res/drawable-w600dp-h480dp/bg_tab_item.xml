@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android" android:color="?attr/tab_item_bg_color_pressed">
+    <item>
+        <layer-list>
+            <item
+                android:gravity="bottom"
+                android:height="@dimen/small_radius">
+                <shape>
+                    <solid android:color="?attr/tab_text_color_selected"/>
+                </shape>
+            </item>
+            <item android:bottom="@dimen/small_radius">
+                <shape>
+                    <solid android:color="?attr/colorTransparent"/>
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+</ripple>

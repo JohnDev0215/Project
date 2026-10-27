@@ -1,0 +1,9 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/text/StaticLayout;-><init>(Ljava/lang/CharSequence;IILandroid/text/TextPaint;ILandroid/text/Layout$Alignment;Landroid/text/TextDirectionHeuristic;FFZLandroid/text/TextUtils$TruncateAt;II)V,frameworks/base/core/java/android/text/StaticLayout.java,492,5,492,88,maxTargetSdk=28&trackingBug=117521430L
+Landroid/text/StaticLayout;->getHeight(Z)I,frameworks/base/core/java/android/text/StaticLayout.java,1362,5,1362,88,maxTargetSdk=28&trackingBug=115609023L
+Landroid/text/StaticLayout;->mLineCount:I,frameworks/base/core/java/android/text/StaticLayout.java,1375,5,1375,25,
+Landroid/text/StaticLayout;->mColumns:I,frameworks/base/core/java/android/text/StaticLayout.java,1378,5,1378,25,
+Landroid/text/StaticLayout;->ELLIPSIS_START:I,frameworks/base/core/java/android/text/StaticLayout.java,1406,5,1406,25,
+Landroid/text/StaticLayout;->mLines:[I,frameworks/base/core/java/android/text/StaticLayout.java,1410,5,1410,25,
+Landroid/text/StaticLayout;->mLineDirections:[Landroid/text/Layout$Directions;,frameworks/base/core/java/android/text/StaticLayout.java,1412,5,1412,25,
+Landroid/text/StaticLayout;->mMaximumVisibleLineCount:I,frameworks/base/core/java/android/text/StaticLayout.java,1414,5,1414,25,

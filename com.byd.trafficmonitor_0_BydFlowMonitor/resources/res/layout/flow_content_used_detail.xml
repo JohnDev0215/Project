@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_call"
+    android:background="@drawable/flow_5g_bg_1"
+    android:paddingTop="@dimen/dp_24"
+    android:paddingBottom="@dimen/dp_24"
+    style="@style/match_parent">
+    <ImageView
+        android:id="@+id/wave_bg"
+        android:layout_width="@dimen/dp_192"
+        android:layout_height="@dimen/dp_192"
+        android:src="@drawable/img_dark_personal_housekeeper_bg"
+        android:layout_centerHorizontal="true"/>
+    <com.byd.trafficmonitor.view.WaveView
+        android:id="@+id/wave_view_call"
+        android:layout_width="@dimen/dp_179"
+        android:layout_height="@dimen/dp_179"
+        android:layout_marginTop="@dimen/dp_6"
+        android:layout_centerHorizontal="true"/>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/dp_20"
+        android:layout_width="@dimen/dp_642"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/wave_bg"
+        android:layout_centerHorizontal="true">
+        <LinearLayout style="@style/flow_used_group_style">
+            <TextView
+                android:id="@+id/tv_used_day"
+                android:text="@string/flow_today_use"
+                style="@style/flow_used_title_style"/>
+            <com.byd.trafficmonitor.widget.MultiSizeTextView
+                android:id="@+id/current_day_used_flow_tv"
+                android:text="----"
+                style="@style/flow_used_content_style"/>
+        </LinearLayout>
+        <View style="@style/divide_line_style"/>
+        <LinearLayout style="@style/flow_used_group_style">
+            <TextView
+                android:text="@string/flow_month_use"
+                style="@style/flow_used_title_style"/>
+            <com.byd.trafficmonitor.widget.MultiSizeTextView
+                android:id="@+id/tv_month_used"
+                android:text="----"
+                style="@style/flow_used_content_style"/>
+        </LinearLayout>
+        <View style="@style/divide_line_style"/>
+        <LinearLayout style="@style/flow_used_group_style">
+            <TextView
+                android:text="@string/flow_month_total"
+                style="@style/flow_used_title_style"/>
+            <com.byd.trafficmonitor.widget.MultiSizeTextView
+                android:id="@+id/tv_total"
+                android:text="----"
+                style="@style/flow_used_content_style"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

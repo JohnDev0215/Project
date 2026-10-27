@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center"
+    android:background="@drawable/dialog_main_bg"
+    android:layout_width="580dp"
+    android:layout_height="274dp">
+    <LinearLayout
+        android:id="@+id/frx_ll"
+        android:layout_width="match_parent"
+        android:layout_height="135dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="105dp"
+        app:layout_constraintTop_toTopOf="parent">
+        <TextView
+            android:textSize="20sp"
+            android:textColor="@color/frx_dialog_msg"
+            android:gravity="center_horizontal"
+            android:id="@+id/tv_message"
+            android:layout_width="464dp"
+            android:layout_height="58dp"
+            android:layout_marginTop="38.5dp"
+            android:text="@string/frx_message"
+            android:fontFamily="sans-serif"
+            android:layout_marginStart="48dp"/>
+    </LinearLayout>
+    <Button
+        android:textSize="18sp"
+        android:textColor="@color/btn_ok_font"
+        android:id="@+id/frx_btn"
+        android:background="@drawable/dialog_positive_btn_bg"
+        android:layout_width="176dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/btn_ok"
+        android:layout_marginStart="192dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frx_ll"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

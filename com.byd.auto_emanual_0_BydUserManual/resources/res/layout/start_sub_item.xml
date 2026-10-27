@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/start_all_item_sub_item_height">
+    <include
+        android:id="@+id/start_sub_item"
+        android:layout_width="@dimen/recommend_item_width"
+        android:layout_height="wrap_content"
+        layout="@layout/content_item"/>
+    <View
+        android:layout_width="@dimen/recommend_item_interval_width"
+        android:layout_height="match_parent"/>
+</LinearLayout>

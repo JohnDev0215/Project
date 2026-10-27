@@ -1,0 +1,38 @@
+package q2;
+
+import android.content.Context;
+import com.google.android.material.internal.CheckableImageButton;
+import com.google.android.material.textfield.TextInputLayout;
+
+/* JADX INFO: compiled from: EndIconDelegate.java */
+/* JADX INFO: loaded from: classes.dex */
+public abstract class e {
+
+    /* JADX INFO: renamed from: a, reason: collision with root package name */
+    public TextInputLayout f4605a;
+
+    /* JADX INFO: renamed from: b, reason: collision with root package name */
+    public Context f4606b;
+
+    /* JADX INFO: renamed from: c, reason: collision with root package name */
+    public CheckableImageButton f4607c;
+
+    public e(TextInputLayout textInputLayout) {
+        this.f4605a = textInputLayout;
+        this.f4606b = textInputLayout.getContext();
+        this.f4607c = textInputLayout.getEndIconView();
+    }
+
+    public abstract void a();
+
+    public boolean b(int i3) {
+        return true;
+    }
+
+    public void c(boolean z3) {
+    }
+
+    public boolean d() {
+        return false;
+    }
+}

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">BydAutoService</string>
+    <string name="audio_muted">音声がミュートされました</string>
+    <string name="audio_removed">ミュート解除しました</string>
+    <string name="btn_comfirm">OK</string>
+    <string name="btn_reset">リセット</string>
+    <string name="call_mode">通話中。操作は無効です</string>
+    <string name="cancel">キャンセル</string>
+    <string name="carplay_androidauto_land">現在の画面は画面切り替えに対応していません</string>
+    <string name="dialog_title_user">カスタムボタン設定</string>
+    <string name="dialog_title_user_left">左カスタムボタン設定</string>
+    <string name="dialog_title_user_right">右カスタムボタン設定</string>
+    <string name="mode_am_music">AM</string>
+    <string name="mode_amazon_music">Amazon Music</string>
+    <string name="mode_bt_music">音楽</string>
+    <string name="mode_button_androidauto">Android Auto</string>
+    <string name="mode_button_carplay">Apple CarPlay</string>
+    <string name="mode_dab_music">DAB+</string>
+    <string name="mode_fm_music">FM</string>
+    <string name="mode_local_music">ローカルメディア</string>
+    <string name="mode_music">ローカル</string>
+    <string name="mode_sd">SDカード</string>
+    <string name="mode_spotify_music">Spotify</string>
+    <string name="mode_usb">USB</string>
+    <string name="mode_usb_music">USB音楽</string>
+    <string name="mode_usb_text">USBが検出されません</string>
+    <string name="mode_usb_video">USBフラッシュディスクの動画</string>
+    <string name="radio_button_ac">エアコン</string>
+    <string name="radio_button_music">音楽</string>
+    <string name="radio_button_navi_home">ホームへ移動</string>
+    <string name="radio_button_play_pause">メディアの一時停止/再生</string>
+    <string name="radio_button_radio">ラジオ</string>
+    <string name="radio_button_rotate">センタースクリーンの回転</string>
+    <string name="radio_button_source">メディアオーディオソースの切り替え</string>
+    <string name="reset_country">システム設定中。お待ちください</string>
+    <string name="restart_efect">機能が正常に設定されました。再起動して有効にしてください！</string>
+    <string name="restart_now">今すぐ再起動</string>
+    <string name="restart_time">カウントダウンを再開</string>
+    <string name="warring_mode">IVIを使用する前にガイドプロセスを完了してください。</string>
+    <string name="warring_navi_mode">現在の状態ではこの操作に対応していません！</string>
+    <string name="warring_power">この機能はPギアでのみ利用可能です</string>
+</resources>

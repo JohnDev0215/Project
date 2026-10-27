@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/subtype_parent"
+    android:layout_width="@dimen/dp_640"
+    android:layout_height="@dimen/dp_72">
+    <com.byd.ime.subtype.show.LanguageSwitch
+        android:id="@+id/state_check"
+        android:background="@drawable/language_check_drawable"
+        android:layout_width="@dimen/dp_40"
+        android:layout_height="@dimen/dp_40"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/dp_48"
+        android:showText="false"/>
+    <TextView
+        android:textSize="@dimen/sp_18"
+        android:id="@+id/display_name"
+        android:layout_width="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/dp_100"
+        style="@style/item_name"/>
+</RelativeLayout>

@@ -1,0 +1,10 @@
+signature,file,startline,startcol,endline,endcol,properties
+Lcom/android/ims/internal/uce/presence/PresRlmiInfo;->setUri(Ljava/lang/String;)V,frameworks/base/core/java/com/android/ims/internal/uce/presence/PresRlmiInfo.java,64,5,64,25,
+Lcom/android/ims/internal/uce/presence/PresRlmiInfo;->setVersion(I)V,frameworks/base/core/java/com/android/ims/internal/uce/presence/PresRlmiInfo.java,81,5,81,25,
+Lcom/android/ims/internal/uce/presence/PresRlmiInfo;->setFullState(Z)V,frameworks/base/core/java/com/android/ims/internal/uce/presence/PresRlmiInfo.java,98,5,98,25,
+Lcom/android/ims/internal/uce/presence/PresRlmiInfo;->setListName(Ljava/lang/String;)V,frameworks/base/core/java/com/android/ims/internal/uce/presence/PresRlmiInfo.java,115,5,115,25,
+Lcom/android/ims/internal/uce/presence/PresRlmiInfo;->setRequestId(I)V,frameworks/base/core/java/com/android/ims/internal/uce/presence/PresRlmiInfo.java,132,5,132,25,
+Lcom/android/ims/internal/uce/presence/PresRlmiInfo;->setPresSubscriptionState(Lcom/android/ims/internal/uce/presence/PresSubscriptionState;)V,frameworks/base/core/java/com/android/ims/internal/uce/presence/PresRlmiInfo.java,149,5,149,25,
+Lcom/android/ims/internal/uce/presence/PresRlmiInfo;->setSubscriptionExpireTime(I)V,frameworks/base/core/java/com/android/ims/internal/uce/presence/PresRlmiInfo.java,166,5,166,25,
+Lcom/android/ims/internal/uce/presence/PresRlmiInfo;->setSubscriptionTerminatedReason(Ljava/lang/String;)V,frameworks/base/core/java/com/android/ims/internal/uce/presence/PresRlmiInfo.java,183,5,183,25,
+Lcom/android/ims/internal/uce/presence/PresRlmiInfo;-><init>()V,frameworks/base/core/java/com/android/ims/internal/uce/presence/PresRlmiInfo.java,192,5,192,25,

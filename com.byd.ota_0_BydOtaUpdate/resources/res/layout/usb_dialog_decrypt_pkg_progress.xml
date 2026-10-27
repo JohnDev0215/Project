@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/usb_shape_dialog_bg"
+    android:layout_width="@dimen/dp_560"
+    android:layout_height="@dimen/dp_312">
+    <TextView
+        android:id="@+id/dialog_title"
+        android:text="@string/usb_one_car_one_package_update"
+        style="@style/usb_dialog_title"/>
+    <TextView
+        android:layout_below="@+id/dialog_title"
+        style="@style/usb_dialog_title_divider"/>
+    <ImageView
+        android:layout_width="@dimen/dp_100"
+        android:layout_height="@dimen/dp_100"
+        android:layout_marginTop="@dimen/dp_92"
+        android:src="@drawable/icon_light_file_compress3_100"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:textSize="@dimen/sp_22"
+        android:textColor="?attr/usb_normal_text_color"
+        android:gravity="center"
+        android:id="@+id/decrypt_progress_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_200"/>
+    <ProgressBar
+        android:id="@+id/decrypt_progress_bar"
+        android:layout_width="@dimen/dp_448"
+        android:layout_height="@dimen/dp_6"
+        android:layout_marginTop="@dimen/dp_256"
+        android:progress="28"
+        android:layout_centerHorizontal="true"
+        style="@style/progressBar_horizontal"/>
+</RelativeLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root_frame"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/root_view"
+        android:background="@drawable/bg_frame_denza"
+        android:layout_width="@dimen/dp_564"
+        android:layout_height="@dimen/dp_482"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <include layout="@layout/layout_header_denza_right_rudder"/>
+        <com.byd.sing.view.SettingItem
+            android:id="@+id/si_volume_mic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_106"
+            android:layout_marginStart="@dimen/dp_48"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:name_text="@string/setting_volume_mic"/>
+        <com.byd.sing.view.SettingItem
+            android:id="@+id/si_volume_system"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_36"
+            app:layout_constraintStart_toStartOf="@+id/si_volume_mic"
+            app:layout_constraintTop_toBottomOf="@+id/si_volume_mic"
+            app:name_text="@string/setting_volume_system"/>
+        <com.byd.sing.view.SettingItem
+            android:id="@+id/si_reverberation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_36"
+            app:layout_constraintStart_toStartOf="@+id/si_volume_mic"
+            app:layout_constraintTop_toBottomOf="@+id/si_volume_system"
+            app:name_text="@string/setting_reverberation"/>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp_28"
+            android:paddingStart="@dimen/dp_16"
+            android:paddingEnd="@dimen/dp_16"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

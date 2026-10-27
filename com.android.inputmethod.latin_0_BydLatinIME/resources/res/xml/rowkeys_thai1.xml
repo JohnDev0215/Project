@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:latin="http://schemas.android.com/apk/res/com.android.inputmethod.latin">
+    <switch>
+        <case latin:keyboardLayoutSetElement="emojiCategory12">
+            <Key
+                latin:keyLabelFlags="fontDefault"
+                latin:keySpec="+"/>
+            <Key latin:keySpec="๑"/>
+            <Key latin:keySpec="๒"/>
+            <Key latin:keySpec="๓"/>
+            <Key latin:keySpec="๔"/>
+            <Key
+                latin:keyLabelFlags="followKeyLetterRatio"
+                latin:keySpec=" ู|ู"/>
+            <Key latin:keySpec="฿"/>
+            <Key latin:keySpec="๕"/>
+            <Key latin:keySpec="๖"/>
+            <Key latin:keySpec="๗"/>
+            <Key latin:keySpec="๘"/>
+            <Key latin:keySpec="๙"/>
+        </case>
+        <default>
+            <Key latin:keySpec="ๅ"/>
+            <Key
+                latin:additionalMoreKeys="1"
+                latin:keyHintLabel="1"
+                latin:keyLabelFlags="fontDefault"
+                latin:keySpec="/"
+                latin:moreKeys="๑"/>
+            <Key
+                latin:additionalMoreKeys="2"
+                latin:keyHintLabel="2"
+                latin:keyLabelFlags="fontDefault"
+                latin:keySpec="_"
+                latin:moreKeys="๒"/>
+            <Key
+                latin:additionalMoreKeys="3"
+                latin:keyHintLabel="3"
+                latin:keySpec="ภ"
+                latin:moreKeys="๓"/>
+            <Key
+                latin:additionalMoreKeys="4"
+                latin:keyHintLabel="4"
+                latin:keySpec="ถ"
+                latin:moreKeys="๔"/>
+            <Key
+                latin:keyLabelFlags="followKeyLetterRatio"
+                latin:keySpec=" ุ|ุ"/>
+            <Key
+                latin:keyLabelFlags="followKeyLetterRatio"
+                latin:keySpec=" ึ|ึ"/>
+            <Key
+                latin:additionalMoreKeys="5"
+                latin:keyHintLabel="5"
+                latin:keySpec="ค"
+                latin:moreKeys="๕"/>
+            <Key
+                latin:additionalMoreKeys="6"
+                latin:keyHintLabel="6"
+                latin:keySpec="ต"
+                latin:moreKeys="๖"/>
+            <Key
+                latin:additionalMoreKeys="7"
+                latin:keyHintLabel="7"
+                latin:keySpec="จ"
+                latin:moreKeys="๗"/>
+            <Key
+                latin:additionalMoreKeys="8"
+                latin:keyHintLabel="8"
+                latin:keySpec="ข"
+                latin:moreKeys="๘"/>
+            <Key
+                latin:additionalMoreKeys="9"
+                latin:keyHintLabel="9"
+                latin:keySpec="ช"
+                latin:moreKeys="๙"/>
+        </default>
+    </switch>
+</merge>

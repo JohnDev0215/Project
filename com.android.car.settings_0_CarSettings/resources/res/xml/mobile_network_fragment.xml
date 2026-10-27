@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" xmlns:settings="http://schemas.android.com/apk/res-auto"
+    android:title="@string/mobile_network_settings"
+    android:key="@string/psk_mobile_network">
+    <SwitchPreference
+        android:title="@string/mobile_network_toggle_title"
+        android:key="@string/pk_mobile_data_toggle"
+        android:summary="@string/mobile_network_toggle_summary"
+        settings:controller="com.android.car.settings.network.MobileDataTogglePreferenceController"/>
+    <SwitchPreference
+        android:title="@string/roaming_title"
+        android:key="@string/pk_mobile_roaming_toggle"
+        android:summary="@string/roaming_summary"
+        settings:controller="com.android.car.settings.network.RoamingPreferenceController"/>
+</PreferenceScreen>

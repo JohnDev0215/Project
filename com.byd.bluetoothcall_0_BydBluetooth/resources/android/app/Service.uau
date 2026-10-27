@@ -1,0 +1,9 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/app/Service;->setForeground(Z)V,frameworks/base/core/java/android/app/Service.java,669,5,669,25,
+Landroid/app/Service;->attach(Landroid/content/Context;Landroid/app/ActivityThread;Ljava/lang/String;Landroid/os/IBinder;Landroid/app/Application;Ljava/lang/Object;)V,frameworks/base/core/java/android/app/Service.java,835,5,835,25,
+Landroid/app/Service;->mThread:Landroid/app/ActivityThread;,frameworks/base/core/java/android/app/Service.java,877,5,877,25,
+Landroid/app/Service;->mClassName:Ljava/lang/String;,frameworks/base/core/java/android/app/Service.java,879,5,879,25,
+Landroid/app/Service;->mToken:Landroid/os/IBinder;,frameworks/base/core/java/android/app/Service.java,881,5,881,25,
+Landroid/app/Service;->mApplication:Landroid/app/Application;,frameworks/base/core/java/android/app/Service.java,883,5,883,25,
+Landroid/app/Service;->mActivityManager:Landroid/app/IActivityManager;,frameworks/base/core/java/android/app/Service.java,885,5,885,25,
+Landroid/app/Service;->mStartCompatibility:Z,frameworks/base/core/java/android/app/Service.java,887,5,887,25,

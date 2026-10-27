@@ -1,0 +1,86 @@
+package androidx.media;
+
+import android.content.Context;
+import android.media.browse.MediaBrowser;
+import android.os.Bundle;
+import android.os.Parcel;
+import android.service.media.MediaBrowserService;
+import android.support.v4.media.session.MediaSessionCompat;
+import android.util.Log;
+import androidx.media.f;
+import java.lang.reflect.Field;
+import java.util.ArrayList;
+import java.util.List;
+
+/* JADX INFO: compiled from: MediaBrowserServiceCompatApi26.java */
+/* JADX INFO: loaded from: classes.dex */
+class g {
+
+    /* JADX INFO: renamed from: a, reason: collision with root package name */
+    static Field f1593a;
+
+    /* JADX INFO: compiled from: MediaBrowserServiceCompatApi26.java */
+    static class a extends f.a {
+        a(Context context, c cVar) {
+            super(context, cVar);
+        }
+
+        @Override // android.service.media.MediaBrowserService
+        public void onLoadChildren(String str, MediaBrowserService.Result<List<MediaBrowser.MediaItem>> result, Bundle bundle) {
+            MediaSessionCompat.a(bundle);
+            ((c) this.f1591b).f(str, new b(result), bundle);
+        }
+    }
+
+    /* JADX INFO: compiled from: MediaBrowserServiceCompatApi26.java */
+    static class b {
+
+        /* JADX INFO: renamed from: a, reason: collision with root package name */
+        MediaBrowserService.Result f1594a;
+
+        b(MediaBrowserService.Result result) {
+            this.f1594a = result;
+        }
+
+        List<MediaBrowser.MediaItem> a(List<Parcel> list) {
+            if (list == null) {
+                return null;
+            }
+            ArrayList arrayList = new ArrayList();
+            for (Parcel parcel : list) {
+                parcel.setDataPosition(0);
+                arrayList.add(MediaBrowser.MediaItem.CREATOR.createFromParcel(parcel));
+                parcel.recycle();
+            }
+            return arrayList;
+        }
+
+        public void b(List<Parcel> list, int i) {
+            try {
+                g.f1593a.setInt(this.f1594a, i);
+            } catch (IllegalAccessException e2) {
+                Log.w("MBSCompatApi26", e2);
+            }
+            this.f1594a.sendResult(a(list));
+        }
+    }
+
+    /* JADX INFO: compiled from: MediaBrowserServiceCompatApi26.java */
+    public interface c extends f.b {
+        void f(String str, b bVar, Bundle bundle);
+    }
+
+    static {
+        try {
+            Field declaredField = MediaBrowserService.Result.class.getDeclaredField("mFlags");
+            f1593a = declaredField;
+            declaredField.setAccessible(true);
+        } catch (NoSuchFieldException e2) {
+            Log.w("MBSCompatApi26", e2);
+        }
+    }
+
+    public static Object a(Context context, c cVar) {
+        return new a(context, cVar);
+    }
+}

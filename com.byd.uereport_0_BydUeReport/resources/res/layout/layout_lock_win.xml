@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/black"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.appcompat.widget.AppCompatTextView
+        android:textSize="@dimen/sp_32"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:id="@+id/text_bind_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_280"
+        android:text="@string/text_bind_title_tip"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <androidx.appcompat.widget.AppCompatEditText
+        android:textSize="@dimen/sp_20"
+        android:textColor="@android:color/black"
+        android:textColorHint="@android:color/darker_gray"
+        android:gravity="center"
+        android:id="@+id/et_pwd"
+        android:background="@android:color/white"
+        android:layout_width="@dimen/dp_400"
+        android:layout_height="@dimen/dp_42"
+        android:layout_marginTop="@dimen/dp_10"
+        android:hint="@string/text_bind_input_pwd_tip"
+        android:inputType="number"
+        app:layout_constraintEnd_toStartOf="@+id/btn_verify"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_bind_title"/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:textSize="@dimen/sp_20"
+        android:textColor="@android:color/black"
+        android:id="@+id/btn_verify"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_55"
+        android:text="@string/btn_bind_verify"
+        app:layout_constraintBottom_toBottomOf="@+id/et_pwd"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/et_pwd"
+        app:layout_constraintTop_toTopOf="@+id/et_pwd"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

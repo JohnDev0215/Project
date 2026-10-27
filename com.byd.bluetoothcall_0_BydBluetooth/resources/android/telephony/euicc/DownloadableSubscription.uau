@@ -1,0 +1,4 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/telephony/euicc/DownloadableSubscription;->encodedActivationCode:Ljava/lang/String;,frameworks/base/telephony/java/android/telephony/euicc/DownloadableSubscription.java,64,5,64,25,
+Landroid/telephony/euicc/DownloadableSubscription;->setCarrierName(Ljava/lang/String;)V,frameworks/base/telephony/java/android/telephony/euicc/DownloadableSubscription.java,194,5,194,25,
+Landroid/telephony/euicc/DownloadableSubscription;->setAccessRules([Landroid/telephony/UiccAccessRule;)V,frameworks/base/telephony/java/android/telephony/euicc/DownloadableSubscription.java,241,5,241,25,

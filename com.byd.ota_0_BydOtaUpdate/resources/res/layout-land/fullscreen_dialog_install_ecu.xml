@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="?attr/fullscreen_dialog_bg"
+    android:layout_width="@dimen/dp_1280"
+    android:layout_height="@dimen/dp_720">
+    <ImageView
+        android:layout_gravity="center_horizontal"
+        android:layout_width="@dimen/dp_202"
+        android:layout_height="@dimen/dp_48"
+        android:layout_marginTop="@dimen/dp_263"
+        android:src="@mipmap/img_ota_fullscreen"/>
+    <ProgressBar
+        android:layout_gravity="center"
+        android:id="@+id/install_progress_bar"
+        android:layout_width="@dimen/dp_830"
+        android:layout_height="@dimen/dp_6"
+        android:layout_marginTop="@dimen/dp_48"
+        android:progress="0"
+        style="@style/fullscreen_progressBar_horizontal"/>
+    <TextView
+        android:textSize="@dimen/sp_24"
+        android:textColor="?attr/fullscreen_normal_text_color"
+        android:gravity="center"
+        android:id="@+id/update_tips_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_27"
+        android:text="@string/updating_waiting_with_time"/>
+</LinearLayout>

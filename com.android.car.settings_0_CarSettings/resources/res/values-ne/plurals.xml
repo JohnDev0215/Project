@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="billing_cycle_days_left">
+        <item quantity="one">%d दिन बाँकी</item>
+        <item quantity="other">%d दिन बाँकी</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_letters">
+        <item quantity="one">कम्तीमा एउटा अक्षर हुनु अनिवार्य छ</item>
+        <item quantity="other">कम्तीमा %d वटा अक्षरहरू हुनु अनिवार्य छ</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_lowercase">
+        <item quantity="one">कम्तीमा पनि एउटा लोअरकेसको अक्षर हुनु अनिवार्य छ</item>
+        <item quantity="other">कम्तीमा %d वटा लोअरकेसका अक्षरहरू हुनु अनिवार्य छ</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_nonletter">
+        <item quantity="one">कम्तीमा पनि एउटा अक्षरभन्दा भिन्न वर्ण हुनु अनिवार्य छ</item>
+        <item quantity="other">कम्तीमा %d वटा अक्षरभन्दा भिन्न वर्णहरू हुनु अनिवार्य छ</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_numeric">
+        <item quantity="one">कम्तीमा पनि एउटा सङ्ख्यात्मक अङ्क हुनु अनिवार्य छ</item>
+        <item quantity="other">कम्तीमा पनि %d वटा सङ्ख्यात्मक अङ्कहरू हुनु अनिवार्य छ</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_symbols">
+        <item quantity="one">कम्तीमा पनि एउटा विशेष प्रतीक हुनु अनिवार्य छ</item>
+        <item quantity="other">कम्तीमा पनि %d वटा विशेष प्रतीकहरू हुनु अनिवार्य छ</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_uppercase">
+        <item quantity="one">कम्तीमा पनि एउटा अपरकेसको अक्षर हुनु अनिवार्य छ</item>
+        <item quantity="other">कम्तीमा पनि %d वटा अपरकेसका अक्षरहरू हुनु अनिवार्य छ</item>
+    </plurals>
+    <plurals name="mobile_network_summary_count">
+        <item quantity="one">%1$d SIM</item>
+        <item quantity="other">%1$d SIM हरू</item>
+    </plurals>
+    <plurals name="runtime_permissions_additional_count">
+        <item quantity="one">%d अतिरिक्त अनुमति</item>
+        <item quantity="other">%d अतिरिक्त अनुमतिहरू</item>
+    </plurals>
+    <plurals name="show_dev_countdown">
+        <item quantity="one">तपाईं अब एउटा विकासकर्ता हुनबाट %1$dचरण टाढा हुनुहुन्छ।</item>
+        <item quantity="other">तपाईं अब एउटा विकासकर्ता हुनबाट %1$dचरण टाढा हुनुहुन्छ।</item>
+    </plurals>
+    <plurals name="user_limit_reached_message">
+        <item quantity="one">एउटा प्रयोगकर्ता मात्र सिर्जना गर्न सकिन्छ।</item>
+        <item quantity="other">तपाईं अधिकतम %d प्रयोगकर्ताहरू सिर्जना गर्न सक्नुहुन्छ।</item>
+    </plurals>
+    <plurals name="wifi_tether_connected_summary">
+        <item quantity="one">%1$d यन्त्र जडान गरियो</item>
+        <item quantity="other">%1$d यन्त्रहरू जडान गरिए</item>
+    </plurals>
+</resources>

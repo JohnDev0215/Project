@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="car_ui_ime_wide_screen_allowed_package_list">
+    </array>
+    <array name="custom_media_packages">
+        <item>com.android.car.radio/com.android.car.radio.service.RadioAppService</item>
+    </array>
+    <array name="letter_tile_colors">
+        <item>#db4437</item>
+        <item>#e91e63</item>
+        <item>#9c27b0</item>
+        <item>#673ab7</item>
+        <item>#3f51b5</item>
+        <item>#4285f4</item>
+        <item>#039be5</item>
+        <item>#0097a7</item>
+        <item>#008577</item>
+        <item>#0f9d58</item>
+        <item>#689f38</item>
+        <item>#ef6c00</item>
+        <item>#ff5722</item>
+        <item>#757575</item>
+    </array>
+    <array name="placeholder_backgrounds">
+        <item>@drawable/placeholder_color_drawable_0</item>
+        <item>@drawable/placeholder_color_drawable_1</item>
+        <item>@drawable/placeholder_color_drawable_2</item>
+        <item>@drawable/placeholder_color_drawable_3</item>
+        <item>@drawable/placeholder_color_drawable_4</item>
+        <item>@drawable/placeholder_color_drawable_5</item>
+        <item>@drawable/placeholder_color_drawable_6</item>
+        <item>@drawable/placeholder_color_drawable_7</item>
+    </array>
+    <array name="placeholder_images">
+        <item>@drawable/ic_placeholder_0</item>
+        <item>@drawable/ic_placeholder_1</item>
+        <item>@drawable/ic_placeholder_2</item>
+        <item>@drawable/ic_placeholder_3</item>
+        <item>@drawable/ic_placeholder_4</item>
+        <item>@drawable/ic_placeholder_5</item>
+        <item>@drawable/ic_placeholder_6</item>
+        <item>@drawable/ic_placeholder_7</item>
+    </array>
+    <array name="playback_views_to_hide_immediately_when_queue_is_visible">
+    </array>
+    <array name="playback_views_to_hide_when_queue_is_visible">
+        <item>@id/metadata_container</item>
+        <item>@id/playback_seek_bar_container</item>
+    </array>
+    <array name="playback_views_to_hide_when_showing_custom_actions">
+        <item>@id/playback_seek_bar_container</item>
+    </array>
+    <array name="playback_views_to_show_immediately_when_queue_is_visible">
+    </array>
+    <array name="playback_views_to_show_when_queue_is_visible">
+        <item>@id/queue_list</item>
+        <item>@id/background_scrim</item>
+    </array>
+    <array name="preferred_media_sources">
+        <item>com.android.car.radio/.service.RadioAppService</item>
+    </array>
+</resources>

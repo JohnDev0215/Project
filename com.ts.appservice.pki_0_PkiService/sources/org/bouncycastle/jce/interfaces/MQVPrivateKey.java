@@ -1,0 +1,14 @@
+package org.bouncycastle.jce.interfaces;
+
+import java.security.PrivateKey;
+import java.security.PublicKey;
+
+/* JADX INFO: compiled from: caradapter-bug */
+/* JADX INFO: loaded from: classes.dex */
+public interface MQVPrivateKey extends PrivateKey {
+    PrivateKey getEphemeralPrivateKey();
+
+    PublicKey getEphemeralPublicKey();
+
+    PrivateKey getStaticPrivateKey();
+}

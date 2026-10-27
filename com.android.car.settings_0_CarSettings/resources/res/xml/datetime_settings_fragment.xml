@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" xmlns:settings="http://schemas.android.com/apk/res-auto"
+    android:title="@string/date_and_time_settings_title"
+    android:key="@string/psk_datetime_settings">
+    <SwitchPreference
+        android:title="@string/date_time_auto"
+        android:key="@string/pk_auto_datetime_switch"
+        android:summary="@string/date_time_auto_summary"
+        settings:controller="com.android.car.settings.datetime.AutoDatetimeTogglePreferenceController"/>
+    <SwitchPreference
+        android:title="@string/zone_auto"
+        android:key="@string/pk_auto_timezone_switch"
+        android:summary="@string/zone_auto_summary"
+        settings:controller="com.android.car.settings.datetime.AutoTimeZoneTogglePreferenceController"/>
+    <Preference
+        android:title="@string/date_time_set_date"
+        android:key="@string/pk_date_picker_entry"
+        android:fragment="com.android.car.settings.datetime.DatePickerFragment"
+        settings:controller="com.android.car.settings.datetime.DatePickerPreferenceController"/>
+    <Preference
+        android:title="@string/date_time_set_time"
+        android:key="@string/pk_time_picker_entry"
+        android:fragment="com.android.car.settings.datetime.TimePickerFragment"
+        settings:controller="com.android.car.settings.datetime.TimePickerPreferenceController"/>
+    <Preference
+        android:title="@string/date_time_set_timezone"
+        android:key="@string/pk_timezone_picker_screen_entry"
+        android:fragment="com.android.car.settings.datetime.TimeZonePickerScreenFragment"
+        settings:controller="com.android.car.settings.datetime.TimeZonePickerPreferenceController"/>
+    <SwitchPreference
+        android:title="@string/date_time_24hour"
+        android:key="@string/pk_use_24hour_switch"
+        settings:controller="com.android.car.settings.datetime.TimeFormatTogglePreferenceController"/>
+</PreferenceScreen>

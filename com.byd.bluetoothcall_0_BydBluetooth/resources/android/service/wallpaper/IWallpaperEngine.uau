@@ -1,0 +1,5 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/service/wallpaper/IWallpaperEngine;->setVisibility(Z)V,frameworks/base/core/java/android/service/wallpaper/IWallpaperEngine.aidl,29,1,29,25,
+Landroid/service/wallpaper/IWallpaperEngine;->dispatchPointer(Landroid/view/MotionEvent;)V,frameworks/base/core/java/android/service/wallpaper/IWallpaperEngine.aidl,32,1,32,25,
+Landroid/service/wallpaper/IWallpaperEngine;->dispatchWallpaperCommand(Ljava/lang/String;IIILandroid/os/Bundle;)V,frameworks/base/core/java/android/service/wallpaper/IWallpaperEngine.aidl,34,1,34,25,
+Landroid/service/wallpaper/IWallpaperEngine;->destroy()V,frameworks/base/core/java/android/service/wallpaper/IWallpaperEngine.aidl,38,1,38,25,

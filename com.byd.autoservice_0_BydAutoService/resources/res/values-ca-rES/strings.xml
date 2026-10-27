@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">BydAutoService</string>
+    <string name="audio_muted">Àudio silenciat</string>
+    <string name="audio_removed">So activat</string>
+    <string name="btn_comfirm">D\'acord</string>
+    <string name="btn_reset">Restablir</string>
+    <string name="call_mode">En una trucada. Operació inhabilitada</string>
+    <string name="cancel">Cancel·lar</string>
+    <string name="carplay_androidauto_land">La pantalla actual no admet el canvi de pantalla</string>
+    <string name="dialog_title_user">Configuració personalitzada de botons</string>
+    <string name="dialog_title_user_left">Configuració personalitzada del botó esquerre</string>
+    <string name="dialog_title_user_right">Configuració personalitzada del botó dret</string>
+    <string name="mode_am_music">AM</string>
+    <string name="mode_amazon_music">Amazon Music</string>
+    <string name="mode_bt_music">Música</string>
+    <string name="mode_button_androidauto">Android Auto</string>
+    <string name="mode_button_carplay">Apple CarPlay</string>
+    <string name="mode_dab_music">DAB</string>
+    <string name="mode_fm_music">FM</string>
+    <string name="mode_local_music">Mitjans locals</string>
+    <string name="mode_music">Local</string>
+    <string name="mode_sd">Targeta SD</string>
+    <string name="mode_spotify_music">Spotify</string>
+    <string name="mode_usb">USB</string>
+    <string name="mode_usb_music">USB Music</string>
+    <string name="mode_usb_text">No s\'ha detectat cap USB</string>
+    <string name="mode_usb_video">Vídeo del disc flaix USB</string>
+    <string name="radio_button_ac">A/C</string>
+    <string name="radio_button_music">Música</string>
+    <string name="radio_button_navi_home">Casa</string>
+    <string name="radio_button_play_pause">Posar en pausa/Reproduir multimèdia</string>
+    <string name="radio_button_radio">Ràdio</string>
+    <string name="radio_button_rotate">Gir de la Pantalla central</string>
+    <string name="radio_button_source">Canviar l\'origen d\'àudio multimèdia</string>
+    <string name="reset_country">Configurant el sistema. Espereu-vos</string>
+    <string name="restart_efect">La funció s\'ha configurat correctament. Reinicieu per activar-la!</string>
+    <string name="restart_now">Reiniciar</string>
+    <string name="restart_time">Reiniciar compte enrere</string>
+    <string name="warring_mode">Completeu el procés de guia abans d\'utilitzar l\'IVI!</string>
+    <string name="warring_navi_mode">L\'estat actual no admet aquesta operació!</string>
+    <string name="warring_power">Aquesta funció només està disponible en la marxa P</string>
+</resources>

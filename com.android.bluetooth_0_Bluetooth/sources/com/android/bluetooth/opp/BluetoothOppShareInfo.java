@@ -1,0 +1,54 @@
+package com.android.bluetooth.opp;
+
+import android.net.Uri;
+
+/* JADX INFO: loaded from: classes.dex */
+public class BluetoothOppShareInfo {
+    public int mConfirm;
+    public long mCurrentBytes;
+    public String mDestination;
+    public int mDirection;
+    public String mFilename;
+    public String mHint;
+    public int mId;
+    public boolean mMediaScanned;
+    public String mMimetype;
+    public int mStatus;
+    public long mTimestamp;
+    public long mTotalBytes;
+    public Uri mUri;
+    public int mVisibility;
+
+    public BluetoothOppShareInfo(int id, Uri uri, String hint, String filename, String mimetype, int direction, String destination, int visibility, int confirm, int status, long totalBytes, long currentBytes, long timestamp, boolean mediaScanned) {
+        this.mId = id;
+        this.mUri = uri;
+        this.mHint = hint;
+        this.mFilename = filename;
+        this.mMimetype = mimetype;
+        this.mDirection = direction;
+        this.mDestination = destination;
+        this.mVisibility = visibility;
+        this.mConfirm = confirm;
+        this.mStatus = status;
+        this.mTotalBytes = totalBytes;
+        this.mCurrentBytes = currentBytes;
+        this.mTimestamp = timestamp;
+        this.mMediaScanned = mediaScanned;
+    }
+
+    public boolean isReadyToStart() {
+        int i = this.mDirection;
+        return i == 0 ? this.mStatus == 190 && this.mUri != null : i == 1 && this.mStatus == 190;
+    }
+
+    public boolean hasCompletionNotification() {
+        return BluetoothShare.isStatusCompleted(this.mStatus) && this.mVisibility == 0;
+    }
+
+    public boolean isObsolete() {
+        if (192 == this.mStatus) {
+            return true;
+        }
+        return false;
+    }
+}

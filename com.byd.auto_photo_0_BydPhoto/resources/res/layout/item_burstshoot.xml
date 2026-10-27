@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="?attr/bg_item_color"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/item_current_tips"
+        android:visibility="gone"
+        android:layout_width="@dimen/burst_current_select_tips_size"
+        android:layout_height="@dimen/burst_current_select_tips_size"
+        android:src="?attr/icon_burst_select_tips"/>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <com.byd.view.XRoundCornerImageView
+            android:layout_gravity="center"
+            android:id="@+id/item_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitCenter"
+            app:radius="0dp"/>
+        <ImageView
+            android:layout_gravity="center"
+            android:id="@+id/item_check_show_layer"
+            android:background="#88000000"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/icon_edit_sure"
+            android:scaleType="center"/>
+        <ImageView
+            android:layout_gravity="bottom|right"
+            android:id="@+id/item_check"
+            android:visibility="gone"
+            android:layout_width="@dimen/dp_30"
+            android:layout_height="@dimen/dp_30"
+            android:src="?attr/burst_select_radio"/>
+    </FrameLayout>
+</LinearLayout>

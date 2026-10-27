@@ -1,0 +1,23 @@
+package org.bouncycastle.crypto.agreement.jpake;
+
+import java.math.BigInteger;
+
+/* JADX INFO: compiled from: caradapter-bug */
+/* JADX INFO: loaded from: classes.dex */
+public class JPAKERound3Payload {
+    private final BigInteger macTag;
+    private final String participantId;
+
+    public JPAKERound3Payload(String str, BigInteger bigInteger) {
+        this.participantId = str;
+        this.macTag = bigInteger;
+    }
+
+    public BigInteger getMacTag() {
+        return this.macTag;
+    }
+
+    public String getParticipantId() {
+        return this.participantId;
+    }
+}

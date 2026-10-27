@@ -1,0 +1,3 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/view/InputFilter;-><init>(Landroid/os/Looper;)V,frameworks/base/core/java/android/view/InputFilter.java,121,5,121,25,
+Landroid/view/InputFilter;->onInputEvent(Landroid/view/InputEvent;I)V,frameworks/base/core/java/android/view/InputFilter.java,191,5,191,25,

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="billing_cycle_days_left">
+        <item quantity="one">%d రోజు మిగిలి ఉంది</item>
+        <item quantity="other">%d రోజులు మిగిలి ఉన్నాయి</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_letters">
+        <item quantity="one">తప్పనిసరిగా కనీసం 1 అక్షరాన్ని కలిగి ఉండాలి</item>
+        <item quantity="other">తప్పనిసరిగా కనీసం %d అక్షరాలను కలిగి ఉండాలి</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_lowercase">
+        <item quantity="one">తప్పనిసరిగా కనీసం 1 చిన్న అక్షరాన్ని కలిగి ఉండాలి</item>
+        <item quantity="other">తప్పనిసరిగా కనీసం %d చిన్న అక్షరాలను కలిగి ఉండాలి</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_nonletter">
+        <item quantity="one">తప్పనిసరిగా కనీసం 1 వర్ణమాల యేతర అక్షరాన్ని కలిగి ఉండాలి</item>
+        <item quantity="other">తప్పనిసరిగా కనీసం %d వర్ణమాల యేతర అక్షరాలను కలిగి ఉండాలి</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_numeric">
+        <item quantity="one">తప్పనిసరిగా కనీసం 1 సంఖ్యాత్మక అంకెను కలిగి ఉండాలి</item>
+        <item quantity="other">తప్పనిసరిగా కనీసం %d సంఖ్యాత్మక అంకెలను కలిగి ఉండాలి</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_symbols">
+        <item quantity="one">తప్పనిసరిగా కనీసం 1 ప్రత్యేక గుర్తును కలిగి ఉండాలి</item>
+        <item quantity="other">తప్పనిసరిగా కనీసం %d ప్రత్యేక గుర్తులను కలిగి ఉండాలి</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_uppercase">
+        <item quantity="one">తప్పనిసరిగా కనీసం 1 అప్పర్‌కేస్ అక్షరాన్ని కలిగి ఉండాలి</item>
+        <item quantity="other">తప్పనిసరిగా కనీసం %d అప్పర్‌కేస్ అక్షరాలను కలిగి ఉండాలి</item>
+    </plurals>
+    <plurals name="mobile_network_summary_count">
+        <item quantity="one">%1$d SIM</item>
+        <item quantity="other">%1$d SIMలు</item>
+    </plurals>
+    <plurals name="runtime_permissions_additional_count">
+        <item quantity="one">%d అదనపు అనుమతి</item>
+        <item quantity="other">%d అదనపు అనుమతులు</item>
+    </plurals>
+    <plurals name="show_dev_countdown">
+        <item quantity="one">మీరు ఇప్పుడు డెవలపర్ కావడానికి %1$d అడుగు దూరంలో ఉన్నారు.</item>
+        <item quantity="other">మీరు ఇప్పుడు డెవలపర్ కావడానికి %1$d అడుగుల దూరంలో ఉన్నారు.</item>
+    </plurals>
+    <plurals name="user_limit_reached_message">
+        <item quantity="one">ఒక్క వినియోగదారుని మాత్రమే సృష్టించవచ్చు.</item>
+        <item quantity="other">మీరు %dవినియోగదారుల వరకు సృష్టించవచ్చు.</item>
+    </plurals>
+    <plurals name="wifi_tether_connected_summary">
+        <item quantity="one">%1$d పరికరం కనెక్ట్ చేయబడింది</item>
+        <item quantity="other">%1$d పరికరాలు కనెక్ట్ చేయబడ్డాయి</item>
+    </plurals>
+</resources>

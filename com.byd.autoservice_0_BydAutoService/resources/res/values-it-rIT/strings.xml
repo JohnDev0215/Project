@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">BydAutoService</string>
+    <string name="audio_muted">Audio disattivato</string>
+    <string name="audio_removed">Audio riattivato</string>
+    <string name="btn_comfirm">OK</string>
+    <string name="btn_reset">Reset</string>
+    <string name="call_mode">Chiamata in corso. Operazione disabilitata</string>
+    <string name="cancel">Annulla</string>
+    <string name="carplay_androidauto_land">La schermata attuale non supporta il cambio schermata</string>
+    <string name="dialog_title_user">Impostazioni pulsante personalizzato</string>
+    <string name="dialog_title_user_left">Impostazioni pulsante personalizzato sinistro</string>
+    <string name="dialog_title_user_right">Impostazioni pulsante personalizzato destro</string>
+    <string name="mode_am_music">AM</string>
+    <string name="mode_amazon_music">Amazon Music</string>
+    <string name="mode_bt_music">Musica</string>
+    <string name="mode_button_androidauto">Android Auto</string>
+    <string name="mode_button_carplay">Apple CarPlay</string>
+    <string name="mode_dab_music">DAB</string>
+    <string name="mode_fm_music">FM</string>
+    <string name="mode_local_music">File multimediali locali</string>
+    <string name="mode_music">Locale</string>
+    <string name="mode_sd">Scheda SD</string>
+    <string name="mode_spotify_music">Spotify</string>
+    <string name="mode_usb">USB</string>
+    <string name="mode_usb_music">Musica su USB</string>
+    <string name="mode_usb_text">Nessuna USB rilevata</string>
+    <string name="mode_usb_video">Video della chiavetta USB</string>
+    <string name="radio_button_ac">A/C</string>
+    <string name="radio_button_music">Musica</string>
+    <string name="radio_button_navi_home">Home</string>
+    <string name="radio_button_play_pause">Metti in pausa/riproduci file multimediale</string>
+    <string name="radio_button_radio">Radio</string>
+    <string name="radio_button_rotate">Rotazione schermo centrale</string>
+    <string name="radio_button_source">Cambia sorgente audio multimediale</string>
+    <string name="reset_country">Configurazione del sistema in corso. Attendere</string>
+    <string name="restart_efect">Funzione configurata correttamente. Riavvia per attivare!</string>
+    <string name="restart_now">Riavvia ora</string>
+    <string name="restart_time">Riavvia conto alla rovescia</string>
+    <string name="warring_mode">Completa la guida prima di utilizzare l\'IVI!</string>
+    <string name="warring_navi_mode">Lo stato attuale non supporta l\'operazione!</string>
+    <string name="warring_power">Questa funzione è disponibile solo con la marcia P</string>
+</resources>

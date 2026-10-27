@@ -1,0 +1,5 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/graphics/GraphicBuffer;->mNativeObject:J,frameworks/base/graphics/java/android/graphics/GraphicBuffer.java,58,5,58,25,
+Landroid/graphics/GraphicBuffer;-><init>(IIIIJ)V,frameworks/base/graphics/java/android/graphics/GraphicBuffer.java,90,5,90,25,
+Landroid/graphics/GraphicBuffer;->createFromExisting(IIIIJ)Landroid/graphics/GraphicBuffer;,frameworks/base/graphics/java/android/graphics/GraphicBuffer.java,103,5,103,25,
+Landroid/graphics/GraphicBuffer;->CREATOR:Landroid/os/Parcelable$Creator;,frameworks/base/graphics/java/android/graphics/GraphicBuffer.java,290,5,290,25,

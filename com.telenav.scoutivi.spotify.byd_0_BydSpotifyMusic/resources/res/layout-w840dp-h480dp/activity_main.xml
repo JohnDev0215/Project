@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:tag="layout-w840dp-h480dp/activity_main_0"
+    android:background="?attr/app_bg_color"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <fragment
+        android:name="com.vivid.spotify.rootui.MainFragment"
+        android:id="@+id/recommendations_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <View
+        android:tag="binding_1"
+        android:background="?attr/splash_bg"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <include
+        android:id="@+id/view_login"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        layout="@layout/fragment_login"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

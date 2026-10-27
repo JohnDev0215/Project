@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">BydAutoService</string>
+    <string name="audio_muted">Audió némítva</string>
+    <string name="audio_removed">Nem némít</string>
+    <string name="btn_comfirm">OK</string>
+    <string name="btn_reset">Redefinir</string>
+    <string name="call_mode">Hívásban van. Művelet kikapcsolva</string>
+    <string name="cancel">Mégse</string>
+    <string name="carplay_androidauto_land">Az aktuális képernyő nem támogatja a képernyőváltást</string>
+    <string name="dialog_title_user">Egyéni gombbeállítások</string>
+    <string name="dialog_title_user_left">Bal egyéni gombbeállítás</string>
+    <string name="dialog_title_user_right">Jobb egyéni gombbeállítás</string>
+    <string name="mode_am_music">AM</string>
+    <string name="mode_amazon_music">Amazon Music</string>
+    <string name="mode_bt_music">Zene</string>
+    <string name="mode_button_androidauto">Android Auto</string>
+    <string name="mode_button_carplay">Apple CarPlay</string>
+    <string name="mode_dab_music">DAB</string>
+    <string name="mode_fm_music">FM</string>
+    <string name="mode_local_music">Helyi média</string>
+    <string name="mode_music">Helyi</string>
+    <string name="mode_sd">SD-kártya</string>
+    <string name="mode_spotify_music">Spotify</string>
+    <string name="mode_usb">USB</string>
+    <string name="mode_usb_music">Zene USB-n</string>
+    <string name="mode_usb_text">Nem észlelhető USB</string>
+    <string name="mode_usb_video">USB-adathordozó videó</string>
+    <string name="radio_button_ac">Légkondicionáló</string>
+    <string name="radio_button_music">Zene</string>
+    <string name="radio_button_navi_home">Haza</string>
+    <string name="radio_button_play_pause">Média szüneteltetése/lejátszása</string>
+    <string name="radio_button_radio">Rádió</string>
+    <string name="radio_button_rotate">Középképernyő-forgatás</string>
+    <string name="radio_button_source">Médiahangforrás váltása</string>
+    <string name="reset_country">Rendszerkonfigurálás. Kérjük, várjon</string>
+    <string name="restart_efect">Funkció sikeresen konfigurálva. Aktiválásához indítsa újra a rendszert!</string>
+    <string name="restart_now">Újraindítás most</string>
+    <string name="restart_time">Visszaszámlálás újraindítása</string>
+    <string name="warring_mode">Az IVI használata előtt végezze el az útmutató folyamatát!</string>
+    <string name="warring_navi_mode">Az aktuális állapot nem támogatja ezt a műveletet!</string>
+    <string name="warring_power">Ez a funkció csak a P fokozatban érhető el</string>
+</resources>

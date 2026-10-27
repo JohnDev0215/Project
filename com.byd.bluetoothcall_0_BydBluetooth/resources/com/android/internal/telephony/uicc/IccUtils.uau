@@ -1,0 +1,12 @@
+signature,file,startline,startcol,endline,endcol,properties
+Lcom/android/internal/telephony/uicc/IccUtils;->bcdToString([BII)Ljava/lang/String;,frameworks/base/telephony/java/com/android/internal/telephony/uicc/IccUtils.java,57,5,57,25,
+Lcom/android/internal/telephony/uicc/IccUtils;->cdmaBcdToString([BII)Ljava/lang/String;,frameworks/base/telephony/java/com/android/internal/telephony/uicc/IccUtils.java,185,5,185,25,
+Lcom/android/internal/telephony/uicc/IccUtils;->gsmBcdByteToInt(B)I,frameworks/base/telephony/java/com/android/internal/telephony/uicc/IccUtils.java,221,5,221,25,
+Lcom/android/internal/telephony/uicc/IccUtils;->cdmaBcdByteToInt(B)I,frameworks/base/telephony/java/com/android/internal/telephony/uicc/IccUtils.java,244,5,244,25,
+Lcom/android/internal/telephony/uicc/IccUtils;->adnStringFieldToString([BII)Ljava/lang/String;,frameworks/base/telephony/java/com/android/internal/telephony/uicc/IccUtils.java,296,5,296,25,
+Lcom/android/internal/telephony/uicc/IccUtils;->hexCharToInt(C)I,frameworks/base/telephony/java/com/android/internal/telephony/uicc/IccUtils.java,388,5,388,25,
+Lcom/android/internal/telephony/uicc/IccUtils;->hexStringToBytes(Ljava/lang/String;)[B,frameworks/base/telephony/java/com/android/internal/telephony/uicc/IccUtils.java,408,5,408,25,
+Lcom/android/internal/telephony/uicc/IccUtils;->bytesToHexString([B)Ljava/lang/String;,frameworks/base/telephony/java/com/android/internal/telephony/uicc/IccUtils.java,435,5,435,25,
+Lcom/android/internal/telephony/uicc/IccUtils;->networkNameToString([BII)Ljava/lang/String;,frameworks/base/telephony/java/com/android/internal/telephony/uicc/IccUtils.java,463,5,463,25,
+Lcom/android/internal/telephony/uicc/IccUtils;->parseToBnW([BI)Landroid/graphics/Bitmap;,frameworks/base/telephony/java/com/android/internal/telephony/uicc/IccUtils.java,514,5,514,25,
+Lcom/android/internal/telephony/uicc/IccUtils;->parseToRGB([BIZ)Landroid/graphics/Bitmap;,frameworks/base/telephony/java/com/android/internal/telephony/uicc/IccUtils.java,557,5,557,25,

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" xmlns:settings="http://schemas.android.com/apk/res-auto"
+    android:title="@string/data_usage_settings"
+    android:key="@string/psk_data_usage">
+    <com.android.car.settings.datausage.DataUsageSummaryPreference
+        android:key="@string/pk_data_usage_summary"
+        settings:controller="com.android.car.settings.datausage.DataUsageSummaryPreferenceController"
+        settings:singleLineTitle="false"/>
+    <Preference
+        android:title="@string/app_data_usage"
+        android:key="@string/pk_app_data_usage"
+        settings:controller="com.android.car.settings.datausage.DataUsagePreferenceController"/>
+    <Preference
+        android:title="@string/data_warning_limit_title"
+        android:key="@string/pk_data_warning_and_limit"
+        settings:controller="com.android.car.settings.common.DefaultRestrictionsPreferenceController"
+        settings:searchable="false">
+        <intent
+            android:targetPackage="com.android.car.settings"
+            android:targetClass="com.android.car.settings.datausage.DataWarningAndLimitActivity"/>
+    </Preference>
+</PreferenceScreen>

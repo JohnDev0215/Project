@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">BydAutoService</string>
+    <string name="audio_muted">Dźwięk wyciszony</string>
+    <string name="audio_removed">Nie wyciszony</string>
+    <string name="btn_comfirm">OK</string>
+    <string name="btn_reset">Reset</string>
+    <string name="call_mode">W trakcie połączenia. Operacja jest wyłączona</string>
+    <string name="cancel">Anuluj</string>
+    <string name="carplay_androidauto_land">Bieżący ekran nie obsługuje przełączania ekranów</string>
+    <string name="dialog_title_user">Niestandardowe ustawienia przycisku</string>
+    <string name="dialog_title_user_left">Ustawienia lewego przycisku niestandardowego</string>
+    <string name="dialog_title_user_right">Ustawienia prawego przycisku niestandardowego</string>
+    <string name="mode_am_music">AM</string>
+    <string name="mode_amazon_music">Amazon Music</string>
+    <string name="mode_bt_music">Muzyka</string>
+    <string name="mode_button_androidauto">Android Auto</string>
+    <string name="mode_button_carplay">Apple CarPlay</string>
+    <string name="mode_dab_music">DAB</string>
+    <string name="mode_fm_music">FM</string>
+    <string name="mode_local_music">Multimedia lokalne</string>
+    <string name="mode_music">Lokalna</string>
+    <string name="mode_sd">Karta SD</string>
+    <string name="mode_spotify_music">Spotify</string>
+    <string name="mode_usb">USB</string>
+    <string name="mode_usb_music">Muzyka z pamięci USB</string>
+    <string name="mode_usb_text">Nie wykryto USB</string>
+    <string name="mode_usb_video">Film w pamięci USB</string>
+    <string name="radio_button_ac">A/C</string>
+    <string name="radio_button_music">Muzyka</string>
+    <string name="radio_button_navi_home">Strona główna</string>
+    <string name="radio_button_play_pause">Odtwórz/Wstrzymaj multimedia</string>
+    <string name="radio_button_radio">Radio</string>
+    <string name="radio_button_rotate">Obrót ekranu środkowego</string>
+    <string name="radio_button_source">Przełącz źródło dźwięków multimediów</string>
+    <string name="reset_country">Konfigurowanie systemu. Czekaj</string>
+    <string name="restart_efect">Funkcja skonfigurowana pomyślnie. Uruchom ponownie, aby go aktywować!</string>
+    <string name="restart_now">Uruchom ponownie teraz</string>
+    <string name="restart_time">Uruchom odliczanie ponownie</string>
+    <string name="warring_mode">Zakończ proces przewodnika, zanim zaczniesz używać IVI!</string>
+    <string name="warring_navi_mode">Bieżący stan nie obsługuje tej operacji!</string>
+    <string name="warring_power">Ta funkcja jest dostępna tylko na biegu P</string>
+</resources>

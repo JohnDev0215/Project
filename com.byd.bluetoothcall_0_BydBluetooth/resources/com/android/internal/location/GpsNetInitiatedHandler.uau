@@ -1,0 +1,4 @@
+signature,file,startline,startcol,endline,endcol,properties
+Lcom/android/internal/location/GpsNetInitiatedHandler;->mIsHexInput:Z,frameworks/base/location/java/com/android/internal/location/GpsNetInitiatedHandler.java,115,5,115,25,
+Lcom/android/internal/location/GpsNetInitiatedHandler;->handleNiNotification(Lcom/android/internal/location/GpsNetInitiatedHandler$GpsNiNotification;)V,frameworks/base/location/java/com/android/internal/location/GpsNetInitiatedHandler.java,266,5,266,25,
+Lcom/android/internal/location/GpsNetInitiatedHandler;->decodeString(Ljava/lang/String;ZI)Ljava/lang/String;,frameworks/base/location/java/com/android/internal/location/GpsNetInitiatedHandler.java,544,5,544,25,

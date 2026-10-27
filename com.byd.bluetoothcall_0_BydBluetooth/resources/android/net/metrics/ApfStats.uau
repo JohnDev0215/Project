@@ -1,0 +1,11 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/net/metrics/ApfStats;->durationMs:J,frameworks/base/core/java/android/net/metrics/ApfStats.java,39,5,39,25,
+Landroid/net/metrics/ApfStats;->receivedRas:I,frameworks/base/core/java/android/net/metrics/ApfStats.java,45,5,45,25,
+Landroid/net/metrics/ApfStats;->matchingRas:I,frameworks/base/core/java/android/net/metrics/ApfStats.java,51,5,51,25,
+Landroid/net/metrics/ApfStats;->droppedRas:I,frameworks/base/core/java/android/net/metrics/ApfStats.java,57,5,57,25,
+Landroid/net/metrics/ApfStats;->zeroLifetimeRas:I,frameworks/base/core/java/android/net/metrics/ApfStats.java,63,5,63,25,
+Landroid/net/metrics/ApfStats;->parseErrors:I,frameworks/base/core/java/android/net/metrics/ApfStats.java,69,5,69,25,
+Landroid/net/metrics/ApfStats;->programUpdates:I,frameworks/base/core/java/android/net/metrics/ApfStats.java,75,5,75,25,
+Landroid/net/metrics/ApfStats;->programUpdatesAll:I,frameworks/base/core/java/android/net/metrics/ApfStats.java,81,5,81,25,
+Landroid/net/metrics/ApfStats;->programUpdatesAllowingMulticast:I,frameworks/base/core/java/android/net/metrics/ApfStats.java,87,5,87,25,
+Landroid/net/metrics/ApfStats;->maxProgramSize:I,frameworks/base/core/java/android/net/metrics/ApfStats.java,93,5,93,25,

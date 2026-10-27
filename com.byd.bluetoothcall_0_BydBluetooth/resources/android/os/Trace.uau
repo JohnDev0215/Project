@@ -1,0 +1,12 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/os/Trace;->TRACE_TAG_VIEW:J,frameworks/base/core/java/android/os/Trace.java,55,5,55,25,
+Landroid/os/Trace;->TRACE_TAG_APP:J,frameworks/base/core/java/android/os/Trace.java,74,5,74,25,
+Landroid/os/Trace;->sEnabledTags:J,frameworks/base/core/java/android/os/Trace.java,113,5,113,25,
+Landroid/os/Trace;->nativeGetEnabledTags()J,frameworks/base/core/java/android/os/Trace.java,118,5,118,25,
+Landroid/os/Trace;->isTagEnabled(J)Z,frameworks/base/core/java/android/os/Trace.java,146,5,146,25,
+Landroid/os/Trace;->traceCounter(JLjava/lang/String;I)V,frameworks/base/core/java/android/os/Trace.java,161,5,161,25,
+Landroid/os/Trace;->setAppTracingAllowed(Z)V,frameworks/base/core/java/android/os/Trace.java,174,5,174,25,
+Landroid/os/Trace;->traceBegin(JLjava/lang/String;)V,frameworks/base/core/java/android/os/Trace.java,198,5,198,25,
+Landroid/os/Trace;->traceEnd(J)V,frameworks/base/core/java/android/os/Trace.java,213,5,213,25,
+Landroid/os/Trace;->asyncTraceBegin(JLjava/lang/String;I)V,frameworks/base/core/java/android/os/Trace.java,233,5,233,25,
+Landroid/os/Trace;->asyncTraceEnd(JLjava/lang/String;I)V,frameworks/base/core/java/android/os/Trace.java,251,5,251,25,

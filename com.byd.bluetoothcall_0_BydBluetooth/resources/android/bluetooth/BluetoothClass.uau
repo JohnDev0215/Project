@@ -1,0 +1,5 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/bluetooth/BluetoothClass;-><init>(I)V,frameworks/base/core/java/android/bluetooth/BluetoothClass.java,69,5,69,88,maxTargetSdk=28&trackingBug=115609023L
+Landroid/bluetooth/BluetoothClass;->PROFILE_HEADSET:I,frameworks/base/core/java/android/bluetooth/BluetoothClass.java,330,5,330,25,
+Landroid/bluetooth/BluetoothClass;->PROFILE_A2DP:I,frameworks/base/core/java/android/bluetooth/BluetoothClass.java,333,5,333,25,
+Landroid/bluetooth/BluetoothClass;->doesClassMatch(I)Z,frameworks/base/core/java/android/bluetooth/BluetoothClass.java,356,5,356,25,

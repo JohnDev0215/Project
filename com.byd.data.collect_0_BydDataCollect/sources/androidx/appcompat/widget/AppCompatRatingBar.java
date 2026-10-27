@@ -1,0 +1,39 @@
+package androidx.appcompat.widget;
+
+import android.content.Context;
+import android.graphics.Bitmap;
+import android.util.AttributeSet;
+import android.view.View;
+import android.widget.RatingBar;
+
+/* JADX INFO: loaded from: classes.dex */
+public class AppCompatRatingBar extends RatingBar {
+
+    /* JADX INFO: renamed from: b, reason: collision with root package name */
+    private final j f439b;
+
+    public AppCompatRatingBar(Context context) {
+        this(context, null);
+    }
+
+    @Override // android.widget.RatingBar, android.widget.AbsSeekBar, android.widget.ProgressBar, android.view.View
+    protected synchronized void onMeasure(int i2, int i3) {
+        super.onMeasure(i2, i3);
+        Bitmap bitmapB = this.f439b.b();
+        if (bitmapB != null) {
+            setMeasuredDimension(View.resolveSizeAndState(bitmapB.getWidth() * getNumStars(), i2, 0), getMeasuredHeight());
+        }
+    }
+
+    public AppCompatRatingBar(Context context, AttributeSet attributeSet) {
+        this(context, attributeSet, b.a.a.ratingBarStyle);
+    }
+
+    public AppCompatRatingBar(Context context, AttributeSet attributeSet, int i2) {
+        super(context, attributeSet, i2);
+        a0.a(this, getContext());
+        j jVar = new j(this);
+        this.f439b = jVar;
+        jVar.c(attributeSet, i2);
+    }
+}

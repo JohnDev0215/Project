@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">BydAutoService</string>
+    <string name="audio_muted">Дыбыс өшірілген</string>
+    <string name="audio_removed">Дыбысы қосылды</string>
+    <string name="btn_comfirm">OK</string>
+    <string name="btn_reset">Қайта орнату</string>
+    <string name="call_mode">Қоңырау кезінде операцияға тыйым салынады</string>
+    <string name="cancel">Бас тарту</string>
+    <string name="carplay_androidauto_land">Ағымдағы экран экранды ауыстыруды қолдамайды</string>
+    <string name="dialog_title_user">Реттелмелі түйме параметрі</string>
+    <string name="dialog_title_user_left">Теңшелетін сол жақ түйме параметрі</string>
+    <string name="dialog_title_user_right">Теңшелетін оң жақ түйме параметрі</string>
+    <string name="mode_am_music">AM</string>
+    <string name="mode_amazon_music">Amazon Music</string>
+    <string name="mode_bt_music">Музыка</string>
+    <string name="mode_button_androidauto">Android Auto</string>
+    <string name="mode_button_carplay">Apple CarPlay</string>
+    <string name="mode_dab_music">DAB</string>
+    <string name="mode_fm_music">FM</string>
+    <string name="mode_local_music">Жергілікті мультимедиа</string>
+    <string name="mode_music">Жергілікті</string>
+    <string name="mode_sd">SD</string>
+    <string name="mode_spotify_music">Spotify</string>
+    <string name="mode_usb">USB</string>
+    <string name="mode_usb_music">USB флэш дискісіндегі музыка</string>
+    <string name="mode_usb_text">USB табылмады</string>
+    <string name="mode_usb_video">USB флэш дискісіндегі бейне</string>
+    <string name="radio_button_ac">Кондиционер</string>
+    <string name="radio_button_music">Музыка</string>
+    <string name="radio_button_navi_home">Үй</string>
+    <string name="radio_button_play_pause">Медианы тоқтату/ойнату</string>
+    <string name="radio_button_radio">Радио</string>
+    <string name="radio_button_rotate">Экранды айналдыру</string>
+    <string name="radio_button_source">Медианың дыбыс көзін ауыстыру</string>
+    <string name="reset_country">Жүйе конфигурациялануда. Күте тұрыңыз</string>
+    <string name="restart_efect">Функция сәтті конфигурацияланды. Оны белсендіру үшін қайта іске қосыңыз!</string>
+    <string name="restart_now">Қазір қайта іске қосу</string>
+    <string name="restart_time">Қайта іске қосудың кері санағы</string>
+    <string name="warring_mode">Мультимедианы қолданбас бұрын нұсқаулықты аяқтаңыз!</string>
+    <string name="warring_navi_mode">Ағымдағы күйі бұл әрекетті қолдамайды!</string>
+    <string name="warring_power">Бұл функция тек P берілісінде қолжетімді</string>
+</resources>

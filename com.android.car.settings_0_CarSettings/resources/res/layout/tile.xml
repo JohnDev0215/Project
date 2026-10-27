@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="@dimen/tile_padding"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/tile_margin_bottom"
+    android:layout_marginStart="@dimen/tile_margin_start"
+    android:layout_marginEnd="@dimen/tile_margin_end">
+    <FrameLayout
+        android:gravity="center"
+        android:id="@+id/icon_container"
+        android:background="@drawable/circle_ripple_bg"
+        android:layout_width="@dimen/touch_target_size"
+        android:layout_height="@dimen/touch_target_size"
+        android:layout_marginBottom="@dimen/tile_icon_margin_bottom">
+        <View
+            android:id="@+id/icon_background"
+            android:background="@drawable/circle_bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        <ImageView
+            android:layout_gravity="center"
+            android:id="@+id/tile_icon"
+            android:layout_width="@dimen/icon_size"
+            android:layout_height="@dimen/icon_size"
+            android:src="@drawable/ic_settings_wifi"
+            android:scaleType="fitCenter"
+            android:tint="@color/toggle_icon_tint"/>
+    </FrameLayout>
+    <TextView
+        android:id="@+id/tile_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

@@ -1,0 +1,31 @@
+package g.a.b.h0;
+
+/* JADX INFO: loaded from: classes.dex */
+public class n {
+    public static byte[] a(byte[] bArr, int i2) {
+        byte[] bArr2 = new byte[i2];
+        System.arraycopy(bArr, bArr.length - i2, bArr2, 0, i2);
+        return bArr2;
+    }
+
+    public static byte[] b(byte[] bArr, int i2) {
+        return g.a.f.a.r(bArr, i2);
+    }
+
+    public static byte[] c(byte[] bArr, int i2, int i3) {
+        if (bArr.length < i2 + i3) {
+            i2 = bArr.length - i3;
+        }
+        byte[] bArr2 = new byte[i2];
+        System.arraycopy(bArr, i3, bArr2, 0, i2);
+        return bArr2;
+    }
+
+    public static byte[] d(byte[] bArr, byte[] bArr2) {
+        byte[] bArr3 = new byte[bArr.length];
+        for (int i2 = 0; i2 < bArr.length; i2++) {
+            bArr3[i2] = (byte) (bArr[i2] ^ bArr2[i2]);
+        }
+        return bArr3;
+    }
+}

@@ -1,0 +1,4 @@
+signature,file,startline,startcol,endline,endcol,properties
+Lcom/android/internal/location/ILocationProviderManager;->onSetAllowed(Z)V,frameworks/base/location/java/com/android/internal/location/ILocationProviderManager.aidl,31,1,31,25,
+Lcom/android/internal/location/ILocationProviderManager;->onSetProperties(Lcom/android/internal/location/ProviderProperties;)V,frameworks/base/location/java/com/android/internal/location/ILocationProviderManager.aidl,34,1,34,25,
+Lcom/android/internal/location/ILocationProviderManager;->onReportLocation(Landroid/location/Location;)V,frameworks/base/location/java/com/android/internal/location/ILocationProviderManager.aidl,37,1,37,25,

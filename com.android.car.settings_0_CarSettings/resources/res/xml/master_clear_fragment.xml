@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" xmlns:settings="http://schemas.android.com/apk/res-auto"
+    android:title="@string/master_clear_title"
+    android:key="@string/psk_master_clear">
+    <com.android.car.ui.preference.CarUiPreference
+        android:title="@string/master_clear_desc"
+        android:selectable="false"
+        android:key="@string/pk_master_clear_desc"
+        settings:controller="com.android.car.settings.common.DefaultRestrictionsPreferenceController"
+        settings:showChevron="false"
+        settings:singleLineTitle="false"/>
+    <com.android.car.settings.common.LogicalPreferenceGroup
+        android:title="@string/master_clear_accounts"
+        android:selectable="false"
+        android:key="@string/pk_master_clear_account_list"
+        settings:controller="com.android.car.settings.system.MasterClearAccountsPreferenceController"/>
+    <Preference
+        android:title="@string/master_clear_other_users_present"
+        android:selectable="false"
+        android:key="@string/pk_master_clear_other_users_present"
+        settings:controller="com.android.car.settings.system.MasterClearOtherUsersPresentPreferenceController"
+        settings:singleLineTitle="false"/>
+    <CheckBoxPreference
+        android:title="@string/reset_esim_title"
+        android:key="@string/pk_master_clear_reset_esim"
+        android:summary="@string/reset_esim_desc"
+        android:defaultValue="true"
+        settings:controller="com.android.car.settings.system.MasterClearResetEsimPreferenceController"/>
+</PreferenceScreen>

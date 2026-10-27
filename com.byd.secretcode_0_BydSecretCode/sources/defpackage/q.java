@@ -1,0 +1,63 @@
+package defpackage;
+
+import android.hardware.bydauto.doorlock.AbsBYDAutoDoorLockListener;
+import android.os.Handler;
+import android.os.HandlerThread;
+import android.os.Looper;
+import android.os.Message;
+
+/* JADX INFO: compiled from: TestDoorlockManagerImplCallback.java */
+/* JADX INFO: loaded from: classes.dex */
+public class q {
+    public AbsBYDAutoDoorLockListener a;
+    public Handler b;
+
+    /* JADX INFO: compiled from: TestDoorlockManagerImplCallback.java */
+    public class a extends Handler {
+        public a(Looper looper) {
+            super(looper);
+        }
+
+        @Override // android.os.Handler
+        public void handleMessage(Message message) {
+            super.handleMessage(message);
+            q.this.a(message);
+        }
+    }
+
+    public q() {
+        HandlerThread handlerThread = new HandlerThread("TestDoorlockManagerImplCallback");
+        handlerThread.start();
+        this.b = new a(handlerThread.getLooper());
+    }
+
+    public void a(Message message) {
+        AbsBYDAutoDoorLockListener absBYDAutoDoorLockListener = this.a;
+        if (absBYDAutoDoorLockListener != null) {
+            int i = message.what;
+            int i2 = message.arg1;
+            int i3 = message.arg2;
+            if (i != 32000) {
+                return;
+            }
+            absBYDAutoDoorLockListener.onDoorLockStatusChanged(i2, i3);
+        }
+    }
+
+    public void b(int i, int i2, int i3) {
+        if (this.b != null) {
+            Message messageObtain = Message.obtain();
+            messageObtain.what = i;
+            messageObtain.arg1 = i2;
+            messageObtain.arg2 = i3;
+            this.b.sendMessage(messageObtain);
+        }
+    }
+
+    public void c(AbsBYDAutoDoorLockListener absBYDAutoDoorLockListener) {
+        if (absBYDAutoDoorLockListener == null) {
+            return;
+        }
+        this.a = absBYDAutoDoorLockListener;
+    }
+}

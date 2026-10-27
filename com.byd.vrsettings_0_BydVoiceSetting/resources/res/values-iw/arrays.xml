@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="control_ac_array">
+        <item>Turn on the AC</item>
+        <item>Make the temperature 25 degrees</item>
+        <item>Turn on external circulation</item>
+        <item>Too hot</item>
+        <item>Turn down the fan speed</item>
+        <item>Set the fan speed to level 3</item>
+        <item>Switch on front window defrost</item>
+        <item>Turn on ventilation</item>
+        <item>Turn on the fan</item>
+    </array>
+    <array name="control_seat_array">
+        <item>Switch on driver seat heating</item>
+        <item>Turn on seat ventilation</item>
+        <item>Open passenger side seat vents</item>
+        <item>Turn off seat ventilation</item>
+    </array>
+    <array name="control_sunshade_array">
+        <item>Open sunshade</item>
+        <item>Close sunshade</item>
+    </array>
+    <array name="offline_other_operations_array">
+        <item>Turn on Bluetooth</item>
+        <item>Turn on WiFi</item>
+        <item>Screen brighter</item>
+        <item>Open vehicle settings</item>
+        <item>Return to homepage</item>
+    </array>
+    <array name="offline_window_array">
+        <item>Open windows</item>
+        <item>Open front passenger window</item>
+        <item>Open driver side window</item>
+        <item>Close all windows</item>
+    </array>
+    <array name="rotate_screen_arrays">
+        <item>Rotate screen</item>
+    </array>
+    <array name="system_app_operations">
+        <item>Open spotify</item>
+        <item>Open vehicle settings</item>
+    </array>
+    <array name="system_other_operations_array">
+        <item>Turn on Bluetooth</item>
+        <item>Turn on WiFi</item>
+        <item>Screen brighter</item>
+        <item>Return to homepage</item>
+    </array>
+</resources>

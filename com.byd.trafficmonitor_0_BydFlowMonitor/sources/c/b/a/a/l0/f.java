@@ -1,0 +1,486 @@
+package c.b.a.a.l0;
+
+import android.animation.Animator;
+import android.animation.AnimatorListenerAdapter;
+import android.animation.AnimatorSet;
+import android.animation.ObjectAnimator;
+import android.content.Context;
+import android.content.res.ColorStateList;
+import android.graphics.Typeface;
+import android.os.Build;
+import android.text.TextUtils;
+import android.util.Property;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.FrameLayout;
+import android.widget.LinearLayout;
+import android.widget.TextView;
+import androidx.appcompat.widget.AppCompatTextView;
+import b.h.m.t;
+import b.h.n.i;
+import com.google.android.material.textfield.TextInputLayout;
+import java.util.ArrayList;
+import java.util.List;
+
+/* JADX INFO: compiled from: IndicatorViewController.java */
+/* JADX INFO: loaded from: classes.dex */
+public final class f {
+
+    /* JADX INFO: renamed from: a, reason: collision with root package name */
+    public final Context f3987a;
+
+    /* JADX INFO: renamed from: b, reason: collision with root package name */
+    public final TextInputLayout f3988b;
+
+    /* JADX INFO: renamed from: c, reason: collision with root package name */
+    public LinearLayout f3989c;
+
+    /* JADX INFO: renamed from: d, reason: collision with root package name */
+    public int f3990d;
+
+    /* JADX INFO: renamed from: e, reason: collision with root package name */
+    public FrameLayout f3991e;
+
+    /* JADX INFO: renamed from: f, reason: collision with root package name */
+    public int f3992f;
+
+    /* JADX INFO: renamed from: g, reason: collision with root package name */
+    public Animator f3993g;
+
+    /* JADX INFO: renamed from: h, reason: collision with root package name */
+    public final float f3994h;
+
+    /* JADX INFO: renamed from: i, reason: collision with root package name */
+    public int f3995i;
+    public int j;
+    public CharSequence k;
+    public boolean l;
+    public TextView m;
+    public CharSequence n;
+    public int o;
+    public ColorStateList p;
+    public CharSequence q;
+    public boolean r;
+    public TextView s;
+    public int t;
+    public ColorStateList u;
+    public Typeface v;
+
+    /* JADX INFO: compiled from: IndicatorViewController.java */
+    public class a extends AnimatorListenerAdapter {
+
+        /* JADX INFO: renamed from: a, reason: collision with root package name */
+        public final /* synthetic */ int f3996a;
+
+        /* JADX INFO: renamed from: b, reason: collision with root package name */
+        public final /* synthetic */ TextView f3997b;
+
+        /* JADX INFO: renamed from: c, reason: collision with root package name */
+        public final /* synthetic */ int f3998c;
+
+        /* JADX INFO: renamed from: d, reason: collision with root package name */
+        public final /* synthetic */ TextView f3999d;
+
+        public a(int i2, TextView textView, int i3, TextView textView2) {
+            this.f3996a = i2;
+            this.f3997b = textView;
+            this.f3998c = i3;
+            this.f3999d = textView2;
+        }
+
+        @Override // android.animation.AnimatorListenerAdapter, android.animation.Animator.AnimatorListener
+        public void onAnimationEnd(Animator animator) {
+            f.this.f3995i = this.f3996a;
+            f.this.f3993g = null;
+            TextView textView = this.f3997b;
+            if (textView != null) {
+                textView.setVisibility(4);
+                if (this.f3998c == 1 && f.this.m != null) {
+                    f.this.m.setText((CharSequence) null);
+                }
+            }
+            TextView textView2 = this.f3999d;
+            if (textView2 != null) {
+                textView2.setTranslationY(0.0f);
+                this.f3999d.setAlpha(1.0f);
+            }
+        }
+
+        @Override // android.animation.AnimatorListenerAdapter, android.animation.Animator.AnimatorListener
+        public void onAnimationStart(Animator animator) {
+            TextView textView = this.f3999d;
+            if (textView != null) {
+                textView.setVisibility(0);
+            }
+        }
+    }
+
+    public f(TextInputLayout textInputLayout) {
+        this.f3987a = textInputLayout.getContext();
+        this.f3988b = textInputLayout;
+        this.f3994h = r0.getResources().getDimensionPixelSize(c.b.a.a.d.design_textinput_caption_translate_y);
+    }
+
+    public void A(CharSequence charSequence) {
+        this.n = charSequence;
+        TextView textView = this.m;
+        if (textView != null) {
+            textView.setContentDescription(charSequence);
+        }
+    }
+
+    public void B(boolean z) {
+        if (this.l == z) {
+            return;
+        }
+        g();
+        if (z) {
+            AppCompatTextView appCompatTextView = new AppCompatTextView(this.f3987a);
+            this.m = appCompatTextView;
+            appCompatTextView.setId(c.b.a.a.f.textinput_error);
+            if (Build.VERSION.SDK_INT >= 17) {
+                this.m.setTextAlignment(5);
+            }
+            Typeface typeface = this.v;
+            if (typeface != null) {
+                this.m.setTypeface(typeface);
+            }
+            C(this.o);
+            D(this.p);
+            A(this.n);
+            this.m.setVisibility(4);
+            t.m0(this.m, 1);
+            d(this.m, 0);
+        } else {
+            s();
+            y(this.m, 0);
+            this.m = null;
+            this.f3988b.k0();
+            this.f3988b.y0();
+        }
+        this.l = z;
+    }
+
+    public void C(int i2) {
+        this.o = i2;
+        TextView textView = this.m;
+        if (textView != null) {
+            this.f3988b.Y(textView, i2);
+        }
+    }
+
+    public void D(ColorStateList colorStateList) {
+        this.p = colorStateList;
+        TextView textView = this.m;
+        if (textView == null || colorStateList == null) {
+            return;
+        }
+        textView.setTextColor(colorStateList);
+    }
+
+    public void E(int i2) {
+        this.t = i2;
+        TextView textView = this.s;
+        if (textView != null) {
+            i.q(textView, i2);
+        }
+    }
+
+    public void F(boolean z) {
+        if (this.r == z) {
+            return;
+        }
+        g();
+        if (z) {
+            AppCompatTextView appCompatTextView = new AppCompatTextView(this.f3987a);
+            this.s = appCompatTextView;
+            appCompatTextView.setId(c.b.a.a.f.textinput_helper_text);
+            if (Build.VERSION.SDK_INT >= 17) {
+                this.s.setTextAlignment(5);
+            }
+            Typeface typeface = this.v;
+            if (typeface != null) {
+                this.s.setTypeface(typeface);
+            }
+            this.s.setVisibility(4);
+            t.m0(this.s, 1);
+            E(this.t);
+            G(this.u);
+            d(this.s, 1);
+        } else {
+            t();
+            y(this.s, 1);
+            this.s = null;
+            this.f3988b.k0();
+            this.f3988b.y0();
+        }
+        this.r = z;
+    }
+
+    public void G(ColorStateList colorStateList) {
+        this.u = colorStateList;
+        TextView textView = this.s;
+        if (textView == null || colorStateList == null) {
+            return;
+        }
+        textView.setTextColor(colorStateList);
+    }
+
+    public final void H(TextView textView, Typeface typeface) {
+        if (textView != null) {
+            textView.setTypeface(typeface);
+        }
+    }
+
+    public void I(Typeface typeface) {
+        if (typeface != this.v) {
+            this.v = typeface;
+            H(this.m, typeface);
+            H(this.s, typeface);
+        }
+    }
+
+    public final void J(ViewGroup viewGroup, int i2) {
+        if (i2 == 0) {
+            viewGroup.setVisibility(8);
+        }
+    }
+
+    public final boolean K(TextView textView, CharSequence charSequence) {
+        return t.P(this.f3988b) && this.f3988b.isEnabled() && !(this.j == this.f3995i && textView != null && TextUtils.equals(textView.getText(), charSequence));
+    }
+
+    public void L(CharSequence charSequence) {
+        g();
+        this.k = charSequence;
+        this.m.setText(charSequence);
+        int i2 = this.f3995i;
+        if (i2 != 1) {
+            this.j = 1;
+        }
+        N(i2, this.j, K(this.m, charSequence));
+    }
+
+    public void M(CharSequence charSequence) {
+        g();
+        this.q = charSequence;
+        this.s.setText(charSequence);
+        int i2 = this.f3995i;
+        if (i2 != 2) {
+            this.j = 2;
+        }
+        N(i2, this.j, K(this.s, charSequence));
+    }
+
+    public final void N(int i2, int i3, boolean z) {
+        if (i2 == i3) {
+            return;
+        }
+        if (z) {
+            AnimatorSet animatorSet = new AnimatorSet();
+            this.f3993g = animatorSet;
+            ArrayList arrayList = new ArrayList();
+            h(arrayList, this.r, this.s, 2, i2, i3);
+            h(arrayList, this.l, this.m, 1, i2, i3);
+            c.b.a.a.m.b.a(animatorSet, arrayList);
+            animatorSet.addListener(new a(i3, l(i2), i2, l(i3)));
+            animatorSet.start();
+        } else {
+            z(i2, i3);
+        }
+        this.f3988b.k0();
+        this.f3988b.o0(z);
+        this.f3988b.y0();
+    }
+
+    public void d(TextView textView, int i2) {
+        if (this.f3989c == null && this.f3991e == null) {
+            LinearLayout linearLayout = new LinearLayout(this.f3987a);
+            this.f3989c = linearLayout;
+            linearLayout.setOrientation(0);
+            this.f3988b.addView(this.f3989c, -1, -2);
+            this.f3991e = new FrameLayout(this.f3987a);
+            this.f3989c.addView(this.f3991e, new LinearLayout.LayoutParams(0, -2, 1.0f));
+            if (this.f3988b.getEditText() != null) {
+                e();
+            }
+        }
+        if (v(i2)) {
+            this.f3991e.setVisibility(0);
+            this.f3991e.addView(textView);
+            this.f3992f++;
+        } else {
+            this.f3989c.addView(textView, new LinearLayout.LayoutParams(-2, -2));
+        }
+        this.f3989c.setVisibility(0);
+        this.f3990d++;
+    }
+
+    public void e() {
+        if (f()) {
+            t.y0(this.f3989c, t.E(this.f3988b.getEditText()), 0, t.D(this.f3988b.getEditText()), 0);
+        }
+    }
+
+    public final boolean f() {
+        return (this.f3989c == null || this.f3988b.getEditText() == null) ? false : true;
+    }
+
+    public void g() {
+        Animator animator = this.f3993g;
+        if (animator != null) {
+            animator.cancel();
+        }
+    }
+
+    public final void h(List<Animator> list, boolean z, TextView textView, int i2, int i3, int i4) {
+        if (textView == null || !z) {
+            return;
+        }
+        if (i2 == i4 || i2 == i3) {
+            list.add(i(textView, i4 == i2));
+            if (i4 == i2) {
+                list.add(j(textView));
+            }
+        }
+    }
+
+    public final ObjectAnimator i(TextView textView, boolean z) {
+        ObjectAnimator objectAnimatorOfFloat = ObjectAnimator.ofFloat(textView, (Property<TextView, Float>) View.ALPHA, z ? 1.0f : 0.0f);
+        objectAnimatorOfFloat.setDuration(167L);
+        objectAnimatorOfFloat.setInterpolator(c.b.a.a.m.a.f4008a);
+        return objectAnimatorOfFloat;
+    }
+
+    public final ObjectAnimator j(TextView textView) {
+        ObjectAnimator objectAnimatorOfFloat = ObjectAnimator.ofFloat(textView, (Property<TextView, Float>) View.TRANSLATION_Y, -this.f3994h, 0.0f);
+        objectAnimatorOfFloat.setDuration(217L);
+        objectAnimatorOfFloat.setInterpolator(c.b.a.a.m.a.f4011d);
+        return objectAnimatorOfFloat;
+    }
+
+    public boolean k() {
+        return u(this.j);
+    }
+
+    public final TextView l(int i2) {
+        if (i2 == 1) {
+            return this.m;
+        }
+        if (i2 != 2) {
+            return null;
+        }
+        return this.s;
+    }
+
+    public CharSequence m() {
+        return this.n;
+    }
+
+    public CharSequence n() {
+        return this.k;
+    }
+
+    public int o() {
+        TextView textView = this.m;
+        if (textView != null) {
+            return textView.getCurrentTextColor();
+        }
+        return -1;
+    }
+
+    public ColorStateList p() {
+        TextView textView = this.m;
+        if (textView != null) {
+            return textView.getTextColors();
+        }
+        return null;
+    }
+
+    public CharSequence q() {
+        return this.q;
+    }
+
+    public int r() {
+        TextView textView = this.s;
+        if (textView != null) {
+            return textView.getCurrentTextColor();
+        }
+        return -1;
+    }
+
+    public void s() {
+        this.k = null;
+        g();
+        if (this.f3995i == 1) {
+            if (!this.r || TextUtils.isEmpty(this.q)) {
+                this.j = 0;
+            } else {
+                this.j = 2;
+            }
+        }
+        N(this.f3995i, this.j, K(this.m, null));
+    }
+
+    public void t() {
+        g();
+        int i2 = this.f3995i;
+        if (i2 == 2) {
+            this.j = 0;
+        }
+        N(i2, this.j, K(this.s, null));
+    }
+
+    public final boolean u(int i2) {
+        return (i2 != 1 || this.m == null || TextUtils.isEmpty(this.k)) ? false : true;
+    }
+
+    public boolean v(int i2) {
+        return i2 == 0 || i2 == 1;
+    }
+
+    public boolean w() {
+        return this.l;
+    }
+
+    public boolean x() {
+        return this.r;
+    }
+
+    public void y(TextView textView, int i2) {
+        FrameLayout frameLayout;
+        if (this.f3989c == null) {
+            return;
+        }
+        if (!v(i2) || (frameLayout = this.f3991e) == null) {
+            this.f3989c.removeView(textView);
+        } else {
+            int i3 = this.f3992f - 1;
+            this.f3992f = i3;
+            J(frameLayout, i3);
+            this.f3991e.removeView(textView);
+        }
+        int i4 = this.f3990d - 1;
+        this.f3990d = i4;
+        J(this.f3989c, i4);
+    }
+
+    public final void z(int i2, int i3) {
+        TextView textViewL;
+        TextView textViewL2;
+        if (i2 == i3) {
+            return;
+        }
+        if (i3 != 0 && (textViewL2 = l(i3)) != null) {
+            textViewL2.setVisibility(0);
+            textViewL2.setAlpha(1.0f);
+        }
+        if (i2 != 0 && (textViewL = l(i2)) != null) {
+            textViewL.setVisibility(4);
+            if (i2 == 1) {
+                textViewL.setText((CharSequence) null);
+            }
+        }
+        this.f3995i = i3;
+    }
+}

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="audio_muted">Audio silenciado</string>
+    <string name="audio_removed">Silenciar cancelado</string>
+    <string name="btn_comfirm">OK</string>
+    <string name="btn_reset">Restablecer</string>
+    <string name="call_mode">Durante una llamada. No opere</string>
+    <string name="cancel">Cancelar</string>
+    <string name="carplay_androidauto_land">La pantalla actual no admite el cambio de pantalla</string>
+    <string name="dialog_title_user">Ajustes de botón personalizado</string>
+    <string name="dialog_title_user_left">Configuración del botón personalizado izquierdo</string>
+    <string name="dialog_title_user_right">Configuración del botón personalizado derecho</string>
+    <string name="mode_am_music">AM</string>
+    <string name="mode_amazon_music">Amazon Music</string>
+    <string name="mode_bt_music">Música</string>
+    <string name="mode_button_androidauto">Android Auto</string>
+    <string name="mode_button_carplay">Apple CarPlay</string>
+    <string name="mode_dab_music">DAB+</string>
+    <string name="mode_fm_music">FM</string>
+    <string name="mode_local_music">Medios locales</string>
+    <string name="mode_music">Local</string>
+    <string name="mode_sd">Tarjeta SD</string>
+    <string name="mode_spotify_music">Spotify</string>
+    <string name="mode_usb">USB</string>
+    <string name="mode_usb_music">Música USB</string>
+    <string name="mode_usb_text">No se detectó ningún USB</string>
+    <string name="mode_usb_video">Vídeo de la Memoria flash USB</string>
+    <string name="radio_button_ac">A/C</string>
+    <string name="radio_button_music">Música</string>
+    <string name="radio_button_navi_home">Casa</string>
+    <string name="radio_button_play_pause">Pausar/Reproducir medios</string>
+    <string name="radio_button_radio">Radio</string>
+    <string name="radio_button_rotate">Rotación de pantalla central</string>
+    <string name="radio_button_source">Cambiar fuente de audio multimedia</string>
+    <string name="reset_country">Configurando el sistema. Espere</string>
+    <string name="restart_efect">Función configurada correctamente. ¡Reinicie para activarla!</string>
+    <string name="restart_now">Restablecer ahora</string>
+    <string name="restart_time">Reiniciar cuenta regresiva</string>
+    <string name="warring_mode">¡Complete el proceso de guía antes de usar IVI!</string>
+    <string name="warring_navi_mode">¡El estado actual no admite esta operación!</string>
+    <string name="warring_power">Esta función solo está disponible en la marcha P</string>
+</resources>

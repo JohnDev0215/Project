@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:latin="http://schemas.android.com/apk/res/com.android.inputmethod.latin">
+    <Key
+        latin:keyLabelFlags="fontDefault"
+        latin:keySpec="!"
+        latin:moreKeys="!text/morekeys_exclamation"/>
+    <Key
+        latin:keyLabelFlags="fontDefault"
+        latin:keySpec="?"
+        latin:keyWidth="fillRight"
+        latin:moreKeys="!text/morekeys_question"/>
+</merge>

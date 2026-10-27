@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <CheckBoxPreference
+        android:title="@string/str_bt_enable_disable"
+        android:key="BYDBluetoothLogCheckBox"
+        android:summary="@string/str_bt_enable_disable_msg"/>
+    <Preference
+        android:title="@string/str_savebtlog"
+        android:key="BYDSaveBluetoothLog"/>
+    <CheckBoxPreference
+        android:title="@string/str_bt_open_error_pop"
+        android:key="BYDBluetoothOpenErrorBox"/>
+    <CheckBoxPreference
+        android:title="@string/str_wifiverboselogging"
+        android:key="BYDWifiVerboseLogBox"/>
+    <Preference
+        android:title="@string/str_getlinkkey"
+        android:key="BYDGetLinkKey"/>
+</PreferenceScreen>

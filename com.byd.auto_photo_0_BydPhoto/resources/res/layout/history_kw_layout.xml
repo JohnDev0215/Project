@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingTop="@dimen/dp_20"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:textSize="@dimen/sp_12"
+        android:textColor="?attr/history_text_color"
+        android:id="@+id/tv_history_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/history"/>
+    <ImageView
+        android:id="@+id/view_clear_all_history"
+        android:layout_width="@dimen/dp_24"
+        android:layout_height="@dimen/dp_24"
+        android:src="?attr/icon_clear_history"
+        android:layout_alignBottom="@+id/tv_history_title"
+        android:layout_toEndOf="@+id/tv_history_title"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_15"
+        android:layout_below="@+id/tv_history_title"
+        android:layout_alignParentBottom="true">
+        <com.byd.view.FloatingLayout
+            android:id="@+id/kw_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:item_bg="?attr/bg_res_kw"
+            app:item_text_color="?attr/text_color_for_kw"
+            app:item_text_size="@dimen/sp_12"/>
+    </ScrollView>
+</RelativeLayout>

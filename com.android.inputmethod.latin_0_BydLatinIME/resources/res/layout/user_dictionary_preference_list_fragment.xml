@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@android:color/transparent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ListView
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:id="@android:id/list"
+        android:paddingTop="0dp"
+        android:clipToPadding="false"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:drawSelectorOnTop="false"
+        android:cacheColorHint="@android:color/transparent"
+        android:layout_weight="1"/>
+    <TextView
+        android:gravity="center"
+        android:id="@android:id/empty"
+        android:padding="5dp"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

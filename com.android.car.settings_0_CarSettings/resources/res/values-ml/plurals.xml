@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="billing_cycle_days_left">
+        <item quantity="one">%d ദിവസം ശേഷിക്കുന്നു</item>
+        <item quantity="other">%d ദിവസം ശേഷിക്കുന്നു</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_letters">
+        <item quantity="one">കുറഞ്ഞത് ഒരു അക്ഷരമെങ്കിലും അടങ്ങിയിരിക്കണം</item>
+        <item quantity="other">കുറഞ്ഞത് %d അക്ഷരങ്ങളെങ്കിലും അടങ്ങിയിരിക്കണം</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_lowercase">
+        <item quantity="one">കുറഞ്ഞത് ഒരു ചെറിയക്ഷരമെങ്കിലും അടങ്ങിയിരിക്കണം</item>
+        <item quantity="other">കുറഞ്ഞത് %d ചെറിയക്ഷരങ്ങളെങ്കിലും അടങ്ങിയിരിക്കണം</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_nonletter">
+        <item quantity="one">കുറഞ്ഞത് അക്ഷരമല്ലാത്ത ഒരു പ്രതീകമെങ്കിലും അടങ്ങിയിരിക്കണം</item>
+        <item quantity="other">കുറഞ്ഞത് അക്ഷരമല്ലാത്ത %d പ്രതീകങ്ങളെങ്കിലും അടങ്ങിയിരിക്കണം</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_numeric">
+        <item quantity="one">കുറഞ്ഞത് ഒരു അക്കമെങ്കിലും അടങ്ങിയിരിക്കണം</item>
+        <item quantity="other">കുറഞ്ഞത് %d അക്കങ്ങളെങ്കിലും അടങ്ങിയിരിക്കണം</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_symbols">
+        <item quantity="one">കുറഞ്ഞത് ഒരു സവിശേഷ ചിഹ്നമെങ്കിലും അടങ്ങിയിരിക്കണം</item>
+        <item quantity="other">കുറഞ്ഞത് %d സവിശേഷ ചിഹ്നങ്ങളെങ്കിലും അടങ്ങിയിരിക്കണം</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_uppercase">
+        <item quantity="one">കുറഞ്ഞത് ഒരു വലിയക്ഷരമെങ്കിലും അടങ്ങിയിരിക്കണം</item>
+        <item quantity="other">കുറഞ്ഞത് %d വലിയക്ഷരങ്ങളെങ്കിലും അടങ്ങിയിരിക്കണം</item>
+    </plurals>
+    <plurals name="mobile_network_summary_count">
+        <item quantity="one">%1$d SIM</item>
+        <item quantity="other">%1$d SIM-കള്‍</item>
+    </plurals>
+    <plurals name="runtime_permissions_additional_count">
+        <item quantity="one">%d അധിക അനുമതി</item>
+        <item quantity="other">%d അധിക അനുമതികൾ</item>
+    </plurals>
+    <plurals name="show_dev_countdown">
+        <item quantity="one">ഒരു ഡെവലപ്പറാകുന്നതിൽ നിന്നും %1$d ചുവട് അകലെയാണ് നിങ്ങളിപ്പോൾ.</item>
+        <item quantity="other">ഒരു ഡെവലപ്പറാകുന്നതിൽ നിന്നും %1$d ചുവടുകൾ അകലെയാണ് നിങ്ങളിപ്പോൾ.</item>
+    </plurals>
+    <plurals name="user_limit_reached_message">
+        <item quantity="one">ഒരു ഉപയോക്താവിന് മാത്രമേ സൃഷ്‌ടിക്കാനാവൂ.</item>
+        <item quantity="other">നിങ്ങൾക്ക് %d ഉപയോക്താക്കളെ വരെ സൃഷ്‌ടിക്കാനാവും.</item>
+    </plurals>
+    <plurals name="wifi_tether_connected_summary">
+        <item quantity="one">%1$d ഉപകരണം കണക്‌റ്റ് ചെയ്‌തു</item>
+        <item quantity="other">%1$d ഉപകരണങ്ങൾ കണക്‌റ്റ് ചെയ്‌തു</item>
+    </plurals>
+</resources>

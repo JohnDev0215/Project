@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="billing_cycle_days_left">
+        <item quantity="one">%d päev jäänud</item>
+        <item quantity="other">%d päeva jäänud</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_letters">
+        <item quantity="one">Peab sisaldama vähemalt 1 tähte</item>
+        <item quantity="other">Peab sisaldama vähemalt %d tähte</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_lowercase">
+        <item quantity="one">Peab sisaldama vähemalt 1 väiketähte</item>
+        <item quantity="other">Peab sisaldama vähemalt %d väiketähte</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_nonletter">
+        <item quantity="one">Peab sisaldama vähemalt 1 tähemärki, mis ei ole täht</item>
+        <item quantity="other">Peab sisaldama vähemalt %d tähemärki, mis ei ole täht</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_numeric">
+        <item quantity="one">Peab sisaldama vähemalt 1 numbrit</item>
+        <item quantity="other">Peab sisaldama vähemalt %d numbrit</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_symbols">
+        <item quantity="one">Peab sisaldama vähemalt 1 erisümbolit</item>
+        <item quantity="other">Peab sisaldama vähemalt %d erisümbolit</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_uppercase">
+        <item quantity="one">Peab sisaldama vähemalt 1 suurtähte</item>
+        <item quantity="other">Peab sisaldama vähemalt %d suurtähte</item>
+    </plurals>
+    <plurals name="mobile_network_summary_count">
+        <item quantity="one">%1$d SIM-kaart</item>
+        <item quantity="other">%1$d SIM-kaarti</item>
+    </plurals>
+    <plurals name="runtime_permissions_additional_count">
+        <item quantity="one">%d täiendav luba</item>
+        <item quantity="other">%d täiendavat luba</item>
+    </plurals>
+    <plurals name="show_dev_countdown">
+        <item quantity="one">%1$d toiming veel ja olete arendaja.</item>
+        <item quantity="other">%1$d toimingut veel ja olete arendaja.</item>
+    </plurals>
+    <plurals name="user_limit_reached_message">
+        <item quantity="one">Luua saab ainult ühe kasutaja.</item>
+        <item quantity="other">Luua saab kuni %d kasutajat.</item>
+    </plurals>
+    <plurals name="wifi_tether_connected_summary">
+        <item quantity="one">%1$d seade on ühendatud</item>
+        <item quantity="other">%1$d seadet on ühendatud</item>
+    </plurals>
+</resources>

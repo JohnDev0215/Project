@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:tag="layout-w600dp-h480dp/fragment_queue_0"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:clickable="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <FrameLayout
+        android:id="@+id/btn_back"
+        android:layout_width="@dimen/queue_back_button_width"
+        android:layout_height="@dimen/queue_back_button_height"
+        android:layout_marginTop="@dimen/queue_back_button_margin_top"
+        android:onClick="onBackPressed"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <FrameLayout
+            android:layout_gravity="center"
+            android:background="?attr/queue_page_button_bg"
+            android:layout_width="@dimen/common_btn_size"
+            android:layout_height="@dimen/common_btn_size">
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_width="@dimen/common_btn_img_size"
+                android:layout_height="@dimen/common_btn_img_size"
+                android:src="?attr/btn_close"/>
+        </FrameLayout>
+    </FrameLayout>
+    <com.vivid.spotify.common.ui.shimmer.ShimmerRecyclerView
+        android:scrollbarThumbVertical="?attr/common_scroll_bar_bg"
+        android:scrollbarStyle="outsideOverlay"
+        android:id="@+id/queue"
+        android:tag="binding_1"
+        android:scrollbars="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:verticalScrollbarPosition="defaultPosition"
+        android:paddingEnd="@dimen/common_list_padding_end"
+        android:layout_marginStart="@dimen/queue_list_margin_start"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_back"
+        app:pagination_on="false"
+        app:shimmer_layout="@layout/base_list_item_viewholder"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

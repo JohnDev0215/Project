@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">BydAutoService</string>
+    <string name="audio_muted">Lyd mutet</string>
+    <string name="audio_removed">Unmutet</string>
+    <string name="btn_comfirm">OK</string>
+    <string name="btn_reset">Tilbakestill</string>
+    <string name="call_mode">I en samtale. Betjening deaktivert</string>
+    <string name="cancel">Avbryt</string>
+    <string name="carplay_androidauto_land">Gjeldende skjerm støtter ikke bytte av skjerm</string>
+    <string name="dialog_title_user">Tilpassede knappeinnstillinger</string>
+    <string name="dialog_title_user_left">Tilpassede knappinnstillinger (venstre)</string>
+    <string name="dialog_title_user_right">Tilpassede knappinnstillinger (høyre)</string>
+    <string name="mode_am_music">AM</string>
+    <string name="mode_amazon_music">Amazon Music</string>
+    <string name="mode_bt_music">Musikk</string>
+    <string name="mode_button_androidauto">Android Auto</string>
+    <string name="mode_button_carplay">Apple CarPlay</string>
+    <string name="mode_dab_music">DAB</string>
+    <string name="mode_fm_music">FM</string>
+    <string name="mode_local_music">Lokale medier</string>
+    <string name="mode_music">Lokal</string>
+    <string name="mode_sd">SD-kort</string>
+    <string name="mode_spotify_music">Spotify</string>
+    <string name="mode_usb">USB</string>
+    <string name="mode_usb_music">USB-Musikk</string>
+    <string name="mode_usb_text">Ingen USB oppdaget</string>
+    <string name="mode_usb_video">Video på USB-flashdisk</string>
+    <string name="radio_button_ac">A/C</string>
+    <string name="radio_button_music">Musikk</string>
+    <string name="radio_button_navi_home">Til startsiden</string>
+    <string name="radio_button_play_pause">Pause/spill av media</string>
+    <string name="radio_button_radio">Radio</string>
+    <string name="radio_button_rotate">Dreining av midtskjerm</string>
+    <string name="radio_button_source">Bytt medielydkilde</string>
+    <string name="reset_country">Systemkonfigurering. Vennligst vent litt</string>
+    <string name="restart_efect">Funksjonen er vellykket konfigurert. Start på nytt for å aktivere den!</string>
+    <string name="restart_now">Start på nytt nå</string>
+    <string name="restart_time">Nedtelling før omstart</string>
+    <string name="warring_mode">Vennligst fullfør veiledningsprosessen før du bruker IVI!</string>
+    <string name="warring_navi_mode">Gjeldende tilstand støtter ikke denne operasjonen!</string>
+    <string name="warring_power">Denne funksjonen er kun tilgjengelig i P-gir</string>
+</resources>

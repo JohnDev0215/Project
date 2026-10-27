@@ -1,0 +1,23 @@
+package com.android.bluetooth.btservice;
+
+import android.app.Application;
+
+/* JADX INFO: loaded from: classes.dex */
+public class AdapterApp extends Application {
+    private static final boolean DBG = false;
+    private static final String TAG = "BluetoothAdapterApp";
+    private static int sRefCount = 0;
+
+    static {
+        System.loadLibrary("bluetooth_jni");
+    }
+
+    @Override // android.app.Application
+    public void onCreate() {
+        super.onCreate();
+        Config.init(this);
+    }
+
+    protected void finalize() {
+    }
+}

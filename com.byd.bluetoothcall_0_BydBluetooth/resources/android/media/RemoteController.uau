@@ -1,0 +1,4 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/media/RemoteController;->mCurrentSession:Landroid/media/session/MediaController;,frameworks/base/media/java/android/media/RemoteController.java,81,5,81,25,
+Landroid/media/RemoteController;->setArtworkConfiguration(ZII)Z,frameworks/base/media/java/android/media/RemoteController.java,295,5,295,25,
+Landroid/media/RemoteController;->getUpdateListener()Landroid/media/RemoteController$OnClientUpdateListener;,frameworks/base/media/java/android/media/RemoteController.java,693,5,693,25,

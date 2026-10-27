@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <bool name="abc_action_bar_embed_tabs">true</bool>
+    <bool name="abc_config_actionMenuItemAllCaps">true</bool>
+    <bool name="dialog_close_touch_outside">true</bool>
+    <bool name="oversea_check_p_gear">true</bool>
+    <bool name="share_more_screen_by_event_center">false</bool>
+    <bool name="support_crop">true</bool>
+    <bool name="support_location">true</bool>
+    <bool name="video_edit_support">false</bool>
+    <bool name="view_image_edit">true</bool>
+</resources>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:latin="http://schemas.android.com/apk/res/com.android.inputmethod.latin">
+    <Row latin:keyWidth="7%p">
+        <include
+            latin:keyWidth="9%p"
+            latin:keyboardLayout="@xml/key_settings"/>
+        <switch>
+            <case latin:languageSwitchKeyEnabled="true">
+                <Key
+                    latin:keyStyle="languageSwitchKeyStyle"
+                    latin:keyWidth="9%p"
+                    latin:keyXPos="22%p"/>
+                <Key
+                    latin:keyStyle="spaceKeyStyle"
+                    latin:keyWidth="40%p"/>
+            </case>
+            <default>
+                <Key
+                    latin:keyStyle="spaceKeyStyle"
+                    latin:keyWidth="42%p"
+                    latin:keyXPos="29%p"/>
+            </default>
+        </switch>
+        <include
+            latin:backgroundType="functional"
+            latin:keyWidth="9%p"
+            latin:keyXPos="-9%p"
+            latin:keyboardLayout="@xml/key_emoji"/>
+    </Row>
+</merge>

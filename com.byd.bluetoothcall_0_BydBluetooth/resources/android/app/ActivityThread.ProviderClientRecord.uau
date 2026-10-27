@@ -1,0 +1,4 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/app/ActivityThread$ProviderClientRecord;->mProvider:Landroid/content/IContentProvider;,frameworks/base/core/java/android/app/ActivityThread.java,699,9,699,29,
+Landroid/app/ActivityThread$ProviderClientRecord;->mLocalProvider:Landroid/content/ContentProvider;,frameworks/base/core/java/android/app/ActivityThread.java,701,9,701,29,
+Landroid/app/ActivityThread$ProviderClientRecord;->mHolder:Landroid/app/ContentProviderHolder;,frameworks/base/core/java/android/app/ActivityThread.java,703,9,703,29,

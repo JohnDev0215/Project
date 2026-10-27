@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="billing_cycle_days_left">
+        <item quantity="one">Nog %d dag</item>
+        <item quantity="other">Nog %d dagen</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_letters">
+        <item quantity="one">Moet ten minste één letter bevatten</item>
+        <item quantity="other">Moet ten minste %d letters bevatten</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_lowercase">
+        <item quantity="one">Moet ten minste één kleine letter bevatten</item>
+        <item quantity="other">Moet ten minste %d kleine letters bevatten</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_nonletter">
+        <item quantity="one">Moet ten minste één teken bevatten dat geen letter is</item>
+        <item quantity="other">Moet ten minste %d tekens bevatten die geen letters zijn</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_numeric">
+        <item quantity="one">Moet ten minste één cijfer bevatten</item>
+        <item quantity="other">Moet ten minste %d cijfers bevatten</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_symbols">
+        <item quantity="one">Moet ten minste één speciaal symbool bevatten</item>
+        <item quantity="other">Moet ten minste %d speciale symbolen bevatten</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_uppercase">
+        <item quantity="one">Moet ten minste één hoofdletter bevatten</item>
+        <item quantity="other">Moet ten minste %d hoofdletters bevatten</item>
+    </plurals>
+    <plurals name="mobile_network_summary_count">
+        <item quantity="one">%1$d simkaart</item>
+        <item quantity="other">%1$d simkaarten</item>
+    </plurals>
+    <plurals name="runtime_permissions_additional_count">
+        <item quantity="one">%d aanvullend recht</item>
+        <item quantity="other">%d aanvullende rechten</item>
+    </plurals>
+    <plurals name="show_dev_countdown">
+        <item quantity="one">Je moet nog %1$d stap uitvoeren om ontwikkelaar te worden.</item>
+        <item quantity="other">Je moet nog %1$d stappen uitvoeren om ontwikkelaar te worden.</item>
+    </plurals>
+    <plurals name="user_limit_reached_message">
+        <item quantity="one">Er kan maar één gebruiker worden gemaakt.</item>
+        <item quantity="other">Je kunt maximaal %d gebruikers maken.</item>
+    </plurals>
+    <plurals name="wifi_tether_connected_summary">
+        <item quantity="one">%1$d apparaat verbonden</item>
+        <item quantity="other">%1$d apparaten verbonden</item>
+    </plurals>
+</resources>

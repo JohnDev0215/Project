@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="billing_cycle_days_left">
+        <item quantity="one">%d dag oor</item>
+        <item quantity="other">%d dae oor</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_letters">
+        <item quantity="one">Moet minstens een letter bevat</item>
+        <item quantity="other">Moet minstens %d letters bevat</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_lowercase">
+        <item quantity="one">Moet minstens 1 kleinletter bevat</item>
+        <item quantity="other">Moet minstens %d kleinletters bevat</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_nonletter">
+        <item quantity="one">Moet minstens 1 nieletterkarakter bevat</item>
+        <item quantity="other">Moet minstens %d nieletterkarakters bevat</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_numeric">
+        <item quantity="one">Moet minstens 1 syfer bevat</item>
+        <item quantity="other">Moet minstens %d syfers bevat</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_symbols">
+        <item quantity="one">Moet minstens 1 spesiale simbool bevat</item>
+        <item quantity="other">Moet minstens %d spesiale simbole bevat</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_uppercase">
+        <item quantity="one">Moet minstens 1 hoofletter bevat</item>
+        <item quantity="other">Moet minstens %d hoofletters bevat</item>
+    </plurals>
+    <plurals name="mobile_network_summary_count">
+        <item quantity="one">%1$d SIM-kaart</item>
+        <item quantity="other">%1$d SIM-kaarte</item>
+    </plurals>
+    <plurals name="runtime_permissions_additional_count">
+        <item quantity="one">%d bykomende toestemming</item>
+        <item quantity="other">%d bykomende toestemmings</item>
+    </plurals>
+    <plurals name="show_dev_countdown">
+        <item quantity="one">Jy het nou %1$d stap oor voordat jy &apos;n ontwikkelaar is.</item>
+        <item quantity="other">Jy het nou %1$d stappe oor voordat jy &apos;n ontwikkelaar is.</item>
+    </plurals>
+    <plurals name="user_limit_reached_message">
+        <item quantity="one">Net een gebruiker kan geskep word.</item>
+        <item quantity="other">Jy kan tot %d gebruikers skep.</item>
+    </plurals>
+    <plurals name="wifi_tether_connected_summary">
+        <item quantity="one">%1$d toestel is gekoppel</item>
+        <item quantity="other">%1$d toestelle is gekoppel</item>
+    </plurals>
+</resources>

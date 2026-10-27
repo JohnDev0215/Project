@@ -1,0 +1,17 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/view/SurfaceView;->mCallbacks:Ljava/util/ArrayList;,frameworks/base/core/java/android/view/SurfaceView.java,112,5,112,25,
+Landroid/view/SurfaceView;->mSurfaceLock:Ljava/util/concurrent/locks/ReentrantLock;,frameworks/base/core/java/android/view/SurfaceView.java,117,5,117,25,
+Landroid/view/SurfaceView;->mSurface:Landroid/view/Surface;,frameworks/base/core/java/android/view/SurfaceView.java,119,5,119,25,
+Landroid/view/SurfaceView;->mDrawingStopped:Z,frameworks/base/core/java/android/view/SurfaceView.java,121,5,121,88,maxTargetSdk=28&trackingBug=115609023L
+Landroid/view/SurfaceView;->mIsCreating:Z,frameworks/base/core/java/android/view/SurfaceView.java,161,5,161,88,maxTargetSdk=28&trackingBug=115609023L
+Landroid/view/SurfaceView;->mDrawListener:Landroid/view/ViewTreeObserver$OnPreDrawListener;,frameworks/base/core/java/android/view/SurfaceView.java,169,5,169,25,
+Landroid/view/SurfaceView;->mRequestedWidth:I,frameworks/base/core/java/android/view/SurfaceView.java,183,5,183,88,maxTargetSdk=28&trackingBug=115609023L
+Landroid/view/SurfaceView;->mRequestedHeight:I,frameworks/base/core/java/android/view/SurfaceView.java,185,5,185,88,maxTargetSdk=28&trackingBug=115609023L
+Landroid/view/SurfaceView;->mRequestedFormat:I,frameworks/base/core/java/android/view/SurfaceView.java,190,5,190,25,
+Landroid/view/SurfaceView;->mHaveFrame:Z,frameworks/base/core/java/android/view/SurfaceView.java,198,5,198,25,
+Landroid/view/SurfaceView;->mLastLockTime:J,frameworks/base/core/java/android/view/SurfaceView.java,201,5,201,88,maxTargetSdk=28&trackingBug=115609023L
+Landroid/view/SurfaceView;->mFormat:I,frameworks/base/core/java/android/view/SurfaceView.java,210,5,210,25,
+Landroid/view/SurfaceView;->mSurfaceFrame:Landroid/graphics/Rect;,frameworks/base/core/java/android/view/SurfaceView.java,212,5,212,88,maxTargetSdk=28&trackingBug=115609023L
+Landroid/view/SurfaceView;->setFrame(IIII)Z,frameworks/base/core/java/android/view/SurfaceView.java,558,5,558,25,
+Landroid/view/SurfaceView;->isFixedSize()Z,frameworks/base/core/java/android/view/SurfaceView.java,1414,5,1414,25,
+Landroid/view/SurfaceView;->mSurfaceHolder:Landroid/view/SurfaceHolder;,frameworks/base/core/java/android/view/SurfaceView.java,1439,5,1439,25,

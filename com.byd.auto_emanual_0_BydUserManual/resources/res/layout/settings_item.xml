@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:textSize="@dimen/settings_item_text_size"
+        android:textColor="?attr/settings_item_text_color"
+        android:gravity="center_vertical"
+        android:id="@+id/settings_item"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/settings_item_height"
+        android:paddingStart="@dimen/settings_item_text_start"
+        android:paddingEnd="@dimen/settings_item_text_end"/>
+    <ImageView
+        android:id="@+id/settings_item_image"
+        android:background="?attr/icon_settings_item"
+        android:layout_width="@dimen/settings_item_icon_size"
+        android:layout_height="@dimen/settings_item_icon_size"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="@dimen/settings_item_icon_end"
+        android:layout_alignParentEnd="true"/>
+    <ImageView
+        android:id="@+id/new_version_dot"
+        android:background="@drawable/settings_new_version_dot"
+        android:visibility="gone"
+        android:layout_width="@dimen/settings_new_version_dot"
+        android:layout_height="@dimen/settings_new_version_dot"
+        android:scaleType="centerInside"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="@dimen/settings_new_version_dot_margin_end"
+        android:layout_alignParentEnd="true"/>
+</RelativeLayout>

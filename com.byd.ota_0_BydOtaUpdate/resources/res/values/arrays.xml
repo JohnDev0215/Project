@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="adapter_dark_mode_class">
+        <item>com.android.incallui.InCallActivity</item>
+    </array>
+    <array name="adapter_flash_black_packages">
+        <item>com.tencent.mobileqq</item>
+    </array>
+    <array name="cts_recent_verifier">
+        <item>com.android.cts.verifier</item>
+        <item>android.server.wm.cts</item>
+    </array>
+    <array name="hide_side_window_package_names">
+        <item>android.systemui.cts</item>
+        <item>android.app.uiautomation.cts</item>
+        <item>android.accessibilityservice.cts</item>
+        <item>android.view.cts</item>
+        <item>android.widget.cts</item>
+    </array>
+    <array name="method_name">
+        <item>BYDAutoGearboxDevice.getEpbState()</item>
+        <item>BYDAutoBodyworkDevice.getEnergyType()</item>
+        <item>BYDAutoBodyworkDevice.getPowerLevel()</item>
+        <item>BYDAutoBodyworkDevice.getAntiTheftStatus()</item>
+        <item>BYDAutoGearboxDevice.getGear()</item>
+        <item>BYDAutoBodyworkDevice.getDoorState(BODYWORK_CMD_DOOR_HOOD)</item>
+        <item>BYDAutoChargingDevice.getBatteryManagementDeviceState()</item>
+        <item>BYDAutoOtaDevice.getVehicleSpeed()</item>
+        <item>BYDAutoOtaDevice.getTurnOffState()</item>
+        <item>BYDAutoOtaDevice.getBatteryTemp(int batteryType)</item>
+        <item>BYDAutoOtaDevice.getSmartPowerUsable()</item>
+        <item>BYDAutoOtaDevice.getSmartPowerState()</item>
+        <item>BYDAutoOtaDevice.getSmartPowerException()</item>
+        <item>BYDAutoOtaDevice.getDcState()</item>
+        <item>BYDAutoOtaDevice.getSocValue()</item>
+        <item>BYDAutoOtaDevice.getBatteryVoltage(int batteryType)</item>
+        <item>BYDAutoOtaDevice.getDischargeState(int type)</item>
+        <item>BYDAutoOtaDevice.getChargeAndDischargeSystemState()</item>
+        <item>BYDAutoOtaDevice.getSmartChargeState(int batteryType)</item>
+        <item>BYDAutoOtaDevice.getDischargeMainContactorState()</item>
+        <item>BYDAutoOtaDevice.getIg1RelayState()</item>
+        <item>BYDAutoOtaDevice.getIg3RelayState()</item>
+        <item>BYDAutoOtaDevice.getIg4RelayState()</item>
+        <item>BYDAutoOtaDevice.getBcmOtaState()</item>
+        <item>BYDAutoOtaDevice.getProhibitPowerOnState()</item>
+        <item>BYDAutoOtaDevice.getLFDoorLockStatus()</item>
+        <item>BYDAutoOtaDevice.get7dfExistState()</item>
+        <item>BYDAutoOtaDevice.setSmartPower(int state)</item>
+        <item>BYDAutoOtaDevice.setEclPower(int state)</item>
+        <item>BYDAutoOtaDevice.setQuitSmartCharge(int state)</item>
+        <item>BYDAutoOtaDevice.setQuitChargeAndDischarge(int state)</item>
+        <item>BYDAutoOtaDevice.setOtaModel(int state)</item>
+        <item>BYDAutoOtaDevice.setOtaPower(int state)</item>
+        <item>BYDAutoOtaDevice.setMultimediaSelfUpdate(int state)</item>
+        <item>BYDAutoOtaDevice.setHighVoltageCmd(int command)</item>
+        <item>BYDAutoOtaDevice.setBackupAreaDownload(int state)</item>
+        <item>BYDAutoOtaDevice.setBackLightState(int state)</item>
+        <item>BYDAutoOtaDevice.getBackLightState()</item>
+        <item>RepositoryContract.View.onSetUpdateFlag(int flag)</item>
+        <item>BYDAutoOtaDevice.setQnxOtaState(int state)</item>
+        <item>BYDAutoOtaDevice.setAndroidOtaState(int state)</item>
+        <item>BYDAutoOtaDevice.setAQSlot(int slot)</item>
+        <item>BYDAutoOtaDevice.getAQSlot()</item>
+        <item>OtaCycleTestUtil.setOtaCycleTestNoNet(boolean isOtaCycleTestNoNet)</item>
+    </array>
+    <array name="param_description">
+        <item>无</item>
+        <item>无</item>
+        <item>无</item>
+        <item>无</item>
+        <item>无</item>
+        <item>无</item>
+        <item>无</item>
+        <item>无</item>
+        <item>无</item>
+        <item>batteryType-&gt;\n 0x0：铁电池;(dbc无此信号)\n 0x1：铅酸电池;</item>
+        <item>无(dbc无此信号)</item>
+        <item>无</item>
+        <item>无</item>
+        <item>无</item>
+        <item>无</item>
+        <item>batteryType-&gt;\n 0x0：铁电池;\n 0x1：铅酸电池;</item>
+        <item>type-&gt;\n 0x1：VTOL;\n 0x2：车内插座;</item>
+        <item>无</item>
+        <item>batteryType-&gt;\n 0x0：铁电池;\n 0x1：铅酸电池;</item>
+        <item>无</item>
+        <item>无</item>
+        <item>无</item>
+        <item>无</item>
+        <item>无</item>
+        <item>无</item>
+        <item>无</item>
+        <item>无</item>
+        <item>0x1E0 5.2-5.3：\n 0x0：无效\n 0x1：请求启动智能充电\n 0x2：请求退出智能充电\n 0x3：预留</item>
+        <item>0x49A 1.0：\n 0x0：无效\n 0x1：需求供电</item>
+        <item>0x49A 1.2：\n 0x0：无效\n 0x1：退出智能充电</item>
+        <item>0x49A 1.3：\n 0x0：无效\n 0x1：退出整车对外充放电</item>
+        <item>0x49A 1.4：\n 0x0：OTA结束，正常模式\n 0x1：整车进入OTA模式</item>
+        <item>0x49A 1.5-1.7：\n 0x0：无效\n 0x1：OTA退电命令\n 0x2：OTA上电命令\n 0x3：OTA结束，恢复命令\n 0x4-0x7：预留</item>
+        <item>0x49A 3.0-3.1：\n 0x0：无效\n 0x1：有需求\n 0x2：无需求\n 0x3：预留</item>
+        <item>0x49A 3.4-3.6：\n 0x0：高压放电触发\n 0x1：高压断电触发\n 0x2：高压断电维持\n 0x3：OTA退出命令\n 0x4：高压烧写暂停\n 0x6：高压维持放电\n 0x7：预留（默认值）</item>
+        <item>0x49A 2.0-2.1：\n 0x1：备份区开始下载\n 0x2：备份区结束下载</item>
+        <item>state-&gt;\n 0x0：无效;\n 0x1：背光亮;\n 0x2：背光灭;</item>
+        <item>无</item>
+        <item>flag-&gt;\n 0x0：取消小红点显示;\n 0x1：设置小红点显示;</item>
+        <item>state-&gt;\n 0x0：退出OTA状态;\n 0x1：进入OTA状态;</item>
+        <item>state-&gt;\n 0x0：退出OTA状态;\n 0x1：进入OTA状态;</item>
+        <item>slot-&gt;\n 0：A_TO_B\n 1：B_TO_A</item>
+        <item>无</item>
+        <item>0x0：false\n 0x1：true</item>
+    </array>
+    <array name="result_description">
+        <item>0x218 2.1-2.3:\n 0x0:releasing\n 0x1:Released\n 0x2:applying\n 0x3:Applied\n 0x4:Fault\n 0x5:Over-Released\n 0x6:NotInitialized\n 0x7:Reserved</item>
+        <item>0x496 子ID 0x02 3.6-3.7：\n 0x0：无效\n 0x1：EV\n 0x2：HEV\n 0x3：燃油</item>
+        <item>0x12D 5.2-5.4：\n 0x0：无效; 0x1：OFF档; 0x2：ACC档\n 0x3：ON档; 0x4-0x7：预留\n 应用转换的值为：\n BODYWORK_POWER_LEVEL_OFF = 0; BODYWORK_POWER_LEVEL_ACC = 1; BODYWORK_POWER_LEVEL_ON = 2\n BODYWORK_POWER_LEVEL_OK = 3; BODYWORK_POWER_LEVEL_FAKE_OK = 4; BODYWORK_POWER_LEVEL_INVALID = 255</item>
+        <item>0x12D 5.5-5.7：\n 0x0：正常状态\n 0x1：防盗设定状态\n 0x2：防盗状态\n 0x3-0x7：预留</item>
+        <item>0x342 4.0-4.3：\n 0x0：预留\n 0x1：P档\n 0x2：R档\n 0x3：N档\n 0x4：D档\n 0x5-0xF：预留</item>
+        <item>0x294 3.4-3.5：\n 0x0：无效\n 0x1：关闭\n 0x2：打开\n 0x3：预留</item>
+        <item>0x344 3.0-3.3：\n DM-&gt;\n 0x0：准备就绪; 0x1：正在充电; 0x2：充电结束; 0x3：正在放电\n 0x4：充电终止; 0x5：C10充电柜故障; 0x6：充电枪连接故障; 0x7：车辆充电系统故障\n 0x8：交流外充设备故障; 0x9：预约等待; 0xA：正在给整车放电; 0xB：与充电柜通讯超时\n 0xC：放电结束; 0xD：充电暂停; 0xE：电池包与充电桩电压参数不匹配; 0xF：默认值\n EV-&gt;\n 0x0：准备就绪; 0x1：正在充电; 0x2：充电结束; 0x3：有枪连接，未进入流程（EV预留）\n 0x4：充电终止; 0x5：C10充电柜故障; 0x6：充电枪连接故障（EV预留）; 0x7：车载对外放电等待中（EV预留）\n 0x8：交流外充设备故障（EV预留）; 0x9：预约等待（EV预留）; 0xA：对外放电准备就绪; 0xB：对外放电中\n 0xC：对外放电正常结束; 0xD：充电暂停（EV预留）; 0xE：对外放电异常结束; 0xF：默认值</item>
+        <item>0x121 1.0-2.3:\n PH=INT*0.06875km/h\n [0，281.4625]km/h\n [0x000，0xFFE]\n Invalid/Default：0xFFF\n Initial：0x000</item>
+        <item>0x12D 4.6：\n 0x0：无效\n 0x1：退电</item>
+        <item>铁电池：0x449 5.0-5.7\n 铅酸电池：0x404 7.0-7.7\n 获取到值，直接返回值，获取不到值，返回null;\n 1）温度显示(℃)：\n PH=INT*1-0x80℃\n INT∈[0x58，0xB2]\n PH∈[-40，50]℃\n 2）温度显示(℉)：\n PH=INT*1-0x28℉\n INT∈[0x0，0xA2]\n PH∈[-40，122]℉\n 0xD0和0xD8为故障代码，显示--;\n 未接受到此报文，不显示。</item>
+        <item>0x464子ID 0x07 7.0=0x0\n true：有此功能\n false：无此功能</item>
+        <item>0x2ED 5.6-5.7:\n 0x0：发电完成\n 0x1：无法进行\n 0x2：发电中\n 0x3：无效</item>
+        <item>0x2ED 6.0-6.2:\n 0x0：油位低\n 0x1：车辆自身故障\n 0x2：档位非P档\n 0x3：EPB未拉起\n 0x4：前舱盖打开\n 0x5：用户其它操作\n 0x6：预留\n 0x7：无效</item>
+        <item>0x36D 6.0-6.1：\n 0x0：关断状态\n 0x1：升压状态\n 0x2：降压状态</item>
+        <item>0x444 6.0-6.7\n PH=INT*1%\n INT∈[0x0，0x64]\n PH∈[0，100]%</item>
+        <item>铁电池：0x449 3.0-3.7\n PH=INT*7/255+8V\n INT∈[0x00，0xFF]\n PH∈[8，15]\n 铅酸电池：0x434 5.0-5.7\n PH=INT*0.1V\n INT∈[0x3C，0xA0]\n PH∈[6，16]V\n 初始值/默认值：0xFF\n 获取到值，直接返回值，获取不到值，返回null;</item>
+        <item>VTOL：0x44A 1.3-1.4\n 0x0：对外放电准备就绪\n 0x1：对外放电中\n 0x2：对外放电结束\n 0x3：预留\n 车内插座：0x44A 2.6-2.7\n 0x0：对外放电准备就绪\n 0x1：对外放电中\n 0x2：对外放电结束\n 0x3：预留</item>
+        <item>0x24A 1.2-1.5：\n DM-&gt;\n 0x0：初始化状态; 0x1：充电准备就绪; 0x2：充电开始; 0x3：充电结束\n 0x4：充电暂停; 0x5：充电停止; 0x6：车辆对外放电准备就绪; 0x7：车辆对外放电开始\n 0x8：车辆对外放电结束; 0x9：车辆对外放电不允许; 0xA：无VTOL功能; 0xB：直流充电半连接\n 0xC：直流充电; 0xD-0xF：预留\n EV-&gt;\n 0x0：初始化状态; 0x1：充电准备就绪; 0x2：充电开始; 0x3：充电结束\n 0x4：充电暂停; 0x5：充电停止; 0x6：车辆对外放电准备就绪; 0x7：车辆对外放电开始\n 0x8：车辆对外放电结束; 0x9：车辆对外放电不允许; 0xA：默认驱动电机状态（预留）; 0xB：因电锁导致充电暂停（预留）\n 0xC：CCS直流充电状态; 0xD：恒压输出状态; 0xE-0xF：预留</item>
+        <item>铁电池：0x449 8.0-8.1\n 0x0：进入智能充电\n 0x1：智能充电中\n 0x2：退出智能充电\n 0x3：预留\n 铅酸电池：0x12D 3.4-3.5\n 0x0：无效\n 0x1：进入智能充电请求\n 0x2：退出智能充电请求\n 0x3：预留\n 初始值/默认值：0x0\n 获取到值，直接返回值，获取不到值，返回null;</item>
+        <item>0x344 2.0-2.1：\n 0x0：断开\n 0x1：吸合\n 0x2-0x3：预留</item>
+        <item>0x12D 1.6-1.7：\n 0x0：无效\n 0x1：IG1继电器断开\n 0x2：IG1继电器吸合\n 0x3：预留</item>
+        <item>0x12D 2.2-2.3：\n 0x0：无效\n 0x1：IG3继电器断开\n 0x2：IG3继电器吸合\n 0x3：预留</item>
+        <item>0x12D 2.4-2.5：\n 0x0：无效\n 0x1：IG4继电器断开\n 0x2：IG4继电器吸合\n 0x3：预留</item>
+        <item>0x434 6.0：\n 0x0：无效\n 0x1：OTA升级状态</item>
+        <item>0x12D 3.7：\n 0x0：无效\n 0x1：禁止</item>
+        <item>0x407 1.0-1.1：\n 0x0：无效\n 0x1：解锁状态\n 0x2：闭锁状态\n 0x3：预留</item>
+        <item>true：存在\n false：不存在</item>
+        <item>true：设置成功\n false：设置失败</item>
+        <item>true：设置成功\n false：设置失败</item>
+        <item>true：设置成功\n false：设置失败</item>
+        <item>true：设置成功\n false：设置失败</item>
+        <item>true：设置成功\n false：设置失败</item>
+        <item>true：设置成功\n false：设置失败</item>
+        <item>true：设置成功\n false：设置失败</item>
+        <item>true：设置成功\n false：设置失败</item>
+        <item>true：设置成功\n false：设置失败</item>
+        <item>true：设置成功\n false：设置失败</item>
+        <item>0x1：亮屏\n 0x2：灭屏</item>
+        <item>查看小红点显示状态</item>
+        <item>resultCode-&gt;\n RESULT_OK = 0;\n ERROR_PARAMETER = 1;\n ERROR_PAYLOAD_PATH = 2;\n ERROR_SLOT = 3;\n ERROR_UNKNOWN = 4;\n ERROR_UNIMPLEMENTED_CMD = 5;</item>
+        <item>resultCode-&gt;\n RESULT_OK = 0;\n ERROR_PARAMETER = 1;\n ERROR_PAYLOAD_PATH = 2;\n ERROR_SLOT = 3;\n ERROR_UNKNOWN = 4;\n ERROR_UNIMPLEMENTED_CMD = 5;</item>
+        <item>resultCode-&gt;\n RESULT_OK = 0;\n ERROR_PARAMETER = 1;\n ERROR_PAYLOAD_PATH = 2;\n ERROR_SLOT = 3;\n ERROR_UNKNOWN = 4;\n ERROR_UNIMPLEMENTED_CMD = 5;</item>
+        <item>slot-&gt;\n 0：A分区\n 1：B分区</item>
+        <item>设置的值</item>
+    </array>
+    <array name="system_app_not_adapter_night_ui_mode_package">
+        <item>sogou.mobile.explorer.flexpai</item>
+    </array>
+</resources>

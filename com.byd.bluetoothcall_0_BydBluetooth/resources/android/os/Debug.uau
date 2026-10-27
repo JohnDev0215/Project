@@ -1,0 +1,9 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/os/Debug;-><init>()V,frameworks/base/core/java/android/os/Debug.java,91,5,91,25,
+Landroid/os/Debug;->getMemoryInfo(ILandroid/os/Debug$MemoryInfo;)Z,frameworks/base/core/java/android/os/Debug.java,1896,5,1896,25,
+Landroid/os/Debug;->getMemInfo([J)V,frameworks/base/core/java/android/os/Debug.java,1960,5,1960,25,
+Landroid/os/Debug;->dumpNativeHeap(Ljava/io/FileDescriptor;)V,frameworks/base/core/java/android/os/Debug.java,2049,5,2049,25,
+Landroid/os/Debug;->countInstancesOfClass(Ljava/lang/Class;)J,frameworks/base/core/java/android/os/Debug.java,2064,5,2064,25,
+Landroid/os/Debug;->dumpReferenceTables()V,frameworks/base/core/java/android/os/Debug.java,2124,5,2124,25,
+Landroid/os/Debug;->getCallers(I)Ljava/lang/String;,frameworks/base/core/java/android/os/Debug.java,2491,5,2491,25,
+Landroid/os/Debug;->getCaller()Ljava/lang/String;,frameworks/base/core/java/android/os/Debug.java,2538,5,2538,25,

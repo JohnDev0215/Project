@@ -1,0 +1,17 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/os/BatteryStats$HistoryItem;->next:Landroid/os/BatteryStats$HistoryItem;,frameworks/base/core/java/android/os/BatteryStats.java,1607,9,1607,67,maxTargetSdk=28
+Landroid/os/BatteryStats$HistoryItem;->time:J,frameworks/base/core/java/android/os/BatteryStats.java,1611,9,1611,29,
+Landroid/os/BatteryStats$HistoryItem;->CMD_UPDATE:B,frameworks/base/core/java/android/os/BatteryStats.java,1614,9,1614,29,
+Landroid/os/BatteryStats$HistoryItem;->cmd:B,frameworks/base/core/java/android/os/BatteryStats.java,1623,9,1623,29,
+Landroid/os/BatteryStats$HistoryItem;->batteryLevel:B,frameworks/base/core/java/android/os/BatteryStats.java,1633,9,1633,29,
+Landroid/os/BatteryStats$HistoryItem;->batteryStatus:B,frameworks/base/core/java/android/os/BatteryStats.java,1635,9,1635,29,
+Landroid/os/BatteryStats$HistoryItem;->batteryHealth:B,frameworks/base/core/java/android/os/BatteryStats.java,1637,9,1637,29,
+Landroid/os/BatteryStats$HistoryItem;->batteryPlugType:B,frameworks/base/core/java/android/os/BatteryStats.java,1639,9,1639,29,
+Landroid/os/BatteryStats$HistoryItem;->batteryVoltage:C,frameworks/base/core/java/android/os/BatteryStats.java,1643,9,1643,29,
+Landroid/os/BatteryStats$HistoryItem;->states:I,frameworks/base/core/java/android/os/BatteryStats.java,1693,9,1693,29,
+Landroid/os/BatteryStats$HistoryItem;->states2:I,frameworks/base/core/java/android/os/BatteryStats.java,1729,9,1729,29,
+Landroid/os/BatteryStats$HistoryItem;-><init>()V,frameworks/base/core/java/android/os/BatteryStats.java,1838,9,1838,29,
+Landroid/os/BatteryStats$HistoryItem;->clear()V,frameworks/base/core/java/android/os/BatteryStats.java,1925,9,1925,67,maxTargetSdk=28
+Landroid/os/BatteryStats$HistoryItem;->setTo(Landroid/os/BatteryStats$HistoryItem;)V,frameworks/base/core/java/android/os/BatteryStats.java,1946,9,1946,67,maxTargetSdk=28
+Landroid/os/BatteryStats$HistoryItem;->setTo(JBLandroid/os/BatteryStats$HistoryItem;)V,frameworks/base/core/java/android/os/BatteryStats.java,1953,9,1953,67,maxTargetSdk=28
+Landroid/os/BatteryStats$HistoryItem;->same(Landroid/os/BatteryStats$HistoryItem;)Z,frameworks/base/core/java/android/os/BatteryStats.java,2009,9,2009,67,maxTargetSdk=28

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="alert_dialog_exit_ecm">
+        <item quantity="one">Le téléphone sera en mode de rappel d&apos;urgence pendant %s minute. Lorsque ce mode est activé, vous ne pouvez pas utiliser d&apos;applications nécessitant une connexion à Internet. Voulez-vous quitter l&apos;écran maintenant ?</item>
+        <item quantity="other">Le téléphone sera en mode de rappel d&apos;urgence pendant %s minutes. Lorsque ce mode est activé, vous ne pouvez pas utiliser d&apos;applications nécessitant une connexion à Internet. Voulez-vous quitter l&apos;écran maintenant ?</item>
+    </plurals>
+    <plurals name="alert_dialog_exit_ecm_without_data_restriction_hint">
+        <item quantity="one">Le téléphone sera en mode de rappel d&apos;urgence pendant %s minutes.\nSouhaitez-vous quitter ce mode maintenant ?</item>
+        <item quantity="other">Le téléphone sera en mode de rappel d&apos;urgence pendant %s minutes.\nSouhaitez-vous quitter ce mode maintenant ?</item>
+    </plurals>
+    <plurals name="alert_dialog_not_avaialble_in_ecm">
+        <item quantity="one">L&apos;action sélectionnée n&apos;est pas disponible lorsque le mode de rappel d&apos;urgence est activé. Ce mode restera activé sur ce téléphone pendant %s minute. Voulez-vous quitter l&apos;écran maintenant ?</item>
+        <item quantity="other">L&apos;action sélectionnée n&apos;est pas disponible lorsque le mode de rappel d&apos;urgence est activé. Ce mode restera activé sur ce téléphone pendant %s minute. Voulez-vous quitter l&apos;écran maintenant ?</item>
+    </plurals>
+</resources>

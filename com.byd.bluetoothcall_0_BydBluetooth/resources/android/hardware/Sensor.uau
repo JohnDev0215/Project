@@ -1,0 +1,5 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/hardware/Sensor;->TYPE_PICK_UP_GESTURE:I,frameworks/base/core/java/android/hardware/Sensor.java,512,5,512,25,
+Landroid/hardware/Sensor;->TYPE_DEVICE_ORIENTATION:I,frameworks/base/core/java/android/hardware/Sensor.java,552,5,552,25,
+Landroid/hardware/Sensor;->mFlags:I,frameworks/base/core/java/android/hardware/Sensor.java,918,5,918,25,
+Landroid/hardware/Sensor;->getHandle()I,frameworks/base/core/java/android/hardware/Sensor.java,1042,5,1042,25,

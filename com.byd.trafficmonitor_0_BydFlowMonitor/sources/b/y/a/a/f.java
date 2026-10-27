@@ -1,0 +1,157 @@
+package b.y.a.a;
+
+import android.content.Context;
+import android.content.res.Resources;
+import android.content.res.TypedArray;
+import android.graphics.Path;
+import android.graphics.PathMeasure;
+import android.util.AttributeSet;
+import android.view.InflateException;
+import android.view.animation.Interpolator;
+import com.bydux.api.common.tools.util.ListUtils;
+import org.xmlpull.v1.XmlPullParser;
+
+/* JADX INFO: compiled from: PathInterpolatorCompat.java */
+/* JADX INFO: loaded from: classes.dex */
+public class f implements Interpolator {
+
+    /* JADX INFO: renamed from: a, reason: collision with root package name */
+    public float[] f3360a;
+
+    /* JADX INFO: renamed from: b, reason: collision with root package name */
+    public float[] f3361b;
+
+    public f(Context context, AttributeSet attributeSet, XmlPullParser xmlPullParser) {
+        this(context.getResources(), context.getTheme(), attributeSet, xmlPullParser);
+    }
+
+    public final void a(float f2, float f3, float f4, float f5) {
+        Path path = new Path();
+        path.moveTo(0.0f, 0.0f);
+        path.cubicTo(f2, f3, f4, f5, 1.0f, 1.0f);
+        b(path);
+    }
+
+    public final void b(Path path) {
+        int i2 = 0;
+        PathMeasure pathMeasure = new PathMeasure(path, false);
+        float length = pathMeasure.getLength();
+        int iMin = Math.min(3000, ((int) (length / 0.002f)) + 1);
+        if (iMin <= 0) {
+            throw new IllegalArgumentException("The Path has a invalid length " + length);
+        }
+        this.f3360a = new float[iMin];
+        this.f3361b = new float[iMin];
+        float[] fArr = new float[2];
+        for (int i3 = 0; i3 < iMin; i3++) {
+            pathMeasure.getPosTan((i3 * length) / (iMin - 1), fArr, null);
+            this.f3360a[i3] = fArr[0];
+            this.f3361b[i3] = fArr[1];
+        }
+        if (Math.abs(this.f3360a[0]) <= 1.0E-5d && Math.abs(this.f3361b[0]) <= 1.0E-5d) {
+            int i4 = iMin - 1;
+            if (Math.abs(this.f3360a[i4] - 1.0f) <= 1.0E-5d && Math.abs(this.f3361b[i4] - 1.0f) <= 1.0E-5d) {
+                float f2 = 0.0f;
+                int i5 = 0;
+                while (i2 < iMin) {
+                    float[] fArr2 = this.f3360a;
+                    int i6 = i5 + 1;
+                    float f3 = fArr2[i5];
+                    if (f3 < f2) {
+                        throw new IllegalArgumentException("The Path cannot loop back on itself, x :" + f3);
+                    }
+                    fArr2[i2] = f3;
+                    i2++;
+                    f2 = f3;
+                    i5 = i6;
+                }
+                if (pathMeasure.nextContour()) {
+                    throw new IllegalArgumentException("The Path should be continuous, can't have 2+ contours");
+                }
+                return;
+            }
+        }
+        StringBuilder sb = new StringBuilder();
+        sb.append("The Path must start at (0,0) and end at (1,1) start: ");
+        sb.append(this.f3360a[0]);
+        sb.append(ListUtils.DEFAULT_JOIN_SEPARATOR);
+        sb.append(this.f3361b[0]);
+        sb.append(" end:");
+        int i7 = iMin - 1;
+        sb.append(this.f3360a[i7]);
+        sb.append(ListUtils.DEFAULT_JOIN_SEPARATOR);
+        sb.append(this.f3361b[i7]);
+        throw new IllegalArgumentException(sb.toString());
+    }
+
+    public final void c(float f2, float f3) {
+        Path path = new Path();
+        path.moveTo(0.0f, 0.0f);
+        path.quadTo(f2, f3, 1.0f, 1.0f);
+        b(path);
+    }
+
+    public final void d(TypedArray typedArray, XmlPullParser xmlPullParser) {
+        if (b.h.e.c.g.j(xmlPullParser, "pathData")) {
+            String strI = b.h.e.c.g.i(typedArray, xmlPullParser, "pathData", 4);
+            Path pathE = b.h.f.c.e(strI);
+            if (pathE != null) {
+                b(pathE);
+                return;
+            }
+            throw new InflateException("The path is null, which is created from " + strI);
+        }
+        if (!b.h.e.c.g.j(xmlPullParser, "controlX1")) {
+            throw new InflateException("pathInterpolator requires the controlX1 attribute");
+        }
+        if (!b.h.e.c.g.j(xmlPullParser, "controlY1")) {
+            throw new InflateException("pathInterpolator requires the controlY1 attribute");
+        }
+        float f2 = b.h.e.c.g.f(typedArray, xmlPullParser, "controlX1", 0, 0.0f);
+        float f3 = b.h.e.c.g.f(typedArray, xmlPullParser, "controlY1", 1, 0.0f);
+        boolean zJ = b.h.e.c.g.j(xmlPullParser, "controlX2");
+        if (zJ != b.h.e.c.g.j(xmlPullParser, "controlY2")) {
+            throw new InflateException("pathInterpolator requires both controlX2 and controlY2 for cubic Beziers.");
+        }
+        if (zJ) {
+            a(f2, f3, b.h.e.c.g.f(typedArray, xmlPullParser, "controlX2", 2, 0.0f), b.h.e.c.g.f(typedArray, xmlPullParser, "controlY2", 3, 0.0f));
+        } else {
+            c(f2, f3);
+        }
+    }
+
+    @Override // android.animation.TimeInterpolator
+    public float getInterpolation(float f2) {
+        if (f2 <= 0.0f) {
+            return 0.0f;
+        }
+        if (f2 >= 1.0f) {
+            return 1.0f;
+        }
+        int i2 = 0;
+        int length = this.f3360a.length - 1;
+        while (length - i2 > 1) {
+            int i3 = (i2 + length) / 2;
+            if (f2 < this.f3360a[i3]) {
+                length = i3;
+            } else {
+                i2 = i3;
+            }
+        }
+        float[] fArr = this.f3360a;
+        float f3 = fArr[length] - fArr[i2];
+        if (f3 == 0.0f) {
+            return this.f3361b[i2];
+        }
+        float f4 = (f2 - fArr[i2]) / f3;
+        float[] fArr2 = this.f3361b;
+        float f5 = fArr2[i2];
+        return f5 + (f4 * (fArr2[length] - f5));
+    }
+
+    public f(Resources resources, Resources.Theme theme, AttributeSet attributeSet, XmlPullParser xmlPullParser) {
+        TypedArray typedArrayK = b.h.e.c.g.k(resources, theme, attributeSet, a.l);
+        d(typedArrayK, xmlPullParser);
+        typedArrayK.recycle();
+    }
+}

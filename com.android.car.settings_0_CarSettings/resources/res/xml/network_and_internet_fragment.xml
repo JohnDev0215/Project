@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" xmlns:settings="http://schemas.android.com/apk/res-auto"
+    android:title="@string/network_and_internet"
+    android:key="@string/psk_network_and_internet">
+    <com.android.car.ui.preference.CarUiTwoActionSwitchPreference
+        android:icon="@drawable/ic_settings_wifi"
+        android:title="@string/wifi_settings"
+        android:key="@string/pk_wifi_settings_entry"
+        settings:controller="com.android.car.settings.wifi.WifiEntryPreferenceController"
+        settings:searchable="false">
+        <intent
+            android:targetPackage="com.android.car.settings"
+            android:targetClass="com.android.car.settings.common.CarSettingActivities$WifiSettingsActivity"/>
+    </com.android.car.ui.preference.CarUiTwoActionSwitchPreference>
+    <Preference
+        android:icon="@drawable/ic_wifi_tethering"
+        android:title="@string/tether_settings_title_all"
+        android:key="@string/pk_wifi_tether_settings_entry"
+        settings:controller="com.android.car.settings.wifi.WifiTetherPreferenceController"
+        settings:searchable="false">
+        <intent
+            android:targetPackage="com.android.car.settings"
+            android:targetClass="com.android.car.settings.common.CarSettingActivities$WifiTetherActivity"/>
+    </Preference>
+    <Preference
+        android:icon="@drawable/ic_settings_cellular"
+        android:title="@string/mobile_network_settings"
+        android:key="@string/pk_mobile_network_settings_entry"
+        settings:controller="com.android.car.settings.network.MobileNetworkEntryPreferenceController"
+        settings:searchable="false"/>
+    <Preference
+        android:icon="@drawable/ic_settings_data_usage"
+        android:title="@string/data_usage_settings"
+        android:key="@string/pk_data_usage_settings_entry"
+        settings:controller="com.android.car.settings.datausage.DataUsageEntryPreferenceController"
+        settings:searchable="false">
+        <intent
+            android:targetPackage="com.android.car.settings"
+            android:targetClass="com.android.car.settings.common.CarSettingActivities$DataUsageActivity"/>
+    </Preference>
+    <com.android.car.settings.common.LogicalPreferenceGroup
+        android:key="@string/pk_network_and_internet_extra_settings"
+        settings:controller="com.android.car.settings.common.ExtraSettingsPreferenceController">
+        <intent android:action="com.android.settings.action.EXTRA_SETTINGS">
+            <extra
+                android:name="com.android.settings.category"
+                android:value="com.android.settings.category.ia.wireless"/>
+        </intent>
+    </com.android.car.settings.common.LogicalPreferenceGroup>
+</PreferenceScreen>

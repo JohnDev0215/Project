@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="billing_cycle_days_left">
+        <item quantity="one">%d ቀናት ቀርተዋል</item>
+        <item quantity="other">%d ቀናት ቀርተዋል</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_letters">
+        <item quantity="one">ቢያንስ %d ፊደሎችን መያዝ አለበት</item>
+        <item quantity="other">ቢያንስ %d ፊደሎችን መያዝ አለበት</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_lowercase">
+        <item quantity="one">ቢያንስ %d ንዑስ ሆሄዎችን መያዝ አለበት</item>
+        <item quantity="other">ቢያንስ %d ንዑስ ሆሄዎችን መያዝ አለበት</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_nonletter">
+        <item quantity="one">ቢያንስ %d ፊደል ያልሆኑ ቁምፊዎችን መያዝ አለበት</item>
+        <item quantity="other">ቢያንስ %d ፊደል ያልሆኑ ቁምፊዎችን መያዝ አለበት</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_numeric">
+        <item quantity="one">ቢያንስ %d ቁጥራዊ አኃዞችን መያዝ አለበት</item>
+        <item quantity="other">ቢያንስ %d ቁጥራዊ አኃዞችን መያዝ አለበት</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_symbols">
+        <item quantity="one">ቢያንስ %d ልዩ ምልክቶችን መያዝ አለበት</item>
+        <item quantity="other">ቢያንስ %d ልዩ ምልክቶችን መያዝ አለበት</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_uppercase">
+        <item quantity="one">ቢያንስ %d አቢይ ሆሄዎችን መያዝ አለበት</item>
+        <item quantity="other">ቢያንስ %d አቢይ ሆሄዎችን መያዝ አለበት</item>
+    </plurals>
+    <plurals name="mobile_network_summary_count">
+        <item quantity="one">%1$d ሲሞች</item>
+        <item quantity="other">%1$d ሲሞች</item>
+    </plurals>
+    <plurals name="runtime_permissions_additional_count">
+        <item quantity="one">%d ተጨማሪ ፈቃዶች</item>
+        <item quantity="other">%d ተጨማሪ ፈቃዶች</item>
+    </plurals>
+    <plurals name="show_dev_countdown">
+        <item quantity="one">አሁን ገንቢ ለመሆን %1$d ደረጃዎች ይቀርዎታል።</item>
+        <item quantity="other">አሁን ገንቢ ለመሆን %1$d ደረጃዎች ይቀረዎታል።</item>
+    </plurals>
+    <plurals name="user_limit_reached_message">
+        <item quantity="one">እስከ %d ተጠቃሚዎች መፍጠር ይችላሉ።</item>
+        <item quantity="other">እስከ %d ተጠቃሚዎች መፍጠር ይችላሉ።</item>
+    </plurals>
+    <plurals name="wifi_tether_connected_summary">
+        <item quantity="one">%1$d መሣሪያዎች ተገናኝተዋል</item>
+        <item quantity="other">%1$d መሣሪያዎች ተገናኝተዋል</item>
+    </plurals>
+</resources>

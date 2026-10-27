@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_20">
+        <Button
+            android:id="@+id/ota_cycle_test_read_vin_btn"
+            android:text="@string/ota_tool_read_vin"
+            android:textAllCaps="false"
+            android:layout_marginStart="@dimen/dp_20"
+            style="@style/confirmTestBtn"/>
+        <Button
+            android:id="@+id/ota_cycle_test_write_vin_btn"
+            android:text="@string/ota_tool_write_vin"
+            android:textAllCaps="false"
+            android:layout_marginStart="@dimen/dp_20"
+            style="@style/confirmTestBtn"/>
+        <Button
+            android:id="@+id/ota_cycle_test_reset_vin_btn"
+            android:text="@string/ota_tool_reset_vin"
+            android:textAllCaps="false"
+            android:layout_marginStart="@dimen/dp_20"
+            style="@style/confirmTestBtn"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/ota_cycle_test_result_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_20"
+        android:text="result"/>
+</LinearLayout>

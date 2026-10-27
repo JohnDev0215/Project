@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+    <gradient
+        android:startColor="?attr/start_color_time_picker_divider"
+        android:endColor="?attr/end_color_time_picker_divider"
+        android:angle="0"
+        android:centerColor="?attr/center_color_time_picker_divider"/>
+</shape>

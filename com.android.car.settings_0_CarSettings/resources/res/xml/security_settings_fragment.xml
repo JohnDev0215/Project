@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" xmlns:settings="http://schemas.android.com/apk/res-auto"
+    android:title="@string/security_settings_title"
+    android:key="@string/psk_security_settings">
+    <Preference
+        android:icon="@drawable/ic_lock"
+        android:title="@string/lock_settings_picker_title"
+        android:key="@string/pk_choose_lock_type"
+        settings:controller="com.android.car.settings.security.SecurityEntryPreferenceController">
+        <intent
+            android:targetPackage="com.android.car.settings"
+            android:targetClass="com.android.car.settings.security.SettingsScreenLockActivity"/>
+    </Preference>
+    <Preference
+        android:title="@string/credentials_reset"
+        android:key="@string/pk_credentials_reset"
+        android:summary="@string/credentials_reset_summary"
+        settings:controller="com.android.car.settings.security.CredentialsResetPreferenceController">
+        <intent
+            android:targetPackage="com.android.car.settings"
+            android:action="com.android.credentials.RESET"/>
+    </Preference>
+    <com.android.car.settings.common.LogicalPreferenceGroup
+        android:key="@string/pk_system_extra_settings"
+        settings:controller="com.android.car.settings.common.ExtraSettingsPreferenceController">
+        <intent android:action="com.android.settings.action.EXTRA_SETTINGS">
+            <extra
+                android:name="com.android.settings.category"
+                android:value="com.android.settings.category.ia.security"/>
+        </intent>
+    </com.android.car.settings.common.LogicalPreferenceGroup>
+</PreferenceScreen>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.byd.vrsettings.view.CustomScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/sv_phone"
+    android:background="@android:color/transparent"
+    android:clipChildren="false"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:overScrollMode="ifContentScrolls">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/custom_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.byd.vrsettings.view.CustomSkillsPopupView
+            android:id="@+id/cspv_dial"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/customSkillsPopupView_height_8155"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toStartOf="@+id/cspv_contact"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+        <com.byd.vrsettings.view.CustomSkillsPopupView
+            android:id="@+id/cspv_contact"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/customSkillsPopupView_height_8155"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/cspv_dial"
+            app:layout_constraintTop_toTopOf="@+id/cspv_dial"/>
+        <View
+            android:id="@+id/phone_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/wakeup_free_placeholder"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cspv_contact"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.byd.vrsettings.view.CustomScrollView>

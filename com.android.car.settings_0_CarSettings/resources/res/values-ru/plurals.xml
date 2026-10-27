@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="billing_cycle_days_left">
+        <item quantity="one">Остался %d день</item>
+        <item quantity="few">Осталось %d дня</item>
+        <item quantity="many">Осталось %d дней</item>
+        <item quantity="other">Осталось %d дня</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_letters">
+        <item quantity="one">Пароль должен содержать не менее %d буквы.</item>
+        <item quantity="few">Пароль должен содержать не менее %d букв.</item>
+        <item quantity="many">Пароль должен содержать не менее %d букв.</item>
+        <item quantity="other">Пароль должен содержать не менее %d буквы.</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_lowercase">
+        <item quantity="one">Пароль должен содержать не менее %d строчной буквы.</item>
+        <item quantity="few">Пароль должен содержать не менее %d строчных букв.</item>
+        <item quantity="many">Пароль должен содержать не менее %d строчных букв.</item>
+        <item quantity="other">Пароль должен содержать не менее %d строчной буквы.</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_nonletter">
+        <item quantity="one">Пароль должен содержать не менее %d небуквенного символа.</item>
+        <item quantity="few">Пароль должен содержать не менее %d небуквенных символов.</item>
+        <item quantity="many">Пароль должен содержать не менее %d небуквенных символов.</item>
+        <item quantity="other">Пароль должен содержать не менее %d небуквенного символа.</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_numeric">
+        <item quantity="one">Пароль должен содержать не менее %d цифры.</item>
+        <item quantity="few">Пароль должен содержать не менее %d цифр.</item>
+        <item quantity="many">Пароль должен содержать не менее %d цифр.</item>
+        <item quantity="other">Пароль должен содержать не менее %d цифры.</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_symbols">
+        <item quantity="one">Пароль должен содержать не менее %d специального символа.</item>
+        <item quantity="few">Пароль должен содержать не менее %d специальных символов.</item>
+        <item quantity="many">Пароль должен содержать не менее %d специальных символов.</item>
+        <item quantity="other">Пароль должен содержать не менее %d специального символа.</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_uppercase">
+        <item quantity="one">Пароль должен содержать не менее %d заглавной буквы.</item>
+        <item quantity="few">Пароль должен содержать не менее %d заглавных букв.</item>
+        <item quantity="many">Пароль должен содержать не менее %d заглавных букв.</item>
+        <item quantity="other">Пароль должен содержать не менее %d заглавной буквы</item>
+    </plurals>
+    <plurals name="mobile_network_summary_count">
+        <item quantity="one">%1$d SIM-карта</item>
+        <item quantity="few">%1$d SIM-карты</item>
+        <item quantity="many">%1$d SIM-карт</item>
+        <item quantity="other">%1$d SIM-карты</item>
+    </plurals>
+    <plurals name="runtime_permissions_additional_count">
+        <item quantity="one">%d дополнительное разрешение</item>
+        <item quantity="few">%d дополнительных разрешения</item>
+        <item quantity="many">%d дополнительных разрешений</item>
+        <item quantity="other">%d дополнительного разрешения</item>
+    </plurals>
+    <plurals name="show_dev_countdown">
+        <item quantity="one">Вы почти у цели. Остался %1$d шаг.</item>
+        <item quantity="few">Вы почти у цели. Осталось %1$d шага.</item>
+        <item quantity="many">Вы почти у цели. Осталось %1$d шагов.</item>
+        <item quantity="other">Вы почти у цели. Осталось %1$d шага.</item>
+    </plurals>
+    <plurals name="user_limit_reached_message">
+        <item quantity="one">Можно создать не более %d пользователя.</item>
+        <item quantity="few">Можно создать не более %d пользователей.</item>
+        <item quantity="many">Можно создать не более %d пользователей.</item>
+        <item quantity="other">Можно создать не более %d пользователя.</item>
+    </plurals>
+    <plurals name="wifi_tether_connected_summary">
+        <item quantity="one">Подключено %1$d устройство</item>
+        <item quantity="few">Подключено %1$d устройства</item>
+        <item quantity="many">Подключено %1$d устройств</item>
+        <item quantity="other">Подключено %1$d устройства</item>
+    </plurals>
+</resources>

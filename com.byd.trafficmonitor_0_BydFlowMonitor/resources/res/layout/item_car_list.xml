@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_60">
+    <TextView
+        android:textSize="@dimen/dp_18"
+        android:textColor="@color/car_frame_list_color"
+        android:id="@+id/tv_frame_num"
+        android:layout_width="@dimen/dp_165"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_14"
+        android:text="LGXC*********9028"
+        android:includeFontPadding="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <TextView
+        android:textSize="@dimen/dp_16"
+        android:textColor="@color/car_name_list_color"
+        android:id="@+id/tv_car_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_24"
+        android:maxWidth="@dimen/dp_115"
+        android:text="秦PLUS豪华版"
+        android:lines="1"
+        android:maxEms="7"
+        android:includeFontPadding="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/tv_frame_num"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <ImageView
+        android:layout_width="@dimen/dp_48"
+        android:layout_height="@dimen/dp_48"
+        android:src="@mipmap/icon_car_list_select"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

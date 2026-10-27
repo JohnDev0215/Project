@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="@dimen/dp_128"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/dp_325"
+        android:layout_alignParentStart="true">
+        <TextView
+            android:textSize="@dimen/sp_64"
+            android:textColor="@color/text_color_blue_1"
+            android:gravity="center"
+            android:id="@+id/tv_hour_clock_3_audio_screen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"/>
+        <TextView
+            android:textSize="@dimen/sp_64"
+            android:textColor="@color/text_color_white_dilink"
+            android:id="@+id/tv_minute_clock_3_audio_screen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_63"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/tv_hour_clock_3_audio_screen"/>
+    </RelativeLayout>
+</RelativeLayout>

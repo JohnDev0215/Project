@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="billing_cycle_days_left">
+        <item quantity="one">%d day left</item>
+        <item quantity="other">%d days left</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_letters">
+        <item quantity="one">Must contain at least 1 letter</item>
+        <item quantity="other">Must contain at least %d letters</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_lowercase">
+        <item quantity="one">Must contain at least 1 lowercase letter</item>
+        <item quantity="other">Must contain at least %d lowercase letters</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_nonletter">
+        <item quantity="one">Must contain at least 1 non-letter character</item>
+        <item quantity="other">Must contain at least %d non-letter characters</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_numeric">
+        <item quantity="one">Must contain at least 1 numerical digit</item>
+        <item quantity="other">Must contain at least %d numerical digits</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_symbols">
+        <item quantity="one">Must contain at least 1 special symbol</item>
+        <item quantity="other">Must contain at least %d special symbols</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_uppercase">
+        <item quantity="one">Must contain at least 1 uppercase letter</item>
+        <item quantity="other">Must contain at least %d uppercase letters</item>
+    </plurals>
+    <plurals name="mobile_network_summary_count">
+        <item quantity="one">%1$d SIM</item>
+        <item quantity="other">%1$d SIMs</item>
+    </plurals>
+    <plurals name="runtime_permissions_additional_count">
+        <item quantity="one">%d additional permission</item>
+        <item quantity="other">%d additional permissions</item>
+    </plurals>
+    <plurals name="show_dev_countdown">
+        <item quantity="one">You are now %1$d step away from being a developer.</item>
+        <item quantity="other">You are now %1$d steps away from being a developer.</item>
+    </plurals>
+    <plurals name="user_limit_reached_message">
+        <item quantity="one">Only one user can be created.</item>
+        <item quantity="other">You can create up to %d users.</item>
+    </plurals>
+    <plurals name="wifi_tether_connected_summary">
+        <item quantity="one">%1$d device connected</item>
+        <item quantity="other">%1$d devices connected</item>
+    </plurals>
+</resources>

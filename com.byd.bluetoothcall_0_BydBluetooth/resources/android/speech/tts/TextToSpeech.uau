@@ -1,0 +1,5 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/speech/tts/TextToSpeech;->mConnectingServiceConnection:Landroid/speech/tts/TextToSpeech$Connection;,frameworks/base/core/java/android/speech/tts/TextToSpeech.java,699,5,699,25,
+Landroid/speech/tts/TextToSpeech;->mInitListener:Landroid/speech/tts/TextToSpeech$OnInitListener;,frameworks/base/core/java/android/speech/tts/TextToSpeech.java,702,5,702,25,
+Landroid/speech/tts/TextToSpeech;->mCurrentEngine:Ljava/lang/String;,frameworks/base/core/java/android/speech/tts/TextToSpeech.java,719,5,719,25,
+Landroid/speech/tts/TextToSpeech;->getCurrentEngine()Ljava/lang/String;,frameworks/base/core/java/android/speech/tts/TextToSpeech.java,1437,5,1437,25,

@@ -1,0 +1,4 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/bluetooth/BluetoothGattService;->mDevice:Landroid/bluetooth/BluetoothDevice;,frameworks/base/core/java/android/bluetooth/BluetoothGattService.java,52,5,52,25,
+Landroid/bluetooth/BluetoothGattService;->setInstanceId(I)V,frameworks/base/core/java/android/bluetooth/BluetoothGattService.java,270,5,270,25,
+Landroid/bluetooth/BluetoothGattService;->setAdvertisePreferred(Z)V,frameworks/base/core/java/android/bluetooth/BluetoothGattService.java,388,5,388,25,

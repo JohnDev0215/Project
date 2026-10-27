@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="billing_cycle_days_left">
+        <item quantity="one">%d நாள் மீதமுள்ளது</item>
+        <item quantity="other">%d நாட்கள் மீதமுள்ளன</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_letters">
+        <item quantity="one">குறைந்தது 1 எழுத்து இருக்க வேண்டும்</item>
+        <item quantity="other">குறைந்தது %d எழுத்துகள் இருக்க வேண்டும்</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_lowercase">
+        <item quantity="one">குறைந்தது 1 சிற்றெழுத்து இருக்க வேண்டும்</item>
+        <item quantity="other">குறைந்தது %d சிற்றெழுத்துகள் இருக்க வேண்டும்</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_nonletter">
+        <item quantity="one">குறைந்தது எழுத்து அல்லாத 1 குறி இருக்க வேண்டும்</item>
+        <item quantity="other">குறைந்தது எழுத்து அல்லாத %d குறிகள் இருக்க வேண்டும்</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_numeric">
+        <item quantity="one">குறைந்தது 1 எண் இலக்கம் இருக்க வேண்டும்</item>
+        <item quantity="other">குறைந்தது %d எண் இலக்கங்கள் இருக்க வேண்டும்</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_symbols">
+        <item quantity="one">குறைந்தது 1 சிறப்புக் குறி இருக்க வேண்டும்</item>
+        <item quantity="other">குறைந்தது %d சிறப்புக் குறிகள் இருக்க வேண்டும்</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_uppercase">
+        <item quantity="one">குறைந்தது 1 பேரெழுத்து இருக்க வேண்டும்</item>
+        <item quantity="other">குறைந்தது %d பேரெழுத்துகள் இருக்க வேண்டும்</item>
+    </plurals>
+    <plurals name="mobile_network_summary_count">
+        <item quantity="one">%1$d சிம்</item>
+        <item quantity="other">%1$d சிம்கள்</item>
+    </plurals>
+    <plurals name="runtime_permissions_additional_count">
+        <item quantity="one">%d கூடுதல் அனுமதி</item>
+        <item quantity="other">%d கூடுதல் அனுமதிகள்</item>
+    </plurals>
+    <plurals name="show_dev_countdown">
+        <item quantity="one">நீங்கள் டெவெலப்பராக இன்னும் %1$d படி உள்ளது.</item>
+        <item quantity="other">நீங்கள் டெவெலப்பராக இன்னும் %1$d படிகள் உள்ளன.</item>
+    </plurals>
+    <plurals name="user_limit_reached_message">
+        <item quantity="one">ஒரு பயனரை மட்டுமே சேர்க்க முடியும்.</item>
+        <item quantity="other">%d பயனர்கள் வரை சேர்க்க முடியும்.</item>
+    </plurals>
+    <plurals name="wifi_tether_connected_summary">
+        <item quantity="one">%1$d சாதனம் இணைக்கப்பட்டது</item>
+        <item quantity="other">%1$d சாதனங்கள் இணைக்கப்பட்டன</item>
+    </plurals>
+</resources>

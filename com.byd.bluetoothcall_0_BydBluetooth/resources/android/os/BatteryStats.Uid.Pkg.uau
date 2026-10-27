@@ -1,0 +1,4 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/os/BatteryStats$Uid$Pkg;-><init>()V,frameworks/base/core/java/android/os/BatteryStats.java,1099,13,1099,71,maxTargetSdk=28
+Landroid/os/BatteryStats$Uid$Pkg;->getWakeupAlarmStats()Landroid/util/ArrayMap;,frameworks/base/core/java/android/os/BatteryStats.java,1107,13,1107,33,
+Landroid/os/BatteryStats$Uid$Pkg;->getServiceStats()Landroid/util/ArrayMap;,frameworks/base/core/java/android/os/BatteryStats.java,1113,13,1113,33,

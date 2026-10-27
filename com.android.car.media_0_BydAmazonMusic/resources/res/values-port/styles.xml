@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="FullScreenErrorMessageStyle" parent="">
+        <item name="android:textAppearance">@style/TextAppearance.Body1</item>
+        <item name="android:gravity">0x11</item>
+        <item name="android:layout_width">-2</item>
+        <item name="android:layout_height">-2</item>
+    </style>
+</resources>

@@ -1,0 +1,94 @@
+package com.airbnb.lottie.network;
+
+import android.content.Context;
+import b.g.j.d;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
+
+/* JADX INFO: compiled from: NetworkCache.java */
+/* JADX INFO: loaded from: classes.dex */
+class a {
+
+    /* JADX INFO: renamed from: a, reason: collision with root package name */
+    private final Context f3034a;
+
+    /* JADX INFO: renamed from: b, reason: collision with root package name */
+    private final String f3035b;
+
+    a(Context context, String str) {
+        this.f3034a = context.getApplicationContext();
+        this.f3035b = str;
+    }
+
+    private static String b(String str, FileExtension fileExtension, boolean z) {
+        StringBuilder sb = new StringBuilder();
+        sb.append("lottie_cache_");
+        sb.append(str.replaceAll("\\W+", ""));
+        sb.append(z ? fileExtension.tempExtension() : fileExtension.extension);
+        return sb.toString();
+    }
+
+    private File c(String str) throws FileNotFoundException {
+        File file = new File(this.f3034a.getCacheDir(), b(str, FileExtension.JSON, false));
+        if (file.exists()) {
+            return file;
+        }
+        File file2 = new File(this.f3034a.getCacheDir(), b(str, FileExtension.ZIP, false));
+        if (file2.exists()) {
+            return file2;
+        }
+        return null;
+    }
+
+    d<FileExtension, InputStream> a() {
+        try {
+            File fileC = c(this.f3035b);
+            if (fileC == null) {
+                return null;
+            }
+            FileInputStream fileInputStream = new FileInputStream(fileC);
+            FileExtension fileExtension = fileC.getAbsolutePath().endsWith(".zip") ? FileExtension.ZIP : FileExtension.JSON;
+            com.airbnb.lottie.u.d.a("Cache hit for " + this.f3035b + " at " + fileC.getAbsolutePath());
+            return new d<>(fileExtension, fileInputStream);
+        } catch (FileNotFoundException unused) {
+            return null;
+        }
+    }
+
+    void d(FileExtension fileExtension) {
+        File file = new File(this.f3034a.getCacheDir(), b(this.f3035b, fileExtension, true));
+        File file2 = new File(file.getAbsolutePath().replace(".temp", ""));
+        boolean zRenameTo = file.renameTo(file2);
+        com.airbnb.lottie.u.d.a("Copying temp file to real file (" + file2 + ")");
+        if (zRenameTo) {
+            return;
+        }
+        com.airbnb.lottie.u.d.b("Unable to rename cache file " + file.getAbsolutePath() + " to " + file2.getAbsolutePath() + ".");
+    }
+
+    File e(InputStream inputStream, FileExtension fileExtension) throws IOException {
+        File file = new File(this.f3034a.getCacheDir(), b(this.f3035b, fileExtension, true));
+        try {
+            FileOutputStream fileOutputStream = new FileOutputStream(file);
+            try {
+                byte[] bArr = new byte[1024];
+                while (true) {
+                    int i = inputStream.read(bArr);
+                    if (i == -1) {
+                        fileOutputStream.flush();
+                        return file;
+                    }
+                    fileOutputStream.write(bArr, 0, i);
+                }
+            } finally {
+                fileOutputStream.close();
+            }
+        } finally {
+            inputStream.close();
+        }
+    }
+}

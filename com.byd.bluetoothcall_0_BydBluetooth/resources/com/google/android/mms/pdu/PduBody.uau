@@ -1,0 +1,12 @@
+signature,file,startline,startcol,endline,endcol,properties
+Lcom/google/android/mms/pdu/PduBody;-><init>()V,frameworks/base/telephony/common/com/google/android/mms/pdu/PduBody.java,37,5,37,25,
+Lcom/google/android/mms/pdu/PduBody;->addPart(Lcom/google/android/mms/pdu/PduPart;)Z,frameworks/base/telephony/common/com/google/android/mms/pdu/PduBody.java,83,5,83,25,
+Lcom/google/android/mms/pdu/PduBody;->addPart(ILcom/google/android/mms/pdu/PduPart;)V,frameworks/base/telephony/common/com/google/android/mms/pdu/PduBody.java,100,5,100,25,
+Lcom/google/android/mms/pdu/PduBody;->removePart(I)Lcom/google/android/mms/pdu/PduPart;,frameworks/base/telephony/common/com/google/android/mms/pdu/PduBody.java,116,5,116,25,
+Lcom/google/android/mms/pdu/PduBody;->getPart(I)Lcom/google/android/mms/pdu/PduPart;,frameworks/base/telephony/common/com/google/android/mms/pdu/PduBody.java,134,5,134,25,
+Lcom/google/android/mms/pdu/PduBody;->getPartIndex(Lcom/google/android/mms/pdu/PduPart;)I,frameworks/base/telephony/common/com/google/android/mms/pdu/PduBody.java,145,5,145,25,
+Lcom/google/android/mms/pdu/PduBody;->getPartsNum()I,frameworks/base/telephony/common/com/google/android/mms/pdu/PduBody.java,155,5,155,25,
+Lcom/google/android/mms/pdu/PduBody;->getPartByContentId(Ljava/lang/String;)Lcom/google/android/mms/pdu/PduPart;,frameworks/base/telephony/common/com/google/android/mms/pdu/PduBody.java,166,5,166,25,
+Lcom/google/android/mms/pdu/PduBody;->getPartByContentLocation(Ljava/lang/String;)Lcom/google/android/mms/pdu/PduPart;,frameworks/base/telephony/common/com/google/android/mms/pdu/PduBody.java,178,5,178,25,
+Lcom/google/android/mms/pdu/PduBody;->getPartByName(Ljava/lang/String;)Lcom/google/android/mms/pdu/PduPart;,frameworks/base/telephony/common/com/google/android/mms/pdu/PduBody.java,189,5,189,25,
+Lcom/google/android/mms/pdu/PduBody;->getPartByFileName(Ljava/lang/String;)Lcom/google/android/mms/pdu/PduPart;,frameworks/base/telephony/common/com/google/android/mms/pdu/PduBody.java,200,5,200,25,

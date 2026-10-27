@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="billing_cycle_days_left">
+        <item quantity="one">%d hari lagi</item>
+        <item quantity="other">%d hari lagi</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_letters">
+        <item quantity="one">Mesti mengandungi sekurang-kurangnya 1 huruf</item>
+        <item quantity="other">Mesti mengandungi sekurang-kurangnya %d huruf</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_lowercase">
+        <item quantity="one">Mesti mengandungi sekurang-kurangnya 1 huruf kecil</item>
+        <item quantity="other">Mesti mengandungi sekurang-kurangnya %d huruf kecil</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_nonletter">
+        <item quantity="one">Mesti mengandungi sekurang-kurangnya 1 aksara bukan huruf</item>
+        <item quantity="other">Mesti mengandungi sekurang-kurangnya %d aksara bukan huruf</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_numeric">
+        <item quantity="one">Mesti mengandungi sekurang-kurangnya 1 angka</item>
+        <item quantity="other">Mesti mengandungi sekurang-kurangnya %d angka</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_symbols">
+        <item quantity="one">Mesti mengandungi sekurang-kurangnya 1 simbol khas</item>
+        <item quantity="other">Mesti mengandungi sekurang-kurangnya %d simbol khas</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_uppercase">
+        <item quantity="one">Mesti mengandungi sekurang-kurangnya 1 huruf besar</item>
+        <item quantity="other">Mesti mengandungi sekurang-kurangnya %d huruf besar</item>
+    </plurals>
+    <plurals name="mobile_network_summary_count">
+        <item quantity="one">%1$d SIM</item>
+        <item quantity="other">%1$d SIM</item>
+    </plurals>
+    <plurals name="runtime_permissions_additional_count">
+        <item quantity="one">%d kebenaran tambahan</item>
+        <item quantity="other">%d kebenaran tambahan</item>
+    </plurals>
+    <plurals name="show_dev_countdown">
+        <item quantity="one">Anda kini %1$d langkah daripada menjadi seorang pembangun.</item>
+        <item quantity="other">Anda kini %1$d langkah daripada menjadi seorang pembangun.</item>
+    </plurals>
+    <plurals name="user_limit_reached_message">
+        <item quantity="one">Hanya satu pengguna yang boleh dibuat.</item>
+        <item quantity="other">Anda boleh membuat hingga %d pengguna.</item>
+    </plurals>
+    <plurals name="wifi_tether_connected_summary">
+        <item quantity="one">%1$d peranti disambungkan</item>
+        <item quantity="other">%1$d peranti disambungkan</item>
+    </plurals>
+</resources>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="aap_manufacturer_name">Android</string>
+    <string name="app_name">SmartProjection</string>
+    <string name="connecting_process">Connecting...%d%%</string>
+    <string name="devices">DEVICES</string>
+    <string name="fragment_button_text_exit">Exit</string>
+    <string name="fragment_button_text_help">Help</string>
+    <string name="fragment_button_text_reconnect">Reconnect</string>
+    <string name="fragment_device_connected">No Device Connected</string>
+    <string name="no_device">No Device</string>
+    <string name="phone_incall_message">Call Time %s</string>
+    <string name="popup_aap_connect_failure">There was a connection error with your Android Auto device.</string>
+    <string name="popup_aap_connect_ssl_failure">Please correct time and date then reconnect device.</string>
+    <string name="popup_aap_frx">Follow instructions on your device to enable Android Auto.</string>
+    <string name="popup_aap_loading">Android Auto Loading\n Please wait…</string>
+    <string name="popup_aap_time_out">It is time out when connect Android Auto.</string>
+    <string name="popup_aap_user_refuse">User refused error with your Android Auto device.</string>
+    <string name="popup_low_battery">Android device battery low. Plug in device.</string>
+    <string name="popup_md_auth_failed">Bluetooth pairing with the phone failed.</string>
+    <string name="popup_one_button_ok">OK</string>
+    <string name="popup_poor_wireless_network">The wireless connection with your phone is unstable.</string>
+    <string name="popup_two_button_no">No</string>
+    <string name="popup_two_button_yes">Yes</string>
+    <string name="popup_user_switch_can_not_started">Cannot start Android Auto with the target device.</string>
+    <string name="popup_user_switch_second_failed">Cannot start Android Auto with the target device.</string>
+</resources>

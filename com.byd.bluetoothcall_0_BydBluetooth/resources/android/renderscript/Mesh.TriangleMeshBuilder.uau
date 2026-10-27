@@ -1,0 +1,5 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/renderscript/Mesh$TriangleMeshBuilder;-><init>(Landroid/renderscript/RenderScript;II)V,frameworks/base/rs/java/android/renderscript/Mesh.java,609,9,609,29,
+Landroid/renderscript/Mesh$TriangleMeshBuilder;->addVertex(FF)Landroid/renderscript/Mesh$TriangleMeshBuilder;,frameworks/base/rs/java/android/renderscript/Mesh.java,666,9,666,29,
+Landroid/renderscript/Mesh$TriangleMeshBuilder;->addTriangle(III)Landroid/renderscript/Mesh$TriangleMeshBuilder;,frameworks/base/rs/java/android/renderscript/Mesh.java,772,9,772,29,
+Landroid/renderscript/Mesh$TriangleMeshBuilder;->create(Z)Landroid/renderscript/Mesh;,frameworks/base/rs/java/android/renderscript/Mesh.java,805,9,805,29,

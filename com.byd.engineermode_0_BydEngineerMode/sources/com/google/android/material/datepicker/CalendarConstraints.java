@@ -1,0 +1,118 @@
+package com.google.android.material.datepicker;
+
+import android.os.Parcel;
+import android.os.Parcelable;
+import java.util.Arrays;
+
+/* JADX INFO: loaded from: classes.dex */
+public final class CalendarConstraints implements Parcelable {
+    public static final Parcelable.Creator<CalendarConstraints> CREATOR = new a();
+
+    /* JADX INFO: renamed from: b, reason: collision with root package name */
+    private final Month f2677b;
+
+    /* JADX INFO: renamed from: c, reason: collision with root package name */
+    private final Month f2678c;
+
+    /* JADX INFO: renamed from: d, reason: collision with root package name */
+    private final Month f2679d;
+    private final DateValidator e;
+    private final int f;
+    private final int g;
+
+    public interface DateValidator extends Parcelable {
+        boolean c(long j);
+    }
+
+    static class a implements Parcelable.Creator<CalendarConstraints> {
+        a() {
+        }
+
+        @Override // android.os.Parcelable.Creator
+        /* JADX INFO: renamed from: a, reason: merged with bridge method [inline-methods] */
+        public CalendarConstraints createFromParcel(Parcel parcel) {
+            return new CalendarConstraints((Month) parcel.readParcelable(Month.class.getClassLoader()), (Month) parcel.readParcelable(Month.class.getClassLoader()), (Month) parcel.readParcelable(Month.class.getClassLoader()), (DateValidator) parcel.readParcelable(DateValidator.class.getClassLoader()), null);
+        }
+
+        @Override // android.os.Parcelable.Creator
+        /* JADX INFO: renamed from: b, reason: merged with bridge method [inline-methods] */
+        public CalendarConstraints[] newArray(int i) {
+            return new CalendarConstraints[i];
+        }
+    }
+
+    /* synthetic */ CalendarConstraints(Month month, Month month2, Month month3, DateValidator dateValidator, a aVar) {
+        this(month, month2, month3, dateValidator);
+    }
+
+    @Override // android.os.Parcelable
+    public int describeContents() {
+        return 0;
+    }
+
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (!(obj instanceof CalendarConstraints)) {
+            return false;
+        }
+        CalendarConstraints calendarConstraints = (CalendarConstraints) obj;
+        return this.f2677b.equals(calendarConstraints.f2677b) && this.f2678c.equals(calendarConstraints.f2678c) && this.f2679d.equals(calendarConstraints.f2679d) && this.e.equals(calendarConstraints.e);
+    }
+
+    Month f(Month month) {
+        return month.compareTo(this.f2677b) < 0 ? this.f2677b : month.compareTo(this.f2678c) > 0 ? this.f2678c : month;
+    }
+
+    public DateValidator g() {
+        return this.e;
+    }
+
+    Month h() {
+        return this.f2678c;
+    }
+
+    public int hashCode() {
+        return Arrays.hashCode(new Object[]{this.f2677b, this.f2678c, this.f2679d, this.e});
+    }
+
+    int i() {
+        return this.g;
+    }
+
+    Month j() {
+        return this.f2679d;
+    }
+
+    Month k() {
+        return this.f2677b;
+    }
+
+    int l() {
+        return this.f;
+    }
+
+    @Override // android.os.Parcelable
+    public void writeToParcel(Parcel parcel, int i) {
+        parcel.writeParcelable(this.f2677b, 0);
+        parcel.writeParcelable(this.f2678c, 0);
+        parcel.writeParcelable(this.f2679d, 0);
+        parcel.writeParcelable(this.e, 0);
+    }
+
+    private CalendarConstraints(Month month, Month month2, Month month3, DateValidator dateValidator) {
+        this.f2677b = month;
+        this.f2678c = month2;
+        this.f2679d = month3;
+        this.e = dateValidator;
+        if (month.compareTo(month3) > 0) {
+            throw new IllegalArgumentException("start Month cannot be after current Month");
+        }
+        if (month3.compareTo(month2) > 0) {
+            throw new IllegalArgumentException("current Month cannot be after end Month");
+        }
+        this.g = month.n(month2) + 1;
+        this.f = (month2.e - month.e) + 1;
+    }
+}

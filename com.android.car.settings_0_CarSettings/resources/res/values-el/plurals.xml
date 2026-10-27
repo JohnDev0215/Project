@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="billing_cycle_days_left">
+        <item quantity="one">Απομένει %d ημέρα</item>
+        <item quantity="other">Απομένουν %d ημέρες</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_letters">
+        <item quantity="one">Πρέπει να περιέχει τουλάχιστον 1 γράμμα</item>
+        <item quantity="other">Πρέπει να περιέχει τουλάχιστον %d γράμματα</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_lowercase">
+        <item quantity="one">Πρέπει να περιέχει τουλάχιστον 1 πεζό γράμμα</item>
+        <item quantity="other">Πρέπει να περιέχει τουλάχιστον %d πεζά γράμματα</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_nonletter">
+        <item quantity="one">Πρέπει να περιέχει τουλάχιστον 1 χαρακτήρα που δεν είναι γράμμα</item>
+        <item quantity="other">Πρέπει να περιέχει τουλάχιστον %d χαρακτήρες που δεν είναι γράμματα</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_numeric">
+        <item quantity="one">Πρέπει να περιέχει τουλάχιστον 1 αριθμητικό ψηφίο</item>
+        <item quantity="other">Πρέπει να περιέχει τουλάχιστον %d αριθμητικά ψηφία</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_symbols">
+        <item quantity="one">Πρέπει να περιέχει τουλάχιστον 1 ειδικό σύμβολο</item>
+        <item quantity="other">Πρέπει να περιέχει τουλάχιστον %d ειδικά σύμβολα</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_uppercase">
+        <item quantity="one">Πρέπει να περιέχει τουλάχιστον 1 κεφαλαίο γράμμα</item>
+        <item quantity="other">Πρέπει να περιέχει τουλάχιστον %d κεφαλαία γράμματα</item>
+    </plurals>
+    <plurals name="mobile_network_summary_count">
+        <item quantity="one">%1$d SIM</item>
+        <item quantity="other">%1$d SIM</item>
+    </plurals>
+    <plurals name="runtime_permissions_additional_count">
+        <item quantity="one">%d επιπλέον δικαίωμα</item>
+        <item quantity="other">%d επιπλέον δικαιώματα</item>
+    </plurals>
+    <plurals name="show_dev_countdown">
+        <item quantity="one">Απομένει %1$d βήμα για να γίνετε προγραμματιστής.</item>
+        <item quantity="other">Απομένουν %1$d βήματα για να γίνετε προγραμματιστής.</item>
+    </plurals>
+    <plurals name="user_limit_reached_message">
+        <item quantity="one">Είναι δυνατή η δημιουργία μόνο ενός χρήστη.</item>
+        <item quantity="other">Μπορείτε να δημιουργήσετε έως %d χρήστες.</item>
+    </plurals>
+    <plurals name="wifi_tether_connected_summary">
+        <item quantity="one">%1$d συσκευή συνδέθηκε</item>
+        <item quantity="other">%1$d συσκευές συνδέθηκαν</item>
+    </plurals>
+</resources>

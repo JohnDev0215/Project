@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="billing_cycle_days_left">
+        <item quantity="one">נותר יום אחד (%d)</item>
+        <item quantity="two">נותרו יומיים (%d)</item>
+        <item quantity="many">נותרו %d ימים</item>
+        <item quantity="other">נותרו %d ימים</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_letters">
+        <item quantity="one">צריכה להכיל לפחות אות אחת</item>
+        <item quantity="two">צריכה להכיל לפחות %d אותיות</item>
+        <item quantity="many">צריכה להכיל לפחות %d אותיות</item>
+        <item quantity="other">צריכה להכיל לפחות %d אותיות</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_lowercase">
+        <item quantity="one">צריכה להכיל לפחות אות קטנה אחת</item>
+        <item quantity="two">צריכה להכיל לפחות %d אותיות קטנות</item>
+        <item quantity="many">צריכה להכיל לפחות %d אותיות קטנות</item>
+        <item quantity="other">צריכה להכיל לפחות %d אותיות קטנות</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_nonletter">
+        <item quantity="one">צריכה להכיל לפחות תו אחד שאינו אות</item>
+        <item quantity="two">צריכה להכיל לפחות %d תווים שאינם אותיות</item>
+        <item quantity="many">צריכה להכיל לפחות %d תווים שאינם אותיות</item>
+        <item quantity="other">צריכה להכיל לפחות %d תווים שאינם אותיות</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_numeric">
+        <item quantity="one">צריכה להכיל לפחות ספרה אחת</item>
+        <item quantity="two">צריכה להכיל לפחות %d ספרות</item>
+        <item quantity="many">צריכה להכיל לפחות %d ספרות</item>
+        <item quantity="other">צריכה להכיל לפחות %d ספרות</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_symbols">
+        <item quantity="one">צריכה להכיל לפחות סמל מיוחד אחד</item>
+        <item quantity="two">צריכה להכיל לפחות %d סמלים מיוחדים</item>
+        <item quantity="many">צריכה להכיל לפחות %d סמלים מיוחדים</item>
+        <item quantity="other">צריכה להכיל לפחות %d סמלים מיוחדים</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_uppercase">
+        <item quantity="one">צריכה להכיל לפחות אות גדולה אחת</item>
+        <item quantity="two">צריכה להכיל לפחות %d אותיות גדולות</item>
+        <item quantity="many">צריכה להכיל לפחות %d אותיות גדולות</item>
+        <item quantity="other">צריכה להכיל לפחות %d אותיות גדולות</item>
+    </plurals>
+    <plurals name="mobile_network_summary_count">
+        <item quantity="one">כרטיס SIM אחד (‏%1$d)</item>
+        <item quantity="two">%1$d כרטיסי SIM</item>
+        <item quantity="many">%1$d כרטיסי SIM</item>
+        <item quantity="other">%1$d כרטיסי SIM</item>
+    </plurals>
+    <plurals name="runtime_permissions_additional_count">
+        <item quantity="one">הרשאה אחת (%d) נוספת</item>
+        <item quantity="two">%d הרשאות נוספות</item>
+        <item quantity="many">%d הרשאות נוספות</item>
+        <item quantity="other">%d הרשאות נוספות</item>
+    </plurals>
+    <plurals name="show_dev_countdown">
+        <item quantity="one">בעוד צעד אחד (%1$d) התואר שלך יהיה מפתח/ת.</item>
+        <item quantity="two">בעוד %1$d צעדים התואר שלך יהיה מפתח/ת.</item>
+        <item quantity="many">בעוד %1$d צעדים התואר שלך יהיה מפתח/ת.</item>
+        <item quantity="other">בעוד %1$d צעדים התואר שלך יהיה מפתח/ת.</item>
+    </plurals>
+    <plurals name="user_limit_reached_message">
+        <item quantity="one">ניתן ליצור רק משתמש אחד.</item>
+        <item quantity="two">ניתן ליצור עד %d משתמשים.</item>
+        <item quantity="many">ניתן ליצור עד %d משתמשים.</item>
+        <item quantity="other">ניתן ליצור עד %d משתמשים.</item>
+    </plurals>
+    <plurals name="wifi_tether_connected_summary">
+        <item quantity="one">מכשיר אחד מחובר</item>
+        <item quantity="two">‏%1$d מכשירים מחוברים</item>
+        <item quantity="many">‏%1$d מכשירים מחוברים</item>
+        <item quantity="other">‏%1$d מכשירים מחוברים</item>
+    </plurals>
+</resources>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/share_apps_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:textSize="@dimen/dialog_content_text_size"
+        android:textColor="?attr/text_color"
+        android:gravity="center"
+        android:id="@+id/no_activity_tips"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/dp_120"
+        android:text="@string/no_share_activitys"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:scrollbarSize="@dimen/dp_2"
+        android:scrollbarThumbVertical="@drawable/scrollbar_vertical_thumb"
+        android:scrollbarTrackVertical="@drawable/scrollbar_vertical_track"
+        android:id="@+id/m_recycler_targets"
+        android:scrollbars="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:overScrollMode="never"
+        android:layout_marginEnd="@dimen/dp_10"/>
+</LinearLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="browse_fragment_top_padding">@dimen/car_ui_toolbar_row_height</dimen>
+    <dimen name="browse_fragment_top_padding_stacked">@dimen/car_ui_toolbar_row_height</dimen>
+    <dimen name="byd_alert_dialog_width">@dimen/auto_dimen2_560</dimen>
+    <dimen name="car_tab_width">-2px</dimen>
+    <dimen name="car_ui_app_styled_dialog_height_max">1056dp</dimen>
+    <dimen name="car_ui_app_styled_dialog_width_max">768dp</dimen>
+    <dimen name="control_action_bar_margin_bottom">135dp</dimen>
+    <dimen name="control_bar_first_height">380dp</dimen>
+    <dimen name="control_bar_margin_x">@dimen/car_ui_padding_5</dimen>
+    <dimen name="error_screen_logo_margin_top">354dp</dimen>
+    <dimen name="playback_album_art_size">360dp</dimen>
+    <dimen name="playback_control_action_bar_margin">68dp</dimen>
+    <dimen name="playback_seekbar_margin_top">74dp</dimen>
+    <dimen name="playback_seekbar_margin_x">84dp</dimen>
+    <dimen name="queue_list_item_title_max_width">350dp</dimen>
+</resources>

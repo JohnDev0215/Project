@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="control_ac_array">
+        <item>เปิดแอร์</item>
+        <item>ปรับอุณหภูมิเป็น 25 องศา</item>
+        <item>เปิดโหมดหมุนเวียนอากาศจากภายนอก</item>
+        <item>ร้อนมาก</item>
+        <item>ลดความเร็วพัดลมลง</item>
+        <item>ตั้งค่าความเร็วพัดลมไปที่ระดับ 3</item>
+        <item>เปิดละลายน้ำแข็งด้านหน้า</item>
+        <item>เปิดระบบถ่ายเทอากาศ</item>
+        <item>เปิดพัดลม</item>
+    </array>
+    <array name="control_seat_array">
+        <item>เปิดใช้ฮีตเตอร์เบาะที่นั่งคนขับ</item>
+        <item>เปิดการระบายอากาศของที่นั่ง</item>
+        <item>เปิดการระบายอากาศที่นั่งด้านหลัง</item>
+        <item>ปิดระบบระบายอากาศที่นั่ง</item>
+    </array>
+    <array name="control_sunshade_array">
+        <item>เปิดม่านกันแดด</item>
+        <item>ปิดม่านกันแดด</item>
+    </array>
+    <array name="offline_other_operations_array">
+        <item>เปิดบลูทูธ</item>
+        <item>เปิดไวไฟ</item>
+        <item>เพิ่มความสว่างหน้าจอ</item>
+        <item>เปิดแอปการตั้งค่ารถ</item>
+        <item>กลับไปหน้าหลัก</item>
+    </array>
+    <array name="offline_window_array">
+        <item>เปิดหน้าต่าง</item>
+        <item>เปิดหน้าต่างผู้โดยสาร</item>
+        <item>เปิดหน้าต่างฝั่งคนขับ</item>
+        <item>ปิดกระจกทั้งหมด</item>
+    </array>
+    <array name="rotate_screen_arrays">
+        <item>ช่วยหมุนหน้าจอหน่อย</item>
+    </array>
+    <array name="system_app_operations">
+        <item>เปิดสปอติฟาย</item>
+        <item>เปิดแอปการตั้งค่ารถ</item>
+        <item>ปิดแอปการตั้งค่ารถ</item>
+    </array>
+    <array name="system_other_operations_array">
+        <item>เปิดบลูทูธ</item>
+        <item>เปิดไวไฟ</item>
+        <item>เพิ่มความสว่างหน้าจอ</item>
+        <item>กลับไปหน้าหลัก</item>
+    </array>
+</resources>

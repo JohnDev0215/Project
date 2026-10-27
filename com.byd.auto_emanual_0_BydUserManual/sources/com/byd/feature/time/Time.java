@@ -1,0 +1,54 @@
+package com.byd.feature.time;
+
+/* JADX INFO: loaded from: classes.dex */
+public final class Time {
+    public static final String TIME_CHANGE = "0x9900002B";
+    public static final String TIME_CLOCK_SCREEN_CLOCK_STYLE = "0x4EA0001A";
+    public static final String TIME_CLOCK_SCREEN_CLOCK_STYLE_SET = "0x2DF0001A";
+    public static final String TIME_CLOCK_SCREEN_CONFIG = "0x4EA00028";
+    public static final String TIME_CLOCK_SCREEN_DIMMING_GEAR = "0x4EA00010";
+    public static final String TIME_CLOCK_SCREEN_DIMMING_GEAR_SET = "0x2DF00010";
+    public static final String TIME_CLOCK_SCREEN_TENSE = "0x4EA00008";
+    public static final String TIME_CLOCK_SCREEN_TENSE_SET = "0x2DF00008";
+    public static final String TIME_CLOCK_SCREEN_THEME_WALLPAPER = "0x4EA0000A";
+    public static final String TIME_CLOCK_SCREEN_THEME_WALLPAPER_SET = "0x2DF0000A";
+    public static final String TIME_DATE_FLAG_2_SET = "0x13600039";
+    public static final String TIME_DATE_FLAG_SET = "0x4DF00039";
+    public static final String TIME_DATE_FORMAT = "0x49C0000E";
+    public static final String TIME_DAY_2B6_SET = "0x2B600018";
+    public static final String TIME_DAY_2_SET = "0x13600018";
+    public static final String TIME_DAY_SET = "0x4DF00018";
+    public static final String TIME_FORMAT_24H = "0x49C0002E";
+    public static final String TIME_FORMAT_24H_SET = "0x4E40002E";
+    public static final String TIME_FORMAT_2B6_SET = "0x2B60003B";
+    public static final String TIME_FORMAT_ARHUD = "0x4A509027";
+    public static final String TIME_GPS_AUTOMATIC_CAL_TIME_SET = "0x2B60003D";
+    public static final String TIME_HOUR_2B6_SET = "0x2B600020";
+    public static final String TIME_HOUR_2_SET = "0x13600020";
+    public static final String TIME_HOUR_ARHUD = "0x4A509030";
+    public static final String TIME_HOUR_SET = "0x4DF00020";
+    public static final String TIME_HUAWEI_MDC_TIME_SYNCHRONIZATION_VALIDITY_FLAG_SET = "0xAA000338";
+    public static final String TIME_MINUTE_2B6_SET = "0x2B600028";
+    public static final String TIME_MINUTE_2_SET = "0x13600028";
+    public static final String TIME_MINUTE_ARHUD = "0x4A509038";
+    public static final String TIME_MINUTE_SET = "0x4DF00028";
+    public static final String TIME_MONTH_2B6_SET = "0x2B600010";
+    public static final String TIME_MONTH_2_SET = "0x13600010";
+    public static final String TIME_MONTH_SET = "0x4DF00010";
+    public static final String TIME_RSE_SYNC_2B6 = "0x99000218";
+    public static final String TIME_SECOND_2B6_SET = "0x2B600030";
+    public static final String TIME_SECOND_2_SET = "0x13600030";
+    public static final String TIME_SECOND_ARHUD = "0x4A509040";
+    public static final String TIME_SECOND_SET = "0x4DF00030";
+    public static final String TIME_SET_MODE_2_SET = "0x13600038";
+    public static final String TIME_SET_MODE_SET = "0x4DF00038";
+    public static final String TIME_SOC_SYNC_TIME_TO_MCU_SET = "0xAA000146";
+    public static final String TIME_SUMMERTIME_STATE = "0x49C00010";
+    public static final String TIME_TIME_REQUEST = "0x3E8FD010";
+    public static final String TIME_WEEKDAY_2B6_SET = "0x2B600038";
+    public static final String TIME_WEEKDAY_SET = "0x4DF0003C";
+    public static final String TIME_WEEK_2_SET = "0x1360003C";
+    public static final String TIME_YEAR_2B6_SET = "0x2B600008";
+    public static final String TIME_YEAR_2_SET = "0x13600008";
+    public static final String TIME_YEAR_SET = "0x4DF00008";
+}

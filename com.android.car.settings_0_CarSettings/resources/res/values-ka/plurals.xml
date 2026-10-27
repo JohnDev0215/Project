@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="billing_cycle_days_left">
+        <item quantity="one">დარჩა %d დღე</item>
+        <item quantity="other">დარჩა %d დღე</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_letters">
+        <item quantity="one">უნდა შეიცავდეს მინიმუმ 1 ასოს</item>
+        <item quantity="other">უნდა შეიცავდეს მინიმუმ %d ასოს</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_lowercase">
+        <item quantity="one">უნდა შეიცავდეს მინიმუმ 1 არამთავარულ ასოს</item>
+        <item quantity="other">უნდა შეიცავდეს მინიმუმ %d არამთავარულ ასოს</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_nonletter">
+        <item quantity="one">უნდა შეიცავდეს მინიმუმ 1 არაანბანურ სიმბოლოს</item>
+        <item quantity="other">უნდა შეიცავდეს მინიმუმ %d არაანბანურ სიმბოლოს</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_numeric">
+        <item quantity="one">უნდა შეიცავდეს მინიმუმ 1 ციფრს</item>
+        <item quantity="other">უნდა შეიცავდეს მინიმუმ %d ციფრს</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_symbols">
+        <item quantity="one">უნდა შეიცავდეს მინიმუმ 1 სპეციალურ სიმბოლოს</item>
+        <item quantity="other">უნდა შეიცავდეს მინიმუმ %d სპეციალურ სიმბოლოს</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_uppercase">
+        <item quantity="one">უნდა შეიცავდეს მინიმუმ 1 მთავრულ ასოს</item>
+        <item quantity="other">უნდა შეიცავდეს მინიმუმ %d მთავრულ ასოს</item>
+    </plurals>
+    <plurals name="mobile_network_summary_count">
+        <item quantity="one">%1$d SIM-ბარათი</item>
+        <item quantity="other">%1$d SIM-ბარათი</item>
+    </plurals>
+    <plurals name="runtime_permissions_additional_count">
+        <item quantity="one">%d დამატებითი ნებართვა</item>
+        <item quantity="other">%d დამატებითი ნებართვა</item>
+    </plurals>
+    <plurals name="show_dev_countdown">
+        <item quantity="one">დეველოპერობამდე %1$d ნაბიჯი დაგრჩათ.</item>
+        <item quantity="other">დეველოპერობამდე %1$d ნაბიჯი დაგრჩათ.</item>
+    </plurals>
+    <plurals name="user_limit_reached_message">
+        <item quantity="one">შესაძლებელია მხოლოდ ერთი მომხმარებლის შექმნა.</item>
+        <item quantity="other">შესაძლებელია მაქსიმუმ %d მომხმარებლის შექმნა.</item>
+    </plurals>
+    <plurals name="wifi_tether_connected_summary">
+        <item quantity="one">დაკავშირებულია %1$d მოწყობილობა</item>
+        <item quantity="other">დაკავშირებულია %1$d მოწყობილობა</item>
+    </plurals>
+</resources>

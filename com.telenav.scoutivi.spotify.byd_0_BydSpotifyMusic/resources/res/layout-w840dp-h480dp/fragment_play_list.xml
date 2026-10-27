@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:tag="layout-w840dp-h480dp/fragment_play_list_0"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.vivid.spotify.common.ui.recyclerview.BaseRecyclerView
+        android:scrollbarThumbVertical="?attr/common_scroll_bar_bg"
+        android:scrollbarStyle="outsideOverlay"
+        android:orientation="vertical"
+        android:id="@+id/list_media"
+        android:tag="binding_1"
+        android:scrollbars="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:verticalScrollbarPosition="defaultPosition"
+        android:paddingEnd="@dimen/common_list_padding_end"
+        app:pagination_on="false"/>
+</LinearLayout>

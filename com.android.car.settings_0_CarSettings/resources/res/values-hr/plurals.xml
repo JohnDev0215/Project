@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="billing_cycle_days_left">
+        <item quantity="one">Još %d dan</item>
+        <item quantity="few">Još %d dana</item>
+        <item quantity="other">Još %d dana</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_letters">
+        <item quantity="one">Mora sadržavati najmanje %d slovo</item>
+        <item quantity="few">Mora sadržavati najmanje %d slova</item>
+        <item quantity="other">Mora sadržavati najmanje %d slova</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_lowercase">
+        <item quantity="one">Mora sadržavati najmanje %d malo slovo</item>
+        <item quantity="few">Mora sadržavati najmanje %d mala slova</item>
+        <item quantity="other">Mora sadržavati najmanje %d malih slova</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_nonletter">
+        <item quantity="one">Mora sadržavati najmanje %d znak koji nije slovo</item>
+        <item quantity="few">Mora sadržavati najmanje %d znaka koji nisu slova</item>
+        <item quantity="other">Mora sadržavati najmanje %d znakova koji nisu slova</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_numeric">
+        <item quantity="one">Mora sadržavati najmanje %d znamenku</item>
+        <item quantity="few">Mora sadržavati najmanje %d znamenke</item>
+        <item quantity="other">Mora sadržavati najmanje %d znamenki</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_symbols">
+        <item quantity="one">Mora sadržavati najmanje %d posebni simbol</item>
+        <item quantity="few">Mora sadržavati najmanje %d posebna simbola</item>
+        <item quantity="other">Mora sadržavati najmanje %d posebnih simbola</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_uppercase">
+        <item quantity="one">Mora sadržavati najmanje %d veliko slovo</item>
+        <item quantity="few">Mora sadržavati najmanje %d velika slova</item>
+        <item quantity="other">Mora sadržavati najmanje %d velikih slova</item>
+    </plurals>
+    <plurals name="mobile_network_summary_count">
+        <item quantity="one">%1$d SIM</item>
+        <item quantity="few">%1$d SIM-a</item>
+        <item quantity="other">%1$d SIM-ova</item>
+    </plurals>
+    <plurals name="runtime_permissions_additional_count">
+        <item quantity="one">%d dodatno dopuštenje</item>
+        <item quantity="few">%d dodatna dopuštenja</item>
+        <item quantity="other">%d dodatnih dopuštenja</item>
+    </plurals>
+    <plurals name="show_dev_countdown">
+        <item quantity="one">Još %1$d korak i postat ćete razvojni programer.</item>
+        <item quantity="few">Još %1$d koraka i postat ćete razvojni programer.</item>
+        <item quantity="other">Još %1$d koraka i postat ćete razvojni programer.</item>
+    </plurals>
+    <plurals name="user_limit_reached_message">
+        <item quantity="one">Možete izraditi najviše %d korisnika.</item>
+        <item quantity="few">Možete izraditi najviše %d korisnika.</item>
+        <item quantity="other">Možete izraditi najviše %d korisnika.</item>
+    </plurals>
+    <plurals name="wifi_tether_connected_summary">
+        <item quantity="one">Povezan je %1$d uređaj</item>
+        <item quantity="few">Povezana su %1$d uređaja</item>
+        <item quantity="other">Povezano je %1$d uređaja</item>
+    </plurals>
+</resources>

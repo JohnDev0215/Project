@@ -1,0 +1,9 @@
+package com.google.gson;
+
+/* JADX INFO: compiled from: caradapter-bug */
+/* JADX INFO: loaded from: classes.dex */
+public interface ExclusionStrategy {
+    boolean shouldSkipClass(Class<?> cls);
+
+    boolean shouldSkipField(FieldAttributes fieldAttributes);
+}

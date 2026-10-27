@@ -1,0 +1,62 @@
+package com.google.android.material.datepicker;
+
+import android.os.Parcel;
+import android.os.Parcelable;
+import com.google.android.material.datepicker.CalendarConstraints;
+import java.util.Arrays;
+
+/* JADX INFO: loaded from: classes2.dex */
+public class DateValidatorPointForward implements CalendarConstraints.DateValidator {
+    public static final Parcelable.Creator<DateValidatorPointForward> CREATOR = new a();
+
+    /* JADX INFO: renamed from: d, reason: collision with root package name */
+    public final long f3815d;
+
+    public static class a implements Parcelable.Creator<DateValidatorPointForward> {
+        @Override // android.os.Parcelable.Creator
+        /* JADX INFO: renamed from: a, reason: merged with bridge method [inline-methods] */
+        public DateValidatorPointForward createFromParcel(Parcel parcel) {
+            return new DateValidatorPointForward(parcel.readLong(), null);
+        }
+
+        @Override // android.os.Parcelable.Creator
+        /* JADX INFO: renamed from: b, reason: merged with bridge method [inline-methods] */
+        public DateValidatorPointForward[] newArray(int i8) {
+            return new DateValidatorPointForward[i8];
+        }
+    }
+
+    public /* synthetic */ DateValidatorPointForward(long j8, a aVar) {
+        this(j8);
+    }
+
+    @Override // com.google.android.material.datepicker.CalendarConstraints.DateValidator
+    public boolean b(long j8) {
+        return j8 >= this.f3815d;
+    }
+
+    @Override // android.os.Parcelable
+    public int describeContents() {
+        return 0;
+    }
+
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        return (obj instanceof DateValidatorPointForward) && this.f3815d == ((DateValidatorPointForward) obj).f3815d;
+    }
+
+    public int hashCode() {
+        return Arrays.hashCode(new Object[]{Long.valueOf(this.f3815d)});
+    }
+
+    @Override // android.os.Parcelable
+    public void writeToParcel(Parcel parcel, int i8) {
+        parcel.writeLong(this.f3815d);
+    }
+
+    public DateValidatorPointForward(long j8) {
+        this.f3815d = j8;
+    }
+}

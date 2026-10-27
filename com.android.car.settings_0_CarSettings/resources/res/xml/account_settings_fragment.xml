@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" xmlns:settings="http://schemas.android.com/apk/res-auto"
+    android:title="@string/accounts_settings_title"
+    android:key="@string/psk_account_settings">
+    <PreferenceCategory
+        android:title="@string/account_list_title"
+        android:key="@string/pk_account_list"
+        settings:controller="com.android.car.settings.accounts.AccountListPreferenceController"
+        settings:searchable="false"/>
+    <SwitchPreference
+        android:title="@string/account_auto_sync_title"
+        android:key="@string/pk_account_auto_sync"
+        android:summary="@string/account_auto_sync_summary"
+        settings:controller="com.android.car.settings.accounts.AccountAutoSyncPreferenceController"/>
+    <com.android.car.settings.common.LogicalPreferenceGroup
+        android:key="@string/pk_accounts_extra_settings"
+        settings:controller="com.android.car.settings.common.ExtraSettingsPreferenceController">
+        <intent android:action="com.android.settings.action.EXTRA_SETTINGS">
+            <extra
+                android:name="com.android.settings.category"
+                android:value="com.android.settings.category.ia.accounts"/>
+        </intent>
+    </com.android.car.settings.common.LogicalPreferenceGroup>
+</PreferenceScreen>

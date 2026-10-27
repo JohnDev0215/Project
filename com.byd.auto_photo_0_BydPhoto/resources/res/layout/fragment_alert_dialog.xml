@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:textSize="@dimen/dialog_content_text_size"
+    android:textColor="?attr/text_color"
+    android:gravity="center_horizontal"
+    android:id="@+id/alert_msg"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_100"
+    android:paddingStart="@dimen/alert_text_padding"
+    android:paddingEnd="@dimen/alert_text_padding"/>

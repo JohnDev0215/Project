@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    android:sharedUserId="android.uid.system"
+    android:versionCode="146"
+    android:versionName="1.19.2-202503130911"
+    android:compileSdkVersion="29"
+    android:compileSdkVersionCodename="10"
+    package="com.byd.smarttravel"
+    platformBuildVersionCode="29"
+    platformBuildVersionName="10">
+    <uses-sdk
+        android:minSdkVersion="26"
+        android:targetSdkVersion="29"/>
+    <uses-permission android:name="android.permission.BYDAUTO_YUN_COMMON"/>
+    <uses-permission android:name="android.permission.BYDAUTO_YUN_GET"/>
+    <uses-permission android:name="android.permission.BYDAUTO_POWER_COMMON"/>
+    <uses-permission android:name="android.permission.BYDAUTO_POWER_SET"/>
+    <uses-permission android:name="android.permission.BYDAUTO_POWER_GET"/>
+    <uses-permission android:name="android.permission.BYDAUTO_OTA_COMMON"/>
+    <uses-permission android:name="android.permission.BYDAUTO_OTA_SET"/>
+    <uses-permission android:name="android.permission.BYDAUTO_OTA_GET"/>
+    <uses-permission android:name="android.permission.BYDAUTO_STATISTIC_COMMON"/>
+    <uses-permission android:name="android.permission.BYDAUTO_STATISTIC_SET"/>
+    <uses-permission android:name="android.permission.BYDAUTO_STATISTIC_GET"/>
+    <uses-permission android:name="android.permission.BYDAUTO_CHARGING_COMMON"/>
+    <uses-permission android:name="android.permission.BYDAUTO_CHARGING_SET"/>
+    <uses-permission android:name="android.permission.BYDAUTO_CHARGING_GET"/>
+    <uses-permission android:name="android.permission.BYDAUTO_BODYWORK_COMMON"/>
+    <uses-permission android:name="android.permission.BYDAUTO_BODYWORK_GET"/>
+    <uses-permission android:name="android.permission.BYDAUTO_BODYWORK_SET"/>
+    <uses-permission android:name="android.permission.BYDAUTO_TIME_COMMON"/>
+    <uses-permission android:name="android.permission.BYDAUTO_TIME_SET"/>
+    <uses-permission android:name="android.permission.BYDAUTO_TIME_GET"/>
+    <uses-permission android:name="android.permission.BYDAUTO_SETTING_COMMON"/>
+    <uses-permission android:name="android.permission.BYDAUTO_SETTING_GET"/>
+    <uses-permission android:name="android.permission.BYDAUTO_SETTING_SET"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <application
+        android:theme="@style/byd_dynasty"
+        android:label="@string/app_name"
+        android:icon="@mipmap/icon_app"
+        android:name="com.byd.smarttravel.BydApp"
+        android:allowClearUserData="false"
+        android:allowBackup="false"
+        android:supportsRtl="true"
+        android:extractNativeLibs="false"
+        android:resizeableActivity="false"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+        android:requestLegacyExternalStorage="true">
+        <activity
+            android:label="@string/app_name"
+            android:icon="@mipmap/icon_app"
+            android:name="com.byd.smarttravel.MainActivity"
+            android:exported="true"
+            android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.byd.smarttravel.SetInfoActivity"/>
+        <activity android:name="com.byd.smarttravel.TestActivity"/>
+    </application>
+</manifest>

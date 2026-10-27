@@ -1,0 +1,29 @@
+package androidx.databinding.library;
+
+/* JADX INFO: loaded from: classes.dex */
+public final class R$attr {
+    public static final int alpha = 2130968623;
+    public static final int coordinatorLayoutStyle = 2130969095;
+    public static final int font = 2130969290;
+    public static final int fontProviderAuthority = 2130969292;
+    public static final int fontProviderCerts = 2130969293;
+    public static final int fontProviderFetchStrategy = 2130969294;
+    public static final int fontProviderFetchTimeout = 2130969295;
+    public static final int fontProviderPackage = 2130969296;
+    public static final int fontProviderQuery = 2130969297;
+    public static final int fontStyle = 2130969298;
+    public static final int fontVariationSettings = 2130969299;
+    public static final int fontWeight = 2130969300;
+    public static final int keylines = 2130969475;
+    public static final int layout_anchor = 2130969484;
+    public static final int layout_anchorGravity = 2130969485;
+    public static final int layout_behavior = 2130969486;
+    public static final int layout_dodgeInsetEdges = 2130969531;
+    public static final int layout_insetEdge = 2130969540;
+    public static final int layout_keyline = 2130969541;
+    public static final int statusBarBackground = 2130969923;
+    public static final int ttcIndex = 2130970145;
+
+    private R$attr() {
+    }
+}

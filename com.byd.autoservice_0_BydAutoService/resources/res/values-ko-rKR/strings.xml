@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">BydAutoService</string>
+    <string name="audio_muted">오디오가 무음 상태입니다</string>
+    <string name="audio_removed">음소거가 해제되었습니다</string>
+    <string name="btn_comfirm">OK</string>
+    <string name="btn_reset">초기화</string>
+    <string name="call_mode">통화 중에는 조작이 금지됩니다</string>
+    <string name="cancel">취소</string>
+    <string name="carplay_androidauto_land">현재 화면은 전환을 지원하지 않습니다</string>
+    <string name="dialog_title_user">커스텀 버튼 설정</string>
+    <string name="dialog_title_user_left">왼쪽 커스텀 버튼 설정</string>
+    <string name="dialog_title_user_right">오른쪽 커스텀 버튼 설정</string>
+    <string name="mode_am_music">AM</string>
+    <string name="mode_amazon_music">아마존 뮤직</string>
+    <string name="mode_bt_music">블루투스 음악</string>
+    <string name="mode_button_androidauto">Android Auto</string>
+    <string name="mode_button_carplay">Apple CarPlay</string>
+    <string name="mode_dab_music">DAB</string>
+    <string name="mode_fm_music">FM</string>
+    <string name="mode_local_music">로컬 미디어</string>
+    <string name="mode_music">로컬</string>
+    <string name="mode_sd">SD 카드</string>
+    <string name="mode_spotify_music">Spotify</string>
+    <string name="mode_usb">USB</string>
+    <string name="mode_usb_music">USB 음악</string>
+    <string name="mode_usb_text">USB가 감지되지 않음</string>
+    <string name="mode_usb_video">USB 비디오</string>
+    <string name="radio_button_ac">공조</string>
+    <string name="radio_button_music">음악</string>
+    <string name="radio_button_navi_home">홈 탐색</string>
+    <string name="radio_button_play_pause">미디어 일시 중지/재생</string>
+    <string name="radio_button_radio">라디오</string>
+    <string name="radio_button_rotate">중앙 화면 회전</string>
+    <string name="radio_button_source">미디어 오디오 소스 전환</string>
+    <string name="reset_country">시스템 구성 중. 잠시만 기다리세요</string>
+    <string name="restart_efect">기능이 성공적으로 구성되었습니다. 활성화하려면 다시 시작하세요!</string>
+    <string name="restart_now">지금 다시 시작</string>
+    <string name="restart_time">카운트다운 재시작</string>
+    <string name="warring_mode">멀티미디어를 이용하기 전에 가이드 과정을 완료해주세요!</string>
+    <string name="warring_navi_mode">현재 상태에서는 이 작업을 지원하지 않습니다!</string>
+    <string name="warring_power">이 기능은 기어 P에서만 사용할 수 있습니다</string>
+</resources>

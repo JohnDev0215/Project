@@ -1,0 +1,651 @@
+package b.b.m.a;
+
+import android.animation.ObjectAnimator;
+import android.animation.TimeInterpolator;
+import android.annotation.SuppressLint;
+import android.content.Context;
+import android.content.res.ColorStateList;
+import android.content.res.Resources;
+import android.content.res.TypedArray;
+import android.graphics.Canvas;
+import android.graphics.ColorFilter;
+import android.graphics.Outline;
+import android.graphics.PorterDuff;
+import android.graphics.Rect;
+import android.graphics.drawable.Animatable;
+import android.graphics.drawable.AnimationDrawable;
+import android.graphics.drawable.Drawable;
+import android.os.Build;
+import android.util.AttributeSet;
+import android.util.StateSet;
+import b.b.m.a.b;
+import b.b.m.a.d;
+import b.b.q.v;
+import b.d.h;
+import java.io.IOException;
+import org.xmlpull.v1.XmlPullParser;
+import org.xmlpull.v1.XmlPullParserException;
+
+/* JADX INFO: compiled from: AnimatedStateListDrawableCompat.java */
+/* JADX INFO: loaded from: classes.dex */
+@SuppressLint({"RestrictedAPI"})
+public class a extends b.b.m.a.d implements b.f.g.l.b {
+    public static final String N3 = a.class.getSimpleName();
+    public c O3;
+    public g P3;
+    public int Q3;
+    public int R3;
+    public boolean S3;
+
+    /* JADX INFO: compiled from: AnimatedStateListDrawableCompat.java */
+    public static class b extends g {
+
+        /* JADX INFO: renamed from: a, reason: collision with root package name */
+        public final Animatable f834a;
+
+        public b(Animatable animatable) {
+            super();
+            this.f834a = animatable;
+        }
+
+        @Override // b.b.m.a.a.g
+        public void c() {
+            this.f834a.start();
+        }
+
+        @Override // b.b.m.a.a.g
+        public void d() {
+            this.f834a.stop();
+        }
+    }
+
+    /* JADX INFO: compiled from: AnimatedStateListDrawableCompat.java */
+    public static class c extends d.a {
+        public b.d.d<Long> K;
+        public h<Integer> L;
+
+        public c(c cVar, a aVar, Resources resources) {
+            super(cVar, aVar, resources);
+            if (cVar != null) {
+                this.K = cVar.K;
+                this.L = cVar.L;
+            } else {
+                this.K = new b.d.d<>();
+                this.L = new h<>();
+            }
+        }
+
+        public static long E(int i2, int i3) {
+            return ((long) i3) | (((long) i2) << 32);
+        }
+
+        public int C(int[] iArr, Drawable drawable, int i2) {
+            int iA = super.A(iArr, drawable);
+            this.L.j(iA, Integer.valueOf(i2));
+            return iA;
+        }
+
+        public int D(int i2, int i3, Drawable drawable, boolean z) {
+            int iA = super.a(drawable);
+            long jE = E(i2, i3);
+            long j = z ? 8589934592L : 0L;
+            long j2 = iA;
+            this.K.a(jE, Long.valueOf(j2 | j));
+            if (z) {
+                this.K.a(E(i3, i2), Long.valueOf(4294967296L | j2 | j));
+            }
+            return iA;
+        }
+
+        public int F(int i2) {
+            if (i2 < 0) {
+                return 0;
+            }
+            return this.L.h(i2, 0).intValue();
+        }
+
+        public int G(int[] iArr) {
+            int iB = super.B(iArr);
+            return iB >= 0 ? iB : super.B(StateSet.WILD_CARD);
+        }
+
+        public int H(int i2, int i3) {
+            return (int) this.K.h(E(i2, i3), -1L).longValue();
+        }
+
+        public boolean I(int i2, int i3) {
+            return (this.K.h(E(i2, i3), -1L).longValue() & 4294967296L) != 0;
+        }
+
+        public boolean J(int i2, int i3) {
+            return (this.K.h(E(i2, i3), -1L).longValue() & 8589934592L) != 0;
+        }
+
+        @Override // b.b.m.a.d.a, android.graphics.drawable.Drawable.ConstantState
+        public Drawable newDrawable() {
+            return new a(this, null);
+        }
+
+        @Override // b.b.m.a.d.a, b.b.m.a.b.c
+        public void s() {
+            this.K = this.K.clone();
+            this.L = this.L.clone();
+        }
+
+        @Override // b.b.m.a.d.a, android.graphics.drawable.Drawable.ConstantState
+        public Drawable newDrawable(Resources resources) {
+            return new a(this, resources);
+        }
+    }
+
+    /* JADX INFO: compiled from: AnimatedStateListDrawableCompat.java */
+    public static class d extends g {
+
+        /* JADX INFO: renamed from: a, reason: collision with root package name */
+        public final b.p.a.a.b f835a;
+
+        public d(b.p.a.a.b bVar) {
+            super();
+            this.f835a = bVar;
+        }
+
+        @Override // b.b.m.a.a.g
+        public void c() {
+            this.f835a.start();
+        }
+
+        @Override // b.b.m.a.a.g
+        public void d() {
+            this.f835a.stop();
+        }
+    }
+
+    /* JADX INFO: compiled from: AnimatedStateListDrawableCompat.java */
+    public static class e extends g {
+
+        /* JADX INFO: renamed from: a, reason: collision with root package name */
+        public final ObjectAnimator f836a;
+
+        /* JADX INFO: renamed from: b, reason: collision with root package name */
+        public final boolean f837b;
+
+        public e(AnimationDrawable animationDrawable, boolean z, boolean z2) {
+            super();
+            int numberOfFrames = animationDrawable.getNumberOfFrames();
+            int i2 = z ? numberOfFrames - 1 : 0;
+            int i3 = z ? 0 : numberOfFrames - 1;
+            f fVar = new f(animationDrawable, z);
+            ObjectAnimator objectAnimatorOfInt = ObjectAnimator.ofInt(animationDrawable, "currentIndex", i2, i3);
+            if (Build.VERSION.SDK_INT >= 18) {
+                objectAnimatorOfInt.setAutoCancel(true);
+            }
+            objectAnimatorOfInt.setDuration(fVar.a());
+            objectAnimatorOfInt.setInterpolator(fVar);
+            this.f837b = z2;
+            this.f836a = objectAnimatorOfInt;
+        }
+
+        @Override // b.b.m.a.a.g
+        public boolean a() {
+            return this.f837b;
+        }
+
+        @Override // b.b.m.a.a.g
+        public void b() {
+            this.f836a.reverse();
+        }
+
+        @Override // b.b.m.a.a.g
+        public void c() {
+            this.f836a.start();
+        }
+
+        @Override // b.b.m.a.a.g
+        public void d() {
+            this.f836a.cancel();
+        }
+    }
+
+    /* JADX INFO: compiled from: AnimatedStateListDrawableCompat.java */
+    public static class f implements TimeInterpolator {
+
+        /* JADX INFO: renamed from: a, reason: collision with root package name */
+        public int[] f838a;
+
+        /* JADX INFO: renamed from: b, reason: collision with root package name */
+        public int f839b;
+
+        /* JADX INFO: renamed from: c, reason: collision with root package name */
+        public int f840c;
+
+        public f(AnimationDrawable animationDrawable, boolean z) {
+            b(animationDrawable, z);
+        }
+
+        public int a() {
+            return this.f840c;
+        }
+
+        public int b(AnimationDrawable animationDrawable, boolean z) {
+            int numberOfFrames = animationDrawable.getNumberOfFrames();
+            this.f839b = numberOfFrames;
+            int[] iArr = this.f838a;
+            if (iArr == null || iArr.length < numberOfFrames) {
+                this.f838a = new int[numberOfFrames];
+            }
+            int[] iArr2 = this.f838a;
+            int i2 = 0;
+            for (int i3 = 0; i3 < numberOfFrames; i3++) {
+                int duration = animationDrawable.getDuration(z ? (numberOfFrames - i3) - 1 : i3);
+                iArr2[i3] = duration;
+                i2 += duration;
+            }
+            this.f840c = i2;
+            return i2;
+        }
+
+        @Override // android.animation.TimeInterpolator
+        public float getInterpolation(float f2) {
+            int i2 = (int) ((f2 * this.f840c) + 0.5f);
+            int i3 = this.f839b;
+            int[] iArr = this.f838a;
+            int i4 = 0;
+            while (i4 < i3 && i2 >= iArr[i4]) {
+                i2 -= iArr[i4];
+                i4++;
+            }
+            return (i4 / i3) + (i4 < i3 ? i2 / this.f840c : 0.0f);
+        }
+    }
+
+    /* JADX INFO: compiled from: AnimatedStateListDrawableCompat.java */
+    public static abstract class g {
+        public g() {
+        }
+
+        public boolean a() {
+            return false;
+        }
+
+        public void b() {
+        }
+
+        public abstract void c();
+
+        public abstract void d();
+    }
+
+    public a() {
+        this(null, null);
+    }
+
+    public static a l(Context context, Resources resources, XmlPullParser xmlPullParser, AttributeSet attributeSet, Resources.Theme theme) throws XmlPullParserException, IOException {
+        String name = xmlPullParser.getName();
+        if (name.equals("animated-selector")) {
+            a aVar = new a();
+            aVar.m(context, resources, xmlPullParser, attributeSet, theme);
+            return aVar;
+        }
+        throw new XmlPullParserException(xmlPullParser.getPositionDescription() + ": invalid animated-selector tag " + name);
+    }
+
+    @Override // b.b.m.a.d, b.b.m.a.b, android.graphics.drawable.Drawable
+    public /* bridge */ /* synthetic */ void applyTheme(Resources.Theme theme) {
+        super.applyTheme(theme);
+    }
+
+    @Override // b.b.m.a.b, android.graphics.drawable.Drawable
+    public /* bridge */ /* synthetic */ boolean canApplyTheme() {
+        return super.canApplyTheme();
+    }
+
+    @Override // b.b.m.a.d, b.b.m.a.b
+    public void clearMutated() {
+        super.clearMutated();
+        this.S3 = false;
+    }
+
+    @Override // b.b.m.a.b, android.graphics.drawable.Drawable
+    public /* bridge */ /* synthetic */ void draw(Canvas canvas) {
+        super.draw(canvas);
+    }
+
+    @Override // b.b.m.a.d, b.b.m.a.b
+    public void g(b.c cVar) {
+        super.g(cVar);
+        if (cVar instanceof c) {
+            this.O3 = (c) cVar;
+        }
+    }
+
+    @Override // b.b.m.a.b, android.graphics.drawable.Drawable
+    public /* bridge */ /* synthetic */ int getAlpha() {
+        return super.getAlpha();
+    }
+
+    @Override // b.b.m.a.b, android.graphics.drawable.Drawable
+    public /* bridge */ /* synthetic */ int getChangingConfigurations() {
+        return super.getChangingConfigurations();
+    }
+
+    @Override // b.b.m.a.b, android.graphics.drawable.Drawable
+    public /* bridge */ /* synthetic */ Drawable getCurrent() {
+        return super.getCurrent();
+    }
+
+    @Override // b.b.m.a.b, android.graphics.drawable.Drawable
+    public /* bridge */ /* synthetic */ void getHotspotBounds(Rect rect) {
+        super.getHotspotBounds(rect);
+    }
+
+    @Override // b.b.m.a.b, android.graphics.drawable.Drawable
+    public /* bridge */ /* synthetic */ int getIntrinsicHeight() {
+        return super.getIntrinsicHeight();
+    }
+
+    @Override // b.b.m.a.b, android.graphics.drawable.Drawable
+    public /* bridge */ /* synthetic */ int getIntrinsicWidth() {
+        return super.getIntrinsicWidth();
+    }
+
+    @Override // b.b.m.a.b, android.graphics.drawable.Drawable
+    public /* bridge */ /* synthetic */ int getMinimumHeight() {
+        return super.getMinimumHeight();
+    }
+
+    @Override // b.b.m.a.b, android.graphics.drawable.Drawable
+    public /* bridge */ /* synthetic */ int getMinimumWidth() {
+        return super.getMinimumWidth();
+    }
+
+    @Override // b.b.m.a.b, android.graphics.drawable.Drawable
+    public /* bridge */ /* synthetic */ int getOpacity() {
+        return super.getOpacity();
+    }
+
+    @Override // b.b.m.a.b, android.graphics.drawable.Drawable
+    public /* bridge */ /* synthetic */ void getOutline(Outline outline) {
+        super.getOutline(outline);
+    }
+
+    @Override // b.b.m.a.b, android.graphics.drawable.Drawable
+    public /* bridge */ /* synthetic */ boolean getPadding(Rect rect) {
+        return super.getPadding(rect);
+    }
+
+    @Override // b.b.m.a.b, android.graphics.drawable.Drawable.Callback
+    public /* bridge */ /* synthetic */ void invalidateDrawable(Drawable drawable) {
+        super.invalidateDrawable(drawable);
+    }
+
+    @Override // b.b.m.a.b, android.graphics.drawable.Drawable
+    public /* bridge */ /* synthetic */ boolean isAutoMirrored() {
+        return super.isAutoMirrored();
+    }
+
+    @Override // b.b.m.a.d, android.graphics.drawable.Drawable
+    public boolean isStateful() {
+        return true;
+    }
+
+    @Override // b.b.m.a.b, android.graphics.drawable.Drawable
+    public void jumpToCurrentState() {
+        super.jumpToCurrentState();
+        g gVar = this.P3;
+        if (gVar != null) {
+            gVar.d();
+            this.P3 = null;
+            f(this.Q3);
+            this.Q3 = -1;
+            this.R3 = -1;
+        }
+    }
+
+    @Override // b.b.m.a.d
+    /* JADX INFO: renamed from: k, reason: merged with bridge method [inline-methods] */
+    public c b() {
+        return new c(this.O3, this, null);
+    }
+
+    public void m(Context context, Resources resources, XmlPullParser xmlPullParser, AttributeSet attributeSet, Resources.Theme theme) throws XmlPullParserException, IOException {
+        TypedArray typedArrayK = b.f.f.c.g.k(resources, theme, attributeSet, b.b.n.b.f856a);
+        setVisible(typedArrayK.getBoolean(b.b.n.b.f858c, true), true);
+        s(typedArrayK);
+        h(resources);
+        typedArrayK.recycle();
+        n(context, resources, xmlPullParser, attributeSet, theme);
+        o();
+    }
+
+    @Override // b.b.m.a.d, b.b.m.a.b, android.graphics.drawable.Drawable
+    public Drawable mutate() {
+        if (!this.S3 && super.mutate() == this) {
+            this.O3.s();
+            this.S3 = true;
+        }
+        return this;
+    }
+
+    public final void n(Context context, Resources resources, XmlPullParser xmlPullParser, AttributeSet attributeSet, Resources.Theme theme) throws XmlPullParserException, IOException {
+        int depth = xmlPullParser.getDepth() + 1;
+        while (true) {
+            int next = xmlPullParser.next();
+            if (next == 1) {
+                return;
+            }
+            int depth2 = xmlPullParser.getDepth();
+            if (depth2 < depth && next == 3) {
+                return;
+            }
+            if (next == 2 && depth2 <= depth) {
+                if (xmlPullParser.getName().equals("item")) {
+                    p(context, resources, xmlPullParser, attributeSet, theme);
+                } else if (xmlPullParser.getName().equals("transition")) {
+                    q(context, resources, xmlPullParser, attributeSet, theme);
+                }
+            }
+        }
+    }
+
+    public final void o() {
+        onStateChange(getState());
+    }
+
+    @Override // b.b.m.a.b, android.graphics.drawable.Drawable
+    public /* bridge */ /* synthetic */ boolean onLayoutDirectionChanged(int i2) {
+        return super.onLayoutDirectionChanged(i2);
+    }
+
+    @Override // b.b.m.a.d, b.b.m.a.b, android.graphics.drawable.Drawable
+    public boolean onStateChange(int[] iArr) {
+        int iG = this.O3.G(iArr);
+        boolean z = iG != c() && (r(iG) || f(iG));
+        Drawable current = getCurrent();
+        return current != null ? z | current.setState(iArr) : z;
+    }
+
+    public final int p(Context context, Resources resources, XmlPullParser xmlPullParser, AttributeSet attributeSet, Resources.Theme theme) throws XmlPullParserException, IOException {
+        int next;
+        TypedArray typedArrayK = b.f.f.c.g.k(resources, theme, attributeSet, b.b.n.b.f863h);
+        int resourceId = typedArrayK.getResourceId(b.b.n.b.f864i, 0);
+        int resourceId2 = typedArrayK.getResourceId(b.b.n.b.j, -1);
+        Drawable drawableJ = resourceId2 > 0 ? v.h().j(context, resourceId2) : null;
+        typedArrayK.recycle();
+        int[] iArrJ = j(attributeSet);
+        if (drawableJ == null) {
+            do {
+                next = xmlPullParser.next();
+            } while (next == 4);
+            if (next != 2) {
+                throw new XmlPullParserException(xmlPullParser.getPositionDescription() + ": <item> tag requires a 'drawable' attribute or child tag defining a drawable");
+            }
+            drawableJ = xmlPullParser.getName().equals("vector") ? b.p.a.a.h.c(resources, xmlPullParser, attributeSet, theme) : Build.VERSION.SDK_INT >= 21 ? Drawable.createFromXmlInner(resources, xmlPullParser, attributeSet, theme) : Drawable.createFromXmlInner(resources, xmlPullParser, attributeSet);
+        }
+        if (drawableJ != null) {
+            return this.O3.C(iArrJ, drawableJ, resourceId);
+        }
+        throw new XmlPullParserException(xmlPullParser.getPositionDescription() + ": <item> tag requires a 'drawable' attribute or child tag defining a drawable");
+    }
+
+    public final int q(Context context, Resources resources, XmlPullParser xmlPullParser, AttributeSet attributeSet, Resources.Theme theme) throws XmlPullParserException, IOException {
+        int next;
+        TypedArray typedArrayK = b.f.f.c.g.k(resources, theme, attributeSet, b.b.n.b.k);
+        int resourceId = typedArrayK.getResourceId(b.b.n.b.n, -1);
+        int resourceId2 = typedArrayK.getResourceId(b.b.n.b.m, -1);
+        int resourceId3 = typedArrayK.getResourceId(b.b.n.b.l, -1);
+        Drawable drawableJ = resourceId3 > 0 ? v.h().j(context, resourceId3) : null;
+        boolean z = typedArrayK.getBoolean(b.b.n.b.o, false);
+        typedArrayK.recycle();
+        if (drawableJ == null) {
+            do {
+                next = xmlPullParser.next();
+            } while (next == 4);
+            if (next != 2) {
+                throw new XmlPullParserException(xmlPullParser.getPositionDescription() + ": <transition> tag requires a 'drawable' attribute or child tag defining a drawable");
+            }
+            drawableJ = xmlPullParser.getName().equals("animated-vector") ? b.p.a.a.b.a(context, resources, xmlPullParser, attributeSet, theme) : Build.VERSION.SDK_INT >= 21 ? Drawable.createFromXmlInner(resources, xmlPullParser, attributeSet, theme) : Drawable.createFromXmlInner(resources, xmlPullParser, attributeSet);
+        }
+        if (drawableJ == null) {
+            throw new XmlPullParserException(xmlPullParser.getPositionDescription() + ": <transition> tag requires a 'drawable' attribute or child tag defining a drawable");
+        }
+        if (resourceId != -1 && resourceId2 != -1) {
+            return this.O3.D(resourceId, resourceId2, drawableJ, z);
+        }
+        throw new XmlPullParserException(xmlPullParser.getPositionDescription() + ": <transition> tag requires 'fromId' & 'toId' attributes");
+    }
+
+    public final boolean r(int i2) {
+        int iC;
+        int iH;
+        g bVar;
+        g gVar = this.P3;
+        if (gVar == null) {
+            iC = c();
+        } else {
+            if (i2 == this.Q3) {
+                return true;
+            }
+            if (i2 == this.R3 && gVar.a()) {
+                gVar.b();
+                this.Q3 = this.R3;
+                this.R3 = i2;
+                return true;
+            }
+            iC = this.Q3;
+            gVar.d();
+        }
+        this.P3 = null;
+        this.R3 = -1;
+        this.Q3 = -1;
+        c cVar = this.O3;
+        int iF = cVar.F(iC);
+        int iF2 = cVar.F(i2);
+        if (iF2 == 0 || iF == 0 || (iH = cVar.H(iF, iF2)) < 0) {
+            return false;
+        }
+        boolean zJ = cVar.J(iF, iF2);
+        f(iH);
+        Object current = getCurrent();
+        if (current instanceof AnimationDrawable) {
+            bVar = new e((AnimationDrawable) current, cVar.I(iF, iF2), zJ);
+        } else {
+            if (!(current instanceof b.p.a.a.b)) {
+                if (current instanceof Animatable) {
+                    bVar = new b((Animatable) current);
+                }
+                return false;
+            }
+            bVar = new d((b.p.a.a.b) current);
+        }
+        bVar.c();
+        this.P3 = bVar;
+        this.R3 = iC;
+        this.Q3 = i2;
+        return true;
+    }
+
+    public final void s(TypedArray typedArray) {
+        c cVar = this.O3;
+        if (Build.VERSION.SDK_INT >= 21) {
+            cVar.f848d |= typedArray.getChangingConfigurations();
+        }
+        cVar.y(typedArray.getBoolean(b.b.n.b.f859d, cVar.f853i));
+        cVar.u(typedArray.getBoolean(b.b.n.b.f860e, cVar.l));
+        cVar.v(typedArray.getInt(b.b.n.b.f861f, cVar.A));
+        cVar.w(typedArray.getInt(b.b.n.b.f862g, cVar.B));
+        setDither(typedArray.getBoolean(b.b.n.b.f857b, cVar.x));
+    }
+
+    @Override // b.b.m.a.b, android.graphics.drawable.Drawable.Callback
+    public /* bridge */ /* synthetic */ void scheduleDrawable(Drawable drawable, Runnable runnable, long j) {
+        super.scheduleDrawable(drawable, runnable, j);
+    }
+
+    @Override // b.b.m.a.b, android.graphics.drawable.Drawable
+    public /* bridge */ /* synthetic */ void setAlpha(int i2) {
+        super.setAlpha(i2);
+    }
+
+    @Override // b.b.m.a.b, android.graphics.drawable.Drawable
+    public /* bridge */ /* synthetic */ void setAutoMirrored(boolean z) {
+        super.setAutoMirrored(z);
+    }
+
+    @Override // b.b.m.a.b, android.graphics.drawable.Drawable
+    public /* bridge */ /* synthetic */ void setColorFilter(ColorFilter colorFilter) {
+        super.setColorFilter(colorFilter);
+    }
+
+    @Override // b.b.m.a.b, android.graphics.drawable.Drawable
+    public /* bridge */ /* synthetic */ void setDither(boolean z) {
+        super.setDither(z);
+    }
+
+    @Override // b.b.m.a.b, android.graphics.drawable.Drawable
+    public /* bridge */ /* synthetic */ void setHotspot(float f2, float f3) {
+        super.setHotspot(f2, f3);
+    }
+
+    @Override // b.b.m.a.b, android.graphics.drawable.Drawable
+    public /* bridge */ /* synthetic */ void setHotspotBounds(int i2, int i3, int i4, int i5) {
+        super.setHotspotBounds(i2, i3, i4, i5);
+    }
+
+    @Override // b.b.m.a.b, android.graphics.drawable.Drawable, b.f.g.l.b
+    public /* bridge */ /* synthetic */ void setTintList(ColorStateList colorStateList) {
+        super.setTintList(colorStateList);
+    }
+
+    @Override // b.b.m.a.b, android.graphics.drawable.Drawable, b.f.g.l.b
+    public /* bridge */ /* synthetic */ void setTintMode(PorterDuff.Mode mode) {
+        super.setTintMode(mode);
+    }
+
+    @Override // b.b.m.a.b, android.graphics.drawable.Drawable
+    public boolean setVisible(boolean z, boolean z2) {
+        boolean visible = super.setVisible(z, z2);
+        g gVar = this.P3;
+        if (gVar != null && (visible || z2)) {
+            if (z) {
+                gVar.c();
+            } else {
+                jumpToCurrentState();
+            }
+        }
+        return visible;
+    }
+
+    @Override // b.b.m.a.b, android.graphics.drawable.Drawable.Callback
+    public /* bridge */ /* synthetic */ void unscheduleDrawable(Drawable drawable, Runnable runnable) {
+        super.unscheduleDrawable(drawable, runnable);
+    }
+
+    public a(c cVar, Resources resources) {
+        super(null);
+        this.Q3 = -1;
+        this.R3 = -1;
+        g(new c(cVar, this, resources));
+        onStateChange(getState());
+        jumpToCurrentState();
+    }
+}

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:latin="http://schemas.android.com/apk/res/com.android.inputmethod.latin">
+    <Key
+        latin:additionalMoreKeys="1"
+        latin:keyHintLabel="1"
+        latin:keySpec="у"/>
+    <Key
+        latin:additionalMoreKeys="2"
+        latin:keyHintLabel="2"
+        latin:keySpec="е"/>
+    <Key
+        latin:additionalMoreKeys="3"
+        latin:keyHintLabel="3"
+        latin:keySpec="и"
+        latin:moreKeys="ѝ"/>
+    <Key
+        latin:additionalMoreKeys="4"
+        latin:keyHintLabel="4"
+        latin:keySpec="ш"/>
+    <Key
+        latin:additionalMoreKeys="5"
+        latin:keyHintLabel="5"
+        latin:keySpec="щ"/>
+    <Key
+        latin:additionalMoreKeys="6"
+        latin:keyHintLabel="6"
+        latin:keySpec="к"/>
+    <Key
+        latin:additionalMoreKeys="7"
+        latin:keyHintLabel="7"
+        latin:keySpec="с"/>
+    <Key
+        latin:additionalMoreKeys="8"
+        latin:keyHintLabel="8"
+        latin:keySpec="д"/>
+    <Key
+        latin:additionalMoreKeys="9"
+        latin:keyHintLabel="9"
+        latin:keySpec="з"/>
+    <Key
+        latin:additionalMoreKeys="0"
+        latin:keyHintLabel="0"
+        latin:keySpec="ц"/>
+    <Key latin:keySpec="б"/>
+</merge>

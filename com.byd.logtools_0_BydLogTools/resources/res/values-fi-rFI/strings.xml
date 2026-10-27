@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="install">Sovelluksen asennus</string>
+    <string name="qrcode_expired">Vanhentunut. Päivitä napauttamalla</string>
+    <string name="qrcode_network_warning">Nykyinen verkko ei ole käytettävissä. Tarkasta verkkoasetukset</string>
+    <string name="qrcode_refresh_fail">Nouto epäonnistui. Päivitä napauttamalla</string>
+    <string name="qrcode_scan_type_vds">VDS-skannaus</string>
+    <string name="qrcode_scan_type_wechat">WeCom-skannaus</string>
+    <string name="qrcode_success">Skannaus onnistui</string>
+    <string name="qrcode_time">%d s jäljellä</string>
+    <string name="qrcode_tip">Hanki valtuutus skannaamalla QR-koodi</string>
+    <string name="qrcode_title">Vahvistus</string>
+    <string name="qrcode_title_with_module">%s vahvistus</string>
+</resources>

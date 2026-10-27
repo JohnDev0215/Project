@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="@dimen/dp_60"
+    android:paddingStart="@dimen/dp_48"
+    android:paddingEnd="@dimen/dp_48">
+    <TextView
+        android:textSize="@dimen/sp_18"
+        android:textColor="@color/text_tip"
+        android:id="@+id/tv_item"
+        android:paddingTop="@dimen/dp_16"
+        android:paddingBottom="@dimen/dp_16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/tv_desc"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true"/>
+    <TextView
+        android:textSize="@dimen/sp_18"
+        android:textColor="@color/text_main"
+        android:ellipsize="end"
+        android:gravity="end"
+        android:id="@+id/tv_desc"
+        android:paddingTop="@dimen/dp_16"
+        android:paddingBottom="@dimen/dp_16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxWidth="@dimen/dp_300"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"/>
+    <View
+        android:background="@color/divider"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="control_ac_array">
+        <item>Schalte die Klimaanlage ein</item>
+        <item>Temperatur auf 25 Grad einstellen</item>
+        <item>Die externe Zirkulation einschalten</item>
+        <item>Es ist zu heiß</item>
+        <item>Die Geschwindigkeit des Ventilators verringern</item>
+        <item>Den Ventilator auf Stufe 3 einstellen</item>
+        <item>Schalte die Frontscheibenentfrostung an</item>
+        <item>Die Belüftung einschalten</item>
+        <item>Schalte die Ausströmer ein</item>
+    </array>
+    <array name="control_seat_array">
+        <item>Schalte die Sitzheizung ein</item>
+        <item>Die Sitzlüftung anmachen</item>
+        <item>Die Sitzlüftung für den Beifahrer einschalten</item>
+        <item>Ich möchte die Sitzbelüftung ausschalten</item>
+    </array>
+    <array name="control_sunshade_array">
+        <item>Mach den Sonnenschutz auf</item>
+        <item>Fahre Sonnenschutz raus</item>
+    </array>
+    <array name="offline_other_operations_array">
+        <item>Schalte Bluetooth ein</item>
+        <item>Schalte Wlan ein</item>
+        <item>Stelle die Bildschirmhelligkeit höher</item>
+        <item>Mach die Autoeinstellungen an</item>
+        <item>Zurück zur Homepage gehen</item>
+    </array>
+    <array name="offline_window_array">
+        <item>Öffne Fenster</item>
+        <item>Mach das Beifahrerfenster auf</item>
+        <item>Mach das Fahrerfenster auf</item>
+        <item>Alle Fenster schließen</item>
+    </array>
+    <array name="rotate_screen_arrays">
+        <item>Drehe den Bildschirm</item>
+    </array>
+    <array name="system_app_operations">
+        <item>Spotify öffnen</item>
+        <item>Mach die Autoeinstellungen an</item>
+        <item>Anzeige der Fahrzeugeinstellungen ausschalten</item>
+    </array>
+    <array name="system_other_operations_array">
+        <item>Schalte Bluetooth ein</item>
+        <item>Schalte Wlan ein</item>
+        <item>Stelle die Bildschirmhelligkeit höher</item>
+        <item>Zurück zur Homepage gehen</item>
+    </array>
+</resources>

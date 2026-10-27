@@ -1,0 +1,7 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/content/res/Configuration;->userSetLocale:Z,frameworks/base/core/java/android/content/res/Configuration.java,139,5,139,25,
+Landroid/content/res/Configuration;->assetsSeq:I,frameworks/base/core/java/android/content/res/Configuration.java,818,5,818,25,
+Landroid/content/res/Configuration;->seq:I,frameworks/base/core/java/android/content/res/Configuration.java,825,5,825,25,
+Landroid/content/res/Configuration;->makeDefault()V,frameworks/base/core/java/android/content/res/Configuration.java,1425,5,1425,25,
+Landroid/content/res/Configuration;->resourceQualifierString(Landroid/content/res/Configuration;)Ljava/lang/String;,frameworks/base/core/java/android/content/res/Configuration.java,2283,5,2283,25,
+Landroid/content/res/Configuration;->generateDelta(Landroid/content/res/Configuration;Landroid/content/res/Configuration;)Landroid/content/res/Configuration;,frameworks/base/core/java/android/content/res/Configuration.java,2570,5,2570,25,

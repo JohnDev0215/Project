@@ -1,0 +1,30 @@
+package android.net.ipmemorystore;
+
+import android.net.ipmemorystore.IOnSameL3NetworkResponseListener;
+
+/* JADX INFO: loaded from: classes.dex */
+public interface OnSameL3NetworkResponseListener {
+    void onSameL3NetworkResponse(Status status, SameL3NetworkResponse sameL3NetworkResponse);
+
+    static IOnSameL3NetworkResponseListener toAIDL(OnSameL3NetworkResponseListener listener) {
+        return new IOnSameL3NetworkResponseListener.Stub() { // from class: android.net.ipmemorystore.OnSameL3NetworkResponseListener.1
+            @Override // android.net.ipmemorystore.IOnSameL3NetworkResponseListener
+            public void onSameL3NetworkResponse(StatusParcelable statusParcelable, SameL3NetworkResponseParcelable sameL3NetworkResponseParcelable) {
+                OnSameL3NetworkResponseListener onSameL3NetworkResponseListener = OnSameL3NetworkResponseListener.this;
+                if (onSameL3NetworkResponseListener != null) {
+                    onSameL3NetworkResponseListener.onSameL3NetworkResponse(new Status(statusParcelable), new SameL3NetworkResponse(sameL3NetworkResponseParcelable));
+                }
+            }
+
+            @Override // android.net.ipmemorystore.IOnSameL3NetworkResponseListener
+            public int getInterfaceVersion() {
+                return 7;
+            }
+
+            @Override // android.net.ipmemorystore.IOnSameL3NetworkResponseListener
+            public String getInterfaceHash() {
+                return "31826566143ef882d67fac9f24566f73df4907b4";
+            }
+        };
+    }
+}

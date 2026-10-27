@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:drawable="@drawable/byd_bg_error_btn_restricted"
+        app:state_ux_restricted="true"/>
+    <item
+        android:state_pressed="true"
+        android:drawable="@drawable/byd_bg_error_btn_pressed"
+        app:state_ux_restricted="false"/>
+    <item
+        android:state_pressed="false"
+        android:drawable="@drawable/byd_bg_error_btn_normal"
+        app:state_ux_restricted="false"/>
+    <item
+        android:state_focused="true"
+        android:drawable="@drawable/byd_bg_error_btn_normal"/>
+    <item
+        android:state_focused="false"
+        android:drawable="@drawable/byd_bg_error_btn_normal"/>
+</selector>

@@ -1,0 +1,6 @@
+signature,file,startline,startcol,endline,endcol,properties
+Lcom/android/ims/internal/uce/options/OptionsCmdStatus;->setCmdId(Lcom/android/ims/internal/uce/options/OptionsCmdId;)V,frameworks/base/core/java/com/android/ims/internal/uce/options/OptionsCmdStatus.java,45,5,45,25,
+Lcom/android/ims/internal/uce/options/OptionsCmdStatus;->setUserData(I)V,frameworks/base/core/java/com/android/ims/internal/uce/options/OptionsCmdStatus.java,61,5,61,25,
+Lcom/android/ims/internal/uce/options/OptionsCmdStatus;->setStatus(Lcom/android/ims/internal/uce/common/StatusCode;)V,frameworks/base/core/java/com/android/ims/internal/uce/options/OptionsCmdStatus.java,78,5,78,25,
+Lcom/android/ims/internal/uce/options/OptionsCmdStatus;-><init>()V,frameworks/base/core/java/com/android/ims/internal/uce/options/OptionsCmdStatus.java,87,5,87,25,
+Lcom/android/ims/internal/uce/options/OptionsCmdStatus;->setCapInfo(Lcom/android/ims/internal/uce/common/CapInfo;)V,frameworks/base/core/java/com/android/ims/internal/uce/options/OptionsCmdStatus.java,104,5,104,25,

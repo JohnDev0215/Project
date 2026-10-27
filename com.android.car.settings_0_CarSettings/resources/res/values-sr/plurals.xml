@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="billing_cycle_days_left">
+        <item quantity="one">Остао је још %d дан</item>
+        <item quantity="few">Остала су још %d дана</item>
+        <item quantity="other">Остало је још %d дана</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_letters">
+        <item quantity="one">Мора да садржи најмање %d слово</item>
+        <item quantity="few">Мора да садржи најмање %d слова</item>
+        <item quantity="other">Мора да садржи најмање %d слова</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_lowercase">
+        <item quantity="one">Мора да садржи најмање %d малo слово</item>
+        <item quantity="few">Мора да садржи најмање %d мала слова</item>
+        <item quantity="other">Мора да садржи најмање %d малих слова</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_nonletter">
+        <item quantity="one">Мора да садржи најмање %d знак који није слово</item>
+        <item quantity="few">Мора да садржи најмање %d знака који нису слова</item>
+        <item quantity="other">Мора да садржи најмање %d знакова који нису слова</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_numeric">
+        <item quantity="one">Мора да садржи најмање %d цифру</item>
+        <item quantity="few">Мора да садржи најмање %d цифре</item>
+        <item quantity="other">Мора да садржи најмање %d цифара</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_symbols">
+        <item quantity="one">Мора да садржи најмање %d специјални симбол</item>
+        <item quantity="few">Мора да садржи најмање %d специјална симбола</item>
+        <item quantity="other">Мора да садржи најмање %d специјалних симбола</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_uppercase">
+        <item quantity="one">Мора да садржи најмање %d велико слово</item>
+        <item quantity="few">Мора да садржи најмање %d велика слова</item>
+        <item quantity="other">Мора да садржи најмање %d великих слова</item>
+    </plurals>
+    <plurals name="mobile_network_summary_count">
+        <item quantity="one">%1$d SIM картица</item>
+        <item quantity="few">%1$d SIM картице</item>
+        <item quantity="other">%1$d SIM картица</item>
+    </plurals>
+    <plurals name="runtime_permissions_additional_count">
+        <item quantity="one">%d додатна дозвола</item>
+        <item quantity="few">%d додатне дозволе</item>
+        <item quantity="other">%d додатних дозвола</item>
+    </plurals>
+    <plurals name="show_dev_countdown">
+        <item quantity="one">Треба да обавите још %1$d корак да бисте постали програмер.</item>
+        <item quantity="few">Треба да обавите још %1$d корака да бисте постали програмер.</item>
+        <item quantity="other">Треба да обавите још %1$d корака да бисте постали програмер.</item>
+    </plurals>
+    <plurals name="user_limit_reached_message">
+        <item quantity="one">Можете да направите највише %d корисника.</item>
+        <item quantity="few">Можете да направите највише %d корисника.</item>
+        <item quantity="other">Можете да направите највише %d корисника.</item>
+    </plurals>
+    <plurals name="wifi_tether_connected_summary">
+        <item quantity="one">Повезан је %1$d уређај</item>
+        <item quantity="few">Повезана су %1$d уређаја</item>
+        <item quantity="other">Повезано је %1$d уређаја</item>
+    </plurals>
+</resources>

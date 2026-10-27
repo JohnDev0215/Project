@@ -1,0 +1,12 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/hardware/display/DisplayManager;->ACTION_WIFI_DISPLAY_STATUS_CHANGED:Ljava/lang/String;,frameworks/base/core/java/android/hardware/display/DisplayManager.java,70,5,70,25,
+Landroid/hardware/display/DisplayManager;->EXTRA_WIFI_DISPLAY_STATUS:Ljava/lang/String;,frameworks/base/core/java/android/hardware/display/DisplayManager.java,78,5,78,25,
+Landroid/hardware/display/DisplayManager;->startWifiDisplayScan()V,frameworks/base/core/java/android/hardware/display/DisplayManager.java,469,5,469,25,
+Landroid/hardware/display/DisplayManager;->stopWifiDisplayScan()V,frameworks/base/core/java/android/hardware/display/DisplayManager.java,482,5,482,25,
+Landroid/hardware/display/DisplayManager;->connectWifiDisplay(Ljava/lang/String;)V,frameworks/base/core/java/android/hardware/display/DisplayManager.java,500,5,500,25,
+Landroid/hardware/display/DisplayManager;->pauseWifiDisplay()V,frameworks/base/core/java/android/hardware/display/DisplayManager.java,506,5,506,25,
+Landroid/hardware/display/DisplayManager;->resumeWifiDisplay()V,frameworks/base/core/java/android/hardware/display/DisplayManager.java,512,5,512,25,
+Landroid/hardware/display/DisplayManager;->disconnectWifiDisplay()V,frameworks/base/core/java/android/hardware/display/DisplayManager.java,522,5,522,25,
+Landroid/hardware/display/DisplayManager;->renameWifiDisplay(Ljava/lang/String;Ljava/lang/String;)V,frameworks/base/core/java/android/hardware/display/DisplayManager.java,542,5,542,25,
+Landroid/hardware/display/DisplayManager;->forgetWifiDisplay(Ljava/lang/String;)V,frameworks/base/core/java/android/hardware/display/DisplayManager.java,558,5,558,25,
+Landroid/hardware/display/DisplayManager;->getWifiDisplayStatus()Landroid/hardware/display/WifiDisplayStatus;,frameworks/base/core/java/android/hardware/display/DisplayManager.java,571,5,571,25,

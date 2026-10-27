@@ -1,0 +1,296 @@
+package android.hardware.bydauto.charging;
+
+import a.c;
+import a.d;
+import android.hardware.bydauto.BYDAutoEventValue;
+import android.util.Log;
+
+/* JADX INFO: loaded from: classes.dex */
+public abstract class AbsBYDAutoChargingListener implements d {
+    protected static final String TAG = "AbsBYDAutoChargingListener";
+
+    @Override // a.d
+    public /* bridge */ /* synthetic */ void isConnected(boolean z6) {
+        super.isConnected(z6);
+    }
+
+    public void onBMSWakeNoSenseChargeChanged(byte[] bArr) {
+        Log.v(TAG, "onBMSWakeNoSenseChargeChanged");
+    }
+
+    public void onBatteryManagementDeviceStateChanged(int i7) {
+        Log.v(TAG, "onBatteryManagementDeviceStateChanged");
+    }
+
+    public void onBatteryTypeChanged(int i7) {
+        Log.v(TAG, "onBatteryTypeChanged");
+    }
+
+    public void onCapStateChanged(int i7) {
+        Log.v(TAG, "onCapStateChanged");
+    }
+
+    public void onCarDischargeLowWarnChanged(int i7) {
+        Log.v(TAG, "onCarDischargeLowWarnChanged");
+    }
+
+    public void onCarDischargeStateChanged(int i7) {
+        Log.v(TAG, "onCarDischargeStateChanged");
+    }
+
+    public void onCarPlanAccOnStateChanged(int i7) {
+        Log.v(TAG, "onCarPlanAccOnStateChanged");
+    }
+
+    public void onCarPlanBatteryHeatStateChanged(int i7) {
+        Log.v(TAG, "onCarPlanBatteryHeatStateChanged");
+    }
+
+    public void onCarPlanStateChanged(int i7) {
+        Log.v(TAG, "onCarPlanStateChanged");
+    }
+
+    public void onChargeLimitChanged(float f7) {
+        Log.v(TAG, "onChargeLimitChanged");
+    }
+
+    public void onChargePreheatStateChanged(int i7) {
+        Log.v(TAG, "onChargePreheatStateChanged");
+    }
+
+    public void onChargeStopCapacityStateChanged(int i7) {
+        Log.v(TAG, "onChargeStopCapacityStateChanged");
+    }
+
+    public void onChargeStopSwitchStateChanged(int i7) {
+        Log.v(TAG, "onChargeStopSwitchStateChanged");
+    }
+
+    public void onChargeTempCtlStateChanged(int i7) {
+        Log.v(TAG, "onChargeTempCtlStateChanged");
+    }
+
+    public void onChargeToggleGuardChanged(int i7) {
+        Log.v(TAG, "onChargeToaggleGuardChanged");
+    }
+
+    public void onChargerFaultStateChanged(int i7) {
+        Log.v(TAG, "onChargerFaultStateChanged");
+    }
+
+    public void onChargerStateChanged(int i7) {
+        Log.v(TAG, "onChargerStateChanged");
+    }
+
+    public void onChargerWorkStateChanged(int i7) {
+        Log.v(TAG, "onChargerWorkStateChanged");
+    }
+
+    public void onChargingCapStateChanged(int i7, int i8) {
+        Log.v(TAG, "onChargingCapStateChanged");
+    }
+
+    public void onChargingCapacityChanged(float f7) {
+        Log.v(TAG, "onChargingCapacityChanged");
+    }
+
+    public void onChargingGunNotInsertedStateChanged(int i7) {
+        Log.v(TAG, "onChargingGunNotInsertedStateChanged");
+    }
+
+    public void onChargingGunStateChanged(int i7) {
+        Log.v(TAG, "onChargingGunStateChanged");
+    }
+
+    public void onChargingModeChanged(int i7) {
+        Log.v(TAG, "onChargingModeChanged");
+    }
+
+    public void onChargingPortLockRebackStateChanged(int i7) {
+        Log.v(TAG, "onChargingPortLockRebackStateChanged");
+    }
+
+    public void onChargingPowerChanged(float f7) {
+        Log.v(TAG, "onChargingPowerChanged");
+    }
+
+    public void onChargingRestTimeChanged(int i7, int i8) {
+        Log.v(TAG, "onChargingRestTimeChanged");
+    }
+
+    public void onChargingScheduleEnableStateChanged(int i7) {
+        Log.v(TAG, "onChargingScheduleEnableStateChanged");
+    }
+
+    public void onChargingScheduleStateChanged(int i7) {
+        Log.v(TAG, "onChargingScheduleStateChanged");
+    }
+
+    public void onChargingScheduleTimeCountDownChanged(int i7, int i8) {
+        Log.v(TAG, "onChargingScheduleTimeCountDownChanged");
+    }
+
+    public void onChargingStateChanged(int i7) {
+        Log.v(TAG, "onChargingStateChanged");
+    }
+
+    public void onChargingTimerInfoChanged(ChargingTimerInfo chargingTimerInfo) {
+        Log.v(TAG, "onChargingTimerInfoChanged");
+    }
+
+    public void onChargingTypeChanged(int i7) {
+        Log.v(TAG, "onChargingTypeChanged");
+    }
+
+    public final void onDataChanged(c cVar) {
+        Log.v(TAG, "onDataChanged");
+    }
+
+    public void onDataEventChanged(int i7, BYDAutoEventValue bYDAutoEventValue) {
+        Log.v(TAG, "onDataEventChanged");
+    }
+
+    public void onDisChargeWarningStateChanged(int i7) {
+        Log.v(TAG, "onDisChargeWarningStateChanged");
+    }
+
+    public void onDischargeConnecting() {
+        Log.v(TAG, "onDischargConnecting");
+    }
+
+    public void onDischargeGunConnectCountDown(int i7) {
+        Log.v(TAG, "onDischargeGunConnectCountDown");
+    }
+
+    public void onDischargeLimitChanged(float f7) {
+        Log.v(TAG, "onDischargeLimitChanged");
+    }
+
+    public void onDischargeRequestStateChanged(int i7) {
+        Log.v(TAG, "onDischargeRequestStateChanged");
+    }
+
+    public void onDischargeStateChanged(int i7, int i8) {
+        Log.v(TAG, "onDischargeStateChanged");
+    }
+
+    public void onDischargeTimeChanged(long j7) {
+        Log.v(TAG, "onDischargeTimeChanged");
+    }
+
+    public void onDischargeToggleChanged(int i7) {
+        Log.v(TAG, "onDischargeToggleChanged");
+    }
+
+    public void onError(int i7, String str) {
+        Log.v(TAG, "onError");
+    }
+
+    public void onFeatureChanged(String str, int i7) {
+        Log.v(TAG, "onFeatureChanged");
+    }
+
+    public void onHEVChargePlanEndTimeChargeChanged(int[] iArr) {
+        Log.v(TAG, "onHEVChargePlanEndTimeChargeChanged");
+    }
+
+    public void onHEVChargePlanStartTimeChargeChanged(int[] iArr) {
+        Log.v(TAG, "onHEVChargePlanStartTimeChargeChanged");
+    }
+
+    public void onIntelligentKeepTemModeChanged(int i7) {
+        Log.v(TAG, "onIntelligentKeepTemModeChanged");
+    }
+
+    public void onMovePowerStationToggleChanged(int i7) {
+        Log.v(TAG, "onMovePowerStationToggleChanged");
+    }
+
+    public void onNoSenseChargeStateChanged(int i7) {
+        Log.v(TAG, "onNoSenseChargeStateChanged");
+    }
+
+    public void onOBCWakeNoSenseChargeChanged(byte[] bArr) {
+        Log.v(TAG, "onOBCWakeNoSenseChargeChanged");
+    }
+
+    public void onPorducePowerWhenLowPowerChanged(int i7) {
+        Log.v(TAG, "onPorducePowerWhenLowPowerChanged");
+    }
+
+    public void onPortCapStateChanged(int i7, int i8) {
+        Log.v(TAG, "onPortCapStateChanged");
+    }
+
+    public void onSituPowerGenerationStateChanged(int i7) {
+        Log.v(TAG, "onSituPowerGenerationStateChanged");
+    }
+
+    public void onSituPowerGenerationSupportChanged(int i7) {
+        Log.v(TAG, "onSituPowerGenerationSupportChanged");
+    }
+
+    public void onSmartChargingStateChanged(int i7) {
+        Log.v(TAG, "onSmartChargingStateChanged");
+    }
+
+    public void onSocSaveSwitchChanged(int i7) {
+        Log.v(TAG, "onSocSaveSwitchChanged");
+    }
+
+    public void onVtovChargeBatteryLevelNumChanged(int i7) {
+        Log.v(TAG, "onVtovChargeBatteryLevelNumChanged");
+    }
+
+    public void onVtovDischargeConnectStateChanged(int i7) {
+        Log.v(TAG, "onVtovDischargeConnectStateChanged");
+    }
+
+    public void onVtovDischargeLimitValChanged(int i7) {
+        Log.v(TAG, "onVtovDischargeLimitValChanged");
+    }
+
+    public void onVtovDischargeLowestValChanged(int i7) {
+        Log.v(TAG, "onVtovDischargeLowestValChanged");
+    }
+
+    public void onVtovDischargeQuantityChanged(float f7) {
+        Log.v(TAG, "onVtovDischargeQuantityChanged");
+    }
+
+    public void onWeatherAndTimeRequestChanged(int i7) {
+        Log.v(TAG, "onWeatherAndTimeRequestChanged");
+    }
+
+    public void onWirelessChargingFRStateChanged(int i7) {
+        Log.v(TAG, "onWirelessChargingFRStateChanged");
+    }
+
+    public void onWirelessChargingFRSwitchStateChanged(int i7) {
+        Log.v(TAG, "onWirelessChargingFRSwitchStateChanged");
+    }
+
+    public void onWirelessChargingOnline5sStateChanged(int i7) {
+        Log.v(TAG, "onWirelessChargingOnline5sStateChanged");
+    }
+
+    public void onWirelessChargingPowerFLStateChanged(int i7) {
+        Log.v(TAG, "onWirelessChargingPowerFLStateChanged");
+    }
+
+    public void onWirelessChargingPowerFRStateChanged(int i7) {
+        Log.v(TAG, "onWirelessChargingPowerFRStateChanged");
+    }
+
+    public void onWirelessChargingStateChanged(int i7) {
+        Log.v(TAG, "onWirelessChargingStateChanged");
+    }
+
+    public void onWirelessChargingSwitchStateChanged(int i7) {
+        Log.v(TAG, "onWirelessChargingSwitchStateChanged");
+    }
+
+    public void onWirlessChargingStateChanged(int i7) {
+        Log.v(TAG, "onWirlessChargingStateChanged");
+    }
+}

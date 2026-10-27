@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="billing_cycle_days_left">
+        <item quantity="one">Noch %d Tag</item>
+        <item quantity="other">Noch %d Tage</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_letters">
+        <item quantity="one">Passwort muss mindestens einen Buchstaben enthalten</item>
+        <item quantity="other">Passwort muss mindestens %d Buchstaben enthalten</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_lowercase">
+        <item quantity="one">Passwort muss mindestens einen Kleinbuchstaben enthalten</item>
+        <item quantity="other">Passwort muss mindestens %d Kleinbuchstaben enthalten</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_nonletter">
+        <item quantity="one">Passwort muss mindestens ein Zeichen enthalten, das kein Buchstabe ist</item>
+        <item quantity="other">Passwort muss mindestens %d Zeichen enthalten, die keine Buchstaben sind</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_numeric">
+        <item quantity="one">Passwort muss mindestens eine Ziffer enthalten</item>
+        <item quantity="other">Passwort muss mindestens %d Ziffern enthalten</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_symbols">
+        <item quantity="one">Passwort muss mindestens ein Sonderzeichen enthalten</item>
+        <item quantity="other">Passwort muss mindestens %d Sonderzeichen enthalten</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_uppercase">
+        <item quantity="one">Passwort muss mindestens einen Großbuchstaben enthalten</item>
+        <item quantity="other">Passwort muss mindestens %d Großbuchstaben enthalten</item>
+    </plurals>
+    <plurals name="mobile_network_summary_count">
+        <item quantity="one">%1$d SIM-Karte</item>
+        <item quantity="other">%1$d SIM-Karten</item>
+    </plurals>
+    <plurals name="runtime_permissions_additional_count">
+        <item quantity="one">%d zusätzliche Berechtigung</item>
+        <item quantity="other"> zusätzliche Berechtigungen</item>
+    </plurals>
+    <plurals name="show_dev_countdown">
+        <item quantity="one">Nur noch %1$d Schritt und bist du Entwickler.</item>
+        <item quantity="other">Nur noch %1$d Schritte und du bist Entwickler.</item>
+    </plurals>
+    <plurals name="user_limit_reached_message">
+        <item quantity="one">Es kann nur ein Nutzer erstellt werden.</item>
+        <item quantity="other">Du kannst bis zu %d Nutzer erstellen.</item>
+    </plurals>
+    <plurals name="wifi_tether_connected_summary">
+        <item quantity="one">%1$d Gerät verbunden</item>
+        <item quantity="other">%1$d Geräte verbunden</item>
+    </plurals>
+</resources>

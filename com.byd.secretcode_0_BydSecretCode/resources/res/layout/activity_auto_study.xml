@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/auto_study_background_color"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_60"
+        android:layout_marginBottom="@dimen/dp_70">
+        <TextView
+            android:textSize="@dimen/text_size_22sp"
+            android:textColor="@color/auto_study_text_color"
+            android:id="@+id/auto_study_text_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_27"
+            android:text="@string/auto_study_text"/>
+    </ScrollView>
+</LinearLayout>

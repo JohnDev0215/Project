@@ -1,0 +1,4 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/view/InputDevice;->mIsExternal:Z,frameworks/base/core/java/android/view/InputDevice.java,61,5,61,63,maxTargetSdk=28
+Landroid/view/InputDevice;-><init>(IIILjava/lang/String;IILjava/lang/String;ZIILandroid/view/KeyCharacterMap;ZZZ)V,frameworks/base/core/java/android/view/InputDevice.java,427,5,427,25,
+Landroid/view/InputDevice;->addMotionRange(IIFFFFF)V,frameworks/base/core/java/android/view/InputDevice.java,760,5,760,25,

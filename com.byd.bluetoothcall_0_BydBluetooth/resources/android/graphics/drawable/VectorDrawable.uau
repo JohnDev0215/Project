@@ -1,0 +1,4 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/graphics/drawable/VectorDrawable;->mTintFilter:Landroid/graphics/PorterDuffColorFilter;,frameworks/base/graphics/java/android/graphics/drawable/VectorDrawable.java,327,5,327,25,
+Landroid/graphics/drawable/VectorDrawable;->getTargetByName(Ljava/lang/String;)Ljava/lang/Object;,frameworks/base/graphics/java/android/graphics/drawable/VectorDrawable.java,402,5,402,25,
+Landroid/graphics/drawable/VectorDrawable;->setAllowCaching(Z)V,frameworks/base/graphics/java/android/graphics/drawable/VectorDrawable.java,892,5,892,25,

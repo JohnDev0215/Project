@@ -1,0 +1,4 @@
+signature,file,startline,startcol,endline,endcol,properties
+Lcom/android/internal/app/WindowDecorActionBar;->mContextView:Lcom/android/internal/widget/ActionBarContextView;,frameworks/base/core/java/com/android/internal/app/WindowDecorActionBar.java,83,5,83,25,
+Lcom/android/internal/app/WindowDecorActionBar;->mTabScrollView:Lcom/android/internal/widget/ScrollingTabContainerView;,frameworks/base/core/java/com/android/internal/app/WindowDecorActionBar.java,87,5,87,25,
+Lcom/android/internal/app/WindowDecorActionBar;->setShowHideAnimationEnabled(Z)V,frameworks/base/core/java/com/android/internal/app/WindowDecorActionBar.java,335,5,335,25,

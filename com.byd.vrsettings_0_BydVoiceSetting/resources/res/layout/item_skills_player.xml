@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.byd.vrsettings.view.CustomScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/sv_player"
+    android:background="@android:color/transparent"
+    android:clipChildren="false"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/custom_player"
+        android:background="@android:color/transparent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.byd.vrsettings.view.CustomSkillsPopupView
+            android:id="@+id/cspv_music"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/customSkillsPopupView_height_8155"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toStartOf="@+id/cspv_radio"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+        <com.byd.vrsettings.view.CustomSkillsPopupView
+            android:id="@+id/cspv_radio"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/customSkillsPopupView_height_8155"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/cspv_music"
+            app:layout_constraintTop_toTopOf="@+id/cspv_music"/>
+        <View
+            android:id="@+id/player_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/wakeup_free_placeholder"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cspv_radio"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.byd.vrsettings.view.CustomScrollView>

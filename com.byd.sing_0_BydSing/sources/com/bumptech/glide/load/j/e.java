@@ -1,0 +1,138 @@
+package com.bumptech.glide.load.j;
+
+import android.util.Base64;
+import com.bumptech.glide.Priority;
+import com.bumptech.glide.load.DataSource;
+import com.bumptech.glide.load.i.d;
+import com.bumptech.glide.load.j.n;
+import java.io.ByteArrayInputStream;
+import java.io.IOException;
+import java.io.InputStream;
+
+/* JADX INFO: compiled from: DataUrlLoader.java */
+/* JADX INFO: loaded from: classes.dex */
+public final class e<Model, Data> implements n<Model, Data> {
+
+    /* JADX INFO: renamed from: a, reason: collision with root package name */
+    private final a<Data> f2963a;
+
+    /* JADX INFO: compiled from: DataUrlLoader.java */
+    public interface a<Data> {
+        Class<Data> a();
+
+        void b(Data data) throws IOException;
+
+        Data c(String str) throws IllegalArgumentException;
+    }
+
+    /* JADX INFO: compiled from: DataUrlLoader.java */
+    private static final class b<Data> implements com.bumptech.glide.load.i.d<Data> {
+
+        /* JADX INFO: renamed from: b, reason: collision with root package name */
+        private final String f2964b;
+
+        /* JADX INFO: renamed from: c, reason: collision with root package name */
+        private final a<Data> f2965c;
+
+        /* JADX INFO: renamed from: d, reason: collision with root package name */
+        private Data f2966d;
+
+        b(String str, a<Data> aVar) {
+            this.f2964b = str;
+            this.f2965c = aVar;
+        }
+
+        @Override // com.bumptech.glide.load.i.d
+        public Class<Data> a() {
+            return this.f2965c.a();
+        }
+
+        @Override // com.bumptech.glide.load.i.d
+        public void b() {
+            try {
+                this.f2965c.b(this.f2966d);
+            } catch (IOException unused) {
+            }
+        }
+
+        @Override // com.bumptech.glide.load.i.d
+        public void cancel() {
+        }
+
+        @Override // com.bumptech.glide.load.i.d
+        public DataSource e() {
+            return DataSource.LOCAL;
+        }
+
+        /* JADX WARN: Type inference failed for: r2v3, types: [Data, java.lang.Object] */
+        @Override // com.bumptech.glide.load.i.d
+        public void f(Priority priority, d.a<? super Data> aVar) {
+            try {
+                Data dataC = this.f2965c.c(this.f2964b);
+                this.f2966d = dataC;
+                aVar.d(dataC);
+            } catch (IllegalArgumentException e) {
+                aVar.c(e);
+            }
+        }
+    }
+
+    /* JADX INFO: compiled from: DataUrlLoader.java */
+    public static final class c<Model> implements o<Model, InputStream> {
+
+        /* JADX INFO: renamed from: a, reason: collision with root package name */
+        private final a<InputStream> f2967a = new a();
+
+        /* JADX INFO: compiled from: DataUrlLoader.java */
+        class a implements a<InputStream> {
+            a() {
+            }
+
+            @Override // com.bumptech.glide.load.j.e.a
+            public Class<InputStream> a() {
+                return InputStream.class;
+            }
+
+            @Override // com.bumptech.glide.load.j.e.a
+            /* JADX INFO: renamed from: d, reason: merged with bridge method [inline-methods] */
+            public void b(InputStream inputStream) throws IOException {
+                inputStream.close();
+            }
+
+            @Override // com.bumptech.glide.load.j.e.a
+            /* JADX INFO: renamed from: e, reason: merged with bridge method [inline-methods] */
+            public InputStream c(String str) {
+                if (!str.startsWith("data:image")) {
+                    throw new IllegalArgumentException("Not a valid image data URL.");
+                }
+                int iIndexOf = str.indexOf(44);
+                if (iIndexOf == -1) {
+                    throw new IllegalArgumentException("Missing comma in data URL.");
+                }
+                if (str.substring(0, iIndexOf).endsWith(";base64")) {
+                    return new ByteArrayInputStream(Base64.decode(str.substring(iIndexOf + 1), 0));
+                }
+                throw new IllegalArgumentException("Not a base64 image data URL.");
+            }
+        }
+
+        @Override // com.bumptech.glide.load.j.o
+        public n<Model, InputStream> b(r rVar) {
+            return new e(this.f2967a);
+        }
+    }
+
+    public e(a<Data> aVar) {
+        this.f2963a = aVar;
+    }
+
+    @Override // com.bumptech.glide.load.j.n
+    public n.a<Data> a(Model model, int i, int i2, com.bumptech.glide.load.e eVar) {
+        return new n.a<>(new com.bumptech.glide.l.b(model), new b(model.toString(), this.f2963a));
+    }
+
+    @Override // com.bumptech.glide.load.j.n
+    public boolean b(Model model) {
+        return model.toString().startsWith("data:image");
+    }
+}

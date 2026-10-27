@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="billing_cycle_days_left">
+        <item quantity="one">Остава %d ден</item>
+        <item quantity="other">Остават %d дни</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_letters">
+        <item quantity="one">Трябва да съдържа поне една буква</item>
+        <item quantity="other">Трябва да съдържа поне %d букви</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_lowercase">
+        <item quantity="one">Трябва да съдържа поне 1 малка буква</item>
+        <item quantity="other">Трябва да съдържа поне %d малки букви</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_nonletter">
+        <item quantity="one">Трябва да съдържа поне 1 небуквен знак</item>
+        <item quantity="other">Трябва да съдържа поне %d небуквени знака</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_numeric">
+        <item quantity="one">Трябва да съдържа поне 1 цифра</item>
+        <item quantity="other">Трябва да съдържа поне %d цифри</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_symbols">
+        <item quantity="one">Трябва да съдържа поне 1 специален символ</item>
+        <item quantity="other">Трябва да съдържа поне %d специални символа</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_uppercase">
+        <item quantity="one">Трябва да съдържа поне 1 главна буква</item>
+        <item quantity="other">Трябва да съдържа поне %d главни букви</item>
+    </plurals>
+    <plurals name="mobile_network_summary_count">
+        <item quantity="one">%1$d SIM карта</item>
+        <item quantity="other">%1$d SIM карти</item>
+    </plurals>
+    <plurals name="runtime_permissions_additional_count">
+        <item quantity="one">%d допълнително разрешение</item>
+        <item quantity="other">%d допълнителни разрешения</item>
+    </plurals>
+    <plurals name="show_dev_countdown">
+        <item quantity="one">Вече сте на %1$d стъпка от това, да бъдете програмист.</item>
+        <item quantity="other">Вече сте на %1$d стъпки от това, да бъдете програмист.</item>
+    </plurals>
+    <plurals name="user_limit_reached_message">
+        <item quantity="one">Може да бъде създаден само един потребител.</item>
+        <item quantity="other">Можете да създадете до %d потребители.</item>
+    </plurals>
+    <plurals name="wifi_tether_connected_summary">
+        <item quantity="one">%1$d устройство е свързано</item>
+        <item quantity="other">%1$d устройства са свързани</item>
+    </plurals>
+</resources>

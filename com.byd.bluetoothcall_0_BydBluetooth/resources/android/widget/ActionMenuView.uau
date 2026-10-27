@@ -1,0 +1,7 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/widget/ActionMenuView;->isOverflowReserved()Z,frameworks/base/core/java/android/widget/ActionMenuView.java,568,5,568,25,
+Landroid/widget/ActionMenuView;->setMenuCallbacks(Lcom/android/internal/view/menu/MenuPresenter$Callback;Lcom/android/internal/view/menu/MenuBuilder$Callback;)V,frameworks/base/core/java/android/widget/ActionMenuView.java,660,5,660,25,
+Landroid/widget/ActionMenuView;->peekMenu()Lcom/android/internal/view/menu/MenuBuilder;,frameworks/base/core/java/android/widget/ActionMenuView.java,670,5,670,25,
+Landroid/widget/ActionMenuView;->isOverflowMenuShowPending()Z,frameworks/base/core/java/android/widget/ActionMenuView.java,704,5,704,25,
+Landroid/widget/ActionMenuView;->hasDividerBeforeChildAt(I)Z,frameworks/base/core/java/android/widget/ActionMenuView.java,722,5,722,25,
+Landroid/widget/ActionMenuView;->setExpandedActionViewsExclusive(Z)V,frameworks/base/core/java/android/widget/ActionMenuView.java,745,5,745,25,

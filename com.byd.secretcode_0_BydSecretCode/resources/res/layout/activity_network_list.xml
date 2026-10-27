@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="@dimen/dp_48">
+    <RelativeLayout
+        android:id="@+id/network_choice_back_content"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_72"
+        android:layout_marginTop="@dimen/dp_48">
+        <ImageView
+            android:id="@+id/network_choice_back_iv"
+            android:layout_width="@dimen/dp_48"
+            android:layout_height="@dimen/dp_48"
+            android:src="@drawable/icon_public_leftarrow_48"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/dp_18"/>
+        <TextView
+            android:textSize="@dimen/text_size_25sp"
+            android:textColor="@color/black"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/str_select_network"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/dp_16"
+            android:layout_toEndOf="@+id/network_choice_back_iv"/>
+    </RelativeLayout>
+    <View
+        android:id="@+id/network_choice_content_line"
+        android:background="@color/baseline_color"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_below="@+id/network_choice_back_content"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/network_choice_list_rv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/network_choice_content_line"/>
+</RelativeLayout>

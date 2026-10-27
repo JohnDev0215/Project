@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:state_focused="true"
+        android:drawable="@drawable/byd_car_toolbar_search_grey_bg_denza"/>
+    <item
+        android:state_focused="false"
+        android:drawable="@drawable/byd_car_toolbar_search_grey_bg_denza"/>
+</selector>

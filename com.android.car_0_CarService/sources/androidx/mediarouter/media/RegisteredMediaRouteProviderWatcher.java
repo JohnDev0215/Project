@@ -1,0 +1,149 @@
+package androidx.mediarouter.media;
+
+import android.content.BroadcastReceiver;
+import android.content.ComponentName;
+import android.content.Context;
+import android.content.Intent;
+import android.content.IntentFilter;
+import android.content.pm.PackageManager;
+import android.content.pm.ResolveInfo;
+import android.content.pm.ServiceInfo;
+import android.os.Build;
+import android.os.Handler;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+import java.util.function.Function;
+import java.util.stream.Collectors;
+
+/* JADX INFO: loaded from: classes2.dex */
+final class RegisteredMediaRouteProviderWatcher {
+    private final Callback mCallback;
+    private final Context mContext;
+    private final PackageManager mPackageManager;
+    private boolean mRunning;
+    private final ArrayList<RegisteredMediaRouteProvider> mProviders = new ArrayList<>();
+    private final BroadcastReceiver mScanPackagesReceiver = new BroadcastReceiver() { // from class: androidx.mediarouter.media.RegisteredMediaRouteProviderWatcher.1
+        @Override // android.content.BroadcastReceiver
+        public void onReceive(Context context, Intent intent) {
+            RegisteredMediaRouteProviderWatcher.this.scanPackages();
+        }
+    };
+    private final Runnable mScanPackagesRunnable = new Runnable() { // from class: androidx.mediarouter.media.RegisteredMediaRouteProviderWatcher.2
+        @Override // java.lang.Runnable
+        public void run() {
+            RegisteredMediaRouteProviderWatcher.this.scanPackages();
+        }
+    };
+    private final Handler mHandler = new Handler();
+
+    public interface Callback {
+        void addProvider(MediaRouteProvider mediaRouteProvider);
+
+        void removeProvider(MediaRouteProvider mediaRouteProvider);
+    }
+
+    RegisteredMediaRouteProviderWatcher(Context context, Callback callback) {
+        this.mContext = context;
+        this.mCallback = callback;
+        this.mPackageManager = context.getPackageManager();
+    }
+
+    public void start() {
+        if (!this.mRunning) {
+            this.mRunning = true;
+            IntentFilter filter = new IntentFilter();
+            filter.addAction("android.intent.action.PACKAGE_ADDED");
+            filter.addAction("android.intent.action.PACKAGE_REMOVED");
+            filter.addAction("android.intent.action.PACKAGE_CHANGED");
+            filter.addAction("android.intent.action.PACKAGE_REPLACED");
+            filter.addAction("android.intent.action.PACKAGE_RESTARTED");
+            filter.addDataScheme("package");
+            this.mContext.registerReceiver(this.mScanPackagesReceiver, filter, null, this.mHandler);
+            this.mHandler.post(this.mScanPackagesRunnable);
+        }
+    }
+
+    public void stop() {
+        if (this.mRunning) {
+            this.mRunning = false;
+            this.mContext.unregisterReceiver(this.mScanPackagesReceiver);
+            this.mHandler.removeCallbacks(this.mScanPackagesRunnable);
+            for (int i = this.mProviders.size() - 1; i >= 0; i--) {
+                this.mProviders.get(i).stop();
+            }
+        }
+    }
+
+    void scanPackages() {
+        if (!this.mRunning) {
+            return;
+        }
+        List<ServiceInfo> mediaRoute2ProviderServices = new ArrayList<>();
+        if (Build.VERSION.SDK_INT >= 30) {
+            mediaRoute2ProviderServices = getMediaRoute2ProviderServices();
+        }
+        int targetIndex = 0;
+        Intent intent = new Intent("android.media.MediaRouteProviderService");
+        for (ResolveInfo resolveInfo : this.mPackageManager.queryIntentServices(intent, 0)) {
+            ServiceInfo serviceInfo = resolveInfo.serviceInfo;
+            if (serviceInfo != null && (!MediaRouter.isTransferEnabled() || !listContainsServiceInfo(mediaRoute2ProviderServices, serviceInfo))) {
+                int sourceIndex = findProvider(serviceInfo.packageName, serviceInfo.name);
+                if (sourceIndex < 0) {
+                    RegisteredMediaRouteProvider provider = new RegisteredMediaRouteProvider(this.mContext, new ComponentName(serviceInfo.packageName, serviceInfo.name));
+                    provider.start();
+                    this.mProviders.add(targetIndex, provider);
+                    this.mCallback.addProvider(provider);
+                    targetIndex++;
+                } else if (sourceIndex >= targetIndex) {
+                    RegisteredMediaRouteProvider provider2 = this.mProviders.get(sourceIndex);
+                    provider2.start();
+                    provider2.rebindIfDisconnected();
+                    Collections.swap(this.mProviders, sourceIndex, targetIndex);
+                    targetIndex++;
+                }
+            }
+        }
+        if (targetIndex < this.mProviders.size()) {
+            for (int i = this.mProviders.size() - 1; i >= targetIndex; i--) {
+                RegisteredMediaRouteProvider provider3 = this.mProviders.get(i);
+                this.mCallback.removeProvider(provider3);
+                this.mProviders.remove(provider3);
+                provider3.stop();
+            }
+        }
+    }
+
+    static boolean listContainsServiceInfo(List<ServiceInfo> serviceList, ServiceInfo target) {
+        if (target == null || serviceList == null || serviceList.isEmpty()) {
+            return false;
+        }
+        for (ServiceInfo serviceInfo : serviceList) {
+            if (target.packageName.equals(serviceInfo.packageName) && target.name.equals(serviceInfo.name)) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    List<ServiceInfo> getMediaRoute2ProviderServices() {
+        Intent intent = new Intent(MediaRoute2ProviderServiceAdapter.SERVICE_INTERFACE);
+        return (List) this.mPackageManager.queryIntentServices(intent, 0).stream().map(new Function() { // from class: androidx.mediarouter.media.-$$Lambda$RegisteredMediaRouteProviderWatcher$krXCgEIuDNaJnjux21SSYdM7sUw
+            @Override // java.util.function.Function
+            public final Object apply(Object obj) {
+                return ((ResolveInfo) obj).serviceInfo;
+            }
+        }).collect(Collectors.toList());
+    }
+
+    private int findProvider(String packageName, String className) {
+        int count = this.mProviders.size();
+        for (int i = 0; i < count; i++) {
+            RegisteredMediaRouteProvider provider = this.mProviders.get(i);
+            if (provider.hasComponentName(packageName, className)) {
+                return i;
+            }
+        }
+        return -1;
+    }
+}

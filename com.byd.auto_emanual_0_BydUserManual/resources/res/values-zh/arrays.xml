@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="settings_items">
+        <item>@string/settings_feedback</item>
+        <item>@string/settings_update</item>
+        <item>@string/settings_agreement_and_disclaimer</item>
+    </array>
+    <array name="tab_images_normal">
+        <item>@drawable/tab_recommend_normal</item>
+        <item>@drawable/tab_start_normal</item>
+        <item>@drawable/tab_manual_normal</item>
+        <item>@drawable/tab_search_normal</item>
+        <item>@drawable/tab_settings_normal</item>
+    </array>
+    <array name="tab_images_selected">
+        <item>@drawable/tab_recommend_selected</item>
+        <item>@drawable/tab_start_selected</item>
+        <item>@drawable/tab_manual_selected</item>
+        <item>@drawable/tab_search_selected</item>
+        <item>@drawable/tab_settings_selected</item>
+    </array>
+    <array name="tab_names">
+        <item>推荐</item>
+        <item>新手入门</item>
+        <item>电子手册</item>
+        <item>搜索</item>
+        <item>更多</item>
+    </array>
+</resources>

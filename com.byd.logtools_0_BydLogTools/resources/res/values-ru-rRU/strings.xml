@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="install">Установка приложения</string>
+    <string name="qrcode_expired">Истек срок действия. Коснитесь, чтобы обновить</string>
+    <string name="qrcode_network_warning">Текущая сеть недоступна. Проверьте настройки сети</string>
+    <string name="qrcode_refresh_fail">Не удалось получить. Коснитесь, чтобы обновить</string>
+    <string name="qrcode_scan_type_vds">Сканирование VDS</string>
+    <string name="qrcode_scan_type_wechat">Сканирование WeCom</string>
+    <string name="qrcode_success">Сканирование выполнено</string>
+    <string name="qrcode_time">Осталось %d с</string>
+    <string name="qrcode_tip">Для авторизации отсканируйте QR-код</string>
+    <string name="qrcode_title">Проверить</string>
+    <string name="qrcode_title_with_module">%s Проверка</string>
+</resources>

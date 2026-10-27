@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="audio_muted">Audio silenciado</string>
+    <string name="audio_removed">Sin silenciar</string>
+    <string name="btn_comfirm">OK</string>
+    <string name="btn_reset">Restablecer</string>
+    <string name="call_mode">Llamada en curso. No opere</string>
+    <string name="cancel">Cancelar</string>
+    <string name="carplay_androidauto_land">La aplicación actual no admite el cambio de pantalla</string>
+    <string name="dialog_title_user">Personalizar Ajustes del Botón</string>
+    <string name="dialog_title_user_left">Ajustes del Botón Personalizado Izquierdo</string>
+    <string name="dialog_title_user_right">Ajustes del Botón Personalizado Derecho</string>
+    <string name="mode_am_music">AM</string>
+    <string name="mode_amazon_music">Amazon Music</string>
+    <string name="mode_bt_music">Música</string>
+    <string name="mode_button_androidauto">Android Auto</string>
+    <string name="mode_button_carplay">Apple CarPlay</string>
+    <string name="mode_dab_music">DAB+</string>
+    <string name="mode_fm_music">FM</string>
+    <string name="mode_local_music">Medios locales</string>
+    <string name="mode_music">Local</string>
+    <string name="mode_sd">Tarjeta SD</string>
+    <string name="mode_spotify_music">Spotify</string>
+    <string name="mode_usb">USB</string>
+    <string name="mode_usb_music">Música USB</string>
+    <string name="mode_usb_text">No se detectó ningún USB</string>
+    <string name="mode_usb_video">Video de la unidad flash USB</string>
+    <string name="radio_button_ac">A/C</string>
+    <string name="radio_button_music">Música</string>
+    <string name="radio_button_navi_home">Inicio</string>
+    <string name="radio_button_play_pause">Pausar/Reproducir Multimedia</string>
+    <string name="radio_button_radio">Radio</string>
+    <string name="radio_button_rotate">Rotación de la Pantalla Central</string>
+    <string name="radio_button_source">Cambiar Fuente de Audio</string>
+    <string name="reset_country">Configurando el sistema. Espere</string>
+    <string name="restart_efect">Función configurada con éxito. ¡Reinicie para activarla!</string>
+    <string name="restart_now">Reiniciar ahora</string>
+    <string name="restart_time">Cuenta regresiva</string>
+    <string name="warring_mode">Por favor, ¡complete la guía antes de utilizar el sistema multimedia!</string>
+    <string name="warring_navi_mode">¡El estado actual no admite la operación!</string>
+    <string name="warring_power">Esta función solo está disponible en la marcha P</string>
+</resources>

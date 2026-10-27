@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="billing_cycle_days_left">
+        <item quantity="one">‎%d دن باقی ہے</item>
+        <item quantity="other">‎%d دن باقی ہیں</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_letters">
+        <item quantity="one">کم از کم 1 حرف پر مشتمل ہونا چاہیئے</item>
+        <item quantity="other">کم از کم %d حروف پر مشتمل ہونا چاہیے</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_lowercase">
+        <item quantity="one">کم از کم ایک چھوٹے حرف پر مشتمل ہونا چاہیئے</item>
+        <item quantity="other">کم از کم %d چھوٹے حروف پر مشتمل ہونا چاہیے</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_nonletter">
+        <item quantity="one">کم از کم ایک ایسے کریکٹر پر مشتمل ہونا چاہیئے جو حرف نہ ہو</item>
+        <item quantity="other">کم از کم %d ایسے کریکٹرز پر مشتمل ہونا چاہیئے جو حروف نہ ہوں</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_numeric">
+        <item quantity="one">کم از کم 1 عددی ہندسہ پر مشتمل ہونا چاہیئے</item>
+        <item quantity="other">کم از کم %d عددی ہندسوں پر مشتمل ہونا چاہیے</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_symbols">
+        <item quantity="one">کم از کم ایک خصوصی علامت پر مشتمل ہونا چاہیئے</item>
+        <item quantity="other">کم از کم %d خصوصی علامتوں پر مشتمل ہونا چاہیے</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_uppercase">
+        <item quantity="one">کم از کم 1 بڑے حرف پر مشتمل ہونا چاہیئے</item>
+        <item quantity="other">کم از کم %d بڑے حروف پر مشتمل ہونا چاہیے</item>
+    </plurals>
+    <plurals name="mobile_network_summary_count">
+        <item quantity="one">‎%1$d SIM</item>
+        <item quantity="other">‎%1$d SIMs</item>
+    </plurals>
+    <plurals name="runtime_permissions_additional_count">
+        <item quantity="one">%d اضافی اجازت</item>
+        <item quantity="other">%d اضافی اجازتیں</item>
+    </plurals>
+    <plurals name="show_dev_countdown">
+        <item quantity="one">اب آپ ڈویلپر بننے سے %1$d قدم دور ہیں۔</item>
+        <item quantity="other">اب آپ ڈویلپر بننے سے %1$d قدم دور ہیں۔</item>
+    </plurals>
+    <plurals name="user_limit_reached_message">
+        <item quantity="one">صرف ایک صارف بنایا جا سکتا ہے۔</item>
+        <item quantity="other">آپ زیادہ سے زیادہ %d صارفین بنا سکتے ہیں۔</item>
+    </plurals>
+    <plurals name="wifi_tether_connected_summary">
+        <item quantity="one">‏%1$d آلہ منسلک ہے</item>
+        <item quantity="other">‏%1$d آلات منسلک ہیں</item>
+    </plurals>
+</resources>

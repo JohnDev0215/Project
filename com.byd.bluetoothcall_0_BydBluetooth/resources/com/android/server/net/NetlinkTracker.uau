@@ -1,0 +1,4 @@
+signature,file,startline,startcol,endline,endcol,properties
+Lcom/android/server/net/NetlinkTracker;-><init>(Ljava/lang/String;Lcom/android/server/net/NetlinkTracker$Callback;)V,frameworks/base/core/java/com/android/server/net/NetlinkTracker.java,83,5,83,25,
+Lcom/android/server/net/NetlinkTracker;->getLinkProperties()Landroid/net/LinkProperties;,frameworks/base/core/java/com/android/server/net/NetlinkTracker.java,192,5,192,25,
+Lcom/android/server/net/NetlinkTracker;->clearLinkProperties()V,frameworks/base/core/java/com/android/server/net/NetlinkTracker.java,197,5,197,25,

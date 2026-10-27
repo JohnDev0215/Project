@@ -1,0 +1,35 @@
+package defpackage;
+
+import android.view.MotionEvent;
+import android.view.View;
+import androidx.coordinatorlayout.widget.CoordinatorLayout;
+import com.google.android.material.behavior.SwipeDismissBehavior;
+import com.google.android.material.snackbar.BaseTransientBottomBar$SnackbarBaseLayout;
+import defpackage.wk;
+
+/* JADX INFO: compiled from: BaseTransientBottomBar.java */
+/* JADX INFO: loaded from: classes.dex */
+public class tk {
+    public wk.b a;
+
+    public tk(SwipeDismissBehavior<?> swipeDismissBehavior) {
+        swipeDismissBehavior.K(0.1f);
+        swipeDismissBehavior.J(0.6f);
+        swipeDismissBehavior.L(0);
+    }
+
+    public boolean a(View view) {
+        return view instanceof BaseTransientBottomBar$SnackbarBaseLayout;
+    }
+
+    public void b(CoordinatorLayout coordinatorLayout, View view, MotionEvent motionEvent) {
+        int actionMasked = motionEvent.getActionMasked();
+        if (actionMasked == 0) {
+            if (coordinatorLayout.F(view, (int) motionEvent.getX(), (int) motionEvent.getY())) {
+                wk.b().e(this.a);
+            }
+        } else if (actionMasked == 1 || actionMasked == 3) {
+            wk.b().f(this.a);
+        }
+    }
+}

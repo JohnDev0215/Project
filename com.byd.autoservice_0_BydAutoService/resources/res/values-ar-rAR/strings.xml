@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">BydAutoService</string>
+    <string name="audio_muted">تم كتم الصوت</string>
+    <string name="audio_removed">إلغاء كتم الصوت</string>
+    <string name="btn_comfirm">OK</string>
+    <string name="btn_reset">إعادة ضبط</string>
+    <string name="call_mode">التشغيل معطل في أثناء المكالمات</string>
+    <string name="cancel">إلغاء</string>
+    <string name="carplay_androidauto_land">الشاشة الحالية لا تدعم تبديل الشاشة</string>
+    <string name="dialog_title_user">إعداد الزر المخصص</string>
+    <string name="dialog_title_user_left">إعداد الزر المخصص الأيسر</string>
+    <string name="dialog_title_user_right">إعدادات الزر المخصص الأيمن</string>
+    <string name="mode_am_music">AM</string>
+    <string name="mode_amazon_music">موسيقى Amazon</string>
+    <string name="mode_bt_music">الموسيقى</string>
+    <string name="mode_button_androidauto">Android Auto</string>
+    <string name="mode_button_carplay">Apple CarPlay</string>
+    <string name="mode_dab_music">DAB</string>
+    <string name="mode_fm_music">FM</string>
+    <string name="mode_local_music">وسائل الاعلام المحلية</string>
+    <string name="mode_music">محلي</string>
+    <string name="mode_sd">بطاقة SD</string>
+    <string name="mode_spotify_music">Spotify</string>
+    <string name="mode_usb">USB</string>
+    <string name="mode_usb_music">الموسيقى على محرك أقراص USB</string>
+    <string name="mode_usb_text">لم يتم اكتشاف USB</string>
+    <string name="mode_usb_video">فيديو محرك فلاش USB</string>
+    <string name="radio_button_ac">مكيف الهواء</string>
+    <string name="radio_button_music">الموسيقى</string>
+    <string name="radio_button_navi_home">الرئيسية</string>
+    <string name="radio_button_play_pause">الإيقاف المؤقت/التشغيل للوسائط</string>
+    <string name="radio_button_radio">الراديو</string>
+    <string name="radio_button_rotate">دوران الشاشة المركزية</string>
+    <string name="radio_button_source">تبديل مصدر صوت الوسائط</string>
+    <string name="reset_country">تكوين النظام. يرجى الانتظار</string>
+    <string name="restart_efect">تم إعداد الوظيفة بنجاح. أعد التشغيل لتفعيلها!</string>
+    <string name="restart_now">أعد التشغيل الآن</string>
+    <string name="restart_time">العد التنازلي لإعادة التشغيل</string>
+    <string name="warring_mode">يرجى إكمال عملية الدليل قبل استخدام IVI!</string>
+    <string name="warring_navi_mode">الوضع الحالي لا يدعم العملية!</string>
+    <string name="warring_power">هذه الوظيفة متاحة فقط في ناقل الحركة P</string>
+</resources>

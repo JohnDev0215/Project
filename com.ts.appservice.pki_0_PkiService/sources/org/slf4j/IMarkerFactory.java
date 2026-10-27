@@ -1,0 +1,13 @@
+package org.slf4j;
+
+/* JADX INFO: compiled from: caradapter-bug */
+/* JADX INFO: loaded from: classes.dex */
+public interface IMarkerFactory {
+    boolean detachMarker(String str);
+
+    boolean exists(String str);
+
+    Marker getDetachedMarker(String str);
+
+    Marker getMarker(String str);
+}

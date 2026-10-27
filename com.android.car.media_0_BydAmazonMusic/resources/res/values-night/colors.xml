@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="app_bar_background_color">#eb000000</color>
+    <color name="car_tab_selected_color">@color/car_tab_selected_color_dark</color>
+    <color name="car_tab_unselected_color">@color/car_tab_unselected_color_dark</color>
+    <color name="primary_app_icon_color">#e0ffffff</color>
+    <color name="scrim_overlay_color">#d6000000</color>
+    <color name="secondary_app_icon_color">#99ffffff</color>
+</resources>

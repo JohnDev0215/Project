@@ -1,0 +1,4 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/view/accessibility/AccessibilityInteractionClient;->getInstance()Landroid/view/accessibility/AccessibilityInteractionClient;,frameworks/base/core/java/android/view/accessibility/AccessibilityInteractionClient.java,129,5,129,25,
+Landroid/view/accessibility/AccessibilityInteractionClient;->setSameThreadMessage(Landroid/os/Message;)V,frameworks/base/core/java/android/view/accessibility/AccessibilityInteractionClient.java,208,5,208,25,
+Landroid/view/accessibility/AccessibilityInteractionClient;->clearCache()V,frameworks/base/core/java/android/view/accessibility/AccessibilityInteractionClient.java,732,5,732,25,

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="install">Uygulama Kurulumu</string>
+    <string name="qrcode_expired">Süresi doldu. Yenilemek için dokunun</string>
+    <string name="qrcode_network_warning">Mevcut ağ kullanılamıyor. Lütfen ağ ayarlarını kontrol edin</string>
+    <string name="qrcode_refresh_fail">Alınamadı. Yenilemek için dokunun</string>
+    <string name="qrcode_scan_type_vds">VDS taraması</string>
+    <string name="qrcode_scan_type_wechat">WeCom taraması</string>
+    <string name="qrcode_success">Tarama başarılı</string>
+    <string name="qrcode_time">%d sn kaldı</string>
+    <string name="qrcode_tip">Yetki almak için QR kodunu tarayın</string>
+    <string name="qrcode_title">Doğrula</string>
+    <string name="qrcode_title_with_module">%s Doğrulama</string>
+</resources>

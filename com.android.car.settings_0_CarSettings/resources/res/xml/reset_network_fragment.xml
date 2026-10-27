@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" xmlns:settings="http://schemas.android.com/apk/res-auto"
+    android:title="@string/reset_network_title"
+    android:key="@string/psk_reset_network">
+    <com.android.car.ui.preference.CarUiPreference
+        android:title="@string/reset_network_desc"
+        android:selectable="false"
+        android:key="@string/pk_reset_network_items"
+        settings:controller="com.android.car.settings.system.ResetNetworkItemsPreferenceController"
+        settings:showChevron="false"
+        settings:singleLineTitle="false"/>
+    <CheckBoxPreference
+        android:title="@string/reset_esim_title"
+        android:key="@string/pk_reset_esim"
+        android:summary="@string/reset_esim_desc"
+        settings:controller="com.android.car.settings.system.ResetEsimPreferenceController"/>
+    <ListPreference
+        android:title="@string/reset_network_select"
+        android:key="@string/pk_reset_network_subscription"
+        android:widgetLayout="@layout/dropdown_preference_widget"
+        settings:controller="com.android.car.settings.system.ResetNetworkSubscriptionPreferenceController"/>
+</PreferenceScreen>

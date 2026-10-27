@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:width="@dimen/dp_22">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/transparent"/>
+        </shape>
+    </item>
+    <item
+        android:drawable="@drawable/bar_thumb"
+        android:left="@dimen/dp_9"
+        android:right="@dimen/dp_9"/>
+</layer-list>

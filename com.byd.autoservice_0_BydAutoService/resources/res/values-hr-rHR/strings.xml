@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">BydAutoService</string>
+    <string name="audio_muted">Zvuk isključen</string>
+    <string name="audio_removed">Zvuk uključen</string>
+    <string name="btn_comfirm">U redu</string>
+    <string name="btn_reset">Ponovno postavi</string>
+    <string name="call_mode">Poziv u tijeku. Radnja je onemogućena</string>
+    <string name="cancel">Otkaži</string>
+    <string name="carplay_androidauto_land">Trenutačni zaslon ne podržava promjenu zaslona</string>
+    <string name="dialog_title_user">Prilagođena postavka gumba</string>
+    <string name="dialog_title_user_left">Postavke lijevog prilagođenog gumba</string>
+    <string name="dialog_title_user_right">Postavke desnog prilagođenog gumba</string>
+    <string name="mode_am_music">AM</string>
+    <string name="mode_amazon_music">Amazon Music</string>
+    <string name="mode_bt_music">Glazba</string>
+    <string name="mode_button_androidauto">Android Auto</string>
+    <string name="mode_button_carplay">Apple CarPlay</string>
+    <string name="mode_dab_music">DAB</string>
+    <string name="mode_fm_music">FM</string>
+    <string name="mode_local_music">Lokalni medijski sadržaj</string>
+    <string name="mode_music">Lokalna</string>
+    <string name="mode_sd">SD</string>
+    <string name="mode_spotify_music">Spotify</string>
+    <string name="mode_usb">USB</string>
+    <string name="mode_usb_music">USB glazba</string>
+    <string name="mode_usb_text">USB nije otkriven</string>
+    <string name="mode_usb_video">Videozapis USB memorijskog pogona</string>
+    <string name="radio_button_ac">A/C</string>
+    <string name="radio_button_music">Glazba</string>
+    <string name="radio_button_navi_home">Kućna adresa</string>
+    <string name="radio_button_play_pause">Pauziraj/reproduciraj medije</string>
+    <string name="radio_button_radio">Radio</string>
+    <string name="radio_button_rotate">Rotacija središnjeg zaslona</string>
+    <string name="radio_button_source">Promijeni izvor zvuka medija</string>
+    <string name="reset_country">Konfiguriranje sustava. Pričekajte</string>
+    <string name="restart_efect">Funkcija uspješno konfigurirana. Ponovno pokrenite za njezinu aktivaciju!</string>
+    <string name="restart_now">Ponovno pokreni sada</string>
+    <string name="restart_time">Odbrojavanje do ponovnog pokretanja</string>
+    <string name="warring_mode">Dovršite postupak vodiča prije upotrebe IVI-ja!</string>
+    <string name="warring_navi_mode">Trenutačno stanje ne podržava ovu radnju!</string>
+    <string name="warring_power">Ova je funkcija dostupna samo u stupnju prijenosa P</string>
+</resources>

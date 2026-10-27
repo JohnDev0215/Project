@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="billing_cycle_days_left">
+        <item quantity="one">%d egun gelditzen da</item>
+        <item quantity="other">%d egun gelditzen dira</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_letters">
+        <item quantity="one">Gutxienez 1 hizki izan behar du</item>
+        <item quantity="other">Gutxienez %d hizki izan behar ditu</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_lowercase">
+        <item quantity="one">Gutxienez 1 minuskula izan behar du</item>
+        <item quantity="other">Gutxienez %d minuskula izan behar ditu</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_nonletter">
+        <item quantity="one">Gutxienez, hizkia ez den 1 karaktere izan behar du</item>
+        <item quantity="other">Gutxienez, hizkiak ez diren %d karaktere izan behar ditu</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_numeric">
+        <item quantity="one">Gutxienez 1 zenbaki izan behar du</item>
+        <item quantity="other">Gutxienez %d zenbaki izan behar ditu</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_symbols">
+        <item quantity="one">Gutxienez 1 karaktere berezi izan behar du</item>
+        <item quantity="other">Gutxienez %d karaktere berezi izan behar ditu</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_uppercase">
+        <item quantity="one">Gutxienez 1 maiuskula izan behar du</item>
+        <item quantity="other">Gutxienez %d maiuskula izan behar ditu</item>
+    </plurals>
+    <plurals name="mobile_network_summary_count">
+        <item quantity="one">%1$d SIM txartel</item>
+        <item quantity="other">%1$d SIM txartel</item>
+    </plurals>
+    <plurals name="runtime_permissions_additional_count">
+        <item quantity="one">%d baimen gehigarri</item>
+        <item quantity="other">%d baimen gehigarri</item>
+    </plurals>
+    <plurals name="show_dev_countdown">
+        <item quantity="one">%1$d urrats falta zaizu garatzaile izateko.</item>
+        <item quantity="other">%1$d urrats falta zaizkizu garatzaile izateko.</item>
+    </plurals>
+    <plurals name="user_limit_reached_message">
+        <item quantity="one">Erabiltzaile bakarra sor dezakezu.</item>
+        <item quantity="other">Gehienez, %d erabiltzaile sor ditzakezu.</item>
+    </plurals>
+    <plurals name="wifi_tether_connected_summary">
+        <item quantity="one">%1$d gailu dago konektatuta</item>
+        <item quantity="other">%1$d gailu daude konektatuta</item>
+    </plurals>
+</resources>

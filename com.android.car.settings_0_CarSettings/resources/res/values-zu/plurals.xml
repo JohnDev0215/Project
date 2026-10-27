@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="billing_cycle_days_left">
+        <item quantity="one">%d izinsuku ezisele</item>
+        <item quantity="other">%d izinsuku ezisele</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_letters">
+        <item quantity="one">Kumele okungenani iqukathe amagama angu-%d</item>
+        <item quantity="other">Kumele okungenani iqukathe amagama angu-%d</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_lowercase">
+        <item quantity="one">Kumele iqukathe okungenani amagama angu-%d eliyizinhlamvu ezincane</item>
+        <item quantity="other">Kumele iqukathe okungenani amagama angu-%d eliyizinhlamvu ezincane</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_nonletter">
+        <item quantity="one">Kumele iqukathe okungenani okungu-%d okungezona izinhlamvu</item>
+        <item quantity="other">Kumele iqukathe okungenani okungu-%d okungezona izinhlamvu</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_numeric">
+        <item quantity="one">Kumele iqukathe okungenani amadijithi angu-%d ayizinombolo</item>
+        <item quantity="other">Kumele iqukathe okungenani amadijithi angu-%d ayizinombolo</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_symbols">
+        <item quantity="one">Kumele iqukathe okungenani amasimbuli angu-%d abalulekile</item>
+        <item quantity="other">Kumele iqukathe okungenani amasimbuli angu-%d abalulekile</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_uppercase">
+        <item quantity="one">Kumele iqukathe okungenani izinhlamvu ezingu-%d ezingofeleba</item>
+        <item quantity="other">Kumele iqukathe okungenani izinhlamvu ezingu-%d ezingofeleba</item>
+    </plurals>
+    <plurals name="mobile_network_summary_count">
+        <item quantity="one">%1$d Ama-SIM</item>
+        <item quantity="other">%1$d Ama-SIM</item>
+    </plurals>
+    <plurals name="runtime_permissions_additional_count">
+        <item quantity="one">%d izimvume ezingeziwe</item>
+        <item quantity="other">%d izimvume ezingeziwe</item>
+    </plurals>
+    <plurals name="show_dev_countdown">
+        <item quantity="one">Manje usalelwe yizinyathelo ezingu-%1$d ukuthi ube ngunjiniyela.</item>
+        <item quantity="other">Manje usalelwe yizinyathelo ezingu-%1$d ukuthi ube ngunjiniyela.</item>
+    </plurals>
+    <plurals name="user_limit_reached_message">
+        <item quantity="one">Ungadala kufikela kubasebenzisi abangu-%d.</item>
+        <item quantity="other">Ungadala kufikela kubasebenzisi abangu-%d.</item>
+    </plurals>
+    <plurals name="wifi_tether_connected_summary">
+        <item quantity="one">%1$d amadivayisi axhunyiwe</item>
+        <item quantity="other">%1$d amadivayisi axhunyiwe</item>
+    </plurals>
+</resources>

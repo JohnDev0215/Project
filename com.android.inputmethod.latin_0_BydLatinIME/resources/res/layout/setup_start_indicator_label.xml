@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <view
+        android:gravity="end|center_vertical"
+        android:id="@+id/setup_start_label"
+        android:layout_width="0dp"
+        android:text="@string/setup_start_action"
+        android:layout_weight="1"
+        class="com.android.inputmethod.latin.setup.SetupStartIndicatorView$LabelView"
+        style="@style/setupStepActionLabelStyleCommon"/>
+    <view
+        android:id="@+id/setup_start_indicator"
+        class="com.android.inputmethod.latin.setup.SetupStartIndicatorView$IndicatorView"
+        style="@style/setupStepStartIndicatorStyle"/>
+</merge>

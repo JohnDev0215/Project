@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<adaptive-icon xmlns:android="http://schemas.android.com/apk/res/android">
+    <foreground>
+        <inset
+            android:drawable="@android:drawable/edit_query_background"
+            android:insetLeft="25%"
+            android:insetRight="25%"
+            android:insetTop="25%"
+            android:insetBottom="25%"/>
+    </foreground>
+    <background>
+        <color android:color="@android:color/white"/>
+    </background>
+</adaptive-icon>

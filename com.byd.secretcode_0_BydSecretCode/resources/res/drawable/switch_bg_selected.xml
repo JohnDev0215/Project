@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <gradient
+        android:startColor="@color/seekbar_FF1590FA"
+        android:endColor="@color/seekbar_FF00ACEB"
+        android:useLevel="true"
+        android:angle="45"
+        android:type="radial"
+        android:centerX="0"
+        android:centerY="0"
+        android:gradientRadius="90"/>
+    <size
+        android:height="48dp"
+        android:width="64dp"/>
+    <corners android:radius="30dp"/>
+    <stroke
+        android:width="0dp"
+        android:color="#00000000"
+        android:dashWidth="0dp"
+        android:dashGap="0dp"/>
+</shape>

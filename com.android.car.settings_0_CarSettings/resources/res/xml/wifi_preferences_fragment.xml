@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" xmlns:settings="http://schemas.android.com/apk/res-auto"
+    android:title="@string/wifi_preferences_title"
+    android:key="@string/psk_wifi_preferences">
+    <SwitchPreference
+        android:icon="@drawable/ic_settings_auto_wifi"
+        android:title="@string/wifi_wakeup"
+        android:key="@string/pk_enable_wifi_wakeup"
+        android:summary="@string/wifi_wakeup_summary"
+        settings:controller="com.android.car.settings.wifi.preferences.WifiWakeupTogglePreferenceController"/>
+    <SwitchPreference
+        android:title="@string/wifi_cellular_fallback_title"
+        android:key="@string/pk_wifi_cellular_fallback"
+        android:summary="@string/wifi_cellular_fallback_summary"
+        settings:controller="com.android.car.settings.wifi.preferences.CellularFallbackTogglePreferenceController"/>
+</PreferenceScreen>

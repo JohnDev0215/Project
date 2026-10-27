@@ -1,0 +1,4 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/text/format/Formatter;->formatBytes(Landroid/content/res/Resources;JI)Landroid/text/format/Formatter$BytesResult;,frameworks/base/core/java/android/text/format/Formatter.java,123,5,123,25,
+Landroid/text/format/Formatter;->formatShortElapsedTime(Landroid/content/Context;J)Ljava/lang/String;,frameworks/base/core/java/android/text/format/Formatter.java,226,5,226,25,
+Landroid/text/format/Formatter;->formatShortElapsedTimeRoundingUpToMinutes(Landroid/content/Context;J)Ljava/lang/String;,frameworks/base/core/java/android/text/format/Formatter.java,282,5,282,25,

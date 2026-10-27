@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="billing_cycle_days_left">
+        <item quantity="one">%d ଦିନ ବାକି ଅଛି</item>
+        <item quantity="other">%d ଦିନ ବାକି ଅଛି</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_letters">
+        <item quantity="one">ଅତିକମରେ ୧ଟି ଅକ୍ଷର ରହିବା ଦରକାର</item>
+        <item quantity="other">ଅତିକମରେ %dଟି ଅକ୍ଷର ରହିବା ଦରକାର</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_lowercase">
+        <item quantity="one">ଅତିକମ୍‌ରେ 1ଟି ଲୋୱର୍‍କେସ୍ ଅକ୍ଷର ରହିବା ଦରକାର</item>
+        <item quantity="other">ଅତିକମ୍‌ରେ %d ଟି ଲୋୱର୍‌କେସ୍‌ ଅକ୍ଷର ରହିବା ଦରକାର</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_nonletter">
+        <item quantity="one">ଅତିକମ୍‌ରେ 1ଟି ବିଶେଷ ଅକ୍ଷର କିମ୍ୱା ସଂଖ୍ୟା ଆବଶ୍ୟକ</item>
+        <item quantity="other">ଅତିକମ୍‌ରେ %dଟି ବିଶେଷ ଅକ୍ଷର କିମ୍ୱା ସଂଖ୍ୟା ଆବଶ୍ୟକ</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_numeric">
+        <item quantity="one">ଅତିକମ୍‌ରେ 1ଟି ସଂଖ୍ୟା ନିହାତି ରହିବା ଦରକାର</item>
+        <item quantity="other">ଅତିକମ୍‌ରେ %dଟି ସଂଖ୍ୟା ନିହାତି ରହିବା ଦରକାର</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_symbols">
+        <item quantity="one">ଅତିକମ୍‌ରେ 1 ବିଶେଷ ସଙ୍କେତ ରହିଥିବା ଜରୁରୀ</item>
+        <item quantity="other">ଅତିକମ୍‌ରେ %d ଟି ବିଶେଷ ସଙ୍କେତ ରହିଥିବା ଜରୁରୀ</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_uppercase">
+        <item quantity="one">ଅତିକମ୍‌ରେ 1ଟି ବଡ଼ ଅକ୍ଷର ଆବଶ୍ୟକ</item>
+        <item quantity="other">ଅତିକମ୍‌ରେ %dଟି ବଡ଼ ଅକ୍ଷର ଆବଶ୍ୟକ</item>
+    </plurals>
+    <plurals name="mobile_network_summary_count">
+        <item quantity="one">%1$dଟି SIM</item>
+        <item quantity="other">%1$dଟି SIM</item>
+    </plurals>
+    <plurals name="runtime_permissions_additional_count">
+        <item quantity="one">%dଟି ଅତିରିକ୍ତ ଅନୁମତି</item>
+        <item quantity="other">%dଟି ଅତିରିକ୍ତ ଅନୁମତି</item>
+    </plurals>
+    <plurals name="show_dev_countdown">
+        <item quantity="one">ଆପଣ ଜଣେ ଡେଭେଲପର୍‍ ହେବାରେ ଆପଣ ବର୍ତ୍ତମାନ %1$dଟି ଷ୍ଟେପ୍‍ ଦୂରରେ ଅଛନ୍ତି।</item>
+        <item quantity="other">ଆପଣ ଜଣେ ଡେଭେଲପର୍‍ ହେବାରେ ଆପଣ ବର୍ତ୍ତମାନ %1$dଟି ଷ୍ଟେପ୍‍ ଦୂରରେ ଅଛନ୍ତି।</item>
+    </plurals>
+    <plurals name="user_limit_reached_message">
+        <item quantity="one">କେବଳ ଜଣେ ବ୍ୟବହାରକାରୀ ତିଆରି କରିହେବ।</item>
+        <item quantity="other">ଆପଣ %d ଜଣ ପର୍ଯ୍ୟନ୍ତ ବ୍ୟବହାରକାରୀ ତିଆରି କରିହେବ।</item>
+    </plurals>
+    <plurals name="wifi_tether_connected_summary">
+        <item quantity="one">%1$dଟି ଡିଭାଇସ୍ ସଂଯୁକ୍ତ ହୋଇଛି</item>
+        <item quantity="other">%1$dଟି ଡିଭାଇସ୍‌ ସଂଯୁକ୍ତ ହୋଇଛି</item>
+    </plurals>
+</resources>

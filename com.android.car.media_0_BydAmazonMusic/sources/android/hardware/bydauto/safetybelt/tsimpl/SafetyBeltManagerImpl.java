@@ -1,0 +1,318 @@
+package android.hardware.bydauto.safetybelt.tsimpl;
+
+import android.content.ContentResolver;
+import android.content.Context;
+import android.hardware.bydauto.AbsTsMyCar;
+import android.hardware.bydauto.BYDAutoEventValue;
+import android.hardware.bydauto.Log;
+import android.hardware.bydauto.TsManagerImpl;
+import android.hardware.bydauto.safetybelt.AbsBYDAutoSafetyBeltListener;
+import android.hardware.bydauto.safetybelt.BYDAutoSafetyBeltDevice;
+import android.provider.Settings;
+import android.util.SparseArray;
+import com.ts.lib.caradapter.CarAdapterManager;
+import com.ts.lib.caradapter.general.CarGeneralAdapterManager;
+import com.ts.lib.caradapter.general.GeneralPacket;
+import com.ts.lib.caradapter.general.OnCarGeneralChangedListener;
+import java.util.Iterator;
+import java.util.concurrent.CopyOnWriteArrayList;
+import spi.c;
+
+/* JADX INFO: loaded from: classes.dex */
+public class SafetyBeltManagerImpl extends AbsTsMyCar {
+    private static final int S_FOR_TEST_VALUE = 1;
+    private static final String S_KEY_FOR_TEST = "key_for_test_SafetyBeltManagerImpl";
+    public static final String TAG = "SafetyBeltManagerImpl";
+    private static volatile SafetyBeltManagerImpl mSafetyBeltManagerImpl;
+    private CarAdapterManager mCarAdapterManager;
+    private ContentResolver mContentResolver;
+    private Context mContext;
+    private int[] mFeatureIds;
+    private int mForTest;
+    private TsManagerImpl mTsManagerImpl;
+    private CarGeneralAdapterManager mTsManger;
+    private final CopyOnWriteArrayList<AbsBYDAutoSafetyBeltListener> mAbsBydAutoSafetyBeltListeners = new CopyOnWriteArrayList<>();
+    private boolean mIgnoreBydPermission = false;
+    private BYDAutoEventValue bydAutoEventValueListener = new BYDAutoEventValue();
+
+    private SafetyBeltManagerImpl(Context context) {
+        this.mForTest = 0;
+        this.mContext = context;
+        this.mContentResolver = context.getContentResolver();
+        enforcePermission(BYDAutoSafetyBeltDevice.PERMISSION_BYDAUTO_SAFEBELT_COMMON);
+        ContentResolver contentResolver = this.mContentResolver;
+        if (contentResolver != null) {
+            int i = Settings.System.getInt(contentResolver, S_KEY_FOR_TEST, 0);
+            this.mForTest = i;
+            if (1 == i) {
+                return;
+            }
+        }
+        TsManagerImpl tsManagerImpl = TsManagerImpl.getInstance(context);
+        this.mTsManagerImpl = tsManagerImpl;
+        tsManagerImpl.setOnGeneralChangedListener(new OnCarGeneralChangedListener() { // from class: android.hardware.bydauto.safetybelt.tsimpl.SafetyBeltManagerImpl.1
+            public void onCarClusterBrightnessChanged(int i2) {
+            }
+
+            public void onCarGeneralBinderChanged(boolean z) {
+            }
+
+            public void onCarGeneralChanged(int i2, int i3, GeneralPacket generalPacket) {
+                if (SafetyBeltManagerImpl.this.mAbsBydAutoSafetyBeltListeners.isEmpty()) {
+                    return;
+                }
+                try {
+                    SafetyBeltManagerImpl.this.safeBeltCallback(i2, i3, generalPacket);
+                } catch (Exception unused) {
+                    Log.e(SafetyBeltManagerImpl.TAG, "safeBeltCallback is error");
+                }
+            }
+        });
+    }
+
+    private void enforcePermission(String str) {
+        if (!this.mIgnoreBydPermission && this.mContext.checkCallingOrSelfPermission(str) != 0) {
+            throw new SecurityException(c.f("requires permission ", str));
+        }
+    }
+
+    public static SafetyBeltManagerImpl getInstance(Context context) {
+        if (mSafetyBeltManagerImpl == null) {
+            synchronized (SafetyBeltManagerImpl.class) {
+                if (mSafetyBeltManagerImpl == null) {
+                    mSafetyBeltManagerImpl = new SafetyBeltManagerImpl(context);
+                }
+            }
+        }
+        return mSafetyBeltManagerImpl;
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public void safeBeltCallback(int i, int i2, GeneralPacket generalPacket) {
+        if (generalPacket == null) {
+            Log.e(TAG, "generaPacket is null");
+        }
+        c.y("generaPacket propertyId:", i, TAG);
+        if (i == 557860875) {
+            Iterator<AbsBYDAutoSafetyBeltListener> it = this.mAbsBydAutoSafetyBeltListeners.iterator();
+            while (it.hasNext()) {
+                it.next().onDriverBeltStatusChanged(generalPacket.getDriverBeltStatusR());
+            }
+            return;
+        }
+        switch (i) {
+            case SafetyBeltHalid.ID_SAFETY_BELT_STATUS_MAIN /* 557860864 */:
+                Iterator<AbsBYDAutoSafetyBeltListener> it2 = this.mAbsBydAutoSafetyBeltListeners.iterator();
+                while (it2.hasNext()) {
+                    it2.next().onSafetyBeltStatusChanged(1, generalPacket.getSafetyBeltStatusMain());
+                }
+                break;
+            case SafetyBeltHalid.ID_SAFETY_BELT_STATUS_DEPUTY /* 557860865 */:
+                Iterator<AbsBYDAutoSafetyBeltListener> it3 = this.mAbsBydAutoSafetyBeltListeners.iterator();
+                while (it3.hasNext()) {
+                    it3.next().onSafetyBeltStatusChanged(2, generalPacket.getSafetyBeltStatusDeputy());
+                }
+                break;
+            case SafetyBeltHalid.ID_SAFETY_BELT_STATUS_LEFT_TWO_REAR /* 557860866 */:
+                Iterator<AbsBYDAutoSafetyBeltListener> it4 = this.mAbsBydAutoSafetyBeltListeners.iterator();
+                while (it4.hasNext()) {
+                    it4.next().onSafetyBeltStatusChanged(3, generalPacket.getSafetyBeltStatusLeftTwoRear());
+                }
+                break;
+            case SafetyBeltHalid.ID_SAFETY_BELT_STATUS_MID_TWO_REAR /* 557860867 */:
+                Iterator<AbsBYDAutoSafetyBeltListener> it5 = this.mAbsBydAutoSafetyBeltListeners.iterator();
+                while (it5.hasNext()) {
+                    it5.next().onSafetyBeltStatusChanged(5, generalPacket.getSafetyBeltStatusMidTwoRear());
+                }
+                break;
+            case SafetyBeltHalid.ID_SAFETY_BELT_STATUS_RIGHT_TWO_REAR /* 557860868 */:
+                Iterator<AbsBYDAutoSafetyBeltListener> it6 = this.mAbsBydAutoSafetyBeltListeners.iterator();
+                while (it6.hasNext()) {
+                    it6.next().onSafetyBeltStatusChanged(4, generalPacket.getSafetyBeltStatusRightTwoRear());
+                }
+                break;
+            case SafetyBeltHalid.ID_SAFETY_BELT_STATUS_LEFT_THREE_REAR /* 557860869 */:
+                Iterator<AbsBYDAutoSafetyBeltListener> it7 = this.mAbsBydAutoSafetyBeltListeners.iterator();
+                while (it7.hasNext()) {
+                    it7.next().onSafetyBeltStatusChanged(6, generalPacket.getSafetyBeltStatusLeftThreeRear());
+                }
+                break;
+            case SafetyBeltHalid.ID_SAFETY_BELT_STATUS_MID_THREE_REAR /* 557860870 */:
+                Iterator<AbsBYDAutoSafetyBeltListener> it8 = this.mAbsBydAutoSafetyBeltListeners.iterator();
+                while (it8.hasNext()) {
+                    it8.next().onSafetyBeltStatusChanged(8, generalPacket.getSafetyBeltStatusMidThreeRear());
+                }
+                break;
+            case SafetyBeltHalid.ID_SAFETY_BELT_STATUS_RIGHT_THREE_REAR /* 557860871 */:
+                Iterator<AbsBYDAutoSafetyBeltListener> it9 = this.mAbsBydAutoSafetyBeltListeners.iterator();
+                while (it9.hasNext()) {
+                    it9.next().onSafetyBeltStatusChanged(7, generalPacket.getSafetyBeltStatusRightThreeRear());
+                }
+                break;
+        }
+    }
+
+    public BYDAutoEventValue get(int[] iArr, Class<?> cls) {
+        BYDAutoEventValue bYDAutoEventValue = new BYDAutoEventValue();
+        SparseArray sparseArray = new SparseArray();
+        bYDAutoEventValue.intArrayValue = new int[iArr.length];
+        if (iArr.length < 1) {
+            bYDAutoEventValue.intValue = -2147482648;
+        } else {
+            for (int i : iArr) {
+                if (i > 0) {
+                    if (i != 3929) {
+                        switch (i) {
+                            case 4048:
+                                int safetyBeltStatus = getSafetyBeltStatus(3);
+                                bYDAutoEventValue.intValue = safetyBeltStatus;
+                                sparseArray.put(4048, Integer.valueOf(safetyBeltStatus));
+                                break;
+                            case 4049:
+                                int safetyBeltStatus2 = getSafetyBeltStatus(5);
+                                bYDAutoEventValue.intValue = safetyBeltStatus2;
+                                sparseArray.put(4049, Integer.valueOf(safetyBeltStatus2));
+                                break;
+                            case 4050:
+                                int safetyBeltStatus3 = getSafetyBeltStatus(4);
+                                bYDAutoEventValue.intValue = safetyBeltStatus3;
+                                sparseArray.put(4050, Integer.valueOf(safetyBeltStatus3));
+                                break;
+                            default:
+                                Log.v(TAG, "case fail ! please check out");
+                                break;
+                        }
+                    } else {
+                        int safetyBeltStatus4 = getSafetyBeltStatus(2);
+                        bYDAutoEventValue.intValue = safetyBeltStatus4;
+                        sparseArray.put(3929, Integer.valueOf(safetyBeltStatus4));
+                    }
+                    int i2 = 0;
+                    for (int i3 : iArr) {
+                        try {
+                            bYDAutoEventValue.intArrayValue[i2] = ((Integer) sparseArray.get(i3)).intValue();
+                        } catch (Exception unused) {
+                            Log.e(TAG, "Feature id doesn't exist");
+                        }
+                        i2++;
+                    }
+                } else {
+                    bYDAutoEventValue.intValue = -2147482648;
+                }
+            }
+        }
+        return bYDAutoEventValue;
+    }
+
+    public int getDriverBeltStatus() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, " getDriverBeltStatus mForTestValue is 0 execute return");
+            return -1;
+        }
+        if (this.mTsManagerImpl.getGeneralAdapterManager() != null) {
+            return this.mTsManagerImpl.getGeneralAdapterManager().getDriverBeltStatus();
+        }
+        Log.e(TAG, "caradatper still connecting, please wait");
+        return 0;
+    }
+
+    public int getPassengerStatus(int i) {
+        Log.v(TAG, "getPassengerStatus is execute");
+        enforcePermission(BYDAutoSafetyBeltDevice.PERMISSION_BYDAUTO_SAFEBELT_GET);
+        if (1 == this.mForTest) {
+            Log.v(TAG, "getPassengerStatus mForTestValue is 0 execute return");
+            return 0;
+        }
+        CarGeneralAdapterManager carGeneralAdapterManager = this.mTsManger;
+        if (carGeneralAdapterManager != null) {
+            return carGeneralAdapterManager.getPassengerStatus(i);
+        }
+        Log.v(TAG, "caradatper still connecting, please wait");
+        return 0;
+    }
+
+    public int getSafetyBeltStatus(int i) {
+        Log.v(TAG, "getSafetyBeltStatus is execute");
+        enforcePermission(BYDAutoSafetyBeltDevice.PERMISSION_BYDAUTO_SAFEBELT_GET);
+        if (1 == this.mForTest) {
+            c.r(c.k("getSafetyBeltStatus mForTestValue is"), this.mForTest, " execute return", TAG);
+            return 0;
+        }
+        if (this.mTsManagerImpl.getGeneralAdapterManager() == null) {
+            Log.e(TAG, "caradatper still connecting, please wait");
+            return 0;
+        }
+        if (i == 1) {
+            return this.mTsManagerImpl.getGeneralAdapterManager().getSafetyBeltStatusMain();
+        }
+        if (i == 2) {
+            return this.mTsManagerImpl.getGeneralAdapterManager().getSafetyBeltStatusDeputy();
+        }
+        if (i == 3) {
+            return this.mTsManagerImpl.getGeneralAdapterManager().getSafetyBeltStatusLeftTwoRear();
+        }
+        if (i == 5) {
+            return this.mTsManagerImpl.getGeneralAdapterManager().getSafetyBeltStatusMidTwoRear();
+        }
+        if (i == 4) {
+            return this.mTsManagerImpl.getGeneralAdapterManager().getSafetyBeltStatusRightTwoRear();
+        }
+        if (i == 6) {
+            return this.mTsManagerImpl.getGeneralAdapterManager().getSafetyBeltStatusLeftThreeRear();
+        }
+        if (i == 8) {
+            return this.mTsManagerImpl.getGeneralAdapterManager().getSafetyBeltStatusMidThreeRear();
+        }
+        if (i == 7) {
+            return this.mTsManagerImpl.getGeneralAdapterManager().getSafetyBeltStatusRightThreeRear();
+        }
+        return 0;
+    }
+
+    @Override // android.hardware.bydauto.AbsTsMyCar
+    public void onDataEventChanged(int i, BYDAutoEventValue bYDAutoEventValue) {
+    }
+
+    public void registerListener(AbsBYDAutoSafetyBeltListener absBYDAutoSafetyBeltListener) {
+        registerListener(absBYDAutoSafetyBeltListener, new int[0]);
+    }
+
+    @Override // android.hardware.bydauto.AbsTsMyCar
+    public int setForOneFeatureId(int i, Object obj) {
+        return 0;
+    }
+
+    public void unregisterListener(AbsBYDAutoSafetyBeltListener absBYDAutoSafetyBeltListener) {
+        Log.d(TAG, "unregisterListener is run. ");
+        enforcePermission(BYDAutoSafetyBeltDevice.PERMISSION_BYDAUTO_SAFEBELT_COMMON);
+        if (1 == this.mForTest) {
+            c.v(c.k("unregisterListener mForTestValue is "), this.mForTest, " execute return", TAG);
+        } else {
+            this.mAbsBydAutoSafetyBeltListeners.remove(absBYDAutoSafetyBeltListener);
+            unregisterConnectListener(absBYDAutoSafetyBeltListener);
+        }
+    }
+
+    public void registerListener(AbsBYDAutoSafetyBeltListener absBYDAutoSafetyBeltListener, int[] iArr) {
+        StringBuilder sb = new StringBuilder();
+        sb.append(this.mContext.getPackageName());
+        sb.append(" byd_subscribe safebelt listener ");
+        sb.append(absBYDAutoSafetyBeltListener);
+        sb.append(" featureIDs = ");
+        c.s(iArr, sb, TAG);
+        if (absBYDAutoSafetyBeltListener == null) {
+            return;
+        }
+        if (1 == this.mForTest) {
+            c.v(c.k("registerListener one para mForTestValue is"), this.mForTest, " execute return", TAG);
+            return;
+        }
+        enforcePermission(BYDAutoSafetyBeltDevice.PERMISSION_BYDAUTO_SAFEBELT_COMMON);
+        if (!this.mAbsBydAutoSafetyBeltListeners.contains(absBYDAutoSafetyBeltListener)) {
+            this.mAbsBydAutoSafetyBeltListeners.add(absBYDAutoSafetyBeltListener);
+        }
+        setFeatureIds(iArr);
+        registerConnectListener(this.mContext, absBYDAutoSafetyBeltListener);
+        TsManagerImpl.getInstance(this.mContext).registerGeneralCallback();
+    }
+}

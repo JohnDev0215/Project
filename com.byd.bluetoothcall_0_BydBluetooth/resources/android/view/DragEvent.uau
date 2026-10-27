@@ -1,0 +1,4 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/view/DragEvent;->mClipDescription:Landroid/content/ClipDescription;,frameworks/base/core/java/android/view/DragEvent.java,133,5,133,25,
+Landroid/view/DragEvent;->mClipData:Landroid/content/ClipData;,frameworks/base/core/java/android/view/DragEvent.java,135,5,135,25,
+Landroid/view/DragEvent;->obtain(Landroid/view/DragEvent;)Landroid/view/DragEvent;,frameworks/base/core/java/android/view/DragEvent.java,319,5,319,25,

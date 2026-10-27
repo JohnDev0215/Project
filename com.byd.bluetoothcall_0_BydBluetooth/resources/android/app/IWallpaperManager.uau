@@ -1,0 +1,7 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/app/IWallpaperManager;->setWallpaperComponent(Landroid/content/ComponentName;)V,frameworks/base/core/java/android/app/IWallpaperManager.aidl,59,1,59,25,
+Landroid/app/IWallpaperManager;->getWallpaper(Ljava/lang/String;Landroid/app/IWallpaperManagerCallback;ILandroid/os/Bundle;I)Landroid/os/ParcelFileDescriptor;,frameworks/base/core/java/android/app/IWallpaperManager.aidl,67,1,67,25,
+Landroid/app/IWallpaperManager;->getWallpaperInfo(I)Landroid/app/WallpaperInfo;,frameworks/base/core/java/android/app/IWallpaperManager.aidl,87,1,87,25,
+Landroid/app/IWallpaperManager;->hasNamedWallpaper(Ljava/lang/String;)Z,frameworks/base/core/java/android/app/IWallpaperManager.aidl,98,1,98,25,
+Landroid/app/IWallpaperManager;->getWidthHint(I)I,frameworks/base/core/java/android/app/IWallpaperManager.aidl,110,1,110,25,
+Landroid/app/IWallpaperManager;->getHeightHint(I)I,frameworks/base/core/java/android/app/IWallpaperManager.aidl,116,1,116,25,

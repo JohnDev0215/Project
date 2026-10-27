@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@android:id/background"
+        android:height="@dimen/base_list_item_progress_bar_height">
+        <shape android:shape="rectangle">
+            <corners android:radius="2dp"/>
+            <solid android:color="?attr/progress_bar_bg"/>
+        </shape>
+    </item>
+    <item
+        android:id="@android:id/progress"
+        android:height="@dimen/base_list_item_progress_bar_height">
+        <clip>
+            <shape android:shape="rectangle">
+                <corners android:radius="2dp"/>
+                <solid android:color="?attr/progress_bar_progress"/>
+            </shape>
+        </clip>
+    </item>
+</layer-list>

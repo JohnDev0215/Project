@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+    <fragment
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:id="@+id/nav_host_fragment_content_main"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:defaultNavHost="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navGraph="@navigation/nav_graph"/>
+    <Button
+        android:textColor="@android:color/black"
+        android:id="@+id/show_dialog_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="@dimen/dp_272"
+        android:text="show dialog"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintVertical_bias="0.25"/>
+    <Button
+        android:id="@+id/stop_service"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="stopService"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/nav_host_fragment_content_main"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/show_dialog_btn"/>
+    <Button
+        android:textColor="@android:color/black"
+        android:id="@+id/main_test_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="测试Button"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/nav_host_fragment_content_main"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/stop_service"
+        app:layout_constraintVertical_bias="0.25"/>
+    <Button
+        android:textColor="@android:color/black"
+        android:id="@+id/clear_temp_sn_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="clear tempe sn from sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/nav_host_fragment_content_main"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/main_test_btn"
+        app:layout_constraintVertical_bias="0.25"/>
+    <TextView
+        android:id="@+id/get_transport_mode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Current Transport Mode is"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/nav_host_fragment_content_main"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/clear_temp_sn_btn"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

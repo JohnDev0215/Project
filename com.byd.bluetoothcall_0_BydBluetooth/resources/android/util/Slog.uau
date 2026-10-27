@@ -1,0 +1,13 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/util/Slog;->v(Ljava/lang/String;Ljava/lang/String;)I,frameworks/base/core/java/android/util/Slog.java,30,5,30,25,
+Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I,frameworks/base/core/java/android/util/Slog.java,40,5,40,25,
+Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I,frameworks/base/core/java/android/util/Slog.java,45,5,45,25,
+Landroid/util/Slog;->i(Ljava/lang/String;Ljava/lang/String;)I,frameworks/base/core/java/android/util/Slog.java,51,5,51,25,
+Landroid/util/Slog;->w(Ljava/lang/String;Ljava/lang/String;)I,frameworks/base/core/java/android/util/Slog.java,61,5,61,25,
+Landroid/util/Slog;->w(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I,frameworks/base/core/java/android/util/Slog.java,66,5,66,25,
+Landroid/util/Slog;->e(Ljava/lang/String;Ljava/lang/String;)I,frameworks/base/core/java/android/util/Slog.java,76,5,76,25,
+Landroid/util/Slog;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I,frameworks/base/core/java/android/util/Slog.java,81,5,81,25,
+Landroid/util/Slog;->wtf(Ljava/lang/String;Ljava/lang/String;)I,frameworks/base/core/java/android/util/Slog.java,92,5,92,25,
+Landroid/util/Slog;->wtfStack(Ljava/lang/String;Ljava/lang/String;)I,frameworks/base/core/java/android/util/Slog.java,109,5,109,88,maxTargetSdk=28&trackingBug=115609023L
+Landroid/util/Slog;->wtf(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I,frameworks/base/core/java/android/util/Slog.java,128,5,128,25,
+Landroid/util/Slog;->println(ILjava/lang/String;Ljava/lang/String;)I,frameworks/base/core/java/android/util/Slog.java,133,5,133,25,

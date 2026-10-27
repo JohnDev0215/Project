@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="billing_cycle_days_left">
+        <item quantity="one">%d ਦਿਨ ਬਾਕੀ</item>
+        <item quantity="other">%d ਦਿਨ ਬਾਕੀ</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_letters">
+        <item quantity="one">ਘੱਟੋ-ਘੱਟ %d ਅੱਖਰ ਸ਼ਾਮਲ ਕਰਨਾ ਲਾਜ਼ਮੀ ਹੈ</item>
+        <item quantity="other">ਘੱਟੋ-ਘੱਟ %d ਅੱਖਰ ਸ਼ਾਮਲ ਕਰਨੇ ਲਾਜ਼ਮੀ ਹਨ</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_lowercase">
+        <item quantity="one">ਘੱਟੋ-ਘੱਟ %d ਛੋਟੇ ਅੱਖਰ ਸ਼ਾਮਲ ਕਰਨਾ ਲਾਜ਼ਮੀ ਹੈ</item>
+        <item quantity="other">ਘੱਟੋ-ਘੱਟ %d ਛੋਟੇ ਅੱਖਰ ਸ਼ਾਮਲ ਕਰਨੇ ਲਾਜ਼ਮੀ ਹਨ</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_nonletter">
+        <item quantity="one">ਘੱਟੋ-ਘੱਟ %d ਗੈਰ-ਅੱਖਰੀ ਅੱਖਰ-ਚਿੰਨ੍ਹ ਸ਼ਾਮਲ ਕਰਨਾ ਲਾਜ਼ਮੀ ਹੈ</item>
+        <item quantity="other">ਘੱਟੋ-ਘੱਟ %d ਗੈਰ-ਅੱਖਰੀ ਅੱਖਰ-ਚਿੰਨ੍ਹ ਸ਼ਾਮਲ ਕਰਨੇ ਲਾਜ਼ਮੀ ਹਨ</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_numeric">
+        <item quantity="one">ਘੱਟੋ-ਘੱਟ %d ਸੰਖਿਆਤਮਿਕ ਅੰਕ ਸ਼ਾਮਲ ਕਰਨਾ ਲਾਜ਼ਮੀ ਹੈ</item>
+        <item quantity="other">ਘੱਟੋ-ਘੱਟ %d ਸੰਖਿਆਤਮਿਕ ਅੰਕ ਸ਼ਾਮਲ ਕਰਨੇ ਲਾਜ਼ਮੀ ਹਨ</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_symbols">
+        <item quantity="one">ਘੱਟੋ-ਘੱਟ %d ਖਾਸ ਚਿੰਨ੍ਹ ਸ਼ਾਮਲ ਕਰਨਾ ਲਾਜ਼ਮੀ ਹੈ</item>
+        <item quantity="other">ਘੱਟੋ-ਘੱਟ %d ਖਾਸ ਚਿੰਨ੍ਹ ਸ਼ਾਮਲ ਕਰਨੇ ਲਾਜ਼ਮੀ ਹਨ</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_uppercase">
+        <item quantity="one">ਘੱਟੋ-ਘੱਟ %d ਵੱਡੇ ਅੱਖਰ ਸ਼ਾਮਲ ਕਰਨਾ ਲਾਜ਼ਮੀ ਹੈ</item>
+        <item quantity="other">ਘੱਟੋ-ਘੱਟ %d ਵੱਡੇ ਅੱਖਰ ਸ਼ਾਮਲ ਕਰਨੇ ਲਾਜ਼ਮੀ ਹਨ</item>
+    </plurals>
+    <plurals name="mobile_network_summary_count">
+        <item quantity="one">%1$d ਸਿਮ</item>
+        <item quantity="other">%1$d ਸਿਮ</item>
+    </plurals>
+    <plurals name="runtime_permissions_additional_count">
+        <item quantity="one">%d ਵਧੀਕ ਇਜਾਜ਼ਤ</item>
+        <item quantity="other">%d ਵਧੀਕ ਇਜਾਜ਼ਤਾਂ</item>
+    </plurals>
+    <plurals name="show_dev_countdown">
+        <item quantity="one">ਤੁਸੀਂ ਹੁਣ ਇੱਕ ਵਿਕਾਸਕਾਰ ਬਣਨ ਤੋਂ%1$d ਕਦਮ ਦੂਰ ਹੋ।</item>
+        <item quantity="other">ਤੁਸੀਂ ਹੁਣ ਇੱਕ ਵਿਕਾਸਕਾਰ ਬਣਨ ਤੋਂ %1$d ਕਦਮ ਦੂਰ ਹੋ।</item>
+    </plurals>
+    <plurals name="user_limit_reached_message">
+        <item quantity="one">ਤੁਸੀਂ %d ਵਰਤੋਂਕਾਰ ਬਣਾ ਸਕਦੇ ਹੋ।</item>
+        <item quantity="other">ਤੁਸੀਂ %d ਵਰਤੋਂਕਾਰ ਬਣਾ ਸਕਦੇ ਹੋ।</item>
+    </plurals>
+    <plurals name="wifi_tether_connected_summary">
+        <item quantity="one">%1$d ਡੀਵਾਈਸ ਕਨੈਕਟ ਕੀਤਾ ਗਿਆ</item>
+        <item quantity="other">%1$d ਡੀਵਾਈਸ ਕਨੈਕਟ ਕੀਤੇ ਗਏ</item>
+    </plurals>
+</resources>

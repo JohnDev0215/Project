@@ -1,0 +1,8 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/hardware/display/WifiDisplay;->getDeviceAddress()Ljava/lang/String;,frameworks/base/core/java/android/hardware/display/WifiDisplay.java,80,5,80,25,
+Landroid/hardware/display/WifiDisplay;->getDeviceName()Ljava/lang/String;,frameworks/base/core/java/android/hardware/display/WifiDisplay.java,88,5,88,25,
+Landroid/hardware/display/WifiDisplay;->getDeviceAlias()Ljava/lang/String;,frameworks/base/core/java/android/hardware/display/WifiDisplay.java,100,5,100,25,
+Landroid/hardware/display/WifiDisplay;->isAvailable()Z,frameworks/base/core/java/android/hardware/display/WifiDisplay.java,108,5,108,25,
+Landroid/hardware/display/WifiDisplay;->canConnect()Z,frameworks/base/core/java/android/hardware/display/WifiDisplay.java,116,5,116,25,
+Landroid/hardware/display/WifiDisplay;->isRemembered()Z,frameworks/base/core/java/android/hardware/display/WifiDisplay.java,124,5,124,25,
+Landroid/hardware/display/WifiDisplay;->equals(Landroid/hardware/display/WifiDisplay;)Z,frameworks/base/core/java/android/hardware/display/WifiDisplay.java,146,5,146,25,

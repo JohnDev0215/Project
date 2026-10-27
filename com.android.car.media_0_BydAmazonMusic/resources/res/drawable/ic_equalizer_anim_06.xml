@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:height="128dp"
+    android:width="128dp"
+    android:viewportWidth="128"
+    android:viewportHeight="128">
+    <path
+        android:pathData="M10,81L10,119"
+        android:strokeColor="@color/byd_play_list_active_anim"
+        android:strokeWidth="16"/>
+    <path
+        android:pathData="M46,42L46,119"
+        android:strokeColor="@color/byd_play_list_active_anim"
+        android:strokeWidth="16"/>
+    <path
+        android:pathData="M82,58L82,119"
+        android:strokeColor="@color/byd_play_list_active_anim"
+        android:strokeWidth="16"/>
+    <path
+        android:pathData="M118,27L118,119"
+        android:strokeColor="@color/byd_play_list_active_anim"
+        android:strokeWidth="16"/>
+</vector>

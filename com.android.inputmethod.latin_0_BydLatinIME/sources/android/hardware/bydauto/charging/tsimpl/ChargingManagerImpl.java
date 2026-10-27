@@ -1,0 +1,3163 @@
+package android.hardware.bydauto.charging.tsimpl;
+
+import android.content.ContentResolver;
+import android.content.Context;
+import android.hardware.bydauto.AbsTsMyCar;
+import android.hardware.bydauto.BYDAutoEventValue;
+import android.hardware.bydauto.Log;
+import android.hardware.bydauto.TsManagerImpl;
+import android.hardware.bydauto.charging.AbsBYDAutoChargingListener;
+import android.hardware.bydauto.charging.BYDAutoChargingDevice;
+import android.hardware.bydauto_test.TestChargingManagerImplCallback;
+import android.provider.Settings;
+import android.util.SparseArray;
+import com.ts.lib.caradapter.body.CarBodyPacket;
+import com.ts.lib.caradapter.body.OnChargingChangedListener;
+import java.util.Arrays;
+import java.util.Iterator;
+import java.util.concurrent.CopyOnWriteArrayList;
+
+/* JADX INFO: loaded from: classes.dex */
+public class ChargingManagerImpl extends AbsTsMyCar {
+    private static final int BASE_MILLIONS_SECOND = 1000;
+    private static final int BASE_SECOND = 60;
+    private static final int CHARGING_COMMAND_INVALID_VALUE = 0;
+    private static final float CHARGING_COMMAND_INVALID_VALUE_FLOAT = 0.0f;
+    private static final float CHARGING_COMMAND_INVALID_VALUE_float = 0.0f;
+    private static final String S_KEY_FOR_TEST = "KEY_FOR_TEST_ChargingManagerImpl";
+    private static final int S_VALUE_FOR_TEST = 1;
+    private static final String TAG = "ChargingManagerImpl";
+    private static volatile ChargingManagerImpl mInstance;
+    private AbsBYDAutoChargingListener mAbsBydAutoChargingListener;
+    private int mAcChargingLimitR;
+    private ContentResolver mContentResolver;
+    private Context mContext;
+    private int[] mFeatureIds;
+    private int mForTestValue;
+    private int[] mHevChargePlanEndTimeR;
+    private TestChargingManagerImplCallback mTestCallback;
+    private TsManagerImpl mTsManagerImpl;
+    private boolean mIgnoreBydPermission = false;
+    private int evYear = 0;
+    private int evMonth = 0;
+    private int evDay = 0;
+    private int evHour = 0;
+    private int evMinute = 0;
+    private int evYearEnd = 0;
+    private int evMonthEnd = 0;
+    private int evDayEnd = 0;
+    private int evHourEnd = 0;
+    private int evMinuteEnd = 0;
+    private int dmYear = 0;
+    private int dmMonth = 0;
+    private int dmDay = 0;
+    private int dmHour = 0;
+    private int dmMinute = 0;
+    private int dmYearEnd = 0;
+    private int dmMonthEnd = 0;
+    private int dmDayEnd = 0;
+    private int dmHourEnd = 0;
+    private int dmMinuteEnd = 0;
+    private int carPlanYear = 0;
+    private int carPlanMonth = 0;
+    private int carPlanDay = 0;
+    private int carPlanHour = 0;
+    private int carPlanMinute = 0;
+    private int syncTimeYear = 0;
+    private int syncTimeMonth = 0;
+    private int syncTimeDay = 0;
+    private int syncTimeHour = 0;
+    private int syncTimeMinute = 0;
+    private int mHevChargePlanStartTimeYearR = 0;
+    private int mHevChargePlanStartTimeMonthR = 0;
+    private int mHevChargePlanStartTimeYearDayR = 0;
+    private int mHevChargePlanStartTimeYearHourR = 0;
+    private int mHevChargePlanStartTimeYearMinuteR = 0;
+    private int mHevChargePlaneEndTimeYearR = 0;
+    private int mHevChargePlanEndTimeMonthR = 0;
+    private int mHevChargePlanEndTimeYearDayR = 0;
+    private int mHevChargePlanEndTimeYearHourR = 0;
+    private int mHevChargePlanEndTimeYearMinuteR = 0;
+    private BYDAutoEventValue bydAutoEventValueListener = new BYDAutoEventValue();
+    private final CopyOnWriteArrayList<AbsBYDAutoChargingListener> mAbsBydAutoChargingListeners = new CopyOnWriteArrayList<>();
+    private int[] mDisChargeTime = new int[2];
+
+    ChargingManagerImpl(Context context) {
+        this.mForTestValue = 0;
+        this.mContext = context;
+        this.mContentResolver = context.getContentResolver();
+        enforcePermission(BYDAutoChargingDevice.PERMISSION_BYDAUTO_CHARGING_COMMON);
+        ContentResolver contentResolver = this.mContentResolver;
+        if (contentResolver != null) {
+            int i = Settings.System.getInt(contentResolver, S_KEY_FOR_TEST, 0);
+            this.mForTestValue = i;
+            if (1 == i) {
+                Log.v(TAG, "ChargingManagerImpl mForTestValue is" + this.mForTestValue + " execute return");
+                this.mTestCallback = new TestChargingManagerImplCallback();
+                return;
+            }
+        }
+        TsManagerImpl tsManagerImpl = TsManagerImpl.getInstance(this.mContext);
+        this.mTsManagerImpl = tsManagerImpl;
+        tsManagerImpl.setOnChargingChangedListener(new OnChargingChangedListener() { // from class: android.hardware.bydauto.charging.tsimpl.ChargingManagerImpl.1
+            public void onChargingChanged(int i2, int i3, CarBodyPacket carBodyPacket) {
+                if (!ChargingManagerImpl.this.mAbsBydAutoChargingListeners.isEmpty()) {
+                    ChargingManagerImpl.this.charginCallback(i2, i3, carBodyPacket);
+                } else {
+                    Log.v(ChargingManagerImpl.TAG, "mAbsBydAutoChargingListener is null. ");
+                }
+            }
+
+            public void onBinderStateChanged(boolean z) {
+                Log.v(ChargingManagerImpl.TAG, "onBinderStateChanged is " + z);
+            }
+        });
+    }
+
+    public static ChargingManagerImpl getInstance(Context context) {
+        if (mInstance == null) {
+            synchronized (ChargingManagerImpl.class) {
+                if (mInstance == null) {
+                    mInstance = new ChargingManagerImpl(context);
+                }
+            }
+        }
+        return mInstance;
+    }
+
+    private void enforcePermission(String str) {
+        if (!this.mIgnoreBydPermission && this.mContext.checkCallingOrSelfPermission(str) != 0) {
+            throw new SecurityException("requires permission " + str);
+        }
+    }
+
+    public int getChargerFaultState() {
+        Log.v(TAG, "getChargerFaultState is run. ");
+        enforcePermission(BYDAutoChargingDevice.PERMISSION_BYDAUTO_CHARGING_GET);
+        if (1 == this.mForTestValue) {
+            Log.v(TAG, "getChargerFaultState mForTestValue is" + this.mForTestValue + " execute return");
+            return 0;
+        }
+        if (this.mTsManagerImpl.getChargingAdapterManager() == null) {
+            Log.v(TAG, "caradatper still connecting, please wait");
+            return 0;
+        }
+        return this.mTsManagerImpl.getChargingAdapterManager().getChargerFaultState();
+    }
+
+    public int getChargerWorkState() {
+        Log.v(TAG, "getChargerWorkState is run. ");
+        enforcePermission(BYDAutoChargingDevice.PERMISSION_BYDAUTO_CHARGING_GET);
+        if (1 == this.mForTestValue) {
+            Log.v(TAG, "getChargerWorkState mForTestValue is " + this.mForTestValue + " execute return");
+            return 0;
+        }
+        if (this.mTsManagerImpl.getChargingAdapterManager() == null) {
+            Log.v(TAG, "caradatper still connecting, please wait");
+            return 0;
+        }
+        return this.mTsManagerImpl.getChargingAdapterManager().getChargerWorkState();
+    }
+
+    public float getChargingCapacity() {
+        Log.v(TAG, "getChargingCapacity is run. ");
+        enforcePermission(BYDAutoChargingDevice.PERMISSION_BYDAUTO_CHARGING_GET);
+        if (1 == this.mForTestValue) {
+            Log.v(TAG, "getChargingCapacity mForTestValue is " + this.mForTestValue + " execute return");
+            return 0.0f;
+        }
+        if (this.mTsManagerImpl.getChargingAdapterManager() == null) {
+            Log.v(TAG, "caradatper still connecting, please wait");
+            return 0.0f;
+        }
+        return this.mTsManagerImpl.getChargingAdapterManager().getChargingCapacity();
+    }
+
+    public int getChargingType() {
+        Log.v(TAG, "getChargingType is run. ");
+        enforcePermission(BYDAutoChargingDevice.PERMISSION_BYDAUTO_CHARGING_GET);
+        if (1 == this.mForTestValue) {
+            Log.v(TAG, "getChargingType mForTestValue is " + this.mForTestValue + " execute return");
+            return 0;
+        }
+        if (this.mTsManagerImpl.getChargingAdapterManager() == null) {
+            Log.v(TAG, "caradatper still connecting, please wait");
+            return 0;
+        }
+        return this.mTsManagerImpl.getChargingAdapterManager().getChargingType();
+    }
+
+    public int[] getChargingRestTime() {
+        Log.v(TAG, "getChargingRestTime is run. ");
+        enforcePermission(BYDAutoChargingDevice.PERMISSION_BYDAUTO_CHARGING_GET);
+        if (1 == this.mForTestValue) {
+            Log.v(TAG, "getChargingRestTime mForTestValue is " + this.mForTestValue + " execute return");
+            return new int[0];
+        }
+        if (this.mTsManagerImpl.getChargingAdapterManager() == null) {
+            Log.v(TAG, "caradatper still connecting, please wait");
+            return new int[0];
+        }
+        return this.mTsManagerImpl.getChargingAdapterManager().getChargingRestTime();
+    }
+
+    public int getChargingCapState(int i) {
+        Log.v(TAG, "getChargingCapState is run. ");
+        enforcePermission(BYDAutoChargingDevice.PERMISSION_BYDAUTO_CHARGING_GET);
+        if (1 == this.mForTestValue) {
+            Log.v(TAG, "getChargingCapState mForTestValue is " + this.mForTestValue + " execute return");
+            return 0;
+        }
+        if (this.mTsManagerImpl.getChargingAdapterManager() == null) {
+            Log.v(TAG, "caradatper still connecting, please wait");
+            return 0;
+        }
+        if (i == 3) {
+            return this.mTsManagerImpl.getChargingAdapterManager().getChargingCapStateLeft();
+        }
+        if (i != 4) {
+            return 0;
+        }
+        return this.mTsManagerImpl.getChargingAdapterManager().getChargingCapStateRight();
+    }
+
+    public int getChargingPortLockRebackState() {
+        Log.v(TAG, "getChargingPortLockRebackState is run. ");
+        enforcePermission(BYDAutoChargingDevice.PERMISSION_BYDAUTO_CHARGING_GET);
+        if (1 == this.mForTestValue) {
+            Log.v(TAG, "getChargingPortLockRebackState mForTestValue is " + this.mForTestValue + " execute return");
+            return 0;
+        }
+        if (this.mTsManagerImpl.getChargingAdapterManager() == null) {
+            Log.v(TAG, "caradatper still connecting, please wait");
+            return 0;
+        }
+        return this.mTsManagerImpl.getChargingAdapterManager().getChargingPortLockRebackState();
+    }
+
+    public int getDischargeRequestState() {
+        Log.v(TAG, "getDischargeRequestState is run. ");
+        enforcePermission(BYDAutoChargingDevice.PERMISSION_BYDAUTO_CHARGING_GET);
+        if (1 == this.mForTestValue) {
+            Log.v(TAG, "getDischargeRequestState mForTestValue is " + this.mForTestValue + " execute return");
+            return 0;
+        }
+        if (this.mTsManagerImpl.getChargingAdapterManager() == null) {
+            Log.v(TAG, "caradatper still connecting, please wait");
+            return 0;
+        }
+        return this.mTsManagerImpl.getChargingAdapterManager().getDischargeRequestState();
+    }
+
+    public int getChargerState() {
+        Log.v(TAG, "getChargerState is run. ");
+        enforcePermission(BYDAutoChargingDevice.PERMISSION_BYDAUTO_CHARGING_GET);
+        if (1 == this.mForTestValue) {
+            Log.v(TAG, "getChargerState mForTestValue is " + this.mForTestValue + " execute return");
+            return 0;
+        }
+        if (this.mTsManagerImpl.getChargingAdapterManager() == null) {
+            Log.v(TAG, "caradatper still connecting, please wait");
+            return 0;
+        }
+        return this.mTsManagerImpl.getChargingAdapterManager().getChargerState();
+    }
+
+    public int getChargingGunState() {
+        Log.v(TAG, "getChargingGunState is run. ");
+        enforcePermission(BYDAutoChargingDevice.PERMISSION_BYDAUTO_CHARGING_GET);
+        if (1 == this.mForTestValue) {
+            Log.v(TAG, "getChargingGunState mForTestValue is " + this.mForTestValue + " execute return");
+            return 0;
+        }
+        if (this.mTsManagerImpl.getChargingAdapterManager() == null) {
+            Log.v(TAG, "caradatper still connecting, please wait");
+            return 0;
+        }
+        return this.mTsManagerImpl.getChargingAdapterManager().getChargingGunState();
+    }
+
+    public float getChargingPower() {
+        Log.v(TAG, "getChargingPower is run. ");
+        enforcePermission(BYDAutoChargingDevice.PERMISSION_BYDAUTO_CHARGING_GET);
+        if (1 == this.mForTestValue) {
+            Log.v(TAG, "getChargingPower mForTestValue is " + this.mForTestValue + " execute return");
+            return 0.0f;
+        }
+        if (this.mTsManagerImpl.getChargingAdapterManager() == null) {
+            Log.v(TAG, "caradatper still connecting, please wait");
+            return 0.0f;
+        }
+        return this.mTsManagerImpl.getChargingAdapterManager().getChargingPower();
+    }
+
+    public int getBatteryManagementDeviceState() {
+        Log.v(TAG, "getBatteryManagementDeviceState is run. ");
+        enforcePermission(BYDAutoChargingDevice.PERMISSION_BYDAUTO_CHARGING_GET);
+        if (1 == this.mForTestValue) {
+            Log.v(TAG, "getBatteryManagementDeviceState mForTestValue is " + this.mForTestValue + " execute return");
+            return 0;
+        }
+        if (this.mTsManagerImpl.getChargingAdapterManager() == null) {
+            Log.v(TAG, "caradatper still connecting, please wait");
+            return 0;
+        }
+        return this.mTsManagerImpl.getChargingAdapterManager().getBatteryManagementDeviceState();
+    }
+
+    public int getChargingScheduleEnableState() {
+        Log.v(TAG, "getChargingScheduleEnableState is run. ");
+        enforcePermission(BYDAutoChargingDevice.PERMISSION_BYDAUTO_CHARGING_GET);
+        if (1 == this.mForTestValue) {
+            Log.v(TAG, "getChargingScheduleEnableState mForTestValue is " + this.mForTestValue + " execute return");
+            return 0;
+        }
+        if (this.mTsManagerImpl.getChargingAdapterManager() == null) {
+            Log.v(TAG, "caradatper still connecting, please wait");
+            return 0;
+        }
+        return this.mTsManagerImpl.getChargingAdapterManager().getChargingScheduleEnableState();
+    }
+
+    public int getChargingScheduleState() {
+        Log.v(TAG, "getChargingScheduleState is run. ");
+        enforcePermission(BYDAutoChargingDevice.PERMISSION_BYDAUTO_CHARGING_GET);
+        if (1 == this.mForTestValue) {
+            Log.v(TAG, "getChargingScheduleState mForTestValue is " + this.mForTestValue + " execute return");
+            return 0;
+        }
+        if (this.mTsManagerImpl.getChargingAdapterManager() == null) {
+            Log.v(TAG, "caradatper still connecting, please wait");
+            return 0;
+        }
+        return this.mTsManagerImpl.getChargingAdapterManager().getChargingScheduleState();
+    }
+
+    public int getChargingGunNotInsertedState() {
+        Log.v(TAG, "getChargingGunNotInsertedState is run. ");
+        enforcePermission(BYDAutoChargingDevice.PERMISSION_BYDAUTO_CHARGING_GET);
+        if (1 == this.mForTestValue) {
+            Log.v(TAG, "getChargingGunNotInsertedState mForTestValue is " + this.mForTestValue + " execute return");
+            return 0;
+        }
+        if (this.mTsManagerImpl.getChargingAdapterManager() == null) {
+            Log.v(TAG, "caradatper still connecting, please wait");
+            return 0;
+        }
+        return this.mTsManagerImpl.getChargingAdapterManager().getChargingGunNotInsertedState();
+    }
+
+    public int[] getChargingScheduleTime() {
+        Log.v(TAG, "getChargingScheduleTime is run. ");
+        enforcePermission(BYDAutoChargingDevice.PERMISSION_BYDAUTO_CHARGING_GET);
+        if (1 == this.mForTestValue) {
+            Log.v(TAG, "getChargingScheduleTime mForTestValue is " + this.mForTestValue + " execute return");
+            return new int[0];
+        }
+        if (this.mTsManagerImpl.getChargingAdapterManager() == null) {
+            Log.v(TAG, "caradatper still connecting, please wait");
+            return new int[0];
+        }
+        return this.mTsManagerImpl.getChargingAdapterManager().getChargingScheduleTime();
+    }
+
+    public int getPortCapState(int i) {
+        Log.i(TAG, "getPortCapState is execute");
+        enforcePermission(BYDAutoChargingDevice.PERMISSION_BYDAUTO_CHARGING_GET);
+        if (1 == this.mForTestValue) {
+            Log.v(TAG, "getPortCapState mForTestValue is 0 execute return");
+            return 0;
+        }
+        if (this.mTsManagerImpl.getChargingAdapterManager() == null) {
+            Log.e(TAG, "caradatper still connecting, please wait");
+            return 0;
+        }
+        if (i == 1) {
+            return this.mTsManagerImpl.getChargingAdapterManager().getgetPortCapStateLeftR();
+        }
+        if (i != 2) {
+            return 0;
+        }
+        return this.mTsManagerImpl.getChargingAdapterManager().getgetPortCapStateRightR();
+    }
+
+    public void registerListener(AbsBYDAutoChargingListener absBYDAutoChargingListener) {
+        registerListener(absBYDAutoChargingListener, new int[0]);
+    }
+
+    public void registerListener(AbsBYDAutoChargingListener absBYDAutoChargingListener, int[] iArr) {
+        android.util.Log.i(TAG, this.mContext.getPackageName() + " byd_subscribe charging listener " + absBYDAutoChargingListener + " featureIDs = " + Arrays.toString(iArr));
+        if (absBYDAutoChargingListener == null) {
+            return;
+        }
+        if (1 == this.mForTestValue) {
+            Log.v(TAG, "registerListener one para mForTestValue is " + this.mForTestValue + " execute return");
+            this.mTestCallback.setAbsBYDAutoChargingListener(absBYDAutoChargingListener);
+            return;
+        }
+        enforcePermission(BYDAutoChargingDevice.PERMISSION_BYDAUTO_CHARGING_COMMON);
+        if (!this.mAbsBydAutoChargingListeners.contains(absBYDAutoChargingListener)) {
+            this.mAbsBydAutoChargingListeners.add(absBYDAutoChargingListener);
+        }
+        setFeatureIds(iArr);
+        registerConnectListener(this.mContext, absBYDAutoChargingListener);
+        TsManagerImpl.getInstance(this.mContext).registerChargingCallback();
+    }
+
+    public void unregisterListener(AbsBYDAutoChargingListener absBYDAutoChargingListener) {
+        Log.v(TAG, "unregisterListener is run. ");
+        enforcePermission(BYDAutoChargingDevice.PERMISSION_BYDAUTO_CHARGING_COMMON);
+        if (1 == this.mForTestValue) {
+            Log.v(TAG, "unregisterListener mForTestValue is " + this.mForTestValue + " execute return");
+            this.mTestCallback.removeListener(absBYDAutoChargingListener);
+        } else {
+            if (absBYDAutoChargingListener == null) {
+                return;
+            }
+            this.mAbsBydAutoChargingListeners.remove(absBYDAutoChargingListener);
+            unregisterConnectListener(absBYDAutoChargingListener);
+        }
+    }
+
+    public int getTimerSwitch() {
+        Log.v(TAG, "getTimerSwitch is run. ");
+        enforcePermission(BYDAutoChargingDevice.PERMISSION_BYDAUTO_CHARGING_GET);
+        if (1 == this.mForTestValue) {
+            Log.v(TAG, "getTimerSwitch mForTestValue is " + this.mForTestValue + " execute return");
+        }
+        return 0;
+    }
+
+    public int setTimerSwitch(int i) {
+        Log.v(TAG, "setTimerSwitch is run. ");
+        enforcePermission(BYDAutoChargingDevice.PERMISSION_BYDAUTO_CHARGING_SET);
+        if (1 == this.mForTestValue) {
+            Log.v(TAG, "setTimerSwitch mForTestValue is " + this.mForTestValue + " execute return");
+            return 0;
+        }
+        if (this.mTsManagerImpl.getCarBodyManager() == null) {
+            Log.v(TAG, "caradatper still connecting, please wait");
+            return 0;
+        }
+        return this.mTsManagerImpl.getCarBodyManager().setTimerSwitch(i);
+    }
+
+    public int getTimerType() {
+        Log.v(TAG, "getTimerType is run. ");
+        enforcePermission(BYDAutoChargingDevice.PERMISSION_BYDAUTO_CHARGING_GET);
+        if (1 == this.mForTestValue) {
+            Log.v(TAG, "getTimerType mForTestValue is " + this.mForTestValue + " execute return");
+            return 0;
+        }
+        if (this.mTsManagerImpl.getCarBodyManager() == null) {
+            Log.v(TAG, "caradatper still connecting, please wait");
+            return 0;
+        }
+        return this.mTsManagerImpl.getCarBodyManager().getTimerType();
+    }
+
+    public int setTimerType(int i) {
+        Log.v(TAG, "setTimerType is run. ");
+        enforcePermission(BYDAutoChargingDevice.PERMISSION_BYDAUTO_CHARGING_SET);
+        if (1 == this.mForTestValue) {
+            Log.v(TAG, "setTimerType mForTestValue is " + this.mForTestValue + " execute return");
+            return 0;
+        }
+        if (this.mTsManagerImpl.getCarBodyManager() == null) {
+            Log.v(TAG, "caradatper still connecting, please wait");
+            return 0;
+        }
+        return this.mTsManagerImpl.getCarBodyManager().setTimerType(i);
+    }
+
+    public int getTimerUnitHour() {
+        Log.v(TAG, "getTimerUnitHour is run. ");
+        enforcePermission(BYDAutoChargingDevice.PERMISSION_BYDAUTO_CHARGING_GET);
+        if (1 == this.mForTestValue) {
+            Log.v(TAG, "getTimerUnitHour mForTestValue is " + this.mForTestValue + " execute return");
+            return 0;
+        }
+        if (this.mTsManagerImpl.getCarBodyManager() == null) {
+            Log.v(TAG, "caradatper still connecting, please wait");
+            return 0;
+        }
+        return this.mTsManagerImpl.getCarBodyManager().getTimerUnitHour();
+    }
+
+    public int setTimerUnitHour(int i) {
+        Log.v(TAG, "setTimerUnitHour is run. ");
+        enforcePermission(BYDAutoChargingDevice.PERMISSION_BYDAUTO_CHARGING_SET);
+        if (1 == this.mForTestValue) {
+            Log.v(TAG, "setTimerUnitHour mForTestValue is " + this.mForTestValue + " execute return");
+            return 0;
+        }
+        if (this.mTsManagerImpl.getCarBodyManager() == null) {
+            Log.v(TAG, "caradatper still connecting, please wait");
+            return 0;
+        }
+        return this.mTsManagerImpl.getCarBodyManager().setTimerUnitHour(i);
+    }
+
+    public int getTimerUnitMinite() {
+        Log.v(TAG, "getTimerUnitMinite is run. ");
+        enforcePermission(BYDAutoChargingDevice.PERMISSION_BYDAUTO_CHARGING_GET);
+        if (1 == this.mForTestValue) {
+            Log.v(TAG, "getTimerUnitMinite mForTestValue is " + this.mForTestValue + " execute return");
+            return 0;
+        }
+        if (this.mTsManagerImpl.getCarBodyManager() == null) {
+            Log.v(TAG, "caradatper still connecting, please wait");
+            return 0;
+        }
+        return this.mTsManagerImpl.getCarBodyManager().getTimerUnitMinite();
+    }
+
+    public int setTimerUnitMinite(int i) {
+        Log.v(TAG, "setTimerUnitMinite is run. ");
+        enforcePermission(BYDAutoChargingDevice.PERMISSION_BYDAUTO_CHARGING_SET);
+        if (1 == this.mForTestValue) {
+            Log.v(TAG, "setTimerUnitMinite mForTestValue is " + this.mForTestValue + " execute return");
+            return 0;
+        }
+        if (this.mTsManagerImpl.getCarBodyManager() == null) {
+            Log.v(TAG, "caradatper still connecting, please wait");
+            return 0;
+        }
+        return this.mTsManagerImpl.getCarBodyManager().setTimerUnitMinite(i);
+    }
+
+    public int getTimerCycleMon() {
+        Log.v(TAG, "getTimerCycleMon is run. ");
+        enforcePermission(BYDAutoChargingDevice.PERMISSION_BYDAUTO_CHARGING_GET);
+        if (1 == this.mForTestValue) {
+            Log.v(TAG, "getTimerCycleMon mForTestValue is " + this.mForTestValue + " execute return");
+            return 0;
+        }
+        if (this.mTsManagerImpl.getCarBodyManager() == null) {
+            Log.v(TAG, "caradatper still connecting, please wait");
+            return 0;
+        }
+        return this.mTsManagerImpl.getCarBodyManager().getTimerCycleMon();
+    }
+
+    public int setTimerCycleMon(int i) {
+        Log.v(TAG, "setTimerCycleMon is run. ");
+        enforcePermission(BYDAutoChargingDevice.PERMISSION_BYDAUTO_CHARGING_SET);
+        if (1 == this.mForTestValue) {
+            Log.v(TAG, "setTimerCycleMon mForTestValue is " + this.mForTestValue + " execute return");
+            return 0;
+        }
+        if (this.mTsManagerImpl.getCarBodyManager() == null) {
+            Log.v(TAG, "caradatper still connecting, please wait");
+            return 0;
+        }
+        return this.mTsManagerImpl.getCarBodyManager().setTimerCycleMon(i);
+    }
+
+    public int getTimerCycleTue() {
+        Log.v(TAG, "getTimerCycleTue is run. ");
+        enforcePermission(BYDAutoChargingDevice.PERMISSION_BYDAUTO_CHARGING_GET);
+        if (1 == this.mForTestValue) {
+            Log.v(TAG, "getTimerCycleTue mForTestValue is " + this.mForTestValue + " execute return");
+            return 0;
+        }
+        if (this.mTsManagerImpl.getCarBodyManager() == null) {
+            Log.v(TAG, "caradatper still connecting, please wait");
+            return 0;
+        }
+        return this.mTsManagerImpl.getCarBodyManager().getTimerCycleTue();
+    }
+
+    public int setTimerCycleTue(int i) {
+        Log.v(TAG, "setTimerCycleTue is run. ");
+        enforcePermission(BYDAutoChargingDevice.PERMISSION_BYDAUTO_CHARGING_SET);
+        if (1 == this.mForTestValue) {
+            Log.v(TAG, "setTimerCycleTue mForTestValue is " + this.mForTestValue + " execute return");
+            return 0;
+        }
+        if (this.mTsManagerImpl.getCarBodyManager() == null) {
+            Log.v(TAG, "caradatper still connecting, please wait");
+            return 0;
+        }
+        return this.mTsManagerImpl.getCarBodyManager().setTimerCycleTue(i);
+    }
+
+    public int getTimerCycleWed() {
+        Log.v(TAG, "getTimerCycleWed is run. ");
+        enforcePermission(BYDAutoChargingDevice.PERMISSION_BYDAUTO_CHARGING_GET);
+        if (1 == this.mForTestValue) {
+            Log.v(TAG, "getTimerCycleWed mForTestValue is " + this.mForTestValue + " execute return");
+            return 0;
+        }
+        if (this.mTsManagerImpl.getCarBodyManager() == null) {
+            Log.v(TAG, "caradatper still connecting, please wait");
+            return 0;
+        }
+        return this.mTsManagerImpl.getCarBodyManager().getTimerCycleWed();
+    }
+
+    public int setTimerCycleWed(int i) {
+        Log.v(TAG, "setTimerCycleWed is run. ");
+        enforcePermission(BYDAutoChargingDevice.PERMISSION_BYDAUTO_CHARGING_SET);
+        if (1 == this.mForTestValue) {
+            Log.v(TAG, "setTimerCycleWed mForTestValue is " + this.mForTestValue + " execute return");
+            return 0;
+        }
+        if (this.mTsManagerImpl.getCarBodyManager() == null) {
+            Log.v(TAG, "caradatper still connecting, please wait");
+            return 0;
+        }
+        return this.mTsManagerImpl.getCarBodyManager().setTimerCycleWed(i);
+    }
+
+    public int getTimerCycleThu() {
+        Log.v(TAG, "getTimerCycleThu is run. ");
+        enforcePermission(BYDAutoChargingDevice.PERMISSION_BYDAUTO_CHARGING_GET);
+        if (1 == this.mForTestValue) {
+            Log.v(TAG, "getTimerCycleThu mForTestValue is " + this.mForTestValue + " execute return");
+            return 0;
+        }
+        if (this.mTsManagerImpl.getCarBodyManager() == null) {
+            Log.v(TAG, "caradatper still connecting, please wait");
+            return 0;
+        }
+        return this.mTsManagerImpl.getCarBodyManager().getTimerCycleThu();
+    }
+
+    public int setTimerCycleThu(int i) {
+        Log.v(TAG, "setTimerCycleThu is run. ");
+        enforcePermission(BYDAutoChargingDevice.PERMISSION_BYDAUTO_CHARGING_SET);
+        if (1 == this.mForTestValue) {
+            Log.v(TAG, "setTimerCycleThu mForTestValue is " + this.mForTestValue + " execute return");
+            return 0;
+        }
+        if (this.mTsManagerImpl.getCarBodyManager() == null) {
+            Log.v(TAG, "caradatper still connecting, please wait");
+            return 0;
+        }
+        return this.mTsManagerImpl.getCarBodyManager().setTimerCycleThu(i);
+    }
+
+    public int getTimerCycleFri() {
+        Log.v(TAG, "getTimerCycleFri is run. ");
+        enforcePermission(BYDAutoChargingDevice.PERMISSION_BYDAUTO_CHARGING_GET);
+        if (1 == this.mForTestValue) {
+            Log.v(TAG, "getTimerCycleFri mForTestValue is " + this.mForTestValue + " execute return");
+            return 0;
+        }
+        if (this.mTsManagerImpl.getCarBodyManager() == null) {
+            Log.v(TAG, "caradatper still connecting, please wait");
+            return 0;
+        }
+        return this.mTsManagerImpl.getCarBodyManager().getTimerCycleFri();
+    }
+
+    public int setTimerCycleFri(int i) {
+        Log.v(TAG, "setTimerCycleFri is run. ");
+        enforcePermission(BYDAutoChargingDevice.PERMISSION_BYDAUTO_CHARGING_SET);
+        if (1 == this.mForTestValue) {
+            Log.v(TAG, "setTimerCycleFri mForTestValue is " + this.mForTestValue + " execute return");
+            return 0;
+        }
+        if (this.mTsManagerImpl.getCarBodyManager() == null) {
+            Log.v(TAG, "caradatper still connecting, please wait");
+            return 0;
+        }
+        return this.mTsManagerImpl.getCarBodyManager().setTimerCycleFri(i);
+    }
+
+    public int getTimerCycleSat() {
+        Log.v(TAG, "getTimerCycleSat is run. ");
+        enforcePermission(BYDAutoChargingDevice.PERMISSION_BYDAUTO_CHARGING_GET);
+        if (1 == this.mForTestValue) {
+            Log.v(TAG, "getTimerCycleSat mForTestValue is " + this.mForTestValue + " execute return");
+            return 0;
+        }
+        if (this.mTsManagerImpl.getCarBodyManager() == null) {
+            Log.v(TAG, "caradatper still connecting, please wait");
+            return 0;
+        }
+        return this.mTsManagerImpl.getCarBodyManager().getTimerCycleSat();
+    }
+
+    public int setTimerCycleSat(int i) {
+        Log.v(TAG, "setTimerCycleSat is run. ");
+        enforcePermission(BYDAutoChargingDevice.PERMISSION_BYDAUTO_CHARGING_SET);
+        if (1 == this.mForTestValue) {
+            Log.v(TAG, "setTimerCycleSat mForTestValue is " + this.mForTestValue + " execute return");
+            return 0;
+        }
+        if (this.mTsManagerImpl.getCarBodyManager() == null) {
+            Log.v(TAG, "caradatper still connecting, please wait");
+            return 0;
+        }
+        return this.mTsManagerImpl.getCarBodyManager().setTimerCycleSat(i);
+    }
+
+    public int getTimerCycleSun() {
+        Log.v(TAG, "getTimerCycleSun is run. ");
+        enforcePermission(BYDAutoChargingDevice.PERMISSION_BYDAUTO_CHARGING_GET);
+        if (1 == this.mForTestValue) {
+            Log.v(TAG, "getTimerCycleSun mForTestValue is " + this.mForTestValue + " execute return");
+            return 0;
+        }
+        if (this.mTsManagerImpl.getCarBodyManager() == null) {
+            Log.v(TAG, "caradatper still connecting, please wait");
+            return 0;
+        }
+        return this.mTsManagerImpl.getCarBodyManager().getTimerCycleSun();
+    }
+
+    public int setTimerCycleSun(int i) {
+        Log.v(TAG, "setTimerCycleSun is run. ");
+        enforcePermission(BYDAutoChargingDevice.PERMISSION_BYDAUTO_CHARGING_SET);
+        if (1 == this.mForTestValue) {
+            Log.v(TAG, "setTimerCycleSun mForTestValue is " + this.mForTestValue + " execute return");
+            return 0;
+        }
+        if (this.mTsManagerImpl.getCarBodyManager() == null) {
+            Log.v(TAG, "caradatper still connecting, please wait");
+            return 0;
+        }
+        return this.mTsManagerImpl.getCarBodyManager().setTimerCycleSun(i);
+    }
+
+    public int getIntelligentKeepTemMode() {
+        Log.v(TAG, "getIntelligentKeepTemMode is run. ");
+        enforcePermission(BYDAutoChargingDevice.PERMISSION_BYDAUTO_CHARGING_GET);
+        if (1 == this.mForTestValue) {
+            Log.v(TAG, "getIntelligentKeepTemMode mForTestValue is " + this.mForTestValue + " execute return");
+            return 0;
+        }
+        if (this.mTsManagerImpl.getChargingAdapterManager() == null) {
+            Log.v(TAG, "caradatper still connecting, please wait");
+            return 0;
+        }
+        return this.mTsManagerImpl.getChargingAdapterManager().getIntelligentKeepTemMode();
+    }
+
+    public int setIntelligentKeepTemMode(int i) {
+        Log.v(TAG, "setIntelligentKeepTemMode is run. ");
+        enforcePermission(BYDAutoChargingDevice.PERMISSION_BYDAUTO_CHARGING_SET);
+        if (1 == this.mForTestValue) {
+            Log.v(TAG, "setIntelligentKeepTemMode mForTestValue is " + this.mForTestValue + " execute return");
+            this.mTestCallback.enqueueMessage(6011, i);
+            return 0;
+        }
+        if (this.mTsManagerImpl.getChargingAdapterManager() == null) {
+            Log.v(TAG, "caradatper still connecting, please wait");
+            return 0;
+        }
+        return this.mTsManagerImpl.getChargingAdapterManager().setIntelligentKeepTemMode(i);
+    }
+
+    public float getChargeLimit() {
+        Log.v(TAG, "getChargeLimit is run. ");
+        enforcePermission(BYDAutoChargingDevice.PERMISSION_BYDAUTO_CHARGING_GET);
+        if (1 == this.mForTestValue) {
+            Log.v(TAG, "getChargeLimit mForTestValue is " + this.mForTestValue + " execute return");
+            return 0.0f;
+        }
+        if (this.mTsManagerImpl.getChargingAdapterManager() == null) {
+            Log.v(TAG, "caradatper still connecting, please wait");
+            return 0.0f;
+        }
+        return this.mTsManagerImpl.getChargingAdapterManager().getChargeLimit();
+    }
+
+    public int setChargeLimit(float f) {
+        Log.v(TAG, "setChargeLimit is run. ");
+        enforcePermission(BYDAutoChargingDevice.PERMISSION_BYDAUTO_CHARGING_SET);
+        if (1 == this.mForTestValue) {
+            Log.v(TAG, "setChargeLimit mForTestValue is " + this.mForTestValue + " execute return");
+            this.mTestCallback.enqueueMessage(TestChargingManagerImplCallback.SET_CHARGE_LIMIT, Float.valueOf(f));
+            return 0;
+        }
+        if (this.mTsManagerImpl.getChargingAdapterManager() == null) {
+            Log.v(TAG, "caradatper still connecting, please wait");
+            return 0;
+        }
+        return this.mTsManagerImpl.getChargingAdapterManager().setChargeLimit(f);
+    }
+
+    public int setChargeToggleGuard(int i) {
+        Log.v(TAG, "setChargeToaggleGuard is run. ");
+        enforcePermission(BYDAutoChargingDevice.PERMISSION_BYDAUTO_CHARGING_SET);
+        if (1 == this.mForTestValue) {
+            Log.v(TAG, "setChargeToaggleGuard mForTestValue is " + this.mForTestValue + " execute return");
+            this.mTestCallback.enqueueMessage(TestChargingManagerImplCallback.SET_CHARGE_TOAGGLE_GUARD, i);
+            return 0;
+        }
+        if (this.mTsManagerImpl.getChargingAdapterManager() == null) {
+            Log.v(TAG, "caradatper still connecting, please wait");
+            return 0;
+        }
+        return this.mTsManagerImpl.getChargingAdapterManager().setChargeToggleGuard(i);
+    }
+
+    public int getChargeToggleGuard() {
+        Log.v(TAG, "getChargeToaggleGuard is run. ");
+        enforcePermission(BYDAutoChargingDevice.PERMISSION_BYDAUTO_CHARGING_GET);
+        if (1 == this.mForTestValue) {
+            Log.v(TAG, "getChargeToaggleGuard mForTestValue is " + this.mForTestValue + " execute return");
+            return 0;
+        }
+        if (this.mTsManagerImpl.getChargingAdapterManager() == null) {
+            Log.v(TAG, "caradatper still connecting, please wait");
+            return 0;
+        }
+        return this.mTsManagerImpl.getChargingAdapterManager().getChargeToggleGuard();
+    }
+
+    public int setMovePowerStationToggle(int i) {
+        Log.v(TAG, "isSupportDischarge is run. ");
+        enforcePermission(BYDAutoChargingDevice.PERMISSION_BYDAUTO_CHARGING_SET);
+        if (1 == this.mForTestValue) {
+            Log.v(TAG, "setMovePowerStationToggle mForTestValue is " + this.mForTestValue + " execute return");
+            this.mTestCallback.enqueueMessage(TestChargingManagerImplCallback.SET_MOVE_POWER_STATION_TOGGLE, i);
+            return 0;
+        }
+        if (this.mTsManagerImpl.getChargingAdapterManager() == null) {
+            Log.v(TAG, "caradatper still connecting, please wait");
+            return 0;
+        }
+        return this.mTsManagerImpl.getChargingAdapterManager().setMovePowerStationToggle(i);
+    }
+
+    public int getMovePowerStationToggle() {
+        Log.v(TAG, "getMovePowerStationToggle is run. ");
+        enforcePermission(BYDAutoChargingDevice.PERMISSION_BYDAUTO_CHARGING_GET);
+        if (1 == this.mForTestValue) {
+            Log.v(TAG, "getMovePowerStationToggle mForTestValue is " + this.mForTestValue + " execute return");
+            return 0;
+        }
+        if (this.mTsManagerImpl.getChargingAdapterManager() == null) {
+            Log.v(TAG, "caradatper still connecting, please wait");
+            return 0;
+        }
+        return this.mTsManagerImpl.getChargingAdapterManager().getMovePowerStationToggle();
+    }
+
+    public int setDischargeLimit(int i) {
+        Log.v(TAG, "setDischargeLimit is run. ");
+        enforcePermission(BYDAutoChargingDevice.PERMISSION_BYDAUTO_CHARGING_SET);
+        if (1 == this.mForTestValue) {
+            Log.v(TAG, "setDischargeLimit mForTestValue is " + this.mForTestValue + " execute return");
+            this.mTestCallback.enqueueMessage(TestChargingManagerImplCallback.SET_DISCHARGE_LIMIT, i);
+            return 0;
+        }
+        if (this.mTsManagerImpl.getChargingAdapterManager() == null) {
+            Log.v(TAG, "caradatper still connecting, please wait");
+            return 0;
+        }
+        return this.mTsManagerImpl.getChargingAdapterManager().setDischargeLimit(i);
+    }
+
+    public int getDischargeLimit() {
+        Log.v(TAG, "getDischargeLimit is run. ");
+        enforcePermission(BYDAutoChargingDevice.PERMISSION_BYDAUTO_CHARGING_GET);
+        if (1 == this.mForTestValue) {
+            Log.v(TAG, "getDischargeLimit mForTestValue is " + this.mForTestValue + " execute return");
+            return 0;
+        }
+        if (this.mTsManagerImpl.getChargingAdapterManager() == null) {
+            Log.v(TAG, "caradatper still connecting, please wait");
+            return 0;
+        }
+        return this.mTsManagerImpl.getChargingAdapterManager().getDischargeLimit();
+    }
+
+    public int setDischargeToggle(int i) {
+        Log.v(TAG, "setDischargeToggle is run. ");
+        enforcePermission(BYDAutoChargingDevice.PERMISSION_BYDAUTO_CHARGING_SET);
+        if (1 == this.mForTestValue) {
+            Log.v(TAG, "setDischargeToggle mForTestValue is " + this.mForTestValue + " execute return");
+            this.mTestCallback.enqueueMessage(TestChargingManagerImplCallback.SET_DISCHARGE_TOGGLE, i);
+            return 0;
+        }
+        if (this.mTsManagerImpl.getChargingAdapterManager() == null) {
+            Log.v(TAG, "caradatper still connecting, please wait");
+            return 0;
+        }
+        return this.mTsManagerImpl.getChargingAdapterManager().setDischargeToggle(i);
+    }
+
+    public int getDischargeToggle() {
+        Log.v(TAG, "getDischargeToggle is run. ");
+        enforcePermission(BYDAutoChargingDevice.PERMISSION_BYDAUTO_CHARGING_GET);
+        if (1 == this.mForTestValue) {
+            Log.v(TAG, "getDischargeToggle mForTestValue is " + this.mForTestValue + " execute return");
+            return 0;
+        }
+        if (this.mTsManagerImpl.getChargingAdapterManager() == null) {
+            Log.v(TAG, "caradatper still connecting, please wait");
+            return 0;
+        }
+        return this.mTsManagerImpl.getChargingAdapterManager().getDischargeToggle();
+    }
+
+    public int setDischargeTime(long j) {
+        Log.v(TAG, "setDischargeTime is run. ");
+        enforcePermission(BYDAutoChargingDevice.PERMISSION_BYDAUTO_CHARGING_SET);
+        if (1 == this.mForTestValue) {
+            Log.v(TAG, "setDischargeTime mForTestValue is " + this.mForTestValue + " execute return");
+            this.mTestCallback.enqueueMessage(TestChargingManagerImplCallback.SET_DISCHARGE_TIME, Long.valueOf(j));
+            return 0;
+        }
+        if (this.mTsManagerImpl.getChargingAdapterManager() == null) {
+            Log.v(TAG, "caradatper still connecting, please wait");
+            return 0;
+        }
+        return this.mTsManagerImpl.getChargingAdapterManager().setDischargeTime(millionsSec2HourMinArray(j));
+    }
+
+    public long getDischargeTime() {
+        Log.v(TAG, "getDischargeTime is run. ");
+        enforcePermission(BYDAutoChargingDevice.PERMISSION_BYDAUTO_CHARGING_GET);
+        if (1 == this.mForTestValue) {
+            Log.v(TAG, "getDischargeTime mForTestValue is " + this.mForTestValue + " execute return");
+            return 0L;
+        }
+        if (this.mTsManagerImpl.getChargingAdapterManager() == null) {
+            Log.v(TAG, "caradatper still connecting, please wait");
+            return 0L;
+        }
+        return hourMinArray2MillionsSec(this.mTsManagerImpl.getChargingAdapterManager().getDischargeTime());
+    }
+
+    public int setPorducePowerWhenLowPower(int i) {
+        Log.v(TAG, "setPorducePowerWhenLowPower is run. ");
+        enforcePermission(BYDAutoChargingDevice.PERMISSION_BYDAUTO_CHARGING_SET);
+        if (1 == this.mForTestValue) {
+            Log.v(TAG, "setPorducePowerWhenLowPower mForTestValue is " + this.mForTestValue + " execute return");
+            this.mTestCallback.enqueueMessage(TestChargingManagerImplCallback.SET_PORDUCE_POWER_WHEN_LOW_POWER, i);
+            return 0;
+        }
+        if (this.mTsManagerImpl.getChargingAdapterManager() == null) {
+            Log.v(TAG, "caradatper still connecting, please wait");
+            return 0;
+        }
+        return this.mTsManagerImpl.getChargingAdapterManager().setPorducePowerWhenLowPower(i);
+    }
+
+    public int getPorducePowerWhenLowPower() {
+        Log.v(TAG, "getPorducePowerWhenLowPower is run. ");
+        enforcePermission(BYDAutoChargingDevice.PERMISSION_BYDAUTO_CHARGING_GET);
+        if (1 == this.mForTestValue) {
+            Log.v(TAG, "getPorducePowerWhenLowPower mForTestValue is " + this.mForTestValue + " execute return");
+            return 0;
+        }
+        if (this.mTsManagerImpl.getChargingAdapterManager() == null) {
+            Log.v(TAG, "caradatper still connecting, please wait");
+            return 0;
+        }
+        return this.mTsManagerImpl.getChargingAdapterManager().getPorducePowerWhenLowPower();
+    }
+
+    public int setWirelessChargingSwitchState(int i) {
+        Log.v(TAG, "setWirelessChargingSwitchState is execute");
+        enforcePermission(BYDAutoChargingDevice.PERMISSION_BYDAUTO_CHARGING_SET);
+        if (1 == this.mForTestValue) {
+            Log.v(TAG, "setWirelessChargingSwitchState mForTestValue is" + this.mForTestValue + " execute return");
+            return 0;
+        }
+        if (this.mTsManagerImpl.getChargingAdapterManager() == null) {
+            Log.e(TAG, "adapter is not connect");
+            return 0;
+        }
+        return this.mTsManagerImpl.getChargingAdapterManager().setWirelessChargingSwitchState(i);
+    }
+
+    public int getWirelessChargingSwitchState() {
+        Log.v(TAG, "getWirelessChargingSwitchState is execute");
+        enforcePermission(BYDAutoChargingDevice.PERMISSION_BYDAUTO_CHARGING_GET);
+        if (1 == this.mForTestValue) {
+            Log.v(TAG, "getWirelessChargingSwitchState mForTestValue is" + this.mForTestValue + " execute return");
+            return 0;
+        }
+        if (this.mTsManagerImpl.getChargingAdapterManager() == null) {
+            Log.e(TAG, "adapter is not connect");
+            return 0;
+        }
+        return this.mTsManagerImpl.getChargingAdapterManager().getWirelessChargingSwitchState();
+    }
+
+    public int getWirelessChargingState() {
+        Log.v(TAG, "getWirelessChargingState is execute");
+        enforcePermission(BYDAutoChargingDevice.PERMISSION_BYDAUTO_CHARGING_GET);
+        if (1 == this.mForTestValue) {
+            Log.v(TAG, "getWirelessChargingState mForTestValue is" + this.mForTestValue + " execute return");
+            return 0;
+        }
+        if (this.mTsManagerImpl.getChargingAdapterManager() == null) {
+            Log.e(TAG, "adapter is not connect");
+            return 0;
+        }
+        return this.mTsManagerImpl.getChargingAdapterManager().getWirelessChargingState();
+    }
+
+    private int[] millionsSec2HourMinArray(long j) {
+        int i = (int) ((j / 1000) / 60);
+        return new int[]{i / 60, i % 60};
+    }
+
+    private long hourMinArray2MillionsSec(int[] iArr) {
+        return ((long) (iArr[0] * 60 * 60 * 1000)) + ((long) (iArr[1] * 60 * 1000));
+    }
+
+    public int getVtovChargeBatteryLevelNum() {
+        Log.v(TAG, "getVtovChargeBatteryLevelNum is execute");
+        enforcePermission(BYDAutoChargingDevice.PERMISSION_BYDAUTO_CHARGING_GET);
+        if (1 == this.mForTestValue) {
+            Log.v(TAG, "getVtovChargeBatteryLevelNum mForTestValue is" + this.mForTestValue + " execute return");
+            return 0;
+        }
+        if (this.mTsManagerImpl.getChargingAdapterManager() == null) {
+            Log.e(TAG, "adapter is not connect");
+            return 0;
+        }
+        return this.mTsManagerImpl.getChargingAdapterManager().getVtovChargeBatteryLevelNum();
+    }
+
+    public int getVtovChargeBatteryLevelNumLimit() {
+        Log.v(TAG, "getVtovChargeBatteryLevelNumLimit is execute");
+        enforcePermission(BYDAutoChargingDevice.PERMISSION_BYDAUTO_CHARGING_GET);
+        if (1 == this.mForTestValue) {
+            Log.v(TAG, "getVtovChargeBatteryLevelNumLimit mForTestValue is" + this.mForTestValue + " execute return");
+            return 0;
+        }
+        if (this.mTsManagerImpl.getChargingAdapterManager() == null) {
+            Log.e(TAG, "adapter is not connect");
+            return 0;
+        }
+        return this.mTsManagerImpl.getChargingAdapterManager().getVtovChargeBatteryLevelNumLimit();
+    }
+
+    public int getDischargeRemainTime() {
+        Log.v(TAG, "getDischargeRemainTime is execute");
+        enforcePermission(BYDAutoChargingDevice.PERMISSION_BYDAUTO_CHARGING_GET);
+        if (1 == this.mForTestValue) {
+            Log.v(TAG, "getDischargeRemainTime mForTestValue is" + this.mForTestValue + " execute return");
+            return 0;
+        }
+        if (this.mTsManagerImpl.getChargingAdapterManager() == null) {
+            Log.e(TAG, "adapter is not connect");
+            return 0;
+        }
+        return this.mTsManagerImpl.getChargingAdapterManager().getDischargeRemainTime();
+    }
+
+    public float getChargeVoltageMax() {
+        Log.v(TAG, "getChargeVoltageMax is execute");
+        enforcePermission(BYDAutoChargingDevice.PERMISSION_BYDAUTO_CHARGING_GET);
+        if (1 == this.mForTestValue) {
+            Log.v(TAG, "getChargeVoltageMax mForTestValue is" + this.mForTestValue + " execute return");
+            return 0.0f;
+        }
+        if (this.mTsManagerImpl.getChargingAdapterManager() == null) {
+            Log.e(TAG, "adapter is not connect");
+            return 0.0f;
+        }
+        return this.mTsManagerImpl.getChargingAdapterManager().getChargeVoltageMax();
+    }
+
+    public float getVoltageMax() {
+        Log.v(TAG, "getVoltageMax is execute");
+        enforcePermission(BYDAutoChargingDevice.PERMISSION_BYDAUTO_CHARGING_GET);
+        if (1 == this.mForTestValue) {
+            Log.v(TAG, "getVoltageMax mForTestValue is" + this.mForTestValue + " execute return");
+            return 0.0f;
+        }
+        if (this.mTsManagerImpl.getChargingAdapterManager() == null) {
+            Log.e(TAG, "adapter is not connect");
+            return 0.0f;
+        }
+        return this.mTsManagerImpl.getChargingAdapterManager().getVoltageMax();
+    }
+
+    public int getDischargeVoltage() {
+        Log.v(TAG, "getDischargeVoltage is execute");
+        enforcePermission(BYDAutoChargingDevice.PERMISSION_BYDAUTO_CHARGING_GET);
+        if (1 == this.mForTestValue) {
+            Log.v(TAG, "getDischargeVoltage mForTestValue is" + this.mForTestValue + " execute return");
+            return 0;
+        }
+        if (this.mTsManagerImpl.getChargingAdapterManager() == null) {
+            Log.e(TAG, "adapter is not connect");
+            return 0;
+        }
+        return this.mTsManagerImpl.getChargingAdapterManager().getDischargeVoltage();
+    }
+
+    public float getDischargeElectric() {
+        Log.v(TAG, "getDischargeElectric is execute");
+        enforcePermission(BYDAutoChargingDevice.PERMISSION_BYDAUTO_CHARGING_GET);
+        if (1 == this.mForTestValue) {
+            Log.v(TAG, "getDischargeElectric mForTestValue is" + this.mForTestValue + " execute return");
+            return 0.0f;
+        }
+        if (this.mTsManagerImpl.getChargingAdapterManager() == null) {
+            Log.e(TAG, "adapter is not connect");
+            return 0.0f;
+        }
+        return this.mTsManagerImpl.getChargingAdapterManager().getDischargeElectric();
+    }
+
+    public int getDischargeGunTimer() {
+        Log.v(TAG, "getDischargeGunTimer is execute");
+        enforcePermission(BYDAutoChargingDevice.PERMISSION_BYDAUTO_CHARGING_GET);
+        if (1 == this.mForTestValue) {
+            Log.v(TAG, "getDischargeGunTimer mForTestValue is" + this.mForTestValue + " execute return");
+            return 0;
+        }
+        if (this.mTsManagerImpl.getChargingAdapterManager() == null) {
+            Log.e(TAG, "adapter is not connect");
+            return 0;
+        }
+        return this.mTsManagerImpl.getChargingAdapterManager().getDischargeGunTimer();
+    }
+
+    public int getDischargeTotalTime() {
+        Log.v(TAG, "getDischargeTotalTime is execute");
+        enforcePermission(BYDAutoChargingDevice.PERMISSION_BYDAUTO_CHARGING_GET);
+        if (1 == this.mForTestValue) {
+            Log.v(TAG, "getDischargeTotalTime mForTestValue is" + this.mForTestValue + " execute return");
+            return 0;
+        }
+        if (this.mTsManagerImpl.getChargingAdapterManager() == null) {
+            Log.e(TAG, "adapter is not connect");
+            return 0;
+        }
+        return this.mTsManagerImpl.getChargingAdapterManager().getDischargeTotalTime();
+    }
+
+    public int getDischargeOverReason() {
+        Log.v(TAG, "getDischargeOverReason is execute");
+        enforcePermission(BYDAutoChargingDevice.PERMISSION_BYDAUTO_CHARGING_GET);
+        if (1 == this.mForTestValue) {
+            Log.v(TAG, "getDischargeOverReason mForTestValue is" + this.mForTestValue + " execute return");
+            return 0;
+        }
+        if (this.mTsManagerImpl.getChargingAdapterManager() == null) {
+            Log.e(TAG, "adapter is not connect");
+            return 0;
+        }
+        return this.mTsManagerImpl.getChargingAdapterManager().getDischargeOverReason();
+    }
+
+    public int getChargeVoltage() {
+        Log.v(TAG, "getChargeVoltage is execute");
+        enforcePermission(BYDAutoChargingDevice.PERMISSION_BYDAUTO_CHARGING_GET);
+        if (1 == this.mForTestValue) {
+            Log.v(TAG, "getChargeVoltage mForTestValue is" + this.mForTestValue + " execute return");
+            return 0;
+        }
+        if (this.mTsManagerImpl.getChargingAdapterManager() == null) {
+            Log.e(TAG, "adapter is not connect");
+            return 0;
+        }
+        return this.mTsManagerImpl.getChargingAdapterManager().getChargeVoltage();
+    }
+
+    public float getChargeElectric() {
+        Log.v(TAG, "getChargeElectric is execute");
+        enforcePermission(BYDAutoChargingDevice.PERMISSION_BYDAUTO_CHARGING_GET);
+        if (1 == this.mForTestValue) {
+            Log.v(TAG, "getChargeElectric mForTestValue is" + this.mForTestValue + " execute return");
+            return 0.0f;
+        }
+        if (this.mTsManagerImpl.getChargingAdapterManager() == null) {
+            Log.e(TAG, "adapter is not connect");
+            return 0.0f;
+        }
+        return this.mTsManagerImpl.getChargingAdapterManager().getChargeElectric();
+    }
+
+    public int getChargeBatteryLevelBegin() {
+        Log.v(TAG, "getChargeBatteryLevelBegin is execute");
+        enforcePermission(BYDAutoChargingDevice.PERMISSION_BYDAUTO_CHARGING_GET);
+        if (1 == this.mForTestValue) {
+            Log.v(TAG, "getChargeBatteryLevelBegin mForTestValue is" + this.mForTestValue + " execute return");
+            return 0;
+        }
+        if (this.mTsManagerImpl.getChargingAdapterManager() == null) {
+            Log.e(TAG, "adapter is not connect");
+            return 0;
+        }
+        return this.mTsManagerImpl.getChargingAdapterManager().getChargeBatteryLevelBegin();
+    }
+
+    public int getChargeBatteryLimitTemp() {
+        Log.v(TAG, "getChargeBatteryLimitTemp is execute");
+        enforcePermission(BYDAutoChargingDevice.PERMISSION_BYDAUTO_CHARGING_GET);
+        if (1 == this.mForTestValue) {
+            Log.v(TAG, "getChargeBatteryLimitTemp mForTestValue is" + this.mForTestValue + " execute return");
+            return 0;
+        }
+        if (this.mTsManagerImpl.getChargingAdapterManager() == null) {
+            Log.e(TAG, "adapter is not connect");
+            return 0;
+        }
+        return this.mTsManagerImpl.getChargingAdapterManager().getChargeBatteryLimitTemp();
+    }
+
+    public int getChargeBatteryTemp() {
+        Log.v(TAG, "getChargeBatteryTemp is execute");
+        enforcePermission(BYDAutoChargingDevice.PERMISSION_BYDAUTO_CHARGING_GET);
+        if (1 == this.mForTestValue) {
+            Log.v(TAG, "getChargeBatteryTemp mForTestValue is" + this.mForTestValue + " execute return");
+            return 0;
+        }
+        if (this.mTsManagerImpl.getChargingAdapterManager() == null) {
+            Log.e(TAG, "adapter is not connect");
+            return 0;
+        }
+        return this.mTsManagerImpl.getChargingAdapterManager().getChargeBatteryTemp();
+    }
+
+    public int getVtovDischargeLowestVal() {
+        Log.v(TAG, "getVtovDischargeLowestVal is execute");
+        enforcePermission(BYDAutoChargingDevice.PERMISSION_BYDAUTO_CHARGING_GET);
+        if (1 == this.mForTestValue) {
+            Log.v(TAG, "getVtovDischargeLowestVal mForTestValue is" + this.mForTestValue + " execute return");
+            return 0;
+        }
+        if (this.mTsManagerImpl.getChargingAdapterManager() == null) {
+            Log.e(TAG, "adapter is not connect");
+            return 0;
+        }
+        return this.mTsManagerImpl.getChargingAdapterManager().getVtovDischargeLowestVal();
+    }
+
+    public float getVtovDischargeQuantity() {
+        Log.v(TAG, "getVtovDischargeQuantity is execute");
+        enforcePermission(BYDAutoChargingDevice.PERMISSION_BYDAUTO_CHARGING_GET);
+        if (1 == this.mForTestValue) {
+            Log.v(TAG, "getVtovDischargeQuantity mForTestValue is" + this.mForTestValue + " execute return");
+            return 0.0f;
+        }
+        if (this.mTsManagerImpl.getChargingAdapterManager() == null) {
+            Log.e(TAG, "adapter is not connect");
+            return 0.0f;
+        }
+        return this.mTsManagerImpl.getChargingAdapterManager().getVtovDischargeQuantity();
+    }
+
+    public int getBatteryType() {
+        Log.v(TAG, "getBatteryType is execute");
+        enforcePermission(BYDAutoChargingDevice.PERMISSION_BYDAUTO_CHARGING_GET);
+        if (1 == this.mForTestValue) {
+            Log.v(TAG, "getBatteryType mForTestValue is" + this.mForTestValue + " execute return");
+            return 0;
+        }
+        if (this.mTsManagerImpl.getChargingAdapterManager() == null) {
+            Log.e(TAG, "adapter is not connect");
+            return 0;
+        }
+        return this.mTsManagerImpl.getChargingAdapterManager().getBatteryType();
+    }
+
+    public int getFullChgRemanTimH() {
+        Log.v(TAG, "getFullChgRemanTimH is execute");
+        enforcePermission(BYDAutoChargingDevice.PERMISSION_BYDAUTO_CHARGING_GET);
+        if (1 == this.mForTestValue) {
+            Log.v(TAG, "getFullChgRemanTimH mForTestValue is" + this.mForTestValue + " execute return");
+            return 0;
+        }
+        if (this.mTsManagerImpl.getChargingAdapterManager() == null) {
+            Log.e(TAG, "adapter is not connect");
+            return 0;
+        }
+        return this.mTsManagerImpl.getChargingAdapterManager().getFullChgRemanTimH();
+    }
+
+    public int getFullChgRemanTimM() {
+        Log.v(TAG, "getFullChgRemanTimM is execute");
+        enforcePermission(BYDAutoChargingDevice.PERMISSION_BYDAUTO_CHARGING_GET);
+        if (1 == this.mForTestValue) {
+            Log.v(TAG, "getFullChgRemanTimM mForTestValue is" + this.mForTestValue + " execute return");
+            return 0;
+        }
+        if (this.mTsManagerImpl.getChargingAdapterManager() == null) {
+            Log.e(TAG, "adapter is not connect");
+            return 0;
+        }
+        return this.mTsManagerImpl.getChargingAdapterManager().getFullChgRemanTimM();
+    }
+
+    public int setHevChargingType(int i) {
+        Log.v(TAG, "setHEVChargingType is execute");
+        enforcePermission(BYDAutoChargingDevice.PERMISSION_BYDAUTO_CHARGING_SET);
+        if (1 == this.mForTestValue) {
+            Log.v(TAG, "setHEVChargingType mForTestValue is" + this.mForTestValue + " execute return");
+            return 0;
+        }
+        if (this.mTsManagerImpl.getChargingAdapterManager() == null) {
+            Log.e(TAG, "adapter is not connect");
+            return 0;
+        }
+        return this.mTsManagerImpl.getChargingAdapterManager().setHevChargingType(i);
+    }
+
+    public int getHevChargingType() {
+        Log.v(TAG, "getHEVChargingType is execute");
+        enforcePermission(BYDAutoChargingDevice.PERMISSION_BYDAUTO_CHARGING_GET);
+        if (1 == this.mForTestValue) {
+            Log.v(TAG, "getHEVChargingType mForTestValue is" + this.mForTestValue + " execute return");
+            return 0;
+        }
+        if (this.mTsManagerImpl.getChargingAdapterManager() == null) {
+            Log.e(TAG, "adapter is not connect");
+            return 0;
+        }
+        return this.mTsManagerImpl.getChargingAdapterManager().getHevChargingType();
+    }
+
+    public int getChargeTempCtlState() {
+        Log.v(TAG, "getChargeTempCtlState is execute");
+        enforcePermission(BYDAutoChargingDevice.PERMISSION_BYDAUTO_CHARGING_GET);
+        if (1 == this.mForTestValue) {
+            Log.v(TAG, "getChargeTempCtlState mForTestValue is" + this.mForTestValue + " execute return");
+            return 0;
+        }
+        if (this.mTsManagerImpl.getChargingAdapterManager() == null) {
+            Log.e(TAG, "adapter is not connect");
+            return 0;
+        }
+        return this.mTsManagerImpl.getChargingAdapterManager().getChargeTempCtlState();
+    }
+
+    public int setChargeTempCtlState(int i) {
+        Log.v(TAG, "setChargeTempCtlState is execute");
+        enforcePermission(BYDAutoChargingDevice.PERMISSION_BYDAUTO_CHARGING_SET);
+        if (1 == this.mForTestValue) {
+            Log.v(TAG, "setChargeTempCtlState mForTestValue is" + this.mForTestValue + " execute return");
+            return 0;
+        }
+        if (this.mTsManagerImpl.getChargingAdapterManager() == null) {
+            Log.e(TAG, "adapter is not connect");
+            return 0;
+        }
+        return this.mTsManagerImpl.getChargingAdapterManager().setChargeTempCtlState(i);
+    }
+
+    public int getChargeStopCapacityState() {
+        Log.v(TAG, "getChargeStopCapacityState is execute");
+        enforcePermission(BYDAutoChargingDevice.PERMISSION_BYDAUTO_CHARGING_GET);
+        if (1 == this.mForTestValue) {
+            Log.v(TAG, "getChargeStopCapacityState mForTestValue is" + this.mForTestValue + " execute return");
+            return 0;
+        }
+        if (this.mTsManagerImpl.getChargingAdapterManager() == null) {
+            Log.e(TAG, "adapter is not connect");
+            return 0;
+        }
+        return this.mTsManagerImpl.getChargingAdapterManager().getChargeStopCapacityState();
+    }
+
+    public int setChargeStopCapacityState(int i) {
+        Log.v(TAG, "setChargeStopCapacityState is execute");
+        enforcePermission(BYDAutoChargingDevice.PERMISSION_BYDAUTO_CHARGING_SET);
+        if (1 == this.mForTestValue) {
+            Log.v(TAG, "setChargeStopCapacityState mForTestValue is" + this.mForTestValue + " execute return");
+            return 0;
+        }
+        if (this.mTsManagerImpl.getChargingAdapterManager() == null) {
+            Log.e(TAG, "adapter is not connect");
+            return 0;
+        }
+        return this.mTsManagerImpl.getChargingAdapterManager().setChargeStopCapacityState(i);
+    }
+
+    public int getVtovDischargeLimitVal() {
+        Log.v(TAG, "getVtovDischargeLimitVal is execute");
+        enforcePermission(BYDAutoChargingDevice.PERMISSION_BYDAUTO_CHARGING_GET);
+        if (1 == this.mForTestValue) {
+            Log.v(TAG, "getVtovDischargeLimitVal mForTestValue is" + this.mForTestValue + " execute return");
+            return 0;
+        }
+        if (this.mTsManagerImpl.getChargingAdapterManager() == null) {
+            Log.e(TAG, "adapter is not connect");
+            return 0;
+        }
+        return this.mTsManagerImpl.getChargingAdapterManager().getVtovDischargeLimitVal();
+    }
+
+    public int getVtovDischargeConnectState() {
+        Log.v(TAG, "getVtovDischargeConnectState is execute");
+        enforcePermission(BYDAutoChargingDevice.PERMISSION_BYDAUTO_CHARGING_GET);
+        if (1 == this.mForTestValue) {
+            Log.v(TAG, "getVtovDischargeConnectState mForTestValue is" + this.mForTestValue + " execute return");
+            return 0;
+        }
+        if (this.mTsManagerImpl.getChargingAdapterManager() == null) {
+            Log.e(TAG, "adapter is not connect");
+            return 0;
+        }
+        return this.mTsManagerImpl.getChargingAdapterManager().getVtovDischargeConnectState();
+    }
+
+    public int setChargePlanState(int i) {
+        Log.v(TAG, "setChargePlanState is execute");
+        enforcePermission(BYDAutoChargingDevice.PERMISSION_BYDAUTO_CHARGING_SET);
+        if (1 == this.mForTestValue) {
+            Log.v(TAG, "setChargePlanState mForTestValue is " + this.mForTestValue + " execute return");
+            return 0;
+        }
+        if (this.mTsManagerImpl.getChargingAdapterManager() == null) {
+            Log.v(TAG, "caradatper still connecting, please wait");
+            return 0;
+        }
+        return this.mTsManagerImpl.getChargingAdapterManager().setChargePlanState(i);
+    }
+
+    public int setSyncTime(int i, int i2, int i3, int i4, int i5) {
+        Log.v(TAG, "setSyncTime is execute");
+        enforcePermission(BYDAutoChargingDevice.PERMISSION_BYDAUTO_CHARGING_SET);
+        if (1 == this.mForTestValue) {
+            Log.v(TAG, "setSyncTime mForTestValue is " + this.mForTestValue + " execute return");
+            return 0;
+        }
+        if (this.mTsManagerImpl.getChargingAdapterManager() == null) {
+            Log.v(TAG, "caradatper still connecting, please wait");
+            return 0;
+        }
+        return this.mTsManagerImpl.getChargingAdapterManager().setSyncTime(i, i2, i3, i4, i5);
+    }
+
+    public int setCarPlan(int i, int i2, int i3, int i4, int i5, int i6, int i7, int i8) {
+        Log.v(TAG, "setCarPlan is execute");
+        enforcePermission(BYDAutoChargingDevice.PERMISSION_BYDAUTO_CHARGING_SET);
+        if (1 == this.mForTestValue) {
+            Log.v(TAG, "setCarPlan mForTestValue is " + this.mForTestValue + " execute return");
+            return 0;
+        }
+        if (this.mTsManagerImpl.getChargingAdapterManager() == null) {
+            Log.v(TAG, "caradatper still connecting, please wait");
+            return 0;
+        }
+        return this.mTsManagerImpl.getChargingAdapterManager().setCarPlan(i, i2, i3, i4, i5, i6, i7, i8);
+    }
+
+    public int setEvChargePlanEndTime(int i, int i2, int i3, int i4, int i5) {
+        Log.v(TAG, "setEVChargePlanEndTime is execute");
+        enforcePermission(BYDAutoChargingDevice.PERMISSION_BYDAUTO_CHARGING_SET);
+        if (1 == this.mForTestValue) {
+            Log.v(TAG, "setEVChargePlanEndTime mForTestValue is " + this.mForTestValue + " execute return");
+            return 0;
+        }
+        if (this.mTsManagerImpl.getChargingAdapterManager() == null) {
+            Log.v(TAG, "caradatper still connecting, please wait");
+            return 0;
+        }
+        this.evYearEnd = i;
+        this.evMonthEnd = i2;
+        this.evDayEnd = i3;
+        this.evHourEnd = i4;
+        this.evMinuteEnd = i5;
+        return this.mTsManagerImpl.getChargingAdapterManager().setEvChargePlanEndTime(i, i2, i3, i4, i5);
+    }
+
+    public int setEvChargePlanStartTime(int i, int i2, int i3, int i4, int i5) {
+        Log.v(TAG, "setEVChargePlanStartTime is execute");
+        enforcePermission(BYDAutoChargingDevice.PERMISSION_BYDAUTO_CHARGING_SET);
+        if (1 == this.mForTestValue) {
+            Log.v(TAG, "setEVChargePlanStartTime mForTestValue is " + this.mForTestValue + " execute return");
+            return 0;
+        }
+        if (this.mTsManagerImpl.getChargingAdapterManager() == null) {
+            Log.v(TAG, "caradatper still connecting, please wait");
+            return 0;
+        }
+        this.evYear = i;
+        this.evMonth = i2;
+        this.evDay = i3;
+        this.evHour = i4;
+        this.evMinute = i5;
+        return this.mTsManagerImpl.getChargingAdapterManager().setEvChargePlanStartTime(i, i2, i3, i4, i5);
+    }
+
+    public int setHevChargePlanEndTime(int i, int i2, int i3, int i4, int i5) {
+        Log.v(TAG, "setHEVChargePlanEndTime is execute");
+        enforcePermission(BYDAutoChargingDevice.PERMISSION_BYDAUTO_CHARGING_SET);
+        if (1 == this.mForTestValue) {
+            Log.v(TAG, "setHEVChargePlanEndTime mForTestValue is " + this.mForTestValue + " execute return");
+            return 0;
+        }
+        if (this.mTsManagerImpl.getChargingAdapterManager() == null) {
+            Log.v(TAG, "caradatper still connecting, please wait");
+            return 0;
+        }
+        return this.mTsManagerImpl.getChargingAdapterManager().setHevChargePlanEndTime(i, i2, i3, i4, i5);
+    }
+
+    public int setHevChargePlanStartTime(int i, int i2, int i3, int i4, int i5) {
+        Log.v(TAG, "setHEVChargePlanStartTime is execute");
+        enforcePermission(BYDAutoChargingDevice.PERMISSION_BYDAUTO_CHARGING_SET);
+        if (1 == this.mForTestValue) {
+            Log.v(TAG, "setHEVChargePlanStartTime mForTestValue is " + this.mForTestValue + " execute return");
+            return 0;
+        }
+        if (this.mTsManagerImpl.getChargingAdapterManager() == null) {
+            Log.v(TAG, "caradatper still connecting, please wait");
+            return 0;
+        }
+        this.dmYear = i;
+        this.dmMonth = i2;
+        this.dmDay = i3;
+        this.dmHour = i4;
+        this.dmMinute = i5;
+        return this.mTsManagerImpl.getChargingAdapterManager().setHevChargePlanStartTime(i, i2, i3, i4, i5);
+    }
+
+    public int getSituPowerGenerationState() {
+        Log.v(TAG, "getSituPowerGenerationState is execute");
+        enforcePermission(BYDAutoChargingDevice.PERMISSION_BYDAUTO_CHARGING_GET);
+        if (1 == this.mForTestValue) {
+            Log.v(TAG, "getSituPowerGenerationState mForTestValue is " + this.mForTestValue + " execute return");
+            return 0;
+        }
+        if (this.mTsManagerImpl.getChargingAdapterManager() == null) {
+            Log.v(TAG, "caradatper still connecting, please wait");
+            return 0;
+        }
+        return this.mTsManagerImpl.getChargingAdapterManager().getSituPowerGenerationState();
+    }
+
+    public int setSituPowerGenerationState(int i) {
+        Log.v(TAG, "setSituPowerGenerationState is execute");
+        enforcePermission(BYDAutoChargingDevice.PERMISSION_BYDAUTO_CHARGING_SET);
+        if (1 == this.mForTestValue) {
+            Log.v(TAG, "setSituPowerGenerationState mForTestValue is " + this.mForTestValue + " execute return");
+            return 0;
+        }
+        if (this.mTsManagerImpl.getChargingAdapterManager() == null) {
+            Log.v(TAG, "caradatper still connecting, please wait");
+            return 0;
+        }
+        return this.mTsManagerImpl.getChargingAdapterManager().setSituPowerGenerationState(i);
+    }
+
+    public int getSituPowerGenerationSupport() {
+        Log.v(TAG, "getSituPowerGenerationSupport is execute");
+        enforcePermission(BYDAutoChargingDevice.PERMISSION_BYDAUTO_CHARGING_GET);
+        if (1 == this.mForTestValue) {
+            Log.v(TAG, "getSituPowerGenerationSupport mForTestValue is " + this.mForTestValue + " execute return");
+            return 0;
+        }
+        if (this.mTsManagerImpl.getChargingAdapterManager() == null) {
+            Log.v(TAG, "caradatper still connecting, please wait");
+            return 0;
+        }
+        return this.mTsManagerImpl.getChargingAdapterManager().getSituPowerGenerationSupport();
+    }
+
+    public int getChargePreheatAllow() {
+        Log.v(TAG, "getChargePreheatAllow is execute");
+        enforcePermission(BYDAutoChargingDevice.PERMISSION_BYDAUTO_CHARGING_GET);
+        if (1 == this.mForTestValue) {
+            Log.v(TAG, "getChargePreheatAllow mForTestValue is " + this.mForTestValue + " execute return");
+            return 0;
+        }
+        if (this.mTsManagerImpl.getChargingAdapterManager() == null) {
+            Log.v(TAG, "caradatper still connecting, please wait");
+            return 0;
+        }
+        return this.mTsManagerImpl.getChargingAdapterManager().getChargePreheatAllow();
+    }
+
+    public int getVtovDischargeLowPowerHint() {
+        Log.v(TAG, "getVtovDischargeLowPowerHint is execute");
+        enforcePermission(BYDAutoChargingDevice.PERMISSION_BYDAUTO_CHARGING_GET);
+        if (1 == this.mForTestValue) {
+            Log.v(TAG, "getVtovDischargeLowPowerHint mForTestValue is " + this.mForTestValue + " execute return");
+            return 0;
+        }
+        if (this.mTsManagerImpl.getChargingAdapterManager() == null) {
+            Log.v(TAG, "caradatper still connecting, please wait");
+            return 0;
+        }
+        return this.mTsManagerImpl.getChargingAdapterManager().getVtovDischargeLowPowerHint();
+    }
+
+    public int getChargePreheatState() {
+        Log.v(TAG, "getChargePreheatState is execute");
+        enforcePermission(BYDAutoChargingDevice.PERMISSION_BYDAUTO_CHARGING_GET);
+        if (1 == this.mForTestValue) {
+            Log.v(TAG, "getChargePreheatState mForTestValue is " + this.mForTestValue + " execute return");
+            return 0;
+        }
+        if (this.mTsManagerImpl.getChargingAdapterManager() == null) {
+            Log.v(TAG, "caradatper still connecting, please wait");
+            return 0;
+        }
+        return this.mTsManagerImpl.getChargingAdapterManager().getChargePreheatState();
+    }
+
+    public int setChargePreheatState(int i) {
+        Log.v(TAG, "setChargePreheatState is execute");
+        enforcePermission(BYDAutoChargingDevice.PERMISSION_BYDAUTO_CHARGING_SET);
+        if (1 == this.mForTestValue) {
+            Log.v(TAG, "setChargePreheatState mForTestValue is " + this.mForTestValue + " execute return");
+            return 0;
+        }
+        if (this.mTsManagerImpl.getChargingAdapterManager() == null) {
+            Log.v(TAG, "caradatper still connecting, please wait");
+            return 0;
+        }
+        return this.mTsManagerImpl.getChargingAdapterManager().setChargePreheatState(i);
+    }
+
+    @Deprecated
+    public int setCarPlanState(int i) {
+        Log.v(TAG, "setCarPlanState is execute");
+        enforcePermission(BYDAutoChargingDevice.PERMISSION_BYDAUTO_CHARGING_SET);
+        if (1 == this.mForTestValue) {
+            Log.v(TAG, "setCarPlanState mForTestValue is " + this.mForTestValue + " execute return");
+            return 0;
+        }
+        if (this.mTsManagerImpl.getChargingAdapterManager() == null) {
+            Log.v(TAG, "caradatper still connecting, please wait");
+            return 0;
+        }
+        return this.mTsManagerImpl.getChargingAdapterManager().setCarPlanState(i);
+    }
+
+    public int getCarPlanState() {
+        Log.v(TAG, "getCarPlanState is execute");
+        enforcePermission(BYDAutoChargingDevice.PERMISSION_BYDAUTO_CHARGING_GET);
+        if (1 == this.mForTestValue) {
+            Log.v(TAG, "getCarPlanState mForTestValue is " + this.mForTestValue + " execute return");
+            return 0;
+        }
+        if (this.mTsManagerImpl.getChargingAdapterManager() == null) {
+            Log.v(TAG, "caradatper still connecting, please wait");
+            return 0;
+        }
+        return this.mTsManagerImpl.getChargingAdapterManager().getCarPlanState();
+    }
+
+    public int getCarPlanAccOnState() {
+        Log.v(TAG, "getCarPlanAccOnState is execute");
+        enforcePermission(BYDAutoChargingDevice.PERMISSION_BYDAUTO_CHARGING_GET);
+        if (1 == this.mForTestValue) {
+            Log.v(TAG, "getCarPlanAccOnState mForTestValue is " + this.mForTestValue + " execute return");
+            return 0;
+        }
+        if (this.mTsManagerImpl.getChargingAdapterManager() == null) {
+            Log.v(TAG, "caradatper still connecting, please wait");
+            return 0;
+        }
+        return this.mTsManagerImpl.getChargingAdapterManager().getCarPlanAccOnState();
+    }
+
+    public int getCarPlanBatteryHeatState() {
+        Log.v(TAG, "getCarPlanBatteryHeatState is execute");
+        enforcePermission(BYDAutoChargingDevice.PERMISSION_BYDAUTO_CHARGING_GET);
+        if (1 == this.mForTestValue) {
+            Log.v(TAG, "getCarPlanBatteryHeatState mForTestValue is " + this.mForTestValue + " execute return");
+            return 0;
+        }
+        if (this.mTsManagerImpl.getChargingAdapterManager() == null) {
+            Log.v(TAG, "caradatper still connecting, please wait");
+            return 0;
+        }
+        return this.mTsManagerImpl.getChargingAdapterManager().getCarPlanBatteryHeatState();
+    }
+
+    public int setNoSenseChargeState(int i) {
+        Log.v(TAG, "setNoSenseChargeState is execute");
+        enforcePermission(BYDAutoChargingDevice.PERMISSION_BYDAUTO_CHARGING_SET);
+        if (1 == this.mForTestValue) {
+            Log.v(TAG, "setNoSenseChargeState mForTestValue is " + this.mForTestValue + " execute return");
+            return 0;
+        }
+        if (this.mTsManagerImpl.getChargingAdapterManager() == null) {
+            Log.v(TAG, "caradatper still connecting, please wait");
+            return 0;
+        }
+        return this.mTsManagerImpl.getChargingAdapterManager().setNoSenseChargeState(i);
+    }
+
+    public int setDriveDistanceShowStandard(int i) {
+        enforcePermission(BYDAutoChargingDevice.PERMISSION_BYDAUTO_CHARGING_SET);
+        Log.v(TAG, "setDriveDistanceShowStandard is execute");
+        if (1 == this.mForTestValue) {
+            Log.v(TAG, "setDriveDistanceShowStandard mForTestValue is" + this.mForTestValue + " execute return");
+            return 0;
+        }
+        if (this.mTsManagerImpl.getCarBodyManager() == null) {
+            Log.e(TAG, "caradatper still connecting, please wait");
+            return 0;
+        }
+        return this.mTsManagerImpl.getCarBodyManager().setDriveDistanceShowStandard(i);
+    }
+
+    public int setPreSaleModelState(int i) {
+        Log.v(TAG, "setPreSaleModelState is execute");
+        if (1 == this.mForTestValue) {
+            Log.v(TAG, "setPreSaleModelState mForTestValue is" + this.mForTestValue + " execute return");
+            return 0;
+        }
+        if (this.mTsManagerImpl.getCarBodyManager() == null) {
+            Log.e(TAG, "caradatper still connecting, please wait");
+            return 0;
+        }
+        return this.mTsManagerImpl.getCarBodyManager().setPreSaleModelState(i);
+    }
+
+    public int getNoSenseChargeState() {
+        Log.v(TAG, "getNoSenseChargeState is execute");
+        enforcePermission(BYDAutoChargingDevice.PERMISSION_BYDAUTO_CHARGING_GET);
+        if (1 == this.mForTestValue) {
+            Log.v(TAG, "getNoSenseChargeState mForTestValue is " + this.mForTestValue + " execute return");
+            return 0;
+        }
+        if (this.mTsManagerImpl.getChargingAdapterManager() == null) {
+            Log.v(TAG, "caradatper still connecting, please wait");
+            return 0;
+        }
+        return this.mTsManagerImpl.getChargingAdapterManager().getNoSenseChargeState();
+    }
+
+    public byte[] getObcWakeNoSenseCharge() {
+        Log.v(TAG, "getOBCWakeNoSenseCharge is execute");
+        enforcePermission(BYDAutoChargingDevice.PERMISSION_BYDAUTO_CHARGING_GET);
+        if (1 == this.mForTestValue) {
+            Log.v(TAG, "getOBCWakeNoSenseCharge mForTestValue is " + this.mForTestValue + " execute return");
+            return new byte[0];
+        }
+        if (this.mTsManagerImpl.getChargingAdapterManager() == null) {
+            Log.v(TAG, "caradatper still connecting, please wait");
+            return new byte[0];
+        }
+        return this.mTsManagerImpl.getChargingAdapterManager().getObcWakeNoSenseCharge();
+    }
+
+    public byte[] getBmsWakeNoSenseCharge() {
+        Log.v(TAG, "getBMSWakeNoSenseCharge is execute");
+        enforcePermission(BYDAutoChargingDevice.PERMISSION_BYDAUTO_CHARGING_GET);
+        if (1 == this.mForTestValue) {
+            Log.v(TAG, "getBMSWakeNoSenseCharge mForTestValue is " + this.mForTestValue + " execute return");
+            return new byte[0];
+        }
+        if (this.mTsManagerImpl.getChargingAdapterManager() == null) {
+            Log.v(TAG, "caradatper still connecting, please wait");
+            return new byte[0];
+        }
+        return this.mTsManagerImpl.getChargingAdapterManager().getBmsWakeNoSenseCharge();
+    }
+
+    public int setElectricityPriceLevel(byte[] bArr) {
+        Log.v(TAG, "setElectricityPriceLevel is execute");
+        enforcePermission(BYDAutoChargingDevice.PERMISSION_BYDAUTO_CHARGING_SET);
+        if (1 == this.mForTestValue) {
+            Log.v(TAG, "setElectricityPriceLevel mForTestValue is " + this.mForTestValue + " execute return");
+            return 0;
+        }
+        if (this.mTsManagerImpl.getChargingAdapterManager() == null) {
+            Log.v(TAG, "caradatper still connecting, please wait");
+            return 0;
+        }
+        return this.mTsManagerImpl.getChargingAdapterManager().setElectricityPriceLevel(bArr);
+    }
+
+    public int setWirelessChargingFrSwitchState(int i) {
+        enforcePermission(BYDAutoChargingDevice.PERMISSION_BYDAUTO_CHARGING_SET);
+        if (1 == this.mForTestValue) {
+            Log.v(TAG, " setWirelessChargingFrSwitchState mForTestValue is " + this.mForTestValue + " execute return");
+            return -1;
+        }
+        if (this.mTsManagerImpl.getChargingAdapterManager() == null) {
+            Log.v(TAG, "adapter is not connect");
+            return 0;
+        }
+        return this.mTsManagerImpl.getChargingAdapterManager().setWirelessChargingFrSwitchState(i);
+    }
+
+    public int getWirelessChargingFrSwitchState() {
+        enforcePermission(BYDAutoChargingDevice.PERMISSION_BYDAUTO_CHARGING_GET);
+        if (1 == this.mForTestValue) {
+            Log.v(TAG, " getWirelessChargingFrSwitchState mForTestValue is " + this.mForTestValue + " execute return");
+            return -1;
+        }
+        if (this.mTsManagerImpl.getChargingAdapterManager() == null) {
+            Log.v(TAG, "adapter is not connect");
+            return 0;
+        }
+        return this.mTsManagerImpl.getChargingAdapterManager().getWirelessChargingFrSwitchState();
+    }
+
+    public int getWirelessChargingFrState() {
+        enforcePermission(BYDAutoChargingDevice.PERMISSION_BYDAUTO_CHARGING_GET);
+        if (1 == this.mForTestValue) {
+            Log.v(TAG, " getWirelessChargingFrState mForTestValue is " + this.mForTestValue + " execute return");
+            return -1;
+        }
+        if (this.mTsManagerImpl.getChargingAdapterManager() == null) {
+            Log.v(TAG, "adapter is not connect");
+            return 0;
+        }
+        return this.mTsManagerImpl.getChargingAdapterManager().getWirelessChargingFrState();
+    }
+
+    public int getWirelessChargingPowerFlState() {
+        enforcePermission(BYDAutoChargingDevice.PERMISSION_BYDAUTO_CHARGING_GET);
+        if (1 == this.mForTestValue) {
+            Log.v(TAG, " getWirelessChargingPowerFlState mForTestValue is " + this.mForTestValue + " execute return");
+            return -1;
+        }
+        if (this.mTsManagerImpl.getChargingAdapterManager() == null) {
+            Log.v(TAG, "adapter is not connect");
+            return 0;
+        }
+        return this.mTsManagerImpl.getChargingAdapterManager().getWirelessChargingPowerFlState();
+    }
+
+    public int getWirelessChargingPowerFrState() {
+        enforcePermission(BYDAutoChargingDevice.PERMISSION_BYDAUTO_CHARGING_GET);
+        if (1 == this.mForTestValue) {
+            Log.v(TAG, " getWirelessChargingPowerFrState mForTestValue is " + this.mForTestValue + " execute return");
+            return -1;
+        }
+        if (this.mTsManagerImpl.getChargingAdapterManager() == null) {
+            Log.v(TAG, "adapter is not connect");
+            return 0;
+        }
+        return this.mTsManagerImpl.getChargingAdapterManager().getWirelessChargingPowerFrState();
+    }
+
+    public int[] getHevChargePlanStartTime() {
+        Log.i(TAG, "getHevChargePlanStartTime is execute");
+        enforcePermission(BYDAutoChargingDevice.PERMISSION_BYDAUTO_CHARGING_GET);
+        if (this.mTsManagerImpl.getChargingAdapterManager() != null) {
+            return new int[]{this.mTsManagerImpl.getChargingAdapterManager().getHevChargePlanStartTimeYearR(), this.mTsManagerImpl.getChargingAdapterManager().getHevChargePlanStartTimeMonthR(), this.mTsManagerImpl.getChargingAdapterManager().getHevChargePlanStartTimeYearDayR(), this.mTsManagerImpl.getChargingAdapterManager().getHevChargePlanStartTimeYearHourR(), this.mTsManagerImpl.getChargingAdapterManager().getHevChargePlanStartTimeYearMinuteR()};
+        }
+        Log.e(TAG, "caradatper still connecting, please wait");
+        return new int[0];
+    }
+
+    public int[] getHevChargePlanEndTime() {
+        Log.i(TAG, "getHevChargePlanEndTime is execute");
+        enforcePermission(BYDAutoChargingDevice.PERMISSION_BYDAUTO_CHARGING_GET);
+        if (this.mTsManagerImpl.getChargingAdapterManager() == null) {
+            Log.e(TAG, "caradatper still connecting, please wait");
+            return new int[0];
+        }
+        return this.mTsManagerImpl.getChargingAdapterManager().getHevChargePlanEndTime();
+    }
+
+    public int getHevChargePlanStartTimeTag() {
+        enforcePermission(BYDAutoChargingDevice.PERMISSION_BYDAUTO_CHARGING_GET);
+        if (1 == this.mForTestValue) {
+            Log.v(TAG, " getHevChargePlanStartTimeTag mForTestValue is " + this.mForTestValue + " execute return");
+            return -1;
+        }
+        if (this.mTsManagerImpl.getChargingAdapterManager() == null) {
+            Log.v(TAG, "adapter is not connect");
+            return 0;
+        }
+        return this.mTsManagerImpl.getChargingAdapterManager().getHevChargePlanStartTimeTag();
+    }
+
+    public int getHevChargePlanEndTimeTag() {
+        enforcePermission(BYDAutoChargingDevice.PERMISSION_BYDAUTO_CHARGING_GET);
+        if (1 == this.mForTestValue) {
+            Log.v(TAG, " getHevChargePlanEndTimeTag mForTestValue is " + this.mForTestValue + " execute return");
+            return -1;
+        }
+        if (this.mTsManagerImpl.getChargingAdapterManager() == null) {
+            Log.v(TAG, "adapter is not connect");
+            return 0;
+        }
+        return this.mTsManagerImpl.getChargingAdapterManager().getHevChargePlanEndTimeTag();
+    }
+
+    public int getAcChargingLimit() {
+        if (1 == this.mForTestValue) {
+            Log.v(TAG, " getAcChargingLimit mForTestValue is 0 execute return");
+            return -1;
+        }
+        if (this.mTsManagerImpl.getChargingAdapterManager() == null) {
+            Log.v(TAG, "adapter is not connect");
+            return 0;
+        }
+        return this.mTsManagerImpl.getChargingAdapterManager().getAcChargingLimit();
+    }
+
+    public int setAcChargingLimit(int i) {
+        if (1 == this.mForTestValue) {
+            Log.v(TAG, " setAcChargingLimit mForTestValue is 0 execute return");
+            return -1;
+        }
+        if (this.mTsManagerImpl.getChargingAdapterManager() == null) {
+            Log.v(TAG, "adapter is not connect");
+            return -1;
+        }
+        return this.mTsManagerImpl.getChargingAdapterManager().setAcChargingLimit(i);
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public void charginCallback(int i, int i2, CarBodyPacket carBodyPacket) {
+        Log.i(TAG, "charginCallback propertyId:" + i);
+        switch (i) {
+            case ChargingHalId.ID_CHARGER_FAULT_STATER /* 557855744 */:
+                Iterator<AbsBYDAutoChargingListener> it = this.mAbsBydAutoChargingListeners.iterator();
+                while (it.hasNext()) {
+                    it.next().onChargerFaultStateChanged(carBodyPacket.getChargerFaultStateR());
+                }
+                break;
+            case ChargingHalId.ID_CHARGER_WORK_STATER /* 557855745 */:
+                Iterator<AbsBYDAutoChargingListener> it2 = this.mAbsBydAutoChargingListeners.iterator();
+                while (it2.hasNext()) {
+                    it2.next().onBatteryManagementDeviceStateChanged(carBodyPacket.getChargerWorkStateR());
+                }
+                break;
+            default:
+                switch (i) {
+                    case ChargingHalId.ID_CHARING_PORT_LOCK_REBACK_STATER /* 557855748 */:
+                        Iterator<AbsBYDAutoChargingListener> it3 = this.mAbsBydAutoChargingListeners.iterator();
+                        while (it3.hasNext()) {
+                            it3.next().onChargingPortLockRebackStateChanged(carBodyPacket.getCharingPortLockRebackStateR());
+                        }
+                        break;
+                    case ChargingHalId.ID_DISCHARGE_REQUEST_STATER /* 557855749 */:
+                        Iterator<AbsBYDAutoChargingListener> it4 = this.mAbsBydAutoChargingListeners.iterator();
+                        while (it4.hasNext()) {
+                            it4.next().onDischargeRequestStateChanged(carBodyPacket.getDischargeRequestStateR());
+                        }
+                        break;
+                    case ChargingHalId.ID_CHARGER_STATER /* 557855750 */:
+                        Iterator<AbsBYDAutoChargingListener> it5 = this.mAbsBydAutoChargingListeners.iterator();
+                        while (it5.hasNext()) {
+                            it5.next().onChargerStateChanged(carBodyPacket.getChargerStateR());
+                        }
+                        break;
+                    case ChargingHalId.ID_CHARGING_GUN_STATER /* 557855751 */:
+                        Iterator<AbsBYDAutoChargingListener> it6 = this.mAbsBydAutoChargingListeners.iterator();
+                        while (it6.hasNext()) {
+                            it6.next().onChargingGunStateChanged(carBodyPacket.getChargingGunStateR());
+                        }
+                        caseFeatureIds(2520, Integer.valueOf(carBodyPacket.getChargingGunStateR()));
+                        break;
+                    default:
+                        switch (i) {
+                            case ChargingHalId.ID_CHARGING_SCHEDULE_ENABLE_STATER /* 557855754 */:
+                                Iterator<AbsBYDAutoChargingListener> it7 = this.mAbsBydAutoChargingListeners.iterator();
+                                while (it7.hasNext()) {
+                                    it7.next().onChargingScheduleEnableStateChanged(carBodyPacket.getChargingScheduleEnableStateR());
+                                }
+                                break;
+                            case ChargingHalId.ID_CHARGING_SCHEDULE_STATER /* 557855755 */:
+                                Iterator<AbsBYDAutoChargingListener> it8 = this.mAbsBydAutoChargingListeners.iterator();
+                                while (it8.hasNext()) {
+                                    it8.next().onChargingScheduleStateChanged(carBodyPacket.getChargingScheduleStateR());
+                                }
+                                break;
+                            case ChargingHalId.ID_CHARGING_SCHEDULE_TIME_YEARR /* 557855756 */:
+                            case ChargingHalId.ID_CHARGING_SCHEDULE_TIME_MONTHR /* 557855757 */:
+                            case ChargingHalId.ID_CHARGING_SCHEDULE_TIME_DAYR /* 557855758 */:
+                            case ChargingHalId.ID_CHARGING_SCHEDULE_TIME_HOURR /* 557855759 */:
+                            case ChargingHalId.ID_CHARGING_SCHEDULE_TIME_MINUTER /* 557855760 */:
+                                Iterator<AbsBYDAutoChargingListener> it9 = this.mAbsBydAutoChargingListeners.iterator();
+                                while (it9.hasNext()) {
+                                    it9.next().onChargingScheduleTimeCountDownChanged(carBodyPacket.getChargingScheduleTimeHourR(), carBodyPacket.getChargingScheduleTimeMinuteR());
+                                }
+                                break;
+                            default:
+                                switch (i) {
+                                    case ChargingHalId.ID_CHARGE_TOGGLE_GUARDR /* 557855762 */:
+                                        Iterator<AbsBYDAutoChargingListener> it10 = this.mAbsBydAutoChargingListeners.iterator();
+                                        while (it10.hasNext()) {
+                                            it10.next().onChargeToggleGuardChanged(carBodyPacket.getChargeToggleGuardR());
+                                        }
+                                        break;
+                                    case ChargingHalId.ID_MOVE_POWER_STATION_TOGGLER /* 557855764 */:
+                                        Iterator<AbsBYDAutoChargingListener> it11 = this.mAbsBydAutoChargingListeners.iterator();
+                                        while (it11.hasNext()) {
+                                            it11.next().onMovePowerStationToggleChanged(carBodyPacket.getMovePowerStationToggleR());
+                                        }
+                                        break;
+                                    case ChargingHalId.ID_DISCHARGE_TOGGLER /* 557855768 */:
+                                        Iterator<AbsBYDAutoChargingListener> it12 = this.mAbsBydAutoChargingListeners.iterator();
+                                        while (it12.hasNext()) {
+                                            it12.next().onDischargeToggleChanged(carBodyPacket.getDischargeToggleR());
+                                        }
+                                        break;
+                                    case ChargingHalId.ID_PRODUCE_POWER_WHEN_LOW_POWERR /* 557855774 */:
+                                        Iterator<AbsBYDAutoChargingListener> it13 = this.mAbsBydAutoChargingListeners.iterator();
+                                        while (it13.hasNext()) {
+                                            it13.next().onPorducePowerWhenLowPowerChanged(carBodyPacket.getProducePowerWhenLowPowerR());
+                                        }
+                                        break;
+                                    case ChargingHalId.ID_VTOV_DISCHARGE_LOWEST_VALR /* 557855793 */:
+                                        Iterator<AbsBYDAutoChargingListener> it14 = this.mAbsBydAutoChargingListeners.iterator();
+                                        while (it14.hasNext()) {
+                                            it14.next().onVtovDischargeLowestValChanged(carBodyPacket.getVtovDischargeLowestValR());
+                                        }
+                                        break;
+                                    case ChargingHalId.ID_CHARGER_WORK_FIX_STATER /* 557855798 */:
+                                        Iterator<AbsBYDAutoChargingListener> it15 = this.mAbsBydAutoChargingListeners.iterator();
+                                        while (it15.hasNext()) {
+                                            it15.next().onChargerWorkStateChanged(carBodyPacket.getChargerWorkStateFixR());
+                                        }
+                                        break;
+                                    case ChargingHalId.ID_CHARGE_STOP_CAPACITY_STATER /* 557855804 */:
+                                        Iterator<AbsBYDAutoChargingListener> it16 = this.mAbsBydAutoChargingListeners.iterator();
+                                        while (it16.hasNext()) {
+                                            it16.next().onChargeStopCapacityStateChanged(carBodyPacket.getChargeStopCapacityStateR());
+                                        }
+                                        break;
+                                    case ChargingHalId.ID_CHARGE_TOAGGLE_GUARD_MIXR /* 557855806 */:
+                                        Iterator<AbsBYDAutoChargingListener> it17 = this.mAbsBydAutoChargingListeners.iterator();
+                                        while (it17.hasNext()) {
+                                            it17.next().onChargeToggleGuardChanged(carBodyPacket.getChargeToaggleGuardMixR());
+                                        }
+                                        break;
+                                    case ChargingHalId.ID_VTOV_DISCHARGE_LIMIT_VALR /* 557855807 */:
+                                        Iterator<AbsBYDAutoChargingListener> it18 = this.mAbsBydAutoChargingListeners.iterator();
+                                        while (it18.hasNext()) {
+                                            it18.next().onVtovDischargeLimitValChanged(carBodyPacket.getVtovDischargeLimitValR());
+                                        }
+                                        caseFeatureIds(2748, Integer.valueOf(carBodyPacket.getVtovDischargeLimitValR()));
+                                        break;
+                                    case ChargingHalId.ID_CHARGING_RESTTIME_HOURR /* 557855808 */:
+                                    case ChargingHalId.ID_CHARGING_RESTTIME_MINUTER /* 557855809 */:
+                                        int chargingResetTimeHourR = carBodyPacket.getChargingResetTimeHourR();
+                                        int chargingResetTimeMinuteR = carBodyPacket.getChargingResetTimeMinuteR();
+                                        Iterator<AbsBYDAutoChargingListener> it19 = this.mAbsBydAutoChargingListeners.iterator();
+                                        while (it19.hasNext()) {
+                                            it19.next().onChargingRestTimeChanged(chargingResetTimeHourR, chargingResetTimeMinuteR);
+                                        }
+                                        break;
+                                    case ChargingHalId.ID_VTOV_DISCHARGE_CONNECT_STATE /* 557855810 */:
+                                        Iterator<AbsBYDAutoChargingListener> it20 = this.mAbsBydAutoChargingListeners.iterator();
+                                        while (it20.hasNext()) {
+                                            it20.next().onVtovDischargeConnectStateChanged(carBodyPacket.getVtovDischargeConnectState());
+                                        }
+                                        break;
+                                    case ChargingHalId.ID_OBC_WAKE_NO_SENSE_CHARGE1_R /* 557855811 */:
+                                        byte[] bArr = {(byte) carBodyPacket.getObcWakeNoSenseCharge1R()};
+                                        Iterator<AbsBYDAutoChargingListener> it21 = this.mAbsBydAutoChargingListeners.iterator();
+                                        while (it21.hasNext()) {
+                                            it21.next().onOBCWakeNoSenseChargeChanged(bArr);
+                                        }
+                                        break;
+                                    case ChargingHalId.ID_OBC_WAKE_NO_SENSE_CHARGE2_R /* 557855812 */:
+                                        byte[] bArr2 = {(byte) carBodyPacket.getObcWakeNoSenseCharge2R()};
+                                        Iterator<AbsBYDAutoChargingListener> it22 = this.mAbsBydAutoChargingListeners.iterator();
+                                        while (it22.hasNext()) {
+                                            it22.next().onOBCWakeNoSenseChargeChanged(bArr2);
+                                        }
+                                        break;
+                                    case ChargingHalId.ID_OBC_WAKE_NO_SENSE_CHARGE3_R /* 557855813 */:
+                                        byte[] bArr3 = {(byte) carBodyPacket.getObcWakeNoSenseCharge3R()};
+                                        Iterator<AbsBYDAutoChargingListener> it23 = this.mAbsBydAutoChargingListeners.iterator();
+                                        while (it23.hasNext()) {
+                                            it23.next().onOBCWakeNoSenseChargeChanged(bArr3);
+                                        }
+                                        break;
+                                    case ChargingHalId.ID_OBC_WAKE_NO_SENSE_CHARGE4_R /* 557855814 */:
+                                        byte[] bArr4 = {(byte) carBodyPacket.getObcWakeNoSenseCharge4R()};
+                                        Iterator<AbsBYDAutoChargingListener> it24 = this.mAbsBydAutoChargingListeners.iterator();
+                                        while (it24.hasNext()) {
+                                            it24.next().onOBCWakeNoSenseChargeChanged(bArr4);
+                                        }
+                                        break;
+                                    case ChargingHalId.ID_OBC_WAKE_NO_SENSE_CHARGE5_R /* 557855815 */:
+                                        byte[] bArr5 = {(byte) carBodyPacket.getObcWakeNoSenseCharge5R()};
+                                        Iterator<AbsBYDAutoChargingListener> it25 = this.mAbsBydAutoChargingListeners.iterator();
+                                        while (it25.hasNext()) {
+                                            it25.next().onOBCWakeNoSenseChargeChanged(bArr5);
+                                        }
+                                        break;
+                                    case ChargingHalId.ID_OBC_WAKE_NO_SENSE_CHARGE6_R /* 557855816 */:
+                                        byte[] bArr6 = {(byte) carBodyPacket.getObcWakeNoSenseCharge6R()};
+                                        Iterator<AbsBYDAutoChargingListener> it26 = this.mAbsBydAutoChargingListeners.iterator();
+                                        while (it26.hasNext()) {
+                                            it26.next().onOBCWakeNoSenseChargeChanged(bArr6);
+                                        }
+                                        break;
+                                    case ChargingHalId.ID_OBC_WAKE_NO_SENSE_CHARGE7_R /* 557855817 */:
+                                        byte[] bArr7 = {(byte) carBodyPacket.getObcWakeNoSenseCharge7R()};
+                                        Iterator<AbsBYDAutoChargingListener> it27 = this.mAbsBydAutoChargingListeners.iterator();
+                                        while (it27.hasNext()) {
+                                            it27.next().onOBCWakeNoSenseChargeChanged(bArr7);
+                                        }
+                                        break;
+                                    case ChargingHalId.ID_OBC_WAKE_NO_SENSE_CHARGE8_R /* 557855818 */:
+                                        byte[] bArr8 = {(byte) carBodyPacket.getObcWakeNoSenseCharge8R()};
+                                        Iterator<AbsBYDAutoChargingListener> it28 = this.mAbsBydAutoChargingListeners.iterator();
+                                        while (it28.hasNext()) {
+                                            it28.next().onOBCWakeNoSenseChargeChanged(bArr8);
+                                        }
+                                        break;
+                                    case ChargingHalId.ID_OBC_WAKE_NO_SENSE_CHARGE9_R /* 557855819 */:
+                                        byte[] bArr9 = {(byte) carBodyPacket.getObcWakeNoSenseCharge9R()};
+                                        Iterator<AbsBYDAutoChargingListener> it29 = this.mAbsBydAutoChargingListeners.iterator();
+                                        while (it29.hasNext()) {
+                                            it29.next().onOBCWakeNoSenseChargeChanged(bArr9);
+                                        }
+                                        break;
+                                    case ChargingHalId.ID_OBC_WAKE_NO_SENSE_CHARGE10_R /* 557855820 */:
+                                        byte[] bArr10 = {(byte) carBodyPacket.getObcWakeNoSenseCharge10R()};
+                                        Iterator<AbsBYDAutoChargingListener> it30 = this.mAbsBydAutoChargingListeners.iterator();
+                                        while (it30.hasNext()) {
+                                            it30.next().onOBCWakeNoSenseChargeChanged(bArr10);
+                                        }
+                                        break;
+                                    case ChargingHalId.ID_OBC_WAKE_NO_SENSE_CHARGE11_R /* 557855821 */:
+                                        byte[] bArr11 = {(byte) carBodyPacket.getObcWakeNoSenseCharge11R()};
+                                        Iterator<AbsBYDAutoChargingListener> it31 = this.mAbsBydAutoChargingListeners.iterator();
+                                        while (it31.hasNext()) {
+                                            it31.next().onOBCWakeNoSenseChargeChanged(bArr11);
+                                        }
+                                        break;
+                                    case ChargingHalId.ID_OBC_WAKE_NO_SENSE_CHARGE12_R /* 557855822 */:
+                                        byte[] bArr12 = {(byte) carBodyPacket.getObcWakeNoSenseCharge12R()};
+                                        Iterator<AbsBYDAutoChargingListener> it32 = this.mAbsBydAutoChargingListeners.iterator();
+                                        while (it32.hasNext()) {
+                                            it32.next().onOBCWakeNoSenseChargeChanged(bArr12);
+                                        }
+                                        break;
+                                    case ChargingHalId.ID_OBC_WAKE_NO_SENSE_CHARGE13_R /* 557855823 */:
+                                        byte[] bArr13 = {(byte) carBodyPacket.getObcWakeNoSenseCharge13R()};
+                                        Iterator<AbsBYDAutoChargingListener> it33 = this.mAbsBydAutoChargingListeners.iterator();
+                                        while (it33.hasNext()) {
+                                            it33.next().onOBCWakeNoSenseChargeChanged(bArr13);
+                                        }
+                                        break;
+                                    case ChargingHalId.ID_OBC_WAKE_NO_SENSE_CHARGE14_R /* 557855824 */:
+                                        byte[] bArr14 = {(byte) carBodyPacket.getObcWakeNoSenseCharge14R()};
+                                        Iterator<AbsBYDAutoChargingListener> it34 = this.mAbsBydAutoChargingListeners.iterator();
+                                        while (it34.hasNext()) {
+                                            it34.next().onOBCWakeNoSenseChargeChanged(bArr14);
+                                        }
+                                        break;
+                                    case ChargingHalId.ID_OBC_WAKE_NO_SENSE_CHARGE15_R /* 557855825 */:
+                                        byte[] bArr15 = {(byte) carBodyPacket.getObcWakeNoSenseCharge15R()};
+                                        Iterator<AbsBYDAutoChargingListener> it35 = this.mAbsBydAutoChargingListeners.iterator();
+                                        while (it35.hasNext()) {
+                                            it35.next().onOBCWakeNoSenseChargeChanged(bArr15);
+                                        }
+                                        break;
+                                    case ChargingHalId.ID_OBC_WAKE_NO_SENSE_CHARGE16_R /* 557855826 */:
+                                        byte[] bArr16 = {(byte) carBodyPacket.getObcWakeNoSenseCharge16R()};
+                                        Iterator<AbsBYDAutoChargingListener> it36 = this.mAbsBydAutoChargingListeners.iterator();
+                                        while (it36.hasNext()) {
+                                            it36.next().onOBCWakeNoSenseChargeChanged(bArr16);
+                                        }
+                                        break;
+                                    case ChargingHalId.ID_OBC_WAKE_NO_SENSE_CHARGE17_R /* 557855827 */:
+                                        byte[] bArr17 = {(byte) carBodyPacket.getObcWakeNoSenseCharge17R()};
+                                        Iterator<AbsBYDAutoChargingListener> it37 = this.mAbsBydAutoChargingListeners.iterator();
+                                        while (it37.hasNext()) {
+                                            it37.next().onOBCWakeNoSenseChargeChanged(bArr17);
+                                        }
+                                        break;
+                                    case ChargingHalId.ID_OBC_WAKE_NO_SENSE_CHARGE18_R /* 557855828 */:
+                                        byte[] bArr18 = {(byte) carBodyPacket.getObcWakeNoSenseCharge18R()};
+                                        Iterator<AbsBYDAutoChargingListener> it38 = this.mAbsBydAutoChargingListeners.iterator();
+                                        while (it38.hasNext()) {
+                                            it38.next().onOBCWakeNoSenseChargeChanged(bArr18);
+                                        }
+                                        break;
+                                    case ChargingHalId.ID_OBC_WAKE_NO_SENSE_CHARGE19_R /* 557855829 */:
+                                        byte[] bArr19 = {(byte) carBodyPacket.getObcWakeNoSenseCharge19R()};
+                                        Iterator<AbsBYDAutoChargingListener> it39 = this.mAbsBydAutoChargingListeners.iterator();
+                                        while (it39.hasNext()) {
+                                            it39.next().onOBCWakeNoSenseChargeChanged(bArr19);
+                                        }
+                                        break;
+                                    case ChargingHalId.ID_OBC_WAKE_NO_SENSE_CHARGE20_R /* 557855830 */:
+                                        byte[] bArr20 = {(byte) carBodyPacket.getObcWakeNoSenseCharge20R()};
+                                        Iterator<AbsBYDAutoChargingListener> it40 = this.mAbsBydAutoChargingListeners.iterator();
+                                        while (it40.hasNext()) {
+                                            it40.next().onOBCWakeNoSenseChargeChanged(bArr20);
+                                        }
+                                        break;
+                                    case ChargingHalId.ID_OBC_WAKE_NO_SENSE_CHARGE21_R /* 557855831 */:
+                                        byte[] bArr21 = {(byte) carBodyPacket.getObcWakeNoSenseCharge21R()};
+                                        Iterator<AbsBYDAutoChargingListener> it41 = this.mAbsBydAutoChargingListeners.iterator();
+                                        while (it41.hasNext()) {
+                                            it41.next().onOBCWakeNoSenseChargeChanged(bArr21);
+                                        }
+                                        break;
+                                    case ChargingHalId.ID_OBC_WAKE_NO_SENSE_CHARGE22_R /* 557855832 */:
+                                        byte[] bArr22 = {(byte) carBodyPacket.getObcWakeNoSenseCharge22R()};
+                                        Iterator<AbsBYDAutoChargingListener> it42 = this.mAbsBydAutoChargingListeners.iterator();
+                                        while (it42.hasNext()) {
+                                            it42.next().onOBCWakeNoSenseChargeChanged(bArr22);
+                                        }
+                                        break;
+                                    case ChargingHalId.ID_OBC_WAKE_NO_SENSE_CHARGE23_R /* 557855833 */:
+                                        byte[] bArr23 = {(byte) carBodyPacket.getObcWakeNoSenseCharge23R()};
+                                        Iterator<AbsBYDAutoChargingListener> it43 = this.mAbsBydAutoChargingListeners.iterator();
+                                        while (it43.hasNext()) {
+                                            it43.next().onOBCWakeNoSenseChargeChanged(bArr23);
+                                        }
+                                        break;
+                                    case ChargingHalId.ID_OBC_WAKE_NO_SENSE_CHARGE24_R /* 557855834 */:
+                                        byte[] bArr24 = {(byte) carBodyPacket.getObcWakeNoSenseCharge24R()};
+                                        Iterator<AbsBYDAutoChargingListener> it44 = this.mAbsBydAutoChargingListeners.iterator();
+                                        while (it44.hasNext()) {
+                                            it44.next().onOBCWakeNoSenseChargeChanged(bArr24);
+                                        }
+                                        break;
+                                    case ChargingHalId.ID_OBC_WAKE_NO_SENSE_CHARGE25_R /* 557855835 */:
+                                        byte[] bArr25 = {(byte) carBodyPacket.getObcWakeNoSenseCharge25R()};
+                                        Iterator<AbsBYDAutoChargingListener> it45 = this.mAbsBydAutoChargingListeners.iterator();
+                                        while (it45.hasNext()) {
+                                            it45.next().onOBCWakeNoSenseChargeChanged(bArr25);
+                                        }
+                                        break;
+                                    case ChargingHalId.ID_OBC_WAKE_NO_SENSE_CHARGE26_R /* 557855836 */:
+                                        byte[] bArr26 = {(byte) carBodyPacket.getObcWakeNoSenseCharge26R()};
+                                        Iterator<AbsBYDAutoChargingListener> it46 = this.mAbsBydAutoChargingListeners.iterator();
+                                        while (it46.hasNext()) {
+                                            it46.next().onOBCWakeNoSenseChargeChanged(bArr26);
+                                        }
+                                        break;
+                                    case ChargingHalId.ID_OBC_WAKE_NO_SENSE_CHARGE27_R /* 557855837 */:
+                                        byte[] bArr27 = {(byte) carBodyPacket.getObcWakeNoSenseCharge27R()};
+                                        Iterator<AbsBYDAutoChargingListener> it47 = this.mAbsBydAutoChargingListeners.iterator();
+                                        while (it47.hasNext()) {
+                                            it47.next().onOBCWakeNoSenseChargeChanged(bArr27);
+                                        }
+                                        break;
+                                    case ChargingHalId.ID_OBC_WAKE_NO_SENSE_CHARGE28_R /* 557855838 */:
+                                        byte[] bArr28 = {(byte) carBodyPacket.getObcWakeNoSenseCharge28R()};
+                                        Iterator<AbsBYDAutoChargingListener> it48 = this.mAbsBydAutoChargingListeners.iterator();
+                                        while (it48.hasNext()) {
+                                            it48.next().onOBCWakeNoSenseChargeChanged(bArr28);
+                                        }
+                                        break;
+                                    case ChargingHalId.ID_OBC_WAKE_NO_SENSE_CHARGE29_R /* 557855839 */:
+                                        byte[] bArr29 = {(byte) carBodyPacket.getObcWakeNoSenseCharge29R()};
+                                        Iterator<AbsBYDAutoChargingListener> it49 = this.mAbsBydAutoChargingListeners.iterator();
+                                        while (it49.hasNext()) {
+                                            it49.next().onOBCWakeNoSenseChargeChanged(bArr29);
+                                        }
+                                        break;
+                                    case ChargingHalId.ID_OBC_WAKE_NO_SENSE_CHARGE30_R /* 557855840 */:
+                                        byte[] bArr30 = {(byte) carBodyPacket.getObcWakeNoSenseCharge30R()};
+                                        Iterator<AbsBYDAutoChargingListener> it50 = this.mAbsBydAutoChargingListeners.iterator();
+                                        while (it50.hasNext()) {
+                                            it50.next().onOBCWakeNoSenseChargeChanged(bArr30);
+                                        }
+                                        break;
+                                    case ChargingHalId.ID_OBC_WAKE_NO_SENSE_CHARGE31_R /* 557855841 */:
+                                        byte[] bArr31 = {(byte) carBodyPacket.getObcWakeNoSenseCharge31R()};
+                                        Iterator<AbsBYDAutoChargingListener> it51 = this.mAbsBydAutoChargingListeners.iterator();
+                                        while (it51.hasNext()) {
+                                            it51.next().onOBCWakeNoSenseChargeChanged(bArr31);
+                                        }
+                                        break;
+                                    case ChargingHalId.ID_OBC_WAKE_NO_SENSE_CHARGE32_R /* 557855842 */:
+                                        byte[] bArr32 = {(byte) carBodyPacket.getObcWakeNoSenseCharge32R()};
+                                        Iterator<AbsBYDAutoChargingListener> it52 = this.mAbsBydAutoChargingListeners.iterator();
+                                        while (it52.hasNext()) {
+                                            it52.next().onOBCWakeNoSenseChargeChanged(bArr32);
+                                        }
+                                        break;
+                                    case ChargingHalId.ID_OBC_WAKE_NO_SENSE_CHARGE33_R /* 557855843 */:
+                                        byte[] bArr33 = {(byte) carBodyPacket.getObcWakeNoSenseCharge33R()};
+                                        Iterator<AbsBYDAutoChargingListener> it53 = this.mAbsBydAutoChargingListeners.iterator();
+                                        while (it53.hasNext()) {
+                                            it53.next().onOBCWakeNoSenseChargeChanged(bArr33);
+                                        }
+                                        break;
+                                    case ChargingHalId.ID_OBC_WAKE_NO_SENSE_CHARGE34_R /* 557855844 */:
+                                        byte[] bArr34 = {(byte) carBodyPacket.getObcWakeNoSenseCharge34R()};
+                                        Iterator<AbsBYDAutoChargingListener> it54 = this.mAbsBydAutoChargingListeners.iterator();
+                                        while (it54.hasNext()) {
+                                            it54.next().onOBCWakeNoSenseChargeChanged(bArr34);
+                                        }
+                                        break;
+                                    case ChargingHalId.ID_OBC_WAKE_NO_SENSE_CHARGE35_R /* 557855845 */:
+                                        byte[] bArr35 = {(byte) carBodyPacket.getObcWakeNoSenseCharge35R()};
+                                        Iterator<AbsBYDAutoChargingListener> it55 = this.mAbsBydAutoChargingListeners.iterator();
+                                        while (it55.hasNext()) {
+                                            it55.next().onOBCWakeNoSenseChargeChanged(bArr35);
+                                        }
+                                        break;
+                                    case ChargingHalId.ID_SITU_POWER_GENERATION_STATE_R /* 557856266 */:
+                                        Iterator<AbsBYDAutoChargingListener> it56 = this.mAbsBydAutoChargingListeners.iterator();
+                                        while (it56.hasNext()) {
+                                            it56.next().onSituPowerGenerationStateChanged(carBodyPacket.getSituPowerGenerationStateR());
+                                        }
+                                        break;
+                                    case ChargingHalId.ID_NO_SENSE_CHARGE_STATE_R /* 557856276 */:
+                                        Iterator<AbsBYDAutoChargingListener> it57 = this.mAbsBydAutoChargingListeners.iterator();
+                                        while (it57.hasNext()) {
+                                            it57.next().onNoSenseChargeStateChanged(carBodyPacket.getNoSenseChargeStateR());
+                                        }
+                                        break;
+                                    case 557856280:
+                                        this.mAcChargingLimitR = carBodyPacket.getAcChargingLimitR();
+                                        Iterator<AbsBYDAutoChargingListener> it58 = this.mAbsBydAutoChargingListeners.iterator();
+                                        while (it58.hasNext()) {
+                                            it58.next().onACChargingLimitChanged(this.mAcChargingLimitR);
+                                        }
+                                        break;
+                                    case ChargingHalId.ID_WIRELESS_CHARGING_F_R_SWITCH_STATE_R /* 557856326 */:
+                                        Iterator<AbsBYDAutoChargingListener> it59 = this.mAbsBydAutoChargingListeners.iterator();
+                                        while (it59.hasNext()) {
+                                            it59.next().onWirelessChargingFRSwitchStateChanged(carBodyPacket.getWirelessChargingFrSwitchStateR());
+                                        }
+                                        break;
+                                    case ChargingHalId.ID_WIRELESS_CHARGING_F_R_STATE_R /* 557856327 */:
+                                        Iterator<AbsBYDAutoChargingListener> it60 = this.mAbsBydAutoChargingListeners.iterator();
+                                        while (it60.hasNext()) {
+                                            it60.next().onWirelessChargingFRStateChanged(carBodyPacket.getWirelessChargingFrStateR());
+                                        }
+                                        break;
+                                    case ChargingHalId.ID_WIRELESS_CHARGING_POWER_F_L_STATE_R /* 557856328 */:
+                                        Iterator<AbsBYDAutoChargingListener> it61 = this.mAbsBydAutoChargingListeners.iterator();
+                                        while (it61.hasNext()) {
+                                            it61.next().onWirelessChargingPowerFLStateChanged(carBodyPacket.getWirelessChargingPowerFlStateR());
+                                        }
+                                        break;
+                                    case ChargingHalId.ID_WIRELESS_CHARGING_POWER_F_R_STATE_R /* 557856329 */:
+                                        Iterator<AbsBYDAutoChargingListener> it62 = this.mAbsBydAutoChargingListeners.iterator();
+                                        while (it62.hasNext()) {
+                                            it62.next().onWirelessChargingPowerFRStateChanged(carBodyPacket.getWirelessChargingPowerFrStateR());
+                                        }
+                                        break;
+                                    case ChargingHalId.ID_PORT_CAP_STATE_RIGHT_R /* 557856330 */:
+                                        Iterator<AbsBYDAutoChargingListener> it63 = this.mAbsBydAutoChargingListeners.iterator();
+                                        while (it63.hasNext()) {
+                                            it63.next().onPortCapStateChanged(2, carBodyPacket.getgetPortCapStateRightR());
+                                        }
+                                        caseFeatureIds(2628, Integer.valueOf(carBodyPacket.getgetPortCapStateRightR()));
+                                        break;
+                                    case ChargingHalId.ID_PORT_CAP_STATE_LEFT_R /* 557856331 */:
+                                        Iterator<AbsBYDAutoChargingListener> it64 = this.mAbsBydAutoChargingListeners.iterator();
+                                        while (it64.hasNext()) {
+                                            it64.next().onPortCapStateChanged(1, carBodyPacket.getgetPortCapStateLeftR());
+                                        }
+                                        caseFeatureIds(2596, Integer.valueOf(carBodyPacket.getgetPortCapStateLeftR()));
+                                        break;
+                                    case ChargingHalId.ID_HEV_CHARGE_PLAN_START_TIME_YEAR_R /* 557856332 */:
+                                        this.mHevChargePlanStartTimeYearR = carBodyPacket.getHevChargePlanStartTimeYearR();
+                                        Iterator<AbsBYDAutoChargingListener> it65 = this.mAbsBydAutoChargingListeners.iterator();
+                                        while (it65.hasNext()) {
+                                            it65.next().onHEVChargePlanStartTimeChargeChanged(new int[]{this.mHevChargePlanStartTimeYearR, this.mHevChargePlanStartTimeMonthR, this.mHevChargePlanStartTimeYearDayR, this.mHevChargePlanStartTimeYearHourR, this.mHevChargePlanStartTimeYearMinuteR});
+                                        }
+                                        break;
+                                    case ChargingHalId.ID_HEV_CHARGE_PLAN_START_TIME_MONTH_R /* 557856333 */:
+                                        this.mHevChargePlanStartTimeMonthR = carBodyPacket.getHevChargePlanStartTimeMonthR();
+                                        Iterator<AbsBYDAutoChargingListener> it66 = this.mAbsBydAutoChargingListeners.iterator();
+                                        while (it66.hasNext()) {
+                                            it66.next().onHEVChargePlanStartTimeChargeChanged(new int[]{this.mHevChargePlanStartTimeYearR, this.mHevChargePlanStartTimeMonthR, this.mHevChargePlanStartTimeYearDayR, this.mHevChargePlanStartTimeYearHourR, this.mHevChargePlanStartTimeYearMinuteR});
+                                        }
+                                        break;
+                                    case ChargingHalId.ID_HEV_CHARGE_PLAN_START_TIME_DAY_R /* 557856334 */:
+                                        this.mHevChargePlanStartTimeYearDayR = carBodyPacket.getHevChargePlanStartTimeYearDayR();
+                                        Iterator<AbsBYDAutoChargingListener> it67 = this.mAbsBydAutoChargingListeners.iterator();
+                                        while (it67.hasNext()) {
+                                            it67.next().onHEVChargePlanStartTimeChargeChanged(new int[]{this.mHevChargePlanStartTimeYearR, this.mHevChargePlanStartTimeMonthR, this.mHevChargePlanStartTimeYearDayR, this.mHevChargePlanStartTimeYearHourR, this.mHevChargePlanStartTimeYearMinuteR});
+                                        }
+                                        break;
+                                    case ChargingHalId.ID_HEV_CHARGE_PLAN_START_TIME_HOUR_R /* 557856335 */:
+                                        this.mHevChargePlanStartTimeYearHourR = carBodyPacket.getHevChargePlanStartTimeYearHourR();
+                                        Iterator<AbsBYDAutoChargingListener> it68 = this.mAbsBydAutoChargingListeners.iterator();
+                                        while (it68.hasNext()) {
+                                            it68.next().onHEVChargePlanStartTimeChargeChanged(new int[]{this.mHevChargePlanStartTimeYearR, this.mHevChargePlanStartTimeMonthR, this.mHevChargePlanStartTimeYearDayR, this.mHevChargePlanStartTimeYearHourR, this.mHevChargePlanStartTimeYearMinuteR});
+                                        }
+                                        break;
+                                    case ChargingHalId.ID_HEV_CHARGE_PLAN_START_TIME_MINUTE_R /* 557856336 */:
+                                        this.mHevChargePlanStartTimeYearMinuteR = carBodyPacket.getHevChargePlanStartTimeYearMinuteR();
+                                        Iterator<AbsBYDAutoChargingListener> it69 = this.mAbsBydAutoChargingListeners.iterator();
+                                        while (it69.hasNext()) {
+                                            it69.next().onHEVChargePlanStartTimeChargeChanged(new int[]{this.mHevChargePlanStartTimeYearR, this.mHevChargePlanStartTimeMonthR, this.mHevChargePlanStartTimeYearDayR, this.mHevChargePlanStartTimeYearHourR, this.mHevChargePlanStartTimeYearMinuteR});
+                                        }
+                                        break;
+                                    case ChargingHalId.ID_HEV_CHARGE_PLAN_END_TIME_YEAR_R /* 557856337 */:
+                                        this.mHevChargePlaneEndTimeYearR = carBodyPacket.getHevChargePlaneEndTimeYearR();
+                                        Iterator<AbsBYDAutoChargingListener> it70 = this.mAbsBydAutoChargingListeners.iterator();
+                                        while (it70.hasNext()) {
+                                            it70.next().onHEVChargePlanEndTimeChargeChanged(new int[]{this.mHevChargePlaneEndTimeYearR, this.mHevChargePlanEndTimeMonthR, this.mHevChargePlanEndTimeYearDayR, this.mHevChargePlanEndTimeYearHourR, this.mHevChargePlanEndTimeYearMinuteR});
+                                        }
+                                        break;
+                                    case ChargingHalId.ID_HEV_CHARGE_PLAN_END_TIME_MONTH_R /* 557856338 */:
+                                        this.mHevChargePlanEndTimeMonthR = carBodyPacket.getHevChargePlanEndTimeMonthR();
+                                        Iterator<AbsBYDAutoChargingListener> it71 = this.mAbsBydAutoChargingListeners.iterator();
+                                        while (it71.hasNext()) {
+                                            it71.next().onHEVChargePlanEndTimeChargeChanged(new int[]{this.mHevChargePlaneEndTimeYearR, this.mHevChargePlanEndTimeMonthR, this.mHevChargePlanEndTimeYearDayR, this.mHevChargePlanEndTimeYearHourR, this.mHevChargePlanEndTimeYearMinuteR});
+                                        }
+                                        break;
+                                    case ChargingHalId.ID_HEV_CHARGE_PLAN_END_TIME_DAY_R /* 557856339 */:
+                                        this.mHevChargePlanEndTimeYearDayR = carBodyPacket.getHevChargePlanEndTimeYearDayR();
+                                        Iterator<AbsBYDAutoChargingListener> it72 = this.mAbsBydAutoChargingListeners.iterator();
+                                        while (it72.hasNext()) {
+                                            it72.next().onHEVChargePlanEndTimeChargeChanged(new int[]{this.mHevChargePlaneEndTimeYearR, this.mHevChargePlanEndTimeMonthR, this.mHevChargePlanEndTimeYearDayR, this.mHevChargePlanEndTimeYearHourR, this.mHevChargePlanEndTimeYearMinuteR});
+                                        }
+                                        break;
+                                    case ChargingHalId.ID_HEV_CHARGE_PLAN_END_TIME_HOUR_R /* 557856340 */:
+                                        this.mHevChargePlanEndTimeYearHourR = carBodyPacket.getHevChargePlanEndTimeYearHourR();
+                                        Iterator<AbsBYDAutoChargingListener> it73 = this.mAbsBydAutoChargingListeners.iterator();
+                                        while (it73.hasNext()) {
+                                            it73.next().onHEVChargePlanEndTimeChargeChanged(new int[]{this.mHevChargePlaneEndTimeYearR, this.mHevChargePlanEndTimeMonthR, this.mHevChargePlanEndTimeYearDayR, this.mHevChargePlanEndTimeYearHourR, this.mHevChargePlanEndTimeYearMinuteR});
+                                        }
+                                        break;
+                                    case ChargingHalId.ID_HEV_CHARGE_PLAN_END_TIME_MINUTE_R /* 557856341 */:
+                                        this.mHevChargePlanEndTimeYearMinuteR = carBodyPacket.getHevChargePlanEndTimeYearMinuteR();
+                                        Iterator<AbsBYDAutoChargingListener> it74 = this.mAbsBydAutoChargingListeners.iterator();
+                                        while (it74.hasNext()) {
+                                            it74.next().onHEVChargePlanEndTimeChargeChanged(new int[]{this.mHevChargePlaneEndTimeYearR, this.mHevChargePlanEndTimeMonthR, this.mHevChargePlanEndTimeYearDayR, this.mHevChargePlanEndTimeYearHourR, this.mHevChargePlanEndTimeYearMinuteR});
+                                        }
+                                        break;
+                                    case ChargingHalId.ID_H_E_V_CHARGE_PLAN_END_TIME_R /* 557921815 */:
+                                        this.mHevChargePlanEndTimeR = carBodyPacket.getHevChargePlanEndTimeR();
+                                        Iterator<AbsBYDAutoChargingListener> it75 = this.mAbsBydAutoChargingListeners.iterator();
+                                        while (it75.hasNext()) {
+                                            it75.next().onHEVChargePlanEndTimeChargeChanged(this.mHevChargePlanEndTimeR);
+                                        }
+                                        break;
+                                    case ChargingHalId.ID_CHARGING_POWERR /* 559952904 */:
+                                        Iterator<AbsBYDAutoChargingListener> it76 = this.mAbsBydAutoChargingListeners.iterator();
+                                        while (it76.hasNext()) {
+                                            it76.next().onChargingPowerChanged(carBodyPacket.getChargingPowerR());
+                                        }
+                                        break;
+                                    case ChargingHalId.ID_VTOV_DISCHARGE_QUANTITYR /* 559952946 */:
+                                        Iterator<AbsBYDAutoChargingListener> it77 = this.mAbsBydAutoChargingListeners.iterator();
+                                        while (it77.hasNext()) {
+                                            it77.next().onVtovDischargeQuantityChanged(carBodyPacket.getVtovDischargeQuantityR());
+                                        }
+                                        break;
+                                    default:
+                                        switch (i) {
+                                            case ChargingHalId.ID_DISCHARGE_TIME_HOURR /* 557855771 */:
+                                            case ChargingHalId.ID_DISCHARGE_TIME_MINUTER /* 557855772 */:
+                                                int dischargeTimeHourR = carBodyPacket.getDischargeTimeHourR();
+                                                int dischargeTimeMinuteR = carBodyPacket.getDischargeTimeMinuteR();
+                                                int[] iArr = this.mDisChargeTime;
+                                                iArr[0] = dischargeTimeHourR;
+                                                iArr[1] = dischargeTimeMinuteR;
+                                                Iterator<AbsBYDAutoChargingListener> it78 = this.mAbsBydAutoChargingListeners.iterator();
+                                                while (it78.hasNext()) {
+                                                    it78.next().onDischargeTimeChanged(hourMinArray2MillionsSec(this.mDisChargeTime));
+                                                }
+                                                break;
+                                            default:
+                                                switch (i) {
+                                                    case ChargingHalId.ID_WIRELESS_CHARGING_SWITCH_STATER /* 557855776 */:
+                                                        Iterator<AbsBYDAutoChargingListener> it79 = this.mAbsBydAutoChargingListeners.iterator();
+                                                        while (it79.hasNext()) {
+                                                            it79.next().onWirelessChargingSwitchStateChanged(carBodyPacket.getWirelessChargingSwitchStateR());
+                                                        }
+                                                        break;
+                                                    case ChargingHalId.ID_WIRELESS_CHARGING_STATER /* 557855777 */:
+                                                        Iterator<AbsBYDAutoChargingListener> it80 = this.mAbsBydAutoChargingListeners.iterator();
+                                                        while (it80.hasNext()) {
+                                                            it80.next().onWirelessChargingStateChanged(carBodyPacket.getWirelessChargingStateR());
+                                                        }
+                                                        break;
+                                                    case ChargingHalId.ID_VTOV_CHARGE_BATTERY_LEVEL_NUMR /* 557855778 */:
+                                                        Iterator<AbsBYDAutoChargingListener> it81 = this.mAbsBydAutoChargingListeners.iterator();
+                                                        while (it81.hasNext()) {
+                                                            it81.next().onVtovChargeBatteryLevelNumChanged(carBodyPacket.getVtovChargeBatteryLevelNumR());
+                                                        }
+                                                        break;
+                                                    default:
+                                                        switch (i) {
+                                                            case ChargingHalId.ID_CHARGING_CAP_STATE_LEFTR /* 557855800 */:
+                                                                Iterator<AbsBYDAutoChargingListener> it82 = this.mAbsBydAutoChargingListeners.iterator();
+                                                                while (it82.hasNext()) {
+                                                                    it82.next().onChargingCapStateChanged(3, carBodyPacket.getChargingCapStateLeftR());
+                                                                }
+                                                                break;
+                                                            case ChargingHalId.ID_CHARGING_CAP_STATE_RIGHTR /* 557855801 */:
+                                                                Iterator<AbsBYDAutoChargingListener> it83 = this.mAbsBydAutoChargingListeners.iterator();
+                                                                while (it83.hasNext()) {
+                                                                    it83.next().onChargingCapStateChanged(4, carBodyPacket.getChargingCapStateRightR());
+                                                                }
+                                                                break;
+                                                            case ChargingHalId.ID_CHARGE_TEMP_CTL_STATER /* 557855802 */:
+                                                                Iterator<AbsBYDAutoChargingListener> it84 = this.mAbsBydAutoChargingListeners.iterator();
+                                                                while (it84.hasNext()) {
+                                                                    it84.next().onChargeTempCtlStateChanged(carBodyPacket.getChargeTempCtlStateR());
+                                                                }
+                                                                break;
+                                                            default:
+                                                                switch (i) {
+                                                                    case ChargingHalId.ID_SITU_POWER_GENERATION_SUPPORT_R /* 557856268 */:
+                                                                        Iterator<AbsBYDAutoChargingListener> it85 = this.mAbsBydAutoChargingListeners.iterator();
+                                                                        while (it85.hasNext()) {
+                                                                            it85.next().onSituPowerGenerationSupportChanged(carBodyPacket.getSituPowerGenerationSupportR());
+                                                                        }
+                                                                        break;
+                                                                    case ChargingHalId.ID_CHARGE_PREHEAT_STATE_R /* 557856269 */:
+                                                                        Iterator<AbsBYDAutoChargingListener> it86 = this.mAbsBydAutoChargingListeners.iterator();
+                                                                        while (it86.hasNext()) {
+                                                                            it86.next().onChargePreheatStateChanged(carBodyPacket.getChargePreheatStateR());
+                                                                        }
+                                                                        break;
+                                                                    default:
+                                                                        switch (i) {
+                                                                            case ChargingHalId.ID_CAR_PLAN_STATE_R /* 557856272 */:
+                                                                                Iterator<AbsBYDAutoChargingListener> it87 = this.mAbsBydAutoChargingListeners.iterator();
+                                                                                while (it87.hasNext()) {
+                                                                                    it87.next().onCarPlanStateChanged(carBodyPacket.getCarPlanStateR());
+                                                                                }
+                                                                                break;
+                                                                            case ChargingHalId.ID_CAR_PLAN_ACC_ON_STATE_R /* 557856273 */:
+                                                                                Iterator<AbsBYDAutoChargingListener> it88 = this.mAbsBydAutoChargingListeners.iterator();
+                                                                                while (it88.hasNext()) {
+                                                                                    it88.next().onCarPlanAccOnStateChanged(carBodyPacket.getCarPlanAccOnStateR());
+                                                                                }
+                                                                                break;
+                                                                            case ChargingHalId.ID_CAR_PLAN_BATTERY_HEAT_STATE_R /* 557856274 */:
+                                                                                Iterator<AbsBYDAutoChargingListener> it89 = this.mAbsBydAutoChargingListeners.iterator();
+                                                                                while (it89.hasNext()) {
+                                                                                    it89.next().onCarPlanBatteryHeatStateChanged(carBodyPacket.getCarPlanBatteryHeatStateR());
+                                                                                }
+                                                                                break;
+                                                                            default:
+                                                                                switch (i) {
+                                                                                    case ChargingHalId.ID_BMS_WAKE_SENSE_CHARGE1_R /* 557856288 */:
+                                                                                        byte[] bArr36 = {(byte) carBodyPacket.getBmsWakeNoSenseCharge1R()};
+                                                                                        Iterator<AbsBYDAutoChargingListener> it90 = this.mAbsBydAutoChargingListeners.iterator();
+                                                                                        while (it90.hasNext()) {
+                                                                                            it90.next().onBMSWakeNoSenseChargeChanged(bArr36);
+                                                                                        }
+                                                                                        break;
+                                                                                    case ChargingHalId.ID_BMS_WAKE_SENSE_CHARGE2_R /* 557856289 */:
+                                                                                        byte[] bArr37 = {(byte) carBodyPacket.getBmsWakeNoSenseCharge2R()};
+                                                                                        Iterator<AbsBYDAutoChargingListener> it91 = this.mAbsBydAutoChargingListeners.iterator();
+                                                                                        while (it91.hasNext()) {
+                                                                                            it91.next().onBMSWakeNoSenseChargeChanged(bArr37);
+                                                                                        }
+                                                                                        break;
+                                                                                    case ChargingHalId.ID_BMS_WAKE_SENSE_CHARGE3_R /* 557856290 */:
+                                                                                        byte[] bArr38 = {(byte) carBodyPacket.getBmsWakeNoSenseCharge3R()};
+                                                                                        Iterator<AbsBYDAutoChargingListener> it92 = this.mAbsBydAutoChargingListeners.iterator();
+                                                                                        while (it92.hasNext()) {
+                                                                                            it92.next().onBMSWakeNoSenseChargeChanged(bArr38);
+                                                                                        }
+                                                                                        break;
+                                                                                    case ChargingHalId.ID_BMS_WAKE_SENSE_CHARGE4_R /* 557856291 */:
+                                                                                        byte[] bArr39 = {(byte) carBodyPacket.getBmsWakeNoSenseCharge4R()};
+                                                                                        Iterator<AbsBYDAutoChargingListener> it93 = this.mAbsBydAutoChargingListeners.iterator();
+                                                                                        while (it93.hasNext()) {
+                                                                                            it93.next().onBMSWakeNoSenseChargeChanged(bArr39);
+                                                                                        }
+                                                                                        break;
+                                                                                    case ChargingHalId.ID_BMS_WAKE_SENSE_CHARGE5_R /* 557856292 */:
+                                                                                        byte[] bArr40 = {(byte) carBodyPacket.getBmsWakeNoSenseCharge5R()};
+                                                                                        Iterator<AbsBYDAutoChargingListener> it94 = this.mAbsBydAutoChargingListeners.iterator();
+                                                                                        while (it94.hasNext()) {
+                                                                                            it94.next().onBMSWakeNoSenseChargeChanged(bArr40);
+                                                                                        }
+                                                                                        break;
+                                                                                    case ChargingHalId.ID_BMS_WAKE_SENSE_CHARGE6_R /* 557856293 */:
+                                                                                        byte[] bArr41 = {(byte) carBodyPacket.getBmsWakeNoSenseCharge6R()};
+                                                                                        Iterator<AbsBYDAutoChargingListener> it95 = this.mAbsBydAutoChargingListeners.iterator();
+                                                                                        while (it95.hasNext()) {
+                                                                                            it95.next().onBMSWakeNoSenseChargeChanged(bArr41);
+                                                                                        }
+                                                                                        break;
+                                                                                    case ChargingHalId.ID_BMS_WAKE_SENSE_CHARGE7_R /* 557856294 */:
+                                                                                        byte[] bArr42 = {(byte) carBodyPacket.getBmsWakeNoSenseCharge7R()};
+                                                                                        Iterator<AbsBYDAutoChargingListener> it96 = this.mAbsBydAutoChargingListeners.iterator();
+                                                                                        while (it96.hasNext()) {
+                                                                                            it96.next().onBMSWakeNoSenseChargeChanged(bArr42);
+                                                                                        }
+                                                                                        break;
+                                                                                    case ChargingHalId.ID_BMS_WAKE_SENSE_CHARGE8_R /* 557856295 */:
+                                                                                        byte[] bArr43 = {(byte) carBodyPacket.getBmsWakeNoSenseCharge8R()};
+                                                                                        Iterator<AbsBYDAutoChargingListener> it97 = this.mAbsBydAutoChargingListeners.iterator();
+                                                                                        while (it97.hasNext()) {
+                                                                                            it97.next().onBMSWakeNoSenseChargeChanged(bArr43);
+                                                                                        }
+                                                                                        break;
+                                                                                    case ChargingHalId.ID_BMS_WAKE_SENSE_CHARGE9_R /* 557856296 */:
+                                                                                        byte[] bArr44 = {(byte) carBodyPacket.getBmsWakeNoSenseCharge9R()};
+                                                                                        Iterator<AbsBYDAutoChargingListener> it98 = this.mAbsBydAutoChargingListeners.iterator();
+                                                                                        while (it98.hasNext()) {
+                                                                                            it98.next().onBMSWakeNoSenseChargeChanged(bArr44);
+                                                                                        }
+                                                                                        break;
+                                                                                    case ChargingHalId.ID_BMS_WAKE_SENSE_CHARGE10_R /* 557856297 */:
+                                                                                        byte[] bArr45 = {(byte) carBodyPacket.getBmsWakeNoSenseCharge10R()};
+                                                                                        Iterator<AbsBYDAutoChargingListener> it99 = this.mAbsBydAutoChargingListeners.iterator();
+                                                                                        while (it99.hasNext()) {
+                                                                                            it99.next().onBMSWakeNoSenseChargeChanged(bArr45);
+                                                                                        }
+                                                                                        break;
+                                                                                    case ChargingHalId.ID_BMS_WAKE_SENSE_CHARGE11_R /* 557856298 */:
+                                                                                        byte[] bArr46 = {(byte) carBodyPacket.getBmsWakeNoSenseCharge11R()};
+                                                                                        Iterator<AbsBYDAutoChargingListener> it100 = this.mAbsBydAutoChargingListeners.iterator();
+                                                                                        while (it100.hasNext()) {
+                                                                                            it100.next().onBMSWakeNoSenseChargeChanged(bArr46);
+                                                                                        }
+                                                                                        break;
+                                                                                    case ChargingHalId.ID_BMS_WAKE_SENSE_CHARGE12_R /* 557856299 */:
+                                                                                        byte[] bArr47 = {(byte) carBodyPacket.getBmsWakeNoSenseCharge12R()};
+                                                                                        Iterator<AbsBYDAutoChargingListener> it101 = this.mAbsBydAutoChargingListeners.iterator();
+                                                                                        while (it101.hasNext()) {
+                                                                                            it101.next().onBMSWakeNoSenseChargeChanged(bArr47);
+                                                                                        }
+                                                                                        break;
+                                                                                    case ChargingHalId.ID_BMS_WAKE_SENSE_CHARGE13_R /* 557856300 */:
+                                                                                        byte[] bArr48 = {(byte) carBodyPacket.getBmsWakeNoSenseCharge13R()};
+                                                                                        Iterator<AbsBYDAutoChargingListener> it102 = this.mAbsBydAutoChargingListeners.iterator();
+                                                                                        while (it102.hasNext()) {
+                                                                                            it102.next().onBMSWakeNoSenseChargeChanged(bArr48);
+                                                                                        }
+                                                                                        break;
+                                                                                    case ChargingHalId.ID_BMS_WAKE_SENSE_CHARGE14_R /* 557856301 */:
+                                                                                        byte[] bArr49 = {(byte) carBodyPacket.getBmsWakeNoSenseCharge14R()};
+                                                                                        Iterator<AbsBYDAutoChargingListener> it103 = this.mAbsBydAutoChargingListeners.iterator();
+                                                                                        while (it103.hasNext()) {
+                                                                                            it103.next().onBMSWakeNoSenseChargeChanged(bArr49);
+                                                                                        }
+                                                                                        break;
+                                                                                    case ChargingHalId.ID_BMS_WAKE_SENSE_CHARGE15_R /* 557856302 */:
+                                                                                        byte[] bArr50 = {(byte) carBodyPacket.getBmsWakeNoSenseCharge15R()};
+                                                                                        Iterator<AbsBYDAutoChargingListener> it104 = this.mAbsBydAutoChargingListeners.iterator();
+                                                                                        while (it104.hasNext()) {
+                                                                                            it104.next().onBMSWakeNoSenseChargeChanged(bArr50);
+                                                                                        }
+                                                                                        break;
+                                                                                    case ChargingHalId.ID_BMS_WAKE_SENSE_CHARGE16_R /* 557856303 */:
+                                                                                        byte[] bArr51 = {(byte) carBodyPacket.getBmsWakeNoSenseCharge16R()};
+                                                                                        Iterator<AbsBYDAutoChargingListener> it105 = this.mAbsBydAutoChargingListeners.iterator();
+                                                                                        while (it105.hasNext()) {
+                                                                                            it105.next().onBMSWakeNoSenseChargeChanged(bArr51);
+                                                                                        }
+                                                                                        break;
+                                                                                    case ChargingHalId.ID_BMS_WAKE_SENSE_CHARGE17_R /* 557856304 */:
+                                                                                        byte[] bArr52 = {(byte) carBodyPacket.getBmsWakeNoSenseCharge17R()};
+                                                                                        Iterator<AbsBYDAutoChargingListener> it106 = this.mAbsBydAutoChargingListeners.iterator();
+                                                                                        while (it106.hasNext()) {
+                                                                                            it106.next().onBMSWakeNoSenseChargeChanged(bArr52);
+                                                                                        }
+                                                                                        break;
+                                                                                    case ChargingHalId.ID_BMS_WAKE_SENSE_CHARGE18_R /* 557856305 */:
+                                                                                        byte[] bArr53 = {(byte) carBodyPacket.getBmsWakeNoSenseCharge18R()};
+                                                                                        Iterator<AbsBYDAutoChargingListener> it107 = this.mAbsBydAutoChargingListeners.iterator();
+                                                                                        while (it107.hasNext()) {
+                                                                                            it107.next().onBMSWakeNoSenseChargeChanged(bArr53);
+                                                                                        }
+                                                                                        break;
+                                                                                    case ChargingHalId.ID_BMS_WAKE_SENSE_CHARGE19_R /* 557856306 */:
+                                                                                        byte[] bArr54 = {(byte) carBodyPacket.getBmsWakeNoSenseCharge19R()};
+                                                                                        Iterator<AbsBYDAutoChargingListener> it108 = this.mAbsBydAutoChargingListeners.iterator();
+                                                                                        while (it108.hasNext()) {
+                                                                                            it108.next().onBMSWakeNoSenseChargeChanged(bArr54);
+                                                                                        }
+                                                                                        break;
+                                                                                    case ChargingHalId.ID_BMS_WAKE_SENSE_CHARGE20_R /* 557856307 */:
+                                                                                        byte[] bArr55 = {(byte) carBodyPacket.getBmsWakeNoSenseCharge20R()};
+                                                                                        Iterator<AbsBYDAutoChargingListener> it109 = this.mAbsBydAutoChargingListeners.iterator();
+                                                                                        while (it109.hasNext()) {
+                                                                                            it109.next().onBMSWakeNoSenseChargeChanged(bArr55);
+                                                                                        }
+                                                                                        break;
+                                                                                    case ChargingHalId.ID_BMS_WAKE_SENSE_CHARGE21_R /* 557856308 */:
+                                                                                        byte[] bArr56 = {(byte) carBodyPacket.getBmsWakeNoSenseCharge21R()};
+                                                                                        Iterator<AbsBYDAutoChargingListener> it110 = this.mAbsBydAutoChargingListeners.iterator();
+                                                                                        while (it110.hasNext()) {
+                                                                                            it110.next().onBMSWakeNoSenseChargeChanged(bArr56);
+                                                                                        }
+                                                                                        break;
+                                                                                    case ChargingHalId.ID_BMS_WAKE_SENSE_CHARGE22_R /* 557856309 */:
+                                                                                        byte[] bArr57 = {(byte) carBodyPacket.getBmsWakeNoSenseCharge22R()};
+                                                                                        Iterator<AbsBYDAutoChargingListener> it111 = this.mAbsBydAutoChargingListeners.iterator();
+                                                                                        while (it111.hasNext()) {
+                                                                                            it111.next().onBMSWakeNoSenseChargeChanged(bArr57);
+                                                                                        }
+                                                                                        break;
+                                                                                    case ChargingHalId.ID_BMS_WAKE_SENSE_CHARGE23_R /* 557856310 */:
+                                                                                        byte[] bArr58 = {(byte) carBodyPacket.getBmsWakeNoSenseCharge23R()};
+                                                                                        Iterator<AbsBYDAutoChargingListener> it112 = this.mAbsBydAutoChargingListeners.iterator();
+                                                                                        while (it112.hasNext()) {
+                                                                                            it112.next().onBMSWakeNoSenseChargeChanged(bArr58);
+                                                                                        }
+                                                                                        break;
+                                                                                    case ChargingHalId.ID_BMS_WAKE_SENSE_CHARGE24_R /* 557856311 */:
+                                                                                        byte[] bArr59 = {(byte) carBodyPacket.getBmsWakeNoSenseCharge24R()};
+                                                                                        Iterator<AbsBYDAutoChargingListener> it113 = this.mAbsBydAutoChargingListeners.iterator();
+                                                                                        while (it113.hasNext()) {
+                                                                                            it113.next().onBMSWakeNoSenseChargeChanged(bArr59);
+                                                                                        }
+                                                                                        break;
+                                                                                    case ChargingHalId.ID_BMS_WAKE_SENSE_CHARGE25_R /* 557856312 */:
+                                                                                        byte[] bArr60 = {(byte) carBodyPacket.getBmsWakeNoSenseCharge25R()};
+                                                                                        Iterator<AbsBYDAutoChargingListener> it114 = this.mAbsBydAutoChargingListeners.iterator();
+                                                                                        while (it114.hasNext()) {
+                                                                                            it114.next().onBMSWakeNoSenseChargeChanged(bArr60);
+                                                                                        }
+                                                                                        break;
+                                                                                    case ChargingHalId.ID_BMS_WAKE_SENSE_CHARGE26_R /* 557856313 */:
+                                                                                        byte[] bArr61 = {(byte) carBodyPacket.getBmsWakeNoSenseCharge26R()};
+                                                                                        Iterator<AbsBYDAutoChargingListener> it115 = this.mAbsBydAutoChargingListeners.iterator();
+                                                                                        while (it115.hasNext()) {
+                                                                                            it115.next().onBMSWakeNoSenseChargeChanged(bArr61);
+                                                                                        }
+                                                                                        break;
+                                                                                    case ChargingHalId.ID_BMS_WAKE_SENSE_CHARGE27_R /* 557856314 */:
+                                                                                        byte[] bArr62 = {(byte) carBodyPacket.getBmsWakeNoSenseCharge27R()};
+                                                                                        Iterator<AbsBYDAutoChargingListener> it116 = this.mAbsBydAutoChargingListeners.iterator();
+                                                                                        while (it116.hasNext()) {
+                                                                                            it116.next().onBMSWakeNoSenseChargeChanged(bArr62);
+                                                                                        }
+                                                                                        break;
+                                                                                    case ChargingHalId.ID_BMS_WAKE_SENSE_CHARGE28_R /* 557856315 */:
+                                                                                        byte[] bArr63 = {(byte) carBodyPacket.getBmsWakeNoSenseCharge28R()};
+                                                                                        Iterator<AbsBYDAutoChargingListener> it117 = this.mAbsBydAutoChargingListeners.iterator();
+                                                                                        while (it117.hasNext()) {
+                                                                                            it117.next().onBMSWakeNoSenseChargeChanged(bArr63);
+                                                                                        }
+                                                                                        break;
+                                                                                    case ChargingHalId.ID_BMS_WAKE_SENSE_CHARGE29_R /* 557856316 */:
+                                                                                        byte[] bArr64 = {(byte) carBodyPacket.getBmsWakeNoSenseCharge29R()};
+                                                                                        Iterator<AbsBYDAutoChargingListener> it118 = this.mAbsBydAutoChargingListeners.iterator();
+                                                                                        while (it118.hasNext()) {
+                                                                                            it118.next().onBMSWakeNoSenseChargeChanged(bArr64);
+                                                                                        }
+                                                                                        break;
+                                                                                    case ChargingHalId.ID_BMS_WAKE_SENSE_CHARGE30_R /* 557856317 */:
+                                                                                        byte[] bArr65 = {(byte) carBodyPacket.getBmsWakeNoSenseCharge30R()};
+                                                                                        Iterator<AbsBYDAutoChargingListener> it119 = this.mAbsBydAutoChargingListeners.iterator();
+                                                                                        while (it119.hasNext()) {
+                                                                                            it119.next().onBMSWakeNoSenseChargeChanged(bArr65);
+                                                                                        }
+                                                                                        break;
+                                                                                    case ChargingHalId.ID_BMS_WAKE_SENSE_CHARGE31_R /* 557856318 */:
+                                                                                        byte[] bArr66 = {(byte) carBodyPacket.getBmsWakeNoSenseCharge31R()};
+                                                                                        Iterator<AbsBYDAutoChargingListener> it120 = this.mAbsBydAutoChargingListeners.iterator();
+                                                                                        while (it120.hasNext()) {
+                                                                                            it120.next().onBMSWakeNoSenseChargeChanged(bArr66);
+                                                                                        }
+                                                                                        break;
+                                                                                    case ChargingHalId.ID_BMS_WAKE_SENSE_CHARGE32_R /* 557856319 */:
+                                                                                        byte[] bArr67 = {(byte) carBodyPacket.getBmsWakeNoSenseCharge32R()};
+                                                                                        Iterator<AbsBYDAutoChargingListener> it121 = this.mAbsBydAutoChargingListeners.iterator();
+                                                                                        while (it121.hasNext()) {
+                                                                                            it121.next().onBMSWakeNoSenseChargeChanged(bArr67);
+                                                                                        }
+                                                                                        break;
+                                                                                    case ChargingHalId.ID_BMS_WAKE_SENSE_CHARGE33_R /* 557856320 */:
+                                                                                        byte[] bArr68 = {(byte) carBodyPacket.getBmsWakeNoSenseCharge33R()};
+                                                                                        Iterator<AbsBYDAutoChargingListener> it122 = this.mAbsBydAutoChargingListeners.iterator();
+                                                                                        while (it122.hasNext()) {
+                                                                                            it122.next().onBMSWakeNoSenseChargeChanged(bArr68);
+                                                                                        }
+                                                                                        break;
+                                                                                    case ChargingHalId.ID_BMS_WAKE_SENSE_CHARGE34_R /* 557856321 */:
+                                                                                        byte[] bArr69 = {(byte) carBodyPacket.getBmsWakeNoSenseCharge34R()};
+                                                                                        Iterator<AbsBYDAutoChargingListener> it123 = this.mAbsBydAutoChargingListeners.iterator();
+                                                                                        while (it123.hasNext()) {
+                                                                                            it123.next().onBMSWakeNoSenseChargeChanged(bArr69);
+                                                                                        }
+                                                                                        break;
+                                                                                    case ChargingHalId.ID_BMS_WAKE_SENSE_CHARGE35_R /* 557856322 */:
+                                                                                        byte[] bArr70 = {(byte) carBodyPacket.getBmsWakeNoSenseCharge35R()};
+                                                                                        Iterator<AbsBYDAutoChargingListener> it124 = this.mAbsBydAutoChargingListeners.iterator();
+                                                                                        while (it124.hasNext()) {
+                                                                                            it124.next().onBMSWakeNoSenseChargeChanged(bArr70);
+                                                                                        }
+                                                                                        break;
+                                                                                }
+                                                                                break;
+                                                                        }
+                                                                        break;
+                                                                }
+                                                                break;
+                                                        }
+                                                        break;
+                                                }
+                                                break;
+                                        }
+                                        break;
+                                }
+                                break;
+                        }
+                        break;
+                }
+                break;
+        }
+    }
+
+    public BYDAutoEventValue get(int[] iArr, Class<?> cls) {
+        BYDAutoEventValue bYDAutoEventValue = new BYDAutoEventValue();
+        SparseArray sparseArray = new SparseArray();
+        if (iArr.length < 1) {
+            bYDAutoEventValue.intValue = -2147482648;
+        } else {
+            for (int i : iArr) {
+                if (i > 0) {
+                    switch (i) {
+                        case 2019:
+                            bYDAutoEventValue.intValue = getCarPlanBatteryHeatState();
+                            sparseArray.put(2019, Integer.valueOf(bYDAutoEventValue.intValue));
+                            break;
+                        case 2021:
+                            bYDAutoEventValue.intValue = getCarPlanAccOnState();
+                            sparseArray.put(2021, Integer.valueOf(bYDAutoEventValue.intValue));
+                            break;
+                        case 2022:
+                            bYDAutoEventValue.intValue = getCarPlanState();
+                            sparseArray.put(2022, Integer.valueOf(bYDAutoEventValue.intValue));
+                            break;
+                        case 2516:
+                            bYDAutoEventValue.intValue = getBatteryManagementDeviceState();
+                            sparseArray.put(2516, Integer.valueOf(bYDAutoEventValue.intValue));
+                            break;
+                        case 2519:
+                            bYDAutoEventValue.intValue = this.mTsManagerImpl.getChargingAdapterManager().getChargingGunState();
+                            sparseArray.put(2519, Integer.valueOf(bYDAutoEventValue.intValue));
+                            break;
+                        case 2535:
+                            bYDAutoEventValue.intValue = getChargerState();
+                            sparseArray.put(2535, Integer.valueOf(bYDAutoEventValue.intValue));
+                            break;
+                        case 2536:
+                            bYDAutoEventValue.intValue = getChargerFaultState();
+                            sparseArray.put(2536, Integer.valueOf(bYDAutoEventValue.intValue));
+                            break;
+                        case 2547:
+                            bYDAutoEventValue.floatValue = getChargingPower();
+                            sparseArray.put(2547, Float.valueOf(bYDAutoEventValue.floatValue));
+                            break;
+                        case 2554:
+                            bYDAutoEventValue.intValue = getChargeTempCtlState();
+                            sparseArray.put(2554, Integer.valueOf(bYDAutoEventValue.intValue));
+                            break;
+                        case 2565:
+                            bYDAutoEventValue.intValue = getWirelessChargingState();
+                            sparseArray.put(2565, Integer.valueOf(bYDAutoEventValue.intValue));
+                            break;
+                        case 2566:
+                            bYDAutoEventValue.intValue = getWirelessChargingSwitchState();
+                            sparseArray.put(2566, Integer.valueOf(bYDAutoEventValue.intValue));
+                            break;
+                        case 2571:
+                            bYDAutoEventValue.intValue = getDischargeRequestState();
+                            sparseArray.put(2571, Integer.valueOf(bYDAutoEventValue.intValue));
+                            break;
+                        case 2576:
+                            bYDAutoEventValue.intValue = getMovePowerStationToggle();
+                            sparseArray.put(2576, Integer.valueOf(bYDAutoEventValue.intValue));
+                            break;
+                        case 2578:
+                            bYDAutoEventValue.intValue = getVtovDischargeLowPowerHint();
+                            sparseArray.put(2578, Integer.valueOf(bYDAutoEventValue.intValue));
+                            break;
+                        case 2584:
+                            int[] chargingRestTime = getChargingRestTime();
+                            if (chargingRestTime.length == 2) {
+                                bYDAutoEventValue.intValue = chargingRestTime[0];
+                            }
+                            sparseArray.put(2584, Integer.valueOf(bYDAutoEventValue.intValue));
+                            break;
+                        case 2585:
+                            int[] chargingRestTime2 = getChargingRestTime();
+                            if (chargingRestTime2.length == 2) {
+                                bYDAutoEventValue.intValue = chargingRestTime2[1];
+                            }
+                            sparseArray.put(2585, Integer.valueOf(bYDAutoEventValue.intValue));
+                            break;
+                        case 2588:
+                            bYDAutoEventValue.intValue = this.mTsManagerImpl.getChargingAdapterManager().getChargingGunState();
+                            sparseArray.put(2588, Integer.valueOf(bYDAutoEventValue.intValue));
+                            break;
+                        case 2592:
+                            bYDAutoEventValue.intValue = getSituPowerGenerationSupport();
+                            sparseArray.put(2592, Integer.valueOf(bYDAutoEventValue.intValue));
+                            break;
+                        case 2594:
+                            bYDAutoEventValue.intValue = getSituPowerGenerationState();
+                            sparseArray.put(2594, Integer.valueOf(bYDAutoEventValue.intValue));
+                            break;
+                        case 2596:
+                            bYDAutoEventValue.intValue = getPortCapState(3);
+                            sparseArray.put(2596, Integer.valueOf(bYDAutoEventValue.intValue));
+                            break;
+                        case 2601:
+                            bYDAutoEventValue.intValue = getPorducePowerWhenLowPower();
+                            sparseArray.put(2601, Integer.valueOf(bYDAutoEventValue.intValue));
+                            break;
+                        case 2619:
+                            bYDAutoEventValue.intValue = getNoSenseChargeState();
+                            sparseArray.put(2619, Integer.valueOf(bYDAutoEventValue.intValue));
+                            break;
+                        case 2628:
+                            bYDAutoEventValue.intValue = getPortCapState(4);
+                            sparseArray.put(2628, Integer.valueOf(bYDAutoEventValue.intValue));
+                            break;
+                        case 2634:
+                            bYDAutoEventValue.intValue = getChargingScheduleEnableState();
+                            sparseArray.put(2634, Integer.valueOf(bYDAutoEventValue.intValue));
+                            break;
+                        case 2669:
+                            bYDAutoEventValue.intValue = getChargeStopCapacityState();
+                            sparseArray.put(2669, Integer.valueOf(bYDAutoEventValue.intValue));
+                            break;
+                        case 2733:
+                            if (this.mTsManagerImpl.getChargingAdapterManager() != null) {
+                                int[] dischargeTime = this.mTsManagerImpl.getChargingAdapterManager().getDischargeTime();
+                                if (dischargeTime.length == 2) {
+                                    bYDAutoEventValue.intValue = dischargeTime[0];
+                                }
+                            }
+                            sparseArray.put(2733, Integer.valueOf(bYDAutoEventValue.intValue));
+                            break;
+                        case 2735:
+                            if (this.mTsManagerImpl.getChargingAdapterManager() != null) {
+                                int[] dischargeTime2 = this.mTsManagerImpl.getChargingAdapterManager().getDischargeTime();
+                                if (dischargeTime2.length == 2) {
+                                    bYDAutoEventValue.intValue = dischargeTime2[1];
+                                }
+                            }
+                            sparseArray.put(2735, Integer.valueOf(bYDAutoEventValue.intValue));
+                            break;
+                        case 2738:
+                            bYDAutoEventValue.intValue = getDischargeToggle();
+                            sparseArray.put(2738, Integer.valueOf(bYDAutoEventValue.intValue));
+                            break;
+                        case 2740:
+                            bYDAutoEventValue.intValue = getVtovDischargeConnectState();
+                            sparseArray.put(2740, Integer.valueOf(bYDAutoEventValue.intValue));
+                            break;
+                        case 2742:
+                            bYDAutoEventValue.floatValue = getVtovDischargeQuantity();
+                            sparseArray.put(2742, Float.valueOf(bYDAutoEventValue.floatValue));
+                            break;
+                        case 2748:
+                            bYDAutoEventValue.intValue = getVtovDischargeLimitVal();
+                            sparseArray.put(2748, Integer.valueOf(bYDAutoEventValue.intValue));
+                            break;
+                        case 2749:
+                            bYDAutoEventValue.intValue = getVtovDischargeLowestVal();
+                            sparseArray.put(2749, Integer.valueOf(bYDAutoEventValue.intValue));
+                            break;
+                        default:
+                            Log.v(TAG, "case fail ! please check out");
+                            break;
+                    }
+                } else {
+                    bYDAutoEventValue.intValue = -2147482648;
+                }
+            }
+        }
+        return bYDAutoEventValue;
+    }
+
+    @Override // android.hardware.bydauto.AbsTsMyCar
+    public void onDataEventChanged(int i, BYDAutoEventValue bYDAutoEventValue) {
+        Iterator<AbsBYDAutoChargingListener> it = this.mAbsBydAutoChargingListeners.iterator();
+        while (it.hasNext()) {
+            it.next().onDataEventChanged(i, bYDAutoEventValue);
+        }
+    }
+
+    @Override // android.hardware.bydauto.AbsTsMyCar
+    protected int setForOneFeatureId(int i, Object obj) {
+        int iIntValue;
+        if (obj instanceof Integer) {
+            iIntValue = ((Integer) obj).intValue();
+        } else {
+            if (obj instanceof Float) {
+                ((Float) obj).floatValue();
+            } else if (obj instanceof Double) {
+                ((Double) obj).doubleValue();
+            } else if (obj instanceof byte[]) {
+            } else {
+                Log.v(TAG, "the type of value is not a suitable type");
+                return -1;
+            }
+            iIntValue = 0;
+        }
+        if (i == 2736) {
+            setDischargeTime(iIntValue);
+            return 1;
+        }
+        if (i == 2737) {
+            setDischargeToggle(iIntValue);
+            return 1;
+        }
+        switch (i) {
+            case 127:
+                setSyncTime(this.syncTimeYear, this.syncTimeMonth, iIntValue, this.syncTimeHour, this.syncTimeMinute);
+                return 1;
+            case 135:
+                setSyncTime(this.syncTimeYear, this.syncTimeMonth, this.syncTimeDay, iIntValue, this.syncTimeMinute);
+                return 1;
+            case 139:
+                setSyncTime(this.syncTimeYear, this.syncTimeMonth, this.syncTimeDay, this.syncTimeHour, iIntValue);
+                return 1;
+            case 143:
+                setSyncTime(this.syncTimeYear, iIntValue, this.syncTimeDay, this.syncTimeHour, this.syncTimeMinute);
+                return 1;
+            case 162:
+                setSyncTime(iIntValue, this.syncTimeMonth, this.syncTimeDay, this.syncTimeHour, this.syncTimeMinute);
+                return 1;
+            case 2496:
+                this.evDayEnd = iIntValue;
+                setEvChargePlanEndTime(this.evYearEnd, this.evMonthEnd, iIntValue, this.evHourEnd, this.evMinuteEnd);
+                Log.v(TAG, "setEvChargePlanEndTimeDay" + iIntValue);
+                return 1;
+            case 2498:
+                this.evHourEnd = iIntValue;
+                setEvChargePlanEndTime(this.evYearEnd, this.evMonthEnd, this.evDayEnd, iIntValue, this.evMinuteEnd);
+                Log.v(TAG, "setEvChargePlanEndTimeHour" + iIntValue);
+                return 1;
+            case 2500:
+                this.evMinuteEnd = iIntValue;
+                setEvChargePlanEndTime(this.evYearEnd, this.evMonthEnd, this.evDayEnd, this.evHourEnd, iIntValue);
+                Log.v(TAG, "setEvChargePlanEndTimeMinute" + iIntValue);
+                return 1;
+            case 2502:
+                this.evMonthEnd = iIntValue;
+                setEvChargePlanEndTime(this.evYearEnd, iIntValue, this.evDayEnd, this.evHourEnd, this.evMinuteEnd);
+                Log.v(TAG, "setEvChargePlanEndTimeMonth" + iIntValue);
+                return 1;
+            case 2504:
+                this.evYearEnd = iIntValue;
+                setEvChargePlanEndTime(iIntValue, this.evMonthEnd, this.evDayEnd, this.evHourEnd, this.evMinuteEnd);
+                Log.v(TAG, "setEvChargePlanEndTimeYear" + iIntValue);
+                return 1;
+            case 2507:
+                setEvChargePlanStartTime(this.evYear, this.evMonth, iIntValue, this.evHour, this.evMinute);
+                return 1;
+            case 2509:
+                setEvChargePlanStartTime(this.evYear, this.evMonth, this.evDay, iIntValue, this.evMinute);
+                return 1;
+            case 2511:
+                setEvChargePlanStartTime(this.evYear, this.evMonth, this.evDay, this.evHour, iIntValue);
+                return 1;
+            case 2513:
+                this.evMonth = iIntValue;
+                setEvChargePlanStartTime(this.evYear, iIntValue, this.evDay, this.evHour, this.evMinute);
+                Log.v(TAG, "setEVChargePlanStartTimeMonth" + iIntValue);
+                return 1;
+            case 2515:
+                this.evYear = iIntValue;
+                setEvChargePlanStartTime(iIntValue, this.evMonth, this.evDay, this.evHour, this.evMinute);
+                Log.v(TAG, "setEVChargePlanStartTimeYear" + iIntValue);
+                return 1;
+            case 2543:
+                setHevChargingType(iIntValue);
+                return 1;
+            case 2567:
+                setWirelessChargingSwitchState(iIntValue);
+                return 1;
+            case 2577:
+                setMovePowerStationToggle(iIntValue);
+                return 1;
+            case 2593:
+                setSituPowerGenerationState(iIntValue);
+                return 1;
+            case 2602:
+                setPorducePowerWhenLowPower(iIntValue);
+                return 1;
+            case 2620:
+                setNoSenseChargeState(iIntValue);
+                return 1;
+            case 2670:
+                setChargeStopCapacityState(iIntValue);
+                return 1;
+            case 2722:
+                setChargePlanState(iIntValue);
+                Log.v(TAG, "setChargePlanState" + iIntValue);
+                return 1;
+            case 2734:
+                setDischargeTime(iIntValue);
+                return 1;
+            case 2745:
+                setDischargeLimit(iIntValue);
+                return 1;
+            default:
+                switch (i) {
+                    case 2529:
+                        setCarPlan(0, 0, 0, this.carPlanYear, this.carPlanMonth, iIntValue, this.carPlanHour, this.carPlanMinute);
+                        return 1;
+                    case 2530:
+                        setCarPlan(0, 0, 0, this.carPlanYear, this.carPlanMonth, this.carPlanDay, iIntValue, this.carPlanMinute);
+                        return 1;
+                    case 2531:
+                        setCarPlan(0, 0, 0, this.carPlanYear, this.carPlanMonth, this.carPlanDay, this.carPlanHour, iIntValue);
+                        return 1;
+                    case 2532:
+                        setCarPlan(0, 0, 0, this.carPlanYear, iIntValue, this.carPlanDay, this.carPlanHour, this.carPlanMinute);
+                        return 1;
+                    case 2533:
+                        setCarPlanState(iIntValue);
+                        return 1;
+                    case 2534:
+                        setCarPlan(0, 0, 0, iIntValue, this.carPlanMonth, this.carPlanDay, this.carPlanHour, this.carPlanMinute);
+                        return 1;
+                    default:
+                        switch (i) {
+                            case 2635:
+                                this.dmDayEnd = iIntValue;
+                                setHevChargePlanEndTime(this.dmYearEnd, this.dmMonthEnd, iIntValue, this.dmHourEnd, this.dmMinuteEnd);
+                                Log.v(TAG, "setHevChargePlanEndTimeDay" + iIntValue);
+                                return 1;
+                            case 2636:
+                                this.dmHourEnd = iIntValue;
+                                setHevChargePlanEndTime(this.dmYearEnd, this.dmMonthEnd, this.dmDayEnd, iIntValue, this.dmMinuteEnd);
+                                Log.v(TAG, "setHevChargePlanEndTimeHour" + iIntValue);
+                                return 1;
+                            case 2637:
+                                this.dmMinuteEnd = iIntValue;
+                                setHevChargePlanEndTime(this.dmYearEnd, this.dmMonthEnd, this.dmDayEnd, this.dmHourEnd, iIntValue);
+                                Log.v(TAG, "setHevChargePlanEndTimeMinute" + iIntValue);
+                                return 1;
+                            case 2638:
+                                this.dmMonthEnd = iIntValue;
+                                setHevChargePlanEndTime(this.dmYearEnd, iIntValue, this.dmDayEnd, this.dmHourEnd, this.dmMinuteEnd);
+                                Log.v(TAG, "setHevChargePlanEndTimeMonth" + iIntValue);
+                                return 1;
+                            case 2639:
+                                this.dmYearEnd = iIntValue;
+                                setHevChargePlanEndTime(iIntValue, this.dmMonthEnd, this.dmDayEnd, this.dmHourEnd, this.dmMinuteEnd);
+                                Log.v(TAG, "setHevChargePlanEndTimeYear" + iIntValue);
+                                return 1;
+                            case 2640:
+                                this.evDay = iIntValue;
+                                this.dmDay = iIntValue;
+                                int i2 = iIntValue;
+                                setEvChargePlanStartTime(this.evYear, this.evMonth, i2, this.evHour, this.evMinute);
+                                setHevChargePlanStartTime(this.dmYear, this.dmMonth, i2, this.dmHour, this.dmMinute);
+                                Log.v(TAG, "setEVChargePlanStartTimeDay" + iIntValue);
+                                return 1;
+                            case 2641:
+                                this.evHour = iIntValue;
+                                this.dmHour = iIntValue;
+                                int i3 = iIntValue;
+                                setEvChargePlanStartTime(this.evYear, this.evMonth, this.evDay, i3, this.evMinute);
+                                setHevChargePlanStartTime(this.dmYear, this.dmMonth, this.dmDay, i3, this.dmMinute);
+                                Log.v(TAG, "setEVChargePlanStartTimeHour" + iIntValue);
+                                return 1;
+                            case 2642:
+                                this.evMinute = iIntValue;
+                                this.dmMinute = iIntValue;
+                                int i4 = iIntValue;
+                                setEvChargePlanStartTime(this.evYear, this.evMonth, this.evDay, this.evHour, i4);
+                                setHevChargePlanStartTime(this.dmYear, this.dmMonth, this.dmDay, this.dmHour, i4);
+                                Log.v(TAG, "setEVChargePlanStartTimeMinute" + iIntValue);
+                                return 1;
+                            case 2643:
+                                this.dmMonth = iIntValue;
+                                setHevChargePlanStartTime(this.dmYear, iIntValue, this.dmDay, this.dmHour, this.dmMinute);
+                                Log.v(TAG, "setHevChargePlanStartTimeMonth" + iIntValue);
+                                return 1;
+                            case 2644:
+                                this.dmYear = iIntValue;
+                                setHevChargePlanStartTime(iIntValue, this.dmMonth, this.dmDay, this.dmHour, this.dmMinute);
+                                Log.v(TAG, "setHevChargePlanStartTimeYear" + iIntValue);
+                                return 1;
+                            default:
+                                Log.v(TAG, "case fail ! please check out");
+                                return -1;
+                        }
+                }
+        }
+    }
+}

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:gravity="end|center_vertical"
+        android:height="12dp"
+        android:width="12dp"
+        android:drawable="@drawable/ic_chooser_group_arrow"
+        android:start="4dp"
+        android:end="0dp"/>
+</layer-list>

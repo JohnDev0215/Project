@@ -1,0 +1,19 @@
+package androidx.core.view;
+
+import android.content.res.ColorStateList;
+import android.graphics.PorterDuff;
+import androidx.annotation.Nullable;
+
+/* JADX INFO: compiled from: caradapter-bug */
+/* JADX INFO: loaded from: classes.dex */
+public interface r {
+    @Nullable
+    PorterDuff.Mode c();
+
+    @Nullable
+    ColorStateList f();
+
+    void h(@Nullable PorterDuff.Mode mode);
+
+    void i(@Nullable ColorStateList colorStateList);
+}

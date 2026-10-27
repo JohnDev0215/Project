@@ -1,0 +1,8 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/content/pm/ActivityInfo;->resizeMode:I,frameworks/base/core/java/android/content/pm/ActivityInfo.java,226,5,226,25,
+Landroid/content/pm/ActivityInfo;->FLAG_SHOW_FOR_ALL_USERS:I,frameworks/base/core/java/android/content/pm/ActivityInfo.java,376,5,376,25,
+Landroid/content/pm/ActivityInfo;->FLAG_ALLOW_EMBEDDED:I,frameworks/base/core/java/android/content/pm/ActivityInfo.java,505,5,505,25,
+Landroid/content/pm/ActivityInfo;->activityInfoConfigJavaToNative(I)I,frameworks/base/core/java/android/content/pm/ActivityInfo.java,862,5,862,25,
+Landroid/content/pm/ActivityInfo;->supportsPictureInPicture()Z,frameworks/base/core/java/android/content/pm/ActivityInfo.java,1105,5,1105,25,
+Landroid/content/pm/ActivityInfo;->isResizeableMode(I)Z,frameworks/base/core/java/android/content/pm/ActivityInfo.java,1111,5,1111,25,
+Landroid/content/pm/ActivityInfo;->isTranslucentOrFloating(Landroid/content/res/TypedArray;)Z,frameworks/base/core/java/android/content/pm/ActivityInfo.java,1253,5,1253,25,

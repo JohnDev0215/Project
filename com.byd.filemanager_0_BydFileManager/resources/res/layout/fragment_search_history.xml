@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:textSize="@dimen/sp_16"
+        android:textColor="@color/text_tip"
+        android:gravity="center"
+        android:id="@+id/tv_history"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_34"
+        android:layout_marginTop="@dimen/dp_22"
+        android:text="@string/search_history"
+        android:layout_marginStart="@dimen/dp_100"/>
+    <ImageView
+        android:id="@+id/iv_delete"
+        android:layout_width="@dimen/dp_32"
+        android:layout_height="@dimen/dp_32"
+        android:layout_marginTop="@dimen/dp_23"
+        android:src="@drawable/icon_media_search_delete_32"
+        android:layout_toEndOf="@+id/tv_history"
+        app:tint="@color/color_tint_selector_delete"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_history"
+        android:layoutDirection="locale"
+        android:layout_marginStart="@dimen/dp_100"
+        android:layout_marginEnd="@dimen/dp_32"/>
+</RelativeLayout>

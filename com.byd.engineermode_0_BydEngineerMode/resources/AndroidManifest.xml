@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    android:sharedUserId="android.uid.system"
+    android:versionCode="146"
+    android:versionName="2.19.1-202504091639"
+    android:compileSdkVersion="29"
+    android:compileSdkVersionCodename="10"
+    package="com.byd.engineermode"
+    platformBuildVersionCode="29"
+    platformBuildVersionName="10">
+    <uses-sdk
+        android:minSdkVersion="26"
+        android:targetSdkVersion="29"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.READ_PRIVILEGED_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <uses-permission android:name="android.permission.READ_PHONE_NUMBERS"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.ACCESS_CACHE_FILESYSTEM"/>
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="car.permission.ANDROIDAUTO_APP"/>
+    <uses-permission android:name="car.permission.CARPLAY_APP"/>
+    <uses-permission android:name="car.permission.CARPLAY_DEVICE_LIST"/>
+    <uses-permission android:name="android.permission.MANAGE_DOCUMENTS"/>
+    <uses-permission android:name="android.permission.BYDAUTO_ENGINEERMODE_COMMON"/>
+    <uses-permission android:name="android.permission.BYDAUTO_ENGINEERMODE_SET"/>
+    <uses-permission android:name="android.permission.BYDAUTO_ENGINEERMODE_GET"/>
+    <uses-permission android:name="android.permission.BYDAUTO_TEST_COMMON"/>
+    <uses-permission android:name="android.permission.BYDAUTO_TEST_SET"/>
+    <uses-permission android:name="android.permission.BYDAUTO_TEST_GET"/>
+    <application
+        android:theme="@style/Theme.Diagnose"
+        android:label="@string/app_name"
+        android:icon="@drawable/save_ic"
+        android:name="com.byd.engineermode.DiagnoseApplication"
+        android:excludeFromRecents="true"
+        android:supportsRtl="true"
+        android:extractNativeLibs="false"
+        android:usesCleartextTraffic="true"
+        android:resizeableActivity="false"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+        android:requestLegacyExternalStorage="true">
+        <activity
+            android:name="com.byd.engineermode.ui.activity.MainActivity"
+            android:exported="false"
+            android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="byd_pad"
+                    android:host="engineer_mode"
+                    android:port="9523"
+                    android:path="/mainActivity"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.byd.engineermode.ui.activity.ElectronActivity"/>
+        <activity android:name="com.byd.engineermode.ui.activity.VersionActivity"/>
+        <activity
+            android:name="com.byd.engineermode.ui.activity.PasswordActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize|stateVisible"/>
+        <activity android:name="com.byd.engineermode.ui.activity.HistoricalRecordActivity"/>
+        <activity android:name="com.byd.engineermode.ui.functiontest.FunctionListActivity"/>
+        <activity android:name="com.byd.engineermode.ui.functiontest.TemperatureTestActivity"/>
+        <activity android:name="com.byd.engineermode.ui.functiontest.gpstest.GPSLocationActivity"/>
+        <activity android:name="com.byd.engineermode.ui.functiontest.SourceTestActivity"/>
+        <activity android:name="com.byd.engineermode.ui.functiontest.carplayandroidauto.CarPlayAndroidTestActivity"/>
+        <activity android:name="com.byd.engineermode.ui.functiontest.MicTestActivity"/>
+        <activity android:name="com.byd.engineermode.ui.functiontest.LoudspeakerTestActivity"/>
+        <activity android:name="com.byd.engineermode.ui.functiontest.USBTestActivity"/>
+        <activity android:name="com.byd.engineermode.ui.functiontest.CenterControlKeyTestActivity"/>
+        <activity android:name="com.byd.engineermode.ui.functiontest.SteeringWheelKeysTestActivity"/>
+        <activity android:name="com.byd.engineermode.ui.functiontest.ScreenTestActivity"/>
+        <activity android:name="com.byd.engineermode.ui.functiontest.ScreenDisplayTestActivity"/>
+        <activity android:name="com.byd.engineermode.ui.functiontest.TpTestActivity"/>
+        <activity android:name="com.byd.engineermode.ui.functiontest.logs.GPSLogLevelConfigActivity"/>
+        <activity android:name="com.byd.engineermode.ui.functiontest.logs.SaveLogActivity"/>
+        <activity
+            android:name="com.byd.engineermode.ui.functiontest.logs.SaveLogPasswordActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize|stateVisible"/>
+        <activity android:name="com.byd.engineermode.ui.functiontest.other.MultiTouchTestActivity"/>
+        <activity android:name="com.byd.engineermode.ui.functiontest.other.TouchTestActivity"/>
+        <activity android:name="com.byd.engineermode.ui.functiontest.other.AudioLoopbackActivity"/>
+        <activity android:name="com.byd.engineermode.ui.functiontest.other.SpeakerTestActivity"/>
+        <activity android:name="com.byd.engineermode.ui.functiontest.CPUTestActivity"/>
+        <activity android:name="com.byd.engineermode.ui.functiontest.CanningCertificateActivity"/>
+        <activity android:name="com.byd.engineermode.ui.functiontest.LinkMarginTestActivity"/>
+        <activity android:name="com.byd.engineermode.ui.activity.RadioTestActivity"/>
+        <service android:name="com.byd.engineermode.ui.functiontest.logs.BYDLogService"/>
+        <uses-library android:name="ts.platform.library"/>
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:exported="false"
+            android:authorities="com.byd.engineermode.fileprovider"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths"/>
+        </provider>
+        <service
+            android:name="androidx.room.MultiInstanceInvalidationService"
+            android:exported="false"
+            android:directBootAware="true"/>
+    </application>
+</manifest>

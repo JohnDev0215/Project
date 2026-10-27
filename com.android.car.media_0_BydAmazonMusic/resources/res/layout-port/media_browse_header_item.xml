@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_container"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/media_browse_header_item_height"
+    android:layout_marginTop="@dimen/byd_media_browse_header_item_margin_top"
+    android:layout_marginHorizontal="@dimen/auto_dimen2_12">
+    <TextView
+        android:layout_gravity="center_vertical"
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:includeFontPadding="false"
+        style="@style/BydBrowseHeaderTitleStyle"/>
+</FrameLayout>

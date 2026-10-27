@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">BydAutoService</string>
+    <string name="audio_muted">Έγινε σίγαση ήχου</string>
+    <string name="audio_removed">Καταργήθηκε η σίγαση</string>
+    <string name="btn_comfirm">OK</string>
+    <string name="btn_reset">Επαναφορά</string>
+    <string name="call_mode">Κλήση σε εξέλιξη. Λειτουργία απενεργοποιημένη</string>
+    <string name="cancel">Ακύρωση</string>
+    <string name="carplay_androidauto_land">Η τρέχουσα οθόνη δεν υποστηρίζει εναλλαγή οθόνης</string>
+    <string name="dialog_title_user">Ρυθμίσεις προσαρμοσμένου κουμπιού</string>
+    <string name="dialog_title_user_left">Ρυθμίσεις αριστερού προσαρμοσμένου κουμπιού</string>
+    <string name="dialog_title_user_right">Ρυθμίσεις δεξιού προσαρμοσμένου κουμπιού</string>
+    <string name="mode_am_music">AM</string>
+    <string name="mode_amazon_music">Μουσική Amazon</string>
+    <string name="mode_bt_music">Μουσική</string>
+    <string name="mode_button_androidauto">Android Auto</string>
+    <string name="mode_button_carplay">Apple CarPlay</string>
+    <string name="mode_dab_music">DAB</string>
+    <string name="mode_fm_music">FM</string>
+    <string name="mode_local_music">Τοπικά πολυμέσα</string>
+    <string name="mode_music">Τοπική</string>
+    <string name="mode_sd">Κάρτα SD</string>
+    <string name="mode_spotify_music">Spotify</string>
+    <string name="mode_usb">USB</string>
+    <string name="mode_usb_music">Μουσική USB</string>
+    <string name="mode_usb_text">Δεν ανιχνεύεται USB</string>
+    <string name="mode_usb_video">Βίντεο μονάδας flash USB</string>
+    <string name="radio_button_ac">Κλιματισμός</string>
+    <string name="radio_button_music">Μουσική</string>
+    <string name="radio_button_navi_home">Σπίτι</string>
+    <string name="radio_button_play_pause">Παύση/αναπαραγωγή πολυμέσων</string>
+    <string name="radio_button_radio">Ραδιόφωνο</string>
+    <string name="radio_button_rotate">Περιστροφή κεντρικής οθόνης</string>
+    <string name="radio_button_source">Εναλλαγή πηγής ήχου πολυμέσων</string>
+    <string name="reset_country">Γίνεται διαμόρφωση του συστήματος. Περιμένετε</string>
+    <string name="restart_efect">Επιτυχής διαμόρφωση παραμέτρων της λειτουργίας. Κάντε επανεκκίνηση για ενεργοποίησή της!</string>
+    <string name="restart_now">Επανεκκίνηση τώρα</string>
+    <string name="restart_time">Αντίστροφη μέτρηση για επανεκκίνηση</string>
+    <string name="warring_mode">Ολοκληρώστε τη διαδικασία του οδηγού πριν χρησιμοποιήσετε το IVI!</string>
+    <string name="warring_navi_mode">Η τρέχουσα κατάσταση δεν υποστηρίζει αυτήν την ενέργεια!</string>
+    <string name="warring_power">Αυτή η λειτουργία είναι διαθέσιμη μόνον στη σχέση P</string>
+</resources>

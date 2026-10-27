@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="billing_cycle_days_left">
+        <item quantity="one">Còn %d ngày</item>
+        <item quantity="other">Còn %d ngày</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_letters">
+        <item quantity="one">Phải chứa ít nhất 1 chữ cái</item>
+        <item quantity="other">Phải chứa ít nhất %d chữ cái</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_lowercase">
+        <item quantity="one">Phải chứa ít nhất 1 chữ thường</item>
+        <item quantity="other">Phải chứa ít nhất %d chữ thường</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_nonletter">
+        <item quantity="one">Phải chứa ít nhất 1 ký tự không phải chữ cái</item>
+        <item quantity="other">Phải chứa ít nhất %d ký tự không phải chữ cái</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_numeric">
+        <item quantity="one">Phải chứa ít nhất 1 chữ số</item>
+        <item quantity="other">Phải chứa ít nhất %d chữ số</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_symbols">
+        <item quantity="one">Phải chứa ít nhất 1 ký hiệu đặc biệt</item>
+        <item quantity="other">Phải chứa ít nhất %d ký hiệu đặc biệt</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_uppercase">
+        <item quantity="one">Phải chứa ít nhất 1 chữ hoa</item>
+        <item quantity="other">Phải chứa ít nhất %d chữ hoa</item>
+    </plurals>
+    <plurals name="mobile_network_summary_count">
+        <item quantity="one">%1$d SIM</item>
+        <item quantity="other">%1$d SIM</item>
+    </plurals>
+    <plurals name="runtime_permissions_additional_count">
+        <item quantity="one">%d quyền bổ sung</item>
+        <item quantity="other">%d quyền bổ sung</item>
+    </plurals>
+    <plurals name="show_dev_countdown">
+        <item quantity="one">Bây giờ, bạn chỉ cần thực hiện %1$d bước nữa là sẽ trở thành nhà phát triển.</item>
+        <item quantity="other">Bây giờ, bạn chỉ cần thực hiện %1$d bước nữa là sẽ trở thành nhà phát triển.</item>
+    </plurals>
+    <plurals name="user_limit_reached_message">
+        <item quantity="one">Bạn chỉ có thể tạo một người dùng.</item>
+        <item quantity="other">Bạn có thể tạo tối đa %d người dùng.</item>
+    </plurals>
+    <plurals name="wifi_tether_connected_summary">
+        <item quantity="one">%1$d thiết bị được kết nối</item>
+        <item quantity="other">%1$d thiết bị được kết nối</item>
+    </plurals>
+</resources>

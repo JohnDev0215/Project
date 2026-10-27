@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="emailAddressTypes">
+        <item>სახლი</item>
+        <item>სამსახური</item>
+        <item>სხვა</item>
+        <item>მორგებული</item>
+    </array>
+    <array name="imProtocols">
+        <item>AIM</item>
+        <item>Windows Live</item>
+        <item>Yahoo</item>
+        <item>Skype</item>
+        <item>QQ</item>
+        <item>Google Talk</item>
+        <item>ICQ</item>
+        <item>Jabber</item>
+    </array>
+    <array name="organizationTypes">
+        <item>სამსახური</item>
+        <item>სხვა</item>
+        <item>მორგებული</item>
+    </array>
+    <array name="phoneTypes">
+        <item>სახლი</item>
+        <item>მობილური</item>
+        <item>სამსახური</item>
+        <item>სამსახურის ფაქსი</item>
+        <item>სახლის ფაქსი</item>
+        <item>პეიჯერი</item>
+        <item>სხვა</item>
+        <item>მორგებული</item>
+    </array>
+    <array name="postalAddressTypes">
+        <item>სახლი</item>
+        <item>სამსახური</item>
+        <item>სხვა</item>
+        <item>მორგებული</item>
+    </array>
+    <array name="face_acquired_vendor">
+    </array>
+    <array name="face_error_vendor">
+    </array>
+    <array name="fingerprint_acquired_vendor">
+    </array>
+    <array name="fingerprint_error_vendor">
+    </array>
+    <array name="imAddressTypes">
+        <item>სახლი</item>
+        <item>სამსახური</item>
+        <item>სხვა</item>
+        <item>მორგებული</item>
+    </array>
+    <array name="network_switch_type_name">
+        <item>მობილური ინტერნეტი</item>
+        <item>Wi-Fi</item>
+        <item>Bluetooth</item>
+        <item>Ethernet</item>
+        <item>VPN</item>
+    </array>
+    <array name="wfcOperatorErrorAlertMessages">
+        <item>Wi-Fi-ს მეშვეობით ზარების განსახორციელებლად ან შეტყობინებების გასაგზავნად, პირველ რიგში, ამ სერვისის გააქტიურება თქვენს ოპერატორს უნდა თხოვოთ. შემდეგ კი ხელახლა ჩართეთ Wi-Fi დარეკვა პარამეტრებიდან. (შეცდომის კოდი: %1$s)</item>
+    </array>
+    <array name="wfcOperatorErrorNotificationMessages">
+        <item>Wi‑Fi დარეკვის თქვენს ოპერატორთან რეგისტრირებისას შეცდომა წარმოიქმნა: %1$s</item>
+    </array>
+</resources>

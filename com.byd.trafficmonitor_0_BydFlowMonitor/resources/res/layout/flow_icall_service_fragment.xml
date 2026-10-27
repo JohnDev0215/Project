@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/flow_content_head"/>
+    <com.byd.trafficmonitor.widget.RotateLinearLayout
+        android:id="@+id/content_icon_group"
+        app:customOrientation="horizontal"
+        style="@style/flow_portrait_5g_style">
+        <com.byd.trafficmonitor.widget.RotateLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_344"
+            app:landscapeWidth="@dimen/dp_642">
+            <include layout="@layout/flow_content_used_detail"/>
+        </com.byd.trafficmonitor.widget.RotateLinearLayout>
+        <com.byd.trafficmonitor.widget.RotateLinearLayout
+            android:background="@drawable/flow_icall_bg_2"
+            style="@style/flow_btn_group_style">
+            <LinearLayout
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:id="@+id/fl_icall_buy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="@dimen/dp_72"
+                    android:layout_height="@dimen/dp_72"
+                    android:src="@drawable/btn_buy_call_icon"/>
+                <TextView
+                    android:text="@string/flow_call_bug"
+                    style="@style/flow_btn_text_vertical_style"/>
+            </LinearLayout>
+        </com.byd.trafficmonitor.widget.RotateLinearLayout>
+    </com.byd.trafficmonitor.widget.RotateLinearLayout>
+    <com.byd.trafficmonitor.widget.RotateLinearLayout
+        android:layout_marginTop="@dimen/dp_16"
+        app:horizontal_marginStart="@dimen/dp_16"
+        app:layout_marginStart="@dimen/dp_0"
+        style="@style/wrap_content">
+        <TextView
+            android:id="@+id/dead_line_tv"
+            android:text="@string/flow_5g_des"
+            style="@style/flow_remind_expire_style"/>
+    </com.byd.trafficmonitor.widget.RotateLinearLayout>
+</LinearLayout>

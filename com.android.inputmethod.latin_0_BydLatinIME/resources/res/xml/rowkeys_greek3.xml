@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:latin="http://schemas.android.com/apk/res/com.android.inputmethod.latin">
+    <Key latin:keySpec="ζ"/>
+    <Key latin:keySpec="χ"/>
+    <Key latin:keySpec="ψ"/>
+    <switch>
+        <case latin:keyboardLayoutSetElement="alphabetShiftLockShifted">
+            <Key
+                latin:keySpec="ω"
+                latin:moreKeys="Ώ,Ὼ,Ὠ,Ὡ,Ὤ,Ὥ,Ὢ,Ὣ,Ὦ,Ὧ"/>
+        </case>
+        <default>
+            <Key
+                latin:keySpec="ω"
+                latin:moreKeys="ώ,ὼ,ῶ,ὠ,ὡ,ὤ,ὥ,ὢ,ὣ,ὦ,ὧ,ῳ,ῴ,ῲ,ῷ,ᾠ,ᾡ,ᾤ,ᾥ,ᾢ,ᾣ,ᾦ,ᾧ"/>
+        </default>
+    </switch>
+    <Key latin:keySpec="β"/>
+    <Key latin:keySpec="ν"/>
+    <Key latin:keySpec="μ"/>
+</merge>

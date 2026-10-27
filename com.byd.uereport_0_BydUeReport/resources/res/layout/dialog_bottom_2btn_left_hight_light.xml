@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:id="@+id/ll_opertion_dialog_bottom"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.byd.mvp.ui.widget.BydInvalidButton
+        android:id="@+id/btn_ok_dialog_bottom"
+        android:text="@string/dialog_btn_ok"
+        android:textAllCaps="false"
+        android:stateListAnimator="@drawable/anim_btn_scale_alpha_enable"
+        style="@style/dialog_btn_ok_dilink"/>
+    <com.byd.mvp.ui.widget.BydInvalidButton
+        android:id="@+id/btn_cancel_dialog_bottom"
+        android:text="@string/dialog_btn_cancel"
+        android:textAllCaps="false"
+        android:layout_marginStart="@dimen/dp_48"
+        android:stateListAnimator="@drawable/anim_btn_scale_alpha_enable"
+        style="@style/dialog_btn_cancel_dilink"/>
+</LinearLayout>

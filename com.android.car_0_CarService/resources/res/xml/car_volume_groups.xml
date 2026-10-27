@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<volumeGroups xmlns:car="http://schemas.android.com/apk/res-auto" car:isDeprecated="true">
+    <group>
+        <context car:context="music"/>
+        <context car:context="call_ring"/>
+        <context car:context="notification"/>
+        <context car:context="system_sound"/>
+    </group>
+    <group>
+        <context car:context="navigation"/>
+        <context car:context="voice_command"/>
+    </group>
+    <group>
+        <context car:context="call"/>
+    </group>
+    <group>
+        <context car:context="alarm"/>
+    </group>
+</volumeGroups>

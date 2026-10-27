@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <padding
+                android:left="1dp"
+                android:top="1dp"
+                android:right="1dp"
+                android:bottom="1dp"/>
+            <gradient
+                android:startColor="#00282c30"
+                android:endColor="#02282c30"
+                android:angle="270"
+                android:type="linear"/>
+            <corners android:radius="8dp"/>
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <padding
+                android:left="1dp"
+                android:top="1dp"
+                android:right="1dp"
+                android:bottom="1dp"/>
+            <gradient
+                android:startColor="#03282c30"
+                android:endColor="#03282c30"
+                android:angle="270"
+                android:type="linear"/>
+            <corners android:radius="8dp"/>
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <padding
+                android:left="1dp"
+                android:top="1dp"
+                android:right="1dp"
+                android:bottom="1dp"/>
+            <gradient
+                android:startColor="#04282c30"
+                android:endColor="#04282c30"
+                android:angle="270"
+                android:type="linear"/>
+            <corners android:radius="8dp"/>
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <padding
+                android:left="1dp"
+                android:top="1dp"
+                android:right="1dp"
+                android:bottom="1dp"/>
+            <gradient
+                android:startColor="#04282c30"
+                android:endColor="#04282c30"
+                android:angle="270"
+                android:type="linear"/>
+            <corners android:radius="8dp"/>
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <padding
+                android:left="1dp"
+                android:top="1dp"
+                android:right="1dp"
+                android:bottom="1dp"/>
+            <gradient
+                android:startColor="#04282c30"
+                android:endColor="#05282c30"
+                android:angle="270"
+                android:type="linear"/>
+            <corners android:radius="8dp"/>
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <padding
+                android:left="1dp"
+                android:top="1dp"
+                android:right="1dp"
+                android:bottom="1dp"/>
+            <gradient
+                android:startColor="#05282c30"
+                android:endColor="#06282c30"
+                android:angle="270"
+                android:type="linear"/>
+            <corners android:radius="8dp"/>
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <padding
+                android:left="1dp"
+                android:top="1dp"
+                android:right="1dp"
+                android:bottom="1dp"/>
+            <gradient
+                android:startColor="#06282c30"
+                android:endColor="#07282c30"
+                android:angle="270"
+                android:type="linear"/>
+            <corners android:radius="8dp"/>
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <padding
+                android:left="1dp"
+                android:top="1dp"
+                android:right="1dp"
+                android:bottom="1dp"/>
+            <gradient
+                android:startColor="#07282c30"
+                android:endColor="#08282c30"
+                android:angle="270"
+                android:type="linear"/>
+            <corners android:radius="8dp"/>
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <padding
+                android:left="1dp"
+                android:top="1dp"
+                android:right="1dp"
+                android:bottom="1dp"/>
+            <gradient
+                android:startColor="#08282c30"
+                android:endColor="#09282c30"
+                android:angle="270"
+                android:type="linear"/>
+            <corners android:radius="8dp"/>
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <padding
+                android:left="0dp"
+                android:top="0dp"
+                android:right="0dp"
+                android:bottom="1dp"/>
+            <gradient
+                android:startColor="#09282c30"
+                android:endColor="#0a282c30"
+                android:angle="270"
+                android:type="linear"/>
+            <corners android:radius="8dp"/>
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <padding
+                android:left="0dp"
+                android:top="0dp"
+                android:right="0dp"
+                android:bottom="1dp"/>
+            <gradient
+                android:startColor="#0a282c30"
+                android:endColor="#0b282c30"
+                android:angle="270"
+                android:type="linear"/>
+            <corners android:radius="8dp"/>
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <padding
+                android:left="0dp"
+                android:top="0dp"
+                android:right="0dp"
+                android:bottom="1dp"/>
+            <gradient
+                android:startColor="#0b282c30"
+                android:endColor="#0c282c30"
+                android:angle="270"
+                android:type="linear"/>
+            <corners android:radius="8dp"/>
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <padding
+                android:left="0dp"
+                android:top="0dp"
+                android:right="0dp"
+                android:bottom="1dp"/>
+            <gradient
+                android:startColor="#0c282c30"
+                android:endColor="#0d282c30"
+                android:angle="270"
+                android:type="linear"/>
+            <corners android:radius="8dp"/>
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <gradient
+                android:startColor="@color/bt_dialog_bg_color_start"
+                android:endColor="@color/bt_dialog_bg_color_start"
+                android:angle="270"
+                android:type="linear"/>
+            <corners android:radius="8dp"/>
+            <stroke
+                android:width="1dp"
+                android:color="@color/btcall_small_bg_side_color"/>
+        </shape>
+    </item>
+</layer-list>

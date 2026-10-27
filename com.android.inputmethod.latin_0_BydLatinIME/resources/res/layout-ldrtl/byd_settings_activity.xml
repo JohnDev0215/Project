@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_layout"
+    android:background="@drawable/full_screen_bg"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:id="@+id/all_pref_layout"
+        android:background="@drawable/settings_shape_dialog_bg"
+        android:clickable="false"
+        android:layout_width="@dimen/dp_560"
+        android:layout_height="@dimen/dp_554">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_71">
+            <ImageView
+                android:id="@+id/all_pref_close"
+                android:layout_width="@dimen/dp_48"
+                android:layout_height="@dimen/dp_48"
+                android:src="@drawable/icon_public_close_48"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/dp_16"
+                android:layout_alignParentEnd="true"/>
+            <TextView
+                android:id="@+id/dialog_title"
+                android:text="@string/english_ime_name"
+                style="@style/dialog_title_text"/>
+        </RelativeLayout>
+        <TextView style="@style/dialog_title_divider"/>
+        <ScrollView
+            android:scrollbarSize="@dimen/dp_4"
+            android:scrollbarThumbVertical="@drawable/bar_thumb"
+            android:scrollbarTrackVertical="@drawable/bar_track"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/dp_46"
+            android:scrollbars="vertical"
+            android:fadingEdge="vertical"
+            android:fadingEdgeLength="@dimen/dp_44"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:overScrollMode="never"
+            android:requiresFadingEdge="vertical"
+            android:layout_marginEnd="@dimen/dp_9">
+            <include layout="@layout/settings_content_layout"/>
+        </ScrollView>
+    </LinearLayout>
+    <include layout="@layout/long_press_delay_layout"/>
+</FrameLayout>

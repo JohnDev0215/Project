@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/include_dialog_mask"/>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="@dimen/dp_560"
+        android:layout_height="@dimen/dp_264"
+        style="@style/dialog_content">
+        <RelativeLayout
+            android:id="@+id/rl_ok"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_104"
+            app:layout_constraintBottom_toBottomOf="parent">
+            <TextView
+                android:textSize="@dimen/sp_18"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:id="@+id/tv_ensure"
+                android:background="@drawable/shape_bg_blue_button"
+                android:layout_width="@dimen/dp_176"
+                android:layout_height="@dimen/dp_48"
+                android:text="@string/button_dialog_charge_port_cover_confirm"
+                android:includeFontPadding="true"
+                android:layout_centerInParent="true"
+                android:stateListAnimator="@drawable/anim_btn_scale_alpha_enable"/>
+        </RelativeLayout>
+        <com.byd.uereport.widget.BydDialogTextView
+            android:textSize="@dimen/sp_20"
+            android:textColor="@color/dialog_cast_data_protection_notice_text_color"
+            android:gravity="center"
+            android:id="@+id/tv_content"
+            android:layout_width="@dimen/dp_464"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_24"
+            android:text="@string/text_dialog_charge_port_cover_tip"
+            android:includeFontPadding="true"
+            android:lineSpacingExtra="@dimen/sp_10"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.32"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>

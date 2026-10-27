@@ -1,0 +1,6 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/webkit/PluginData;-><init>(Ljava/io/InputStream;JLjava/util/Map;I)V,frameworks/base/core/java/android/webkit/PluginData.java,74,5,74,25,
+Landroid/webkit/PluginData;->getInputStream()Ljava/io/InputStream;,frameworks/base/core/java/android/webkit/PluginData.java,96,5,96,25,
+Landroid/webkit/PluginData;->getContentLength()J,frameworks/base/core/java/android/webkit/PluginData.java,111,5,111,25,
+Landroid/webkit/PluginData;->getHeaders()Ljava/util/Map;,frameworks/base/core/java/android/webkit/PluginData.java,129,5,129,25,
+Landroid/webkit/PluginData;->getStatusCode()I,frameworks/base/core/java/android/webkit/PluginData.java,144,5,144,25,

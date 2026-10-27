@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle"
+    android:useLevel="false">
+    <solid android:color="@color/missed_call_red_color"/>
+    <size
+        android:height="@dimen/dimens_16"
+        android:width="@dimen/dimens_16"/>
+    <corners android:radius="16dp"/>
+</shape>

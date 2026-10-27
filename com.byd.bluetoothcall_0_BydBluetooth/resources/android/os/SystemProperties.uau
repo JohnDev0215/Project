@@ -1,0 +1,15 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/os/SystemProperties;->PROP_NAME_MAX:I,frameworks/base/core/java/android/os/SystemProperties.java,65,5,65,25,
+Landroid/os/SystemProperties;->sChangeCallbacks:Ljava/util/ArrayList;,frameworks/base/core/java/android/os/SystemProperties.java,71,5,71,25,
+Landroid/os/SystemProperties;->native_get(Ljava/lang/String;)Ljava/lang/String;,frameworks/base/core/java/android/os/SystemProperties.java,103,5,103,25,
+Landroid/os/SystemProperties;->native_get(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;,frameworks/base/core/java/android/os/SystemProperties.java,109,5,109,63,maxTargetSdk=28
+Landroid/os/SystemProperties;->native_get_int(Ljava/lang/String;I)I,frameworks/base/core/java/android/os/SystemProperties.java,112,5,112,63,maxTargetSdk=28
+Landroid/os/SystemProperties;->native_get_long(Ljava/lang/String;J)J,frameworks/base/core/java/android/os/SystemProperties.java,115,5,115,25,
+Landroid/os/SystemProperties;->native_get_boolean(Ljava/lang/String;Z)Z,frameworks/base/core/java/android/os/SystemProperties.java,118,5,118,63,maxTargetSdk=28
+Landroid/os/SystemProperties;->native_set(Ljava/lang/String;Ljava/lang/String;)V,frameworks/base/core/java/android/os/SystemProperties.java,133,5,133,63,maxTargetSdk=28
+Landroid/os/SystemProperties;->native_add_change_callback()V,frameworks/base/core/java/android/os/SystemProperties.java,136,5,136,63,maxTargetSdk=28
+Landroid/os/SystemProperties;->set(Ljava/lang/String;Ljava/lang/String;)V,frameworks/base/core/java/android/os/SystemProperties.java,233,5,233,25,
+Landroid/os/SystemProperties;->addChangeCallback(Ljava/lang/Runnable;)V,frameworks/base/core/java/android/os/SystemProperties.java,250,5,250,25,
+Landroid/os/SystemProperties;->removeChangeCallback(Ljava/lang/Runnable;)V,frameworks/base/core/java/android/os/SystemProperties.java,266,5,266,25,
+Landroid/os/SystemProperties;->reportSyspropChanged()V,frameworks/base/core/java/android/os/SystemProperties.java,305,5,305,25,
+Landroid/os/SystemProperties;-><init>()V,frameworks/base/core/java/android/os/SystemProperties.java,331,5,331,25,

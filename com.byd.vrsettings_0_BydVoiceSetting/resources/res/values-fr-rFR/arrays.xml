@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="control_ac_array">
+        <item>Allumer la climatisation</item>
+        <item>Mettre la température à 25°</item>
+        <item>Désactiver la circulation intérieure</item>
+        <item>Il fait chaud</item>
+        <item>Peux-tu baisser la vitesse de ventilation</item>
+        <item>Paramétrer la vitesse des ventilateurs au niveau 1</item>
+        <item>Démarrer le dégivrage avant</item>
+        <item>Allumer la ventilation</item>
+        <item>Activer la ventilation</item>
+    </array>
+    <array name="control_seat_array">
+        <item>Allumer le chauffage du siège conducteur</item>
+        <item>Mettre en route la ventilation des sièges</item>
+        <item>Allumer la ventilation du siège passager</item>
+        <item>Désactiver la ventilation des sièges</item>
+    </array>
+    <array name="control_sunshade_array">
+        <item>Allumer le pare-soleil</item>
+        <item>Fermer le pare-soleil</item>
+    </array>
+    <array name="offline_other_operations_array">
+        <item>Activer le bluetooth</item>
+        <item>Allumer le Wi-Fi</item>
+        <item>Augmenter la luminosité de l\'écran</item>
+        <item>Ouvrir Gestionnaire fichiers</item>
+        <item>Retourner à la page d\'accueil</item>
+    </array>
+    <array name="offline_window_array">
+        <item>Peux-tu ouvrir les fenêtres</item>
+        <item>Ouvrir la vitre du passager</item>
+        <item>Ouvrir la vitre du conducteur</item>
+        <item>Ferme toutes les vitres</item>
+    </array>
+    <array name="rotate_screen_arrays">
+        <item>Pivoter l\'écran</item>
+    </array>
+    <array name="system_app_operations">
+        <item>Ouvrir Navigation</item>
+        <item>Ouvrir Gestionnaire fichiers</item>
+        <item>Fermer Centre du média</item>
+    </array>
+    <array name="system_other_operations_array">
+        <item>Activer le bluetooth</item>
+        <item>Allumer le Wi-Fi</item>
+        <item>Augmenter la luminosité de l\'écran</item>
+        <item>Retourner à la page d\'accueil</item>
+    </array>
+</resources>

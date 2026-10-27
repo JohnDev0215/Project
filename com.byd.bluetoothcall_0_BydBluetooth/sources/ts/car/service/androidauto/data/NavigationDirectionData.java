@@ -1,0 +1,27 @@
+package ts.car.service.androidauto.data;
+
+/* JADX INFO: loaded from: classes.dex */
+public final class NavigationDirectionData {
+    private int mIsHighlighted;
+    private int mShape;
+
+    public int getHighlighted() {
+        return this.mIsHighlighted;
+    }
+
+    public int getShape() {
+        return this.mShape;
+    }
+
+    public void setHighlighted(int i) {
+        this.mIsHighlighted = i;
+    }
+
+    public void setShape(int i) {
+        this.mShape = i;
+    }
+
+    public String toString() {
+        return "NavigationDirectionData{mShape=" + this.mShape + ", mIsHighlighted=" + this.mIsHighlighted + '}';
+    }
+}

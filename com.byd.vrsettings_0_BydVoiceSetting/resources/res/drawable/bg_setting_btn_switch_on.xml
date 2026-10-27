@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <gradient
+        android:startColor="@color/bg_setting_btn_switch_on_start"
+        android:endColor="@color/bg_setting_btn_switch_on_end"
+        android:angle="270"/>
+    <corners android:radius="@dimen/radius_24"/>
+</shape>

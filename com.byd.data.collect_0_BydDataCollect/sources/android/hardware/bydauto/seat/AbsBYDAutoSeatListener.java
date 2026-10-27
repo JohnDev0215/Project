@@ -1,0 +1,53 @@
+package android.hardware.bydauto.seat;
+
+import a.a.c;
+import a.a.d;
+import android.hardware.bydauto.BYDAutoEventValue;
+import android.util.Log;
+
+/* JADX INFO: loaded from: classes.dex */
+public abstract class AbsBYDAutoSeatListener implements d {
+    protected static final String TAG = "AbsBYDAutoSeatListener";
+
+    @Override // a.a.d
+    public /* bridge */ /* synthetic */ void isConnected(boolean z) {
+        super.isConnected(z);
+    }
+
+    @Override // a.a.d
+    public /* bridge */ /* synthetic */ void isOptimizationApi(boolean z) {
+        super.isOptimizationApi(z);
+    }
+
+    public void onDataChanged(c cVar) {
+        Log.d(TAG, "onDataChanged");
+    }
+
+    public void onDataEventChanged(int i2, BYDAutoEventValue bYDAutoEventValue) {
+        Log.d(TAG, "onDataEventChanged");
+    }
+
+    public void onError(int i2, String str) {
+        Log.d(TAG, "onError");
+    }
+
+    public void onSeatMassageLevelChange(int i2, int i3) {
+        Log.d(TAG, "onSeatMassageLevelChange");
+    }
+
+    public void onSeatMassageTypeChange(int i2, int i3) {
+        Log.d(TAG, "onSeatMassageTypeChange");
+    }
+
+    public void onSeatVentilationState(int i2, int i3) {
+        Log.d(TAG, "onSeatVentilationState");
+    }
+
+    public void onSeatWarmStateChanged(int i2, int i3) {
+        Log.d(TAG, "onSeatWarmStateChanged");
+    }
+
+    public void onSteeringWheelWarmStateChanged(int i2) {
+        Log.d(TAG, "onSteeringWheelWarmStateChanged");
+    }
+}

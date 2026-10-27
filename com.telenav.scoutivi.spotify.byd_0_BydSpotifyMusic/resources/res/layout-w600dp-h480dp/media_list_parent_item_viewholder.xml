@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="?attr/app_bg_color"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/fragment_main_grid_media_cover_item_margin_top">
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/media_title_height"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <TextView
+            android:textAppearance="?attr/TextAppearance.VIVID.BYD.LargeTitle"
+            android:background="?attr/viewholder_large_title_bg"
+            android:layout_width="@dimen/media_list_parent_title_min_width"
+            android:layout_height="@dimen/media_list_parent_title_height"
+            android:layout_marginTop="@dimen/media_list_parent_viewholder_title_margin_top"/>
+    </LinearLayout>
+    <com.vivid.spotify.common.ui.shimmer.ShimmerRecyclerView
+        android:orientation="horizontal"
+        android:id="@+id/list_parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title"
+        app:limit_item_size="true"
+        app:pagination_on="false"
+        app:shimmer_item_decoration_size="@dimen/media_cover_item_margin_right"
+        app:shimmer_layout="@layout/media_cover_item_viewholder"
+        app:view_offset_size="@dimen/fragment_main_grid_item_margin_end"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="billing_cycle_days_left">
+        <item quantity="one">%d dia restante</item>
+        <item quantity="other">%d dias restantes</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_letters">
+        <item quantity="one">Precisa ter pelo menos %d letra</item>
+        <item quantity="other">Precisa ter pelo menos %d letras</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_lowercase">
+        <item quantity="one">Precisa ter pelo menos %d letra minúscula</item>
+        <item quantity="other">Precisa ter pelo menos %d letras minúsculas</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_nonletter">
+        <item quantity="one">Precisa ter pelo menos %d caractere que não seja letra</item>
+        <item quantity="other">Precisa ter pelo menos %d caracteres que não sejam letras</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_numeric">
+        <item quantity="one">Precisa ter pelo menos %d dígito numérico</item>
+        <item quantity="other">Precisa ter pelo menos %d dígitos numéricos</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_symbols">
+        <item quantity="one">Precisa ter pelo menos %d símbolo especial</item>
+        <item quantity="other">Precisa ter pelo menos %d símbolos especiais</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_uppercase">
+        <item quantity="one">Precisa ter pelo menos %d letra maiúscula</item>
+        <item quantity="other">Precisa ter pelo menos %d letras maiúsculas</item>
+    </plurals>
+    <plurals name="mobile_network_summary_count">
+        <item quantity="one">%1$d chip</item>
+        <item quantity="other">%1$d chips</item>
+    </plurals>
+    <plurals name="runtime_permissions_additional_count">
+        <item quantity="one">%d permissão adicional</item>
+        <item quantity="other">%d permissões adicionais</item>
+    </plurals>
+    <plurals name="show_dev_countdown">
+        <item quantity="one">Falta %1$d etapa para você se tornar um desenvolvedor.</item>
+        <item quantity="other">Faltam %1$d etapas para você se tornar um desenvolvedor.</item>
+    </plurals>
+    <plurals name="user_limit_reached_message">
+        <item quantity="one">É possível criar até %d usuário.</item>
+        <item quantity="other">É possível criar até %d usuários.</item>
+    </plurals>
+    <plurals name="wifi_tether_connected_summary">
+        <item quantity="one">%1$d dispositivo conectado</item>
+        <item quantity="other">%1$d dispositivos conectados</item>
+    </plurals>
+</resources>

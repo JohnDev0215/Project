@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="install">アプリのインストール</string>
+    <string name="qrcode_expired">時間切れ。タップして更新</string>
+    <string name="qrcode_network_warning">ネットワークは利用できません。ネットワーク設定を確認してください</string>
+    <string name="qrcode_refresh_fail">取得に失敗しました。タップして更新</string>
+    <string name="qrcode_scan_type_vds">VDSスキャン</string>
+    <string name="qrcode_scan_type_wechat">WeComスキャン</string>
+    <string name="qrcode_success">スキャン成功</string>
+    <string name="qrcode_time">残り%d秒</string>
+    <string name="qrcode_tip">QRコードをスキャンして認証を取得</string>
+    <string name="qrcode_title">検証</string>
+    <string name="qrcode_title_with_module">%s検証</string>
+</resources>

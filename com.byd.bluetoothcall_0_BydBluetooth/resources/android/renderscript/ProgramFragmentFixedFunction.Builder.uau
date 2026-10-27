@@ -1,0 +1,5 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/renderscript/ProgramFragmentFixedFunction$Builder;-><init>(Landroid/renderscript/RenderScript;)V,frameworks/base/rs/java/android/renderscript/ProgramFragmentFixedFunction.java,238,9,238,29,
+Landroid/renderscript/ProgramFragmentFixedFunction$Builder;->setTexture(Landroid/renderscript/ProgramFragmentFixedFunction$Builder$EnvMode;Landroid/renderscript/ProgramFragmentFixedFunction$Builder$Format;I)Landroid/renderscript/ProgramFragmentFixedFunction$Builder;,frameworks/base/rs/java/android/renderscript/ProgramFragmentFixedFunction.java,259,9,259,29,
+Landroid/renderscript/ProgramFragmentFixedFunction$Builder;->setVaryingColor(Z)Landroid/renderscript/ProgramFragmentFixedFunction$Builder;,frameworks/base/rs/java/android/renderscript/ProgramFragmentFixedFunction.java,289,9,289,29,
+Landroid/renderscript/ProgramFragmentFixedFunction$Builder;->create()Landroid/renderscript/ProgramFragmentFixedFunction;,frameworks/base/rs/java/android/renderscript/ProgramFragmentFixedFunction.java,301,9,301,29,

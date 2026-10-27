@@ -1,0 +1,19 @@
+package com.android.settingslib;
+
+import android.content.Context;
+import android.provider.Settings;
+
+/* JADX INFO: loaded from: classes6.dex */
+public class WirelessUtils {
+    public static boolean isRadioAllowed(Context context, String type) {
+        if (!isAirplaneModeOn(context)) {
+            return true;
+        }
+        String toggleable = Settings.Global.getString(context.getContentResolver(), "airplane_mode_toggleable_radios");
+        return toggleable != null && toggleable.contains(type);
+    }
+
+    public static boolean isAirplaneModeOn(Context context) {
+        return Settings.Global.getInt(context.getContentResolver(), "airplane_mode_on", 0) != 0;
+    }
+}

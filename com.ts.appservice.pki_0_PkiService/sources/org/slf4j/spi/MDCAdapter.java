@@ -1,0 +1,19 @@
+package org.slf4j.spi;
+
+import java.util.Map;
+
+/* JADX INFO: compiled from: caradapter-bug */
+/* JADX INFO: loaded from: classes.dex */
+public interface MDCAdapter {
+    void clear();
+
+    String get(String str);
+
+    Map<String, String> getCopyOfContextMap();
+
+    void put(String str, String str2);
+
+    void remove(String str);
+
+    void setContextMap(Map<String, String> map);
+}

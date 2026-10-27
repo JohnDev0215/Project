@@ -1,0 +1,4 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/view/InputChannel;->CREATOR:Landroid/os/Parcelable$Creator;,frameworks/base/core/java/android/view/InputChannel.java,37,5,37,25,
+Landroid/view/InputChannel;->mPtr:J,frameworks/base/core/java/android/view/InputChannel.java,52,5,52,25,
+Landroid/view/InputChannel;-><init>()V,frameworks/base/core/java/android/view/InputChannel.java,72,5,72,25,

@@ -1,0 +1,322 @@
+[
+  {
+    "language": "zh-CN",
+    "subtypeLocal": "null",
+    "keyboard": "null",
+    "nameCN": "中文",
+    "nameEN": "Chinese",
+    "state": "-1"
+  },
+  {
+    "language": "zh-TW",
+    "subtypeLocal": "null",
+    "nameCN": "中文（繁体）",
+    "nameEN": "traditionalChinese",
+    "keyboard": "null",
+    "state": "-1"
+  },
+  {
+    "language": "en-US",
+    "subtypeLocal": "en_US",
+    "nameCN": "英语 (美国)",
+    "nameEN": "English(United States)",
+    "keyboard": "qwerty",
+    "state": "0"
+  },
+  {
+    "language": "es",
+    "subtypeLocal": "es",
+    "nameCN": "西班牙语",
+    "nameEN": "Spanish",
+    "keyboard": "spanish",
+    "state": "1"
+  },
+  {
+    "language": "es_LA",
+    "subtypeLocal": "es_US",
+    "nameCN": "西班牙语（美洲）",
+    "nameEN": "Spanish(United States)",
+    "keyboard": "spanish",
+    "state": "1"
+  },
+  {
+    "language": "pt_PT",
+    "subtypeLocal": "pt_PT",
+    "nameCN": "葡萄牙语(葡萄牙)",
+    "nameEN": "Portuguese(Portugal)",
+    "keyboard": "qwerty",
+    "state": "1"
+  },
+  {
+    "language": "pt_BR",
+    "subtypeLocal": "pt_BR",
+    "nameCN": "葡萄牙语（巴西）",
+    "nameEN": "Portuguese(Brazil)",
+    "keyboard": "qwerty",
+    "state": "1"
+  },
+  {
+    "language": "ja",
+    "subtypeLocal": "null",
+    "nameCN": "日语",
+    "nameEN": "Japanese",
+    "keyboard": "null",
+    "state": "-1"
+  },
+  {
+    "language": "ko",
+    "subtypeLocal": "null",
+    "nameCN": "韩语",
+    "nameEN": "Korean",
+    "keyboard": "null",
+    "state": "-1"
+  },
+  {
+    "language": "fr",
+    "subtypeLocal": "fr",
+    "nameCN": "法语",
+    "nameEN": "French",
+    "keyboard": "azerty",
+    "state": "1"
+  },
+  {
+    "language": "de",
+    "subtypeLocal": "de",
+    "nameCN": "德语",
+    "nameEN": "German",
+    "keyboard": "qwertz",
+    "state": "1"
+  },
+  {
+    "language": "it",
+    "subtypeLocal": "it",
+    "nameCN": "意大利语",
+    "nameEN": "Italian",
+    "keyboard": "qwerty",
+    "state": "1"
+  },
+  {
+    "language": "hi",
+    "subtypeLocal": "hi",
+    "nameCN": "印地语",
+    "nameEN": "Hindi",
+    "keyboard": "east_slavic",
+    "state": "-1"
+  },
+  {
+    "language": "ar",
+    "subtypeLocal": "ar",
+    "nameCN": "阿拉伯语",
+    "nameEN": "Arabic",
+    "keyboard": "arabic",
+    "state": "1"
+  },
+  {
+    "language": "nl",
+    "subtypeLocal": "nl",
+    "nameCN": "荷兰语",
+    "nameEN": "Dutch",
+    "keyboard": "qwerty",
+    "state": "1"
+  },
+  {
+    "language": "th",
+    "subtypeLocal": "th",
+    "nameCN": "泰语",
+    "nameEN": "Thai",
+    "keyboard": "thai",
+    "state": "1"
+  },
+  {
+    "language": "sv",
+    "subtypeLocal": "sv",
+    "nameCN": "瑞典语",
+    "nameEN": "Swedish",
+    "keyboard": "nordic",
+    "state": "1"
+  },
+  {
+    "language": "nb",
+    "subtypeLocal": "nb",
+    "nameCN": "挪威语",
+    "nameEN": "Norwegian",
+    "keyboard": "nordic",
+    "state": "1"
+  },
+  {
+    "language": "fi",
+    "subtypeLocal": "fi",
+    "nameCN": "芬兰语",
+    "nameEN": "Finnish",
+    "keyboard": "nordic",
+    "state": "1"
+  },
+  {
+    "language": "da",
+    "subtypeLocal": "da",
+    "nameCN": "丹麦语",
+    "nameEN": "Danish",
+    "keyboard": "nordic",
+    "state": "1"
+  },
+  {
+    "language": "iw",
+    "subtypeLocal": "iw",
+    "nameCN": "希伯来语",
+    "nameEN": "Hebrew",
+    "keyboard": "hebrew",
+    "state": "1"
+  },
+  {
+    "language": "ru",
+    "subtypeLocal": "ru",
+    "nameCN": "俄语",
+    "nameEN": "Russian",
+    "keyboard": "east_slavic",
+    "state": "1"
+  },
+  {
+    "language": "uz_UZ",
+    "subtypeLocal": "uz_UZ",
+    "nameCN": "乌兹别克斯坦语",
+    "nameEN": "Uzbek",
+    "keyboard": "uzbek",
+    "state": "1"
+  },
+  {
+    "language": "tr",
+    "subtypeLocal": "tr",
+    "nameCN": "土耳其语",
+    "nameEN": "Turkish",
+    "keyboard": "qwerty",
+    "state": "1"
+  },
+  {
+    "language": "hu",
+    "subtypeLocal": "hu",
+    "nameCN": "匈牙利语",
+    "nameEN": "Hungarian",
+    "keyboard": "qwertz",
+    "state": "1"
+  },
+  {
+    "language": "sk",
+    "subtypeLocal": "sk",
+    "nameCN": "斯洛伐克语",
+    "nameEN": "Slovak",
+    "keyboard": "qwerty",
+    "state": "1"
+  },
+  {
+    "language": "cs",
+    "subtypeLocal": "cs",
+    "nameCN": "捷克语",
+    "nameEN": "Czech",
+    "keyboard": "qwertz",
+    "state": "1"
+  },
+  {
+    "language": "pl",
+    "subtypeLocal": "pl",
+    "nameCN": "波兰语",
+    "nameEN": "Polish",
+    "keyboard": "qwerty",
+    "state": "1"
+  },
+  {
+    "language": "vi",
+    "subtypeLocal": "vi",
+    "nameCN": "越南语",
+    "nameEN": "Vietnamese",
+    "keyboard": "qwerty",
+    "state": "1"
+  },
+  {
+    "language": "in",
+    "subtypeLocal": "in",
+    "nameCN": "印度尼西亚语",
+    "nameEN": "Indonesian",
+    "keyboard": "qwerty",
+    "state": "1"
+  },
+  {
+    "language": "ms-MY",
+    "subtypeLocal": "ms_MY",
+    "nameCN": "马来语",
+    "nameEN": "Malay",
+    "keyboard": "qwerty",
+    "state": "1"
+  },
+  {
+    "language": "fr_CA",
+    "subtypeLocal": "fr_CA",
+    "nameCN": "法语(加拿大)",
+    "nameEN": "French(Canada)",
+    "keyboard": "qwerty",
+    "state": "1"
+  },
+  {
+    "language": "en_AU",
+    "subtypeLocal": "en_GB",
+    "nameCN": "英语 (英国)",
+    "nameEN": "English",
+    "keyboard": "qwerty",
+    "state": "-1"
+  },
+  {
+    "language": "ca",
+    "subtypeLocal": "ca",
+    "nameCN": "加泰罗尼亚语",
+    "nameEN": "Catalan",
+    "keyboard": "spanish",
+    "state": "-1"
+  },
+  {
+    "language": "hr",
+    "subtypeLocal": "hr",
+    "nameCN": "克罗地亚语",
+    "nameEN": "Croatian",
+    "keyboard": "qwertz",
+    "state": "-1"
+  },
+  {
+    "language": "ro",
+    "subtypeLocal": "ro",
+    "nameCN": "罗马尼亚语",
+    "nameEN": "Romanian",
+    "keyboard": "qwerty",
+    "state": "1"
+  },
+  {
+    "language": "el",
+    "subtypeLocal": "el",
+    "nameCN": "希腊语",
+    "nameEN": "Greek",
+    "keyboard": "greek",
+    "state": "1"
+  },
+  {
+    "language": "uk",
+    "subtypeLocal": "uk",
+    "nameCN": "乌克兰语",
+    "nameEN": "Ukrainian",
+    "keyboard": "east_slavic",
+    "state": "-1"
+  },
+  {
+    "language": "kk",
+    "subtypeLocal": "kk",
+    "nameCN": "哈萨克斯坦语",
+    "nameEN": "Kazakh",
+    "keyboard": "east_slavic",
+    "state": "-1"
+  },
+  {
+    "language": "bg",
+    "subtypeLocal": "bg",
+    "nameCN": "保加利亚语",
+    "nameEN": "Bulgarian",
+    "keyboard": "bulgarian",
+    "state": "-1"
+  }
+]

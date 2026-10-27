@@ -1,0 +1,32 @@
+package android.hardware.bydauto.tbox;
+
+import android.hardware.IBYDAutoEvent;
+import android.hardware.IBYDAutoListener;
+import android.hardware.bydauto.BYDAutoEventValue;
+import android.util.Log;
+import spi.c;
+
+/* JADX INFO: loaded from: classes.dex */
+public abstract class AbsBYDTBoxListener implements IBYDAutoListener {
+    public static final String TAG = "AbsBYDTBoxListener";
+
+    @Override // android.hardware.IBYDAutoListener
+    public void onDataChanged(IBYDAutoEvent iBYDAutoEvent) {
+    }
+
+    @Override // android.hardware.IBYDAutoListener
+    public void onDataEventChanged(int i, BYDAutoEventValue bYDAutoEventValue) {
+    }
+
+    @Override // android.hardware.IBYDAutoListener
+    public void onError(int i, String str) {
+    }
+
+    public void onTBoxCmd2IVI(int i) {
+        c.A("onTBoxCmd2IVI cmd : ", i, TAG);
+    }
+
+    public void onUpdateTrafficData() {
+        Log.w(TAG, "onUpdateTrafficData");
+    }
+}

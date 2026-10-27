@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Mapping xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ListConfig
+        app:id="@+id/playback_fragment_now_playing_list_uxr_config"
+        app:maxLength="-1"/>
+    <ListConfig
+        app:id="@+id/browse_list_uxr_config"
+        app:maxLength="-1"/>
+</Mapping>

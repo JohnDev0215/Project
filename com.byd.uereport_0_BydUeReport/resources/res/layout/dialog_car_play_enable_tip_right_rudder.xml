@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/include_dialog_mask"/>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="@dimen/dp_560"
+        android:layout_height="@dimen/dp_312"
+        style="@style/dialog_content">
+        <com.byd.uereport.widget.BydDialogTextView
+            android:textSize="@dimen/sp_20"
+            android:textColor="@color/dialog_cp_enable_text_color"
+            android:gravity="center"
+            android:id="@+id/tv_title"
+            android:layout_width="@dimen/dp_464"
+            android:layout_height="wrap_content"
+            android:text="@string/cp_enable_content_tip"
+            android:textDirection="locale"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.32"/>
+        <TextView
+            android:textSize="@dimen/sp_18"
+            android:textColor="@color/dialog_cp_need_text_color"
+            android:gravity="center"
+            android:id="@+id/tv_cancel"
+            android:background="@drawable/shape_bg_white_button"
+            android:layout_width="@dimen/dp_176"
+            android:layout_height="@dimen/dp_48"
+            android:layout_marginTop="@dimen/dp_236"
+            android:text="@string/dilink_no"
+            android:layout_marginStart="@dimen/dp_80"
+            android:stateListAnimator="@drawable/anim_btn_scale_alpha_enable"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+        <TextView
+            android:textSize="@dimen/sp_18"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:id="@+id/tv_confirm"
+            android:background="@drawable/shape_bg_blue_button"
+            android:layout_width="@dimen/dp_176"
+            android:layout_height="@dimen/dp_48"
+            android:text="@string/dilink_yes"
+            android:layout_marginStart="@dimen/dp_48"
+            android:stateListAnimator="@drawable/anim_btn_scale_alpha_enable"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_cancel"
+            app:layout_constraintStart_toEndOf="@+id/tv_cancel"
+            app:layout_constraintTop_toTopOf="@+id/tv_cancel"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>

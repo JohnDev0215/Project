@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">BydAutoService</string>
+    <string name="audio_muted">Audio gedempt</string>
+    <string name="audio_removed">Ongedempt</string>
+    <string name="btn_comfirm">OK</string>
+    <string name="btn_reset">Resetten</string>
+    <string name="call_mode">Werking is verboden tijdens een oproep</string>
+    <string name="cancel">Annuleren</string>
+    <string name="carplay_androidauto_land">Het huidige scherm ondersteunt geen schermwisseling</string>
+    <string name="dialog_title_user">Aangepaste Knop Instelling</string>
+    <string name="dialog_title_user_left">Instellingen Aangepaste Knoppen Links</string>
+    <string name="dialog_title_user_right">Instellingen Rechter Aangepaste Knop</string>
+    <string name="mode_am_music">AM</string>
+    <string name="mode_amazon_music">Amazon Music</string>
+    <string name="mode_bt_music">Muziek</string>
+    <string name="mode_button_androidauto">Android Auto</string>
+    <string name="mode_button_carplay">Apple CarPlay</string>
+    <string name="mode_dab_music">DAB</string>
+    <string name="mode_fm_music">FM</string>
+    <string name="mode_local_music">Lokale media</string>
+    <string name="mode_music">Lokaal</string>
+    <string name="mode_sd">SD kaart</string>
+    <string name="mode_spotify_music">Spotify</string>
+    <string name="mode_usb">USB</string>
+    <string name="mode_usb_music">Muziek op USB-stick</string>
+    <string name="mode_usb_text">Geen USB gedetecteerd</string>
+    <string name="mode_usb_video">Video op USB-stick</string>
+    <string name="radio_button_ac">AIRCO</string>
+    <string name="radio_button_music">Muziek</string>
+    <string name="radio_button_navi_home">Startpagina</string>
+    <string name="radio_button_play_pause">Media pauzeren/afspelen</string>
+    <string name="radio_button_radio">Radio</string>
+    <string name="radio_button_rotate">Schermrotatie in het Midden</string>
+    <string name="radio_button_source">Audiobron van media wisselen</string>
+    <string name="reset_country">Systeem configuratie. Gelieve wacht</string>
+    <string name="restart_efect">Functie geconfigureerd. Start opnieuw om dit te activeren!</string>
+    <string name="restart_now">Nu opnieuw opstarten</string>
+    <string name="restart_time">Aftellen tot opnieuw starten</string>
+    <string name="warring_mode">Gelieve de gidsprocedure te voltooien voordat u IVI gebruikt!</string>
+    <string name="warring_navi_mode">Huidige status ondersteunt deze bewerking niet!</string>
+    <string name="warring_power">Deze functie is alleen beschikbaar in de P-versnelling</string>
+</resources>

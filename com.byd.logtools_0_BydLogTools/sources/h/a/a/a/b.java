@@ -1,0 +1,45 @@
+package h.a.a.a;
+
+import android.os.HidlSupport;
+import android.os.HwBlob;
+import android.os.HwParcel;
+import java.util.Objects;
+
+/* JADX INFO: compiled from: ExportResult.java */
+/* JADX INFO: loaded from: classes.dex */
+public final class b {
+
+    /* JADX INFO: renamed from: a, reason: collision with root package name */
+    public int f4969a = 0;
+
+    /* JADX INFO: renamed from: b, reason: collision with root package name */
+    public int f4970b = 0;
+
+    public final void a(HwParcel hwParcel, HwBlob hwBlob, long j) {
+        this.f4969a = hwBlob.getInt32(0 + j);
+        this.f4970b = hwBlob.getInt32(j + 4);
+    }
+
+    public final void b(HwParcel hwParcel) {
+        a(hwParcel, hwParcel.readBuffer(8L), 0L);
+    }
+
+    public final boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null || obj.getClass() != b.class) {
+            return false;
+        }
+        b bVar = (b) obj;
+        return this.f4969a == bVar.f4969a && this.f4970b == bVar.f4970b;
+    }
+
+    public final int hashCode() {
+        return Objects.hash(Integer.valueOf(HidlSupport.deepHashCode(Integer.valueOf(this.f4969a))), Integer.valueOf(HidlSupport.deepHashCode(Integer.valueOf(this.f4970b))));
+    }
+
+    public final String toString() {
+        return "{.domain_name = " + a.a(this.f4969a) + ", .stat = " + c.a(this.f4970b) + "}";
+    }
+}

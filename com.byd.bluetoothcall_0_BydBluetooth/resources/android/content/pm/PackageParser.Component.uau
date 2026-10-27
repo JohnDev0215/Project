@@ -1,0 +1,6 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/content/pm/PackageParser$Component;->intents:Ljava/util/ArrayList;,frameworks/base/core/java/android/content/pm/PackageParser.java,7510,9,7510,29,
+Landroid/content/pm/PackageParser$Component;->className:Ljava/lang/String;,frameworks/base/core/java/android/content/pm/PackageParser.java,7512,9,7512,29,
+Landroid/content/pm/PackageParser$Component;->metaData:Landroid/os/Bundle;,frameworks/base/core/java/android/content/pm/PackageParser.java,7515,9,7515,29,
+Landroid/content/pm/PackageParser$Component;->owner:Landroid/content/pm/PackageParser$Package;,frameworks/base/core/java/android/content/pm/PackageParser.java,7517,9,7517,29,
+Landroid/content/pm/PackageParser$Component;->getComponentName()Landroid/content/ComponentName;,frameworks/base/core/java/android/content/pm/PackageParser.java,7586,9,7586,29,

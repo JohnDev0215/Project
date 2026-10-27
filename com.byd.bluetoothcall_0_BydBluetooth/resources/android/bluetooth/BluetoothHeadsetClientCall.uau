@@ -1,0 +1,6 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/bluetooth/BluetoothHeadsetClientCall;->getId()I,frameworks/base/core/java/android/bluetooth/BluetoothHeadsetClientCall.java,147,5,147,25,
+Landroid/bluetooth/BluetoothHeadsetClientCall;->getState()I,frameworks/base/core/java/android/bluetooth/BluetoothHeadsetClientCall.java,167,5,167,25,
+Landroid/bluetooth/BluetoothHeadsetClientCall;->getNumber()Ljava/lang/String;,frameworks/base/core/java/android/bluetooth/BluetoothHeadsetClientCall.java,177,5,177,25,
+Landroid/bluetooth/BluetoothHeadsetClientCall;->isMultiParty()Z,frameworks/base/core/java/android/bluetooth/BluetoothHeadsetClientCall.java,196,5,196,25,
+Landroid/bluetooth/BluetoothHeadsetClientCall;->isOutgoing()Z,frameworks/base/core/java/android/bluetooth/BluetoothHeadsetClientCall.java,206,5,206,25,

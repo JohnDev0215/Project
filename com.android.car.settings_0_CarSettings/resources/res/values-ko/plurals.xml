@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="billing_cycle_days_left">
+        <item quantity="one">%d일 남음</item>
+        <item quantity="other">%d일 남음</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_letters">
+        <item quantity="one">문자를 1개 이상 포함해야 합니다.</item>
+        <item quantity="other">문자를 %d개 이상 포함해야 합니다.</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_lowercase">
+        <item quantity="one">소문자를 1개 이상 포함해야 합니다.</item>
+        <item quantity="other">소문자를 %d개 이상 포함해야 합니다.</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_nonletter">
+        <item quantity="one">글자가 아닌 문자를 1개 이상 포함해야 합니다.</item>
+        <item quantity="other">글자가 아닌 문자를 %d개 이상 포함해야 합니다.</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_numeric">
+        <item quantity="one">숫자를 1개 이상 포함해야 합니다.</item>
+        <item quantity="other">숫자를 %d개 이상 포함해야 합니다.</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_symbols">
+        <item quantity="one">특수 기호를 1개 이상 포함해야 합니다.</item>
+        <item quantity="other">특수 기호를 %d개 이상 포함해야 합니다.</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_uppercase">
+        <item quantity="one">대문자를 1개 이상 포함해야 합니다.</item>
+        <item quantity="other">대문자를 %d개 이상 포함해야 합니다.</item>
+    </plurals>
+    <plurals name="mobile_network_summary_count">
+        <item quantity="one">SIM %1$d개</item>
+        <item quantity="other">SIM %1$d개</item>
+    </plurals>
+    <plurals name="runtime_permissions_additional_count">
+        <item quantity="one">추가 권한 %d개</item>
+        <item quantity="other">추가 권한 %d개</item>
+    </plurals>
+    <plurals name="show_dev_countdown">
+        <item quantity="one">개발자가 되려면 %1$d단계가 남았습니다.</item>
+        <item quantity="other">개발자가 되려면 %1$d단계가 남았습니다.</item>
+    </plurals>
+    <plurals name="user_limit_reached_message">
+        <item quantity="one">사용자는 한 명만 만들 수 있습니다.</item>
+        <item quantity="other">사용자는 %d명까지 만들 수 있습니다.</item>
+    </plurals>
+    <plurals name="wifi_tether_connected_summary">
+        <item quantity="one">기기 %1$d개 연결됨</item>
+        <item quantity="other">기기 %1$d개 연결됨</item>
+    </plurals>
+</resources>

@@ -1,0 +1,5 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/graphics/drawable/RippleDrawable;->mState:Landroid/graphics/drawable/RippleDrawable$RippleState;,frameworks/base/graphics/java/android/graphics/drawable/RippleDrawable.java,124,5,124,25,
+Landroid/graphics/drawable/RippleDrawable;->mDensity:I,frameworks/base/graphics/java/android/graphics/drawable/RippleDrawable.java,162,5,162,25,
+Landroid/graphics/drawable/RippleDrawable;->getRipplePaint()Landroid/graphics/Paint;,frameworks/base/graphics/java/android/graphics/drawable/RippleDrawable.java,863,5,863,25,
+Landroid/graphics/drawable/RippleDrawable;->setForceSoftware(Z)V,frameworks/base/graphics/java/android/graphics/drawable/RippleDrawable.java,952,5,952,25,

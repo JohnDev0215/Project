@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bg_color_dialog">#111b23</color>
+    <color name="bg_color_dialog_outside">#b3000000</color>
+    <color name="bg_color_line">#14ffffff</color>
+    <color name="bg_color_loading">#b3000000</color>
+    <color name="bg_color_qrcode_state">#d9000000</color>
+    <color name="bg_color_segment_button_group">#406a8497</color>
+    <color name="bg_color_segment_button_selected">#dae1eb</color>
+    <color name="color_dialog_bg">#b8000000</color>
+    <color name="config_log_text_color">#d9dae1eb</color>
+    <color name="current_log_title_color">#d9dae1eb</color>
+    <color name="dialog_bg_end_color">#fa1c252e</color>
+    <color name="dialog_bg_start_color">#fa0f1821</color>
+    <color name="dialog_button_bg_shape_color">#1fb3d0e6</color>
+    <color name="dialog_button_exit_bg_color">#406a8497</color>
+    <color name="dialog_button_exit_text_color">#d9dae1eb</color>
+    <color name="dialog_message_text_color">#8cdae1eb</color>
+    <color name="dialog_title_text_color">#d9dae1eb</color>
+    <color name="history_log_list_text_color">#ffdae1eb</color>
+    <color name="history_log_message_color">#fa1c252e</color>
+    <color name="history_log_toast_bg_color">#e61f1f1f</color>
+    <color name="history_log_toast_text_color">#ffdae1eb</color>
+    <color name="radio_group_normal_text_color">#d9dae1eb</color>
+    <color name="text_color_main_dilink_pagers">#dae1eb</color>
+    <color name="text_color_qrcode_left_time">#dae1eb</color>
+    <color name="text_color_sb_selected">#262d33</color>
+    <color name="text_color_sb_unselected">#dae1eb</color>
+    <color name="underline_button">#050e14</color>
+</resources>

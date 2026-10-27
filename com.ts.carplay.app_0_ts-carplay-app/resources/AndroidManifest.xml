@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    android:sharedUserId="android.uid.system"
+    android:versionCode="3"
+    android:versionName="2.20241106.0.2"
+    android:compileSdkVersion="30"
+    android:compileSdkVersionCodename="11"
+    package="com.ts.carplay.app"
+    platformBuildVersionCode="30"
+    platformBuildVersionName="11">
+    <uses-sdk
+        android:minSdkVersion="30"
+        android:targetSdkVersion="30"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="com.ts.fw.ACCESS_TS_SERVICES"/>
+    <uses-permission android:name="car.permission.CARPLAY"/>
+    <uses-permission android:name="car.permission.CARPLAY_DEVICE_LIST"/>
+    <application
+        android:theme="@style/AppTheme"
+        android:label="@string/app_name"
+        android:icon="@drawable/allmenu_carplay"
+        android:name="com.ts.carplay.app.CarPlayApplication"
+        android:enabled="true"
+        android:allowBackup="false"
+        android:hardwareAccelerated="true"
+        android:largeHeap="true"
+        android:extractNativeLibs="false"
+        android:resizeableActivity="false"
+        android:usesNonSdkApi="true">
+        <activity
+            android:theme="@style/DisplayTheme"
+            android:name="com.ts.carplay.app.ui.display.view.CarPlayDisplayActivity"
+            android:launchMode="singleInstance"
+            android:screenOrientation="landscape"
+            android:configChanges="uiMode">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <service
+            android:name="com.ts.carplay.app.service.CarPlayRemoteService"
+            android:configChanges="uiMode"/>
+        <uses-library android:name="ts.platform.library"/>
+    </application>
+</manifest>

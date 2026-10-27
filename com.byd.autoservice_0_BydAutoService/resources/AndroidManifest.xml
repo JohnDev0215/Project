@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    android:sharedUserId="android.uid.system"
+    android:versionCode="146"
+    android:versionName="1.18.2-202507221508"
+    android:compileSdkVersion="29"
+    android:compileSdkVersionCodename="10"
+    package="com.byd.autoservice"
+    platformBuildVersionCode="29"
+    platformBuildVersionName="10">
+    <uses-sdk
+        android:minSdkVersion="26"
+        android:targetSdkVersion="29"/>
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="car.permission.ANDROIDAUTO_APP"/>
+    <uses-permission android:name="car.permission.ANDROIDAUTO_DEVICELIST"/>
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION"/>
+    <uses-permission android:name="car.permission.CARPLAY_APP"/>
+    <application
+        android:theme="@style/Theme.BydTools.Touch"
+        android:label="@string/app_name"
+        android:name="com.byd.autoservice.application.AutoApplication"
+        android:persistent="true"
+        android:excludeFromRecents="true"
+        android:supportsRtl="true"
+        android:extractNativeLibs="false"
+        android:resizeableActivity="false"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory">
+        <service
+            android:name="com.byd.autoservice.CoreService"
+            android:enabled="true"/>
+        <uses-library android:name="ts.platform.library"/>
+        <activity
+            android:name="com.byd.autoservice.study.AutoStudyActivity"
+            android:exported="true"/>
+        <activity
+            android:theme="@style/AnimaClearActTheme"
+            android:name="com.byd.autoservice.function.MaskActivity"
+            android:excludeFromRecents="true"
+            android:screenOrientation="fullSensor"/>
+        <receiver android:name="com.byd.autoservice.function.AutoReceiver"/>
+    </application>
+</manifest>

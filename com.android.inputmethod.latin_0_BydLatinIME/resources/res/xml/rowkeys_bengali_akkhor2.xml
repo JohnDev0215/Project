@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:latin="http://schemas.android.com/apk/res/com.android.inputmethod.latin">
+    <switch>
+        <case latin:keyboardLayoutSetElement="alphabetShiftLockShifted">
+            <Key latin:keySpec="অ"/>
+            <Key
+                latin:keySpec="শ"
+                latin:moreKeys="শ্চ,শ্ছ,শ্ত,শ্ন,শ্ব,শ্ম,শ্র,শ্ল"/>
+            <Key
+                latin:keySpec="ড"
+                latin:moreKeys="ড্ড"/>
+            <Key latin:keySpec="ঢ়"/>
+            <Key latin:keySpec="ঘ"/>
+            <Key
+                latin:keySpec="হ"
+                latin:moreKeys="ঽ,হ্ণ,হ্ন,হ্ব,হ্ম,হ্র,হ্ল"/>
+            <Key latin:keySpec="ঝ"/>
+            <Key latin:keySpec="খ"/>
+            <Key latin:keySpec="ৎ"/>
+            <Key latin:keySpec="ঈ"/>
+            <Key latin:keySpec="ঊ"/>
+        </case>
+        <default>
+            <Key
+                latin:keySpec="া"
+                latin:moreKeys="আ"/>
+            <Key
+                latin:keySpec="স"
+                latin:moreKeys="স্ব,স্ত,স্ট,স্ক,স্প"/>
+            <Key
+                latin:keySpec="দ"
+                latin:moreKeys="দ্দ,দ্ধ,দ্ব,দ্ভ,দ্ম,দ্য,দ্র"/>
+            <Key
+                latin:keySpec="ৃ"
+                latin:moreKeys="ঋ"/>
+            <Key
+                latin:keySpec="গ"
+                latin:moreKeys="গ্ধ,গ্র,গ্ল,গ্ন"/>
+            <Key latin:keySpec="্"/>
+            <Key
+                latin:keySpec="জ"
+                latin:moreKeys="জ্ঞ,জ্জ,জ্য,জ্ব,জ্র"/>
+            <Key
+                latin:keySpec="ক"
+                latin:moreKeys="ক্ষ,ক্ক,ক্ট,ক্ত,ক্র,ক্স,ক্ল"/>
+            <Key
+                latin:keySpec="ল"
+                latin:moreKeys="ল্ক,ল্গ,ল্ট,ল্ড,ল্ত,ল্দ,ল্ধ,ল্প,ল্ফ,ল্ব,ল্ম,ল্ল"/>
+            <Key latin:keySpec="ই"/>
+            <Key latin:keySpec="উ"/>
+        </default>
+    </switch>
+</merge>

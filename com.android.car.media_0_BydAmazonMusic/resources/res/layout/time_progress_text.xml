@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/progress_text_container"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/outer_separator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dash_separator"
+        style="@style/MetadataPlaybackSubtitleStyle"/>
+    <TextView
+        android:id="@+id/current_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/MetadataPlaybackSubtitleStyle"/>
+    <TextView
+        android:id="@+id/inner_separator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/slash_separator"
+        style="@style/MetadataPlaybackSubtitleStyle"/>
+    <TextView
+        android:id="@+id/max_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/MetadataPlaybackSubtitleStyle"/>
+</LinearLayout>

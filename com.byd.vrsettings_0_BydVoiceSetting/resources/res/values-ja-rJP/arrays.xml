@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="control_ac_array">
+        <item>エアコンつけて</item>
+        <item>エアコンを24℃にして</item>
+        <item>外気導入をつけて</item>
+        <item>暑い</item>
+        <item>風を小さくして</item>
+        <item>風量をレベル3にして</item>
+        <item>フロントガラスの霜取りをオンにして</item>
+        <item>換気をつけて</item>
+        <item>送風をつけて</item>
+    </array>
+    <array name="control_seat_array">
+        <item>運転席のシートヒーターをオン</item>
+        <item>シートのベンチレーションファンつけて</item>
+        <item>助手席のベンチレーションをつけて</item>
+        <item>シートのベンチレーション消して</item>
+    </array>
+    <array name="control_sunshade_array">
+        <item>サンシェードを開いて</item>
+        <item>サンシェードを閉じて</item>
+    </array>
+    <array name="offline_other_operations_array">
+        <item>Bluetoothオン</item>
+        <item>Wi-Fiオン</item>
+        <item>画面を明るくして</item>
+        <item>車両設定を開いて</item>
+        <item>メイン画面に戻って</item>
+    </array>
+    <array name="offline_window_array">
+        <item>窓を開けて</item>
+        <item>助手席の窓を開けて</item>
+        <item>運転手の窓を開けてください</item>
+        <item>すべての窓を閉じて</item>
+    </array>
+    <array name="rotate_screen_arrays">
+        <item>画面を回転して</item>
+    </array>
+    <array name="system_app_operations">
+        <item>メディアセンターを始める</item>
+        <item>車両設定を開いて</item>
+        <item>車両設定を閉じて</item>
+    </array>
+    <array name="system_other_operations_array">
+        <item>Bluetoothオン</item>
+        <item>Wi-Fiオン</item>
+        <item>画面を明るくして</item>
+        <item>メイン画面に戻って</item>
+    </array>
+</resources>

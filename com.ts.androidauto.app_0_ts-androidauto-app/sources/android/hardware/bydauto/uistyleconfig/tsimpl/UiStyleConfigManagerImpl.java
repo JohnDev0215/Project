@@ -1,0 +1,4033 @@
+package android.hardware.bydauto.uistyleconfig.tsimpl;
+
+import android.content.ContentResolver;
+import android.content.Context;
+import android.hardware.bydauto.AbsTsMyCar;
+import android.hardware.bydauto.BYDAutoEventValue;
+import android.hardware.bydauto.Log;
+import android.hardware.bydauto.TsManagerImpl;
+import android.hardware.bydauto.uistyleconfig.BYDAutoStudyListener;
+import android.os.SystemProperties;
+import android.provider.Settings;
+import android.util.SparseArray;
+import com.ts.androidauto.fsdk.common.AndroidAutoConst;
+
+/* JADX INFO: loaded from: classes.dex */
+public class UiStyleConfigManagerImpl extends AbsTsMyCar {
+    private static final int S_FOR_TEST_VALUE = 1;
+    private static final int S_INVALID = -1;
+    private static final String S_KEY_FOR_TEST = "key_for_test_UiStyleManagerImpl";
+    protected static final String TAG = "UiStyleManagerImpl";
+    private static TsManagerImpl mTsManagerImpl;
+    private static UiStyleConfigManagerImpl sInstance;
+    private ContentResolver mContentResolver;
+    private Context mContext;
+    private int mForTest;
+
+    UiStyleConfigManagerImpl(Context con) {
+        this.mForTest = 0;
+        this.mContext = con;
+        ContentResolver contentResolver = con.getContentResolver();
+        this.mContentResolver = contentResolver;
+        if (contentResolver != null) {
+            int i = Settings.System.getInt(contentResolver, S_KEY_FOR_TEST, 0);
+            this.mForTest = i;
+            if (1 == i) {
+                Log.v(TAG, "UiStyleConfigManagerImpl mForTestValue is" + this.mForTest + " execute return");
+                return;
+            }
+        }
+        mTsManagerImpl = TsManagerImpl.getInstance(con);
+    }
+
+    public static UiStyleConfigManagerImpl getsInstance(Context context) {
+        if (sInstance == null) {
+            synchronized (UiStyleConfigManagerImpl.class) {
+                if (sInstance == null) {
+                    sInstance = new UiStyleConfigManagerImpl(context);
+                }
+            }
+        }
+        return sInstance;
+    }
+
+    public void registerConnectListener(BYDAutoStudyListener listener) {
+        android.util.Log.i(TAG, this.mContext.getPackageName() + " byd_subscribe study listener " + listener);
+        if (listener == null) {
+            Log.d(TAG, "listener is null");
+        } else {
+            registerConnectListener(this.mContext, listener);
+        }
+    }
+
+    public int getPreSaleModelSupport() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, "getPreSaleModelSupport mForTestValue is 0 execute return");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getPreSaleModelSupport();
+    }
+
+    public int getCarNum() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, "getCarNum mForTestValue is 0 execute return");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getCarNum();
+    }
+
+    @Deprecated
+    public int getEnergyStatus() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, "getEnergyStatus mForTestValue is 0 execute return");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getEnergyStatus();
+    }
+
+    public int getDriveConfig() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, "getDriveConfig mForTestValue is 0 execute return");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getDriveConfig();
+    }
+
+    public int getDMType() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, "getDMType mForTestValue is 0 execute return");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getDMType();
+    }
+
+    @Deprecated
+    public int getAcType() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, "getAcType mForTestValue is 0 execute return");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getAcType();
+    }
+
+    public int getSupportRearAc() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, "getSupportRearAc mForTestValue is 0 execute return");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getSupportRearAc();
+    }
+
+    public int getSupportRearAcSwitch() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, "getSupportRearAcSwitch mForTestValue is 0 execute return");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getSupportRearAcSwitch();
+    }
+
+    @Deprecated
+    public int getRearAcMaxWindLevel() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, "getRearAcMaxWindLevel mForTestValue is 0 execute return");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getRearAcMaxWindLevel();
+    }
+
+    public int getSupportRearAcKeyLock() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, "getSupportRearAcKeyLock mForTestValue is 0 execute return");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getSupportRearAcKeyLock();
+    }
+
+    public int getSupportRearAcWindModeControl() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, "getSupportRearAcWindModeControl mForTestValue is 0 execute return");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getSupportRearAcWindModeControl();
+    }
+
+    public int getSupportRearAcAutoControl() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, "getSupportRearAcAutoControl mForTestValue is 0 execute return");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getSupportRearAcAutoControl();
+    }
+
+    public int getSupportRearAcCompressor() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, "getSupportRearAcCompressor mForTestValue is 0 execute return");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getSupportRearAcCompressor();
+    }
+
+    public int getSupportRearAcTempertureControl() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, "getSupportRearAcTempertureControl mForTestValue is 0 execute return");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getSupportRearAcTempertureControl();
+    }
+
+    public int getSupportRearAcWindLevelControl() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, "getSupportRearAcWindLevelControl mForTestValue is 0 execute return");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getSupportRearAcWindLevelControl();
+    }
+
+    @Deprecated
+    public int getAcFaultNumShownState() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, "getAcFaultNumShownState mForTestValue is 0 execute return");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getAcFaultNumShownState();
+    }
+
+    public int getSupportSingleDoubleTempArea() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, "getSupportSingleDoubleTempArea mForTestValue is 0 execute return");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getSupportSingleDoubleTempArea();
+    }
+
+    @Deprecated
+    public int getAcWindModeNum() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, "getAcWindModeNum mForTestValue is 0 execute return");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getAcWindModeNum();
+    }
+
+    public int getSupportAcAutoKeyCanClose() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, "getSupportAcAutoKeyCanClose mForTestValue is 0 execute return");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getSupportAcAutoKeyCanClose();
+    }
+
+    @Deprecated
+    public int getDefrostRearConfig() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, "getDefrostRearConfig mForTestValue is 0 execute return");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getDefrostRearConfig();
+    }
+
+    @Deprecated
+    public int getAcWarmTypeOnlineState() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, "getAcWarmTypeOnlineState mForTestValue is 0 execute return");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getAcWarmTypeOnlineState();
+    }
+
+    @Deprecated
+    public int getSupportSteeringWheelWarm() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, "getSupportSteeringWheelWarm mForTestValue is 0 execute return");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getSupportSteeringWheelWarm();
+    }
+
+    public int getSupportSeatMassage(int area) {
+        if (1 == this.mForTest) {
+            Log.v(TAG, "getSupportSeatMassage mForTestValue is 0 execute return");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getSupportSeatMassage(area);
+    }
+
+    public int[] getSupportSeatAdjust(int area) {
+        if (1 == this.mForTest) {
+            Log.v(TAG, "getSupportSeatAdjust mForTestValue is 0 execute return");
+            return new int[0];
+        }
+        if (mTsManagerImpl.getStudyAdapterManager() == null) {
+            Log.v(TAG, "adapter is not connect");
+            return new int[0];
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getSupportSeatAdjust(area);
+    }
+
+    public int getLeftPlatformConfigs() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, "getLeftPlatformConfigs mForTestValue is 0 execute return");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getLeftPlatformConfigs();
+    }
+
+    public int getSupportPM25Mode() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, "getSupportPM25Mode mForTestValue is 0 execute return");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getSupportPM25Mode();
+    }
+
+    public int getSupportNegativeIon() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, "getSupportNegativeIon mForTestValue is 0 execute return");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getSupportNegativeIon();
+    }
+
+    public int getSupportHighTemperatureSterilize() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, "getSupportHighTemperatureSterilize mForTestValue is 0 execute return");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getSupportHighTemperatureSterilize();
+    }
+
+    public int getSupportFragrance() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, "getSupportFragrance mForTestValue is 0 execute return");
+            return 0;
+        }
+        Log.i(TAG, this.mContext.getPackageName() + "getSupportFragrance");
+        return mTsManagerImpl.getStudyAdapterManager().getSupportFragrance();
+    }
+
+    public int getFragranceInstallState(int type) {
+        if (1 == this.mForTest) {
+            Log.v(TAG, "getSupportFragranceType mForTestValue is 0 execute return");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getFragranceInstallState(type);
+    }
+
+    public int getCarType() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, "getCarType mForTestValue is 0 execute return");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getCarType();
+    }
+
+    public int getSupportLampSingnal() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, "getSupportLampSingnal mForTestValue is 0 execute return");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getSupportLampSingnal();
+    }
+
+    public int getSupportAFS() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, "getSupportAFS mForTestValue is 0 execute return");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getSupportAFS();
+    }
+
+    public int getAutoReportContentSupport(int value) {
+        if (1 == this.mForTest) {
+            Log.v(TAG, "getAutoReportContentSupport mForTestValue is 0 execute return");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getAutoReportContentSupport(value);
+    }
+
+    public int getHeadlampSupport() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, "getHeadlampSupport mForTestValue is 0 execute return");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getHeadlampSupport();
+    }
+
+    public int getHeadlampLevelConfig() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, "getHeadlampLevelConfig mForTestValue is 0 execute return");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getHeadlampLevelConfig();
+    }
+
+    public int resetHeadlamp(int state) {
+        if (1 == this.mForTest) {
+            Log.v(TAG, "resetHeadlamp mForTestValue is 0 execute return");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().resetHeadlamp(state);
+    }
+
+    public int getBackHomeDelaySupport() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, "getBackHomeDelaySupport mForTestValue is 0 execute return");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getBackHomeDelaySupport();
+    }
+
+    @Deprecated
+    public int getLeaveHomeDelaySupport() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, "getLeaveHomeDelaySupport mForTestValue is 0 execute return");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getLeaveHomeDelaySupport();
+    }
+
+    public int resetBackAndLeaveDelaySupport(int state) {
+        if (1 == this.mForTest) {
+            Log.v(TAG, "resetBackAndLeaveDelaySupport mForTestValue is 0 execute return");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().resetBackAndLeaveDelaySupport(state);
+    }
+
+    @Deprecated
+    public int backAndLeaveDelayFactoryMode(int state) {
+        if (1 == this.mForTest) {
+            Log.v(TAG, "backAndLeaveDelayFactoryMode mForTestValue is 0 execute return");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().backAndLeaveDelayFactoryMode(state);
+    }
+
+    public int getUsherLightSupport() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, "getUsherLightSupport mForTestValue is 0 execute return");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getUsherLightSupport();
+    }
+
+    public int getDayLightSupport() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, "getDayLightSupport mForTestValue is 0 execute return");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getDayLightSupport();
+    }
+
+    public int resetDayLight(int state) {
+        if (1 == this.mForTest) {
+            Log.v(TAG, "resetDayLight mForTestValue is 0 execute return");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().resetDayLight(state);
+    }
+
+    @Deprecated
+    public int dayLightFactory(int state) {
+        if (1 == this.mForTest) {
+            Log.v(TAG, "dayLightFactory mForTestValue is 0 execute return");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().dayLightFactory(state);
+    }
+
+    public int getIndoorLightSupport() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, "getIndoorLightSupport mForTestValue is 0 execute return");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getIndoorLightSupport();
+    }
+
+    public int getDoorLightSupport() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, "getDoorLightSupport mForTestValue is 0 execute return");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getDoorLightSupport();
+    }
+
+    @Deprecated
+    public int resetDoorAndIndoor(int state) {
+        if (1 == this.mForTest) {
+            Log.v(TAG, "resetDoorAndIndoor mForTestValue is 0 execute return");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().resetDoorAndIndoor(state);
+    }
+
+    public int getAdaptiveHeadlightsSupport() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, "getAdaptiveHeadlightsSupport mForTestValue is 0 execute return");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getAdaptiveHeadlightsSupport();
+    }
+
+    public int getSupportReverseRadar() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, "getSupportReverseRadar mForTestValue is 0 execute return");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getSupportReverseRadar();
+    }
+
+    public int getIntelligentKeepTemSupport() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, "getIntelligentKeepTemSupport mForTestValue is 0 execute return");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getIntelligentKeepTemSupport();
+    }
+
+    public int getChargeToaggleGuardSupport() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, "getChargeToaggleGuardSupport mForTestValue is 0 execute return");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getChargeToaggleGuardSupport();
+    }
+
+    public int getChargeLimitSupport() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, "getChargeLimitSupport mForTestValue is 0 execute return");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getChargeLimitSupport();
+    }
+
+    public int getOBCType() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, "getOBCType mForTestValue is 0 execute return");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getOBCType();
+    }
+
+    @Deprecated
+    public int getRearViewMirrorFlipSupport() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, "getRearViewMirrorFlipSupport mForTestValue is 0 execute return");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getRearViewMirrorFlipSupport();
+    }
+
+    @Deprecated
+    public int getAutoPowerOnStateSupport() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, "getAutoPowerOnStateSupport mForTestValue is 0 execute return");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getAutoPowerOnStateSupport();
+    }
+
+    @Deprecated
+    public int getAutoPowerOffSupport() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, "getAutoPowerOffSupport mForTestValue is 0 execute return");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getAutoPowerOffSupport();
+    }
+
+    public int getAutoExternalRearMirrorFollowUpSwitchSupport() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, "getAutoExternalRearMirrorFollowUpSwitchSupport mForTestValue is 0 execute return");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getAutoExternalRearMirrorFollowUpSwitchSupport();
+    }
+
+    @Deprecated
+    public int getDriveSeatAutoReturnSupport() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, "getDriveSeatAutoReturnSupport mForTestValue is 0 execute return");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getDriveSeatAutoReturnSupport();
+    }
+
+    @Deprecated
+    public int getSteerPositionAutoReturnSupport() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, "getSteerPositionAutoReturnSupport mForTestValue is 0 execute return");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getSteerPositionAutoReturnSupport();
+    }
+
+    public int getBrakePedalModeSupport() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, "getBrakePedalModeSupport mForTestValue is 0 execute return");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getBrakePedalModeSupport();
+    }
+
+    public int getComfortableParkingSupport() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, "getComfortableParkingSupport mForTestValue is 0 execute return");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getComfortableParkingSupport();
+    }
+
+    public int getMotorPretensionerSeatbeltSupport() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, "getMotorPretensionerSeatbeltSupport mForTestValue is 0 execute return");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getMotorPretensionerSeatbeltSupport();
+    }
+
+    public int getSteerAssisSupport() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, "getSteerAssisSupport mForTestValue is 0 execute return");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getSteerAssisSupport();
+    }
+
+    public int getAutoWiperSupport() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, "getAutoWiperSupport mForTestValue is 0 execute return");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getAutoWiperSupport();
+    }
+
+    public int getDynamicSuspensionModeSupport() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, "getDynamicSuspensionModeSupport mForTestValue is 0 execute return");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getDynamicSuspensionModeSupport();
+    }
+
+    public int getLandAdvanceAtSupport() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, "getLandAdvanceAtSupport mForTestValue is 0 execute return");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getLandAdvanceAtSupport();
+    }
+
+    @Deprecated
+    public int getRemoteKeyStartAcTimeSupport() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, "getRemoteKeyStartAcTimeSupport mForTestValue is 0 execute return");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getRemoteKeyStartAcTimeSupport();
+    }
+
+    @Deprecated
+    public int getACAutoAirSupport() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, "getACAutoAirSupport mForTestValue is 0 execute return");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getACAutoAirSupport();
+    }
+
+    public int getACBTWindSupport() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, "getACBTWindSupport mForTestValue is 0 execute return");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getACBTWindSupport();
+    }
+
+    public int getACPauseCycleSupport() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, "getACPauseCycleSupport mForTestValue is 0 execute return");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getACPauseCycleSupport();
+    }
+
+    public int getAutoPurificationSupport() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, "getAutoPurificationSupport mForTestValue is 0 execute return");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getAutoPurificationSupport();
+    }
+
+    @Deprecated
+    public int resetAutoPurificationFactoryMode(int state) {
+        if (1 == this.mForTest) {
+            Log.v(TAG, "resetAutoPurificationFactoryMode mForTestValue is 0 execute return");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().resetAutoPurificationFactoryMode(state);
+    }
+
+    public int getPM25PowerSupport() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, "getPM25PowerSupport mForTestValue is 0 execute return");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getPM25PowerSupport();
+    }
+
+    @Deprecated
+    public int getPM25SwitchCheckSupport() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, "getPM25SwitchCheckSupport mForTestValue is 0 execute return");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getPM25SwitchCheckSupport();
+    }
+
+    @Deprecated
+    public int getPM25TimeCkeckSupport() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, "getPM25TimeCkeckSupport mForTestValue is 0 execute return");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getPM25TimeCkeckSupport();
+    }
+
+    @Deprecated
+    public int getACTunnelCycleSupport() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, "getACTunnelCycleSupport mForTestValue is 0 execute return");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getACTunnelCycleSupport();
+    }
+
+    public int getHudShowParamsSupport() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, "getHudShowParamsSupport mForTestValue is 0 execute return");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getHudShowParamsSupport();
+    }
+
+    public int getRearPanelLockTimeSupport() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, "getRearPanelLockTimeSupport mForTestValue is 0 execute return");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getRearPanelLockTimeSupport();
+    }
+
+    @Deprecated
+    public int setAcWarmFactoryMode(int state) {
+        if (1 == this.mForTest) {
+            Log.v(TAG, "setAcWarmFactoryMode mForTestValue is 0 execute return");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().setAcWarmFactoryMode(state);
+    }
+
+    public int getAcWarmSupport() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, "getAcWarmSupport mForTestValue is 0 execute return");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getAcWarmSupport();
+    }
+
+    public int getIntelligentAcAreaSupport() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, "getIntelligentAcAreaSupport mForTestValue is 0 execute return");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getIntelligentAcAreaSupport();
+    }
+
+    public int getDoorHeightSupport() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, "getDoorHeightSupport mForTestValue is 0 execute return");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getDoorHeightSupport();
+    }
+
+    public int getMoonRoofConfig() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, "getMoonRoofConfig mForTestValue is 0 execute return");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getMoonRoofConfig();
+    }
+
+    public int getSupportIntelligentNavigation() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, "getSupportIntelligentNavigation mForTestValue is 0 execute return");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getSupportIntelligentNavigation();
+    }
+
+    public int getSupportIntelligentNavigationBy432() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, "getSupportIntelligentNavigationBy432 mForTestValue is 0 execute return");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getSupportIntelligentNavigationBy432();
+    }
+
+    public int getSupportHighwayNavigation() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, "getSupportHighwayNavigation mForTestValue is 0 execute return");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getSupportHighwayNavigation();
+    }
+
+    public int getSupportUrbanNavigation() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, "getSupportUrbanNavigation mForTestValue is 0 execute return");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getSupportUrbanNavigation();
+    }
+
+    public int getSupportEndToEndNavigation() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, "getSupportEndToEndNavigation mForTestValue is 0 execute return");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getSupportEndToEndNavigation();
+    }
+
+    public int getSupportLaneChangeAssist() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, "getSupportLaneChangeAssist mForTestValue is 0 execute return");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getSupportLaneChangeAssist();
+    }
+
+    public int getSupportLaneDepartureWarning() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, "getSupportLaneDepartureWarning mForTestValue is 0 execute return");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getSupportLaneDepartureWarning();
+    }
+
+    public int getSupportLaneKeep() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, "getSupportLaneKeep mForTestValue is 0 execute return");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getSupportLaneKeep();
+    }
+
+    public int getSupportLaneDepartureStop() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, "getSupportLaneDepartureStop mForTestValue is 0 execute return");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getSupportLaneDepartureStop();
+    }
+
+    public int getSupportEmergencyLaneKeepAssist() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, "getSupportEmergencyLaneKeepAssist mForTestValue is 0 execute return");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getSupportEmergencyLaneKeepAssist();
+    }
+
+    public int getSupportTrafficSignRecogniton() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, "getSupportTrafficSignRecogniton mForTestValue is 0 execute return");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getSupportTrafficSignRecogniton();
+    }
+
+    public int getSupportIntellignetSpeedLimitAlert() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, "getSupportIntellignetSpeedLimitAlert mForTestValue is 0 execute return");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getSupportIntellignetSpeedLimitAlert();
+    }
+
+    public int getSupportIntellignetSpeedLimitControl() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, "getSupportIntellignetSpeedLimitControl mForTestValue is 0 execute return");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getSupportIntellignetSpeedLimitControl();
+    }
+
+    public int getSupportTrafficLightAttention() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, "getSupportTrafficLightAttention mForTestValue is 0 execute return");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getSupportTrafficLightAttention();
+    }
+
+    public int getSupportDoorOpenWarning() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, "getSupportDoorOpenWarning mForTestValue is 0 execute return");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getSupportDoorOpenWarning();
+    }
+
+    public int getSupportRearCollisionWarning() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, "getSupportRearCollisionWarning mForTestValue is 0 execute return");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getSupportRearCollisionWarning();
+    }
+
+    public int getSupportRearTrafficCrossingAlert() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, "getSupportRearTrafficCrossingAlert mForTestValue is 0 execute return");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getSupportRearTrafficCrossingAlert();
+    }
+
+    public int getSupportFrontCrossingTrafficAlert() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, "getSupportFrontCrossingTrafficAlert mForTestValue is 0 execute return");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getSupportFrontCrossingTrafficAlert();
+    }
+
+    public int getSupportFrontCrossingTrafficBrake() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, "getSupportFrontCrossingTrafficBrake mForTestValue is 0 execute return");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getSupportFrontCrossingTrafficBrake();
+    }
+
+    public int getSupportShakeAlert() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, "getSupportShakeAlert mForTestValue is 0 execute return");
+            return 0;
+        }
+        int shakeAlert = mTsManagerImpl.getStudyAdapterManager().getSupportShakeAlert();
+        return shakeAlert;
+    }
+
+    public int getSupportTrafficSignsRecognition() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, "getSupportTrafficSignsRecognition mForTestValue is 0 execute return");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getSupportTrafficSignsRecognition();
+    }
+
+    public int getSupportPredictCrashAlertMode() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, "getSupportPredictCrashAlertMode mForTestValue is 0 execute return");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getSupportPredictCrashAlertMode();
+    }
+
+    public int getSupportAiEmergencyBrake() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, "getSupportAiEmergencyBrake mForTestValue is 0 execute return");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getSupportAiEmergencyBrake();
+    }
+
+    public int getSupportAiCare() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, "getSupportAiCare mForTestValue is 0 execute return");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getSupportAiCare();
+    }
+
+    public int getSupportMistakeGas() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, "getSupportMistakeGas mForTestValue is 0 execute return");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getSupportMistakeGas();
+    }
+
+    public int getSupportAutoParking() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, "getSupportAutoParking mForTestValue is 0 execute return");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getSupportAutoParking();
+    }
+
+    public int getSupportBlindSpotAssist() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, "getSupportBlindSpotAssist mForTestValue is 0 execute return");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getSupportBlindSpotAssist();
+    }
+
+    public int getSupportBlindSpotAssistBy418() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, "getSupportBlindSpotAssistBy418 mForTestValue is 0 execute return");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getSupportBlindSpotAssistBy418();
+    }
+
+    public int getSupportRearCrossBrake() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, "getSupportRearCrossBrake mForTestValue is 0 execute return");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getSupportRearCrossBrake();
+    }
+
+    public int getSupportAiDistanceLight() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, "getSupportAiDistanceLight mForTestValue is 0 execute return");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getSupportAiDistanceLight();
+    }
+
+    public int getSupportAiMatrixLight() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, "getSupportAiMatrixLight mForTestValue is 0 execute return");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getSupportAiMatrixLight();
+    }
+
+    public int getSupportPanoramaImage() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, "getSupportPanoramaImage mForTestValue is 0 execute return");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getSupportPanoramaImage();
+    }
+
+    public int getSupportESP() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, "getSupportESP mForTestValue is 0 execute return");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getSupportESP();
+    }
+
+    public int getSupportDigitalKey() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, "getSupportDigitalKey mForTestValue is 0 execute return");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getSupportDigitalKey();
+    }
+
+    public int getSupportShowCarModel() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, "getSupportShowCarModel mForTestValue is 0 execute return");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getSupportShowCarModel();
+    }
+
+    @Deprecated
+    public int getRemoteControlLockWindowSupport() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, "getRemoteControlLockWindowSupport mForTestValue is 0 execute return");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getRemoteControlLockWindowSupport();
+    }
+
+    @Deprecated
+    public int getRemoteControlUnlockWindowSupport() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, "getRemoteControlUnlockWindowSupport mForTestValue is 0 execute return");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getRemoteControlUnlockWindowSupport();
+    }
+
+    @Deprecated
+    public int getMicroSwitchLockWindowSupport() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, "getMicroSwitchLockWindowSupport mForTestValue is 0 execute return");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getMicroSwitchLockWindowSupport();
+    }
+
+    @Deprecated
+    public int getMicroSwitchUnlockWindowSupport() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, "getMicroSwitchUnlockWindowSupport mForTestValue is 0 execute return");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getMicroSwitchUnlockWindowSupport();
+    }
+
+    @Deprecated
+    public int getLockCarRiseWindowSupport() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, "getLockCarRiseWindowSupport mForTestValue is 0 execute return");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getLockCarRiseWindowSupport();
+    }
+
+    @Deprecated
+    public int getOverspeedLockSupport() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, "getOverspeedLockSupport mForTestValue is 0 execute return");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getOverspeedLockSupport();
+    }
+
+    @Deprecated
+    public int getRainAutoLockWindowSupport() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, "getRainAutoLockWindowSupport mForTestValue is 0 execute return");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getRainAutoLockWindowSupport();
+    }
+
+    @Deprecated
+    public int getDoorknobAutoShrinkSupport() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, "getDoorknobAutoShrinkSupport mForTestValue is 0 execute return");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getDoorknobAutoShrinkSupport();
+    }
+
+    @Deprecated
+    public int getLockOffSupport() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, "getLockOffSupport mForTestValue is 0 execute return");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getLockOffSupport();
+    }
+
+    public int getDigtalKeySupport() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, "getDigtalKeySupport mForTestValue is 0 execute return");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getDigtalKeySupport();
+    }
+
+    @Deprecated
+    public int getIntelligentUnlockSupport() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, "getIntelligentUnlockSupport mForTestValue is 0 execute return");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getIntelligentUnlockSupport();
+    }
+
+    @Deprecated
+    public int getIntelligentLockSupport() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, "getIntelligentLockSupport mForTestValue is 0 execute return");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getIntelligentLockSupport();
+    }
+
+    public int getAppUseLimitSupport() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, "getAppUseLimitSupport mForTestValue is 0 execute return");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getAppUseLimitSupport();
+    }
+
+    public int getRemindSpeedSupport() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, "getRemindSpeedSupport mForTestValue is 0 execute return");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getRemindSpeedSupport();
+    }
+
+    public int getReportVolumeSupport() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, "getReportVolumeSupport mForTestValue is 0 execute return");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getReportVolumeSupport();
+    }
+
+    public int getEngineSoundSupport() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, "getEngineSoundSupport mForTestValue is 0 execute return");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getEngineSoundSupport();
+    }
+
+    public int getCarTipsSoundSupport() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, "getCarTipsSoundSupport mForTestValue is 0 execute return");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getCarTipsSoundSupport();
+    }
+
+    public int getReportContentSetSupport() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, "getReportContentSetSupport mForTestValue is 0 execute return");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getReportContentSetSupport();
+    }
+
+    public int getReportItemsSetSupport(int value) {
+        if (1 == this.mForTest) {
+            Log.v(TAG, "getReportItemsSetSupport mForTestValue is 0 execute return");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getReportItemsSetSupport(value);
+    }
+
+    public int getSeatSetSupport(int position) {
+        if (1 == this.mForTest) {
+            Log.v(TAG, "getSeatSetSupport mForTestValue is 0 execute return");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getSeatSetSupport(position);
+    }
+
+    public int getSteeringWheelSupport() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, "getSteeringWheelSupport mForTestValue is 0 execute return");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getSteeringWheelSupport();
+    }
+
+    public int getRearviewMirrorSupport() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, "getRearviewMirrorSupport mForTestValue is 0 execute return");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getRearviewMirrorSupport();
+    }
+
+    public int getSeatTurnHorizatialSupport(int position) {
+        if (1 == this.mForTest) {
+            Log.v(TAG, "getSeatTurnHorizatialSupport mForTestValue is 0 execute return");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getSeatTurnHorizatialSupport(position);
+    }
+
+    public int getSeatTurnHeightSupport(int position) {
+        if (1 == this.mForTest) {
+            Log.v(TAG, "getSeatTurnHeightSupport mForTestValue is 0 execute return");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getSeatTurnHeightSupport(position);
+    }
+
+    public int getHeadrestTurnHorizatialSupport(int position) {
+        if (1 == this.mForTest) {
+            Log.v(TAG, "getHeadrestTurnHorizatialSupport mForTestValue is 0 execute return");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getHeadrestTurnHorizatialSupport(position);
+    }
+
+    public int getSeatbackrestSupport(int position) {
+        if (1 == this.mForTest) {
+            Log.v(TAG, "getSeatbackrestSupport mForTestValue is 0 execute return");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getSeatbackrestSupport(position);
+    }
+
+    public int getHeadrestTurnHeightSupport(int position) {
+        if (1 == this.mForTest) {
+            Log.v(TAG, "getHeadrestTurnHeightSupport mForTestValue is 0 execute return");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getHeadrestTurnHeightSupport(position);
+    }
+
+    public int getRefrigeratorModeSupport() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, "getRefrigeratorModeSupport mForTestValue is 0 execute return");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getRefrigeratorModeSupport();
+    }
+
+    @Deprecated
+    public int getSupportRemenberPowerOff() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, "getSupportRemenberPowerOff mForTestValue is 0 execute return");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getSupportRemenberPowerOff();
+    }
+
+    @Deprecated
+    public int getDisinfSupport() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, "getDisinfSupport mForTestValue is 0 execute return");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getDisinfSupport();
+    }
+
+    @Deprecated
+    public int getTrayControlSupport() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, "getTrayControlSupport mForTestValue is 0 execute return");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getTrayControlSupport();
+    }
+
+    public int getCushionSupport(int position) {
+        if (1 == this.mForTest) {
+            Log.v(TAG, "getCushionSupport mForTestValue is 0 execute return");
+            return 0;
+        }
+        if (position == 1) {
+            int result = mTsManagerImpl.getStudyAdapterManager().getCushionSupportDriver();
+            return result;
+        }
+        if (position == 2) {
+            int result2 = mTsManagerImpl.getStudyAdapterManager().getCushionSupportPassenger();
+            return result2;
+        }
+        if (position == 3) {
+            int result3 = mTsManagerImpl.getStudyAdapterManager().getCushionSupportRearLeft();
+            return result3;
+        }
+        if (position != 4) {
+            return 0;
+        }
+        int result4 = mTsManagerImpl.getStudyAdapterManager().getCushionSupportRearRight();
+        return result4;
+    }
+
+    public int getCaliperSplintSupport(int position) {
+        if (1 == this.mForTest) {
+            Log.v(TAG, "getCaliperSplintSupport mForTestValue is 0 execute return");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getCaliperSplintSupport(position);
+    }
+
+    public int getAmbientLightColorSupport() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, "getAmbientLightColorSupport mForTestValue is 0 execute return");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getAmbientLightColorSupport();
+    }
+
+    public int getAmbientLightSupport() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, "getAmbientLightSupport mForTestValue is 0 execute return");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getAmbientLightSupport();
+    }
+
+    public int getAmbientAreaSupport() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, "getAmbientAreaSupport mForTestValue is 0 execute return");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getAmbientAreaSupport();
+    }
+
+    @Deprecated
+    public int getAmbientMusicModeSupport() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, "getAmbientMusicModeSupport mForTestValue is 0 execute return");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getAmbientMusicModeSupport();
+    }
+
+    public int getAmbientColorsSupport() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, "getAmbientColorsSupport mForTestValue is 0 execute return");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getAmbientColorsSupport();
+    }
+
+    public int resetAmbientSettings(int state) {
+        if (1 == this.mForTest) {
+            Log.v(TAG, "resetAmbientSettings mForTestValue is 0 execute return");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().resetAmbientSettings(state);
+    }
+
+    @Deprecated
+    public int ambientFactoryMode(int state) {
+        if (1 == this.mForTest) {
+            Log.v(TAG, "ambientFactoryMode mForTestValue is 0 execute return");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().ambientFactoryMode(state);
+    }
+
+    @Deprecated
+    public int getHudParamsStateSupport() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, "getHudParamsStateSupport mForTestValue is 0 execute return");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getHudParamsStateSupport();
+    }
+
+    public int getHudHeightAdjustSupport() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, "getHudHeightAdjustSupport mForTestValue is 0 execute return");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getHudHeightAdjustSupport();
+    }
+
+    public int getHudLightSdjustSupport() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, "getHudLightSdjustSupport mForTestValue is 0 execute return");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getHudLightSdjustSupport();
+    }
+
+    public int getInstrumentThemeSupport() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, "getInstrumentThemeSupport mForTestValue is 0 execute return");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getInstrumentThemeSupport();
+    }
+
+    public int getInstrumentHeightSupport() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, "getInstrumentHeightSupport mForTestValue is 0 execute return");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getInstrumentHeightSupport();
+    }
+
+    public int getInstrumentContentSupport() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, "getInstrumentContentSupport mForTestValue is 0 execute return");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getInstrumentContentSupport();
+    }
+
+    public int getDischargeSupport() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, "getDischargeSupport mForTestValue is 0 execute return");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getDischargeSupport();
+    }
+
+    public int getDriveDistanceShowStandardSupport() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, "getDriveDistanceShowStandardSupport mForTestValue is 0 execute return");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getDriveDistanceShowStandardSupport();
+    }
+
+    public int getEPedalStateSupport() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, "getEPedalStateSupport mForTestValue is 0 execute return");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getEPedalStateSupport();
+    }
+
+    public int getDriveDistanceShowModeSupport() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, "getDriveDistanceShowModeSupport mForTestValue is 0 execute return");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getDriveDistanceShowModeSupport();
+    }
+
+    @Deprecated
+    public int getMainSeatRememberSupport() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, "getMainSeatRememberSupport mForTestValue is 0 execute return");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getMainSeatRememberSupport();
+    }
+
+    public int getSecondSeatRememberSupport() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, "getSecondSeatRememberSupport mForTestValue is 0 execute return");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getSecondSeatRememberSupport();
+    }
+
+    public int getGuestLeftSeatRememeSupport() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, "getGuestLeftSeatRememeSupport mForTestValue is 0 execute return");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getGuestLeftSeatRememeSupport();
+    }
+
+    public int getGuestRightSeatRememeSupport() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, "getGuestRightSeatRememeSupport mForTestValue is 0 execute return");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getGuestRightSeatRememeSupport();
+    }
+
+    public int getElectroniChildLockConfig() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, "getElectroniChildLockConfig mForTestValue is 0 execute return");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getElectroniChildLockConfig();
+    }
+
+    public int getWindowAntiPinchConfig() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, "getWindowAntiPinchConfig mForTestValue is 0 execute return");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getWindowAntiPinchConfig();
+    }
+
+    public int getComfortableSpeedUp() {
+        Log.v(TAG, "getComfortableSpeedUp is execute");
+        if (1 == this.mForTest) {
+            Log.v(TAG, "getComfortableSpeedUp mForTestValue is" + this.mForTest + " execute return");
+            return 0;
+        }
+        if (mTsManagerImpl.getStudyAdapterManager() == null) {
+            Log.e(TAG, "adapter is not connect");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getComfortableSpeedUp();
+    }
+
+    public int getComfortableSpeedDown() {
+        Log.v(TAG, "getComfortableSpeedDown is execute");
+        if (1 == this.mForTest) {
+            Log.v(TAG, "getComfortableSpeedDown mForTestValue is" + this.mForTest + " execute return");
+            return 0;
+        }
+        if (mTsManagerImpl.getStudyAdapterManager() == null) {
+            Log.e(TAG, "adapter is not connect");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getComfortableSpeedDown();
+    }
+
+    public int getCvcConfig() {
+        Log.v(TAG, "getCvcConfig is execute");
+        if (mTsManagerImpl.getStudyAdapterManager() == null) {
+            Log.v(TAG, "caradatper still connecting, please wait");
+            return -1;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getCvcConfig();
+    }
+
+    public int getDiSusShowStateByCan() {
+        Log.v(TAG, "getDiSusShowStateByCan is execute");
+        return mTsManagerImpl.getStudyAdapterManager().getDiSusShowStateByCan();
+    }
+
+    public int getDiSusShowStateByCanFd() {
+        Log.v(TAG, "getDiSusShowStateByCanFd is execute");
+        return mTsManagerImpl.getStudyAdapterManager().getDiSusShowStateByCanFd();
+    }
+
+    public int getWarningAuxiliarySwitchSetting() {
+        Log.v(TAG, "getWarningAuxiliarySwitchSetting is execute");
+        if (mTsManagerImpl.getStudyAdapterManager() == null) {
+            Log.v(TAG, "caradatper still connecting, please wait");
+            return -1;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getWarningAuxiliarySwitchSetting();
+    }
+
+    public int getWelcomeCeremonySwitchSetting() {
+        Log.v(TAG, "getWelcomeCeremonySwitchSetting is execute");
+        if (mTsManagerImpl.getStudyAdapterManager() == null) {
+            Log.v(TAG, "caradatper still connecting, please wait");
+            return -1;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getWelcomeCeremonySwitchSetting();
+    }
+
+    public int getAmbientModeSwitchSettings() {
+        Log.v(TAG, "getAmbientModeSwitchSettings is execute");
+        if (mTsManagerImpl.getStudyAdapterManager() == null) {
+            Log.v(TAG, "caradatper still connecting, please wait");
+            return -1;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getAmbientModeSwitchSettings();
+    }
+
+    public int getStarTopSwitchSetting() {
+        Log.v(TAG, "getStarTopSwitchSetting is execute");
+        if (mTsManagerImpl.getStudyAdapterManager() == null) {
+            Log.v(TAG, "caradatper still connecting, please wait");
+            return -1;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getStarTopSwitchSetting();
+    }
+
+    public int getComfortableParkingBy37F() {
+        Log.v(TAG, "getComfortableParkingBy37F is execute");
+        if (mTsManagerImpl.getStudyAdapterManager() == null) {
+            Log.v(TAG, "caradatper still connecting, please wait");
+            return -1;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getComfortableParkingBy37F();
+    }
+
+    public int getLowSpeedEmergencyBrakingConfig() {
+        Log.v(TAG, "getLowSpeedEmergencyBrakingConfig is execute");
+        if (mTsManagerImpl.getStudyAdapterManager() == null) {
+            Log.v(TAG, "caradatper still connecting, please wait");
+            return -1;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getLowSpeedEmergencyBrakingConfig();
+    }
+
+    public int getSideDistanceWarningConfig() {
+        Log.v(TAG, "getSideDistanceWarningConfig is execute");
+        if (mTsManagerImpl.getStudyAdapterManager() == null) {
+            Log.v(TAG, "caradatper still connecting, please wait");
+            return -1;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getSideDistanceWarningConfig();
+    }
+
+    public int getV2xConfig() {
+        Log.v(TAG, "getV2xConfig is execute");
+        if (mTsManagerImpl.getStudyAdapterManager() == null) {
+            Log.v(TAG, "caradatper still connecting, please wait");
+            return -1;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getV2xConfig();
+    }
+
+    public int getTrailerModeConfig() {
+        Log.v(TAG, " getTrailerModeConfig is execute");
+        if (mTsManagerImpl.getStudyAdapterManager() == null) {
+            Log.v(TAG, "caradatper still connecting, please wait");
+            return -1;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getTrailerModeConfig();
+    }
+
+    public int getFoldDownTheSecondRowOfSeatsConfig() {
+        Log.v(TAG, "getFoldDownTheSecondRowOfSeatsConfig is execute");
+        if (mTsManagerImpl.getStudyAdapterManager() == null) {
+            Log.v(TAG, "caradatper still connecting, please wait");
+            return -1;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getFoldDownTheSecondRowOfSeatsConfig();
+    }
+
+    public int getLevelAdjustmentSwitchConfigOnTheLeftSideOfTheThirdRow() {
+        Log.v(TAG, "getLevelAdjustmentSwitchConfigOnTheLeftSideOfTheThirdRow is execute");
+        if (mTsManagerImpl.getStudyAdapterManager() == null) {
+            Log.v(TAG, "caradatper still connecting, please wait");
+            return -1;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getLevelAdjustmentSwitchConfigOnTheLeftSideOfTheThirdRow();
+    }
+
+    public int getBackRestAdjustmentSwitchConfigOnTheLeftSideOfTheThirdRow() {
+        Log.v(TAG, "getBackRestAdjustmentSwitchConfigOnTheLeftSideOfTheThirdRow is execute");
+        if (mTsManagerImpl.getStudyAdapterManager() == null) {
+            Log.v(TAG, "caradatper still connecting, please wait");
+            return -1;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getBackRestAdjustmentSwitchConfigOnTheLeftSideOfTheThirdRow();
+    }
+
+    public int getLegRestAdjustmentSwitchConfigOnTheLeftSideOfTheThirdRow() {
+        Log.v(TAG, "getLegRestAdjustmentSwitchConfigOnTheLeftSideOfTheThirdRow is execute");
+        if (mTsManagerImpl.getStudyAdapterManager() == null) {
+            Log.v(TAG, "caradatper still connecting, please wait");
+            return -1;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getLegRestAdjustmentSwitchConfigOnTheLeftSideOfTheThirdRow();
+    }
+
+    public int getPotAdjustmentSwitchConfigOnTheLeftSideOfTheThirdRow() {
+        Log.v(TAG, "getPotAdjustmentSwitchConfigOnTheLeftSideOfTheThirdRow is execute");
+        if (mTsManagerImpl.getStudyAdapterManager() == null) {
+            Log.v(TAG, "caradatper still connecting, please wait");
+            return -1;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getPotAdjustmentSwitchConfigOnTheLeftSideOfTheThirdRow();
+    }
+
+    public int getHeightAdjustmentSwitchConfigOnTheLeftSideOfTheThirdRow() {
+        Log.v(TAG, "getHeightAdjustmentSwitchConfigOnTheLeftSideOfTheThirdRow is execute");
+        if (mTsManagerImpl.getStudyAdapterManager() == null) {
+            Log.v(TAG, "caradatper still connecting, please wait");
+            return -1;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getHeightAdjustmentSwitchConfigOnTheLeftSideOfTheThirdRow();
+    }
+
+    public int getHeadrestLevelAdjustmentSwitchConfigOnTheLeftSideOfTheThirdRow() {
+        Log.v(TAG, "getHeadrestLevelAdjustmentSwitchConfigOnTheLeftSideOfTheThirdRow is execute");
+        if (mTsManagerImpl.getStudyAdapterManager() == null) {
+            Log.v(TAG, "caradatper still connecting, please wait");
+            return -1;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getHeadrestLevelAdjustmentSwitchConfigOnTheLeftSideOfTheThirdRow();
+    }
+
+    public int getHeadrestHightAdjustmentSwitchConfigOnTheLeftSideOfTheThirdRow() {
+        Log.v(TAG, "getHeadrestHightAdjustmentSwitchConfigOnTheLeftSideOfTheThirdRow is execute");
+        if (mTsManagerImpl.getStudyAdapterManager() == null) {
+            Log.v(TAG, "caradatper still connecting, please wait");
+            return -1;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getHeadrestHightAdjustmentSwitchConfigOnTheLeftSideOfTheThirdRow();
+    }
+
+    public int getOneButtonDownConfigurationOfTheThirdRowLeftRearSeat() {
+        Log.v(TAG, "getOneButtonDownConfigurationOfTheThirdRowLeftRearSeat is execute");
+        if (mTsManagerImpl.getStudyAdapterManager() == null) {
+            Log.v(TAG, "caradatper still connecting, please wait");
+            return -1;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getOneButtonDownConfigurationOfTheThirdRowLeftRearSeat();
+    }
+
+    public int getOneButtonDownSwitchDisplayForTheThirdRowOfSeats() {
+        Log.v(TAG, "getOneButtonDownSwitchDisplayForTheThirdRowOfSeats is execute");
+        if (mTsManagerImpl.getStudyAdapterManager() == null) {
+            Log.v(TAG, "caradatper still connecting, please wait");
+            return -1;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getOneButtonDownSwitchDisplayForTheThirdRowOfSeats();
+    }
+
+    public int getAllRearSeatOneButtonDownSwitchDisplayConfig() {
+        Log.v(TAG, "getAllRearSeatOneButtonDownSwitchDisplayConfig is execute");
+        if (mTsManagerImpl.getStudyAdapterManager() == null) {
+            Log.v(TAG, "caradatper still connecting, please wait");
+            return -1;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getAllRearSeatOneButtonDownSwitchDisplayConfig();
+    }
+
+    public int getLevelAdjustmentSwitchConfigOnTheRightSideOfTheThirdRow() {
+        Log.v(TAG, "getLevelAdjustmentSwitchConfigOnTheRightSideOfTheThirdRow is execute");
+        if (mTsManagerImpl.getStudyAdapterManager() == null) {
+            Log.v(TAG, "caradatper still connecting, please wait");
+            return -1;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getLevelAdjustmentSwitchConfigOnTheRightSideOfTheThirdRow();
+    }
+
+    public int getBackRestAdjustmentSwitchConfigOnTheRightSideOfTheThirdRow() {
+        Log.v(TAG, "getBackRestAdjustmentSwitchConfigOnTheRightSideOfTheThirdRow is execute");
+        if (mTsManagerImpl.getStudyAdapterManager() == null) {
+            Log.v(TAG, "caradatper still connecting, please wait");
+            return -1;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getBackRestAdjustmentSwitchConfigOnTheRightSideOfTheThirdRow();
+    }
+
+    public int getLegRestAdjustmentSwitchConfigOnTheRightSideOfTheThirdRow() {
+        Log.v(TAG, "getLegRestAdjustmentSwitchConfigOnTheRightSideOfTheThirdRow is execute");
+        if (mTsManagerImpl.getStudyAdapterManager() == null) {
+            Log.v(TAG, "caradatper still connecting, please wait");
+            return -1;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getLegRestAdjustmentSwitchConfigOnTheRightSideOfTheThirdRow();
+    }
+
+    public int getPotAdjustmentSwitchConfigOnTheRightSideOfTheThirdRow() {
+        Log.v(TAG, "getPotAdjustmentSwitchConfigOnTheRightSideOfTheThirdRow is execute");
+        if (mTsManagerImpl.getStudyAdapterManager() == null) {
+            Log.v(TAG, "caradatper still connecting, please wait");
+            return -1;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getPotAdjustmentSwitchConfigOnTheRightSideOfTheThirdRow();
+    }
+
+    public int getHeightAdjustmentSwitchConfigOnTheRightSideOfTheThirdRow() {
+        Log.v(TAG, "getHeightAdjustmentSwitchConfigOnTheRightSideOfTheThirdRow is execute");
+        if (mTsManagerImpl.getStudyAdapterManager() == null) {
+            Log.v(TAG, "caradatper still connecting, please wait");
+            return -1;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getHeightAdjustmentSwitchConfigOnTheRightSideOfTheThirdRow();
+    }
+
+    public int getHeadrestLevelAdjustmentSwitchConfigOnTheRightSideOfTheThirdRow() {
+        Log.v(TAG, "getHeadrestLevelAdjustmentSwitchConfigOnTheRightSideOfTheThirdRow is execute");
+        if (mTsManagerImpl.getStudyAdapterManager() == null) {
+            Log.v(TAG, "caradatper still connecting, please wait");
+            return -1;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getHeadrestLevelAdjustmentSwitchConfigOnTheRightSideOfTheThirdRow();
+    }
+
+    public int getHeadrestHeightAdjustmentSwitchConfigOnTheRightSideOfTheThirdRow() {
+        Log.v(TAG, "getHeadrestHeightAdjustmentSwitchConfigOnTheRightSideOfTheThirdRow is execute");
+        if (mTsManagerImpl.getStudyAdapterManager() == null) {
+            Log.v(TAG, "caradatper still connecting, please wait");
+            return -1;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getHeadrestHeightAdjustmentSwitchConfigOnTheRightSideOfTheThirdRow();
+    }
+
+    public int getOneButtonDownConfigurationOfTheThirdRowRightRearSeat() {
+        Log.v(TAG, "getOneButtonDownConfigurationOfTheThirdRowRightRearSeat is execute");
+        if (mTsManagerImpl.getStudyAdapterManager() == null) {
+            Log.v(TAG, "caradatper still connecting, please wait");
+            return -1;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getOneButtonDownConfigurationOfTheThirdRowRightRearSeat();
+    }
+
+    public int getIntelligentSpeedLimitMapVersionDisplay() {
+        Log.v(TAG, "getIntelligentSpeedLimitMapVersionDisplay is execute");
+        return mTsManagerImpl.getStudyAdapterManager().getIntelligentSpeedLimitMapVersionDisplay();
+    }
+
+    public int getDriverSeatHotStoneMassageConfigurationByEcu() {
+        Log.v(TAG, "getDriverSeatHotStoneMassageConfigurationByEcu is execute");
+        if (mTsManagerImpl.getStudyAdapterManager() == null) {
+            Log.v(TAG, "caradatper still connecting, please wait");
+            return -1;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getDriverSeatHotStoneMassageConfigurationByEcu();
+    }
+
+    public int getCameraEerRomDeviceAddress() {
+        Log.v(TAG, "getCameraEerRomDeviceAddress is execute");
+        if (mTsManagerImpl.getStudyAdapterManager() == null) {
+            Log.v(TAG, "caradatper still connecting, please wait");
+            return -1;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getCameraEerRomDeviceAddress();
+    }
+
+    public int getCameraSupplierAndTestBoardInfo() {
+        Log.v(TAG, "getCameraSupplierAndTestBoardInfo is execute");
+        if (mTsManagerImpl.getStudyAdapterManager() == null) {
+            Log.v(TAG, "caradatper still connecting, please wait");
+            return -1;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getCameraSupplierAndTestBoardInfo();
+    }
+
+    public int getCameraVideoResolution() {
+        Log.v(TAG, "getCameraVideoResolution is execute");
+        if (mTsManagerImpl.getStudyAdapterManager() == null) {
+            Log.v(TAG, "caradatper still connecting, please wait");
+            return -1;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getCameraVideoResolution();
+    }
+
+    public int getCameraVideoFrameRate() {
+        Log.v(TAG, "getCameraVideoFrameRate is execute");
+        if (mTsManagerImpl.getStudyAdapterManager() == null) {
+            Log.v(TAG, "caradatper still connecting, please wait");
+            return -1;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getCameraVideoFrameRate();
+    }
+
+    public int getCameraVideoFormat() {
+        Log.v(TAG, "getCameraVideoFormat is execute");
+        if (mTsManagerImpl.getStudyAdapterManager() == null) {
+            Log.v(TAG, "caradatper still connecting, please wait");
+            return -1;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getCameraVideoFormat();
+    }
+
+    public int getCameraLensId() {
+        Log.v(TAG, "getCameraLensId is execute");
+        if (mTsManagerImpl.getStudyAdapterManager() == null) {
+            Log.v(TAG, "caradatper still connecting, please wait");
+            return -1;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getCameraLensId();
+    }
+
+    public int getCameraSerializerId() {
+        Log.v(TAG, "getCameraSerializerId is execute");
+        if (mTsManagerImpl.getStudyAdapterManager() == null) {
+            Log.v(TAG, "caradatper still connecting, please wait");
+            return -1;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getCameraSerializerId();
+    }
+
+    public int getCameraIspId() {
+        Log.v(TAG, "getCameraIspId is execute");
+        if (mTsManagerImpl.getStudyAdapterManager() == null) {
+            Log.v(TAG, "caradatper still connecting, please wait");
+            return -1;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getCameraIspId();
+    }
+
+    public BYDAutoEventValue get(int[] eventTypes, Class<?> type) {
+        BYDAutoEventValue bydAutoEventValue = new BYDAutoEventValue();
+        SparseArray sparseArray = new SparseArray();
+        bydAutoEventValue.intArrayValue = new int[eventTypes.length];
+        if (eventTypes.length < 1) {
+            bydAutoEventValue.intValue = -2147482648;
+        } else {
+            for (int eventType : eventTypes) {
+                if (eventType > 0) {
+                    if (eventType != 557) {
+                        if (eventType != 558) {
+                            if (eventType != 566) {
+                                if (eventType != 567) {
+                                    if (eventType != 1154) {
+                                        if (eventType != 1155) {
+                                            if (eventType != 1158) {
+                                                if (eventType != 1159) {
+                                                    if (eventType != 2788) {
+                                                        if (eventType != 2789) {
+                                                            if (eventType != 3173) {
+                                                                if (eventType == 3174) {
+                                                                    bydAutoEventValue.intValue = getSupportEndToEndNavigation();
+                                                                    sparseArray.put(3174, Integer.valueOf(bydAutoEventValue.intValue));
+                                                                } else {
+                                                                    switch (eventType) {
+                                                                        case 541:
+                                                                            bydAutoEventValue.intValue = getAutoExternalRearMirrorFollowUpSwitchSupport();
+                                                                            sparseArray.put(541, Integer.valueOf(bydAutoEventValue.intValue));
+                                                                            break;
+                                                                        case 560:
+                                                                            bydAutoEventValue.intValue = getRestModeConfiguration();
+                                                                            sparseArray.put(560, Integer.valueOf(bydAutoEventValue.intValue));
+                                                                            break;
+                                                                        case 569:
+                                                                            bydAutoEventValue.intValue = getMainDriveElectricLegSupportAdjustmentByGCtrl();
+                                                                            sparseArray.put(569, Integer.valueOf(bydAutoEventValue.intValue));
+                                                                            break;
+                                                                        case 571:
+                                                                            bydAutoEventValue.intValue = getRearLeftBackrestAdjustmentConfigurationByECU();
+                                                                            sparseArray.put(571, Integer.valueOf(bydAutoEventValue.intValue));
+                                                                            break;
+                                                                        case 573:
+                                                                            bydAutoEventValue.intValue = getRearLeftLevelAdjustmentConfigurationByECU();
+                                                                            sparseArray.put(573, Integer.valueOf(bydAutoEventValue.intValue));
+                                                                            break;
+                                                                        case 579:
+                                                                            bydAutoEventValue.intValue = getRearLeftLegSupportAdjustmentConfigurationByECU();
+                                                                            sparseArray.put(579, Integer.valueOf(bydAutoEventValue.intValue));
+                                                                            break;
+                                                                        case 585:
+                                                                            bydAutoEventValue.intValue = getPassengerSeatElectricAdjustmentConfigurationByECU();
+                                                                            sparseArray.put(585, Integer.valueOf(bydAutoEventValue.intValue));
+                                                                            break;
+                                                                        case 590:
+                                                                            bydAutoEventValue.intValue = getRearRightBackrestAdjustmentConfigurationByECU();
+                                                                            sparseArray.put(590, Integer.valueOf(bydAutoEventValue.intValue));
+                                                                            break;
+                                                                        case 592:
+                                                                            bydAutoEventValue.intValue = getRearRightLevelAdjustmentConfigurationByECU();
+                                                                            sparseArray.put(592, Integer.valueOf(bydAutoEventValue.intValue));
+                                                                            break;
+                                                                        case 598:
+                                                                            bydAutoEventValue.intValue = getRearRightLegSupportAdjustmentConfigurationByECU();
+                                                                            sparseArray.put(598, Integer.valueOf(bydAutoEventValue.intValue));
+                                                                            break;
+                                                                        case 953:
+                                                                            bydAutoEventValue.intValue = mTsManagerImpl.getStudyAdapterManager().getDoorHeightSupport();
+                                                                            sparseArray.put(953, Integer.valueOf(bydAutoEventValue.intValue));
+                                                                            break;
+                                                                        case 987:
+                                                                            bydAutoEventValue.intValue = mTsManagerImpl.getStudyAdapterManager().getElectroniChildLockConfig();
+                                                                            sparseArray.put(987, Integer.valueOf(bydAutoEventValue.intValue));
+                                                                            break;
+                                                                        case 1066:
+                                                                            bydAutoEventValue.intValue = mTsManagerImpl.getStudyAdapterManager().getSupportSeatMassage(1);
+                                                                            sparseArray.put(1066, Integer.valueOf(bydAutoEventValue.intValue));
+                                                                            break;
+                                                                        case 1069:
+                                                                            bydAutoEventValue.intValue = mTsManagerImpl.getStudyAdapterManager().getSupportSeatMassage(2);
+                                                                            sparseArray.put(1069, Integer.valueOf(bydAutoEventValue.intValue));
+                                                                            break;
+                                                                        case 1146:
+                                                                            bydAutoEventValue.intValue = getAutoExternalRearMirrorFollowUpSwitchSupport();
+                                                                            sparseArray.put(1146, Integer.valueOf(bydAutoEventValue.intValue));
+                                                                            break;
+                                                                        case 1255:
+                                                                            bydAutoEventValue.intValue = mTsManagerImpl.getStudyAdapterManager().getAmbientMusicModeSupport();
+                                                                            sparseArray.put(1255, Integer.valueOf(bydAutoEventValue.intValue));
+                                                                            break;
+                                                                        case 1268:
+                                                                            bydAutoEventValue.intValue = getPassengerSeatElectricAdjustmentConfigurationByECU();
+                                                                            sparseArray.put(1268, Integer.valueOf(bydAutoEventValue.intValue));
+                                                                            break;
+                                                                        case 1285:
+                                                                            bydAutoEventValue.intValue = mTsManagerImpl.getStudyAdapterManager().getSupportSeatMassage(3);
+                                                                            sparseArray.put(1285, Integer.valueOf(bydAutoEventValue.intValue));
+                                                                            break;
+                                                                        case 1296:
+                                                                            bydAutoEventValue.intValue = mTsManagerImpl.getStudyAdapterManager().getSupportSeatMassage(4);
+                                                                            sparseArray.put(1296, Integer.valueOf(bydAutoEventValue.intValue));
+                                                                            break;
+                                                                        case 1705:
+                                                                            bydAutoEventValue.intValue = getComfortableSpeedUp();
+                                                                            sparseArray.put(1705, Integer.valueOf(bydAutoEventValue.intValue));
+                                                                            break;
+                                                                        case 1722:
+                                                                            bydAutoEventValue.intValue = getRefrigeratorModeSupport();
+                                                                            sparseArray.put(1722, Integer.valueOf(bydAutoEventValue.intValue));
+                                                                            break;
+                                                                        case 1732:
+                                                                            bydAutoEventValue.intValue = getElectricFrontHatchConfiguration();
+                                                                            sparseArray.put(1732, Integer.valueOf(bydAutoEventValue.intValue));
+                                                                            break;
+                                                                        case 2005:
+                                                                            bydAutoEventValue.intValue = mTsManagerImpl.getStudyAdapterManager().getRearviewMirrorSupport();
+                                                                            sparseArray.put(2005, Integer.valueOf(bydAutoEventValue.intValue));
+                                                                            break;
+                                                                        case 2020:
+                                                                            bydAutoEventValue.intValue = getCarPlanSupport();
+                                                                            sparseArray.put(2020, Integer.valueOf(bydAutoEventValue.intValue));
+                                                                            break;
+                                                                        case 2089:
+                                                                            bydAutoEventValue.intValue = mTsManagerImpl.getStudyAdapterManager().getWindowAntiPinchConfig();
+                                                                            sparseArray.put(2089, Integer.valueOf(bydAutoEventValue.intValue));
+                                                                            break;
+                                                                        case 2453:
+                                                                            bydAutoEventValue.intValue = getSupportRoadMode();
+                                                                            sparseArray.put(2453, Integer.valueOf(bydAutoEventValue.intValue));
+                                                                            break;
+                                                                        case 2553:
+                                                                            bydAutoEventValue.intValue = getIntelligentKeepTemSupport();
+                                                                            sparseArray.put(2553, Integer.valueOf(bydAutoEventValue.intValue));
+                                                                            break;
+                                                                        case 2575:
+                                                                            bydAutoEventValue.intValue = getDischargeSupport();
+                                                                            sparseArray.put(2575, Integer.valueOf(bydAutoEventValue.intValue));
+                                                                            break;
+                                                                        case 2587:
+                                                                            bydAutoEventValue.intValue = getChargeToaggleGuardSupport();
+                                                                            sparseArray.put(2587, Integer.valueOf(bydAutoEventValue.intValue));
+                                                                            break;
+                                                                        case 2609:
+                                                                            bydAutoEventValue.intValue = getOBCType();
+                                                                            sparseArray.put(2609, Integer.valueOf(bydAutoEventValue.intValue));
+                                                                            break;
+                                                                        case 2660:
+                                                                            bydAutoEventValue.intValue = getSupportSmartChargingPHEV();
+                                                                            sparseArray.put(2660, Integer.valueOf(bydAutoEventValue.intValue));
+                                                                            break;
+                                                                        case 2671:
+                                                                            bydAutoEventValue.intValue = getChargeLimitSupport();
+                                                                            sparseArray.put(2671, Integer.valueOf(bydAutoEventValue.intValue));
+                                                                            break;
+                                                                        case 2674:
+                                                                            bydAutoEventValue.intValue = getNoSenseChargeSupport();
+                                                                            sparseArray.put(2674, Integer.valueOf(bydAutoEventValue.intValue));
+                                                                            break;
+                                                                        case 2803:
+                                                                            bydAutoEventValue.intValue = getDayLightSupport();
+                                                                            sparseArray.put(2803, Integer.valueOf(bydAutoEventValue.intValue));
+                                                                            break;
+                                                                        case 3150:
+                                                                            bydAutoEventValue.intValue = getSupportBlindSpotAssist();
+                                                                            sparseArray.put(3150, Integer.valueOf(bydAutoEventValue.intValue));
+                                                                            break;
+                                                                        case 3160:
+                                                                            bydAutoEventValue.intValue = getComfortableParkingSupport();
+                                                                            sparseArray.put(3160, Integer.valueOf(bydAutoEventValue.intValue));
+                                                                            break;
+                                                                        case 3163:
+                                                                            bydAutoEventValue.intValue = getBrakePedalModeSupport();
+                                                                            sparseArray.put(3163, Integer.valueOf(bydAutoEventValue.intValue));
+                                                                            break;
+                                                                        case 3167:
+                                                                            bydAutoEventValue.intValue = getSupportDoorOpenWarning();
+                                                                            sparseArray.put(3167, Integer.valueOf(bydAutoEventValue.intValue));
+                                                                            break;
+                                                                        case 3180:
+                                                                            bydAutoEventValue.intValue = getSupportEmergencyLaneKeepAssist();
+                                                                            sparseArray.put(3180, Integer.valueOf(bydAutoEventValue.intValue));
+                                                                            break;
+                                                                        case 3192:
+                                                                            bydAutoEventValue.intValue = getSupportFrontCrossingTrafficAlert();
+                                                                            sparseArray.put(3192, Integer.valueOf(bydAutoEventValue.intValue));
+                                                                            break;
+                                                                        case 3195:
+                                                                            bydAutoEventValue.intValue = getSupportFrontCrossingTrafficBrake();
+                                                                            sparseArray.put(3195, Integer.valueOf(bydAutoEventValue.intValue));
+                                                                            break;
+                                                                        case 3199:
+                                                                            bydAutoEventValue.intValue = getSupportPredictCrashAlertMode();
+                                                                            sparseArray.put(3199, Integer.valueOf(bydAutoEventValue.intValue));
+                                                                            break;
+                                                                        case 3218:
+                                                                            bydAutoEventValue.intValue = getSupportESP();
+                                                                            sparseArray.put(3218, Integer.valueOf(bydAutoEventValue.intValue));
+                                                                            break;
+                                                                        case 3225:
+                                                                            bydAutoEventValue.intValue = getSupportIntelligentNavigation();
+                                                                            sparseArray.put(3225, Integer.valueOf(bydAutoEventValue.intValue));
+                                                                            break;
+                                                                        case 3229:
+                                                                            bydAutoEventValue.intValue = getSupportHighwayNavigation();
+                                                                            sparseArray.put(3229, Integer.valueOf(bydAutoEventValue.intValue));
+                                                                            break;
+                                                                        case 3234:
+                                                                            bydAutoEventValue.intValue = getSupportLaneChangeAssist();
+                                                                            sparseArray.put(3234, Integer.valueOf(bydAutoEventValue.intValue));
+                                                                            break;
+                                                                        case 3237:
+                                                                            bydAutoEventValue.intValue = getSupportIntellignetSpeedLimitControl();
+                                                                            sparseArray.put(3237, Integer.valueOf(bydAutoEventValue.intValue));
+                                                                            break;
+                                                                        case 3253:
+                                                                            bydAutoEventValue.intValue = getSupportShakeAlert();
+                                                                            sparseArray.put(3253, Integer.valueOf(bydAutoEventValue.intValue));
+                                                                            break;
+                                                                        case 3269:
+                                                                            bydAutoEventValue.intValue = getSupportRearCollisionWarning();
+                                                                            sparseArray.put(3269, Integer.valueOf(bydAutoEventValue.intValue));
+                                                                            break;
+                                                                        case 3276:
+                                                                            bydAutoEventValue.intValue = getSupportRearTrafficCrossingAlert();
+                                                                            sparseArray.put(3276, Integer.valueOf(bydAutoEventValue.intValue));
+                                                                            break;
+                                                                        case 3278:
+                                                                            bydAutoEventValue.intValue = getSupportRearCrossBrake();
+                                                                            sparseArray.put(3278, Integer.valueOf(bydAutoEventValue.intValue));
+                                                                            break;
+                                                                        case 3287:
+                                                                            bydAutoEventValue.intValue = getSupportIntellignetSpeedLimitAlert();
+                                                                            sparseArray.put(3287, Integer.valueOf(bydAutoEventValue.intValue));
+                                                                            break;
+                                                                        case 3300:
+                                                                            bydAutoEventValue.intValue = getSupportTrafficLightAttention();
+                                                                            sparseArray.put(3300, Integer.valueOf(bydAutoEventValue.intValue));
+                                                                            break;
+                                                                        case 3307:
+                                                                            bydAutoEventValue.intValue = getSupportUrbanNavigation();
+                                                                            sparseArray.put(3307, Integer.valueOf(bydAutoEventValue.intValue));
+                                                                            break;
+                                                                        case 3315:
+                                                                            bydAutoEventValue.intValue = getSupportAcAutoKeyCanClose();
+                                                                            sparseArray.put(3315, Integer.valueOf(bydAutoEventValue.intValue));
+                                                                            break;
+                                                                        case 3344:
+                                                                            bydAutoEventValue.intValue = getSupportFRElectricAirOutlet();
+                                                                            sparseArray.put(3344, Integer.valueOf(bydAutoEventValue.intValue));
+                                                                            break;
+                                                                        case 3348:
+                                                                            bydAutoEventValue.intValue = getSupportFragrance();
+                                                                            sparseArray.put(3348, Integer.valueOf(bydAutoEventValue.intValue));
+                                                                            break;
+                                                                        case 3465:
+                                                                            bydAutoEventValue.intValue = getSupportRearAcKeyLock();
+                                                                            sparseArray.put(3465, Integer.valueOf(bydAutoEventValue.intValue));
+                                                                            break;
+                                                                        case 3520:
+                                                                            bydAutoEventValue.intValue = getIntelligentAcAreaSupport();
+                                                                            sparseArray.put(3520, Integer.valueOf(bydAutoEventValue.intValue));
+                                                                            break;
+                                                                        case 4193:
+                                                                            bydAutoEventValue.intValue = getDriveTimeInterfaceStatusForSingleTrip();
+                                                                            sparseArray.put(4193, Integer.valueOf(bydAutoEventValue.intValue));
+                                                                            break;
+                                                                        case 4537:
+                                                                            bydAutoEventValue.intValue = mTsManagerImpl.getStudyAdapterManager().getAmbientColorsSupport();
+                                                                            sparseArray.put(4537, Integer.valueOf(bydAutoEventValue.intValue));
+                                                                            break;
+                                                                        case 4553:
+                                                                            bydAutoEventValue.intValue = getSupportAutoParking();
+                                                                            sparseArray.put(4553, Integer.valueOf(bydAutoEventValue.intValue));
+                                                                            break;
+                                                                        default:
+                                                                            switch (eventType) {
+                                                                                case 3208:
+                                                                                    bydAutoEventValue.intValue = getSupportAiEmergencyBrake();
+                                                                                    sparseArray.put(3208, Integer.valueOf(bydAutoEventValue.intValue));
+                                                                                    break;
+                                                                                case 3209:
+                                                                                    bydAutoEventValue.intValue = getHasPredictCrashAlertMode();
+                                                                                    sparseArray.put(3209, Integer.valueOf(bydAutoEventValue.intValue));
+                                                                                    break;
+                                                                                case 3210:
+                                                                                    bydAutoEventValue.intValue = getSupportAiDistanceLight();
+                                                                                    sparseArray.put(3210, Integer.valueOf(bydAutoEventValue.intValue));
+                                                                                    break;
+                                                                                case 3211:
+                                                                                    bydAutoEventValue.intValue = getSupportLaneDepartureWarning();
+                                                                                    sparseArray.put(3211, Integer.valueOf(bydAutoEventValue.intValue));
+                                                                                    break;
+                                                                                case 3212:
+                                                                                    bydAutoEventValue.intValue = getSupportLaneKeep();
+                                                                                    sparseArray.put(3212, Integer.valueOf(bydAutoEventValue.intValue));
+                                                                                    break;
+                                                                                case 3213:
+                                                                                    bydAutoEventValue.intValue = getSupportTrafficSignsRecognition();
+                                                                                    sparseArray.put(3213, Integer.valueOf(bydAutoEventValue.intValue));
+                                                                                    break;
+                                                                                case 3214:
+                                                                                    bydAutoEventValue.intValue = getSupportIntelligentNavigation();
+                                                                                    sparseArray.put(3214, Integer.valueOf(bydAutoEventValue.intValue));
+                                                                                    break;
+                                                                                default:
+                                                                                    switch (eventType) {
+                                                                                        case 3677:
+                                                                                            bydAutoEventValue.intValue = getTheLast50KMAveragePowerConsumptionInterfaceState();
+                                                                                            sparseArray.put(3677, Integer.valueOf(bydAutoEventValue.intValue));
+                                                                                            break;
+                                                                                        case 3678:
+                                                                                            bydAutoEventValue.intValue = getTheLast50KMAverageEnergyConsumptionInterfaceState();
+                                                                                            sparseArray.put(3678, Integer.valueOf(bydAutoEventValue.intValue));
+                                                                                            break;
+                                                                                        case 3679:
+                                                                                            bydAutoEventValue.intValue = getTheLast50KMAverageFuelConsumptionInterfaceState();
+                                                                                            sparseArray.put(3679, Integer.valueOf(bydAutoEventValue.intValue));
+                                                                                            break;
+                                                                                        case 3680:
+                                                                                            bydAutoEventValue.intValue = getCumulativeAveragePowerConsumptionInterfaceStatus();
+                                                                                            sparseArray.put(3680, Integer.valueOf(bydAutoEventValue.intValue));
+                                                                                            break;
+                                                                                        case 3681:
+                                                                                            bydAutoEventValue.intValue = getCumulativeAverageEnergyConsumptionInterfaceStatus();
+                                                                                            sparseArray.put(3681, Integer.valueOf(bydAutoEventValue.intValue));
+                                                                                            break;
+                                                                                        case 3682:
+                                                                                            bydAutoEventValue.intValue = getCumulativeAverageFuelConsumptionInterfaceStatus();
+                                                                                            sparseArray.put(3682, Integer.valueOf(bydAutoEventValue.intValue));
+                                                                                            break;
+                                                                                        case 3683:
+                                                                                            bydAutoEventValue.intValue = getAverageSpeedInterfaceStatus();
+                                                                                            sparseArray.put(3683, Integer.valueOf(bydAutoEventValue.intValue));
+                                                                                            break;
+                                                                                        case 3684:
+                                                                                            bydAutoEventValue.intValue = getTirePressureInterfaceStatus();
+                                                                                            sparseArray.put(3684, Integer.valueOf(bydAutoEventValue.intValue));
+                                                                                            break;
+                                                                                        case 3685:
+                                                                                            bydAutoEventValue.intValue = getEnergyFlowDiagramInterfaceStatus();
+                                                                                            sparseArray.put(3685, Integer.valueOf(bydAutoEventValue.intValue));
+                                                                                            break;
+                                                                                        case 3686:
+                                                                                            bydAutoEventValue.intValue = getExternalChargingPowerInterfaceStatus();
+                                                                                            sparseArray.put(3686, Integer.valueOf(bydAutoEventValue.intValue));
+                                                                                            break;
+                                                                                        case 3687:
+                                                                                            bydAutoEventValue.intValue = getFuelConsumptionInterfaceStatus();
+                                                                                            sparseArray.put(3687, Integer.valueOf(bydAutoEventValue.intValue));
+                                                                                            break;
+                                                                                        case 3688:
+                                                                                            bydAutoEventValue.intValue = getDrivingRangeInterfaceStatusForFuel();
+                                                                                            sparseArray.put(3688, Integer.valueOf(bydAutoEventValue.intValue));
+                                                                                            break;
+                                                                                        case 3689:
+                                                                                            bydAutoEventValue.intValue = getInstantaneousFuelConsumptionInterfaceStatus();
+                                                                                            sparseArray.put(3689, Integer.valueOf(bydAutoEventValue.intValue));
+                                                                                            break;
+                                                                                        case 3690:
+                                                                                            bydAutoEventValue.intValue = getCarType();
+                                                                                            sparseArray.put(3690, Integer.valueOf(bydAutoEventValue.intValue));
+                                                                                            break;
+                                                                                        default:
+                                                                                            switch (eventType) {
+                                                                                                case 4556:
+                                                                                                    bydAutoEventValue.intValue = getRuningCloseDoorSupport();
+                                                                                                    sparseArray.put(4556, Integer.valueOf(bydAutoEventValue.intValue));
+                                                                                                    break;
+                                                                                                case 4557:
+                                                                                                    bydAutoEventValue.intValue = getRuningCloseDoorSupport();
+                                                                                                    sparseArray.put(4557, Integer.valueOf(bydAutoEventValue.intValue));
+                                                                                                    break;
+                                                                                                case 4558:
+                                                                                                    bydAutoEventValue.intValue = getRuningCloseDoorSupport();
+                                                                                                    sparseArray.put(4558, Integer.valueOf(bydAutoEventValue.intValue));
+                                                                                                    break;
+                                                                                                case 4559:
+                                                                                                    bydAutoEventValue.intValue = getRuningCloseDoorSupport();
+                                                                                                    sparseArray.put(4559, Integer.valueOf(bydAutoEventValue.intValue));
+                                                                                                    break;
+                                                                                                default:
+                                                                                                    Log.v(TAG, "case fail ! please check out");
+                                                                                                    break;
+                                                                                            }
+                                                                                            break;
+                                                                                    }
+                                                                                    break;
+                                                                            }
+                                                                            break;
+                                                                    }
+                                                                }
+                                                            } else {
+                                                                bydAutoEventValue.intValue = getSupportLaneDepartureStop();
+                                                                sparseArray.put(3173, Integer.valueOf(bydAutoEventValue.intValue));
+                                                            }
+                                                        } else {
+                                                            bydAutoEventValue.intValue = getSupportAiMatrixLight();
+                                                            sparseArray.put(2789, Integer.valueOf(bydAutoEventValue.intValue));
+                                                        }
+                                                    } else {
+                                                        bydAutoEventValue.intValue = getFrontLightDimmingCtrlConfigBy3ac();
+                                                        sparseArray.put(2788, Integer.valueOf(bydAutoEventValue.intValue));
+                                                    }
+                                                } else {
+                                                    bydAutoEventValue.intValue = getAmbientLightColorSupport();
+                                                    sparseArray.put(1159, Integer.valueOf(bydAutoEventValue.intValue));
+                                                }
+                                            } else {
+                                                bydAutoEventValue.intValue = getAmbientLightSupport();
+                                                sparseArray.put(1158, Integer.valueOf(bydAutoEventValue.intValue));
+                                            }
+                                        } else {
+                                            bydAutoEventValue.intValue = mTsManagerImpl.getStudyAdapterManager().getAmbientLightColorSupport();
+                                            sparseArray.put(1155, Integer.valueOf(bydAutoEventValue.intValue));
+                                        }
+                                    } else {
+                                        bydAutoEventValue.intValue = getAmbientAreaSupport();
+                                        sparseArray.put(1154, Integer.valueOf(bydAutoEventValue.intValue));
+                                    }
+                                } else {
+                                    bydAutoEventValue.intValue = getMainDriveElectricHeadrestAdjustmentByGCtrl();
+                                    sparseArray.put(567, Integer.valueOf(bydAutoEventValue.intValue));
+                                }
+                            } else {
+                                bydAutoEventValue.intValue = getMainDriverSeatAdjustmentConfigurationByGCtrl();
+                                sparseArray.put(566, Integer.valueOf(bydAutoEventValue.intValue));
+                            }
+                        } else {
+                            bydAutoEventValue.intValue = getLeftRearMassageChairConfigurationForECU();
+                            sparseArray.put(558, Integer.valueOf(bydAutoEventValue.intValue));
+                        }
+                    } else {
+                        bydAutoEventValue.intValue = getLeftRearMassageChairConfigurationForECU();
+                        sparseArray.put(557, Integer.valueOf(bydAutoEventValue.intValue));
+                    }
+                    int index = 0;
+                    for (int i : eventTypes) {
+                        try {
+                            int getNum = ((Integer) sparseArray.get(i)).intValue();
+                            bydAutoEventValue.intArrayValue[index] = getNum;
+                        } catch (Exception e) {
+                            Log.e(TAG, "Feature id doesn't exist");
+                        }
+                        index++;
+                    }
+                } else {
+                    bydAutoEventValue.intValue = -2147482648;
+                }
+            }
+        }
+        return bydAutoEventValue;
+    }
+
+    public int getSteeringWheelHeatingConfiguration() {
+        Log.v(TAG, "getSteeringWheelHeatingConfiguration is execute");
+        if (mTsManagerImpl.getStudyAdapterManager() == null) {
+            return -1;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getSteeringWheelHeatingConfiguration();
+    }
+
+    public int restoreFactorySettings() {
+        Log.v(TAG, "restoreFactorySettings is execute");
+        if (mTsManagerImpl.getStudyAdapterManager() == null) {
+            return -1;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().restoreFactorySettings();
+    }
+
+    public int getValetParking() {
+        Log.v(TAG, "getValetParking is execute");
+        if (mTsManagerImpl.getStudyAdapterManager() == null) {
+            return -1;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getValetParking();
+    }
+
+    public int getMemoryParking() {
+        Log.v(TAG, "getMemoryParking is execute");
+        if (mTsManagerImpl.getStudyAdapterManager() == null) {
+            return -1;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getMemoryParking();
+    }
+
+    public int getPassengerSeatMemoryFunctionCan() {
+        Log.v(TAG, "getPassengerSeatMemoryFunctionCan is execute");
+        if (mTsManagerImpl.getStudyAdapterManager() == null) {
+            return -1;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getPassengerSeatMemoryFunctionCan();
+    }
+
+    public int getTirePressureInterfaceStatus() {
+        Log.v(TAG, "getTirePressureInterfaceStatus is execute");
+        if (mTsManagerImpl.getStudyAdapterManager() == null) {
+            return -1;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getTirePressureInterfaceStatus();
+    }
+
+    public int getFuelConsumptionInterfaceStatus() {
+        Log.v(TAG, "getFuelConsumptionInterfaceStatus is execute");
+        if (mTsManagerImpl.getStudyAdapterManager() == null) {
+            return -1;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getFuelConsumptionInterfaceStatus();
+    }
+
+    public int getCumulativeAverageEnergyConsumptionInterfaceStatus() {
+        Log.v(TAG, "getCumulativeAverageEnergyConsumptionInterfaceStatus is execute");
+        if (mTsManagerImpl.getStudyAdapterManager() == null) {
+            return -1;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getCumulativeAverageEnergyConsumptionInterfaceStatus();
+    }
+
+    public int getCumulativeAverageFuelConsumptionInterfaceStatus() {
+        Log.v(TAG, "getCumulativeAverageFuelConsumptionInterfaceStatus is execute");
+        if (mTsManagerImpl.getStudyAdapterManager() == null) {
+            return -1;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getCumulativeAverageFuelConsumptionInterfaceStatus();
+    }
+
+    public int getCumulativeAveragePowerConsumptionInterfaceStatus() {
+        Log.v(TAG, "getCumulativeAveragePowerConsumptionInterfaceStatus is execute");
+        if (mTsManagerImpl.getStudyAdapterManager() == null) {
+            return -1;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getCumulativeAveragePowerConsumptionInterfaceStatus();
+    }
+
+    public int getTheLast50KMAverageEnergyConsumptionInterfaceState() {
+        Log.v(TAG, "getTheLast50KMAverageEnergyConsumptionInterfaceState is execute");
+        if (mTsManagerImpl.getStudyAdapterManager() == null) {
+            return -1;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getTheLast50KMAverageEnergyConsumptionInterfaceState();
+    }
+
+    public int getTheLast50KMAverageFuelConsumptionInterfaceState() {
+        Log.v(TAG, "getTheLast50KMAverageFuelConsumptionInterfaceState is execute");
+        if (mTsManagerImpl.getStudyAdapterManager() == null) {
+            return -1;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getTheLast50KMAverageFuelConsumptionInterfaceState();
+    }
+
+    public int getTheLast50KMAveragePowerConsumptionInterfaceState() {
+        Log.v(TAG, "getTheLast50KMAveragePowerConsumptionInterfaceState is execute");
+        if (mTsManagerImpl.getStudyAdapterManager() == null) {
+            return -1;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getTheLast50KMAveragePowerConsumptionInterfaceState();
+    }
+
+    public int getInstantaneousFuelConsumptionInterfaceStatus() {
+        Log.v(TAG, "getInstantaneousFuelConsumptionInterfaceStatus is execute");
+        if (mTsManagerImpl.getStudyAdapterManager() == null) {
+            return -1;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getInstantaneousFuelConsumptionInterfaceStatus();
+    }
+
+    public int getExternalChargingPowerInterfaceStatus() {
+        Log.v(TAG, "getExternalChargingPowerInterfaceStatus is execute");
+        if (mTsManagerImpl.getStudyAdapterManager() == null) {
+            return -1;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getExternalChargingPowerInterfaceStatus();
+    }
+
+    public int getEnergyFlowDiagramInterfaceStatus() {
+        Log.v(TAG, "getEnergyFlowDiagramInterfaceStatus is execute");
+        if (mTsManagerImpl.getStudyAdapterManager() == null) {
+            return -1;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getEnergyFlowDiagramInterfaceStatus();
+    }
+
+    public int getDrivingRangeInterfaceStatusForFuel() {
+        Log.v(TAG, "getDrivingRangeInterfaceStatusForFuel is execute");
+        if (mTsManagerImpl.getStudyAdapterManager() == null) {
+            return -1;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getDrivingRangeInterfaceStatusForFuel();
+    }
+
+    public int getAverageSpeedInterfaceStatus() {
+        Log.v(TAG, "getAverageSpeedInterfaceStatus is execute");
+        if (mTsManagerImpl.getStudyAdapterManager() == null) {
+            return -1;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getAverageSpeedInterfaceStatus();
+    }
+
+    public int getDriveTimeInterfaceStatusForSingleTrip() {
+        Log.v(TAG, "getDriveTimeInterfaceStatusForSingleTrip is execute");
+        if (mTsManagerImpl.getStudyAdapterManager() == null) {
+            return -1;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getDriveTimeInterfaceStatusForSingleTrip();
+    }
+
+    public int getRightRearSeatReclineConfiguration() {
+        Log.v(TAG, "getRightRearSeatReclineConfiguration is execute");
+        if (mTsManagerImpl.getStudyAdapterManager() == null) {
+            return -1;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getRightRearSeatReclineConfiguration();
+    }
+
+    public int getLeftRearSeatReclineConfiguration() {
+        Log.v(TAG, "getLeftRearSeatReclineConfiguration is execute");
+        if (mTsManagerImpl.getStudyAdapterManager() == null) {
+            return -1;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getLeftRearSeatReclineConfiguration();
+    }
+
+    public int getRearSeatReclineConfiguration() {
+        Log.v(TAG, "getRearSeatReclineConfiguration is execute");
+        if (mTsManagerImpl.getStudyAdapterManager() == null) {
+            return -1;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getRearSeatReclineConfiguration();
+    }
+
+    public int getSupportExtreme() {
+        Log.v(TAG, "getSupportExtreme is execute");
+        if (mTsManagerImpl.getStudyAdapterManager() == null) {
+            return -1;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getSupportExtreme();
+    }
+
+    public int getSupportSmartChargingPHEV() {
+        Log.v(TAG, "getSupportSmartChargingPHEV is execute");
+        if (mTsManagerImpl.getStudyAdapterManager() == null) {
+            return -1;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getSupportSmartChargingPHEV();
+    }
+
+    public int getMainDriverSeatAdjustmentConfigurationByLeftBodyCtrl() {
+        Log.v(TAG, "getMainDriverSeatAdjustmentConfigurationByLeftBodyCtrl is execute");
+        if (mTsManagerImpl.getStudyAdapterManager() == null) {
+            return -1;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getMainDriverSeatAdjustmentConfigurationByLeftBodyCtrl();
+    }
+
+    public int getMainDriveElectricLegSupportAdjustmentByLeftBodyCtrl() {
+        Log.v(TAG, "getMainDriveElectricLegSupportAdjustmentByLeftBodyCtrl is execute");
+        if (mTsManagerImpl.getStudyAdapterManager() == null) {
+            return -1;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getMainDriveElectricLegSupportAdjustmentByLeftBodyCtrl();
+    }
+
+    public int getMainDriveElectricHeadrestAdjustmentByLeftBodyCtrl() {
+        Log.v(TAG, "getMainDriveElectricHeadrestAdjustmentByLeftBodyCtrl is execute");
+        if (mTsManagerImpl.getStudyAdapterManager() == null) {
+            return -1;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getMainDriveElectricHeadrestAdjustmentByLeftBodyCtrl();
+    }
+
+    public int getMainDriverSeatAdjustmentConfigurationByGCtrl() {
+        Log.v(TAG, "getMainDriverSeatAdjustmentConfigurationByGCtrl is execute");
+        if (mTsManagerImpl.getStudyAdapterManager() == null) {
+            return -1;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getMainDriverSeatAdjustmentConfigurationByGCtrl();
+    }
+
+    public int getMainDriveElectricLegSupportAdjustmentByGCtrl() {
+        Log.v(TAG, "getMainDriveElectricLegSupportAdjustmentByGCtrl is execute");
+        if (mTsManagerImpl.getStudyAdapterManager() == null) {
+            return -1;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getMainDriveElectricLegSupportAdjustmentByGCtrl();
+    }
+
+    public int getMainDriveElectricHeadrestAdjustmentByGCtrl() {
+        Log.v(TAG, "getMainDriveElectricHeadrestAdjustmentByGCtrl is execute");
+        if (mTsManagerImpl.getStudyAdapterManager() == null) {
+            return -1;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getMainDriveElectricHeadrestAdjustmentByGCtrl();
+    }
+
+    public int getPassengerSeatMemoryFunctionCanByECU() {
+        Log.v(TAG, "getPassengerSeatMemoryFunctionCanByECU is execute");
+        if (mTsManagerImpl.getStudyAdapterManager() == null) {
+            return -1;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getPassengerSeatMemoryFunctionCanByECU();
+    }
+
+    public int getPassengerSeatElectricAdjustmentConfigurationByECU() {
+        Log.v(TAG, "getPassengerSeatElectricAdjustmentConfigurationByECU is execute");
+        if (mTsManagerImpl.getStudyAdapterManager() == null) {
+            return -1;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getPassengerSeatElectricAdjustmentConfigurationByECU();
+    }
+
+    public int getPassengerSeatLegSupportAdjustmentConfigurationByECU() {
+        Log.v(TAG, "getPassengerSeatLegSupportAdjustmentConfigurationByECU is execute");
+        if (mTsManagerImpl.getStudyAdapterManager() == null) {
+            return -1;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getPassengerSeatLegSupportAdjustmentConfigurationByECU();
+    }
+
+    public int getPassengerSeatHeadrestConfigurationByECU() {
+        Log.v(TAG, "getPassengerSeatHeadrestConfigurationByECU is execute");
+        if (mTsManagerImpl.getStudyAdapterManager() == null) {
+            return -1;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getPassengerSeatHeadrestConfigurationByECU();
+    }
+
+    public int getPassengerSeatLegSupportAdjustmentConfigurationByGCtrl() {
+        Log.v(TAG, "getPassengerSeatLegSupportAdjustmentConfigurationByGCtrl is execute");
+        if (mTsManagerImpl.getStudyAdapterManager() == null) {
+            return -1;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getPassengerSeatLegSupportAdjustmentConfigurationByGCtrl();
+    }
+
+    public int getPassengerSeatHeadrestConfigurationByGCtrl() {
+        Log.v(TAG, "getPassengerSeatHeadrestConfigurationByGCtrl is execute");
+        if (mTsManagerImpl.getStudyAdapterManager() == null) {
+            return -1;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getPassengerSeatHeadrestConfigurationByGCtrl();
+    }
+
+    public int getRearLeftLevelAdjustmentConfigurationByECU() {
+        Log.v(TAG, "getRearLeftLevelAdjustmentConfigurationByECU is execute");
+        if (mTsManagerImpl.getStudyAdapterManager() == null) {
+            return -1;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getRearLeftLevelAdjustmentConfigurationByECU();
+    }
+
+    public int getRearLeftBackrestAdjustmentConfigurationByECU() {
+        Log.v(TAG, "getRearLeftBackrestAdjustmentConfigurationByECU is execute");
+        if (mTsManagerImpl.getStudyAdapterManager() == null) {
+            return -1;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getRearLeftBackrestAdjustmentConfigurationByECU();
+    }
+
+    public int getRearLeftLegSupportAdjustmentConfigurationByECU() {
+        Log.v(TAG, "getRearLeftLegSupportAdjustmentConfigurationByECU is execute");
+        if (mTsManagerImpl.getStudyAdapterManager() == null) {
+            return -1;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getRearLeftLegSupportAdjustmentConfigurationByECU();
+    }
+
+    public int getRearLeftBidetAdjustmentConfigurationByECU() {
+        Log.v(TAG, "getRearLeftBidetAdjustmentConfigurationByECU is execute");
+        if (mTsManagerImpl.getStudyAdapterManager() == null) {
+            return -1;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getRearLeftBidetAdjustmentConfigurationByECU();
+    }
+
+    public int getRearLeftHeightAdjustmentConfigurationByECU() {
+        Log.v(TAG, "getRearLeftHeightAdjustmentConfigurationByECU is execute");
+        if (mTsManagerImpl.getStudyAdapterManager() == null) {
+            return -1;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getRearLeftHeightAdjustmentConfigurationByECU();
+    }
+
+    public int getRearLeftHeadrestLevelAdjustmentConfigurationByECU() {
+        Log.v(TAG, "getRearLeftHeadrestLevelAdjustmentConfigurationByECU is execute");
+        if (mTsManagerImpl.getStudyAdapterManager() == null) {
+            return -1;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getRearLeftHeadrestLevelAdjustmentConfigurationByECU();
+    }
+
+    public int getRearLeftHeadrestHeightAdjustmentConfigurationByECU() {
+        Log.v(TAG, "getRearLeftHeadrestHeightAdjustmentConfigurationByECU is execute");
+        if (mTsManagerImpl.getStudyAdapterManager() == null) {
+            return -1;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getRearLeftHeadrestHeightAdjustmentConfigurationByECU();
+    }
+
+    public int getRearLeftMemorySwitchConfigurationByECU() {
+        Log.v(TAG, "getRearLeftMemorySwitchConfigurationByECU is execute");
+        if (mTsManagerImpl.getStudyAdapterManager() == null) {
+            return -1;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getRearLeftMemorySwitchConfigurationByECU();
+    }
+
+    public int getLeftRearSeatReclineConfigurationByECU() {
+        Log.v(TAG, "getLeftRearSeatReclineConfigurationByECU is execute");
+        if (mTsManagerImpl.getStudyAdapterManager() == null) {
+            return -1;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getLeftRearSeatReclineConfigurationByECU();
+    }
+
+    public int getLeftRearSeatBackAdjustmentConfiguration() {
+        Log.v(TAG, "getLeftRearSeatBackAdjustmentConfiguration is execute");
+        if (mTsManagerImpl.getStudyAdapterManager() == null) {
+            return -1;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getLeftRearSeatBackAdjustmentConfiguration();
+    }
+
+    public int getLeftRearSeatHorizontalAdjustmentConfiguration() {
+        Log.v(TAG, "getLeftRearSeatHorizontalAdjustmentConfiguration is execute");
+        if (mTsManagerImpl.getStudyAdapterManager() == null) {
+            return -1;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getLeftRearSeatHorizontalAdjustmentConfiguration();
+    }
+
+    public int getLeftRearSeatLegBracket() {
+        Log.v(TAG, "getLeftRearSeatLegBracket is execute");
+        if (mTsManagerImpl.getStudyAdapterManager() == null) {
+            return -1;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getLeftRearSeatLegBracket();
+    }
+
+    public int getLeftRearMemoryConfiguration() {
+        Log.v(TAG, "getLeftRearMemoryConfiguration is execute");
+        if (mTsManagerImpl.getStudyAdapterManager() == null) {
+            return -1;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getLeftRearMemoryConfiguration();
+    }
+
+    public int getRearRightLevelAdjustmentConfigurationByECU() {
+        Log.v(TAG, "getRearRightLevelAdjustmentConfigurationByECU is execute");
+        if (mTsManagerImpl.getStudyAdapterManager() == null) {
+            return -1;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getRearRightLevelAdjustmentConfigurationByECU();
+    }
+
+    public int getRearRightBackrestAdjustmentConfigurationByECU() {
+        Log.v(TAG, "getRearRightBackrestAdjustmentConfigurationByECU is execute");
+        if (mTsManagerImpl.getStudyAdapterManager() == null) {
+            return -1;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getRearRightBackrestAdjustmentConfigurationByECU();
+    }
+
+    public int getRearRightLegSupportAdjustmentConfigurationByECU() {
+        Log.v(TAG, "getRearRightLegSupportAdjustmentConfigurationByECU is execute");
+        if (mTsManagerImpl.getStudyAdapterManager() == null) {
+            return -1;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getRearRightLegSupportAdjustmentConfigurationByECU();
+    }
+
+    public int getRearRightBidetAdjustmentConfigurationByECU() {
+        Log.v(TAG, "getRearRightBidetAdjustmentConfigurationByECU is execute");
+        if (mTsManagerImpl.getStudyAdapterManager() == null) {
+            return -1;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getRearRightBidetAdjustmentConfigurationByECU();
+    }
+
+    public int getRearRightHeightAdjustmentConfigurationByECU() {
+        Log.v(TAG, "getRearRightHeightAdjustmentConfigurationByECU is execute");
+        if (mTsManagerImpl.getStudyAdapterManager() == null) {
+            return -1;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getRearRightHeightAdjustmentConfigurationByECU();
+    }
+
+    public int getRearRightHeadrestLevelAdjustmentConfigurationByECU() {
+        Log.v(TAG, "getRearRightHeadrestLevelAdjustmentConfigurationByECU is execute");
+        if (mTsManagerImpl.getStudyAdapterManager() == null) {
+            return -1;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getRearRightHeadrestLevelAdjustmentConfigurationByECU();
+    }
+
+    public int getRearRightHeadrestHeightAdjustmentConfigurationByECU() {
+        Log.v(TAG, "getRearRightHeadrestHeightAdjustmentConfigurationByECU is execute");
+        if (mTsManagerImpl.getStudyAdapterManager() == null) {
+            return -1;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getRearRightHeadrestHeightAdjustmentConfigurationByECU();
+    }
+
+    public int getRearRightMemorySwitchConfigurationByECU() {
+        Log.v(TAG, "getRearRightMemorySwitchConfigurationByECU is execute");
+        if (mTsManagerImpl.getStudyAdapterManager() == null) {
+            return -1;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getRearRightMemorySwitchConfigurationByECU();
+    }
+
+    public int getRightRearSeatReclineConfigurationByEUC() {
+        Log.v(TAG, "getRightRearSeatReclineConfigurationByEUC is execute");
+        if (mTsManagerImpl.getStudyAdapterManager() == null) {
+            return -1;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getRightRearSeatReclineConfigurationByEUC();
+    }
+
+    public int getRightRearSeatBackAdjustmentConfiguration() {
+        Log.v(TAG, "getRightRearSeatBackAdjustmentConfiguration is execute");
+        if (mTsManagerImpl.getStudyAdapterManager() == null) {
+            return -1;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getRightRearSeatBackAdjustmentConfiguration();
+    }
+
+    public int getRightRearSeatHorizontalAdjustmentConfiguration() {
+        Log.v(TAG, "getRightRearSeatHorizontalAdjustmentConfiguration is execute");
+        if (mTsManagerImpl.getStudyAdapterManager() == null) {
+            return -1;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getRightRearSeatHorizontalAdjustmentConfiguration();
+    }
+
+    public int getRightRearSeatLegBracket() {
+        Log.v(TAG, "getRightRearSeatLegBracket is execute");
+        if (mTsManagerImpl.getStudyAdapterManager() == null) {
+            return -1;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getRightRearSeatLegBracket();
+    }
+
+    public int getRightRearMemoryConfiguration() {
+        Log.v(TAG, "getRightRearMemoryConfiguration is execute");
+        if (mTsManagerImpl.getStudyAdapterManager() == null) {
+            return -1;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getRightRearMemoryConfiguration();
+    }
+
+    public int getADASSystemState() {
+        Log.v(TAG, "getADASSystemState is execute");
+        if (mTsManagerImpl.getStudyAdapterManager() == null) {
+            return -1;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getADASSystemState();
+    }
+
+    public int getCarPlanSupport() {
+        Log.v(TAG, "getCarPlanSupport is execute");
+        if (mTsManagerImpl.getStudyAdapterManager() == null) {
+            return -1;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getCarPlanSupport();
+    }
+
+    public int getNoSenseChargeSupport() {
+        Log.v(TAG, "getNoSenseChargeSupport is execute");
+        if (mTsManagerImpl.getStudyAdapterManager() == null) {
+            return -1;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getNoSenseChargeSupport();
+    }
+
+    public int getElectricFrontHatchConfiguration() {
+        Log.v(TAG, "getElectricFrontHatchConfiguration is execute");
+        if (mTsManagerImpl.getStudyAdapterManager() == null) {
+            return -1;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getElectricFrontHatchConfiguration();
+    }
+
+    public int getChargePreheatSupport() {
+        Log.v(TAG, "getChargePreheatSupport is execute");
+        if (mTsManagerImpl.getStudyAdapterManager() == null) {
+            return -1;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getChargePreheatSupport();
+    }
+
+    public int getDMSAssembleStatus() {
+        Log.v(TAG, "getDMSAssembleStatus is execute");
+        if (mTsManagerImpl.getStudyAdapterManager() == null) {
+            return -1;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getDMSAssembleStatus();
+    }
+
+    public int getDrivingVoiceBroadcastSwitchConfig() {
+        Log.v(TAG, "getDrivingVoiceBroadcastSwitchConfig is execute");
+        if (mTsManagerImpl.getStudyAdapterManager() == null) {
+            return -1;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getDrivingVoiceBroadcastSwitchConfig();
+    }
+
+    public int getRestModeConfiguration() {
+        Log.v(TAG, "getRestModeConfiguration is execute");
+        if (mTsManagerImpl.getStudyAdapterManager() == null) {
+            return -1;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getRestModeConfiguration();
+    }
+
+    public int getLeftRESConfiguration() {
+        Log.v(TAG, "getLeftRESConfiguration is execute");
+        if (mTsManagerImpl.getStudyAdapterManager() == null) {
+            return -1;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getLeftRESConfiguration();
+    }
+
+    public int getRightRESConfiguration() {
+        Log.v(TAG, "getRightRESConfiguration is execute");
+        if (mTsManagerImpl.getStudyAdapterManager() == null) {
+            return -1;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getRightRESConfiguration();
+    }
+
+    public int getHUDModeConfiguration() {
+        Log.v(TAG, "getHUDModeConfiguration is execute");
+        if (mTsManagerImpl.getStudyAdapterManager() == null) {
+            return -1;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getHUDModeConfiguration();
+    }
+
+    public int getIntelligentScreenCastingSwitchConfiguration() {
+        Log.v(TAG, "getIntelligentScreenCastingSwitchConfiguration is execute");
+        if (mTsManagerImpl.getStudyAdapterManager() == null) {
+            return -1;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getIntelligentScreenCastingSwitchConfiguration();
+    }
+
+    public int getSupportFRElectricAirOutlet() {
+        Log.v(TAG, "getSupportFRElectricAirOutlet is execute");
+        if (mTsManagerImpl.getStudyAdapterManager() == null) {
+            return -1;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getSupportFRElectricAirOutlet();
+    }
+
+    public int getLeftRearMassageChairConfigurationForECU() {
+        Log.v(TAG, "getLeftRearMassageChairConfigurationForECU is execute");
+        if (mTsManagerImpl.getStudyAdapterManager() == null) {
+            return -1;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getLeftRearMassageChairConfigurationForECU();
+    }
+
+    public int getRightRearMassageChairConfigurationForECU() {
+        Log.v(TAG, "getRightRearMassageChairConfigurationForECU is execute");
+        if (mTsManagerImpl.getStudyAdapterManager() == null) {
+            return -1;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getRightRearMassageChairConfigurationForECU();
+    }
+
+    public int getElectronicParkingBrakeConfigutarion() {
+        Log.v(TAG, "getElectronicParkingBrakeConfigutarion is execute");
+        if (mTsManagerImpl.getStudyAdapterManager() == null) {
+            return -1;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getElectronicParkingBrakeConfigutarion();
+    }
+
+    public int getTrunkConfigutarion() {
+        Log.v(TAG, "getTrunkConfigutarion is execute");
+        return mTsManagerImpl.getStudyAdapterManager().getTrunkConfigutarion();
+    }
+
+    public int getPanoramicSunroofConfigutarion() {
+        Log.v(TAG, "getPanoramicSunroofConfigutarion is execute");
+        if (mTsManagerImpl.getStudyAdapterManager() == null) {
+            return -1;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getPanoramicSunroofConfigutarion();
+    }
+
+    public int getDriverSeatHotStoneMassageConfigurationByLeftCtrl() {
+        Log.v(TAG, "getDriverSeatHotStoneMassageConfigurationByLeftCtrl is execute");
+        if (mTsManagerImpl.getStudyAdapterManager() == null) {
+            return -1;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getDriverSeatHotStoneMassageConfigurationByLeftCtrl();
+    }
+
+    public int getDriverSeatHotStoneMassageConfigurationByUniversalCtrl() {
+        Log.v(TAG, "getDriverSeatHotStoneMassageConfigurationByUniversalCtrl is execute");
+        if (mTsManagerImpl.getStudyAdapterManager() == null) {
+            return -1;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getDriverSeatHotStoneMassageConfigurationByUniversalCtrl();
+    }
+
+    public int getPassengerSeatHotStoneMassageConfigurationByECU() {
+        Log.v(TAG, "getPassengerSeatHotStoneMassageConfigurationByECU is execute");
+        if (mTsManagerImpl.getStudyAdapterManager() == null) {
+            return -1;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getPassengerSeatHotStoneMassageConfigurationByECU();
+    }
+
+    public int getLeftRearSeatHotStoneMassageConfigurationByECU() {
+        Log.v(TAG, "getLeftRearSeatHotStoneMassageConfigurationByECU is execute");
+        if (mTsManagerImpl.getStudyAdapterManager() == null) {
+            return -1;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getLeftRearSeatHotStoneMassageConfigurationByECU();
+    }
+
+    public int getRightRearSeatHotStoneMassageConfigurationByECU() {
+        Log.v(TAG, "getRightRearSeatHotStoneMassageConfigurationByECU is execute");
+        if (mTsManagerImpl.getStudyAdapterManager() == null) {
+            return -1;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getRightRearSeatHotStoneMassageConfigurationByECU();
+    }
+
+    public int getRuningCloseDoorSupport() {
+        Log.v(TAG, "getRuningCloseDoorSupport is execute");
+        if (mTsManagerImpl.getStudyAdapterManager() == null) {
+            return -1;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getRuningCloseDoorSupport();
+    }
+
+    public int getUiStyle() {
+        Log.v(TAG, "getUiStyle is execute UI_STYLE_PROP_KEY is persist.sys.ui_style");
+        String uiStyle = SystemProperties.get("persist.sys.ui_style");
+        Log.v(TAG, "getUiStyle uiStyle is " + uiStyle);
+        if (uiStyle == null || uiStyle == AndroidAutoConst.DEFAULT_SCREEN_NAME) {
+            Log.v(TAG, " uiStyle is null");
+            return -1;
+        }
+        return Integer.parseInt(uiStyle);
+    }
+
+    public boolean isDynasty() {
+        if (getUiStyle() == 0) {
+            return true;
+        }
+        return false;
+    }
+
+    public boolean isDenza() {
+        return getUiStyle() == 1;
+    }
+
+    public boolean isOcean() {
+        if (getUiStyle() == 2) {
+            return true;
+        }
+        return false;
+    }
+
+    public int getHasPredictCrashAlertMode() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, " getHasPredictCrashAlertMode mForTestValue is " + this.mForTest + " execute return");
+            return -1;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getHasPredictCrashAlertMode();
+    }
+
+    public int getAmplifierConfiguration() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, " getAmplifierConfiguration mForTestValue is " + this.mForTest + " execute return");
+            return -1;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getAmplifierConfiguration();
+    }
+
+    public int getPabSwitchState() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, " getPabSwitchState mForTestValue is " + this.mForTest + " execute return");
+            return -1;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getPabSwitchState();
+    }
+
+    public int getFrontLightDimmingCtrlConfigBy3ac() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, " getFrontLightDimmingCtrlConfigBy3ac mForTestValue is " + this.mForTest + " execute return");
+            return -1;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getFrontLightDimmingCtrlConfigBy3ac();
+    }
+
+    public int getFrontLightDimmingCtrlConfigBy3ad() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, " getFrontLightDimmingCtrlConfigBy3ad mForTestValue is " + this.mForTest + " execute return");
+            return -1;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getFrontLightDimmingCtrlConfigBy3ad();
+    }
+
+    public int getTsrLitSpdChgSwitchState() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, " getTsrLitSpdChgSwitchState mForTestValue is " + this.mForTest + " execute return");
+            return -1;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getTsrLitSpdChgSwitchState();
+    }
+
+    public int getSupportAvh() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, " getSupportAVH mForTestValue is " + this.mForTest + " execute return");
+            return -1;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getSupportAvh();
+    }
+
+    public int getSupportRearControlPanelSign() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, " getSupportRearControlPanelSign mForTestValue is " + this.mForTest + " execute return");
+            return -1;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getSupportRearControlPanelSign();
+    }
+
+    public int getSupportDimmingCanopyConfiguration() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, " getSupportDimmingCanopyConfiguration mForTestValue is " + this.mForTest + " execute return");
+            return -1;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getSupportDimmingCanopyConfiguration();
+    }
+
+    public int getBsisSupportR() {
+        Log.i(TAG, "getBsisSupportR is execute");
+        if (1 == this.mForTest) {
+            Log.v(TAG, "BsisSupportR mForTestValue is 0 execute return");
+            return 0;
+        }
+        if (mTsManagerImpl.getStudyAdapterManager() == null) {
+            Log.e(TAG, "caradatper still connecting, please wait");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getBsisSupportR();
+    }
+
+    public int getMoisSupportR() {
+        Log.i(TAG, "getMoisSupportR is execute");
+        if (1 == this.mForTest) {
+            Log.v(TAG, "MoisSupportR mForTestValue is 0 execute return");
+            return 0;
+        }
+        if (mTsManagerImpl.getStudyAdapterManager() == null) {
+            Log.e(TAG, "caradatper still connecting, please wait");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getMoisSupportR();
+    }
+
+    public int getFeaturesStateR() {
+        Log.i(TAG, "getFeaturesStateR is execute");
+        if (1 == this.mForTest) {
+            Log.v(TAG, "FeaturesStateR mForTestValue is 0 execute return");
+            return 0;
+        }
+        if (mTsManagerImpl.getStudyAdapterManager() == null) {
+            Log.e(TAG, "caradatper still connecting, please wait");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getFeaturesStateR();
+    }
+
+    public int getSupportShakeAlertR() {
+        Log.i(TAG, "getSupportShakeAlertR is execute");
+        if (1 == this.mForTest) {
+            Log.v(TAG, "SupportShakeAlertR mForTestValue is 0 execute return");
+            return 0;
+        }
+        if (mTsManagerImpl.getStudyAdapterManager() == null) {
+            Log.e(TAG, "caradatper still connecting, please wait");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getSupportShakeAlertR();
+    }
+
+    public int getCpdSupportR() {
+        Log.i(TAG, "getCpdSupportR is execute");
+        if (1 == this.mForTest) {
+            Log.v(TAG, "CpdSupportR mForTestValue is 0 execute return");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getCpdSupportR();
+    }
+
+    public int getSupportSmartChargingPhevPhase2R() {
+        Log.i(TAG, "getSupportSmartChargingPhevPhase2R is execute");
+        if (1 == this.mForTest) {
+            Log.v(TAG, "SupportSmartChargingPhevPhase2R mForTestValue is 0 execute return");
+            return 0;
+        }
+        if (mTsManagerImpl.getStudyAdapterManager() == null) {
+            Log.e(TAG, "caradatper still connecting, please wait");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getSupportSmartChargingPhevPhase2R();
+    }
+
+    public int getSupportManualModelR() {
+        Log.i(TAG, "getSupportManualModelR is execute");
+        if (1 == this.mForTest) {
+            Log.v(TAG, "SupportManualModelR mForTestValue is 0 execute return");
+            return 0;
+        }
+        if (mTsManagerImpl.getStudyAdapterManager() == null) {
+            Log.e(TAG, "caradatper still connecting, please wait");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getSupportManualModelR();
+    }
+
+    public int getDynamicSuspensionModeByCanR() {
+        Log.i(TAG, "getDynamicSuspensionModeByCanR is execute");
+        if (1 == this.mForTest) {
+            Log.v(TAG, "DynamicSuspensionModeByCanR mForTestValue is 0 execute return");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getDynamicSuspensionModeByCanR();
+    }
+
+    public int getDynamicSuspensionModeByCanFdR() {
+        Log.i(TAG, "getDynamicSuspensionModeByCanFdR is execute");
+        if (1 == this.mForTest) {
+            Log.v(TAG, "DynamicSuspensionModeByCanFdR mForTestValue is 0 execute return");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getDynamicSuspensionModeByCanFdR();
+    }
+
+    public int getTailgateTypeMarking() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, " getTailgateTypeMarking mForTestValue is " + this.mForTest + " execute return");
+            return -1;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getTailgateTypeMarking();
+    }
+
+    public int getSupportTsrFlow() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, " getSupportTsrFlow mForTestValue is " + this.mForTest + " execute return");
+            return -1;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getSupportTsrFlow();
+    }
+
+    public int getSupportDoubleConfirm() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, " getSupportDoubleConfirm mForTestValue is " + this.mForTest + " execute return");
+            return -1;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getSupportDoubleConfirm();
+    }
+
+    public int getSupportSlw() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, " getSupportSlw mForTestValue is 0 execute return");
+            return -1;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getSupportSlw();
+    }
+
+    public int getSupportAcChargingLimit() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, " getSupportAcChargingLimit mForTestValue is 0 execute return");
+            return -1;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getSupportAcChargingLimit();
+    }
+
+    public int getSupportRoadMode() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, " getSupportRoadMode mForTestValue is 0 execute return");
+            return -1;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getSupportRoadMode();
+    }
+
+    public int getSupportInsUiMode() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, " getSupportInsUiMode mForTestValue is 0 execute return");
+            return -1;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getSupportInsUiMode();
+    }
+
+    public int getSupportInsUiSize() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, " getSupportInsUiSize mForTestValue is 0 execute return");
+            return -1;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getSupportInsUiSize();
+    }
+
+    public int getSupportInsUiShape() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, " getSupportInsUiShape mForTestValue is 0 execute return");
+            return -1;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getSupportInsUiShape();
+    }
+
+    public int setRncState(int state) {
+        if (1 == this.mForTest) {
+            Log.v(TAG, " setRncState mForTestValue is 0 execute return");
+            return -1;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().setRncState(state);
+    }
+
+    public int getCpdSwMemStatus() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, " getCpdSwMemStatus mForTestValue is 0 execute return");
+            return -1;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getCpdSwMemStatus();
+    }
+
+    public int getSupportRnc() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, " getSupportRnc mForTestValue is 0 execute return");
+            return -1;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getSupportRnc();
+    }
+
+    public int getSupportiTac() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, " getSupportiTac mForTestValue is 0 execute return");
+            return -1;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getSupportiTac();
+    }
+
+    public int getSupportiTacConfig() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, " getSupportiTacConfig mForTestValue is 0 execute return");
+            return -1;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getSupportiTacConfig();
+    }
+
+    public int getHevCarPlanSupport() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, " getHevCarPlanSupport mForTestValue is 0 execute return");
+            return -1;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getHevCarPlanSupport();
+    }
+
+    public int getSupportOilEngine() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, " getSupportOilEngine mForTestValue is 0 execute return");
+            return -1;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getSupportOilEngine();
+    }
+
+    public int getSupportOilTransmission() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, " getSupportOilTransmission mForTestValue is 0 execute return");
+            return -1;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getSupportOilTransmission();
+    }
+
+    public int getSupportOilBrake() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, " getSupportOilBrake mForTestValue is 0 execute return");
+            return -1;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getSupportOilBrake();
+    }
+
+    public int getSupportOilCool() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, " getSupportOilCool mForTestValue is 0 execute return");
+            return -1;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getSupportOilCool();
+    }
+
+    public int getSupportOilBlade() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, " getSupportOilBlade mForTestValue is 0 execute return");
+            return -1;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getSupportOilBlade();
+    }
+
+    public int getSupportSmrm() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, " getSupportSmrm mForTestValue is 0 execute return");
+            return -1;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getSupportSmrm();
+    }
+
+    public int getFridgeWorkingMode() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, " getFridgeWorkingMode mForTestValue is 0 execute return");
+            return -1;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getFridgeWorkingMode();
+    }
+
+    public int getFridgeTemperatureRegulation() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, " getFridgeTemperatureRegulation mForTestValue is 0 execute return");
+            return -1;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getFridgeTemperatureRegulation();
+    }
+
+    public int getFridgeExpansionAndContractionFunction() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, " getFridgeExpansionAndContractionFunction mForTestValue is 0");
+            return -1;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getFridgeExpansionAndContractionFunction();
+    }
+
+    public int getFridgeMinWagePowerGeneration() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, " getFridgeMinWagePowerGeneration mForTestValue is 0 execute return");
+            return -1;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getFridgeMinWagePowerGeneration();
+    }
+
+    public int getCarFridgeType() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, " getCarFridgeType mForTestValue is 0 execute return");
+            return -1;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getCarFridgeType();
+    }
+
+    public int getExclusiveSaveFlag() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, " getExclusiveSaveFlag mForTestValue is 0 execute return");
+            return -1;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getExclusiveSaveFlag();
+    }
+
+    public int getFridgeChildLockFlag() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, " getFridgeChildLockFlag mForTestValue is 0 execute return");
+            return -1;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getFridgeChildLockFlag();
+    }
+
+    public int getFridgeScreenFlag() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, " getFridgeScreenFlag mForTestValue is 0 execute return");
+            return -1;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getFridgeScreenFlag();
+    }
+
+    public int getFridgeDelayedPowerOutage() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, " getFridgeDelayedPowerOutage mForTestValue is 0 execute return");
+            return -1;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getFridgeDelayedPowerOutage();
+    }
+
+    public int getFrontFridgeDisinfectFlag() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, " getFrontFridgeDisinfectFlag mForTestValue is 0 execute return");
+            return -1;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getFrontFridgeDisinfectFlag();
+    }
+
+    public int getFridgeNum() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, " getFridgeNum mForTestValue is 0 execute return");
+            return -1;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getFridgeNum();
+    }
+
+    public int getRearFridgeDisinfectFlag() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, " getRearFridgeDisinfectFlag mForTestValue is 0 execute return");
+            return -1;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getRearFridgeDisinfectFlag();
+    }
+
+    public int getRearFridgeKeyTypeFlag() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, " getRearFridgeKeyTypeFlag mForTestValue is 0 execute return");
+            return -1;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getRearFridgeKeyTypeFlag();
+    }
+
+    public int getRearFridgeWorkTypeFlag() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, " getRearFridgeWorkTypeFlag mForTestValue is 0 execute return");
+            return -1;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getRearFridgeWorkTypeFlag();
+    }
+
+    public int getRearRightFridgeHeatingScheme() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, " getRearRightFridgeHeatingScheme mForTestValue is 0 execute return");
+            return -1;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getRearRightFridgeHeatingScheme();
+    }
+
+    public int getFridgeOnePosition() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, " getFridgeOnePosition mForTestValue is 0 execute return");
+            return -1;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getFridgeOnePosition();
+    }
+
+    public int getFridgeTwoPosition() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, " getFridgeTwoPosition mForTestValue is 0 execute return");
+            return -1;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getFridgeTwoPosition();
+    }
+
+    public int getFridgeThreePosition() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, " getFridgeThreePosition mForTestValue is 0 execute return");
+            return -1;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getFridgeThreePosition();
+    }
+
+    @Override // android.hardware.bydauto.AbsTsMyCar
+    public void onDataEventChanged(int id, BYDAutoEventValue value) {
+    }
+
+    @Override // android.hardware.bydauto.AbsTsMyCar
+    protected int setForOneFeatureId(int eventType, Object value) {
+        return 0;
+    }
+
+    public int getSupportChargeHevThree() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, " getSupportChargeHevThree mForTestValue is 0 execute return");
+            return -1;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getSupportChargeHevThree();
+    }
+
+    public int getSupportChargeHevThreeVcu() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, " getSupportChargeHevThreeVcu mForTestValue is 0 execute return");
+            return -1;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getSupportChargeHevThreeVcu();
+    }
+
+    public int getSocTargetConfig() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, " getSocTargetConfig mForTestValue is 0 execute return");
+            return -1;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getSocTargetConfig();
+    }
+
+    public int getEnergyShowSupport() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, " getEnergyShowSupport mForTestValue is 0 execute return");
+            return -1;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getEnergyShowSupport();
+    }
+
+    public int getCabinMovementMonitoringFunction() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, " getCabinMovementMonitoringFunction mForTestValue is 0 execute return");
+            return -1;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getCabinMovementMonitoringFunction();
+    }
+
+    public int getEnergyFeedbackSupport() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, " getEnergyFeedbackSupport mForTestValue is 0 execute return");
+            return -1;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getEnergyFeedbackSupport();
+    }
+
+    public int getBatteryHealthConfig() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, " getBatteryHealthConfig mForTestValue is 0 execute return");
+            return -1;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getBatteryHealthConfig();
+    }
+
+    public int getAcceleratorPedalSuppressionSystem() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, " getAcceleratorPedalSuppressionSystem mForTestValue is 0 execute return");
+            return -1;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getAcceleratorPedalSuppressionSystem();
+    }
+
+    public int getDiDynaConfig() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, " getDiDynaConfig mForTestValue is 0 execute return");
+            return -1;
+        }
+        if (mTsManagerImpl.getStudyAdapterManager() == null) {
+            Log.v(TAG, "adapter is not connect");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getDiDynaConfig();
+    }
+
+    public int getCuraAssembleStatusFunction() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, " getCuraAssembleStatusFunction mForTestValue is 0 execute return");
+            return -1;
+        }
+        if (mTsManagerImpl.getStudyAdapterManager() == null) {
+            Log.v(TAG, "adapter is not connect");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getCuraAssembleStatusFunction();
+    }
+
+    public int getWadingModeSetFlag() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, " getWadingModeSetFlag mForTestValue is 0 execute return");
+            return -1;
+        }
+        if (mTsManagerImpl.getStudyAdapterManager() == null) {
+            Log.v(TAG, "adapter is not connect");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getWadingModeSetFlag();
+    }
+
+    public int getMileageResetConfig() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, " getMileageResetConfig mForTestValue is 0 execute return");
+            return -1;
+        }
+        if (mTsManagerImpl.getStudyAdapterManager() == null) {
+            Log.v(TAG, "adapter is not connect");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getMileageResetConfig();
+    }
+
+    public int getSupportRestModeConfig() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, " getSupportRestModeConfig mForTestValue is 0 execute return");
+            return -1;
+        }
+        if (mTsManagerImpl.getStudyAdapterManager() == null) {
+            Log.v(TAG, "caradatper still connecting, please wait");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getSupportRestModeConfig();
+    }
+
+    public int getSupportCampModeConfig() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, " getSupportCampModeConfig mForTestValue is 0 execute return");
+            return -1;
+        }
+        if (mTsManagerImpl.getStudyAdapterManager() == null) {
+            Log.v(TAG, "caradatper still connecting, please wait");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getSupportCampModeConfig();
+    }
+
+    public int getSandModeAbsConfig() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, " getSandModeAbsConfig mForTestValue is 0 execute return");
+            return -1;
+        }
+        if (mTsManagerImpl.getStudyAdapterManager() == null) {
+            Log.v(TAG, "caradatper still connecting, please wait");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getSandModeAbsConfig();
+    }
+
+    public int getRunningCodingConfig() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, " getRunningCodingConfig mForTestValue is 0 execute return");
+            return -1;
+        }
+        if (mTsManagerImpl.getStudyAdapterManager() == null) {
+            Log.v(TAG, "caradatper still connecting, please wait");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getRunningCodingConfig();
+    }
+
+    public int getCrossDomainPlatformConfigs() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, " getCrossDomainPlatformConfigs mForTestValue is 0 execute return");
+            return -1;
+        }
+        if (mTsManagerImpl.getStudyAdapterManager() == null) {
+            Log.v(TAG, "caradatper still connecting, please wait");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getCrossDomainPlatformConfigs();
+    }
+
+    public int getEnergyShowConfig() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, " getEnergyShowConfig mForTestValue is 0 execute return");
+            return -1;
+        }
+        if (mTsManagerImpl.getStudyAdapterManager() == null) {
+            Log.v(TAG, "caradatper still connecting, please wait");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getEnergyShowConfig();
+    }
+
+    public int getCurrentTripConfig() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, " getCurrentTripConfig mForTestValue is 0 execute return");
+            return -1;
+        }
+        if (mTsManagerImpl.getStudyAdapterManager() == null) {
+            Log.v(TAG, "caradatper still connecting, please wait");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getCurrentTripConfig();
+    }
+
+    public int getRecently50kmConfig() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, " getRecently50kmConfig mForTestValue is 0 execute return");
+            return -1;
+        }
+        if (mTsManagerImpl.getStudyAdapterManager() == null) {
+            Log.v(TAG, "caradatper still connecting, please wait");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getRecently50kmConfig();
+    }
+
+    public int getEnergyContrastConfig() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, " getEnergyContrastConfig mForTestValue is 0 execute return");
+            return -1;
+        }
+        if (mTsManagerImpl.getStudyAdapterManager() == null) {
+            Log.v(TAG, "caradatper still connecting, please wait");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getEnergyContrastConfig();
+    }
+
+    public int getHistoryEnergyStatisticsConfig() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, " getHistoryEnergyStatisticsConfig mForTestValue is 0 execute return");
+            return -1;
+        }
+        if (mTsManagerImpl.getStudyAdapterManager() == null) {
+            Log.v(TAG, "caradatper still connecting, please wait");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getHistoryEnergyStatisticsConfig();
+    }
+
+    public int getHistoryEnergyConfig() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, " getHistoryEnergyConfig mForTestValue is 0 execute return");
+            return -1;
+        }
+        if (mTsManagerImpl.getStudyAdapterManager() == null) {
+            Log.v(TAG, "caradatper still connecting, please wait");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getHistoryEnergyConfig();
+    }
+
+    public int getSupportIop() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, " getSupportIop mForTestValue is 0 execute return");
+            return -1;
+        }
+        if (mTsManagerImpl.getStudyAdapterManager() == null) {
+            Log.v(TAG, "caradatper still connecting, please wait");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getSupportIop();
+    }
+
+    public int getSupportSaoc() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, " getSupportSaoc mForTestValue is 0 execute return");
+            return -1;
+        }
+        if (mTsManagerImpl.getStudyAdapterManager() == null) {
+            Log.v(TAG, "caradatper still connecting, please wait");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getSupportSaoc();
+    }
+
+    public int getSupportBabyModeConfig() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, " getSupportBabyModeConfig mForTestValue is 0 execute return");
+            return -1;
+        }
+        if (mTsManagerImpl.getStudyAdapterManager() == null) {
+            Log.v(TAG, "caradatper still connecting, please wait");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getSupportBabyModeConfig();
+    }
+
+    public int getSupportSlif() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, " getSupportSlif mForTestValue is 0 execute return");
+            return -1;
+        }
+        if (mTsManagerImpl.getStudyAdapterManager() == null) {
+            Log.v(TAG, "caradatper still connecting, please wait");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getSupportSlif();
+    }
+
+    public byte[] getVcuEncoded() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, " getVcuEncoded mForTestValue is 0 execute return");
+            return new byte[0];
+        }
+        if (mTsManagerImpl.getStudyAdapterManager() == null) {
+            Log.v(TAG, "caradatper still connecting, please wait");
+            return new byte[0];
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getVcuEncoded();
+    }
+
+    public int getChargeLimitSupportNotLi() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, " getChargeLimitSupportNotLi mForTestValue is 0 execute return");
+            return -1;
+        }
+        if (mTsManagerImpl.getStudyAdapterManager() == null) {
+            Log.v(TAG, "caradatper still connecting, please wait");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getChargeLimitSupportNotLi();
+    }
+
+    public int getLdaDoubleConfirm() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, " getLdaDoubleConfirm mForTestValue is 0 execute return");
+            return -1;
+        }
+        if (mTsManagerImpl.getStudyAdapterManager() == null) {
+            Log.v(TAG, "caradatper still connecting, please wait");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getLdaDoubleConfirm();
+    }
+
+    public int getElkaDoubleConfirm() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, " getElkaDoubleConfirm mForTestValue is 0 execute return");
+            return -1;
+        }
+        if (mTsManagerImpl.getStudyAdapterManager() == null) {
+            Log.v(TAG, "caradatper still connecting, please wait");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getElkaDoubleConfirm();
+    }
+
+    public int getFcwDoubleConfirm() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, " getFcwDoubleConfirm mForTestValue is 0 execute return");
+            return -1;
+        }
+        if (mTsManagerImpl.getStudyAdapterManager() == null) {
+            Log.v(TAG, "caradatper still connecting, please wait");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getFcwDoubleConfirm();
+    }
+
+    public int getAebDoubleConfirm() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, " getAebDoubleConfirm mForTestValue is 0 execute return");
+            return -1;
+        }
+        if (mTsManagerImpl.getStudyAdapterManager() == null) {
+            Log.v(TAG, "caradatper still connecting, please wait");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getAebDoubleConfirm();
+    }
+
+    public int getSupportAcc() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, " getSupportAcc mForTestValue is 0 execute return");
+            return -1;
+        }
+        if (mTsManagerImpl.getStudyAdapterManager() == null) {
+            Log.v(TAG, "caradatper still connecting, please wait");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getSupportAcc();
+    }
+
+    public int getSupportFcsr() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, " getSupportFcsr mForTestValue is 0 execute return");
+            return -1;
+        }
+        if (mTsManagerImpl.getStudyAdapterManager() == null) {
+            Log.v(TAG, "caradatper still connecting, please wait");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getSupportFcsr();
+    }
+
+    public int getNonElecLeftPortConfig() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, " getNonElecLeftPortConfig mForTestValue is 0 execute return");
+            return -1;
+        }
+        if (mTsManagerImpl.getStudyAdapterManager() == null) {
+            Log.v(TAG, "caradatper still connecting, please wait");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getNonElecLeftPortConfig();
+    }
+
+    public int getNonElecRightPortConfig() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, " getNonElecRightPortConfig mForTestValue is 0 execute return");
+            return -1;
+        }
+        if (mTsManagerImpl.getStudyAdapterManager() == null) {
+            Log.v(TAG, "caradatper still connecting, please wait");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getNonElecRightPortConfig();
+    }
+
+    public int getCarDoorConfig() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, " getCarDoorConfig mForTestValue is 0 execute return");
+            return -1;
+        }
+        if (mTsManagerImpl.getStudyAdapterManager() == null) {
+            Log.v(TAG, "caradatper still connecting, please wait");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getCarDoorConfig();
+    }
+
+    public int getTrailerDrModeConfig() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, " getTrailerDrModeConfig mForTestValue is 0 execute return");
+            return -1;
+        }
+        if (mTsManagerImpl.getStudyAdapterManager() == null) {
+            Log.v(TAG, "caradatper still connecting, please wait");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getTrailerDrModeConfig();
+    }
+
+    public int getTowingCruiseConfiguration() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, " getTowingCruiseConfiguration mForTestValue is 0 execute return");
+            return -1;
+        }
+        if (mTsManagerImpl.getStudyAdapterManager() == null) {
+            Log.v(TAG, "caradatper still connecting, please wait");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getTowingCruiseConfiguration();
+    }
+
+    public int getTrlrCrsConfig() {
+        if (1 == this.mForTest) {
+            Log.v(TAG, " getTrlrCrsConfig mForTestValue is 0 execute return");
+            return -1;
+        }
+        if (mTsManagerImpl.getStudyAdapterManager() == null) {
+            Log.v(TAG, "caradatper still connecting, please wait");
+            return 0;
+        }
+        return mTsManagerImpl.getStudyAdapterManager().getTrlrCrsConfig();
+    }
+}

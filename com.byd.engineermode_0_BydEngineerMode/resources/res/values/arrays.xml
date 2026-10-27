@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="a2b_supplier">
+        <item>built-in</item>
+        <item>Danah brand</item>
+        <item>Un-Branded booster</item>
+        <item>Danah brand second</item>
+    </array>
+    <array name="armrest_screen_supplier">
+    </array>
+    <array name="audio">
+        <item>Audio</item>
+        <item>MIC 1</item>
+        <item>MIC 2</item>
+        <item>MIC 3</item>
+        <item>MIC 4</item>
+        <item>MIC 5</item>
+        <item>MIC 6</item>
+        <item>A2B</item>
+        <item>Built-in power amplifier (Current output)</item>
+    </array>
+    <array name="aux_in_supplier">
+    </array>
+    <array name="avm_supplier">
+        <item>Sixth business division</item>
+        <item>INVO</item>
+        <item>Gdoptics</item>
+        <item>Ultronix</item>
+        <item>Hikvision</item>
+        <item>Lianovation</item>
+    </array>
+    <array name="built_in_supplier">
+    </array>
+    <array name="cluster_supplier">
+        <item>Ninth division BOE</item>
+        <item>Ninth division Chinese star optoelectronics</item>
+        <item>Ninth business division heavenly horses</item>
+        <item>desay-svautomotive</item>
+        <item>BYD ferdy battery BOE</item>
+        <item>desay-svautomotive Chinese star optoelectronics</item>
+        <item>desay-svautomotive BOE</item>
+        <item>BYD Ferdy battery Chinese star optoelectronics</item>
+        <item>BYD Ferdy battery heavenly horses</item>
+        <item>N/A</item>
+        <item>TYW BOE</item>
+        <item>TYW Chinese star optoelectronics</item>
+        <item>TYW heavenly horses</item>
+        <item>Yanfeng BOE</item>
+        <item>Yanfeng Chinese star optoelectronics</item>
+        <item>TYW LG</item>
+        <item>Fifth business division</item>
+    </array>
+    <array name="communicate">
+        <item>Communication</item>
+        <item>W-HUD</item>
+        <item>USB (Assembly power supply)</item>
+        <item>USB karaoke（Power supply/communication）</item>
+        <item>ADAS</item>
+        <item>Left pixel headlamp (Ethernet)</item>
+        <item>Right pixel headlamp (Ethernet)</item>
+        <item>HUD (Ethernet)</item>
+        <item>4G/5G（T-BOX)</item>
+        <item>UAV</item>
+    </array>
+    <array name="dms_supplier">
+        <item>Sixth business division</item>
+        <item>INVO</item>
+        <item>Gdoptics</item>
+        <item>Ultronix</item>
+        <item>Hikvision</item>
+        <item>Lianovation</item>
+    </array>
+    <array name="dvr_supplier">
+        <item>Sixth business division</item>
+        <item>INVO</item>
+        <item>Gdoptics</item>
+        <item>Ultronix</item>
+        <item>Hikvision</item>
+        <item>Lianovation</item>
+    </array>
+    <array name="face_is_supplier">
+        <item>Sixth business division</item>
+        <item>INVO</item>
+        <item>Gdoptics</item>
+        <item>Ultronix</item>
+        <item>Hikvision</item>
+        <item>Lianovation</item>
+    </array>
+    <array name="functions">
+        <item>Temperature display</item>
+        <item>GPS information</item>
+        <item>Source test</item>
+        <item>CarPlay&amp;Android test</item>
+        <item>MIC test</item>
+        <item>Loudspeaker test</item>
+        <item>USB test</item>
+        <item>Center control key test</item>
+        <item>Steering wheel key test</item>
+        <item>Screen test</item>
+        <item>Screen display test</item>
+        <item>TP test</item>
+        <item>DVR recording and playback</item>
+        <item>DMS Test</item>
+        <item>Canning certificate</item>
+        <item>Link margin</item>
+    </array>
+    <array name="hud_supplier">
+        <item>Sixth business division</item>
+        <item>INVO</item>
+        <item>Gdoptics</item>
+        <item>Ultronix</item>
+        <item>Hikvision</item>
+        <item>Lianovation</item>
+    </array>
+    <array name="ims_supplier">
+        <item>Sixth business division</item>
+        <item>INVO</item>
+        <item>Gdoptics</item>
+        <item>Ultronix</item>
+        <item>Hikvision</item>
+        <item>Lianovation</item>
+    </array>
+    <array name="ivi_screen_supplier">
+        <item>Ninth division BOE</item>
+        <item>Ninth division Chinese star Optoelectronics</item>
+        <item>Ninth business division heavenly horses</item>
+        <item>desay-svautomotive</item>
+        <item>BYD ferdy battery BOE</item>
+        <item>desay-svautomotive Chinese star optoelectronics</item>
+        <item>desay-svautomotive BOE</item>
+        <item>BYD Ferdy battery Chinese star optoelectronics</item>
+        <item>BYD Ferdy battery heavenly horses</item>
+        <item>TYW BOE</item>
+        <item>TYW Chinese star optoelectronics</item>
+        <item>TYW heavenly horses</item>
+        <item>Yanfeng BOE</item>
+        <item>Yanfeng Chinese star optoelectronics</item>
+        <item>TYW LG</item>
+        <item>Fifth business division</item>
+        <item>maikairui</item>
+        <item>Desay-svautomotive Shinri</item>
+        <item>Desay-svautomotive AUO</item>
+        <item>Desay-svautomotive Samsung</item>
+        <item>Desay-svautomotive LG</item>
+        <item>Desay-svautomotive Deep super</item>
+        <item>Desay-svautomotive Long teng</item>
+        <item>Desay-svautomotive Group innovation</item>
+        <item>Desay-svautomotive He hui</item>
+        <item>YanFeng Tian Ma</item>
+        <item>YanFeng Shinri</item>
+        <item>YanFeng AUO</item>
+        <item>YanFeng Samsung</item>
+        <item>YanFeng LG</item>
+        <item>TYW Shinri</item>
+        <item>TYW AUO</item>
+        <item>TYW Samsung</item>
+        <item>BYD ferdy battery Shinri</item>
+        <item>BYD ferdy battery AUO</item>
+        <item>BYD ferdy battery Samsung</item>
+        <item>Ninth division Shinri</item>
+        <item>Ninth division AUO</item>
+        <item>Ninth division Samsung</item>
+        <item>Ninth division LG</item>
+        <item>Desay-svautomotive Tian Ma</item>
+        <item>N/A</item>
+    </array>
+    <array name="main_name">
+        <item>Module circuit</item>
+        <item>Function test</item>
+        <item>Version No.</item>
+        <item>USB upgrade system</item>
+        <item>Exit</item>
+    </array>
+    <array name="mic_supplier">
+    </array>
+    <array name="mode_source">
+        <item>Radio</item>
+        <item>Music</item>
+        <item>Video</item>
+        <item>Photo</item>
+        <item>Karaoke</item>
+        <item>Online music</item>
+        <item>Xi ma la ya</item>
+        <item>Online radio</item>
+        <item>Bluetooth music</item>
+        <item>NA</item>
+        <item>NA1</item>
+        <item>Radio FM</item>
+        <item>Radio AM</item>
+        <item>Radio DAB</item>
+    </array>
+    <array name="oms_supplier">
+        <item>Sixth business division</item>
+        <item>INVO</item>
+        <item>Gdoptics</item>
+        <item>Ultronix</item>
+        <item>Hikvision</item>
+        <item>Lianovation</item>
+    </array>
+    <array name="radio">
+        <item>Radio frequency</item>
+        <item>Wi-Fi（Click to view search list and intensity）</item>
+        <item>BT（Click to view search list）</item>
+        <item>Radio antenna (FM/AM/DAB)(Click it to check parameter information)</item>
+        <item>GNSS（GPS status）</item>
+    </array>
+    <array name="rse_screen_supplier">
+        <item>Ninth division BOE</item>
+        <item>Ninth division Chinese star optoelectronics</item>
+        <item>Ninth business division heavenly horses</item>
+        <item>desay-svautomotive</item>
+        <item>BYD ferdy battery BOE</item>
+        <item>desay-svautomotive Chinese star optoelectronics</item>
+        <item>desay-svautomotive BOE</item>
+        <item>BYD Ferdy battery Chinese star optoelectronics</item>
+        <item>BYD Ferdy battery heavenly horses</item>
+        <item>N/A</item>
+        <item>TYW BOE</item>
+        <item>TYW Chinese star optoelectronics</item>
+        <item>TYW heavenly horses</item>
+        <item>Yanfeng BOE</item>
+        <item>Yanfeng Chinese star optoelectronics</item>
+        <item>TYW LG</item>
+        <item>Fifth business division</item>
+    </array>
+    <array name="stream_media_supplier">
+        <item>Sixth business division</item>
+        <item>INVO</item>
+        <item>Gdoptics</item>
+        <item>Ultronix</item>
+        <item>Hikvision</item>
+        <item>Lianovation</item>
+    </array>
+    <array name="tbox_supplier">
+        <item>neusoft</item>
+        <item>desay-svautomotive</item>
+    </array>
+    <array name="versions">
+        <item>System version No.:  </item>
+        <item>MCU app version No.:  </item>
+        <item>MCU boot Version No.:  </item>
+        <item>QNX Version No.:  </item>
+        <item>Hardware version:  </item>
+        <item>Instrument hardware version:  </item>
+        <item>Instrument software version:  </item>
+        <item>IMEI:  </item>
+        <item>ICCID:  </item>
+        <item>Local phone number:  </item>
+        <item>TBox software version:  </item>
+        <item>TBox hardware version:  </item>
+        <item>IMSI:  </item>
+        <item>TBOX machine serial number:  </item>
+        <item>TP FW version No.:  </item>
+    </array>
+    <array name="video">
+        <item>Video</item>
+        <item>DVR</item>
+        <item>DMS (Video signal)</item>
+        <item>OMS (Video signal)</item>
+        <item>IMS (Video signal)</item>
+        <item>FACE ID</item>
+        <item>AVM COAX_L</item>
+        <item>AVM COAX_B</item>
+        <item>AVM COAX_F</item>
+        <item>AVM COAX_R</item>
+        <item>Instrument</item>
+        <item>Pad</item>
+        <item>Armrest screen</item>
+        <item>Front passenger screen</item>
+        <item>Streaming video (Pixel headlamp video)</item>
+        <item>HUD (Pixel headlamp video)</item>
+        <item>DMS power supply</item>
+        <item>OMS power supply</item>
+        <item>IMS power supply</item>
+    </array>
+</resources>

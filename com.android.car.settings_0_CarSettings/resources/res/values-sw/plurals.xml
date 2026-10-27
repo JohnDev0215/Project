@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="billing_cycle_days_left">
+        <item quantity="one">Imesalia siku %d</item>
+        <item quantity="other">Zimesalia siku %d</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_letters">
+        <item quantity="one">Ni lazima liwe na angalau herufi 1</item>
+        <item quantity="other">Ni lazima liwe na angalau herufi %d</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_lowercase">
+        <item quantity="one">Ni lazima liwe na angalau herufi 1 ndogo</item>
+        <item quantity="other">Ni lazima liwe na angalau herufi %d ndogo</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_nonletter">
+        <item quantity="one">Ni lazima liwe na angalau herufi moja ambayo si ya alfabeti</item>
+        <item quantity="other">Ni lazima liwe na angalau herufi %d ambazo si herufi za alfabeti</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_numeric">
+        <item quantity="one">Ni lazima liwe na angalau tarakimu 1</item>
+        <item quantity="other">Ni lazima liwe na angalau tarakimu %d</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_symbols">
+        <item quantity="one">Ni lazima liwe na angalau alama 1 maalum</item>
+        <item quantity="other">Ni lazima iwe na alama %d maalum</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_uppercase">
+        <item quantity="one">Ni lazima liwe na angalau herufi 1 kubwa</item>
+        <item quantity="other">Ni lazima liwe na herufi %d kubwa</item>
+    </plurals>
+    <plurals name="mobile_network_summary_count">
+        <item quantity="one">SIM %1$d</item>
+        <item quantity="other">SIM %1$d</item>
+    </plurals>
+    <plurals name="runtime_permissions_additional_count">
+        <item quantity="one">Ruhusa %d ya ziada</item>
+        <item quantity="other">Ruhusa %d za ziada</item>
+    </plurals>
+    <plurals name="show_dev_countdown">
+        <item quantity="one">Sasa umebakisha hatua %1$d kabla ya kuwa msanidi programu.</item>
+        <item quantity="other">Sasa umebakisha hatua %1$d kabla ya kuwa msanidi programu.</item>
+    </plurals>
+    <plurals name="user_limit_reached_message">
+        <item quantity="one">Unaruhusiwa kuongeza mtumiaji mmoja pekee.</item>
+        <item quantity="other">Unaruhusiwa kuongeza hadi watumiaji %d.</item>
+    </plurals>
+    <plurals name="wifi_tether_connected_summary">
+        <item quantity="one">Kifaa %1$d kimeunganishwa</item>
+        <item quantity="other">Vifaa %1$d vimeunganishwa</item>
+    </plurals>
+</resources>

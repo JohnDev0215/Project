@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:height="@dimen/queue_button_background_size"
+        android:width="@dimen/queue_button_background_size"
+        android:drawable="@drawable/selectable_button_background"/>
+    <item
+        android:gravity="center"
+        android:drawable="@drawable/ic_tracklist"/>
+</layer-list>

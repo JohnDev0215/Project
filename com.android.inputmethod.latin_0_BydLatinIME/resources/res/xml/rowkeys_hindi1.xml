@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:latin="http://schemas.android.com/apk/res/com.android.inputmethod.latin">
+    <switch>
+        <case latin:keyboardLayoutSetElement="emojiCategory8">
+            <Key
+                latin:keySpec="औ"
+                latin:moreKeys="ऒं"/>
+            <Key
+                latin:keySpec="ऐ"
+                latin:moreKeys="ऐं"/>
+            <Key
+                latin:keySpec="आ"
+                latin:moreKeys="आं,आँ"/>
+            <Key
+                latin:keySpec="ई"
+                latin:moreKeys="ईं"/>
+            <Key
+                latin:keySpec="ऊ"
+                latin:moreKeys="ऊं,ऊँ"/>
+            <Key latin:keySpec="भ"/>
+            <include latin:keyboardLayout="@xml/keystyle_devanagari_sign_visarga"/>
+            <Key latin:keyStyle="baseKeyDevanagariSignVisarga"/>
+            <Key latin:keySpec="घ"/>
+            <Key
+                latin:keySpec="ध"
+                latin:moreKeys="क्ष,श्र"/>
+            <Key latin:keySpec="झ"/>
+            <Key latin:keySpec="ढ"/>
+        </case>
+        <default>
+            <include latin:keyboardLayout="@xml/keystyle_devanagari_vowel_sign_au"/>
+            <Key
+                latin:additionalMoreKeys="१,1"
+                latin:keyHintLabel="1"
+                latin:keyStyle="baseKeyDevanagariVowelSignAu"/>
+            <include latin:keyboardLayout="@xml/keystyle_devanagari_vowel_sign_ai"/>
+            <Key
+                latin:additionalMoreKeys="२,2"
+                latin:keyHintLabel="2"
+                latin:keyStyle="baseKeyDevanagariVowelSignAi"/>
+            <include latin:keyboardLayout="@xml/keystyle_devanagari_vowel_sign_aa"/>
+            <Key
+                latin:additionalMoreKeys="३,3"
+                latin:keyHintLabel="3"
+                latin:keyStyle="baseKeyDevanagariVowelSignAa"/>
+            <include latin:keyboardLayout="@xml/keystyle_devanagari_vowel_sign_ii"/>
+            <Key
+                latin:additionalMoreKeys="४,4"
+                latin:keyHintLabel="4"
+                latin:keyStyle="baseKeyDevanagariVowelSignIi"/>
+            <include latin:keyboardLayout="@xml/keystyle_devanagari_vowel_sign_uu"/>
+            <Key
+                latin:additionalMoreKeys="५,5"
+                latin:keyHintLabel="5"
+                latin:keyStyle="baseKeyDevanagariVowelSignUu"/>
+            <Key
+                latin:additionalMoreKeys="६,6"
+                latin:keyHintLabel="6"
+                latin:keySpec="ब"
+                latin:moreKeys="ब॒,%"/>
+            <Key
+                latin:additionalMoreKeys="७,7"
+                latin:keyHintLabel="7"
+                latin:keySpec="ह"/>
+            <Key
+                latin:additionalMoreKeys="८,8"
+                latin:keyHintLabel="8"
+                latin:keySpec="ग"
+                latin:moreKeys="ज्ञ,ग़,ग॒,%"/>
+            <Key
+                latin:additionalMoreKeys="९,9"
+                latin:keyHintLabel="9"
+                latin:keySpec="द"/>
+            <Key
+                latin:additionalMoreKeys="०,0"
+                latin:keyHintLabel="0"
+                latin:keySpec="ज"
+                latin:moreKeys="ज॒,ज्ञ,ज़,%"/>
+            <Key
+                latin:keySpec="ड"
+                latin:moreKeys="ड॒,ड़"/>
+        </default>
+    </switch>
+</merge>

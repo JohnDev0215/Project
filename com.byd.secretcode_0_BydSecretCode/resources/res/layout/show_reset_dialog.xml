@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:textSize="@dimen/text_size_25sp"
+        android:textColor="@color/dicare_remind_reset_color"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/restart_alert_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_40"
+        android:text="@string/restart_efect"/>
+    <TextView
+        android:textSize="@dimen/text_size_20sp"
+        android:textColor="@color/dicare_remind_reset_color"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/restart_time_key"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_30"
+        android:text="@string/restart_time"/>
+    <Button
+        android:textSize="@dimen/text_size_20sp"
+        android:textColor="@color/text_color_white"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/restart_Confirm"
+        android:background="@drawable/dialog_button_bg_selector"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_30"
+        android:layout_marginBottom="@dimen/dp_30"
+        android:text="@string/restart_time"/>
+</LinearLayout>

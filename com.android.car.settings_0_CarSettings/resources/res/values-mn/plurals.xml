@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="billing_cycle_days_left">
+        <item quantity="one">%d өдөр үлдсэн</item>
+        <item quantity="other">%d өдөр үлдсэн</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_letters">
+        <item quantity="one">Хамгийн багадаа 1 үсэг агуулах ёстой</item>
+        <item quantity="other">Хамгийн багадаа %d үсэг агуулах ёстой</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_lowercase">
+        <item quantity="one">Хамгийн багадаа 1 жижиг үсэг агуулах ёстой</item>
+        <item quantity="other">Хамгийн багадаа %d жижиг үсэг агуулах ёстой</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_nonletter">
+        <item quantity="one">Хамгийн багадаа үсэгнээс өөр 1 тэмдэгт агуулах ёстой</item>
+        <item quantity="other">Хамгийн багадаа үсэгнээс өөр %d тэмдэгт агуулах ёстой</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_numeric">
+        <item quantity="one">Хамгийн багадаа 1 цифр агуулах ёстой</item>
+        <item quantity="other">Хамгийн багадаа %d цифр агуулах ёстой</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_symbols">
+        <item quantity="one">Хамгийн багадаа 1 тусгай дүрс тэмдэг агуулах ёстой</item>
+        <item quantity="other">Хамгийн багадаа %d тусгай дүрс тэмдэг агуулах ёстой</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_uppercase">
+        <item quantity="one">Хамгийн багадаа 1 том үсэг агуулах ёстой</item>
+        <item quantity="other">Хамгийн багадаа %d том үсэг агуулах ёстой</item>
+    </plurals>
+    <plurals name="mobile_network_summary_count">
+        <item quantity="one">%1$d SIM</item>
+        <item quantity="other">%1$d SIM</item>
+    </plurals>
+    <plurals name="runtime_permissions_additional_count">
+        <item quantity="one">Нэмэлт %d зөвшөөрөл</item>
+        <item quantity="other">Нэмэлт %d зөвшөөрөл</item>
+    </plurals>
+    <plurals name="show_dev_countdown">
+        <item quantity="one">Танд хөгжүүлэгч болоход одоо %1$d алхам дутуу байна.</item>
+        <item quantity="other">Танд хөгжүүлэгч болоход одоо %1$d алхам дутуу байна.</item>
+    </plurals>
+    <plurals name="user_limit_reached_message">
+        <item quantity="one">Зөвхөн нэг хэрэглэгч үүсгэх боломжтой.</item>
+        <item quantity="other">Та %d хүртэлх хэрэглэгч үүсгэх боломжтой.</item>
+    </plurals>
+    <plurals name="wifi_tether_connected_summary">
+        <item quantity="one">%1$d төхөөрөмж холбосон</item>
+        <item quantity="other">%1$d төхөөрөмж холбосон</item>
+    </plurals>
+</resources>

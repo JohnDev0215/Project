@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorActivate">#1ed760</color>
+    <color name="colorBackBtnBg">#181818</color>
+    <color name="colorBackground">#121212</color>
+    <color name="colorBar">#66b3b3b3</color>
+    <color name="colorBtnBg">#1ed760</color>
+    <color name="colorCenterIcon">#121212</color>
+    <color name="colorCommonText">#000000</color>
+    <color name="colorDialogBackground">#292929</color>
+    <color name="colorDialogBtnText">#000000</color>
+    <color name="colorDialogDivider">#12ffffff</color>
+    <color name="colorDialogText">#ffdae1eb</color>
+    <color name="colorDomain">#000000</color>
+    <color name="colorGrayedOut">#66ffffff</color>
+    <color name="colorHighlight">#282828</color>
+    <color name="colorLight">#b3b3b3</color>
+    <color name="colorListSubtitleActivate">@color/colorSecondary</color>
+    <color name="colorLogo">#d9d9d9</color>
+    <color name="colorOutlineEnd">#004a4949</color>
+    <color name="colorOutlineStart">#4a4949</color>
+    <color name="colorPermissionBg">#121212</color>
+    <color name="colorPopUpBG">#cc000000</color>
+    <color name="colorPressedStated">#21b3b3b3</color>
+    <color name="colorPrimary">#ffffff</color>
+    <color name="colorPrimaryComBG">#181818</color>
+    <color name="colorSecondary">#a7a7a8</color>
+    <color name="colorShadowEnd">#121212</color>
+    <color name="colorShadowStart">#00121212</color>
+    <color name="colorSplashIcon">#1db954</color>
+    <color name="colorTabSelected">#ffffff</color>
+    <color name="colorToast">#272727</color>
+    <color name="colorTopBg">#070707</color>
+    <color name="colorUnfocus">#7f7f7f</color>
+</resources>

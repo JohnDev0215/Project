@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="a2b_supplier">
+        <item>内置</item>
+        <item>丹拿品牌</item>
+        <item>非品牌booster</item>
+        <item>丹拿第二款</item>
+    </array>
+    <array name="armrest_screen_supplier">
+    </array>
+    <array name="audio">
+        <item>音频</item>
+        <item>MIC 1</item>
+        <item>MIC 2</item>
+        <item>MIC 3</item>
+        <item>MIC 4</item>
+        <item>MIC 5</item>
+        <item>MIC 6</item>
+        <item>A2B</item>
+        <item>内置功放(电流输出)</item>
+    </array>
+    <array name="aux_in_supplier">
+    </array>
+    <array name="avm_supplier">
+        <item>六部</item>
+        <item>智华</item>
+        <item>光大</item>
+        <item>优创</item>
+        <item>海康</item>
+        <item>联创</item>
+    </array>
+    <array name="built_in_supplier">
+    </array>
+    <array name="cluster_supplier">
+        <item>九部BOE</item>
+        <item>九部华星光电</item>
+        <item>九部天马</item>
+        <item>德赛</item>
+        <item>弗迪BOE</item>
+        <item>德赛华星光电</item>
+        <item>德赛BOE</item>
+        <item>弗迪华星光电</item>
+        <item>弗迪天马</item>
+        <item>N/A</item>
+        <item>天有为BOE</item>
+        <item>天有为华星光电</item>
+        <item>天有为天马</item>
+        <item>延锋BOE</item>
+        <item>延锋华星光电</item>
+        <item>天有为LG</item>
+        <item>五部</item>
+    </array>
+    <array name="communicate">
+        <item>通讯</item>
+        <item>W-HUD</item>
+        <item>USB(总成供电)</item>
+        <item>USB K歌口（供电/通讯）</item>
+        <item>ADAS</item>
+        <item>像素大灯左(以太网)</item>
+        <item>像素大灯右(以太网)</item>
+        <item>HUD(以太网)</item>
+        <item>4G/5G（T-BOX)</item>
+        <item>无人机</item>
+    </array>
+    <array name="dms_supplier">
+        <item>六部</item>
+        <item>智华</item>
+        <item>光大</item>
+        <item>优创</item>
+        <item>海康</item>
+        <item>联创</item>
+    </array>
+    <array name="dvr_supplier">
+        <item>六部</item>
+        <item>智华</item>
+        <item>光大</item>
+        <item>优创</item>
+        <item>海康</item>
+        <item>联创</item>
+    </array>
+    <array name="face_is_supplier">
+        <item>六部</item>
+        <item>智华</item>
+        <item>光大</item>
+        <item>优创</item>
+        <item>海康</item>
+        <item>联创</item>
+    </array>
+    <array name="functions">
+        <item>温度显示</item>
+        <item>GPS信息</item>
+        <item>Source测试</item>
+        <item>手机互联测试</item>
+        <item>麦克风测试</item>
+        <item>扬声器检测</item>
+        <item>USB测试</item>
+        <item>中控按键检测</item>
+        <item>方向盘按键检测</item>
+        <item>屏幕调试</item>
+        <item>屏幕显示检测</item>
+        <item>TP检测</item>
+        <item>DVR记录及回放</item>
+        <item>DMS检测</item>
+        <item>罐装证书</item>
+        <item>Link margin</item>
+    </array>
+    <array name="hud_supplier">
+        <item>六部</item>
+        <item>智华</item>
+        <item>光大</item>
+        <item>优创</item>
+        <item>海康</item>
+        <item>联创</item>
+    </array>
+    <array name="ims_supplier">
+        <item>六部</item>
+        <item>智华</item>
+        <item>光大</item>
+        <item>优创</item>
+        <item>海康</item>
+        <item>联创</item>
+    </array>
+    <array name="ivi_screen_supplier">
+        <item>九部BOE</item>
+        <item>九部华星光电</item>
+        <item>九部天马</item>
+        <item>德赛</item>
+        <item>弗迪BOE</item>
+        <item>德赛华星光电</item>
+        <item>德赛BOE</item>
+        <item>弗迪华星光电</item>
+        <item>弗迪天马</item>
+        <item>天有为BOE</item>
+        <item>天有为华星光电</item>
+        <item>天有为天马</item>
+        <item>延锋BOE</item>
+        <item>延锋华星光电</item>
+        <item>天有为LG</item>
+        <item>五部</item>
+        <item>迈凯瑞</item>
+        <item>德赛信利</item>
+        <item>德赛AUO</item>
+        <item>德赛三星</item>
+        <item>德赛LG</item>
+        <item>德赛深超</item>
+        <item>德赛龙腾</item>
+        <item>德赛群创</item>
+        <item>德赛和辉</item>
+        <item>延锋天马</item>
+        <item>延锋信利</item>
+        <item>延锋AUO</item>
+        <item>延锋三星</item>
+        <item>延锋LG</item>
+        <item>天有为信利</item>
+        <item>天有为AUO</item>
+        <item>天有为三星</item>
+        <item>弗迪信利</item>
+        <item>弗迪AUO</item>
+        <item>弗迪三星</item>
+        <item>九部信利</item>
+        <item>九部AUO</item>
+        <item>九部三星</item>
+        <item>九部LG</item>
+        <item>德赛天马</item>
+        <item>N/A</item>
+    </array>
+    <array name="main_name">
+        <item>模块电路</item>
+        <item>功能测试</item>
+        <item>版本号</item>
+        <item>USB升级系统</item>
+        <item>退出</item>
+    </array>
+    <array name="mic_supplier">
+    </array>
+    <array name="mode_source">
+        <item>收音机</item>
+        <item>音乐</item>
+        <item>视频</item>
+        <item>图片</item>
+        <item>卡拉OK</item>
+        <item>在线音乐</item>
+        <item>喜马拉雅</item>
+        <item>在线收音机</item>
+        <item>蓝牙音乐</item>
+        <item>NA</item>
+        <item>NA1</item>
+        <item>收音机FM</item>
+        <item>收音机AM</item>
+        <item>收音机DAB</item>
+    </array>
+    <array name="oms_supplier">
+        <item>六部</item>
+        <item>智华</item>
+        <item>光大</item>
+        <item>优创</item>
+        <item>海康</item>
+        <item>联创</item>
+    </array>
+    <array name="radio">
+        <item>射频</item>
+        <item>Wi-Fi（点击可看搜索列表与强度）</item>
+        <item>BT（点击可查搜索列表）</item>
+        <item>收音天线(FM/AM/DAB)（点击可查参数情况）</item>
+        <item>GNSS（GPS状态）</item>
+    </array>
+    <array name="rse_screen_supplier">
+        <item>九部BOE</item>
+        <item>九部华星光电</item>
+        <item>九部天马</item>
+        <item>德赛</item>
+        <item>弗迪BOE</item>
+        <item>德赛华星光电</item>
+        <item>德赛BOE</item>
+        <item>弗迪华星光电</item>
+        <item>弗迪天马</item>
+        <item>N/A</item>
+        <item>天有为BOE</item>
+        <item>天有为华星光电</item>
+        <item>天有为天马</item>
+        <item>延锋BOE</item>
+        <item>延锋华星光电</item>
+        <item>天有为LG</item>
+        <item>五部</item>
+    </array>
+    <array name="stream_media_supplier">
+        <item>六部</item>
+        <item>智华</item>
+        <item>光大</item>
+        <item>优创</item>
+        <item>海康</item>
+        <item>联创</item>
+    </array>
+    <array name="tbox_supplier">
+        <item>东软</item>
+        <item>德赛</item>
+    </array>
+    <array name="versions">
+        <item>系统版本号：</item>
+        <item>MCU APP版本号：</item>
+        <item>MCU Boot版本号：</item>
+        <item>QNX版本号：</item>
+        <item>硬件版本：</item>
+        <item>仪表硬件版本：</item>
+        <item>仪表软件版本：</item>
+        <item>IMEI号：</item>
+        <item>ICCID：</item>
+        <item>本机号码：</item>
+        <item>TBox软件版本：</item>
+        <item>TBox硬件版本：</item>
+        <item>IMSI编号：</item>
+        <item>TBOX整机序列号：</item>
+        <item>TP FW固件版本号：</item>
+    </array>
+    <array name="video">
+        <item>视频</item>
+        <item>DVR</item>
+        <item>DMS(视频信号)</item>
+        <item>OMS(视频信号)</item>
+        <item>IMS(视频信号)</item>
+        <item>FACE ID</item>
+        <item>AVM COAX_L</item>
+        <item>AVM COAX_B</item>
+        <item>AVM COAX_F</item>
+        <item>AVM COAX_R</item>
+        <item>仪表</item>
+        <item>中控</item>
+        <item>扶手</item>
+        <item>副驾</item>
+        <item>流媒体(像素大灯视频)</item>
+        <item>HUD(像素大灯视频)</item>
+        <item>DMS电源</item>
+        <item>OMS电源</item>
+        <item>IMS电源</item>
+    </array>
+</resources>

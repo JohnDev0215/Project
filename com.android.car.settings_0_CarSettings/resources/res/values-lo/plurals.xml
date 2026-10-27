@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="billing_cycle_days_left">
+        <item quantity="one">ຍັງເຫຼືອ %d ມື້</item>
+        <item quantity="other">ຍັງເຫຼືອ %d ມື້</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_letters">
+        <item quantity="one">ຕ້ອງມີຕົວອັກສອນຢ່າງໜ້ອຍ 1 ຕົວ</item>
+        <item quantity="other">ຕ້ອງມີຕົວອັກສອນຢ່າງໜ້ອຍ %d ຕົວ</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_lowercase">
+        <item quantity="one">ຕ້ອງມີຕົວອັກສອນຕົວພິມນ້ອຍຢ່າງໜ້ອຍ 1 ຕົວ</item>
+        <item quantity="other">ຕ້ອງມີຕົວອັກສອນຕົວພິມນ້ອຍຢ່າງໜ້ອຍ %d ຕົວ</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_nonletter">
+        <item quantity="one">ຕ້ອງມີອັກຂະລະທີ່ບໍ່ແມ່ນຕົວອັກສອນຢ່າງໜ້ອຍ 1 ຕົວ</item>
+        <item quantity="other">ຕ້ອງມີອັກຂະລະທີ່ບໍ່ແມ່ນຕົວອັກສອນຢ່າງໜ້ອຍ %d ຕົວ</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_numeric">
+        <item quantity="one">ຕ້ອງມີຕົວເລກຢ່າງໜ້ອຍ 1 ຕົວ</item>
+        <item quantity="other">ຕ້ອງມີຕົວເລກຢ່າງໜ້ອຍ %d ຕົວ</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_symbols">
+        <item quantity="one">ຕ້ອງມີສັນຍາລັກພິເສດຢ່າງໜ້ອຍ 1 ຕົວ</item>
+        <item quantity="other">ຕ້ອງມີສັນຍາລັກພິເສດຢ່າງໜ້ອຍ %d ຕົວ</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_uppercase">
+        <item quantity="one">ຕ້ອງມີຕົວອັກສອນຕົວພິມໃຫຍ່ຢ່າງໜ້ອຍ 1 ຕົວ</item>
+        <item quantity="other">ຕ້ອງມີຕົວອັກສອນຕົວພິມໃຫຍ່ຢ່າງໜ້ອຍ %d ຕົວ</item>
+    </plurals>
+    <plurals name="mobile_network_summary_count">
+        <item quantity="one">%1$d SIM</item>
+        <item quantity="other">%1$d SIM</item>
+    </plurals>
+    <plurals name="runtime_permissions_additional_count">
+        <item quantity="one">%d ການອະນຸຍາດເພີ່ມເຕີມ</item>
+        <item quantity="other">%d ການອະນຸຍາດເພີ່ມເຕີມ</item>
+    </plurals>
+    <plurals name="show_dev_countdown">
+        <item quantity="one">ຕອນນີ້ທ່ານຍັງອີກ %1$d ຂັ້ນຕອນກໍຈະເປັນຜູ້ພັດທະນາແລ້ວ.</item>
+        <item quantity="other">ຕອນນີ້ທ່ານຍັງອີກ %1$d ຂັ້ນຕອນກໍຈະເປັນຜູ້ພັດທະນາແລ້ວ.</item>
+    </plurals>
+    <plurals name="user_limit_reached_message">
+        <item quantity="one">ສາມາດສ້າງຜູ້ໃຊ້ໄດ້ໜຶ່ງຄົນເທົ່ານັ້ນ.</item>
+        <item quantity="other">ທ່ານສາມາດສ້າງຜູ້ໃຊ້ໄດ້ບໍ່ເກີນ %d ຄົນ.</item>
+    </plurals>
+    <plurals name="wifi_tether_connected_summary">
+        <item quantity="one">ເຊື່ອມຕໍ່ %1$d ອຸປະກອນແລ້ວ</item>
+        <item quantity="other">ເຊື່ອມຕໍ່ %1$d ອຸປະກອນແລ້ວ</item>
+    </plurals>
+</resources>

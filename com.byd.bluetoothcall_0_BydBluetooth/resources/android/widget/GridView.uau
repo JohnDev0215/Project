@@ -1,0 +1,12 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/widget/GridView;->mNumColumns:I,frameworks/base/core/java/android/widget/GridView.java,112,5,112,88,maxTargetSdk=28&trackingBug=117521080L
+Landroid/widget/GridView;->mHorizontalSpacing:I,frameworks/base/core/java/android/widget/GridView.java,115,5,115,25,
+Landroid/widget/GridView;->mRequestedHorizontalSpacing:I,frameworks/base/core/java/android/widget/GridView.java,117,5,117,25,
+Landroid/widget/GridView;->mVerticalSpacing:I,frameworks/base/core/java/android/widget/GridView.java,119,5,119,25,
+Landroid/widget/GridView;->mColumnWidth:I,frameworks/base/core/java/android/widget/GridView.java,122,5,122,88,maxTargetSdk=28&trackingBug=117521079L
+Landroid/widget/GridView;->mRequestedColumnWidth:I,frameworks/base/core/java/android/widget/GridView.java,124,5,124,25,
+Landroid/widget/GridView;->mRequestedNumColumns:I,frameworks/base/core/java/android/widget/GridView.java,126,5,126,88,maxTargetSdk=28&trackingBug=123769395L
+Landroid/widget/GridView;->fillDown(II)Landroid/view/View;,frameworks/base/core/java/android/widget/GridView.java,315,5,315,63,maxTargetSdk=28
+Landroid/widget/GridView;->fillUp(II)Landroid/view/View;,frameworks/base/core/java/android/widget/GridView.java,415,5,415,63,maxTargetSdk=28
+Landroid/widget/GridView;->determineColumns(I)Z,frameworks/base/core/java/android/widget/GridView.java,982,5,982,25,
+Landroid/widget/GridView;->sequenceScroll(I)Z,frameworks/base/core/java/android/widget/GridView.java,1902,5,1902,25,

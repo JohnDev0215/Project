@@ -1,0 +1,5 @@
+signature,file,startline,startcol,endline,endcol,properties
+Lcom/android/internal/app/IBatteryStats;->getStatistics()[B,frameworks/base/core/java/com/android/internal/app/IBatteryStats.aidl,52,1,52,25,
+Lcom/android/internal/app/IBatteryStats;->isCharging()Z,frameworks/base/core/java/com/android/internal/app/IBatteryStats.aidl,58,1,58,25,
+Lcom/android/internal/app/IBatteryStats;->computeChargeTimeRemaining()J,frameworks/base/core/java/com/android/internal/app/IBatteryStats.aidl,67,1,67,25,
+Lcom/android/internal/app/IBatteryStats;->getAwakeTimeBattery()J,frameworks/base/core/java/com/android/internal/app/IBatteryStats.aidl,137,1,137,25,

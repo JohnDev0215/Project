@@ -1,0 +1,51 @@
+package android.hardware.bydauto.energy.tsimpl;
+
+/* JADX INFO: loaded from: classes.dex */
+public interface EnergyHalId {
+    public static final int ID_CHANGE_P_HINT_R = 557847597;
+    public static final int ID_CHARGE_PORT_COVER_TIP_R = 557847601;
+    public static final int ID_DRIVE_DISTANCE_SHOW_MODER = 557847558;
+    public static final int ID_DRIVE_DISTANCE_SHOW_MODES = 557847557;
+    public static final int ID_DRIVE_DISTANCE_SHOW_STANDARDR = 557847569;
+    public static final int ID_DRIVE_DISTANCE_SHOW_STANDARDS = 557847570;
+    public static final int ID_ELECTRIC_POINT_FLAG = 557847581;
+    public static final int ID_ELECTRIC_SHOW_MODER = 557847565;
+    public static final int ID_ELECTRIC_SHOW_MODES = 557847566;
+    public static final int ID_ENERGY_ELECTRIC_CURVE_XR = 560010247;
+    public static final int ID_ENERGY_ELECTRIC_CURVE_YR = 560010248;
+    public static final int ID_ENERGY_MODER = 557847556;
+    public static final int ID_ENERGY_OIL_CURVE_XR = 560010249;
+    public static final int ID_ENERGY_OIL_CURVE_YR = 560010250;
+    public static final int ID_ENERGY_STATER = 557847586;
+    public static final int ID_EPEDAL_STATER = 557847563;
+    public static final int ID_EPEDAL_STATES = 557847564;
+    public static final int ID_HEV_ELECTRIC_POINT_FLAG_R = 557847587;
+    public static final int ID_HEV_LAST_200_M_ELECTRIC_CON_R = 559944740;
+    public static final int ID_I_T_A_C_EXIT_TAG_R = 557847598;
+    public static final int ID_I_T_A_C_MODE_R = 557847599;
+    public static final int ID_I_T_A_C_P_ALLOW_TAG_R = 557847596;
+    public static final int ID_I_T_A_C_P_STATE_R = 557847594;
+    public static final int ID_LAST200_M_ELECTRIC_CON = 559944735;
+    public static final int ID_LAST200_M_OIL_CON = 559944734;
+    public static final int ID_LAST50_K_M_ELECTRIC_CON_AVG = 559944737;
+    public static final int ID_LAST50_K_M_OIL_CON_AVG = 559944736;
+    public static final int ID_MANDATORY_ELECTRIC_STATER = 557847567;
+    public static final int ID_MANDATORY_ELECTRIC_STATES = 557847568;
+    public static final int ID_MEMORY_ELECTRIC_STATER = 557847576;
+    public static final int ID_MEMORY_ELECTRIC_STATES = 557847577;
+    public static final int ID_MEMORY_MAX_EV_STATER = 557847574;
+    public static final int ID_MEMORY_MAX_EV_STATES = 557847575;
+    public static final int ID_MEMORY_SPORT_STATER = 557847572;
+    public static final int ID_MEMORY_SPORT_STATES = 557847573;
+    public static final int ID_OIL_POINT_FLAG = 557847580;
+    public static final int ID_OPERATION_MODER = 557847552;
+    public static final int ID_OPERATION_MODE_NORMAL_R = 557847590;
+    public static final int ID_POWER_GENERATION_STATE = 557847554;
+    public static final int ID_POWER_GENERATION_VALUE = 557847555;
+    public static final int ID_PRE_SALE_MODEL_STATER = 557847578;
+    public static final int ID_PRE_SALE_MODEL_STATES = 557847579;
+    public static final int ID_RESET_CURVE_DATA = 557847571;
+    public static final int ID_RESET_CURVE_DATA_S = 557847589;
+    public static final int ID_ROAD_SURFACE_MODE = 557847553;
+    public static final int ID_ROAD_SURFACE_MODE_NORMAL_R = 557847592;
+}

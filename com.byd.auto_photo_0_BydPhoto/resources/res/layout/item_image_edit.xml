@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.byd.view.RoundCornerContainer xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/item_bg_img"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitCenter"/>
+        <View
+            android:id="@+id/item_bg_linear_shape"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_120"
+            android:layout_alignBottom="@+id/item_bg_img"/>
+        <TextView
+            android:textSize="@dimen/sp_15"
+            android:textColor="@android:color/white"
+            android:gravity="center"
+            android:id="@+id/item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Abc"
+            android:drawablePadding="@dimen/dp_5"
+            android:layout_centerVertical="true"/>
+        <ImageView
+            android:id="@+id/item_bg_selector"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </RelativeLayout>
+</com.byd.view.RoundCornerContainer>

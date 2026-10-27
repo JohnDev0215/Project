@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:start="@dimen/fragment_grid_scrollbar_to_right"
+        android:end="@dimen/fragment_grid_scrollbar_to_right">
+        <shape>
+            <size android:width="@dimen/scrollbar_width"/>
+            <solid android:color="?attr/scroll_bar_bg_color"/>
+            <corners android:radius="@dimen/scrollbar_width"/>
+        </shape>
+    </item>
+</layer-list>

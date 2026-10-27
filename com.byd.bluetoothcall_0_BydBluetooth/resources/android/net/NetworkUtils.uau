@@ -1,0 +1,8 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/net/NetworkUtils;->protectFromVpn(Ljava/io/FileDescriptor;)Z,frameworks/base/core/java/android/net/NetworkUtils.java,101,5,101,25,
+Landroid/net/NetworkUtils;->intToInetAddress(I)Ljava/net/InetAddress;,frameworks/base/core/java/android/net/NetworkUtils.java,181,5,181,25,
+Landroid/net/NetworkUtils;->prefixLengthToNetmaskInt(I)I,frameworks/base/core/java/android/net/NetworkUtils.java,203,5,203,25,
+Landroid/net/NetworkUtils;->netmaskToPrefixLength(Ljava/net/Inet4Address;)I,frameworks/base/core/java/android/net/NetworkUtils.java,226,5,226,25,
+Landroid/net/NetworkUtils;->numericToInetAddress(Ljava/lang/String;)Ljava/net/InetAddress;,frameworks/base/core/java/android/net/NetworkUtils.java,243,5,243,63,maxTargetSdk=28
+Landroid/net/NetworkUtils;->getImplicitNetmask(Ljava/net/Inet4Address;)I,frameworks/base/core/java/android/net/NetworkUtils.java,293,5,293,25,
+Landroid/net/NetworkUtils;->trimV4AddrZeros(Ljava/lang/String;)Ljava/lang/String;,frameworks/base/core/java/android/net/NetworkUtils.java,367,5,367,25,

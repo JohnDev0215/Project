@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@drawable/car_ui_activity_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <FrameLayout
+            android:id="@+id/fragment_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:indeterminate="true"
+            style="@style/TrimmedHorizontalProgressBar"/>
+        <TextView
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:gravity="center"
+            android:id="@+id/restricted_message"
+            android:background="?android:attr/colorPrimary"
+            android:focusable="false"
+            android:visibility="gone"
+            android:clickable="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/restricted_while_driving"/>
+    </FrameLayout>
+</LinearLayout>

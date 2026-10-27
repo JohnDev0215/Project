@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="DialerSettingsLight" parent="@style/SettingsLight">
+        <item name="android:windowBackground">@color/dialer_background_color</item>
+        <item name="android:actionModeBackground">@color/dialer_background_color</item>
+        <item name="android:dialogTheme">@style/DialerAlertDialogTheme</item>
+        <item name="android:colorAccent">@color/dialer_theme_color</item>
+        <item name="android:navigationBarColor">@color/dialer_background_color</item>
+        <item name="android:navigationBarDividerColor">@color/dialer_divider_color</item>
+    </style>
+    <style name="EmergencyInfoHintTextAppearance" parent="@android:style/TextAppearance.Material.Subhead">
+        <item name="android:textSize">@dimen/emergency_info_hint_text_size</item>
+        <item name="android:textColor">@color/white_70_percent</item>
+    </style>
+    <style name="EmergencyInfoNameTextAppearance" parent="@android:style/TextAppearance.Material.Subhead">
+        <item name="android:textSize">@dimen/emergency_info_name_text_size</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+    <style name="PhoneNumberTextAppearance" parent="@android:style/TextAppearance.Material.Subhead">
+        <item name="android:textSize">@dimen/emergency_shortcut_number_text_size</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+    <style name="PhoneNumberTypeAppearance" parent="">
+        <item name="android:textSize">@dimen/emergency_shortcut_type_text_size</item>
+        <item name="android:textColor">@color/white_70_percent</item>
+        <item name="android:fontFamily">roboto</item>
+    </style>
+    <style name="ShortcutViewHintTextAppearance" parent="@android:style/TextAppearance.Material.Subhead">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+    <style name="Theme.AppCompat.DayNight" parent="@style/Theme.AppCompat">
+    </style>
+    <style name="Theme.AppCompat.DayNight.DarkActionBar" parent="@style/Theme.AppCompat">
+    </style>
+    <style name="Theme.AppCompat.DayNight.Dialog" parent="@style/Theme.AppCompat.Dialog">
+    </style>
+    <style name="Theme.AppCompat.DayNight.Dialog.Alert" parent="@style/Theme.AppCompat.Dialog.Alert">
+    </style>
+    <style name="Theme.AppCompat.DayNight.Dialog.MinWidth" parent="@style/Theme.AppCompat.Dialog.MinWidth">
+    </style>
+    <style name="Theme.AppCompat.DayNight.DialogWhenLarge" parent="@style/Theme.AppCompat.DialogWhenLarge">
+    </style>
+    <style name="Theme.AppCompat.DayNight.NoActionBar" parent="@style/Theme.AppCompat.NoActionBar">
+    </style>
+    <style name="ThemeOverlay.AppCompat.DayNight" parent="@style/ThemeOverlay.AppCompat.Dark">
+    </style>
+</resources>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="billing_cycle_days_left">
+        <item quantity="one">%d દિવસ બાકી</item>
+        <item quantity="other">%d દિવસ બાકી</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_letters">
+        <item quantity="one">ઓછામાં ઓછા %d અક્ષર ધરાવતો હોવો જોઈએ</item>
+        <item quantity="other">ઓછામાં ઓછા %d અક્ષર ધરાવતો હોવો જોઈએ</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_lowercase">
+        <item quantity="one">ઓછામાં ઓછા %d લોઅરકેસ અક્ષર ધરાવતો હોવો જોઈએ</item>
+        <item quantity="other">ઓછામાં ઓછા %d લોઅરકેસ અક્ષર ધરાવતો હોવો જોઈએ</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_nonletter">
+        <item quantity="one">વર્ણ સિવાયના ઓછામાં ઓછા %d અક્ષર ધરાવતો હોવો જોઈએ</item>
+        <item quantity="other">વર્ણ સિવાયના ઓછામાં ઓછા %d અક્ષર ધરાવતો હોવો જોઈએ</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_numeric">
+        <item quantity="one">ઓછામાં ઓછા %d સંખ્યાવાચક અંક ધરાવતો હોવો જોઈએ</item>
+        <item quantity="other">ઓછામાં ઓછા %d સંખ્યાવાચક અંક ધરાવતો હોવો જોઈએ</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_symbols">
+        <item quantity="one">ઓછામાં ઓછા %d વિશિષ્ટ પ્રતીક ધરાવતો હોવો જોઈએ</item>
+        <item quantity="other">ઓછામાં ઓછા %d વિશિષ્ટ પ્રતીક ધરાવતો હોવો જોઈએ</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_uppercase">
+        <item quantity="one">ઓછામાં ઓછા %d અપરકેસ અક્ષર ધરાવતો હોવો જોઈએ</item>
+        <item quantity="other">ઓછામાં ઓછા %d અપરકેસ અક્ષર ધરાવતો હોવો જોઈએ</item>
+    </plurals>
+    <plurals name="mobile_network_summary_count">
+        <item quantity="one">%1$d સિમ</item>
+        <item quantity="other">%1$d સિમ</item>
+    </plurals>
+    <plurals name="runtime_permissions_additional_count">
+        <item quantity="one">%d વધારાની પરવાનગીઓ</item>
+        <item quantity="other">%d વધારાની પરવાનગીઓ</item>
+    </plurals>
+    <plurals name="show_dev_countdown">
+        <item quantity="one">હવે તમે ડેવલપર બનવાથી %1$d પગલું દૂર છો.</item>
+        <item quantity="other">હવે તમે ડેવલપર બનવાથી %1$d પગલાં દૂર છો.</item>
+    </plurals>
+    <plurals name="user_limit_reached_message">
+        <item quantity="one">તમે %d વપરાશકર્તા સુધી મંજૂરી આપી શકશો.</item>
+        <item quantity="other">તમે %d વપરાશકર્તા સુધી મંજૂરી આપી શકશો.</item>
+    </plurals>
+    <plurals name="wifi_tether_connected_summary">
+        <item quantity="one">%1$d ડિવાઇસ કનેક્ટ કર્યું</item>
+        <item quantity="other">%1$d ડિવાઇસ કનેક્ટ કર્યા</item>
+    </plurals>
+</resources>

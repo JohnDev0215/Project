@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="control_ac_array">
+        <item>Activa el aire acondicionado</item>
+        <item>Hacer la temperatura 25 grados</item>
+        <item>Quiero activar la circulación externa</item>
+        <item>Hace mucho calor</item>
+        <item>Disminuya la velocidad de ventilador</item>
+        <item>Pon la potencia del aire en el nivel 3</item>
+        <item>Activa el descongelador delantero</item>
+    </array>
+    <array name="control_seat_array">
+        <item>Prende la calefacción en el asiento del conductor</item>
+        <item>Prende la ventilación de asiento</item>
+        <item>Activa la ventilación del asiento del pasajero</item>
+        <item>Apaga la ventilación de asiento</item>
+    </array>
+    <array name="control_sunshade_array">
+        <item>Abre la sombrilla del quemacocos</item>
+        <item>Cierra la sombrilla del quemacocos</item>
+    </array>
+    <array name="offline_other_operations_array">
+        <item>Activar Bluetooth</item>
+        <item>Encender WiFi</item>
+        <item>Quiero que el tablero sea más brillante</item>
+        <item>Muestra la configuración del coche</item>
+        <item>Volver a la página principal</item>
+    </array>
+    <array name="offline_window_array">
+        <item>Abre la ventana</item>
+        <item>Abre las ventanas en el lado izquierdo trasero</item>
+        <item>Abre la ventana del lado del conductor</item>
+        <item>Cierra todas las ventanas</item>
+    </array>
+    <array name="rotate_screen_arrays">
+        <item>Rota la pantalla</item>
+    </array>
+    <array name="system_app_operations">
+        <item>Abre spotify</item>
+        <item>Muestra la configuración del coche</item>
+    </array>
+    <array name="system_other_operations_array">
+        <item>Activar Bluetooth</item>
+        <item>Encender WiFi</item>
+        <item>Quiero que el tablero sea más brillante</item>
+        <item>Volver a la página principal</item>
+    </array>
+</resources>

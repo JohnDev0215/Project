@@ -1,0 +1,186 @@
+package com.google.android.material.internal;
+
+import android.annotation.SuppressLint;
+import android.content.Context;
+import android.graphics.Canvas;
+import android.graphics.Rect;
+import android.graphics.drawable.Drawable;
+import android.view.MotionEvent;
+import android.view.View;
+import android.view.ViewGroup;
+import android.view.ViewParent;
+import java.lang.reflect.Method;
+import java.util.ArrayList;
+
+/* JADX INFO: compiled from: ViewOverlayApi14.java */
+/* JADX INFO: loaded from: classes.dex */
+class m implements o {
+
+    /* JADX INFO: renamed from: a, reason: collision with root package name */
+    protected a f2837a;
+
+    /* JADX INFO: compiled from: ViewOverlayApi14.java */
+    @SuppressLint({"ViewConstructor", "PrivateApi"})
+    static class a extends ViewGroup {
+
+        /* JADX INFO: renamed from: b, reason: collision with root package name */
+        static Method f2838b;
+
+        /* JADX INFO: renamed from: c, reason: collision with root package name */
+        ViewGroup f2839c;
+
+        /* JADX INFO: renamed from: d, reason: collision with root package name */
+        View f2840d;
+        ArrayList<Drawable> e;
+        m f;
+        private boolean g;
+
+        static {
+            try {
+                Class cls = Integer.TYPE;
+                f2838b = ViewGroup.class.getDeclaredMethod("invalidateChildInParentFast", cls, cls, Rect.class);
+            } catch (NoSuchMethodException unused) {
+            }
+        }
+
+        a(Context context, ViewGroup viewGroup, View view, m mVar) {
+            super(context);
+            this.e = null;
+            this.f2839c = viewGroup;
+            this.f2840d = view;
+            setRight(viewGroup.getWidth());
+            setBottom(viewGroup.getHeight());
+            viewGroup.addView(this);
+            this.f = mVar;
+        }
+
+        private void b() {
+            if (this.g) {
+                throw new IllegalStateException("This overlay was disposed already. Please use a new one via ViewGroupUtils.getOverlay()");
+            }
+        }
+
+        private void c() {
+            if (getChildCount() == 0) {
+                ArrayList<Drawable> arrayList = this.e;
+                if (arrayList == null || arrayList.size() == 0) {
+                    this.g = true;
+                    this.f2839c.removeView(this);
+                }
+            }
+        }
+
+        private void d(int[] iArr) {
+            int[] iArr2 = new int[2];
+            int[] iArr3 = new int[2];
+            this.f2839c.getLocationOnScreen(iArr2);
+            this.f2840d.getLocationOnScreen(iArr3);
+            iArr[0] = iArr3[0] - iArr2[0];
+            iArr[1] = iArr3[1] - iArr2[1];
+        }
+
+        public void a(Drawable drawable) {
+            b();
+            if (this.e == null) {
+                this.e = new ArrayList<>();
+            }
+            if (this.e.contains(drawable)) {
+                return;
+            }
+            this.e.add(drawable);
+            invalidate(drawable.getBounds());
+            drawable.setCallback(this);
+        }
+
+        @Override // android.view.ViewGroup, android.view.View
+        protected void dispatchDraw(Canvas canvas) {
+            this.f2839c.getLocationOnScreen(new int[2]);
+            this.f2840d.getLocationOnScreen(new int[2]);
+            canvas.translate(r0[0] - r1[0], r0[1] - r1[1]);
+            canvas.clipRect(new Rect(0, 0, this.f2840d.getWidth(), this.f2840d.getHeight()));
+            super.dispatchDraw(canvas);
+            ArrayList<Drawable> arrayList = this.e;
+            int size = arrayList == null ? 0 : arrayList.size();
+            for (int i = 0; i < size; i++) {
+                this.e.get(i).draw(canvas);
+            }
+        }
+
+        @Override // android.view.ViewGroup, android.view.View
+        public boolean dispatchTouchEvent(MotionEvent motionEvent) {
+            return false;
+        }
+
+        public void e(Drawable drawable) {
+            ArrayList<Drawable> arrayList = this.e;
+            if (arrayList != null) {
+                arrayList.remove(drawable);
+                invalidate(drawable.getBounds());
+                drawable.setCallback(null);
+                c();
+            }
+        }
+
+        @Override // android.view.ViewGroup, android.view.ViewParent
+        public ViewParent invalidateChildInParent(int[] iArr, Rect rect) {
+            if (this.f2839c == null) {
+                return null;
+            }
+            rect.offset(iArr[0], iArr[1]);
+            if (this.f2839c == null) {
+                invalidate(rect);
+                return null;
+            }
+            iArr[0] = 0;
+            iArr[1] = 0;
+            int[] iArr2 = new int[2];
+            d(iArr2);
+            rect.offset(iArr2[0], iArr2[1]);
+            return super.invalidateChildInParent(iArr, rect);
+        }
+
+        @Override // android.view.View, android.graphics.drawable.Drawable.Callback
+        public void invalidateDrawable(Drawable drawable) {
+            invalidate(drawable.getBounds());
+        }
+
+        @Override // android.view.ViewGroup, android.view.View
+        protected void onLayout(boolean z, int i, int i2, int i3, int i4) {
+        }
+
+        @Override // android.view.View
+        protected boolean verifyDrawable(Drawable drawable) {
+            ArrayList<Drawable> arrayList;
+            return super.verifyDrawable(drawable) || ((arrayList = this.e) != null && arrayList.contains(drawable));
+        }
+    }
+
+    m(Context context, ViewGroup viewGroup, View view) {
+        this.f2837a = new a(context, viewGroup, view, this);
+    }
+
+    static m c(View view) {
+        ViewGroup viewGroupD = p.d(view);
+        if (viewGroupD == null) {
+            return null;
+        }
+        int childCount = viewGroupD.getChildCount();
+        for (int i = 0; i < childCount; i++) {
+            View childAt = viewGroupD.getChildAt(i);
+            if (childAt instanceof a) {
+                return ((a) childAt).f;
+            }
+        }
+        return new l(viewGroupD.getContext(), viewGroupD, view);
+    }
+
+    @Override // com.google.android.material.internal.o
+    public void a(Drawable drawable) {
+        this.f2837a.a(drawable);
+    }
+
+    @Override // com.google.android.material.internal.o
+    public void b(Drawable drawable) {
+        this.f2837a.e(drawable);
+    }
+}

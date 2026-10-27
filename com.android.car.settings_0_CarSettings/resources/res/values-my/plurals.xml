@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="billing_cycle_days_left">
+        <item quantity="one">%d ရက် ကျန်သည်</item>
+        <item quantity="other">%d ရက် ကျန်သည်</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_letters">
+        <item quantity="one">အနည်းဆုံး စာလုံး ၁ လုံးပါဝင်ရမည်</item>
+        <item quantity="other">အနည်းဆုံး စာလုံး %d လုံးပါဝင်ရမည်</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_lowercase">
+        <item quantity="one">အနည်းဆုံး စာလုံးငယ် ၁ လုံးပါဝင်ရမည်</item>
+        <item quantity="other">အနည်းဆုံး စာလုံးငယ် %d လုံးပါဝင်ရမည်</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_nonletter">
+        <item quantity="one">အနည်းဆုံး စာမဟုတ်သည့်အက္ခရာ ၁ လုံး ပါဝင်ရမည်</item>
+        <item quantity="other">အနည်းဆုံး စာမဟုတ်သည့်အက္ခရာ %d လုံး ပါဝင်ရမည်</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_numeric">
+        <item quantity="one">အနည်းဆုံး ဂဏန်း ၁ လုံးပါဝင်ရမည်</item>
+        <item quantity="other">အနည်းဆုံး ဂဏန်း %d လုံးပါဝင်ရမည်</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_symbols">
+        <item quantity="one">အနည်းဆုံး အထူးသင်္ကေတ ၁ ခု ပါဝင်ရမည်</item>
+        <item quantity="other">အနည်းဆုံး အထူးသင်္ကေတ %d ခု ပါဝင်ရမည်</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_uppercase">
+        <item quantity="one">အနည်းဆုံး စာလုံးကြီး ၁ လုံး ပါဝင်ရမည်</item>
+        <item quantity="other">အနည်းဆုံး စာလုံးကြီး %d လုံး ပါဝင်ရမည်</item>
+    </plurals>
+    <plurals name="mobile_network_summary_count">
+        <item quantity="one">ဆင်းမ်ကတ် %1$d ခု</item>
+        <item quantity="other">ဆင်းမ်ကတ် %1$d ခု</item>
+    </plurals>
+    <plurals name="runtime_permissions_additional_count">
+        <item quantity="one">နောက်ထပ် ခွင့်ပြုချက် %d ခု</item>
+        <item quantity="other">နောက်ထပ် ခွင့်ပြုချက် %d ခု</item>
+    </plurals>
+    <plurals name="show_dev_countdown">
+        <item quantity="one">သင် ဆော့ဖ်ဝဲအင်ဂျင်နီယာ ဖြစ်ရန် အဆင့် %1$d ဆင့် လိုပါသေးသည်။</item>
+        <item quantity="other">သင် ဆော့ဖ်ဝဲအင်ဂျင်နီယာ ဖြစ်ရန် အဆင့် %1$d ဆင့် လိုပါသေးသည်။</item>
+    </plurals>
+    <plurals name="user_limit_reached_message">
+        <item quantity="one">အသုံးပြုသူ တစ်ဦးသာ ထည့်နိုင်သည်။</item>
+        <item quantity="other">အသုံးပြုသူ %d ဦးအထိ သင်ဖန်တီးနိုင်သည်။</item>
+    </plurals>
+    <plurals name="wifi_tether_connected_summary">
+        <item quantity="one">စက် %1$d ခု ချိတ်ဆက်ထားသည်</item>
+        <item quantity="other">စက် %1$d ခု ချိတ်ဆက်ထားသည်</item>
+    </plurals>
+</resources>

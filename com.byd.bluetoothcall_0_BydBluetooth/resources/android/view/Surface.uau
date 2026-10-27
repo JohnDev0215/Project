@@ -1,0 +1,12 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/view/Surface;->nativeRelease(J)V,frameworks/base/core/java/android/view/Surface.java,73,5,73,25,
+Landroid/view/Surface;->mLock:Ljava/lang/Object;,frameworks/base/core/java/android/view/Surface.java,120,5,120,25,
+Landroid/view/Surface;->mName:Ljava/lang/String;,frameworks/base/core/java/android/view/Surface.java,122,5,122,25,
+Landroid/view/Surface;->mNativeObject:J,frameworks/base/core/java/android/view/Surface.java,124,5,124,25,
+Landroid/view/Surface;->mLockedObject:J,frameworks/base/core/java/android/view/Surface.java,126,5,126,25,
+Landroid/view/Surface;-><init>()V,frameworks/base/core/java/android/view/Surface.java,219,5,219,25,
+Landroid/view/Surface;-><init>(J)V,frameworks/base/core/java/android/view/Surface.java,263,5,263,25,
+Landroid/view/Surface;->destroy()V,frameworks/base/core/java/android/view/Surface.java,306,5,306,25,
+Landroid/view/Surface;->getNextFrameNumber()J,frameworks/base/core/java/android/view/Surface.java,355,5,355,25,
+Landroid/view/Surface;->copyFrom(Landroid/view/SurfaceControl;)V,frameworks/base/core/java/android/view/Surface.java,547,5,547,25,
+Landroid/view/Surface;->transferFrom(Landroid/view/Surface;)V,frameworks/base/core/java/android/view/Surface.java,610,5,610,25,

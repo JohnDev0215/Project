@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="downloads">
+        <item>@string/document</item>
+        <item>@string/audio</item>
+        <item>@string/video</item>
+        <item>@string/image</item>
+        <item>@string/compressed_packages</item>
+        <item>@string/apk</item>
+    </array>
+    <array name="file_attr_img_items">
+        <item>@string/name</item>
+        <item>@string/shooting_time</item>
+        <item>@string/shooting_location</item>
+        <item>@string/file_size</item>
+        <item>@string/resolution</item>
+        <item>@string/save_path</item>
+    </array>
+    <array name="file_attr_items">
+        <item>@string/name</item>
+        <item>@string/file_size</item>
+        <item>@string/attributes</item>
+        <item>@string/save_path</item>
+    </array>
+    <array name="icon_list_medium_large">
+        <item>@drawable/icon_filemanager_local_96</item>
+        <item>@drawable/icon_filemanager_sd_96</item>
+        <item>@drawable/icon_filemanager_usb_96</item>
+    </array>
+    <array name="icon_list_menu">
+        <item>@drawable/icon_file_lately_48</item>
+        <item>@drawable/icon_file_all_48</item>
+        <item>@drawable/icon_file_audiofrequency_48</item>
+        <item>@drawable/icon_album_video_48</item>
+        <item>@drawable/icon_album_photo_48</item>
+    </array>
+    <array name="icon_list_more">
+        <item>@drawable/icon_file_rename_48</item>
+        <item>@drawable/icon_public_movefc_48</item>
+        <item>@drawable/icon_file_open_48</item>
+        <item>@drawable/icon_file_compress_48</item>
+        <item>@drawable/icon_public_details_48</item>
+        <item>@drawable/icon_file_openparty_48</item>
+    </array>
+    <array name="icon_list_more_short">
+        <item>@drawable/icon_public_movefc_48</item>
+        <item>@drawable/icon_file_compress_48</item>
+    </array>
+    <array name="icon_tab_path">
+        <item>@drawable/icon_media_folder_24</item>
+        <item>@drawable/icon_media_sd_24</item>
+        <item>@drawable/icon_media_usb_24</item>
+    </array>
+    <array name="menus">
+        <item>@string/recents</item>
+        <item>@string/all_files</item>
+        <item>@string/audio</item>
+        <item>@string/video</item>
+        <item>@string/image</item>
+    </array>
+    <array name="more_items">
+        <item>@string/rename</item>
+        <item>@string/move</item>
+        <item>@string/open</item>
+        <item>@string/compress</item>
+        <item>@string/detail</item>
+        <item>@string/open_mode</item>
+    </array>
+    <array name="more_items_short">
+        <item>@string/move</item>
+        <item>@string/compress</item>
+    </array>
+    <array name="sort_items">
+        <item>@string/name</item>
+        <item>@string/size</item>
+        <item>@string/time</item>
+        <item>@string/type</item>
+    </array>
+    <array name="tabs">
+        <item>@string/local</item>
+        <item>@string/sdcard</item>
+        <item>@string/usb</item>
+    </array>
+    <array name="tabs_all">
+        <item>@string/all</item>
+        <item>@string/local</item>
+        <item>@string/sdcard</item>
+        <item>@string/usb</item>
+    </array>
+    <array name="weeklist">
+        <item>1 week</item>
+        <item>2 weeks</item>
+        <item>3 weeks</item>
+        <item>4 weeks</item>
+        <item>5 weeks</item>
+        <item>6 weeks</item>
+        <item>7 weeks</item>
+        <item>8 weeks</item>
+        <item>9 weeks</item>
+        <item>10 weeks</item>
+        <item>11 weeks</item>
+        <item>12 weeks</item>
+    </array>
+</resources>

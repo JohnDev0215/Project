@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="10021"
+    android:versionName="V1.0.21.01"
+    android:compileSdkVersion="33"
+    android:compileSdkVersionCodename="13"
+    package="com.android.car.media"
+    platformBuildVersionCode="33"
+    platformBuildVersionName="13">
+    <uses-sdk
+        android:minSdkVersion="29"
+        android:targetSdkVersion="30"/>
+    <uses-permission android:name="android.permission.MEDIA_CONTENT_CONTROL"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="android.permission.BYDAUTO_GEARBOX_GET"/>
+    <uses-permission android:name="android.permission.BYDAUTO_GEARBOX_COMMON"/>
+    <uses-permission android:name="android.permission.BYDAUTO_AUDIO_SET"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.START_ACTIVITIES_FROM_BACKGROUND"/>
+    <queries>
+        <intent>
+            <action android:name="android.media.browse.MediaBrowserService"/>
+        </intent>
+        <provider
+            android:name="com.android.car.ui.plugin.PluginNameProvider"
+            android:authorities="com.android.car.ui.plugin"/>
+    </queries>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <application
+        android:theme="@style/Theme.Media"
+        android:label="@string/dmusic_main_launcher_name"
+        android:icon="@drawable/icon_app_amazon_music"
+        android:name="com.android.car.media.byd.MediaApplication"
+        android:allowBackup="false"
+        android:supportsRtl="true"
+        android:extractNativeLibs="false"
+        android:resizeableActivity="false"
+        android:roundIcon="@drawable/icon_app_amazon_music_round"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory">
+        <meta-data
+            android:name="android.car.application"
+            android:resource="@xml/automotive_app_desc"/>
+        <meta-data
+            android:name="SUPPORT_DYNAMIC_CONFIGURATION_IN_APP_LIST"
+            android:value="true"/>
+        <provider
+            android:name="com.android.car.media.DynaConfigContentProvider"
+            android:exported="true"
+            android:authorities="com.android.car.media.DynaConfigContentProvider"/>
+        <activity
+            android:name="com.android.car.media.MediaActivity"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:configChanges="uiMode"
+            android:windowSoftInputMode="adjustPan|stateHidden">
+            <meta-data
+                android:name="distractionOptimized"
+                android:value="true"/>
+        </activity>
+        <activity
+            android:theme="@android:style/Theme.NoDisplay"
+            android:name="com.android.car.media.MediaDispatcherActivity"
+            android:exported="true"
+            android:launchMode="singleTask">
+            <meta-data
+                android:name="distractionOptimized"
+                android:value="true"/>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.INFO"/>
+                <category android:name="android.intent.category.APP_MUSIC"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.car.intent.action.MEDIA_TEMPLATE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <service
+            android:name="com.android.car.media.service.MediaConnectorService"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.android.car.media.MEDIA_CONNECTION"/>
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.android.car.media.byd.voice.AmazonMusicVoiceService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="action.com.android.car.media.byd.AmazonMusicVoiceService"/>
+            </intent-filter>
+        </service>
+        <provider
+            android:name="com.blankj.utilcode.util.UtilsFileProvider"
+            android:exported="false"
+            android:authorities="com.android.car.media.utilcode.fileprovider"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/util_code_provider_paths"/>
+        </provider>
+        <receiver
+            android:name="com.android.car.media.byd.BydCarMediaReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_BUTTON"/>
+                <action android:name="byd.intent.action.MEDIA_MODE"/>
+                <action android:name="byd.intent.action.MEDIA_TEST.NEXT"/>
+                <action android:name="byd.intent.action.MEDIA_TEST.PREVIOUS"/>
+                <action android:name="byd.intent.action.MEDIA_TEST.PLAY"/>
+                <action android:name="byd.intent.action.MEDIA_TEST.PAUSE"/>
+                <action android:name="byd.intent.action.MEDIA_TEST.STOP"/>
+                <action android:name="byd.intent.action.MEDIA_TEST.SHUFFLE"/>
+                <action android:name="com.byd.systemui.ACTION_KILL_PROCESS"/>
+                <action android:name="android.intent.action.LOCALE_CHANGED"/>
+                <action android:name="byd.intent.action.AMAZON_MEMORY_PLAY"/>
+                <action android:name="byd.intent.action.MEDIA_AMAZON.NEXT"/>
+                <action android:name="byd.intent.action.MEDIA_AMAZON.PAUSE"/>
+                <action android:name="byd.intent.action.MEDIA_AMAZON.PLAY"/>
+                <action android:name="byd.intent.action.MEDIA_AMAZON.PREVIOUS"/>
+            </intent-filter>
+        </receiver>
+        <provider
+            android:name="com.android.car.ui.core.CarUiInstaller"
+            android:exported="false"
+            android:process="@string/car_ui_installer_process_name"
+            android:authorities="com.android.car.media.CarUiInstaller"
+            android:directBootAware="true"/>
+        <provider
+            android:name="com.android.car.ui.core.SearchResultsProvider"
+            android:readPermission="com.android.car.ui.READ_SEARCH_RESULTS"
+            android:exported="true"
+            android:process="@string/car_ui_installer_process_name"
+            android:authorities="com.android.car.media.SearchResultsProvider"/>
+        <activity
+            android:theme="@style/ActivityTranslucent"
+            android:name="com.blankj.utilcode.util.UtilsTransActivity4MainProcess"
+            android:configChanges="screenSize|orientation|keyboardHidden"
+            android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity
+            android:theme="@style/ActivityTranslucent"
+            android:name="com.blankj.utilcode.util.UtilsTransActivity"
+            android:multiprocess="true"
+            android:configChanges="screenSize|orientation|keyboardHidden"
+            android:windowSoftInputMode="stateAlwaysHidden"/>
+        <service
+            android:name="com.blankj.utilcode.util.MessengerUtils.ServerService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.android.car.media.messenger"/>
+            </intent-filter>
+        </service>
+        <provider
+            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+            android:exported="false"
+            android:multiprocess="true"
+            android:authorities="com.android.car.media.lifecycle-process"/>
+    </application>
+</manifest>

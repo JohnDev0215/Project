@@ -1,0 +1,3 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/database/AbstractCursor;->mNotifyUri:Landroid/net/Uri;,frameworks/base/core/java/android/database/AbstractCursor.java,75,5,75,25,
+Landroid/database/AbstractCursor;->mExtras:Landroid/os/Bundle;,frameworks/base/core/java/android/database/AbstractCursor.java,86,5,86,88,maxTargetSdk=28&trackingBug=115609023L

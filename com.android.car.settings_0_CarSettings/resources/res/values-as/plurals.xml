@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="billing_cycle_days_left">
+        <item quantity="one">%d দিন বাকী আছে</item>
+        <item quantity="other">%d দিন বাকী আছে</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_letters">
+        <item quantity="one">অতি কমেও %d টা বৰ্ণ থাকিব লাগিব</item>
+        <item quantity="other">অতি কমেও %d বৰ্ণ থাকিব লাগিব</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_lowercase">
+        <item quantity="one">অতি কমেও %dটা সৰুফলাৰ বৰ্ণ থাকিব লাগিব</item>
+        <item quantity="other">অতি কমেও %dটা সৰুফলাৰ বৰ্ণ থাকিব লাগিব</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_nonletter">
+        <item quantity="one">অতি কমেও %dটা সংখ্যা বা প্ৰতীক থাকিব লাগিব</item>
+        <item quantity="other">অতি কমেও %dটা সংখ্যা বা প্ৰতীক থাকিব লাগিব</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_numeric">
+        <item quantity="one">কমেও %dটা অংক থাকিব লাগিব</item>
+        <item quantity="other">কমেও %dটা অংক থাকিব লাগিব</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_symbols">
+        <item quantity="one">অতি কমেও %dটা বিশেষ চিহ্ন থাকিব লাগিব</item>
+        <item quantity="other">অতি কমেও %dটা বিশেষ চিহ্ন থাকিব লাগিব</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_uppercase">
+        <item quantity="one">অতি কমেও %dটা বৰফলাৰ বৰ্ণ থাকিব লাগিব</item>
+        <item quantity="other">অতি কমেও %dটা বৰফলাৰ বৰ্ণ থাকিব লাগিব</item>
+    </plurals>
+    <plurals name="mobile_network_summary_count">
+        <item quantity="one">%1$d খন ছিম</item>
+        <item quantity="other">%1$d খন ছিম</item>
+    </plurals>
+    <plurals name="runtime_permissions_additional_count">
+        <item quantity="one">%dটা অতিৰিক্ত অনুমতি</item>
+        <item quantity="other">%dটা অতিৰিক্ত অনুমতি</item>
+    </plurals>
+    <plurals name="show_dev_countdown">
+        <item quantity="one">আপুনি এতিয়া এজন বিকাশকৰ্তা হোৱাৰ পৰা %1$dটা পদক্ষেপ দূৰত।</item>
+        <item quantity="other">আপুনি এতিয়া এজন বিকাশকৰ্তা হোৱাৰ পৰা %1$dটা পদক্ষেপ দূৰত।</item>
+    </plurals>
+    <plurals name="user_limit_reached_message">
+        <item quantity="one">আপুনি %d জন পৰ্যন্ত ব্যৱহাৰকাৰী সৃষ্টি কৰিব পাৰে।</item>
+        <item quantity="other">আপুনি %d জন পৰ্যন্ত ব্যৱহাৰকাৰী সৃষ্টি কৰিব পাৰে।</item>
+    </plurals>
+    <plurals name="wifi_tether_connected_summary">
+        <item quantity="one">%1$dটা ডিভাইচ সংযোগ হ’ল</item>
+        <item quantity="other">%1$dটা ডিভাইচ সংযোগ হ’ল</item>
+    </plurals>
+</resources>

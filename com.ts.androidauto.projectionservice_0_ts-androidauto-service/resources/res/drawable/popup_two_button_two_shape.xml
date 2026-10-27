@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+    <corners
+        android:topRightRadius="@dimen/two_button_shape_radius"
+        android:bottomRightRadius="@dimen/two_button_shape_radius"/>
+    <solid android:color="@color/popup_light_button_background_color"/>
+    <size
+        android:height="@dimen/two_button_shape_height"
+        android:width="@dimen/two_button_shape_width"/>
+</shape>

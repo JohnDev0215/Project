@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:id="@+id/ll_view_custom_flow_limited"
+    android:visibility="gone"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_48"
+    android:layout_marginTop="@dimen/dp_16"
+    android:layout_marginBottom="@dimen/dp_26">
+    <RelativeLayout
+        android:background="@drawable/bg_frame_blue_content_transparent_00"
+        android:layout_width="@dimen/dp_172"
+        android:layout_height="@dimen/dp_48">
+        <com.byd.mvp.ui.widget.NoMenuEditText
+            android:textSize="@dimen/sp_18"
+            android:textColor="@color/text_color_main_dilink_pagers"
+            android:id="@+id/et_custom_value_custom_flow_limited"
+            android:background="@color/transparent_00"
+            android:layout_width="@dimen/dp_120"
+            android:layout_height="@dimen/dp_42"
+            android:layout_centerVertical="true"
+            android:inputType="number"
+            android:layout_marginStart="@dimen/dp_18"/>
+        <ImageView
+            android:id="@+id/iv_delete_custom_flow_limited"
+            android:background="@drawable/icon_public_close_edit_48"
+            android:layout_width="@dimen/dp_48"
+            android:layout_height="@dimen/dp_48"
+            android:layout_marginStart="@dimen/dp_8"
+            android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+</LinearLayout>

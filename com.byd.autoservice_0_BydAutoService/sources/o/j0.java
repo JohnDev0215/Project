@@ -1,0 +1,41 @@
+package o;
+
+import android.content.Context;
+import android.content.res.Resources;
+import android.graphics.drawable.Drawable;
+import android.os.Build;
+import java.lang.ref.WeakReference;
+
+/* JADX INFO: compiled from: VectorEnabledTintResources.java */
+/* JADX INFO: loaded from: classes.dex */
+public class j0 extends Resources {
+
+    /* JADX INFO: renamed from: a, reason: collision with root package name */
+    public static boolean f4315a = false;
+
+    /* JADX INFO: renamed from: b, reason: collision with root package name */
+    public final WeakReference<Context> f4316b;
+
+    public j0(Context context, Resources resources) {
+        super(resources.getAssets(), resources.getDisplayMetrics(), resources.getConfiguration());
+        this.f4316b = new WeakReference<>(context);
+    }
+
+    public static boolean a() {
+        return f4315a;
+    }
+
+    public static boolean b() {
+        return a() && Build.VERSION.SDK_INT <= 20;
+    }
+
+    public final Drawable c(int i3) {
+        return super.getDrawable(i3);
+    }
+
+    @Override // android.content.res.Resources
+    public Drawable getDrawable(int i3) throws Resources.NotFoundException {
+        Context context = this.f4316b.get();
+        return context != null ? v.h().t(context, this, i3) : super.getDrawable(i3);
+    }
+}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="?attr/userSwitcherAddIconBackgroundColor"/>
+            <size
+                android:height="@dimen/user_switcher_image_avatar_size"
+                android:width="@dimen/user_switcher_image_avatar_size"/>
+        </shape>
+    </item>
+    <item
+        android:gravity="center"
+        android:drawable="@drawable/ic_user_add"/>
+</layer-list>

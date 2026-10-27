@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="abc_action_bar_home_description">Idi na početnu</string>
+    <string name="abc_action_bar_up_description">Natrag</string>
+    <string name="abc_action_menu_overflow_description">Više opcija</string>
+    <string name="abc_action_mode_done">Gotovo</string>
+    <string name="abc_activity_chooser_view_see_all">Prikaži sve</string>
+    <string name="abc_activitychooserview_choose_application">Odabir aplikacije</string>
+    <string name="abc_capital_off">ISKLJUČENO</string>
+    <string name="abc_capital_on">UKLJUČENO</string>
+    <string name="abc_menu_alt_shortcut_label">Alt+</string>
+    <string name="abc_menu_ctrl_shortcut_label">Ctrl+</string>
+    <string name="abc_menu_delete_shortcut_label">delete</string>
+    <string name="abc_menu_enter_shortcut_label">enter</string>
+    <string name="abc_menu_function_shortcut_label">Function+</string>
+    <string name="abc_menu_meta_shortcut_label">Meta+</string>
+    <string name="abc_menu_shift_shortcut_label">Shift+</string>
+    <string name="abc_menu_space_shortcut_label">svemir</string>
+    <string name="abc_menu_sym_shortcut_label">Sym+</string>
+    <string name="abc_prepend_shortcut_label">Menu+</string>
+    <string name="abc_search_hint">Pretražite…</string>
+    <string name="abc_searchview_description_clear">Izbriši upit</string>
+    <string name="abc_searchview_description_query">Upit za pretraživanje</string>
+    <string name="abc_searchview_description_search">Pretraži</string>
+    <string name="abc_searchview_description_submit">Pošalji upit</string>
+    <string name="abc_searchview_description_voice">Glasovno pretraživanje</string>
+    <string name="abc_shareactionprovider_share_with">Dijeli s</string>
+    <string name="abc_shareactionprovider_share_with_application">Dijeli putem aplikacije %s</string>
+    <string name="abc_toolbar_collapse_description">Sažmi</string>
+    <string name="install">Instaliraj aplikaciju</string>
+    <string name="qrcode_expired">Isteklo. Dodirnite za osvježavanje</string>
+    <string name="qrcode_network_warning">Trenutačna mreža nije dostupna. Provjerite mrežne postavke</string>
+    <string name="qrcode_refresh_fail">Dobivanje nije moguće. Dodirnite za osvježavanje</string>
+    <string name="qrcode_scan_type_vds">VDS skeniranje</string>
+    <string name="qrcode_scan_type_wechat">WeCom skeniranje</string>
+    <string name="qrcode_success">Skeniranje uspješno</string>
+    <string name="qrcode_time">Preostalo: %d</string>
+    <string name="qrcode_tip">Skenirajte QR kod da biste dobili autorizaciju</string>
+    <string name="qrcode_title">Potvrdi</string>
+    <string name="qrcode_title_with_module">Potvrda za %s</string>
+    <string name="search_menu_title">Pretraži</string>
+    <string name="status_bar_notification_info_overflow">999+</string>
+</resources>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dimens_75"
+    android:minHeight="@dimen/dimens_75">
+    <ImageView
+        android:id="@+id/call_log_type"
+        android:layout_width="@dimen/dimens_48"
+        android:layout_height="@dimen/dimens_48"
+        android:src="@drawable/callout_icon"
+        android:layout_centerVertical="true"/>
+    <TextView
+        android:textSize="@dimen/text_sp_20"
+        android:textColor="@color/ff_text_color"
+        android:ellipsize="end"
+        android:gravity="end|center_vertical"
+        android:id="@+id/call_log_name"
+        android:layout_width="@dimen/dimens_192"
+        android:layout_height="@dimen/dimens_74"
+        android:text="156 8297 3782  (2)"
+        android:lines="1"
+        android:layout_centerVertical="true"
+        android:textDirection="ltr"
+        android:layout_marginStart="@dimen/dimens_24"
+        android:layout_toEndOf="@+id/call_log_type"/>
+    <TextView
+        android:textSize="@dimen/text_sp_18"
+        android:textColor="@color/b3_text_color"
+        android:gravity="end"
+        android:id="@+id/call_log_time"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dimens_24"
+        android:text="2021/06/11  AM12:30"
+        android:layout_centerVertical="true"
+        android:textDirection="ltr"
+        android:layout_marginEnd="@dimen/dimens_24"
+        android:layout_alignParentEnd="true"/>
+    <View
+        android:id="@+id/line"
+        android:background="@color/list_line_1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimens_1"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="@dimen/dimens_72"
+        android:layout_marginEnd="@dimen/dimens_24"/>
+</RelativeLayout>

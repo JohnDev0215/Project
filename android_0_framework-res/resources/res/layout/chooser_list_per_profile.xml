@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.android.internal.widget.RecyclerView
+        android:id="@+id/resolver_list"
+        android:background="?attr/colorBackgroundFloating"
+        android:scrollbars="none"
+        android:clipToPadding="false"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:nestedScrollingEnabled="true"
+        android:elevation="1dp"
+        android:headerLayout="com.android.internal.app.ChooserGridLayoutManager"/>
+    <include layout="@layout/resolver_empty_states"/>
+</RelativeLayout>

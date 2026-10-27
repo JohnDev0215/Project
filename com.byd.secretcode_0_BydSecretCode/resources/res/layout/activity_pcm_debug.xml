@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_60">
+        <RadioGroup
+            android:orientation="horizontal"
+            android:id="@+id/catch_pcm_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/catch_play_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="play pcm"/>
+            <RadioButton
+                android:id="@+id/catch_record_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="record pcm"/>
+            <RadioButton
+                android:id="@+id/clear_pcm_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="Clear pcm"/>
+        </RadioGroup>
+        <Button
+            android:id="@+id/debug_pcm_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pcm_details"
+            android:layout_weight="1"/>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/enter_mediatest_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/enter_mediatest"
+            android:layout_weight="1"/>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/enter_mictest_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/enter_mictest"
+            android:layout_weight="1"/>
+    </LinearLayout>
+</LinearLayout>

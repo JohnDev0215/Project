@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="billing_cycle_days_left">
+        <item quantity="one">%d күн қалды.</item>
+        <item quantity="other">%d күн қалды.</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_letters">
+        <item quantity="one">Кемінде 1 әріп болуы керек</item>
+        <item quantity="other">Кемінде %d әріп болуы керек</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_lowercase">
+        <item quantity="one">Кемінде 1 кіші әріп болуы керек</item>
+        <item quantity="other">Кемінде %d кіші әріп болуы керек</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_nonletter">
+        <item quantity="one">Кемінде 1 әріптік емес таңба болуы керек</item>
+        <item quantity="other">Кемінде %d әріптік емес таңба болуы керек</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_numeric">
+        <item quantity="one">Кемінде 1 сан болуы керек</item>
+        <item quantity="other">Кемінде %d сан болуы керек</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_symbols">
+        <item quantity="one">Кемінде 1 арнайы таңба болуы керек</item>
+        <item quantity="other">Кемінде %d арнайы таңба болуы керек</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_uppercase">
+        <item quantity="one">Кемінде 1 бас әріп болуы керек</item>
+        <item quantity="other">Кемінде %d бас әріп болуы керек</item>
+    </plurals>
+    <plurals name="mobile_network_summary_count">
+        <item quantity="one">%1$d SIM картасы</item>
+        <item quantity="other">%1$d SIM картасы</item>
+    </plurals>
+    <plurals name="runtime_permissions_additional_count">
+        <item quantity="one">%d қосымша рұқсат</item>
+        <item quantity="other">%d қосымша рұқсат</item>
+    </plurals>
+    <plurals name="show_dev_countdown">
+        <item quantity="one">%1$d қадамнан кейін әзірлеуші атанасыз.</item>
+        <item quantity="other">%1$d қадамнан кейін әзірлеуші атанасыз.</item>
+    </plurals>
+    <plurals name="user_limit_reached_message">
+        <item quantity="one">Тек бір пайдаланушыны жасауға болады.</item>
+        <item quantity="other">%d пайдаланушыға дейін жасауға болады.</item>
+    </plurals>
+    <plurals name="wifi_tether_connected_summary">
+        <item quantity="one">%1$d құрылғы қосылды</item>
+        <item quantity="other">%1$d құрылғы қосылды</item>
+    </plurals>
+</resources>

@@ -1,0 +1,8 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/net/metrics/ApfProgramEvent;->lifetime:J,frameworks/base/core/java/android/net/metrics/ApfProgramEvent.java,60,5,60,25,
+Landroid/net/metrics/ApfProgramEvent;->actualLifetime:J,frameworks/base/core/java/android/net/metrics/ApfProgramEvent.java,63,5,63,25,
+Landroid/net/metrics/ApfProgramEvent;->filteredRas:I,frameworks/base/core/java/android/net/metrics/ApfProgramEvent.java,66,5,66,25,
+Landroid/net/metrics/ApfProgramEvent;->currentRas:I,frameworks/base/core/java/android/net/metrics/ApfProgramEvent.java,69,5,69,25,
+Landroid/net/metrics/ApfProgramEvent;->programLength:I,frameworks/base/core/java/android/net/metrics/ApfProgramEvent.java,72,5,72,25,
+Landroid/net/metrics/ApfProgramEvent;->flags:I,frameworks/base/core/java/android/net/metrics/ApfProgramEvent.java,75,5,75,25,
+Landroid/net/metrics/ApfProgramEvent;->flagsFor(ZZ)I,frameworks/base/core/java/android/net/metrics/ApfProgramEvent.java,222,5,222,25,

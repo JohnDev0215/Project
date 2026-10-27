@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageButton
+        android:id="@+id/increment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:textSize="@dimen/sp_24"
+        android:gravity="center"
+        android:id="@+id/numberpicker_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"/>
+    <ImageButton
+        android:id="@+id/decrement"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</merge>

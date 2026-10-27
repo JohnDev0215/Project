@@ -1,0 +1,17 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/bluetooth/BluetoothA2dp;->ACTION_ACTIVE_DEVICE_CHANGED:Ljava/lang/String;,frameworks/base/core/java/android/bluetooth/BluetoothA2dp.java,121,5,121,25,
+Landroid/bluetooth/BluetoothA2dp;->ACTION_CODEC_CONFIG_CHANGED:Ljava/lang/String;,frameworks/base/core/java/android/bluetooth/BluetoothA2dp.java,142,5,142,25,
+Landroid/bluetooth/BluetoothA2dp;->close()V,frameworks/base/core/java/android/bluetooth/BluetoothA2dp.java,247,5,247,25,
+Landroid/bluetooth/BluetoothA2dp;->connect(Landroid/bluetooth/BluetoothDevice;)Z,frameworks/base/core/java/android/bluetooth/BluetoothA2dp.java,278,5,278,25,
+Landroid/bluetooth/BluetoothA2dp;->disconnect(Landroid/bluetooth/BluetoothDevice;)Z,frameworks/base/core/java/android/bluetooth/BluetoothA2dp.java,318,5,318,25,
+Landroid/bluetooth/BluetoothA2dp;->setActiveDevice(Landroid/bluetooth/BluetoothDevice;)Z,frameworks/base/core/java/android/bluetooth/BluetoothA2dp.java,412,5,412,25,
+Landroid/bluetooth/BluetoothA2dp;->getActiveDevice()Landroid/bluetooth/BluetoothDevice;,frameworks/base/core/java/android/bluetooth/BluetoothA2dp.java,436,5,436,25,
+Landroid/bluetooth/BluetoothA2dp;->getPriority(Landroid/bluetooth/BluetoothDevice;)I,frameworks/base/core/java/android/bluetooth/BluetoothA2dp.java,571,5,571,88,maxTargetSdk=28&trackingBug=115609023L
+Landroid/bluetooth/BluetoothA2dp;->getCodecStatus(Landroid/bluetooth/BluetoothDevice;)Landroid/bluetooth/BluetoothCodecStatus;,frameworks/base/core/java/android/bluetooth/BluetoothA2dp.java,708,5,708,25,
+Landroid/bluetooth/BluetoothA2dp;->setCodecConfigPreference(Landroid/bluetooth/BluetoothDevice;Landroid/bluetooth/BluetoothCodecConfig;)V,frameworks/base/core/java/android/bluetooth/BluetoothA2dp.java,737,5,737,25,
+Landroid/bluetooth/BluetoothA2dp;->enableOptionalCodecs(Landroid/bluetooth/BluetoothDevice;)V,frameworks/base/core/java/android/bluetooth/BluetoothA2dp.java,767,5,767,25,
+Landroid/bluetooth/BluetoothA2dp;->disableOptionalCodecs(Landroid/bluetooth/BluetoothDevice;)V,frameworks/base/core/java/android/bluetooth/BluetoothA2dp.java,782,5,782,25,
+Landroid/bluetooth/BluetoothA2dp;->isOptionalCodecsSupported(Landroid/bluetooth/BluetoothDevice;)I,frameworks/base/core/java/android/bluetooth/BluetoothA2dp.java,823,5,823,25,
+Landroid/bluetooth/BluetoothA2dp;->isOptionalCodecsEnabled(Landroid/bluetooth/BluetoothDevice;)I,frameworks/base/core/java/android/bluetooth/BluetoothA2dp.java,849,5,849,25,
+Landroid/bluetooth/BluetoothA2dp;->setOptionalCodecsEnabled(Landroid/bluetooth/BluetoothDevice;I)V,frameworks/base/core/java/android/bluetooth/BluetoothA2dp.java,876,5,876,25,
+Landroid/bluetooth/BluetoothA2dp;->stateToString(I)Ljava/lang/String;,frameworks/base/core/java/android/bluetooth/BluetoothA2dp.java,908,5,908,88,maxTargetSdk=28&trackingBug=115609023L

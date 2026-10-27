@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="billing_cycle_days_left">
+        <item quantity="one">Queda %d dia</item>
+        <item quantity="other">Queden %d dies</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_letters">
+        <item quantity="one">Ha de contenir com a mínim 1 lletra</item>
+        <item quantity="other">Ha de contenir com a mínim %d lletres</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_lowercase">
+        <item quantity="one">Ha de contenir com a mínim 1 lletra minúscula</item>
+        <item quantity="other">Ha de contenir com a mínim %d lletres minúscules</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_nonletter">
+        <item quantity="one">Ha de contenir com a mínim 1 caràcter que no sigui una lletra</item>
+        <item quantity="other">Ha de contenir com a mínim %d caràcters que no siguin lletres</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_numeric">
+        <item quantity="one">Ha de contenir com a mínim 1 dígit numèric</item>
+        <item quantity="other">Ha de contenir com a mínim %d dígits numèrics</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_symbols">
+        <item quantity="one">Ha de contenir com a mínim 1 símbol especial</item>
+        <item quantity="other">Ha de contenir com a mínim %d símbols especials</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_uppercase">
+        <item quantity="one">Ha de contenir com a mínim 1 lletra majúscula</item>
+        <item quantity="other">Ha de contenir com a mínim %d lletres majúscules</item>
+    </plurals>
+    <plurals name="mobile_network_summary_count">
+        <item quantity="one">%1$d targeta SIM</item>
+        <item quantity="other">%1$d targetes SIM</item>
+    </plurals>
+    <plurals name="runtime_permissions_additional_count">
+        <item quantity="one">%d permís addicional</item>
+        <item quantity="other">%d permisos addicionals</item>
+    </plurals>
+    <plurals name="show_dev_countdown">
+        <item quantity="one">Ara ja només et queda %1$d pas per convertir-te en desenvolupador.</item>
+        <item quantity="other">Ara ja només et queden %1$d passos per convertir-te en desenvolupador.</item>
+    </plurals>
+    <plurals name="user_limit_reached_message">
+        <item quantity="one">Només es pot crear 1 usuari.</item>
+        <item quantity="other">Pots crear fins a %d usuaris.</item>
+    </plurals>
+    <plurals name="wifi_tether_connected_summary">
+        <item quantity="one">%1$d dispositiu connectat</item>
+        <item quantity="other">%1$d dispositius connectats</item>
+    </plurals>
+</resources>

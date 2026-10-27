@@ -1,0 +1,2 @@
+signature,file,startline,startcol,endline,endcol,properties
+Lcom/android/internal/os/ClassLoaderFactory;->createClassloaderNamespace(Ljava/lang/ClassLoader;ILjava/lang/String;Ljava/lang/String;ZLjava/lang/String;)Ljava/lang/String;,frameworks/base/core/java/com/android/internal/os/ClassLoaderFactory.java,136,5,136,25,

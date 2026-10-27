@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="billing_cycle_days_left">
+        <item quantity="one">%d zi rămasă</item>
+        <item quantity="few">%d zile rămase</item>
+        <item quantity="other">%d de zile rămase</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_letters">
+        <item quantity="one">Trebuie să conțină cel puțin o literă</item>
+        <item quantity="few">Trebuie să conțină cel puțin %d litere</item>
+        <item quantity="other">Trebuie să conțină cel puțin %d de litere</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_lowercase">
+        <item quantity="one">Trebuie să conțină cel puțin o minusculă</item>
+        <item quantity="few">Trebuie să conțină cel puțin %d minuscule</item>
+        <item quantity="other">Trebuie să conțină cel puțin %d de minuscule</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_nonletter">
+        <item quantity="one">Trebuie să conțină cel puțin un caracter care să nu fie literă</item>
+        <item quantity="few">Trebuie să conțină cel puțin %d caractere care să nu fie litere</item>
+        <item quantity="other">Trebuie să conțină cel puțin %d de caractere care să nu fie litere</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_numeric">
+        <item quantity="one">Trebuie să conțină cel puțin o cifră</item>
+        <item quantity="few">Trebuie să conțină cel puțin %d cifre</item>
+        <item quantity="other">Trebuie să conțină cel puțin %d de cifre</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_symbols">
+        <item quantity="one">Trebuie să conțină cel puțin un simbol special</item>
+        <item quantity="few">Trebuie să conțină cel puțin %d simboluri speciale</item>
+        <item quantity="other">Trebuie să conțină cel puțin %d de simboluri speciale</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_uppercase">
+        <item quantity="one">Trebuie să conțină cel puțin o majusculă</item>
+        <item quantity="few">Trebuie să conțină cel puțin %d majuscule</item>
+        <item quantity="other">Trebuie să conțină cel puțin %d de majuscule</item>
+    </plurals>
+    <plurals name="mobile_network_summary_count">
+        <item quantity="one">%1$d carduri SIM</item>
+        <item quantity="few">%1$d carduri SIM</item>
+        <item quantity="other">%1$d de carduri SIM</item>
+    </plurals>
+    <plurals name="runtime_permissions_additional_count">
+        <item quantity="one">%d permisiune suplimentară</item>
+        <item quantity="few">%d permisiuni suplimentare</item>
+        <item quantity="other">%d de permisiuni suplimentare</item>
+    </plurals>
+    <plurals name="show_dev_countdown">
+        <item quantity="one">Mai aveți de parcurs %1$d pas pentru a deveni dezvoltator.</item>
+        <item quantity="few">Mai aveți de parcurs %1$d pași pentru a deveni dezvoltator.</item>
+        <item quantity="other">Mai aveți de parcurs %1$d de pași pentru a deveni dezvoltator.</item>
+    </plurals>
+    <plurals name="user_limit_reached_message">
+        <item quantity="one">Poate fi creat doar un utilizator.</item>
+        <item quantity="few">Puteți crea maximum %d utilizatori.</item>
+        <item quantity="other">Puteți crea maximum %d de utilizatori.</item>
+    </plurals>
+    <plurals name="wifi_tether_connected_summary">
+        <item quantity="one">%1$d dispozitiv conectat</item>
+        <item quantity="few">%1$d dispozitive conectate</item>
+        <item quantity="other">%1$d de dispozitive conectate</item>
+    </plurals>
+</resources>

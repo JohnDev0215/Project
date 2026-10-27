@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:tag="layout/list_speed_0"
+    android:padding="@dimen/now_playing_page_speed_list_padding"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@drawable/list_popup_window_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="@dimen/now_playing_page_speed_list_elevation"
+        android:outlineProvider="bounds">
+        <TextView
+            android:textStyle="bold"
+            android:textColor="?attr/title_color"
+            android:gravity="center_vertical"
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/now_playing_page_speed_list_item_height"
+            android:text="@string/speed"
+            android:paddingStart="@dimen/now_playing_page_speed_list_start"
+            android:paddingEnd="@dimen/now_playing_page_speed_list_start"
+            style="@style/TextAppearance.VIVID.BYD.Body"/>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview"
+            android:tag="binding_1"
+            android:scrollbars="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+    </LinearLayout>
+</FrameLayout>

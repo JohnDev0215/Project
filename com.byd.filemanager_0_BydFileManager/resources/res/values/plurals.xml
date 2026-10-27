@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="NNNtracksdeleted">
+        <item quantity="one">1 song was deleted.</item>
+        <item quantity="other">%d songs were deleted.</item>
+    </plurals>
+    <plurals name="NNNtrackstoplaylist">
+        <item quantity="one">1 song added to playlist.</item>
+        <item quantity="other">%d songs added to playlist.</item>
+    </plurals>
+    <plurals name="Nalbums">
+        <item quantity="one">1 album</item>
+        <item quantity="other">%d albums</item>
+    </plurals>
+    <plurals name="Nsongs">
+        <item quantity="one">%d song</item>
+        <item quantity="other">%d songs</item>
+    </plurals>
+    <plurals name="Nsongscomp">
+        <item quantity="one">%2$d of %1$d song</item>
+        <item quantity="other">%2$d of %1$d songs</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">%d new notification</item>
+        <item quantity="other">%d new notifications</item>
+    </plurals>
+</resources>

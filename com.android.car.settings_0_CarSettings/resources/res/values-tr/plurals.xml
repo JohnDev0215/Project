@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="billing_cycle_days_left">
+        <item quantity="one">%d gün kaldı</item>
+        <item quantity="other">%d gün kaldı</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_letters">
+        <item quantity="one">En az 1 harf içermelidir</item>
+        <item quantity="other">En az %d harf içermelidir</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_lowercase">
+        <item quantity="one">En az 1 küçük harf içermelidir</item>
+        <item quantity="other">En az %d küçük harf içermelidir</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_nonletter">
+        <item quantity="one">Harf olmayan en az 1 karakter içermelidir</item>
+        <item quantity="other">Harf olmayan en az %d karakter içermelidir</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_numeric">
+        <item quantity="one">En az 1 rakam içermelidir</item>
+        <item quantity="other">En az %d rakam içermelidir</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_symbols">
+        <item quantity="one">En az 1 özel simge içermelidir</item>
+        <item quantity="other">En az %d özel simge içermelidir</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_uppercase">
+        <item quantity="one">En az 1 büyük harf içermelidir</item>
+        <item quantity="other">En az %d büyük harf içermelidir</item>
+    </plurals>
+    <plurals name="mobile_network_summary_count">
+        <item quantity="one">%1$d SIM</item>
+        <item quantity="other">%1$d SIM</item>
+    </plurals>
+    <plurals name="runtime_permissions_additional_count">
+        <item quantity="one">%d ek izin</item>
+        <item quantity="other">%d ek izin</item>
+    </plurals>
+    <plurals name="show_dev_countdown">
+        <item quantity="one">Geliştirici olmanıza %1$d adım kaldı.</item>
+        <item quantity="other">Geliştirici olmanıza %1$d adım kaldı.</item>
+    </plurals>
+    <plurals name="user_limit_reached_message">
+        <item quantity="one">Yalnızca bir kullanıcı oluşturulabilir.</item>
+        <item quantity="other">En fazla %d kullanıcı oluşturabilirsiniz.</item>
+    </plurals>
+    <plurals name="wifi_tether_connected_summary">
+        <item quantity="one">%1$d cihaz bağlı</item>
+        <item quantity="other">%1$d cihaz bağlı</item>
+    </plurals>
+</resources>

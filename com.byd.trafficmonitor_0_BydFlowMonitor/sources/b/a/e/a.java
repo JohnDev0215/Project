@@ -1,0 +1,9 @@
+package b.a.e;
+
+import android.annotation.SuppressLint;
+
+/* JADX INFO: compiled from: ActivityResultCallback.java */
+/* JADX INFO: loaded from: classes.dex */
+public interface a<O> {
+    void a(@SuppressLint({"UnknownNullness"}) O o);
+}

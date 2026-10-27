@@ -1,0 +1,9 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/media/ExifInterface;->sFormatter:Ljava/text/SimpleDateFormat;,frameworks/base/media/java/android/media/ExifInterface.java,590,5,590,88,maxTargetSdk=28&trackingBug=115609023L
+Landroid/media/ExifInterface;->mFilename:Ljava/lang/String;,frameworks/base/media/java/android/media/ExifInterface.java,1437,5,1437,88,maxTargetSdk=28&trackingBug=115609023L
+Landroid/media/ExifInterface;->mAttributes:[Ljava/util/HashMap;,frameworks/base/media/java/android/media/ExifInterface.java,1444,5,1444,25,
+Landroid/media/ExifInterface;->mHasThumbnail:Z,frameworks/base/media/java/android/media/ExifInterface.java,1448,5,1448,88,maxTargetSdk=28&trackingBug=115609023L
+Landroid/media/ExifInterface;->getDateTime()J,frameworks/base/media/java/android/media/ExifInterface.java,2395,5,2395,25,
+Landroid/media/ExifInterface;->getDateTimeOriginal()J,frameworks/base/media/java/android/media/ExifInterface.java,2420,5,2420,25,
+Landroid/media/ExifInterface;->getGpsDateTime()J,frameworks/base/media/java/android/media/ExifInterface.java,2474,5,2474,25,
+Landroid/media/ExifInterface;->convertRationalLatLonToFloat(Ljava/lang/String;Ljava/lang/String;)F,frameworks/base/media/java/android/media/ExifInterface.java,2500,5,2500,88,maxTargetSdk=28&trackingBug=115609023L

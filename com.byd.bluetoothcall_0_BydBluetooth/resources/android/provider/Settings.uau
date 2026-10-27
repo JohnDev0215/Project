@@ -1,0 +1,8 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/provider/Settings;->ACTION_TRUSTED_CREDENTIALS_USER:Ljava/lang/String;,frameworks/base/core/java/android/provider/Settings.java,440,5,440,25,
+Landroid/provider/Settings;->ACTION_USER_DICTIONARY_INSERT:Ljava/lang/String;,frameworks/base/core/java/android/provider/Settings.java,927,5,927,25,
+Landroid/provider/Settings;->EXTRA_APP_UID:Ljava/lang/String;,frameworks/base/core/java/android/provider/Settings.java,1879,5,1879,25,
+Landroid/provider/Settings;->RESET_MODE_PACKAGE_DEFAULTS:I,frameworks/base/core/java/android/provider/Settings.java,2409,5,2409,25,
+Landroid/provider/Settings;->isCallingPackageAllowedToWriteSettings(Landroid/content/Context;ILjava/lang/String;Z)Z,frameworks/base/core/java/android/provider/Settings.java,15063,5,15063,25,
+Landroid/provider/Settings;->isCallingPackageAllowedToDrawOverlays(Landroid/content/Context;ILjava/lang/String;Z)Z,frameworks/base/core/java/android/provider/Settings.java,15121,5,15121,25,
+Landroid/provider/Settings;->isCallingPackageAllowedToPerformAppOpsProtectedOperation(Landroid/content/Context;ILjava/lang/String;ZI[Ljava/lang/String;Z)Z,frameworks/base/core/java/android/provider/Settings.java,15152,5,15152,25,

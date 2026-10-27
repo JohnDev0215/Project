@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="emailAddressTypes">
+        <item>Domov</item>
+        <item>Práca</item>
+        <item>Iné</item>
+        <item>Vlastné</item>
+    </array>
+    <array name="imProtocols">
+        <item>AIM</item>
+        <item>Windows Live</item>
+        <item>Yahoo</item>
+        <item>Skype</item>
+        <item>QQ</item>
+        <item>Google Talk</item>
+        <item>ICQ</item>
+        <item>Jabber</item>
+    </array>
+    <array name="organizationTypes">
+        <item>Práca</item>
+        <item>Iné</item>
+        <item>Vlastné</item>
+    </array>
+    <array name="phoneTypes">
+        <item>Domov</item>
+        <item>Mobil</item>
+        <item>Práca</item>
+        <item>Fax práca</item>
+        <item>Fax domov</item>
+        <item>Pager</item>
+        <item>Iné</item>
+        <item>Vlastné</item>
+    </array>
+    <array name="postalAddressTypes">
+        <item>Domov</item>
+        <item>Práca</item>
+        <item>Iné</item>
+        <item>Vlastné</item>
+    </array>
+    <array name="face_acquired_vendor">
+    </array>
+    <array name="face_error_vendor">
+    </array>
+    <array name="fingerprint_acquired_vendor">
+    </array>
+    <array name="fingerprint_error_vendor">
+    </array>
+    <array name="imAddressTypes">
+        <item>Domov</item>
+        <item>Práca</item>
+        <item>Iné</item>
+        <item>Vlastné</item>
+    </array>
+    <array name="network_switch_type_name">
+        <item>mobilné dáta</item>
+        <item>Wi‑Fi</item>
+        <item>Bluetooth</item>
+        <item>Ethernet</item>
+        <item>VPN</item>
+    </array>
+    <array name="wfcOperatorErrorAlertMessages">
+        <item>Ak chcete volať a odosielať správy prostredníctvom siete Wi‑Fi, kontaktujte najskôr svojho operátora v súvislosti s nastavením tejto služby. Potom opäť zapnite v Nastaveniach volanie cez Wi‑Fi. (Kód chyby: %1$s)</item>
+    </array>
+    <array name="wfcOperatorErrorNotificationMessages">
+        <item>Pri registrácii volania cez Wi‑Fi u operátora nastala chyba %1$s</item>
+    </array>
+</resources>

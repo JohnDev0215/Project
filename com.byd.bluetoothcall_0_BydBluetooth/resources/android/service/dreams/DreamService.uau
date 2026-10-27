@@ -1,0 +1,8 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/service/dreams/DreamService;->canDoze()Z,frameworks/base/core/java/android/service/dreams/DreamService.java,607,5,607,88,maxTargetSdk=28&trackingBug=115609023L
+Landroid/service/dreams/DreamService;->startDozing()V,frameworks/base/core/java/android/service/dreams/DreamService.java,641,5,641,25,
+Landroid/service/dreams/DreamService;->stopDozing()V,frameworks/base/core/java/android/service/dreams/DreamService.java,675,5,675,88,maxTargetSdk=28&trackingBug=115609023L
+Landroid/service/dreams/DreamService;->isDozing()Z,frameworks/base/core/java/android/service/dreams/DreamService.java,697,5,697,88,maxTargetSdk=28&trackingBug=115609023L
+Landroid/service/dreams/DreamService;->setDozeScreenState(I)V,frameworks/base/core/java/android/service/dreams/DreamService.java,754,5,754,25,
+Landroid/service/dreams/DreamService;->getDozeScreenBrightness()I,frameworks/base/core/java/android/service/dreams/DreamService.java,773,5,773,25,
+Landroid/service/dreams/DreamService;->setDozeScreenBrightness(I)V,frameworks/base/core/java/android/service/dreams/DreamService.java,805,5,805,25,

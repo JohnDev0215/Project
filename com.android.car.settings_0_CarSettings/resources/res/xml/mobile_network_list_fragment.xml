@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" xmlns:settings="http://schemas.android.com/apk/res-auto"
+    android:title="@string/mobile_network_settings"
+    android:key="@string/psk_mobile_network_list">
+    <com.android.car.settings.common.LogicalPreferenceGroup
+        android:key="@string/pk_mobile_network_list"
+        settings:controller="com.android.car.settings.network.MobileNetworkListPreferenceController"/>
+    <Preference
+        android:icon="@drawable/ic_add"
+        android:visibility="gone"
+        android:title="@string/mobile_network_list_add_more"
+        android:key="@string/pk_mobile_network_list_add_more"
+        settings:controller="com.android.car.settings.network.AddMobileNetworkPreferenceController"/>
+</PreferenceScreen>

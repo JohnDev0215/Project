@@ -1,0 +1,30 @@
+{
+  "micPeriod": 240,
+  "micListVersion": 1,
+  "micList": [
+    {
+      "modelName": "Loostone PureMic U7Pro-K",
+      "pregainMic": -6
+    },
+    {
+      "modelName": "Loostone PureMic A1-K",
+      "pregainMic": -1
+    },
+    {
+      "modelName": "Loostone PureMic Q1-K",
+      "pregainMic": -3
+    },
+    {
+      "modelName": "Loostone PureMic U10Pro-K",
+      "pregainMic": -4
+    },
+    {
+      "modelName": "Loostone PureMic U3",
+      "pregainMic": -18
+    },
+    {
+      "modelName": "TCL M1",
+      "pregainMic": -18
+    }
+  ]
+}

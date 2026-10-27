@@ -1,0 +1,15 @@
+package androidx.recyclerview;
+
+/* JADX INFO: loaded from: classes.dex */
+public final class R$style {
+    public static final int TextAppearance_Compat_Notification = 2131755359;
+    public static final int TextAppearance_Compat_Notification_Info = 2131755360;
+    public static final int TextAppearance_Compat_Notification_Line2 = 2131755361;
+    public static final int TextAppearance_Compat_Notification_Time = 2131755362;
+    public static final int TextAppearance_Compat_Notification_Title = 2131755363;
+    public static final int Widget_Compat_NotificationActionContainer = 2131755599;
+    public static final int Widget_Compat_NotificationActionText = 2131755600;
+
+    private R$style() {
+    }
+}

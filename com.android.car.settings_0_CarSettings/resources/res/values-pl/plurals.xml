@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="billing_cycle_days_left">
+        <item quantity="one">%d dzień do końca</item>
+        <item quantity="few">%d dni do końca</item>
+        <item quantity="many">%d dni do końca</item>
+        <item quantity="other">%d dnia do końca</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_letters">
+        <item quantity="one">Musi zawierać co najmniej 1 literę</item>
+        <item quantity="few">Musi zawierać co najmniej %d litery</item>
+        <item quantity="many">Musi zawierać co najmniej %d liter</item>
+        <item quantity="other">Musi zawierać co najmniej %d litery</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_lowercase">
+        <item quantity="one">Musi zawierać co najmniej 1 małą literę</item>
+        <item quantity="few">Musi zawierać co najmniej %d małe litery</item>
+        <item quantity="many">Musi zawierać co najmniej %d małych liter</item>
+        <item quantity="other">Musi zawierać co najmniej %d małej litery</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_nonletter">
+        <item quantity="one">Musi zawierać co najmniej 1 znak niebędący literą</item>
+        <item quantity="few">Musi zawierać co najmniej %d znaki niebędące literami</item>
+        <item quantity="many">Musi zawierać co najmniej %d znaków niebędących literami</item>
+        <item quantity="other">Musi zawierać co najmniej %d znaku niebędącego literą</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_numeric">
+        <item quantity="one">Musi zawierać co najmniej 1 cyfrę</item>
+        <item quantity="few">Musi zawierać co najmniej %d cyfry</item>
+        <item quantity="many">Musi zawierać co najmniej %d cyfr</item>
+        <item quantity="other">Musi zawierać co najmniej %d cyfry</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_symbols">
+        <item quantity="one">Musi zawierać co najmniej 1 symbol specjalny</item>
+        <item quantity="few">Musi zawierać co najmniej %d symbole specjalne</item>
+        <item quantity="many">Musi zawierać co najmniej %d symboli specjalnych</item>
+        <item quantity="other">Musi zawierać co najmniej %d symbolu specjalnego</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_uppercase">
+        <item quantity="one">Musi zawierać co najmniej 1 wielką literę</item>
+        <item quantity="few">Musi zawierać co najmniej %d wielkie litery</item>
+        <item quantity="many">Musi zawierać co najmniej %d wielkich liter</item>
+        <item quantity="other">Musi zawierać co najmniej %d wielkiej litery</item>
+    </plurals>
+    <plurals name="mobile_network_summary_count">
+        <item quantity="one">%1$d karta SIM</item>
+        <item quantity="few">%1$d karty SIM</item>
+        <item quantity="many">%1$d kart SIM</item>
+        <item quantity="other">%1$d karty SIM</item>
+    </plurals>
+    <plurals name="runtime_permissions_additional_count">
+        <item quantity="one">%d dodatkowe uprawnienie</item>
+        <item quantity="few">%d dodatkowe uprawnienia</item>
+        <item quantity="many">%d dodatkowych uprawnień</item>
+        <item quantity="other">%d dodatkowego uprawnienia</item>
+    </plurals>
+    <plurals name="show_dev_countdown">
+        <item quantity="one">Od zostania programistą dzieli Cię już tylko %1$d krok.</item>
+        <item quantity="few">Od zostania programistą dzielą Cię już tylko %1$d kroki.</item>
+        <item quantity="many">Od zostania programistą dzieli Cię już tylko %1$d kroków.</item>
+        <item quantity="other">Od zostania programistą dzieli Cię już tylko %1$d kroku.</item>
+    </plurals>
+    <plurals name="user_limit_reached_message">
+        <item quantity="one">Można utworzyć tylko jednego użytkownika.</item>
+        <item quantity="few">Możesz utworzyć maksymalnie %d użytkowników.</item>
+        <item quantity="many">Możesz utworzyć maksymalnie %d użytkowników.</item>
+        <item quantity="other">Możesz utworzyć maksymalnie %d użytkownika.</item>
+    </plurals>
+    <plurals name="wifi_tether_connected_summary">
+        <item quantity="one">%1$d urządzenie podłączone</item>
+        <item quantity="few">%1$d urządzenia podłączone</item>
+        <item quantity="many">%1$d urządzeń podłączonych</item>
+        <item quantity="other">%1$d urządzenia podłączonego</item>
+    </plurals>
+</resources>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.AppCompat.DayNight" parent="@style/Theme.AppCompat">
+    </style>
+    <style name="Theme.AppCompat.DayNight.DarkActionBar" parent="@style/Theme.AppCompat">
+    </style>
+    <style name="Theme.AppCompat.DayNight.Dialog" parent="@style/Theme.AppCompat.Dialog">
+    </style>
+    <style name="Theme.AppCompat.DayNight.Dialog.Alert" parent="@style/Theme.AppCompat.Dialog.Alert">
+    </style>
+    <style name="Theme.AppCompat.DayNight.Dialog.MinWidth" parent="@style/Theme.AppCompat.Dialog.MinWidth">
+    </style>
+    <style name="Theme.AppCompat.DayNight.DialogWhenLarge" parent="@style/Theme.AppCompat.DialogWhenLarge">
+    </style>
+    <style name="Theme.AppCompat.DayNight.NoActionBar" parent="@style/Theme.AppCompat.NoActionBar">
+    </style>
+    <style name="Theme.Telecom.BlockedNumbers" parent="@android:style/Theme.Material.Light">
+        <item name="android:windowBackground">@color/background_color</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:listDivider">@null</item>
+        <item name="android:actionBarStyle">@style/TelecomDialerSettingsActionBarStyle</item>
+        <item name="android:colorPrimaryDark">@color/background_color</item>
+        <item name="android:colorAccent">@color/theme_color</item>
+        <item name="android:navigationBarColor">@color/background_color</item>
+        <item name="android:forceDarkAllowed">true</item>
+    </style>
+    <style name="Theme.Telecom.DialerSettings" parent="@android:style/Theme.Material.Light">
+        <item name="android:windowBackground">@color/background_color</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:tint">@color/blocked_numbers_secondary_text_color</item>
+        <item name="android:actionBarStyle">@style/TelecomDialerSettingsActionBarStyle</item>
+        <item name="android:actionOverflowButtonStyle">@style/TelecomDialerSettingsActionOverflowButtonStyle</item>
+        <item name="android:colorPrimaryDark">@color/background_color</item>
+        <item name="android:navigationBarColor">@color/background_color</item>
+        <item name="android:forceDarkAllowed">true</item>
+    </style>
+    <style name="ThemeOverlay.AppCompat.DayNight" parent="@style/ThemeOverlay.AppCompat.Dark">
+    </style>
+</resources>

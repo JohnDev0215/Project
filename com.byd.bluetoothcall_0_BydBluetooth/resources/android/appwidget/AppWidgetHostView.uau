@@ -1,0 +1,4 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/appwidget/AppWidgetHostView;->mAppWidgetId:I,frameworks/base/core/java/android/appwidget/AppWidgetHostView.java,85,5,85,25,
+Landroid/appwidget/AppWidgetHostView;->mInfo:Landroid/appwidget/AppWidgetProviderInfo;,frameworks/base/core/java/android/appwidget/AppWidgetHostView.java,87,5,87,25,
+Landroid/appwidget/AppWidgetHostView;->updateAppWidgetSize(Landroid/os/Bundle;IIIIZ)V,frameworks/base/core/java/android/appwidget/AppWidgetHostView.java,292,5,292,25,

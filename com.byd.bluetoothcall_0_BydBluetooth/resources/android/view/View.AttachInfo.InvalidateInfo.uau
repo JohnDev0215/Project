@@ -1,0 +1,7 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/view/View$AttachInfo$InvalidateInfo;-><init>()V,frameworks/base/core/java/android/view/View.java,28753,13,28753,33,
+Landroid/view/View$AttachInfo$InvalidateInfo;->target:Landroid/view/View;,frameworks/base/core/java/android/view/View.java,28762,13,28762,33,
+Landroid/view/View$AttachInfo$InvalidateInfo;->left:I,frameworks/base/core/java/android/view/View.java,28765,13,28765,33,
+Landroid/view/View$AttachInfo$InvalidateInfo;->top:I,frameworks/base/core/java/android/view/View.java,28767,13,28767,33,
+Landroid/view/View$AttachInfo$InvalidateInfo;->right:I,frameworks/base/core/java/android/view/View.java,28769,13,28769,33,
+Landroid/view/View$AttachInfo$InvalidateInfo;->bottom:I,frameworks/base/core/java/android/view/View.java,28771,13,28771,33,

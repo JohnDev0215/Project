@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:tag="layout-w840dp-h480dp/title_item_0"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="@dimen/queue_title_min_height">
+    <TextView
+        android:textColor="?attr/queue_title_color"
+        android:gravity="center_vertical"
+        android:tag="binding_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/TextAppearance.VIVID.BYD.LargeTitle"/>
+</FrameLayout>

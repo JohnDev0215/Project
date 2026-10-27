@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <gradient
+        android:startColor="@color/start_color_dilink_pagers"
+        android:endColor="@color/end_color_dilink_pagers"
+        android:useLevel="true"
+        android:angle="45"
+        android:type="radial"
+        android:centerX="0"
+        android:centerY="0"
+        android:gradientRadius="90"/>
+    <size
+        android:height="48dp"
+        android:width="94dp"/>
+    <corners android:radius="45dp"/>
+</shape>

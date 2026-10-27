@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:id="@+id/ll_root"
+    android:tag="layout-w600dp-h480dp/common_error_layout_0"
+    android:background="?attr/colorBackground"
+    android:visibility="gone"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:textAppearance="?attr/TextAppearance.VIVID.BYD.LargeTitle"
+        android:textColor="?attr/title_color"
+        android:ellipsize="none"
+        android:tag="binding_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/common_layout_text_margin_top"
+        android:text="@string/something_wrong"
+        android:singleLine="true"/>
+    <Button
+        android:textAppearance="?attr/TextAppearance.VIVID.BYD.CustomizedTitle"
+        android:textStyle="bold"
+        android:textColor="?attr/btn_text_color"
+        android:ellipsize="none"
+        android:gravity="center"
+        android:tag="binding_2"
+        android:background="@drawable/btn_reload"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/common_layout_btn_text_height"
+        android:layout_marginTop="@dimen/common_layout_btn_margin_top"
+        android:text="@string/retry"
+        android:singleLine="true"
+        android:paddingStart="@dimen/common_layout_text_padding_horizontal"
+        android:paddingEnd="@dimen/common_layout_text_padding_horizontal"/>
+</LinearLayout>

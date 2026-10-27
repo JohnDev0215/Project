@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<widget.DialogTouchLinearLayout xmlns:android="http://schemas.android.com/apk/res/android" style="@style/display_common_group_style">
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_135"
+        android:layout_marginTop="@dimen/dp_24">
+        <TextView
+            android:id="@+id/tv_display_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/display_ac_open_limit"
+            style="@style/remind_title_auto_style"/>
+    </LinearLayout>
+    <com.byd.uereport.widget.DelayDismissTextView
+        android:id="@+id/tv_display_confirm"
+        style="@style/display_count_auto_style"/>
+</widget.DialogTouchLinearLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:layout_width="@dimen/dp_560"
+    android:layout_height="@dimen/dp_161">
+    <TextView
+        android:textSize="@dimen/sp_20"
+        android:textColor="@color/notification_content_color"
+        android:id="@+id/tv_notification_content"
+        android:layout_width="@dimen/dp_464"
+        android:layout_height="@dimen/dp_87"
+        android:layout_marginTop="@dimen/dp_16"
+        android:text="@string/flow_notification_remain"
+        android:includeFontPadding="false"/>
+    <TextView
+        android:textSize="@dimen/sp_16"
+        android:textColor="@color/notification_tip_color"
+        android:layout_width="@dimen/dp_464"
+        android:layout_height="@dimen/dp_24"
+        android:layout_marginTop="@dimen/dp_8"
+        android:text="@string/flow_notification_tip"
+        android:includeFontPadding="false"/>
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:textSize="@dimen/sp_15"
+    android:textColor="?attr/text_color"
+    android:gravity="bottom"
+    android:id="@+id/item_group_title"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/album_more_title_height"/>

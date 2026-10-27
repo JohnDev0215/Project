@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    android:sharedUserId="android.uid.system"
+    android:versionCode="30"
+    android:versionName="4.6.3.0"
+    android:compileSdkVersion="30"
+    android:compileSdkVersionCodename="11"
+    package="com.ts.androidauto.projectionservice"
+    platformBuildVersionCode="30"
+    platformBuildVersionName="11">
+    <uses-sdk
+        android:minSdkVersion="30"
+        android:targetSdkVersion="30"/>
+    <uses-permission android:name="car.permission.ANDROIDAUTO"/>
+    <uses-permission android:name="car.permission.ANDROIDAUTO_APP"/>
+    <permission
+        android:name="car.permission.ANDROIDAUTO"
+        android:protectionLevel="normal"/>
+    <permission
+        android:name="car.permission.ANDROIDAUTO_APP"
+        android:protectionLevel="normal"/>
+    <permission
+        android:name="car.permission.ANDROIDAUTO_DEVICE_LIST"
+        android:protectionLevel="normal"/>
+    <application
+        android:name="com.ts.androidauto.projectionservice.AndroidAutoApplication"
+        android:process="com.ts.androidauto"
+        android:allowBackup="false"
+        android:hardwareAccelerated="true"
+        android:largeHeap="true"
+        android:extractNativeLibs="false"
+        android:usesNonSdkApi="true">
+        <service android:name="com.ts.androidauto.projectionservice.AndroidAutoService">
+            <intent-filter>
+                <action android:name="com.ts.androidauto.action.AndroidAutoService"/>
+            </intent-filter>
+        </service>
+        <uses-library android:name="ts.dcm.foundation.lib"/>
+        <uses-library android:name="ts.androidauto.adapter"/>
+        <uses-library android:name="ts.platform.library"/>
+    </application>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.OVERRIDE_WIFI_CONFIG"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.TETHER_PRIVILEGED"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_PRIVILEGED"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS"/>
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.BYDAUTO_POWER_COMMON"/>
+    <uses-permission android:name="android.car.permission.CAR_CONTROL_ENHANCED_AUDIO"/>
+    <uses-permission android:name="android.car.permission.CAR_CONTROL_AUDIO_VOLUME"/>
+    <uses-permission android:name="com.ts.fw.ACCESS_TS_SERVICES"/>
+</manifest>

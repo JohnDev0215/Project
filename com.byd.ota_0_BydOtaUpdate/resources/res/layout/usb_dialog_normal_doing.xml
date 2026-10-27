@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/usb_shape_dialog_bg"
+    android:layout_width="@dimen/dp_560"
+    android:layout_height="@dimen/dp_312">
+    <TextView
+        android:id="@+id/dialog_title"
+        style="@style/usb_dialog_title"/>
+    <TextView
+        android:layout_below="@+id/dialog_title"
+        style="@style/usb_dialog_title_divider"/>
+    <TextView
+        android:textSize="@dimen/sp_20"
+        android:textColor="?attr/usb_normal_text_color"
+        android:gravity="center"
+        android:id="@+id/dialog_message"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_70"
+        android:layout_centerInParent="true"/>
+    <ProgressBar
+        android:id="@+id/update_progress_bar"
+        android:layout_width="@dimen/dp_830"
+        android:layout_height="@dimen/dp_6"
+        android:layout_marginTop="@dimen/dp_220"
+        android:indeterminate="true"
+        android:indeterminateDrawable="@drawable/usb_progressbar_indeterminate_update"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="@dimen/dp_128"
+        android:layout_marginEnd="@dimen/dp_128"
+        style="@style/progressBar_horizontal_update"/>
+    <Button
+        android:id="@+id/normal_dialog_i_know"
+        android:visibility="gone"
+        android:text="@string/usb_be_know"
+        style="@style/actionBtn"/>
+</RelativeLayout>

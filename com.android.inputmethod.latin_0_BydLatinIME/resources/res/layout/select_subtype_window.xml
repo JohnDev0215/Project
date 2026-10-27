@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@drawable/select_subtype_dialog_bg"
+    android:layout_width="@dimen/dp_200"
+    android:layout_height="wrap_content">
+    <com.byd.ime.subtype.show.MaxHeightRecyclerView
+        android:id="@+id/subtype_recyclerview"
+        android:layout_width="@dimen/dp_200"
+        android:layout_height="wrap_content"
+        style="@style/scroll_bar_style"/>
+</LinearLayout>

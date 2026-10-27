@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include
+        android:id="@+id/tang_bt_widget"
+        layout="@layout/tang_bt_widget_layout"/>
+    <include
+        android:id="@+id/ts_bt_widget"
+        android:visibility="gone"
+        layout="@layout/ts_bt_widget_layout"/>
+</RelativeLayout>

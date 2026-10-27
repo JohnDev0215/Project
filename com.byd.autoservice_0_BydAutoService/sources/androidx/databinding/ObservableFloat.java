@@ -1,0 +1,60 @@
+package androidx.databinding;
+
+import android.os.Parcel;
+import android.os.Parcelable;
+import java.io.Serializable;
+import q0.b;
+import q0.e;
+
+/* JADX INFO: loaded from: classes.dex */
+public class ObservableFloat extends b implements Parcelable, Serializable {
+    public static final Parcelable.Creator<ObservableFloat> CREATOR = new a();
+    public static final long serialVersionUID = 1;
+    private float mValue;
+
+    public static class a implements Parcelable.Creator<ObservableFloat> {
+        @Override // android.os.Parcelable.Creator
+        /* JADX INFO: renamed from: a, reason: merged with bridge method [inline-methods] */
+        public ObservableFloat createFromParcel(Parcel parcel) {
+            return new ObservableFloat(parcel.readFloat());
+        }
+
+        @Override // android.os.Parcelable.Creator
+        /* JADX INFO: renamed from: b, reason: merged with bridge method [inline-methods] */
+        public ObservableFloat[] newArray(int i3) {
+            return new ObservableFloat[i3];
+        }
+    }
+
+    public ObservableFloat(float f3) {
+        this.mValue = f3;
+    }
+
+    @Override // android.os.Parcelable
+    public int describeContents() {
+        return 0;
+    }
+
+    public float get() {
+        return this.mValue;
+    }
+
+    public void set(float f3) {
+        if (f3 != this.mValue) {
+            this.mValue = f3;
+            notifyChange();
+        }
+    }
+
+    @Override // android.os.Parcelable
+    public void writeToParcel(Parcel parcel, int i3) {
+        parcel.writeFloat(this.mValue);
+    }
+
+    public ObservableFloat() {
+    }
+
+    public ObservableFloat(e... eVarArr) {
+        super(eVarArr);
+    }
+}

@@ -1,0 +1,88 @@
+package com.google.android.material.circularreveal.cardview;
+
+import android.content.Context;
+import android.graphics.Canvas;
+import android.graphics.drawable.Drawable;
+import android.util.AttributeSet;
+import c.b.a.a.v.b;
+import c.b.a.a.v.c;
+import com.google.android.material.card.MaterialCardView;
+
+/* JADX INFO: loaded from: classes.dex */
+public class CircularRevealCardView extends MaterialCardView implements c {
+    public final b t;
+
+    public CircularRevealCardView(Context context) {
+        this(context, null);
+    }
+
+    @Override // c.b.a.a.v.b.a
+    public void a(Canvas canvas) {
+        super.draw(canvas);
+    }
+
+    @Override // c.b.a.a.v.c
+    public void b() {
+        this.t.a();
+    }
+
+    @Override // c.b.a.a.v.c
+    public void c() {
+        this.t.b();
+    }
+
+    @Override // c.b.a.a.v.b.a
+    public boolean d() {
+        return super.isOpaque();
+    }
+
+    @Override // android.view.View
+    public void draw(Canvas canvas) {
+        b bVar = this.t;
+        if (bVar != null) {
+            bVar.c(canvas);
+        } else {
+            super.draw(canvas);
+        }
+    }
+
+    public Drawable getCircularRevealOverlayDrawable() {
+        return this.t.e();
+    }
+
+    @Override // c.b.a.a.v.c
+    public int getCircularRevealScrimColor() {
+        return this.t.f();
+    }
+
+    @Override // c.b.a.a.v.c
+    public c.e getRevealInfo() {
+        return this.t.h();
+    }
+
+    @Override // android.view.View
+    public boolean isOpaque() {
+        b bVar = this.t;
+        return bVar != null ? bVar.j() : super.isOpaque();
+    }
+
+    @Override // c.b.a.a.v.c
+    public void setCircularRevealOverlayDrawable(Drawable drawable) {
+        this.t.k(drawable);
+    }
+
+    @Override // c.b.a.a.v.c
+    public void setCircularRevealScrimColor(int i2) {
+        this.t.l(i2);
+    }
+
+    @Override // c.b.a.a.v.c
+    public void setRevealInfo(c.e eVar) {
+        this.t.m(eVar);
+    }
+
+    public CircularRevealCardView(Context context, AttributeSet attributeSet) {
+        super(context, attributeSet);
+        this.t = new b(this);
+    }
+}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="install">Alkalmazás telepítése</string>
+    <string name="qrcode_expired">Lejárt. Koppintson a frissítéshez</string>
+    <string name="qrcode_network_warning">Az aktuális hálózat nem elérhető. Ellenőrizze a hálózati beállításokat</string>
+    <string name="qrcode_refresh_fail">Sikertelen beszerzés. Koppintson a frissítéshez</string>
+    <string name="qrcode_scan_type_vds">VDS szkennelés</string>
+    <string name="qrcode_scan_type_wechat">WeCom szkennelés</string>
+    <string name="qrcode_success">A beolvasás sikeres</string>
+    <string name="qrcode_time">%d mp van hátra</string>
+    <string name="qrcode_tip">Olvassa be a QR-kódot az engedély megszerzéséhez</string>
+    <string name="qrcode_title">Ellenőrzés</string>
+    <string name="qrcode_title_with_module">%s Igazolás</string>
+</resources>

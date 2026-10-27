@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" xmlns:settings="http://schemas.android.com/apk/res-auto"
+    android:title="@string/text_to_speech_settings"
+    android:key="@string/psk_text_to_speech_output">
+    <com.android.car.ui.preference.CarUiTwoActionIconPreference
+        android:title="@string/text_to_speech_preferred_engine_settings"
+        android:key="@string/pk_tts_preferred_engine_entry"
+        android:fragment="com.android.car.settings.tts.PreferredEngineFragment"
+        settings:controller="com.android.car.settings.tts.PreferredEngineEntryPreferenceController"
+        settings:secondaryActionIcon="@drawable/ic_settings_gear"/>
+    <com.android.car.settings.common.LogicalPreferenceGroup
+        android:key="@string/pk_tts_playback_group"
+        settings:controller="com.android.car.settings.tts.TtsPlaybackPreferenceController">
+        <ListPreference
+            android:persistent="false"
+            android:title="@string/tts_default_lang_title"
+            android:key="@string/pk_tts_default_language"
+            android:summary="@string/tts_default_lang_summary"/>
+        <com.android.car.settings.common.SeekBarPreference
+            android:title="@string/tts_speech_rate"
+            android:key="@string/pk_tts_speech_rate"/>
+        <com.android.car.settings.common.SeekBarPreference
+            android:title="@string/tts_pitch"
+            android:key="@string/pk_tts_pitch"/>
+        <com.android.car.ui.preference.CarUiPreference
+            android:title="@string/tts_reset"
+            android:key="@string/pk_tts_reset"
+            settings:showChevron="false"/>
+    </com.android.car.settings.common.LogicalPreferenceGroup>
+</PreferenceScreen>

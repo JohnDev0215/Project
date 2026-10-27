@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <Switch
+        android:textSize="@dimen/sp_18"
+        android:id="@+id/ota_cycle_test_vehicle_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_20"
+        android:text="@string/ota_tool_cycle_test_vehicle"
+        android:switchMinWidth="@dimen/dp_60"/>
+    <Switch
+        android:textSize="@dimen/sp_18"
+        android:id="@+id/ota_cycle_test_bench_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_20"
+        android:text="@string/ota_tool_cycle_test_bench"
+        android:switchMinWidth="@dimen/dp_60"/>
+    <Switch
+        android:textSize="@dimen/sp_18"
+        android:id="@+id/usb_cycle_test_media_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_20"
+        android:text="@string/ota_tool_cycle_test_usb_media"
+        android:switchMinWidth="@dimen/dp_60"/>
+</LinearLayout>

@@ -1,0 +1,6 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/graphics/drawable/BitmapDrawable;->mBitmapState:Landroid/graphics/drawable/BitmapDrawable$BitmapState;,frameworks/base/graphics/java/android/graphics/drawable/BitmapDrawable.java,91,5,91,25,
+Landroid/graphics/drawable/BitmapDrawable;->mTargetDensity:I,frameworks/base/graphics/java/android/graphics/drawable/BitmapDrawable.java,95,5,95,25,
+Landroid/graphics/drawable/BitmapDrawable;->setBitmap(Landroid/graphics/Bitmap;)V,frameworks/base/graphics/java/android/graphics/drawable/BitmapDrawable.java,243,5,243,25,
+Landroid/graphics/drawable/BitmapDrawable;->getTint()Landroid/content/res/ColorStateList;,frameworks/base/graphics/java/android/graphics/drawable/BitmapDrawable.java,701,5,701,25,
+Landroid/graphics/drawable/BitmapDrawable;->getTintMode()Landroid/graphics/PorterDuff$Mode;,frameworks/base/graphics/java/android/graphics/drawable/BitmapDrawable.java,709,5,709,25,

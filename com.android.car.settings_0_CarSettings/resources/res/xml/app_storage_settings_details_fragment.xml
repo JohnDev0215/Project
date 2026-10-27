@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" xmlns:settings="http://schemas.android.com/apk/res-auto"
+    android:title="@string/storage_settings_title"
+    android:key="@string/psk_app_storage_settings_details">
+    <com.android.car.settings.common.EntityHeaderPreference
+        android:key="@string/pk_storage_application_details"
+        settings:controller="com.android.car.settings.storage.StorageApplicationPreferenceController"
+        settings:searchable="false"/>
+    <com.android.car.settings.common.ActionButtonsPreference
+        android:key="@string/pk_storage_application_action_buttons"
+        settings:controller="com.android.car.settings.storage.StorageApplicationActionButtonsPreferenceController"
+        settings:searchable="false"/>
+    <com.android.car.settings.storage.StorageAppDetailPreference
+        android:title="@string/storage_application_size_label"
+        android:selectable="false"
+        android:key="@string/pk_storage_application_size"
+        settings:controller="com.android.car.settings.storage.StorageApplicationSizePreferenceController"/>
+    <com.android.car.settings.storage.StorageAppDetailPreference
+        android:title="@string/storage_data_size_label"
+        android:selectable="false"
+        android:key="@string/pk_storage_application_data_size"
+        settings:controller="com.android.car.settings.storage.StorageApplicationUserDataPreferenceController"/>
+    <com.android.car.settings.storage.StorageAppDetailPreference
+        android:title="@string/storage_cache_size_label"
+        android:selectable="false"
+        android:key="@string/pk_storage_application_cache_size"
+        settings:controller="com.android.car.settings.storage.StorageApplicationCacheSizePreferenceController"/>
+    <com.android.car.settings.storage.StorageAppDetailPreference
+        android:title="@string/storage_total_size_label"
+        android:selectable="false"
+        android:key="@string/pk_storage_application_total_size"
+        settings:controller="com.android.car.settings.storage.StorageApplicationTotalSizePreferenceController"/>
+</PreferenceScreen>

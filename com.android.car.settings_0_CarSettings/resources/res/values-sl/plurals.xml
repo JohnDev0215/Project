@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="billing_cycle_days_left">
+        <item quantity="one">Še %d dan</item>
+        <item quantity="two">Še %d dneva</item>
+        <item quantity="few">Še %d dni</item>
+        <item quantity="other">Še %d dni</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_letters">
+        <item quantity="one">Vsebovati mora vsaj %d črko</item>
+        <item quantity="two">Vsebovati mora vsaj %d črki</item>
+        <item quantity="few">Vsebovati mora vsaj %d črke</item>
+        <item quantity="other">Vsebovati mora vsaj %d črk</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_lowercase">
+        <item quantity="one">Vsebovati mora vsaj %d malo črko</item>
+        <item quantity="two">Vsebovati mora vsaj %d mali črki</item>
+        <item quantity="few">Vsebovati mora vsaj %d male črke</item>
+        <item quantity="other">Vsebovati mora vsaj %d malih črk</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_nonletter">
+        <item quantity="one">Vsebovati mora vsaj %d znak, ki ni črka</item>
+        <item quantity="two">Vsebovati mora vsaj %d znaka, ki nista črka</item>
+        <item quantity="few">Vsebovati mora vsaj %d znake, ki niso črka</item>
+        <item quantity="other">Vsebovati mora vsaj %d znakov, ki niso črka</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_numeric">
+        <item quantity="one">Vsebovati mora vsaj %d števko</item>
+        <item quantity="two">Vsebovati mora vsaj %d števki</item>
+        <item quantity="few">Vsebovati mora vsaj %d števke</item>
+        <item quantity="other">Vsebovati mora vsaj %d števk</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_symbols">
+        <item quantity="one">Vsebovati mora vsaj %d posebni znak</item>
+        <item quantity="two">Vsebovati mora vsaj %d posebna znaka</item>
+        <item quantity="few">Vsebovati mora vsaj %d posebne znake</item>
+        <item quantity="other">Vsebovati mora vsaj %d posebnih znakov</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_uppercase">
+        <item quantity="one">Vsebovati mora vsaj %d veliko črko</item>
+        <item quantity="two">Vsebovati mora vsaj %d veliki črki</item>
+        <item quantity="few">Vsebovati mora vsaj %d velike črke</item>
+        <item quantity="other">Vsebovati mora vsaj %d velikih črk</item>
+    </plurals>
+    <plurals name="mobile_network_summary_count">
+        <item quantity="one">%1$d kartica SIM</item>
+        <item quantity="two">%1$d kartici SIM</item>
+        <item quantity="few">%1$d kartice SIM</item>
+        <item quantity="other">%1$d kartic SIM</item>
+    </plurals>
+    <plurals name="runtime_permissions_additional_count">
+        <item quantity="one">%d dodatno dovoljenje</item>
+        <item quantity="two">%d dodatni dovoljenji</item>
+        <item quantity="few">%d dodatna dovoljenja</item>
+        <item quantity="other">%d dodatnih dovoljenj</item>
+    </plurals>
+    <plurals name="show_dev_countdown">
+        <item quantity="one">%1$d korak vas loči od tega, da postanete razvijalec.</item>
+        <item quantity="two">%1$d koraka vas ločita od tega, da postanete razvijalec.</item>
+        <item quantity="few">%1$d koraki vas ločijo od tega, da postanete razvijalec.</item>
+        <item quantity="other">%1$d korakov vas loči od tega, da postanete razvijalec.</item>
+    </plurals>
+    <plurals name="user_limit_reached_message">
+        <item quantity="one">Ustvariti je mogoče do %d uporabnika.</item>
+        <item quantity="two">Ustvariti je mogoče do %d uporabnika.</item>
+        <item quantity="few">Ustvariti je mogoče do %d uporabnike.</item>
+        <item quantity="other">Ustvariti je mogoče do %d uporabnikov.</item>
+    </plurals>
+    <plurals name="wifi_tether_connected_summary">
+        <item quantity="one">Povezana je %1$d naprava</item>
+        <item quantity="two">Povezani sta %1$d napravi</item>
+        <item quantity="few">Povezane so %1$d naprave</item>
+        <item quantity="other">Povezanih je %1$d naprav</item>
+    </plurals>
+</resources>

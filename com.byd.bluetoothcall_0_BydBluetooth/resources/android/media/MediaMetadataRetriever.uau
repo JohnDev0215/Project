@@ -1,0 +1,5 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/media/MediaMetadataRetriever;->getEmbeddedPicture(I)[B,frameworks/base/media/java/android/media/MediaMetadataRetriever.java,1045,5,1045,25,
+Landroid/media/MediaMetadataRetriever;->native_setup()V,frameworks/base/media/java/android/media/MediaMetadataRetriever.java,1058,5,1058,88,maxTargetSdk=28&trackingBug=115609023L
+Landroid/media/MediaMetadataRetriever;->native_init()V,frameworks/base/media/java/android/media/MediaMetadataRetriever.java,1060,5,1060,88,maxTargetSdk=28&trackingBug=115609023L
+Landroid/media/MediaMetadataRetriever;->native_finalize()V,frameworks/base/media/java/android/media/MediaMetadataRetriever.java,1063,5,1063,88,maxTargetSdk=28&trackingBug=115609023L

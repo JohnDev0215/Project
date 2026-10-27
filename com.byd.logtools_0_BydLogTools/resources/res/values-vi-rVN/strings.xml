@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="install">Cài đặt ứng dụng</string>
+    <string name="qrcode_expired">Đã hết hạn. Hãy nhấn để làm mới</string>
+    <string name="qrcode_network_warning">Mạng hiện tại không khả dụng. Vui lòng kiểm tra các cài đặt mạng</string>
+    <string name="qrcode_refresh_fail">Không nhận được. Hãy nhấn để làm mới</string>
+    <string name="qrcode_scan_type_vds">Quét VDS</string>
+    <string name="qrcode_scan_type_wechat">Quét WeCom</string>
+    <string name="qrcode_success">Quét thành công</string>
+    <string name="qrcode_time">Còn %d giây</string>
+    <string name="qrcode_tip">Quét mã QR để nhận ủy quyền</string>
+    <string name="qrcode_title">Xác minh</string>
+    <string name="qrcode_title_with_module">Xác minh %s</string>
+</resources>

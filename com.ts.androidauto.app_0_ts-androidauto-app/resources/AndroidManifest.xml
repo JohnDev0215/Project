@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    android:sharedUserId="android.uid.system"
+    android:versionCode="3"
+    android:versionName="2.20241106.0.2"
+    android:compileSdkVersion="30"
+    android:compileSdkVersionCodename="11"
+    package="com.ts.androidauto.app"
+    platformBuildVersionCode="30"
+    platformBuildVersionName="11">
+    <uses-sdk
+        android:minSdkVersion="30"
+        android:targetSdkVersion="30"/>
+    <uses-permission android:name="car.permission.ANDROIDAUTO"/>
+    <uses-permission android:name="car.permission.ANDROIDAUTO_APP"/>
+    <uses-permission android:name="car.permission.ANDROIDAUTO_DEVICELIST"/>
+    <uses-permission android:name="android.permission.BYDAUTO_INSTRUMENT_COMMON"/>
+    <uses-permission android:name="android.permission.BYDAUTO_INSTRUMENT_SET"/>
+    <uses-permission android:name="android.permission.BYDAUTO_INSTRUMENT_GET"/>
+    <application
+        android:theme="@style/AppTheme"
+        android:label="@string/app_name"
+        android:icon="@drawable/androidauto"
+        android:name="com.ts.androidauto.app.AndroidAutoApplication"
+        android:allowBackup="false"
+        android:largeHeap="true"
+        android:extractNativeLibs="true"
+        android:resizeableActivity="false"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+        android:usesNonSdkApi="true">
+        <activity
+            android:name="com.ts.androidauto.app.display.AapActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape"
+            android:configChanges="uiMode">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <service android:name="com.ts.androidauto.app.AndroidAutoRemoteUiService">
+            <intent-filter>
+                <action android:name="com.ts.androidauto.action.AndroidAutoRemoteUiService"/>
+            </intent-filter>
+        </service>
+        <uses-library android:name="ts.platform.library"/>
+    </application>
+</manifest>

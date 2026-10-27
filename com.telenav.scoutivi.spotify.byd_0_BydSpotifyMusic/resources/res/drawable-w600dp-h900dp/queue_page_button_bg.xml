@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="oval">
+    <solid android:color="?attr/queue_page_button_bg_color"/>
+    <size
+        android:height="@dimen/common_btn_size"
+        android:width="@dimen/common_btn_size"/>
+</shape>

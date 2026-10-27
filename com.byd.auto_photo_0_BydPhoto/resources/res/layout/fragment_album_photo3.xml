@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <fragment
+        android:name="com.byd.fragment.SearchAndSelectFragment"
+        android:id="@+id/fragment_album_header"
+        android:tag="album_search_land"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/search_or_tool_bar_height_photo3"
+        android:layout_marginTop="@dimen/dp_7_5"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:scrollbarSize="@dimen/dp_2"
+        android:scrollbarThumbVertical="@drawable/scrollbar_vertical_thumb"
+        android:scrollbarTrackVertical="@drawable/scrollbar_vertical_track"
+        android:id="@+id/album_recycler"
+        android:scrollbars="vertical"
+        android:fadingEdge="none"
+        android:fadingEdgeLength="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/dp_7"
+        android:layout_weight="1"
+        android:overScrollMode="never"
+        android:paddingStart="@dimen/content_padding"
+        android:paddingEnd="@dimen/content_padding"/>
+</LinearLayout>

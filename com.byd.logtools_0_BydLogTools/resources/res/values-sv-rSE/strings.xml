@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="install">Appinstallation</string>
+    <string name="qrcode_expired">Utgått. Tryck för att uppdatera</string>
+    <string name="qrcode_network_warning">Nuvarande nätverk är inte tillgängligt. Kontrollera nätverksinställningarna</string>
+    <string name="qrcode_refresh_fail">Kunde inte hämta. Tryck för att uppdatera</string>
+    <string name="qrcode_scan_type_vds">VDS-skanning</string>
+    <string name="qrcode_scan_type_wechat">WeCom-skanning</string>
+    <string name="qrcode_success">Skanning genomförd</string>
+    <string name="qrcode_time">%d s kvar</string>
+    <string name="qrcode_tip">Skanna QR-koden för att få behörighet</string>
+    <string name="qrcode_title">Verifiera</string>
+    <string name="qrcode_title_with_module">%s-verifiering</string>
+</resources>

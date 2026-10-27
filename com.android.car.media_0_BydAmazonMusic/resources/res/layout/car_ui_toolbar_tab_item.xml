@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:paddingHorizontal="20dp">
+    <ImageView
+        android:id="@+id/car_ui_toolbar_tab_item_icon"
+        android:visibility="gone"
+        android:layout_width="@dimen/car_ui_toolbar_tab_icon_width"
+        android:layout_height="@dimen/car_ui_toolbar_tab_icon_height"
+        style="@style/Widget.CarUi.Toolbar.Tab.Icon"/>
+    <View
+        android:layout_gravity="center_horizontal"
+        android:visibility="invisible"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/auto_dimen2_4"
+        android:layout_marginBottom="@dimen/auto_dimen2_5"/>
+    <TextView
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/car_ui_toolbar_tab_item_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Widget.CarUi.Toolbar.Tab.Text"/>
+    <View
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/car_ui_toolbar_tab_item_line"
+        android:background="@drawable/byd_bg_toolbar_tab_item_line"
+        android:layout_width="@dimen/auto_dimen2_60"
+        android:layout_height="@dimen/auto_dimen2_4"
+        android:layout_marginTop="@dimen/auto_dimen2_5"/>
+</LinearLayout>

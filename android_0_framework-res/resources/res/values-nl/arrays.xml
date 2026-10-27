@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="emailAddressTypes">
+        <item>Privé</item>
+        <item>Werk</item>
+        <item>Overig</item>
+        <item>Aangepast</item>
+    </array>
+    <array name="imProtocols">
+        <item>AIM</item>
+        <item>Windows Live</item>
+        <item>Yahoo</item>
+        <item>Skype</item>
+        <item>QQ</item>
+        <item>Google Talk</item>
+        <item>ICQ</item>
+        <item>Jabber</item>
+    </array>
+    <array name="organizationTypes">
+        <item>Werk</item>
+        <item>Overig</item>
+        <item>Aangepast</item>
+    </array>
+    <array name="phoneTypes">
+        <item>Thuis</item>
+        <item>Mobiel</item>
+        <item>Werk</item>
+        <item>Fax werk</item>
+        <item>Fax thuis</item>
+        <item>Semafoon</item>
+        <item>Overig</item>
+        <item>Aangepast</item>
+    </array>
+    <array name="postalAddressTypes">
+        <item>Thuis</item>
+        <item>Werk</item>
+        <item>Overig</item>
+        <item>Aangepast</item>
+    </array>
+    <array name="face_acquired_vendor">
+    </array>
+    <array name="face_error_vendor">
+    </array>
+    <array name="fingerprint_acquired_vendor">
+    </array>
+    <array name="fingerprint_error_vendor">
+    </array>
+    <array name="imAddressTypes">
+        <item>Thuis</item>
+        <item>Werk</item>
+        <item>Overig</item>
+        <item>Aangepast</item>
+    </array>
+    <array name="network_switch_type_name">
+        <item>mobiele data</item>
+        <item>Wifi</item>
+        <item>Bluetooth</item>
+        <item>Ethernet</item>
+        <item>VPN</item>
+    </array>
+    <array name="wfcOperatorErrorAlertMessages">
+        <item>Als je wilt bellen en berichten wilt verzenden via wifi, moet je eerst je provider vragen deze service in te stellen. Schakel bellen via wifi vervolgens opnieuw in via Instellingen. (Foutcode: %1$s)</item>
+    </array>
+    <array name="wfcOperatorErrorNotificationMessages">
+        <item>Probleem bij registratie van Bellen via wifi bij je provider: %1$s</item>
+    </array>
+</resources>

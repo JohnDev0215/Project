@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape
+            android:shape="rectangle"
+            android:useLevel="false">
+            <solid android:color="@color/contactsinfo_list_bg_color"/>
+            <stroke
+                android:width="@dimen/dimens_1"
+                android:color="@color/contactsinfo_list_side_color"/>
+            <corners android:radius="@dimen/dimens_10"/>
+        </shape>
+    </item>
+</layer-list>

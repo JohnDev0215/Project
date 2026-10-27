@@ -1,0 +1,8 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/renderscript/RenderScript;->sPointerSize:I,frameworks/base/rs/java/android/renderscript/RenderScript.java,107,5,107,25,
+Landroid/renderscript/RenderScript;->getMinorID()J,frameworks/base/rs/java/android/renderscript/RenderScript.java,159,5,159,25,
+Landroid/renderscript/RenderScript;->nScriptCCreate(Ljava/lang/String;Ljava/lang/String;[BI)J,frameworks/base/rs/java/android/renderscript/RenderScript.java,837,5,837,25,
+Landroid/renderscript/RenderScript;->mMessageCallback:Landroid/renderscript/RenderScript$RSMessageHandler;,frameworks/base/rs/java/android/renderscript/RenderScript.java,1163,5,1163,25,
+Landroid/renderscript/RenderScript;->validate()V,frameworks/base/rs/java/android/renderscript/RenderScript.java,1238,5,1238,25,
+Landroid/renderscript/RenderScript;->create(Landroid/content/Context;I)Landroid/renderscript/RenderScript;,frameworks/base/rs/java/android/renderscript/RenderScript.java,1502,5,1502,25,
+Landroid/renderscript/RenderScript;->create(Landroid/content/Context;ILandroid/renderscript/RenderScript$ContextType;I)Landroid/renderscript/RenderScript;,frameworks/base/rs/java/android/renderscript/RenderScript.java,1516,5,1516,25,

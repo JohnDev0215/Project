@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="billing_cycle_days_left">
+        <item quantity="one">%d kun qoldi</item>
+        <item quantity="other">%d kun qoldi</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_letters">
+        <item quantity="one">Parol tarkibida kamida 1 ta harf bo‘lishi lozim</item>
+        <item quantity="other">Parol tarkibida kamida %d ta harf bo‘lishi lozim</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_lowercase">
+        <item quantity="one">Parol tarkibida kamida 1 ta kichik harf bo‘lishi lozim</item>
+        <item quantity="other">Parol tarkibida kamida %d ta kichik harf bo‘lishi lozim</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_nonletter">
+        <item quantity="one">Parol tarkibida kamida 1 ta harf bo‘lmagan belgi bo‘lishi lozim</item>
+        <item quantity="other">Parol tarkibida kamida %d ta harf bo‘lmagan belgi bo‘lishi lozim</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_numeric">
+        <item quantity="one">Parol tarkibida kamida 1 ta raqam bo‘lishi lozim</item>
+        <item quantity="other">Parol tarkibida kamida %d ta raqam bo‘lishi lozim</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_symbols">
+        <item quantity="one">Parol tarkibida kamida 1 ta maxsus belgi bo‘lishi lozim</item>
+        <item quantity="other">Parol tarkibida kamida %d ta maxsus belgi bo‘lishi lozim</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_uppercase">
+        <item quantity="one">Parol tarkibida kamida 1 ta bosh harf bo‘lishi lozim</item>
+        <item quantity="other">Parol tarkibida kamida %d ta bosh harf bo‘lishi lozim</item>
+    </plurals>
+    <plurals name="mobile_network_summary_count">
+        <item quantity="one">%1$d ta SIM karta</item>
+        <item quantity="other">%1$d ta SIM karta</item>
+    </plurals>
+    <plurals name="runtime_permissions_additional_count">
+        <item quantity="one">%d ta qo‘shimcha ruxsat</item>
+        <item quantity="other">%d ta qo‘shimcha ruxsat</item>
+    </plurals>
+    <plurals name="show_dev_countdown">
+        <item quantity="one">Dasturchi boʻlishingizga atigi %1$d qadam qoldi.</item>
+        <item quantity="other">Dasturchi boʻlishingizga atigi %1$d qadam qoldi.</item>
+    </plurals>
+    <plurals name="user_limit_reached_message">
+        <item quantity="one">Faqat bitta foydalanuvchi yaratish mumkin.</item>
+        <item quantity="other">%d ta foydalanuvchi yaratish mumkin.</item>
+    </plurals>
+    <plurals name="wifi_tether_connected_summary">
+        <item quantity="one">%1$d ta qurilma ulangan</item>
+        <item quantity="other">%1$d ta qurilma ulangan</item>
+    </plurals>
+</resources>

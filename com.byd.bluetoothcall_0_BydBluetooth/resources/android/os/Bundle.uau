@@ -1,0 +1,8 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/os/Bundle;->forPair(Ljava/lang/String;Ljava/lang/String;)Landroid/os/Bundle;,frameworks/base/core/java/android/os/Bundle.java,177,5,177,25,
+Landroid/os/Bundle;->setDefusable(Landroid/os/Bundle;Z)Landroid/os/Bundle;,frameworks/base/core/java/android/os/Bundle.java,234,5,234,25,
+Landroid/os/Bundle;->getSize()I,frameworks/base/core/java/android/os/Bundle.java,309,5,309,25,
+Landroid/os/Bundle;->filterValues()Landroid/os/Bundle;,frameworks/base/core/java/android/os/Bundle.java,392,5,392,25,
+Landroid/os/Bundle;->putParcelableList(Ljava/lang/String;Ljava/util/List;)V,frameworks/base/core/java/android/os/Bundle.java,615,5,615,25,
+Landroid/os/Bundle;->putIBinder(Ljava/lang/String;Landroid/os/IBinder;)V,frameworks/base/core/java/android/os/Bundle.java,787,5,787,25,
+Landroid/os/Bundle;->getIBinder(Ljava/lang/String;)Landroid/os/IBinder;,frameworks/base/core/java/android/os/Bundle.java,1252,5,1252,25,

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="audio_muted">Lyden slået fra</string>
+    <string name="audio_removed">Lyden er slået til</string>
+    <string name="btn_comfirm">OK</string>
+    <string name="btn_reset">Nulstil</string>
+    <string name="call_mode">Under opkald. Betjening deaktiveret</string>
+    <string name="cancel">Annuller</string>
+    <string name="carplay_androidauto_land">Den nuværende applikation understøtter ikke skift af skærm</string>
+    <string name="dialog_title_user">Brugerdefinerede knapindstillinger</string>
+    <string name="dialog_title_user_left">Indstillinger for venstre brugerdefinerede knap</string>
+    <string name="dialog_title_user_right">Indstillinger for højre brugerdefineret knap</string>
+    <string name="mode_am_music">AM</string>
+    <string name="mode_amazon_music">Amazon Music</string>
+    <string name="mode_bt_music">Musik</string>
+    <string name="mode_button_androidauto">Android Auto</string>
+    <string name="mode_button_carplay">Apple CarPlay</string>
+    <string name="mode_dab_music">DAB</string>
+    <string name="mode_fm_music">FM</string>
+    <string name="mode_local_music">Lokale medier</string>
+    <string name="mode_music">Lokal</string>
+    <string name="mode_sd">SD-kort</string>
+    <string name="mode_spotify_music">Spotify</string>
+    <string name="mode_usb">USB</string>
+    <string name="mode_usb_music">Musik i USB-drev</string>
+    <string name="mode_usb_text">Intet USB registreret</string>
+    <string name="mode_usb_video">Video på USB-drev</string>
+    <string name="radio_button_ac">A/C</string>
+    <string name="radio_button_music">Musik</string>
+    <string name="radio_button_navi_home">Hjem</string>
+    <string name="radio_button_play_pause">Sæt på pause/afspil medie</string>
+    <string name="radio_button_radio">Radio</string>
+    <string name="radio_button_rotate">Rotation af den centrale skærmen</string>
+    <string name="radio_button_source">Skift lydkilde for medie</string>
+    <string name="reset_country">Systemkonfigurering. Vent litt</string>
+    <string name="restart_efect">Funktionen er konfigureret. Genstart for at aktivere den!</string>
+    <string name="restart_now">Genstart nu</string>
+    <string name="restart_time">Genstart nedtælling</string>
+    <string name="warring_mode">Gennemfør vejledningsprocessen, før du bruger IVI!</string>
+    <string name="warring_navi_mode">Den nuværende tilstand understøtter ikke denne handling!</string>
+    <string name="warring_power">Denne funktion er kun tilgængelig i gear P</string>
+</resources>

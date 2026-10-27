@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="@dimen/dp_464"
+        android:layout_height="@dimen/dp_6"
+        android:layout_marginTop="@dimen/dp_8"
+        android:layout_marginBottom="@dimen/dp_39"
+        android:max="@integer/progress_max"
+        android:progress="@integer/progress"
+        android:layout_below="@+id/tv_progress"
+        android:layout_centerHorizontal="true"
+        style="@style/progressBar_horizontal_denza"/>
+</merge>

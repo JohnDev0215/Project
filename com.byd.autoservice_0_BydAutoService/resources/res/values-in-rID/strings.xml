@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">BydAutoService</string>
+    <string name="audio_muted">Audio dibisukan</string>
+    <string name="audio_removed">Dibunyikan</string>
+    <string name="btn_comfirm">OK</string>
+    <string name="btn_reset">Reset</string>
+    <string name="call_mode">Dalam panggilan. Operasi dinonaktifkan</string>
+    <string name="cancel">Batal</string>
+    <string name="carplay_androidauto_land">Layar saat ini tidak mendukung peralihan layar</string>
+    <string name="dialog_title_user">Pengaturan tombol khusus</string>
+    <string name="dialog_title_user_left">Pengaturan Tombol Kustom Kiri</string>
+    <string name="dialog_title_user_right">Pengaturan Tombol Kustom Kanan</string>
+    <string name="mode_am_music">AM</string>
+    <string name="mode_amazon_music">Musik Amazon</string>
+    <string name="mode_bt_music">Musik</string>
+    <string name="mode_button_androidauto">Android Auto</string>
+    <string name="mode_button_carplay">Apple CarPlay</string>
+    <string name="mode_dab_music">DAB</string>
+    <string name="mode_fm_music">FM</string>
+    <string name="mode_local_music">Media Lokal</string>
+    <string name="mode_music">Lokal</string>
+    <string name="mode_sd">Kartu SD</string>
+    <string name="mode_spotify_music">Spotify</string>
+    <string name="mode_usb">USB</string>
+    <string name="mode_usb_music">Musik di USB flash disk</string>
+    <string name="mode_usb_text">Tidak ada USB yang terdeteksi</string>
+    <string name="mode_usb_video">Video USB flashdisk</string>
+    <string name="radio_button_ac">A/C</string>
+    <string name="radio_button_music">Musik</string>
+    <string name="radio_button_navi_home">Rumah</string>
+    <string name="radio_button_play_pause">Jeda/Putar Media</string>
+    <string name="radio_button_radio">Radio</string>
+    <string name="radio_button_rotate">Rotasi Layar Kontrol Pusat</string>
+    <string name="radio_button_source">Ganti Sumber Audio Media</string>
+    <string name="reset_country">Konfigurasi sistem. Harap tunggu</string>
+    <string name="restart_efect">Fungsi berhasil dikonfigurasi. Mulai ulang untuk mengaktifkan!</string>
+    <string name="restart_now">Mulai ulang sekarang</string>
+    <string name="restart_time">Mulai ulang hitungan mundur</string>
+    <string name="warring_mode">Harap selesaikan proses panduan sebelum menggunakan IVI!</string>
+    <string name="warring_navi_mode">Keadaan saat ini tidak mendukung operasi ini!</string>
+    <string name="warring_power">Fungsi ini hanya tersedia di gigi P</string>
+</resources>

@@ -1,0 +1,73 @@
+package g7;
+
+import net.sourceforge.pinyin4j.format.exception.BadHanyuPinyinOutputFormatCombination;
+
+/* JADX INFO: loaded from: classes2.dex */
+public class c {
+    public static String a(String str) {
+        String lowerCase = str.toLowerCase();
+        if (!lowerCase.matches("[a-z]*[1-5]?")) {
+            return lowerCase;
+        }
+        if (!lowerCase.matches("[a-z]*[1-5]")) {
+            return lowerCase.replaceAll("v", "ü");
+        }
+        int numericValue = Character.getNumericValue(lowerCase.charAt(lowerCase.length() - 1));
+        char cCharAt = 'a';
+        int iIndexOf = lowerCase.indexOf(97);
+        int iIndexOf2 = lowerCase.indexOf(101);
+        int iIndexOf3 = lowerCase.indexOf("ou");
+        if (-1 == iIndexOf) {
+            if (-1 == iIndexOf2) {
+                if (-1 == iIndexOf3) {
+                    iIndexOf = lowerCase.length() - 1;
+                    while (true) {
+                        if (iIndexOf < 0) {
+                            cCharAt = '$';
+                            iIndexOf = -1;
+                            break;
+                        }
+                        if (String.valueOf(lowerCase.charAt(iIndexOf)).matches("[aeiouv]")) {
+                            cCharAt = lowerCase.charAt(iIndexOf);
+                            break;
+                        }
+                        iIndexOf--;
+                    }
+                } else {
+                    cCharAt = "ou".charAt(0);
+                    iIndexOf = iIndexOf3;
+                }
+            } else {
+                cCharAt = 'e';
+                iIndexOf = iIndexOf2;
+            }
+        }
+        if ('$' == cCharAt || -1 == iIndexOf) {
+            return lowerCase;
+        }
+        char cCharAt2 = "āáăàaēéĕèeīíĭìiōóŏòoūúŭùuǖǘǚǜü".charAt(("aeiouv".indexOf(cCharAt) * 5) + (numericValue - 1));
+        StringBuffer stringBuffer = new StringBuffer();
+        stringBuffer.append(lowerCase.substring(0, iIndexOf).replaceAll("v", "ü"));
+        stringBuffer.append(cCharAt2);
+        stringBuffer.append(lowerCase.substring(iIndexOf + 1, lowerCase.length() - 1).replaceAll("v", "ü"));
+        return stringBuffer.toString();
+    }
+
+    public static String b(String str, h7.b bVar) throws BadHanyuPinyinOutputFormatCombination {
+        h7.c cVar = h7.c.f5452c;
+        if (cVar == bVar.b() && (h7.d.f5455b == bVar.c() || h7.d.f5454a == bVar.c())) {
+            throw new BadHanyuPinyinOutputFormatCombination("tone marks cannot be added to v or u:");
+        }
+        if (h7.c.f5451b == bVar.b()) {
+            str = str.replaceAll("[1-5]", "");
+        } else if (cVar == bVar.b()) {
+            str = a(str.replaceAll("u:", "v"));
+        }
+        if (h7.d.f5455b == bVar.c()) {
+            str = str.replaceAll("u:", "v");
+        } else if (h7.d.f5456c == bVar.c()) {
+            str = str.replaceAll("u:", "ü");
+        }
+        return h7.a.f5444a == bVar.a() ? str.toUpperCase() : str;
+    }
+}

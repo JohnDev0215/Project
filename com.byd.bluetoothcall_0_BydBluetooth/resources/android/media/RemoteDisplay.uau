@@ -1,0 +1,5 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/media/RemoteDisplay;->dispose()V,frameworks/base/media/java/android/media/RemoteDisplay.java,92,5,92,25,
+Landroid/media/RemoteDisplay;->notifyDisplayConnected(Landroid/view/Surface;IIII)V,frameworks/base/media/java/android/media/RemoteDisplay.java,130,5,130,25,
+Landroid/media/RemoteDisplay;->notifyDisplayDisconnected()V,frameworks/base/media/java/android/media/RemoteDisplay.java,142,5,142,25,
+Landroid/media/RemoteDisplay;->notifyDisplayError(I)V,frameworks/base/media/java/android/media/RemoteDisplay.java,153,5,153,25,

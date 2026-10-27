@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:radius="@dimen/media_html_enter_manual_radius"/>
+    <stroke
+        android:width="@dimen/dp_1"
+        android:color="@color/media_html_enter_manual"/>
+    <gradient
+        android:startColor="@color/settings_download_button_color_end"
+        android:endColor="@color/settings_download_button_color_start"
+        android:angle="0"/>
+</shape>

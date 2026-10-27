@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">BydAutoService</string>
+    <string name="audio_muted">Ääni mykistetty</string>
+    <string name="audio_removed">Mykitys poistettu</string>
+    <string name="btn_comfirm">OK</string>
+    <string name="btn_reset">Reiniciar</string>
+    <string name="call_mode">Toiminta on kielletty puhelun aikana</string>
+    <string name="cancel">Peruuta</string>
+    <string name="carplay_androidauto_land">Nykyinen näyttö ei tue näytön vaihtamista</string>
+    <string name="dialog_title_user">Mukautetut painikeasetukset</string>
+    <string name="dialog_title_user_left">Vasemman muokatun napin asetus</string>
+    <string name="dialog_title_user_right">Oikean muokatun napin asetus</string>
+    <string name="mode_am_music">AM</string>
+    <string name="mode_amazon_music">Amazon Music</string>
+    <string name="mode_bt_music">Musiikki</string>
+    <string name="mode_button_androidauto">Android Auto</string>
+    <string name="mode_button_carplay">Apple CarPlay</string>
+    <string name="mode_dab_music">DAB</string>
+    <string name="mode_fm_music">FM</string>
+    <string name="mode_local_music">Paik. media</string>
+    <string name="mode_music">Paikallinen</string>
+    <string name="mode_sd">SD-kortti</string>
+    <string name="mode_spotify_music">Spotify</string>
+    <string name="mode_usb">USB</string>
+    <string name="mode_usb_music">Musiikki USB-muistitikulla</string>
+    <string name="mode_usb_text">USB:tä ei havaittu</string>
+    <string name="mode_usb_video">USB-muistitikku-video</string>
+    <string name="radio_button_ac">Ilmastointilaite</string>
+    <string name="radio_button_music">Musiikki</string>
+    <string name="radio_button_navi_home">Aloitussivu</string>
+    <string name="radio_button_play_pause">Keskeytä/toista mediasisältö</string>
+    <string name="radio_button_radio">Radio</string>
+    <string name="radio_button_rotate">Carpadin kierto</string>
+    <string name="radio_button_source">Vaihda mediasisällön äänilähdettä</string>
+    <string name="reset_country">Järjestelmän määrittäminen. Odota</string>
+    <string name="restart_efect">Toiminnon konfigurointi onnistui Käynnistä uudelleen aktivoidaksesi sen!</string>
+    <string name="restart_now">Käynnistä uudelleen nyt</string>
+    <string name="restart_time">Käynnistä lähtölaskenta uudelleen</string>
+    <string name="warring_mode">Lue opas loppuun ennen multimedian käyttöä!</string>
+    <string name="warring_navi_mode">Nykytila ei tue toimintaa!</string>
+    <string name="warring_power">Tämä toiminto on käytettävissä vain P-vaihteella</string>
+</resources>

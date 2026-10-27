@@ -1,0 +1,5 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/widget/ActionMenuPresenter;->dismissPopupMenus()Z,frameworks/base/core/java/android/widget/ActionMenuPresenter.java,590,5,590,25,
+Landroid/widget/ActionMenuPresenter;->isOverflowMenuShowing()Z,frameworks/base/core/java/android/widget/ActionMenuPresenter.java,613,5,613,25,
+Landroid/widget/ActionMenuPresenter;->onSaveInstanceState()Landroid/os/Parcelable;,frameworks/base/core/java/android/widget/ActionMenuPresenter.java,772,5,772,25,
+Landroid/widget/ActionMenuPresenter;->onRestoreInstanceState(Landroid/os/Parcelable;)V,frameworks/base/core/java/android/widget/ActionMenuPresenter.java,780,5,780,25,

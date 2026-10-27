@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">BydAutoService</string>
+    <string name="audio_muted">Audio coupé</string>
+    <string name="audio_removed">Son rétabli</string>
+    <string name="btn_comfirm">OK</string>
+    <string name="btn_reset">Réinitialiser</string>
+    <string name="call_mode">L\'opération est interdite pendant les appels en cours</string>
+    <string name="cancel">Annuler</string>
+    <string name="carplay_androidauto_land">L\'écran actuel ne permet pas de changer d\'écran</string>
+    <string name="dialog_title_user">Configuration des boutons personnalisés</string>
+    <string name="dialog_title_user_left">Configuration des boutons Personnaliser</string>
+    <string name="dialog_title_user_right">Configuration des boutons personnaliser Droit</string>
+    <string name="mode_am_music">AM</string>
+    <string name="mode_amazon_music">Musique Amazon</string>
+    <string name="mode_bt_music">Musique</string>
+    <string name="mode_button_androidauto">Android Auto</string>
+    <string name="mode_button_carplay">Apple Car Play</string>
+    <string name="mode_dab_music">DAB</string>
+    <string name="mode_fm_music">FM</string>
+    <string name="mode_local_music">Médias locaux</string>
+    <string name="mode_music">Musique locale</string>
+    <string name="mode_sd">Carte SD</string>
+    <string name="mode_spotify_music">Spotify</string>
+    <string name="mode_usb">USB</string>
+    <string name="mode_usb_music">Musique USB</string>
+    <string name="mode_usb_text">Aucune clé USB détectée</string>
+    <string name="mode_usb_video">Vidéo sur clé USB</string>
+    <string name="radio_button_ac">A/C</string>
+    <string name="radio_button_music">Musique</string>
+    <string name="radio_button_navi_home">Maison</string>
+    <string name="radio_button_play_pause">Pause/lecture des médias</string>
+    <string name="radio_button_radio">Radio</string>
+    <string name="radio_button_rotate">Rotation de l\'écran central</string>
+    <string name="radio_button_source">Changer la Source Audio média</string>
+    <string name="reset_country">Configuration du système. Veuillez patienter</string>
+    <string name="restart_efect">Fonction configurée avec succès. Redémarrez pour l\'activer !</string>
+    <string name="restart_now">Redémarrer maintenant</string>
+    <string name="restart_time">Compte à rebours red</string>
+    <string name="warring_mode">Veuillez compléter le processus de guidage avant d\'utiliser IVI!</string>
+    <string name="warring_navi_mode">L\'état actuel ne permet pas cette opération !</string>
+    <string name="warring_power">Cette fonction n\'est disponible qu\'en mode P</string>
+</resources>

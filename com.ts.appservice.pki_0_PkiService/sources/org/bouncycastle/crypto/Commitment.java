@@ -1,0 +1,21 @@
+package org.bouncycastle.crypto;
+
+/* JADX INFO: compiled from: caradapter-bug */
+/* JADX INFO: loaded from: classes.dex */
+public class Commitment {
+    private final byte[] commitment;
+    private final byte[] secret;
+
+    public Commitment(byte[] bArr, byte[] bArr2) {
+        this.secret = bArr;
+        this.commitment = bArr2;
+    }
+
+    public byte[] getCommitment() {
+        return this.commitment;
+    }
+
+    public byte[] getSecret() {
+        return this.secret;
+    }
+}

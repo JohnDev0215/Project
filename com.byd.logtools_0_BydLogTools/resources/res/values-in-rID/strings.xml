@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="install">Pemasangan Aplikasi</string>
+    <string name="qrcode_expired">Kedaluwarsa. Ketuk untuk menyegarkan</string>
+    <string name="qrcode_network_warning">Jaringan terkini tidak tersedia. Periksa pengaturan jaringan</string>
+    <string name="qrcode_refresh_fail">Gagal didapat. Ketuk untuk menyegarkan</string>
+    <string name="qrcode_scan_type_vds">Pemindaian VDS</string>
+    <string name="qrcode_scan_type_wechat">Pemindaian WeCom</string>
+    <string name="qrcode_success">Berhasil memindai</string>
+    <string name="qrcode_time">Tersisa %ds</string>
+    <string name="qrcode_tip">Pindai kode QR untuk mendapatkan otorisasi</string>
+    <string name="qrcode_title">Verifikasi</string>
+    <string name="qrcode_title_with_module">Verifikasi %s</string>
+</resources>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="billing_cycle_days_left">
+        <item quantity="one">%d दिन बचे हैं</item>
+        <item quantity="other">%d दिन बचे हैं</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_letters">
+        <item quantity="one">पासवर्ड में कम से कम %d अक्षर होने चाहिए</item>
+        <item quantity="other">पासवर्ड में कम से कम %d अक्षर होने चाहिए</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_lowercase">
+        <item quantity="one">पासवर्ड में अंग्रेज़ी के कम से कम %d छोटे अक्षर होने चाहिए</item>
+        <item quantity="other">पासवर्ड में अंग्रेज़ी के कम से कम %d छोटे अक्षर होने चाहिए</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_nonletter">
+        <item quantity="one">पासवर्ड में कम से कम %d वर्ण ऐसे होने चाहिए जो अक्षर न हों</item>
+        <item quantity="other">पासवर्ड में कम से कम %d वर्ण ऐसे होने चाहिए जो अक्षर न हों</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_numeric">
+        <item quantity="one">पासवर्ड में कम से कम %d अंक होने चाहिए</item>
+        <item quantity="other">पासवर्ड में कम से कम %d अंक होने चाहिए</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_symbols">
+        <item quantity="one">पासवर्ड में कम से कम %d खास चिह्न होने चाहिए</item>
+        <item quantity="other">पासवर्ड में कम से कम %d खास चिह्न होने चाहिए</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_uppercase">
+        <item quantity="one">पासवर्ड में अंग्रेज़ी के कम से कम %d बड़े अक्षर होने चाहिए</item>
+        <item quantity="other">पासवर्ड में अंग्रेज़ी के कम से कम %d बड़े अक्षर होने चाहिए</item>
+    </plurals>
+    <plurals name="mobile_network_summary_count">
+        <item quantity="one">%1$d सिम</item>
+        <item quantity="other">%1$d सिम</item>
+    </plurals>
+    <plurals name="runtime_permissions_additional_count">
+        <item quantity="one">%d अतिरिक्त अनुमतियां</item>
+        <item quantity="other">%d अतिरिक्त अनुमतियां</item>
+    </plurals>
+    <plurals name="show_dev_countdown">
+        <item quantity="one">अब आप डेवलपर बनने से %1$d कदम दूर हैं.</item>
+        <item quantity="other">अब आप डेवलपर बनने से %1$d कदम दूर हैं.</item>
+    </plurals>
+    <plurals name="user_limit_reached_message">
+        <item quantity="one">आप %d उपयोगकर्ता जोड़ सकते हैं.</item>
+        <item quantity="other">आप %d उपयोगकर्ता जोड़ सकते हैं.</item>
+    </plurals>
+    <plurals name="wifi_tether_connected_summary">
+        <item quantity="one">%1$d डिवाइस जुड़ा है</item>
+        <item quantity="other">%1$d डिवाइस जुड़े हैं</item>
+    </plurals>
+</resources>

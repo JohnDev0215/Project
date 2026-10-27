@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="install">Εγκατάσταση εφαρμογής</string>
+    <string name="qrcode_expired">Έληξε. Αγγίξτε για ανανέωση</string>
+    <string name="qrcode_network_warning">Το τρέχον δίκτυο δεν είναι διαθέσιμο. Ελέγξτε τις ρυθμίσεις δικτύου</string>
+    <string name="qrcode_refresh_fail">Αποτυχία λήψης. Αγγίξτε για ανανέωση</string>
+    <string name="qrcode_scan_type_vds">Σάρωση VDS</string>
+    <string name="qrcode_scan_type_wechat">Σάρωση WeCom</string>
+    <string name="qrcode_success">Επιτυχής σάρωση</string>
+    <string name="qrcode_time">%d s απομένουν</string>
+    <string name="qrcode_tip">Σαρώστε τον κωδικό QR για λήψη εξουσιοδότησης</string>
+    <string name="qrcode_title">Επαλήθευση</string>
+    <string name="qrcode_title_with_module">Επαλήθευση %s</string>
+</resources>

@@ -1,0 +1,2 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/provider/CallLog$Calls;->addCall(Landroid/telecom/CallerInfo;Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;IIILandroid/telecom/PhoneAccountHandle;JILjava/lang/Long;ZLandroid/os/UserHandle;ZILjava/lang/CharSequence;Ljava/lang/String;)Landroid/net/Uri;,frameworks/base/core/java/android/provider/CallLog.java,723,9,723,92,maxTargetSdk=28&trackingBug=115609023L

@@ -1,0 +1,4 @@
+signature,file,startline,startcol,endline,endcol,properties
+Lcom/android/ims/internal/uce/common/StatusCode;-><init>()V,frameworks/base/core/java/com/android/ims/internal/uce/common/StatusCode.java,78,5,78,25,
+Lcom/android/ims/internal/uce/common/StatusCode;->getStatusCode()I,frameworks/base/core/java/com/android/ims/internal/uce/common/StatusCode.java,85,5,85,25,
+Lcom/android/ims/internal/uce/common/StatusCode;->setStatusCode(I)V,frameworks/base/core/java/com/android/ims/internal/uce/common/StatusCode.java,94,5,94,25,

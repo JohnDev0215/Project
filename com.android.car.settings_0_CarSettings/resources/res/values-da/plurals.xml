@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="billing_cycle_days_left">
+        <item quantity="one">%d dag tilbage</item>
+        <item quantity="other">%d dage tilbage</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_letters">
+        <item quantity="one">Skal indeholde mindst %d bogstav</item>
+        <item quantity="other">Skal indeholde mindst %d bogstaver</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_lowercase">
+        <item quantity="one">Skal indeholde mindst %d lille bogstav</item>
+        <item quantity="other">Skal indeholde mindst %d små bogstaver</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_nonletter">
+        <item quantity="one">Skal indeholde mindst %d tegn, der ikke er et bogstav</item>
+        <item quantity="other">Skal indeholde mindst %d tegn, der ikke er bogstaver</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_numeric">
+        <item quantity="one">Skal indeholde mindst %d tal</item>
+        <item quantity="other">Skal indeholde mindst %d tal</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_symbols">
+        <item quantity="one">Skal indeholde mindst %d specialtegn</item>
+        <item quantity="other">Skal indeholde mindst %d specialtegn</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_uppercase">
+        <item quantity="one">Skal indeholde mindst %d stort bogstav</item>
+        <item quantity="other">Skal indeholde mindst %d store bogstaver</item>
+    </plurals>
+    <plurals name="mobile_network_summary_count">
+        <item quantity="one">%1$d SIM-kort</item>
+        <item quantity="other">%1$d SIM-kort</item>
+    </plurals>
+    <plurals name="runtime_permissions_additional_count">
+        <item quantity="one">%d ekstra tilladelse</item>
+        <item quantity="other">%d ekstra tilladelser</item>
+    </plurals>
+    <plurals name="show_dev_countdown">
+        <item quantity="one">Du er nu %1$d skridt fra at være udvikler.</item>
+        <item quantity="other">Du er nu %1$d skridt fra at være udvikler.</item>
+    </plurals>
+    <plurals name="user_limit_reached_message">
+        <item quantity="one">Der kan kun oprettes %d bruger.</item>
+        <item quantity="other">Der kan kun oprettes %d brugere.</item>
+    </plurals>
+    <plurals name="wifi_tether_connected_summary">
+        <item quantity="one">%1$d enhed er tilsluttet</item>
+        <item quantity="other">%1$d enheder er tilsluttet</item>
+    </plurals>
+</resources>

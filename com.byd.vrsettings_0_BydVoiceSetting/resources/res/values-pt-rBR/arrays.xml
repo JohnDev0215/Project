@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="control_ac_array">
+        <item>Ligar o ar-condicionado</item>
+        <item>Configurar a temperatura para 25 graus</item>
+        <item>Ligar o modo de circulação externa</item>
+        <item>O carro está muito frio</item>
+        <item>Diminuir o nível da ventilação</item>
+        <item>Definir a velocidade do ventilador para o nível 3</item>
+        <item>Ligar o degelo frontal do ar-condicionado</item>
+        <item>Ativar a ventilação</item>
+        <item>Ligar o ventilador</item>
+    </array>
+    <array name="control_seat_array">
+        <item>Ligar o vento quente do banco do condutor</item>
+        <item>Ligar a ventilação</item>
+        <item>Ligar a ventilação dos bancos da frente</item>
+        <item>Desligar a ventilação</item>
+    </array>
+    <array name="control_sunshade_array">
+        <item>Abrir a cortina do teto solar</item>
+        <item>Fechar a cortina do teto solar</item>
+    </array>
+    <array name="offline_other_operations_array">
+        <item>Abrir Bluetooth</item>
+        <item>Abrir WiFi</item>
+        <item>Aumentar o brilho da tela</item>
+        <item>Abrir as configurações do veículo</item>
+        <item>Voltar para a página inicial</item>
+    </array>
+    <array name="offline_window_array">
+        <item>Por favor abaixar os vidros</item>
+        <item>Baixar a janela do passageiro</item>
+        <item>Descer o vidro do lado do passageiro</item>
+        <item>Subir todas as janelas</item>
+    </array>
+    <array name="rotate_screen_arrays">
+        <item>Girar a tela</item>
+    </array>
+    <array name="system_app_operations">
+        <item>Abrir o Spotify</item>
+        <item>Abrir as configurações do veículo</item>
+        <item>Fechar as configurações do veículo</item>
+    </array>
+    <array name="system_other_operations_array">
+        <item>Abrir Bluetooth</item>
+        <item>Abrir WiFi</item>
+        <item>Aumentar o brilho da tela</item>
+        <item>Voltar para a página inicial</item>
+    </array>
+</resources>

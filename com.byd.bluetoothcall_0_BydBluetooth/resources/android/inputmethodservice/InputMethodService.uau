@@ -1,0 +1,10 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/inputmethodservice/InputMethodService;->mTheme:I,frameworks/base/core/java/android/inputmethodservice/InputMethodService.java,377,5,377,88,maxTargetSdk=28&trackingBug=115609023L
+Landroid/inputmethodservice/InputMethodService;->mRootView:Landroid/view/View;,frameworks/base/core/java/android/inputmethodservice/InputMethodService.java,382,5,382,25,
+Landroid/inputmethodservice/InputMethodService;->mExtractView:Landroid/view/View;,frameworks/base/core/java/android/inputmethodservice/InputMethodService.java,422,5,422,25,
+Landroid/inputmethodservice/InputMethodService;->mExtractEditText:Landroid/inputmethodservice/ExtractEditText;,frameworks/base/core/java/android/inputmethodservice/InputMethodService.java,425,5,425,25,
+Landroid/inputmethodservice/InputMethodService;->mTmpInsets:Landroid/inputmethodservice/InputMethodService$Insets;,frameworks/base/core/java/android/inputmethodservice/InputMethodService.java,444,5,444,88,maxTargetSdk=28&trackingBug=115609023L
+Landroid/inputmethodservice/InputMethodService;->mSettingsObserver:Landroid/inputmethodservice/InputMethodService$SettingsObserver;,frameworks/base/core/java/android/inputmethodservice/InputMethodService.java,1150,5,1150,25,
+Landroid/inputmethodservice/InputMethodService;->onExtractedDeleteText(II)V,frameworks/base/core/java/android/inputmethodservice/InputMethodService.java,2889,5,2889,25,
+Landroid/inputmethodservice/InputMethodService;->onExtractedReplaceText(IILjava/lang/CharSequence;)V,frameworks/base/core/java/android/inputmethodservice/InputMethodService.java,2902,5,2902,25,
+Landroid/inputmethodservice/InputMethodService;->onExtractedSetSpan(Ljava/lang/Object;III)V,frameworks/base/core/java/android/inputmethodservice/InputMethodService.java,2914,5,2914,25,

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:height="@dimen/overflow_button_icon_background_size"
+        android:width="@dimen/overflow_button_icon_background_size"
+        android:drawable="@drawable/selectable_button_background"/>
+    <item
+        android:gravity="center"
+        android:height="@dimen/overflow_button_icon_size"
+        android:width="@dimen/overflow_button_icon_size"
+        android:drawable="@drawable/ic_overflow"/>
+</layer-list>

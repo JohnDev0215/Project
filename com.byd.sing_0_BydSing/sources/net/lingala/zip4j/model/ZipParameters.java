@@ -1,0 +1,264 @@
+package net.lingala.zip4j.model;
+
+import net.lingala.zip4j.model.enums.AesKeyStrength;
+import net.lingala.zip4j.model.enums.AesVersion;
+import net.lingala.zip4j.model.enums.CompressionLevel;
+import net.lingala.zip4j.model.enums.CompressionMethod;
+import net.lingala.zip4j.model.enums.EncryptionMethod;
+
+/* JADX INFO: loaded from: classes.dex */
+public class ZipParameters {
+    private AesKeyStrength aesKeyStrength;
+    private AesVersion aesVersion;
+    private CompressionLevel compressionLevel;
+    private CompressionMethod compressionMethod;
+    private String defaultFolderPath;
+    private boolean encryptFiles;
+    private EncryptionMethod encryptionMethod;
+    private long entryCRC;
+    private long entrySize;
+    private ExcludeFileFilter excludeFileFilter;
+    private String fileComment;
+    private String fileNameInZip;
+    private boolean includeRootFolder;
+    private long lastModifiedFileTime;
+    private boolean overrideExistingFilesInZip;
+    private boolean readHiddenFiles;
+    private boolean readHiddenFolders;
+    private String rootFolderNameInZip;
+    private SymbolicLinkAction symbolicLinkAction;
+    private boolean unixMode;
+    private boolean writeExtendedLocalFileHeader;
+
+    public enum SymbolicLinkAction {
+        INCLUDE_LINK_ONLY,
+        INCLUDE_LINKED_FILE_ONLY,
+        INCLUDE_LINK_AND_LINKED_FILE
+    }
+
+    public ZipParameters() {
+        this.compressionMethod = CompressionMethod.DEFLATE;
+        this.compressionLevel = CompressionLevel.NORMAL;
+        this.encryptFiles = false;
+        this.encryptionMethod = EncryptionMethod.NONE;
+        this.readHiddenFiles = true;
+        this.readHiddenFolders = true;
+        this.aesKeyStrength = AesKeyStrength.KEY_STRENGTH_256;
+        this.aesVersion = AesVersion.TWO;
+        this.includeRootFolder = true;
+        this.lastModifiedFileTime = 0L;
+        this.entrySize = -1L;
+        this.writeExtendedLocalFileHeader = true;
+        this.overrideExistingFilesInZip = true;
+        this.symbolicLinkAction = SymbolicLinkAction.INCLUDE_LINKED_FILE_ONLY;
+    }
+
+    public AesKeyStrength getAesKeyStrength() {
+        return this.aesKeyStrength;
+    }
+
+    public AesVersion getAesVersion() {
+        return this.aesVersion;
+    }
+
+    public CompressionLevel getCompressionLevel() {
+        return this.compressionLevel;
+    }
+
+    public CompressionMethod getCompressionMethod() {
+        return this.compressionMethod;
+    }
+
+    public String getDefaultFolderPath() {
+        return this.defaultFolderPath;
+    }
+
+    public EncryptionMethod getEncryptionMethod() {
+        return this.encryptionMethod;
+    }
+
+    public long getEntryCRC() {
+        return this.entryCRC;
+    }
+
+    public long getEntrySize() {
+        return this.entrySize;
+    }
+
+    public ExcludeFileFilter getExcludeFileFilter() {
+        return this.excludeFileFilter;
+    }
+
+    public String getFileComment() {
+        return this.fileComment;
+    }
+
+    public String getFileNameInZip() {
+        return this.fileNameInZip;
+    }
+
+    public long getLastModifiedFileTime() {
+        return this.lastModifiedFileTime;
+    }
+
+    public String getRootFolderNameInZip() {
+        return this.rootFolderNameInZip;
+    }
+
+    public SymbolicLinkAction getSymbolicLinkAction() {
+        return this.symbolicLinkAction;
+    }
+
+    public boolean isEncryptFiles() {
+        return this.encryptFiles;
+    }
+
+    public boolean isIncludeRootFolder() {
+        return this.includeRootFolder;
+    }
+
+    public boolean isOverrideExistingFilesInZip() {
+        return this.overrideExistingFilesInZip;
+    }
+
+    public boolean isReadHiddenFiles() {
+        return this.readHiddenFiles;
+    }
+
+    public boolean isReadHiddenFolders() {
+        return this.readHiddenFolders;
+    }
+
+    public boolean isUnixMode() {
+        return this.unixMode;
+    }
+
+    public boolean isWriteExtendedLocalFileHeader() {
+        return this.writeExtendedLocalFileHeader;
+    }
+
+    public void setAesKeyStrength(AesKeyStrength aesKeyStrength) {
+        this.aesKeyStrength = aesKeyStrength;
+    }
+
+    public void setAesVersion(AesVersion aesVersion) {
+        this.aesVersion = aesVersion;
+    }
+
+    public void setCompressionLevel(CompressionLevel compressionLevel) {
+        this.compressionLevel = compressionLevel;
+    }
+
+    public void setCompressionMethod(CompressionMethod compressionMethod) {
+        this.compressionMethod = compressionMethod;
+    }
+
+    public void setDefaultFolderPath(String str) {
+        this.defaultFolderPath = str;
+    }
+
+    public void setEncryptFiles(boolean z) {
+        this.encryptFiles = z;
+    }
+
+    public void setEncryptionMethod(EncryptionMethod encryptionMethod) {
+        this.encryptionMethod = encryptionMethod;
+    }
+
+    public void setEntryCRC(long j) {
+        this.entryCRC = j;
+    }
+
+    public void setEntrySize(long j) {
+        this.entrySize = j;
+    }
+
+    public void setExcludeFileFilter(ExcludeFileFilter excludeFileFilter) {
+        this.excludeFileFilter = excludeFileFilter;
+    }
+
+    public void setFileComment(String str) {
+        this.fileComment = str;
+    }
+
+    public void setFileNameInZip(String str) {
+        this.fileNameInZip = str;
+    }
+
+    public void setIncludeRootFolder(boolean z) {
+        this.includeRootFolder = z;
+    }
+
+    public void setLastModifiedFileTime(long j) {
+        if (j <= 0) {
+            return;
+        }
+        this.lastModifiedFileTime = j;
+    }
+
+    public void setOverrideExistingFilesInZip(boolean z) {
+        this.overrideExistingFilesInZip = z;
+    }
+
+    public void setReadHiddenFiles(boolean z) {
+        this.readHiddenFiles = z;
+    }
+
+    public void setReadHiddenFolders(boolean z) {
+        this.readHiddenFolders = z;
+    }
+
+    public void setRootFolderNameInZip(String str) {
+        this.rootFolderNameInZip = str;
+    }
+
+    public void setSymbolicLinkAction(SymbolicLinkAction symbolicLinkAction) {
+        this.symbolicLinkAction = symbolicLinkAction;
+    }
+
+    public void setUnixMode(boolean z) {
+        this.unixMode = z;
+    }
+
+    public void setWriteExtendedLocalFileHeader(boolean z) {
+        this.writeExtendedLocalFileHeader = z;
+    }
+
+    public ZipParameters(ZipParameters zipParameters) {
+        this.compressionMethod = CompressionMethod.DEFLATE;
+        this.compressionLevel = CompressionLevel.NORMAL;
+        this.encryptFiles = false;
+        this.encryptionMethod = EncryptionMethod.NONE;
+        this.readHiddenFiles = true;
+        this.readHiddenFolders = true;
+        this.aesKeyStrength = AesKeyStrength.KEY_STRENGTH_256;
+        this.aesVersion = AesVersion.TWO;
+        this.includeRootFolder = true;
+        this.lastModifiedFileTime = 0L;
+        this.entrySize = -1L;
+        this.writeExtendedLocalFileHeader = true;
+        this.overrideExistingFilesInZip = true;
+        this.symbolicLinkAction = SymbolicLinkAction.INCLUDE_LINKED_FILE_ONLY;
+        this.compressionMethod = zipParameters.getCompressionMethod();
+        this.compressionLevel = zipParameters.getCompressionLevel();
+        this.encryptFiles = zipParameters.isEncryptFiles();
+        this.encryptionMethod = zipParameters.getEncryptionMethod();
+        this.readHiddenFiles = zipParameters.isReadHiddenFiles();
+        this.readHiddenFolders = zipParameters.isReadHiddenFolders();
+        this.aesKeyStrength = zipParameters.getAesKeyStrength();
+        this.aesVersion = zipParameters.getAesVersion();
+        this.includeRootFolder = zipParameters.isIncludeRootFolder();
+        this.entryCRC = zipParameters.getEntryCRC();
+        this.defaultFolderPath = zipParameters.getDefaultFolderPath();
+        this.fileNameInZip = zipParameters.getFileNameInZip();
+        this.lastModifiedFileTime = zipParameters.getLastModifiedFileTime();
+        this.entrySize = zipParameters.getEntrySize();
+        this.writeExtendedLocalFileHeader = zipParameters.isWriteExtendedLocalFileHeader();
+        this.overrideExistingFilesInZip = zipParameters.isOverrideExistingFilesInZip();
+        this.rootFolderNameInZip = zipParameters.getRootFolderNameInZip();
+        this.fileComment = zipParameters.getFileComment();
+        this.symbolicLinkAction = zipParameters.getSymbolicLinkAction();
+        this.excludeFileFilter = zipParameters.getExcludeFileFilter();
+        this.unixMode = zipParameters.isUnixMode();
+    }
+}

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<automotiveApp>
+    <uses name="service"/>
+    <uses name="projection"/>
+    <uses
+        class="com.android.car.media.MediaProxyActivity"
+        name="activity"/>
+</automotiveApp>

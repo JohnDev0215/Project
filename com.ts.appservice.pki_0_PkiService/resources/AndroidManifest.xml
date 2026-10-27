@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    android:sharedUserId="android.uid.system"
+    android:versionCode="30"
+    android:versionName="11"
+    android:compileSdkVersion="30"
+    android:compileSdkVersionCodename="11"
+    package="com.ts.appservice.pki"
+    platformBuildVersionCode="30"
+    platformBuildVersionName="11">
+    <uses-sdk
+        android:minSdkVersion="30"
+        android:targetSdkVersion="30"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <application
+        android:allowBackup="false"
+        android:extractNativeLibs="true"
+        android:usesNonSdkApi="true"
+        android:requestLegacyExternalStorage="true">
+        <service
+            android:name="com.ts.appservice.pki.PkiService"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.ts.appservice.pki.PkiSdkBinder"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.ts.appservice.pki.PkiInstallBinder"/>
+            </intent-filter>
+        </service>
+        <uses-library android:name="ts.framework"/>
+    </application>
+</manifest>

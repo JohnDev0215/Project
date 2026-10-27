@@ -1,0 +1,138 @@
+package com.bydux.api.common.webs.okhttp.download;
+
+import com.bydux.api.common.tools.log.BydLogHelper;
+import com.bydux.api.common.webs.okhttp.bean.DownloadInfo;
+import d.a.f;
+import d.a.g;
+import java.io.Closeable;
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import okhttp3.Call;
+import okhttp3.Callback;
+import okhttp3.OkHttpClient;
+import okhttp3.Request;
+import okhttp3.Response;
+
+/* JADX INFO: loaded from: classes.dex */
+public class DownloadObservable implements g<DownloadInfo> {
+    private DownloadInfo mDownloadInfo;
+    private OkHttpClient mHttpClient;
+
+    public DownloadObservable(OkHttpClient okHttpClient, DownloadInfo downloadInfo) {
+        this.mHttpClient = null;
+        this.mHttpClient = okHttpClient;
+        this.mDownloadInfo = downloadInfo;
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public void closeAll(Closeable... closeableArr) {
+        if (closeableArr == null) {
+            return;
+        }
+        for (Closeable closeable : closeableArr) {
+            if (closeable != null) {
+                try {
+                    closeable.close();
+                } catch (IOException e2) {
+                    e2.printStackTrace();
+                }
+            }
+        }
+    }
+
+    @Override // d.a.g
+    public void subscribe(final f<DownloadInfo> fVar) throws Exception {
+        String url = this.mDownloadInfo.getUrl();
+        final String filePath = this.mDownloadInfo.getFilePath();
+        long total = this.mDownloadInfo.getTotal();
+        final long progress = this.mDownloadInfo.getProgress();
+        BydLogHelper.logV("url=" + url + ", filePath=" + filePath + ", total=" + total + ", progress=" + progress);
+        if (progress == total) {
+            this.mDownloadInfo.setDownloadStatus(5);
+            fVar.onNext(this.mDownloadInfo);
+            return;
+        }
+        this.mDownloadInfo.setDownloadStatus(2);
+        fVar.onNext(this.mDownloadInfo);
+        Request.Builder builder = new Request.Builder();
+        if (total > progress) {
+            builder = builder.addHeader("RANGE", "bytes=" + progress + "-" + total);
+        }
+        Call callNewCall = this.mHttpClient.newCall(builder.url(url).build());
+        this.mDownloadInfo.setCall(callNewCall);
+        callNewCall.enqueue(new Callback() { // from class: com.bydux.api.common.webs.okhttp.download.DownloadObservable.1
+            public void onFailure(Call call, IOException iOException) {
+                BydLogHelper.logE("error=" + iOException.getMessage());
+                DownloadObservable.this.mDownloadInfo.setDownloadStatus(6);
+                fVar.onNext(DownloadObservable.this.mDownloadInfo);
+                fVar.onComplete();
+            }
+
+            public void onResponse(Call call, Response response) throws Throwable {
+                FileOutputStream fileOutputStream;
+                InputStream inputStreamByteStream;
+                byte[] bArr;
+                BydLogHelper.logV("response code=" + response.code());
+                BydLogHelper.logV("filePath=" + filePath + ", progress=" + progress);
+                File file = new File(filePath);
+                InputStream inputStream = null;
+                try {
+                    inputStreamByteStream = response.body().byteStream();
+                    try {
+                        fileOutputStream = new FileOutputStream(file, true);
+                    } catch (IOException e2) {
+                        e = e2;
+                        fileOutputStream = null;
+                    } catch (Throwable th) {
+                        th = th;
+                        fileOutputStream = null;
+                    }
+                } catch (IOException e3) {
+                    e = e3;
+                    fileOutputStream = null;
+                } catch (Throwable th2) {
+                    th = th2;
+                    fileOutputStream = null;
+                }
+                try {
+                    bArr = new byte[2048];
+                } catch (IOException e4) {
+                    e = e4;
+                    inputStream = inputStreamByteStream;
+                    try {
+                        BydLogHelper.logE("error=" + e.getMessage());
+                        DownloadObservable.this.closeAll(inputStream, fileOutputStream);
+                    } catch (Throwable th3) {
+                        th = th3;
+                        DownloadObservable.this.closeAll(inputStream, fileOutputStream);
+                        throw th;
+                    }
+                } catch (Throwable th4) {
+                    th = th4;
+                    inputStream = inputStreamByteStream;
+                    DownloadObservable.this.closeAll(inputStream, fileOutputStream);
+                    throw th;
+                }
+                while (true) {
+                    int i = inputStreamByteStream.read(bArr);
+                    if (i == -1) {
+                        break;
+                    }
+                    fileOutputStream.write(bArr, 0, i);
+                    DownloadObservable.this.mDownloadInfo.setProgress(DownloadObservable.this.mDownloadInfo.getProgress() + ((long) i));
+                    fVar.onNext(DownloadObservable.this.mDownloadInfo);
+                    BydLogHelper.logV("complete");
+                    fVar.onComplete();
+                }
+                fileOutputStream.flush();
+                DownloadObservable.this.mDownloadInfo.setDownloadStatus(5);
+                fVar.onNext(DownloadObservable.this.mDownloadInfo);
+                DownloadObservable.this.closeAll(inputStreamByteStream, fileOutputStream);
+                BydLogHelper.logV("complete");
+                fVar.onComplete();
+            }
+        });
+    }
+}

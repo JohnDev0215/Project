@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval"
+    android:useLevel="false">
+    <solid android:color="@color/contacts_capital_letter_blue_color"/>
+    <size
+        android:height="@dimen/dimens_72"
+        android:width="@dimen/dimens_72"/>
+</shape>

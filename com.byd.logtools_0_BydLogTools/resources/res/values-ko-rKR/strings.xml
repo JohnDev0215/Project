@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="install">앱 설치</string>
+    <string name="qrcode_expired">만료되었습니다. 새로고침하려면 탭하세요</string>
+    <string name="qrcode_network_warning">현재 네트워크를 사용할 수 없습니다. 네트워크 설정을 확인하세요</string>
+    <string name="qrcode_refresh_fail">가져오지 못했습니다. 새로고침하려면 탭하세요</string>
+    <string name="qrcode_scan_type_vds">VDS 스캔</string>
+    <string name="qrcode_scan_type_wechat">WeCom 스캔</string>
+    <string name="qrcode_success">스캔 성공</string>
+    <string name="qrcode_time">%d초 남음</string>
+    <string name="qrcode_tip">인증을 받으려면 QR 코드를 스캔하세요</string>
+    <string name="qrcode_title">검증</string>
+    <string name="qrcode_title_with_module">%s 확인</string>
+</resources>

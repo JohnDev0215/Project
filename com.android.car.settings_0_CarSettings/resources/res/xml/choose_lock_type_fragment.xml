@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" xmlns:settings="http://schemas.android.com/apk/res-auto"
+    android:title="@string/lock_settings_picker_title"
+    android:key="@string/psk_choose_lock_type">
+    <Preference
+        android:title="@string/security_lock_none"
+        android:key="@string/pk_no_lock"
+        settings:controller="com.android.car.settings.security.NoLockPreferenceController"/>
+    <Preference
+        android:title="@string/security_lock_pattern"
+        android:key="@string/pk_pattern_lock"
+        settings:controller="com.android.car.settings.security.PatternLockPreferenceController"/>
+    <Preference
+        android:title="@string/security_lock_pin"
+        android:key="@string/pk_pin_lock"
+        settings:controller="com.android.car.settings.security.PinLockPreferenceController"/>
+    <Preference
+        android:title="@string/security_lock_password"
+        android:key="@string/pk_password_lock"
+        settings:controller="com.android.car.settings.security.PasswordLockPreferenceController"/>
+</PreferenceScreen>

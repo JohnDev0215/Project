@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    android:sharedUserId="android.uid.system"
+    android:process="system"
+    android:versionCode="138"
+    android:versionName="1.17.1-202507021749"
+    android:compileSdkVersion="30"
+    android:compileSdkVersionCodename="11"
+    package="com.byd.data.collect"
+    platformBuildVersionCode="30"
+    platformBuildVersionName="11">
+    <uses-sdk
+        android:minSdkVersion="24"
+        android:targetSdkVersion="30"/>
+    <uses-permission android:name="android.permission.READ_PRIVILEGED_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="android.permission.BYDAUTO_YUN_COMMON"/>
+    <uses-permission android:name="android.permission.BYDAUTO_BODYWORK_COMMON"/>
+    <uses-permission android:name="android.permission.BYDAUTO_BODYWORK_GET"/>
+    <uses-permission android:name="android.permission.BYDAUTO_VERSION_COMMON"/>
+    <uses-permission android:name="android.permission.BYDAUTO_VERSION_GET"/>
+    <uses-permission android:name="android.permission.BYDAUTO_CHARGING_COMMON"/>
+    <uses-permission android:name="android.permission.BYDAUTO_CHARGING_SET"/>
+    <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <application
+        android:theme="@style/Theme.TestDemo"
+        android:label="@string/data_collect"
+        android:icon="@mipmap/ic_launcher"
+        android:name="com.byd.data.collect.MyApplication"
+        android:persistent="false"
+        android:allowBackup="false"
+        android:supportsRtl="true"
+        android:extractNativeLibs="false"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory">
+        <activity
+            android:theme="@style/Theme.TestDemo.NoActionBar"
+            android:name="com.byd.data.collect.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+        <service
+            android:name="com.byd.data.collect.server.DataCollectService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.byd.data.CollectService"/>
+                <action android:name="com.byd.data.EnergyService"/>
+                <action android:name="com.byd.data.collect.server.cleardata"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.byd.data.common.server.CloudCanService"
+            android:enabled="true"
+            android:exported="false"/>
+    </application>
+</manifest>

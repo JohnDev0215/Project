@@ -1,0 +1,11 @@
+signature,file,startline,startcol,endline,endcol,properties
+Lcom/android/internal/view/menu/MenuPopupHelper;->mForceShowIcon:Z,frameworks/base/core/java/com/android/internal/view/menu/MenuPopupHelper.java,50,5,50,25,
+Lcom/android/internal/view/menu/MenuPopupHelper;-><init>(Landroid/content/Context;Lcom/android/internal/view/menu/MenuBuilder;)V,frameworks/base/core/java/com/android/internal/view/menu/MenuPopupHelper.java,57,5,57,25,
+Lcom/android/internal/view/menu/MenuPopupHelper;-><init>(Landroid/content/Context;Lcom/android/internal/view/menu/MenuBuilder;Landroid/view/View;)V,frameworks/base/core/java/com/android/internal/view/menu/MenuPopupHelper.java,62,5,62,25,
+Lcom/android/internal/view/menu/MenuPopupHelper;->setAnchorView(Landroid/view/View;)V,frameworks/base/core/java/com/android/internal/view/menu/MenuPopupHelper.java,96,5,96,25,
+Lcom/android/internal/view/menu/MenuPopupHelper;->setForceShowIcon(Z)V,frameworks/base/core/java/com/android/internal/view/menu/MenuPopupHelper.java,113,5,113,25,
+Lcom/android/internal/view/menu/MenuPopupHelper;->setGravity(I)V,frameworks/base/core/java/com/android/internal/view/menu/MenuPopupHelper.java,128,5,128,25,
+Lcom/android/internal/view/menu/MenuPopupHelper;->show()V,frameworks/base/core/java/com/android/internal/view/menu/MenuPopupHelper.java,140,5,140,25,
+Lcom/android/internal/view/menu/MenuPopupHelper;->getPopup()Lcom/android/internal/view/menu/MenuPopup;,frameworks/base/core/java/com/android/internal/view/menu/MenuPopupHelper.java,154,5,154,25,
+Lcom/android/internal/view/menu/MenuPopupHelper;->tryShow()Z,frameworks/base/core/java/com/android/internal/view/menu/MenuPopupHelper.java,168,5,168,25,
+Lcom/android/internal/view/menu/MenuPopupHelper;->dismiss()V,frameworks/base/core/java/com/android/internal/view/menu/MenuPopupHelper.java,290,5,290,25,

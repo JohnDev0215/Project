@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="billing_cycle_days_left">
+        <item quantity="one">Застаўся %d дзень</item>
+        <item quantity="few">Засталося %d дні</item>
+        <item quantity="many">Засталося %d дзён</item>
+        <item quantity="other">Засталося %d дня</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_letters">
+        <item quantity="one">Павінен змяшчаць не менш за %d літару</item>
+        <item quantity="few">Павінен змяшчаць не менш за %d літары</item>
+        <item quantity="many">Павінен змяшчаць не менш за %d літар</item>
+        <item quantity="other">Павінен змяшчаць не менш за %d літары</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_lowercase">
+        <item quantity="one">Павінен змяшчаць не менш за %d малую літару</item>
+        <item quantity="few">Павінен змяшчаць не менш за %d малыя літары</item>
+        <item quantity="many">Павінен змяшчаць не менш за %d малых літар</item>
+        <item quantity="other">Павінен змяшчаць не менш за %d малой літары</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_nonletter">
+        <item quantity="one">Павінен змяшчаць не менш за %d сімвал, які не з&apos;яўляецца літарай</item>
+        <item quantity="few">Павінен змяшчаць не менш за %d сімвалы, якія не з&apos;яўляюцца літарамі</item>
+        <item quantity="many">Павінен змяшчаць не менш за %d сімвалаў, якія не з&apos;яўляюцца літарамі</item>
+        <item quantity="other">Павінен змяшчаць не менш за %d сімвала, якія не з&apos;яўляюцца літарамі</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_numeric">
+        <item quantity="one">Павінен змяшчаць не менш за %d лічбу</item>
+        <item quantity="few">Павінен змяшчаць не менш за %d лічбы</item>
+        <item quantity="many">Павінен змяшчаць не менш за %d лічбаў</item>
+        <item quantity="other">Павінен змяшчаць не менш за %d лічбы</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_symbols">
+        <item quantity="one">Павінен змяшчаць не менш за %d спецыяльны сімвал</item>
+        <item quantity="few">Павінен змяшчаць не менш за %d спецыяльныя сімвалы</item>
+        <item quantity="many">Павінен змяшчаць не менш за %d спецыяльных сімвалаў</item>
+        <item quantity="other">Павінен змяшчаць не менш за %d спецыяльнага сімвала</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_uppercase">
+        <item quantity="one">Павінен змяшчаць не менш за %d вялікую літару</item>
+        <item quantity="few">Павінен змяшчаць не менш за %d вялікія літары</item>
+        <item quantity="many">Павінен змяшчаць не менш за %d вялікіх літар</item>
+        <item quantity="other">Павінен змяшчаць не менш за %d вялікай літары</item>
+    </plurals>
+    <plurals name="mobile_network_summary_count">
+        <item quantity="one">%1$d SIM-карта</item>
+        <item quantity="few">%1$d SIM-карты</item>
+        <item quantity="many">%1$d SIM-карт</item>
+        <item quantity="other">%1$d SIM-карты</item>
+    </plurals>
+    <plurals name="runtime_permissions_additional_count">
+        <item quantity="one">%d дадатковы дазвол</item>
+        <item quantity="few">%d дадатковыя дазволы</item>
+        <item quantity="many">%d дадатковых дазволаў</item>
+        <item quantity="other">%d дадатковага дазволу</item>
+    </plurals>
+    <plurals name="show_dev_countdown">
+        <item quantity="one">Цяпер вы ў %1$d кроку ад таго, каб стаць распрацоўшчыкам.</item>
+        <item quantity="few">Цяпер вы ў %1$d кроках ад таго, каб стаць распрацоўшчыкам.</item>
+        <item quantity="many">Цяпер вы ў %1$d кроках ад таго, каб стаць распрацоўшчыкам.</item>
+        <item quantity="other">Цяпер вы ў %1$d кроку ад таго, каб стаць распрацоўшчыкам.</item>
+    </plurals>
+    <plurals name="user_limit_reached_message">
+        <item quantity="one">Можна стварыць не больш за %d карыстальніка.</item>
+        <item quantity="few">Можна стварыць не больш за %d карыстальнікі.</item>
+        <item quantity="many">Можна стварыць не больш за %d карыстальнікаў.</item>
+        <item quantity="other">Можна стварыць не больш за %d карыстальніка.</item>
+    </plurals>
+    <plurals name="wifi_tether_connected_summary">
+        <item quantity="one">%1$d прылада падключана</item>
+        <item quantity="few">%1$d прылады падключаны</item>
+        <item quantity="many">%1$d прылад падключана</item>
+        <item quantity="other">%1$d прылады падключана</item>
+    </plurals>
+</resources>

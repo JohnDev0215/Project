@@ -1,0 +1,128 @@
+package com.google.android.material.datepicker;
+
+import android.content.Context;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.AdapterView;
+import android.widget.LinearLayout;
+import android.widget.ListAdapter;
+import android.widget.TextView;
+import androidx.recyclerview.widget.RecyclerView;
+import b.g.k.t;
+import com.google.android.material.datepicker.MaterialCalendar;
+
+/* JADX INFO: compiled from: MonthsPagerAdapter.java */
+/* JADX INFO: loaded from: classes.dex */
+class g extends RecyclerView.g<b> {
+
+    /* JADX INFO: renamed from: c, reason: collision with root package name */
+    private final CalendarConstraints f2723c;
+
+    /* JADX INFO: renamed from: d, reason: collision with root package name */
+    private final DateSelector<?> f2724d;
+    private final MaterialCalendar.k e;
+    private final int f;
+
+    /* JADX INFO: compiled from: MonthsPagerAdapter.java */
+    class a implements AdapterView.OnItemClickListener {
+
+        /* JADX INFO: renamed from: b, reason: collision with root package name */
+        final /* synthetic */ MaterialCalendarGridView f2725b;
+
+        a(MaterialCalendarGridView materialCalendarGridView) {
+            this.f2725b = materialCalendarGridView;
+        }
+
+        @Override // android.widget.AdapterView.OnItemClickListener
+        public void onItemClick(AdapterView<?> adapterView, View view, int i, long j) {
+            if (this.f2725b.getAdapter().j(i)) {
+                g.this.e.a(this.f2725b.getAdapter().getItem(i).longValue());
+            }
+        }
+    }
+
+    /* JADX INFO: compiled from: MonthsPagerAdapter.java */
+    public static class b extends RecyclerView.c0 {
+        final TextView t;
+        final MaterialCalendarGridView u;
+
+        b(LinearLayout linearLayout, boolean z) {
+            super(linearLayout);
+            TextView textView = (TextView) linearLayout.findViewById(c.b.a.a.f.k);
+            this.t = textView;
+            t.k0(textView, true);
+            this.u = (MaterialCalendarGridView) linearLayout.findViewById(c.b.a.a.f.g);
+            if (z) {
+                return;
+            }
+            textView.setVisibility(8);
+        }
+    }
+
+    g(Context context, DateSelector<?> dateSelector, CalendarConstraints calendarConstraints, MaterialCalendar.k kVar) {
+        Month monthK = calendarConstraints.k();
+        Month monthH = calendarConstraints.h();
+        Month monthJ = calendarConstraints.j();
+        if (monthK.compareTo(monthJ) > 0) {
+            throw new IllegalArgumentException("firstPage cannot be after currentPage");
+        }
+        if (monthJ.compareTo(monthH) > 0) {
+            throw new IllegalArgumentException("currentPage cannot be after lastPage");
+        }
+        this.f = (f.f2720b * MaterialCalendar.A1(context)) + (e.t1(context) ? MaterialCalendar.A1(context) : 0);
+        this.f2723c = calendarConstraints;
+        this.f2724d = dateSelector;
+        this.e = kVar;
+        t(true);
+    }
+
+    @Override // androidx.recyclerview.widget.RecyclerView.g
+    /* JADX INFO: renamed from: A, reason: merged with bridge method [inline-methods] */
+    public b m(ViewGroup viewGroup, int i) {
+        LinearLayout linearLayout = (LinearLayout) LayoutInflater.from(viewGroup.getContext()).inflate(c.b.a.a.h.o, viewGroup, false);
+        if (!e.t1(viewGroup.getContext())) {
+            return new b(linearLayout, false);
+        }
+        linearLayout.setLayoutParams(new RecyclerView.p(-1, this.f));
+        return new b(linearLayout, true);
+    }
+
+    @Override // androidx.recyclerview.widget.RecyclerView.g
+    public int c() {
+        return this.f2723c.i();
+    }
+
+    @Override // androidx.recyclerview.widget.RecyclerView.g
+    public long d(int i) {
+        return this.f2723c.k().m(i).l();
+    }
+
+    Month w(int i) {
+        return this.f2723c.k().m(i);
+    }
+
+    CharSequence x(int i) {
+        return w(i).k();
+    }
+
+    int y(Month month) {
+        return this.f2723c.k().n(month);
+    }
+
+    @Override // androidx.recyclerview.widget.RecyclerView.g
+    /* JADX INFO: renamed from: z, reason: merged with bridge method [inline-methods] */
+    public void k(b bVar, int i) {
+        Month monthM = this.f2723c.k().m(i);
+        bVar.t.setText(monthM.k());
+        MaterialCalendarGridView materialCalendarGridView = (MaterialCalendarGridView) bVar.u.findViewById(c.b.a.a.f.g);
+        if (materialCalendarGridView.getAdapter() == null || !monthM.equals(materialCalendarGridView.getAdapter().f2721c)) {
+            f fVar = new f(monthM, this.f2724d, this.f2723c);
+            materialCalendarGridView.setNumColumns(monthM.f);
+            materialCalendarGridView.setAdapter((ListAdapter) fVar);
+        } else {
+            materialCalendarGridView.getAdapter().notifyDataSetChanged();
+        }
+        materialCalendarGridView.setOnItemClickListener(new a(materialCalendarGridView));
+    }
+}

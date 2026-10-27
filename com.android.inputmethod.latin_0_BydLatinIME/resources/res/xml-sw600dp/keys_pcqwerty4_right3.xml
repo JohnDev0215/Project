@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:latin="http://schemas.android.com/apk/res/com.android.inputmethod.latin">
+    <switch>
+        <case latin:keyboardLayoutSetElement="emojiCategory6">
+            <Key
+                latin:additionalMoreKeys="&lt;"
+                latin:keyHintLabel="&lt;"
+                latin:keySpec=","
+                latin:keyStyle="hasShiftedLetterHintStyle"/>
+            <Key
+                latin:additionalMoreKeys="&gt;"
+                latin:keyHintLabel="&gt;"
+                latin:keySpec="."
+                latin:keyStyle="hasShiftedLetterHintStyle"/>
+            <Key
+                latin:additionalMoreKeys="?"
+                latin:keyHintLabel="?"
+                latin:keySpec="/"
+                latin:keyStyle="hasShiftedLetterHintStyle"
+                latin:moreKeys="!text/morekeys_question"/>
+        </case>
+        <default>
+            <Key
+                latin:keySpec="&lt;"
+                latin:moreKeys="!fixedColumnOrder!3,‹,≤,«"/>
+            <Key
+                latin:keySpec="&gt;"
+                latin:moreKeys="!fixedColumnOrder!3,›,≥,»"/>
+            <Key
+                latin:keySpec="?"
+                latin:moreKeys="!text/morekeys_question"/>
+        </default>
+    </switch>
+</merge>

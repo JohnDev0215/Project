@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="audio_muted">Zvuk je ztlumen</string>
+    <string name="audio_removed">Zrušeno</string>
+    <string name="btn_comfirm">OK</string>
+    <string name="btn_reset">Resetovat</string>
+    <string name="call_mode">Probíhá hovor. Operace je zakázána</string>
+    <string name="cancel">Zrušit</string>
+    <string name="carplay_androidauto_land">Aktuální obrazovka nepodporuje přepínání obrazovek</string>
+    <string name="dialog_title_user">Vlastní nastavení tlačítka</string>
+    <string name="dialog_title_user_left">Nastavení levého uživatelského tlačítka</string>
+    <string name="dialog_title_user_right">Nastavení pravého uživatelského tlačítka</string>
+    <string name="mode_am_music">AM</string>
+    <string name="mode_amazon_music">Amazon Music</string>
+    <string name="mode_bt_music">Hudba</string>
+    <string name="mode_button_androidauto">Android Auto</string>
+    <string name="mode_button_carplay">Apple CarPlay</string>
+    <string name="mode_dab_music">DAB</string>
+    <string name="mode_fm_music">FM</string>
+    <string name="mode_local_music">Místní média</string>
+    <string name="mode_music">Místní</string>
+    <string name="mode_sd">SD karta</string>
+    <string name="mode_spotify_music">Spotify</string>
+    <string name="mode_usb">USB</string>
+    <string name="mode_usb_music">USB hudba</string>
+    <string name="mode_usb_text">Nebylo zjištěno žádné USB</string>
+    <string name="mode_usb_video">Video USB</string>
+    <string name="radio_button_ac">A/C</string>
+    <string name="radio_button_music">Hudba</string>
+    <string name="radio_button_navi_home">Domů</string>
+    <string name="radio_button_play_pause">Pauza/přehrát média</string>
+    <string name="radio_button_radio">Rádio</string>
+    <string name="radio_button_rotate">Natočení centrálního displeje</string>
+    <string name="radio_button_source">Přepnout zdroj zvuku médií</string>
+    <string name="reset_country">Konfigurování systému. Počkejte prosím</string>
+    <string name="restart_efect">Funkce byla úspěšně nakonfigurována. Restartem ji aktivujte!</string>
+    <string name="restart_now">Restartovat nyní</string>
+    <string name="restart_time">Odpočítávání restartu</string>
+    <string name="warring_mode">Před použitím multimédií dokončete proces průvodce!</string>
+    <string name="warring_navi_mode">Aktuální stav operaci nepodporuje!</string>
+    <string name="warring_power">Tato funkce je k dispozici pouze při převodu P</string>
+</resources>

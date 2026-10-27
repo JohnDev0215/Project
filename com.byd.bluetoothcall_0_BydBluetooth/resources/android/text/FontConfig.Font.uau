@@ -1,0 +1,5 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/text/FontConfig$Font;->getTtcIndex()I,frameworks/base/core/java/android/text/FontConfig.java,94,9,94,29,
+Landroid/text/FontConfig$Font;->getAxes()[Landroid/graphics/fonts/FontVariationAxis;,frameworks/base/core/java/android/text/FontConfig.java,102,9,102,29,
+Landroid/text/FontConfig$Font;->getWeight()I,frameworks/base/core/java/android/text/FontConfig.java,110,9,110,29,
+Landroid/text/FontConfig$Font;->isItalic()Z,frameworks/base/core/java/android/text/FontConfig.java,118,9,118,29,

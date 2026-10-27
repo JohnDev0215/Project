@@ -1,0 +1,7 @@
+package c.a.a.a.w;
+
+/* JADX INFO: compiled from: Shapeable.java */
+/* JADX INFO: loaded from: classes.dex */
+public interface p {
+    void setShapeAppearanceModel(m mVar);
+}

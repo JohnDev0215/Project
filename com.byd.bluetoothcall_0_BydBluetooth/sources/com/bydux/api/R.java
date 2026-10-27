@@ -1,0 +1,13551 @@
+package com.bydux.api;
+
+/* JADX INFO: loaded from: classes.dex */
+public final class R {
+
+    public static final class anim {
+        public static final int abc_fade_in = 0x7f010000;
+        public static final int abc_fade_out = 0x7f010001;
+        public static final int abc_grow_fade_in_from_bottom = 0x7f010002;
+        public static final int abc_popup_enter = 0x7f010003;
+        public static final int abc_popup_exit = 0x7f010004;
+        public static final int abc_shrink_fade_out_from_bottom = 0x7f010005;
+        public static final int abc_slide_in_bottom = 0x7f010006;
+        public static final int abc_slide_in_top = 0x7f010007;
+        public static final int abc_slide_out_bottom = 0x7f010008;
+        public static final int abc_slide_out_top = 0x7f010009;
+        public static final int abc_tooltip_enter = 0x7f01000a;
+        public static final int abc_tooltip_exit = 0x7f01000b;
+        public static final int anim_byd_activity_close_enter = 0x7f01000c;
+        public static final int anim_byd_activity_close_exit = 0x7f01000d;
+        public static final int anim_byd_activity_open_enter = 0x7f01000e;
+        public static final int anim_byd_activity_open_exit = 0x7f01000f;
+        public static final int btn_checkbox_to_checked_box_inner_merged_animation = 0x7f010010;
+        public static final int btn_checkbox_to_checked_box_outer_merged_animation = 0x7f010011;
+        public static final int btn_checkbox_to_checked_icon_null_animation = 0x7f010012;
+        public static final int btn_checkbox_to_unchecked_box_inner_merged_animation = 0x7f010013;
+        public static final int btn_checkbox_to_unchecked_check_path_merged_animation = 0x7f010014;
+        public static final int btn_checkbox_to_unchecked_icon_null_animation = 0x7f010015;
+        public static final int btn_radio_to_off_mtrl_dot_group_animation = 0x7f010016;
+        public static final int btn_radio_to_off_mtrl_ring_outer_animation = 0x7f010017;
+        public static final int btn_radio_to_off_mtrl_ring_outer_path_animation = 0x7f010018;
+        public static final int btn_radio_to_on_mtrl_dot_group_animation = 0x7f010019;
+        public static final int btn_radio_to_on_mtrl_ring_outer_animation = 0x7f01001a;
+        public static final int btn_radio_to_on_mtrl_ring_outer_path_animation = 0x7f01001b;
+        public static final int byd_accelerate_interpolator = 0x7f01001c;
+        public static final int byd_constant_interpolator = 0x7f01001d;
+        public static final int byd_decelerate_interpolator = 0x7f01001e;
+        public static final int byd_dialog_enter_anim = 0x7f01001f;
+        public static final int byd_dialog_exit_anim = 0x7f010020;
+        public static final int byd_sharp_interpolator = 0x7f010021;
+        public static final int byd_standard_interpolator = 0x7f010022;
+        public static final int design_bottom_sheet_slide_in = 0x7f010023;
+        public static final int design_bottom_sheet_slide_out = 0x7f010024;
+        public static final int design_snackbar_in = 0x7f010025;
+        public static final int design_snackbar_out = 0x7f010026;
+        public static final int mtrl_bottom_sheet_slide_in = 0x7f010027;
+        public static final int mtrl_bottom_sheet_slide_out = 0x7f010028;
+        public static final int mtrl_card_lowers_interpolator = 0x7f010029;
+
+        /* JADX INFO: Added by JADX */
+        public static final int rotate_anim_play = 0x7f01002a;
+
+        /* JADX INFO: Added by JADX */
+        public static final int translation_down_anim = 0x7f01002b;
+
+        /* JADX INFO: Added by JADX */
+        public static final int translation_up_anim = 0x7f01002c;
+
+        private anim() {
+        }
+    }
+
+    public static final class animator {
+        public static final int design_appbar_state_list_animator = 0x7f020000;
+        public static final int design_fab_hide_motion_spec = 0x7f020001;
+        public static final int design_fab_show_motion_spec = 0x7f020002;
+        public static final int mtrl_btn_state_list_anim = 0x7f020003;
+        public static final int mtrl_btn_unelevated_state_list_anim = 0x7f020004;
+        public static final int mtrl_card_state_list_anim = 0x7f020005;
+        public static final int mtrl_chip_state_list_anim = 0x7f020006;
+        public static final int mtrl_extended_fab_change_size_motion_spec = 0x7f020007;
+        public static final int mtrl_extended_fab_hide_motion_spec = 0x7f020008;
+        public static final int mtrl_extended_fab_show_motion_spec = 0x7f020009;
+        public static final int mtrl_extended_fab_state_list_animator = 0x7f02000a;
+        public static final int mtrl_fab_hide_motion_spec = 0x7f02000b;
+        public static final int mtrl_fab_show_motion_spec = 0x7f02000c;
+        public static final int mtrl_fab_transformation_sheet_collapse_spec = 0x7f02000d;
+        public static final int mtrl_fab_transformation_sheet_expand_spec = 0x7f02000e;
+
+        private animator() {
+        }
+    }
+
+    /* JADX INFO: Added by JADX */
+    public static final class array {
+
+        /* JADX INFO: Added by JADX */
+        public static final int avas_country_code = 0x7f030000;
+
+        /* JADX INFO: Added by JADX */
+        public static final int slide_bar_value_list = 0x7f030001;
+    }
+
+    public static final class attr {
+        public static final int actionBarDivider = 0x7f040002;
+        public static final int actionBarItemBackground = 0x7f040003;
+        public static final int actionBarPopupTheme = 0x7f040004;
+        public static final int actionBarSize = 0x7f040005;
+        public static final int actionBarSplitStyle = 0x7f040006;
+        public static final int actionBarStyle = 0x7f040007;
+        public static final int actionBarTabBarStyle = 0x7f040008;
+        public static final int actionBarTabStyle = 0x7f040009;
+        public static final int actionBarTabTextStyle = 0x7f04000a;
+        public static final int actionBarTheme = 0x7f04000b;
+        public static final int actionBarWidgetTheme = 0x7f04000c;
+        public static final int actionButtonStyle = 0x7f04000d;
+        public static final int actionDropDownStyle = 0x7f04000e;
+        public static final int actionLayout = 0x7f04000f;
+        public static final int actionMenuTextAppearance = 0x7f040010;
+        public static final int actionMenuTextColor = 0x7f040011;
+        public static final int actionModeBackground = 0x7f040012;
+        public static final int actionModeCloseButtonStyle = 0x7f040013;
+        public static final int actionModeCloseDrawable = 0x7f040014;
+        public static final int actionModeCopyDrawable = 0x7f040015;
+        public static final int actionModeCutDrawable = 0x7f040016;
+        public static final int actionModeFindDrawable = 0x7f040017;
+        public static final int actionModePasteDrawable = 0x7f040018;
+        public static final int actionModePopupWindowStyle = 0x7f040019;
+        public static final int actionModeSelectAllDrawable = 0x7f04001a;
+        public static final int actionModeShareDrawable = 0x7f04001b;
+        public static final int actionModeSplitBackground = 0x7f04001c;
+        public static final int actionModeStyle = 0x7f04001d;
+        public static final int actionModeWebSearchDrawable = 0x7f04001e;
+        public static final int actionOverflowButtonStyle = 0x7f04001f;
+        public static final int actionOverflowMenuStyle = 0x7f040020;
+        public static final int actionProviderClass = 0x7f040021;
+        public static final int actionTextColorAlpha = 0x7f040022;
+        public static final int actionViewClass = 0x7f040023;
+        public static final int activityChooserViewStyle = 0x7f040024;
+        public static final int alertDialogButtonGroupStyle = 0x7f040025;
+        public static final int alertDialogCenterButtons = 0x7f040026;
+        public static final int alertDialogStyle = 0x7f040027;
+        public static final int alertDialogTheme = 0x7f040028;
+        public static final int allowStacking = 0x7f040029;
+        public static final int alpha = 0x7f04002a;
+        public static final int alphabeticModifiers = 0x7f04002b;
+        public static final int animationMode = 0x7f04002f;
+        public static final int appBarLayoutStyle = 0x7f040030;
+        public static final int arrowHeadLength = 0x7f040033;
+        public static final int arrowShaftLength = 0x7f040034;
+        public static final int autoCompleteTextViewStyle = 0x7f040037;
+        public static final int autoSizeMaxTextSize = 0x7f040038;
+        public static final int autoSizeMinTextSize = 0x7f040039;
+        public static final int autoSizePresetSizes = 0x7f04003a;
+        public static final int autoSizeStepGranularity = 0x7f04003b;
+        public static final int autoSizeTextType = 0x7f04003c;
+        public static final int background = 0x7f040040;
+        public static final int backgroundColor = 0x7f040041;
+        public static final int backgroundInsetBottom = 0x7f040042;
+        public static final int backgroundInsetEnd = 0x7f040043;
+        public static final int backgroundInsetStart = 0x7f040044;
+        public static final int backgroundInsetTop = 0x7f040045;
+        public static final int backgroundOverlayColorAlpha = 0x7f040046;
+        public static final int backgroundSplit = 0x7f040047;
+        public static final int backgroundStacked = 0x7f040048;
+        public static final int backgroundTint = 0x7f040049;
+        public static final int backgroundTintMode = 0x7f04004a;
+        public static final int badgeGravity = 0x7f04004b;
+        public static final int badgeStyle = 0x7f04004c;
+        public static final int badgeTextColor = 0x7f04004d;
+        public static final int barLength = 0x7f04004e;
+        public static final int behavior_autoHide = 0x7f040056;
+        public static final int behavior_autoShrink = 0x7f040057;
+        public static final int behavior_draggable = 0x7f040058;
+        public static final int behavior_expandedOffset = 0x7f040059;
+        public static final int behavior_fitToContents = 0x7f04005a;
+        public static final int behavior_halfExpandedRatio = 0x7f04005b;
+        public static final int behavior_hideable = 0x7f04005c;
+        public static final int behavior_overlapTop = 0x7f04005d;
+        public static final int behavior_peekHeight = 0x7f04005e;
+        public static final int behavior_saveFlags = 0x7f04005f;
+        public static final int behavior_skipCollapsed = 0x7f040060;
+        public static final int borderWidth = 0x7f040064;
+        public static final int borderlessButtonStyle = 0x7f040065;
+        public static final int bottomAppBarStyle = 0x7f040066;
+        public static final int bottomNavigationStyle = 0x7f040067;
+        public static final int bottomSheetDialogTheme = 0x7f040068;
+        public static final int bottomSheetStyle = 0x7f040069;
+        public static final int boxBackgroundColor = 0x7f04006a;
+        public static final int boxBackgroundMode = 0x7f04006b;
+        public static final int boxCollapsedPaddingTop = 0x7f04006c;
+        public static final int boxCornerRadiusBottomEnd = 0x7f04006d;
+        public static final int boxCornerRadiusBottomStart = 0x7f04006e;
+        public static final int boxCornerRadiusTopEnd = 0x7f04006f;
+        public static final int boxCornerRadiusTopStart = 0x7f040070;
+        public static final int boxStrokeColor = 0x7f040071;
+        public static final int boxStrokeErrorColor = 0x7f040072;
+        public static final int boxStrokeWidth = 0x7f040073;
+        public static final int boxStrokeWidthFocused = 0x7f040074;
+        public static final int buttonBarButtonStyle = 0x7f040087;
+        public static final int buttonBarNegativeButtonStyle = 0x7f040088;
+        public static final int buttonBarNeutralButtonStyle = 0x7f040089;
+        public static final int buttonBarPositiveButtonStyle = 0x7f04008a;
+        public static final int buttonBarStyle = 0x7f04008b;
+        public static final int buttonCompat = 0x7f04008c;
+        public static final int buttonGravity = 0x7f04008d;
+        public static final int buttonIconDimen = 0x7f04008e;
+        public static final int buttonPanelSideLayout = 0x7f04008f;
+        public static final int buttonStyle = 0x7f040090;
+        public static final int buttonStyleSmall = 0x7f040091;
+        public static final int buttonTint = 0x7f040092;
+        public static final int buttonTintMode = 0x7f040093;
+        public static final int byd_button_tone = 0x7f040095;
+        public static final int byd_clock_background = 0x7f040096;
+        public static final int byd_clock_hour = 0x7f040097;
+        public static final int byd_clock_minute = 0x7f040098;
+        public static final int byd_clock_second = 0x7f040099;
+        public static final int byd_dgclock_am = 0x7f04009a;
+        public static final int byd_dgclock_colon = 0x7f04009b;
+        public static final int byd_dgclock_num0 = 0x7f04009c;
+        public static final int byd_dgclock_num1 = 0x7f04009d;
+        public static final int byd_dgclock_num2 = 0x7f04009e;
+        public static final int byd_dgclock_num3 = 0x7f04009f;
+        public static final int byd_dgclock_num4 = 0x7f0400a0;
+        public static final int byd_dgclock_num5 = 0x7f0400a1;
+        public static final int byd_dgclock_num6 = 0x7f0400a2;
+        public static final int byd_dgclock_num7 = 0x7f0400a3;
+        public static final int byd_dgclock_num8 = 0x7f0400a4;
+        public static final int byd_dgclock_num9 = 0x7f0400a5;
+        public static final int byd_dgclock_pm = 0x7f0400a6;
+        public static final int byd_dgclock_show_second = 0x7f0400a7;
+        public static final int byd_frame_manual = 0x7f0400a8;
+        public static final int byd_frame_prefix = 0x7f0400a9;
+        public static final int byd_frame_repeat = 0x7f0400aa;
+        public static final int byd_frame_speed = 0x7f0400ab;
+        public static final int byd_frame_total = 0x7f0400ac;
+        public static final int byd_loading_animSpeed = 0x7f0400ad;
+        public static final int byd_loading_background = 0x7f0400ae;
+        public static final int byd_loading_max = 0x7f0400af;
+        public static final int byd_loading_progress = 0x7f0400b0;
+        public static final int byd_loading_textColor = 0x7f0400b1;
+        public static final int byd_loading_textSize = 0x7f0400b2;
+        public static final int byd_loading_unit = 0x7f0400b3;
+        public static final int byd_selected_bg = 0x7f0400b4;
+        public static final int byd_unselected_bg = 0x7f0400b5;
+        public static final int cardBackgroundColor = 0x7f0400ba;
+        public static final int cardCornerRadius = 0x7f0400bb;
+        public static final int cardElevation = 0x7f0400bc;
+        public static final int cardForegroundColor = 0x7f0400bd;
+        public static final int cardMaxElevation = 0x7f0400be;
+        public static final int cardPreventCornerOverlap = 0x7f0400bf;
+        public static final int cardUseCompatPadding = 0x7f0400c0;
+        public static final int cardViewStyle = 0x7f0400c1;
+        public static final int checkboxStyle = 0x7f0400cd;
+        public static final int checkedButton = 0x7f0400ce;
+        public static final int checkedChip = 0x7f0400cf;
+        public static final int checkedIcon = 0x7f0400d0;
+        public static final int checkedIconEnabled = 0x7f0400d1;
+        public static final int checkedIconTint = 0x7f0400d2;
+        public static final int checkedIconVisible = 0x7f0400d3;
+        public static final int checkedTextViewStyle = 0x7f0400d4;
+        public static final int chipBackgroundColor = 0x7f0400d5;
+        public static final int chipCornerRadius = 0x7f0400d6;
+        public static final int chipEndPadding = 0x7f0400d7;
+        public static final int chipGroupStyle = 0x7f0400d8;
+        public static final int chipIcon = 0x7f0400d9;
+        public static final int chipIconEnabled = 0x7f0400da;
+        public static final int chipIconSize = 0x7f0400db;
+        public static final int chipIconTint = 0x7f0400dc;
+        public static final int chipIconVisible = 0x7f0400dd;
+        public static final int chipMinHeight = 0x7f0400de;
+        public static final int chipMinTouchTargetSize = 0x7f0400df;
+        public static final int chipSpacing = 0x7f0400e0;
+        public static final int chipSpacingHorizontal = 0x7f0400e1;
+        public static final int chipSpacingVertical = 0x7f0400e2;
+        public static final int chipStandaloneStyle = 0x7f0400e3;
+        public static final int chipStartPadding = 0x7f0400e4;
+        public static final int chipStrokeColor = 0x7f0400e5;
+        public static final int chipStrokeWidth = 0x7f0400e6;
+        public static final int chipStyle = 0x7f0400e7;
+        public static final int chipSurfaceColor = 0x7f0400e8;
+        public static final int closeIcon = 0x7f0400f2;
+        public static final int closeIconEnabled = 0x7f0400f3;
+        public static final int closeIconEndPadding = 0x7f0400f4;
+        public static final int closeIconSize = 0x7f0400f5;
+        public static final int closeIconStartPadding = 0x7f0400f6;
+        public static final int closeIconTint = 0x7f0400f7;
+        public static final int closeIconVisible = 0x7f0400f8;
+        public static final int closeItemLayout = 0x7f0400f9;
+        public static final int collapseContentDescription = 0x7f0400fa;
+        public static final int collapseIcon = 0x7f0400fb;
+        public static final int collapsedTitleGravity = 0x7f0400fc;
+        public static final int collapsedTitleTextAppearance = 0x7f0400fd;
+        public static final int color = 0x7f0400fe;
+        public static final int colorAccent = 0x7f0400ff;
+        public static final int colorBackgroundFloating = 0x7f040100;
+        public static final int colorButtonNormal = 0x7f040101;
+        public static final int colorControlActivated = 0x7f040102;
+        public static final int colorControlHighlight = 0x7f040103;
+        public static final int colorControlNormal = 0x7f040104;
+        public static final int colorError = 0x7f040105;
+        public static final int colorOnBackground = 0x7f040106;
+        public static final int colorOnError = 0x7f040107;
+        public static final int colorOnPrimary = 0x7f040108;
+        public static final int colorOnPrimarySurface = 0x7f040109;
+        public static final int colorOnSecondary = 0x7f04010a;
+        public static final int colorOnSurface = 0x7f04010b;
+        public static final int colorPrimary = 0x7f04010c;
+        public static final int colorPrimaryDark = 0x7f04010d;
+        public static final int colorPrimarySurface = 0x7f04010e;
+        public static final int colorPrimaryVariant = 0x7f04010f;
+        public static final int colorSecondary = 0x7f040110;
+        public static final int colorSecondaryVariant = 0x7f040111;
+        public static final int colorSurface = 0x7f040112;
+        public static final int colorSwitchThumbNormal = 0x7f040113;
+        public static final int commitIcon = 0x7f040114;
+        public static final int contentDescription = 0x7f040124;
+        public static final int contentInsetEnd = 0x7f040125;
+        public static final int contentInsetEndWithActions = 0x7f040126;
+        public static final int contentInsetLeft = 0x7f040127;
+        public static final int contentInsetRight = 0x7f040128;
+        public static final int contentInsetStart = 0x7f040129;
+        public static final int contentInsetStartWithNavigation = 0x7f04012a;
+        public static final int contentPadding = 0x7f04012b;
+        public static final int contentPaddingBottom = 0x7f04012c;
+        public static final int contentPaddingLeft = 0x7f04012d;
+        public static final int contentPaddingRight = 0x7f04012e;
+        public static final int contentPaddingTop = 0x7f04012f;
+        public static final int contentScrim = 0x7f040130;
+        public static final int controlBackground = 0x7f040132;
+        public static final int coordinatorLayoutStyle = 0x7f040133;
+        public static final int cornerFamily = 0x7f040134;
+        public static final int cornerFamilyBottomLeft = 0x7f040135;
+        public static final int cornerFamilyBottomRight = 0x7f040136;
+        public static final int cornerFamilyTopLeft = 0x7f040137;
+        public static final int cornerFamilyTopRight = 0x7f040138;
+        public static final int cornerRadius = 0x7f040139;
+        public static final int cornerSize = 0x7f04013a;
+        public static final int cornerSizeBottomLeft = 0x7f04013b;
+        public static final int cornerSizeBottomRight = 0x7f04013c;
+        public static final int cornerSizeTopLeft = 0x7f04013d;
+        public static final int cornerSizeTopRight = 0x7f04013e;
+        public static final int counterEnabled = 0x7f04013f;
+        public static final int counterMaxLength = 0x7f040140;
+        public static final int counterOverflowTextAppearance = 0x7f040141;
+        public static final int counterOverflowTextColor = 0x7f040142;
+        public static final int counterTextAppearance = 0x7f040143;
+        public static final int counterTextColor = 0x7f040144;
+        public static final int customNavigationLayout = 0x7f04014e;
+        public static final int dayInvalidStyle = 0x7f040153;
+        public static final int daySelectedStyle = 0x7f040154;
+        public static final int dayStyle = 0x7f040155;
+        public static final int dayTodayStyle = 0x7f040156;
+        public static final int defaultQueryHint = 0x7f040158;
+        public static final int dialogCornerRadius = 0x7f04015e;
+        public static final int dialogPreferredPadding = 0x7f04015f;
+        public static final int dialogTheme = 0x7f040160;
+        public static final int displayOptions = 0x7f040163;
+        public static final int divider = 0x7f040164;
+        public static final int dividerHorizontal = 0x7f040165;
+        public static final int dividerPadding = 0x7f040166;
+        public static final int dividerVertical = 0x7f040167;
+        public static final int drawableBottomCompat = 0x7f04016e;
+        public static final int drawableEndCompat = 0x7f04016f;
+        public static final int drawableLeftCompat = 0x7f040170;
+        public static final int drawableRightCompat = 0x7f040171;
+        public static final int drawableSize = 0x7f040172;
+        public static final int drawableStartCompat = 0x7f040173;
+        public static final int drawableTint = 0x7f040174;
+        public static final int drawableTintMode = 0x7f040175;
+        public static final int drawableTopCompat = 0x7f040176;
+        public static final int drawerArrowStyle = 0x7f040177;
+        public static final int dropDownListViewStyle = 0x7f040178;
+        public static final int dropdownListPreferredItemHeight = 0x7f040179;
+        public static final int editTextBackground = 0x7f04017b;
+        public static final int editTextColor = 0x7f04017c;
+        public static final int editTextStyle = 0x7f04017d;
+        public static final int elevation = 0x7f040180;
+        public static final int elevationOverlayColor = 0x7f040181;
+        public static final int elevationOverlayEnabled = 0x7f040182;
+        public static final int endIconCheckable = 0x7f040183;
+        public static final int endIconContentDescription = 0x7f040184;
+        public static final int endIconDrawable = 0x7f040185;
+        public static final int endIconMode = 0x7f040186;
+        public static final int endIconTint = 0x7f040187;
+        public static final int endIconTintMode = 0x7f040188;
+        public static final int enforceMaterialTheme = 0x7f040189;
+        public static final int enforceTextAppearance = 0x7f04018a;
+        public static final int ensureMinTouchTargetSize = 0x7f04018b;
+        public static final int errorContentDescription = 0x7f04018c;
+        public static final int errorEnabled = 0x7f04018d;
+        public static final int errorIconDrawable = 0x7f04018e;
+        public static final int errorIconTint = 0x7f04018f;
+        public static final int errorIconTintMode = 0x7f040190;
+        public static final int errorTextAppearance = 0x7f040191;
+        public static final int errorTextColor = 0x7f040192;
+        public static final int expandActivityOverflowButtonDrawable = 0x7f040193;
+        public static final int expanded = 0x7f040194;
+        public static final int expandedTitleGravity = 0x7f040195;
+        public static final int expandedTitleMargin = 0x7f040196;
+        public static final int expandedTitleMarginBottom = 0x7f040197;
+        public static final int expandedTitleMarginEnd = 0x7f040198;
+        public static final int expandedTitleMarginStart = 0x7f040199;
+        public static final int expandedTitleMarginTop = 0x7f04019a;
+        public static final int expandedTitleTextAppearance = 0x7f04019b;
+        public static final int extendMotionSpec = 0x7f04019c;
+        public static final int extendedFloatingActionButtonStyle = 0x7f04019d;
+        public static final int fabAlignmentMode = 0x7f04019e;
+        public static final int fabAnimationMode = 0x7f04019f;
+        public static final int fabCradleMargin = 0x7f0401a0;
+        public static final int fabCradleRoundedCornerRadius = 0x7f0401a1;
+        public static final int fabCradleVerticalOffset = 0x7f0401a2;
+        public static final int fabCustomSize = 0x7f0401a3;
+        public static final int fabSize = 0x7f0401a4;
+        public static final int fastScrollEnabled = 0x7f0401a5;
+        public static final int fastScrollHorizontalThumbDrawable = 0x7f0401a6;
+        public static final int fastScrollHorizontalTrackDrawable = 0x7f0401a7;
+        public static final int fastScrollVerticalThumbDrawable = 0x7f0401a8;
+        public static final int fastScrollVerticalTrackDrawable = 0x7f0401a9;
+        public static final int firstBaselineToTopHeight = 0x7f0401ac;
+        public static final int floatingActionButtonStyle = 0x7f0401ad;
+        public static final int font = 0x7f0401c1;
+        public static final int fontFamily = 0x7f0401c2;
+        public static final int fontProviderAuthority = 0x7f0401c3;
+        public static final int fontProviderCerts = 0x7f0401c4;
+        public static final int fontProviderFetchStrategy = 0x7f0401c5;
+        public static final int fontProviderFetchTimeout = 0x7f0401c6;
+        public static final int fontProviderPackage = 0x7f0401c7;
+        public static final int fontProviderQuery = 0x7f0401c8;
+        public static final int fontStyle = 0x7f0401c9;
+        public static final int fontVariationSettings = 0x7f0401ca;
+        public static final int fontWeight = 0x7f0401cb;
+        public static final int foregroundInsidePadding = 0x7f0401cc;
+        public static final int gapBetweenBars = 0x7f0401ce;
+        public static final int gestureInsetBottomIgnored = 0x7f0401cf;
+        public static final int goIcon = 0x7f0401d0;
+        public static final int haloColor = 0x7f0401d2;
+        public static final int haloRadius = 0x7f0401d3;
+        public static final int headerLayout = 0x7f0401d4;
+        public static final int height = 0x7f0401d5;
+        public static final int helperText = 0x7f0401d6;
+        public static final int helperTextEnabled = 0x7f0401d7;
+        public static final int helperTextTextAppearance = 0x7f0401d8;
+        public static final int helperTextTextColor = 0x7f0401d9;
+        public static final int hideMotionSpec = 0x7f0401da;
+        public static final int hideOnContentScroll = 0x7f0401db;
+        public static final int hideOnScroll = 0x7f0401dc;
+        public static final int hintAnimationEnabled = 0x7f0401dd;
+        public static final int hintEnabled = 0x7f0401e0;
+        public static final int hintTextAppearance = 0x7f0401e2;
+        public static final int hintTextColor = 0x7f0401e3;
+        public static final int homeAsUpIndicator = 0x7f0401e5;
+        public static final int homeLayout = 0x7f0401e6;
+        public static final int horizontalOffset = 0x7f0401e7;
+        public static final int hoveredFocusedTranslationZ = 0x7f0401e8;
+        public static final int icon = 0x7f0401ea;
+        public static final int iconEndPadding = 0x7f0401eb;
+        public static final int iconGravity = 0x7f0401ec;
+        public static final int iconPadding = 0x7f0401ed;
+        public static final int iconSize = 0x7f0401ee;
+        public static final int iconStartPadding = 0x7f0401ef;
+        public static final int iconTint = 0x7f0401f0;
+        public static final int iconTintMode = 0x7f0401f1;
+        public static final int iconifiedByDefault = 0x7f0401f2;
+        public static final int imageButtonStyle = 0x7f0401f5;
+        public static final int indeterminateProgressStyle = 0x7f0401fa;
+        public static final int initialActivityCount = 0x7f0401fb;
+        public static final int insetForeground = 0x7f0401fc;
+        public static final int isLightTheme = 0x7f0401fd;
+        public static final int isMaterialTheme = 0x7f0401fe;
+        public static final int itemBackground = 0x7f0401ff;
+        public static final int itemFillColor = 0x7f040200;
+        public static final int itemHorizontalPadding = 0x7f040201;
+        public static final int itemHorizontalTranslationEnabled = 0x7f040202;
+        public static final int itemIconPadding = 0x7f040203;
+        public static final int itemIconSize = 0x7f040204;
+        public static final int itemIconTint = 0x7f040205;
+        public static final int itemMaxLines = 0x7f040206;
+        public static final int itemPadding = 0x7f040207;
+        public static final int itemRippleColor = 0x7f040208;
+        public static final int itemShapeAppearance = 0x7f040209;
+        public static final int itemShapeAppearanceOverlay = 0x7f04020a;
+        public static final int itemShapeFillColor = 0x7f04020b;
+        public static final int itemShapeInsetBottom = 0x7f04020c;
+        public static final int itemShapeInsetEnd = 0x7f04020d;
+        public static final int itemShapeInsetStart = 0x7f04020e;
+        public static final int itemShapeInsetTop = 0x7f04020f;
+        public static final int itemSpacing = 0x7f040210;
+        public static final int itemStrokeColor = 0x7f040211;
+        public static final int itemStrokeWidth = 0x7f040212;
+        public static final int itemTextAppearance = 0x7f040213;
+        public static final int itemTextAppearanceActive = 0x7f040214;
+        public static final int itemTextAppearanceInactive = 0x7f040215;
+        public static final int itemTextColor = 0x7f040216;
+        public static final int keylines = 0x7f04021a;
+        public static final int labelBehavior = 0x7f04021b;
+        public static final int labelStyle = 0x7f04021c;
+        public static final int labelVisibilityMode = 0x7f04021d;
+        public static final int lastBaselineToBottomHeight = 0x7f040222;
+        public static final int layout = 0x7f040223;
+        public static final int layoutManager = 0x7f040226;
+        public static final int layout_anchor = 0x7f040227;
+        public static final int layout_anchorGravity = 0x7f040228;
+        public static final int layout_behavior = 0x7f040229;
+        public static final int layout_collapseMode = 0x7f04022a;
+        public static final int layout_collapseParallaxMultiplier = 0x7f04022b;
+        public static final int layout_dodgeInsetEdges = 0x7f04025a;
+        public static final int layout_insetEdge = 0x7f040264;
+        public static final int layout_keyline = 0x7f040265;
+        public static final int layout_scrollFlags = 0x7f040268;
+        public static final int layout_scrollInterpolator = 0x7f040269;
+        public static final int liftOnScroll = 0x7f04026b;
+        public static final int liftOnScrollTargetViewId = 0x7f04026c;
+        public static final int lineHeight = 0x7f04026e;
+        public static final int lineSpacing = 0x7f04026f;
+        public static final int listChoiceBackgroundIndicator = 0x7f040270;
+        public static final int listChoiceIndicatorMultipleAnimated = 0x7f040271;
+        public static final int listChoiceIndicatorSingleAnimated = 0x7f040272;
+        public static final int listDividerAlertDialog = 0x7f040273;
+        public static final int listItemLayout = 0x7f040274;
+        public static final int listLayout = 0x7f040275;
+        public static final int listMenuViewStyle = 0x7f040276;
+        public static final int listPopupWindowStyle = 0x7f040277;
+        public static final int listPreferredItemHeight = 0x7f040278;
+        public static final int listPreferredItemHeightLarge = 0x7f040279;
+        public static final int listPreferredItemHeightSmall = 0x7f04027a;
+        public static final int listPreferredItemPaddingEnd = 0x7f04027b;
+        public static final int listPreferredItemPaddingLeft = 0x7f04027c;
+        public static final int listPreferredItemPaddingRight = 0x7f04027d;
+        public static final int listPreferredItemPaddingStart = 0x7f04027e;
+        public static final int logo = 0x7f040280;
+        public static final int logoDescription = 0x7f040281;
+        public static final int materialAlertDialogBodyTextStyle = 0x7f04029e;
+        public static final int materialAlertDialogTheme = 0x7f04029f;
+        public static final int materialAlertDialogTitleIconStyle = 0x7f0402a0;
+        public static final int materialAlertDialogTitlePanelStyle = 0x7f0402a1;
+        public static final int materialAlertDialogTitleTextStyle = 0x7f0402a2;
+        public static final int materialButtonOutlinedStyle = 0x7f0402a3;
+        public static final int materialButtonStyle = 0x7f0402a4;
+        public static final int materialButtonToggleGroupStyle = 0x7f0402a5;
+        public static final int materialCalendarDay = 0x7f0402a6;
+        public static final int materialCalendarFullscreenTheme = 0x7f0402a7;
+        public static final int materialCalendarHeaderConfirmButton = 0x7f0402a8;
+        public static final int materialCalendarHeaderDivider = 0x7f0402a9;
+        public static final int materialCalendarHeaderLayout = 0x7f0402aa;
+        public static final int materialCalendarHeaderSelection = 0x7f0402ab;
+        public static final int materialCalendarHeaderTitle = 0x7f0402ac;
+        public static final int materialCalendarHeaderToggleButton = 0x7f0402ad;
+        public static final int materialCalendarStyle = 0x7f0402ae;
+        public static final int materialCalendarTheme = 0x7f0402af;
+        public static final int materialCardViewStyle = 0x7f0402b0;
+        public static final int materialThemeOverlay = 0x7f0402b1;
+        public static final int maxActionInlineWidth = 0x7f0402b3;
+        public static final int maxButtonHeight = 0x7f0402b4;
+        public static final int maxCharacterCount = 0x7f0402b5;
+        public static final int maxHeight = 0x7f0402b6;
+        public static final int maxImageSize = 0x7f0402b7;
+        public static final int maxLines = 0x7f0402b8;
+        public static final int measureWithLargestChild = 0x7f0402bb;
+        public static final int menu = 0x7f0402bc;
+        public static final int minTouchTargetSize = 0x7f0402bf;
+        public static final int multiChoiceItemLayout = 0x7f0402d8;
+        public static final int navigationContentDescription = 0x7f0402e1;
+        public static final int navigationIcon = 0x7f0402e2;
+        public static final int navigationMode = 0x7f0402e3;
+        public static final int navigationViewStyle = 0x7f0402e4;
+        public static final int number = 0x7f0402e7;
+        public static final int numericModifiers = 0x7f0402e8;
+        public static final int orientation = 0x7f0402f0;
+        public static final int overlapAnchor = 0x7f0402f1;
+        public static final int paddingBottomNoButtons = 0x7f0402f3;
+        public static final int paddingBottomSystemWindowInsets = 0x7f0402f4;
+        public static final int paddingEnd = 0x7f0402f5;
+        public static final int paddingLeftSystemWindowInsets = 0x7f0402f6;
+        public static final int paddingRightSystemWindowInsets = 0x7f0402f7;
+        public static final int paddingStart = 0x7f0402f8;
+        public static final int paddingTopNoTitle = 0x7f0402f9;
+        public static final int panelBackground = 0x7f0402fa;
+        public static final int panelMenuListTheme = 0x7f0402fb;
+        public static final int panelMenuListWidth = 0x7f0402fc;
+        public static final int passwordToggleContentDescription = 0x7f0402fd;
+        public static final int passwordToggleDrawable = 0x7f0402fe;
+        public static final int passwordToggleEnabled = 0x7f0402ff;
+        public static final int passwordToggleTint = 0x7f040300;
+        public static final int passwordToggleTintMode = 0x7f040301;
+        public static final int placeholderText = 0x7f04030a;
+        public static final int placeholderTextAppearance = 0x7f04030b;
+        public static final int placeholderTextColor = 0x7f04030c;
+        public static final int popupMenuBackground = 0x7f040310;
+        public static final int popupMenuStyle = 0x7f040311;
+        public static final int popupTheme = 0x7f040312;
+        public static final int popupWindowStyle = 0x7f040313;
+        public static final int prefixText = 0x7f040314;
+        public static final int prefixTextAppearance = 0x7f040315;
+        public static final int prefixTextColor = 0x7f040316;
+        public static final int preserveIconSpacing = 0x7f040317;
+        public static final int pressedTranslationZ = 0x7f040318;
+        public static final int progressBarPadding = 0x7f040319;
+        public static final int progressBarStyle = 0x7f04031a;
+        public static final int queryBackground = 0x7f04031f;
+        public static final int queryHint = 0x7f040320;
+        public static final int radioButtonStyle = 0x7f040321;
+        public static final int rangeFillColor = 0x7f040322;
+        public static final int ratingBarStyle = 0x7f040323;
+        public static final int ratingBarStyleIndicator = 0x7f040324;
+        public static final int ratingBarStyleSmall = 0x7f040325;
+        public static final int recyclerViewStyle = 0x7f04032c;
+        public static final int reverseLayout = 0x7f040332;
+        public static final int rippleColor = 0x7f040333;
+        public static final int scrimAnimationDuration = 0x7f040339;
+        public static final int scrimBackground = 0x7f04033a;
+        public static final int scrimVisibleHeightTrigger = 0x7f04033b;
+        public static final int searchHintIcon = 0x7f04033c;
+        public static final int searchIcon = 0x7f04033d;
+        public static final int searchViewStyle = 0x7f04033e;
+        public static final int seekBarStyle = 0x7f040342;
+        public static final int selectableItemBackground = 0x7f040345;
+        public static final int selectableItemBackgroundBorderless = 0x7f040346;
+        public static final int selectionRequired = 0x7f040347;
+        public static final int shapeAppearance = 0x7f040349;
+        public static final int shapeAppearanceLargeComponent = 0x7f04034a;
+        public static final int shapeAppearanceMediumComponent = 0x7f04034b;
+        public static final int shapeAppearanceOverlay = 0x7f04034c;
+        public static final int shapeAppearanceSmallComponent = 0x7f04034d;
+        public static final int showAsAction = 0x7f04034f;
+        public static final int showDividers = 0x7f040350;
+        public static final int showMotionSpec = 0x7f040351;
+        public static final int showText = 0x7f040353;
+        public static final int showTitle = 0x7f040354;
+        public static final int shrinkMotionSpec = 0x7f040355;
+        public static final int singleChoiceItemLayout = 0x7f040356;
+        public static final int singleLine = 0x7f040357;
+        public static final int singleSelection = 0x7f040358;
+        public static final int sliderStyle = 0x7f04035a;
+        public static final int snackbarButtonStyle = 0x7f04035b;
+        public static final int snackbarStyle = 0x7f04035c;
+        public static final int snackbarTextViewStyle = 0x7f04035d;
+        public static final int spanCount = 0x7f04035e;
+        public static final int spinBars = 0x7f040363;
+        public static final int spinnerDropDownItemStyle = 0x7f040364;
+        public static final int spinnerStyle = 0x7f040365;
+        public static final int splitTrack = 0x7f040366;
+        public static final int srcCompat = 0x7f04036c;
+        public static final int stackFromEnd = 0x7f04036d;
+        public static final int startIconCheckable = 0x7f04036f;
+        public static final int startIconContentDescription = 0x7f040370;
+        public static final int startIconDrawable = 0x7f040371;
+        public static final int startIconTint = 0x7f040372;
+        public static final int startIconTintMode = 0x7f040373;
+        public static final int state_above_anchor = 0x7f040374;
+        public static final int state_collapsed = 0x7f040375;
+        public static final int state_collapsible = 0x7f040376;
+        public static final int state_dragged = 0x7f040377;
+        public static final int state_liftable = 0x7f040378;
+        public static final int state_lifted = 0x7f040379;
+        public static final int statusBarBackground = 0x7f04037a;
+        public static final int statusBarForeground = 0x7f04037b;
+        public static final int statusBarScrim = 0x7f04037c;
+        public static final int strokeColor = 0x7f04037d;
+        public static final int strokeWidth = 0x7f04037e;
+        public static final int subMenuArrow = 0x7f04037f;
+        public static final int submitBackground = 0x7f040380;
+        public static final int subtitle = 0x7f040381;
+        public static final int subtitleTextAppearance = 0x7f040382;
+        public static final int subtitleTextColor = 0x7f040383;
+        public static final int subtitleTextStyle = 0x7f040384;
+        public static final int suffixText = 0x7f040385;
+        public static final int suffixTextAppearance = 0x7f040386;
+        public static final int suffixTextColor = 0x7f040387;
+        public static final int suggestionRowLayout = 0x7f040388;
+        public static final int switchMinWidth = 0x7f040389;
+        public static final int switchPadding = 0x7f04038a;
+        public static final int switchStyle = 0x7f04038b;
+        public static final int switchTextAppearance = 0x7f04038c;
+        public static final int tabBackground = 0x7f04038e;
+        public static final int tabContentStart = 0x7f04038f;
+        public static final int tabGravity = 0x7f040390;
+        public static final int tabIconTint = 0x7f040391;
+        public static final int tabIconTintMode = 0x7f040392;
+        public static final int tabIndicator = 0x7f040393;
+        public static final int tabIndicatorAnimationDuration = 0x7f040394;
+        public static final int tabIndicatorColor = 0x7f040395;
+        public static final int tabIndicatorFullWidth = 0x7f040396;
+        public static final int tabIndicatorGravity = 0x7f040397;
+        public static final int tabIndicatorHeight = 0x7f040398;
+        public static final int tabInlineLabel = 0x7f040399;
+        public static final int tabMaxWidth = 0x7f04039a;
+        public static final int tabMinWidth = 0x7f04039b;
+        public static final int tabMode = 0x7f04039c;
+        public static final int tabPadding = 0x7f04039d;
+        public static final int tabPaddingBottom = 0x7f04039e;
+        public static final int tabPaddingEnd = 0x7f04039f;
+        public static final int tabPaddingStart = 0x7f0403a0;
+        public static final int tabPaddingTop = 0x7f0403a1;
+        public static final int tabRippleColor = 0x7f0403a2;
+        public static final int tabSelectedTextColor = 0x7f0403a3;
+        public static final int tabStyle = 0x7f0403a4;
+        public static final int tabTextAppearance = 0x7f0403a5;
+        public static final int tabTextColor = 0x7f0403a6;
+        public static final int tabUnboundedRipple = 0x7f0403a7;
+        public static final int textAllCaps = 0x7f0403ad;
+        public static final int textAppearanceBody1 = 0x7f0403ae;
+        public static final int textAppearanceBody2 = 0x7f0403af;
+        public static final int textAppearanceButton = 0x7f0403b0;
+        public static final int textAppearanceCaption = 0x7f0403b1;
+        public static final int textAppearanceHeadline1 = 0x7f0403b2;
+        public static final int textAppearanceHeadline2 = 0x7f0403b3;
+        public static final int textAppearanceHeadline3 = 0x7f0403b4;
+        public static final int textAppearanceHeadline4 = 0x7f0403b5;
+        public static final int textAppearanceHeadline5 = 0x7f0403b6;
+        public static final int textAppearanceHeadline6 = 0x7f0403b7;
+        public static final int textAppearanceLargePopupMenu = 0x7f0403b8;
+        public static final int textAppearanceLineHeightEnabled = 0x7f0403b9;
+        public static final int textAppearanceListItem = 0x7f0403ba;
+        public static final int textAppearanceListItemSecondary = 0x7f0403bb;
+        public static final int textAppearanceListItemSmall = 0x7f0403bc;
+        public static final int textAppearanceOverline = 0x7f0403bd;
+        public static final int textAppearancePopupMenuHeader = 0x7f0403be;
+        public static final int textAppearanceSearchResultSubtitle = 0x7f0403bf;
+        public static final int textAppearanceSearchResultTitle = 0x7f0403c0;
+        public static final int textAppearanceSmallPopupMenu = 0x7f0403c1;
+        public static final int textAppearanceSubtitle1 = 0x7f0403c2;
+        public static final int textAppearanceSubtitle2 = 0x7f0403c3;
+        public static final int textColorAlertDialogListItem = 0x7f0403ca;
+        public static final int textColorSearchUrl = 0x7f0403cb;
+        public static final int textEndPadding = 0x7f0403cc;
+        public static final int textInputLayoutFocusedRectEnabled = 0x7f0403ce;
+        public static final int textInputStyle = 0x7f0403cf;
+        public static final int textLocale = 0x7f0403d0;
+        public static final int textStartPadding = 0x7f0403d6;
+        public static final int theme = 0x7f0403db;
+        public static final int themeLineHeight = 0x7f0403dc;
+        public static final int thickness = 0x7f0403dd;
+        public static final int thumbColor = 0x7f0403de;
+        public static final int thumbElevation = 0x7f0403df;
+        public static final int thumbRadius = 0x7f0403e0;
+        public static final int thumbTextPadding = 0x7f0403e1;
+        public static final int thumbTint = 0x7f0403e2;
+        public static final int thumbTintMode = 0x7f0403e3;
+        public static final int tickColor = 0x7f0403e4;
+        public static final int tickColorActive = 0x7f0403e5;
+        public static final int tickColorInactive = 0x7f0403e6;
+        public static final int tickMark = 0x7f0403e7;
+        public static final int tickMarkTint = 0x7f0403e8;
+        public static final int tickMarkTintMode = 0x7f0403e9;
+        public static final int tint = 0x7f0403ea;
+        public static final int tintMode = 0x7f0403eb;
+        public static final int title = 0x7f0403ec;
+        public static final int titleEnabled = 0x7f0403ed;
+        public static final int titleMargin = 0x7f0403ee;
+        public static final int titleMarginBottom = 0x7f0403ef;
+        public static final int titleMarginEnd = 0x7f0403f0;
+        public static final int titleMarginStart = 0x7f0403f1;
+        public static final int titleMarginTop = 0x7f0403f2;
+        public static final int titleMargins = 0x7f0403f3;
+        public static final int titleTextAppearance = 0x7f0403f4;
+        public static final int titleTextColor = 0x7f0403f5;
+        public static final int titleTextStyle = 0x7f0403f6;
+        public static final int toolbarId = 0x7f0403f7;
+        public static final int toolbarNavigationButtonStyle = 0x7f0403f8;
+        public static final int toolbarStyle = 0x7f0403f9;
+        public static final int tooltipForegroundColor = 0x7f0403fa;
+        public static final int tooltipFrameBackground = 0x7f0403fb;
+        public static final int tooltipStyle = 0x7f0403fc;
+        public static final int tooltipText = 0x7f0403fd;
+        public static final int track = 0x7f040401;
+        public static final int trackColor = 0x7f040402;
+        public static final int trackColorActive = 0x7f040403;
+        public static final int trackColorInactive = 0x7f040404;
+        public static final int trackHeight = 0x7f040405;
+        public static final int trackTint = 0x7f040406;
+        public static final int trackTintMode = 0x7f040407;
+        public static final int transitionShapeAppearance = 0x7f04040d;
+        public static final int ttcIndex = 0x7f040411;
+        public static final int useCompatPadding = 0x7f040413;
+        public static final int useMaterialThemeColors = 0x7f040414;
+        public static final int values = 0x7f040415;
+        public static final int verticalOffset = 0x7f040416;
+        public static final int viewInflaterClass = 0x7f040417;
+        public static final int voiceIcon = 0x7f04041d;
+        public static final int windowActionBar = 0x7f040428;
+        public static final int windowActionBarOverlay = 0x7f040429;
+        public static final int windowActionModeOverlay = 0x7f04042a;
+        public static final int windowFixedHeightMajor = 0x7f04042b;
+        public static final int windowFixedHeightMinor = 0x7f04042c;
+        public static final int windowFixedWidthMajor = 0x7f04042d;
+        public static final int windowFixedWidthMinor = 0x7f04042e;
+        public static final int windowMinWidthMajor = 0x7f04042f;
+        public static final int windowMinWidthMinor = 0x7f040430;
+        public static final int windowNoTitle = 0x7f040431;
+        public static final int yearSelectedStyle = 0x7f040432;
+        public static final int yearStyle = 0x7f040433;
+        public static final int yearTodayStyle = 0x7f040434;
+
+        /* JADX INFO: Added by JADX */
+        public static final int SharedValue = 0x7f040000;
+
+        /* JADX INFO: Added by JADX */
+        public static final int SharedValueId = 0x7f040001;
+
+        /* JADX INFO: Added by JADX */
+        public static final int altSrc = 0x7f04002c;
+
+        /* JADX INFO: Added by JADX */
+        public static final int animateCircleAngleTo = 0x7f04002d;
+
+        /* JADX INFO: Added by JADX */
+        public static final int animateRelativeTo = 0x7f04002e;
+
+        /* JADX INFO: Added by JADX */
+        public static final int applyMotionScene = 0x7f040031;
+
+        /* JADX INFO: Added by JADX */
+        public static final int arcMode = 0x7f040032;
+
+        /* JADX INFO: Added by JADX */
+        public static final int attributeName = 0x7f040035;
+
+        /* JADX INFO: Added by JADX */
+        public static final int autoCompleteMode = 0x7f040036;
+
+        /* JADX INFO: Added by JADX */
+        public static final int autoTransition = 0x7f04003d;
+
+        /* JADX INFO: Added by JADX */
+        public static final int b3_text_color = 0x7f04003e;
+
+        /* JADX INFO: Added by JADX */
+        public static final int back_btn_icon = 0x7f04003f;
+
+        /* JADX INFO: Added by JADX */
+        public static final int barPadding = 0x7f04004f;
+
+        /* JADX INFO: Added by JADX */
+        public static final int barWidth = 0x7f040050;
+
+        /* JADX INFO: Added by JADX */
+        public static final int barrierAllowsGoneWidgets = 0x7f040051;
+
+        /* JADX INFO: Added by JADX */
+        public static final int barrierDirection = 0x7f040052;
+
+        /* JADX INFO: Added by JADX */
+        public static final int barrierMargin = 0x7f040053;
+
+        /* JADX INFO: Added by JADX */
+        public static final int bat_level = 0x7f040054;
+
+        /* JADX INFO: Added by JADX */
+        public static final int bat_widget_level = 0x7f040055;
+
+        /* JADX INFO: Added by JADX */
+        public static final int blendSrc = 0x7f040061;
+
+        /* JADX INFO: Added by JADX */
+        public static final int borderRound = 0x7f040062;
+
+        /* JADX INFO: Added by JADX */
+        public static final int borderRoundPercent = 0x7f040063;
+
+        /* JADX INFO: Added by JADX */
+        public static final int brightness = 0x7f040075;
+
+        /* JADX INFO: Added by JADX */
+        public static final int bt_audio_icon = 0x7f040076;
+
+        /* JADX INFO: Added by JADX */
+        public static final int bt_call_out_icon = 0x7f040077;
+
+        /* JADX INFO: Added by JADX */
+        public static final int bt_call_small_icon = 0x7f040078;
+
+        /* JADX INFO: Added by JADX */
+        public static final int bt_call_small_view_bg = 0x7f040079;
+
+        /* JADX INFO: Added by JADX */
+        public static final int bt_calling_keyboard_item_bg = 0x7f04007a;
+
+        /* JADX INFO: Added by JADX */
+        public static final int bt_calling_mic_mute_btn = 0x7f04007b;
+
+        /* JADX INFO: Added by JADX */
+        public static final int bt_calling_show_keyboard_btn = 0x7f04007c;
+
+        /* JADX INFO: Added by JADX */
+        public static final int bt_calling_voice2phone_btn = 0x7f04007d;
+
+        /* JADX INFO: Added by JADX */
+        public static final int bt_dialog_bg = 0x7f04007e;
+
+        /* JADX INFO: Added by JADX */
+        public static final int bt_empty_icon = 0x7f04007f;
+
+        /* JADX INFO: Added by JADX */
+        public static final int bt_phone_audio_not_open = 0x7f040080;
+
+        /* JADX INFO: Added by JADX */
+        public static final int bt_tablehost_bg_116 = 0x7f040081;
+
+        /* JADX INFO: Added by JADX */
+        public static final int bt_widget_bg = 0x7f040082;
+
+        /* JADX INFO: Added by JADX */
+        public static final int bt_widget_bg_select = 0x7f040083;
+
+        /* JADX INFO: Added by JADX */
+        public static final int btcall_btn_hugup_icon = 0x7f040084;
+
+        /* JADX INFO: Added by JADX */
+        public static final int btcall_empty_icon = 0x7f040085;
+
+        /* JADX INFO: Added by JADX */
+        public static final int btcall_small_bg = 0x7f040086;
+
+        /* JADX INFO: Added by JADX */
+        public static final int button_phone_answer = 0x7f040094;
+
+        /* JADX INFO: Added by JADX */
+        public static final int c8_text_color = 0x7f0400b6;
+
+        /* JADX INFO: Added by JADX */
+        public static final int call_infomation_icon = 0x7f0400b7;
+
+        /* JADX INFO: Added by JADX */
+        public static final int call_log_empty_icon = 0x7f0400b8;
+
+        /* JADX INFO: Added by JADX */
+        public static final int callout_icon = 0x7f0400b9;
+
+        /* JADX INFO: Added by JADX */
+        public static final int carousel_backwardTransition = 0x7f0400c2;
+
+        /* JADX INFO: Added by JADX */
+        public static final int carousel_emptyViewsBehavior = 0x7f0400c3;
+
+        /* JADX INFO: Added by JADX */
+        public static final int carousel_firstView = 0x7f0400c4;
+
+        /* JADX INFO: Added by JADX */
+        public static final int carousel_forwardTransition = 0x7f0400c5;
+
+        /* JADX INFO: Added by JADX */
+        public static final int carousel_infinite = 0x7f0400c6;
+
+        /* JADX INFO: Added by JADX */
+        public static final int carousel_nextState = 0x7f0400c7;
+
+        /* JADX INFO: Added by JADX */
+        public static final int carousel_previousState = 0x7f0400c8;
+
+        /* JADX INFO: Added by JADX */
+        public static final int carousel_touchUpMode = 0x7f0400c9;
+
+        /* JADX INFO: Added by JADX */
+        public static final int carousel_touchUp_dampeningFactor = 0x7f0400ca;
+
+        /* JADX INFO: Added by JADX */
+        public static final int carousel_touchUp_velocityThreshold = 0x7f0400cb;
+
+        /* JADX INFO: Added by JADX */
+        public static final int chainUseRtl = 0x7f0400cc;
+
+        /* JADX INFO: Added by JADX */
+        public static final int circleRadius = 0x7f0400e9;
+
+        /* JADX INFO: Added by JADX */
+        public static final int circularflow_angles = 0x7f0400ea;
+
+        /* JADX INFO: Added by JADX */
+        public static final int circularflow_defaultAngle = 0x7f0400eb;
+
+        /* JADX INFO: Added by JADX */
+        public static final int circularflow_defaultRadius = 0x7f0400ec;
+
+        /* JADX INFO: Added by JADX */
+        public static final int circularflow_radiusInDP = 0x7f0400ed;
+
+        /* JADX INFO: Added by JADX */
+        public static final int circularflow_viewCenter = 0x7f0400ee;
+
+        /* JADX INFO: Added by JADX */
+        public static final int clear_btn_n = 0x7f0400ef;
+
+        /* JADX INFO: Added by JADX */
+        public static final int clearsTag = 0x7f0400f0;
+
+        /* JADX INFO: Added by JADX */
+        public static final int clickAction = 0x7f0400f1;
+
+        /* JADX INFO: Added by JADX */
+        public static final int constraintRotate = 0x7f040115;
+
+        /* JADX INFO: Added by JADX */
+        public static final int constraintSet = 0x7f040116;
+
+        /* JADX INFO: Added by JADX */
+        public static final int constraintSetEnd = 0x7f040117;
+
+        /* JADX INFO: Added by JADX */
+        public static final int constraintSetStart = 0x7f040118;
+
+        /* JADX INFO: Added by JADX */
+        public static final int constraint_referenced_ids = 0x7f040119;
+
+        /* JADX INFO: Added by JADX */
+        public static final int constraint_referenced_tags = 0x7f04011a;
+
+        /* JADX INFO: Added by JADX */
+        public static final int constraints = 0x7f04011b;
+
+        /* JADX INFO: Added by JADX */
+        public static final int contacts_empty_icon = 0x7f04011c;
+
+        /* JADX INFO: Added by JADX */
+        public static final int contacts_info_list_bg = 0x7f04011d;
+
+        /* JADX INFO: Added by JADX */
+        public static final int contacts_info_wm_list_bg = 0x7f04011e;
+
+        /* JADX INFO: Added by JADX */
+        public static final int contacts_list_wm_bg = 0x7f04011f;
+
+        /* JADX INFO: Added by JADX */
+        public static final int contacts_not_download_icon = 0x7f040120;
+
+        /* JADX INFO: Added by JADX */
+        public static final int contacts_reflesh_icon = 0x7f040121;
+
+        /* JADX INFO: Added by JADX */
+        public static final int contacts_search_icon = 0x7f040122;
+
+        /* JADX INFO: Added by JADX */
+        public static final int content = 0x7f040123;
+
+        /* JADX INFO: Added by JADX */
+        public static final int contrast = 0x7f040131;
+
+        /* JADX INFO: Added by JADX */
+        public static final int crossfade = 0x7f040145;
+
+        /* JADX INFO: Added by JADX */
+        public static final int currentState = 0x7f040146;
+
+        /* JADX INFO: Added by JADX */
+        public static final int curveFit = 0x7f040147;
+
+        /* JADX INFO: Added by JADX */
+        public static final int customBoolean = 0x7f040148;
+
+        /* JADX INFO: Added by JADX */
+        public static final int customColorDrawableValue = 0x7f040149;
+
+        /* JADX INFO: Added by JADX */
+        public static final int customColorValue = 0x7f04014a;
+
+        /* JADX INFO: Added by JADX */
+        public static final int customDimension = 0x7f04014b;
+
+        /* JADX INFO: Added by JADX */
+        public static final int customFloatValue = 0x7f04014c;
+
+        /* JADX INFO: Added by JADX */
+        public static final int customIntegerValue = 0x7f04014d;
+
+        /* JADX INFO: Added by JADX */
+        public static final int customPixelDimension = 0x7f04014f;
+
+        /* JADX INFO: Added by JADX */
+        public static final int customReference = 0x7f040150;
+
+        /* JADX INFO: Added by JADX */
+        public static final int customStringValue = 0x7f040151;
+
+        /* JADX INFO: Added by JADX */
+        public static final int d9_text_color = 0x7f040152;
+
+        /* JADX INFO: Added by JADX */
+        public static final int defaultDuration = 0x7f040157;
+
+        /* JADX INFO: Added by JADX */
+        public static final int defaultState = 0x7f040159;
+
+        /* JADX INFO: Added by JADX */
+        public static final int deltaPolarAngle = 0x7f04015a;
+
+        /* JADX INFO: Added by JADX */
+        public static final int deltaPolarRadius = 0x7f04015b;
+
+        /* JADX INFO: Added by JADX */
+        public static final int deriveConstraintsFrom = 0x7f04015c;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dial_btn_bg = 0x7f04015d;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dialog_btn_n_shape = 0x7f040161;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dialog_btn_p_shape = 0x7f040162;
+
+        /* JADX INFO: Added by JADX */
+        public static final int download_faild_icon = 0x7f040168;
+
+        /* JADX INFO: Added by JADX */
+        public static final int download_succeed_icon = 0x7f040169;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dragDirection = 0x7f04016a;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dragScale = 0x7f04016b;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dragThreshold = 0x7f04016c;
+
+        /* JADX INFO: Added by JADX */
+        public static final int drawPath = 0x7f04016d;
+
+        /* JADX INFO: Added by JADX */
+        public static final int duration = 0x7f04017a;
+
+        /* JADX INFO: Added by JADX */
+        public static final int edit_text_bg = 0x7f04017e;
+
+        /* JADX INFO: Added by JADX */
+        public static final int edittext_custom = 0x7f04017f;
+
+        /* JADX INFO: Added by JADX */
+        public static final int ff_text_color = 0x7f0401aa;
+
+        /* JADX INFO: Added by JADX */
+        public static final int ff_white_color = 0x7f0401ab;
+
+        /* JADX INFO: Added by JADX */
+        public static final int flow_firstHorizontalBias = 0x7f0401ae;
+
+        /* JADX INFO: Added by JADX */
+        public static final int flow_firstHorizontalStyle = 0x7f0401af;
+
+        /* JADX INFO: Added by JADX */
+        public static final int flow_firstVerticalBias = 0x7f0401b0;
+
+        /* JADX INFO: Added by JADX */
+        public static final int flow_firstVerticalStyle = 0x7f0401b1;
+
+        /* JADX INFO: Added by JADX */
+        public static final int flow_horizontalAlign = 0x7f0401b2;
+
+        /* JADX INFO: Added by JADX */
+        public static final int flow_horizontalBias = 0x7f0401b3;
+
+        /* JADX INFO: Added by JADX */
+        public static final int flow_horizontalGap = 0x7f0401b4;
+
+        /* JADX INFO: Added by JADX */
+        public static final int flow_horizontalStyle = 0x7f0401b5;
+
+        /* JADX INFO: Added by JADX */
+        public static final int flow_lastHorizontalBias = 0x7f0401b6;
+
+        /* JADX INFO: Added by JADX */
+        public static final int flow_lastHorizontalStyle = 0x7f0401b7;
+
+        /* JADX INFO: Added by JADX */
+        public static final int flow_lastVerticalBias = 0x7f0401b8;
+
+        /* JADX INFO: Added by JADX */
+        public static final int flow_lastVerticalStyle = 0x7f0401b9;
+
+        /* JADX INFO: Added by JADX */
+        public static final int flow_maxElementsWrap = 0x7f0401ba;
+
+        /* JADX INFO: Added by JADX */
+        public static final int flow_padding = 0x7f0401bb;
+
+        /* JADX INFO: Added by JADX */
+        public static final int flow_verticalAlign = 0x7f0401bc;
+
+        /* JADX INFO: Added by JADX */
+        public static final int flow_verticalBias = 0x7f0401bd;
+
+        /* JADX INFO: Added by JADX */
+        public static final int flow_verticalGap = 0x7f0401be;
+
+        /* JADX INFO: Added by JADX */
+        public static final int flow_verticalStyle = 0x7f0401bf;
+
+        /* JADX INFO: Added by JADX */
+        public static final int flow_wrapMode = 0x7f0401c0;
+
+        /* JADX INFO: Added by JADX */
+        public static final int framePosition = 0x7f0401cd;
+
+        /* JADX INFO: Added by JADX */
+        public static final int guidelineUseRtl = 0x7f0401d1;
+
+        /* JADX INFO: Added by JADX */
+        public static final int hintCircleColor = 0x7f0401de;
+
+        /* JADX INFO: Added by JADX */
+        public static final int hintCircleRadius = 0x7f0401df;
+
+        /* JADX INFO: Added by JADX */
+        public static final int hintShape = 0x7f0401e1;
+
+        /* JADX INFO: Added by JADX */
+        public static final int hintTextSize = 0x7f0401e4;
+
+        /* JADX INFO: Added by JADX */
+        public static final int hugup_third_icon = 0x7f0401e9;
+
+        /* JADX INFO: Added by JADX */
+        public static final int ifTagNotSet = 0x7f0401f3;
+
+        /* JADX INFO: Added by JADX */
+        public static final int ifTagSet = 0x7f0401f4;
+
+        /* JADX INFO: Added by JADX */
+        public static final int imagePanX = 0x7f0401f6;
+
+        /* JADX INFO: Added by JADX */
+        public static final int imagePanY = 0x7f0401f7;
+
+        /* JADX INFO: Added by JADX */
+        public static final int imageRotate = 0x7f0401f8;
+
+        /* JADX INFO: Added by JADX */
+        public static final int imageZoom = 0x7f0401f9;
+
+        /* JADX INFO: Added by JADX */
+        public static final int keyPositionType = 0x7f040217;
+
+        /* JADX INFO: Added by JADX */
+        public static final int keyboard_call_btn_bg = 0x7f040218;
+
+        /* JADX INFO: Added by JADX */
+        public static final int keyboard_number_delete_icon = 0x7f040219;
+
+        /* JADX INFO: Added by JADX */
+        public static final int land_activity_bg = 0x7f04021e;
+
+        /* JADX INFO: Added by JADX */
+        public static final int land_bt_tablehost_bg = 0x7f04021f;
+
+        /* JADX INFO: Added by JADX */
+        public static final int land_bt_tablehost_select_p = 0x7f040220;
+
+        /* JADX INFO: Added by JADX */
+        public static final int land_main_menu_bg = 0x7f040221;
+
+        /* JADX INFO: Added by JADX */
+        public static final int layoutDescription = 0x7f040224;
+
+        /* JADX INFO: Added by JADX */
+        public static final int layoutDuringTransition = 0x7f040225;
+
+        /* JADX INFO: Added by JADX */
+        public static final int layout_constrainedHeight = 0x7f04022c;
+
+        /* JADX INFO: Added by JADX */
+        public static final int layout_constrainedWidth = 0x7f04022d;
+
+        /* JADX INFO: Added by JADX */
+        public static final int layout_constraintBaseline_creator = 0x7f04022e;
+
+        /* JADX INFO: Added by JADX */
+        public static final int layout_constraintBaseline_toBaselineOf = 0x7f04022f;
+
+        /* JADX INFO: Added by JADX */
+        public static final int layout_constraintBaseline_toBottomOf = 0x7f040230;
+
+        /* JADX INFO: Added by JADX */
+        public static final int layout_constraintBaseline_toTopOf = 0x7f040231;
+
+        /* JADX INFO: Added by JADX */
+        public static final int layout_constraintBottom_creator = 0x7f040232;
+
+        /* JADX INFO: Added by JADX */
+        public static final int layout_constraintBottom_toBottomOf = 0x7f040233;
+
+        /* JADX INFO: Added by JADX */
+        public static final int layout_constraintBottom_toTopOf = 0x7f040234;
+
+        /* JADX INFO: Added by JADX */
+        public static final int layout_constraintCircle = 0x7f040235;
+
+        /* JADX INFO: Added by JADX */
+        public static final int layout_constraintCircleAngle = 0x7f040236;
+
+        /* JADX INFO: Added by JADX */
+        public static final int layout_constraintCircleRadius = 0x7f040237;
+
+        /* JADX INFO: Added by JADX */
+        public static final int layout_constraintDimensionRatio = 0x7f040238;
+
+        /* JADX INFO: Added by JADX */
+        public static final int layout_constraintEnd_toEndOf = 0x7f040239;
+
+        /* JADX INFO: Added by JADX */
+        public static final int layout_constraintEnd_toStartOf = 0x7f04023a;
+
+        /* JADX INFO: Added by JADX */
+        public static final int layout_constraintGuide_begin = 0x7f04023b;
+
+        /* JADX INFO: Added by JADX */
+        public static final int layout_constraintGuide_end = 0x7f04023c;
+
+        /* JADX INFO: Added by JADX */
+        public static final int layout_constraintGuide_percent = 0x7f04023d;
+
+        /* JADX INFO: Added by JADX */
+        public static final int layout_constraintHeight = 0x7f04023e;
+
+        /* JADX INFO: Added by JADX */
+        public static final int layout_constraintHeight_default = 0x7f04023f;
+
+        /* JADX INFO: Added by JADX */
+        public static final int layout_constraintHeight_max = 0x7f040240;
+
+        /* JADX INFO: Added by JADX */
+        public static final int layout_constraintHeight_min = 0x7f040241;
+
+        /* JADX INFO: Added by JADX */
+        public static final int layout_constraintHeight_percent = 0x7f040242;
+
+        /* JADX INFO: Added by JADX */
+        public static final int layout_constraintHorizontal_bias = 0x7f040243;
+
+        /* JADX INFO: Added by JADX */
+        public static final int layout_constraintHorizontal_chainStyle = 0x7f040244;
+
+        /* JADX INFO: Added by JADX */
+        public static final int layout_constraintHorizontal_weight = 0x7f040245;
+
+        /* JADX INFO: Added by JADX */
+        public static final int layout_constraintLeft_creator = 0x7f040246;
+
+        /* JADX INFO: Added by JADX */
+        public static final int layout_constraintLeft_toLeftOf = 0x7f040247;
+
+        /* JADX INFO: Added by JADX */
+        public static final int layout_constraintLeft_toRightOf = 0x7f040248;
+
+        /* JADX INFO: Added by JADX */
+        public static final int layout_constraintRight_creator = 0x7f040249;
+
+        /* JADX INFO: Added by JADX */
+        public static final int layout_constraintRight_toLeftOf = 0x7f04024a;
+
+        /* JADX INFO: Added by JADX */
+        public static final int layout_constraintRight_toRightOf = 0x7f04024b;
+
+        /* JADX INFO: Added by JADX */
+        public static final int layout_constraintStart_toEndOf = 0x7f04024c;
+
+        /* JADX INFO: Added by JADX */
+        public static final int layout_constraintStart_toStartOf = 0x7f04024d;
+
+        /* JADX INFO: Added by JADX */
+        public static final int layout_constraintTag = 0x7f04024e;
+
+        /* JADX INFO: Added by JADX */
+        public static final int layout_constraintTop_creator = 0x7f04024f;
+
+        /* JADX INFO: Added by JADX */
+        public static final int layout_constraintTop_toBottomOf = 0x7f040250;
+
+        /* JADX INFO: Added by JADX */
+        public static final int layout_constraintTop_toTopOf = 0x7f040251;
+
+        /* JADX INFO: Added by JADX */
+        public static final int layout_constraintVertical_bias = 0x7f040252;
+
+        /* JADX INFO: Added by JADX */
+        public static final int layout_constraintVertical_chainStyle = 0x7f040253;
+
+        /* JADX INFO: Added by JADX */
+        public static final int layout_constraintVertical_weight = 0x7f040254;
+
+        /* JADX INFO: Added by JADX */
+        public static final int layout_constraintWidth = 0x7f040255;
+
+        /* JADX INFO: Added by JADX */
+        public static final int layout_constraintWidth_default = 0x7f040256;
+
+        /* JADX INFO: Added by JADX */
+        public static final int layout_constraintWidth_max = 0x7f040257;
+
+        /* JADX INFO: Added by JADX */
+        public static final int layout_constraintWidth_min = 0x7f040258;
+
+        /* JADX INFO: Added by JADX */
+        public static final int layout_constraintWidth_percent = 0x7f040259;
+
+        /* JADX INFO: Added by JADX */
+        public static final int layout_editor_absoluteX = 0x7f04025b;
+
+        /* JADX INFO: Added by JADX */
+        public static final int layout_editor_absoluteY = 0x7f04025c;
+
+        /* JADX INFO: Added by JADX */
+        public static final int layout_goneMarginBaseline = 0x7f04025d;
+
+        /* JADX INFO: Added by JADX */
+        public static final int layout_goneMarginBottom = 0x7f04025e;
+
+        /* JADX INFO: Added by JADX */
+        public static final int layout_goneMarginEnd = 0x7f04025f;
+
+        /* JADX INFO: Added by JADX */
+        public static final int layout_goneMarginLeft = 0x7f040260;
+
+        /* JADX INFO: Added by JADX */
+        public static final int layout_goneMarginRight = 0x7f040261;
+
+        /* JADX INFO: Added by JADX */
+        public static final int layout_goneMarginStart = 0x7f040262;
+
+        /* JADX INFO: Added by JADX */
+        public static final int layout_goneMarginTop = 0x7f040263;
+
+        /* JADX INFO: Added by JADX */
+        public static final int layout_marginBaseline = 0x7f040266;
+
+        /* JADX INFO: Added by JADX */
+        public static final int layout_optimizationLevel = 0x7f040267;
+
+        /* JADX INFO: Added by JADX */
+        public static final int layout_wrapBehaviorInParent = 0x7f04026a;
+
+        /* JADX INFO: Added by JADX */
+        public static final int limitBoundsTo = 0x7f04026d;
+
+        /* JADX INFO: Added by JADX */
+        public static final int list_line_1 = 0x7f04027f;
+
+        /* JADX INFO: Added by JADX */
+        public static final int lottie_autoPlay = 0x7f040282;
+
+        /* JADX INFO: Added by JADX */
+        public static final int lottie_colorFilter = 0x7f040283;
+
+        /* JADX INFO: Added by JADX */
+        public static final int lottie_enableMergePathsForKitKatAndAbove = 0x7f040284;
+
+        /* JADX INFO: Added by JADX */
+        public static final int lottie_fallbackRes = 0x7f040285;
+
+        /* JADX INFO: Added by JADX */
+        public static final int lottie_fileName = 0x7f040286;
+
+        /* JADX INFO: Added by JADX */
+        public static final int lottie_imageAssetsFolder = 0x7f040287;
+
+        /* JADX INFO: Added by JADX */
+        public static final int lottie_loop = 0x7f040288;
+
+        /* JADX INFO: Added by JADX */
+        public static final int lottie_progress = 0x7f040289;
+
+        /* JADX INFO: Added by JADX */
+        public static final int lottie_rawRes = 0x7f04028a;
+
+        /* JADX INFO: Added by JADX */
+        public static final int lottie_renderMode = 0x7f04028b;
+
+        /* JADX INFO: Added by JADX */
+        public static final int lottie_repeatCount = 0x7f04028c;
+
+        /* JADX INFO: Added by JADX */
+        public static final int lottie_repeatMode = 0x7f04028d;
+
+        /* JADX INFO: Added by JADX */
+        public static final int lottie_scale = 0x7f04028e;
+
+        /* JADX INFO: Added by JADX */
+        public static final int lottie_speed = 0x7f04028f;
+
+        /* JADX INFO: Added by JADX */
+        public static final int lottie_url = 0x7f040290;
+
+        /* JADX INFO: Added by JADX */
+        public static final int main_menu_bg = 0x7f040291;
+
+        /* JADX INFO: Added by JADX */
+        public static final int main_menu_calllog_icon = 0x7f040292;
+
+        /* JADX INFO: Added by JADX */
+        public static final int main_menu_contacts_icon = 0x7f040293;
+
+        /* JADX INFO: Added by JADX */
+        public static final int main_menu_dial_keyboard_icon = 0x7f040294;
+
+        /* JADX INFO: Added by JADX */
+        public static final int main_menu_missedcalls_icon = 0x7f040295;
+
+        /* JADX INFO: Added by JADX */
+        public static final int marqueeview_is_resetLocation = 0x7f040296;
+
+        /* JADX INFO: Added by JADX */
+        public static final int marqueeview_isclickalbe_stop = 0x7f040297;
+
+        /* JADX INFO: Added by JADX */
+        public static final int marqueeview_repet_type = 0x7f040298;
+
+        /* JADX INFO: Added by JADX */
+        public static final int marqueeview_text_color = 0x7f040299;
+
+        /* JADX INFO: Added by JADX */
+        public static final int marqueeview_text_distance = 0x7f04029a;
+
+        /* JADX INFO: Added by JADX */
+        public static final int marqueeview_text_size = 0x7f04029b;
+
+        /* JADX INFO: Added by JADX */
+        public static final int marqueeview_text_speed = 0x7f04029c;
+
+        /* JADX INFO: Added by JADX */
+        public static final int marqueeview_text_startlocationdistance = 0x7f04029d;
+
+        /* JADX INFO: Added by JADX */
+        public static final int maxAcceleration = 0x7f0402b2;
+
+        /* JADX INFO: Added by JADX */
+        public static final int maxVelocity = 0x7f0402b9;
+
+        /* JADX INFO: Added by JADX */
+        public static final int maxWidth = 0x7f0402ba;
+
+        /* JADX INFO: Added by JADX */
+        public static final int methodName = 0x7f0402bd;
+
+        /* JADX INFO: Added by JADX */
+        public static final int minHeight = 0x7f0402be;
+
+        /* JADX INFO: Added by JADX */
+        public static final int minWidth = 0x7f0402c0;
+
+        /* JADX INFO: Added by JADX */
+        public static final int mock_diagonalsColor = 0x7f0402c1;
+
+        /* JADX INFO: Added by JADX */
+        public static final int mock_label = 0x7f0402c2;
+
+        /* JADX INFO: Added by JADX */
+        public static final int mock_labelBackgroundColor = 0x7f0402c3;
+
+        /* JADX INFO: Added by JADX */
+        public static final int mock_labelColor = 0x7f0402c4;
+
+        /* JADX INFO: Added by JADX */
+        public static final int mock_showDiagonals = 0x7f0402c5;
+
+        /* JADX INFO: Added by JADX */
+        public static final int mock_showLabel = 0x7f0402c6;
+
+        /* JADX INFO: Added by JADX */
+        public static final int motionDebug = 0x7f0402c7;
+
+        /* JADX INFO: Added by JADX */
+        public static final int motionEffect_alpha = 0x7f0402c8;
+
+        /* JADX INFO: Added by JADX */
+        public static final int motionEffect_end = 0x7f0402c9;
+
+        /* JADX INFO: Added by JADX */
+        public static final int motionEffect_move = 0x7f0402ca;
+
+        /* JADX INFO: Added by JADX */
+        public static final int motionEffect_start = 0x7f0402cb;
+
+        /* JADX INFO: Added by JADX */
+        public static final int motionEffect_strict = 0x7f0402cc;
+
+        /* JADX INFO: Added by JADX */
+        public static final int motionEffect_translationX = 0x7f0402cd;
+
+        /* JADX INFO: Added by JADX */
+        public static final int motionEffect_translationY = 0x7f0402ce;
+
+        /* JADX INFO: Added by JADX */
+        public static final int motionEffect_viewTransition = 0x7f0402cf;
+
+        /* JADX INFO: Added by JADX */
+        public static final int motionInterpolator = 0x7f0402d0;
+
+        /* JADX INFO: Added by JADX */
+        public static final int motionPathRotate = 0x7f0402d1;
+
+        /* JADX INFO: Added by JADX */
+        public static final int motionProgress = 0x7f0402d2;
+
+        /* JADX INFO: Added by JADX */
+        public static final int motionStagger = 0x7f0402d3;
+
+        /* JADX INFO: Added by JADX */
+        public static final int motionTarget = 0x7f0402d4;
+
+        /* JADX INFO: Added by JADX */
+        public static final int motion_postLayoutCollision = 0x7f0402d5;
+
+        /* JADX INFO: Added by JADX */
+        public static final int motion_triggerOnCollision = 0x7f0402d6;
+
+        /* JADX INFO: Added by JADX */
+        public static final int moveWhenScrollAtTop = 0x7f0402d7;
+
+        /* JADX INFO: Added by JADX */
+        public static final int mvAnimDuration = 0x7f0402d9;
+
+        /* JADX INFO: Added by JADX */
+        public static final int mvDirection = 0x7f0402da;
+
+        /* JADX INFO: Added by JADX */
+        public static final int mvFont = 0x7f0402db;
+
+        /* JADX INFO: Added by JADX */
+        public static final int mvGravity = 0x7f0402dc;
+
+        /* JADX INFO: Added by JADX */
+        public static final int mvInterval = 0x7f0402dd;
+
+        /* JADX INFO: Added by JADX */
+        public static final int mvSingleLine = 0x7f0402de;
+
+        /* JADX INFO: Added by JADX */
+        public static final int mvTextColor = 0x7f0402df;
+
+        /* JADX INFO: Added by JADX */
+        public static final int mvTextSize = 0x7f0402e0;
+
+        /* JADX INFO: Added by JADX */
+        public static final int nestedScrollFlags = 0x7f0402e5;
+
+        /* JADX INFO: Added by JADX */
+        public static final int no_matching_result_icon = 0x7f0402e6;
+
+        /* JADX INFO: Added by JADX */
+        public static final int onCross = 0x7f0402e9;
+
+        /* JADX INFO: Added by JADX */
+        public static final int onHide = 0x7f0402ea;
+
+        /* JADX INFO: Added by JADX */
+        public static final int onNegativeCross = 0x7f0402eb;
+
+        /* JADX INFO: Added by JADX */
+        public static final int onPositiveCross = 0x7f0402ec;
+
+        /* JADX INFO: Added by JADX */
+        public static final int onShow = 0x7f0402ed;
+
+        /* JADX INFO: Added by JADX */
+        public static final int onStateTransition = 0x7f0402ee;
+
+        /* JADX INFO: Added by JADX */
+        public static final int onTouchUp = 0x7f0402ef;
+
+        /* JADX INFO: Added by JADX */
+        public static final int overlay = 0x7f0402f2;
+
+        /* JADX INFO: Added by JADX */
+        public static final int pathMotionArc = 0x7f040302;
+
+        /* JADX INFO: Added by JADX */
+        public static final int path_percent = 0x7f040303;
+
+        /* JADX INFO: Added by JADX */
+        public static final int percentHeight = 0x7f040304;
+
+        /* JADX INFO: Added by JADX */
+        public static final int percentWidth = 0x7f040305;
+
+        /* JADX INFO: Added by JADX */
+        public static final int percentX = 0x7f040306;
+
+        /* JADX INFO: Added by JADX */
+        public static final int percentY = 0x7f040307;
+
+        /* JADX INFO: Added by JADX */
+        public static final int perpendicularPath_percent = 0x7f040308;
+
+        /* JADX INFO: Added by JADX */
+        public static final int pivotAnchor = 0x7f040309;
+
+        /* JADX INFO: Added by JADX */
+        public static final int placeholder_emptyVisibility = 0x7f04030d;
+
+        /* JADX INFO: Added by JADX */
+        public static final int polarRelativeTo = 0x7f04030e;
+
+        /* JADX INFO: Added by JADX */
+        public static final int popover_translucent_background = 0x7f04030f;
+
+        /* JADX INFO: Added by JADX */
+        public static final int progressbar = 0x7f04031b;
+
+        /* JADX INFO: Added by JADX */
+        public static final int quantizeMotionInterpolator = 0x7f04031c;
+
+        /* JADX INFO: Added by JADX */
+        public static final int quantizeMotionPhase = 0x7f04031d;
+
+        /* JADX INFO: Added by JADX */
+        public static final int quantizeMotionSteps = 0x7f04031e;
+
+        /* JADX INFO: Added by JADX */
+        public static final int rd_land_bt_tablehost_bg = 0x7f040326;
+
+        /* JADX INFO: Added by JADX */
+        public static final int rd_land_main_menu_bg = 0x7f040327;
+
+        /* JADX INFO: Added by JADX */
+        public static final int reactiveGuide_animateChange = 0x7f040328;
+
+        /* JADX INFO: Added by JADX */
+        public static final int reactiveGuide_applyToAllConstraintSets = 0x7f040329;
+
+        /* JADX INFO: Added by JADX */
+        public static final int reactiveGuide_applyToConstraintSet = 0x7f04032a;
+
+        /* JADX INFO: Added by JADX */
+        public static final int reactiveGuide_valueId = 0x7f04032b;
+
+        /* JADX INFO: Added by JADX */
+        public static final int red_round_bg = 0x7f04032d;
+
+        /* JADX INFO: Added by JADX */
+        public static final int region_heightLessThan = 0x7f04032e;
+
+        /* JADX INFO: Added by JADX */
+        public static final int region_heightMoreThan = 0x7f04032f;
+
+        /* JADX INFO: Added by JADX */
+        public static final int region_widthLessThan = 0x7f040330;
+
+        /* JADX INFO: Added by JADX */
+        public static final int region_widthMoreThan = 0x7f040331;
+
+        /* JADX INFO: Added by JADX */
+        public static final int rotationCenterId = 0x7f040334;
+
+        /* JADX INFO: Added by JADX */
+        public static final int round = 0x7f040335;
+
+        /* JADX INFO: Added by JADX */
+        public static final int roundPercent = 0x7f040336;
+
+        /* JADX INFO: Added by JADX */
+        public static final int saturation = 0x7f040337;
+
+        /* JADX INFO: Added by JADX */
+        public static final int scaleFromTextSize = 0x7f040338;
+
+        /* JADX INFO: Added by JADX */
+        public static final int search_clear_btn = 0x7f04033f;
+
+        /* JADX INFO: Added by JADX */
+        public static final int search_item_name_color = 0x7f040340;
+
+        /* JADX INFO: Added by JADX */
+        public static final int search_item_number_color = 0x7f040341;
+
+        /* JADX INFO: Added by JADX */
+        public static final int selectTextColor = 0x7f040343;
+
+        /* JADX INFO: Added by JADX */
+        public static final int selectTextSize = 0x7f040344;
+
+        /* JADX INFO: Added by JADX */
+        public static final int setsTag = 0x7f040348;
+
+        /* JADX INFO: Added by JADX */
+        public static final int shape_round_corner = 0x7f04034e;
+
+        /* JADX INFO: Added by JADX */
+        public static final int showPaths = 0x7f040352;
+
+        /* JADX INFO: Added by JADX */
+        public static final int sizePercent = 0x7f040359;
+
+        /* JADX INFO: Added by JADX */
+        public static final int special_calling_mic_mute_btn = 0x7f04035f;
+
+        /* JADX INFO: Added by JADX */
+        public static final int special_calling_voice2phone_btn = 0x7f040360;
+
+        /* JADX INFO: Added by JADX */
+        public static final int special_hugup_icon = 0x7f040361;
+
+        /* JADX INFO: Added by JADX */
+        public static final int special_hugup_third_icon = 0x7f040362;
+
+        /* JADX INFO: Added by JADX */
+        public static final int springBoundary = 0x7f040367;
+
+        /* JADX INFO: Added by JADX */
+        public static final int springDamping = 0x7f040368;
+
+        /* JADX INFO: Added by JADX */
+        public static final int springMass = 0x7f040369;
+
+        /* JADX INFO: Added by JADX */
+        public static final int springStiffness = 0x7f04036a;
+
+        /* JADX INFO: Added by JADX */
+        public static final int springStopThreshold = 0x7f04036b;
+
+        /* JADX INFO: Added by JADX */
+        public static final int staggered = 0x7f04036e;
+
+        /* JADX INFO: Added by JADX */
+        public static final int switch_call_icon = 0x7f04038d;
+
+        /* JADX INFO: Added by JADX */
+        public static final int tablayout_text_select = 0x7f0403a8;
+
+        /* JADX INFO: Added by JADX */
+        public static final int targetId = 0x7f0403a9;
+
+        /* JADX INFO: Added by JADX */
+        public static final int telltales_tailColor = 0x7f0403aa;
+
+        /* JADX INFO: Added by JADX */
+        public static final int telltales_tailScale = 0x7f0403ab;
+
+        /* JADX INFO: Added by JADX */
+        public static final int telltales_velocityMode = 0x7f0403ac;
+
+        /* JADX INFO: Added by JADX */
+        public static final int textBackground = 0x7f0403c4;
+
+        /* JADX INFO: Added by JADX */
+        public static final int textBackgroundPanX = 0x7f0403c5;
+
+        /* JADX INFO: Added by JADX */
+        public static final int textBackgroundPanY = 0x7f0403c6;
+
+        /* JADX INFO: Added by JADX */
+        public static final int textBackgroundRotate = 0x7f0403c7;
+
+        /* JADX INFO: Added by JADX */
+        public static final int textBackgroundZoom = 0x7f0403c8;
+
+        /* JADX INFO: Added by JADX */
+        public static final int textColor = 0x7f0403c9;
+
+        /* JADX INFO: Added by JADX */
+        public static final int textFillColor = 0x7f0403cd;
+
+        /* JADX INFO: Added by JADX */
+        public static final int textOutlineColor = 0x7f0403d1;
+
+        /* JADX INFO: Added by JADX */
+        public static final int textOutlineThickness = 0x7f0403d2;
+
+        /* JADX INFO: Added by JADX */
+        public static final int textPanX = 0x7f0403d3;
+
+        /* JADX INFO: Added by JADX */
+        public static final int textPanY = 0x7f0403d4;
+
+        /* JADX INFO: Added by JADX */
+        public static final int textSize = 0x7f0403d5;
+
+        /* JADX INFO: Added by JADX */
+        public static final int textureBlurFactor = 0x7f0403d7;
+
+        /* JADX INFO: Added by JADX */
+        public static final int textureEffect = 0x7f0403d8;
+
+        /* JADX INFO: Added by JADX */
+        public static final int textureHeight = 0x7f0403d9;
+
+        /* JADX INFO: Added by JADX */
+        public static final int textureWidth = 0x7f0403da;
+
+        /* JADX INFO: Added by JADX */
+        public static final int touchAnchorId = 0x7f0403fe;
+
+        /* JADX INFO: Added by JADX */
+        public static final int touchAnchorSide = 0x7f0403ff;
+
+        /* JADX INFO: Added by JADX */
+        public static final int touchRegionId = 0x7f040400;
+
+        /* JADX INFO: Added by JADX */
+        public static final int transformPivotTarget = 0x7f040408;
+
+        /* JADX INFO: Added by JADX */
+        public static final int transitionDisable = 0x7f040409;
+
+        /* JADX INFO: Added by JADX */
+        public static final int transitionEasing = 0x7f04040a;
+
+        /* JADX INFO: Added by JADX */
+        public static final int transitionFlags = 0x7f04040b;
+
+        /* JADX INFO: Added by JADX */
+        public static final int transitionPathRotate = 0x7f04040c;
+
+        /* JADX INFO: Added by JADX */
+        public static final int triggerId = 0x7f04040e;
+
+        /* JADX INFO: Added by JADX */
+        public static final int triggerReceiver = 0x7f04040f;
+
+        /* JADX INFO: Added by JADX */
+        public static final int triggerSlack = 0x7f040410;
+
+        /* JADX INFO: Added by JADX */
+        public static final int upDuration = 0x7f040412;
+
+        /* JADX INFO: Added by JADX */
+        public static final int viewTransitionMode = 0x7f040418;
+
+        /* JADX INFO: Added by JADX */
+        public static final int viewTransitionOnCross = 0x7f040419;
+
+        /* JADX INFO: Added by JADX */
+        public static final int viewTransitionOnNegativeCross = 0x7f04041a;
+
+        /* JADX INFO: Added by JADX */
+        public static final int viewTransitionOnPositiveCross = 0x7f04041b;
+
+        /* JADX INFO: Added by JADX */
+        public static final int visibilityMode = 0x7f04041c;
+
+        /* JADX INFO: Added by JADX */
+        public static final int warmth = 0x7f04041e;
+
+        /* JADX INFO: Added by JADX */
+        public static final int waveColor = 0x7f04041f;
+
+        /* JADX INFO: Added by JADX */
+        public static final int waveDecay = 0x7f040420;
+
+        /* JADX INFO: Added by JADX */
+        public static final int waveOffset = 0x7f040421;
+
+        /* JADX INFO: Added by JADX */
+        public static final int wavePeriod = 0x7f040422;
+
+        /* JADX INFO: Added by JADX */
+        public static final int wavePhase = 0x7f040423;
+
+        /* JADX INFO: Added by JADX */
+        public static final int waveRadius = 0x7f040424;
+
+        /* JADX INFO: Added by JADX */
+        public static final int waveShape = 0x7f040425;
+
+        /* JADX INFO: Added by JADX */
+        public static final int waveVariesBy = 0x7f040426;
+
+        /* JADX INFO: Added by JADX */
+        public static final int widget_text_color = 0x7f040427;
+
+        private attr() {
+        }
+    }
+
+    public static final class bool {
+        public static final int abc_action_bar_embed_tabs = 0x7f050000;
+        public static final int abc_allow_stacked_button_bar = 0x7f050001;
+        public static final int abc_config_actionMenuItemAllCaps = 0x7f050002;
+        public static final int mtrl_btn_textappearance_all_caps = 0x7f050003;
+
+        private bool() {
+        }
+    }
+
+    public static final class color {
+        public static final int abc_background_cache_hint_selector_material_dark = 0x7f060000;
+        public static final int abc_background_cache_hint_selector_material_light = 0x7f060001;
+        public static final int abc_btn_colored_borderless_text_material = 0x7f060002;
+        public static final int abc_btn_colored_text_material = 0x7f060003;
+        public static final int abc_color_highlight_material = 0x7f060004;
+        public static final int abc_decor_view_status_guard = 0x7f060005;
+        public static final int abc_decor_view_status_guard_light = 0x7f060006;
+        public static final int abc_hint_foreground_material_dark = 0x7f060007;
+        public static final int abc_hint_foreground_material_light = 0x7f060008;
+        public static final int abc_primary_text_disable_only_material_dark = 0x7f060009;
+        public static final int abc_primary_text_disable_only_material_light = 0x7f06000a;
+        public static final int abc_primary_text_material_dark = 0x7f06000b;
+        public static final int abc_primary_text_material_light = 0x7f06000c;
+        public static final int abc_search_url_text = 0x7f06000d;
+        public static final int abc_search_url_text_normal = 0x7f06000e;
+        public static final int abc_search_url_text_pressed = 0x7f06000f;
+        public static final int abc_search_url_text_selected = 0x7f060010;
+        public static final int abc_secondary_text_material_dark = 0x7f060011;
+        public static final int abc_secondary_text_material_light = 0x7f060012;
+        public static final int abc_tint_btn_checkable = 0x7f060013;
+        public static final int abc_tint_default = 0x7f060014;
+        public static final int abc_tint_edittext = 0x7f060015;
+        public static final int abc_tint_seek_thumb = 0x7f060016;
+        public static final int abc_tint_spinner = 0x7f060017;
+        public static final int abc_tint_switch_track = 0x7f060018;
+        public static final int accent_material_dark = 0x7f060019;
+        public static final int accent_material_light = 0x7f06001a;
+        public static final int androidx_core_ripple_material_light = 0x7f06001b;
+        public static final int androidx_core_secondary_text_default_material_light = 0x7f06001c;
+        public static final int background_floating_material_dark = 0x7f06001e;
+        public static final int background_floating_material_light = 0x7f06001f;
+        public static final int background_material_dark = 0x7f060020;
+        public static final int background_material_light = 0x7f060021;
+        public static final int bright_foreground_disabled_material_dark = 0x7f060025;
+        public static final int bright_foreground_disabled_material_light = 0x7f060026;
+        public static final int bright_foreground_inverse_material_dark = 0x7f060027;
+        public static final int bright_foreground_inverse_material_light = 0x7f060028;
+        public static final int bright_foreground_material_dark = 0x7f060029;
+        public static final int bright_foreground_material_light = 0x7f06002a;
+        public static final int button_material_dark = 0x7f06003a;
+        public static final int button_material_light = 0x7f06003b;
+        public static final int cardview_dark_background = 0x7f06003d;
+        public static final int cardview_light_background = 0x7f06003e;
+        public static final int cardview_shadow_end_color = 0x7f06003f;
+        public static final int cardview_shadow_start_color = 0x7f060040;
+        public static final int checkbox_themeable_attribute_color = 0x7f060041;
+        public static final int color_dialog_bg = 0x7f060042;
+        public static final int design_bottom_navigation_shadow_color = 0x7f06004f;
+        public static final int design_box_stroke_color = 0x7f060050;
+        public static final int design_dark_default_color_background = 0x7f060051;
+        public static final int design_dark_default_color_error = 0x7f060052;
+        public static final int design_dark_default_color_on_background = 0x7f060053;
+        public static final int design_dark_default_color_on_error = 0x7f060054;
+        public static final int design_dark_default_color_on_primary = 0x7f060055;
+        public static final int design_dark_default_color_on_secondary = 0x7f060056;
+        public static final int design_dark_default_color_on_surface = 0x7f060057;
+        public static final int design_dark_default_color_primary = 0x7f060058;
+        public static final int design_dark_default_color_primary_dark = 0x7f060059;
+        public static final int design_dark_default_color_primary_variant = 0x7f06005a;
+        public static final int design_dark_default_color_secondary = 0x7f06005b;
+        public static final int design_dark_default_color_secondary_variant = 0x7f06005c;
+        public static final int design_dark_default_color_surface = 0x7f06005d;
+        public static final int design_default_color_background = 0x7f06005e;
+        public static final int design_default_color_error = 0x7f06005f;
+        public static final int design_default_color_on_background = 0x7f060060;
+        public static final int design_default_color_on_error = 0x7f060061;
+        public static final int design_default_color_on_primary = 0x7f060062;
+        public static final int design_default_color_on_secondary = 0x7f060063;
+        public static final int design_default_color_on_surface = 0x7f060064;
+        public static final int design_default_color_primary = 0x7f060065;
+        public static final int design_default_color_primary_dark = 0x7f060066;
+        public static final int design_default_color_primary_variant = 0x7f060067;
+        public static final int design_default_color_secondary = 0x7f060068;
+        public static final int design_default_color_secondary_variant = 0x7f060069;
+        public static final int design_default_color_surface = 0x7f06006a;
+        public static final int design_error = 0x7f06006b;
+        public static final int design_fab_shadow_end_color = 0x7f06006c;
+        public static final int design_fab_shadow_mid_color = 0x7f06006d;
+        public static final int design_fab_shadow_start_color = 0x7f06006e;
+        public static final int design_fab_stroke_end_inner_color = 0x7f06006f;
+        public static final int design_fab_stroke_end_outer_color = 0x7f060070;
+        public static final int design_fab_stroke_top_inner_color = 0x7f060071;
+        public static final int design_fab_stroke_top_outer_color = 0x7f060072;
+        public static final int design_icon_tint = 0x7f060073;
+        public static final int design_snackbar_background_color = 0x7f060074;
+        public static final int dim_foreground_disabled_material_dark = 0x7f06007e;
+        public static final int dim_foreground_disabled_material_light = 0x7f06007f;
+        public static final int dim_foreground_material_dark = 0x7f060080;
+        public static final int dim_foreground_material_light = 0x7f060081;
+        public static final int error_color_material_dark = 0x7f060086;
+        public static final int error_color_material_light = 0x7f060087;
+        public static final int foreground_material_dark = 0x7f06008a;
+        public static final int foreground_material_light = 0x7f06008b;
+        public static final int highlighted_text_material_dark = 0x7f06008e;
+        public static final int highlighted_text_material_light = 0x7f06008f;
+        public static final int material_blue_grey_800 = 0x7f06009c;
+        public static final int material_blue_grey_900 = 0x7f06009d;
+        public static final int material_blue_grey_950 = 0x7f06009e;
+        public static final int material_deep_teal_200 = 0x7f06009f;
+        public static final int material_deep_teal_500 = 0x7f0600a0;
+        public static final int material_grey_100 = 0x7f0600a1;
+        public static final int material_grey_300 = 0x7f0600a2;
+        public static final int material_grey_50 = 0x7f0600a3;
+        public static final int material_grey_600 = 0x7f0600a4;
+        public static final int material_grey_800 = 0x7f0600a5;
+        public static final int material_grey_850 = 0x7f0600a6;
+        public static final int material_grey_900 = 0x7f0600a7;
+        public static final int material_on_background_disabled = 0x7f0600a8;
+        public static final int material_on_background_emphasis_high_type = 0x7f0600a9;
+        public static final int material_on_background_emphasis_medium = 0x7f0600aa;
+        public static final int material_on_primary_disabled = 0x7f0600ab;
+        public static final int material_on_primary_emphasis_high_type = 0x7f0600ac;
+        public static final int material_on_primary_emphasis_medium = 0x7f0600ad;
+        public static final int material_on_surface_disabled = 0x7f0600ae;
+        public static final int material_on_surface_emphasis_high_type = 0x7f0600af;
+        public static final int material_on_surface_emphasis_medium = 0x7f0600b0;
+        public static final int material_on_surface_stroke = 0x7f0600b1;
+        public static final int material_slider_active_tick_marks_color = 0x7f0600b2;
+        public static final int material_slider_active_track_color = 0x7f0600b3;
+        public static final int material_slider_halo_color = 0x7f0600b4;
+        public static final int material_slider_inactive_tick_marks_color = 0x7f0600b5;
+        public static final int material_slider_inactive_track_color = 0x7f0600b6;
+        public static final int material_slider_thumb_color = 0x7f0600b7;
+        public static final int mtrl_bottom_nav_colored_item_tint = 0x7f0600ba;
+        public static final int mtrl_bottom_nav_colored_ripple_color = 0x7f0600bb;
+        public static final int mtrl_bottom_nav_item_tint = 0x7f0600bc;
+        public static final int mtrl_bottom_nav_ripple_color = 0x7f0600bd;
+        public static final int mtrl_btn_bg_color_selector = 0x7f0600be;
+        public static final int mtrl_btn_ripple_color = 0x7f0600bf;
+        public static final int mtrl_btn_stroke_color_selector = 0x7f0600c0;
+        public static final int mtrl_btn_text_btn_bg_color_selector = 0x7f0600c1;
+        public static final int mtrl_btn_text_btn_ripple_color = 0x7f0600c2;
+        public static final int mtrl_btn_text_color_disabled = 0x7f0600c3;
+        public static final int mtrl_btn_text_color_selector = 0x7f0600c4;
+        public static final int mtrl_btn_transparent_bg_color = 0x7f0600c5;
+        public static final int mtrl_calendar_item_stroke_color = 0x7f0600c6;
+        public static final int mtrl_calendar_selected_range = 0x7f0600c7;
+        public static final int mtrl_card_view_foreground = 0x7f0600c8;
+        public static final int mtrl_card_view_ripple = 0x7f0600c9;
+        public static final int mtrl_chip_background_color = 0x7f0600ca;
+        public static final int mtrl_chip_close_icon_tint = 0x7f0600cb;
+        public static final int mtrl_chip_ripple_color = 0x7f0600cc;
+        public static final int mtrl_chip_surface_color = 0x7f0600cd;
+        public static final int mtrl_chip_text_color = 0x7f0600ce;
+        public static final int mtrl_choice_chip_background_color = 0x7f0600cf;
+        public static final int mtrl_choice_chip_ripple_color = 0x7f0600d0;
+        public static final int mtrl_choice_chip_text_color = 0x7f0600d1;
+        public static final int mtrl_error = 0x7f0600d2;
+        public static final int mtrl_fab_bg_color_selector = 0x7f0600d3;
+        public static final int mtrl_fab_icon_text_color_selector = 0x7f0600d4;
+        public static final int mtrl_fab_ripple_color = 0x7f0600d5;
+        public static final int mtrl_filled_background_color = 0x7f0600d6;
+        public static final int mtrl_filled_icon_tint = 0x7f0600d7;
+        public static final int mtrl_filled_stroke_color = 0x7f0600d8;
+        public static final int mtrl_indicator_text_color = 0x7f0600d9;
+        public static final int mtrl_navigation_item_background_color = 0x7f0600da;
+        public static final int mtrl_navigation_item_icon_tint = 0x7f0600db;
+        public static final int mtrl_navigation_item_text_color = 0x7f0600dc;
+        public static final int mtrl_on_primary_text_btn_text_color_selector = 0x7f0600dd;
+        public static final int mtrl_outlined_icon_tint = 0x7f0600de;
+        public static final int mtrl_outlined_stroke_color = 0x7f0600df;
+        public static final int mtrl_popupmenu_overlay_color = 0x7f0600e0;
+        public static final int mtrl_scrim_color = 0x7f0600e1;
+        public static final int mtrl_tabs_colored_ripple_color = 0x7f0600e2;
+        public static final int mtrl_tabs_icon_color_selector = 0x7f0600e3;
+        public static final int mtrl_tabs_icon_color_selector_colored = 0x7f0600e4;
+        public static final int mtrl_tabs_legacy_text_color_selector = 0x7f0600e5;
+        public static final int mtrl_tabs_ripple_color = 0x7f0600e6;
+        public static final int mtrl_text_btn_text_color_selector = 0x7f0600e7;
+        public static final int mtrl_textinput_default_box_stroke_color = 0x7f0600e8;
+        public static final int mtrl_textinput_disabled_color = 0x7f0600e9;
+        public static final int mtrl_textinput_filled_box_default_background_color = 0x7f0600ea;
+        public static final int mtrl_textinput_focused_box_stroke_color = 0x7f0600eb;
+        public static final int mtrl_textinput_hovered_box_stroke_color = 0x7f0600ec;
+        public static final int notification_action_color_filter = 0x7f0600ed;
+        public static final int notification_icon_bg_color = 0x7f0600ee;
+        public static final int primary_dark_material_dark = 0x7f0600f1;
+        public static final int primary_dark_material_light = 0x7f0600f2;
+        public static final int primary_material_dark = 0x7f0600f3;
+        public static final int primary_material_light = 0x7f0600f4;
+        public static final int primary_text_default_material_dark = 0x7f0600f5;
+        public static final int primary_text_default_material_light = 0x7f0600f6;
+        public static final int primary_text_disabled_material_dark = 0x7f0600f7;
+        public static final int primary_text_disabled_material_light = 0x7f0600f8;
+        public static final int radiobutton_themeable_attribute_color = 0x7f060100;
+        public static final int ripple_material_dark = 0x7f060102;
+        public static final int ripple_material_light = 0x7f060103;
+        public static final int secondary_text_default_material_dark = 0x7f060107;
+        public static final int secondary_text_default_material_light = 0x7f060108;
+        public static final int secondary_text_disabled_material_dark = 0x7f060109;
+        public static final int secondary_text_disabled_material_light = 0x7f06010a;
+        public static final int switch_thumb_disabled_material_dark = 0x7f06010c;
+        public static final int switch_thumb_disabled_material_light = 0x7f06010d;
+        public static final int switch_thumb_material_dark = 0x7f06010e;
+        public static final int switch_thumb_material_light = 0x7f06010f;
+        public static final int switch_thumb_normal_material_dark = 0x7f060110;
+        public static final int switch_thumb_normal_material_light = 0x7f060111;
+        public static final int test_mtrl_calendar_day = 0x7f060114;
+        public static final int test_mtrl_calendar_day_selected = 0x7f060115;
+        public static final int toast_background = 0x7f060117;
+        public static final int toast_textcolor = 0x7f060119;
+        public static final int tooltip_background_dark = 0x7f06011a;
+        public static final int tooltip_background_light = 0x7f06011b;
+
+        /* JADX INFO: Added by JADX */
+        public static final int b3_text_color = 0x7f06001d;
+
+        /* JADX INFO: Added by JADX */
+        public static final int background_tint_color = 0x7f060022;
+
+        /* JADX INFO: Added by JADX */
+        public static final int black = 0x7f060023;
+
+        /* JADX INFO: Added by JADX */
+        public static final int blue = 0x7f060024;
+
+        /* JADX INFO: Added by JADX */
+        public static final int bt_call_view_bg_color_ambient = 0x7f06002b;
+
+        /* JADX INFO: Added by JADX */
+        public static final int bt_call_view_bg_color_spot = 0x7f06002c;
+
+        /* JADX INFO: Added by JADX */
+        public static final int bt_calling_keyboard_item_bg = 0x7f06002d;
+
+        /* JADX INFO: Added by JADX */
+        public static final int bt_calling_keyboard_item_side = 0x7f06002e;
+
+        /* JADX INFO: Added by JADX */
+        public static final int bt_dialog_bg_color_end = 0x7f06002f;
+
+        /* JADX INFO: Added by JADX */
+        public static final int bt_dialog_bg_color_start = 0x7f060030;
+
+        /* JADX INFO: Added by JADX */
+        public static final int bt_dialog_btn_color_blue_end = 0x7f060031;
+
+        /* JADX INFO: Added by JADX */
+        public static final int bt_dialog_btn_color_blue_start = 0x7f060032;
+
+        /* JADX INFO: Added by JADX */
+        public static final int bt_dialog_btn_color_cancle = 0x7f060033;
+
+        /* JADX INFO: Added by JADX */
+        public static final int bt_dialog_btn_color_cancle_side = 0x7f060034;
+
+        /* JADX INFO: Added by JADX */
+        public static final int bt_stausbar_call_bg = 0x7f060035;
+
+        /* JADX INFO: Added by JADX */
+        public static final int btcall_btn_green_bg = 0x7f060036;
+
+        /* JADX INFO: Added by JADX */
+        public static final int btcall_btn_red_bg = 0x7f060037;
+
+        /* JADX INFO: Added by JADX */
+        public static final int btcall_small_bg_color = 0x7f060038;
+
+        /* JADX INFO: Added by JADX */
+        public static final int btcall_small_bg_side_color = 0x7f060039;
+
+        /* JADX INFO: Added by JADX */
+        public static final int c8_text_color = 0x7f06003c;
+
+        /* JADX INFO: Added by JADX */
+        public static final int contacts_capital_letter_blue_color = 0x7f060043;
+
+        /* JADX INFO: Added by JADX */
+        public static final int contacts_capital_letter_green_color = 0x7f060044;
+
+        /* JADX INFO: Added by JADX */
+        public static final int contacts_capital_letter_purple_color = 0x7f060045;
+
+        /* JADX INFO: Added by JADX */
+        public static final int contacts_capital_letter_red_color = 0x7f060046;
+
+        /* JADX INFO: Added by JADX */
+        public static final int contacts_capital_letter_yellow_color = 0x7f060047;
+
+        /* JADX INFO: Added by JADX */
+        public static final int contacts_list_wm_bg_color_end = 0x7f060048;
+
+        /* JADX INFO: Added by JADX */
+        public static final int contacts_list_wm_bg_color_start = 0x7f060049;
+
+        /* JADX INFO: Added by JADX */
+        public static final int contacts_wm_list_bg_color_ambient = 0x7f06004a;
+
+        /* JADX INFO: Added by JADX */
+        public static final int contacts_wm_list_bg_color_spot = 0x7f06004b;
+
+        /* JADX INFO: Added by JADX */
+        public static final int contactsinfo_list_bg_color = 0x7f06004c;
+
+        /* JADX INFO: Added by JADX */
+        public static final int contactsinfo_list_side_color = 0x7f06004d;
+
+        /* JADX INFO: Added by JADX */
+        public static final int d9_text_color = 0x7f06004e;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dialog_bg_color = 0x7f060075;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dialog_bg_test = 0x7f060076;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dialog_btn_backgroundTint = 0x7f060077;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dialog_btn_outlineambientshadowcolor = 0x7f060078;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dialog_btn_outlinespotshadowcolor = 0x7f060079;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dialog_btn_side_color = 0x7f06007a;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dialog_btn_text = 0x7f06007b;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dialog_line_color = 0x7f06007c;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dialog_side_color = 0x7f06007d;
+
+        /* JADX INFO: Added by JADX */
+        public static final int edittext_focus_fill_color = 0x7f060082;
+
+        /* JADX INFO: Added by JADX */
+        public static final int edittext_focus_side_color = 0x7f060083;
+
+        /* JADX INFO: Added by JADX */
+        public static final int edittext_nomorl_fill_color = 0x7f060084;
+
+        /* JADX INFO: Added by JADX */
+        public static final int edittext_nomorl_side_color = 0x7f060085;
+
+        /* JADX INFO: Added by JADX */
+        public static final int ff_text_color = 0x7f060088;
+
+        /* JADX INFO: Added by JADX */
+        public static final int ff_white_color = 0x7f060089;
+
+        /* JADX INFO: Added by JADX */
+        public static final int goto_connect_btn_bg = 0x7f06008c;
+
+        /* JADX INFO: Added by JADX */
+        public static final int green = 0x7f06008d;
+
+        /* JADX INFO: Added by JADX */
+        public static final int item_color = 0x7f060090;
+
+        /* JADX INFO: Added by JADX */
+        public static final int keyboard_bg_color = 0x7f060091;
+
+        /* JADX INFO: Added by JADX */
+        public static final int keyboard_bg_side_color = 0x7f060092;
+
+        /* JADX INFO: Added by JADX */
+        public static final int list_bg_n = 0x7f060093;
+
+        /* JADX INFO: Added by JADX */
+        public static final int list_bg_p = 0x7f060094;
+
+        /* JADX INFO: Added by JADX */
+        public static final int list_bg_s = 0x7f060095;
+
+        /* JADX INFO: Added by JADX */
+        public static final int list_line_1 = 0x7f060096;
+
+        /* JADX INFO: Added by JADX */
+        public static final int list_scroolbar_bg_color = 0x7f060097;
+
+        /* JADX INFO: Added by JADX */
+        public static final int list_scroolbar_color = 0x7f060098;
+
+        /* JADX INFO: Added by JADX */
+        public static final int list_title_bg_color = 0x7f060099;
+
+        /* JADX INFO: Added by JADX */
+        public static final int listview_scroll_bar_color = 0x7f06009a;
+
+        /* JADX INFO: Added by JADX */
+        public static final int listview_scroll_bg_color = 0x7f06009b;
+
+        /* JADX INFO: Added by JADX */
+        public static final int missed_call_black_color = 0x7f0600b8;
+
+        /* JADX INFO: Added by JADX */
+        public static final int missed_call_red_color = 0x7f0600b9;
+
+        /* JADX INFO: Added by JADX */
+        public static final int notification_material_background_media_default_color = 0x7f0600ef;
+
+        /* JADX INFO: Added by JADX */
+        public static final int popover_translucent_background = 0x7f0600f0;
+
+        /* JADX INFO: Added by JADX */
+        public static final int progress_bg_color = 0x7f0600f9;
+
+        /* JADX INFO: Added by JADX */
+        public static final int progress_p_end_color = 0x7f0600fa;
+
+        /* JADX INFO: Added by JADX */
+        public static final int progress_p_start_color = 0x7f0600fb;
+
+        /* JADX INFO: Added by JADX */
+        public static final int purple = 0x7f0600fc;
+
+        /* JADX INFO: Added by JADX */
+        public static final int purple_200 = 0x7f0600fd;
+
+        /* JADX INFO: Added by JADX */
+        public static final int purple_500 = 0x7f0600fe;
+
+        /* JADX INFO: Added by JADX */
+        public static final int purple_700 = 0x7f0600ff;
+
+        /* JADX INFO: Added by JADX */
+        public static final int red = 0x7f060101;
+
+        /* JADX INFO: Added by JADX */
+        public static final int search_item_name_color = 0x7f060104;
+
+        /* JADX INFO: Added by JADX */
+        public static final int search_item_number_color = 0x7f060105;
+
+        /* JADX INFO: Added by JADX */
+        public static final int search_text_color = 0x7f060106;
+
+        /* JADX INFO: Added by JADX */
+        public static final int statebar_bg = 0x7f06010b;
+
+        /* JADX INFO: Added by JADX */
+        public static final int teal_200 = 0x7f060112;
+
+        /* JADX INFO: Added by JADX */
+        public static final int teal_700 = 0x7f060113;
+
+        /* JADX INFO: Added by JADX */
+        public static final int text_select_color = 0x7f060116;
+
+        /* JADX INFO: Added by JADX */
+        public static final int toast_text_olor = 0x7f060118;
+
+        /* JADX INFO: Added by JADX */
+        public static final int ts_b3_text_color = 0x7f06011c;
+
+        /* JADX INFO: Added by JADX */
+        public static final int ts_background_tint_color = 0x7f06011d;
+
+        /* JADX INFO: Added by JADX */
+        public static final int ts_black = 0x7f06011e;
+
+        /* JADX INFO: Added by JADX */
+        public static final int ts_blue = 0x7f06011f;
+
+        /* JADX INFO: Added by JADX */
+        public static final int ts_bt_call_view_bg_color_ambient = 0x7f060120;
+
+        /* JADX INFO: Added by JADX */
+        public static final int ts_bt_call_view_bg_color_spot = 0x7f060121;
+
+        /* JADX INFO: Added by JADX */
+        public static final int ts_bt_calling_keyboard_item_bg = 0x7f060122;
+
+        /* JADX INFO: Added by JADX */
+        public static final int ts_bt_calling_keyboard_item_side = 0x7f060123;
+
+        /* JADX INFO: Added by JADX */
+        public static final int ts_bt_dialog_bg_color_end = 0x7f060124;
+
+        /* JADX INFO: Added by JADX */
+        public static final int ts_bt_dialog_bg_color_start = 0x7f060125;
+
+        /* JADX INFO: Added by JADX */
+        public static final int ts_bt_dialog_btn_color_blue_end = 0x7f060126;
+
+        /* JADX INFO: Added by JADX */
+        public static final int ts_bt_dialog_btn_color_blue_start = 0x7f060127;
+
+        /* JADX INFO: Added by JADX */
+        public static final int ts_bt_dialog_btn_color_cancle = 0x7f060128;
+
+        /* JADX INFO: Added by JADX */
+        public static final int ts_bt_dialog_btn_color_cancle_side = 0x7f060129;
+
+        /* JADX INFO: Added by JADX */
+        public static final int ts_bt_stausbar_call_bg = 0x7f06012a;
+
+        /* JADX INFO: Added by JADX */
+        public static final int ts_btcall_btn_green_bg = 0x7f06012b;
+
+        /* JADX INFO: Added by JADX */
+        public static final int ts_btcall_btn_red_bg = 0x7f06012c;
+
+        /* JADX INFO: Added by JADX */
+        public static final int ts_btcall_small_bg_color = 0x7f06012d;
+
+        /* JADX INFO: Added by JADX */
+        public static final int ts_btcall_small_bg_side_color = 0x7f06012e;
+
+        /* JADX INFO: Added by JADX */
+        public static final int ts_c8_text_color = 0x7f06012f;
+
+        /* JADX INFO: Added by JADX */
+        public static final int ts_contacts_capital_letter_blue_color = 0x7f060130;
+
+        /* JADX INFO: Added by JADX */
+        public static final int ts_contacts_capital_letter_green_color = 0x7f060131;
+
+        /* JADX INFO: Added by JADX */
+        public static final int ts_contacts_capital_letter_purple_color = 0x7f060132;
+
+        /* JADX INFO: Added by JADX */
+        public static final int ts_contacts_capital_letter_red_color = 0x7f060133;
+
+        /* JADX INFO: Added by JADX */
+        public static final int ts_contacts_capital_letter_yellow_color = 0x7f060134;
+
+        /* JADX INFO: Added by JADX */
+        public static final int ts_contacts_wm_list_bg_color_ambient = 0x7f060135;
+
+        /* JADX INFO: Added by JADX */
+        public static final int ts_contacts_wm_list_bg_color_spot = 0x7f060136;
+
+        /* JADX INFO: Added by JADX */
+        public static final int ts_contactsinfo_list_bg_color = 0x7f060137;
+
+        /* JADX INFO: Added by JADX */
+        public static final int ts_contactsinfo_list_side_color = 0x7f060138;
+
+        /* JADX INFO: Added by JADX */
+        public static final int ts_d9_text_color = 0x7f060139;
+
+        /* JADX INFO: Added by JADX */
+        public static final int ts_dialog_bg_color = 0x7f06013a;
+
+        /* JADX INFO: Added by JADX */
+        public static final int ts_dialog_bg_test = 0x7f06013b;
+
+        /* JADX INFO: Added by JADX */
+        public static final int ts_dialog_btn_backgroundTint = 0x7f06013c;
+
+        /* JADX INFO: Added by JADX */
+        public static final int ts_dialog_btn_outlineambientshadowcolor = 0x7f06013d;
+
+        /* JADX INFO: Added by JADX */
+        public static final int ts_dialog_btn_outlinespotshadowcolor = 0x7f06013e;
+
+        /* JADX INFO: Added by JADX */
+        public static final int ts_dialog_btn_side_color = 0x7f06013f;
+
+        /* JADX INFO: Added by JADX */
+        public static final int ts_dialog_btn_text = 0x7f060140;
+
+        /* JADX INFO: Added by JADX */
+        public static final int ts_dialog_line_color = 0x7f060141;
+
+        /* JADX INFO: Added by JADX */
+        public static final int ts_dialog_side_color = 0x7f060142;
+
+        /* JADX INFO: Added by JADX */
+        public static final int ts_edittext_focus_fill_color = 0x7f060143;
+
+        /* JADX INFO: Added by JADX */
+        public static final int ts_edittext_focus_side_color = 0x7f060144;
+
+        /* JADX INFO: Added by JADX */
+        public static final int ts_edittext_nomorl_fill_color = 0x7f060145;
+
+        /* JADX INFO: Added by JADX */
+        public static final int ts_edittext_nomorl_side_color = 0x7f060146;
+
+        /* JADX INFO: Added by JADX */
+        public static final int ts_ff_text_color = 0x7f060147;
+
+        /* JADX INFO: Added by JADX */
+        public static final int ts_ff_white_color = 0x7f060148;
+
+        /* JADX INFO: Added by JADX */
+        public static final int ts_goto_connect_btn_bg = 0x7f060149;
+
+        /* JADX INFO: Added by JADX */
+        public static final int ts_green = 0x7f06014a;
+
+        /* JADX INFO: Added by JADX */
+        public static final int ts_item_color = 0x7f06014b;
+
+        /* JADX INFO: Added by JADX */
+        public static final int ts_keyboard_bg_color = 0x7f06014c;
+
+        /* JADX INFO: Added by JADX */
+        public static final int ts_keyboard_bg_side_color = 0x7f06014d;
+
+        /* JADX INFO: Added by JADX */
+        public static final int ts_list_bg_n = 0x7f06014e;
+
+        /* JADX INFO: Added by JADX */
+        public static final int ts_list_bg_p = 0x7f06014f;
+
+        /* JADX INFO: Added by JADX */
+        public static final int ts_list_bg_s = 0x7f060150;
+
+        /* JADX INFO: Added by JADX */
+        public static final int ts_list_line_1 = 0x7f060151;
+
+        /* JADX INFO: Added by JADX */
+        public static final int ts_list_scroolbar_bg_color = 0x7f060152;
+
+        /* JADX INFO: Added by JADX */
+        public static final int ts_list_scroolbar_color = 0x7f060153;
+
+        /* JADX INFO: Added by JADX */
+        public static final int ts_list_title_bg_color = 0x7f060154;
+
+        /* JADX INFO: Added by JADX */
+        public static final int ts_listview_scroll_bar_color = 0x7f060155;
+
+        /* JADX INFO: Added by JADX */
+        public static final int ts_listview_scroll_bg_color = 0x7f060156;
+
+        /* JADX INFO: Added by JADX */
+        public static final int ts_missed_call_black_color = 0x7f060157;
+
+        /* JADX INFO: Added by JADX */
+        public static final int ts_missed_call_red_color = 0x7f060158;
+
+        /* JADX INFO: Added by JADX */
+        public static final int ts_popover_translucent_background = 0x7f060159;
+
+        /* JADX INFO: Added by JADX */
+        public static final int ts_purple = 0x7f06015a;
+
+        /* JADX INFO: Added by JADX */
+        public static final int ts_purple_200 = 0x7f06015b;
+
+        /* JADX INFO: Added by JADX */
+        public static final int ts_purple_500 = 0x7f06015c;
+
+        /* JADX INFO: Added by JADX */
+        public static final int ts_purple_700 = 0x7f06015d;
+
+        /* JADX INFO: Added by JADX */
+        public static final int ts_red = 0x7f06015e;
+
+        /* JADX INFO: Added by JADX */
+        public static final int ts_search_item_name_color = 0x7f06015f;
+
+        /* JADX INFO: Added by JADX */
+        public static final int ts_search_item_number_color = 0x7f060160;
+
+        /* JADX INFO: Added by JADX */
+        public static final int ts_search_text_color = 0x7f060161;
+
+        /* JADX INFO: Added by JADX */
+        public static final int ts_statebar_bg = 0x7f060162;
+
+        /* JADX INFO: Added by JADX */
+        public static final int ts_teal_200 = 0x7f060163;
+
+        /* JADX INFO: Added by JADX */
+        public static final int ts_teal_700 = 0x7f060164;
+
+        /* JADX INFO: Added by JADX */
+        public static final int ts_text_select_color = 0x7f060165;
+
+        /* JADX INFO: Added by JADX */
+        public static final int ts_toast_background = 0x7f060166;
+
+        /* JADX INFO: Added by JADX */
+        public static final int ts_toast_text_olor = 0x7f060167;
+
+        /* JADX INFO: Added by JADX */
+        public static final int ts_toast_textcolor = 0x7f060168;
+
+        /* JADX INFO: Added by JADX */
+        public static final int ts_white = 0x7f060169;
+
+        /* JADX INFO: Added by JADX */
+        public static final int ts_widget_bt_text_color = 0x7f06016a;
+
+        /* JADX INFO: Added by JADX */
+        public static final int ts_widget_round_bg = 0x7f06016b;
+
+        /* JADX INFO: Added by JADX */
+        public static final int ts_widget_text_color = 0x7f06016c;
+
+        /* JADX INFO: Added by JADX */
+        public static final int ts_yellow = 0x7f06016d;
+
+        /* JADX INFO: Added by JADX */
+        public static final int white = 0x7f06016e;
+
+        /* JADX INFO: Added by JADX */
+        public static final int widget_bt_text_color = 0x7f06016f;
+
+        /* JADX INFO: Added by JADX */
+        public static final int widget_round_bg = 0x7f060170;
+
+        /* JADX INFO: Added by JADX */
+        public static final int widget_text_color = 0x7f060171;
+
+        /* JADX INFO: Added by JADX */
+        public static final int yellow = 0x7f060172;
+
+        private color() {
+        }
+    }
+
+    public static final class dimen {
+        public static final int abc_action_bar_content_inset_material = 0x7f070000;
+        public static final int abc_action_bar_content_inset_with_nav = 0x7f070001;
+        public static final int abc_action_bar_default_height_material = 0x7f070002;
+        public static final int abc_action_bar_default_padding_end_material = 0x7f070003;
+        public static final int abc_action_bar_default_padding_start_material = 0x7f070004;
+        public static final int abc_action_bar_elevation_material = 0x7f070005;
+        public static final int abc_action_bar_icon_vertical_padding_material = 0x7f070006;
+        public static final int abc_action_bar_overflow_padding_end_material = 0x7f070007;
+        public static final int abc_action_bar_overflow_padding_start_material = 0x7f070008;
+        public static final int abc_action_bar_stacked_max_height = 0x7f070009;
+        public static final int abc_action_bar_stacked_tab_max_width = 0x7f07000a;
+        public static final int abc_action_bar_subtitle_bottom_margin_material = 0x7f07000b;
+        public static final int abc_action_bar_subtitle_top_margin_material = 0x7f07000c;
+        public static final int abc_action_button_min_height_material = 0x7f07000d;
+        public static final int abc_action_button_min_width_material = 0x7f07000e;
+        public static final int abc_action_button_min_width_overflow_material = 0x7f07000f;
+        public static final int abc_alert_dialog_button_bar_height = 0x7f070010;
+        public static final int abc_alert_dialog_button_dimen = 0x7f070011;
+        public static final int abc_button_inset_horizontal_material = 0x7f070012;
+        public static final int abc_button_inset_vertical_material = 0x7f070013;
+        public static final int abc_button_padding_horizontal_material = 0x7f070014;
+        public static final int abc_button_padding_vertical_material = 0x7f070015;
+        public static final int abc_cascading_menus_min_smallest_width = 0x7f070016;
+        public static final int abc_config_prefDialogWidth = 0x7f070017;
+        public static final int abc_control_corner_material = 0x7f070018;
+        public static final int abc_control_inset_material = 0x7f070019;
+        public static final int abc_control_padding_material = 0x7f07001a;
+        public static final int abc_dialog_corner_radius_material = 0x7f07001b;
+        public static final int abc_dialog_fixed_height_major = 0x7f07001c;
+        public static final int abc_dialog_fixed_height_minor = 0x7f07001d;
+        public static final int abc_dialog_fixed_width_major = 0x7f07001e;
+        public static final int abc_dialog_fixed_width_minor = 0x7f07001f;
+        public static final int abc_dialog_list_padding_bottom_no_buttons = 0x7f070020;
+        public static final int abc_dialog_list_padding_top_no_title = 0x7f070021;
+        public static final int abc_dialog_min_width_major = 0x7f070022;
+        public static final int abc_dialog_min_width_minor = 0x7f070023;
+        public static final int abc_dialog_padding_material = 0x7f070024;
+        public static final int abc_dialog_padding_top_material = 0x7f070025;
+        public static final int abc_dialog_title_divider_material = 0x7f070026;
+        public static final int abc_disabled_alpha_material_dark = 0x7f070027;
+        public static final int abc_disabled_alpha_material_light = 0x7f070028;
+        public static final int abc_dropdownitem_icon_width = 0x7f070029;
+        public static final int abc_dropdownitem_text_padding_left = 0x7f07002a;
+        public static final int abc_dropdownitem_text_padding_right = 0x7f07002b;
+        public static final int abc_edit_text_inset_bottom_material = 0x7f07002c;
+        public static final int abc_edit_text_inset_horizontal_material = 0x7f07002d;
+        public static final int abc_edit_text_inset_top_material = 0x7f07002e;
+        public static final int abc_floating_window_z = 0x7f07002f;
+        public static final int abc_list_item_height_large_material = 0x7f070030;
+        public static final int abc_list_item_height_material = 0x7f070031;
+        public static final int abc_list_item_height_small_material = 0x7f070032;
+        public static final int abc_list_item_padding_horizontal_material = 0x7f070033;
+        public static final int abc_panel_menu_list_width = 0x7f070034;
+        public static final int abc_progress_bar_height_material = 0x7f070035;
+        public static final int abc_search_view_preferred_height = 0x7f070036;
+        public static final int abc_search_view_preferred_width = 0x7f070037;
+        public static final int abc_seekbar_track_background_height_material = 0x7f070038;
+        public static final int abc_seekbar_track_progress_height_material = 0x7f070039;
+        public static final int abc_select_dialog_padding_start_material = 0x7f07003a;
+        public static final int abc_switch_padding = 0x7f07003b;
+        public static final int abc_text_size_body_1_material = 0x7f07003c;
+        public static final int abc_text_size_body_2_material = 0x7f07003d;
+        public static final int abc_text_size_button_material = 0x7f07003e;
+        public static final int abc_text_size_caption_material = 0x7f07003f;
+        public static final int abc_text_size_display_1_material = 0x7f070040;
+        public static final int abc_text_size_display_2_material = 0x7f070041;
+        public static final int abc_text_size_display_3_material = 0x7f070042;
+        public static final int abc_text_size_display_4_material = 0x7f070043;
+        public static final int abc_text_size_headline_material = 0x7f070044;
+        public static final int abc_text_size_large_material = 0x7f070045;
+        public static final int abc_text_size_medium_material = 0x7f070046;
+        public static final int abc_text_size_menu_header_material = 0x7f070047;
+        public static final int abc_text_size_menu_material = 0x7f070048;
+        public static final int abc_text_size_small_material = 0x7f070049;
+        public static final int abc_text_size_subhead_material = 0x7f07004a;
+        public static final int abc_text_size_subtitle_material_toolbar = 0x7f07004b;
+        public static final int abc_text_size_title_material = 0x7f07004c;
+        public static final int abc_text_size_title_material_toolbar = 0x7f07004d;
+        public static final int action_bar_size = 0x7f07004e;
+        public static final int appcompat_dialog_background_inset = 0x7f07004f;
+        public static final int cardview_compat_inset_shadow = 0x7f070050;
+        public static final int cardview_default_elevation = 0x7f070051;
+        public static final int cardview_default_radius = 0x7f070052;
+        public static final int compat_button_inset_horizontal_material = 0x7f070053;
+        public static final int compat_button_inset_vertical_material = 0x7f070054;
+        public static final int compat_button_padding_horizontal_material = 0x7f070055;
+        public static final int compat_button_padding_vertical_material = 0x7f070056;
+        public static final int compat_control_corner_material = 0x7f070057;
+        public static final int compat_notification_large_icon_max_height = 0x7f070058;
+        public static final int compat_notification_large_icon_max_width = 0x7f070059;
+        public static final int default_dimension = 0x7f07005a;
+        public static final int design_appbar_elevation = 0x7f07005b;
+        public static final int design_bottom_navigation_active_item_max_width = 0x7f07005c;
+        public static final int design_bottom_navigation_active_item_min_width = 0x7f07005d;
+        public static final int design_bottom_navigation_active_text_size = 0x7f07005e;
+        public static final int design_bottom_navigation_elevation = 0x7f07005f;
+        public static final int design_bottom_navigation_height = 0x7f070060;
+        public static final int design_bottom_navigation_icon_size = 0x7f070061;
+        public static final int design_bottom_navigation_item_max_width = 0x7f070062;
+        public static final int design_bottom_navigation_item_min_width = 0x7f070063;
+        public static final int design_bottom_navigation_margin = 0x7f070064;
+        public static final int design_bottom_navigation_shadow_height = 0x7f070065;
+        public static final int design_bottom_navigation_text_size = 0x7f070066;
+        public static final int design_bottom_sheet_elevation = 0x7f070067;
+        public static final int design_bottom_sheet_modal_elevation = 0x7f070068;
+        public static final int design_bottom_sheet_peek_height_min = 0x7f070069;
+        public static final int design_fab_border_width = 0x7f07006a;
+        public static final int design_fab_elevation = 0x7f07006b;
+        public static final int design_fab_image_size = 0x7f07006c;
+        public static final int design_fab_size_mini = 0x7f07006d;
+        public static final int design_fab_size_normal = 0x7f07006e;
+        public static final int design_fab_translation_z_hovered_focused = 0x7f07006f;
+        public static final int design_fab_translation_z_pressed = 0x7f070070;
+        public static final int design_navigation_elevation = 0x7f070071;
+        public static final int design_navigation_icon_padding = 0x7f070072;
+        public static final int design_navigation_icon_size = 0x7f070073;
+        public static final int design_navigation_item_horizontal_padding = 0x7f070074;
+        public static final int design_navigation_item_icon_padding = 0x7f070075;
+        public static final int design_navigation_max_width = 0x7f070076;
+        public static final int design_navigation_padding_bottom = 0x7f070077;
+        public static final int design_navigation_separator_vertical_padding = 0x7f070078;
+        public static final int design_snackbar_action_inline_max_width = 0x7f070079;
+        public static final int design_snackbar_action_text_color_alpha = 0x7f07007a;
+        public static final int design_snackbar_background_corner_radius = 0x7f07007b;
+        public static final int design_snackbar_elevation = 0x7f07007c;
+        public static final int design_snackbar_extra_spacing_horizontal = 0x7f07007d;
+        public static final int design_snackbar_max_width = 0x7f07007e;
+        public static final int design_snackbar_min_width = 0x7f07007f;
+        public static final int design_snackbar_padding_horizontal = 0x7f070080;
+        public static final int design_snackbar_padding_vertical = 0x7f070081;
+        public static final int design_snackbar_padding_vertical_2lines = 0x7f070082;
+        public static final int design_snackbar_text_size = 0x7f070083;
+        public static final int design_tab_max_width = 0x7f070084;
+        public static final int design_tab_scrollable_min_width = 0x7f070085;
+        public static final int design_tab_text_size = 0x7f070086;
+        public static final int design_tab_text_size_2line = 0x7f070087;
+        public static final int design_textinput_caption_translate_y = 0x7f070088;
+        public static final int disabled_alpha_material_dark = 0x7f07058f;
+        public static final int disabled_alpha_material_light = 0x7f070590;
+        public static final int dp_0 = 0x7f070591;
+        public static final int dp_1 = 0x7f070592;
+        public static final int dp_10 = 0x7f070593;
+        public static final int dp_100 = 0x7f070594;
+        public static final int dp_1000 = 0x7f070595;
+        public static final int dp_1001 = 0x7f070596;
+        public static final int dp_1002 = 0x7f070597;
+        public static final int dp_1003 = 0x7f070598;
+        public static final int dp_1004 = 0x7f070599;
+        public static final int dp_1005 = 0x7f07059a;
+        public static final int dp_1006 = 0x7f07059b;
+        public static final int dp_1007 = 0x7f07059c;
+        public static final int dp_1008 = 0x7f07059d;
+        public static final int dp_1009 = 0x7f07059e;
+        public static final int dp_101 = 0x7f07059f;
+        public static final int dp_1010 = 0x7f0705a0;
+        public static final int dp_1011 = 0x7f0705a1;
+        public static final int dp_1012 = 0x7f0705a2;
+        public static final int dp_1013 = 0x7f0705a3;
+        public static final int dp_1014 = 0x7f0705a4;
+        public static final int dp_1015 = 0x7f0705a5;
+        public static final int dp_1016 = 0x7f0705a6;
+        public static final int dp_1017 = 0x7f0705a7;
+        public static final int dp_1018 = 0x7f0705a8;
+        public static final int dp_1019 = 0x7f0705a9;
+        public static final int dp_102 = 0x7f0705aa;
+        public static final int dp_1020 = 0x7f0705ab;
+        public static final int dp_1021 = 0x7f0705ac;
+        public static final int dp_1022 = 0x7f0705ad;
+        public static final int dp_1023 = 0x7f0705ae;
+        public static final int dp_1024 = 0x7f0705af;
+        public static final int dp_1025 = 0x7f0705b0;
+        public static final int dp_1026 = 0x7f0705b1;
+        public static final int dp_1027 = 0x7f0705b2;
+        public static final int dp_1028 = 0x7f0705b3;
+        public static final int dp_1029 = 0x7f0705b4;
+        public static final int dp_103 = 0x7f0705b5;
+        public static final int dp_1030 = 0x7f0705b6;
+        public static final int dp_1031 = 0x7f0705b7;
+        public static final int dp_1032 = 0x7f0705b8;
+        public static final int dp_1033 = 0x7f0705b9;
+        public static final int dp_1034 = 0x7f0705ba;
+        public static final int dp_1035 = 0x7f0705bb;
+        public static final int dp_1036 = 0x7f0705bc;
+        public static final int dp_1037 = 0x7f0705bd;
+        public static final int dp_1038 = 0x7f0705be;
+        public static final int dp_1039 = 0x7f0705bf;
+        public static final int dp_104 = 0x7f0705c0;
+        public static final int dp_1040 = 0x7f0705c1;
+        public static final int dp_1041 = 0x7f0705c2;
+        public static final int dp_1042 = 0x7f0705c3;
+        public static final int dp_1043 = 0x7f0705c4;
+        public static final int dp_1044 = 0x7f0705c5;
+        public static final int dp_1045 = 0x7f0705c6;
+        public static final int dp_1046 = 0x7f0705c7;
+        public static final int dp_1047 = 0x7f0705c8;
+        public static final int dp_1048 = 0x7f0705c9;
+        public static final int dp_1049 = 0x7f0705ca;
+        public static final int dp_105 = 0x7f0705cb;
+        public static final int dp_1050 = 0x7f0705cc;
+        public static final int dp_1051 = 0x7f0705cd;
+        public static final int dp_1052 = 0x7f0705ce;
+        public static final int dp_1053 = 0x7f0705cf;
+        public static final int dp_1054 = 0x7f0705d0;
+        public static final int dp_1055 = 0x7f0705d1;
+        public static final int dp_1056 = 0x7f0705d2;
+        public static final int dp_1057 = 0x7f0705d3;
+        public static final int dp_1058 = 0x7f0705d4;
+        public static final int dp_1059 = 0x7f0705d5;
+        public static final int dp_106 = 0x7f0705d6;
+        public static final int dp_1060 = 0x7f0705d8;
+        public static final int dp_1061 = 0x7f0705d9;
+        public static final int dp_1062 = 0x7f0705da;
+        public static final int dp_1063 = 0x7f0705db;
+        public static final int dp_1064 = 0x7f0705dc;
+        public static final int dp_1065 = 0x7f0705dd;
+        public static final int dp_1066 = 0x7f0705de;
+        public static final int dp_1067 = 0x7f0705df;
+        public static final int dp_1068 = 0x7f0705e0;
+        public static final int dp_1069 = 0x7f0705e1;
+        public static final int dp_106_5 = 0x7f0705d7;
+        public static final int dp_107 = 0x7f0705e2;
+        public static final int dp_1070 = 0x7f0705e3;
+        public static final int dp_1071 = 0x7f0705e4;
+        public static final int dp_1072 = 0x7f0705e5;
+        public static final int dp_1073 = 0x7f0705e6;
+        public static final int dp_1074 = 0x7f0705e7;
+        public static final int dp_1075 = 0x7f0705e8;
+        public static final int dp_1076 = 0x7f0705e9;
+        public static final int dp_1077 = 0x7f0705ea;
+        public static final int dp_1078 = 0x7f0705eb;
+        public static final int dp_1079 = 0x7f0705ec;
+        public static final int dp_108 = 0x7f0705ed;
+        public static final int dp_1080 = 0x7f0705ee;
+        public static final int dp_1081 = 0x7f0705ef;
+        public static final int dp_1082 = 0x7f0705f0;
+        public static final int dp_1083 = 0x7f0705f1;
+        public static final int dp_1084 = 0x7f0705f2;
+        public static final int dp_1085 = 0x7f0705f3;
+        public static final int dp_1086 = 0x7f0705f4;
+        public static final int dp_1087 = 0x7f0705f5;
+        public static final int dp_1088 = 0x7f0705f6;
+        public static final int dp_1089 = 0x7f0705f7;
+        public static final int dp_109 = 0x7f0705f8;
+        public static final int dp_1090 = 0x7f0705f9;
+        public static final int dp_1091 = 0x7f0705fa;
+        public static final int dp_1092 = 0x7f0705fb;
+        public static final int dp_1093 = 0x7f0705fc;
+        public static final int dp_1094 = 0x7f0705fd;
+        public static final int dp_1095 = 0x7f0705fe;
+        public static final int dp_1096 = 0x7f0705ff;
+        public static final int dp_1097 = 0x7f070600;
+        public static final int dp_1098 = 0x7f070601;
+        public static final int dp_1099 = 0x7f070602;
+        public static final int dp_11 = 0x7f070603;
+        public static final int dp_110 = 0x7f070604;
+        public static final int dp_1100 = 0x7f070605;
+        public static final int dp_1101 = 0x7f070606;
+        public static final int dp_1102 = 0x7f070607;
+        public static final int dp_1103 = 0x7f070608;
+        public static final int dp_1104 = 0x7f070609;
+        public static final int dp_1105 = 0x7f07060a;
+        public static final int dp_1106 = 0x7f07060b;
+        public static final int dp_1107 = 0x7f07060c;
+        public static final int dp_1108 = 0x7f07060d;
+        public static final int dp_1109 = 0x7f07060e;
+        public static final int dp_111 = 0x7f07060f;
+        public static final int dp_1110 = 0x7f070611;
+        public static final int dp_1111 = 0x7f070612;
+        public static final int dp_1112 = 0x7f070613;
+        public static final int dp_1113 = 0x7f070614;
+        public static final int dp_1114 = 0x7f070615;
+        public static final int dp_1115 = 0x7f070616;
+        public static final int dp_1116 = 0x7f070617;
+        public static final int dp_1117 = 0x7f070618;
+        public static final int dp_1118 = 0x7f070619;
+        public static final int dp_1119 = 0x7f07061a;
+        public static final int dp_111_5 = 0x7f070610;
+        public static final int dp_112 = 0x7f07061b;
+        public static final int dp_1120 = 0x7f07061c;
+        public static final int dp_1121 = 0x7f07061d;
+        public static final int dp_1122 = 0x7f07061e;
+        public static final int dp_1123 = 0x7f07061f;
+        public static final int dp_1124 = 0x7f070620;
+        public static final int dp_1125 = 0x7f070621;
+        public static final int dp_1126 = 0x7f070622;
+        public static final int dp_1127 = 0x7f070623;
+        public static final int dp_1128 = 0x7f070624;
+        public static final int dp_1129 = 0x7f070625;
+        public static final int dp_113 = 0x7f070626;
+        public static final int dp_1130 = 0x7f070627;
+        public static final int dp_1131 = 0x7f070628;
+        public static final int dp_1132 = 0x7f070629;
+        public static final int dp_1133 = 0x7f07062a;
+        public static final int dp_1134 = 0x7f07062b;
+        public static final int dp_1135 = 0x7f07062c;
+        public static final int dp_1136 = 0x7f07062d;
+        public static final int dp_1137 = 0x7f07062e;
+        public static final int dp_1138 = 0x7f07062f;
+        public static final int dp_1139 = 0x7f070630;
+        public static final int dp_114 = 0x7f070631;
+        public static final int dp_1140 = 0x7f070632;
+        public static final int dp_1141 = 0x7f070633;
+        public static final int dp_1142 = 0x7f070634;
+        public static final int dp_1143 = 0x7f070635;
+        public static final int dp_1144 = 0x7f070636;
+        public static final int dp_1145 = 0x7f070637;
+        public static final int dp_1146 = 0x7f070638;
+        public static final int dp_1147 = 0x7f070639;
+        public static final int dp_1148 = 0x7f07063a;
+        public static final int dp_1149 = 0x7f07063b;
+        public static final int dp_115 = 0x7f07063c;
+        public static final int dp_1150 = 0x7f07063e;
+        public static final int dp_1151 = 0x7f07063f;
+        public static final int dp_1152 = 0x7f070640;
+        public static final int dp_1153 = 0x7f070641;
+        public static final int dp_1154 = 0x7f070642;
+        public static final int dp_1155 = 0x7f070643;
+        public static final int dp_1156 = 0x7f070644;
+        public static final int dp_1157 = 0x7f070645;
+        public static final int dp_1158 = 0x7f070646;
+        public static final int dp_1159 = 0x7f070647;
+        public static final int dp_115_5 = 0x7f07063d;
+        public static final int dp_116 = 0x7f070648;
+        public static final int dp_1160 = 0x7f070649;
+        public static final int dp_1161 = 0x7f07064a;
+        public static final int dp_1162 = 0x7f07064b;
+        public static final int dp_1163 = 0x7f07064c;
+        public static final int dp_1164 = 0x7f07064d;
+        public static final int dp_1165 = 0x7f07064e;
+        public static final int dp_1166 = 0x7f07064f;
+        public static final int dp_1167 = 0x7f070650;
+        public static final int dp_1168 = 0x7f070651;
+        public static final int dp_1169 = 0x7f070652;
+        public static final int dp_117 = 0x7f070653;
+        public static final int dp_1170 = 0x7f070654;
+        public static final int dp_1171 = 0x7f070655;
+        public static final int dp_1172 = 0x7f070656;
+        public static final int dp_1173 = 0x7f070657;
+        public static final int dp_1174 = 0x7f070658;
+        public static final int dp_1175 = 0x7f070659;
+        public static final int dp_1176 = 0x7f07065a;
+        public static final int dp_1177 = 0x7f07065b;
+        public static final int dp_1178 = 0x7f07065c;
+        public static final int dp_1179 = 0x7f07065d;
+        public static final int dp_118 = 0x7f07065e;
+        public static final int dp_1180 = 0x7f07065f;
+        public static final int dp_1181 = 0x7f070660;
+        public static final int dp_1182 = 0x7f070661;
+        public static final int dp_1183 = 0x7f070662;
+        public static final int dp_1184 = 0x7f070663;
+        public static final int dp_1185 = 0x7f070664;
+        public static final int dp_1186 = 0x7f070665;
+        public static final int dp_1187 = 0x7f070666;
+        public static final int dp_1188 = 0x7f070667;
+        public static final int dp_1189 = 0x7f070668;
+        public static final int dp_119 = 0x7f070669;
+        public static final int dp_1190 = 0x7f07066a;
+        public static final int dp_1191 = 0x7f07066b;
+        public static final int dp_1192 = 0x7f07066c;
+        public static final int dp_1193 = 0x7f07066d;
+        public static final int dp_1194 = 0x7f07066e;
+        public static final int dp_1195 = 0x7f07066f;
+        public static final int dp_1196 = 0x7f070670;
+        public static final int dp_1197 = 0x7f070671;
+        public static final int dp_1198 = 0x7f070672;
+        public static final int dp_1199 = 0x7f070673;
+        public static final int dp_12 = 0x7f070674;
+        public static final int dp_120 = 0x7f070675;
+        public static final int dp_1200 = 0x7f070676;
+        public static final int dp_1201 = 0x7f070677;
+        public static final int dp_1202 = 0x7f070678;
+        public static final int dp_1203 = 0x7f070679;
+        public static final int dp_1204 = 0x7f07067a;
+        public static final int dp_1205 = 0x7f07067b;
+        public static final int dp_1206 = 0x7f07067c;
+        public static final int dp_1207 = 0x7f07067d;
+        public static final int dp_1208 = 0x7f07067e;
+        public static final int dp_1209 = 0x7f07067f;
+        public static final int dp_121 = 0x7f070680;
+        public static final int dp_1210 = 0x7f070681;
+        public static final int dp_1211 = 0x7f070682;
+        public static final int dp_1212 = 0x7f070683;
+        public static final int dp_1213 = 0x7f070684;
+        public static final int dp_1214 = 0x7f070685;
+        public static final int dp_1215 = 0x7f070686;
+        public static final int dp_1216 = 0x7f070687;
+        public static final int dp_1217 = 0x7f070688;
+        public static final int dp_1218 = 0x7f070689;
+        public static final int dp_1219 = 0x7f07068a;
+        public static final int dp_122 = 0x7f07068b;
+        public static final int dp_1220 = 0x7f07068c;
+        public static final int dp_1221 = 0x7f07068d;
+        public static final int dp_1222 = 0x7f07068e;
+        public static final int dp_1223 = 0x7f07068f;
+        public static final int dp_1224 = 0x7f070690;
+        public static final int dp_1225 = 0x7f070691;
+        public static final int dp_1226 = 0x7f070692;
+        public static final int dp_1227 = 0x7f070693;
+        public static final int dp_1228 = 0x7f070694;
+        public static final int dp_1229 = 0x7f070695;
+        public static final int dp_123 = 0x7f070696;
+        public static final int dp_1230 = 0x7f070697;
+        public static final int dp_1231 = 0x7f070698;
+        public static final int dp_1232 = 0x7f070699;
+        public static final int dp_1233 = 0x7f07069a;
+        public static final int dp_1234 = 0x7f07069b;
+        public static final int dp_1235 = 0x7f07069c;
+        public static final int dp_1236 = 0x7f07069d;
+        public static final int dp_1237 = 0x7f07069e;
+        public static final int dp_1238 = 0x7f07069f;
+        public static final int dp_1239 = 0x7f0706a0;
+        public static final int dp_124 = 0x7f0706a1;
+        public static final int dp_1240 = 0x7f0706a2;
+        public static final int dp_1241 = 0x7f0706a3;
+        public static final int dp_1242 = 0x7f0706a4;
+        public static final int dp_1243 = 0x7f0706a5;
+        public static final int dp_1244 = 0x7f0706a6;
+        public static final int dp_1245 = 0x7f0706a7;
+        public static final int dp_1246 = 0x7f0706a8;
+        public static final int dp_1247 = 0x7f0706a9;
+        public static final int dp_1248 = 0x7f0706aa;
+        public static final int dp_1249 = 0x7f0706ab;
+        public static final int dp_125 = 0x7f0706ac;
+        public static final int dp_1250 = 0x7f0706ad;
+        public static final int dp_1251 = 0x7f0706ae;
+        public static final int dp_1252 = 0x7f0706af;
+        public static final int dp_1253 = 0x7f0706b0;
+        public static final int dp_1254 = 0x7f0706b1;
+        public static final int dp_1255 = 0x7f0706b2;
+        public static final int dp_1256 = 0x7f0706b3;
+        public static final int dp_1257 = 0x7f0706b4;
+        public static final int dp_1258 = 0x7f0706b5;
+        public static final int dp_1259 = 0x7f0706b6;
+        public static final int dp_126 = 0x7f0706b7;
+        public static final int dp_1260 = 0x7f0706b8;
+        public static final int dp_1261 = 0x7f0706b9;
+        public static final int dp_1262 = 0x7f0706ba;
+        public static final int dp_1263 = 0x7f0706bb;
+        public static final int dp_1264 = 0x7f0706bc;
+        public static final int dp_1265 = 0x7f0706bd;
+        public static final int dp_1266 = 0x7f0706be;
+        public static final int dp_1267 = 0x7f0706bf;
+        public static final int dp_1268 = 0x7f0706c0;
+        public static final int dp_1269 = 0x7f0706c1;
+        public static final int dp_127 = 0x7f0706c2;
+        public static final int dp_1270 = 0x7f0706c3;
+        public static final int dp_1271 = 0x7f0706c4;
+        public static final int dp_1272 = 0x7f0706c5;
+        public static final int dp_1273 = 0x7f0706c6;
+        public static final int dp_1274 = 0x7f0706c7;
+        public static final int dp_1275 = 0x7f0706c8;
+        public static final int dp_1276 = 0x7f0706c9;
+        public static final int dp_1277 = 0x7f0706ca;
+        public static final int dp_1278 = 0x7f0706cb;
+        public static final int dp_1279 = 0x7f0706cc;
+        public static final int dp_128 = 0x7f0706cd;
+        public static final int dp_1280 = 0x7f0706ce;
+        public static final int dp_129 = 0x7f0706cf;
+        public static final int dp_13 = 0x7f0706d0;
+        public static final int dp_130 = 0x7f0706d1;
+        public static final int dp_131 = 0x7f0706d2;
+        public static final int dp_132 = 0x7f0706d3;
+        public static final int dp_132_5 = 0x7f0706d4;
+        public static final int dp_133 = 0x7f0706d5;
+        public static final int dp_134 = 0x7f0706d6;
+        public static final int dp_135 = 0x7f0706d7;
+        public static final int dp_135_5 = 0x7f0706d8;
+        public static final int dp_136 = 0x7f0706d9;
+        public static final int dp_137 = 0x7f0706da;
+        public static final int dp_137_5 = 0x7f0706db;
+        public static final int dp_138 = 0x7f0706dc;
+        public static final int dp_139 = 0x7f0706dd;
+        public static final int dp_14 = 0x7f0706de;
+        public static final int dp_140 = 0x7f0706df;
+        public static final int dp_141 = 0x7f0706e0;
+        public static final int dp_142 = 0x7f0706e1;
+        public static final int dp_143 = 0x7f0706e2;
+        public static final int dp_144 = 0x7f0706e3;
+        public static final int dp_145 = 0x7f0706e4;
+        public static final int dp_146 = 0x7f0706e5;
+        public static final int dp_147 = 0x7f0706e6;
+        public static final int dp_148 = 0x7f0706e7;
+        public static final int dp_149 = 0x7f0706e8;
+        public static final int dp_15 = 0x7f0706e9;
+        public static final int dp_150 = 0x7f0706ea;
+        public static final int dp_151 = 0x7f0706eb;
+        public static final int dp_152 = 0x7f0706ec;
+        public static final int dp_153 = 0x7f0706ed;
+        public static final int dp_154 = 0x7f0706ee;
+        public static final int dp_155 = 0x7f0706ef;
+        public static final int dp_156 = 0x7f0706f0;
+        public static final int dp_157 = 0x7f0706f1;
+        public static final int dp_158 = 0x7f0706f2;
+        public static final int dp_159 = 0x7f0706f3;
+        public static final int dp_159_5 = 0x7f0706f4;
+        public static final int dp_16 = 0x7f0706f5;
+        public static final int dp_160 = 0x7f0706f6;
+        public static final int dp_160_5 = 0x7f0706f7;
+        public static final int dp_161 = 0x7f0706f8;
+        public static final int dp_162 = 0x7f0706f9;
+        public static final int dp_163 = 0x7f0706fa;
+        public static final int dp_164 = 0x7f0706fb;
+        public static final int dp_164_5 = 0x7f0706fc;
+        public static final int dp_165 = 0x7f0706fd;
+        public static final int dp_166 = 0x7f0706fe;
+        public static final int dp_167 = 0x7f0706ff;
+        public static final int dp_167_5 = 0x7f070700;
+        public static final int dp_168 = 0x7f070701;
+        public static final int dp_169 = 0x7f070702;
+        public static final int dp_17 = 0x7f070703;
+        public static final int dp_170 = 0x7f070704;
+        public static final int dp_171 = 0x7f070705;
+        public static final int dp_172 = 0x7f070706;
+        public static final int dp_173 = 0x7f070707;
+        public static final int dp_174 = 0x7f070708;
+        public static final int dp_175 = 0x7f070709;
+        public static final int dp_176 = 0x7f07070a;
+        public static final int dp_177 = 0x7f07070b;
+        public static final int dp_178 = 0x7f07070c;
+        public static final int dp_178_5 = 0x7f07070d;
+        public static final int dp_179 = 0x7f07070e;
+        public static final int dp_18 = 0x7f07070f;
+        public static final int dp_180 = 0x7f070710;
+        public static final int dp_181 = 0x7f070711;
+        public static final int dp_182 = 0x7f070712;
+        public static final int dp_183 = 0x7f070713;
+        public static final int dp_184 = 0x7f070714;
+        public static final int dp_185 = 0x7f070715;
+        public static final int dp_186 = 0x7f070716;
+        public static final int dp_187 = 0x7f070717;
+        public static final int dp_188 = 0x7f070718;
+        public static final int dp_189 = 0x7f070719;
+        public static final int dp_19 = 0x7f07071a;
+        public static final int dp_190 = 0x7f07071b;
+        public static final int dp_191 = 0x7f07071c;
+        public static final int dp_192 = 0x7f07071d;
+        public static final int dp_192_5 = 0x7f07071e;
+        public static final int dp_193 = 0x7f07071f;
+        public static final int dp_194 = 0x7f070720;
+        public static final int dp_195 = 0x7f070721;
+        public static final int dp_196 = 0x7f070722;
+        public static final int dp_197 = 0x7f070723;
+        public static final int dp_198 = 0x7f070724;
+        public static final int dp_199 = 0x7f070725;
+        public static final int dp_2 = 0x7f070726;
+        public static final int dp_20 = 0x7f070727;
+        public static final int dp_200 = 0x7f070728;
+        public static final int dp_201 = 0x7f070729;
+        public static final int dp_202 = 0x7f07072a;
+        public static final int dp_203 = 0x7f07072b;
+        public static final int dp_204 = 0x7f07072c;
+        public static final int dp_204_5 = 0x7f07072d;
+        public static final int dp_205 = 0x7f07072e;
+        public static final int dp_206 = 0x7f07072f;
+        public static final int dp_207 = 0x7f070730;
+        public static final int dp_208 = 0x7f070731;
+        public static final int dp_209 = 0x7f070732;
+        public static final int dp_21 = 0x7f070733;
+        public static final int dp_210 = 0x7f070734;
+        public static final int dp_210_5 = 0x7f070735;
+        public static final int dp_211 = 0x7f070736;
+        public static final int dp_212 = 0x7f070737;
+        public static final int dp_213 = 0x7f070738;
+        public static final int dp_214 = 0x7f070739;
+        public static final int dp_215 = 0x7f07073a;
+        public static final int dp_216 = 0x7f07073b;
+        public static final int dp_217 = 0x7f07073c;
+        public static final int dp_218 = 0x7f07073d;
+        public static final int dp_219 = 0x7f07073e;
+        public static final int dp_22 = 0x7f07073f;
+        public static final int dp_220 = 0x7f070740;
+        public static final int dp_221 = 0x7f070741;
+        public static final int dp_222 = 0x7f070742;
+        public static final int dp_223 = 0x7f070743;
+        public static final int dp_224 = 0x7f070744;
+        public static final int dp_225 = 0x7f070745;
+        public static final int dp_226 = 0x7f070746;
+        public static final int dp_227 = 0x7f070747;
+        public static final int dp_228 = 0x7f070748;
+        public static final int dp_229 = 0x7f070749;
+        public static final int dp_23 = 0x7f07074a;
+        public static final int dp_230 = 0x7f07074b;
+        public static final int dp_231 = 0x7f07074c;
+        public static final int dp_232 = 0x7f07074d;
+        public static final int dp_233 = 0x7f07074e;
+        public static final int dp_234 = 0x7f07074f;
+        public static final int dp_235 = 0x7f070750;
+        public static final int dp_236 = 0x7f070751;
+        public static final int dp_237 = 0x7f070752;
+        public static final int dp_238 = 0x7f070753;
+        public static final int dp_239 = 0x7f070754;
+        public static final int dp_24 = 0x7f070755;
+        public static final int dp_240 = 0x7f070756;
+        public static final int dp_241 = 0x7f070757;
+        public static final int dp_242 = 0x7f070758;
+        public static final int dp_243 = 0x7f070759;
+        public static final int dp_244 = 0x7f07075a;
+        public static final int dp_245 = 0x7f07075b;
+        public static final int dp_246 = 0x7f07075c;
+        public static final int dp_247 = 0x7f07075d;
+        public static final int dp_248 = 0x7f07075e;
+        public static final int dp_249 = 0x7f07075f;
+        public static final int dp_25 = 0x7f070760;
+        public static final int dp_250 = 0x7f070761;
+        public static final int dp_251 = 0x7f070762;
+        public static final int dp_252 = 0x7f070763;
+        public static final int dp_253 = 0x7f070764;
+        public static final int dp_254 = 0x7f070765;
+        public static final int dp_255 = 0x7f070766;
+        public static final int dp_256 = 0x7f070767;
+        public static final int dp_257 = 0x7f070768;
+        public static final int dp_258 = 0x7f070769;
+        public static final int dp_259 = 0x7f07076a;
+        public static final int dp_26 = 0x7f07076b;
+        public static final int dp_260 = 0x7f07076c;
+        public static final int dp_261 = 0x7f07076d;
+        public static final int dp_262 = 0x7f07076e;
+        public static final int dp_263 = 0x7f07076f;
+        public static final int dp_264 = 0x7f070770;
+        public static final int dp_265 = 0x7f070771;
+        public static final int dp_266 = 0x7f070772;
+        public static final int dp_267 = 0x7f070773;
+        public static final int dp_268 = 0x7f070774;
+        public static final int dp_269 = 0x7f070775;
+        public static final int dp_27 = 0x7f070776;
+        public static final int dp_270 = 0x7f070777;
+        public static final int dp_271 = 0x7f070778;
+        public static final int dp_272 = 0x7f070779;
+        public static final int dp_273 = 0x7f07077a;
+        public static final int dp_273_5 = 0x7f07077b;
+        public static final int dp_274 = 0x7f07077c;
+        public static final int dp_275 = 0x7f07077d;
+        public static final int dp_276 = 0x7f07077e;
+        public static final int dp_277 = 0x7f07077f;
+        public static final int dp_278 = 0x7f070780;
+        public static final int dp_279 = 0x7f070781;
+        public static final int dp_28 = 0x7f070782;
+        public static final int dp_280 = 0x7f070783;
+        public static final int dp_281 = 0x7f070784;
+        public static final int dp_282 = 0x7f070785;
+        public static final int dp_283 = 0x7f070786;
+        public static final int dp_284 = 0x7f070787;
+        public static final int dp_285 = 0x7f070788;
+        public static final int dp_286 = 0x7f070789;
+        public static final int dp_287 = 0x7f07078a;
+        public static final int dp_288 = 0x7f07078b;
+        public static final int dp_289 = 0x7f07078c;
+        public static final int dp_289_5 = 0x7f07078d;
+        public static final int dp_29 = 0x7f07078e;
+        public static final int dp_290 = 0x7f07078f;
+        public static final int dp_291 = 0x7f070790;
+        public static final int dp_292 = 0x7f070791;
+        public static final int dp_293 = 0x7f070792;
+        public static final int dp_294 = 0x7f070793;
+        public static final int dp_295 = 0x7f070794;
+        public static final int dp_296 = 0x7f070795;
+        public static final int dp_296_5 = 0x7f070796;
+        public static final int dp_297 = 0x7f070797;
+        public static final int dp_298 = 0x7f070798;
+        public static final int dp_299 = 0x7f070799;
+        public static final int dp_3 = 0x7f07079a;
+        public static final int dp_30 = 0x7f07079b;
+        public static final int dp_300 = 0x7f07079c;
+        public static final int dp_301 = 0x7f07079d;
+        public static final int dp_302 = 0x7f07079e;
+        public static final int dp_303 = 0x7f07079f;
+        public static final int dp_304 = 0x7f0707a0;
+        public static final int dp_305 = 0x7f0707a1;
+        public static final int dp_306 = 0x7f0707a2;
+        public static final int dp_307 = 0x7f0707a3;
+        public static final int dp_308 = 0x7f0707a4;
+        public static final int dp_309 = 0x7f0707a5;
+        public static final int dp_31 = 0x7f0707a6;
+        public static final int dp_310 = 0x7f0707a7;
+        public static final int dp_311 = 0x7f0707a8;
+        public static final int dp_312 = 0x7f0707a9;
+        public static final int dp_313 = 0x7f0707aa;
+        public static final int dp_314 = 0x7f0707ab;
+        public static final int dp_315 = 0x7f0707ac;
+        public static final int dp_316 = 0x7f0707ad;
+        public static final int dp_317 = 0x7f0707ae;
+        public static final int dp_318 = 0x7f0707af;
+        public static final int dp_319 = 0x7f0707b0;
+        public static final int dp_32 = 0x7f0707b1;
+        public static final int dp_320 = 0x7f0707b3;
+        public static final int dp_320_5 = 0x7f0707b4;
+        public static final int dp_321 = 0x7f0707b5;
+        public static final int dp_322 = 0x7f0707b6;
+        public static final int dp_323 = 0x7f0707b7;
+        public static final int dp_324 = 0x7f0707b8;
+        public static final int dp_325 = 0x7f0707b9;
+        public static final int dp_326 = 0x7f0707ba;
+        public static final int dp_327 = 0x7f0707bb;
+        public static final int dp_328 = 0x7f0707bc;
+        public static final int dp_329 = 0x7f0707bd;
+        public static final int dp_32_5 = 0x7f0707b2;
+        public static final int dp_33 = 0x7f0707be;
+        public static final int dp_330 = 0x7f0707bf;
+        public static final int dp_331 = 0x7f0707c0;
+        public static final int dp_332 = 0x7f0707c1;
+        public static final int dp_333 = 0x7f0707c2;
+        public static final int dp_334 = 0x7f0707c3;
+        public static final int dp_334_5 = 0x7f0707c4;
+        public static final int dp_335 = 0x7f0707c5;
+        public static final int dp_336 = 0x7f0707c6;
+        public static final int dp_337 = 0x7f0707c7;
+        public static final int dp_338 = 0x7f0707c8;
+        public static final int dp_339 = 0x7f0707c9;
+        public static final int dp_34 = 0x7f0707ca;
+        public static final int dp_340 = 0x7f0707cb;
+        public static final int dp_341 = 0x7f0707cc;
+        public static final int dp_342 = 0x7f0707cd;
+        public static final int dp_343 = 0x7f0707ce;
+        public static final int dp_344 = 0x7f0707cf;
+        public static final int dp_345 = 0x7f0707d0;
+        public static final int dp_346 = 0x7f0707d1;
+        public static final int dp_347 = 0x7f0707d2;
+        public static final int dp_348 = 0x7f0707d3;
+        public static final int dp_349 = 0x7f0707d4;
+        public static final int dp_35 = 0x7f0707d5;
+        public static final int dp_350 = 0x7f0707d6;
+        public static final int dp_351 = 0x7f0707d7;
+        public static final int dp_352 = 0x7f0707d8;
+        public static final int dp_353 = 0x7f0707d9;
+        public static final int dp_354 = 0x7f0707da;
+        public static final int dp_355 = 0x7f0707db;
+        public static final int dp_356 = 0x7f0707dc;
+        public static final int dp_357 = 0x7f0707dd;
+        public static final int dp_358 = 0x7f0707de;
+        public static final int dp_359 = 0x7f0707df;
+        public static final int dp_36 = 0x7f0707e0;
+        public static final int dp_360 = 0x7f0707e1;
+        public static final int dp_361 = 0x7f0707e2;
+        public static final int dp_362 = 0x7f0707e3;
+        public static final int dp_363 = 0x7f0707e4;
+        public static final int dp_364 = 0x7f0707e5;
+        public static final int dp_365 = 0x7f0707e6;
+        public static final int dp_366 = 0x7f0707e7;
+        public static final int dp_367 = 0x7f0707e8;
+        public static final int dp_368 = 0x7f0707e9;
+        public static final int dp_369 = 0x7f0707ea;
+        public static final int dp_37 = 0x7f0707eb;
+        public static final int dp_370 = 0x7f0707ec;
+        public static final int dp_371 = 0x7f0707ed;
+        public static final int dp_372 = 0x7f0707ee;
+        public static final int dp_373 = 0x7f0707ef;
+        public static final int dp_374 = 0x7f0707f0;
+        public static final int dp_375 = 0x7f0707f1;
+        public static final int dp_376 = 0x7f0707f2;
+        public static final int dp_377 = 0x7f0707f3;
+        public static final int dp_378 = 0x7f0707f4;
+        public static final int dp_378_5 = 0x7f0707f5;
+        public static final int dp_379 = 0x7f0707f6;
+        public static final int dp_38 = 0x7f0707f7;
+        public static final int dp_380 = 0x7f0707f8;
+        public static final int dp_381 = 0x7f0707f9;
+        public static final int dp_382 = 0x7f0707fa;
+        public static final int dp_383 = 0x7f0707fb;
+        public static final int dp_384 = 0x7f0707fc;
+        public static final int dp_385 = 0x7f0707fd;
+        public static final int dp_386 = 0x7f0707fe;
+        public static final int dp_387 = 0x7f0707ff;
+        public static final int dp_388 = 0x7f070800;
+        public static final int dp_389 = 0x7f070801;
+        public static final int dp_39 = 0x7f070802;
+        public static final int dp_390 = 0x7f070803;
+        public static final int dp_391 = 0x7f070804;
+        public static final int dp_392 = 0x7f070805;
+        public static final int dp_393 = 0x7f070806;
+        public static final int dp_394 = 0x7f070807;
+        public static final int dp_395 = 0x7f070808;
+        public static final int dp_396 = 0x7f070809;
+        public static final int dp_397 = 0x7f07080a;
+        public static final int dp_398 = 0x7f07080b;
+        public static final int dp_399 = 0x7f07080c;
+        public static final int dp_3_s = 0x7f07080d;
+        public static final int dp_4 = 0x7f07080e;
+        public static final int dp_40 = 0x7f07080f;
+        public static final int dp_400 = 0x7f070810;
+        public static final int dp_401 = 0x7f070811;
+        public static final int dp_402 = 0x7f070812;
+        public static final int dp_403 = 0x7f070813;
+        public static final int dp_404 = 0x7f070814;
+        public static final int dp_405 = 0x7f070815;
+        public static final int dp_406 = 0x7f070816;
+        public static final int dp_407 = 0x7f070817;
+        public static final int dp_408 = 0x7f070818;
+        public static final int dp_409 = 0x7f070819;
+        public static final int dp_41 = 0x7f07081a;
+        public static final int dp_410 = 0x7f07081b;
+        public static final int dp_411 = 0x7f07081c;
+        public static final int dp_412 = 0x7f07081d;
+        public static final int dp_413 = 0x7f07081e;
+        public static final int dp_414 = 0x7f07081f;
+        public static final int dp_415 = 0x7f070820;
+        public static final int dp_416 = 0x7f070821;
+        public static final int dp_417 = 0x7f070822;
+        public static final int dp_418 = 0x7f070823;
+        public static final int dp_419 = 0x7f070824;
+        public static final int dp_42 = 0x7f070825;
+        public static final int dp_420 = 0x7f070826;
+        public static final int dp_421 = 0x7f070827;
+        public static final int dp_422 = 0x7f070828;
+        public static final int dp_423 = 0x7f070829;
+        public static final int dp_424 = 0x7f07082a;
+        public static final int dp_425 = 0x7f07082b;
+        public static final int dp_426 = 0x7f07082c;
+        public static final int dp_427 = 0x7f07082d;
+        public static final int dp_428 = 0x7f07082e;
+        public static final int dp_429 = 0x7f07082f;
+        public static final int dp_43 = 0x7f070830;
+        public static final int dp_430 = 0x7f070831;
+        public static final int dp_431 = 0x7f070832;
+        public static final int dp_432 = 0x7f070833;
+        public static final int dp_433 = 0x7f070834;
+        public static final int dp_434 = 0x7f070835;
+        public static final int dp_435 = 0x7f070836;
+        public static final int dp_436 = 0x7f070837;
+        public static final int dp_437 = 0x7f070838;
+        public static final int dp_438 = 0x7f070839;
+        public static final int dp_439 = 0x7f07083a;
+        public static final int dp_44 = 0x7f07083b;
+        public static final int dp_440 = 0x7f07083c;
+        public static final int dp_441 = 0x7f07083d;
+        public static final int dp_442 = 0x7f07083e;
+        public static final int dp_443 = 0x7f07083f;
+        public static final int dp_444 = 0x7f070840;
+        public static final int dp_445 = 0x7f070841;
+        public static final int dp_446 = 0x7f070842;
+        public static final int dp_447 = 0x7f070843;
+        public static final int dp_448 = 0x7f070844;
+        public static final int dp_449 = 0x7f070845;
+        public static final int dp_45 = 0x7f070846;
+        public static final int dp_450 = 0x7f070847;
+        public static final int dp_451 = 0x7f070848;
+        public static final int dp_452 = 0x7f070849;
+        public static final int dp_453 = 0x7f07084a;
+        public static final int dp_454 = 0x7f07084b;
+        public static final int dp_455 = 0x7f07084c;
+        public static final int dp_456 = 0x7f07084d;
+        public static final int dp_457 = 0x7f07084e;
+        public static final int dp_458 = 0x7f07084f;
+        public static final int dp_459 = 0x7f070850;
+        public static final int dp_46 = 0x7f070851;
+        public static final int dp_460 = 0x7f070852;
+        public static final int dp_461 = 0x7f070853;
+        public static final int dp_462 = 0x7f070854;
+        public static final int dp_463 = 0x7f070855;
+        public static final int dp_464 = 0x7f070856;
+        public static final int dp_465 = 0x7f070857;
+        public static final int dp_466 = 0x7f070858;
+        public static final int dp_467 = 0x7f070859;
+        public static final int dp_468 = 0x7f07085a;
+        public static final int dp_469 = 0x7f07085b;
+        public static final int dp_47 = 0x7f07085c;
+        public static final int dp_470 = 0x7f07085d;
+        public static final int dp_471 = 0x7f07085e;
+        public static final int dp_472 = 0x7f07085f;
+        public static final int dp_473 = 0x7f070860;
+        public static final int dp_474 = 0x7f070861;
+        public static final int dp_475 = 0x7f070862;
+        public static final int dp_476 = 0x7f070863;
+        public static final int dp_477 = 0x7f070864;
+        public static final int dp_478 = 0x7f070865;
+        public static final int dp_479 = 0x7f070866;
+        public static final int dp_48 = 0x7f070867;
+        public static final int dp_480 = 0x7f070868;
+        public static final int dp_481 = 0x7f070869;
+        public static final int dp_482 = 0x7f07086a;
+        public static final int dp_483 = 0x7f07086b;
+        public static final int dp_484 = 0x7f07086c;
+        public static final int dp_485 = 0x7f07086d;
+        public static final int dp_486 = 0x7f07086e;
+        public static final int dp_487 = 0x7f07086f;
+        public static final int dp_488 = 0x7f070870;
+        public static final int dp_489 = 0x7f070871;
+        public static final int dp_49 = 0x7f070872;
+        public static final int dp_490 = 0x7f070873;
+        public static final int dp_491 = 0x7f070874;
+        public static final int dp_492 = 0x7f070875;
+        public static final int dp_493 = 0x7f070876;
+        public static final int dp_494 = 0x7f070877;
+        public static final int dp_495 = 0x7f070878;
+        public static final int dp_496 = 0x7f070879;
+        public static final int dp_497 = 0x7f07087a;
+        public static final int dp_498 = 0x7f07087b;
+        public static final int dp_499 = 0x7f07087c;
+        public static final int dp_5 = 0x7f07087d;
+        public static final int dp_50 = 0x7f07087e;
+        public static final int dp_500 = 0x7f07087f;
+        public static final int dp_501 = 0x7f070880;
+        public static final int dp_502 = 0x7f070881;
+        public static final int dp_503 = 0x7f070882;
+        public static final int dp_504 = 0x7f070883;
+        public static final int dp_505 = 0x7f070884;
+        public static final int dp_506 = 0x7f070885;
+        public static final int dp_507 = 0x7f070886;
+        public static final int dp_508 = 0x7f070887;
+        public static final int dp_509 = 0x7f070888;
+        public static final int dp_51 = 0x7f070889;
+        public static final int dp_510 = 0x7f07088b;
+        public static final int dp_511 = 0x7f07088c;
+        public static final int dp_512 = 0x7f07088d;
+        public static final int dp_513 = 0x7f07088e;
+        public static final int dp_514 = 0x7f07088f;
+        public static final int dp_515 = 0x7f070890;
+        public static final int dp_516 = 0x7f070891;
+        public static final int dp_517 = 0x7f070892;
+        public static final int dp_518 = 0x7f070893;
+        public static final int dp_519 = 0x7f070894;
+        public static final int dp_51_5 = 0x7f07088a;
+        public static final int dp_52 = 0x7f070895;
+        public static final int dp_520 = 0x7f070896;
+        public static final int dp_521 = 0x7f070897;
+        public static final int dp_522 = 0x7f070898;
+        public static final int dp_523 = 0x7f070899;
+        public static final int dp_524 = 0x7f07089a;
+        public static final int dp_525 = 0x7f07089b;
+        public static final int dp_526 = 0x7f07089c;
+        public static final int dp_527 = 0x7f07089d;
+        public static final int dp_528 = 0x7f07089e;
+        public static final int dp_529 = 0x7f07089f;
+        public static final int dp_53 = 0x7f0708a0;
+        public static final int dp_530 = 0x7f0708a1;
+        public static final int dp_531 = 0x7f0708a2;
+        public static final int dp_532 = 0x7f0708a3;
+        public static final int dp_533 = 0x7f0708a4;
+        public static final int dp_534 = 0x7f0708a5;
+        public static final int dp_535 = 0x7f0708a6;
+        public static final int dp_536 = 0x7f0708a7;
+        public static final int dp_537 = 0x7f0708a8;
+        public static final int dp_538 = 0x7f0708a9;
+        public static final int dp_539 = 0x7f0708aa;
+        public static final int dp_54 = 0x7f0708ab;
+        public static final int dp_540 = 0x7f0708ac;
+        public static final int dp_541 = 0x7f0708ad;
+        public static final int dp_542 = 0x7f0708ae;
+        public static final int dp_543 = 0x7f0708af;
+        public static final int dp_544 = 0x7f0708b0;
+        public static final int dp_545 = 0x7f0708b1;
+        public static final int dp_546 = 0x7f0708b2;
+        public static final int dp_547 = 0x7f0708b3;
+        public static final int dp_548 = 0x7f0708b4;
+        public static final int dp_549 = 0x7f0708b5;
+        public static final int dp_55 = 0x7f0708b6;
+        public static final int dp_550 = 0x7f0708b7;
+        public static final int dp_551 = 0x7f0708b8;
+        public static final int dp_552 = 0x7f0708b9;
+        public static final int dp_553 = 0x7f0708ba;
+        public static final int dp_554 = 0x7f0708bb;
+        public static final int dp_555 = 0x7f0708bc;
+        public static final int dp_556 = 0x7f0708bd;
+        public static final int dp_557 = 0x7f0708be;
+        public static final int dp_558 = 0x7f0708bf;
+        public static final int dp_559 = 0x7f0708c0;
+        public static final int dp_56 = 0x7f0708c1;
+        public static final int dp_560 = 0x7f0708c2;
+        public static final int dp_561 = 0x7f0708c3;
+        public static final int dp_562 = 0x7f0708c4;
+        public static final int dp_563 = 0x7f0708c5;
+        public static final int dp_564 = 0x7f0708c6;
+        public static final int dp_565 = 0x7f0708c7;
+        public static final int dp_566 = 0x7f0708c8;
+        public static final int dp_567 = 0x7f0708c9;
+        public static final int dp_568 = 0x7f0708ca;
+        public static final int dp_569 = 0x7f0708cb;
+        public static final int dp_57 = 0x7f0708cc;
+        public static final int dp_570 = 0x7f0708cd;
+        public static final int dp_571 = 0x7f0708ce;
+        public static final int dp_572 = 0x7f0708cf;
+        public static final int dp_573 = 0x7f0708d0;
+        public static final int dp_574 = 0x7f0708d1;
+        public static final int dp_575 = 0x7f0708d2;
+        public static final int dp_576 = 0x7f0708d3;
+        public static final int dp_577 = 0x7f0708d4;
+        public static final int dp_578 = 0x7f0708d5;
+        public static final int dp_579 = 0x7f0708d6;
+        public static final int dp_58 = 0x7f0708d7;
+        public static final int dp_580 = 0x7f0708d8;
+        public static final int dp_580_5 = 0x7f0708d9;
+        public static final int dp_581 = 0x7f0708da;
+        public static final int dp_582 = 0x7f0708db;
+        public static final int dp_583 = 0x7f0708dc;
+        public static final int dp_584 = 0x7f0708dd;
+        public static final int dp_585 = 0x7f0708de;
+        public static final int dp_586 = 0x7f0708df;
+        public static final int dp_587 = 0x7f0708e0;
+        public static final int dp_588 = 0x7f0708e1;
+        public static final int dp_589 = 0x7f0708e2;
+        public static final int dp_59 = 0x7f0708e3;
+        public static final int dp_590 = 0x7f0708e4;
+        public static final int dp_591 = 0x7f0708e5;
+        public static final int dp_592 = 0x7f0708e6;
+        public static final int dp_593 = 0x7f0708e7;
+        public static final int dp_594 = 0x7f0708e8;
+        public static final int dp_595 = 0x7f0708e9;
+        public static final int dp_596 = 0x7f0708ea;
+        public static final int dp_597 = 0x7f0708eb;
+        public static final int dp_598 = 0x7f0708ec;
+        public static final int dp_599 = 0x7f0708ed;
+        public static final int dp_6 = 0x7f0708ee;
+        public static final int dp_60 = 0x7f0708ef;
+        public static final int dp_600 = 0x7f0708f0;
+        public static final int dp_601 = 0x7f0708f1;
+        public static final int dp_602 = 0x7f0708f2;
+        public static final int dp_603 = 0x7f0708f3;
+        public static final int dp_604 = 0x7f0708f4;
+        public static final int dp_605 = 0x7f0708f5;
+        public static final int dp_606 = 0x7f0708f6;
+        public static final int dp_607 = 0x7f0708f7;
+        public static final int dp_608 = 0x7f0708f8;
+        public static final int dp_609 = 0x7f0708f9;
+        public static final int dp_61 = 0x7f0708fa;
+        public static final int dp_610 = 0x7f0708fb;
+        public static final int dp_611 = 0x7f0708fc;
+        public static final int dp_612 = 0x7f0708fd;
+        public static final int dp_613 = 0x7f0708fe;
+        public static final int dp_614 = 0x7f0708ff;
+        public static final int dp_615 = 0x7f070900;
+        public static final int dp_616 = 0x7f070901;
+        public static final int dp_617 = 0x7f070902;
+        public static final int dp_618 = 0x7f070903;
+        public static final int dp_619 = 0x7f070904;
+        public static final int dp_62 = 0x7f070905;
+        public static final int dp_620 = 0x7f070907;
+        public static final int dp_621 = 0x7f070908;
+        public static final int dp_622 = 0x7f070909;
+        public static final int dp_623 = 0x7f07090a;
+        public static final int dp_624 = 0x7f07090b;
+        public static final int dp_625 = 0x7f07090c;
+        public static final int dp_626 = 0x7f07090d;
+        public static final int dp_627 = 0x7f07090e;
+        public static final int dp_628 = 0x7f07090f;
+        public static final int dp_629 = 0x7f070910;
+        public static final int dp_62_5 = 0x7f070906;
+        public static final int dp_63 = 0x7f070911;
+        public static final int dp_630 = 0x7f070912;
+        public static final int dp_631 = 0x7f070913;
+        public static final int dp_632 = 0x7f070914;
+        public static final int dp_633 = 0x7f070915;
+        public static final int dp_634 = 0x7f070916;
+        public static final int dp_635 = 0x7f070917;
+        public static final int dp_636 = 0x7f070918;
+        public static final int dp_637 = 0x7f070919;
+        public static final int dp_638 = 0x7f07091a;
+        public static final int dp_639 = 0x7f07091b;
+        public static final int dp_64 = 0x7f07091c;
+        public static final int dp_640 = 0x7f07091d;
+        public static final int dp_641 = 0x7f07091e;
+        public static final int dp_642 = 0x7f07091f;
+        public static final int dp_643 = 0x7f070920;
+        public static final int dp_644 = 0x7f070921;
+        public static final int dp_645 = 0x7f070922;
+        public static final int dp_646 = 0x7f070923;
+        public static final int dp_647 = 0x7f070924;
+        public static final int dp_648 = 0x7f070925;
+        public static final int dp_649 = 0x7f070926;
+        public static final int dp_65 = 0x7f070927;
+        public static final int dp_650 = 0x7f070928;
+        public static final int dp_651 = 0x7f070929;
+        public static final int dp_652 = 0x7f07092a;
+        public static final int dp_653 = 0x7f07092b;
+        public static final int dp_654 = 0x7f07092c;
+        public static final int dp_655 = 0x7f07092d;
+        public static final int dp_656 = 0x7f07092e;
+        public static final int dp_657 = 0x7f07092f;
+        public static final int dp_658 = 0x7f070930;
+        public static final int dp_659 = 0x7f070931;
+        public static final int dp_66 = 0x7f070932;
+        public static final int dp_660 = 0x7f070933;
+        public static final int dp_661 = 0x7f070934;
+        public static final int dp_662 = 0x7f070935;
+        public static final int dp_663 = 0x7f070936;
+        public static final int dp_664 = 0x7f070937;
+        public static final int dp_665 = 0x7f070938;
+        public static final int dp_666 = 0x7f070939;
+        public static final int dp_667 = 0x7f07093a;
+        public static final int dp_668 = 0x7f07093b;
+        public static final int dp_669 = 0x7f07093c;
+        public static final int dp_67 = 0x7f07093d;
+        public static final int dp_670 = 0x7f07093e;
+        public static final int dp_671 = 0x7f07093f;
+        public static final int dp_672 = 0x7f070940;
+        public static final int dp_673 = 0x7f070941;
+        public static final int dp_674 = 0x7f070942;
+        public static final int dp_675 = 0x7f070943;
+        public static final int dp_676 = 0x7f070944;
+        public static final int dp_677 = 0x7f070945;
+        public static final int dp_678 = 0x7f070946;
+        public static final int dp_679 = 0x7f070947;
+        public static final int dp_68 = 0x7f070948;
+        public static final int dp_680 = 0x7f070949;
+        public static final int dp_681 = 0x7f07094a;
+        public static final int dp_682 = 0x7f07094b;
+        public static final int dp_683 = 0x7f07094c;
+        public static final int dp_684 = 0x7f07094d;
+        public static final int dp_685 = 0x7f07094e;
+        public static final int dp_686 = 0x7f07094f;
+        public static final int dp_687 = 0x7f070950;
+        public static final int dp_688 = 0x7f070951;
+        public static final int dp_689 = 0x7f070952;
+        public static final int dp_69 = 0x7f070953;
+        public static final int dp_690 = 0x7f070955;
+        public static final int dp_691 = 0x7f070956;
+        public static final int dp_692 = 0x7f070957;
+        public static final int dp_693 = 0x7f070958;
+        public static final int dp_694 = 0x7f070959;
+        public static final int dp_695 = 0x7f07095a;
+        public static final int dp_696 = 0x7f07095b;
+        public static final int dp_697 = 0x7f07095c;
+        public static final int dp_698 = 0x7f07095d;
+        public static final int dp_699 = 0x7f07095e;
+        public static final int dp_69_5 = 0x7f070954;
+        public static final int dp_7 = 0x7f07095f;
+        public static final int dp_70 = 0x7f070960;
+        public static final int dp_700 = 0x7f070961;
+        public static final int dp_701 = 0x7f070962;
+        public static final int dp_702 = 0x7f070963;
+        public static final int dp_703 = 0x7f070964;
+        public static final int dp_704 = 0x7f070965;
+        public static final int dp_705 = 0x7f070966;
+        public static final int dp_706 = 0x7f070967;
+        public static final int dp_707 = 0x7f070968;
+        public static final int dp_708 = 0x7f070969;
+        public static final int dp_709 = 0x7f07096a;
+        public static final int dp_71 = 0x7f07096b;
+        public static final int dp_710 = 0x7f07096c;
+        public static final int dp_711 = 0x7f07096d;
+        public static final int dp_712 = 0x7f07096e;
+        public static final int dp_713 = 0x7f07096f;
+        public static final int dp_714 = 0x7f070970;
+        public static final int dp_715 = 0x7f070971;
+        public static final int dp_716 = 0x7f070972;
+        public static final int dp_717 = 0x7f070973;
+        public static final int dp_718 = 0x7f070974;
+        public static final int dp_719 = 0x7f070975;
+        public static final int dp_72 = 0x7f070976;
+        public static final int dp_720 = 0x7f070977;
+        public static final int dp_721 = 0x7f070978;
+        public static final int dp_722 = 0x7f070979;
+        public static final int dp_723 = 0x7f07097a;
+        public static final int dp_724 = 0x7f07097b;
+        public static final int dp_725 = 0x7f07097c;
+        public static final int dp_726 = 0x7f07097d;
+        public static final int dp_727 = 0x7f07097e;
+        public static final int dp_728 = 0x7f07097f;
+        public static final int dp_729 = 0x7f070980;
+        public static final int dp_73 = 0x7f070981;
+        public static final int dp_730 = 0x7f070982;
+        public static final int dp_731 = 0x7f070983;
+        public static final int dp_732 = 0x7f070984;
+        public static final int dp_733 = 0x7f070985;
+        public static final int dp_734 = 0x7f070986;
+        public static final int dp_735 = 0x7f070987;
+        public static final int dp_736 = 0x7f070988;
+        public static final int dp_737 = 0x7f070989;
+        public static final int dp_738 = 0x7f07098a;
+        public static final int dp_739 = 0x7f07098b;
+        public static final int dp_74 = 0x7f07098c;
+        public static final int dp_740 = 0x7f07098d;
+        public static final int dp_741 = 0x7f07098e;
+        public static final int dp_742 = 0x7f07098f;
+        public static final int dp_743 = 0x7f070990;
+        public static final int dp_744 = 0x7f070991;
+        public static final int dp_745 = 0x7f070992;
+        public static final int dp_746 = 0x7f070993;
+        public static final int dp_747 = 0x7f070994;
+        public static final int dp_748 = 0x7f070995;
+        public static final int dp_749 = 0x7f070996;
+        public static final int dp_75 = 0x7f070997;
+        public static final int dp_750 = 0x7f070998;
+        public static final int dp_751 = 0x7f070999;
+        public static final int dp_752 = 0x7f07099a;
+        public static final int dp_753 = 0x7f07099b;
+        public static final int dp_754 = 0x7f07099c;
+        public static final int dp_755 = 0x7f07099d;
+        public static final int dp_756 = 0x7f07099e;
+        public static final int dp_757 = 0x7f07099f;
+        public static final int dp_758 = 0x7f0709a0;
+        public static final int dp_759 = 0x7f0709a1;
+        public static final int dp_76 = 0x7f0709a2;
+        public static final int dp_760 = 0x7f0709a3;
+        public static final int dp_761 = 0x7f0709a4;
+        public static final int dp_762 = 0x7f0709a5;
+        public static final int dp_763 = 0x7f0709a6;
+        public static final int dp_764 = 0x7f0709a7;
+        public static final int dp_765 = 0x7f0709a8;
+        public static final int dp_766 = 0x7f0709a9;
+        public static final int dp_767 = 0x7f0709aa;
+        public static final int dp_768 = 0x7f0709ab;
+        public static final int dp_769 = 0x7f0709ac;
+        public static final int dp_77 = 0x7f0709ad;
+        public static final int dp_770 = 0x7f0709ae;
+        public static final int dp_771 = 0x7f0709af;
+        public static final int dp_772 = 0x7f0709b0;
+        public static final int dp_773 = 0x7f0709b1;
+        public static final int dp_774 = 0x7f0709b2;
+        public static final int dp_775 = 0x7f0709b3;
+        public static final int dp_776 = 0x7f0709b4;
+        public static final int dp_777 = 0x7f0709b5;
+        public static final int dp_778 = 0x7f0709b6;
+        public static final int dp_779 = 0x7f0709b7;
+        public static final int dp_78 = 0x7f0709b8;
+        public static final int dp_780 = 0x7f0709b9;
+        public static final int dp_781 = 0x7f0709ba;
+        public static final int dp_782 = 0x7f0709bb;
+        public static final int dp_783 = 0x7f0709bc;
+        public static final int dp_784 = 0x7f0709bd;
+        public static final int dp_785 = 0x7f0709be;
+        public static final int dp_786 = 0x7f0709bf;
+        public static final int dp_787 = 0x7f0709c0;
+        public static final int dp_788 = 0x7f0709c1;
+        public static final int dp_789 = 0x7f0709c2;
+        public static final int dp_79 = 0x7f0709c3;
+        public static final int dp_790 = 0x7f0709c4;
+        public static final int dp_791 = 0x7f0709c5;
+        public static final int dp_792 = 0x7f0709c6;
+        public static final int dp_793 = 0x7f0709c7;
+        public static final int dp_794 = 0x7f0709c8;
+        public static final int dp_795 = 0x7f0709c9;
+        public static final int dp_796 = 0x7f0709ca;
+        public static final int dp_797 = 0x7f0709cb;
+        public static final int dp_798 = 0x7f0709cc;
+        public static final int dp_799 = 0x7f0709cd;
+        public static final int dp_8 = 0x7f0709ce;
+        public static final int dp_80 = 0x7f0709cf;
+        public static final int dp_800 = 0x7f0709d0;
+        public static final int dp_801 = 0x7f0709d1;
+        public static final int dp_802 = 0x7f0709d2;
+        public static final int dp_803 = 0x7f0709d3;
+        public static final int dp_804 = 0x7f0709d4;
+        public static final int dp_805 = 0x7f0709d5;
+        public static final int dp_806 = 0x7f0709d6;
+        public static final int dp_807 = 0x7f0709d7;
+        public static final int dp_808 = 0x7f0709d8;
+        public static final int dp_809 = 0x7f0709d9;
+        public static final int dp_81 = 0x7f0709da;
+        public static final int dp_810 = 0x7f0709db;
+        public static final int dp_811 = 0x7f0709dc;
+        public static final int dp_812 = 0x7f0709dd;
+        public static final int dp_813 = 0x7f0709de;
+        public static final int dp_814 = 0x7f0709df;
+        public static final int dp_815 = 0x7f0709e0;
+        public static final int dp_816 = 0x7f0709e1;
+        public static final int dp_817 = 0x7f0709e2;
+        public static final int dp_818 = 0x7f0709e3;
+        public static final int dp_819 = 0x7f0709e4;
+        public static final int dp_82 = 0x7f0709e5;
+        public static final int dp_820 = 0x7f0709e6;
+        public static final int dp_821 = 0x7f0709e7;
+        public static final int dp_822 = 0x7f0709e8;
+        public static final int dp_823 = 0x7f0709e9;
+        public static final int dp_824 = 0x7f0709ea;
+        public static final int dp_825 = 0x7f0709eb;
+        public static final int dp_826 = 0x7f0709ec;
+        public static final int dp_827 = 0x7f0709ed;
+        public static final int dp_828 = 0x7f0709ee;
+        public static final int dp_829 = 0x7f0709ef;
+        public static final int dp_83 = 0x7f0709f0;
+        public static final int dp_830 = 0x7f0709f1;
+        public static final int dp_831 = 0x7f0709f2;
+        public static final int dp_832 = 0x7f0709f3;
+        public static final int dp_833 = 0x7f0709f4;
+        public static final int dp_834 = 0x7f0709f5;
+        public static final int dp_835 = 0x7f0709f6;
+        public static final int dp_836 = 0x7f0709f7;
+        public static final int dp_837 = 0x7f0709f8;
+        public static final int dp_838 = 0x7f0709f9;
+        public static final int dp_839 = 0x7f0709fa;
+        public static final int dp_84 = 0x7f0709fb;
+        public static final int dp_840 = 0x7f0709fc;
+        public static final int dp_841 = 0x7f0709fd;
+        public static final int dp_842 = 0x7f0709fe;
+        public static final int dp_843 = 0x7f0709ff;
+        public static final int dp_844 = 0x7f070a00;
+        public static final int dp_845 = 0x7f070a01;
+        public static final int dp_846 = 0x7f070a02;
+        public static final int dp_847 = 0x7f070a03;
+        public static final int dp_848 = 0x7f070a04;
+        public static final int dp_849 = 0x7f070a05;
+        public static final int dp_85 = 0x7f070a06;
+        public static final int dp_850 = 0x7f070a07;
+        public static final int dp_851 = 0x7f070a08;
+        public static final int dp_852 = 0x7f070a09;
+        public static final int dp_853 = 0x7f070a0a;
+        public static final int dp_854 = 0x7f070a0b;
+        public static final int dp_855 = 0x7f070a0c;
+        public static final int dp_856 = 0x7f070a0d;
+        public static final int dp_857 = 0x7f070a0e;
+        public static final int dp_858 = 0x7f070a0f;
+        public static final int dp_859 = 0x7f070a10;
+        public static final int dp_86 = 0x7f070a11;
+        public static final int dp_860 = 0x7f070a12;
+        public static final int dp_861 = 0x7f070a13;
+        public static final int dp_862 = 0x7f070a14;
+        public static final int dp_863 = 0x7f070a15;
+        public static final int dp_864 = 0x7f070a16;
+        public static final int dp_865 = 0x7f070a17;
+        public static final int dp_866 = 0x7f070a18;
+        public static final int dp_867 = 0x7f070a19;
+        public static final int dp_868 = 0x7f070a1a;
+        public static final int dp_869 = 0x7f070a1b;
+        public static final int dp_87 = 0x7f070a1c;
+        public static final int dp_870 = 0x7f070a1d;
+        public static final int dp_871 = 0x7f070a1e;
+        public static final int dp_872 = 0x7f070a1f;
+        public static final int dp_873 = 0x7f070a20;
+        public static final int dp_874 = 0x7f070a21;
+        public static final int dp_875 = 0x7f070a22;
+        public static final int dp_876 = 0x7f070a23;
+        public static final int dp_877 = 0x7f070a24;
+        public static final int dp_878 = 0x7f070a25;
+        public static final int dp_879 = 0x7f070a26;
+        public static final int dp_88 = 0x7f070a27;
+        public static final int dp_880 = 0x7f070a28;
+        public static final int dp_881 = 0x7f070a29;
+        public static final int dp_882 = 0x7f070a2a;
+        public static final int dp_883 = 0x7f070a2b;
+        public static final int dp_884 = 0x7f070a2c;
+        public static final int dp_885 = 0x7f070a2d;
+        public static final int dp_886 = 0x7f070a2e;
+        public static final int dp_887 = 0x7f070a2f;
+        public static final int dp_888 = 0x7f070a30;
+        public static final int dp_889 = 0x7f070a31;
+        public static final int dp_89 = 0x7f070a32;
+        public static final int dp_890 = 0x7f070a33;
+        public static final int dp_891 = 0x7f070a34;
+        public static final int dp_892 = 0x7f070a35;
+        public static final int dp_893 = 0x7f070a36;
+        public static final int dp_894 = 0x7f070a37;
+        public static final int dp_895 = 0x7f070a38;
+        public static final int dp_896 = 0x7f070a39;
+        public static final int dp_897 = 0x7f070a3a;
+        public static final int dp_898 = 0x7f070a3b;
+        public static final int dp_899 = 0x7f070a3c;
+        public static final int dp_9 = 0x7f070a3d;
+        public static final int dp_90 = 0x7f070a3e;
+        public static final int dp_900 = 0x7f070a3f;
+        public static final int dp_901 = 0x7f070a40;
+        public static final int dp_902 = 0x7f070a41;
+        public static final int dp_903 = 0x7f070a42;
+        public static final int dp_904 = 0x7f070a43;
+        public static final int dp_905 = 0x7f070a44;
+        public static final int dp_906 = 0x7f070a45;
+        public static final int dp_907 = 0x7f070a46;
+        public static final int dp_908 = 0x7f070a47;
+        public static final int dp_909 = 0x7f070a48;
+        public static final int dp_91 = 0x7f070a49;
+        public static final int dp_910 = 0x7f070a4a;
+        public static final int dp_911 = 0x7f070a4b;
+        public static final int dp_912 = 0x7f070a4c;
+        public static final int dp_913 = 0x7f070a4d;
+        public static final int dp_914 = 0x7f070a4e;
+        public static final int dp_915 = 0x7f070a4f;
+        public static final int dp_916 = 0x7f070a50;
+        public static final int dp_917 = 0x7f070a51;
+        public static final int dp_918 = 0x7f070a52;
+        public static final int dp_919 = 0x7f070a53;
+        public static final int dp_92 = 0x7f070a54;
+        public static final int dp_920 = 0x7f070a55;
+        public static final int dp_921 = 0x7f070a56;
+        public static final int dp_922 = 0x7f070a57;
+        public static final int dp_923 = 0x7f070a58;
+        public static final int dp_924 = 0x7f070a59;
+        public static final int dp_925 = 0x7f070a5a;
+        public static final int dp_926 = 0x7f070a5b;
+        public static final int dp_927 = 0x7f070a5c;
+        public static final int dp_928 = 0x7f070a5d;
+        public static final int dp_929 = 0x7f070a5e;
+        public static final int dp_93 = 0x7f070a5f;
+        public static final int dp_930 = 0x7f070a60;
+        public static final int dp_931 = 0x7f070a61;
+        public static final int dp_932 = 0x7f070a62;
+        public static final int dp_933 = 0x7f070a63;
+        public static final int dp_934 = 0x7f070a64;
+        public static final int dp_935 = 0x7f070a65;
+        public static final int dp_936 = 0x7f070a66;
+        public static final int dp_937 = 0x7f070a67;
+        public static final int dp_938 = 0x7f070a68;
+        public static final int dp_939 = 0x7f070a69;
+        public static final int dp_94 = 0x7f070a6a;
+        public static final int dp_940 = 0x7f070a6b;
+        public static final int dp_941 = 0x7f070a6c;
+        public static final int dp_942 = 0x7f070a6d;
+        public static final int dp_943 = 0x7f070a6e;
+        public static final int dp_944 = 0x7f070a6f;
+        public static final int dp_945 = 0x7f070a70;
+        public static final int dp_946 = 0x7f070a71;
+        public static final int dp_947 = 0x7f070a72;
+        public static final int dp_948 = 0x7f070a73;
+        public static final int dp_949 = 0x7f070a74;
+        public static final int dp_95 = 0x7f070a75;
+        public static final int dp_950 = 0x7f070a76;
+        public static final int dp_951 = 0x7f070a77;
+        public static final int dp_952 = 0x7f070a78;
+        public static final int dp_953 = 0x7f070a79;
+        public static final int dp_954 = 0x7f070a7a;
+        public static final int dp_955 = 0x7f070a7b;
+        public static final int dp_956 = 0x7f070a7c;
+        public static final int dp_957 = 0x7f070a7d;
+        public static final int dp_958 = 0x7f070a7e;
+        public static final int dp_959 = 0x7f070a7f;
+        public static final int dp_96 = 0x7f070a80;
+        public static final int dp_960 = 0x7f070a81;
+        public static final int dp_961 = 0x7f070a82;
+        public static final int dp_962 = 0x7f070a83;
+        public static final int dp_963 = 0x7f070a84;
+        public static final int dp_964 = 0x7f070a85;
+        public static final int dp_965 = 0x7f070a86;
+        public static final int dp_966 = 0x7f070a87;
+        public static final int dp_967 = 0x7f070a88;
+        public static final int dp_968 = 0x7f070a89;
+        public static final int dp_969 = 0x7f070a8a;
+        public static final int dp_97 = 0x7f070a8b;
+        public static final int dp_970 = 0x7f070a8c;
+        public static final int dp_971 = 0x7f070a8d;
+        public static final int dp_972 = 0x7f070a8e;
+        public static final int dp_973 = 0x7f070a8f;
+        public static final int dp_974 = 0x7f070a90;
+        public static final int dp_975 = 0x7f070a91;
+        public static final int dp_976 = 0x7f070a92;
+        public static final int dp_977 = 0x7f070a93;
+        public static final int dp_978 = 0x7f070a94;
+        public static final int dp_979 = 0x7f070a95;
+        public static final int dp_98 = 0x7f070a96;
+        public static final int dp_980 = 0x7f070a97;
+        public static final int dp_981 = 0x7f070a98;
+        public static final int dp_982 = 0x7f070a99;
+        public static final int dp_983 = 0x7f070a9a;
+        public static final int dp_984 = 0x7f070a9b;
+        public static final int dp_985 = 0x7f070a9c;
+        public static final int dp_986 = 0x7f070a9d;
+        public static final int dp_987 = 0x7f070a9e;
+        public static final int dp_988 = 0x7f070a9f;
+        public static final int dp_989 = 0x7f070aa0;
+        public static final int dp_99 = 0x7f070aa1;
+        public static final int dp_990 = 0x7f070aa2;
+        public static final int dp_991 = 0x7f070aa3;
+        public static final int dp_992 = 0x7f070aa4;
+        public static final int dp_993 = 0x7f070aa5;
+        public static final int dp_994 = 0x7f070aa6;
+        public static final int dp_995 = 0x7f070aa7;
+        public static final int dp_996 = 0x7f070aa8;
+        public static final int dp_997 = 0x7f070aa9;
+        public static final int dp_998 = 0x7f070aaa;
+        public static final int dp_999 = 0x7f070aab;
+        public static final int fastscroll_default_thickness = 0x7f070aac;
+        public static final int fastscroll_margin = 0x7f070aad;
+        public static final int fastscroll_minimum_range = 0x7f070aae;
+        public static final int highlight_alpha_material_colored = 0x7f070aaf;
+        public static final int highlight_alpha_material_dark = 0x7f070ab0;
+        public static final int highlight_alpha_material_light = 0x7f070ab1;
+        public static final int hint_alpha_material_dark = 0x7f070ab2;
+        public static final int hint_alpha_material_light = 0x7f070ab3;
+        public static final int hint_pressed_alpha_material_dark = 0x7f070ab4;
+        public static final int hint_pressed_alpha_material_light = 0x7f070ab5;
+        public static final int item_touch_helper_max_drag_scroll_per_frame = 0x7f070ab6;
+        public static final int item_touch_helper_swipe_escape_max_velocity = 0x7f070ab7;
+        public static final int item_touch_helper_swipe_escape_velocity = 0x7f070ab8;
+        public static final int material_emphasis_disabled = 0x7f070ab9;
+        public static final int material_emphasis_high_type = 0x7f070aba;
+        public static final int material_emphasis_medium = 0x7f070abb;
+        public static final int material_text_view_test_line_height = 0x7f070abc;
+        public static final int material_text_view_test_line_height_override = 0x7f070abd;
+        public static final int mtrl_alert_dialog_background_inset_bottom = 0x7f070abe;
+        public static final int mtrl_alert_dialog_background_inset_end = 0x7f070abf;
+        public static final int mtrl_alert_dialog_background_inset_start = 0x7f070ac0;
+        public static final int mtrl_alert_dialog_background_inset_top = 0x7f070ac1;
+        public static final int mtrl_alert_dialog_picker_background_inset = 0x7f070ac2;
+        public static final int mtrl_badge_horizontal_edge_offset = 0x7f070ac3;
+        public static final int mtrl_badge_long_text_horizontal_padding = 0x7f070ac4;
+        public static final int mtrl_badge_radius = 0x7f070ac5;
+        public static final int mtrl_badge_text_horizontal_edge_offset = 0x7f070ac6;
+        public static final int mtrl_badge_text_size = 0x7f070ac7;
+        public static final int mtrl_badge_with_text_radius = 0x7f070ac8;
+        public static final int mtrl_bottomappbar_fabOffsetEndMode = 0x7f070ac9;
+        public static final int mtrl_bottomappbar_fab_bottom_margin = 0x7f070aca;
+        public static final int mtrl_bottomappbar_fab_cradle_margin = 0x7f070acb;
+        public static final int mtrl_bottomappbar_fab_cradle_rounded_corner_radius = 0x7f070acc;
+        public static final int mtrl_bottomappbar_fab_cradle_vertical_offset = 0x7f070acd;
+        public static final int mtrl_bottomappbar_height = 0x7f070ace;
+        public static final int mtrl_btn_corner_radius = 0x7f070acf;
+        public static final int mtrl_btn_dialog_btn_min_width = 0x7f070ad0;
+        public static final int mtrl_btn_disabled_elevation = 0x7f070ad1;
+        public static final int mtrl_btn_disabled_z = 0x7f070ad2;
+        public static final int mtrl_btn_elevation = 0x7f070ad3;
+        public static final int mtrl_btn_focused_z = 0x7f070ad4;
+        public static final int mtrl_btn_hovered_z = 0x7f070ad5;
+        public static final int mtrl_btn_icon_btn_padding_left = 0x7f070ad6;
+        public static final int mtrl_btn_icon_padding = 0x7f070ad7;
+        public static final int mtrl_btn_inset = 0x7f070ad8;
+        public static final int mtrl_btn_letter_spacing = 0x7f070ad9;
+        public static final int mtrl_btn_padding_bottom = 0x7f070ada;
+        public static final int mtrl_btn_padding_left = 0x7f070adb;
+        public static final int mtrl_btn_padding_right = 0x7f070adc;
+        public static final int mtrl_btn_padding_top = 0x7f070add;
+        public static final int mtrl_btn_pressed_z = 0x7f070ade;
+        public static final int mtrl_btn_stroke_size = 0x7f070adf;
+        public static final int mtrl_btn_text_btn_icon_padding = 0x7f070ae0;
+        public static final int mtrl_btn_text_btn_padding_left = 0x7f070ae1;
+        public static final int mtrl_btn_text_btn_padding_right = 0x7f070ae2;
+        public static final int mtrl_btn_text_size = 0x7f070ae3;
+        public static final int mtrl_btn_z = 0x7f070ae4;
+        public static final int mtrl_calendar_action_height = 0x7f070ae5;
+        public static final int mtrl_calendar_action_padding = 0x7f070ae6;
+        public static final int mtrl_calendar_bottom_padding = 0x7f070ae7;
+        public static final int mtrl_calendar_content_padding = 0x7f070ae8;
+        public static final int mtrl_calendar_day_corner = 0x7f070ae9;
+        public static final int mtrl_calendar_day_height = 0x7f070aea;
+        public static final int mtrl_calendar_day_horizontal_padding = 0x7f070aeb;
+        public static final int mtrl_calendar_day_today_stroke = 0x7f070aec;
+        public static final int mtrl_calendar_day_vertical_padding = 0x7f070aed;
+        public static final int mtrl_calendar_day_width = 0x7f070aee;
+        public static final int mtrl_calendar_days_of_week_height = 0x7f070aef;
+        public static final int mtrl_calendar_dialog_background_inset = 0x7f070af0;
+        public static final int mtrl_calendar_header_content_padding = 0x7f070af1;
+        public static final int mtrl_calendar_header_content_padding_fullscreen = 0x7f070af2;
+        public static final int mtrl_calendar_header_divider_thickness = 0x7f070af3;
+        public static final int mtrl_calendar_header_height = 0x7f070af4;
+        public static final int mtrl_calendar_header_height_fullscreen = 0x7f070af5;
+        public static final int mtrl_calendar_header_selection_line_height = 0x7f070af6;
+        public static final int mtrl_calendar_header_text_padding = 0x7f070af7;
+        public static final int mtrl_calendar_header_toggle_margin_bottom = 0x7f070af8;
+        public static final int mtrl_calendar_header_toggle_margin_top = 0x7f070af9;
+        public static final int mtrl_calendar_landscape_header_width = 0x7f070afa;
+        public static final int mtrl_calendar_maximum_default_fullscreen_minor_axis = 0x7f070afb;
+        public static final int mtrl_calendar_month_horizontal_padding = 0x7f070afc;
+        public static final int mtrl_calendar_month_vertical_padding = 0x7f070afd;
+        public static final int mtrl_calendar_navigation_bottom_padding = 0x7f070afe;
+        public static final int mtrl_calendar_navigation_height = 0x7f070aff;
+        public static final int mtrl_calendar_navigation_top_padding = 0x7f070b00;
+        public static final int mtrl_calendar_pre_l_text_clip_padding = 0x7f070b01;
+        public static final int mtrl_calendar_selection_baseline_to_top_fullscreen = 0x7f070b02;
+        public static final int mtrl_calendar_selection_text_baseline_to_bottom = 0x7f070b03;
+        public static final int mtrl_calendar_selection_text_baseline_to_bottom_fullscreen = 0x7f070b04;
+        public static final int mtrl_calendar_selection_text_baseline_to_top = 0x7f070b05;
+        public static final int mtrl_calendar_text_input_padding_top = 0x7f070b06;
+        public static final int mtrl_calendar_title_baseline_to_top = 0x7f070b07;
+        public static final int mtrl_calendar_title_baseline_to_top_fullscreen = 0x7f070b08;
+        public static final int mtrl_calendar_year_corner = 0x7f070b09;
+        public static final int mtrl_calendar_year_height = 0x7f070b0a;
+        public static final int mtrl_calendar_year_horizontal_padding = 0x7f070b0b;
+        public static final int mtrl_calendar_year_vertical_padding = 0x7f070b0c;
+        public static final int mtrl_calendar_year_width = 0x7f070b0d;
+        public static final int mtrl_card_checked_icon_margin = 0x7f070b0e;
+        public static final int mtrl_card_checked_icon_size = 0x7f070b0f;
+        public static final int mtrl_card_corner_radius = 0x7f070b10;
+        public static final int mtrl_card_dragged_z = 0x7f070b11;
+        public static final int mtrl_card_elevation = 0x7f070b12;
+        public static final int mtrl_card_spacing = 0x7f070b13;
+        public static final int mtrl_chip_pressed_translation_z = 0x7f070b14;
+        public static final int mtrl_chip_text_size = 0x7f070b15;
+        public static final int mtrl_edittext_rectangle_top_offset = 0x7f070b16;
+        public static final int mtrl_exposed_dropdown_menu_popup_elevation = 0x7f070b17;
+        public static final int mtrl_exposed_dropdown_menu_popup_vertical_offset = 0x7f070b18;
+        public static final int mtrl_exposed_dropdown_menu_popup_vertical_padding = 0x7f070b19;
+        public static final int mtrl_extended_fab_bottom_padding = 0x7f070b1a;
+        public static final int mtrl_extended_fab_corner_radius = 0x7f070b1b;
+        public static final int mtrl_extended_fab_disabled_elevation = 0x7f070b1c;
+        public static final int mtrl_extended_fab_disabled_translation_z = 0x7f070b1d;
+        public static final int mtrl_extended_fab_elevation = 0x7f070b1e;
+        public static final int mtrl_extended_fab_end_padding = 0x7f070b1f;
+        public static final int mtrl_extended_fab_end_padding_icon = 0x7f070b20;
+        public static final int mtrl_extended_fab_icon_size = 0x7f070b21;
+        public static final int mtrl_extended_fab_icon_text_spacing = 0x7f070b22;
+        public static final int mtrl_extended_fab_min_height = 0x7f070b23;
+        public static final int mtrl_extended_fab_min_width = 0x7f070b24;
+        public static final int mtrl_extended_fab_start_padding = 0x7f070b25;
+        public static final int mtrl_extended_fab_start_padding_icon = 0x7f070b26;
+        public static final int mtrl_extended_fab_top_padding = 0x7f070b27;
+        public static final int mtrl_extended_fab_translation_z_base = 0x7f070b28;
+        public static final int mtrl_extended_fab_translation_z_hovered_focused = 0x7f070b29;
+        public static final int mtrl_extended_fab_translation_z_pressed = 0x7f070b2a;
+        public static final int mtrl_fab_elevation = 0x7f070b2b;
+        public static final int mtrl_fab_min_touch_target = 0x7f070b2c;
+        public static final int mtrl_fab_translation_z_hovered_focused = 0x7f070b2d;
+        public static final int mtrl_fab_translation_z_pressed = 0x7f070b2e;
+        public static final int mtrl_high_ripple_default_alpha = 0x7f070b2f;
+        public static final int mtrl_high_ripple_focused_alpha = 0x7f070b30;
+        public static final int mtrl_high_ripple_hovered_alpha = 0x7f070b31;
+        public static final int mtrl_high_ripple_pressed_alpha = 0x7f070b32;
+        public static final int mtrl_large_touch_target = 0x7f070b33;
+        public static final int mtrl_low_ripple_default_alpha = 0x7f070b34;
+        public static final int mtrl_low_ripple_focused_alpha = 0x7f070b35;
+        public static final int mtrl_low_ripple_hovered_alpha = 0x7f070b36;
+        public static final int mtrl_low_ripple_pressed_alpha = 0x7f070b37;
+        public static final int mtrl_min_touch_target_size = 0x7f070b38;
+        public static final int mtrl_navigation_elevation = 0x7f070b39;
+        public static final int mtrl_navigation_item_horizontal_padding = 0x7f070b3a;
+        public static final int mtrl_navigation_item_icon_padding = 0x7f070b3b;
+        public static final int mtrl_navigation_item_icon_size = 0x7f070b3c;
+        public static final int mtrl_navigation_item_shape_horizontal_margin = 0x7f070b3d;
+        public static final int mtrl_navigation_item_shape_vertical_margin = 0x7f070b3e;
+        public static final int mtrl_shape_corner_size_large_component = 0x7f070b3f;
+        public static final int mtrl_shape_corner_size_medium_component = 0x7f070b40;
+        public static final int mtrl_shape_corner_size_small_component = 0x7f070b41;
+        public static final int mtrl_slider_halo_radius = 0x7f070b42;
+        public static final int mtrl_slider_label_padding = 0x7f070b43;
+        public static final int mtrl_slider_label_radius = 0x7f070b44;
+        public static final int mtrl_slider_label_square_side = 0x7f070b45;
+        public static final int mtrl_slider_thumb_elevation = 0x7f070b46;
+        public static final int mtrl_slider_thumb_radius = 0x7f070b47;
+        public static final int mtrl_slider_track_height = 0x7f070b48;
+        public static final int mtrl_slider_track_side_padding = 0x7f070b49;
+        public static final int mtrl_slider_track_top = 0x7f070b4a;
+        public static final int mtrl_slider_widget_height = 0x7f070b4b;
+        public static final int mtrl_snackbar_action_text_color_alpha = 0x7f070b4c;
+        public static final int mtrl_snackbar_background_corner_radius = 0x7f070b4d;
+        public static final int mtrl_snackbar_background_overlay_color_alpha = 0x7f070b4e;
+        public static final int mtrl_snackbar_margin = 0x7f070b4f;
+        public static final int mtrl_switch_thumb_elevation = 0x7f070b50;
+        public static final int mtrl_textinput_box_corner_radius_medium = 0x7f070b51;
+        public static final int mtrl_textinput_box_corner_radius_small = 0x7f070b52;
+        public static final int mtrl_textinput_box_label_cutout_padding = 0x7f070b53;
+        public static final int mtrl_textinput_box_stroke_width_default = 0x7f070b54;
+        public static final int mtrl_textinput_box_stroke_width_focused = 0x7f070b55;
+        public static final int mtrl_textinput_counter_margin_start = 0x7f070b56;
+        public static final int mtrl_textinput_end_icon_margin_start = 0x7f070b57;
+        public static final int mtrl_textinput_outline_box_expanded_padding = 0x7f070b58;
+        public static final int mtrl_textinput_start_icon_margin_end = 0x7f070b59;
+        public static final int mtrl_toolbar_default_height = 0x7f070b5a;
+        public static final int mtrl_tooltip_arrowSize = 0x7f070b5b;
+        public static final int mtrl_tooltip_cornerSize = 0x7f070b5c;
+        public static final int mtrl_tooltip_minHeight = 0x7f070b5d;
+        public static final int mtrl_tooltip_minWidth = 0x7f070b5e;
+        public static final int mtrl_tooltip_padding = 0x7f070b5f;
+        public static final int mtrl_transition_shared_axis_slide_distance = 0x7f070b60;
+        public static final int notification_action_icon_size = 0x7f070b61;
+        public static final int notification_action_text_size = 0x7f070b62;
+        public static final int notification_big_circle_margin = 0x7f070b63;
+        public static final int notification_content_margin_start = 0x7f070b64;
+        public static final int notification_large_icon_height = 0x7f070b65;
+        public static final int notification_large_icon_width = 0x7f070b66;
+        public static final int notification_main_column_padding_top = 0x7f070b67;
+        public static final int notification_media_narrow_margin = 0x7f070b68;
+        public static final int notification_right_icon_size = 0x7f070b69;
+        public static final int notification_right_side_padding_top = 0x7f070b6a;
+        public static final int notification_small_icon_background_padding = 0x7f070b6b;
+        public static final int notification_small_icon_size_as_large = 0x7f070b6c;
+        public static final int notification_subtext_size = 0x7f070b6d;
+        public static final int notification_top_pad = 0x7f070b6e;
+        public static final int notification_top_pad_large_text = 0x7f070b6f;
+        public static final int sp_1 = 0x7f070b70;
+        public static final int sp_10 = 0x7f070b71;
+        public static final int sp_100 = 0x7f070b72;
+        public static final int sp_101 = 0x7f070b73;
+        public static final int sp_102 = 0x7f070b74;
+        public static final int sp_103 = 0x7f070b75;
+        public static final int sp_104 = 0x7f070b76;
+        public static final int sp_105 = 0x7f070b77;
+        public static final int sp_106 = 0x7f070b78;
+        public static final int sp_107 = 0x7f070b79;
+        public static final int sp_108 = 0x7f070b7a;
+        public static final int sp_109 = 0x7f070b7b;
+        public static final int sp_11 = 0x7f070b7c;
+        public static final int sp_110 = 0x7f070b7d;
+        public static final int sp_111 = 0x7f070b7e;
+        public static final int sp_112 = 0x7f070b7f;
+        public static final int sp_113 = 0x7f070b80;
+        public static final int sp_114 = 0x7f070b81;
+        public static final int sp_115 = 0x7f070b82;
+        public static final int sp_116 = 0x7f070b83;
+        public static final int sp_117 = 0x7f070b84;
+        public static final int sp_118 = 0x7f070b85;
+        public static final int sp_119 = 0x7f070b86;
+        public static final int sp_12 = 0x7f070b87;
+        public static final int sp_120 = 0x7f070b88;
+        public static final int sp_121 = 0x7f070b89;
+        public static final int sp_122 = 0x7f070b8a;
+        public static final int sp_123 = 0x7f070b8b;
+        public static final int sp_124 = 0x7f070b8c;
+        public static final int sp_125 = 0x7f070b8d;
+        public static final int sp_126 = 0x7f070b8e;
+        public static final int sp_127 = 0x7f070b8f;
+        public static final int sp_128 = 0x7f070b90;
+        public static final int sp_129 = 0x7f070b91;
+        public static final int sp_13 = 0x7f070b92;
+        public static final int sp_130 = 0x7f070b93;
+        public static final int sp_131 = 0x7f070b94;
+        public static final int sp_132 = 0x7f070b95;
+        public static final int sp_133 = 0x7f070b96;
+        public static final int sp_134 = 0x7f070b97;
+        public static final int sp_135 = 0x7f070b98;
+        public static final int sp_136 = 0x7f070b99;
+        public static final int sp_137 = 0x7f070b9a;
+        public static final int sp_138 = 0x7f070b9b;
+        public static final int sp_139 = 0x7f070b9c;
+        public static final int sp_14 = 0x7f070b9d;
+        public static final int sp_140 = 0x7f070b9e;
+        public static final int sp_141 = 0x7f070b9f;
+        public static final int sp_142 = 0x7f070ba0;
+        public static final int sp_143 = 0x7f070ba1;
+        public static final int sp_144 = 0x7f070ba2;
+        public static final int sp_145 = 0x7f070ba3;
+        public static final int sp_146 = 0x7f070ba4;
+        public static final int sp_147 = 0x7f070ba5;
+        public static final int sp_148 = 0x7f070ba6;
+        public static final int sp_149 = 0x7f070ba7;
+        public static final int sp_15 = 0x7f070ba8;
+        public static final int sp_150 = 0x7f070ba9;
+        public static final int sp_151 = 0x7f070baa;
+        public static final int sp_152 = 0x7f070bab;
+        public static final int sp_153 = 0x7f070bac;
+        public static final int sp_154 = 0x7f070bad;
+        public static final int sp_155 = 0x7f070bae;
+        public static final int sp_156 = 0x7f070baf;
+        public static final int sp_157 = 0x7f070bb0;
+        public static final int sp_158 = 0x7f070bb1;
+        public static final int sp_159 = 0x7f070bb2;
+        public static final int sp_16 = 0x7f070bb3;
+        public static final int sp_160 = 0x7f070bb4;
+        public static final int sp_161 = 0x7f070bb5;
+        public static final int sp_162 = 0x7f070bb6;
+        public static final int sp_163 = 0x7f070bb7;
+        public static final int sp_164 = 0x7f070bb8;
+        public static final int sp_165 = 0x7f070bb9;
+        public static final int sp_166 = 0x7f070bba;
+        public static final int sp_167 = 0x7f070bbb;
+        public static final int sp_168 = 0x7f070bbc;
+        public static final int sp_169 = 0x7f070bbd;
+        public static final int sp_17 = 0x7f070bbe;
+        public static final int sp_170 = 0x7f070bbf;
+        public static final int sp_171 = 0x7f070bc0;
+        public static final int sp_172 = 0x7f070bc1;
+        public static final int sp_173 = 0x7f070bc2;
+        public static final int sp_174 = 0x7f070bc3;
+        public static final int sp_175 = 0x7f070bc4;
+        public static final int sp_176 = 0x7f070bc5;
+        public static final int sp_177 = 0x7f070bc6;
+        public static final int sp_178 = 0x7f070bc7;
+        public static final int sp_179 = 0x7f070bc8;
+        public static final int sp_18 = 0x7f070bc9;
+        public static final int sp_180 = 0x7f070bca;
+        public static final int sp_181 = 0x7f070bcb;
+        public static final int sp_182 = 0x7f070bcc;
+        public static final int sp_183 = 0x7f070bcd;
+        public static final int sp_184 = 0x7f070bce;
+        public static final int sp_185 = 0x7f070bcf;
+        public static final int sp_186 = 0x7f070bd0;
+        public static final int sp_187 = 0x7f070bd1;
+        public static final int sp_188 = 0x7f070bd2;
+        public static final int sp_189 = 0x7f070bd3;
+        public static final int sp_19 = 0x7f070bd4;
+        public static final int sp_190 = 0x7f070bd5;
+        public static final int sp_191 = 0x7f070bd6;
+        public static final int sp_192 = 0x7f070bd7;
+        public static final int sp_193 = 0x7f070bd8;
+        public static final int sp_194 = 0x7f070bd9;
+        public static final int sp_195 = 0x7f070bda;
+        public static final int sp_196 = 0x7f070bdb;
+        public static final int sp_197 = 0x7f070bdc;
+        public static final int sp_198 = 0x7f070bdd;
+        public static final int sp_199 = 0x7f070bde;
+        public static final int sp_2 = 0x7f070bdf;
+        public static final int sp_20 = 0x7f070be0;
+        public static final int sp_200 = 0x7f070be1;
+        public static final int sp_21 = 0x7f070be2;
+        public static final int sp_22 = 0x7f070be3;
+        public static final int sp_23 = 0x7f070be4;
+        public static final int sp_24 = 0x7f070be5;
+        public static final int sp_25 = 0x7f070be6;
+        public static final int sp_26 = 0x7f070be7;
+        public static final int sp_27 = 0x7f070be8;
+        public static final int sp_28 = 0x7f070be9;
+        public static final int sp_29 = 0x7f070bea;
+        public static final int sp_3 = 0x7f070beb;
+        public static final int sp_30 = 0x7f070bec;
+        public static final int sp_31 = 0x7f070bed;
+        public static final int sp_32 = 0x7f070bee;
+        public static final int sp_33 = 0x7f070bef;
+        public static final int sp_34 = 0x7f070bf0;
+        public static final int sp_35 = 0x7f070bf1;
+        public static final int sp_36 = 0x7f070bf2;
+        public static final int sp_37 = 0x7f070bf3;
+        public static final int sp_38 = 0x7f070bf4;
+        public static final int sp_39 = 0x7f070bf5;
+        public static final int sp_4 = 0x7f070bf6;
+        public static final int sp_40 = 0x7f070bf7;
+        public static final int sp_41 = 0x7f070bf8;
+        public static final int sp_42 = 0x7f070bf9;
+        public static final int sp_43 = 0x7f070bfa;
+        public static final int sp_44 = 0x7f070bfb;
+        public static final int sp_45 = 0x7f070bfc;
+        public static final int sp_46 = 0x7f070bfd;
+        public static final int sp_47 = 0x7f070bfe;
+        public static final int sp_48 = 0x7f070bff;
+        public static final int sp_49 = 0x7f070c00;
+        public static final int sp_5 = 0x7f070c01;
+        public static final int sp_50 = 0x7f070c02;
+        public static final int sp_51 = 0x7f070c03;
+        public static final int sp_52 = 0x7f070c04;
+        public static final int sp_53 = 0x7f070c05;
+        public static final int sp_54 = 0x7f070c06;
+        public static final int sp_55 = 0x7f070c07;
+        public static final int sp_56 = 0x7f070c08;
+        public static final int sp_57 = 0x7f070c09;
+        public static final int sp_58 = 0x7f070c0a;
+        public static final int sp_59 = 0x7f070c0b;
+        public static final int sp_6 = 0x7f070c0c;
+        public static final int sp_60 = 0x7f070c0d;
+        public static final int sp_61 = 0x7f070c0e;
+        public static final int sp_62 = 0x7f070c0f;
+        public static final int sp_63 = 0x7f070c10;
+        public static final int sp_64 = 0x7f070c11;
+        public static final int sp_65 = 0x7f070c12;
+        public static final int sp_66 = 0x7f070c13;
+        public static final int sp_67 = 0x7f070c14;
+        public static final int sp_68 = 0x7f070c15;
+        public static final int sp_69 = 0x7f070c16;
+        public static final int sp_7 = 0x7f070c17;
+        public static final int sp_70 = 0x7f070c18;
+        public static final int sp_71 = 0x7f070c19;
+        public static final int sp_72 = 0x7f070c1a;
+        public static final int sp_73 = 0x7f070c1b;
+        public static final int sp_74 = 0x7f070c1c;
+        public static final int sp_75 = 0x7f070c1d;
+        public static final int sp_76 = 0x7f070c1e;
+        public static final int sp_77 = 0x7f070c1f;
+        public static final int sp_78 = 0x7f070c20;
+        public static final int sp_79 = 0x7f070c21;
+        public static final int sp_8 = 0x7f070c22;
+        public static final int sp_80 = 0x7f070c23;
+        public static final int sp_81 = 0x7f070c24;
+        public static final int sp_82 = 0x7f070c25;
+        public static final int sp_83 = 0x7f070c26;
+        public static final int sp_84 = 0x7f070c27;
+        public static final int sp_85 = 0x7f070c28;
+        public static final int sp_86 = 0x7f070c29;
+        public static final int sp_87 = 0x7f070c2a;
+        public static final int sp_88 = 0x7f070c2b;
+        public static final int sp_89 = 0x7f070c2c;
+        public static final int sp_9 = 0x7f070c2d;
+        public static final int sp_90 = 0x7f070c2e;
+        public static final int sp_91 = 0x7f070c2f;
+        public static final int sp_92 = 0x7f070c30;
+        public static final int sp_93 = 0x7f070c31;
+        public static final int sp_94 = 0x7f070c32;
+        public static final int sp_95 = 0x7f070c33;
+        public static final int sp_96 = 0x7f070c34;
+        public static final int sp_97 = 0x7f070c35;
+        public static final int sp_98 = 0x7f070c36;
+        public static final int sp_99 = 0x7f070c37;
+        public static final int test_mtrl_calendar_day_cornerSize = 0x7f070c3c;
+        public static final int tooltip_corner_radius = 0x7f070c6f;
+        public static final int tooltip_horizontal_padding = 0x7f070c70;
+        public static final int tooltip_margin = 0x7f070c71;
+        public static final int tooltip_precise_anchor_extra_offset = 0x7f070c72;
+        public static final int tooltip_precise_anchor_threshold = 0x7f070c73;
+        public static final int tooltip_vertical_padding = 0x7f070c74;
+        public static final int tooltip_y_offset_non_touch = 0x7f070c75;
+        public static final int tooltip_y_offset_touch = 0x7f070c76;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_0 = 0x7f070089;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1 = 0x7f07008a;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_10 = 0x7f07008b;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_100 = 0x7f07008c;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1000 = 0x7f07008d;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1001 = 0x7f07008e;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1002 = 0x7f07008f;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1003 = 0x7f070090;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1004 = 0x7f070091;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1005 = 0x7f070092;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1006 = 0x7f070093;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1007 = 0x7f070094;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1008 = 0x7f070095;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1009 = 0x7f070096;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_101 = 0x7f070097;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1010 = 0x7f070098;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1011 = 0x7f070099;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1012 = 0x7f07009a;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1013 = 0x7f07009b;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1014 = 0x7f07009c;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1015 = 0x7f07009d;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1016 = 0x7f07009e;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1017 = 0x7f07009f;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1018 = 0x7f0700a0;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1019 = 0x7f0700a1;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_102 = 0x7f0700a2;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1020 = 0x7f0700a3;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1021 = 0x7f0700a4;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1022 = 0x7f0700a5;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1023 = 0x7f0700a6;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1024 = 0x7f0700a7;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1025 = 0x7f0700a8;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1026 = 0x7f0700a9;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1027 = 0x7f0700aa;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1028 = 0x7f0700ab;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1029 = 0x7f0700ac;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_103 = 0x7f0700ad;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1030 = 0x7f0700ae;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1031 = 0x7f0700af;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1032 = 0x7f0700b0;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1033 = 0x7f0700b1;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1034 = 0x7f0700b2;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1035 = 0x7f0700b3;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1036 = 0x7f0700b4;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1037 = 0x7f0700b5;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1038 = 0x7f0700b6;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1039 = 0x7f0700b7;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_104 = 0x7f0700b8;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1040 = 0x7f0700b9;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1041 = 0x7f0700ba;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1042 = 0x7f0700bb;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1043 = 0x7f0700bc;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1044 = 0x7f0700bd;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1045 = 0x7f0700be;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1046 = 0x7f0700bf;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1047 = 0x7f0700c0;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1048 = 0x7f0700c1;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1049 = 0x7f0700c2;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_105 = 0x7f0700c3;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1050 = 0x7f0700c4;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1051 = 0x7f0700c5;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1052 = 0x7f0700c6;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1053 = 0x7f0700c7;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1054 = 0x7f0700c8;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1055 = 0x7f0700c9;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1056 = 0x7f0700ca;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1057 = 0x7f0700cb;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1058 = 0x7f0700cc;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1059 = 0x7f0700cd;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_106 = 0x7f0700ce;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1060 = 0x7f0700cf;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1061 = 0x7f0700d0;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1062 = 0x7f0700d1;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1063 = 0x7f0700d2;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1064 = 0x7f0700d3;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1065 = 0x7f0700d4;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1066 = 0x7f0700d5;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1067 = 0x7f0700d6;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1068 = 0x7f0700d7;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1069 = 0x7f0700d8;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_107 = 0x7f0700d9;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1070 = 0x7f0700da;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1071 = 0x7f0700db;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1072 = 0x7f0700dc;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1073 = 0x7f0700dd;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1074 = 0x7f0700de;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1075 = 0x7f0700df;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1076 = 0x7f0700e0;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1077 = 0x7f0700e1;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1078 = 0x7f0700e2;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1079 = 0x7f0700e3;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_108 = 0x7f0700e4;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1080 = 0x7f0700e5;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1081 = 0x7f0700e6;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1082 = 0x7f0700e7;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1083 = 0x7f0700e8;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1084 = 0x7f0700e9;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1085 = 0x7f0700ea;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1086 = 0x7f0700eb;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1087 = 0x7f0700ec;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1088 = 0x7f0700ed;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1089 = 0x7f0700ee;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_109 = 0x7f0700ef;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1090 = 0x7f0700f0;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1091 = 0x7f0700f1;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1092 = 0x7f0700f2;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1093 = 0x7f0700f3;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1094 = 0x7f0700f4;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1095 = 0x7f0700f5;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1096 = 0x7f0700f6;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1097 = 0x7f0700f7;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1098 = 0x7f0700f8;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1099 = 0x7f0700f9;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_11 = 0x7f0700fa;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_110 = 0x7f0700fb;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1100 = 0x7f0700fc;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1101 = 0x7f0700fd;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1102 = 0x7f0700fe;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1103 = 0x7f0700ff;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1104 = 0x7f070100;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1105 = 0x7f070101;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1106 = 0x7f070102;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1107 = 0x7f070103;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1108 = 0x7f070104;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1109 = 0x7f070105;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_111 = 0x7f070106;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1110 = 0x7f070107;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1111 = 0x7f070108;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1112 = 0x7f070109;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1113 = 0x7f07010a;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1114 = 0x7f07010b;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1115 = 0x7f07010c;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1116 = 0x7f07010d;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1117 = 0x7f07010e;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1118 = 0x7f07010f;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1119 = 0x7f070110;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_112 = 0x7f070111;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1120 = 0x7f070112;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1121 = 0x7f070113;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1122 = 0x7f070114;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1123 = 0x7f070115;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1124 = 0x7f070116;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1125 = 0x7f070117;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1126 = 0x7f070118;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1127 = 0x7f070119;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1128 = 0x7f07011a;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1129 = 0x7f07011b;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_113 = 0x7f07011c;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1130 = 0x7f07011d;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1131 = 0x7f07011e;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1132 = 0x7f07011f;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1133 = 0x7f070120;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1134 = 0x7f070121;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1135 = 0x7f070122;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1136 = 0x7f070123;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1137 = 0x7f070124;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1138 = 0x7f070125;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1139 = 0x7f070126;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_114 = 0x7f070127;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1140 = 0x7f070128;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1141 = 0x7f070129;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1142 = 0x7f07012a;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1143 = 0x7f07012b;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1144 = 0x7f07012c;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1145 = 0x7f07012d;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1146 = 0x7f07012e;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1147 = 0x7f07012f;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1148 = 0x7f070130;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1149 = 0x7f070131;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_115 = 0x7f070132;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1150 = 0x7f070133;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1151 = 0x7f070134;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1152 = 0x7f070135;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1153 = 0x7f070136;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1154 = 0x7f070137;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1155 = 0x7f070138;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1156 = 0x7f070139;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1157 = 0x7f07013a;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1158 = 0x7f07013b;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1159 = 0x7f07013c;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_116 = 0x7f07013d;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1160 = 0x7f07013e;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1161 = 0x7f07013f;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1162 = 0x7f070140;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1163 = 0x7f070141;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1164 = 0x7f070142;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1165 = 0x7f070143;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1166 = 0x7f070144;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1167 = 0x7f070145;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1168 = 0x7f070146;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1169 = 0x7f070147;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_117 = 0x7f070148;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1170 = 0x7f070149;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1171 = 0x7f07014a;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1172 = 0x7f07014b;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1173 = 0x7f07014c;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1174 = 0x7f07014d;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1175 = 0x7f07014e;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1176 = 0x7f07014f;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1177 = 0x7f070150;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1178 = 0x7f070151;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1179 = 0x7f070152;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_118 = 0x7f070153;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1180 = 0x7f070154;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1181 = 0x7f070155;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1182 = 0x7f070156;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1183 = 0x7f070157;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1184 = 0x7f070158;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1185 = 0x7f070159;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1186 = 0x7f07015a;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1187 = 0x7f07015b;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1188 = 0x7f07015c;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1189 = 0x7f07015d;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_119 = 0x7f07015e;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1190 = 0x7f07015f;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1191 = 0x7f070160;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1192 = 0x7f070161;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1193 = 0x7f070162;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1194 = 0x7f070163;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1195 = 0x7f070164;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1196 = 0x7f070165;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1197 = 0x7f070166;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1198 = 0x7f070167;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1199 = 0x7f070168;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_12 = 0x7f070169;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_120 = 0x7f07016a;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1200 = 0x7f07016b;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1201 = 0x7f07016c;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1202 = 0x7f07016d;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1203 = 0x7f07016e;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1204 = 0x7f07016f;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1205 = 0x7f070170;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1206 = 0x7f070171;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1207 = 0x7f070172;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1208 = 0x7f070173;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1209 = 0x7f070174;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_121 = 0x7f070175;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1210 = 0x7f070176;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1211 = 0x7f070177;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1212 = 0x7f070178;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1213 = 0x7f070179;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1214 = 0x7f07017a;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1215 = 0x7f07017b;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1216 = 0x7f07017c;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1217 = 0x7f07017d;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1218 = 0x7f07017e;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1219 = 0x7f07017f;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_122 = 0x7f070180;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1220 = 0x7f070181;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1221 = 0x7f070182;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1222 = 0x7f070183;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1223 = 0x7f070184;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1224 = 0x7f070185;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1225 = 0x7f070186;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1226 = 0x7f070187;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1227 = 0x7f070188;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1228 = 0x7f070189;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1229 = 0x7f07018a;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_123 = 0x7f07018b;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1230 = 0x7f07018c;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1231 = 0x7f07018d;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1232 = 0x7f07018e;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1233 = 0x7f07018f;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1234 = 0x7f070190;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1235 = 0x7f070191;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1236 = 0x7f070192;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1237 = 0x7f070193;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1238 = 0x7f070194;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1239 = 0x7f070195;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_124 = 0x7f070196;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1240 = 0x7f070197;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1241 = 0x7f070198;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1242 = 0x7f070199;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1243 = 0x7f07019a;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1244 = 0x7f07019b;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1245 = 0x7f07019c;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1246 = 0x7f07019d;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1247 = 0x7f07019e;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1248 = 0x7f07019f;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1249 = 0x7f0701a0;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_125 = 0x7f0701a1;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1250 = 0x7f0701a2;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1251 = 0x7f0701a3;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1252 = 0x7f0701a4;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1253 = 0x7f0701a5;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1254 = 0x7f0701a6;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1255 = 0x7f0701a7;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1256 = 0x7f0701a8;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1257 = 0x7f0701a9;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1258 = 0x7f0701aa;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1259 = 0x7f0701ab;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_126 = 0x7f0701ac;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1260 = 0x7f0701ad;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1261 = 0x7f0701ae;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1262 = 0x7f0701af;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1263 = 0x7f0701b0;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1264 = 0x7f0701b1;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1265 = 0x7f0701b2;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1266 = 0x7f0701b3;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1267 = 0x7f0701b4;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1268 = 0x7f0701b5;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1269 = 0x7f0701b6;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_127 = 0x7f0701b7;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1270 = 0x7f0701b8;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1271 = 0x7f0701b9;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1272 = 0x7f0701ba;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1273 = 0x7f0701bb;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1274 = 0x7f0701bc;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1275 = 0x7f0701bd;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1276 = 0x7f0701be;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1277 = 0x7f0701bf;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1278 = 0x7f0701c0;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1279 = 0x7f0701c1;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_128 = 0x7f0701c2;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_1280 = 0x7f0701c3;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_129 = 0x7f0701c4;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_13 = 0x7f0701c5;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_130 = 0x7f0701c6;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_131 = 0x7f0701c7;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_132 = 0x7f0701c8;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_133 = 0x7f0701c9;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_134 = 0x7f0701ca;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_135 = 0x7f0701cb;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_136 = 0x7f0701cc;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_137 = 0x7f0701cd;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_138 = 0x7f0701ce;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_139 = 0x7f0701cf;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_14 = 0x7f0701d0;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_140 = 0x7f0701d1;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_141 = 0x7f0701d2;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_142 = 0x7f0701d3;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_143 = 0x7f0701d4;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_144 = 0x7f0701d5;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_145 = 0x7f0701d6;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_146 = 0x7f0701d7;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_147 = 0x7f0701d8;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_148 = 0x7f0701d9;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_149 = 0x7f0701da;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_15 = 0x7f0701db;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_150 = 0x7f0701dc;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_151 = 0x7f0701dd;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_152 = 0x7f0701de;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_153 = 0x7f0701df;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_154 = 0x7f0701e0;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_155 = 0x7f0701e1;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_156 = 0x7f0701e2;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_157 = 0x7f0701e3;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_158 = 0x7f0701e4;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_159 = 0x7f0701e5;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_16 = 0x7f0701e6;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_160 = 0x7f0701e7;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_161 = 0x7f0701e8;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_162 = 0x7f0701e9;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_163 = 0x7f0701ea;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_164 = 0x7f0701eb;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_165 = 0x7f0701ec;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_166 = 0x7f0701ed;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_167 = 0x7f0701ee;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_168 = 0x7f0701ef;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_169 = 0x7f0701f0;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_17 = 0x7f0701f1;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_170 = 0x7f0701f2;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_171 = 0x7f0701f3;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_172 = 0x7f0701f4;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_173 = 0x7f0701f5;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_174 = 0x7f0701f6;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_175 = 0x7f0701f7;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_176 = 0x7f0701f8;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_177 = 0x7f0701f9;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_178 = 0x7f0701fa;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_179 = 0x7f0701fb;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_18 = 0x7f0701fc;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_180 = 0x7f0701fd;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_181 = 0x7f0701fe;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_182 = 0x7f0701ff;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_183 = 0x7f070200;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_184 = 0x7f070201;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_185 = 0x7f070202;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_186 = 0x7f070203;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_187 = 0x7f070204;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_188 = 0x7f070205;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_189 = 0x7f070206;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_19 = 0x7f070207;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_190 = 0x7f070208;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_191 = 0x7f070209;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_192 = 0x7f07020a;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_193 = 0x7f07020b;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_194 = 0x7f07020c;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_195 = 0x7f07020d;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_196 = 0x7f07020e;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_197 = 0x7f07020f;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_198 = 0x7f070210;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_199 = 0x7f070211;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_2 = 0x7f070212;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_20 = 0x7f070213;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_200 = 0x7f070214;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_201 = 0x7f070215;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_202 = 0x7f070216;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_203 = 0x7f070217;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_204 = 0x7f070218;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_205 = 0x7f070219;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_206 = 0x7f07021a;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_207 = 0x7f07021b;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_208 = 0x7f07021c;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_209 = 0x7f07021d;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_21 = 0x7f07021e;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_210 = 0x7f07021f;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_211 = 0x7f070220;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_212 = 0x7f070221;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_213 = 0x7f070222;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_214 = 0x7f070223;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_215 = 0x7f070224;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_216 = 0x7f070225;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_217 = 0x7f070226;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_218 = 0x7f070227;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_219 = 0x7f070228;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_22 = 0x7f070229;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_220 = 0x7f07022a;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_221 = 0x7f07022b;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_222 = 0x7f07022c;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_223 = 0x7f07022d;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_224 = 0x7f07022e;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_225 = 0x7f07022f;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_226 = 0x7f070230;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_227 = 0x7f070231;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_228 = 0x7f070232;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_229 = 0x7f070233;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_23 = 0x7f070234;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_230 = 0x7f070235;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_231 = 0x7f070236;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_232 = 0x7f070237;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_233 = 0x7f070238;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_234 = 0x7f070239;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_235 = 0x7f07023a;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_236 = 0x7f07023b;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_237 = 0x7f07023c;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_238 = 0x7f07023d;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_239 = 0x7f07023e;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_24 = 0x7f07023f;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_240 = 0x7f070240;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_241 = 0x7f070241;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_242 = 0x7f070242;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_243 = 0x7f070243;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_244 = 0x7f070244;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_245 = 0x7f070245;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_246 = 0x7f070246;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_247 = 0x7f070247;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_248 = 0x7f070248;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_249 = 0x7f070249;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_25 = 0x7f07024a;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_250 = 0x7f07024b;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_251 = 0x7f07024c;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_252 = 0x7f07024d;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_253 = 0x7f07024e;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_254 = 0x7f07024f;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_255 = 0x7f070250;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_256 = 0x7f070251;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_257 = 0x7f070252;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_258 = 0x7f070253;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_259 = 0x7f070254;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_26 = 0x7f070255;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_260 = 0x7f070256;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_261 = 0x7f070257;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_262 = 0x7f070258;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_263 = 0x7f070259;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_264 = 0x7f07025a;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_265 = 0x7f07025b;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_266 = 0x7f07025c;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_267 = 0x7f07025d;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_268 = 0x7f07025e;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_269 = 0x7f07025f;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_27 = 0x7f070260;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_270 = 0x7f070261;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_271 = 0x7f070262;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_272 = 0x7f070263;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_273 = 0x7f070264;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_274 = 0x7f070265;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_275 = 0x7f070266;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_276 = 0x7f070267;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_277 = 0x7f070268;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_278 = 0x7f070269;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_279 = 0x7f07026a;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_28 = 0x7f07026b;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_280 = 0x7f07026c;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_281 = 0x7f07026d;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_282 = 0x7f07026e;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_283 = 0x7f07026f;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_284 = 0x7f070270;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_285 = 0x7f070271;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_286 = 0x7f070272;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_287 = 0x7f070273;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_288 = 0x7f070274;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_289 = 0x7f070275;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_29 = 0x7f070276;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_290 = 0x7f070277;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_291 = 0x7f070278;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_292 = 0x7f070279;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_293 = 0x7f07027a;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_294 = 0x7f07027b;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_295 = 0x7f07027c;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_296 = 0x7f07027d;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_297 = 0x7f07027e;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_298 = 0x7f07027f;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_299 = 0x7f070280;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_3 = 0x7f070281;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_30 = 0x7f070282;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_300 = 0x7f070283;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_301 = 0x7f070284;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_302 = 0x7f070285;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_303 = 0x7f070286;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_304 = 0x7f070287;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_305 = 0x7f070288;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_306 = 0x7f070289;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_307 = 0x7f07028a;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_308 = 0x7f07028b;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_309 = 0x7f07028c;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_31 = 0x7f07028d;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_310 = 0x7f07028e;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_311 = 0x7f07028f;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_312 = 0x7f070290;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_313 = 0x7f070291;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_314 = 0x7f070292;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_315 = 0x7f070293;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_316 = 0x7f070294;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_317 = 0x7f070295;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_318 = 0x7f070296;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_319 = 0x7f070297;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_32 = 0x7f070298;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_320 = 0x7f070299;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_321 = 0x7f07029a;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_322 = 0x7f07029b;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_323 = 0x7f07029c;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_324 = 0x7f07029d;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_325 = 0x7f07029e;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_326 = 0x7f07029f;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_327 = 0x7f0702a0;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_328 = 0x7f0702a1;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_329 = 0x7f0702a2;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_33 = 0x7f0702a3;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_330 = 0x7f0702a4;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_331 = 0x7f0702a5;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_332 = 0x7f0702a6;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_333 = 0x7f0702a7;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_334 = 0x7f0702a8;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_335 = 0x7f0702a9;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_336 = 0x7f0702aa;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_337 = 0x7f0702ab;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_338 = 0x7f0702ac;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_339 = 0x7f0702ad;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_34 = 0x7f0702ae;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_340 = 0x7f0702af;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_341 = 0x7f0702b0;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_342 = 0x7f0702b1;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_343 = 0x7f0702b2;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_344 = 0x7f0702b3;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_345 = 0x7f0702b4;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_346 = 0x7f0702b5;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_347 = 0x7f0702b6;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_348 = 0x7f0702b7;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_349 = 0x7f0702b8;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_35 = 0x7f0702b9;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_350 = 0x7f0702ba;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_351 = 0x7f0702bb;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_352 = 0x7f0702bc;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_353 = 0x7f0702bd;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_354 = 0x7f0702be;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_355 = 0x7f0702bf;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_356 = 0x7f0702c0;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_357 = 0x7f0702c1;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_358 = 0x7f0702c2;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_359 = 0x7f0702c3;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_36 = 0x7f0702c4;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_360 = 0x7f0702c5;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_361 = 0x7f0702c6;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_362 = 0x7f0702c7;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_363 = 0x7f0702c8;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_364 = 0x7f0702c9;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_365 = 0x7f0702ca;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_366 = 0x7f0702cb;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_367 = 0x7f0702cc;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_368 = 0x7f0702cd;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_369 = 0x7f0702ce;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_37 = 0x7f0702cf;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_370 = 0x7f0702d0;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_371 = 0x7f0702d1;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_372 = 0x7f0702d2;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_373 = 0x7f0702d3;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_374 = 0x7f0702d4;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_375 = 0x7f0702d5;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_376 = 0x7f0702d6;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_377 = 0x7f0702d7;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_378 = 0x7f0702d8;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_379 = 0x7f0702d9;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_38 = 0x7f0702da;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_380 = 0x7f0702db;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_381 = 0x7f0702dc;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_382 = 0x7f0702dd;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_383 = 0x7f0702de;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_384 = 0x7f0702df;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_385 = 0x7f0702e0;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_386 = 0x7f0702e1;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_387 = 0x7f0702e2;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_388 = 0x7f0702e3;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_389 = 0x7f0702e4;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_39 = 0x7f0702e5;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_390 = 0x7f0702e6;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_391 = 0x7f0702e7;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_392 = 0x7f0702e8;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_393 = 0x7f0702e9;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_394 = 0x7f0702ea;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_395 = 0x7f0702eb;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_396 = 0x7f0702ec;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_397 = 0x7f0702ed;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_398 = 0x7f0702ee;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_399 = 0x7f0702ef;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_4 = 0x7f0702f0;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_40 = 0x7f0702f1;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_400 = 0x7f0702f2;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_401 = 0x7f0702f3;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_402 = 0x7f0702f4;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_403 = 0x7f0702f5;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_404 = 0x7f0702f6;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_405 = 0x7f0702f7;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_406 = 0x7f0702f8;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_407 = 0x7f0702f9;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_408 = 0x7f0702fa;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_409 = 0x7f0702fb;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_41 = 0x7f0702fc;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_410 = 0x7f0702fd;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_411 = 0x7f0702fe;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_412 = 0x7f0702ff;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_413 = 0x7f070300;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_414 = 0x7f070301;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_415 = 0x7f070302;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_416 = 0x7f070303;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_417 = 0x7f070304;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_418 = 0x7f070305;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_419 = 0x7f070306;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_42 = 0x7f070307;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_420 = 0x7f070308;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_421 = 0x7f070309;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_422 = 0x7f07030a;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_423 = 0x7f07030b;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_424 = 0x7f07030c;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_425 = 0x7f07030d;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_426 = 0x7f07030e;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_427 = 0x7f07030f;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_428 = 0x7f070310;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_429 = 0x7f070311;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_43 = 0x7f070312;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_430 = 0x7f070313;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_431 = 0x7f070314;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_432 = 0x7f070315;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_433 = 0x7f070316;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_434 = 0x7f070317;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_435 = 0x7f070318;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_436 = 0x7f070319;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_437 = 0x7f07031a;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_438 = 0x7f07031b;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_439 = 0x7f07031c;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_44 = 0x7f07031d;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_440 = 0x7f07031e;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_441 = 0x7f07031f;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_442 = 0x7f070320;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_443 = 0x7f070321;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_444 = 0x7f070322;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_445 = 0x7f070323;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_446 = 0x7f070324;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_447 = 0x7f070325;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_448 = 0x7f070326;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_449 = 0x7f070327;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_45 = 0x7f070328;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_450 = 0x7f070329;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_451 = 0x7f07032a;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_452 = 0x7f07032b;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_453 = 0x7f07032c;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_454 = 0x7f07032d;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_455 = 0x7f07032e;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_456 = 0x7f07032f;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_457 = 0x7f070330;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_458 = 0x7f070331;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_459 = 0x7f070332;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_46 = 0x7f070333;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_460 = 0x7f070334;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_461 = 0x7f070335;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_462 = 0x7f070336;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_463 = 0x7f070337;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_464 = 0x7f070338;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_465 = 0x7f070339;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_466 = 0x7f07033a;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_467 = 0x7f07033b;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_468 = 0x7f07033c;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_469 = 0x7f07033d;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_47 = 0x7f07033e;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_470 = 0x7f07033f;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_471 = 0x7f070340;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_472 = 0x7f070341;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_473 = 0x7f070342;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_474 = 0x7f070343;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_475 = 0x7f070344;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_476 = 0x7f070345;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_477 = 0x7f070346;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_478 = 0x7f070347;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_479 = 0x7f070348;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_48 = 0x7f070349;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_480 = 0x7f07034a;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_481 = 0x7f07034b;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_482 = 0x7f07034c;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_483 = 0x7f07034d;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_484 = 0x7f07034e;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_485 = 0x7f07034f;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_486 = 0x7f070350;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_487 = 0x7f070351;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_488 = 0x7f070352;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_489 = 0x7f070353;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_49 = 0x7f070354;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_490 = 0x7f070355;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_491 = 0x7f070356;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_492 = 0x7f070357;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_493 = 0x7f070358;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_494 = 0x7f070359;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_495 = 0x7f07035a;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_496 = 0x7f07035b;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_497 = 0x7f07035c;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_498 = 0x7f07035d;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_499 = 0x7f07035e;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_5 = 0x7f07035f;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_50 = 0x7f070360;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_500 = 0x7f070361;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_501 = 0x7f070362;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_502 = 0x7f070363;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_503 = 0x7f070364;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_504 = 0x7f070365;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_505 = 0x7f070366;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_506 = 0x7f070367;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_507 = 0x7f070368;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_508 = 0x7f070369;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_509 = 0x7f07036a;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_51 = 0x7f07036b;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_510 = 0x7f07036c;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_511 = 0x7f07036d;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_512 = 0x7f07036e;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_513 = 0x7f07036f;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_514 = 0x7f070370;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_515 = 0x7f070371;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_516 = 0x7f070372;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_517 = 0x7f070373;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_518 = 0x7f070374;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_519 = 0x7f070375;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_52 = 0x7f070376;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_520 = 0x7f070377;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_521 = 0x7f070378;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_522 = 0x7f070379;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_523 = 0x7f07037a;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_524 = 0x7f07037b;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_525 = 0x7f07037c;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_526 = 0x7f07037d;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_527 = 0x7f07037e;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_528 = 0x7f07037f;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_529 = 0x7f070380;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_53 = 0x7f070381;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_530 = 0x7f070382;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_531 = 0x7f070383;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_532 = 0x7f070384;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_533 = 0x7f070385;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_534 = 0x7f070386;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_535 = 0x7f070387;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_536 = 0x7f070388;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_537 = 0x7f070389;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_538 = 0x7f07038a;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_539 = 0x7f07038b;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_54 = 0x7f07038c;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_540 = 0x7f07038d;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_541 = 0x7f07038e;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_542 = 0x7f07038f;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_543 = 0x7f070390;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_544 = 0x7f070391;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_545 = 0x7f070392;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_546 = 0x7f070393;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_547 = 0x7f070394;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_548 = 0x7f070395;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_549 = 0x7f070396;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_55 = 0x7f070397;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_550 = 0x7f070398;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_551 = 0x7f070399;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_552 = 0x7f07039a;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_553 = 0x7f07039b;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_554 = 0x7f07039c;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_555 = 0x7f07039d;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_556 = 0x7f07039e;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_557 = 0x7f07039f;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_558 = 0x7f0703a0;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_559 = 0x7f0703a1;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_56 = 0x7f0703a2;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_560 = 0x7f0703a3;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_561 = 0x7f0703a4;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_562 = 0x7f0703a5;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_563 = 0x7f0703a6;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_564 = 0x7f0703a7;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_565 = 0x7f0703a8;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_566 = 0x7f0703a9;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_567 = 0x7f0703aa;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_568 = 0x7f0703ab;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_569 = 0x7f0703ac;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_57 = 0x7f0703ad;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_570 = 0x7f0703ae;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_571 = 0x7f0703af;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_572 = 0x7f0703b0;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_573 = 0x7f0703b1;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_574 = 0x7f0703b2;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_575 = 0x7f0703b3;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_576 = 0x7f0703b4;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_577 = 0x7f0703b5;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_578 = 0x7f0703b6;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_579 = 0x7f0703b7;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_58 = 0x7f0703b8;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_580 = 0x7f0703b9;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_581 = 0x7f0703ba;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_582 = 0x7f0703bb;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_583 = 0x7f0703bc;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_584 = 0x7f0703bd;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_585 = 0x7f0703be;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_586 = 0x7f0703bf;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_587 = 0x7f0703c0;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_588 = 0x7f0703c1;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_589 = 0x7f0703c2;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_59 = 0x7f0703c3;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_590 = 0x7f0703c4;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_591 = 0x7f0703c5;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_592 = 0x7f0703c6;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_593 = 0x7f0703c7;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_594 = 0x7f0703c8;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_595 = 0x7f0703c9;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_596 = 0x7f0703ca;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_597 = 0x7f0703cb;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_598 = 0x7f0703cc;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_599 = 0x7f0703cd;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_6 = 0x7f0703ce;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_60 = 0x7f0703cf;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_600 = 0x7f0703d0;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_601 = 0x7f0703d1;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_602 = 0x7f0703d2;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_603 = 0x7f0703d3;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_604 = 0x7f0703d4;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_605 = 0x7f0703d5;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_606 = 0x7f0703d6;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_607 = 0x7f0703d7;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_608 = 0x7f0703d8;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_609 = 0x7f0703d9;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_61 = 0x7f0703da;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_610 = 0x7f0703db;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_611 = 0x7f0703dc;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_612 = 0x7f0703dd;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_613 = 0x7f0703de;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_614 = 0x7f0703df;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_615 = 0x7f0703e0;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_616 = 0x7f0703e1;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_617 = 0x7f0703e2;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_618 = 0x7f0703e3;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_619 = 0x7f0703e4;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_62 = 0x7f0703e5;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_620 = 0x7f0703e6;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_621 = 0x7f0703e7;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_622 = 0x7f0703e8;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_623 = 0x7f0703e9;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_624 = 0x7f0703ea;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_625 = 0x7f0703eb;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_626 = 0x7f0703ec;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_627 = 0x7f0703ed;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_628 = 0x7f0703ee;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_629 = 0x7f0703ef;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_63 = 0x7f0703f0;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_630 = 0x7f0703f1;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_631 = 0x7f0703f2;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_632 = 0x7f0703f3;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_633 = 0x7f0703f4;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_634 = 0x7f0703f5;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_635 = 0x7f0703f6;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_636 = 0x7f0703f7;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_637 = 0x7f0703f8;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_638 = 0x7f0703f9;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_639 = 0x7f0703fa;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_64 = 0x7f0703fb;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_640 = 0x7f0703fc;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_641 = 0x7f0703fd;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_642 = 0x7f0703fe;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_643 = 0x7f0703ff;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_644 = 0x7f070400;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_645 = 0x7f070401;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_646 = 0x7f070402;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_647 = 0x7f070403;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_648 = 0x7f070404;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_649 = 0x7f070405;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_65 = 0x7f070406;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_650 = 0x7f070407;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_651 = 0x7f070408;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_652 = 0x7f070409;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_653 = 0x7f07040a;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_654 = 0x7f07040b;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_655 = 0x7f07040c;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_656 = 0x7f07040d;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_657 = 0x7f07040e;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_658 = 0x7f07040f;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_659 = 0x7f070410;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_66 = 0x7f070411;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_660 = 0x7f070412;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_661 = 0x7f070413;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_662 = 0x7f070414;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_663 = 0x7f070415;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_664 = 0x7f070416;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_665 = 0x7f070417;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_666 = 0x7f070418;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_667 = 0x7f070419;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_668 = 0x7f07041a;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_669 = 0x7f07041b;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_67 = 0x7f07041c;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_670 = 0x7f07041d;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_671 = 0x7f07041e;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_672 = 0x7f07041f;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_673 = 0x7f070420;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_674 = 0x7f070421;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_675 = 0x7f070422;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_676 = 0x7f070423;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_677 = 0x7f070424;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_678 = 0x7f070425;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_679 = 0x7f070426;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_68 = 0x7f070427;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_680 = 0x7f070428;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_681 = 0x7f070429;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_682 = 0x7f07042a;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_683 = 0x7f07042b;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_684 = 0x7f07042c;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_685 = 0x7f07042d;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_686 = 0x7f07042e;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_687 = 0x7f07042f;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_688 = 0x7f070430;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_689 = 0x7f070431;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_69 = 0x7f070432;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_690 = 0x7f070433;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_691 = 0x7f070434;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_692 = 0x7f070435;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_693 = 0x7f070436;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_694 = 0x7f070437;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_695 = 0x7f070438;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_696 = 0x7f070439;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_697 = 0x7f07043a;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_698 = 0x7f07043b;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_699 = 0x7f07043c;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_7 = 0x7f07043d;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_70 = 0x7f07043e;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_700 = 0x7f07043f;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_701 = 0x7f070440;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_702 = 0x7f070441;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_703 = 0x7f070442;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_704 = 0x7f070443;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_705 = 0x7f070444;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_706 = 0x7f070445;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_707 = 0x7f070446;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_708 = 0x7f070447;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_709 = 0x7f070448;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_71 = 0x7f070449;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_710 = 0x7f07044a;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_711 = 0x7f07044b;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_712 = 0x7f07044c;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_713 = 0x7f07044d;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_714 = 0x7f07044e;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_715 = 0x7f07044f;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_716 = 0x7f070450;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_717 = 0x7f070451;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_718 = 0x7f070452;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_719 = 0x7f070453;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_72 = 0x7f070454;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_720 = 0x7f070455;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_721 = 0x7f070456;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_722 = 0x7f070457;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_723 = 0x7f070458;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_724 = 0x7f070459;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_725 = 0x7f07045a;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_726 = 0x7f07045b;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_727 = 0x7f07045c;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_728 = 0x7f07045d;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_729 = 0x7f07045e;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_73 = 0x7f07045f;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_730 = 0x7f070460;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_731 = 0x7f070461;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_732 = 0x7f070462;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_733 = 0x7f070463;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_734 = 0x7f070464;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_735 = 0x7f070465;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_736 = 0x7f070466;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_737 = 0x7f070467;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_738 = 0x7f070468;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_739 = 0x7f070469;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_74 = 0x7f07046a;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_740 = 0x7f07046b;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_741 = 0x7f07046c;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_742 = 0x7f07046d;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_743 = 0x7f07046e;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_744 = 0x7f07046f;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_745 = 0x7f070470;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_746 = 0x7f070471;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_747 = 0x7f070472;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_748 = 0x7f070473;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_749 = 0x7f070474;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_75 = 0x7f070475;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_750 = 0x7f070476;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_751 = 0x7f070477;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_752 = 0x7f070478;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_753 = 0x7f070479;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_754 = 0x7f07047a;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_755 = 0x7f07047b;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_756 = 0x7f07047c;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_757 = 0x7f07047d;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_758 = 0x7f07047e;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_759 = 0x7f07047f;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_76 = 0x7f070480;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_760 = 0x7f070481;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_761 = 0x7f070482;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_762 = 0x7f070483;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_763 = 0x7f070484;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_764 = 0x7f070485;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_765 = 0x7f070486;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_766 = 0x7f070487;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_767 = 0x7f070488;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_768 = 0x7f070489;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_769 = 0x7f07048a;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_77 = 0x7f07048b;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_770 = 0x7f07048c;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_771 = 0x7f07048d;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_772 = 0x7f07048e;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_773 = 0x7f07048f;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_774 = 0x7f070490;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_775 = 0x7f070491;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_776 = 0x7f070492;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_777 = 0x7f070493;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_778 = 0x7f070494;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_779 = 0x7f070495;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_78 = 0x7f070496;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_780 = 0x7f070497;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_781 = 0x7f070498;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_782 = 0x7f070499;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_783 = 0x7f07049a;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_784 = 0x7f07049b;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_785 = 0x7f07049c;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_786 = 0x7f07049d;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_787 = 0x7f07049e;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_788 = 0x7f07049f;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_789 = 0x7f0704a0;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_79 = 0x7f0704a1;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_790 = 0x7f0704a2;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_791 = 0x7f0704a3;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_792 = 0x7f0704a4;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_793 = 0x7f0704a5;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_794 = 0x7f0704a6;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_795 = 0x7f0704a7;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_796 = 0x7f0704a8;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_797 = 0x7f0704a9;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_798 = 0x7f0704aa;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_799 = 0x7f0704ab;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_8 = 0x7f0704ac;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_80 = 0x7f0704ad;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_800 = 0x7f0704ae;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_801 = 0x7f0704af;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_802 = 0x7f0704b0;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_803 = 0x7f0704b1;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_804 = 0x7f0704b2;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_805 = 0x7f0704b3;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_806 = 0x7f0704b4;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_807 = 0x7f0704b5;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_808 = 0x7f0704b6;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_809 = 0x7f0704b7;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_81 = 0x7f0704b8;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_810 = 0x7f0704b9;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_811 = 0x7f0704ba;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_812 = 0x7f0704bb;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_813 = 0x7f0704bc;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_814 = 0x7f0704bd;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_815 = 0x7f0704be;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_816 = 0x7f0704bf;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_817 = 0x7f0704c0;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_818 = 0x7f0704c1;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_819 = 0x7f0704c2;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_82 = 0x7f0704c3;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_820 = 0x7f0704c4;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_821 = 0x7f0704c5;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_822 = 0x7f0704c6;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_823 = 0x7f0704c7;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_824 = 0x7f0704c8;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_825 = 0x7f0704c9;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_826 = 0x7f0704ca;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_827 = 0x7f0704cb;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_828 = 0x7f0704cc;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_829 = 0x7f0704cd;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_83 = 0x7f0704ce;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_830 = 0x7f0704cf;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_831 = 0x7f0704d0;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_832 = 0x7f0704d1;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_833 = 0x7f0704d2;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_834 = 0x7f0704d3;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_835 = 0x7f0704d4;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_836 = 0x7f0704d5;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_837 = 0x7f0704d6;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_838 = 0x7f0704d7;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_839 = 0x7f0704d8;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_84 = 0x7f0704d9;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_840 = 0x7f0704da;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_841 = 0x7f0704db;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_842 = 0x7f0704dc;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_843 = 0x7f0704dd;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_844 = 0x7f0704de;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_845 = 0x7f0704df;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_846 = 0x7f0704e0;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_847 = 0x7f0704e1;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_848 = 0x7f0704e2;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_849 = 0x7f0704e3;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_85 = 0x7f0704e4;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_850 = 0x7f0704e5;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_851 = 0x7f0704e6;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_852 = 0x7f0704e7;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_853 = 0x7f0704e8;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_854 = 0x7f0704e9;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_855 = 0x7f0704ea;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_856 = 0x7f0704eb;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_857 = 0x7f0704ec;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_858 = 0x7f0704ed;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_859 = 0x7f0704ee;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_86 = 0x7f0704ef;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_860 = 0x7f0704f0;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_861 = 0x7f0704f1;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_862 = 0x7f0704f2;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_863 = 0x7f0704f3;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_864 = 0x7f0704f4;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_865 = 0x7f0704f5;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_866 = 0x7f0704f6;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_867 = 0x7f0704f7;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_868 = 0x7f0704f8;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_869 = 0x7f0704f9;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_87 = 0x7f0704fa;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_870 = 0x7f0704fb;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_871 = 0x7f0704fc;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_872 = 0x7f0704fd;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_873 = 0x7f0704fe;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_874 = 0x7f0704ff;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_875 = 0x7f070500;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_876 = 0x7f070501;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_877 = 0x7f070502;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_878 = 0x7f070503;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_879 = 0x7f070504;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_88 = 0x7f070505;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_880 = 0x7f070506;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_881 = 0x7f070507;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_882 = 0x7f070508;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_883 = 0x7f070509;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_884 = 0x7f07050a;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_885 = 0x7f07050b;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_886 = 0x7f07050c;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_887 = 0x7f07050d;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_888 = 0x7f07050e;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_889 = 0x7f07050f;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_89 = 0x7f070510;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_890 = 0x7f070511;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_891 = 0x7f070512;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_892 = 0x7f070513;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_893 = 0x7f070514;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_894 = 0x7f070515;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_895 = 0x7f070516;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_896 = 0x7f070517;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_897 = 0x7f070518;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_898 = 0x7f070519;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_899 = 0x7f07051a;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_9 = 0x7f07051b;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_90 = 0x7f07051c;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_900 = 0x7f07051d;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_901 = 0x7f07051e;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_902 = 0x7f07051f;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_903 = 0x7f070520;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_904 = 0x7f070521;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_905 = 0x7f070522;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_906 = 0x7f070523;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_907 = 0x7f070524;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_908 = 0x7f070525;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_909 = 0x7f070526;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_91 = 0x7f070527;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_910 = 0x7f070528;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_911 = 0x7f070529;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_912 = 0x7f07052a;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_913 = 0x7f07052b;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_914 = 0x7f07052c;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_915 = 0x7f07052d;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_916 = 0x7f07052e;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_917 = 0x7f07052f;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_918 = 0x7f070530;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_919 = 0x7f070531;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_92 = 0x7f070532;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_920 = 0x7f070533;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_921 = 0x7f070534;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_922 = 0x7f070535;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_923 = 0x7f070536;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_924 = 0x7f070537;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_925 = 0x7f070538;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_926 = 0x7f070539;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_927 = 0x7f07053a;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_928 = 0x7f07053b;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_929 = 0x7f07053c;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_93 = 0x7f07053d;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_930 = 0x7f07053e;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_931 = 0x7f07053f;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_932 = 0x7f070540;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_933 = 0x7f070541;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_934 = 0x7f070542;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_935 = 0x7f070543;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_936 = 0x7f070544;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_937 = 0x7f070545;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_938 = 0x7f070546;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_939 = 0x7f070547;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_94 = 0x7f070548;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_940 = 0x7f070549;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_941 = 0x7f07054a;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_942 = 0x7f07054b;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_943 = 0x7f07054c;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_944 = 0x7f07054d;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_945 = 0x7f07054e;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_946 = 0x7f07054f;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_947 = 0x7f070550;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_948 = 0x7f070551;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_949 = 0x7f070552;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_95 = 0x7f070553;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_950 = 0x7f070554;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_951 = 0x7f070555;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_952 = 0x7f070556;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_953 = 0x7f070557;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_954 = 0x7f070558;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_955 = 0x7f070559;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_956 = 0x7f07055a;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_957 = 0x7f07055b;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_958 = 0x7f07055c;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_959 = 0x7f07055d;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_96 = 0x7f07055e;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_960 = 0x7f07055f;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_961 = 0x7f070560;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_962 = 0x7f070561;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_963 = 0x7f070562;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_964 = 0x7f070563;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_965 = 0x7f070564;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_966 = 0x7f070565;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_967 = 0x7f070566;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_968 = 0x7f070567;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_969 = 0x7f070568;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_97 = 0x7f070569;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_970 = 0x7f07056a;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_971 = 0x7f07056b;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_972 = 0x7f07056c;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_973 = 0x7f07056d;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_974 = 0x7f07056e;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_975 = 0x7f07056f;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_976 = 0x7f070570;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_977 = 0x7f070571;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_978 = 0x7f070572;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_979 = 0x7f070573;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_98 = 0x7f070574;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_980 = 0x7f070575;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_981 = 0x7f070576;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_982 = 0x7f070577;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_983 = 0x7f070578;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_984 = 0x7f070579;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_985 = 0x7f07057a;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_986 = 0x7f07057b;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_987 = 0x7f07057c;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_988 = 0x7f07057d;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_989 = 0x7f07057e;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_99 = 0x7f07057f;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_990 = 0x7f070580;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_991 = 0x7f070581;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_992 = 0x7f070582;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_993 = 0x7f070583;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_994 = 0x7f070584;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_995 = 0x7f070585;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_996 = 0x7f070586;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_997 = 0x7f070587;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_998 = 0x7f070588;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_999 = 0x7f070589;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_x10 = 0x7f07058a;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_x16 = 0x7f07058b;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_x4 = 0x7f07058c;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_x5 = 0x7f07058d;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimens_x9 = 0x7f07058e;
+
+        /* JADX INFO: Added by JADX */
+        public static final int subtitle_corner_radius = 0x7f070c38;
+
+        /* JADX INFO: Added by JADX */
+        public static final int subtitle_outline_width = 0x7f070c39;
+
+        /* JADX INFO: Added by JADX */
+        public static final int subtitle_shadow_offset = 0x7f070c3a;
+
+        /* JADX INFO: Added by JADX */
+        public static final int subtitle_shadow_radius = 0x7f070c3b;
+
+        /* JADX INFO: Added by JADX */
+        public static final int text_sp_1 = 0x7f070c3d;
+
+        /* JADX INFO: Added by JADX */
+        public static final int text_sp_10 = 0x7f070c3e;
+
+        /* JADX INFO: Added by JADX */
+        public static final int text_sp_11 = 0x7f070c3f;
+
+        /* JADX INFO: Added by JADX */
+        public static final int text_sp_12 = 0x7f070c40;
+
+        /* JADX INFO: Added by JADX */
+        public static final int text_sp_13 = 0x7f070c41;
+
+        /* JADX INFO: Added by JADX */
+        public static final int text_sp_14 = 0x7f070c42;
+
+        /* JADX INFO: Added by JADX */
+        public static final int text_sp_15 = 0x7f070c43;
+
+        /* JADX INFO: Added by JADX */
+        public static final int text_sp_16 = 0x7f070c44;
+
+        /* JADX INFO: Added by JADX */
+        public static final int text_sp_17 = 0x7f070c45;
+
+        /* JADX INFO: Added by JADX */
+        public static final int text_sp_18 = 0x7f070c46;
+
+        /* JADX INFO: Added by JADX */
+        public static final int text_sp_19 = 0x7f070c47;
+
+        /* JADX INFO: Added by JADX */
+        public static final int text_sp_2 = 0x7f070c48;
+
+        /* JADX INFO: Added by JADX */
+        public static final int text_sp_20 = 0x7f070c49;
+
+        /* JADX INFO: Added by JADX */
+        public static final int text_sp_21 = 0x7f070c4a;
+
+        /* JADX INFO: Added by JADX */
+        public static final int text_sp_22 = 0x7f070c4b;
+
+        /* JADX INFO: Added by JADX */
+        public static final int text_sp_23 = 0x7f070c4c;
+
+        /* JADX INFO: Added by JADX */
+        public static final int text_sp_24 = 0x7f070c4d;
+
+        /* JADX INFO: Added by JADX */
+        public static final int text_sp_25 = 0x7f070c4e;
+
+        /* JADX INFO: Added by JADX */
+        public static final int text_sp_26 = 0x7f070c4f;
+
+        /* JADX INFO: Added by JADX */
+        public static final int text_sp_27 = 0x7f070c50;
+
+        /* JADX INFO: Added by JADX */
+        public static final int text_sp_28 = 0x7f070c51;
+
+        /* JADX INFO: Added by JADX */
+        public static final int text_sp_29 = 0x7f070c52;
+
+        /* JADX INFO: Added by JADX */
+        public static final int text_sp_3 = 0x7f070c53;
+
+        /* JADX INFO: Added by JADX */
+        public static final int text_sp_30 = 0x7f070c54;
+
+        /* JADX INFO: Added by JADX */
+        public static final int text_sp_31 = 0x7f070c55;
+
+        /* JADX INFO: Added by JADX */
+        public static final int text_sp_32 = 0x7f070c56;
+
+        /* JADX INFO: Added by JADX */
+        public static final int text_sp_33 = 0x7f070c57;
+
+        /* JADX INFO: Added by JADX */
+        public static final int text_sp_34 = 0x7f070c58;
+
+        /* JADX INFO: Added by JADX */
+        public static final int text_sp_35 = 0x7f070c59;
+
+        /* JADX INFO: Added by JADX */
+        public static final int text_sp_36 = 0x7f070c5a;
+
+        /* JADX INFO: Added by JADX */
+        public static final int text_sp_37 = 0x7f070c5b;
+
+        /* JADX INFO: Added by JADX */
+        public static final int text_sp_38 = 0x7f070c5c;
+
+        /* JADX INFO: Added by JADX */
+        public static final int text_sp_39 = 0x7f070c5d;
+
+        /* JADX INFO: Added by JADX */
+        public static final int text_sp_4 = 0x7f070c5e;
+
+        /* JADX INFO: Added by JADX */
+        public static final int text_sp_40 = 0x7f070c5f;
+
+        /* JADX INFO: Added by JADX */
+        public static final int text_sp_41 = 0x7f070c60;
+
+        /* JADX INFO: Added by JADX */
+        public static final int text_sp_42 = 0x7f070c61;
+
+        /* JADX INFO: Added by JADX */
+        public static final int text_sp_43 = 0x7f070c62;
+
+        /* JADX INFO: Added by JADX */
+        public static final int text_sp_44 = 0x7f070c63;
+
+        /* JADX INFO: Added by JADX */
+        public static final int text_sp_45 = 0x7f070c64;
+
+        /* JADX INFO: Added by JADX */
+        public static final int text_sp_46 = 0x7f070c65;
+
+        /* JADX INFO: Added by JADX */
+        public static final int text_sp_47 = 0x7f070c66;
+
+        /* JADX INFO: Added by JADX */
+        public static final int text_sp_48 = 0x7f070c67;
+
+        /* JADX INFO: Added by JADX */
+        public static final int text_sp_49 = 0x7f070c68;
+
+        /* JADX INFO: Added by JADX */
+        public static final int text_sp_5 = 0x7f070c69;
+
+        /* JADX INFO: Added by JADX */
+        public static final int text_sp_50 = 0x7f070c6a;
+
+        /* JADX INFO: Added by JADX */
+        public static final int text_sp_6 = 0x7f070c6b;
+
+        /* JADX INFO: Added by JADX */
+        public static final int text_sp_7 = 0x7f070c6c;
+
+        /* JADX INFO: Added by JADX */
+        public static final int text_sp_8 = 0x7f070c6d;
+
+        /* JADX INFO: Added by JADX */
+        public static final int text_sp_9 = 0x7f070c6e;
+
+        private dimen() {
+        }
+    }
+
+    public static final class drawable {
+        public static final int abc_ab_share_pack_mtrl_alpha = 0x7f080006;
+        public static final int abc_action_bar_item_background_material = 0x7f080007;
+        public static final int abc_btn_borderless_material = 0x7f080008;
+        public static final int abc_btn_check_material = 0x7f080009;
+        public static final int abc_btn_check_material_anim = 0x7f08000a;
+        public static final int abc_btn_check_to_on_mtrl_000 = 0x7f08000b;
+        public static final int abc_btn_check_to_on_mtrl_015 = 0x7f08000c;
+        public static final int abc_btn_colored_material = 0x7f08000d;
+        public static final int abc_btn_default_mtrl_shape = 0x7f08000e;
+        public static final int abc_btn_radio_material = 0x7f08000f;
+        public static final int abc_btn_radio_material_anim = 0x7f080010;
+        public static final int abc_btn_radio_to_on_mtrl_000 = 0x7f080011;
+        public static final int abc_btn_radio_to_on_mtrl_015 = 0x7f080012;
+        public static final int abc_btn_switch_to_on_mtrl_00001 = 0x7f080013;
+        public static final int abc_btn_switch_to_on_mtrl_00012 = 0x7f080014;
+        public static final int abc_cab_background_internal_bg = 0x7f080015;
+        public static final int abc_cab_background_top_material = 0x7f080016;
+        public static final int abc_cab_background_top_mtrl_alpha = 0x7f080017;
+        public static final int abc_control_background_material = 0x7f080018;
+        public static final int abc_dialog_material_background = 0x7f080019;
+        public static final int abc_edit_text_material = 0x7f08001a;
+        public static final int abc_ic_ab_back_material = 0x7f08001b;
+        public static final int abc_ic_arrow_drop_right_black_24dp = 0x7f08001c;
+        public static final int abc_ic_clear_material = 0x7f08001d;
+        public static final int abc_ic_commit_search_api_mtrl_alpha = 0x7f08001e;
+        public static final int abc_ic_go_search_api_material = 0x7f08001f;
+        public static final int abc_ic_menu_copy_mtrl_am_alpha = 0x7f080020;
+        public static final int abc_ic_menu_cut_mtrl_alpha = 0x7f080021;
+        public static final int abc_ic_menu_overflow_material = 0x7f080022;
+        public static final int abc_ic_menu_paste_mtrl_am_alpha = 0x7f080023;
+        public static final int abc_ic_menu_selectall_mtrl_alpha = 0x7f080024;
+        public static final int abc_ic_menu_share_mtrl_alpha = 0x7f080025;
+        public static final int abc_ic_search_api_material = 0x7f080026;
+        public static final int abc_ic_star_black_16dp = 0x7f080027;
+        public static final int abc_ic_star_black_36dp = 0x7f080028;
+        public static final int abc_ic_star_black_48dp = 0x7f080029;
+        public static final int abc_ic_star_half_black_16dp = 0x7f08002a;
+        public static final int abc_ic_star_half_black_36dp = 0x7f08002b;
+        public static final int abc_ic_star_half_black_48dp = 0x7f08002c;
+        public static final int abc_ic_voice_search_api_material = 0x7f08002d;
+        public static final int abc_item_background_holo_dark = 0x7f08002e;
+        public static final int abc_item_background_holo_light = 0x7f08002f;
+        public static final int abc_list_divider_material = 0x7f080030;
+        public static final int abc_list_divider_mtrl_alpha = 0x7f080031;
+        public static final int abc_list_focused_holo = 0x7f080032;
+        public static final int abc_list_longpressed_holo = 0x7f080033;
+        public static final int abc_list_pressed_holo_dark = 0x7f080034;
+        public static final int abc_list_pressed_holo_light = 0x7f080035;
+        public static final int abc_list_selector_background_transition_holo_dark = 0x7f080036;
+        public static final int abc_list_selector_background_transition_holo_light = 0x7f080037;
+        public static final int abc_list_selector_disabled_holo_dark = 0x7f080038;
+        public static final int abc_list_selector_disabled_holo_light = 0x7f080039;
+        public static final int abc_list_selector_holo_dark = 0x7f08003a;
+        public static final int abc_list_selector_holo_light = 0x7f08003b;
+        public static final int abc_menu_hardkey_panel_mtrl_mult = 0x7f08003c;
+        public static final int abc_popup_background_mtrl_mult = 0x7f08003d;
+        public static final int abc_ratingbar_indicator_material = 0x7f08003e;
+        public static final int abc_ratingbar_material = 0x7f08003f;
+        public static final int abc_ratingbar_small_material = 0x7f080040;
+        public static final int abc_scrubber_control_off_mtrl_alpha = 0x7f080041;
+        public static final int abc_scrubber_control_to_pressed_mtrl_000 = 0x7f080042;
+        public static final int abc_scrubber_control_to_pressed_mtrl_005 = 0x7f080043;
+        public static final int abc_scrubber_primary_mtrl_alpha = 0x7f080044;
+        public static final int abc_scrubber_track_mtrl_alpha = 0x7f080045;
+        public static final int abc_seekbar_thumb_material = 0x7f080046;
+        public static final int abc_seekbar_tick_mark_material = 0x7f080047;
+        public static final int abc_seekbar_track_material = 0x7f080048;
+        public static final int abc_spinner_mtrl_am_alpha = 0x7f080049;
+        public static final int abc_spinner_textfield_background_material = 0x7f08004a;
+        public static final int abc_switch_thumb_material = 0x7f08004b;
+        public static final int abc_switch_track_mtrl_alpha = 0x7f08004c;
+        public static final int abc_tab_indicator_material = 0x7f08004d;
+        public static final int abc_tab_indicator_mtrl_alpha = 0x7f08004e;
+        public static final int abc_text_cursor_material = 0x7f08004f;
+        public static final int abc_text_select_handle_left_mtrl_dark = 0x7f080050;
+        public static final int abc_text_select_handle_left_mtrl_light = 0x7f080051;
+        public static final int abc_text_select_handle_middle_mtrl_dark = 0x7f080052;
+        public static final int abc_text_select_handle_middle_mtrl_light = 0x7f080053;
+        public static final int abc_text_select_handle_right_mtrl_dark = 0x7f080054;
+        public static final int abc_text_select_handle_right_mtrl_light = 0x7f080055;
+        public static final int abc_textfield_activated_mtrl_alpha = 0x7f080056;
+        public static final int abc_textfield_default_mtrl_alpha = 0x7f080057;
+        public static final int abc_textfield_search_activated_mtrl_alpha = 0x7f080058;
+        public static final int abc_textfield_search_default_mtrl_alpha = 0x7f080059;
+        public static final int abc_textfield_search_material = 0x7f08005a;
+        public static final int abc_vector_test = 0x7f08005b;
+        public static final int anim_btn_scale = 0x7f08005d;
+        public static final int anim_btn_scale_alpha = 0x7f08005e;
+        public static final int anim_btn_scale_alpha_enable = 0x7f08005f;
+        public static final int avd_hide_password = 0x7f080060;
+        public static final int avd_show_password = 0x7f080061;
+        public static final int btn_checkbox_checked_mtrl = 0x7f0800a6;
+        public static final int btn_checkbox_checked_to_unchecked_mtrl_animation = 0x7f0800a7;
+        public static final int btn_checkbox_unchecked_mtrl = 0x7f0800a8;
+        public static final int btn_checkbox_unchecked_to_checked_mtrl_animation = 0x7f0800a9;
+        public static final int btn_radio_off_mtrl = 0x7f0800aa;
+        public static final int btn_radio_off_to_on_mtrl_animation = 0x7f0800ab;
+        public static final int btn_radio_on_mtrl = 0x7f0800ac;
+        public static final int btn_radio_on_to_off_mtrl_animation = 0x7f0800ad;
+        public static final int design_bottom_navigation_item_background = 0x7f08012d;
+        public static final int design_fab_background = 0x7f08012e;
+        public static final int design_ic_visibility = 0x7f08012f;
+        public static final int design_ic_visibility_off = 0x7f080130;
+        public static final int design_password_eye = 0x7f080131;
+        public static final int design_snackbar_background = 0x7f080132;
+        public static final int ic_mtrl_checked_circle = 0x7f080149;
+        public static final int ic_mtrl_chip_checked_black = 0x7f08014a;
+        public static final int ic_mtrl_chip_checked_circle = 0x7f08014b;
+        public static final int ic_mtrl_chip_close_circle = 0x7f08014c;
+        public static final int material_ic_calendar_black_24dp = 0x7f080163;
+        public static final int material_ic_clear_black_24dp = 0x7f080164;
+        public static final int material_ic_edit_black_24dp = 0x7f080165;
+        public static final int material_ic_keyboard_arrow_left_black_24dp = 0x7f080166;
+        public static final int material_ic_keyboard_arrow_right_black_24dp = 0x7f080167;
+        public static final int material_ic_menu_arrow_down_black_24dp = 0x7f080168;
+        public static final int material_ic_menu_arrow_up_black_24dp = 0x7f080169;
+        public static final int mtrl_dialog_background = 0x7f08016c;
+        public static final int mtrl_dropdown_arrow = 0x7f08016d;
+        public static final int mtrl_ic_arrow_drop_down = 0x7f08016e;
+        public static final int mtrl_ic_arrow_drop_up = 0x7f08016f;
+        public static final int mtrl_ic_cancel = 0x7f080170;
+        public static final int mtrl_ic_error = 0x7f080171;
+        public static final int mtrl_popupmenu_background = 0x7f080172;
+        public static final int mtrl_popupmenu_background_dark = 0x7f080173;
+        public static final int mtrl_tabs_default_indicator = 0x7f080174;
+        public static final int navigation_empty_icon = 0x7f080175;
+        public static final int notification_action_background = 0x7f080177;
+        public static final int notification_bg = 0x7f080178;
+        public static final int notification_bg_low = 0x7f080179;
+        public static final int notification_bg_low_normal = 0x7f08017a;
+        public static final int notification_bg_low_pressed = 0x7f08017b;
+        public static final int notification_bg_normal = 0x7f08017c;
+        public static final int notification_bg_normal_pressed = 0x7f08017d;
+        public static final int notification_icon_background = 0x7f08017e;
+        public static final int notification_template_icon_bg = 0x7f08017f;
+        public static final int notification_template_icon_low_bg = 0x7f080180;
+        public static final int notification_tile_bg = 0x7f080181;
+        public static final int notify_panel_notification_icon_bg = 0x7f080182;
+        public static final int test_custom_background = 0x7f0801a6;
+        public static final int toast_background = 0x7f0801a8;
+        public static final int tooltip_frame_dark = 0x7f0801a9;
+        public static final int tooltip_frame_light = 0x7f0801aa;
+
+        /* JADX INFO: Added by JADX */
+        public static final int _avd_hide_password__0_res_0x7f080000 = 0x7f080000;
+
+        /* JADX INFO: Added by JADX */
+        public static final int _avd_hide_password__1_res_0x7f080001 = 0x7f080001;
+
+        /* JADX INFO: Added by JADX */
+        public static final int _avd_hide_password__2_res_0x7f080002 = 0x7f080002;
+
+        /* JADX INFO: Added by JADX */
+        public static final int _avd_show_password__0_res_0x7f080003 = 0x7f080003;
+
+        /* JADX INFO: Added by JADX */
+        public static final int _avd_show_password__1_res_0x7f080004 = 0x7f080004;
+
+        /* JADX INFO: Added by JADX */
+        public static final int _avd_show_password__2_res_0x7f080005 = 0x7f080005;
+
+        /* JADX INFO: Added by JADX */
+        public static final int activity_bg = 0x7f08005c;
+
+        /* JADX INFO: Added by JADX */
+        public static final int back_btn_icon = 0x7f080062;
+
+        /* JADX INFO: Added by JADX */
+        public static final int bat_level = 0x7f080063;
+
+        /* JADX INFO: Added by JADX */
+        public static final int bat_widget_level = 0x7f080064;
+
+        /* JADX INFO: Added by JADX */
+        public static final int bg_popup_small_white = 0x7f080065;
+
+        /* JADX INFO: Added by JADX */
+        public static final int bg_tag = 0x7f080066;
+
+        /* JADX INFO: Added by JADX */
+        public static final int bt_audio_icon = 0x7f080067;
+
+        /* JADX INFO: Added by JADX */
+        public static final int bt_battery_1 = 0x7f080068;
+
+        /* JADX INFO: Added by JADX */
+        public static final int bt_battery_2 = 0x7f080069;
+
+        /* JADX INFO: Added by JADX */
+        public static final int bt_battery_3 = 0x7f08006a;
+
+        /* JADX INFO: Added by JADX */
+        public static final int bt_battery_4 = 0x7f08006b;
+
+        /* JADX INFO: Added by JADX */
+        public static final int bt_battery_5 = 0x7f08006c;
+
+        /* JADX INFO: Added by JADX */
+        public static final int bt_call_anser_icon = 0x7f08006d;
+
+        /* JADX INFO: Added by JADX */
+        public static final int bt_call_icon = 0x7f08006e;
+
+        /* JADX INFO: Added by JADX */
+        public static final int bt_call_line = 0x7f08006f;
+
+        /* JADX INFO: Added by JADX */
+        public static final int bt_call_out_icon = 0x7f080070;
+
+        /* JADX INFO: Added by JADX */
+        public static final int bt_call_small_icon = 0x7f080071;
+
+        /* JADX INFO: Added by JADX */
+        public static final int bt_call_small_view_bg = 0x7f080072;
+
+        /* JADX INFO: Added by JADX */
+        public static final int bt_calling_keyboard_btn_n = 0x7f080073;
+
+        /* JADX INFO: Added by JADX */
+        public static final int bt_calling_keyboard_btn_p = 0x7f080074;
+
+        /* JADX INFO: Added by JADX */
+        public static final int bt_calling_keyboard_item_bg = 0x7f080075;
+
+        /* JADX INFO: Added by JADX */
+        public static final int bt_calling_mic_mute_btn = 0x7f080076;
+
+        /* JADX INFO: Added by JADX */
+        public static final int bt_calling_micmute_btn_d = 0x7f080077;
+
+        /* JADX INFO: Added by JADX */
+        public static final int bt_calling_micmute_btn_n = 0x7f080078;
+
+        /* JADX INFO: Added by JADX */
+        public static final int bt_calling_micmute_btn_p = 0x7f080079;
+
+        /* JADX INFO: Added by JADX */
+        public static final int bt_calling_show_keyboard_btn = 0x7f08007a;
+
+        /* JADX INFO: Added by JADX */
+        public static final int bt_calling_voice2phone_btn = 0x7f08007b;
+
+        /* JADX INFO: Added by JADX */
+        public static final int bt_calling_voice2phone_btn_n = 0x7f08007c;
+
+        /* JADX INFO: Added by JADX */
+        public static final int bt_calling_voice2phone_btn_p = 0x7f08007d;
+
+        /* JADX INFO: Added by JADX */
+        public static final int bt_calllog_icon_n = 0x7f08007e;
+
+        /* JADX INFO: Added by JADX */
+        public static final int bt_calllog_icon_p = 0x7f08007f;
+
+        /* JADX INFO: Added by JADX */
+        public static final int bt_contacts_icon_n = 0x7f080080;
+
+        /* JADX INFO: Added by JADX */
+        public static final int bt_contacts_icon_p = 0x7f080081;
+
+        /* JADX INFO: Added by JADX */
+        public static final int bt_dialog_bg = 0x7f080082;
+
+        /* JADX INFO: Added by JADX */
+        public static final int bt_dialog_button_n_bg = 0x7f080083;
+
+        /* JADX INFO: Added by JADX */
+        public static final int bt_dialog_button_p_bg = 0x7f080084;
+
+        /* JADX INFO: Added by JADX */
+        public static final int bt_empty_icon = 0x7f080085;
+
+        /* JADX INFO: Added by JADX */
+        public static final int bt_icon = 0x7f080086;
+
+        /* JADX INFO: Added by JADX */
+        public static final int bt_keyboard_icon_n = 0x7f080087;
+
+        /* JADX INFO: Added by JADX */
+        public static final int bt_keyboard_icon_p = 0x7f080088;
+
+        /* JADX INFO: Added by JADX */
+        public static final int bt_list_bg = 0x7f080089;
+
+        /* JADX INFO: Added by JADX */
+        public static final int bt_missedcalls_icon_n = 0x7f08008a;
+
+        /* JADX INFO: Added by JADX */
+        public static final int bt_missedcalls_icon_p = 0x7f08008b;
+
+        /* JADX INFO: Added by JADX */
+        public static final int bt_notconnect_icon = 0x7f08008c;
+
+        /* JADX INFO: Added by JADX */
+        public static final int bt_phone_audio_not_open = 0x7f08008d;
+
+        /* JADX INFO: Added by JADX */
+        public static final int bt_stausbar_callin_icon = 0x7f08008e;
+
+        /* JADX INFO: Added by JADX */
+        public static final int bt_stausbar_calling_icon = 0x7f08008f;
+
+        /* JADX INFO: Added by JADX */
+        public static final int bt_stausbar_callout_icon = 0x7f080090;
+
+        /* JADX INFO: Added by JADX */
+        public static final int bt_stausbar_endcall_icon = 0x7f080091;
+
+        /* JADX INFO: Added by JADX */
+        public static final int bt_tablehost_bg = 0x7f080092;
+
+        /* JADX INFO: Added by JADX */
+        public static final int bt_tablehost_bg_116 = 0x7f080093;
+
+        /* JADX INFO: Added by JADX */
+        public static final int bt_tablehost_select_p = 0x7f080094;
+
+        /* JADX INFO: Added by JADX */
+        public static final int bt_widget_battery_1 = 0x7f080095;
+
+        /* JADX INFO: Added by JADX */
+        public static final int bt_widget_battery_2 = 0x7f080096;
+
+        /* JADX INFO: Added by JADX */
+        public static final int bt_widget_battery_3 = 0x7f080097;
+
+        /* JADX INFO: Added by JADX */
+        public static final int bt_widget_battery_4 = 0x7f080098;
+
+        /* JADX INFO: Added by JADX */
+        public static final int bt_widget_battery_5 = 0x7f080099;
+
+        /* JADX INFO: Added by JADX */
+        public static final int bt_widget_bg = 0x7f08009a;
+
+        /* JADX INFO: Added by JADX */
+        public static final int bt_widget_bg_select = 0x7f08009b;
+
+        /* JADX INFO: Added by JADX */
+        public static final int bt_widget_calllog_icon = 0x7f08009c;
+
+        /* JADX INFO: Added by JADX */
+        public static final int bt_widget_icon = 0x7f08009d;
+
+        /* JADX INFO: Added by JADX */
+        public static final int bt_widget_misscall_icon = 0x7f08009e;
+
+        /* JADX INFO: Added by JADX */
+        public static final int bt_widget_notconnect_icon = 0x7f08009f;
+
+        /* JADX INFO: Added by JADX */
+        public static final int btcall_btn_hugup_icon = 0x7f0800a0;
+
+        /* JADX INFO: Added by JADX */
+        public static final int btcall_empty_icon = 0x7f0800a1;
+
+        /* JADX INFO: Added by JADX */
+        public static final int btcall_round_green_bg = 0x7f0800a2;
+
+        /* JADX INFO: Added by JADX */
+        public static final int btcall_round_red_bg = 0x7f0800a3;
+
+        /* JADX INFO: Added by JADX */
+        public static final int btcall_small_bg = 0x7f0800a4;
+
+        /* JADX INFO: Added by JADX */
+        public static final int btcall_wm_bg = 0x7f0800a5;
+
+        /* JADX INFO: Added by JADX */
+        public static final int button_phone_answer = 0x7f0800ae;
+
+        /* JADX INFO: Added by JADX */
+        public static final int button_phone_answer_h = 0x7f0800af;
+
+        /* JADX INFO: Added by JADX */
+        public static final int call_infomation_icon = 0x7f0800b0;
+
+        /* JADX INFO: Added by JADX */
+        public static final int call_log_empty_icon = 0x7f0800b1;
+
+        /* JADX INFO: Added by JADX */
+        public static final int call_log_item_id_bg = 0x7f0800b2;
+
+        /* JADX INFO: Added by JADX */
+        public static final int callout_icon = 0x7f0800b3;
+
+        /* JADX INFO: Added by JADX */
+        public static final int clear_btn_n = 0x7f0800b4;
+
+        /* JADX INFO: Added by JADX */
+        public static final int clear_btn_p = 0x7f0800b5;
+
+        /* JADX INFO: Added by JADX */
+        public static final int contacts_capital_letter_blue_bg = 0x7f0800b6;
+
+        /* JADX INFO: Added by JADX */
+        public static final int contacts_capital_letter_green_bg = 0x7f0800b7;
+
+        /* JADX INFO: Added by JADX */
+        public static final int contacts_capital_letter_purple_bg = 0x7f0800b8;
+
+        /* JADX INFO: Added by JADX */
+        public static final int contacts_capital_letter_red_bg = 0x7f0800b9;
+
+        /* JADX INFO: Added by JADX */
+        public static final int contacts_capital_letter_yellow_bg = 0x7f0800ba;
+
+        /* JADX INFO: Added by JADX */
+        public static final int contacts_empty_icon = 0x7f0800bb;
+
+        /* JADX INFO: Added by JADX */
+        public static final int contacts_info_list_bg = 0x7f0800bc;
+
+        /* JADX INFO: Added by JADX */
+        public static final int contacts_info_list_bg_1 = 0x7f0800bd;
+
+        /* JADX INFO: Added by JADX */
+        public static final int contacts_list_wm_bg = 0x7f0800be;
+
+        /* JADX INFO: Added by JADX */
+        public static final int contacts_not_download_icon = 0x7f0800bf;
+
+        /* JADX INFO: Added by JADX */
+        public static final int contacts_reflesh_icon = 0x7f0800c0;
+
+        /* JADX INFO: Added by JADX */
+        public static final int contacts_search_icon = 0x7f0800c1;
+
+        /* JADX INFO: Added by JADX */
+        public static final int contacts_wm_bg = 0x7f0800c2;
+
+        /* JADX INFO: Added by JADX */
+        public static final int contacts_wm_bg_hdpi = 0x7f0800c3;
+
+        /* JADX INFO: Added by JADX */
+        public static final int contacts_wm_list_bg = 0x7f0800c4;
+
+        /* JADX INFO: Added by JADX */
+        public static final int denza_back_btn_icon = 0x7f0800c5;
+
+        /* JADX INFO: Added by JADX */
+        public static final int denza_bat_level = 0x7f0800c6;
+
+        /* JADX INFO: Added by JADX */
+        public static final int denza_bat_widget_level = 0x7f0800c7;
+
+        /* JADX INFO: Added by JADX */
+        public static final int denza_bt_audio_icon = 0x7f0800c8;
+
+        /* JADX INFO: Added by JADX */
+        public static final int denza_bt_battery_1 = 0x7f0800c9;
+
+        /* JADX INFO: Added by JADX */
+        public static final int denza_bt_battery_2 = 0x7f0800ca;
+
+        /* JADX INFO: Added by JADX */
+        public static final int denza_bt_battery_3 = 0x7f0800cb;
+
+        /* JADX INFO: Added by JADX */
+        public static final int denza_bt_battery_4 = 0x7f0800cc;
+
+        /* JADX INFO: Added by JADX */
+        public static final int denza_bt_battery_5 = 0x7f0800cd;
+
+        /* JADX INFO: Added by JADX */
+        public static final int denza_bt_call_out_icon = 0x7f0800ce;
+
+        /* JADX INFO: Added by JADX */
+        public static final int denza_bt_call_small_icon = 0x7f0800cf;
+
+        /* JADX INFO: Added by JADX */
+        public static final int denza_bt_call_small_view_bg = 0x7f0800d0;
+
+        /* JADX INFO: Added by JADX */
+        public static final int denza_bt_calling_keyboard_btn_n = 0x7f0800d1;
+
+        /* JADX INFO: Added by JADX */
+        public static final int denza_bt_calling_keyboard_btn_p = 0x7f0800d2;
+
+        /* JADX INFO: Added by JADX */
+        public static final int denza_bt_calling_keyboard_item_bg = 0x7f0800d3;
+
+        /* JADX INFO: Added by JADX */
+        public static final int denza_bt_calling_mic_mute_btn = 0x7f0800d4;
+
+        /* JADX INFO: Added by JADX */
+        public static final int denza_bt_calling_micmute_btn_d = 0x7f0800d5;
+
+        /* JADX INFO: Added by JADX */
+        public static final int denza_bt_calling_micmute_btn_n = 0x7f0800d6;
+
+        /* JADX INFO: Added by JADX */
+        public static final int denza_bt_calling_micmute_btn_p = 0x7f0800d7;
+
+        /* JADX INFO: Added by JADX */
+        public static final int denza_bt_calling_show_keyboard_btn = 0x7f0800d8;
+
+        /* JADX INFO: Added by JADX */
+        public static final int denza_bt_calling_voice2phone_btn = 0x7f0800d9;
+
+        /* JADX INFO: Added by JADX */
+        public static final int denza_bt_calling_voice2phone_btn_n = 0x7f0800da;
+
+        /* JADX INFO: Added by JADX */
+        public static final int denza_bt_calling_voice2phone_btn_p = 0x7f0800db;
+
+        /* JADX INFO: Added by JADX */
+        public static final int denza_bt_calllog_icon_n = 0x7f0800dc;
+
+        /* JADX INFO: Added by JADX */
+        public static final int denza_bt_calllog_icon_p = 0x7f0800dd;
+
+        /* JADX INFO: Added by JADX */
+        public static final int denza_bt_contacts_icon_n = 0x7f0800de;
+
+        /* JADX INFO: Added by JADX */
+        public static final int denza_bt_contacts_icon_p = 0x7f0800df;
+
+        /* JADX INFO: Added by JADX */
+        public static final int denza_bt_dialog_bg = 0x7f0800e0;
+
+        /* JADX INFO: Added by JADX */
+        public static final int denza_bt_empty_icon = 0x7f0800e1;
+
+        /* JADX INFO: Added by JADX */
+        public static final int denza_bt_keyboard_icon_n = 0x7f0800e2;
+
+        /* JADX INFO: Added by JADX */
+        public static final int denza_bt_keyboard_icon_p = 0x7f0800e3;
+
+        /* JADX INFO: Added by JADX */
+        public static final int denza_bt_missedcalls_icon_n = 0x7f0800e4;
+
+        /* JADX INFO: Added by JADX */
+        public static final int denza_bt_missedcalls_icon_p = 0x7f0800e5;
+
+        /* JADX INFO: Added by JADX */
+        public static final int denza_bt_notconnect_icon = 0x7f0800e6;
+
+        /* JADX INFO: Added by JADX */
+        public static final int denza_bt_phone_audio_not_open = 0x7f0800e7;
+
+        /* JADX INFO: Added by JADX */
+        public static final int denza_bt_tablehost_bg_116 = 0x7f0800e8;
+
+        /* JADX INFO: Added by JADX */
+        public static final int denza_bt_tablehost_select_p = 0x7f0800e9;
+
+        /* JADX INFO: Added by JADX */
+        public static final int denza_bt_widget_battery_1 = 0x7f0800ea;
+
+        /* JADX INFO: Added by JADX */
+        public static final int denza_bt_widget_battery_2 = 0x7f0800eb;
+
+        /* JADX INFO: Added by JADX */
+        public static final int denza_bt_widget_battery_3 = 0x7f0800ec;
+
+        /* JADX INFO: Added by JADX */
+        public static final int denza_bt_widget_battery_4 = 0x7f0800ed;
+
+        /* JADX INFO: Added by JADX */
+        public static final int denza_bt_widget_battery_5 = 0x7f0800ee;
+
+        /* JADX INFO: Added by JADX */
+        public static final int denza_bt_widget_bg = 0x7f0800ef;
+
+        /* JADX INFO: Added by JADX */
+        public static final int denza_bt_widget_bg_select = 0x7f0800f0;
+
+        /* JADX INFO: Added by JADX */
+        public static final int denza_bt_widget_calllog_icon = 0x7f0800f1;
+
+        /* JADX INFO: Added by JADX */
+        public static final int denza_bt_widget_misscall_icon = 0x7f0800f2;
+
+        /* JADX INFO: Added by JADX */
+        public static final int denza_bt_widget_notconnect_icon = 0x7f0800f3;
+
+        /* JADX INFO: Added by JADX */
+        public static final int denza_btcall_btn_hugup_icon = 0x7f0800f4;
+
+        /* JADX INFO: Added by JADX */
+        public static final int denza_btcall_empty_icon = 0x7f0800f5;
+
+        /* JADX INFO: Added by JADX */
+        public static final int denza_btcall_small_bg = 0x7f0800f6;
+
+        /* JADX INFO: Added by JADX */
+        public static final int denza_button_phone_answer = 0x7f0800f7;
+
+        /* JADX INFO: Added by JADX */
+        public static final int denza_call_infomation_icon = 0x7f0800f8;
+
+        /* JADX INFO: Added by JADX */
+        public static final int denza_call_log_empty_icon = 0x7f0800f9;
+
+        /* JADX INFO: Added by JADX */
+        public static final int denza_callout_icon = 0x7f0800fa;
+
+        /* JADX INFO: Added by JADX */
+        public static final int denza_clear_btn_n = 0x7f0800fb;
+
+        /* JADX INFO: Added by JADX */
+        public static final int denza_clear_btn_p = 0x7f0800fc;
+
+        /* JADX INFO: Added by JADX */
+        public static final int denza_contacts_empty_icon = 0x7f0800fd;
+
+        /* JADX INFO: Added by JADX */
+        public static final int denza_contacts_info_list_bg = 0x7f0800fe;
+
+        /* JADX INFO: Added by JADX */
+        public static final int denza_contacts_info_wm_list_bg = 0x7f0800ff;
+
+        /* JADX INFO: Added by JADX */
+        public static final int denza_contacts_list_wm_bg = 0x7f080100;
+
+        /* JADX INFO: Added by JADX */
+        public static final int denza_contacts_not_download_icon = 0x7f080101;
+
+        /* JADX INFO: Added by JADX */
+        public static final int denza_contacts_reflesh_icon = 0x7f080102;
+
+        /* JADX INFO: Added by JADX */
+        public static final int denza_contacts_search_icon = 0x7f080103;
+
+        /* JADX INFO: Added by JADX */
+        public static final int denza_dial_btn_bg = 0x7f080104;
+
+        /* JADX INFO: Added by JADX */
+        public static final int denza_dialog_btn_n_shape = 0x7f080105;
+
+        /* JADX INFO: Added by JADX */
+        public static final int denza_dialog_btn_p_shape = 0x7f080106;
+
+        /* JADX INFO: Added by JADX */
+        public static final int denza_download_faild_icon = 0x7f080107;
+
+        /* JADX INFO: Added by JADX */
+        public static final int denza_download_succeed_icon = 0x7f080108;
+
+        /* JADX INFO: Added by JADX */
+        public static final int denza_edit_focus = 0x7f080109;
+
+        /* JADX INFO: Added by JADX */
+        public static final int denza_edit_nomal = 0x7f08010a;
+
+        /* JADX INFO: Added by JADX */
+        public static final int denza_edit_text_bg = 0x7f08010b;
+
+        /* JADX INFO: Added by JADX */
+        public static final int denza_edittext_custom = 0x7f08010c;
+
+        /* JADX INFO: Added by JADX */
+        public static final int denza_hugup_third_icon = 0x7f08010d;
+
+        /* JADX INFO: Added by JADX */
+        public static final int denza_keyboard_call_btn_bg = 0x7f08010e;
+
+        /* JADX INFO: Added by JADX */
+        public static final int denza_keyboard_number_delete_icon = 0x7f08010f;
+
+        /* JADX INFO: Added by JADX */
+        public static final int denza_land_activity_bg = 0x7f080110;
+
+        /* JADX INFO: Added by JADX */
+        public static final int denza_land_bt_tablehost_bg = 0x7f080111;
+
+        /* JADX INFO: Added by JADX */
+        public static final int denza_land_bt_tablehost_select_p = 0x7f080112;
+
+        /* JADX INFO: Added by JADX */
+        public static final int denza_land_main_menu_bg = 0x7f080113;
+
+        /* JADX INFO: Added by JADX */
+        public static final int denza_main_menu_bg = 0x7f080114;
+
+        /* JADX INFO: Added by JADX */
+        public static final int denza_main_menu_calllog_icon = 0x7f080115;
+
+        /* JADX INFO: Added by JADX */
+        public static final int denza_main_menu_contacts_icon = 0x7f080116;
+
+        /* JADX INFO: Added by JADX */
+        public static final int denza_main_menu_dial_keyboard_icon = 0x7f080117;
+
+        /* JADX INFO: Added by JADX */
+        public static final int denza_main_menu_missedcalls_icon = 0x7f080118;
+
+        /* JADX INFO: Added by JADX */
+        public static final int denza_no_matching_result_icon = 0x7f080119;
+
+        /* JADX INFO: Added by JADX */
+        public static final int denza_progress_bg = 0x7f08011a;
+
+        /* JADX INFO: Added by JADX */
+        public static final int denza_progress_p = 0x7f08011b;
+
+        /* JADX INFO: Added by JADX */
+        public static final int denza_progressbar = 0x7f08011c;
+
+        /* JADX INFO: Added by JADX */
+        public static final int denza_red_round_bg = 0x7f08011d;
+
+        /* JADX INFO: Added by JADX */
+        public static final int denza_rtl_bt_widget_bg = 0x7f08011e;
+
+        /* JADX INFO: Added by JADX */
+        public static final int denza_rtl_bt_widget_bg_select = 0x7f08011f;
+
+        /* JADX INFO: Added by JADX */
+        public static final int denza_search_clear_btn = 0x7f080120;
+
+        /* JADX INFO: Added by JADX */
+        public static final int denza_shape_round_corner = 0x7f080121;
+
+        /* JADX INFO: Added by JADX */
+        public static final int denza_special_calling_mic_mute_btn = 0x7f080122;
+
+        /* JADX INFO: Added by JADX */
+        public static final int denza_special_calling_mic_mute_d = 0x7f080123;
+
+        /* JADX INFO: Added by JADX */
+        public static final int denza_special_calling_mic_mute_n = 0x7f080124;
+
+        /* JADX INFO: Added by JADX */
+        public static final int denza_special_calling_mic_mute_p = 0x7f080125;
+
+        /* JADX INFO: Added by JADX */
+        public static final int denza_special_calling_voice2phone_btn = 0x7f080126;
+
+        /* JADX INFO: Added by JADX */
+        public static final int denza_special_calling_voice2phone_n = 0x7f080127;
+
+        /* JADX INFO: Added by JADX */
+        public static final int denza_special_calling_voice2phone_p = 0x7f080128;
+
+        /* JADX INFO: Added by JADX */
+        public static final int denza_special_hugup_icon = 0x7f080129;
+
+        /* JADX INFO: Added by JADX */
+        public static final int denza_special_hugup_third_icon = 0x7f08012a;
+
+        /* JADX INFO: Added by JADX */
+        public static final int denza_switch_call_icon = 0x7f08012b;
+
+        /* JADX INFO: Added by JADX */
+        public static final int denza_tablayout_text_select = 0x7f08012c;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dial_btn_bg = 0x7f080133;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dialog_bg = 0x7f080134;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dialog_btn = 0x7f080135;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dialog_btn_n = 0x7f080136;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dialog_btn_n_shape = 0x7f080137;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dialog_btn_p = 0x7f080138;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dialog_btn_p_shape = 0x7f080139;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dialog_btn_shape = 0x7f08013a;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dialog_text_selector = 0x7f08013b;
+
+        /* JADX INFO: Added by JADX */
+        public static final int download_faild_icon = 0x7f08013c;
+
+        /* JADX INFO: Added by JADX */
+        public static final int download_succeed_icon = 0x7f08013d;
+
+        /* JADX INFO: Added by JADX */
+        public static final int edit_focus = 0x7f08013e;
+
+        /* JADX INFO: Added by JADX */
+        public static final int edit_nomal = 0x7f08013f;
+
+        /* JADX INFO: Added by JADX */
+        public static final int edit_text_bg = 0x7f080140;
+
+        /* JADX INFO: Added by JADX */
+        public static final int edittext_custom = 0x7f080141;
+
+        /* JADX INFO: Added by JADX */
+        public static final int edittext_touming = 0x7f080142;
+
+        /* JADX INFO: Added by JADX */
+        public static final int first_word_bg = 0x7f080143;
+
+        /* JADX INFO: Added by JADX */
+        public static final int green_round_bg = 0x7f080144;
+
+        /* JADX INFO: Added by JADX */
+        public static final int hugup_third_icon = 0x7f080145;
+
+        /* JADX INFO: Added by JADX */
+        public static final int ic_contacts_search_letter_list_hint = 0x7f080146;
+
+        /* JADX INFO: Added by JADX */
+        public static final int ic_contacts_search_letter_list_rtl = 0x7f080147;
+
+        /* JADX INFO: Added by JADX */
+        public static final int ic_launcher_background = 0x7f080148;
+
+        /* JADX INFO: Added by JADX */
+        public static final int keyboard_call_btn_bg = 0x7f08014d;
+
+        /* JADX INFO: Added by JADX */
+        public static final int keyboard_call_icon = 0x7f08014e;
+
+        /* JADX INFO: Added by JADX */
+        public static final int keyboard_item_bg = 0x7f08014f;
+
+        /* JADX INFO: Added by JADX */
+        public static final int keyboard_number_delete_icon = 0x7f080150;
+
+        /* JADX INFO: Added by JADX */
+        public static final int land_activity_bg = 0x7f080151;
+
+        /* JADX INFO: Added by JADX */
+        public static final int land_bt_tablehost_bg = 0x7f080152;
+
+        /* JADX INFO: Added by JADX */
+        public static final int land_bt_tablehost_select_p = 0x7f080153;
+
+        /* JADX INFO: Added by JADX */
+        public static final int land_call_log_item_id_bg = 0x7f080154;
+
+        /* JADX INFO: Added by JADX */
+        public static final int land_main_menu_bg = 0x7f080155;
+
+        /* JADX INFO: Added by JADX */
+        public static final int line = 0x7f080156;
+
+        /* JADX INFO: Added by JADX */
+        public static final int line_1 = 0x7f080157;
+
+        /* JADX INFO: Added by JADX */
+        public static final int list_bg_n = 0x7f080158;
+
+        /* JADX INFO: Added by JADX */
+        public static final int list_bg_p = 0x7f080159;
+
+        /* JADX INFO: Added by JADX */
+        public static final int list_bg_s = 0x7f08015a;
+
+        /* JADX INFO: Added by JADX */
+        public static final int list_line_1 = 0x7f08015b;
+
+        /* JADX INFO: Added by JADX */
+        public static final int listview_scrollbar_bar = 0x7f08015c;
+
+        /* JADX INFO: Added by JADX */
+        public static final int listview_scrollbar_bg = 0x7f08015d;
+
+        /* JADX INFO: Added by JADX */
+        public static final int main_menu_bg = 0x7f08015e;
+
+        /* JADX INFO: Added by JADX */
+        public static final int main_menu_calllog_icon = 0x7f08015f;
+
+        /* JADX INFO: Added by JADX */
+        public static final int main_menu_contacts_icon = 0x7f080160;
+
+        /* JADX INFO: Added by JADX */
+        public static final int main_menu_dial_keyboard_icon = 0x7f080161;
+
+        /* JADX INFO: Added by JADX */
+        public static final int main_menu_missedcalls_icon = 0x7f080162;
+
+        /* JADX INFO: Added by JADX */
+        public static final int missed_calls_tips_red_bg = 0x7f08016a;
+
+        /* JADX INFO: Added by JADX */
+        public static final int missed_calls_tips_red_bg_ty = 0x7f08016b;
+
+        /* JADX INFO: Added by JADX */
+        public static final int no_matching_result_icon = 0x7f080176;
+
+        /* JADX INFO: Added by JADX */
+        public static final int popover_translucent_background = 0x7f080183;
+
+        /* JADX INFO: Added by JADX */
+        public static final int port_keyboard_number_bg = 0x7f080184;
+
+        /* JADX INFO: Added by JADX */
+        public static final int progress_bg = 0x7f080185;
+
+        /* JADX INFO: Added by JADX */
+        public static final int progress_p = 0x7f080186;
+
+        /* JADX INFO: Added by JADX */
+        public static final int progressbar = 0x7f080187;
+
+        /* JADX INFO: Added by JADX */
+        public static final int rd_land_bt_tablehost_bg = 0x7f080188;
+
+        /* JADX INFO: Added by JADX */
+        public static final int rd_land_bt_tablehost_select_p = 0x7f080189;
+
+        /* JADX INFO: Added by JADX */
+        public static final int rd_land_main_menu_bg = 0x7f08018a;
+
+        /* JADX INFO: Added by JADX */
+        public static final int red_round_bg = 0x7f08018b;
+
+        /* JADX INFO: Added by JADX */
+        public static final int scrollbar_bg = 0x7f08018c;
+
+        /* JADX INFO: Added by JADX */
+        public static final int search_clear_btn = 0x7f08018d;
+
+        /* JADX INFO: Added by JADX */
+        public static final int search_contacts_input_bg = 0x7f08018e;
+
+        /* JADX INFO: Added by JADX */
+        public static final int search_edit_bg = 0x7f08018f;
+
+        /* JADX INFO: Added by JADX */
+        public static final int shape_contactsinfo_list_bg = 0x7f080190;
+
+        /* JADX INFO: Added by JADX */
+        public static final int shape_keyboard_bg = 0x7f080191;
+
+        /* JADX INFO: Added by JADX */
+        public static final int shape_round_corner = 0x7f080192;
+
+        /* JADX INFO: Added by JADX */
+        public static final int shape_toast_bg = 0x7f080193;
+
+        /* JADX INFO: Added by JADX */
+        public static final int special_answer_icon = 0x7f080194;
+
+        /* JADX INFO: Added by JADX */
+        public static final int special_bt_call_line = 0x7f080195;
+
+        /* JADX INFO: Added by JADX */
+        public static final int special_calling_keyboard_show_n = 0x7f080196;
+
+        /* JADX INFO: Added by JADX */
+        public static final int special_calling_keyboard_show_p = 0x7f080197;
+
+        /* JADX INFO: Added by JADX */
+        public static final int special_calling_mic_mute_btn = 0x7f080198;
+
+        /* JADX INFO: Added by JADX */
+        public static final int special_calling_mic_mute_d = 0x7f080199;
+
+        /* JADX INFO: Added by JADX */
+        public static final int special_calling_mic_mute_n = 0x7f08019a;
+
+        /* JADX INFO: Added by JADX */
+        public static final int special_calling_mic_mute_p = 0x7f08019b;
+
+        /* JADX INFO: Added by JADX */
+        public static final int special_calling_show_keyboard_btn = 0x7f08019c;
+
+        /* JADX INFO: Added by JADX */
+        public static final int special_calling_voice2phone_btn = 0x7f08019d;
+
+        /* JADX INFO: Added by JADX */
+        public static final int special_calling_voice2phone_n = 0x7f08019e;
+
+        /* JADX INFO: Added by JADX */
+        public static final int special_calling_voice2phone_p = 0x7f08019f;
+
+        /* JADX INFO: Added by JADX */
+        public static final int special_hugup_icon = 0x7f0801a0;
+
+        /* JADX INFO: Added by JADX */
+        public static final int special_hugup_third_icon = 0x7f0801a1;
+
+        /* JADX INFO: Added by JADX */
+        public static final int special_keyboard_item_bg = 0x7f0801a2;
+
+        /* JADX INFO: Added by JADX */
+        public static final int special_scenario_call_view_bg = 0x7f0801a3;
+
+        /* JADX INFO: Added by JADX */
+        public static final int switch_call_icon = 0x7f0801a4;
+
+        /* JADX INFO: Added by JADX */
+        public static final int tablayout_text_select = 0x7f0801a5;
+
+        /* JADX INFO: Added by JADX */
+        public static final int text_selector = 0x7f0801a7;
+
+        /* JADX INFO: Added by JADX */
+        public static final int transparency_drawable = 0x7f0801ab;
+
+        /* JADX INFO: Added by JADX */
+        public static final int ts_list_line_1 = 0x7f0801ac;
+
+        /* JADX INFO: Added by JADX */
+        public static final int ts_popover_translucent_background = 0x7f0801ad;
+
+        /* JADX INFO: Added by JADX */
+        public static final int ts_transparency_drawable = 0x7f0801ae;
+
+        /* JADX INFO: Added by JADX */
+        public static final int widget_btn_bg = 0x7f0801af;
+
+        private drawable() {
+        }
+    }
+
+    public static final class id {
+        public static final int BOTTOM_END = 0x7f090001;
+        public static final int BOTTOM_START = 0x7f090002;
+        public static final int TOP_END = 0x7f09000c;
+        public static final int TOP_START = 0x7f09000d;
+        public static final int accessibility_action_clickable_span = 0x7f09000f;
+        public static final int accessibility_custom_action_0 = 0x7f090010;
+        public static final int accessibility_custom_action_1 = 0x7f090011;
+        public static final int accessibility_custom_action_10 = 0x7f090012;
+        public static final int accessibility_custom_action_11 = 0x7f090013;
+        public static final int accessibility_custom_action_12 = 0x7f090014;
+        public static final int accessibility_custom_action_13 = 0x7f090015;
+        public static final int accessibility_custom_action_14 = 0x7f090016;
+        public static final int accessibility_custom_action_15 = 0x7f090017;
+        public static final int accessibility_custom_action_16 = 0x7f090018;
+        public static final int accessibility_custom_action_17 = 0x7f090019;
+        public static final int accessibility_custom_action_18 = 0x7f09001a;
+        public static final int accessibility_custom_action_19 = 0x7f09001b;
+        public static final int accessibility_custom_action_2 = 0x7f09001c;
+        public static final int accessibility_custom_action_20 = 0x7f09001d;
+        public static final int accessibility_custom_action_21 = 0x7f09001e;
+        public static final int accessibility_custom_action_22 = 0x7f09001f;
+        public static final int accessibility_custom_action_23 = 0x7f090020;
+        public static final int accessibility_custom_action_24 = 0x7f090021;
+        public static final int accessibility_custom_action_25 = 0x7f090022;
+        public static final int accessibility_custom_action_26 = 0x7f090023;
+        public static final int accessibility_custom_action_27 = 0x7f090024;
+        public static final int accessibility_custom_action_28 = 0x7f090025;
+        public static final int accessibility_custom_action_29 = 0x7f090026;
+        public static final int accessibility_custom_action_3 = 0x7f090027;
+        public static final int accessibility_custom_action_30 = 0x7f090028;
+        public static final int accessibility_custom_action_31 = 0x7f090029;
+        public static final int accessibility_custom_action_4 = 0x7f09002a;
+        public static final int accessibility_custom_action_5 = 0x7f09002b;
+        public static final int accessibility_custom_action_6 = 0x7f09002c;
+        public static final int accessibility_custom_action_7 = 0x7f09002d;
+        public static final int accessibility_custom_action_8 = 0x7f09002e;
+        public static final int accessibility_custom_action_9 = 0x7f09002f;
+        public static final int action_bar = 0x7f090034;
+        public static final int action_bar_activity_content = 0x7f090035;
+        public static final int action_bar_container = 0x7f090036;
+        public static final int action_bar_root = 0x7f090037;
+        public static final int action_bar_spinner = 0x7f090038;
+        public static final int action_bar_subtitle = 0x7f090039;
+        public static final int action_bar_title = 0x7f09003a;
+        public static final int action_container = 0x7f09003b;
+        public static final int action_context_bar = 0x7f09003c;
+        public static final int action_divider = 0x7f09003d;
+        public static final int action_image = 0x7f09003e;
+        public static final int action_menu_divider = 0x7f09003f;
+        public static final int action_menu_presenter = 0x7f090040;
+        public static final int action_mode_bar = 0x7f090041;
+        public static final int action_mode_bar_stub = 0x7f090042;
+        public static final int action_mode_close_button = 0x7f090043;
+        public static final int action_text = 0x7f090044;
+        public static final int actions = 0x7f090045;
+        public static final int activity_chooser_view_content = 0x7f090046;
+        public static final int add = 0x7f090047;
+        public static final int alertTitle = 0x7f090049;
+        public static final int async = 0x7f090053;
+        public static final int auto = 0x7f090054;
+        public static final int blocking = 0x7f09005e;
+        public static final int bottom = 0x7f09005f;
+        public static final int buttonPanel = 0x7f090084;
+        public static final int cancel_button = 0x7f0900a3;
+        public static final int center = 0x7f0900a7;
+        public static final int checkbox = 0x7f0900ad;
+        public static final int checked = 0x7f0900ae;
+        public static final int chip = 0x7f0900af;
+        public static final int chip1 = 0x7f0900b0;
+        public static final int chip2 = 0x7f0900b1;
+        public static final int chip3 = 0x7f0900b2;
+        public static final int chip_group = 0x7f0900b3;
+        public static final int chronometer = 0x7f0900b4;
+        public static final int clear_text = 0x7f0900b6;
+        public static final int confirm_button = 0x7f0900bc;
+        public static final int container = 0x7f0900cc;
+        public static final int content = 0x7f0900cd;
+        public static final int contentPanel = 0x7f0900ce;
+        public static final int coordinator = 0x7f0900d0;
+        public static final int custom = 0x7f0900d3;
+        public static final int customPanel = 0x7f0900d4;
+        public static final int cut = 0x7f0900d5;
+        public static final int dataBinding = 0x7f0900d6;
+        public static final int date_picker_actions = 0x7f0900d7;
+        public static final int decor_content_parent = 0x7f0900da;
+        public static final int default_activity_button = 0x7f0900db;
+        public static final int design_bottom_sheet = 0x7f0900de;
+        public static final int design_menu_item_action_area = 0x7f0900df;
+        public static final int design_menu_item_action_area_stub = 0x7f0900e0;
+        public static final int design_menu_item_text = 0x7f0900e1;
+        public static final int design_navigation_view = 0x7f0900e2;
+        public static final int dialog_button = 0x7f0900e4;
+        public static final int dropdown_menu = 0x7f0900fc;
+        public static final int edit_query = 0x7f090101;
+        public static final int end = 0x7f090102;
+        public static final int expand_activities_button = 0x7f090107;
+        public static final int expanded_menu = 0x7f090108;
+        public static final int fade = 0x7f090109;
+        public static final int fill = 0x7f09010a;
+        public static final int filled = 0x7f09010d;
+        public static final int fixed = 0x7f090111;
+        public static final int floating = 0x7f090113;
+        public static final int forever = 0x7f090114;
+        public static final int ghost_view = 0x7f090116;
+        public static final int ghost_view_holder = 0x7f090117;
+        public static final int gone = 0x7f090119;
+        public static final int group_divider = 0x7f09011c;
+        public static final int home = 0x7f090121;
+        public static final int icon = 0x7f090128;
+        public static final int icon_group = 0x7f090129;
+        public static final int image = 0x7f09012e;
+        public static final int info = 0x7f090136;
+        public static final int italic = 0x7f09013a;
+        public static final int item_touch_helper_previous_elevation = 0x7f09013e;
+        public static final int labeled = 0x7f090164;
+        public static final int largeLabel = 0x7f090168;
+        public static final int left = 0x7f09016a;
+        public static final int line1 = 0x7f09016f;
+        public static final int line3 = 0x7f090170;
+        public static final int listMode = 0x7f090172;
+        public static final int list_item = 0x7f090173;
+        public static final int masked = 0x7f09017b;
+        public static final int message = 0x7f09017f;
+        public static final int mini = 0x7f090181;
+        public static final int month_grid = 0x7f090189;
+        public static final int month_navigation_bar = 0x7f09018a;
+        public static final int month_navigation_fragment_toggle = 0x7f09018b;
+        public static final int month_navigation_next = 0x7f09018c;
+        public static final int month_navigation_previous = 0x7f09018d;
+        public static final int month_title = 0x7f09018e;
+        public static final int mtrl_calendar_day_selector_frame = 0x7f090190;
+        public static final int mtrl_calendar_days_of_week = 0x7f090191;
+        public static final int mtrl_calendar_frame = 0x7f090192;
+        public static final int mtrl_calendar_main_pane = 0x7f090193;
+        public static final int mtrl_calendar_months = 0x7f090194;
+        public static final int mtrl_calendar_selection_frame = 0x7f090195;
+        public static final int mtrl_calendar_text_input_frame = 0x7f090196;
+        public static final int mtrl_calendar_year_selector_frame = 0x7f090197;
+        public static final int mtrl_card_checked_layer_id = 0x7f090198;
+        public static final int mtrl_child_content_container = 0x7f090199;
+        public static final int mtrl_internal_children_alpha_tag = 0x7f09019a;
+        public static final int mtrl_motion_snapshot_view = 0x7f09019b;
+        public static final int mtrl_picker_fullscreen = 0x7f09019c;
+        public static final int mtrl_picker_header = 0x7f09019d;
+        public static final int mtrl_picker_header_selection_text = 0x7f09019e;
+        public static final int mtrl_picker_header_title_and_selection = 0x7f09019f;
+        public static final int mtrl_picker_header_toggle = 0x7f0901a0;
+        public static final int mtrl_picker_text_input_date = 0x7f0901a1;
+        public static final int mtrl_picker_text_input_range_end = 0x7f0901a2;
+        public static final int mtrl_picker_text_input_range_start = 0x7f0901a3;
+        public static final int mtrl_picker_title_text = 0x7f0901a4;
+        public static final int multiply = 0x7f0901a5;
+        public static final int navigation_header_container = 0x7f0901a7;
+        public static final int none = 0x7f0901b8;
+        public static final int normal = 0x7f0901b9;
+        public static final int notification_background = 0x7f0901be;
+        public static final int notification_main_column = 0x7f0901bf;
+        public static final int notification_main_column_container = 0x7f0901c0;
+        public static final int off = 0x7f0901c1;
+        public static final int on = 0x7f0901c2;
+        public static final int onAttachStateChangeListener = 0x7f0901c3;
+        public static final int onDateChanged = 0x7f0901c4;
+        public static final int outline = 0x7f0901c8;
+        public static final int parallax = 0x7f0901cb;
+        public static final int parentPanel = 0x7f0901cd;
+        public static final int parent_matrix = 0x7f0901cf;
+        public static final int password_toggle = 0x7f0901d0;
+        public static final int pin = 0x7f0901dd;
+        public static final int progress_circular = 0x7f0901e0;
+        public static final int progress_horizontal = 0x7f0901e1;
+        public static final int radio = 0x7f0901e2;
+        public static final int right = 0x7f0901ee;
+        public static final int right_icon = 0x7f0901ef;
+        public static final int right_side = 0x7f0901f0;
+        public static final int rounded = 0x7f0901f2;
+        public static final int row_index_key = 0x7f0901f3;
+        public static final int save_non_transition_alpha = 0x7f0901f4;
+        public static final int save_overlay_view = 0x7f0901f5;
+        public static final int scale = 0x7f0901f7;
+        public static final int screen = 0x7f0901f8;
+        public static final int scrollIndicatorDown = 0x7f0901fa;
+        public static final int scrollIndicatorUp = 0x7f0901fb;
+        public static final int scrollView = 0x7f0901fc;
+        public static final int scrollable = 0x7f0901fd;
+        public static final int search_badge = 0x7f0901fe;
+        public static final int search_bar = 0x7f0901ff;
+        public static final int search_button = 0x7f090201;
+        public static final int search_close_btn = 0x7f090203;
+        public static final int search_edit_frame = 0x7f090206;
+        public static final int search_go_btn = 0x7f090207;
+        public static final int search_mag_icon = 0x7f09020a;
+        public static final int search_plate = 0x7f09020c;
+        public static final int search_src_text = 0x7f09020d;
+        public static final int search_voice_btn = 0x7f09020e;
+        public static final int select_dialog_listview = 0x7f09020f;
+        public static final int selected = 0x7f090210;
+        public static final int shortcut = 0x7f090214;
+        public static final int slide = 0x7f09021d;
+        public static final int smallLabel = 0x7f09021e;
+        public static final int snackbar_action = 0x7f09021f;
+        public static final int snackbar_text = 0x7f090220;
+        public static final int spacer = 0x7f090225;
+        public static final int split_action_bar = 0x7f090229;
+        public static final int src_atop = 0x7f09022e;
+        public static final int src_in = 0x7f09022f;
+        public static final int src_over = 0x7f090230;
+        public static final int start = 0x7f090232;
+        public static final int stretch = 0x7f090239;
+        public static final int submenuarrow = 0x7f09023a;
+        public static final int submit_area = 0x7f09023b;
+        public static final int tabMode = 0x7f090248;
+        public static final int tag_accessibility_actions = 0x7f09024d;
+        public static final int tag_accessibility_clickable_spans = 0x7f09024e;
+        public static final int tag_accessibility_heading = 0x7f09024f;
+        public static final int tag_accessibility_pane_title = 0x7f090250;
+        public static final int tag_screen_reader_focusable = 0x7f090251;
+        public static final int tag_transition_group = 0x7f090252;
+        public static final int tag_unhandled_key_event_manager = 0x7f090253;
+        public static final int tag_unhandled_key_listeners = 0x7f090254;
+        public static final int test_checkbox_android_button_tint = 0x7f090256;
+        public static final int test_checkbox_app_button_tint = 0x7f090257;
+        public static final int test_radiobutton_android_button_tint = 0x7f090258;
+        public static final int test_radiobutton_app_button_tint = 0x7f090259;
+        public static final int text = 0x7f09025a;
+        public static final int text2 = 0x7f09025b;
+        public static final int textSpacerNoButtons = 0x7f09025d;
+        public static final int textSpacerNoTitle = 0x7f09025e;
+        public static final int textWatcher = 0x7f090260;
+        public static final int text_input_end_icon = 0x7f090261;
+        public static final int text_input_start_icon = 0x7f090262;
+        public static final int textinput_counter = 0x7f090263;
+        public static final int textinput_error = 0x7f090264;
+        public static final int textinput_helper_text = 0x7f090265;
+        public static final int textinput_placeholder = 0x7f090266;
+        public static final int textinput_prefix_text = 0x7f090267;
+        public static final int textinput_suffix_text = 0x7f090268;
+        public static final int time = 0x7f09026e;
+        public static final int title = 0x7f09026f;
+        public static final int titleDividerNoCustom = 0x7f090270;
+        public static final int title_template = 0x7f090271;
+        public static final int top = 0x7f090273;
+        public static final int topPanel = 0x7f090274;
+        public static final int touch_outside = 0x7f090276;
+        public static final int transition_current_scene = 0x7f090279;
+        public static final int transition_layout_save = 0x7f09027a;
+        public static final int transition_position = 0x7f09027b;
+        public static final int transition_scene_layoutid_cache = 0x7f09027c;
+        public static final int transition_transform = 0x7f09027d;
+        public static final int unchecked = 0x7f090293;
+        public static final int uniform = 0x7f090294;
+        public static final int unlabeled = 0x7f090295;
+        public static final int up = 0x7f090297;
+        public static final int view_offset_helper = 0x7f09029c;
+        public static final int visible = 0x7f0902a0;
+        public static final int withinBounds = 0x7f0902a5;
+        public static final int wrap_content = 0x7f0902a7;
+        public static final int zero_corner_chip = 0x7f0902ab;
+
+        /* JADX INFO: Added by JADX */
+        public static final int ALT = 0x7f090000;
+
+        /* JADX INFO: Added by JADX */
+        public static final int CTRL = 0x7f090003;
+
+        /* JADX INFO: Added by JADX */
+        public static final int FUNCTION = 0x7f090004;
+
+        /* JADX INFO: Added by JADX */
+        public static final int META = 0x7f090005;
+
+        /* JADX INFO: Added by JADX */
+        public static final int NO_DEBUG = 0x7f090006;
+
+        /* JADX INFO: Added by JADX */
+        public static final int SHIFT = 0x7f090007;
+
+        /* JADX INFO: Added by JADX */
+        public static final int SHOW_ALL = 0x7f090008;
+
+        /* JADX INFO: Added by JADX */
+        public static final int SHOW_PATH = 0x7f090009;
+
+        /* JADX INFO: Added by JADX */
+        public static final int SHOW_PROGRESS = 0x7f09000a;
+
+        /* JADX INFO: Added by JADX */
+        public static final int SYM = 0x7f09000b;
+
+        /* JADX INFO: Added by JADX */
+        public static final int accelerate = 0x7f09000e;
+
+        /* JADX INFO: Added by JADX */
+        public static final int action0 = 0x7f090030;
+
+        /* JADX INFO: Added by JADX */
+        public static final int actionDown = 0x7f090031;
+
+        /* JADX INFO: Added by JADX */
+        public static final int actionDownUp = 0x7f090032;
+
+        /* JADX INFO: Added by JADX */
+        public static final int actionUp = 0x7f090033;
+
+        /* JADX INFO: Added by JADX */
+        public static final int address_of_number = 0x7f090048;
+
+        /* JADX INFO: Added by JADX */
+        public static final int aligned = 0x7f09004a;
+
+        /* JADX INFO: Added by JADX */
+        public static final int all = 0x7f09004b;
+
+        /* JADX INFO: Added by JADX */
+        public static final int allStates = 0x7f09004c;
+
+        /* JADX INFO: Added by JADX */
+        public static final int always = 0x7f09004d;
+
+        /* JADX INFO: Added by JADX */
+        public static final int animateToEnd = 0x7f09004e;
+
+        /* JADX INFO: Added by JADX */
+        public static final int animateToStart = 0x7f09004f;
+
+        /* JADX INFO: Added by JADX */
+        public static final int antiClockwise = 0x7f090050;
+
+        /* JADX INFO: Added by JADX */
+        public static final int anticipate = 0x7f090051;
+
+        /* JADX INFO: Added by JADX */
+        public static final int asConfigured = 0x7f090052;
+
+        /* JADX INFO: Added by JADX */
+        public static final int autoComplete = 0x7f090055;
+
+        /* JADX INFO: Added by JADX */
+        public static final int autoCompleteToEnd = 0x7f090056;
+
+        /* JADX INFO: Added by JADX */
+        public static final int autoCompleteToStart = 0x7f090057;
+
+        /* JADX INFO: Added by JADX */
+        public static final int automatic = 0x7f090058;
+
+        /* JADX INFO: Added by JADX */
+        public static final int barrier = 0x7f090059;
+
+        /* JADX INFO: Added by JADX */
+        public static final int baseline = 0x7f09005a;
+
+        /* JADX INFO: Added by JADX */
+        public static final int beginOnFirstDraw = 0x7f09005b;
+
+        /* JADX INFO: Added by JADX */
+        public static final int beginning = 0x7f09005c;
+
+        /* JADX INFO: Added by JADX */
+        public static final int bestChoice = 0x7f09005d;
+
+        /* JADX INFO: Added by JADX */
+        public static final int bottom_to_top = 0x7f090060;
+
+        /* JADX INFO: Added by JADX */
+        public static final int bounce = 0x7f090061;
+
+        /* JADX INFO: Added by JADX */
+        public static final int bounceBoth = 0x7f090062;
+
+        /* JADX INFO: Added by JADX */
+        public static final int bounceEnd = 0x7f090063;
+
+        /* JADX INFO: Added by JADX */
+        public static final int bounceStart = 0x7f090064;
+
+        /* JADX INFO: Added by JADX */
+        public static final int bt_app_widget_bg = 0x7f090065;
+
+        /* JADX INFO: Added by JADX */
+        public static final int bt_app_widget_piont = 0x7f090066;
+
+        /* JADX INFO: Added by JADX */
+        public static final int bt_battery_icon = 0x7f090067;
+
+        /* JADX INFO: Added by JADX */
+        public static final int bt_call_in_layout = 0x7f090068;
+
+        /* JADX INFO: Added by JADX */
+        public static final int bt_call_ing_layout = 0x7f090069;
+
+        /* JADX INFO: Added by JADX */
+        public static final int bt_call_log_no_recode_text = 0x7f09006a;
+
+        /* JADX INFO: Added by JADX */
+        public static final int bt_call_out_layout = 0x7f09006b;
+
+        /* JADX INFO: Added by JADX */
+        public static final int bt_call_small_icon = 0x7f09006c;
+
+        /* JADX INFO: Added by JADX */
+        public static final int bt_call_view_click = 0x7f09006d;
+
+        /* JADX INFO: Added by JADX */
+        public static final int bt_call_wm_layout = 0x7f09006e;
+
+        /* JADX INFO: Added by JADX */
+        public static final int bt_call_wm_state = 0x7f09006f;
+
+        /* JADX INFO: Added by JADX */
+        public static final int bt_call_wm_text = 0x7f090070;
+
+        /* JADX INFO: Added by JADX */
+        public static final int bt_dial_number_btn = 0x7f090071;
+
+        /* JADX INFO: Added by JADX */
+        public static final int bt_dialog_bg = 0x7f090072;
+
+        /* JADX INFO: Added by JADX */
+        public static final int bt_dialog_line = 0x7f090073;
+
+        /* JADX INFO: Added by JADX */
+        public static final int bt_name_text_layout = 0x7f090074;
+
+        /* JADX INFO: Added by JADX */
+        public static final int bt_nametext = 0x7f090075;
+
+        /* JADX INFO: Added by JADX */
+        public static final int bt_special_call_view = 0x7f090076;
+
+        /* JADX INFO: Added by JADX */
+        public static final int bt_widget_2_calllog = 0x7f090077;
+
+        /* JADX INFO: Added by JADX */
+        public static final int bt_widget_2_calllog_2 = 0x7f090078;
+
+        /* JADX INFO: Added by JADX */
+        public static final int bt_widget_2_misscall = 0x7f090079;
+
+        /* JADX INFO: Added by JADX */
+        public static final int bt_widget_2_misscall_2 = 0x7f09007a;
+
+        /* JADX INFO: Added by JADX */
+        public static final int bt_widget_calllog_icon = 0x7f09007b;
+
+        /* JADX INFO: Added by JADX */
+        public static final int bt_widget_calllog_icon_bg = 0x7f09007c;
+
+        /* JADX INFO: Added by JADX */
+        public static final int bt_widget_calllog_text = 0x7f09007d;
+
+        /* JADX INFO: Added by JADX */
+        public static final int bt_widget_connect_icon = 0x7f09007e;
+
+        /* JADX INFO: Added by JADX */
+        public static final int bt_widget_misscall_icon = 0x7f09007f;
+
+        /* JADX INFO: Added by JADX */
+        public static final int bt_widget_misscall_icon_bg = 0x7f090080;
+
+        /* JADX INFO: Added by JADX */
+        public static final int bt_widget_misscall_text = 0x7f090081;
+
+        /* JADX INFO: Added by JADX */
+        public static final int bt_widget_notconnect_icon = 0x7f090082;
+
+        /* JADX INFO: Added by JADX */
+        public static final int btcall_wm_click = 0x7f090083;
+
+        /* JADX INFO: Added by JADX */
+        public static final int cache_measures = 0x7f090085;
+
+        /* JADX INFO: Added by JADX */
+        public static final int callMeasure = 0x7f090086;
+
+        /* JADX INFO: Added by JADX */
+        public static final int call_in_anser_btn = 0x7f090087;
+
+        /* JADX INFO: Added by JADX */
+        public static final int call_in_hugup_btn = 0x7f090088;
+
+        /* JADX INFO: Added by JADX */
+        public static final int call_in_location_text = 0x7f090089;
+
+        /* JADX INFO: Added by JADX */
+        public static final int call_in_name_text = 0x7f09008a;
+
+        /* JADX INFO: Added by JADX */
+        public static final int call_ing_changevoice_btn = 0x7f09008b;
+
+        /* JADX INFO: Added by JADX */
+        public static final int call_ing_hugup_btn = 0x7f09008c;
+
+        /* JADX INFO: Added by JADX */
+        public static final int call_ing_keyboard_btn = 0x7f09008d;
+
+        /* JADX INFO: Added by JADX */
+        public static final int call_ing_keyboard_input_text = 0x7f09008e;
+
+        /* JADX INFO: Added by JADX */
+        public static final int call_ing_keyboard_input_text_left = 0x7f09008f;
+
+        /* JADX INFO: Added by JADX */
+        public static final int call_ing_keyboard_layout = 0x7f090090;
+
+        /* JADX INFO: Added by JADX */
+        public static final int call_ing_keyboard_layout_left = 0x7f090091;
+
+        /* JADX INFO: Added by JADX */
+        public static final int call_ing_micswitch_btn = 0x7f090092;
+
+        /* JADX INFO: Added by JADX */
+        public static final int call_ing_name_text = 0x7f090093;
+
+        /* JADX INFO: Added by JADX */
+        public static final int call_ing_time_text = 0x7f090094;
+
+        /* JADX INFO: Added by JADX */
+        public static final int call_log_count = 0x7f090095;
+
+        /* JADX INFO: Added by JADX */
+        public static final int call_log_infomation = 0x7f090096;
+
+        /* JADX INFO: Added by JADX */
+        public static final int call_log_list = 0x7f090097;
+
+        /* JADX INFO: Added by JADX */
+        public static final int call_log_name = 0x7f090098;
+
+        /* JADX INFO: Added by JADX */
+        public static final int call_log_time = 0x7f090099;
+
+        /* JADX INFO: Added by JADX */
+        public static final int call_log_type = 0x7f09009a;
+
+        /* JADX INFO: Added by JADX */
+        public static final int call_out_changevoice_btn = 0x7f09009b;
+
+        /* JADX INFO: Added by JADX */
+        public static final int call_out_hugup_btn = 0x7f09009c;
+
+        /* JADX INFO: Added by JADX */
+        public static final int call_out_location_text = 0x7f09009d;
+
+        /* JADX INFO: Added by JADX */
+        public static final int call_out_name_text = 0x7f09009e;
+
+        /* JADX INFO: Added by JADX */
+        public static final int call_records = 0x7f09009f;
+
+        /* JADX INFO: Added by JADX */
+        public static final int calllog_item = 0x7f0900a0;
+
+        /* JADX INFO: Added by JADX */
+        public static final int calllog_item_bg = 0x7f0900a1;
+
+        /* JADX INFO: Added by JADX */
+        public static final int cancel_action = 0x7f0900a2;
+
+        /* JADX INFO: Added by JADX */
+        public static final int capital_letter = 0x7f0900a4;
+
+        /* JADX INFO: Added by JADX */
+        public static final int capital_letter_layout = 0x7f0900a5;
+
+        /* JADX INFO: Added by JADX */
+        public static final int carryVelocity = 0x7f0900a6;
+
+        /* JADX INFO: Added by JADX */
+        public static final int center_horizontal = 0x7f0900a8;
+
+        /* JADX INFO: Added by JADX */
+        public static final int center_vertical = 0x7f0900a9;
+
+        /* JADX INFO: Added by JADX */
+        public static final int chain = 0x7f0900aa;
+
+        /* JADX INFO: Added by JADX */
+        public static final int chain2 = 0x7f0900ab;
+
+        /* JADX INFO: Added by JADX */
+        public static final int chains = 0x7f0900ac;
+
+        /* JADX INFO: Added by JADX */
+        public static final int circle = 0x7f0900b5;
+
+        /* JADX INFO: Added by JADX */
+        public static final int clip_horizontal = 0x7f0900b7;
+
+        /* JADX INFO: Added by JADX */
+        public static final int clip_vertical = 0x7f0900b8;
+
+        /* JADX INFO: Added by JADX */
+        public static final int clockwise = 0x7f0900b9;
+
+        /* JADX INFO: Added by JADX */
+        public static final int closest = 0x7f0900ba;
+
+        /* JADX INFO: Added by JADX */
+        public static final int collapseActionView = 0x7f0900bb;
+
+        /* JADX INFO: Added by JADX */
+        public static final int connected_widget_layout = 0x7f0900bd;
+
+        /* JADX INFO: Added by JADX */
+        public static final int constraint = 0x7f0900be;
+
+        /* JADX INFO: Added by JADX */
+        public static final int contacts_name = 0x7f0900bf;
+
+        /* JADX INFO: Added by JADX */
+        public static final int contacts_permission_layout = 0x7f0900c0;
+
+        /* JADX INFO: Added by JADX */
+        public static final int contacts_popwm_back = 0x7f0900c1;
+
+        /* JADX INFO: Added by JADX */
+        public static final int contacts_reflesh_icon = 0x7f0900c2;
+
+        /* JADX INFO: Added by JADX */
+        public static final int contacts_reflesh_textview = 0x7f0900c3;
+
+        /* JADX INFO: Added by JADX */
+        public static final int contacts_search_button = 0x7f0900c4;
+
+        /* JADX INFO: Added by JADX */
+        public static final int contacts_search_image = 0x7f0900c5;
+
+        /* JADX INFO: Added by JADX */
+        public static final int contacts_search_item_first_word = 0x7f0900c6;
+
+        /* JADX INFO: Added by JADX */
+        public static final int contacts_search_item_first_word_bg = 0x7f0900c7;
+
+        /* JADX INFO: Added by JADX */
+        public static final int contacts_search_item_name = 0x7f0900c8;
+
+        /* JADX INFO: Added by JADX */
+        public static final int contacts_search_item_number = 0x7f0900c9;
+
+        /* JADX INFO: Added by JADX */
+        public static final int contacts_search_layout = 0x7f0900ca;
+
+        /* JADX INFO: Added by JADX */
+        public static final int contacts_wm_bg = 0x7f0900cb;
+
+        /* JADX INFO: Added by JADX */
+        public static final int continuousVelocity = 0x7f0900cf;
+
+        /* JADX INFO: Added by JADX */
+        public static final int cos = 0x7f0900d1;
+
+        /* JADX INFO: Added by JADX */
+        public static final int currentState = 0x7f0900d2;
+
+        /* JADX INFO: Added by JADX */
+        public static final int decelerate = 0x7f0900d8;
+
+        /* JADX INFO: Added by JADX */
+        public static final int decelerateAndComplete = 0x7f0900d9;
+
+        /* JADX INFO: Added by JADX */
+        public static final int deltaRelative = 0x7f0900dc;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dependency_ordering = 0x7f0900dd;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dialing_text = 0x7f0900e3;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dialog_cancle_btn = 0x7f0900e5;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dialog_confirm_btn = 0x7f0900e6;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dialog_end_and_accept_btn = 0x7f0900e7;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dialog_reject_btn = 0x7f0900e8;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dialog_tips = 0x7f0900e9;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dialog_title = 0x7f0900ea;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dimensions = 0x7f0900eb;
+
+        /* JADX INFO: Added by JADX */
+        public static final int direct = 0x7f0900ec;
+
+        /* JADX INFO: Added by JADX */
+        public static final int disableHome = 0x7f0900ed;
+
+        /* JADX INFO: Added by JADX */
+        public static final int disableIntraAutoTransition = 0x7f0900ee;
+
+        /* JADX INFO: Added by JADX */
+        public static final int disablePostScroll = 0x7f0900ef;
+
+        /* JADX INFO: Added by JADX */
+        public static final int disableScroll = 0x7f0900f0;
+
+        /* JADX INFO: Added by JADX */
+        public static final int disconnect_widget_click_1 = 0x7f0900f1;
+
+        /* JADX INFO: Added by JADX */
+        public static final int disconnect_widget_click_2 = 0x7f0900f2;
+
+        /* JADX INFO: Added by JADX */
+        public static final int disconnect_widget_layout = 0x7f0900f3;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dragAnticlockwise = 0x7f0900f4;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dragClockwise = 0x7f0900f5;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dragDown = 0x7f0900f6;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dragEnd = 0x7f0900f7;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dragLeft = 0x7f0900f8;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dragRight = 0x7f0900f9;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dragStart = 0x7f0900fa;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dragUp = 0x7f0900fb;
+
+        /* JADX INFO: Added by JADX */
+        public static final int easeIn = 0x7f0900fd;
+
+        /* JADX INFO: Added by JADX */
+        public static final int easeInOut = 0x7f0900fe;
+
+        /* JADX INFO: Added by JADX */
+        public static final int easeOut = 0x7f0900ff;
+
+        /* JADX INFO: Added by JADX */
+        public static final int east = 0x7f090100;
+
+        /* JADX INFO: Added by JADX */
+        public static final int end_padder = 0x7f090103;
+
+        /* JADX INFO: Added by JADX */
+        public static final int enterAlways = 0x7f090104;
+
+        /* JADX INFO: Added by JADX */
+        public static final int enterAlwaysCollapsed = 0x7f090105;
+
+        /* JADX INFO: Added by JADX */
+        public static final int exitUntilCollapsed = 0x7f090106;
+
+        /* JADX INFO: Added by JADX */
+        public static final int fill_horizontal = 0x7f09010b;
+
+        /* JADX INFO: Added by JADX */
+        public static final int fill_vertical = 0x7f09010c;
+
+        /* JADX INFO: Added by JADX */
+        public static final int first_word = 0x7f09010e;
+
+        /* JADX INFO: Added by JADX */
+        public static final int first_word_bg = 0x7f09010f;
+
+        /* JADX INFO: Added by JADX */
+        public static final int fitToContents = 0x7f090110;
+
+        /* JADX INFO: Added by JADX */
+        public static final int flip = 0x7f090112;
+
+        /* JADX INFO: Added by JADX */
+        public static final int frost = 0x7f090115;
+
+        /* JADX INFO: Added by JADX */
+        public static final int go_to_connect_btn = 0x7f090118;
+
+        /* JADX INFO: Added by JADX */
+        public static final int graph = 0x7f09011a;
+
+        /* JADX INFO: Added by JADX */
+        public static final int graph_wrap = 0x7f09011b;
+
+        /* JADX INFO: Added by JADX */
+        public static final int grouping = 0x7f09011d;
+
+        /* JADX INFO: Added by JADX */
+        public static final int groups = 0x7f09011e;
+
+        /* JADX INFO: Added by JADX */
+        public static final int hardware = 0x7f09011f;
+
+        /* JADX INFO: Added by JADX */
+        public static final int hideable = 0x7f090120;
+
+        /* JADX INFO: Added by JADX */
+        public static final int homeAsUp = 0x7f090122;
+
+        /* JADX INFO: Added by JADX */
+        public static final int honorRequest = 0x7f090123;
+
+        /* JADX INFO: Added by JADX */
+        public static final int horiziton = 0x7f090124;
+
+        /* JADX INFO: Added by JADX */
+        public static final int horizontal_only = 0x7f090125;
+
+        /* JADX INFO: Added by JADX */
+        public static final int hugup_third_image = 0x7f090126;
+
+        /* JADX INFO: Added by JADX */
+        public static final int hugup_third_image_widget = 0x7f090127;
+
+        /* JADX INFO: Added by JADX */
+        public static final int id_pop_layout = 0x7f09012a;
+
+        /* JADX INFO: Added by JADX */
+        public static final int ifRoom = 0x7f09012b;
+
+        /* JADX INFO: Added by JADX */
+        public static final int ignore = 0x7f09012c;
+
+        /* JADX INFO: Added by JADX */
+        public static final int ignoreRequest = 0x7f09012d;
+
+        /* JADX INFO: Added by JADX */
+        public static final int immediateStop = 0x7f09012f;
+
+        /* JADX INFO: Added by JADX */
+        public static final int in_dimens_32 = 0x7f090130;
+
+        /* JADX INFO: Added by JADX */
+        public static final int in_dimens_34 = 0x7f090131;
+
+        /* JADX INFO: Added by JADX */
+        public static final int include_keyboard_layout = 0x7f090132;
+
+        /* JADX INFO: Added by JADX */
+        public static final int include_tab_layout = 0x7f090133;
+
+        /* JADX INFO: Added by JADX */
+        public static final int include_table_layout = 0x7f090134;
+
+        /* JADX INFO: Added by JADX */
+        public static final int included = 0x7f090135;
+
+        /* JADX INFO: Added by JADX */
+        public static final int ing_dimens_26 = 0x7f090137;
+
+        /* JADX INFO: Added by JADX */
+        public static final int ing_dimens_32 = 0x7f090138;
+
+        /* JADX INFO: Added by JADX */
+        public static final int invisible = 0x7f090139;
+
+        /* JADX INFO: Added by JADX */
+        public static final int item_call_icon = 0x7f09013b;
+
+        /* JADX INFO: Added by JADX */
+        public static final int item_location = 0x7f09013c;
+
+        /* JADX INFO: Added by JADX */
+        public static final int item_number = 0x7f09013d;
+
+        /* JADX INFO: Added by JADX */
+        public static final int jumpToEnd = 0x7f09013f;
+
+        /* JADX INFO: Added by JADX */
+        public static final int jumpToStart = 0x7f090140;
+
+        /* JADX INFO: Added by JADX */
+        public static final int keyboard_abc_text = 0x7f090141;
+
+        /* JADX INFO: Added by JADX */
+        public static final int keyboard_def_text = 0x7f090142;
+
+        /* JADX INFO: Added by JADX */
+        public static final int keyboard_delete = 0x7f090143;
+
+        /* JADX INFO: Added by JADX */
+        public static final int keyboard_ghi_text = 0x7f090144;
+
+        /* JADX INFO: Added by JADX */
+        public static final int keyboard_iput = 0x7f090145;
+
+        /* JADX INFO: Added by JADX */
+        public static final int keyboard_jia_text = 0x7f090146;
+
+        /* JADX INFO: Added by JADX */
+        public static final int keyboard_jkl_text = 0x7f090147;
+
+        /* JADX INFO: Added by JADX */
+        public static final int keyboard_mno_text = 0x7f090148;
+
+        /* JADX INFO: Added by JADX */
+        public static final int keyboard_number_0 = 0x7f090149;
+
+        /* JADX INFO: Added by JADX */
+        public static final int keyboard_number_0_text = 0x7f09014a;
+
+        /* JADX INFO: Added by JADX */
+        public static final int keyboard_number_1 = 0x7f09014b;
+
+        /* JADX INFO: Added by JADX */
+        public static final int keyboard_number_1_text = 0x7f09014c;
+
+        /* JADX INFO: Added by JADX */
+        public static final int keyboard_number_2 = 0x7f09014d;
+
+        /* JADX INFO: Added by JADX */
+        public static final int keyboard_number_2_text = 0x7f09014e;
+
+        /* JADX INFO: Added by JADX */
+        public static final int keyboard_number_3 = 0x7f09014f;
+
+        /* JADX INFO: Added by JADX */
+        public static final int keyboard_number_3_text = 0x7f090150;
+
+        /* JADX INFO: Added by JADX */
+        public static final int keyboard_number_4 = 0x7f090151;
+
+        /* JADX INFO: Added by JADX */
+        public static final int keyboard_number_4_text = 0x7f090152;
+
+        /* JADX INFO: Added by JADX */
+        public static final int keyboard_number_5 = 0x7f090153;
+
+        /* JADX INFO: Added by JADX */
+        public static final int keyboard_number_5_text = 0x7f090154;
+
+        /* JADX INFO: Added by JADX */
+        public static final int keyboard_number_6 = 0x7f090155;
+
+        /* JADX INFO: Added by JADX */
+        public static final int keyboard_number_6_text = 0x7f090156;
+
+        /* JADX INFO: Added by JADX */
+        public static final int keyboard_number_7 = 0x7f090157;
+
+        /* JADX INFO: Added by JADX */
+        public static final int keyboard_number_7_text = 0x7f090158;
+
+        /* JADX INFO: Added by JADX */
+        public static final int keyboard_number_8 = 0x7f090159;
+
+        /* JADX INFO: Added by JADX */
+        public static final int keyboard_number_8_text = 0x7f09015a;
+
+        /* JADX INFO: Added by JADX */
+        public static final int keyboard_number_9 = 0x7f09015b;
+
+        /* JADX INFO: Added by JADX */
+        public static final int keyboard_number_9_text = 0x7f09015c;
+
+        /* JADX INFO: Added by JADX */
+        public static final int keyboard_number_j = 0x7f09015d;
+
+        /* JADX INFO: Added by JADX */
+        public static final int keyboard_number_j_text = 0x7f09015e;
+
+        /* JADX INFO: Added by JADX */
+        public static final int keyboard_number_x = 0x7f09015f;
+
+        /* JADX INFO: Added by JADX */
+        public static final int keyboard_number_x_text = 0x7f090160;
+
+        /* JADX INFO: Added by JADX */
+        public static final int keyboard_pqrs_text = 0x7f090161;
+
+        /* JADX INFO: Added by JADX */
+        public static final int keyboard_tuv_text = 0x7f090162;
+
+        /* JADX INFO: Added by JADX */
+        public static final int keyboard_wxyz_text = 0x7f090163;
+
+        /* JADX INFO: Added by JADX */
+        public static final int land_bt_call_log_icon_n = 0x7f090165;
+
+        /* JADX INFO: Added by JADX */
+        public static final int land_bt_contacts_icon_n = 0x7f090166;
+
+        /* JADX INFO: Added by JADX */
+        public static final int land_bt_missedcalls_icon_n = 0x7f090167;
+
+        /* JADX INFO: Added by JADX */
+        public static final int layout = 0x7f090169;
+
+        /* JADX INFO: Added by JADX */
+        public static final int left_to_right = 0x7f09016b;
+
+        /* JADX INFO: Added by JADX */
+        public static final int legacy = 0x7f09016c;
+
+        /* JADX INFO: Added by JADX */
+        public static final int letter_list = 0x7f09016d;
+
+        /* JADX INFO: Added by JADX */
+        public static final int line = 0x7f09016e;
+
+        /* JADX INFO: Added by JADX */
+        public static final int linear = 0x7f090171;
+
+        /* JADX INFO: Added by JADX */
+        public static final int listview = 0x7f090174;
+
+        /* JADX INFO: Added by JADX */
+        public static final int listview_relativelayout = 0x7f090175;
+
+        /* JADX INFO: Added by JADX */
+        public static final int lottie_layer_name = 0x7f090176;
+
+        /* JADX INFO: Added by JADX */
+        public static final int main_menu_calllog_icon = 0x7f090177;
+
+        /* JADX INFO: Added by JADX */
+        public static final int main_menu_contacts_icon = 0x7f090178;
+
+        /* JADX INFO: Added by JADX */
+        public static final int main_menu_dial_keyboard_icon = 0x7f090179;
+
+        /* JADX INFO: Added by JADX */
+        public static final int main_menu_missedcalls_icon = 0x7f09017a;
+
+        /* JADX INFO: Added by JADX */
+        public static final int match_constraint = 0x7f09017c;
+
+        /* JADX INFO: Added by JADX */
+        public static final int match_parent = 0x7f09017d;
+
+        /* JADX INFO: Added by JADX */
+        public static final int media_actions = 0x7f09017e;
+
+        /* JADX INFO: Added by JADX */
+        public static final int middle = 0x7f090180;
+
+        /* JADX INFO: Added by JADX */
+        public static final int missed_calls_count = 0x7f090182;
+
+        /* JADX INFO: Added by JADX */
+        public static final int missed_calls_infomation = 0x7f090183;
+
+        /* JADX INFO: Added by JADX */
+        public static final int missed_calls_item = 0x7f090184;
+
+        /* JADX INFO: Added by JADX */
+        public static final int missed_calls_item_bg = 0x7f090185;
+
+        /* JADX INFO: Added by JADX */
+        public static final int missed_calls_list = 0x7f090186;
+
+        /* JADX INFO: Added by JADX */
+        public static final int missed_calls_name = 0x7f090187;
+
+        /* JADX INFO: Added by JADX */
+        public static final int missed_calls_time = 0x7f090188;
+
+        /* JADX INFO: Added by JADX */
+        public static final int motion_base = 0x7f09018f;
+
+        /* JADX INFO: Added by JADX */
+        public static final int name = 0x7f0901a6;
+
+        /* JADX INFO: Added by JADX */
+        public static final int network_call_changevoice_btn = 0x7f0901a8;
+
+        /* JADX INFO: Added by JADX */
+        public static final int network_call_layout = 0x7f0901a9;
+
+        /* JADX INFO: Added by JADX */
+        public static final int network_call_micswitch_btn = 0x7f0901aa;
+
+        /* JADX INFO: Added by JADX */
+        public static final int network_call_name_text = 0x7f0901ab;
+
+        /* JADX INFO: Added by JADX */
+        public static final int network_call_time_text = 0x7f0901ac;
+
+        /* JADX INFO: Added by JADX */
+        public static final int networkcall_micswitch_btn = 0x7f0901ad;
+
+        /* JADX INFO: Added by JADX */
+        public static final int networkcall_name_text = 0x7f0901ae;
+
+        /* JADX INFO: Added by JADX */
+        public static final int networkcall_time_text = 0x7f0901af;
+
+        /* JADX INFO: Added by JADX */
+        public static final int never = 0x7f0901b0;
+
+        /* JADX INFO: Added by JADX */
+        public static final int neverCompleteToEnd = 0x7f0901b1;
+
+        /* JADX INFO: Added by JADX */
+        public static final int neverCompleteToStart = 0x7f0901b2;
+
+        /* JADX INFO: Added by JADX */
+        public static final int noScroll = 0x7f0901b3;
+
+        /* JADX INFO: Added by JADX */
+        public static final int noState = 0x7f0901b4;
+
+        /* JADX INFO: Added by JADX */
+        public static final int no_call_records = 0x7f0901b5;
+
+        /* JADX INFO: Added by JADX */
+        public static final int no_matching_result_text = 0x7f0901b6;
+
+        /* JADX INFO: Added by JADX */
+        public static final int nodata_text = 0x7f0901b7;
+
+        /* JADX INFO: Added by JADX */
+        public static final int north = 0x7f0901ba;
+
+        /* JADX INFO: Added by JADX */
+        public static final int not_connect_image = 0x7f0901bb;
+
+        /* JADX INFO: Added by JADX */
+        public static final int not_connect_layout = 0x7f0901bc;
+
+        /* JADX INFO: Added by JADX */
+        public static final int not_connect_text = 0x7f0901bd;
+
+        /* JADX INFO: Added by JADX */
+        public static final int onInterceptTouchReturnSwipe = 0x7f0901c5;
+
+        /* JADX INFO: Added by JADX */
+        public static final int out_dimens_30 = 0x7f0901c6;
+
+        /* JADX INFO: Added by JADX */
+        public static final int out_dimens_32 = 0x7f0901c7;
+
+        /* JADX INFO: Added by JADX */
+        public static final int overshoot = 0x7f0901c9;
+
+        /* JADX INFO: Added by JADX */
+        public static final int packed = 0x7f0901ca;
+
+        /* JADX INFO: Added by JADX */
+        public static final int parent = 0x7f0901cc;
+
+        /* JADX INFO: Added by JADX */
+        public static final int parentRelative = 0x7f0901ce;
+
+        /* JADX INFO: Added by JADX */
+        public static final int path = 0x7f0901d1;
+
+        /* JADX INFO: Added by JADX */
+        public static final int pathRelative = 0x7f0901d2;
+
+        /* JADX INFO: Added by JADX */
+        public static final int peekHeight = 0x7f0901d3;
+
+        /* JADX INFO: Added by JADX */
+        public static final int percent = 0x7f0901d4;
+
+        /* JADX INFO: Added by JADX */
+        public static final int phone_mode_bg = 0x7f0901d5;
+
+        /* JADX INFO: Added by JADX */
+        public static final int phone_mode_corver = 0x7f0901d6;
+
+        /* JADX INFO: Added by JADX */
+        public static final int phone_mode_line = 0x7f0901d7;
+
+        /* JADX INFO: Added by JADX */
+        public static final int phone_mode_text = 0x7f0901d8;
+
+        /* JADX INFO: Added by JADX */
+        public static final int phone_mode_title = 0x7f0901d9;
+
+        /* JADX INFO: Added by JADX */
+        public static final int phone_name_text = 0x7f0901da;
+
+        /* JADX INFO: Added by JADX */
+        public static final int phone_type_corver = 0x7f0901db;
+
+        /* JADX INFO: Added by JADX */
+        public static final int phone_type_text = 0x7f0901dc;
+
+        /* JADX INFO: Added by JADX */
+        public static final int position = 0x7f0901de;
+
+        /* JADX INFO: Added by JADX */
+        public static final int postLayout = 0x7f0901df;
+
+        /* JADX INFO: Added by JADX */
+        public static final int ratio = 0x7f0901e3;
+
+        /* JADX INFO: Added by JADX */
+        public static final int recent_call_history = 0x7f0901e4;
+
+        /* JADX INFO: Added by JADX */
+        public static final int rectangle = 0x7f0901e5;
+
+        /* JADX INFO: Added by JADX */
+        public static final int rectangles = 0x7f0901e6;
+
+        /* JADX INFO: Added by JADX */
+        public static final int recyclerview = 0x7f0901e7;
+
+        /* JADX INFO: Added by JADX */
+        public static final int repet_continuous = 0x7f0901e8;
+
+        /* JADX INFO: Added by JADX */
+        public static final int repet_interval = 0x7f0901e9;
+
+        /* JADX INFO: Added by JADX */
+        public static final int repet_oncetime = 0x7f0901ea;
+
+        /* JADX INFO: Added by JADX */
+        public static final int restart = 0x7f0901eb;
+
+        /* JADX INFO: Added by JADX */
+        public static final int reverse = 0x7f0901ec;
+
+        /* JADX INFO: Added by JADX */
+        public static final int reverseSawtooth = 0x7f0901ed;
+
+        /* JADX INFO: Added by JADX */
+        public static final int right_to_left = 0x7f0901f1;
+
+        /* JADX INFO: Added by JADX */
+        public static final int sawtooth = 0x7f0901f6;
+
+        /* JADX INFO: Added by JADX */
+        public static final int scroll = 0x7f0901f9;
+
+        /* JADX INFO: Added by JADX */
+        public static final int search_book = 0x7f090200;
+
+        /* JADX INFO: Added by JADX */
+        public static final int search_clear_btn = 0x7f090202;
+
+        /* JADX INFO: Added by JADX */
+        public static final int search_contacts_list = 0x7f090204;
+
+        /* JADX INFO: Added by JADX */
+        public static final int search_contacts_number = 0x7f090205;
+
+        /* JADX INFO: Added by JADX */
+        public static final int search_layout_back = 0x7f090208;
+
+        /* JADX INFO: Added by JADX */
+        public static final int search_list_layout = 0x7f090209;
+
+        /* JADX INFO: Added by JADX */
+        public static final int search_no_data = 0x7f09020b;
+
+        /* JADX INFO: Added by JADX */
+        public static final int serial_number = 0x7f090211;
+
+        /* JADX INFO: Added by JADX */
+        public static final int sharedValueSet = 0x7f090212;
+
+        /* JADX INFO: Added by JADX */
+        public static final int sharedValueUnset = 0x7f090213;
+
+        /* JADX INFO: Added by JADX */
+        public static final int showCustom = 0x7f090215;
+
+        /* JADX INFO: Added by JADX */
+        public static final int showHome = 0x7f090216;
+
+        /* JADX INFO: Added by JADX */
+        public static final int showTitle = 0x7f090217;
+
+        /* JADX INFO: Added by JADX */
+        public static final int show_contacts_layout = 0x7f090218;
+
+        /* JADX INFO: Added by JADX */
+        public static final int show_contacts_number_layout = 0x7f090219;
+
+        /* JADX INFO: Added by JADX */
+        public static final int sin = 0x7f09021a;
+
+        /* JADX INFO: Added by JADX */
+        public static final int skipCollapsed = 0x7f09021b;
+
+        /* JADX INFO: Added by JADX */
+        public static final int skipped = 0x7f09021c;
+
+        /* JADX INFO: Added by JADX */
+        public static final int snap = 0x7f090221;
+
+        /* JADX INFO: Added by JADX */
+        public static final int snapMargins = 0x7f090222;
+
+        /* JADX INFO: Added by JADX */
+        public static final int software = 0x7f090223;
+
+        /* JADX INFO: Added by JADX */
+        public static final int south = 0x7f090224;
+
+        /* JADX INFO: Added by JADX */
+        public static final int special_networkcall_layout = 0x7f090226;
+
+        /* JADX INFO: Added by JADX */
+        public static final int special_networkcall_voice2phone_btn = 0x7f090227;
+
+        /* JADX INFO: Added by JADX */
+        public static final int spline = 0x7f090228;
+
+        /* JADX INFO: Added by JADX */
+        public static final int spread = 0x7f09022a;
+
+        /* JADX INFO: Added by JADX */
+        public static final int spread_inside = 0x7f09022b;
+
+        /* JADX INFO: Added by JADX */
+        public static final int spring = 0x7f09022c;
+
+        /* JADX INFO: Added by JADX */
+        public static final int square = 0x7f09022d;
+
+        /* JADX INFO: Added by JADX */
+        public static final int standard = 0x7f090231;
+
+        /* JADX INFO: Added by JADX */
+        public static final int startHorizontal = 0x7f090233;
+
+        /* JADX INFO: Added by JADX */
+        public static final int startVertical = 0x7f090234;
+
+        /* JADX INFO: Added by JADX */
+        public static final int staticLayout = 0x7f090235;
+
+        /* JADX INFO: Added by JADX */
+        public static final int staticPostLayout = 0x7f090236;
+
+        /* JADX INFO: Added by JADX */
+        public static final int status_bar_latest_event_content = 0x7f090237;
+
+        /* JADX INFO: Added by JADX */
+        public static final int stop = 0x7f090238;
+
+        /* JADX INFO: Added by JADX */
+        public static final int supportScrollUp = 0x7f09023c;
+
+        /* JADX INFO: Added by JADX */
+        public static final int switch_call_image = 0x7f09023d;
+
+        /* JADX INFO: Added by JADX */
+        public static final int switch_call_image_widget = 0x7f09023e;
+
+        /* JADX INFO: Added by JADX */
+        public static final int sync_contacts_btn = 0x7f09023f;
+
+        /* JADX INFO: Added by JADX */
+        public static final int sync_progressBar = 0x7f090240;
+
+        /* JADX INFO: Added by JADX */
+        public static final int sync_seekbar_layout = 0x7f090241;
+
+        /* JADX INFO: Added by JADX */
+        public static final int sync_seekbar_text = 0x7f090242;
+
+        /* JADX INFO: Added by JADX */
+        public static final int sync_text = 0x7f090243;
+
+        /* JADX INFO: Added by JADX */
+        public static final int t9_search_contacts_list = 0x7f090244;
+
+        /* JADX INFO: Added by JADX */
+        public static final int t9_search_item_name = 0x7f090245;
+
+        /* JADX INFO: Added by JADX */
+        public static final int t9_search_item_number = 0x7f090246;
+
+        /* JADX INFO: Added by JADX */
+        public static final int t9_search_item_time = 0x7f090247;
+
+        /* JADX INFO: Added by JADX */
+        public static final int tab_calllog_layout = 0x7f090249;
+
+        /* JADX INFO: Added by JADX */
+        public static final int tab_contacts_layout = 0x7f09024a;
+
+        /* JADX INFO: Added by JADX */
+        public static final int tab_dial_keyboard_layout = 0x7f09024b;
+
+        /* JADX INFO: Added by JADX */
+        public static final int tab_missedcalls_layout = 0x7f09024c;
+
+        /* JADX INFO: Added by JADX */
+        public static final int tang_bt_widget = 0x7f090255;
+
+        /* JADX INFO: Added by JADX */
+        public static final int textEnd = 0x7f09025c;
+
+        /* JADX INFO: Added by JADX */
+        public static final int textStart = 0x7f09025f;
+
+        /* JADX INFO: Added by JADX */
+        public static final int third_call_layout = 0x7f090269;
+
+        /* JADX INFO: Added by JADX */
+        public static final int third_call_name = 0x7f09026a;
+
+        /* JADX INFO: Added by JADX */
+        public static final int third_call_name_widget = 0x7f09026b;
+
+        /* JADX INFO: Added by JADX */
+        public static final int third_call_time = 0x7f09026c;
+
+        /* JADX INFO: Added by JADX */
+        public static final int third_call_time_widget = 0x7f09026d;
+
+        /* JADX INFO: Added by JADX */
+        public static final int toggle = 0x7f090272;
+
+        /* JADX INFO: Added by JADX */
+        public static final int top_to_bottom = 0x7f090275;
+
+        /* JADX INFO: Added by JADX */
+        public static final int transitionToEnd = 0x7f090277;
+
+        /* JADX INFO: Added by JADX */
+        public static final int transitionToStart = 0x7f090278;
+
+        /* JADX INFO: Added by JADX */
+        public static final int triangle = 0x7f09027e;
+
+        /* JADX INFO: Added by JADX */
+        public static final int ts_bt_app_widget_bg = 0x7f09027f;
+
+        /* JADX INFO: Added by JADX */
+        public static final int ts_bt_app_widget_piont = 0x7f090280;
+
+        /* JADX INFO: Added by JADX */
+        public static final int ts_bt_widget = 0x7f090281;
+
+        /* JADX INFO: Added by JADX */
+        public static final int ts_bt_widget_2_calllog = 0x7f090282;
+
+        /* JADX INFO: Added by JADX */
+        public static final int ts_bt_widget_2_calllog_2 = 0x7f090283;
+
+        /* JADX INFO: Added by JADX */
+        public static final int ts_bt_widget_2_misscall = 0x7f090284;
+
+        /* JADX INFO: Added by JADX */
+        public static final int ts_bt_widget_2_misscall_2 = 0x7f090285;
+
+        /* JADX INFO: Added by JADX */
+        public static final int ts_bt_widget_calllog_icon = 0x7f090286;
+
+        /* JADX INFO: Added by JADX */
+        public static final int ts_bt_widget_calllog_text = 0x7f090287;
+
+        /* JADX INFO: Added by JADX */
+        public static final int ts_bt_widget_connect_icon = 0x7f090288;
+
+        /* JADX INFO: Added by JADX */
+        public static final int ts_bt_widget_misscall_icon = 0x7f090289;
+
+        /* JADX INFO: Added by JADX */
+        public static final int ts_bt_widget_misscall_text = 0x7f09028a;
+
+        /* JADX INFO: Added by JADX */
+        public static final int ts_bt_widget_notconnect_icon = 0x7f09028b;
+
+        /* JADX INFO: Added by JADX */
+        public static final int ts_connected_widget_layout = 0x7f09028c;
+
+        /* JADX INFO: Added by JADX */
+        public static final int ts_disconnect_widget_click_1 = 0x7f09028d;
+
+        /* JADX INFO: Added by JADX */
+        public static final int ts_disconnect_widget_click_2 = 0x7f09028e;
+
+        /* JADX INFO: Added by JADX */
+        public static final int ts_disconnect_widget_layout = 0x7f09028f;
+
+        /* JADX INFO: Added by JADX */
+        public static final int ts_unread_missed_calls = 0x7f090290;
+
+        /* JADX INFO: Added by JADX */
+        public static final int ts_widget_bt_icon = 0x7f090291;
+
+        /* JADX INFO: Added by JADX */
+        public static final int ts_widget_not_connect = 0x7f090292;
+
+        /* JADX INFO: Added by JADX */
+        public static final int unread_missed_calls = 0x7f090296;
+
+        /* JADX INFO: Added by JADX */
+        public static final int useLogo = 0x7f090298;
+
+        /* JADX INFO: Added by JADX */
+        public static final int vertical = 0x7f090299;
+
+        /* JADX INFO: Added by JADX */
+        public static final int vertical_only = 0x7f09029a;
+
+        /* JADX INFO: Added by JADX */
+        public static final int view_down_6dp = 0x7f09029b;
+
+        /* JADX INFO: Added by JADX */
+        public static final int view_pager = 0x7f09029d;
+
+        /* JADX INFO: Added by JADX */
+        public static final int view_transition = 0x7f09029e;
+
+        /* JADX INFO: Added by JADX */
+        public static final int view_up_6dp = 0x7f09029f;
+
+        /* JADX INFO: Added by JADX */
+        public static final int west = 0x7f0902a1;
+
+        /* JADX INFO: Added by JADX */
+        public static final int widget_bt_icon = 0x7f0902a2;
+
+        /* JADX INFO: Added by JADX */
+        public static final int widget_not_connect = 0x7f0902a3;
+
+        /* JADX INFO: Added by JADX */
+        public static final int withText = 0x7f0902a4;
+
+        /* JADX INFO: Added by JADX */
+        public static final int wrap = 0x7f0902a6;
+
+        /* JADX INFO: Added by JADX */
+        public static final int wrap_content_constrained = 0x7f0902a8;
+
+        /* JADX INFO: Added by JADX */
+        public static final int x_left = 0x7f0902a9;
+
+        /* JADX INFO: Added by JADX */
+        public static final int x_right = 0x7f0902aa;
+
+        private id() {
+        }
+    }
+
+    public static final class integer {
+        public static final int abc_config_activityDefaultDur = 0x7f0a0000;
+        public static final int abc_config_activityShortDur = 0x7f0a0001;
+        public static final int app_bar_elevation_anim_duration = 0x7f0a0002;
+        public static final int bottom_sheet_slide_duration = 0x7f0a0003;
+        public static final int cancel_button_image_alpha = 0x7f0a0004;
+        public static final int config_tooltipAnimTime = 0x7f0a0005;
+        public static final int design_snackbar_text_max_lines = 0x7f0a0006;
+        public static final int design_tab_indicator_anim_duration_ms = 0x7f0a0007;
+        public static final int hide_password_duration = 0x7f0a0008;
+        public static final int mtrl_badge_max_character_count = 0x7f0a0009;
+        public static final int mtrl_btn_anim_delay_ms = 0x7f0a000a;
+        public static final int mtrl_btn_anim_duration_ms = 0x7f0a000b;
+        public static final int mtrl_calendar_header_orientation = 0x7f0a000c;
+        public static final int mtrl_calendar_selection_text_lines = 0x7f0a000d;
+        public static final int mtrl_calendar_year_selector_span = 0x7f0a000e;
+        public static final int mtrl_card_anim_delay_ms = 0x7f0a000f;
+        public static final int mtrl_card_anim_duration_ms = 0x7f0a0010;
+        public static final int mtrl_chip_anim_duration = 0x7f0a0011;
+        public static final int mtrl_tab_indicator_anim_duration_ms = 0x7f0a0012;
+        public static final int show_password_duration = 0x7f0a0013;
+        public static final int status_bar_notification_info_maxnum = 0x7f0a0014;
+
+        private integer() {
+        }
+    }
+
+    public static final class interpolator {
+        public static final int btn_checkbox_checked_mtrl_animation_interpolator_0 = 0x7f0b0000;
+        public static final int btn_checkbox_checked_mtrl_animation_interpolator_1 = 0x7f0b0001;
+        public static final int btn_checkbox_unchecked_mtrl_animation_interpolator_0 = 0x7f0b0002;
+        public static final int btn_checkbox_unchecked_mtrl_animation_interpolator_1 = 0x7f0b0003;
+        public static final int btn_radio_to_off_mtrl_animation_interpolator_0 = 0x7f0b0004;
+        public static final int btn_radio_to_on_mtrl_animation_interpolator_0 = 0x7f0b0005;
+        public static final int fast_out_slow_in = 0x7f0b0006;
+        public static final int mtrl_fast_out_linear_in = 0x7f0b0007;
+        public static final int mtrl_fast_out_slow_in = 0x7f0b0008;
+        public static final int mtrl_linear = 0x7f0b0009;
+        public static final int mtrl_linear_out_slow_in = 0x7f0b000a;
+
+        private interpolator() {
+        }
+    }
+
+    public static final class layout {
+        public static final int abc_action_bar_title_item = 0x7f0c0000;
+        public static final int abc_action_bar_up_container = 0x7f0c0001;
+        public static final int abc_action_menu_item_layout = 0x7f0c0002;
+        public static final int abc_action_menu_layout = 0x7f0c0003;
+        public static final int abc_action_mode_bar = 0x7f0c0004;
+        public static final int abc_action_mode_close_item_material = 0x7f0c0005;
+        public static final int abc_activity_chooser_view = 0x7f0c0006;
+        public static final int abc_activity_chooser_view_list_item = 0x7f0c0007;
+        public static final int abc_alert_dialog_button_bar_material = 0x7f0c0008;
+        public static final int abc_alert_dialog_material = 0x7f0c0009;
+        public static final int abc_alert_dialog_title_material = 0x7f0c000a;
+        public static final int abc_cascading_menu_item_layout = 0x7f0c000b;
+        public static final int abc_dialog_title_material = 0x7f0c000c;
+        public static final int abc_expanded_menu_layout = 0x7f0c000d;
+        public static final int abc_list_menu_item_checkbox = 0x7f0c000e;
+        public static final int abc_list_menu_item_icon = 0x7f0c000f;
+        public static final int abc_list_menu_item_layout = 0x7f0c0010;
+        public static final int abc_list_menu_item_radio = 0x7f0c0011;
+        public static final int abc_popup_menu_header_item_layout = 0x7f0c0012;
+        public static final int abc_popup_menu_item_layout = 0x7f0c0013;
+        public static final int abc_screen_content_include = 0x7f0c0014;
+        public static final int abc_screen_simple = 0x7f0c0015;
+        public static final int abc_screen_simple_overlay_action_mode = 0x7f0c0016;
+        public static final int abc_screen_toolbar = 0x7f0c0017;
+        public static final int abc_search_dropdown_item_icons_2line = 0x7f0c0018;
+        public static final int abc_search_view = 0x7f0c0019;
+        public static final int abc_select_dialog_material = 0x7f0c001a;
+        public static final int abc_tooltip = 0x7f0c001b;
+        public static final int custom_dialog = 0x7f0c0030;
+        public static final int design_bottom_navigation_item = 0x7f0c0031;
+        public static final int design_bottom_sheet_dialog = 0x7f0c0032;
+        public static final int design_layout_snackbar = 0x7f0c0033;
+        public static final int design_layout_snackbar_include = 0x7f0c0034;
+        public static final int design_layout_tab_icon = 0x7f0c0035;
+        public static final int design_layout_tab_text = 0x7f0c0036;
+        public static final int design_menu_item_action_area = 0x7f0c0037;
+        public static final int design_navigation_item = 0x7f0c0038;
+        public static final int design_navigation_item_header = 0x7f0c0039;
+        public static final int design_navigation_item_separator = 0x7f0c003a;
+        public static final int design_navigation_item_subheader = 0x7f0c003b;
+        public static final int design_navigation_menu = 0x7f0c003c;
+        public static final int design_navigation_menu_item = 0x7f0c003d;
+        public static final int design_text_input_end_icon = 0x7f0c003e;
+        public static final int design_text_input_start_icon = 0x7f0c003f;
+        public static final int mtrl_alert_dialog = 0x7f0c0047;
+        public static final int mtrl_alert_dialog_actions = 0x7f0c0048;
+        public static final int mtrl_alert_dialog_title = 0x7f0c0049;
+        public static final int mtrl_alert_select_dialog_item = 0x7f0c004a;
+        public static final int mtrl_alert_select_dialog_multichoice = 0x7f0c004b;
+        public static final int mtrl_alert_select_dialog_singlechoice = 0x7f0c004c;
+        public static final int mtrl_calendar_day = 0x7f0c004d;
+        public static final int mtrl_calendar_day_of_week = 0x7f0c004e;
+        public static final int mtrl_calendar_days_of_week = 0x7f0c004f;
+        public static final int mtrl_calendar_horizontal = 0x7f0c0050;
+        public static final int mtrl_calendar_month = 0x7f0c0051;
+        public static final int mtrl_calendar_month_labeled = 0x7f0c0052;
+        public static final int mtrl_calendar_month_navigation = 0x7f0c0053;
+        public static final int mtrl_calendar_months = 0x7f0c0054;
+        public static final int mtrl_calendar_vertical = 0x7f0c0055;
+        public static final int mtrl_calendar_year = 0x7f0c0056;
+        public static final int mtrl_layout_snackbar = 0x7f0c0057;
+        public static final int mtrl_layout_snackbar_include = 0x7f0c0058;
+        public static final int mtrl_picker_actions = 0x7f0c0059;
+        public static final int mtrl_picker_dialog = 0x7f0c005a;
+        public static final int mtrl_picker_fullscreen = 0x7f0c005b;
+        public static final int mtrl_picker_header_dialog = 0x7f0c005c;
+        public static final int mtrl_picker_header_fullscreen = 0x7f0c005d;
+        public static final int mtrl_picker_header_selection_text = 0x7f0c005e;
+        public static final int mtrl_picker_header_title_text = 0x7f0c005f;
+        public static final int mtrl_picker_header_toggle = 0x7f0c0060;
+        public static final int mtrl_picker_text_input_date = 0x7f0c0061;
+        public static final int mtrl_picker_text_input_date_range = 0x7f0c0062;
+        public static final int notification_action = 0x7f0c0074;
+        public static final int notification_action_tombstone = 0x7f0c0075;
+        public static final int notification_template_custom_big = 0x7f0c007c;
+        public static final int notification_template_icon_group = 0x7f0c007d;
+        public static final int notification_template_part_chronometer = 0x7f0c0081;
+        public static final int notification_template_part_time = 0x7f0c0082;
+        public static final int select_dialog_item_material = 0x7f0c008a;
+        public static final int select_dialog_multichoice_material = 0x7f0c008b;
+        public static final int select_dialog_singlechoice_material = 0x7f0c008c;
+        public static final int support_simple_spinner_dropdown_item = 0x7f0c0092;
+        public static final int test_action_chip = 0x7f0c0097;
+        public static final int test_chip_zero_corner_radius = 0x7f0c0098;
+        public static final int test_design_checkbox = 0x7f0c0099;
+        public static final int test_design_radiobutton = 0x7f0c009a;
+        public static final int test_reflow_chipgroup = 0x7f0c009b;
+        public static final int test_toolbar = 0x7f0c009c;
+        public static final int test_toolbar_custom_background = 0x7f0c009d;
+        public static final int test_toolbar_elevation = 0x7f0c009e;
+        public static final int test_toolbar_surface = 0x7f0c009f;
+        public static final int text_view_with_line_height_from_appearance = 0x7f0c00a0;
+        public static final int text_view_with_line_height_from_layout = 0x7f0c00a1;
+        public static final int text_view_with_line_height_from_style = 0x7f0c00a2;
+        public static final int text_view_with_theme_line_height = 0x7f0c00a3;
+        public static final int text_view_without_line_height = 0x7f0c00a4;
+
+        /* JADX INFO: Added by JADX */
+        public static final int activity_main = 0x7f0c001c;
+
+        /* JADX INFO: Added by JADX */
+        public static final int bt_call_in_layout = 0x7f0c001d;
+
+        /* JADX INFO: Added by JADX */
+        public static final int bt_call_ing_layout = 0x7f0c001e;
+
+        /* JADX INFO: Added by JADX */
+        public static final int bt_call_out_layout = 0x7f0c001f;
+
+        /* JADX INFO: Added by JADX */
+        public static final int bt_call_view = 0x7f0c0020;
+
+        /* JADX INFO: Added by JADX */
+        public static final int bt_calling_keyboard = 0x7f0c0021;
+
+        /* JADX INFO: Added by JADX */
+        public static final int bt_not_connect_layout = 0x7f0c0022;
+
+        /* JADX INFO: Added by JADX */
+        public static final int bt_special_scenario_call_view = 0x7f0c0023;
+
+        /* JADX INFO: Added by JADX */
+        public static final int bt_stausbar_call_wm_layout = 0x7f0c0024;
+
+        /* JADX INFO: Added by JADX */
+        public static final int bt_tablehost_layout = 0x7f0c0025;
+
+        /* JADX INFO: Added by JADX */
+        public static final int bt_widget_layout = 0x7f0c0026;
+
+        /* JADX INFO: Added by JADX */
+        public static final int call_log_itme_layout = 0x7f0c0027;
+
+        /* JADX INFO: Added by JADX */
+        public static final int calllog_fragment = 0x7f0c0028;
+
+        /* JADX INFO: Added by JADX */
+        public static final int capital_letter_layout = 0x7f0c0029;
+
+        /* JADX INFO: Added by JADX */
+        public static final int contacts_fragment = 0x7f0c002a;
+
+        /* JADX INFO: Added by JADX */
+        public static final int contacts_info_calllog_item = 0x7f0c002b;
+
+        /* JADX INFO: Added by JADX */
+        public static final int contacts_info_calls_item = 0x7f0c002c;
+
+        /* JADX INFO: Added by JADX */
+        public static final int contacts_info_wm_layout = 0x7f0c002d;
+
+        /* JADX INFO: Added by JADX */
+        public static final int contacts_item_layout = 0x7f0c002e;
+
+        /* JADX INFO: Added by JADX */
+        public static final int contacts_search_item = 0x7f0c002f;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dial_keyboard_layout = 0x7f0c0040;
+
+        /* JADX INFO: Added by JADX */
+        public static final int keyboard = 0x7f0c0041;
+
+        /* JADX INFO: Added by JADX */
+        public static final int keyboard_ar_fragment_layout = 0x7f0c0042;
+
+        /* JADX INFO: Added by JADX */
+        public static final int keyboard_fragment_layout = 0x7f0c0043;
+
+        /* JADX INFO: Added by JADX */
+        public static final int land_keyboard_fragment_layout = 0x7f0c0044;
+
+        /* JADX INFO: Added by JADX */
+        public static final int missed_calls_fragment = 0x7f0c0045;
+
+        /* JADX INFO: Added by JADX */
+        public static final int missed_calls_itme_layout = 0x7f0c0046;
+
+        /* JADX INFO: Added by JADX */
+        public static final int multiwindmode_missed_ar_calls_itme_layout = 0x7f0c0063;
+
+        /* JADX INFO: Added by JADX */
+        public static final int multiwindmode_missed_calls_itme_layout = 0x7f0c0064;
+
+        /* JADX INFO: Added by JADX */
+        public static final int multiwindowmode_activity_main = 0x7f0c0065;
+
+        /* JADX INFO: Added by JADX */
+        public static final int multiwindowmode_ar_activity_main = 0x7f0c0066;
+
+        /* JADX INFO: Added by JADX */
+        public static final int multiwindowmode_bt_not_connect_layout = 0x7f0c0067;
+
+        /* JADX INFO: Added by JADX */
+        public static final int multiwindowmode_bt_tablehost_layout = 0x7f0c0068;
+
+        /* JADX INFO: Added by JADX */
+        public static final int multiwindowmode_calllog_fragment = 0x7f0c0069;
+
+        /* JADX INFO: Added by JADX */
+        public static final int multiwindowmode_contacts_fragment = 0x7f0c006a;
+
+        /* JADX INFO: Added by JADX */
+        public static final int multiwindowmode_keyboard = 0x7f0c006b;
+
+        /* JADX INFO: Added by JADX */
+        public static final int multiwindowmode_land_activity_main = 0x7f0c006c;
+
+        /* JADX INFO: Added by JADX */
+        public static final int multiwindowmode_land_ar_call_log_item_layout = 0x7f0c006d;
+
+        /* JADX INFO: Added by JADX */
+        public static final int multiwindowmode_land_bt_tablehost_layout = 0x7f0c006e;
+
+        /* JADX INFO: Added by JADX */
+        public static final int multiwindowmode_land_call_log_item_layout = 0x7f0c006f;
+
+        /* JADX INFO: Added by JADX */
+        public static final int multiwindowmode_land_contacts_fragment = 0x7f0c0070;
+
+        /* JADX INFO: Added by JADX */
+        public static final int multiwindowmode_land_keyboard = 0x7f0c0071;
+
+        /* JADX INFO: Added by JADX */
+        public static final int multiwindowmode_missed_calls_fragment = 0x7f0c0072;
+
+        /* JADX INFO: Added by JADX */
+        public static final int network_call_layout = 0x7f0c0073;
+
+        /* JADX INFO: Added by JADX */
+        public static final int notification_media_action = 0x7f0c0076;
+
+        /* JADX INFO: Added by JADX */
+        public static final int notification_media_cancel_action = 0x7f0c0077;
+
+        /* JADX INFO: Added by JADX */
+        public static final int notification_template_big_media = 0x7f0c0078;
+
+        /* JADX INFO: Added by JADX */
+        public static final int notification_template_big_media_custom = 0x7f0c0079;
+
+        /* JADX INFO: Added by JADX */
+        public static final int notification_template_big_media_narrow = 0x7f0c007a;
+
+        /* JADX INFO: Added by JADX */
+        public static final int notification_template_big_media_narrow_custom = 0x7f0c007b;
+
+        /* JADX INFO: Added by JADX */
+        public static final int notification_template_lines_media = 0x7f0c007e;
+
+        /* JADX INFO: Added by JADX */
+        public static final int notification_template_media = 0x7f0c007f;
+
+        /* JADX INFO: Added by JADX */
+        public static final int notification_template_media_custom = 0x7f0c0080;
+
+        /* JADX INFO: Added by JADX */
+        public static final int other_phone_selection_wm = 0x7f0c0083;
+
+        /* JADX INFO: Added by JADX */
+        public static final int phonemode_select_wm = 0x7f0c0084;
+
+        /* JADX INFO: Added by JADX */
+        public static final int right_driver_activity_main = 0x7f0c0085;
+
+        /* JADX INFO: Added by JADX */
+        public static final int right_driver_bt_call_view = 0x7f0c0086;
+
+        /* JADX INFO: Added by JADX */
+        public static final int right_driver_bt_tablehost_layout = 0x7f0c0087;
+
+        /* JADX INFO: Added by JADX */
+        public static final int right_driver_contacts_info_wm_layout = 0x7f0c0088;
+
+        /* JADX INFO: Added by JADX */
+        public static final int search_contacts_layout = 0x7f0c0089;
+
+        /* JADX INFO: Added by JADX */
+        public static final int special_call_in_layout = 0x7f0c008d;
+
+        /* JADX INFO: Added by JADX */
+        public static final int special_call_ing_layout = 0x7f0c008e;
+
+        /* JADX INFO: Added by JADX */
+        public static final int special_call_out_layout = 0x7f0c008f;
+
+        /* JADX INFO: Added by JADX */
+        public static final int special_networkcall_layout = 0x7f0c0090;
+
+        /* JADX INFO: Added by JADX */
+        public static final int special_third_call_layout = 0x7f0c0091;
+
+        /* JADX INFO: Added by JADX */
+        public static final int sync_contacts_permission_tips = 0x7f0c0093;
+
+        /* JADX INFO: Added by JADX */
+        public static final int t9_contacts_layout = 0x7f0c0094;
+
+        /* JADX INFO: Added by JADX */
+        public static final int t9_search_item = 0x7f0c0095;
+
+        /* JADX INFO: Added by JADX */
+        public static final int tang_bt_widget_layout = 0x7f0c0096;
+
+        /* JADX INFO: Added by JADX */
+        public static final int third_call_layout = 0x7f0c00a5;
+
+        /* JADX INFO: Added by JADX */
+        public static final int third_call_layout_widget = 0x7f0c00a6;
+
+        /* JADX INFO: Added by JADX */
+        public static final int ts_bt_widget_layout = 0x7f0c00a7;
+
+        private layout() {
+        }
+    }
+
+    /* JADX INFO: Added by JADX */
+    public static final class mipmap {
+
+        /* JADX INFO: Added by JADX */
+        public static final int ic_launcher = 0x7f0d0000;
+
+        /* JADX INFO: Added by JADX */
+        public static final int ic_launcher_btcall = 0x7f0d0001;
+
+        /* JADX INFO: Added by JADX */
+        public static final int ic_launcher_round = 0x7f0d0002;
+    }
+
+    public static final class plurals {
+        public static final int mtrl_badge_content_description = 0x7f0e0000;
+
+        private plurals() {
+        }
+    }
+
+    public static final class string {
+        public static final int abc_action_bar_home_description = 0x7f0f0000;
+        public static final int abc_action_bar_up_description = 0x7f0f0001;
+        public static final int abc_action_menu_overflow_description = 0x7f0f0002;
+        public static final int abc_action_mode_done = 0x7f0f0003;
+        public static final int abc_activity_chooser_view_see_all = 0x7f0f0004;
+        public static final int abc_activitychooserview_choose_application = 0x7f0f0005;
+        public static final int abc_capital_off = 0x7f0f0006;
+        public static final int abc_capital_on = 0x7f0f0007;
+        public static final int abc_menu_alt_shortcut_label = 0x7f0f0008;
+        public static final int abc_menu_ctrl_shortcut_label = 0x7f0f0009;
+        public static final int abc_menu_delete_shortcut_label = 0x7f0f000a;
+        public static final int abc_menu_enter_shortcut_label = 0x7f0f000b;
+        public static final int abc_menu_function_shortcut_label = 0x7f0f000c;
+        public static final int abc_menu_meta_shortcut_label = 0x7f0f000d;
+        public static final int abc_menu_shift_shortcut_label = 0x7f0f000e;
+        public static final int abc_menu_space_shortcut_label = 0x7f0f000f;
+        public static final int abc_menu_sym_shortcut_label = 0x7f0f0010;
+        public static final int abc_prepend_shortcut_label = 0x7f0f0011;
+        public static final int abc_search_hint = 0x7f0f0012;
+        public static final int abc_searchview_description_clear = 0x7f0f0013;
+        public static final int abc_searchview_description_query = 0x7f0f0014;
+        public static final int abc_searchview_description_search = 0x7f0f0015;
+        public static final int abc_searchview_description_submit = 0x7f0f0016;
+        public static final int abc_searchview_description_voice = 0x7f0f0017;
+        public static final int abc_shareactionprovider_share_with = 0x7f0f0018;
+        public static final int abc_shareactionprovider_share_with_application = 0x7f0f0019;
+        public static final int abc_toolbar_collapse_description = 0x7f0f001a;
+        public static final int app_name = 0x7f0f001b;
+        public static final int appbar_scrolling_view_behavior = 0x7f0f001c;
+        public static final int bottom_sheet_behavior = 0x7f0f0022;
+        public static final int character_counter_content_description = 0x7f0f003c;
+        public static final int character_counter_overflowed_content_description = 0x7f0f003d;
+        public static final int character_counter_pattern = 0x7f0f003e;
+        public static final int chip_text = 0x7f0f003f;
+        public static final int clear_text_end_icon_content_description = 0x7f0f0040;
+        public static final int error_icon_content_description = 0x7f0f004c;
+        public static final int exposed_dropdown_menu_content_description = 0x7f0f004d;
+        public static final int fab_transformation_scrim_behavior = 0x7f0f004e;
+        public static final int fab_transformation_sheet_behavior = 0x7f0f004f;
+        public static final int hide_bottom_view_on_scroll_behavior = 0x7f0f0051;
+        public static final int icon_content_description = 0x7f0f0052;
+        public static final int item_view_role_description = 0x7f0f0053;
+        public static final int material_slider_range_end = 0x7f0f0054;
+        public static final int material_slider_range_start = 0x7f0f0055;
+        public static final int mtrl_badge_numberless_content_description = 0x7f0f0056;
+        public static final int mtrl_chip_close_icon_content_description = 0x7f0f0057;
+        public static final int mtrl_exceed_max_badge_number_content_description = 0x7f0f0058;
+        public static final int mtrl_exceed_max_badge_number_suffix = 0x7f0f0059;
+        public static final int mtrl_picker_a11y_next_month = 0x7f0f005a;
+        public static final int mtrl_picker_a11y_prev_month = 0x7f0f005b;
+        public static final int mtrl_picker_announce_current_selection = 0x7f0f005c;
+        public static final int mtrl_picker_cancel = 0x7f0f005d;
+        public static final int mtrl_picker_confirm = 0x7f0f005e;
+        public static final int mtrl_picker_date_header_selected = 0x7f0f005f;
+        public static final int mtrl_picker_date_header_title = 0x7f0f0060;
+        public static final int mtrl_picker_date_header_unselected = 0x7f0f0061;
+        public static final int mtrl_picker_day_of_week_column_header = 0x7f0f0062;
+        public static final int mtrl_picker_invalid_format = 0x7f0f0063;
+        public static final int mtrl_picker_invalid_format_example = 0x7f0f0064;
+        public static final int mtrl_picker_invalid_format_use = 0x7f0f0065;
+        public static final int mtrl_picker_invalid_range = 0x7f0f0066;
+        public static final int mtrl_picker_navigate_to_year_description = 0x7f0f0067;
+        public static final int mtrl_picker_out_of_range = 0x7f0f0068;
+        public static final int mtrl_picker_range_header_only_end_selected = 0x7f0f0069;
+        public static final int mtrl_picker_range_header_only_start_selected = 0x7f0f006a;
+        public static final int mtrl_picker_range_header_selected = 0x7f0f006b;
+        public static final int mtrl_picker_range_header_title = 0x7f0f006c;
+        public static final int mtrl_picker_range_header_unselected = 0x7f0f006d;
+        public static final int mtrl_picker_save = 0x7f0f006e;
+        public static final int mtrl_picker_text_input_date_hint = 0x7f0f006f;
+        public static final int mtrl_picker_text_input_date_range_end_hint = 0x7f0f0070;
+        public static final int mtrl_picker_text_input_date_range_start_hint = 0x7f0f0071;
+        public static final int mtrl_picker_text_input_day_abbr = 0x7f0f0072;
+        public static final int mtrl_picker_text_input_month_abbr = 0x7f0f0073;
+        public static final int mtrl_picker_text_input_year_abbr = 0x7f0f0074;
+        public static final int mtrl_picker_toggle_to_calendar_input_mode = 0x7f0f0075;
+        public static final int mtrl_picker_toggle_to_day_selection = 0x7f0f0076;
+        public static final int mtrl_picker_toggle_to_text_input_mode = 0x7f0f0077;
+        public static final int mtrl_picker_toggle_to_year_selection = 0x7f0f0078;
+        public static final int password_toggle_content_description = 0x7f0f007b;
+        public static final int path_password_eye = 0x7f0f007c;
+        public static final int path_password_eye_mask_strike_through = 0x7f0f007d;
+        public static final int path_password_eye_mask_visible = 0x7f0f007e;
+        public static final int path_password_strike_through = 0x7f0f007f;
+        public static final int search_menu_title = 0x7f0f0082;
+        public static final int search_near_format = 0x7f0f0083;
+        public static final int search_where_near_format = 0x7f0f0084;
+        public static final int status_bar_notification_info_overflow = 0x7f0f0085;
+
+        /* JADX INFO: Added by JADX */
+        public static final int audio_disabled = 0x7f0f001d;
+
+        /* JADX INFO: Added by JADX */
+        public static final int bluetooth_connect_succeed = 0x7f0f001e;
+
+        /* JADX INFO: Added by JADX */
+        public static final int bluetooth_disconnected = 0x7f0f001f;
+
+        /* JADX INFO: Added by JADX */
+        public static final int bond_button_cancel = 0x7f0f0020;
+
+        /* JADX INFO: Added by JADX */
+        public static final int bond_button_confirm = 0x7f0f0021;
+
+        /* JADX INFO: Added by JADX */
+        public static final int bt_app_name = 0x7f0f0023;
+
+        /* JADX INFO: Added by JADX */
+        public static final int bt_call_log_no_recode = 0x7f0f0024;
+
+        /* JADX INFO: Added by JADX */
+        public static final int bt_call_log_recode = 0x7f0f0025;
+
+        /* JADX INFO: Added by JADX */
+        public static final int bt_call_log_text = 0x7f0f0026;
+
+        /* JADX INFO: Added by JADX */
+        public static final int bt_contacts_number = 0x7f0f0027;
+
+        /* JADX INFO: Added by JADX */
+        public static final int bt_contacts_reflsh = 0x7f0f0028;
+
+        /* JADX INFO: Added by JADX */
+        public static final int bt_contacts_syncing = 0x7f0f0029;
+
+        /* JADX INFO: Added by JADX */
+        public static final int bt_contacts_text = 0x7f0f002a;
+
+        /* JADX INFO: Added by JADX */
+        public static final int bt_dial_keyboard_text = 0x7f0f002b;
+
+        /* JADX INFO: Added by JADX */
+        public static final int bt_find_contacts_numbers = 0x7f0f002c;
+
+        /* JADX INFO: Added by JADX */
+        public static final int bt_maybe_find_text = 0x7f0f002d;
+
+        /* JADX INFO: Added by JADX */
+        public static final int bt_missed_calls_text = 0x7f0f002e;
+
+        /* JADX INFO: Added by JADX */
+        public static final int bt_missed_no_recode = 0x7f0f002f;
+
+        /* JADX INFO: Added by JADX */
+        public static final int bt_no_calllogs_text = 0x7f0f0030;
+
+        /* JADX INFO: Added by JADX */
+        public static final int bt_no_contacts_text = 0x7f0f0031;
+
+        /* JADX INFO: Added by JADX */
+        public static final int bt_no_match_result = 0x7f0f0032;
+
+        /* JADX INFO: Added by JADX */
+        public static final int bt_not_connect = 0x7f0f0033;
+
+        /* JADX INFO: Added by JADX */
+        public static final int bt_phone_audio_disabled = 0x7f0f0034;
+
+        /* JADX INFO: Added by JADX */
+        public static final int bt_sync_failed = 0x7f0f0035;
+
+        /* JADX INFO: Added by JADX */
+        public static final int bt_sync_succeed = 0x7f0f0036;
+
+        /* JADX INFO: Added by JADX */
+        public static final int bt_to_conncet = 0x7f0f0037;
+
+        /* JADX INFO: Added by JADX */
+        public static final int bt_yesterday = 0x7f0f0038;
+
+        /* JADX INFO: Added by JADX */
+        public static final int btcall_invalid_num = 0x7f0f0039;
+
+        /* JADX INFO: Added by JADX */
+        public static final int call_hold = 0x7f0f003a;
+
+        /* JADX INFO: Added by JADX */
+        public static final int call_out_text = 0x7f0f003b;
+
+        /* JADX INFO: Added by JADX */
+        public static final int contact_already_exists = 0x7f0f0041;
+
+        /* JADX INFO: Added by JADX */
+        public static final int contact_download_permission = 0x7f0f0042;
+
+        /* JADX INFO: Added by JADX */
+        public static final int contact_download_text = 0x7f0f0043;
+
+        /* JADX INFO: Added by JADX */
+        public static final int contact_download_tips = 0x7f0f0044;
+
+        /* JADX INFO: Added by JADX */
+        public static final int cp_bt_call_in = 0x7f0f0045;
+
+        /* JADX INFO: Added by JADX */
+        public static final int cp_dialog_accept = 0x7f0f0046;
+
+        /* JADX INFO: Added by JADX */
+        public static final int cp_dialog_reject = 0x7f0f0047;
+
+        /* JADX INFO: Added by JADX */
+        public static final int cp_iphone_call_in = 0x7f0f0048;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dialog_no = 0x7f0f0049;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dialog_yes = 0x7f0f004a;
+
+        /* JADX INFO: Added by JADX */
+        public static final int end_call_text = 0x7f0f004b;
+
+        /* JADX INFO: Added by JADX */
+        public static final int go_to_open = 0x7f0f0050;
+
+        /* JADX INFO: Added by JADX */
+        public static final int networkcall = 0x7f0f0079;
+
+        /* JADX INFO: Added by JADX */
+        public static final int not_connect = 0x7f0f007a;
+
+        /* JADX INFO: Added by JADX */
+        public static final int phone_mode = 0x7f0f0080;
+
+        /* JADX INFO: Added by JADX */
+        public static final int phone_mode_tips_str = 0x7f0f0081;
+
+        /* JADX INFO: Added by JADX */
+        public static final int sync_contacts = 0x7f0f0086;
+
+        /* JADX INFO: Added by JADX */
+        public static final int unknown = 0x7f0f0087;
+
+        /* JADX INFO: Added by JADX */
+        public static final int unknown_number = 0x7f0f0088;
+
+        /* JADX INFO: Added by JADX */
+        public static final int warring_mode = 0x7f0f0089;
+
+        private string() {
+        }
+    }
+
+    public static final class style {
+        public static final int AlertDialog_AppCompat = 0x7f100000;
+        public static final int AlertDialog_AppCompat_Light = 0x7f100001;
+        public static final int AndroidThemeColorAccentYellow = 0x7f100002;
+        public static final int Animation_AppCompat_Dialog = 0x7f100003;
+        public static final int Animation_AppCompat_DropDownUp = 0x7f100004;
+        public static final int Animation_AppCompat_Tooltip = 0x7f100005;
+        public static final int Animation_Design_BottomSheetDialog = 0x7f100006;
+        public static final int Animation_MaterialComponents_BottomSheetDialog = 0x7f100007;
+        public static final int Base_AlertDialog_AppCompat = 0x7f100008;
+        public static final int Base_AlertDialog_AppCompat_Light = 0x7f100009;
+        public static final int Base_Animation_AppCompat_Dialog = 0x7f10000a;
+        public static final int Base_Animation_AppCompat_DropDownUp = 0x7f10000b;
+        public static final int Base_Animation_AppCompat_Tooltip = 0x7f10000c;
+        public static final int Base_CardView = 0x7f10000d;
+        public static final int Base_DialogWindowTitleBackground_AppCompat = 0x7f10000f;
+        public static final int Base_DialogWindowTitle_AppCompat = 0x7f10000e;
+        public static final int Base_MaterialAlertDialog_MaterialComponents_Title_Icon = 0x7f100010;
+        public static final int Base_MaterialAlertDialog_MaterialComponents_Title_Panel = 0x7f100011;
+        public static final int Base_MaterialAlertDialog_MaterialComponents_Title_Text = 0x7f100012;
+        public static final int Base_TextAppearance_AppCompat = 0x7f100013;
+        public static final int Base_TextAppearance_AppCompat_Body1 = 0x7f100014;
+        public static final int Base_TextAppearance_AppCompat_Body2 = 0x7f100015;
+        public static final int Base_TextAppearance_AppCompat_Button = 0x7f100016;
+        public static final int Base_TextAppearance_AppCompat_Caption = 0x7f100017;
+        public static final int Base_TextAppearance_AppCompat_Display1 = 0x7f100018;
+        public static final int Base_TextAppearance_AppCompat_Display2 = 0x7f100019;
+        public static final int Base_TextAppearance_AppCompat_Display3 = 0x7f10001a;
+        public static final int Base_TextAppearance_AppCompat_Display4 = 0x7f10001b;
+        public static final int Base_TextAppearance_AppCompat_Headline = 0x7f10001c;
+        public static final int Base_TextAppearance_AppCompat_Inverse = 0x7f10001d;
+        public static final int Base_TextAppearance_AppCompat_Large = 0x7f10001e;
+        public static final int Base_TextAppearance_AppCompat_Large_Inverse = 0x7f10001f;
+        public static final int Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Large = 0x7f100020;
+        public static final int Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Small = 0x7f100021;
+        public static final int Base_TextAppearance_AppCompat_Medium = 0x7f100022;
+        public static final int Base_TextAppearance_AppCompat_Medium_Inverse = 0x7f100023;
+        public static final int Base_TextAppearance_AppCompat_Menu = 0x7f100024;
+        public static final int Base_TextAppearance_AppCompat_SearchResult = 0x7f100025;
+        public static final int Base_TextAppearance_AppCompat_SearchResult_Subtitle = 0x7f100026;
+        public static final int Base_TextAppearance_AppCompat_SearchResult_Title = 0x7f100027;
+        public static final int Base_TextAppearance_AppCompat_Small = 0x7f100028;
+        public static final int Base_TextAppearance_AppCompat_Small_Inverse = 0x7f100029;
+        public static final int Base_TextAppearance_AppCompat_Subhead = 0x7f10002a;
+        public static final int Base_TextAppearance_AppCompat_Subhead_Inverse = 0x7f10002b;
+        public static final int Base_TextAppearance_AppCompat_Title = 0x7f10002c;
+        public static final int Base_TextAppearance_AppCompat_Title_Inverse = 0x7f10002d;
+        public static final int Base_TextAppearance_AppCompat_Tooltip = 0x7f10002e;
+        public static final int Base_TextAppearance_AppCompat_Widget_ActionBar_Menu = 0x7f10002f;
+        public static final int Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle = 0x7f100030;
+        public static final int Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse = 0x7f100031;
+        public static final int Base_TextAppearance_AppCompat_Widget_ActionBar_Title = 0x7f100032;
+        public static final int Base_TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse = 0x7f100033;
+        public static final int Base_TextAppearance_AppCompat_Widget_ActionMode_Subtitle = 0x7f100034;
+        public static final int Base_TextAppearance_AppCompat_Widget_ActionMode_Title = 0x7f100035;
+        public static final int Base_TextAppearance_AppCompat_Widget_Button = 0x7f100036;
+        public static final int Base_TextAppearance_AppCompat_Widget_Button_Borderless_Colored = 0x7f100037;
+        public static final int Base_TextAppearance_AppCompat_Widget_Button_Colored = 0x7f100038;
+        public static final int Base_TextAppearance_AppCompat_Widget_Button_Inverse = 0x7f100039;
+        public static final int Base_TextAppearance_AppCompat_Widget_DropDownItem = 0x7f10003a;
+        public static final int Base_TextAppearance_AppCompat_Widget_PopupMenu_Header = 0x7f10003b;
+        public static final int Base_TextAppearance_AppCompat_Widget_PopupMenu_Large = 0x7f10003c;
+        public static final int Base_TextAppearance_AppCompat_Widget_PopupMenu_Small = 0x7f10003d;
+        public static final int Base_TextAppearance_AppCompat_Widget_Switch = 0x7f10003e;
+        public static final int Base_TextAppearance_AppCompat_Widget_TextView_SpinnerItem = 0x7f10003f;
+        public static final int Base_TextAppearance_MaterialComponents_Badge = 0x7f100040;
+        public static final int Base_TextAppearance_MaterialComponents_Button = 0x7f100041;
+        public static final int Base_TextAppearance_MaterialComponents_Headline6 = 0x7f100042;
+        public static final int Base_TextAppearance_MaterialComponents_Subtitle2 = 0x7f100043;
+        public static final int Base_TextAppearance_Widget_AppCompat_ExpandedMenu_Item = 0x7f100044;
+        public static final int Base_TextAppearance_Widget_AppCompat_Toolbar_Subtitle = 0x7f100045;
+        public static final int Base_TextAppearance_Widget_AppCompat_Toolbar_Title = 0x7f100046;
+        public static final int Base_ThemeOverlay_AppCompat = 0x7f100068;
+        public static final int Base_ThemeOverlay_AppCompat_ActionBar = 0x7f100069;
+        public static final int Base_ThemeOverlay_AppCompat_Dark = 0x7f10006a;
+        public static final int Base_ThemeOverlay_AppCompat_Dark_ActionBar = 0x7f10006b;
+        public static final int Base_ThemeOverlay_AppCompat_Dialog = 0x7f10006c;
+        public static final int Base_ThemeOverlay_AppCompat_Dialog_Alert = 0x7f10006d;
+        public static final int Base_ThemeOverlay_AppCompat_Light = 0x7f10006e;
+        public static final int Base_ThemeOverlay_MaterialComponents_Dialog = 0x7f10006f;
+        public static final int Base_ThemeOverlay_MaterialComponents_Dialog_Alert = 0x7f100070;
+        public static final int Base_ThemeOverlay_MaterialComponents_Dialog_Alert_Framework = 0x7f100071;
+        public static final int Base_ThemeOverlay_MaterialComponents_Light_Dialog_Alert_Framework = 0x7f100072;
+        public static final int Base_ThemeOverlay_MaterialComponents_MaterialAlertDialog = 0x7f100073;
+        public static final int Base_Theme_AppCompat = 0x7f100047;
+        public static final int Base_Theme_AppCompat_CompactMenu = 0x7f100048;
+        public static final int Base_Theme_AppCompat_Dialog = 0x7f100049;
+        public static final int Base_Theme_AppCompat_DialogWhenLarge = 0x7f10004d;
+        public static final int Base_Theme_AppCompat_Dialog_Alert = 0x7f10004a;
+        public static final int Base_Theme_AppCompat_Dialog_FixedSize = 0x7f10004b;
+        public static final int Base_Theme_AppCompat_Dialog_MinWidth = 0x7f10004c;
+        public static final int Base_Theme_AppCompat_Light = 0x7f10004e;
+        public static final int Base_Theme_AppCompat_Light_DarkActionBar = 0x7f10004f;
+        public static final int Base_Theme_AppCompat_Light_Dialog = 0x7f100050;
+        public static final int Base_Theme_AppCompat_Light_DialogWhenLarge = 0x7f100054;
+        public static final int Base_Theme_AppCompat_Light_Dialog_Alert = 0x7f100051;
+        public static final int Base_Theme_AppCompat_Light_Dialog_FixedSize = 0x7f100052;
+        public static final int Base_Theme_AppCompat_Light_Dialog_MinWidth = 0x7f100053;
+        public static final int Base_Theme_MaterialComponents = 0x7f100055;
+        public static final int Base_Theme_MaterialComponents_Bridge = 0x7f100056;
+        public static final int Base_Theme_MaterialComponents_CompactMenu = 0x7f100057;
+        public static final int Base_Theme_MaterialComponents_Dialog = 0x7f100058;
+        public static final int Base_Theme_MaterialComponents_DialogWhenLarge = 0x7f10005d;
+        public static final int Base_Theme_MaterialComponents_Dialog_Alert = 0x7f100059;
+        public static final int Base_Theme_MaterialComponents_Dialog_Bridge = 0x7f10005a;
+        public static final int Base_Theme_MaterialComponents_Dialog_FixedSize = 0x7f10005b;
+        public static final int Base_Theme_MaterialComponents_Dialog_MinWidth = 0x7f10005c;
+        public static final int Base_Theme_MaterialComponents_Light = 0x7f10005e;
+        public static final int Base_Theme_MaterialComponents_Light_Bridge = 0x7f10005f;
+        public static final int Base_Theme_MaterialComponents_Light_DarkActionBar = 0x7f100060;
+        public static final int Base_Theme_MaterialComponents_Light_DarkActionBar_Bridge = 0x7f100061;
+        public static final int Base_Theme_MaterialComponents_Light_Dialog = 0x7f100062;
+        public static final int Base_Theme_MaterialComponents_Light_DialogWhenLarge = 0x7f100067;
+        public static final int Base_Theme_MaterialComponents_Light_Dialog_Alert = 0x7f100063;
+        public static final int Base_Theme_MaterialComponents_Light_Dialog_Bridge = 0x7f100064;
+        public static final int Base_Theme_MaterialComponents_Light_Dialog_FixedSize = 0x7f100065;
+        public static final int Base_Theme_MaterialComponents_Light_Dialog_MinWidth = 0x7f100066;
+        public static final int Base_V14_ThemeOverlay_MaterialComponents_Dialog = 0x7f10007d;
+        public static final int Base_V14_ThemeOverlay_MaterialComponents_Dialog_Alert = 0x7f10007e;
+        public static final int Base_V14_ThemeOverlay_MaterialComponents_MaterialAlertDialog = 0x7f10007f;
+        public static final int Base_V14_Theme_MaterialComponents = 0x7f100074;
+        public static final int Base_V14_Theme_MaterialComponents_Bridge = 0x7f100075;
+        public static final int Base_V14_Theme_MaterialComponents_Dialog = 0x7f100076;
+        public static final int Base_V14_Theme_MaterialComponents_Dialog_Bridge = 0x7f100077;
+        public static final int Base_V14_Theme_MaterialComponents_Light = 0x7f100078;
+        public static final int Base_V14_Theme_MaterialComponents_Light_Bridge = 0x7f100079;
+        public static final int Base_V14_Theme_MaterialComponents_Light_DarkActionBar_Bridge = 0x7f10007a;
+        public static final int Base_V14_Theme_MaterialComponents_Light_Dialog = 0x7f10007b;
+        public static final int Base_V14_Theme_MaterialComponents_Light_Dialog_Bridge = 0x7f10007c;
+        public static final int Base_V21_ThemeOverlay_AppCompat_Dialog = 0x7f100088;
+        public static final int Base_V21_Theme_AppCompat = 0x7f100080;
+        public static final int Base_V21_Theme_AppCompat_Dialog = 0x7f100081;
+        public static final int Base_V21_Theme_AppCompat_Light = 0x7f100082;
+        public static final int Base_V21_Theme_AppCompat_Light_Dialog = 0x7f100083;
+        public static final int Base_V21_Theme_MaterialComponents = 0x7f100084;
+        public static final int Base_V21_Theme_MaterialComponents_Dialog = 0x7f100085;
+        public static final int Base_V21_Theme_MaterialComponents_Light = 0x7f100086;
+        public static final int Base_V21_Theme_MaterialComponents_Light_Dialog = 0x7f100087;
+        public static final int Base_V22_Theme_AppCompat = 0x7f100089;
+        public static final int Base_V22_Theme_AppCompat_Light = 0x7f10008a;
+        public static final int Base_V23_Theme_AppCompat = 0x7f10008b;
+        public static final int Base_V23_Theme_AppCompat_Light = 0x7f10008c;
+        public static final int Base_V26_Theme_AppCompat = 0x7f10008d;
+        public static final int Base_V26_Theme_AppCompat_Light = 0x7f10008e;
+        public static final int Base_V26_Widget_AppCompat_Toolbar = 0x7f10008f;
+        public static final int Base_V28_Theme_AppCompat = 0x7f100090;
+        public static final int Base_V28_Theme_AppCompat_Light = 0x7f100091;
+        public static final int Base_V7_ThemeOverlay_AppCompat_Dialog = 0x7f100096;
+        public static final int Base_V7_Theme_AppCompat = 0x7f100092;
+        public static final int Base_V7_Theme_AppCompat_Dialog = 0x7f100093;
+        public static final int Base_V7_Theme_AppCompat_Light = 0x7f100094;
+        public static final int Base_V7_Theme_AppCompat_Light_Dialog = 0x7f100095;
+        public static final int Base_V7_Widget_AppCompat_AutoCompleteTextView = 0x7f100097;
+        public static final int Base_V7_Widget_AppCompat_EditText = 0x7f100098;
+        public static final int Base_V7_Widget_AppCompat_Toolbar = 0x7f100099;
+        public static final int Base_Widget_AppCompat_ActionBar = 0x7f10009a;
+        public static final int Base_Widget_AppCompat_ActionBar_Solid = 0x7f10009b;
+        public static final int Base_Widget_AppCompat_ActionBar_TabBar = 0x7f10009c;
+        public static final int Base_Widget_AppCompat_ActionBar_TabText = 0x7f10009d;
+        public static final int Base_Widget_AppCompat_ActionBar_TabView = 0x7f10009e;
+        public static final int Base_Widget_AppCompat_ActionButton = 0x7f10009f;
+        public static final int Base_Widget_AppCompat_ActionButton_CloseMode = 0x7f1000a0;
+        public static final int Base_Widget_AppCompat_ActionButton_Overflow = 0x7f1000a1;
+        public static final int Base_Widget_AppCompat_ActionMode = 0x7f1000a2;
+        public static final int Base_Widget_AppCompat_ActivityChooserView = 0x7f1000a3;
+        public static final int Base_Widget_AppCompat_AutoCompleteTextView = 0x7f1000a4;
+        public static final int Base_Widget_AppCompat_Button = 0x7f1000a5;
+        public static final int Base_Widget_AppCompat_ButtonBar = 0x7f1000ab;
+        public static final int Base_Widget_AppCompat_ButtonBar_AlertDialog = 0x7f1000ac;
+        public static final int Base_Widget_AppCompat_Button_Borderless = 0x7f1000a6;
+        public static final int Base_Widget_AppCompat_Button_Borderless_Colored = 0x7f1000a7;
+        public static final int Base_Widget_AppCompat_Button_ButtonBar_AlertDialog = 0x7f1000a8;
+        public static final int Base_Widget_AppCompat_Button_Colored = 0x7f1000a9;
+        public static final int Base_Widget_AppCompat_Button_Small = 0x7f1000aa;
+        public static final int Base_Widget_AppCompat_CompoundButton_CheckBox = 0x7f1000ad;
+        public static final int Base_Widget_AppCompat_CompoundButton_RadioButton = 0x7f1000ae;
+        public static final int Base_Widget_AppCompat_CompoundButton_Switch = 0x7f1000af;
+        public static final int Base_Widget_AppCompat_DrawerArrowToggle = 0x7f1000b0;
+        public static final int Base_Widget_AppCompat_DrawerArrowToggle_Common = 0x7f1000b1;
+        public static final int Base_Widget_AppCompat_DropDownItem_Spinner = 0x7f1000b2;
+        public static final int Base_Widget_AppCompat_EditText = 0x7f1000b3;
+        public static final int Base_Widget_AppCompat_ImageButton = 0x7f1000b4;
+        public static final int Base_Widget_AppCompat_Light_ActionBar = 0x7f1000b5;
+        public static final int Base_Widget_AppCompat_Light_ActionBar_Solid = 0x7f1000b6;
+        public static final int Base_Widget_AppCompat_Light_ActionBar_TabBar = 0x7f1000b7;
+        public static final int Base_Widget_AppCompat_Light_ActionBar_TabText = 0x7f1000b8;
+        public static final int Base_Widget_AppCompat_Light_ActionBar_TabText_Inverse = 0x7f1000b9;
+        public static final int Base_Widget_AppCompat_Light_ActionBar_TabView = 0x7f1000ba;
+        public static final int Base_Widget_AppCompat_Light_PopupMenu = 0x7f1000bb;
+        public static final int Base_Widget_AppCompat_Light_PopupMenu_Overflow = 0x7f1000bc;
+        public static final int Base_Widget_AppCompat_ListMenuView = 0x7f1000bd;
+        public static final int Base_Widget_AppCompat_ListPopupWindow = 0x7f1000be;
+        public static final int Base_Widget_AppCompat_ListView = 0x7f1000bf;
+        public static final int Base_Widget_AppCompat_ListView_DropDown = 0x7f1000c0;
+        public static final int Base_Widget_AppCompat_ListView_Menu = 0x7f1000c1;
+        public static final int Base_Widget_AppCompat_PopupMenu = 0x7f1000c2;
+        public static final int Base_Widget_AppCompat_PopupMenu_Overflow = 0x7f1000c3;
+        public static final int Base_Widget_AppCompat_PopupWindow = 0x7f1000c4;
+        public static final int Base_Widget_AppCompat_ProgressBar = 0x7f1000c5;
+        public static final int Base_Widget_AppCompat_ProgressBar_Horizontal = 0x7f1000c6;
+        public static final int Base_Widget_AppCompat_RatingBar = 0x7f1000c7;
+        public static final int Base_Widget_AppCompat_RatingBar_Indicator = 0x7f1000c8;
+        public static final int Base_Widget_AppCompat_RatingBar_Small = 0x7f1000c9;
+        public static final int Base_Widget_AppCompat_SearchView = 0x7f1000ca;
+        public static final int Base_Widget_AppCompat_SearchView_ActionBar = 0x7f1000cb;
+        public static final int Base_Widget_AppCompat_SeekBar = 0x7f1000cc;
+        public static final int Base_Widget_AppCompat_SeekBar_Discrete = 0x7f1000cd;
+        public static final int Base_Widget_AppCompat_Spinner = 0x7f1000ce;
+        public static final int Base_Widget_AppCompat_Spinner_Underlined = 0x7f1000cf;
+        public static final int Base_Widget_AppCompat_TextView = 0x7f1000d0;
+        public static final int Base_Widget_AppCompat_TextView_SpinnerItem = 0x7f1000d1;
+        public static final int Base_Widget_AppCompat_Toolbar = 0x7f1000d2;
+        public static final int Base_Widget_AppCompat_Toolbar_Button_Navigation = 0x7f1000d3;
+        public static final int Base_Widget_Design_TabLayout = 0x7f1000d4;
+        public static final int Base_Widget_MaterialComponents_AutoCompleteTextView = 0x7f1000d5;
+        public static final int Base_Widget_MaterialComponents_CheckedTextView = 0x7f1000d6;
+        public static final int Base_Widget_MaterialComponents_Chip = 0x7f1000d7;
+        public static final int Base_Widget_MaterialComponents_PopupMenu = 0x7f1000d8;
+        public static final int Base_Widget_MaterialComponents_PopupMenu_ContextMenu = 0x7f1000d9;
+        public static final int Base_Widget_MaterialComponents_PopupMenu_ListPopupWindow = 0x7f1000da;
+        public static final int Base_Widget_MaterialComponents_PopupMenu_Overflow = 0x7f1000db;
+        public static final int Base_Widget_MaterialComponents_Slider = 0x7f1000dc;
+        public static final int Base_Widget_MaterialComponents_TextInputEditText = 0x7f1000dd;
+        public static final int Base_Widget_MaterialComponents_TextInputLayout = 0x7f1000de;
+        public static final int Base_Widget_MaterialComponents_TextView = 0x7f1000df;
+        public static final int CardView = 0x7f1000e0;
+        public static final int CardView_Dark = 0x7f1000e1;
+        public static final int CardView_Light = 0x7f1000e2;
+        public static final int EmptyTheme = 0x7f1000e3;
+        public static final int MaterialAlertDialog_MaterialComponents = 0x7f1000e4;
+        public static final int MaterialAlertDialog_MaterialComponents_Body_Text = 0x7f1000e5;
+        public static final int MaterialAlertDialog_MaterialComponents_Picker_Date_Calendar = 0x7f1000e6;
+        public static final int MaterialAlertDialog_MaterialComponents_Picker_Date_Spinner = 0x7f1000e7;
+        public static final int MaterialAlertDialog_MaterialComponents_Title_Icon = 0x7f1000e8;
+        public static final int MaterialAlertDialog_MaterialComponents_Title_Icon_CenterStacked = 0x7f1000e9;
+        public static final int MaterialAlertDialog_MaterialComponents_Title_Panel = 0x7f1000ea;
+        public static final int MaterialAlertDialog_MaterialComponents_Title_Panel_CenterStacked = 0x7f1000eb;
+        public static final int MaterialAlertDialog_MaterialComponents_Title_Text = 0x7f1000ec;
+        public static final int MaterialAlertDialog_MaterialComponents_Title_Text_CenterStacked = 0x7f1000ed;
+        public static final int Platform_AppCompat = 0x7f1000ef;
+        public static final int Platform_AppCompat_Light = 0x7f1000f0;
+        public static final int Platform_MaterialComponents = 0x7f1000f1;
+        public static final int Platform_MaterialComponents_Dialog = 0x7f1000f2;
+        public static final int Platform_MaterialComponents_Light = 0x7f1000f3;
+        public static final int Platform_MaterialComponents_Light_Dialog = 0x7f1000f4;
+        public static final int Platform_ThemeOverlay_AppCompat = 0x7f1000f5;
+        public static final int Platform_ThemeOverlay_AppCompat_Dark = 0x7f1000f6;
+        public static final int Platform_ThemeOverlay_AppCompat_Light = 0x7f1000f7;
+        public static final int Platform_V21_AppCompat = 0x7f1000f8;
+        public static final int Platform_V21_AppCompat_Light = 0x7f1000f9;
+        public static final int Platform_V25_AppCompat = 0x7f1000fa;
+        public static final int Platform_V25_AppCompat_Light = 0x7f1000fb;
+        public static final int Platform_Widget_AppCompat_Spinner = 0x7f1000fc;
+        public static final int RtlOverlay_DialogWindowTitle_AppCompat = 0x7f1000fd;
+        public static final int RtlOverlay_Widget_AppCompat_ActionBar_TitleItem = 0x7f1000fe;
+        public static final int RtlOverlay_Widget_AppCompat_DialogTitle_Icon = 0x7f1000ff;
+        public static final int RtlOverlay_Widget_AppCompat_PopupMenuItem = 0x7f100100;
+        public static final int RtlOverlay_Widget_AppCompat_PopupMenuItem_InternalGroup = 0x7f100101;
+        public static final int RtlOverlay_Widget_AppCompat_PopupMenuItem_Shortcut = 0x7f100102;
+        public static final int RtlOverlay_Widget_AppCompat_PopupMenuItem_SubmenuArrow = 0x7f100103;
+        public static final int RtlOverlay_Widget_AppCompat_PopupMenuItem_Text = 0x7f100104;
+        public static final int RtlOverlay_Widget_AppCompat_PopupMenuItem_Title = 0x7f100105;
+        public static final int RtlOverlay_Widget_AppCompat_SearchView_MagIcon = 0x7f10010b;
+        public static final int RtlOverlay_Widget_AppCompat_Search_DropDown = 0x7f100106;
+        public static final int RtlOverlay_Widget_AppCompat_Search_DropDown_Icon1 = 0x7f100107;
+        public static final int RtlOverlay_Widget_AppCompat_Search_DropDown_Icon2 = 0x7f100108;
+        public static final int RtlOverlay_Widget_AppCompat_Search_DropDown_Query = 0x7f100109;
+        public static final int RtlOverlay_Widget_AppCompat_Search_DropDown_Text = 0x7f10010a;
+        public static final int RtlUnderlay_Widget_AppCompat_ActionButton = 0x7f10010c;
+        public static final int RtlUnderlay_Widget_AppCompat_ActionButton_Overflow = 0x7f10010d;
+        public static final int ShapeAppearanceOverlay = 0x7f100114;
+        public static final int ShapeAppearanceOverlay_BottomLeftDifferentCornerSize = 0x7f100115;
+        public static final int ShapeAppearanceOverlay_BottomRightCut = 0x7f100116;
+        public static final int ShapeAppearanceOverlay_Cut = 0x7f100117;
+        public static final int ShapeAppearanceOverlay_DifferentCornerSize = 0x7f100118;
+        public static final int ShapeAppearanceOverlay_MaterialComponents_BottomSheet = 0x7f100119;
+        public static final int ShapeAppearanceOverlay_MaterialComponents_Chip = 0x7f10011a;
+        public static final int ShapeAppearanceOverlay_MaterialComponents_ExtendedFloatingActionButton = 0x7f10011b;
+        public static final int ShapeAppearanceOverlay_MaterialComponents_FloatingActionButton = 0x7f10011c;
+        public static final int ShapeAppearanceOverlay_MaterialComponents_MaterialCalendar_Day = 0x7f10011d;
+        public static final int ShapeAppearanceOverlay_MaterialComponents_MaterialCalendar_Window_Fullscreen = 0x7f10011e;
+        public static final int ShapeAppearanceOverlay_MaterialComponents_MaterialCalendar_Year = 0x7f10011f;
+        public static final int ShapeAppearanceOverlay_MaterialComponents_TextInputLayout_FilledBox = 0x7f100120;
+        public static final int ShapeAppearanceOverlay_TopLeftCut = 0x7f100121;
+        public static final int ShapeAppearanceOverlay_TopRightDifferentCornerSize = 0x7f100122;
+        public static final int ShapeAppearance_MaterialComponents = 0x7f10010e;
+        public static final int ShapeAppearance_MaterialComponents_LargeComponent = 0x7f10010f;
+        public static final int ShapeAppearance_MaterialComponents_MediumComponent = 0x7f100110;
+        public static final int ShapeAppearance_MaterialComponents_SmallComponent = 0x7f100111;
+        public static final int ShapeAppearance_MaterialComponents_Test = 0x7f100112;
+        public static final int ShapeAppearance_MaterialComponents_Tooltip = 0x7f100113;
+        public static final int TestStyleWithLineHeight = 0x7f100128;
+        public static final int TestStyleWithLineHeightAppearance = 0x7f100129;
+        public static final int TestStyleWithThemeLineHeightAttribute = 0x7f10012a;
+        public static final int TestStyleWithoutLineHeight = 0x7f10012b;
+        public static final int TestThemeWithLineHeight = 0x7f10012c;
+        public static final int TestThemeWithLineHeightDisabled = 0x7f10012d;
+        public static final int Test_ShapeAppearanceOverlay_MaterialComponents_MaterialCalendar_Day = 0x7f100123;
+        public static final int Test_Theme_MaterialComponents_MaterialCalendar = 0x7f100124;
+        public static final int Test_Widget_MaterialComponents_MaterialCalendar = 0x7f100125;
+        public static final int Test_Widget_MaterialComponents_MaterialCalendar_Day = 0x7f100126;
+        public static final int Test_Widget_MaterialComponents_MaterialCalendar_Day_Selected = 0x7f100127;
+        public static final int TextAppearance_AppCompat = 0x7f10012e;
+        public static final int TextAppearance_AppCompat_Body1 = 0x7f10012f;
+        public static final int TextAppearance_AppCompat_Body2 = 0x7f100130;
+        public static final int TextAppearance_AppCompat_Button = 0x7f100131;
+        public static final int TextAppearance_AppCompat_Caption = 0x7f100132;
+        public static final int TextAppearance_AppCompat_Display1 = 0x7f100133;
+        public static final int TextAppearance_AppCompat_Display2 = 0x7f100134;
+        public static final int TextAppearance_AppCompat_Display3 = 0x7f100135;
+        public static final int TextAppearance_AppCompat_Display4 = 0x7f100136;
+        public static final int TextAppearance_AppCompat_Headline = 0x7f100137;
+        public static final int TextAppearance_AppCompat_Inverse = 0x7f100138;
+        public static final int TextAppearance_AppCompat_Large = 0x7f100139;
+        public static final int TextAppearance_AppCompat_Large_Inverse = 0x7f10013a;
+        public static final int TextAppearance_AppCompat_Light_SearchResult_Subtitle = 0x7f10013b;
+        public static final int TextAppearance_AppCompat_Light_SearchResult_Title = 0x7f10013c;
+        public static final int TextAppearance_AppCompat_Light_Widget_PopupMenu_Large = 0x7f10013d;
+        public static final int TextAppearance_AppCompat_Light_Widget_PopupMenu_Small = 0x7f10013e;
+        public static final int TextAppearance_AppCompat_Medium = 0x7f10013f;
+        public static final int TextAppearance_AppCompat_Medium_Inverse = 0x7f100140;
+        public static final int TextAppearance_AppCompat_Menu = 0x7f100141;
+        public static final int TextAppearance_AppCompat_SearchResult_Subtitle = 0x7f100142;
+        public static final int TextAppearance_AppCompat_SearchResult_Title = 0x7f100143;
+        public static final int TextAppearance_AppCompat_Small = 0x7f100144;
+        public static final int TextAppearance_AppCompat_Small_Inverse = 0x7f100145;
+        public static final int TextAppearance_AppCompat_Subhead = 0x7f100146;
+        public static final int TextAppearance_AppCompat_Subhead_Inverse = 0x7f100147;
+        public static final int TextAppearance_AppCompat_Title = 0x7f100148;
+        public static final int TextAppearance_AppCompat_Title_Inverse = 0x7f100149;
+        public static final int TextAppearance_AppCompat_Tooltip = 0x7f10014a;
+        public static final int TextAppearance_AppCompat_Widget_ActionBar_Menu = 0x7f10014b;
+        public static final int TextAppearance_AppCompat_Widget_ActionBar_Subtitle = 0x7f10014c;
+        public static final int TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse = 0x7f10014d;
+        public static final int TextAppearance_AppCompat_Widget_ActionBar_Title = 0x7f10014e;
+        public static final int TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse = 0x7f10014f;
+        public static final int TextAppearance_AppCompat_Widget_ActionMode_Subtitle = 0x7f100150;
+        public static final int TextAppearance_AppCompat_Widget_ActionMode_Subtitle_Inverse = 0x7f100151;
+        public static final int TextAppearance_AppCompat_Widget_ActionMode_Title = 0x7f100152;
+        public static final int TextAppearance_AppCompat_Widget_ActionMode_Title_Inverse = 0x7f100153;
+        public static final int TextAppearance_AppCompat_Widget_Button = 0x7f100154;
+        public static final int TextAppearance_AppCompat_Widget_Button_Borderless_Colored = 0x7f100155;
+        public static final int TextAppearance_AppCompat_Widget_Button_Colored = 0x7f100156;
+        public static final int TextAppearance_AppCompat_Widget_Button_Inverse = 0x7f100157;
+        public static final int TextAppearance_AppCompat_Widget_DropDownItem = 0x7f100158;
+        public static final int TextAppearance_AppCompat_Widget_PopupMenu_Header = 0x7f100159;
+        public static final int TextAppearance_AppCompat_Widget_PopupMenu_Large = 0x7f10015a;
+        public static final int TextAppearance_AppCompat_Widget_PopupMenu_Small = 0x7f10015b;
+        public static final int TextAppearance_AppCompat_Widget_Switch = 0x7f10015c;
+        public static final int TextAppearance_AppCompat_Widget_TextView_SpinnerItem = 0x7f10015d;
+        public static final int TextAppearance_Compat_Notification = 0x7f10015e;
+        public static final int TextAppearance_Compat_Notification_Info = 0x7f10015f;
+        public static final int TextAppearance_Compat_Notification_Line2 = 0x7f100161;
+        public static final int TextAppearance_Compat_Notification_Time = 0x7f100164;
+        public static final int TextAppearance_Compat_Notification_Title = 0x7f100166;
+        public static final int TextAppearance_Design_CollapsingToolbar_Expanded = 0x7f100168;
+        public static final int TextAppearance_Design_Counter = 0x7f100169;
+        public static final int TextAppearance_Design_Counter_Overflow = 0x7f10016a;
+        public static final int TextAppearance_Design_Error = 0x7f10016b;
+        public static final int TextAppearance_Design_HelperText = 0x7f10016c;
+        public static final int TextAppearance_Design_Hint = 0x7f10016d;
+        public static final int TextAppearance_Design_Placeholder = 0x7f10016e;
+        public static final int TextAppearance_Design_Prefix = 0x7f10016f;
+        public static final int TextAppearance_Design_Snackbar_Message = 0x7f100170;
+        public static final int TextAppearance_Design_Suffix = 0x7f100171;
+        public static final int TextAppearance_Design_Tab = 0x7f100172;
+        public static final int TextAppearance_MaterialComponents_Badge = 0x7f100173;
+        public static final int TextAppearance_MaterialComponents_Body1 = 0x7f100174;
+        public static final int TextAppearance_MaterialComponents_Body2 = 0x7f100175;
+        public static final int TextAppearance_MaterialComponents_Button = 0x7f100176;
+        public static final int TextAppearance_MaterialComponents_Caption = 0x7f100177;
+        public static final int TextAppearance_MaterialComponents_Chip = 0x7f100178;
+        public static final int TextAppearance_MaterialComponents_Headline1 = 0x7f100179;
+        public static final int TextAppearance_MaterialComponents_Headline2 = 0x7f10017a;
+        public static final int TextAppearance_MaterialComponents_Headline3 = 0x7f10017b;
+        public static final int TextAppearance_MaterialComponents_Headline4 = 0x7f10017c;
+        public static final int TextAppearance_MaterialComponents_Headline5 = 0x7f10017d;
+        public static final int TextAppearance_MaterialComponents_Headline6 = 0x7f10017e;
+        public static final int TextAppearance_MaterialComponents_Overline = 0x7f10017f;
+        public static final int TextAppearance_MaterialComponents_Subtitle1 = 0x7f100180;
+        public static final int TextAppearance_MaterialComponents_Subtitle2 = 0x7f100181;
+        public static final int TextAppearance_MaterialComponents_Tooltip = 0x7f100182;
+        public static final int TextAppearance_Widget_AppCompat_ExpandedMenu_Item = 0x7f100183;
+        public static final int TextAppearance_Widget_AppCompat_Toolbar_Subtitle = 0x7f100184;
+        public static final int TextAppearance_Widget_AppCompat_Toolbar_Title = 0x7f100185;
+        public static final int ThemeOverlayColorAccentRed = 0x7f100204;
+        public static final int ThemeOverlay_AppCompat = 0x7f1001d5;
+        public static final int ThemeOverlay_AppCompat_ActionBar = 0x7f1001d6;
+        public static final int ThemeOverlay_AppCompat_Dark = 0x7f1001d7;
+        public static final int ThemeOverlay_AppCompat_Dark_ActionBar = 0x7f1001d8;
+        public static final int ThemeOverlay_AppCompat_DayNight = 0x7f1001d9;
+        public static final int ThemeOverlay_AppCompat_DayNight_ActionBar = 0x7f1001da;
+        public static final int ThemeOverlay_AppCompat_Dialog = 0x7f1001db;
+        public static final int ThemeOverlay_AppCompat_Dialog_Alert = 0x7f1001dc;
+        public static final int ThemeOverlay_AppCompat_Light = 0x7f1001dd;
+        public static final int ThemeOverlay_Design_TextInputEditText = 0x7f1001de;
+        public static final int ThemeOverlay_MaterialComponents = 0x7f1001df;
+        public static final int ThemeOverlay_MaterialComponents_ActionBar = 0x7f1001e0;
+        public static final int ThemeOverlay_MaterialComponents_ActionBar_Primary = 0x7f1001e1;
+        public static final int ThemeOverlay_MaterialComponents_ActionBar_Surface = 0x7f1001e2;
+        public static final int ThemeOverlay_MaterialComponents_AutoCompleteTextView = 0x7f1001e3;
+        public static final int ThemeOverlay_MaterialComponents_AutoCompleteTextView_FilledBox = 0x7f1001e4;
+        public static final int ThemeOverlay_MaterialComponents_AutoCompleteTextView_FilledBox_Dense = 0x7f1001e5;
+        public static final int ThemeOverlay_MaterialComponents_AutoCompleteTextView_OutlinedBox = 0x7f1001e6;
+        public static final int ThemeOverlay_MaterialComponents_AutoCompleteTextView_OutlinedBox_Dense = 0x7f1001e7;
+        public static final int ThemeOverlay_MaterialComponents_BottomAppBar_Primary = 0x7f1001e8;
+        public static final int ThemeOverlay_MaterialComponents_BottomAppBar_Surface = 0x7f1001e9;
+        public static final int ThemeOverlay_MaterialComponents_BottomSheetDialog = 0x7f1001ea;
+        public static final int ThemeOverlay_MaterialComponents_Dark = 0x7f1001eb;
+        public static final int ThemeOverlay_MaterialComponents_Dark_ActionBar = 0x7f1001ec;
+        public static final int ThemeOverlay_MaterialComponents_DayNight_BottomSheetDialog = 0x7f1001ed;
+        public static final int ThemeOverlay_MaterialComponents_Dialog = 0x7f1001ee;
+        public static final int ThemeOverlay_MaterialComponents_Dialog_Alert = 0x7f1001ef;
+        public static final int ThemeOverlay_MaterialComponents_Dialog_Alert_Framework = 0x7f1001f0;
+        public static final int ThemeOverlay_MaterialComponents_Light = 0x7f1001f1;
+        public static final int ThemeOverlay_MaterialComponents_Light_BottomSheetDialog = 0x7f1001f2;
+        public static final int ThemeOverlay_MaterialComponents_Light_Dialog_Alert_Framework = 0x7f1001f3;
+        public static final int ThemeOverlay_MaterialComponents_MaterialAlertDialog = 0x7f1001f4;
+        public static final int ThemeOverlay_MaterialComponents_MaterialAlertDialog_Centered = 0x7f1001f5;
+        public static final int ThemeOverlay_MaterialComponents_MaterialAlertDialog_Picker_Date = 0x7f1001f6;
+        public static final int ThemeOverlay_MaterialComponents_MaterialAlertDialog_Picker_Date_Calendar = 0x7f1001f7;
+        public static final int ThemeOverlay_MaterialComponents_MaterialAlertDialog_Picker_Date_Header_Text = 0x7f1001f8;
+        public static final int ThemeOverlay_MaterialComponents_MaterialAlertDialog_Picker_Date_Header_Text_Day = 0x7f1001f9;
+        public static final int ThemeOverlay_MaterialComponents_MaterialAlertDialog_Picker_Date_Spinner = 0x7f1001fa;
+        public static final int ThemeOverlay_MaterialComponents_MaterialCalendar = 0x7f1001fb;
+        public static final int ThemeOverlay_MaterialComponents_MaterialCalendar_Fullscreen = 0x7f1001fc;
+        public static final int ThemeOverlay_MaterialComponents_TextInputEditText = 0x7f1001fd;
+        public static final int ThemeOverlay_MaterialComponents_TextInputEditText_FilledBox = 0x7f1001fe;
+        public static final int ThemeOverlay_MaterialComponents_TextInputEditText_FilledBox_Dense = 0x7f1001ff;
+        public static final int ThemeOverlay_MaterialComponents_TextInputEditText_OutlinedBox = 0x7f100200;
+        public static final int ThemeOverlay_MaterialComponents_TextInputEditText_OutlinedBox_Dense = 0x7f100201;
+        public static final int ThemeOverlay_MaterialComponents_Toolbar_Primary = 0x7f100202;
+        public static final int ThemeOverlay_MaterialComponents_Toolbar_Surface = 0x7f100203;
+        public static final int Theme_AppCompat = 0x7f100187;
+        public static final int Theme_AppCompat_CompactMenu = 0x7f100188;
+        public static final int Theme_AppCompat_DayNight = 0x7f100189;
+        public static final int Theme_AppCompat_DayNight_DarkActionBar = 0x7f10018a;
+        public static final int Theme_AppCompat_DayNight_Dialog = 0x7f10018b;
+        public static final int Theme_AppCompat_DayNight_DialogWhenLarge = 0x7f10018e;
+        public static final int Theme_AppCompat_DayNight_Dialog_Alert = 0x7f10018c;
+        public static final int Theme_AppCompat_DayNight_Dialog_MinWidth = 0x7f10018d;
+        public static final int Theme_AppCompat_DayNight_NoActionBar = 0x7f10018f;
+        public static final int Theme_AppCompat_Dialog = 0x7f100190;
+        public static final int Theme_AppCompat_DialogWhenLarge = 0x7f100193;
+        public static final int Theme_AppCompat_Dialog_Alert = 0x7f100191;
+        public static final int Theme_AppCompat_Dialog_MinWidth = 0x7f100192;
+        public static final int Theme_AppCompat_Empty = 0x7f100194;
+        public static final int Theme_AppCompat_Light = 0x7f100195;
+        public static final int Theme_AppCompat_Light_DarkActionBar = 0x7f100196;
+        public static final int Theme_AppCompat_Light_Dialog = 0x7f100197;
+        public static final int Theme_AppCompat_Light_DialogWhenLarge = 0x7f10019a;
+        public static final int Theme_AppCompat_Light_Dialog_Alert = 0x7f100198;
+        public static final int Theme_AppCompat_Light_Dialog_MinWidth = 0x7f100199;
+        public static final int Theme_AppCompat_Light_NoActionBar = 0x7f10019b;
+        public static final int Theme_AppCompat_NoActionBar = 0x7f10019c;
+        public static final int Theme_Design = 0x7f10019e;
+        public static final int Theme_Design_BottomSheetDialog = 0x7f10019f;
+        public static final int Theme_Design_Light = 0x7f1001a0;
+        public static final int Theme_Design_Light_BottomSheetDialog = 0x7f1001a1;
+        public static final int Theme_Design_Light_NoActionBar = 0x7f1001a2;
+        public static final int Theme_Design_NoActionBar = 0x7f1001a3;
+        public static final int Theme_MaterialComponents = 0x7f1001a4;
+        public static final int Theme_MaterialComponents_BottomSheetDialog = 0x7f1001a5;
+        public static final int Theme_MaterialComponents_Bridge = 0x7f1001a6;
+        public static final int Theme_MaterialComponents_CompactMenu = 0x7f1001a7;
+        public static final int Theme_MaterialComponents_DayNight = 0x7f1001a8;
+        public static final int Theme_MaterialComponents_DayNight_BottomSheetDialog = 0x7f1001a9;
+        public static final int Theme_MaterialComponents_DayNight_Bridge = 0x7f1001aa;
+        public static final int Theme_MaterialComponents_DayNight_DarkActionBar = 0x7f1001ab;
+        public static final int Theme_MaterialComponents_DayNight_DarkActionBar_Bridge = 0x7f1001ac;
+        public static final int Theme_MaterialComponents_DayNight_Dialog = 0x7f1001ad;
+        public static final int Theme_MaterialComponents_DayNight_DialogWhenLarge = 0x7f1001b5;
+        public static final int Theme_MaterialComponents_DayNight_Dialog_Alert = 0x7f1001ae;
+        public static final int Theme_MaterialComponents_DayNight_Dialog_Alert_Bridge = 0x7f1001af;
+        public static final int Theme_MaterialComponents_DayNight_Dialog_Bridge = 0x7f1001b0;
+        public static final int Theme_MaterialComponents_DayNight_Dialog_FixedSize = 0x7f1001b1;
+        public static final int Theme_MaterialComponents_DayNight_Dialog_FixedSize_Bridge = 0x7f1001b2;
+        public static final int Theme_MaterialComponents_DayNight_Dialog_MinWidth = 0x7f1001b3;
+        public static final int Theme_MaterialComponents_DayNight_Dialog_MinWidth_Bridge = 0x7f1001b4;
+        public static final int Theme_MaterialComponents_DayNight_NoActionBar = 0x7f1001b6;
+        public static final int Theme_MaterialComponents_DayNight_NoActionBar_Bridge = 0x7f1001b7;
+        public static final int Theme_MaterialComponents_Dialog = 0x7f1001b8;
+        public static final int Theme_MaterialComponents_DialogWhenLarge = 0x7f1001c0;
+        public static final int Theme_MaterialComponents_Dialog_Alert = 0x7f1001b9;
+        public static final int Theme_MaterialComponents_Dialog_Alert_Bridge = 0x7f1001ba;
+        public static final int Theme_MaterialComponents_Dialog_Bridge = 0x7f1001bb;
+        public static final int Theme_MaterialComponents_Dialog_FixedSize = 0x7f1001bc;
+        public static final int Theme_MaterialComponents_Dialog_FixedSize_Bridge = 0x7f1001bd;
+        public static final int Theme_MaterialComponents_Dialog_MinWidth = 0x7f1001be;
+        public static final int Theme_MaterialComponents_Dialog_MinWidth_Bridge = 0x7f1001bf;
+        public static final int Theme_MaterialComponents_Light = 0x7f1001c1;
+        public static final int Theme_MaterialComponents_Light_BarSize = 0x7f1001c2;
+        public static final int Theme_MaterialComponents_Light_BottomSheetDialog = 0x7f1001c3;
+        public static final int Theme_MaterialComponents_Light_Bridge = 0x7f1001c4;
+        public static final int Theme_MaterialComponents_Light_DarkActionBar = 0x7f1001c5;
+        public static final int Theme_MaterialComponents_Light_DarkActionBar_Bridge = 0x7f1001c6;
+        public static final int Theme_MaterialComponents_Light_Dialog = 0x7f1001c7;
+        public static final int Theme_MaterialComponents_Light_DialogWhenLarge = 0x7f1001cf;
+        public static final int Theme_MaterialComponents_Light_Dialog_Alert = 0x7f1001c8;
+        public static final int Theme_MaterialComponents_Light_Dialog_Alert_Bridge = 0x7f1001c9;
+        public static final int Theme_MaterialComponents_Light_Dialog_Bridge = 0x7f1001ca;
+        public static final int Theme_MaterialComponents_Light_Dialog_FixedSize = 0x7f1001cb;
+        public static final int Theme_MaterialComponents_Light_Dialog_FixedSize_Bridge = 0x7f1001cc;
+        public static final int Theme_MaterialComponents_Light_Dialog_MinWidth = 0x7f1001cd;
+        public static final int Theme_MaterialComponents_Light_Dialog_MinWidth_Bridge = 0x7f1001ce;
+        public static final int Theme_MaterialComponents_Light_LargeTouch = 0x7f1001d0;
+        public static final int Theme_MaterialComponents_Light_NoActionBar = 0x7f1001d1;
+        public static final int Theme_MaterialComponents_Light_NoActionBar_Bridge = 0x7f1001d2;
+        public static final int Theme_MaterialComponents_NoActionBar = 0x7f1001d3;
+        public static final int Theme_MaterialComponents_NoActionBar_Bridge = 0x7f1001d4;
+        public static final int Widget_AppCompat_ActionBar = 0x7f100207;
+        public static final int Widget_AppCompat_ActionBar_Solid = 0x7f100208;
+        public static final int Widget_AppCompat_ActionBar_TabBar = 0x7f100209;
+        public static final int Widget_AppCompat_ActionBar_TabText = 0x7f10020a;
+        public static final int Widget_AppCompat_ActionBar_TabView = 0x7f10020b;
+        public static final int Widget_AppCompat_ActionButton = 0x7f10020c;
+        public static final int Widget_AppCompat_ActionButton_CloseMode = 0x7f10020d;
+        public static final int Widget_AppCompat_ActionButton_Overflow = 0x7f10020e;
+        public static final int Widget_AppCompat_ActionMode = 0x7f10020f;
+        public static final int Widget_AppCompat_ActivityChooserView = 0x7f100210;
+        public static final int Widget_AppCompat_AutoCompleteTextView = 0x7f100211;
+        public static final int Widget_AppCompat_Button = 0x7f100212;
+        public static final int Widget_AppCompat_ButtonBar = 0x7f100218;
+        public static final int Widget_AppCompat_ButtonBar_AlertDialog = 0x7f100219;
+        public static final int Widget_AppCompat_Button_Borderless = 0x7f100213;
+        public static final int Widget_AppCompat_Button_Borderless_Colored = 0x7f100214;
+        public static final int Widget_AppCompat_Button_ButtonBar_AlertDialog = 0x7f100215;
+        public static final int Widget_AppCompat_Button_Colored = 0x7f100216;
+        public static final int Widget_AppCompat_Button_Small = 0x7f100217;
+        public static final int Widget_AppCompat_CompoundButton_CheckBox = 0x7f10021a;
+        public static final int Widget_AppCompat_CompoundButton_RadioButton = 0x7f10021b;
+        public static final int Widget_AppCompat_CompoundButton_Switch = 0x7f10021c;
+        public static final int Widget_AppCompat_DrawerArrowToggle = 0x7f10021d;
+        public static final int Widget_AppCompat_DropDownItem_Spinner = 0x7f10021e;
+        public static final int Widget_AppCompat_EditText = 0x7f10021f;
+        public static final int Widget_AppCompat_ImageButton = 0x7f100220;
+        public static final int Widget_AppCompat_Light_ActionBar = 0x7f100221;
+        public static final int Widget_AppCompat_Light_ActionBar_Solid = 0x7f100222;
+        public static final int Widget_AppCompat_Light_ActionBar_Solid_Inverse = 0x7f100223;
+        public static final int Widget_AppCompat_Light_ActionBar_TabBar = 0x7f100224;
+        public static final int Widget_AppCompat_Light_ActionBar_TabBar_Inverse = 0x7f100225;
+        public static final int Widget_AppCompat_Light_ActionBar_TabText = 0x7f100226;
+        public static final int Widget_AppCompat_Light_ActionBar_TabText_Inverse = 0x7f100227;
+        public static final int Widget_AppCompat_Light_ActionBar_TabView = 0x7f100228;
+        public static final int Widget_AppCompat_Light_ActionBar_TabView_Inverse = 0x7f100229;
+        public static final int Widget_AppCompat_Light_ActionButton = 0x7f10022a;
+        public static final int Widget_AppCompat_Light_ActionButton_CloseMode = 0x7f10022b;
+        public static final int Widget_AppCompat_Light_ActionButton_Overflow = 0x7f10022c;
+        public static final int Widget_AppCompat_Light_ActionMode_Inverse = 0x7f10022d;
+        public static final int Widget_AppCompat_Light_ActivityChooserView = 0x7f10022e;
+        public static final int Widget_AppCompat_Light_AutoCompleteTextView = 0x7f10022f;
+        public static final int Widget_AppCompat_Light_DropDownItem_Spinner = 0x7f100230;
+        public static final int Widget_AppCompat_Light_ListPopupWindow = 0x7f100231;
+        public static final int Widget_AppCompat_Light_ListView_DropDown = 0x7f100232;
+        public static final int Widget_AppCompat_Light_PopupMenu = 0x7f100233;
+        public static final int Widget_AppCompat_Light_PopupMenu_Overflow = 0x7f100234;
+        public static final int Widget_AppCompat_Light_SearchView = 0x7f100235;
+        public static final int Widget_AppCompat_Light_Spinner_DropDown_ActionBar = 0x7f100236;
+        public static final int Widget_AppCompat_ListMenuView = 0x7f100237;
+        public static final int Widget_AppCompat_ListPopupWindow = 0x7f100238;
+        public static final int Widget_AppCompat_ListView = 0x7f100239;
+        public static final int Widget_AppCompat_ListView_DropDown = 0x7f10023a;
+        public static final int Widget_AppCompat_ListView_Menu = 0x7f10023b;
+        public static final int Widget_AppCompat_PopupMenu = 0x7f10023c;
+        public static final int Widget_AppCompat_PopupMenu_Overflow = 0x7f10023d;
+        public static final int Widget_AppCompat_PopupWindow = 0x7f10023e;
+        public static final int Widget_AppCompat_ProgressBar = 0x7f10023f;
+        public static final int Widget_AppCompat_ProgressBar_Horizontal = 0x7f100240;
+        public static final int Widget_AppCompat_RatingBar = 0x7f100241;
+        public static final int Widget_AppCompat_RatingBar_Indicator = 0x7f100242;
+        public static final int Widget_AppCompat_RatingBar_Small = 0x7f100243;
+        public static final int Widget_AppCompat_SearchView = 0x7f100244;
+        public static final int Widget_AppCompat_SearchView_ActionBar = 0x7f100245;
+        public static final int Widget_AppCompat_SeekBar = 0x7f100246;
+        public static final int Widget_AppCompat_SeekBar_Discrete = 0x7f100247;
+        public static final int Widget_AppCompat_Spinner = 0x7f100248;
+        public static final int Widget_AppCompat_Spinner_DropDown = 0x7f100249;
+        public static final int Widget_AppCompat_Spinner_DropDown_ActionBar = 0x7f10024a;
+        public static final int Widget_AppCompat_Spinner_Underlined = 0x7f10024b;
+        public static final int Widget_AppCompat_TextView = 0x7f10024c;
+        public static final int Widget_AppCompat_TextView_SpinnerItem = 0x7f10024d;
+        public static final int Widget_AppCompat_Toolbar = 0x7f10024e;
+        public static final int Widget_AppCompat_Toolbar_Button_Navigation = 0x7f10024f;
+        public static final int Widget_Compat_NotificationActionContainer = 0x7f100250;
+        public static final int Widget_Compat_NotificationActionText = 0x7f100251;
+        public static final int Widget_Design_AppBarLayout = 0x7f100252;
+        public static final int Widget_Design_BottomNavigationView = 0x7f100253;
+        public static final int Widget_Design_BottomSheet_Modal = 0x7f100254;
+        public static final int Widget_Design_CollapsingToolbar = 0x7f100255;
+        public static final int Widget_Design_FloatingActionButton = 0x7f100256;
+        public static final int Widget_Design_NavigationView = 0x7f100257;
+        public static final int Widget_Design_ScrimInsetsFrameLayout = 0x7f100258;
+        public static final int Widget_Design_Snackbar = 0x7f100259;
+        public static final int Widget_Design_TabLayout = 0x7f10025a;
+        public static final int Widget_Design_TextInputEditText = 0x7f10025b;
+        public static final int Widget_Design_TextInputLayout = 0x7f10025c;
+        public static final int Widget_MaterialComponents_ActionBar_Primary = 0x7f10025d;
+        public static final int Widget_MaterialComponents_ActionBar_PrimarySurface = 0x7f10025e;
+        public static final int Widget_MaterialComponents_ActionBar_Solid = 0x7f10025f;
+        public static final int Widget_MaterialComponents_ActionBar_Surface = 0x7f100260;
+        public static final int Widget_MaterialComponents_AppBarLayout_Primary = 0x7f100261;
+        public static final int Widget_MaterialComponents_AppBarLayout_PrimarySurface = 0x7f100262;
+        public static final int Widget_MaterialComponents_AppBarLayout_Surface = 0x7f100263;
+        public static final int Widget_MaterialComponents_AutoCompleteTextView_FilledBox = 0x7f100264;
+        public static final int Widget_MaterialComponents_AutoCompleteTextView_FilledBox_Dense = 0x7f100265;
+        public static final int Widget_MaterialComponents_AutoCompleteTextView_OutlinedBox = 0x7f100266;
+        public static final int Widget_MaterialComponents_AutoCompleteTextView_OutlinedBox_Dense = 0x7f100267;
+        public static final int Widget_MaterialComponents_Badge = 0x7f100268;
+        public static final int Widget_MaterialComponents_BottomAppBar = 0x7f100269;
+        public static final int Widget_MaterialComponents_BottomAppBar_Colored = 0x7f10026a;
+        public static final int Widget_MaterialComponents_BottomAppBar_PrimarySurface = 0x7f10026b;
+        public static final int Widget_MaterialComponents_BottomNavigationView = 0x7f10026c;
+        public static final int Widget_MaterialComponents_BottomNavigationView_Colored = 0x7f10026d;
+        public static final int Widget_MaterialComponents_BottomNavigationView_PrimarySurface = 0x7f10026e;
+        public static final int Widget_MaterialComponents_BottomSheet = 0x7f10026f;
+        public static final int Widget_MaterialComponents_BottomSheet_Modal = 0x7f100270;
+        public static final int Widget_MaterialComponents_Button = 0x7f100271;
+        public static final int Widget_MaterialComponents_Button_Icon = 0x7f100272;
+        public static final int Widget_MaterialComponents_Button_OutlinedButton = 0x7f100273;
+        public static final int Widget_MaterialComponents_Button_OutlinedButton_Icon = 0x7f100274;
+        public static final int Widget_MaterialComponents_Button_TextButton = 0x7f100275;
+        public static final int Widget_MaterialComponents_Button_TextButton_Dialog = 0x7f100276;
+        public static final int Widget_MaterialComponents_Button_TextButton_Dialog_Flush = 0x7f100277;
+        public static final int Widget_MaterialComponents_Button_TextButton_Dialog_Icon = 0x7f100278;
+        public static final int Widget_MaterialComponents_Button_TextButton_Icon = 0x7f100279;
+        public static final int Widget_MaterialComponents_Button_TextButton_Snackbar = 0x7f10027a;
+        public static final int Widget_MaterialComponents_Button_UnelevatedButton = 0x7f10027b;
+        public static final int Widget_MaterialComponents_Button_UnelevatedButton_Icon = 0x7f10027c;
+        public static final int Widget_MaterialComponents_CardView = 0x7f10027d;
+        public static final int Widget_MaterialComponents_CheckedTextView = 0x7f10027e;
+        public static final int Widget_MaterialComponents_ChipGroup = 0x7f100283;
+        public static final int Widget_MaterialComponents_Chip_Action = 0x7f10027f;
+        public static final int Widget_MaterialComponents_Chip_Choice = 0x7f100280;
+        public static final int Widget_MaterialComponents_Chip_Entry = 0x7f100281;
+        public static final int Widget_MaterialComponents_Chip_Filter = 0x7f100282;
+        public static final int Widget_MaterialComponents_CompoundButton_CheckBox = 0x7f100284;
+        public static final int Widget_MaterialComponents_CompoundButton_RadioButton = 0x7f100285;
+        public static final int Widget_MaterialComponents_CompoundButton_Switch = 0x7f100286;
+        public static final int Widget_MaterialComponents_ExtendedFloatingActionButton = 0x7f100287;
+        public static final int Widget_MaterialComponents_ExtendedFloatingActionButton_Icon = 0x7f100288;
+        public static final int Widget_MaterialComponents_FloatingActionButton = 0x7f100289;
+        public static final int Widget_MaterialComponents_Light_ActionBar_Solid = 0x7f10028a;
+        public static final int Widget_MaterialComponents_MaterialButtonToggleGroup = 0x7f10028b;
+        public static final int Widget_MaterialComponents_MaterialCalendar = 0x7f10028c;
+        public static final int Widget_MaterialComponents_MaterialCalendar_Day = 0x7f10028d;
+        public static final int Widget_MaterialComponents_MaterialCalendar_DayTextView = 0x7f100291;
+        public static final int Widget_MaterialComponents_MaterialCalendar_Day_Invalid = 0x7f10028e;
+        public static final int Widget_MaterialComponents_MaterialCalendar_Day_Selected = 0x7f10028f;
+        public static final int Widget_MaterialComponents_MaterialCalendar_Day_Today = 0x7f100290;
+        public static final int Widget_MaterialComponents_MaterialCalendar_Fullscreen = 0x7f100292;
+        public static final int Widget_MaterialComponents_MaterialCalendar_HeaderConfirmButton = 0x7f100293;
+        public static final int Widget_MaterialComponents_MaterialCalendar_HeaderDivider = 0x7f100294;
+        public static final int Widget_MaterialComponents_MaterialCalendar_HeaderLayout = 0x7f100295;
+        public static final int Widget_MaterialComponents_MaterialCalendar_HeaderSelection = 0x7f100296;
+        public static final int Widget_MaterialComponents_MaterialCalendar_HeaderSelection_Fullscreen = 0x7f100297;
+        public static final int Widget_MaterialComponents_MaterialCalendar_HeaderTitle = 0x7f100298;
+        public static final int Widget_MaterialComponents_MaterialCalendar_HeaderToggleButton = 0x7f100299;
+        public static final int Widget_MaterialComponents_MaterialCalendar_Item = 0x7f10029a;
+        public static final int Widget_MaterialComponents_MaterialCalendar_Year = 0x7f10029b;
+        public static final int Widget_MaterialComponents_MaterialCalendar_Year_Selected = 0x7f10029c;
+        public static final int Widget_MaterialComponents_MaterialCalendar_Year_Today = 0x7f10029d;
+        public static final int Widget_MaterialComponents_NavigationView = 0x7f10029e;
+        public static final int Widget_MaterialComponents_PopupMenu = 0x7f10029f;
+        public static final int Widget_MaterialComponents_PopupMenu_ContextMenu = 0x7f1002a0;
+        public static final int Widget_MaterialComponents_PopupMenu_ListPopupWindow = 0x7f1002a1;
+        public static final int Widget_MaterialComponents_PopupMenu_Overflow = 0x7f1002a2;
+        public static final int Widget_MaterialComponents_ShapeableImageView = 0x7f1002a3;
+        public static final int Widget_MaterialComponents_Slider = 0x7f1002a4;
+        public static final int Widget_MaterialComponents_Snackbar = 0x7f1002a5;
+        public static final int Widget_MaterialComponents_Snackbar_FullWidth = 0x7f1002a6;
+        public static final int Widget_MaterialComponents_Snackbar_TextView = 0x7f1002a7;
+        public static final int Widget_MaterialComponents_TabLayout = 0x7f1002a8;
+        public static final int Widget_MaterialComponents_TabLayout_Colored = 0x7f1002a9;
+        public static final int Widget_MaterialComponents_TabLayout_PrimarySurface = 0x7f1002aa;
+        public static final int Widget_MaterialComponents_TextInputEditText_FilledBox = 0x7f1002ab;
+        public static final int Widget_MaterialComponents_TextInputEditText_FilledBox_Dense = 0x7f1002ac;
+        public static final int Widget_MaterialComponents_TextInputEditText_OutlinedBox = 0x7f1002ad;
+        public static final int Widget_MaterialComponents_TextInputEditText_OutlinedBox_Dense = 0x7f1002ae;
+        public static final int Widget_MaterialComponents_TextInputLayout_FilledBox = 0x7f1002af;
+        public static final int Widget_MaterialComponents_TextInputLayout_FilledBox_Dense = 0x7f1002b0;
+        public static final int Widget_MaterialComponents_TextInputLayout_FilledBox_Dense_ExposedDropdownMenu = 0x7f1002b1;
+        public static final int Widget_MaterialComponents_TextInputLayout_FilledBox_ExposedDropdownMenu = 0x7f1002b2;
+        public static final int Widget_MaterialComponents_TextInputLayout_OutlinedBox = 0x7f1002b3;
+        public static final int Widget_MaterialComponents_TextInputLayout_OutlinedBox_Dense = 0x7f1002b4;
+        public static final int Widget_MaterialComponents_TextInputLayout_OutlinedBox_Dense_ExposedDropdownMenu = 0x7f1002b5;
+        public static final int Widget_MaterialComponents_TextInputLayout_OutlinedBox_ExposedDropdownMenu = 0x7f1002b6;
+        public static final int Widget_MaterialComponents_TextView = 0x7f1002b7;
+        public static final int Widget_MaterialComponents_Toolbar = 0x7f1002b8;
+        public static final int Widget_MaterialComponents_Toolbar_Primary = 0x7f1002b9;
+        public static final int Widget_MaterialComponents_Toolbar_PrimarySurface = 0x7f1002ba;
+        public static final int Widget_MaterialComponents_Toolbar_Surface = 0x7f1002bb;
+        public static final int Widget_MaterialComponents_Tooltip = 0x7f1002bc;
+        public static final int Widget_Support_CoordinatorLayout = 0x7f1002bd;
+        public static final int byd_dialog = 0x7f1002be;
+        public static final int byd_dialog_anim = 0x7f1002bf;
+
+        /* JADX INFO: Added by JADX */
+        public static final int MyFullScreenTheme = 0x7f1000ee;
+
+        /* JADX INFO: Added by JADX */
+        public static final int TextAppearance_Compat_Notification_Info_Media = 0x7f100160;
+
+        /* JADX INFO: Added by JADX */
+        public static final int TextAppearance_Compat_Notification_Line2_Media = 0x7f100162;
+
+        /* JADX INFO: Added by JADX */
+        public static final int TextAppearance_Compat_Notification_Media = 0x7f100163;
+
+        /* JADX INFO: Added by JADX */
+        public static final int TextAppearance_Compat_Notification_Time_Media = 0x7f100165;
+
+        /* JADX INFO: Added by JADX */
+        public static final int TextAppearance_Compat_Notification_Title_Media = 0x7f100167;
+
+        /* JADX INFO: Added by JADX */
+        public static final int TextStyle = 0x7f100186;
+
+        /* JADX INFO: Added by JADX */
+        public static final int Theme_Bluetooth_UI = 0x7f10019d;
+
+        /* JADX INFO: Added by JADX */
+        public static final int ThemeTS = 0x7f100205;
+
+        /* JADX INFO: Added by JADX */
+        public static final int ThemeTang = 0x7f100206;
+
+        /* JADX INFO: Added by JADX */
+        public static final int calling_keyboard_letter_style = 0x7f1002c0;
+
+        /* JADX INFO: Added by JADX */
+        public static final int calling_keyboard_number_relativelayout_style = 0x7f1002c1;
+
+        /* JADX INFO: Added by JADX */
+        public static final int calling_keyboard_number_style = 0x7f1002c2;
+
+        /* JADX INFO: Added by JADX */
+        public static final int dialog_style = 0x7f1002c3;
+
+        /* JADX INFO: Added by JADX */
+        public static final int keyboard_letter_style = 0x7f1002c4;
+
+        /* JADX INFO: Added by JADX */
+        public static final int keyboard_number_linelayout_style = 0x7f1002c5;
+
+        /* JADX INFO: Added by JADX */
+        public static final int keyboard_number_relativelayout_style = 0x7f1002c6;
+
+        /* JADX INFO: Added by JADX */
+        public static final int keyboard_number_style = 0x7f1002c7;
+
+        /* JADX INFO: Added by JADX */
+        public static final int keyboard_number_textview_style = 0x7f1002c8;
+
+        /* JADX INFO: Added by JADX */
+        public static final int keyboard_text_style = 0x7f1002c9;
+
+        /* JADX INFO: Added by JADX */
+        public static final int land_keyboard_letter_style = 0x7f1002ca;
+
+        /* JADX INFO: Added by JADX */
+        public static final int listview_scroolbar_style = 0x7f1002cb;
+
+        /* JADX INFO: Added by JADX */
+        public static final int multiwindowmode_land_keyboard_letter_style = 0x7f1002cc;
+
+        /* JADX INFO: Added by JADX */
+        public static final int multiwindowmode_land_keyboard_text_style = 0x7f1002cd;
+
+        /* JADX INFO: Added by JADX */
+        public static final int multiwindowmode_port_keyboard_letter_style = 0x7f1002ce;
+
+        /* JADX INFO: Added by JADX */
+        public static final int multiwindowmode_port_keyboard_text_style = 0x7f1002cf;
+
+        /* JADX INFO: Added by JADX */
+        public static final int port_keyboard_text_style = 0x7f1002d0;
+
+        /* JADX INFO: Added by JADX */
+        public static final int special_calling_keyboard_letter_style = 0x7f1002d1;
+
+        /* JADX INFO: Added by JADX */
+        public static final int special_calling_keyboard_number_relativelayout_style = 0x7f1002d2;
+
+        /* JADX INFO: Added by JADX */
+        public static final int special_calling_keyboard_number_style = 0x7f1002d3;
+
+        private style() {
+        }
+    }
+
+    public static final class styleable {
+        public static final int ActionBarLayout_android_layout_gravity = 0x00000000;
+        public static final int ActionBar_background = 0x00000000;
+        public static final int ActionBar_backgroundSplit = 0x00000001;
+        public static final int ActionBar_backgroundStacked = 0x00000002;
+        public static final int ActionBar_contentInsetEnd = 0x00000003;
+        public static final int ActionBar_contentInsetEndWithActions = 0x00000004;
+        public static final int ActionBar_contentInsetLeft = 0x00000005;
+        public static final int ActionBar_contentInsetRight = 0x00000006;
+        public static final int ActionBar_contentInsetStart = 0x00000007;
+        public static final int ActionBar_contentInsetStartWithNavigation = 0x00000008;
+        public static final int ActionBar_customNavigationLayout = 0x00000009;
+        public static final int ActionBar_displayOptions = 0x0000000a;
+        public static final int ActionBar_divider = 0x0000000b;
+        public static final int ActionBar_elevation = 0x0000000c;
+        public static final int ActionBar_height = 0x0000000d;
+        public static final int ActionBar_hideOnContentScroll = 0x0000000e;
+        public static final int ActionBar_homeAsUpIndicator = 0x0000000f;
+        public static final int ActionBar_homeLayout = 0x00000010;
+        public static final int ActionBar_icon = 0x00000011;
+        public static final int ActionBar_indeterminateProgressStyle = 0x00000012;
+        public static final int ActionBar_itemPadding = 0x00000013;
+        public static final int ActionBar_logo = 0x00000014;
+        public static final int ActionBar_navigationMode = 0x00000015;
+        public static final int ActionBar_popupTheme = 0x00000016;
+        public static final int ActionBar_progressBarPadding = 0x00000017;
+        public static final int ActionBar_progressBarStyle = 0x00000018;
+        public static final int ActionBar_subtitle = 0x00000019;
+        public static final int ActionBar_subtitleTextStyle = 0x0000001a;
+        public static final int ActionBar_title = 0x0000001b;
+        public static final int ActionBar_titleTextStyle = 0x0000001c;
+        public static final int ActionMenuItemView_android_minWidth = 0x00000000;
+        public static final int ActionMode_background = 0x00000000;
+        public static final int ActionMode_backgroundSplit = 0x00000001;
+        public static final int ActionMode_closeItemLayout = 0x00000002;
+        public static final int ActionMode_height = 0x00000003;
+        public static final int ActionMode_subtitleTextStyle = 0x00000004;
+        public static final int ActionMode_titleTextStyle = 0x00000005;
+        public static final int ActivityChooserView_expandActivityOverflowButtonDrawable = 0x00000000;
+        public static final int ActivityChooserView_initialActivityCount = 0x00000001;
+        public static final int AlertDialog_android_layout = 0x00000000;
+        public static final int AlertDialog_buttonIconDimen = 0x00000001;
+        public static final int AlertDialog_buttonPanelSideLayout = 0x00000002;
+        public static final int AlertDialog_listItemLayout = 0x00000003;
+        public static final int AlertDialog_listLayout = 0x00000004;
+        public static final int AlertDialog_multiChoiceItemLayout = 0x00000005;
+        public static final int AlertDialog_showTitle = 0x00000006;
+        public static final int AlertDialog_singleChoiceItemLayout = 0x00000007;
+        public static final int AnimatedStateListDrawableCompat_android_constantSize = 0x00000003;
+        public static final int AnimatedStateListDrawableCompat_android_dither = 0x00000000;
+        public static final int AnimatedStateListDrawableCompat_android_enterFadeDuration = 0x00000004;
+        public static final int AnimatedStateListDrawableCompat_android_exitFadeDuration = 0x00000005;
+        public static final int AnimatedStateListDrawableCompat_android_variablePadding = 0x00000002;
+        public static final int AnimatedStateListDrawableCompat_android_visible = 0x00000001;
+        public static final int AnimatedStateListDrawableItem_android_drawable = 0x00000001;
+        public static final int AnimatedStateListDrawableItem_android_id = 0x00000000;
+        public static final int AnimatedStateListDrawableTransition_android_drawable = 0x00000000;
+        public static final int AnimatedStateListDrawableTransition_android_fromId = 0x00000002;
+        public static final int AnimatedStateListDrawableTransition_android_reversible = 0x00000003;
+        public static final int AnimatedStateListDrawableTransition_android_toId = 0x00000001;
+        public static final int AppBarLayoutStates_state_collapsed = 0x00000000;
+        public static final int AppBarLayoutStates_state_collapsible = 0x00000001;
+        public static final int AppBarLayoutStates_state_liftable = 0x00000002;
+        public static final int AppBarLayoutStates_state_lifted = 0x00000003;
+        public static final int AppBarLayout_Layout_layout_scrollFlags = 0x00000000;
+        public static final int AppBarLayout_Layout_layout_scrollInterpolator = 0x00000001;
+        public static final int AppBarLayout_android_background = 0x00000000;
+        public static final int AppBarLayout_android_keyboardNavigationCluster = 0x00000002;
+        public static final int AppBarLayout_android_touchscreenBlocksFocus = 0x00000001;
+        public static final int AppBarLayout_elevation = 0x00000003;
+        public static final int AppBarLayout_expanded = 0x00000004;
+        public static final int AppBarLayout_liftOnScroll = 0x00000005;
+        public static final int AppBarLayout_liftOnScrollTargetViewId = 0x00000006;
+        public static final int AppBarLayout_statusBarForeground = 0x00000007;
+        public static final int AppCompatImageView_android_src = 0x00000000;
+        public static final int AppCompatImageView_srcCompat = 0x00000001;
+        public static final int AppCompatImageView_tint = 0x00000002;
+        public static final int AppCompatImageView_tintMode = 0x00000003;
+        public static final int AppCompatSeekBar_android_thumb = 0x00000000;
+        public static final int AppCompatSeekBar_tickMark = 0x00000001;
+        public static final int AppCompatSeekBar_tickMarkTint = 0x00000002;
+        public static final int AppCompatSeekBar_tickMarkTintMode = 0x00000003;
+        public static final int AppCompatTextHelper_android_drawableBottom = 0x00000002;
+        public static final int AppCompatTextHelper_android_drawableEnd = 0x00000006;
+        public static final int AppCompatTextHelper_android_drawableLeft = 0x00000003;
+        public static final int AppCompatTextHelper_android_drawableRight = 0x00000004;
+        public static final int AppCompatTextHelper_android_drawableStart = 0x00000005;
+        public static final int AppCompatTextHelper_android_drawableTop = 0x00000001;
+        public static final int AppCompatTextHelper_android_textAppearance = 0x00000000;
+        public static final int AppCompatTextView_android_textAppearance = 0x00000000;
+        public static final int AppCompatTextView_autoSizeMaxTextSize = 0x00000001;
+        public static final int AppCompatTextView_autoSizeMinTextSize = 0x00000002;
+        public static final int AppCompatTextView_autoSizePresetSizes = 0x00000003;
+        public static final int AppCompatTextView_autoSizeStepGranularity = 0x00000004;
+        public static final int AppCompatTextView_autoSizeTextType = 0x00000005;
+        public static final int AppCompatTextView_drawableBottomCompat = 0x00000006;
+        public static final int AppCompatTextView_drawableEndCompat = 0x00000007;
+        public static final int AppCompatTextView_drawableLeftCompat = 0x00000008;
+        public static final int AppCompatTextView_drawableRightCompat = 0x00000009;
+        public static final int AppCompatTextView_drawableStartCompat = 0x0000000a;
+        public static final int AppCompatTextView_drawableTint = 0x0000000b;
+        public static final int AppCompatTextView_drawableTintMode = 0x0000000c;
+        public static final int AppCompatTextView_drawableTopCompat = 0x0000000d;
+        public static final int AppCompatTextView_firstBaselineToTopHeight = 0x0000000e;
+        public static final int AppCompatTextView_fontFamily = 0x0000000f;
+        public static final int AppCompatTextView_fontVariationSettings = 0x00000010;
+        public static final int AppCompatTextView_lastBaselineToBottomHeight = 0x00000011;
+        public static final int AppCompatTextView_lineHeight = 0x00000012;
+        public static final int AppCompatTextView_textAllCaps = 0x00000013;
+        public static final int AppCompatTextView_textLocale = 0x00000014;
+        public static final int AppCompatTheme_actionBarDivider = 0x00000002;
+        public static final int AppCompatTheme_actionBarItemBackground = 0x00000003;
+        public static final int AppCompatTheme_actionBarPopupTheme = 0x00000004;
+        public static final int AppCompatTheme_actionBarSize = 0x00000005;
+        public static final int AppCompatTheme_actionBarSplitStyle = 0x00000006;
+        public static final int AppCompatTheme_actionBarStyle = 0x00000007;
+        public static final int AppCompatTheme_actionBarTabBarStyle = 0x00000008;
+        public static final int AppCompatTheme_actionBarTabStyle = 0x00000009;
+        public static final int AppCompatTheme_actionBarTabTextStyle = 0x0000000a;
+        public static final int AppCompatTheme_actionBarTheme = 0x0000000b;
+        public static final int AppCompatTheme_actionBarWidgetTheme = 0x0000000c;
+        public static final int AppCompatTheme_actionButtonStyle = 0x0000000d;
+        public static final int AppCompatTheme_actionDropDownStyle = 0x0000000e;
+        public static final int AppCompatTheme_actionMenuTextAppearance = 0x0000000f;
+        public static final int AppCompatTheme_actionMenuTextColor = 0x00000010;
+        public static final int AppCompatTheme_actionModeBackground = 0x00000011;
+        public static final int AppCompatTheme_actionModeCloseButtonStyle = 0x00000012;
+        public static final int AppCompatTheme_actionModeCloseDrawable = 0x00000013;
+        public static final int AppCompatTheme_actionModeCopyDrawable = 0x00000014;
+        public static final int AppCompatTheme_actionModeCutDrawable = 0x00000015;
+        public static final int AppCompatTheme_actionModeFindDrawable = 0x00000016;
+        public static final int AppCompatTheme_actionModePasteDrawable = 0x00000017;
+        public static final int AppCompatTheme_actionModePopupWindowStyle = 0x00000018;
+        public static final int AppCompatTheme_actionModeSelectAllDrawable = 0x00000019;
+        public static final int AppCompatTheme_actionModeShareDrawable = 0x0000001a;
+        public static final int AppCompatTheme_actionModeSplitBackground = 0x0000001b;
+        public static final int AppCompatTheme_actionModeStyle = 0x0000001c;
+        public static final int AppCompatTheme_actionModeWebSearchDrawable = 0x0000001d;
+        public static final int AppCompatTheme_actionOverflowButtonStyle = 0x0000001e;
+        public static final int AppCompatTheme_actionOverflowMenuStyle = 0x0000001f;
+        public static final int AppCompatTheme_activityChooserViewStyle = 0x00000020;
+        public static final int AppCompatTheme_alertDialogButtonGroupStyle = 0x00000021;
+        public static final int AppCompatTheme_alertDialogCenterButtons = 0x00000022;
+        public static final int AppCompatTheme_alertDialogStyle = 0x00000023;
+        public static final int AppCompatTheme_alertDialogTheme = 0x00000024;
+        public static final int AppCompatTheme_android_windowAnimationStyle = 0x00000001;
+        public static final int AppCompatTheme_android_windowIsFloating = 0x00000000;
+        public static final int AppCompatTheme_autoCompleteTextViewStyle = 0x00000025;
+        public static final int AppCompatTheme_borderlessButtonStyle = 0x00000026;
+        public static final int AppCompatTheme_buttonBarButtonStyle = 0x00000027;
+        public static final int AppCompatTheme_buttonBarNegativeButtonStyle = 0x00000028;
+        public static final int AppCompatTheme_buttonBarNeutralButtonStyle = 0x00000029;
+        public static final int AppCompatTheme_buttonBarPositiveButtonStyle = 0x0000002a;
+        public static final int AppCompatTheme_buttonBarStyle = 0x0000002b;
+        public static final int AppCompatTheme_buttonStyle = 0x0000002c;
+        public static final int AppCompatTheme_buttonStyleSmall = 0x0000002d;
+        public static final int AppCompatTheme_checkboxStyle = 0x0000002e;
+        public static final int AppCompatTheme_checkedTextViewStyle = 0x0000002f;
+        public static final int AppCompatTheme_colorAccent = 0x00000030;
+        public static final int AppCompatTheme_colorBackgroundFloating = 0x00000031;
+        public static final int AppCompatTheme_colorButtonNormal = 0x00000032;
+        public static final int AppCompatTheme_colorControlActivated = 0x00000033;
+        public static final int AppCompatTheme_colorControlHighlight = 0x00000034;
+        public static final int AppCompatTheme_colorControlNormal = 0x00000035;
+        public static final int AppCompatTheme_colorError = 0x00000036;
+        public static final int AppCompatTheme_colorPrimary = 0x00000037;
+        public static final int AppCompatTheme_colorPrimaryDark = 0x00000038;
+        public static final int AppCompatTheme_colorSwitchThumbNormal = 0x00000039;
+        public static final int AppCompatTheme_controlBackground = 0x0000003a;
+        public static final int AppCompatTheme_dialogCornerRadius = 0x0000003b;
+        public static final int AppCompatTheme_dialogPreferredPadding = 0x0000003c;
+        public static final int AppCompatTheme_dialogTheme = 0x0000003d;
+        public static final int AppCompatTheme_dividerHorizontal = 0x0000003e;
+        public static final int AppCompatTheme_dividerVertical = 0x0000003f;
+        public static final int AppCompatTheme_dropDownListViewStyle = 0x00000040;
+        public static final int AppCompatTheme_dropdownListPreferredItemHeight = 0x00000041;
+        public static final int AppCompatTheme_editTextBackground = 0x00000042;
+        public static final int AppCompatTheme_editTextColor = 0x00000043;
+        public static final int AppCompatTheme_editTextStyle = 0x00000044;
+        public static final int AppCompatTheme_homeAsUpIndicator = 0x00000045;
+        public static final int AppCompatTheme_imageButtonStyle = 0x00000046;
+        public static final int AppCompatTheme_listChoiceBackgroundIndicator = 0x00000047;
+        public static final int AppCompatTheme_listChoiceIndicatorMultipleAnimated = 0x00000048;
+        public static final int AppCompatTheme_listChoiceIndicatorSingleAnimated = 0x00000049;
+        public static final int AppCompatTheme_listDividerAlertDialog = 0x0000004a;
+        public static final int AppCompatTheme_listMenuViewStyle = 0x0000004b;
+        public static final int AppCompatTheme_listPopupWindowStyle = 0x0000004c;
+        public static final int AppCompatTheme_listPreferredItemHeight = 0x0000004d;
+        public static final int AppCompatTheme_listPreferredItemHeightLarge = 0x0000004e;
+        public static final int AppCompatTheme_listPreferredItemHeightSmall = 0x0000004f;
+        public static final int AppCompatTheme_listPreferredItemPaddingEnd = 0x00000050;
+        public static final int AppCompatTheme_listPreferredItemPaddingLeft = 0x00000051;
+        public static final int AppCompatTheme_listPreferredItemPaddingRight = 0x00000052;
+        public static final int AppCompatTheme_listPreferredItemPaddingStart = 0x00000053;
+        public static final int AppCompatTheme_panelBackground = 0x00000054;
+        public static final int AppCompatTheme_panelMenuListTheme = 0x00000055;
+        public static final int AppCompatTheme_panelMenuListWidth = 0x00000056;
+        public static final int AppCompatTheme_popupMenuStyle = 0x00000057;
+        public static final int AppCompatTheme_popupWindowStyle = 0x00000058;
+        public static final int AppCompatTheme_radioButtonStyle = 0x00000059;
+        public static final int AppCompatTheme_ratingBarStyle = 0x0000005a;
+        public static final int AppCompatTheme_ratingBarStyleIndicator = 0x0000005b;
+        public static final int AppCompatTheme_ratingBarStyleSmall = 0x0000005c;
+        public static final int AppCompatTheme_searchViewStyle = 0x0000005d;
+        public static final int AppCompatTheme_seekBarStyle = 0x0000005e;
+        public static final int AppCompatTheme_selectableItemBackground = 0x0000005f;
+        public static final int AppCompatTheme_selectableItemBackgroundBorderless = 0x00000060;
+        public static final int AppCompatTheme_spinnerDropDownItemStyle = 0x00000061;
+        public static final int AppCompatTheme_spinnerStyle = 0x00000062;
+        public static final int AppCompatTheme_switchStyle = 0x00000063;
+        public static final int AppCompatTheme_textAppearanceLargePopupMenu = 0x00000064;
+        public static final int AppCompatTheme_textAppearanceListItem = 0x00000065;
+        public static final int AppCompatTheme_textAppearanceListItemSecondary = 0x00000066;
+        public static final int AppCompatTheme_textAppearanceListItemSmall = 0x00000067;
+        public static final int AppCompatTheme_textAppearancePopupMenuHeader = 0x00000068;
+        public static final int AppCompatTheme_textAppearanceSearchResultSubtitle = 0x00000069;
+        public static final int AppCompatTheme_textAppearanceSearchResultTitle = 0x0000006a;
+        public static final int AppCompatTheme_textAppearanceSmallPopupMenu = 0x0000006b;
+        public static final int AppCompatTheme_textColorAlertDialogListItem = 0x0000006c;
+        public static final int AppCompatTheme_textColorSearchUrl = 0x0000006d;
+        public static final int AppCompatTheme_toolbarNavigationButtonStyle = 0x0000006e;
+        public static final int AppCompatTheme_toolbarStyle = 0x0000006f;
+        public static final int AppCompatTheme_tooltipForegroundColor = 0x00000070;
+        public static final int AppCompatTheme_tooltipFrameBackground = 0x00000071;
+        public static final int AppCompatTheme_viewInflaterClass = 0x00000072;
+        public static final int AppCompatTheme_windowActionBar = 0x00000073;
+        public static final int AppCompatTheme_windowActionBarOverlay = 0x00000074;
+        public static final int AppCompatTheme_windowActionModeOverlay = 0x00000075;
+        public static final int AppCompatTheme_windowFixedHeightMajor = 0x00000076;
+        public static final int AppCompatTheme_windowFixedHeightMinor = 0x00000077;
+        public static final int AppCompatTheme_windowFixedWidthMajor = 0x00000078;
+        public static final int AppCompatTheme_windowFixedWidthMinor = 0x00000079;
+        public static final int AppCompatTheme_windowMinWidthMajor = 0x0000007a;
+        public static final int AppCompatTheme_windowMinWidthMinor = 0x0000007b;
+        public static final int AppCompatTheme_windowNoTitle = 0x0000007c;
+        public static final int Badge_backgroundColor = 0x00000000;
+        public static final int Badge_badgeGravity = 0x00000001;
+        public static final int Badge_badgeTextColor = 0x00000002;
+        public static final int Badge_horizontalOffset = 0x00000003;
+        public static final int Badge_maxCharacterCount = 0x00000004;
+        public static final int Badge_number = 0x00000005;
+        public static final int Badge_verticalOffset = 0x00000006;
+        public static final int BottomAppBar_backgroundTint = 0x00000000;
+        public static final int BottomAppBar_elevation = 0x00000001;
+        public static final int BottomAppBar_fabAlignmentMode = 0x00000002;
+        public static final int BottomAppBar_fabAnimationMode = 0x00000003;
+        public static final int BottomAppBar_fabCradleMargin = 0x00000004;
+        public static final int BottomAppBar_fabCradleRoundedCornerRadius = 0x00000005;
+        public static final int BottomAppBar_fabCradleVerticalOffset = 0x00000006;
+        public static final int BottomAppBar_hideOnScroll = 0x00000007;
+        public static final int BottomAppBar_paddingBottomSystemWindowInsets = 0x00000008;
+        public static final int BottomAppBar_paddingLeftSystemWindowInsets = 0x00000009;
+        public static final int BottomAppBar_paddingRightSystemWindowInsets = 0x0000000a;
+        public static final int BottomNavigationView_backgroundTint = 0x00000000;
+        public static final int BottomNavigationView_elevation = 0x00000001;
+        public static final int BottomNavigationView_itemBackground = 0x00000002;
+        public static final int BottomNavigationView_itemHorizontalTranslationEnabled = 0x00000003;
+        public static final int BottomNavigationView_itemIconSize = 0x00000004;
+        public static final int BottomNavigationView_itemIconTint = 0x00000005;
+        public static final int BottomNavigationView_itemRippleColor = 0x00000006;
+        public static final int BottomNavigationView_itemTextAppearanceActive = 0x00000007;
+        public static final int BottomNavigationView_itemTextAppearanceInactive = 0x00000008;
+        public static final int BottomNavigationView_itemTextColor = 0x00000009;
+        public static final int BottomNavigationView_labelVisibilityMode = 0x0000000a;
+        public static final int BottomNavigationView_menu = 0x0000000b;
+        public static final int BottomSheetBehavior_Layout_android_elevation = 0x00000000;
+        public static final int BottomSheetBehavior_Layout_backgroundTint = 0x00000001;
+        public static final int BottomSheetBehavior_Layout_behavior_draggable = 0x00000002;
+        public static final int BottomSheetBehavior_Layout_behavior_expandedOffset = 0x00000003;
+        public static final int BottomSheetBehavior_Layout_behavior_fitToContents = 0x00000004;
+        public static final int BottomSheetBehavior_Layout_behavior_halfExpandedRatio = 0x00000005;
+        public static final int BottomSheetBehavior_Layout_behavior_hideable = 0x00000006;
+        public static final int BottomSheetBehavior_Layout_behavior_peekHeight = 0x00000007;
+        public static final int BottomSheetBehavior_Layout_behavior_saveFlags = 0x00000008;
+        public static final int BottomSheetBehavior_Layout_behavior_skipCollapsed = 0x00000009;
+        public static final int BottomSheetBehavior_Layout_gestureInsetBottomIgnored = 0x0000000a;
+        public static final int BottomSheetBehavior_Layout_shapeAppearance = 0x0000000b;
+        public static final int BottomSheetBehavior_Layout_shapeAppearanceOverlay = 0x0000000c;
+        public static final int ButtonBarLayout_allowStacking = 0x00000000;
+        public static final int BydButton_byd_button_tone = 0x00000000;
+        public static final int BydClock_byd_clock_background = 0x00000000;
+        public static final int BydClock_byd_clock_hour = 0x00000001;
+        public static final int BydClock_byd_clock_minute = 0x00000002;
+        public static final int BydClock_byd_clock_second = 0x00000003;
+        public static final int BydDigitalClock_byd_dgclock_am = 0x00000000;
+        public static final int BydDigitalClock_byd_dgclock_colon = 0x00000001;
+        public static final int BydDigitalClock_byd_dgclock_num0 = 0x00000002;
+        public static final int BydDigitalClock_byd_dgclock_num1 = 0x00000003;
+        public static final int BydDigitalClock_byd_dgclock_num2 = 0x00000004;
+        public static final int BydDigitalClock_byd_dgclock_num3 = 0x00000005;
+        public static final int BydDigitalClock_byd_dgclock_num4 = 0x00000006;
+        public static final int BydDigitalClock_byd_dgclock_num5 = 0x00000007;
+        public static final int BydDigitalClock_byd_dgclock_num6 = 0x00000008;
+        public static final int BydDigitalClock_byd_dgclock_num7 = 0x00000009;
+        public static final int BydDigitalClock_byd_dgclock_num8 = 0x0000000a;
+        public static final int BydDigitalClock_byd_dgclock_num9 = 0x0000000b;
+        public static final int BydDigitalClock_byd_dgclock_pm = 0x0000000c;
+        public static final int BydDigitalClock_byd_dgclock_show_second = 0x0000000d;
+        public static final int BydFrameAnimation_byd_frame_manual = 0x00000000;
+        public static final int BydFrameAnimation_byd_frame_prefix = 0x00000001;
+        public static final int BydFrameAnimation_byd_frame_repeat = 0x00000002;
+        public static final int BydFrameAnimation_byd_frame_speed = 0x00000003;
+        public static final int BydFrameAnimation_byd_frame_total = 0x00000004;
+        public static final int BydLoading_byd_loading_animSpeed = 0x00000000;
+        public static final int BydLoading_byd_loading_background = 0x00000001;
+        public static final int BydLoading_byd_loading_max = 0x00000002;
+        public static final int BydLoading_byd_loading_progress = 0x00000003;
+        public static final int BydLoading_byd_loading_textColor = 0x00000004;
+        public static final int BydLoading_byd_loading_textSize = 0x00000005;
+        public static final int BydLoading_byd_loading_unit = 0x00000006;
+        public static final int BydScrollableIndicator_byd_selected_bg = 0x00000000;
+        public static final int BydScrollableIndicator_byd_unselected_bg = 0x00000001;
+        public static final int CardView_android_minHeight = 0x00000001;
+        public static final int CardView_android_minWidth = 0x00000000;
+        public static final int CardView_cardBackgroundColor = 0x00000002;
+        public static final int CardView_cardCornerRadius = 0x00000003;
+        public static final int CardView_cardElevation = 0x00000004;
+        public static final int CardView_cardMaxElevation = 0x00000005;
+        public static final int CardView_cardPreventCornerOverlap = 0x00000006;
+        public static final int CardView_cardUseCompatPadding = 0x00000007;
+        public static final int CardView_contentPadding = 0x00000008;
+        public static final int CardView_contentPaddingBottom = 0x00000009;
+        public static final int CardView_contentPaddingLeft = 0x0000000a;
+        public static final int CardView_contentPaddingRight = 0x0000000b;
+        public static final int CardView_contentPaddingTop = 0x0000000c;
+        public static final int ChipGroup_checkedChip = 0x00000000;
+        public static final int ChipGroup_chipSpacing = 0x00000001;
+        public static final int ChipGroup_chipSpacingHorizontal = 0x00000002;
+        public static final int ChipGroup_chipSpacingVertical = 0x00000003;
+        public static final int ChipGroup_selectionRequired = 0x00000004;
+        public static final int ChipGroup_singleLine = 0x00000005;
+        public static final int ChipGroup_singleSelection = 0x00000006;
+        public static final int Chip_android_checkable = 0x00000005;
+        public static final int Chip_android_ellipsize = 0x00000002;
+        public static final int Chip_android_maxWidth = 0x00000003;
+        public static final int Chip_android_text = 0x00000004;
+        public static final int Chip_android_textAppearance = 0x00000000;
+        public static final int Chip_android_textColor = 0x00000001;
+        public static final int Chip_checkedIcon = 0x00000006;
+        public static final int Chip_checkedIconEnabled = 0x00000007;
+        public static final int Chip_checkedIconTint = 0x00000008;
+        public static final int Chip_checkedIconVisible = 0x00000009;
+        public static final int Chip_chipBackgroundColor = 0x0000000a;
+        public static final int Chip_chipCornerRadius = 0x0000000b;
+        public static final int Chip_chipEndPadding = 0x0000000c;
+        public static final int Chip_chipIcon = 0x0000000d;
+        public static final int Chip_chipIconEnabled = 0x0000000e;
+        public static final int Chip_chipIconSize = 0x0000000f;
+        public static final int Chip_chipIconTint = 0x00000010;
+        public static final int Chip_chipIconVisible = 0x00000011;
+        public static final int Chip_chipMinHeight = 0x00000012;
+        public static final int Chip_chipMinTouchTargetSize = 0x00000013;
+        public static final int Chip_chipStartPadding = 0x00000014;
+        public static final int Chip_chipStrokeColor = 0x00000015;
+        public static final int Chip_chipStrokeWidth = 0x00000016;
+        public static final int Chip_chipSurfaceColor = 0x00000017;
+        public static final int Chip_closeIcon = 0x00000018;
+        public static final int Chip_closeIconEnabled = 0x00000019;
+        public static final int Chip_closeIconEndPadding = 0x0000001a;
+        public static final int Chip_closeIconSize = 0x0000001b;
+        public static final int Chip_closeIconStartPadding = 0x0000001c;
+        public static final int Chip_closeIconTint = 0x0000001d;
+        public static final int Chip_closeIconVisible = 0x0000001e;
+        public static final int Chip_ensureMinTouchTargetSize = 0x0000001f;
+        public static final int Chip_hideMotionSpec = 0x00000020;
+        public static final int Chip_iconEndPadding = 0x00000021;
+        public static final int Chip_iconStartPadding = 0x00000022;
+        public static final int Chip_rippleColor = 0x00000023;
+        public static final int Chip_shapeAppearance = 0x00000024;
+        public static final int Chip_shapeAppearanceOverlay = 0x00000025;
+        public static final int Chip_showMotionSpec = 0x00000026;
+        public static final int Chip_textEndPadding = 0x00000027;
+        public static final int Chip_textStartPadding = 0x00000028;
+        public static final int CollapsingToolbarLayout_Layout_layout_collapseMode = 0x00000000;
+        public static final int CollapsingToolbarLayout_Layout_layout_collapseParallaxMultiplier = 0x00000001;
+        public static final int CollapsingToolbarLayout_collapsedTitleGravity = 0x00000000;
+        public static final int CollapsingToolbarLayout_collapsedTitleTextAppearance = 0x00000001;
+        public static final int CollapsingToolbarLayout_contentScrim = 0x00000002;
+        public static final int CollapsingToolbarLayout_expandedTitleGravity = 0x00000003;
+        public static final int CollapsingToolbarLayout_expandedTitleMargin = 0x00000004;
+        public static final int CollapsingToolbarLayout_expandedTitleMarginBottom = 0x00000005;
+        public static final int CollapsingToolbarLayout_expandedTitleMarginEnd = 0x00000006;
+        public static final int CollapsingToolbarLayout_expandedTitleMarginStart = 0x00000007;
+        public static final int CollapsingToolbarLayout_expandedTitleMarginTop = 0x00000008;
+        public static final int CollapsingToolbarLayout_expandedTitleTextAppearance = 0x00000009;
+        public static final int CollapsingToolbarLayout_maxLines = 0x0000000a;
+        public static final int CollapsingToolbarLayout_scrimAnimationDuration = 0x0000000b;
+        public static final int CollapsingToolbarLayout_scrimVisibleHeightTrigger = 0x0000000c;
+        public static final int CollapsingToolbarLayout_statusBarScrim = 0x0000000d;
+        public static final int CollapsingToolbarLayout_title = 0x0000000e;
+        public static final int CollapsingToolbarLayout_titleEnabled = 0x0000000f;
+        public static final int CollapsingToolbarLayout_toolbarId = 0x00000010;
+        public static final int ColorStateListItem_alpha = 0x00000002;
+        public static final int ColorStateListItem_android_alpha = 0x00000001;
+        public static final int ColorStateListItem_android_color = 0x00000000;
+        public static final int CompoundButton_android_button = 0x00000000;
+        public static final int CompoundButton_buttonCompat = 0x00000001;
+        public static final int CompoundButton_buttonTint = 0x00000002;
+        public static final int CompoundButton_buttonTintMode = 0x00000003;
+        public static final int CoordinatorLayout_Layout_android_layout_gravity = 0x00000000;
+        public static final int CoordinatorLayout_Layout_layout_anchor = 0x00000001;
+        public static final int CoordinatorLayout_Layout_layout_anchorGravity = 0x00000002;
+        public static final int CoordinatorLayout_Layout_layout_behavior = 0x00000003;
+        public static final int CoordinatorLayout_Layout_layout_dodgeInsetEdges = 0x00000004;
+        public static final int CoordinatorLayout_Layout_layout_insetEdge = 0x00000005;
+        public static final int CoordinatorLayout_Layout_layout_keyline = 0x00000006;
+        public static final int CoordinatorLayout_keylines = 0x00000000;
+        public static final int CoordinatorLayout_statusBarBackground = 0x00000001;
+        public static final int DampingScrollView_maxHeight = 0x00000000;
+        public static final int DampingScrollView_orientation = 0x00000001;
+        public static final int DrawerArrowToggle_arrowHeadLength = 0x00000000;
+        public static final int DrawerArrowToggle_arrowShaftLength = 0x00000001;
+        public static final int DrawerArrowToggle_barLength = 0x00000002;
+        public static final int DrawerArrowToggle_color = 0x00000003;
+        public static final int DrawerArrowToggle_drawableSize = 0x00000004;
+        public static final int DrawerArrowToggle_gapBetweenBars = 0x00000005;
+        public static final int DrawerArrowToggle_spinBars = 0x00000006;
+        public static final int DrawerArrowToggle_thickness = 0x00000007;
+        public static final int ExtendedFloatingActionButton_Behavior_Layout_behavior_autoHide = 0x00000000;
+        public static final int ExtendedFloatingActionButton_Behavior_Layout_behavior_autoShrink = 0x00000001;
+        public static final int ExtendedFloatingActionButton_elevation = 0x00000000;
+        public static final int ExtendedFloatingActionButton_extendMotionSpec = 0x00000001;
+        public static final int ExtendedFloatingActionButton_hideMotionSpec = 0x00000002;
+        public static final int ExtendedFloatingActionButton_showMotionSpec = 0x00000003;
+        public static final int ExtendedFloatingActionButton_shrinkMotionSpec = 0x00000004;
+        public static final int FloatingActionButton_Behavior_Layout_behavior_autoHide = 0x00000000;
+        public static final int FloatingActionButton_android_enabled = 0x00000000;
+        public static final int FloatingActionButton_backgroundTint = 0x00000001;
+        public static final int FloatingActionButton_backgroundTintMode = 0x00000002;
+        public static final int FloatingActionButton_borderWidth = 0x00000003;
+        public static final int FloatingActionButton_elevation = 0x00000004;
+        public static final int FloatingActionButton_ensureMinTouchTargetSize = 0x00000005;
+        public static final int FloatingActionButton_fabCustomSize = 0x00000006;
+        public static final int FloatingActionButton_fabSize = 0x00000007;
+        public static final int FloatingActionButton_hideMotionSpec = 0x00000008;
+        public static final int FloatingActionButton_hoveredFocusedTranslationZ = 0x00000009;
+        public static final int FloatingActionButton_maxImageSize = 0x0000000a;
+        public static final int FloatingActionButton_pressedTranslationZ = 0x0000000b;
+        public static final int FloatingActionButton_rippleColor = 0x0000000c;
+        public static final int FloatingActionButton_shapeAppearance = 0x0000000d;
+        public static final int FloatingActionButton_shapeAppearanceOverlay = 0x0000000e;
+        public static final int FloatingActionButton_showMotionSpec = 0x0000000f;
+        public static final int FloatingActionButton_useCompatPadding = 0x00000010;
+        public static final int FlowLayout_itemSpacing = 0x00000000;
+        public static final int FlowLayout_lineSpacing = 0x00000001;
+        public static final int FontFamilyFont_android_font = 0x00000000;
+        public static final int FontFamilyFont_android_fontStyle = 0x00000002;
+        public static final int FontFamilyFont_android_fontVariationSettings = 0x00000004;
+        public static final int FontFamilyFont_android_fontWeight = 0x00000001;
+        public static final int FontFamilyFont_android_ttcIndex = 0x00000003;
+        public static final int FontFamilyFont_font = 0x00000005;
+        public static final int FontFamilyFont_fontStyle = 0x00000006;
+        public static final int FontFamilyFont_fontVariationSettings = 0x00000007;
+        public static final int FontFamilyFont_fontWeight = 0x00000008;
+        public static final int FontFamilyFont_ttcIndex = 0x00000009;
+        public static final int FontFamily_fontProviderAuthority = 0x00000000;
+        public static final int FontFamily_fontProviderCerts = 0x00000001;
+        public static final int FontFamily_fontProviderFetchStrategy = 0x00000002;
+        public static final int FontFamily_fontProviderFetchTimeout = 0x00000003;
+        public static final int FontFamily_fontProviderPackage = 0x00000004;
+        public static final int FontFamily_fontProviderQuery = 0x00000005;
+        public static final int ForegroundLinearLayout_android_foreground = 0x00000000;
+        public static final int ForegroundLinearLayout_android_foregroundGravity = 0x00000001;
+        public static final int ForegroundLinearLayout_foregroundInsidePadding = 0x00000002;
+        public static final int GradientColorItem_android_color = 0x00000000;
+        public static final int GradientColorItem_android_offset = 0x00000001;
+        public static final int GradientColor_android_centerColor = 0x00000007;
+        public static final int GradientColor_android_centerX = 0x00000003;
+        public static final int GradientColor_android_centerY = 0x00000004;
+        public static final int GradientColor_android_endColor = 0x00000001;
+        public static final int GradientColor_android_endX = 0x0000000a;
+        public static final int GradientColor_android_endY = 0x0000000b;
+        public static final int GradientColor_android_gradientRadius = 0x00000005;
+        public static final int GradientColor_android_startColor = 0x00000000;
+        public static final int GradientColor_android_startX = 0x00000008;
+        public static final int GradientColor_android_startY = 0x00000009;
+        public static final int GradientColor_android_tileMode = 0x00000006;
+        public static final int GradientColor_android_type = 0x00000002;
+        public static final int Insets_paddingBottomSystemWindowInsets = 0x00000000;
+        public static final int Insets_paddingLeftSystemWindowInsets = 0x00000001;
+        public static final int Insets_paddingRightSystemWindowInsets = 0x00000002;
+        public static final int LinearLayoutCompat_Layout_android_layout_gravity = 0x00000000;
+        public static final int LinearLayoutCompat_Layout_android_layout_height = 0x00000002;
+        public static final int LinearLayoutCompat_Layout_android_layout_weight = 0x00000003;
+        public static final int LinearLayoutCompat_Layout_android_layout_width = 0x00000001;
+        public static final int LinearLayoutCompat_android_baselineAligned = 0x00000002;
+        public static final int LinearLayoutCompat_android_baselineAlignedChildIndex = 0x00000003;
+        public static final int LinearLayoutCompat_android_gravity = 0x00000000;
+        public static final int LinearLayoutCompat_android_orientation = 0x00000001;
+        public static final int LinearLayoutCompat_android_weightSum = 0x00000004;
+        public static final int LinearLayoutCompat_divider = 0x00000005;
+        public static final int LinearLayoutCompat_dividerPadding = 0x00000006;
+        public static final int LinearLayoutCompat_measureWithLargestChild = 0x00000007;
+        public static final int LinearLayoutCompat_showDividers = 0x00000008;
+        public static final int ListPopupWindow_android_dropDownHorizontalOffset = 0x00000000;
+        public static final int ListPopupWindow_android_dropDownVerticalOffset = 0x00000001;
+        public static final int MaterialAlertDialogTheme_materialAlertDialogBodyTextStyle = 0x00000000;
+        public static final int MaterialAlertDialogTheme_materialAlertDialogTheme = 0x00000001;
+        public static final int MaterialAlertDialogTheme_materialAlertDialogTitleIconStyle = 0x00000002;
+        public static final int MaterialAlertDialogTheme_materialAlertDialogTitlePanelStyle = 0x00000003;
+        public static final int MaterialAlertDialogTheme_materialAlertDialogTitleTextStyle = 0x00000004;
+        public static final int MaterialAlertDialog_backgroundInsetBottom = 0x00000000;
+        public static final int MaterialAlertDialog_backgroundInsetEnd = 0x00000001;
+        public static final int MaterialAlertDialog_backgroundInsetStart = 0x00000002;
+        public static final int MaterialAlertDialog_backgroundInsetTop = 0x00000003;
+        public static final int MaterialAutoCompleteTextView_android_inputType = 0x00000000;
+        public static final int MaterialButtonToggleGroup_checkedButton = 0x00000000;
+        public static final int MaterialButtonToggleGroup_selectionRequired = 0x00000001;
+        public static final int MaterialButtonToggleGroup_singleSelection = 0x00000002;
+        public static final int MaterialButton_android_background = 0x00000000;
+        public static final int MaterialButton_android_checkable = 0x00000005;
+        public static final int MaterialButton_android_insetBottom = 0x00000004;
+        public static final int MaterialButton_android_insetLeft = 0x00000001;
+        public static final int MaterialButton_android_insetRight = 0x00000002;
+        public static final int MaterialButton_android_insetTop = 0x00000003;
+        public static final int MaterialButton_backgroundTint = 0x00000006;
+        public static final int MaterialButton_backgroundTintMode = 0x00000007;
+        public static final int MaterialButton_cornerRadius = 0x00000008;
+        public static final int MaterialButton_elevation = 0x00000009;
+        public static final int MaterialButton_icon = 0x0000000a;
+        public static final int MaterialButton_iconGravity = 0x0000000b;
+        public static final int MaterialButton_iconPadding = 0x0000000c;
+        public static final int MaterialButton_iconSize = 0x0000000d;
+        public static final int MaterialButton_iconTint = 0x0000000e;
+        public static final int MaterialButton_iconTintMode = 0x0000000f;
+        public static final int MaterialButton_rippleColor = 0x00000010;
+        public static final int MaterialButton_shapeAppearance = 0x00000011;
+        public static final int MaterialButton_shapeAppearanceOverlay = 0x00000012;
+        public static final int MaterialButton_strokeColor = 0x00000013;
+        public static final int MaterialButton_strokeWidth = 0x00000014;
+        public static final int MaterialCalendarItem_android_insetBottom = 0x00000003;
+        public static final int MaterialCalendarItem_android_insetLeft = 0x00000000;
+        public static final int MaterialCalendarItem_android_insetRight = 0x00000001;
+        public static final int MaterialCalendarItem_android_insetTop = 0x00000002;
+        public static final int MaterialCalendarItem_itemFillColor = 0x00000004;
+        public static final int MaterialCalendarItem_itemShapeAppearance = 0x00000005;
+        public static final int MaterialCalendarItem_itemShapeAppearanceOverlay = 0x00000006;
+        public static final int MaterialCalendarItem_itemStrokeColor = 0x00000007;
+        public static final int MaterialCalendarItem_itemStrokeWidth = 0x00000008;
+        public static final int MaterialCalendarItem_itemTextColor = 0x00000009;
+        public static final int MaterialCalendar_android_windowFullscreen = 0x00000000;
+        public static final int MaterialCalendar_dayInvalidStyle = 0x00000001;
+        public static final int MaterialCalendar_daySelectedStyle = 0x00000002;
+        public static final int MaterialCalendar_dayStyle = 0x00000003;
+        public static final int MaterialCalendar_dayTodayStyle = 0x00000004;
+        public static final int MaterialCalendar_rangeFillColor = 0x00000005;
+        public static final int MaterialCalendar_yearSelectedStyle = 0x00000006;
+        public static final int MaterialCalendar_yearStyle = 0x00000007;
+        public static final int MaterialCalendar_yearTodayStyle = 0x00000008;
+        public static final int MaterialCardView_android_checkable = 0x00000000;
+        public static final int MaterialCardView_cardForegroundColor = 0x00000001;
+        public static final int MaterialCardView_checkedIcon = 0x00000002;
+        public static final int MaterialCardView_checkedIconTint = 0x00000003;
+        public static final int MaterialCardView_rippleColor = 0x00000004;
+        public static final int MaterialCardView_shapeAppearance = 0x00000005;
+        public static final int MaterialCardView_shapeAppearanceOverlay = 0x00000006;
+        public static final int MaterialCardView_state_dragged = 0x00000007;
+        public static final int MaterialCardView_strokeColor = 0x00000008;
+        public static final int MaterialCardView_strokeWidth = 0x00000009;
+        public static final int MaterialCheckBox_buttonTint = 0x00000000;
+        public static final int MaterialCheckBox_useMaterialThemeColors = 0x00000001;
+        public static final int MaterialRadioButton_buttonTint = 0x00000000;
+        public static final int MaterialRadioButton_useMaterialThemeColors = 0x00000001;
+        public static final int MaterialShape_shapeAppearance = 0x00000000;
+        public static final int MaterialShape_shapeAppearanceOverlay = 0x00000001;
+        public static final int MaterialTextAppearance_android_lineHeight = 0x00000000;
+        public static final int MaterialTextAppearance_lineHeight = 0x00000001;
+        public static final int MaterialTextView_android_lineHeight = 0x00000001;
+        public static final int MaterialTextView_android_textAppearance = 0x00000000;
+        public static final int MaterialTextView_lineHeight = 0x00000002;
+        public static final int MenuGroup_android_checkableBehavior = 0x00000005;
+        public static final int MenuGroup_android_enabled = 0x00000000;
+        public static final int MenuGroup_android_id = 0x00000001;
+        public static final int MenuGroup_android_menuCategory = 0x00000003;
+        public static final int MenuGroup_android_orderInCategory = 0x00000004;
+        public static final int MenuGroup_android_visible = 0x00000002;
+        public static final int MenuItem_actionLayout = 0x0000000d;
+        public static final int MenuItem_actionProviderClass = 0x0000000e;
+        public static final int MenuItem_actionViewClass = 0x0000000f;
+        public static final int MenuItem_alphabeticModifiers = 0x00000010;
+        public static final int MenuItem_android_alphabeticShortcut = 0x00000009;
+        public static final int MenuItem_android_checkable = 0x0000000b;
+        public static final int MenuItem_android_checked = 0x00000003;
+        public static final int MenuItem_android_enabled = 0x00000001;
+        public static final int MenuItem_android_icon = 0x00000000;
+        public static final int MenuItem_android_id = 0x00000002;
+        public static final int MenuItem_android_menuCategory = 0x00000005;
+        public static final int MenuItem_android_numericShortcut = 0x0000000a;
+        public static final int MenuItem_android_onClick = 0x0000000c;
+        public static final int MenuItem_android_orderInCategory = 0x00000006;
+        public static final int MenuItem_android_title = 0x00000007;
+        public static final int MenuItem_android_titleCondensed = 0x00000008;
+        public static final int MenuItem_android_visible = 0x00000004;
+        public static final int MenuItem_contentDescription = 0x00000011;
+        public static final int MenuItem_iconTint = 0x00000012;
+        public static final int MenuItem_iconTintMode = 0x00000013;
+        public static final int MenuItem_numericModifiers = 0x00000014;
+        public static final int MenuItem_showAsAction = 0x00000015;
+        public static final int MenuItem_tooltipText = 0x00000016;
+        public static final int MenuView_android_headerBackground = 0x00000004;
+        public static final int MenuView_android_horizontalDivider = 0x00000002;
+        public static final int MenuView_android_itemBackground = 0x00000005;
+        public static final int MenuView_android_itemIconDisabledAlpha = 0x00000006;
+        public static final int MenuView_android_itemTextAppearance = 0x00000001;
+        public static final int MenuView_android_verticalDivider = 0x00000003;
+        public static final int MenuView_android_windowAnimationStyle = 0x00000000;
+        public static final int MenuView_preserveIconSpacing = 0x00000007;
+        public static final int MenuView_subMenuArrow = 0x00000008;
+        public static final int NavigationView_android_background = 0x00000000;
+        public static final int NavigationView_android_fitsSystemWindows = 0x00000001;
+        public static final int NavigationView_android_maxWidth = 0x00000002;
+        public static final int NavigationView_elevation = 0x00000003;
+        public static final int NavigationView_headerLayout = 0x00000004;
+        public static final int NavigationView_itemBackground = 0x00000005;
+        public static final int NavigationView_itemHorizontalPadding = 0x00000006;
+        public static final int NavigationView_itemIconPadding = 0x00000007;
+        public static final int NavigationView_itemIconSize = 0x00000008;
+        public static final int NavigationView_itemIconTint = 0x00000009;
+        public static final int NavigationView_itemMaxLines = 0x0000000a;
+        public static final int NavigationView_itemShapeAppearance = 0x0000000b;
+        public static final int NavigationView_itemShapeAppearanceOverlay = 0x0000000c;
+        public static final int NavigationView_itemShapeFillColor = 0x0000000d;
+        public static final int NavigationView_itemShapeInsetBottom = 0x0000000e;
+        public static final int NavigationView_itemShapeInsetEnd = 0x0000000f;
+        public static final int NavigationView_itemShapeInsetStart = 0x00000010;
+        public static final int NavigationView_itemShapeInsetTop = 0x00000011;
+        public static final int NavigationView_itemTextAppearance = 0x00000012;
+        public static final int NavigationView_itemTextColor = 0x00000013;
+        public static final int NavigationView_menu = 0x00000014;
+        public static final int PopupWindowBackgroundState_state_above_anchor = 0x00000000;
+        public static final int PopupWindow_android_popupAnimationStyle = 0x00000001;
+        public static final int PopupWindow_android_popupBackground = 0x00000000;
+        public static final int PopupWindow_overlapAnchor = 0x00000002;
+        public static final int RangeSlider_values = 0x00000000;
+        public static final int RecycleListView_paddingBottomNoButtons = 0x00000000;
+        public static final int RecycleListView_paddingTopNoTitle = 0x00000001;
+        public static final int RecyclerView_android_clipToPadding = 0x00000001;
+        public static final int RecyclerView_android_descendantFocusability = 0x00000002;
+        public static final int RecyclerView_android_orientation = 0x00000000;
+        public static final int RecyclerView_fastScrollEnabled = 0x00000003;
+        public static final int RecyclerView_fastScrollHorizontalThumbDrawable = 0x00000004;
+        public static final int RecyclerView_fastScrollHorizontalTrackDrawable = 0x00000005;
+        public static final int RecyclerView_fastScrollVerticalThumbDrawable = 0x00000006;
+        public static final int RecyclerView_fastScrollVerticalTrackDrawable = 0x00000007;
+        public static final int RecyclerView_layoutManager = 0x00000008;
+        public static final int RecyclerView_reverseLayout = 0x00000009;
+        public static final int RecyclerView_spanCount = 0x0000000a;
+        public static final int RecyclerView_stackFromEnd = 0x0000000b;
+        public static final int ScrimInsetsFrameLayout_insetForeground = 0x00000000;
+        public static final int ScrollingViewBehavior_Layout_behavior_overlapTop = 0x00000000;
+        public static final int SearchView_android_focusable = 0x00000000;
+        public static final int SearchView_android_imeOptions = 0x00000003;
+        public static final int SearchView_android_inputType = 0x00000002;
+        public static final int SearchView_android_maxWidth = 0x00000001;
+        public static final int SearchView_closeIcon = 0x00000004;
+        public static final int SearchView_commitIcon = 0x00000005;
+        public static final int SearchView_defaultQueryHint = 0x00000006;
+        public static final int SearchView_goIcon = 0x00000007;
+        public static final int SearchView_iconifiedByDefault = 0x00000008;
+        public static final int SearchView_layout = 0x00000009;
+        public static final int SearchView_queryBackground = 0x0000000a;
+        public static final int SearchView_queryHint = 0x0000000b;
+        public static final int SearchView_searchHintIcon = 0x0000000c;
+        public static final int SearchView_searchIcon = 0x0000000d;
+        public static final int SearchView_submitBackground = 0x0000000e;
+        public static final int SearchView_suggestionRowLayout = 0x0000000f;
+        public static final int SearchView_voiceIcon = 0x00000010;
+        public static final int ShapeAppearance_cornerFamily = 0x00000000;
+        public static final int ShapeAppearance_cornerFamilyBottomLeft = 0x00000001;
+        public static final int ShapeAppearance_cornerFamilyBottomRight = 0x00000002;
+        public static final int ShapeAppearance_cornerFamilyTopLeft = 0x00000003;
+        public static final int ShapeAppearance_cornerFamilyTopRight = 0x00000004;
+        public static final int ShapeAppearance_cornerSize = 0x00000005;
+        public static final int ShapeAppearance_cornerSizeBottomLeft = 0x00000006;
+        public static final int ShapeAppearance_cornerSizeBottomRight = 0x00000007;
+        public static final int ShapeAppearance_cornerSizeTopLeft = 0x00000008;
+        public static final int ShapeAppearance_cornerSizeTopRight = 0x00000009;
+        public static final int ShapeableImageView_shapeAppearance = 0x00000000;
+        public static final int ShapeableImageView_shapeAppearanceOverlay = 0x00000001;
+        public static final int ShapeableImageView_strokeColor = 0x00000002;
+        public static final int ShapeableImageView_strokeWidth = 0x00000003;
+        public static final int Slider_android_enabled = 0x00000000;
+        public static final int Slider_android_stepSize = 0x00000002;
+        public static final int Slider_android_value = 0x00000001;
+        public static final int Slider_android_valueFrom = 0x00000003;
+        public static final int Slider_android_valueTo = 0x00000004;
+        public static final int Slider_haloColor = 0x00000005;
+        public static final int Slider_haloRadius = 0x00000006;
+        public static final int Slider_labelBehavior = 0x00000007;
+        public static final int Slider_labelStyle = 0x00000008;
+        public static final int Slider_thumbColor = 0x00000009;
+        public static final int Slider_thumbElevation = 0x0000000a;
+        public static final int Slider_thumbRadius = 0x0000000b;
+        public static final int Slider_tickColor = 0x0000000c;
+        public static final int Slider_tickColorActive = 0x0000000d;
+        public static final int Slider_tickColorInactive = 0x0000000e;
+        public static final int Slider_trackColor = 0x0000000f;
+        public static final int Slider_trackColorActive = 0x00000010;
+        public static final int Slider_trackColorInactive = 0x00000011;
+        public static final int Slider_trackHeight = 0x00000012;
+        public static final int SnackbarLayout_actionTextColorAlpha = 0x00000001;
+        public static final int SnackbarLayout_android_maxWidth = 0x00000000;
+        public static final int SnackbarLayout_animationMode = 0x00000002;
+        public static final int SnackbarLayout_backgroundOverlayColorAlpha = 0x00000003;
+        public static final int SnackbarLayout_backgroundTint = 0x00000004;
+        public static final int SnackbarLayout_backgroundTintMode = 0x00000005;
+        public static final int SnackbarLayout_elevation = 0x00000006;
+        public static final int SnackbarLayout_maxActionInlineWidth = 0x00000007;
+        public static final int Snackbar_snackbarButtonStyle = 0x00000000;
+        public static final int Snackbar_snackbarStyle = 0x00000001;
+        public static final int Snackbar_snackbarTextViewStyle = 0x00000002;
+        public static final int Spinner_android_dropDownWidth = 0x00000003;
+        public static final int Spinner_android_entries = 0x00000000;
+        public static final int Spinner_android_popupBackground = 0x00000001;
+        public static final int Spinner_android_prompt = 0x00000002;
+        public static final int Spinner_popupTheme = 0x00000004;
+        public static final int StateListDrawableItem_android_drawable = 0x00000000;
+        public static final int StateListDrawable_android_constantSize = 0x00000003;
+        public static final int StateListDrawable_android_dither = 0x00000000;
+        public static final int StateListDrawable_android_enterFadeDuration = 0x00000004;
+        public static final int StateListDrawable_android_exitFadeDuration = 0x00000005;
+        public static final int StateListDrawable_android_variablePadding = 0x00000002;
+        public static final int StateListDrawable_android_visible = 0x00000001;
+        public static final int SwitchCompat_android_textOff = 0x00000001;
+        public static final int SwitchCompat_android_textOn = 0x00000000;
+        public static final int SwitchCompat_android_thumb = 0x00000002;
+        public static final int SwitchCompat_showText = 0x00000003;
+        public static final int SwitchCompat_splitTrack = 0x00000004;
+        public static final int SwitchCompat_switchMinWidth = 0x00000005;
+        public static final int SwitchCompat_switchPadding = 0x00000006;
+        public static final int SwitchCompat_switchTextAppearance = 0x00000007;
+        public static final int SwitchCompat_thumbTextPadding = 0x00000008;
+        public static final int SwitchCompat_thumbTint = 0x00000009;
+        public static final int SwitchCompat_thumbTintMode = 0x0000000a;
+        public static final int SwitchCompat_track = 0x0000000b;
+        public static final int SwitchCompat_trackTint = 0x0000000c;
+        public static final int SwitchCompat_trackTintMode = 0x0000000d;
+        public static final int SwitchMaterial_useMaterialThemeColors = 0x00000000;
+        public static final int TabItem_android_icon = 0x00000000;
+        public static final int TabItem_android_layout = 0x00000001;
+        public static final int TabItem_android_text = 0x00000002;
+        public static final int TabLayout_tabBackground = 0x00000000;
+        public static final int TabLayout_tabContentStart = 0x00000001;
+        public static final int TabLayout_tabGravity = 0x00000002;
+        public static final int TabLayout_tabIconTint = 0x00000003;
+        public static final int TabLayout_tabIconTintMode = 0x00000004;
+        public static final int TabLayout_tabIndicator = 0x00000005;
+        public static final int TabLayout_tabIndicatorAnimationDuration = 0x00000006;
+        public static final int TabLayout_tabIndicatorColor = 0x00000007;
+        public static final int TabLayout_tabIndicatorFullWidth = 0x00000008;
+        public static final int TabLayout_tabIndicatorGravity = 0x00000009;
+        public static final int TabLayout_tabIndicatorHeight = 0x0000000a;
+        public static final int TabLayout_tabInlineLabel = 0x0000000b;
+        public static final int TabLayout_tabMaxWidth = 0x0000000c;
+        public static final int TabLayout_tabMinWidth = 0x0000000d;
+        public static final int TabLayout_tabMode = 0x0000000e;
+        public static final int TabLayout_tabPadding = 0x0000000f;
+        public static final int TabLayout_tabPaddingBottom = 0x00000010;
+        public static final int TabLayout_tabPaddingEnd = 0x00000011;
+        public static final int TabLayout_tabPaddingStart = 0x00000012;
+        public static final int TabLayout_tabPaddingTop = 0x00000013;
+        public static final int TabLayout_tabRippleColor = 0x00000014;
+        public static final int TabLayout_tabSelectedTextColor = 0x00000015;
+        public static final int TabLayout_tabTextAppearance = 0x00000016;
+        public static final int TabLayout_tabTextColor = 0x00000017;
+        public static final int TabLayout_tabUnboundedRipple = 0x00000018;
+        public static final int TextAppearance_android_fontFamily = 0x0000000a;
+        public static final int TextAppearance_android_shadowColor = 0x00000006;
+        public static final int TextAppearance_android_shadowDx = 0x00000007;
+        public static final int TextAppearance_android_shadowDy = 0x00000008;
+        public static final int TextAppearance_android_shadowRadius = 0x00000009;
+        public static final int TextAppearance_android_textColor = 0x00000003;
+        public static final int TextAppearance_android_textColorHint = 0x00000004;
+        public static final int TextAppearance_android_textColorLink = 0x00000005;
+        public static final int TextAppearance_android_textFontWeight = 0x0000000b;
+        public static final int TextAppearance_android_textSize = 0x00000000;
+        public static final int TextAppearance_android_textStyle = 0x00000002;
+        public static final int TextAppearance_android_typeface = 0x00000001;
+        public static final int TextAppearance_fontFamily = 0x0000000c;
+        public static final int TextAppearance_fontVariationSettings = 0x0000000d;
+        public static final int TextAppearance_textAllCaps = 0x0000000e;
+        public static final int TextAppearance_textLocale = 0x0000000f;
+        public static final int TextInputEditText_textInputLayoutFocusedRectEnabled = 0x00000000;
+        public static final int TextInputLayout_android_enabled = 0x00000000;
+        public static final int TextInputLayout_android_hint = 0x00000002;
+        public static final int TextInputLayout_android_textColorHint = 0x00000001;
+        public static final int TextInputLayout_boxBackgroundColor = 0x00000003;
+        public static final int TextInputLayout_boxBackgroundMode = 0x00000004;
+        public static final int TextInputLayout_boxCollapsedPaddingTop = 0x00000005;
+        public static final int TextInputLayout_boxCornerRadiusBottomEnd = 0x00000006;
+        public static final int TextInputLayout_boxCornerRadiusBottomStart = 0x00000007;
+        public static final int TextInputLayout_boxCornerRadiusTopEnd = 0x00000008;
+        public static final int TextInputLayout_boxCornerRadiusTopStart = 0x00000009;
+        public static final int TextInputLayout_boxStrokeColor = 0x0000000a;
+        public static final int TextInputLayout_boxStrokeErrorColor = 0x0000000b;
+        public static final int TextInputLayout_boxStrokeWidth = 0x0000000c;
+        public static final int TextInputLayout_boxStrokeWidthFocused = 0x0000000d;
+        public static final int TextInputLayout_counterEnabled = 0x0000000e;
+        public static final int TextInputLayout_counterMaxLength = 0x0000000f;
+        public static final int TextInputLayout_counterOverflowTextAppearance = 0x00000010;
+        public static final int TextInputLayout_counterOverflowTextColor = 0x00000011;
+        public static final int TextInputLayout_counterTextAppearance = 0x00000012;
+        public static final int TextInputLayout_counterTextColor = 0x00000013;
+        public static final int TextInputLayout_endIconCheckable = 0x00000014;
+        public static final int TextInputLayout_endIconContentDescription = 0x00000015;
+        public static final int TextInputLayout_endIconDrawable = 0x00000016;
+        public static final int TextInputLayout_endIconMode = 0x00000017;
+        public static final int TextInputLayout_endIconTint = 0x00000018;
+        public static final int TextInputLayout_endIconTintMode = 0x00000019;
+        public static final int TextInputLayout_errorContentDescription = 0x0000001a;
+        public static final int TextInputLayout_errorEnabled = 0x0000001b;
+        public static final int TextInputLayout_errorIconDrawable = 0x0000001c;
+        public static final int TextInputLayout_errorIconTint = 0x0000001d;
+        public static final int TextInputLayout_errorIconTintMode = 0x0000001e;
+        public static final int TextInputLayout_errorTextAppearance = 0x0000001f;
+        public static final int TextInputLayout_errorTextColor = 0x00000020;
+        public static final int TextInputLayout_helperText = 0x00000021;
+        public static final int TextInputLayout_helperTextEnabled = 0x00000022;
+        public static final int TextInputLayout_helperTextTextAppearance = 0x00000023;
+        public static final int TextInputLayout_helperTextTextColor = 0x00000024;
+        public static final int TextInputLayout_hintAnimationEnabled = 0x00000025;
+        public static final int TextInputLayout_hintEnabled = 0x00000026;
+        public static final int TextInputLayout_hintTextAppearance = 0x00000027;
+        public static final int TextInputLayout_hintTextColor = 0x00000028;
+        public static final int TextInputLayout_passwordToggleContentDescription = 0x00000029;
+        public static final int TextInputLayout_passwordToggleDrawable = 0x0000002a;
+        public static final int TextInputLayout_passwordToggleEnabled = 0x0000002b;
+        public static final int TextInputLayout_passwordToggleTint = 0x0000002c;
+        public static final int TextInputLayout_passwordToggleTintMode = 0x0000002d;
+        public static final int TextInputLayout_placeholderText = 0x0000002e;
+        public static final int TextInputLayout_placeholderTextAppearance = 0x0000002f;
+        public static final int TextInputLayout_placeholderTextColor = 0x00000030;
+        public static final int TextInputLayout_prefixText = 0x00000031;
+        public static final int TextInputLayout_prefixTextAppearance = 0x00000032;
+        public static final int TextInputLayout_prefixTextColor = 0x00000033;
+        public static final int TextInputLayout_shapeAppearance = 0x00000034;
+        public static final int TextInputLayout_shapeAppearanceOverlay = 0x00000035;
+        public static final int TextInputLayout_startIconCheckable = 0x00000036;
+        public static final int TextInputLayout_startIconContentDescription = 0x00000037;
+        public static final int TextInputLayout_startIconDrawable = 0x00000038;
+        public static final int TextInputLayout_startIconTint = 0x00000039;
+        public static final int TextInputLayout_startIconTintMode = 0x0000003a;
+        public static final int TextInputLayout_suffixText = 0x0000003b;
+        public static final int TextInputLayout_suffixTextAppearance = 0x0000003c;
+        public static final int TextInputLayout_suffixTextColor = 0x0000003d;
+        public static final int ThemeEnforcement_android_textAppearance = 0x00000000;
+        public static final int ThemeEnforcement_enforceMaterialTheme = 0x00000001;
+        public static final int ThemeEnforcement_enforceTextAppearance = 0x00000002;
+        public static final int Toolbar_android_gravity = 0x00000000;
+        public static final int Toolbar_android_minHeight = 0x00000001;
+        public static final int Toolbar_buttonGravity = 0x00000002;
+        public static final int Toolbar_collapseContentDescription = 0x00000003;
+        public static final int Toolbar_collapseIcon = 0x00000004;
+        public static final int Toolbar_contentInsetEnd = 0x00000005;
+        public static final int Toolbar_contentInsetEndWithActions = 0x00000006;
+        public static final int Toolbar_contentInsetLeft = 0x00000007;
+        public static final int Toolbar_contentInsetRight = 0x00000008;
+        public static final int Toolbar_contentInsetStart = 0x00000009;
+        public static final int Toolbar_contentInsetStartWithNavigation = 0x0000000a;
+        public static final int Toolbar_logo = 0x0000000b;
+        public static final int Toolbar_logoDescription = 0x0000000c;
+        public static final int Toolbar_maxButtonHeight = 0x0000000d;
+        public static final int Toolbar_menu = 0x0000000e;
+        public static final int Toolbar_navigationContentDescription = 0x0000000f;
+        public static final int Toolbar_navigationIcon = 0x00000010;
+        public static final int Toolbar_popupTheme = 0x00000011;
+        public static final int Toolbar_subtitle = 0x00000012;
+        public static final int Toolbar_subtitleTextAppearance = 0x00000013;
+        public static final int Toolbar_subtitleTextColor = 0x00000014;
+        public static final int Toolbar_title = 0x00000015;
+        public static final int Toolbar_titleMargin = 0x00000016;
+        public static final int Toolbar_titleMarginBottom = 0x00000017;
+        public static final int Toolbar_titleMarginEnd = 0x00000018;
+        public static final int Toolbar_titleMarginStart = 0x00000019;
+        public static final int Toolbar_titleMarginTop = 0x0000001a;
+        public static final int Toolbar_titleMargins = 0x0000001b;
+        public static final int Toolbar_titleTextAppearance = 0x0000001c;
+        public static final int Toolbar_titleTextColor = 0x0000001d;
+        public static final int Tooltip_android_layout_margin = 0x00000002;
+        public static final int Tooltip_android_minHeight = 0x00000004;
+        public static final int Tooltip_android_minWidth = 0x00000003;
+        public static final int Tooltip_android_padding = 0x00000001;
+        public static final int Tooltip_android_text = 0x00000005;
+        public static final int Tooltip_android_textAppearance = 0x00000000;
+        public static final int Tooltip_backgroundTint = 0x00000006;
+        public static final int ViewBackgroundHelper_android_background = 0x00000000;
+        public static final int ViewBackgroundHelper_backgroundTint = 0x00000001;
+        public static final int ViewBackgroundHelper_backgroundTintMode = 0x00000002;
+        public static final int ViewPager2_android_orientation = 0x00000000;
+        public static final int ViewStubCompat_android_id = 0x00000000;
+        public static final int ViewStubCompat_android_inflatedId = 0x00000002;
+        public static final int ViewStubCompat_android_layout = 0x00000001;
+        public static final int View_android_focusable = 0x00000001;
+        public static final int View_android_theme = 0x00000000;
+        public static final int View_paddingEnd = 0x00000002;
+        public static final int View_paddingStart = 0x00000003;
+        public static final int View_theme = 0x00000004;
+        public static final int[] ActionBar = {R.attr.background, R.attr.backgroundSplit, R.attr.backgroundStacked, R.attr.contentInsetEnd, R.attr.contentInsetEndWithActions, R.attr.contentInsetLeft, R.attr.contentInsetRight, R.attr.contentInsetStart, R.attr.contentInsetStartWithNavigation, R.attr.customNavigationLayout, R.attr.displayOptions, R.attr.divider, R.attr.elevation, R.attr.height, R.attr.hideOnContentScroll, R.attr.homeAsUpIndicator, R.attr.homeLayout, R.attr.icon, R.attr.indeterminateProgressStyle, R.attr.itemPadding, R.attr.logo, R.attr.navigationMode, R.attr.popupTheme, R.attr.progressBarPadding, R.attr.progressBarStyle, R.attr.subtitle, R.attr.subtitleTextStyle, R.attr.title, R.attr.titleTextStyle};
+        public static final int[] ActionBarLayout = {android.R.attr.layout_gravity};
+        public static final int[] ActionMenuItemView = {android.R.attr.minWidth};
+        public static final int[] ActionMenuView = new int[0];
+        public static final int[] ActionMode = {R.attr.background, R.attr.backgroundSplit, R.attr.closeItemLayout, R.attr.height, R.attr.subtitleTextStyle, R.attr.titleTextStyle};
+        public static final int[] ActivityChooserView = {R.attr.expandActivityOverflowButtonDrawable, R.attr.initialActivityCount};
+        public static final int[] AlertDialog = {android.R.attr.layout, R.attr.buttonIconDimen, R.attr.buttonPanelSideLayout, R.attr.listItemLayout, R.attr.listLayout, R.attr.multiChoiceItemLayout, R.attr.showTitle, R.attr.singleChoiceItemLayout};
+        public static final int[] AnimatedStateListDrawableCompat = {android.R.attr.dither, android.R.attr.visible, android.R.attr.variablePadding, android.R.attr.constantSize, android.R.attr.enterFadeDuration, android.R.attr.exitFadeDuration};
+        public static final int[] AnimatedStateListDrawableItem = {android.R.attr.id, android.R.attr.drawable};
+        public static final int[] AnimatedStateListDrawableTransition = {android.R.attr.drawable, android.R.attr.toId, android.R.attr.fromId, android.R.attr.reversible};
+        public static final int[] AppBarLayout = {android.R.attr.background, android.R.attr.touchscreenBlocksFocus, android.R.attr.keyboardNavigationCluster, R.attr.elevation, R.attr.expanded, R.attr.liftOnScroll, R.attr.liftOnScrollTargetViewId, R.attr.statusBarForeground};
+        public static final int[] AppBarLayoutStates = {R.attr.state_collapsed, R.attr.state_collapsible, R.attr.state_liftable, R.attr.state_lifted};
+        public static final int[] AppBarLayout_Layout = {R.attr.layout_scrollFlags, R.attr.layout_scrollInterpolator};
+        public static final int[] AppCompatImageView = {android.R.attr.src, R.attr.srcCompat, R.attr.tint, R.attr.tintMode};
+        public static final int[] AppCompatSeekBar = {android.R.attr.thumb, R.attr.tickMark, R.attr.tickMarkTint, R.attr.tickMarkTintMode};
+        public static final int[] AppCompatTextHelper = {android.R.attr.textAppearance, android.R.attr.drawableTop, android.R.attr.drawableBottom, android.R.attr.drawableLeft, android.R.attr.drawableRight, android.R.attr.drawableStart, android.R.attr.drawableEnd};
+        public static final int[] AppCompatTextView = {android.R.attr.textAppearance, R.attr.autoSizeMaxTextSize, R.attr.autoSizeMinTextSize, R.attr.autoSizePresetSizes, R.attr.autoSizeStepGranularity, R.attr.autoSizeTextType, R.attr.drawableBottomCompat, R.attr.drawableEndCompat, R.attr.drawableLeftCompat, R.attr.drawableRightCompat, R.attr.drawableStartCompat, R.attr.drawableTint, R.attr.drawableTintMode, R.attr.drawableTopCompat, R.attr.firstBaselineToTopHeight, R.attr.fontFamily, R.attr.fontVariationSettings, R.attr.lastBaselineToBottomHeight, R.attr.lineHeight, R.attr.textAllCaps, R.attr.textLocale};
+        public static final int[] AppCompatTheme = {android.R.attr.windowIsFloating, android.R.attr.windowAnimationStyle, R.attr.actionBarDivider, R.attr.actionBarItemBackground, R.attr.actionBarPopupTheme, R.attr.actionBarSize, R.attr.actionBarSplitStyle, R.attr.actionBarStyle, R.attr.actionBarTabBarStyle, R.attr.actionBarTabStyle, R.attr.actionBarTabTextStyle, R.attr.actionBarTheme, R.attr.actionBarWidgetTheme, R.attr.actionButtonStyle, R.attr.actionDropDownStyle, R.attr.actionMenuTextAppearance, R.attr.actionMenuTextColor, R.attr.actionModeBackground, R.attr.actionModeCloseButtonStyle, R.attr.actionModeCloseDrawable, R.attr.actionModeCopyDrawable, R.attr.actionModeCutDrawable, R.attr.actionModeFindDrawable, R.attr.actionModePasteDrawable, R.attr.actionModePopupWindowStyle, R.attr.actionModeSelectAllDrawable, R.attr.actionModeShareDrawable, R.attr.actionModeSplitBackground, R.attr.actionModeStyle, R.attr.actionModeWebSearchDrawable, R.attr.actionOverflowButtonStyle, R.attr.actionOverflowMenuStyle, R.attr.activityChooserViewStyle, R.attr.alertDialogButtonGroupStyle, R.attr.alertDialogCenterButtons, R.attr.alertDialogStyle, R.attr.alertDialogTheme, R.attr.autoCompleteTextViewStyle, R.attr.borderlessButtonStyle, R.attr.buttonBarButtonStyle, R.attr.buttonBarNegativeButtonStyle, R.attr.buttonBarNeutralButtonStyle, R.attr.buttonBarPositiveButtonStyle, R.attr.buttonBarStyle, R.attr.buttonStyle, R.attr.buttonStyleSmall, R.attr.checkboxStyle, R.attr.checkedTextViewStyle, R.attr.colorAccent, R.attr.colorBackgroundFloating, R.attr.colorButtonNormal, R.attr.colorControlActivated, R.attr.colorControlHighlight, R.attr.colorControlNormal, R.attr.colorError, R.attr.colorPrimary, R.attr.colorPrimaryDark, R.attr.colorSwitchThumbNormal, R.attr.controlBackground, R.attr.dialogCornerRadius, R.attr.dialogPreferredPadding, R.attr.dialogTheme, R.attr.dividerHorizontal, R.attr.dividerVertical, R.attr.dropDownListViewStyle, R.attr.dropdownListPreferredItemHeight, R.attr.editTextBackground, R.attr.editTextColor, R.attr.editTextStyle, R.attr.homeAsUpIndicator, R.attr.imageButtonStyle, R.attr.listChoiceBackgroundIndicator, R.attr.listChoiceIndicatorMultipleAnimated, R.attr.listChoiceIndicatorSingleAnimated, R.attr.listDividerAlertDialog, R.attr.listMenuViewStyle, R.attr.listPopupWindowStyle, R.attr.listPreferredItemHeight, R.attr.listPreferredItemHeightLarge, R.attr.listPreferredItemHeightSmall, R.attr.listPreferredItemPaddingEnd, R.attr.listPreferredItemPaddingLeft, R.attr.listPreferredItemPaddingRight, R.attr.listPreferredItemPaddingStart, R.attr.panelBackground, R.attr.panelMenuListTheme, R.attr.panelMenuListWidth, R.attr.popupMenuStyle, R.attr.popupWindowStyle, R.attr.radioButtonStyle, R.attr.ratingBarStyle, R.attr.ratingBarStyleIndicator, R.attr.ratingBarStyleSmall, R.attr.searchViewStyle, R.attr.seekBarStyle, R.attr.selectableItemBackground, R.attr.selectableItemBackgroundBorderless, R.attr.spinnerDropDownItemStyle, R.attr.spinnerStyle, R.attr.switchStyle, R.attr.textAppearanceLargePopupMenu, R.attr.textAppearanceListItem, R.attr.textAppearanceListItemSecondary, R.attr.textAppearanceListItemSmall, R.attr.textAppearancePopupMenuHeader, R.attr.textAppearanceSearchResultSubtitle, R.attr.textAppearanceSearchResultTitle, R.attr.textAppearanceSmallPopupMenu, R.attr.textColorAlertDialogListItem, R.attr.textColorSearchUrl, R.attr.toolbarNavigationButtonStyle, R.attr.toolbarStyle, R.attr.tooltipForegroundColor, R.attr.tooltipFrameBackground, R.attr.viewInflaterClass, R.attr.windowActionBar, R.attr.windowActionBarOverlay, R.attr.windowActionModeOverlay, R.attr.windowFixedHeightMajor, R.attr.windowFixedHeightMinor, R.attr.windowFixedWidthMajor, R.attr.windowFixedWidthMinor, R.attr.windowMinWidthMajor, R.attr.windowMinWidthMinor, R.attr.windowNoTitle};
+        public static final int[] Badge = {R.attr.backgroundColor, R.attr.badgeGravity, R.attr.badgeTextColor, R.attr.horizontalOffset, R.attr.maxCharacterCount, R.attr.number, R.attr.verticalOffset};
+        public static final int[] BottomAppBar = {R.attr.backgroundTint, R.attr.elevation, R.attr.fabAlignmentMode, R.attr.fabAnimationMode, R.attr.fabCradleMargin, R.attr.fabCradleRoundedCornerRadius, R.attr.fabCradleVerticalOffset, R.attr.hideOnScroll, R.attr.paddingBottomSystemWindowInsets, R.attr.paddingLeftSystemWindowInsets, R.attr.paddingRightSystemWindowInsets};
+        public static final int[] BottomNavigationView = {R.attr.backgroundTint, R.attr.elevation, R.attr.itemBackground, R.attr.itemHorizontalTranslationEnabled, R.attr.itemIconSize, R.attr.itemIconTint, R.attr.itemRippleColor, R.attr.itemTextAppearanceActive, R.attr.itemTextAppearanceInactive, R.attr.itemTextColor, R.attr.labelVisibilityMode, R.attr.menu};
+        public static final int[] BottomSheetBehavior_Layout = {android.R.attr.elevation, R.attr.backgroundTint, R.attr.behavior_draggable, R.attr.behavior_expandedOffset, R.attr.behavior_fitToContents, R.attr.behavior_halfExpandedRatio, R.attr.behavior_hideable, R.attr.behavior_peekHeight, R.attr.behavior_saveFlags, R.attr.behavior_skipCollapsed, R.attr.gestureInsetBottomIgnored, R.attr.shapeAppearance, R.attr.shapeAppearanceOverlay};
+        public static final int[] ButtonBarLayout = {R.attr.allowStacking};
+        public static final int[] BydButton = {R.attr.byd_button_tone};
+        public static final int[] BydClock = {R.attr.byd_clock_background, R.attr.byd_clock_hour, R.attr.byd_clock_minute, R.attr.byd_clock_second};
+        public static final int[] BydDigitalClock = {R.attr.byd_dgclock_am, R.attr.byd_dgclock_colon, R.attr.byd_dgclock_num0, R.attr.byd_dgclock_num1, R.attr.byd_dgclock_num2, R.attr.byd_dgclock_num3, R.attr.byd_dgclock_num4, R.attr.byd_dgclock_num5, R.attr.byd_dgclock_num6, R.attr.byd_dgclock_num7, R.attr.byd_dgclock_num8, R.attr.byd_dgclock_num9, R.attr.byd_dgclock_pm, R.attr.byd_dgclock_show_second};
+        public static final int[] BydFrameAnimation = {R.attr.byd_frame_manual, R.attr.byd_frame_prefix, R.attr.byd_frame_repeat, R.attr.byd_frame_speed, R.attr.byd_frame_total};
+        public static final int[] BydLoading = {R.attr.byd_loading_animSpeed, R.attr.byd_loading_background, R.attr.byd_loading_max, R.attr.byd_loading_progress, R.attr.byd_loading_textColor, R.attr.byd_loading_textSize, R.attr.byd_loading_unit};
+        public static final int[] BydScrollableIndicator = {R.attr.byd_selected_bg, R.attr.byd_unselected_bg};
+        public static final int[] CardView = {android.R.attr.minWidth, android.R.attr.minHeight, R.attr.cardBackgroundColor, R.attr.cardCornerRadius, R.attr.cardElevation, R.attr.cardMaxElevation, R.attr.cardPreventCornerOverlap, R.attr.cardUseCompatPadding, R.attr.contentPadding, R.attr.contentPaddingBottom, R.attr.contentPaddingLeft, R.attr.contentPaddingRight, R.attr.contentPaddingTop};
+        public static final int[] Chip = {android.R.attr.textAppearance, android.R.attr.textColor, android.R.attr.ellipsize, android.R.attr.maxWidth, android.R.attr.text, android.R.attr.checkable, R.attr.checkedIcon, R.attr.checkedIconEnabled, R.attr.checkedIconTint, R.attr.checkedIconVisible, R.attr.chipBackgroundColor, R.attr.chipCornerRadius, R.attr.chipEndPadding, R.attr.chipIcon, R.attr.chipIconEnabled, R.attr.chipIconSize, R.attr.chipIconTint, R.attr.chipIconVisible, R.attr.chipMinHeight, R.attr.chipMinTouchTargetSize, R.attr.chipStartPadding, R.attr.chipStrokeColor, R.attr.chipStrokeWidth, R.attr.chipSurfaceColor, R.attr.closeIcon, R.attr.closeIconEnabled, R.attr.closeIconEndPadding, R.attr.closeIconSize, R.attr.closeIconStartPadding, R.attr.closeIconTint, R.attr.closeIconVisible, R.attr.ensureMinTouchTargetSize, R.attr.hideMotionSpec, R.attr.iconEndPadding, R.attr.iconStartPadding, R.attr.rippleColor, R.attr.shapeAppearance, R.attr.shapeAppearanceOverlay, R.attr.showMotionSpec, R.attr.textEndPadding, R.attr.textStartPadding};
+        public static final int[] ChipGroup = {R.attr.checkedChip, R.attr.chipSpacing, R.attr.chipSpacingHorizontal, R.attr.chipSpacingVertical, R.attr.selectionRequired, R.attr.singleLine, R.attr.singleSelection};
+        public static final int[] CollapsingToolbarLayout = {R.attr.collapsedTitleGravity, R.attr.collapsedTitleTextAppearance, R.attr.contentScrim, R.attr.expandedTitleGravity, R.attr.expandedTitleMargin, R.attr.expandedTitleMarginBottom, R.attr.expandedTitleMarginEnd, R.attr.expandedTitleMarginStart, R.attr.expandedTitleMarginTop, R.attr.expandedTitleTextAppearance, R.attr.maxLines, R.attr.scrimAnimationDuration, R.attr.scrimVisibleHeightTrigger, R.attr.statusBarScrim, R.attr.title, R.attr.titleEnabled, R.attr.toolbarId};
+        public static final int[] CollapsingToolbarLayout_Layout = {R.attr.layout_collapseMode, R.attr.layout_collapseParallaxMultiplier};
+        public static final int[] ColorStateListItem = {android.R.attr.color, android.R.attr.alpha, R.attr.alpha};
+        public static final int[] CompoundButton = {android.R.attr.button, R.attr.buttonCompat, R.attr.buttonTint, R.attr.buttonTintMode};
+        public static final int[] CoordinatorLayout = {R.attr.keylines, R.attr.statusBarBackground};
+        public static final int[] CoordinatorLayout_Layout = {android.R.attr.layout_gravity, R.attr.layout_anchor, R.attr.layout_anchorGravity, R.attr.layout_behavior, R.attr.layout_dodgeInsetEdges, R.attr.layout_insetEdge, R.attr.layout_keyline};
+        public static final int[] DampingScrollView = {R.attr.maxHeight, R.attr.orientation};
+        public static final int[] DrawerArrowToggle = {R.attr.arrowHeadLength, R.attr.arrowShaftLength, R.attr.barLength, R.attr.color, R.attr.drawableSize, R.attr.gapBetweenBars, R.attr.spinBars, R.attr.thickness};
+        public static final int[] ExtendedFloatingActionButton = {R.attr.elevation, R.attr.extendMotionSpec, R.attr.hideMotionSpec, R.attr.showMotionSpec, R.attr.shrinkMotionSpec};
+        public static final int[] ExtendedFloatingActionButton_Behavior_Layout = {R.attr.behavior_autoHide, R.attr.behavior_autoShrink};
+        public static final int[] FloatingActionButton = {android.R.attr.enabled, R.attr.backgroundTint, R.attr.backgroundTintMode, R.attr.borderWidth, R.attr.elevation, R.attr.ensureMinTouchTargetSize, R.attr.fabCustomSize, R.attr.fabSize, R.attr.hideMotionSpec, R.attr.hoveredFocusedTranslationZ, R.attr.maxImageSize, R.attr.pressedTranslationZ, R.attr.rippleColor, R.attr.shapeAppearance, R.attr.shapeAppearanceOverlay, R.attr.showMotionSpec, R.attr.useCompatPadding};
+        public static final int[] FloatingActionButton_Behavior_Layout = {R.attr.behavior_autoHide};
+        public static final int[] FlowLayout = {R.attr.itemSpacing, R.attr.lineSpacing};
+        public static final int[] FontFamily = {R.attr.fontProviderAuthority, R.attr.fontProviderCerts, R.attr.fontProviderFetchStrategy, R.attr.fontProviderFetchTimeout, R.attr.fontProviderPackage, R.attr.fontProviderQuery};
+        public static final int[] FontFamilyFont = {android.R.attr.font, android.R.attr.fontWeight, android.R.attr.fontStyle, android.R.attr.ttcIndex, android.R.attr.fontVariationSettings, R.attr.font, R.attr.fontStyle, R.attr.fontVariationSettings, R.attr.fontWeight, R.attr.ttcIndex};
+        public static final int[] ForegroundLinearLayout = {android.R.attr.foreground, android.R.attr.foregroundGravity, R.attr.foregroundInsidePadding};
+        public static final int[] GradientColor = {android.R.attr.startColor, android.R.attr.endColor, android.R.attr.type, android.R.attr.centerX, android.R.attr.centerY, android.R.attr.gradientRadius, android.R.attr.tileMode, android.R.attr.centerColor, android.R.attr.startX, android.R.attr.startY, android.R.attr.endX, android.R.attr.endY};
+        public static final int[] GradientColorItem = {android.R.attr.color, android.R.attr.offset};
+        public static final int[] Insets = {R.attr.paddingBottomSystemWindowInsets, R.attr.paddingLeftSystemWindowInsets, R.attr.paddingRightSystemWindowInsets};
+        public static final int[] LinearLayoutCompat = {android.R.attr.gravity, android.R.attr.orientation, android.R.attr.baselineAligned, android.R.attr.baselineAlignedChildIndex, android.R.attr.weightSum, R.attr.divider, R.attr.dividerPadding, R.attr.measureWithLargestChild, R.attr.showDividers};
+        public static final int[] LinearLayoutCompat_Layout = {android.R.attr.layout_gravity, android.R.attr.layout_width, android.R.attr.layout_height, android.R.attr.layout_weight};
+        public static final int[] ListPopupWindow = {android.R.attr.dropDownHorizontalOffset, android.R.attr.dropDownVerticalOffset};
+        public static final int[] MaterialAlertDialog = {R.attr.backgroundInsetBottom, R.attr.backgroundInsetEnd, R.attr.backgroundInsetStart, R.attr.backgroundInsetTop};
+        public static final int[] MaterialAlertDialogTheme = {R.attr.materialAlertDialogBodyTextStyle, R.attr.materialAlertDialogTheme, R.attr.materialAlertDialogTitleIconStyle, R.attr.materialAlertDialogTitlePanelStyle, R.attr.materialAlertDialogTitleTextStyle};
+        public static final int[] MaterialAutoCompleteTextView = {android.R.attr.inputType};
+        public static final int[] MaterialButton = {android.R.attr.background, android.R.attr.insetLeft, android.R.attr.insetRight, android.R.attr.insetTop, android.R.attr.insetBottom, android.R.attr.checkable, R.attr.backgroundTint, R.attr.backgroundTintMode, R.attr.cornerRadius, R.attr.elevation, R.attr.icon, R.attr.iconGravity, R.attr.iconPadding, R.attr.iconSize, R.attr.iconTint, R.attr.iconTintMode, R.attr.rippleColor, R.attr.shapeAppearance, R.attr.shapeAppearanceOverlay, R.attr.strokeColor, R.attr.strokeWidth};
+        public static final int[] MaterialButtonToggleGroup = {R.attr.checkedButton, R.attr.selectionRequired, R.attr.singleSelection};
+        public static final int[] MaterialCalendar = {android.R.attr.windowFullscreen, R.attr.dayInvalidStyle, R.attr.daySelectedStyle, R.attr.dayStyle, R.attr.dayTodayStyle, R.attr.rangeFillColor, R.attr.yearSelectedStyle, R.attr.yearStyle, R.attr.yearTodayStyle};
+        public static final int[] MaterialCalendarItem = {android.R.attr.insetLeft, android.R.attr.insetRight, android.R.attr.insetTop, android.R.attr.insetBottom, R.attr.itemFillColor, R.attr.itemShapeAppearance, R.attr.itemShapeAppearanceOverlay, R.attr.itemStrokeColor, R.attr.itemStrokeWidth, R.attr.itemTextColor};
+        public static final int[] MaterialCardView = {android.R.attr.checkable, R.attr.cardForegroundColor, R.attr.checkedIcon, R.attr.checkedIconTint, R.attr.rippleColor, R.attr.shapeAppearance, R.attr.shapeAppearanceOverlay, R.attr.state_dragged, R.attr.strokeColor, R.attr.strokeWidth};
+        public static final int[] MaterialCheckBox = {R.attr.buttonTint, R.attr.useMaterialThemeColors};
+        public static final int[] MaterialRadioButton = {R.attr.buttonTint, R.attr.useMaterialThemeColors};
+        public static final int[] MaterialShape = {R.attr.shapeAppearance, R.attr.shapeAppearanceOverlay};
+        public static final int[] MaterialTextAppearance = {android.R.attr.lineHeight, R.attr.lineHeight};
+        public static final int[] MaterialTextView = {android.R.attr.textAppearance, android.R.attr.lineHeight, R.attr.lineHeight};
+        public static final int[] MenuGroup = {android.R.attr.enabled, android.R.attr.id, android.R.attr.visible, android.R.attr.menuCategory, android.R.attr.orderInCategory, android.R.attr.checkableBehavior};
+        public static final int[] MenuItem = {android.R.attr.icon, android.R.attr.enabled, android.R.attr.id, android.R.attr.checked, android.R.attr.visible, android.R.attr.menuCategory, android.R.attr.orderInCategory, android.R.attr.title, android.R.attr.titleCondensed, android.R.attr.alphabeticShortcut, android.R.attr.numericShortcut, android.R.attr.checkable, android.R.attr.onClick, R.attr.actionLayout, R.attr.actionProviderClass, R.attr.actionViewClass, R.attr.alphabeticModifiers, R.attr.contentDescription, R.attr.iconTint, R.attr.iconTintMode, R.attr.numericModifiers, R.attr.showAsAction, R.attr.tooltipText};
+        public static final int[] MenuView = {android.R.attr.windowAnimationStyle, android.R.attr.itemTextAppearance, android.R.attr.horizontalDivider, android.R.attr.verticalDivider, android.R.attr.headerBackground, android.R.attr.itemBackground, android.R.attr.itemIconDisabledAlpha, R.attr.preserveIconSpacing, R.attr.subMenuArrow};
+        public static final int[] NavigationView = {android.R.attr.background, android.R.attr.fitsSystemWindows, android.R.attr.maxWidth, R.attr.elevation, R.attr.headerLayout, R.attr.itemBackground, R.attr.itemHorizontalPadding, R.attr.itemIconPadding, R.attr.itemIconSize, R.attr.itemIconTint, R.attr.itemMaxLines, R.attr.itemShapeAppearance, R.attr.itemShapeAppearanceOverlay, R.attr.itemShapeFillColor, R.attr.itemShapeInsetBottom, R.attr.itemShapeInsetEnd, R.attr.itemShapeInsetStart, R.attr.itemShapeInsetTop, R.attr.itemTextAppearance, R.attr.itemTextColor, R.attr.menu};
+        public static final int[] PopupWindow = {android.R.attr.popupBackground, android.R.attr.popupAnimationStyle, R.attr.overlapAnchor};
+        public static final int[] PopupWindowBackgroundState = {R.attr.state_above_anchor};
+        public static final int[] RangeSlider = {R.attr.values};
+        public static final int[] RecycleListView = {R.attr.paddingBottomNoButtons, R.attr.paddingTopNoTitle};
+        public static final int[] RecyclerView = {android.R.attr.orientation, android.R.attr.clipToPadding, android.R.attr.descendantFocusability, R.attr.fastScrollEnabled, R.attr.fastScrollHorizontalThumbDrawable, R.attr.fastScrollHorizontalTrackDrawable, R.attr.fastScrollVerticalThumbDrawable, R.attr.fastScrollVerticalTrackDrawable, R.attr.layoutManager, R.attr.reverseLayout, R.attr.spanCount, R.attr.stackFromEnd};
+        public static final int[] ScrimInsetsFrameLayout = {R.attr.insetForeground};
+        public static final int[] ScrollingViewBehavior_Layout = {R.attr.behavior_overlapTop};
+        public static final int[] SearchView = {android.R.attr.focusable, android.R.attr.maxWidth, android.R.attr.inputType, android.R.attr.imeOptions, R.attr.closeIcon, R.attr.commitIcon, R.attr.defaultQueryHint, R.attr.goIcon, R.attr.iconifiedByDefault, R.attr.layout, R.attr.queryBackground, R.attr.queryHint, R.attr.searchHintIcon, R.attr.searchIcon, R.attr.submitBackground, R.attr.suggestionRowLayout, R.attr.voiceIcon};
+        public static final int[] ShapeAppearance = {R.attr.cornerFamily, R.attr.cornerFamilyBottomLeft, R.attr.cornerFamilyBottomRight, R.attr.cornerFamilyTopLeft, R.attr.cornerFamilyTopRight, R.attr.cornerSize, R.attr.cornerSizeBottomLeft, R.attr.cornerSizeBottomRight, R.attr.cornerSizeTopLeft, R.attr.cornerSizeTopRight};
+        public static final int[] ShapeableImageView = {R.attr.shapeAppearance, R.attr.shapeAppearanceOverlay, R.attr.strokeColor, R.attr.strokeWidth};
+        public static final int[] Slider = {android.R.attr.enabled, android.R.attr.value, android.R.attr.stepSize, android.R.attr.valueFrom, android.R.attr.valueTo, R.attr.haloColor, R.attr.haloRadius, R.attr.labelBehavior, R.attr.labelStyle, R.attr.thumbColor, R.attr.thumbElevation, R.attr.thumbRadius, R.attr.tickColor, R.attr.tickColorActive, R.attr.tickColorInactive, R.attr.trackColor, R.attr.trackColorActive, R.attr.trackColorInactive, R.attr.trackHeight};
+        public static final int[] Snackbar = {R.attr.snackbarButtonStyle, R.attr.snackbarStyle, R.attr.snackbarTextViewStyle};
+        public static final int[] SnackbarLayout = {android.R.attr.maxWidth, R.attr.actionTextColorAlpha, R.attr.animationMode, R.attr.backgroundOverlayColorAlpha, R.attr.backgroundTint, R.attr.backgroundTintMode, R.attr.elevation, R.attr.maxActionInlineWidth};
+        public static final int[] Spinner = {android.R.attr.entries, android.R.attr.popupBackground, android.R.attr.prompt, android.R.attr.dropDownWidth, R.attr.popupTheme};
+        public static final int[] StateListDrawable = {android.R.attr.dither, android.R.attr.visible, android.R.attr.variablePadding, android.R.attr.constantSize, android.R.attr.enterFadeDuration, android.R.attr.exitFadeDuration};
+        public static final int[] StateListDrawableItem = {android.R.attr.drawable};
+        public static final int[] SwitchCompat = {android.R.attr.textOn, android.R.attr.textOff, android.R.attr.thumb, R.attr.showText, R.attr.splitTrack, R.attr.switchMinWidth, R.attr.switchPadding, R.attr.switchTextAppearance, R.attr.thumbTextPadding, R.attr.thumbTint, R.attr.thumbTintMode, R.attr.track, R.attr.trackTint, R.attr.trackTintMode};
+        public static final int[] SwitchMaterial = {R.attr.useMaterialThemeColors};
+        public static final int[] TabItem = {android.R.attr.icon, android.R.attr.layout, android.R.attr.text};
+        public static final int[] TabLayout = {R.attr.tabBackground, R.attr.tabContentStart, R.attr.tabGravity, R.attr.tabIconTint, R.attr.tabIconTintMode, R.attr.tabIndicator, R.attr.tabIndicatorAnimationDuration, R.attr.tabIndicatorColor, R.attr.tabIndicatorFullWidth, R.attr.tabIndicatorGravity, R.attr.tabIndicatorHeight, R.attr.tabInlineLabel, R.attr.tabMaxWidth, R.attr.tabMinWidth, R.attr.tabMode, R.attr.tabPadding, R.attr.tabPaddingBottom, R.attr.tabPaddingEnd, R.attr.tabPaddingStart, R.attr.tabPaddingTop, R.attr.tabRippleColor, R.attr.tabSelectedTextColor, R.attr.tabTextAppearance, R.attr.tabTextColor, R.attr.tabUnboundedRipple};
+        public static final int[] TextAppearance = {android.R.attr.textSize, android.R.attr.typeface, android.R.attr.textStyle, android.R.attr.textColor, android.R.attr.textColorHint, android.R.attr.textColorLink, android.R.attr.shadowColor, android.R.attr.shadowDx, android.R.attr.shadowDy, android.R.attr.shadowRadius, android.R.attr.fontFamily, android.R.attr.textFontWeight, R.attr.fontFamily, R.attr.fontVariationSettings, R.attr.textAllCaps, R.attr.textLocale};
+        public static final int[] TextInputEditText = {R.attr.textInputLayoutFocusedRectEnabled};
+        public static final int[] TextInputLayout = {android.R.attr.enabled, android.R.attr.textColorHint, android.R.attr.hint, R.attr.boxBackgroundColor, R.attr.boxBackgroundMode, R.attr.boxCollapsedPaddingTop, R.attr.boxCornerRadiusBottomEnd, R.attr.boxCornerRadiusBottomStart, R.attr.boxCornerRadiusTopEnd, R.attr.boxCornerRadiusTopStart, R.attr.boxStrokeColor, R.attr.boxStrokeErrorColor, R.attr.boxStrokeWidth, R.attr.boxStrokeWidthFocused, R.attr.counterEnabled, R.attr.counterMaxLength, R.attr.counterOverflowTextAppearance, R.attr.counterOverflowTextColor, R.attr.counterTextAppearance, R.attr.counterTextColor, R.attr.endIconCheckable, R.attr.endIconContentDescription, R.attr.endIconDrawable, R.attr.endIconMode, R.attr.endIconTint, R.attr.endIconTintMode, R.attr.errorContentDescription, R.attr.errorEnabled, R.attr.errorIconDrawable, R.attr.errorIconTint, R.attr.errorIconTintMode, R.attr.errorTextAppearance, R.attr.errorTextColor, R.attr.helperText, R.attr.helperTextEnabled, R.attr.helperTextTextAppearance, R.attr.helperTextTextColor, R.attr.hintAnimationEnabled, R.attr.hintEnabled, R.attr.hintTextAppearance, R.attr.hintTextColor, R.attr.passwordToggleContentDescription, R.attr.passwordToggleDrawable, R.attr.passwordToggleEnabled, R.attr.passwordToggleTint, R.attr.passwordToggleTintMode, R.attr.placeholderText, R.attr.placeholderTextAppearance, R.attr.placeholderTextColor, R.attr.prefixText, R.attr.prefixTextAppearance, R.attr.prefixTextColor, R.attr.shapeAppearance, R.attr.shapeAppearanceOverlay, R.attr.startIconCheckable, R.attr.startIconContentDescription, R.attr.startIconDrawable, R.attr.startIconTint, R.attr.startIconTintMode, R.attr.suffixText, R.attr.suffixTextAppearance, R.attr.suffixTextColor};
+        public static final int[] ThemeEnforcement = {android.R.attr.textAppearance, R.attr.enforceMaterialTheme, R.attr.enforceTextAppearance};
+        public static final int[] Toolbar = {android.R.attr.gravity, android.R.attr.minHeight, R.attr.buttonGravity, R.attr.collapseContentDescription, R.attr.collapseIcon, R.attr.contentInsetEnd, R.attr.contentInsetEndWithActions, R.attr.contentInsetLeft, R.attr.contentInsetRight, R.attr.contentInsetStart, R.attr.contentInsetStartWithNavigation, R.attr.logo, R.attr.logoDescription, R.attr.maxButtonHeight, R.attr.menu, R.attr.navigationContentDescription, R.attr.navigationIcon, R.attr.popupTheme, R.attr.subtitle, R.attr.subtitleTextAppearance, R.attr.subtitleTextColor, R.attr.title, R.attr.titleMargin, R.attr.titleMarginBottom, R.attr.titleMarginEnd, R.attr.titleMarginStart, R.attr.titleMarginTop, R.attr.titleMargins, R.attr.titleTextAppearance, R.attr.titleTextColor};
+        public static final int[] Tooltip = {android.R.attr.textAppearance, android.R.attr.padding, android.R.attr.layout_margin, android.R.attr.minWidth, android.R.attr.minHeight, android.R.attr.text, R.attr.backgroundTint};
+        public static final int[] View = {android.R.attr.theme, android.R.attr.focusable, R.attr.paddingEnd, R.attr.paddingStart, R.attr.theme};
+        public static final int[] ViewBackgroundHelper = {android.R.attr.background, R.attr.backgroundTint, R.attr.backgroundTintMode};
+        public static final int[] ViewPager2 = {android.R.attr.orientation};
+        public static final int[] ViewStubCompat = {android.R.attr.id, android.R.attr.layout, android.R.attr.inflatedId};
+
+        private styleable() {
+        }
+    }
+
+    public static final class xml {
+        public static final int network_security_config = 0x7f120001;
+        public static final int standalone_badge = 0x7f120002;
+        public static final int standalone_badge_gravity_bottom_end = 0x7f120003;
+        public static final int standalone_badge_gravity_bottom_start = 0x7f120004;
+        public static final int standalone_badge_gravity_top_start = 0x7f120005;
+        public static final int standalone_badge_offset = 0x7f120006;
+
+        /* JADX INFO: Added by JADX */
+        public static final int bt_widgetcofig = 0x7f120000;
+
+        private xml() {
+        }
+    }
+
+    private R() {
+    }
+}

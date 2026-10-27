@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="abc_config_activityDefaultDur">220</integer>
+    <integer name="abc_config_activityShortDur">150</integer>
+    <integer name="activity_main_enable">1</integer>
+    <integer name="activity_video_enable">1</integer>
+    <integer name="boot_start">0</integer>
+    <integer name="cancel_button_image_alpha">127</integer>
+    <integer name="config_tooltipAnimTime">150</integer>
+    <integer name="force_oversea">1</integer>
+    <integer name="gif_wallpaper_enable">0</integer>
+    <integer name="past_folder_columns">4</integer>
+    <integer name="share_item_text_max_line">2</integer>
+    <integer name="share_target_columns">4</integer>
+    <integer name="status_bar_notification_info_maxnum">999</integer>
+    <integer name="support_event_upload">0</integer>
+    <integer name="support_play_other_screen">0</integer>
+    <integer name="support_share_more_screen">0</integer>
+    <integer name="support_share_more_screen_send">0</integer>
+    <integer name="support_share_qr_code">0</integer>
+    <integer name="video_wallpaper_enable">0</integer>
+    <integer name="water_mark_def_color_index">5</integer>
+</resources>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="billing_cycle_days_left">
+        <item quantity="one">Liko %d diena</item>
+        <item quantity="few">Liko %d dienos</item>
+        <item quantity="many">Liko %d dienos</item>
+        <item quantity="other">Liko %d dienų</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_letters">
+        <item quantity="one">Turi būti bent %d raidė</item>
+        <item quantity="few">Turi būti bent %d raidės</item>
+        <item quantity="many">Turi būti bent %d raidės</item>
+        <item quantity="other">Turi būti bent %d raidžių</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_lowercase">
+        <item quantity="one">Turi būti bent %d mažoji raidė</item>
+        <item quantity="few">Turi būti bent %d mažosios raidės</item>
+        <item quantity="many">Turi būti bent %d mažosios raidės</item>
+        <item quantity="other">Turi būti bent %d mažųjų raidžių</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_nonletter">
+        <item quantity="one">Turi būti bent %d neraidinis simbolis</item>
+        <item quantity="few">Turi būti bent %d neraidiniai simboliai</item>
+        <item quantity="many">Turi būti bent %d neraidinio simbolio</item>
+        <item quantity="other">Turi būti bent %d neraidinių simbolių</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_numeric">
+        <item quantity="one">Turi būti bent %d skaitmuo</item>
+        <item quantity="few">Turi būti bent %d skaitmenys</item>
+        <item quantity="many">Turi būti bent %d skaitmens</item>
+        <item quantity="other">Turi būti bent %d skaitmenų</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_symbols">
+        <item quantity="one">Turi būti bent %d specialusis simbolis</item>
+        <item quantity="few">Turi būti bent %d specialieji simboliai</item>
+        <item quantity="many">Turi būti bent %d specialiojo simbolio</item>
+        <item quantity="other">Turi būti bent %d specialiųjų simbolių</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_uppercase">
+        <item quantity="one">Turi būti bent %d didžioji raidė</item>
+        <item quantity="few">Turi būti bent %d didžiosios raidės</item>
+        <item quantity="many">Turi būti bent %d didžiosios raidės</item>
+        <item quantity="other">Turi būti bent %d didžiųjų raidžių</item>
+    </plurals>
+    <plurals name="mobile_network_summary_count">
+        <item quantity="one">%1$d SIM kortelė</item>
+        <item quantity="few">%1$d SIM kortelės</item>
+        <item quantity="many">%1$d SIM kortelės</item>
+        <item quantity="other">%1$d SIM kortelių</item>
+    </plurals>
+    <plurals name="runtime_permissions_additional_count">
+        <item quantity="one">%d papildomas leidimas</item>
+        <item quantity="few">%d papildomi leidimai</item>
+        <item quantity="many">%d papildomo leidimo</item>
+        <item quantity="other">%d papildomų leidimų</item>
+    </plurals>
+    <plurals name="show_dev_countdown">
+        <item quantity="one">Liko atlikti %1$d veiksmą ir būsite kūrėjas.</item>
+        <item quantity="few">Liko atlikti %1$d veiksmus ir būsite kūrėjas.</item>
+        <item quantity="many">Liko atlikti %1$d veiksmo ir būsite kūrėjas.</item>
+        <item quantity="other">Liko atlikti %1$d veiksmų ir būsite kūrėjas.</item>
+    </plurals>
+    <plurals name="user_limit_reached_message">
+        <item quantity="one">Galite sukurti iki %d naudotojo.</item>
+        <item quantity="few">Galite sukurti iki %d naudotojų.</item>
+        <item quantity="many">Galite sukurti iki %d naudotojo.</item>
+        <item quantity="other">Galite sukurti iki %d naudotojų.</item>
+    </plurals>
+    <plurals name="wifi_tether_connected_summary">
+        <item quantity="one">Prijungtas %1$d įrenginys</item>
+        <item quantity="few">Prijungti %1$d įrenginiai</item>
+        <item quantity="many">Prijungta %1$d įrenginio</item>
+        <item quantity="other">Prijungta %1$d įrenginių</item>
+    </plurals>
+</resources>

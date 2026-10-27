@@ -1,0 +1,6 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/hardware/soundtrigger/SoundTrigger$KeyphraseRecognitionExtra;->id:I,frameworks/base/core/java/android/hardware/soundtrigger/SoundTrigger.java,1552,9,1552,29,
+Landroid/hardware/soundtrigger/SoundTrigger$KeyphraseRecognitionExtra;->recognitionModes:I,frameworks/base/core/java/android/hardware/soundtrigger/SoundTrigger.java,1556,9,1556,29,
+Landroid/hardware/soundtrigger/SoundTrigger$KeyphraseRecognitionExtra;->coarseConfidenceLevel:I,frameworks/base/core/java/android/hardware/soundtrigger/SoundTrigger.java,1561,9,1561,29,
+Landroid/hardware/soundtrigger/SoundTrigger$KeyphraseRecognitionExtra;->confidenceLevels:[Landroid/hardware/soundtrigger/SoundTrigger$ConfidenceLevel;,frameworks/base/core/java/android/hardware/soundtrigger/SoundTrigger.java,1566,9,1566,29,
+Landroid/hardware/soundtrigger/SoundTrigger$KeyphraseRecognitionExtra;-><init>(III[Landroid/hardware/soundtrigger/SoundTrigger$ConfidenceLevel;)V,frameworks/base/core/java/android/hardware/soundtrigger/SoundTrigger.java,1570,9,1570,29,

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" xmlns:settings="http://schemas.android.com/apk/res-auto"
+    android:title="@string/bluetooth_settings_title"
+    android:key="@string/psk_bluetooth_settings">
+    <PreferenceCategory
+        android:title="@string/bluetooth_paired_devices"
+        android:key="@string/pk_bluetooth_paired_devices"
+        settings:controller="com.android.car.settings.bluetooth.BluetoothBondedDevicesPreferenceController"/>
+    <Preference
+        android:icon="@drawable/ic_add"
+        android:title="@string/bluetooth_pair_new_device"
+        android:key="@string/pk_bluetooth_pair_new_device"
+        android:fragment="com.android.car.settings.bluetooth.BluetoothPairingSelectionFragment"
+        settings:controller="com.android.car.settings.bluetooth.PairNewDevicePreferenceController"/>
+</PreferenceScreen>

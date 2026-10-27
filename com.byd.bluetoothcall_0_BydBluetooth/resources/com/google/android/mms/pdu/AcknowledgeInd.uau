@@ -1,0 +1,5 @@
+signature,file,startline,startcol,endline,endcol,properties
+Lcom/google/android/mms/pdu/AcknowledgeInd;-><init>(I[B)V,frameworks/base/telephony/common/com/google/android/mms/pdu/AcknowledgeInd.java,36,5,36,25,
+Lcom/google/android/mms/pdu/AcknowledgeInd;-><init>(Lcom/google/android/mms/pdu/PduHeaders;)V,frameworks/base/telephony/common/com/google/android/mms/pdu/AcknowledgeInd.java,51,5,51,25,
+Lcom/google/android/mms/pdu/AcknowledgeInd;->setReportAllowed(I)V,frameworks/base/telephony/common/com/google/android/mms/pdu/AcknowledgeInd.java,71,5,71,25,
+Lcom/google/android/mms/pdu/AcknowledgeInd;->setTransactionId([B)V,frameworks/base/telephony/common/com/google/android/mms/pdu/AcknowledgeInd.java,91,5,91,25,

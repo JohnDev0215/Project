@@ -1,0 +1,11 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/widget/Switch;->mThumbDrawable:Landroid/graphics/drawable/Drawable;,frameworks/base/core/java/android/widget/Switch.java,98,5,98,25,
+Landroid/widget/Switch;->mTrackDrawable:Landroid/graphics/drawable/Drawable;,frameworks/base/core/java/android/widget/Switch.java,105,5,105,25,
+Landroid/widget/Switch;->mSwitchMinWidth:I,frameworks/base/core/java/android/widget/Switch.java,113,5,113,25,
+Landroid/widget/Switch;->mSwitchWidth:I,frameworks/base/core/java/android/widget/Switch.java,135,5,135,25,
+Landroid/widget/Switch;->mSwitchHeight:I,frameworks/base/core/java/android/widget/Switch.java,142,5,142,25,
+Landroid/widget/Switch;->mThumbWidth:I,frameworks/base/core/java/android/widget/Switch.java,149,5,149,25,
+Landroid/widget/Switch;->mOnLayout:Landroid/text/Layout;,frameworks/base/core/java/android/widget/Switch.java,166,5,166,25,
+Landroid/widget/Switch;->mOffLayout:Landroid/text/Layout;,frameworks/base/core/java/android/widget/Switch.java,168,5,168,25,
+Landroid/widget/Switch;->cancelPositionAnimator()V,frameworks/base/core/java/android/widget/Switch.java,1145,5,1145,25,
+Landroid/widget/Switch;->setThumbPosition(F)V,frameworks/base/core/java/android/widget/Switch.java,1161,5,1161,25,

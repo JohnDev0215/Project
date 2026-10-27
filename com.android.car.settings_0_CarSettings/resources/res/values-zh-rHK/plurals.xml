@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="billing_cycle_days_left">
+        <item quantity="one">尚餘 %d 天</item>
+        <item quantity="other">尚餘 %d 天</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_letters">
+        <item quantity="one">必需包含至少 1 個字母</item>
+        <item quantity="other">必需包含至少 %d 個字母</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_lowercase">
+        <item quantity="one">必需包含至少 1 個小寫字母</item>
+        <item quantity="other">必需包含至少 %d 個小寫字母</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_nonletter">
+        <item quantity="one">必需包含至少 1 個非字母字元</item>
+        <item quantity="other">必需包含至少 %d 個非字母字元</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_numeric">
+        <item quantity="one">必需包含至少 1 個數字</item>
+        <item quantity="other">必需包含至少 %d 個數字</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_symbols">
+        <item quantity="one">必需包含至少 1 個特別符號</item>
+        <item quantity="other">必需包含至少 %d 個特別符號</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_uppercase">
+        <item quantity="one">必需包含至少 1 個大寫字母</item>
+        <item quantity="other">必需包含至少 %d 個大寫字母</item>
+    </plurals>
+    <plurals name="mobile_network_summary_count">
+        <item quantity="one">%1$d 張 SIM 卡</item>
+        <item quantity="other">%1$d 張 SIM 卡</item>
+    </plurals>
+    <plurals name="runtime_permissions_additional_count">
+        <item quantity="one">%d 個其他權限</item>
+        <item quantity="other">%d 個其他權限</item>
+    </plurals>
+    <plurals name="show_dev_countdown">
+        <item quantity="one">尚餘 %1$d 個步驟，您就可以成為開發人員。</item>
+        <item quantity="other">尚餘 %1$d 個步驟，您就可以成為開發人員。</item>
+    </plurals>
+    <plurals name="user_limit_reached_message">
+        <item quantity="one">只可建立一位使用者。</item>
+        <item quantity="other">您可以建立最多 %d 位使用者。</item>
+    </plurals>
+    <plurals name="wifi_tether_connected_summary">
+        <item quantity="one">%1$d 部已連線的裝置</item>
+        <item quantity="other">%1$d 部已連線的裝置</item>
+    </plurals>
+</resources>

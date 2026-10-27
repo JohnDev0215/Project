@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_472">
+    <TextView
+        android:layout_marginTop="@dimen/dp_25"
+        android:text="@string/settings_screen_preferences"
+        style="@style/category_title_rtl"/>
+    <LinearLayout style="@style/category_item_rtl">
+        <byd.ui.BydSwitch
+            android:id="@+id/auto_cap_switch"
+            style="@style/switch_style"/>
+        <TextView
+            android:text="@string/auto_cap_summary"
+            style="@style/item_name_rtl"/>
+    </LinearLayout>
+    <TextView style="@style/category_divider"/>
+    <LinearLayout style="@style/category_item_rtl">
+        <byd.ui.BydSwitch
+            android:id="@+id/use_double_space_switch"
+            style="@style/switch_style"/>
+        <TextView
+            android:text="@string/use_double_space_period"
+            style="@style/item_name_rtl"/>
+    </LinearLayout>
+    <TextView style="@style/category_divider"/>
+    <LinearLayout style="@style/category_item_rtl">
+        <byd.ui.BydSwitch
+            android:id="@+id/sound_on_keypress_switch"
+            style="@style/switch_style"/>
+        <TextView
+            android:text="@string/sound_on_keypress"
+            style="@style/item_name_rtl"/>
+    </LinearLayout>
+    <TextView style="@style/category_divider"/>
+    <TextView
+        android:text="@string/settings_screen_correction"
+        style="@style/category_title_rtl"/>
+    <LinearLayout style="@style/category_item_rtl">
+        <byd.ui.BydSwitch
+            android:id="@+id/block_potentially_offensive_switch"
+            style="@style/switch_style"/>
+        <TextView
+            android:text="@string/prefs_block_potentially_offensive_title"
+            style="@style/item_name_rtl"/>
+    </LinearLayout>
+    <TextView style="@style/category_divider"/>
+    <LinearLayout style="@style/category_item_rtl">
+        <byd.ui.BydSwitch
+            android:id="@+id/auto_correction_switch"
+            style="@style/switch_style"/>
+        <TextView
+            android:text="@string/auto_correction_summary"
+            style="@style/item_name_rtl"/>
+    </LinearLayout>
+    <TextView style="@style/category_divider"/>
+    <LinearLayout style="@style/category_item_rtl">
+        <byd.ui.BydSwitch
+            android:id="@+id/show_suggestions_switch"
+            style="@style/switch_style"/>
+        <TextView
+            android:text="@string/prefs_show_suggestions_summary"
+            style="@style/item_name_rtl"/>
+    </LinearLayout>
+    <TextView style="@style/category_divider"/>
+    <LinearLayout style="@style/category_item_rtl">
+        <byd.ui.BydSwitch
+            android:id="@+id/bigram_prediction_switch"
+            style="@style/switch_style"/>
+        <TextView
+            android:text="@string/bigram_prediction_summary"
+            style="@style/item_name_rtl"/>
+    </LinearLayout>
+    <TextView style="@style/category_divider"/>
+    <TextView
+        android:text="@string/settings_screen_advanced"
+        style="@style/category_title_rtl"/>
+    <RelativeLayout
+        android:id="@+id/delay_category_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_74">
+        <TextView
+            android:layout_height="@dimen/dp_29"
+            android:layout_marginTop="@dimen/dp_7"
+            android:text="@string/prefs_key_longpress_timeout_settings"
+            android:layout_marginStart="@dimen/dp_48"
+            style="@style/item_name"/>
+        <TextView
+            android:textSize="@dimen/sp_16"
+            android:textColor="@color/text_color_delay_time"
+            android:gravity="start|center_vertical"
+            android:id="@+id/delay_time_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_24"
+            android:layout_marginTop="@dimen/dp_38"
+            android:text="@string/prefs_key_longpress_timeout_settings"
+            android:layout_marginStart="@dimen/dp_48"/>
+        <ImageView
+            android:layout_width="@dimen/dp_48"
+            android:layout_height="@dimen/dp_48"
+            android:src="@drawable/icon_public_right_arrow_48"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/dp_32"
+            android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+    <TextView style="@style/category_divider"/>
+</LinearLayout>

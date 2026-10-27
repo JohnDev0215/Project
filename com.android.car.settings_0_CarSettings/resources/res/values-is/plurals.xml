@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="billing_cycle_days_left">
+        <item quantity="one">%d dagur eftir</item>
+        <item quantity="other">%d dagar eftir</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_letters">
+        <item quantity="one">Verður að innihalda að minnsta kosti %d staf</item>
+        <item quantity="other">Verður að innihalda að minnsta kosti %d stafi</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_lowercase">
+        <item quantity="one">Verður að innihalda að minnsta kosti %d lágstaf</item>
+        <item quantity="other">Verður að innihalda að minnsta kosti %d lágstafi</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_nonletter">
+        <item quantity="one">Verður að innihalda að minnsta kosti %d staftákn sem ekki er bókstafur</item>
+        <item quantity="other">Verður að innihalda að minsta kosti %d staftákn sem ekki eru bókstafir</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_numeric">
+        <item quantity="one">Verður að innihalda að minnsta kosti %d tölustaf</item>
+        <item quantity="other">Verður að innihalda að minnsta kosti %d tölustafi</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_symbols">
+        <item quantity="one">Verður að innihalda að minnsta kosti %d sérstaf</item>
+        <item quantity="other">Verður að innihalda að minnsta kosti %d sérstafi</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_uppercase">
+        <item quantity="one">Verður að innihalda að minnsta kosti %d hástaf</item>
+        <item quantity="other">Verður að innihalda að minnsta kosti %d hástafi</item>
+    </plurals>
+    <plurals name="mobile_network_summary_count">
+        <item quantity="one">%1$d SIM-kort</item>
+        <item quantity="other">%1$d SIM-kort</item>
+    </plurals>
+    <plurals name="runtime_permissions_additional_count">
+        <item quantity="one">%d viðbótarheimild</item>
+        <item quantity="other">%d viðbótarheimildir</item>
+    </plurals>
+    <plurals name="show_dev_countdown">
+        <item quantity="one">Nú ertu %1$d skrefi frá því að vera þróunaraðili.</item>
+        <item quantity="other">Nú ertu %1$d skrefum frá því að vera þróunaraðili.</item>
+    </plurals>
+    <plurals name="user_limit_reached_message">
+        <item quantity="one">Þú getur búið til allt að %d notanda.</item>
+        <item quantity="other">Þú getur búið til allt að %d notendur.</item>
+    </plurals>
+    <plurals name="wifi_tether_connected_summary">
+        <item quantity="one">%1$d tæki tengt</item>
+        <item quantity="other">%1$d tæki tengd</item>
+    </plurals>
+</resources>

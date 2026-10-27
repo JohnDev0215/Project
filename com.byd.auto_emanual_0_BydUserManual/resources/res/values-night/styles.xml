@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.AppCompat.DayNight" parent="@style/Theme.AppCompat">
+    </style>
+    <style name="Theme.AppCompat.DayNight.DarkActionBar" parent="@style/Theme.AppCompat">
+    </style>
+    <style name="Theme.AppCompat.DayNight.Dialog" parent="@style/Theme.AppCompat.Dialog">
+    </style>
+    <style name="Theme.AppCompat.DayNight.Dialog.Alert" parent="@style/Theme.AppCompat.Dialog.Alert">
+    </style>
+    <style name="Theme.AppCompat.DayNight.Dialog.MinWidth" parent="@style/Theme.AppCompat.Dialog.MinWidth">
+    </style>
+    <style name="Theme.AppCompat.DayNight.DialogWhenLarge" parent="@style/Theme.AppCompat.DialogWhenLarge">
+    </style>
+    <style name="Theme.AppCompat.DayNight.NoActionBar" parent="@style/Theme.AppCompat.NoActionBar">
+    </style>
+    <style name="Theme.MaterialComponents.DayNight" parent="@style/Theme.MaterialComponents">
+    </style>
+    <style name="Theme.MaterialComponents.DayNight.BottomSheetDialog" parent="@style/Theme.MaterialComponents.BottomSheetDialog">
+    </style>
+    <style name="Theme.MaterialComponents.DayNight.Bridge" parent="@style/Theme.MaterialComponents.Bridge">
+    </style>
+    <style name="Theme.MaterialComponents.DayNight.DarkActionBar" parent="@style/Theme.MaterialComponents">
+    </style>
+    <style name="Theme.MaterialComponents.DayNight.DarkActionBar.Bridge" parent="@style/Theme.MaterialComponents.Bridge">
+    </style>
+    <style name="Theme.MaterialComponents.DayNight.Dialog" parent="@style/Theme.MaterialComponents.Dialog">
+    </style>
+    <style name="Theme.MaterialComponents.DayNight.Dialog.Alert" parent="@style/Theme.MaterialComponents.Dialog.Alert">
+    </style>
+    <style name="Theme.MaterialComponents.DayNight.Dialog.Alert.Bridge" parent="@style/Theme.MaterialComponents.Dialog.Alert.Bridge">
+    </style>
+    <style name="Theme.MaterialComponents.DayNight.Dialog.Bridge" parent="@style/Theme.MaterialComponents.Dialog.Bridge">
+    </style>
+    <style name="Theme.MaterialComponents.DayNight.Dialog.FixedSize" parent="@style/Theme.MaterialComponents.Dialog.FixedSize">
+    </style>
+    <style name="Theme.MaterialComponents.DayNight.Dialog.FixedSize.Bridge" parent="@style/Theme.MaterialComponents.Dialog.FixedSize.Bridge">
+    </style>
+    <style name="Theme.MaterialComponents.DayNight.Dialog.MinWidth" parent="@style/Theme.MaterialComponents.Dialog.MinWidth">
+    </style>
+    <style name="Theme.MaterialComponents.DayNight.Dialog.MinWidth.Bridge" parent="@style/Theme.MaterialComponents.Dialog.MinWidth.Bridge">
+    </style>
+    <style name="Theme.MaterialComponents.DayNight.DialogWhenLarge" parent="@style/Theme.MaterialComponents.DialogWhenLarge">
+    </style>
+    <style name="Theme.MaterialComponents.DayNight.NoActionBar" parent="@style/Theme.MaterialComponents.NoActionBar">
+    </style>
+    <style name="Theme.MaterialComponents.DayNight.NoActionBar.Bridge" parent="@style/Theme.MaterialComponents.NoActionBar.Bridge">
+    </style>
+    <style name="Theme.UserManual.6125" parent="@style/Theme.MaterialComponents.DayNight.DarkActionBar">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Translucent</item>
+        <item name="android:overScrollMode">2</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+        <item name="android:statusBarColor">@color/transparent</item>
+        <item name="android:navigationBarColor">@color/transparent</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <item name="colorPrimary">@color/purple_200</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_200</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="Theme.UserManual.Dynasty" parent="@style/Theme.MaterialComponents.DayNight.DarkActionBar">
+        <item name="android:windowAnimationStyle">@style/windowAnimation</item>
+        <item name="android:overScrollMode">2</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+        <item name="android:statusBarColor">@color/transparent</item>
+        <item name="android:navigationBarColor">@color/transparent</item>
+        <item name="background_horizontal">@drawable/background_horizontal_dynasty</item>
+        <item name="background_port">@drawable/background_port_dynasty</item>
+        <item name="black">#ff000000</item>
+        <item name="button_background_shape_radius">@dimen/dp_7_5</item>
+        <item name="button_cancel_background_shape_color">@color/dynasty_button_cancel_background_shape_color</item>
+        <item name="button_cancel_background_shape_color_pressed">@color/dynasty_button_cancel_background_shape_color_pressed</item>
+        <item name="button_cancel_text_color">@color/dynasty_button_cancel_text_color</item>
+        <item name="button_cancel_text_color_pressed">@color/dynasty_button_cancel_text_color_pressed</item>
+        <item name="button_confirm_background_color_pressed_end">@color/dynasty_button_confirm_background_color_pressed_end</item>
+        <item name="button_confirm_background_color_pressed_start">@color/dynasty_button_confirm_background_color_pressed_start</item>
+        <item name="button_confirm_background_color_selected_end">@color/dynasty_button_confirm_background_color_selected_end</item>
+        <item name="button_confirm_background_color_selected_start">@color/dynasty_button_confirm_background_color_selected_start</item>
+        <item name="button_confirm_background_color_unselected_end">@color/dynasty_button_confirm_background_color_unselected_end</item>
+        <item name="button_confirm_background_color_unselected_start">@color/dynasty_button_confirm_background_color_unselected_start</item>
+        <item name="classify_footer_background_end_color">@color/dynasty_classify_footer_background_end_color</item>
+        <item name="classify_footer_background_start_color">@color/dynasty_classify_footer_background_start_color</item>
+        <item name="classify_item_background_color">@color/dynasty_classify_item_background_color</item>
+        <item name="classify_item_background_radius">@dimen/dp_6</item>
+        <item name="classify_line">@color/dynasty_classify_line</item>
+        <item name="classify_scrollbar_background_color">@color/dynasty_classify_scrollbar_background_color</item>
+        <item name="classify_scrollbar_color">@color/dynasty_classify_scrollbar_color</item>
+        <item name="classify_scrollbar_radius">@dimen/dp_2</item>
+        <item name="classify_title_text">@color/dynasty_classify_title_text</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <item name="colorPrimary">@color/purple_200</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_200</item>
+        <item name="color_background">#ffebf4fe</item>
+        <item name="color_primary">#ff00aceb</item>
+        <item name="color_remind">#ffffc300</item>
+        <item name="color_secondary">#9900aceb</item>
+        <item name="color_secondary_1">#ff24313f</item>
+        <item name="color_secondary_2">#ff365173</item>
+        <item name="color_secondary_3">#ff607fa3</item>
+        <item name="color_secondary_4">#ffd2dfe8</item>
+        <item name="color_secondary_5">#ff30353b</item>
+        <item name="color_secondary_6">#ff565d65</item>
+        <item name="color_secondary_7">#ff86909b</item>
+        <item name="color_secondary_8">#ff00c9a7</item>
+        <item name="color_transparent">#00000000</item>
+        <item name="color_warning">#ffec1d1d</item>
+        <item name="content_item_footer_text">@color/dynasty_content_item_footer_text</item>
+        <item name="content_item_header_background_end">@color/dynasty_content_item_header_background_end</item>
+        <item name="content_item_header_background_start">@color/dynasty_content_item_header_background_start</item>
+        <item name="content_item_header_text">@color/dynasty_content_item_header_text</item>
+        <item name="content_item_play_logo">@drawable/icon_recommend_content_item_play_logo</item>
+        <item name="controller_current_progress_text_color">@color/dynasty_controller_current_progress_text_color</item>
+        <item name="dialog_background_color">@color/dynasty_dialog_background_color</item>
+        <item name="dialog_background_color_end">@color/dynasty_dialog_background_color_end</item>
+        <item name="dialog_background_color_start">@color/dynasty_dialog_background_color_start</item>
+        <item name="dialog_button_background_color">@color/dynasty_dialog_button_background_color</item>
+        <item name="dialog_button_background_color_cancel">@color/dynasty_dialog_button_background_color_cancel</item>
+        <item name="dialog_button_text_color">@color/dynasty_dialog_button_text_color</item>
+        <item name="dialog_button_text_color_pressed">@color/dynasty_dialog_button_text_color_pressed</item>
+        <item name="dialog_button_text_color_radio_selected">@color/dynasty_dialog_button_text_color_radio_selected</item>
+        <item name="dialog_button_text_color_radio_unselected">@color/dynasty_dialog_button_text_color_radio_unselected</item>
+        <item name="dialog_corner_radius">@dimen/dp_9</item>
+        <item name="dialog_detail_text_color">@color/dynasty_dialog_detail_text_color</item>
+        <item name="dialog_line_color">@color/dynasty_dialog_line_color</item>
+        <item name="dialog_radio_background_color">@color/dynasty_dialog_radio_background_color</item>
+        <item name="dialog_radio_text_color">@color/dynasty_dialog_radio_text_color</item>
+        <item name="dialog_title_text_color">@color/dynasty_dialog_title_text_color</item>
+        <item name="fragment_bottom_shadow_color_end">@color/dynasty_fragment_bottom_shadow_color_end</item>
+        <item name="fragment_bottom_shadow_color_start">@color/dynasty_fragment_bottom_shadow_color_start</item>
+        <item name="icon_dialog_selected">@drawable/icon_dialog_selected_dynasty</item>
+        <item name="icon_dialog_unselected">@drawable/icon_dialog_unselected_dynasty</item>
+        <item name="icon_search">@drawable/icon_search_input_dynasty</item>
+        <item name="icon_search_history_delete">@drawable/icon_search_history_delete_dynasty</item>
+        <item name="icon_search_input_text_delete">@drawable/icon_search_input_text_delete_dynasty</item>
+        <item name="icon_search_result_back">@drawable/icon_search_result_back_dynasty</item>
+        <item name="icon_search_result_no">@drawable/icon_search_result_no_dynasty</item>
+        <item name="icon_settings">@drawable/icon_settings_dynasty</item>
+        <item name="icon_settings_item">@drawable/icon_settings_item_dynasty</item>
+        <item name="icon_video_pause">@drawable/icon_video_pause</item>
+        <item name="icon_video_pause_big">@drawable/icon_video_pause_big</item>
+        <item name="icon_video_sound_off">@drawable/icon_video_sound_off</item>
+        <item name="icon_video_sound_on">@drawable/icon_video_sound_on</item>
+        <item name="icon_video_start">@drawable/icon_video_start</item>
+        <item name="icon_video_start_big">@drawable/icon_video_start_big</item>
+        <item name="icon_video_zoom_in">@drawable/icon_video_zoom_in</item>
+        <item name="icon_video_zoom_out">@drawable/icon_video_zoom_out</item>
+        <item name="loading_54">@drawable/loading_54_dynasty</item>
+        <item name="manual_cover_background_color_end">@color/dynasty_manual_cover_background_color_end</item>
+        <item name="manual_cover_background_color_start">@color/dynasty_manual_cover_background_color_start</item>
+        <item name="media_html_enter_manual_end">@color/dynasty_media_html_enter_manual_end</item>
+        <item name="media_html_enter_manual_start">@color/dynasty_media_html_enter_manual_start</item>
+        <item name="media_html_enter_manual_text">@color/dynasty_media_html_enter_manual_text</item>
+        <item name="media_image_text_context_text_color">@color/dynasty_media_image_text_context_text_color</item>
+        <item name="media_image_text_title_text_color">@color/dynasty_media_image_text_title_text_color</item>
+        <item name="other_state_background">#f2ffffff</item>
+        <item name="over_scroll_edge_effect">#ccbfd1e4</item>
+        <item name="purple_200">#ffbb86fc</item>
+        <item name="purple_500">#ccbfd1e4</item>
+        <item name="purple_700">#ff3700b3</item>
+        <item name="recommend_all_title_color">@color/dynasty_recommend_all_title_color</item>
+        <item name="recommend_banner_scene_foreground_color">@color/dynasty_recommend_banner_scene_foreground_color</item>
+        <item name="recommend_banner_scene_title_color">@color/dynasty_recommend_banner_scene_title_color</item>
+        <item name="recommend_item_header_text">@color/recommend_item_header_text_dynasty</item>
+        <item name="recommend_title_sign_normal">@color/dynasty_recommend_title_sign_normal</item>
+        <item name="recommend_title_sign_selected">@color/dynasty_recommend_title_sign_selected</item>
+        <item name="search_history_item_background">@color/dynasty_search_history_item_background</item>
+        <item name="search_history_item_text_color">@color/dynasty_search_history_item_text_color</item>
+        <item name="search_history_item_text_height">@dimen/search_history_item_text_height</item>
+        <item name="search_history_item_text_radius">@dimen/dp_6</item>
+        <item name="search_input_background">@color/dynasty_search_input_background</item>
+        <item name="search_input_background_selected">@color/dynasty_search_input_background_selected</item>
+        <item name="search_input_background_stroke">@color/dynasty_search_input_background_stroke</item>
+        <item name="search_input_background_stroke_selected">@color/dynasty_search_input_background_stroke_selected</item>
+        <item name="search_input_hint_text_color">@color/dynasty_search_input_hint_text_color</item>
+        <item name="search_input_radius">@dimen/search_input_radius</item>
+        <item name="search_input_text_color">@color/dynasty_search_input_text_color</item>
+        <item name="search_input_text_cursor_color">@color/dynasty_search_input_text_cursor_color</item>
+        <item name="search_key_color_in_result">@color/dynasty_search_key_color_in_result</item>
+        <item name="search_result_background_center_color">@color/dynasty_search_result_background_center_color</item>
+        <item name="search_result_background_end_color">@color/dynasty_search_result_background_end_color</item>
+        <item name="search_result_background_start_color">@color/dynasty_search_result_background_start_color</item>
+        <item name="search_result_input_background">@drawable/search_input_background</item>
+        <item name="search_result_input_background_selected">@drawable/search_input_background_selected</item>
+        <item name="search_result_item_hint_text_color">@color/dynasty_search_result_item_hint_text_color</item>
+        <item name="search_result_item_text_color">@color/dynasty_search_result_item_text_color</item>
+        <item name="search_result_line_color">@color/dynasty_search_result_line_color</item>
+        <item name="search_result_no_icon_size_height">@dimen/dp_156</item>
+        <item name="search_result_no_icon_size_width">@dimen/dp_234</item>
+        <item name="search_result_no_text_color">@color/dynasty_search_result_no_text_color</item>
+        <item name="search_voice_icon_text_color">@color/dynasty_search_voice_icon_text_color</item>
+        <item name="search_voice_text_color">@color/dynasty_search_voice_text_color</item>
+        <item name="search_voice_text_size">@dimen/sp_12</item>
+        <item name="settings_copyright_text_color">@color/dynasty_settings_copyright_text_color</item>
+        <item name="settings_download_button_color_end">@color/dynasty_settings_download_button_color_end</item>
+        <item name="settings_download_button_color_start">@color/dynasty_settings_download_button_color_start</item>
+        <item name="settings_download_button_color_stroke">@color/dynasty_settings_download_button_color_stroke</item>
+        <item name="settings_download_button_text_color">@color/dynasty_settings_download_button_text_color</item>
+        <item name="settings_download_line_color">@color/dynasty_settings_download_line_color</item>
+        <item name="settings_download_text_color">@color/dynasty_settings_download_text_color</item>
+        <item name="settings_download_text_detail_color">@color/dynasty_settings_download_text_detail_color</item>
+        <item name="settings_item_background_color_end">@color/dynasty_settings_item_background_color_end</item>
+        <item name="settings_item_background_color_start">@color/dynasty_settings_item_background_color_start</item>
+        <item name="settings_item_text_color">@color/dynasty_settings_item_text_color</item>
+        <item name="settings_name_text_color">@color/dynasty_settings_name_text_color</item>
+        <item name="settings_version_text_color">@color/dynasty_settings_version_text_color</item>
+        <item name="start_all_item_number_background_color">@color/dynasty_start_all_item_number_background_color</item>
+        <item name="start_all_item_number_text_color">@color/dynasty_start_all_item_number_text_color</item>
+        <item name="start_all_item_title_text_color">@color/dynasty_start_all_item_title_text_color</item>
+        <item name="start_line_color">@color/dynasty_start_line_color</item>
+        <item name="state_image_size_height">@dimen/dp_156</item>
+        <item name="state_image_size_width">@dimen/dp_234</item>
+        <item name="state_loading_size">@dimen/state_loading_size</item>
+        <item name="state_net_error">@drawable/state_net_error_dynasty</item>
+        <item name="state_text">@color/dynasty_state_text</item>
+        <item name="tab_background_horizontal">@null</item>
+        <item name="tab_background_port">@null</item>
+        <item name="tab_edge_horizontal">@null</item>
+        <item name="tab_edge_horizontal_right">@null</item>
+        <item name="tab_edge_port">@null</item>
+        <item name="tab_item_text_selected">@color/dynasty_tab_item_text_selected</item>
+        <item name="tab_manual_normal">@drawable/tab_manual_normal_dynasty</item>
+        <item name="tab_manual_selected">@drawable/tab_manual_selected_dynasty</item>
+        <item name="tab_recommend_normal">@drawable/tab_recommend_normal_dynasty</item>
+        <item name="tab_recommend_selected">@drawable/tab_recommend_selected_dynasty</item>
+        <item name="tab_sanbao_normal">@drawable/tab_sanbao_normal_dynasty</item>
+        <item name="tab_sanbao_selected">@drawable/tab_sanbao_selected_dynasty</item>
+        <item name="tab_search_normal">@drawable/tab_search_normal_dynasty</item>
+        <item name="tab_search_selected">@drawable/tab_search_selected_dynasty</item>
+        <item name="tab_selected_horizontal">@drawable/tab_item_selected_background_horizontal_dynasty</item>
+        <item name="tab_selected_horizontal_right">@drawable/tab_item_selected_background_horizontal_right_dynasty</item>
+        <item name="tab_selected_port">@drawable/tab_item_selected_background_port_dynasty</item>
+        <item name="tab_settings_normal">@drawable/tab_settings_normal_dynasty</item>
+        <item name="tab_settings_selected">@drawable/tab_settings_selected_dynasty</item>
+        <item name="tab_start_normal">@drawable/tab_start_normal_dynasty</item>
+        <item name="tab_start_selected">@drawable/tab_start_selected_dynasty</item>
+        <item name="teal_200">#ff03dac5</item>
+        <item name="teal_700">#ff018786</item>
+        <item name="video_fast_text_color">@color/dynasty_video_fast_text_color</item>
+        <item name="video_header_footer_background_end_color">@color/dynasty_video_header_footer_background_end_color</item>
+        <item name="video_header_footer_background_start_color">@color/dynasty_video_header_footer_background_start_color</item>
+        <item name="video_icon_background">@color/dynasty_video_icon_background</item>
+        <item name="video_loading_background">@drawable/video_loading_background_dynasty</item>
+        <item name="video_seek_bar_background_color">@color/dynasty_video_seek_bar_background_color</item>
+        <item name="video_seek_bar_progress_color">@color/dynasty_video_seek_bar_progress_color</item>
+        <item name="video_seek_bar_secondary_progress_color">@color/dynasty_video_seek_bar_secondary_progress_color</item>
+        <item name="video_seek_bar_thumb">@drawable/seek_bar_thumb</item>
+        <item name="video_seek_bar_thumb_color">@color/dynasty_video_seek_bar_thumb_color</item>
+        <item name="video_title_text_color">@color/dynasty_video_title_text_color</item>
+        <item name="white">#ffffffff</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="ThemeOverlay.AppCompat.DayNight" parent="@style/ThemeOverlay.AppCompat.Dark">
+    </style>
+    <style name="ThemeOverlay.MaterialComponents.DayNight.BottomSheetDialog" parent="@style/ThemeOverlay.MaterialComponents.BottomSheetDialog">
+    </style>
+    <style name="Widget.MaterialComponents.ActionBar.PrimarySurface" parent="@style/Widget.MaterialComponents.ActionBar.Surface">
+    </style>
+    <style name="Widget.MaterialComponents.AppBarLayout.PrimarySurface" parent="@style/Widget.MaterialComponents.AppBarLayout.Surface">
+    </style>
+    <style name="Widget.MaterialComponents.BottomAppBar.PrimarySurface" parent="@style/Widget.MaterialComponents.BottomAppBar">
+    </style>
+    <style name="Widget.MaterialComponents.BottomNavigationView.PrimarySurface" parent="@style/Widget.MaterialComponents.BottomNavigationView">
+    </style>
+    <style name="Widget.MaterialComponents.TabLayout.PrimarySurface" parent="@style/Widget.MaterialComponents.TabLayout">
+    </style>
+    <style name="Widget.MaterialComponents.Toolbar.PrimarySurface" parent="@style/Widget.MaterialComponents.Toolbar.Surface">
+    </style>
+</resources>

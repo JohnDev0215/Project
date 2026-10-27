@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="ControlBar" parent="">
+        <item name="android:layout_width">@dimen/control_bar_width</item>
+        <item name="android:layout_height">-2</item>
+    </style>
+    <style name="MetadataContainerStyle" parent="">
+        <item name="android:layout_width">1024dp</item>
+        <item name="android:layout_height">-2</item>
+        <item name="android:layout_marginHorizontal">@dimen/fragment_metadata_margin_x</item>
+    </style>
+    <style name="SeekBarStyle" parent="">
+        <item name="android:layout_width">1056dp</item>
+        <item name="android:layout_height">@dimen/playback_seekbar_height</item>
+    </style>
+</resources>

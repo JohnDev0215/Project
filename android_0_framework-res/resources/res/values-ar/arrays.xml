@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="emailAddressTypes">
+        <item>المنزل</item>
+        <item>العمل</item>
+        <item>آخر</item>
+        <item>مخصص</item>
+    </array>
+    <array name="imProtocols">
+        <item>AIM</item>
+        <item>Windows Live</item>
+        <item>Yahoo</item>
+        <item>Skype</item>
+        <item>QQ</item>
+        <item>Google Talk</item>
+        <item>ICQ</item>
+        <item>Jabber</item>
+    </array>
+    <array name="organizationTypes">
+        <item>عمل</item>
+        <item>آخر</item>
+        <item>مخصص</item>
+    </array>
+    <array name="phoneTypes">
+        <item>المنزل</item>
+        <item>الجوّال</item>
+        <item>العمل</item>
+        <item>فاكس العمل</item>
+        <item>فاكس المنزل</item>
+        <item>جهاز نداء</item>
+        <item>غير ذلك</item>
+        <item>مخصص</item>
+    </array>
+    <array name="postalAddressTypes">
+        <item>المنزل</item>
+        <item>عمل</item>
+        <item>آخر</item>
+        <item>مخصص</item>
+    </array>
+    <array name="face_acquired_vendor">
+    </array>
+    <array name="face_error_vendor">
+    </array>
+    <array name="fingerprint_acquired_vendor">
+    </array>
+    <array name="fingerprint_error_vendor">
+    </array>
+    <array name="imAddressTypes">
+        <item>المنزل</item>
+        <item>عمل</item>
+        <item>آخر</item>
+        <item>مخصص</item>
+    </array>
+    <array name="network_switch_type_name">
+        <item>بيانات الجوّال</item>
+        <item>Wi-Fi</item>
+        <item>بلوتوث</item>
+        <item>إيثرنت</item>
+        <item>‏شبكة افتراضية خاصة (VPN)</item>
+    </array>
+    <array name="wfcOperatorErrorAlertMessages">
+        <item>‏لإجراء مكالمات وإرسال رسائل عبر Wi-Fi، اطلب من مفعِّل شبكة الجوّال أولاً إعداد هذه الخدمة، ثم فعِّل الاتصال عبر Wi-Fi مرة أخرى من خلال الإعدادات. (رمز الخطأ: %1$s)</item>
+    </array>
+    <array name="wfcOperatorErrorNotificationMessages">
+        <item>‏حدثت مشكلة أثناء تسجيل الاتصال عبر Wi‑Fi باستخدام مشغِّل شبكة الجوّال: %1$s</item>
+    </array>
+</resources>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="about_app_icon_top_margin">@dimen/dp_275</dimen>
+    <dimen name="album_more_title_height">@dimen/dp_21</dimen>
+    <dimen name="burst_manager_tool_horizontal_padding">@dimen/dp_75</dimen>
+    <dimen name="content_padding">@dimen/dp_33</dimen>
+    <dimen name="image_edit_tool_horizontal_padding">@dimen/dp_20</dimen>
+    <dimen name="image_edit_tool_size">@dimen/dp_152</dimen>
+    <dimen name="image_select_horizontal_margin">@dimen/dp_31_5</dimen>
+    <dimen name="image_show_item_max_width">@dimen/dp_65</dimen>
+    <dimen name="image_show_tool_size">@dimen/dp_100</dimen>
+    <dimen name="search_item_text_size">@dimen/sp_15</dimen>
+    <dimen name="search_page_input_margin_right">0dp</dimen>
+    <dimen name="search_page_result_margin_left">0dp</dimen>
+    <dimen name="seek_player_horizontal_margin">@dimen/dp_26</dimen>
+    <dimen name="select_tool_item_max_width">@dimen/dp_65</dimen>
+    <dimen name="tab_content_padding">@dimen/dp_78</dimen>
+    <dimen name="tab_size">@dimen/dp_84</dimen>
+    <dimen name="watermark_edittext_top_margin">@dimen/dp_280</dimen>
+</resources>

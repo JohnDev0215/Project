@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="billing_cycle_days_left">
+        <item quantity="one">%d dag igjen</item>
+        <item quantity="other">%d dager igjen</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_letters">
+        <item quantity="one">Må inneholde minst én bokstav</item>
+        <item quantity="other">Må inneholde minst %d bokstaver</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_lowercase">
+        <item quantity="one">Må inneholde minst én liten bokstav</item>
+        <item quantity="other">Må inneholde minst %d små bokstaver</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_nonletter">
+        <item quantity="one">Må inneholde minst ett annet tegn enn bokstaver</item>
+        <item quantity="other">Må inneholde minst %d andre tegn enn bokstaver</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_numeric">
+        <item quantity="one">Må inneholde minst ett siffer</item>
+        <item quantity="other">Må inneholde minst %d sifre</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_symbols">
+        <item quantity="one">Må inneholde minst ett spesialtegn</item>
+        <item quantity="other">Må inneholde minst %d spesialtegn</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_uppercase">
+        <item quantity="one">Må inneholde minst én stor bokstav</item>
+        <item quantity="other">Må inneholde minst %d store bokstaver</item>
+    </plurals>
+    <plurals name="mobile_network_summary_count">
+        <item quantity="one">%1$d SIM-kort</item>
+        <item quantity="other">%1$d SIM-kort</item>
+    </plurals>
+    <plurals name="runtime_permissions_additional_count">
+        <item quantity="one">%d tillatelse til</item>
+        <item quantity="other">%d tillatelser til</item>
+    </plurals>
+    <plurals name="show_dev_countdown">
+        <item quantity="one">Du er nå %1$d trinn fra å bli en utvikler.</item>
+        <item quantity="other">Du er nå %1$d trinn fra å bli en utvikler.</item>
+    </plurals>
+    <plurals name="user_limit_reached_message">
+        <item quantity="one">Du kan bare opprette én bruker.</item>
+        <item quantity="other">Du kan opprette opptil %d brukere.</item>
+    </plurals>
+    <plurals name="wifi_tether_connected_summary">
+        <item quantity="one">%1$d enhet er tilkoblet</item>
+        <item quantity="other">%1$d enheter er tilkoblet</item>
+    </plurals>
+</resources>

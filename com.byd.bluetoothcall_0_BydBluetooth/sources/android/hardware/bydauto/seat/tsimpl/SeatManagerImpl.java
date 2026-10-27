@@ -1,0 +1,250 @@
+package android.hardware.bydauto.seat.tsimpl;
+
+import a.b.e.m;
+import android.content.ContentResolver;
+import android.content.Context;
+import android.hardware.bydauto.seat.AbsBYDAutoSeatListener;
+import android.provider.Settings;
+import android.util.Log;
+import com.ts.lib.caradapter.CarAdapterManager;
+import com.ts.lib.caradapter.cabin.CabinPacket;
+import com.ts.lib.caradapter.cabin.CarCabinAdapterManager;
+import com.ts.lib.caradapter.cabin.OnCabinChangedListener;
+import com.ts.lib.caradapter.interfaces.OnCarAdapterConnectListener;
+import java.util.ArrayList;
+import java.util.List;
+
+/* JADX INFO: loaded from: classes.dex */
+public class SeatManagerImpl {
+    private static final int S_FOR_TEST_VALUE = 0;
+    private static final String S_KEY_FOR_TEST = "key_for_test_SeatManagerImpl";
+    private static final String TAG = "SeatManagerImpl";
+    private static volatile SeatManagerImpl sInstance;
+    private final List<AbsBYDAutoSeatListener> mAbsBydAutoSeatListeners = new ArrayList();
+    private CabinPacket mCabinPacket;
+    private CarAdapterManager mCarAdapterManager;
+    private CarCabinAdapterManager mCarCabinAdapterManager;
+    private ContentResolver mContentResolver;
+    private Context mContext;
+    private int mForTest;
+    private m mTestCallback;
+
+    SeatManagerImpl(Context context) {
+        this.mForTest = 0;
+        this.mContext = context;
+        ContentResolver contentResolver = context.getContentResolver();
+        this.mContentResolver = contentResolver;
+        if (contentResolver != null) {
+            int i = Settings.System.getInt(contentResolver, S_KEY_FOR_TEST, 0);
+            this.mForTest = i;
+            if (i == 0) {
+                this.mTestCallback = new m();
+                Log.d(TAG, "getAcStartState mForTestValue is" + this.mForTest + " execute return");
+                return;
+            }
+        }
+        CarAdapterManager carAdapterManager = CarAdapterManager.getInstance(context);
+        this.mCarAdapterManager = carAdapterManager;
+        carAdapterManager.setOnManagerConnChangedListener(new OnCarAdapterConnectListener() { // from class: android.hardware.bydauto.seat.tsimpl.SeatManagerImpl.1
+            public void onBinderStateChanged(boolean z) {
+                if (z) {
+                    SeatManagerImpl seatManagerImpl = SeatManagerImpl.this;
+                    seatManagerImpl.mCarCabinAdapterManager = (CarCabinAdapterManager) seatManagerImpl.mCarAdapterManager.getCarAdapterManager("cabin");
+                    SeatManagerImpl.this.mCarCabinAdapterManager.subscribeCabinCallback(new OnCabinChangedListener() { // from class: android.hardware.bydauto.seat.tsimpl.SeatManagerImpl.1.1
+                        public void onCabinBinderChanged(boolean z2) {
+                        }
+
+                        public void onCabinChanged(int i2, int i3, CabinPacket cabinPacket) {
+                            SeatManagerImpl.this.mCabinPacket = cabinPacket;
+                        }
+                    });
+                }
+            }
+        });
+        this.mCarAdapterManager.connect();
+    }
+
+    public static SeatManagerImpl getInstance(Context context) {
+        if (sInstance == null) {
+            synchronized (SeatManagerImpl.class) {
+                if (sInstance == null) {
+                    sInstance = new SeatManagerImpl(context);
+                }
+            }
+        }
+        return sInstance;
+    }
+
+    public int getSeatMassageLevel(int i) {
+        Log.d(TAG, "getSeatMassageLevel is execute");
+        if (this.mForTest != 0) {
+            CarCabinAdapterManager carCabinAdapterManager = this.mCarCabinAdapterManager;
+            if (carCabinAdapterManager != null) {
+                return carCabinAdapterManager.getSeatMassageLevel(i);
+            }
+            Log.e(TAG, "adapter is not connect");
+            return 0;
+        }
+        Log.d(TAG, "getSeatMassageLevel mForTestValue is" + this.mForTest + " execute return");
+        return 0;
+    }
+
+    public int getSeatMassageType(int i) {
+        Log.d(TAG, "getSeatMassageType is execute");
+        if (this.mForTest != 0) {
+            CarCabinAdapterManager carCabinAdapterManager = this.mCarCabinAdapterManager;
+            if (carCabinAdapterManager != null) {
+                return carCabinAdapterManager.getSeatMassageType(i);
+            }
+            Log.e(TAG, "adapter is not connect");
+            return 0;
+        }
+        Log.d(TAG, "getSeatMassageType mForTestValue is" + this.mForTest + " execute return");
+        return 0;
+    }
+
+    public int getSeatVentilationState(int i) {
+        Log.d(TAG, "getSeatVentilationState is execute");
+        if (this.mForTest != 0) {
+            CarCabinAdapterManager carCabinAdapterManager = this.mCarCabinAdapterManager;
+            if (carCabinAdapterManager != null) {
+                return carCabinAdapterManager.getSeatVentilationState(i);
+            }
+            Log.e(TAG, "adapter is not connect");
+            return 0;
+        }
+        Log.d(TAG, "getSeatVentilationState mForTestValue is" + this.mForTest + " execute return");
+        return 0;
+    }
+
+    public int getSeatWarmState(int i) {
+        Log.d(TAG, "getSeatWarmState is execute");
+        if (this.mForTest != 0) {
+            CarCabinAdapterManager carCabinAdapterManager = this.mCarCabinAdapterManager;
+            if (carCabinAdapterManager != null) {
+                return carCabinAdapterManager.getSeatWarmState(i);
+            }
+            Log.e(TAG, "adapter is not connect");
+            return 0;
+        }
+        Log.d(TAG, "getSeatWarmState mForTestValue is" + this.mForTest + " execute return");
+        return 0;
+    }
+
+    public int getSteeringWheelWarmState() {
+        Log.d(TAG, "getSteeringWheelWarmState is execute");
+        if (this.mForTest != 0) {
+            CarCabinAdapterManager carCabinAdapterManager = this.mCarCabinAdapterManager;
+            if (carCabinAdapterManager != null) {
+                return carCabinAdapterManager.getSteeringWheelWarmState();
+            }
+            Log.e(TAG, "adapter is not connect");
+            return 0;
+        }
+        Log.d(TAG, "getSteeringWheelWarmState mForTestValue is" + this.mForTest + " execute return");
+        return 0;
+    }
+
+    public void registerListener(AbsBYDAutoSeatListener absBYDAutoSeatListener) {
+        Log.d(TAG, "registerListener is execute");
+        if (this.mForTest == 0) {
+            this.mTestCallback.e(absBYDAutoSeatListener);
+            Log.d(TAG, "registerListener mForTestValue is" + this.mForTest + " execute return");
+            return;
+        }
+        Log.d(TAG, "subscribeSeatCallback: " + absBYDAutoSeatListener);
+        if (absBYDAutoSeatListener == null || this.mAbsBydAutoSeatListeners.contains(absBYDAutoSeatListener)) {
+            return;
+        }
+        this.mAbsBydAutoSeatListeners.add(absBYDAutoSeatListener);
+    }
+
+    public int setSeatMassageLevel(int i, int i2) {
+        Log.d(TAG, "setSeatMassageLevel is execute");
+        if (this.mForTest != 0) {
+            CarCabinAdapterManager carCabinAdapterManager = this.mCarCabinAdapterManager;
+            if (carCabinAdapterManager != null) {
+                return carCabinAdapterManager.setSeatMassageLevel(i, i2);
+            }
+            Log.e(TAG, "adapter is not connect");
+            return 0;
+        }
+        this.mTestCallback.c(3001, i, i2);
+        Log.d(TAG, "setSeatMassageLevel mForTestValue is" + this.mForTest + " execute return");
+        return 0;
+    }
+
+    public int setSeatMassageType(int i, int i2) {
+        Log.d(TAG, "setSeatMassageType is execute");
+        if (this.mForTest != 0) {
+            CarCabinAdapterManager carCabinAdapterManager = this.mCarCabinAdapterManager;
+            if (carCabinAdapterManager != null) {
+                return carCabinAdapterManager.setSeatMassageType(i, i2);
+            }
+            Log.e(TAG, "adapter is not connect");
+            return 0;
+        }
+        this.mTestCallback.c(3002, i, i2);
+        Log.d(TAG, "setSeatMassageType mForTestValue is" + this.mForTest + " execute return");
+        return 0;
+    }
+
+    public int setSeatVentilationState(int i, int i2) {
+        Log.d(TAG, "setSeatVentilationState is execute");
+        if (this.mForTest != 0) {
+            CarCabinAdapterManager carCabinAdapterManager = this.mCarCabinAdapterManager;
+            if (carCabinAdapterManager != null) {
+                return carCabinAdapterManager.setSeatVentilationState(i, i2);
+            }
+            Log.e(TAG, "adapter is not connect");
+            return 0;
+        }
+        this.mTestCallback.c(3004, i, i2);
+        Log.d(TAG, "setSeatVentilationState mForTestValue is" + this.mForTest + " execute return");
+        return 0;
+    }
+
+    public int setSeatWarmState(int i, int i2) {
+        Log.d(TAG, "setSeatWarmState is execute");
+        if (this.mForTest != 0) {
+            CarCabinAdapterManager carCabinAdapterManager = this.mCarCabinAdapterManager;
+            if (carCabinAdapterManager != null) {
+                return carCabinAdapterManager.setSeatWarmState(i, i2);
+            }
+            Log.e(TAG, "adapter is not connect");
+            return 0;
+        }
+        this.mTestCallback.c(3000, i, i2);
+        Log.d(TAG, "setSeatWarmState mForTestValue is" + this.mForTest + " execute return");
+        return 0;
+    }
+
+    public int setSteeringWheelWarmState(int i) {
+        Log.d(TAG, "setSteeringWheelWarmState is execute");
+        if (this.mForTest != 0) {
+            CarCabinAdapterManager carCabinAdapterManager = this.mCarCabinAdapterManager;
+            if (carCabinAdapterManager != null) {
+                return carCabinAdapterManager.setSteeringWheelWarmState(i);
+            }
+            Log.e(TAG, "adapter is not connect");
+            return 0;
+        }
+        this.mTestCallback.b(3003, i);
+        Log.d(TAG, "setSteeringWheelWarmState mForTestValue is" + this.mForTest + " execute return");
+        return 0;
+    }
+
+    public void unregisterListener(AbsBYDAutoSeatListener absBYDAutoSeatListener) {
+        Log.d(TAG, "unregisterListener is execute");
+        if (this.mForTest == 0) {
+            this.mTestCallback.d(absBYDAutoSeatListener);
+            Log.d(TAG, "unregisterListener mForTestValue is" + this.mForTest + " execute return");
+            return;
+        }
+        Log.d(TAG, "unsubscribeSeatCallback: " + absBYDAutoSeatListener);
+        if (absBYDAutoSeatListener == null) {
+            return;
+        }
+        this.mAbsBydAutoSeatListeners.remove(absBYDAutoSeatListener);
+    }
+}

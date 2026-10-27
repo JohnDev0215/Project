@@ -1,0 +1,12 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/view/SurfaceControl$Transaction;->show(Landroid/view/SurfaceControl;)Landroid/view/SurfaceControl$Transaction;,frameworks/base/core/java/android/view/SurfaceControl.java,2408,9,2408,29,
+Landroid/view/SurfaceControl$Transaction;->hide(Landroid/view/SurfaceControl;)Landroid/view/SurfaceControl$Transaction;,frameworks/base/core/java/android/view/SurfaceControl.java,2422,9,2422,29,
+Landroid/view/SurfaceControl$Transaction;->setPosition(Landroid/view/SurfaceControl;FF)Landroid/view/SurfaceControl$Transaction;,frameworks/base/core/java/android/view/SurfaceControl.java,2432,9,2432,29,
+Landroid/view/SurfaceControl$Transaction;->setMatrix(Landroid/view/SurfaceControl;FFFF)Landroid/view/SurfaceControl$Transaction;,frameworks/base/core/java/android/view/SurfaceControl.java,2583,9,2583,29,
+Landroid/view/SurfaceControl$Transaction;->setMatrix(Landroid/view/SurfaceControl;Landroid/graphics/Matrix;[F)Landroid/view/SurfaceControl$Transaction;,frameworks/base/core/java/android/view/SurfaceControl.java,2601,9,2601,29,
+Landroid/view/SurfaceControl$Transaction;->setWindowCrop(Landroid/view/SurfaceControl;Landroid/graphics/Rect;)Landroid/view/SurfaceControl$Transaction;,frameworks/base/core/java/android/view/SurfaceControl.java,2647,9,2647,29,
+Landroid/view/SurfaceControl$Transaction;->setCornerRadius(Landroid/view/SurfaceControl;F)Landroid/view/SurfaceControl$Transaction;,frameworks/base/core/java/android/view/SurfaceControl.java,2682,9,2682,29,
+Landroid/view/SurfaceControl$Transaction;->setLayerStack(Landroid/view/SurfaceControl;I)Landroid/view/SurfaceControl$Transaction;,frameworks/base/core/java/android/view/SurfaceControl.java,2707,9,2707,67,maxTargetSdk=26
+Landroid/view/SurfaceControl$Transaction;->deferTransactionUntil(Landroid/view/SurfaceControl;Landroid/view/SurfaceControl;J)Landroid/view/SurfaceControl$Transaction;,frameworks/base/core/java/android/view/SurfaceControl.java,2717,9,2717,29,
+Landroid/view/SurfaceControl$Transaction;->deferTransactionUntilSurface(Landroid/view/SurfaceControl;Landroid/view/Surface;J)Landroid/view/SurfaceControl$Transaction;,frameworks/base/core/java/android/view/SurfaceControl.java,2733,9,2733,29,
+Landroid/view/SurfaceControl$Transaction;->setColor(Landroid/view/SurfaceControl;[F)Landroid/view/SurfaceControl$Transaction;,frameworks/base/core/java/android/view/SurfaceControl.java,2802,9,2802,29,

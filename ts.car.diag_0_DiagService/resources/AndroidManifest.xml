@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    android:sharedUserId="android.uid.system"
+    android:versionCode="30"
+    android:versionName="11"
+    android:compileSdkVersion="30"
+    android:compileSdkVersionCodename="11"
+    package="ts.car.diag"
+    platformBuildVersionCode="30"
+    platformBuildVersionName="11">
+    <uses-sdk
+        android:minSdkVersion="30"
+        android:targetSdkVersion="30"/>
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.RESTART_PACKAGES"/>
+    <uses-permission android:name="android.permission.ACCESS_BROADCAST_RADIO"/>
+    <uses-permission android:name="android.permission.NETWORK_SETTINGS"/>
+    <uses-permission android:name="android.permission.MASTER_CLEAR"/>
+    <uses-permission android:name="android.permission.TETHER_PRIVILEGED"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS"/>
+    <uses-permission android:name="android.car.permission.CAR_CONTROL_AUDIO_VOLUME"/>
+    <uses-permission android:name="android.car.permission.CAR_CONTROL_ENHANCED_AUDIO"/>
+    <uses-permission android:name="android.car.permission.CAR_CONTROL_AUDIO_SETTINGS"/>
+    <application
+        android:name="ts.car.diag.DiagApplication"
+        android:allowBackup="false"
+        android:extractNativeLibs="true"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+        android:usesNonSdkApi="true">
+        <service android:name="ts.car.diag.DiagServices">
+            <intent-filter>
+                <action android:name="ts.car.diag.DiagService"/>
+            </intent-filter>
+        </service>
+        <uses-library android:name="ts.framework"/>
+    </application>
+</manifest>

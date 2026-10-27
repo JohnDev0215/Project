@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="?attr/dialog_bg_res"
+    android:paddingBottom="@dimen/dp_20"
+    android:layout_width="@dimen/dialog_min_width"
+    android:layout_height="@dimen/dialog_min_height">
+    <TextView
+        android:textSize="@dimen/dialog_content_text_size"
+        android:textColor="?attr/text_color"
+        android:gravity="center"
+        android:id="@+id/tv_msg"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingStart="@dimen/dp_20"
+        android:paddingEnd="@dimen/dp_20"/>
+    <TextView
+        android:textSize="@dimen/dialog_button_text_size"
+        android:textColor="@color/color_for_dialog_sure_ui3"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/tv_sure"
+        android:background="?attr/sure_btn_bg"
+        android:layout_width="@dimen/dialog_button_width"
+        android:layout_height="@dimen/dialog_button_height"
+        android:text="@string/sure"/>
+</LinearLayout>

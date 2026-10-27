@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="billing_cycle_days_left">
+        <item quantity="one">දින %dක් ඉතිරියි</item>
+        <item quantity="other">දින %dක් ඉතිරියි</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_letters">
+        <item quantity="one">අඩු තරමින් අකුරු %dක් අඩංගු විය යුතුය</item>
+        <item quantity="other">අඩු තරමින් අකුරු %dක් අඩංගු විය යුතුය</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_lowercase">
+        <item quantity="one">අඩු තරමින් කුඩා අකුරු %dක් අඩංගු විය යුතුය</item>
+        <item quantity="other">අඩු තරමින් කුඩා අකුරු %dක් අඩංගු විය යුතුය</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_nonletter">
+        <item quantity="one">අඩු තරමින් අකුරු නොවන අනුලකුණු %dක් අඩංගු විය යුතුය</item>
+        <item quantity="other">අඩු තරමින් අකුරු නොවන අනුලකුණු %dක් අඩංගු විය යුතුය</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_numeric">
+        <item quantity="one">අඩු තරමින් සංඛ්‍යාමය ඉලක්කම් %dක් අඩංගු විය යුතුය</item>
+        <item quantity="other">අඩු තරමින් සංඛ්‍යාමය ඉලක්කම් %dක් අඩංගු විය යුතුය</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_symbols">
+        <item quantity="one">අඩු තරමින් විශේෂ සංකේත %dක් අඩංගු විය යුතුය</item>
+        <item quantity="other">අඩු තරමින් විශේෂ සංකේත %dක් අඩංගු විය යුතුය</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_uppercase">
+        <item quantity="one">අඩු තරමින් විශාල අකුරු %dක් අඩංගු විය යුතුය</item>
+        <item quantity="other">අඩු තරමින් විශාල අකුරු %dක් අඩංගු විය යුතුය</item>
+    </plurals>
+    <plurals name="mobile_network_summary_count">
+        <item quantity="one">SIMs %1$d</item>
+        <item quantity="other">SIMs %1$d</item>
+    </plurals>
+    <plurals name="runtime_permissions_additional_count">
+        <item quantity="one">අතිරේක අවසර %dක්</item>
+        <item quantity="other">අතිරේක අවසර %dක්</item>
+    </plurals>
+    <plurals name="show_dev_countdown">
+        <item quantity="one">දැන් ඔබ සංවර්ධකයෙක් වීමට ඇත්තේ පියවර %1$d කි.</item>
+        <item quantity="other">දැන් ඔබ සංවර්ධකයෙක් වීමට ඇත්තේ පියවර %1$d කි.</item>
+    </plurals>
+    <plurals name="user_limit_reached_message">
+        <item quantity="one">ඔබට පරිශීලකයින් %d දෙනෙක් දක්වා නිර්මාණ කළ හැක.</item>
+        <item quantity="other">ඔබට පරිශීලකයින් %d දෙනෙක් දක්වා නිර්මාණ කළ හැක.</item>
+    </plurals>
+    <plurals name="wifi_tether_connected_summary">
+        <item quantity="one">උපාංග %1$dක් සම්බන්ධ කරන ලදී</item>
+        <item quantity="other">උපාංග %1$dක් සම්බන්ධ කරන ලදී</item>
+    </plurals>
+</resources>

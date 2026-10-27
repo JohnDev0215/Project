@@ -1,0 +1,14 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/view/accessibility/AccessibilityManager;->DALTONIZER_SIMULATE_MONOCHROMACY:I,frameworks/base/core/java/android/view/accessibility/AccessibilityManager.java,114,5,114,25,
+Landroid/view/accessibility/AccessibilityManager;->sInstanceSync:Ljava/lang/Object;,frameworks/base/core/java/android/view/accessibility/AccessibilityManager.java,199,5,199,25,
+Landroid/view/accessibility/AccessibilityManager;->sInstance:Landroid/view/accessibility/AccessibilityManager;,frameworks/base/core/java/android/view/accessibility/AccessibilityManager.java,202,5,202,25,
+Landroid/view/accessibility/AccessibilityManager;->mLock:Ljava/lang/Object;,frameworks/base/core/java/android/view/accessibility/AccessibilityManager.java,205,5,205,25,
+Landroid/view/accessibility/AccessibilityManager;->mService:Landroid/view/accessibility/IAccessibilityManager;,frameworks/base/core/java/android/view/accessibility/AccessibilityManager.java,208,5,208,25,
+Landroid/view/accessibility/AccessibilityManager;->mUserId:I,frameworks/base/core/java/android/view/accessibility/AccessibilityManager.java,211,5,211,25,
+Landroid/view/accessibility/AccessibilityManager;->mHandler:Landroid/os/Handler;,frameworks/base/core/java/android/view/accessibility/AccessibilityManager.java,214,5,214,25,
+Landroid/view/accessibility/AccessibilityManager;->mIsEnabled:Z,frameworks/base/core/java/android/view/accessibility/AccessibilityManager.java,219,5,219,63,maxTargetSdk=28
+Landroid/view/accessibility/AccessibilityManager;->mIsHighTextContrastEnabled:Z,frameworks/base/core/java/android/view/accessibility/AccessibilityManager.java,229,5,229,51,trackingBug=123768939L
+Landroid/view/accessibility/AccessibilityManager;->mAccessibilityStateChangeListeners:Landroid/util/ArrayMap;,frameworks/base/core/java/android/view/accessibility/AccessibilityManager.java,234,5,234,25,
+Landroid/view/accessibility/AccessibilityManager;->getInstance(Landroid/content/Context;)Landroid/view/accessibility/AccessibilityManager;,frameworks/base/core/java/android/view/accessibility/AccessibilityManager.java,420,5,420,25,
+Landroid/view/accessibility/AccessibilityManager;->isHighTextContrastEnabled()Z,frameworks/base/core/java/android/view/accessibility/AccessibilityManager.java,533,5,533,25,
+Landroid/view/accessibility/AccessibilityManager;->setStateLocked(I)V,frameworks/base/core/java/android/view/accessibility/AccessibilityManager.java,1128,5,1128,25,

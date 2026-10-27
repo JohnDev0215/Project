@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="billing_cycle_days_left">
+        <item quantity="one">Մնացել է %d օր</item>
+        <item quantity="other">Մնացել է %d օր</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_letters">
+        <item quantity="one">Պետք է պարունակի առնվազն %d տառ</item>
+        <item quantity="other">Պետք է պարունակի առնվազն %d տառ</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_lowercase">
+        <item quantity="one">Պետք է պարունակի առնվազն %d փոքրատառ</item>
+        <item quantity="other">Պետք է պարունակի առնվազն %d փոքրատառ</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_nonletter">
+        <item quantity="one">Պետք է պարունակի առնվազն %d ոչ տառային նիշ</item>
+        <item quantity="other">Պետք է պարունակի առնվազն %d ոչ տառային նիշ</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_numeric">
+        <item quantity="one">Պետք է պարունակի առնվազն %d թվանշան</item>
+        <item quantity="other">Պետք է պարունակի առնվազն %d թվանշան</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_symbols">
+        <item quantity="one">Պետք է պարունակի առնվազն %d հատուկ նշան</item>
+        <item quantity="other">Պետք է պարունակի առնվազն %d հատուկ նշան</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_uppercase">
+        <item quantity="one">Պետք է պարունակի առնվազն %d մեծատառ</item>
+        <item quantity="other">Պետք է պարունակի առնվազն %d մեծատառ</item>
+    </plurals>
+    <plurals name="mobile_network_summary_count">
+        <item quantity="one">%1$d SIM քարտ</item>
+        <item quantity="other">%1$d SIM քարտ</item>
+    </plurals>
+    <plurals name="runtime_permissions_additional_count">
+        <item quantity="one">%d լրացուցիչ թույլտվություն</item>
+        <item quantity="other">%d լրացուցիչ թույլտվություն</item>
+    </plurals>
+    <plurals name="show_dev_countdown">
+        <item quantity="one">Մշակող դառնալու համար ձեզ մնացել է %1$d քայլ</item>
+        <item quantity="other">Մշակող դառնալու համար ձեզ մնացել է %1$d քայլ</item>
+    </plurals>
+    <plurals name="user_limit_reached_message">
+        <item quantity="one">Դուք կարող եք ստեղծել մինչև %d օգտատեր:</item>
+        <item quantity="other">Դուք կարող եք ստեղծել մինչև %d օգտատեր:</item>
+    </plurals>
+    <plurals name="wifi_tether_connected_summary">
+        <item quantity="one">Միացված է %1$d սարք</item>
+        <item quantity="other">Միացված է %1$d սարք</item>
+    </plurals>
+</resources>

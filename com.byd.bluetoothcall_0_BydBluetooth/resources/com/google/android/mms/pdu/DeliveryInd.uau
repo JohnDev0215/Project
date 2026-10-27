@@ -1,0 +1,6 @@
+signature,file,startline,startcol,endline,endcol,properties
+Lcom/google/android/mms/pdu/DeliveryInd;-><init>(Lcom/google/android/mms/pdu/PduHeaders;)V,frameworks/base/telephony/common/com/google/android/mms/pdu/DeliveryInd.java,46,5,46,25,
+Lcom/google/android/mms/pdu/DeliveryInd;->getDate()J,frameworks/base/telephony/common/com/google/android/mms/pdu/DeliveryInd.java,56,5,56,25,
+Lcom/google/android/mms/pdu/DeliveryInd;->getMessageId()[B,frameworks/base/telephony/common/com/google/android/mms/pdu/DeliveryInd.java,75,5,75,25,
+Lcom/google/android/mms/pdu/DeliveryInd;->getStatus()I,frameworks/base/telephony/common/com/google/android/mms/pdu/DeliveryInd.java,95,5,95,25,
+Lcom/google/android/mms/pdu/DeliveryInd;->getTo()[Lcom/google/android/mms/pdu/EncodedStringValue;,frameworks/base/telephony/common/com/google/android/mms/pdu/DeliveryInd.java,115,5,115,25,

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <Button
+        android:textSize="@dimen/sp_35"
+        android:id="@+id/bt_open"
+        android:layout_width="@dimen/dp_250"
+        android:layout_height="@dimen/dp_150"
+        android:text="@string/obd_open"/>
+    <Button
+        android:textSize="@dimen/sp_35"
+        android:id="@+id/bt_close"
+        android:layout_width="@dimen/dp_250"
+        android:layout_height="@dimen/dp_150"
+        android:layout_marginLeft="@dimen/dp_48"
+        android:text="@string/obd_close"/>
+</LinearLayout>

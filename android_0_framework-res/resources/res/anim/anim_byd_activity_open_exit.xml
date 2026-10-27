@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#ff000000"
+    android:shareInterpolator="false"
+    android:zAdjustment="normal">
+    <alpha
+        android:interpolator="@anim/byd_constant_interpolator"
+        android:duration="200"
+        android:fillBefore="true"
+        android:fillAfter="true"
+        android:fromAlpha="1"
+        android:toAlpha="0"
+        android:fillEnabled="true"/>
+</set>

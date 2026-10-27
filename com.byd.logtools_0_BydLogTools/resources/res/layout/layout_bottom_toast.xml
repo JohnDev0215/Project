@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:id="@+id/ll_root"
+        android:background="@color/dark_grey"
+        android:layout_width="@dimen/dp_217"
+        android:layout_height="@dimen/dp_86">
+        <TextView
+            android:textSize="@dimen/sp_18"
+            android:textColor="@color/history_log_toast_text_color"
+            android:gravity="center"
+            android:id="@+id/tv_msg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/logtools_select_file"
+            android:maxLines="1"/>
+    </LinearLayout>
+</LinearLayout>
