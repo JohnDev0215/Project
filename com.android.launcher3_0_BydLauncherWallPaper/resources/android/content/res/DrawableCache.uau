@@ -1,0 +1,3 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/content/res/DrawableCache;-><init>()V,frameworks/base/core/java/android/content/res/DrawableCache.java,27,5,27,25,
+Landroid/content/res/DrawableCache;->getInstance(JLandroid/content/res/Resources;Landroid/content/res/Resources$Theme;)Landroid/graphics/drawable/Drawable;,frameworks/base/core/java/android/content/res/DrawableCache.java,40,5,40,25,

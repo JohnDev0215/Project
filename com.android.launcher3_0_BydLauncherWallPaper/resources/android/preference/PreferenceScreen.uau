@@ -1,0 +1,4 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/preference/PreferenceScreen;->mRootAdapter:Landroid/widget/ListAdapter;,frameworks/base/core/java/android/preference/PreferenceScreen.java,100,5,100,25,
+Landroid/preference/PreferenceScreen;->mListView:Landroid/widget/ListView;,frameworks/base/core/java/android/preference/PreferenceScreen.java,105,5,105,25,
+Landroid/preference/PreferenceScreen;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V,frameworks/base/core/java/android/preference/PreferenceScreen.java,116,5,116,25,

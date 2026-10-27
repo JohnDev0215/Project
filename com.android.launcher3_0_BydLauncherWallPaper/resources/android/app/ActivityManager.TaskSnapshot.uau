@@ -1,0 +1,7 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/app/ActivityManager$TaskSnapshot;->getSnapshot()Landroid/graphics/GraphicBuffer;,frameworks/base/core/java/android/app/ActivityManager.java,2166,9,2166,29,
+Landroid/app/ActivityManager$TaskSnapshot;->getOrientation()I,frameworks/base/core/java/android/app/ActivityManager.java,2181,9,2181,29,
+Landroid/app/ActivityManager$TaskSnapshot;->getTaskSize()Landroid/graphics/Point;,frameworks/base/core/java/android/app/ActivityManager.java,2196,9,2196,29,
+Landroid/app/ActivityManager$TaskSnapshot;->getContentInsets()Landroid/graphics/Rect;,frameworks/base/core/java/android/app/ActivityManager.java,2205,9,2205,29,
+Landroid/app/ActivityManager$TaskSnapshot;->isLowResolution()Z,frameworks/base/core/java/android/app/ActivityManager.java,2213,9,2213,29,
+Landroid/app/ActivityManager$TaskSnapshot;->isRealSnapshot()Z,frameworks/base/core/java/android/app/ActivityManager.java,2222,9,2222,29,

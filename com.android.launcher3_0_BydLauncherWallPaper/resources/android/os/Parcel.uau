@@ -1,0 +1,17 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/os/Parcel;->mNativePtr:J,frameworks/base/core/java/android/os/Parcel.java,204,5,204,25,
+Landroid/os/Parcel;->getGlobalAllocSize()J,frameworks/base/core/java/android/os/Parcel.java,486,5,486,25,
+Landroid/os/Parcel;->getGlobalAllocCount()J,frameworks/base/core/java/android/os/Parcel.java,490,5,490,25,
+Landroid/os/Parcel;->writeBlob([B)V,frameworks/base/core/java/android/os/Parcel.java,714,5,714,25,
+Landroid/os/Parcel;->writeCharSequence(Ljava/lang/CharSequence;)V,frameworks/base/core/java/android/os/Parcel.java,824,5,824,25,
+Landroid/os/Parcel;->writeArrayMap(Landroid/util/ArrayMap;)V,frameworks/base/core/java/android/os/Parcel.java,986,5,986,25,
+Landroid/os/Parcel;->writeArraySet(Landroid/util/ArraySet;)V,frameworks/base/core/java/android/os/Parcel.java,1025,5,1025,25,
+Landroid/os/Parcel;->readExceptionCode()I,frameworks/base/core/java/android/os/Parcel.java,2299,5,2299,25,
+Landroid/os/Parcel;->readCharSequence()Ljava/lang/CharSequence;,frameworks/base/core/java/android/os/Parcel.java,2473,5,2473,25,
+Landroid/os/Parcel;->readRawFileDescriptor()Ljava/io/FileDescriptor;,frameworks/base/core/java/android/os/Parcel.java,2495,5,2495,25,
+Landroid/os/Parcel;->readBlob()[B,frameworks/base/core/java/android/os/Parcel.java,2687,5,2687,25,
+Landroid/os/Parcel;->readStringArray()[Ljava/lang/String;,frameworks/base/core/java/android/os/Parcel.java,2697,5,2697,25,
+Landroid/os/Parcel;->readCreator(Landroid/os/Parcelable$Creator;Ljava/lang/ClassLoader;)Landroid/os/Parcelable;,frameworks/base/core/java/android/os/Parcel.java,3285,5,3285,25,
+Landroid/os/Parcel;->mCreators:Ljava/util/HashMap;,frameworks/base/core/java/android/os/Parcel.java,3470,5,3470,63,maxTargetSdk=28
+Landroid/os/Parcel;->readArrayMap(Landroid/util/ArrayMap;Ljava/lang/ClassLoader;)V,frameworks/base/core/java/android/os/Parcel.java,3597,5,3597,25,
+Landroid/os/Parcel;->readArraySet(Ljava/lang/ClassLoader;)Landroid/util/ArraySet;,frameworks/base/core/java/android/os/Parcel.java,3613,5,3613,25,

@@ -1,0 +1,14 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/widget/ProgressBar;->mMinWidth:I,frameworks/base/core/java/android/widget/ProgressBar.java,179,5,179,63,maxTargetSdk=28
+Landroid/widget/ProgressBar;->mMinHeight:I,frameworks/base/core/java/android/widget/ProgressBar.java,186,5,186,63,maxTargetSdk=28
+Landroid/widget/ProgressBar;->mMaxHeight:I,frameworks/base/core/java/android/widget/ProgressBar.java,192,5,192,63,maxTargetSdk=28
+Landroid/widget/ProgressBar;->mDuration:I,frameworks/base/core/java/android/widget/ProgressBar.java,205,5,205,88,maxTargetSdk=28&trackingBug=124052713L
+Landroid/widget/ProgressBar;->mIndeterminate:Z,frameworks/base/core/java/android/widget/ProgressBar.java,207,5,207,63,maxTargetSdk=28
+Landroid/widget/ProgressBar;->mOnlyIndeterminate:Z,frameworks/base/core/java/android/widget/ProgressBar.java,209,5,209,50,trackingBug=124049927L
+Landroid/widget/ProgressBar;->mCurrentDrawable:Landroid/graphics/drawable/Drawable;,frameworks/base/core/java/android/widget/ProgressBar.java,222,5,222,63,maxTargetSdk=28
+Landroid/widget/ProgressBar;->mMirrorForRtl:Z,frameworks/base/core/java/android/widget/ProgressBar.java,240,5,240,25,
+Landroid/widget/ProgressBar;->tileify(Landroid/graphics/drawable/Drawable;Z)Landroid/graphics/drawable/Drawable;,frameworks/base/core/java/android/widget/ProgressBar.java,528,5,528,25,
+Landroid/widget/ProgressBar;->refreshProgress(IIZZ)V,frameworks/base/core/java/android/widget/ProgressBar.java,1650,5,1650,25,
+Landroid/widget/ProgressBar;->setProgressInternal(IZZ)Z,frameworks/base/core/java/android/widget/ProgressBar.java,1705,5,1705,25,
+Landroid/widget/ProgressBar;->startAnimation()V,frameworks/base/core/java/android/widget/ProgressBar.java,1908,5,1908,25,
+Landroid/widget/ProgressBar;->stopAnimation()V,frameworks/base/core/java/android/widget/ProgressBar.java,1948,5,1948,25,

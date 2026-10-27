@@ -1,0 +1,4 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/view/ViewGroup$MarginLayoutParams;->startMargin:I,frameworks/base/core/java/android/view/ViewGroup.java,8373,9,8373,29,
+Landroid/view/ViewGroup$MarginLayoutParams;->endMargin:I,frameworks/base/core/java/android/view/ViewGroup.java,8382,9,8382,29,
+Landroid/view/ViewGroup$MarginLayoutParams;->setMarginsRelative(IIII)V,frameworks/base/core/java/android/view/ViewGroup.java,8612,9,8612,29,

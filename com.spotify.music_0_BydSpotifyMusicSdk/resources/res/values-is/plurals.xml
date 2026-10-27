@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="android_auto_podcast_episode_time_format_hours">
+        <item quantity="one">%1$d klst.</item>
+        <item quantity="other">%1$d klst.</item>
+    </plurals>
+    <plurals name="android_auto_podcast_episode_time_format_min">
+        <item quantity="one">%1$d mín.</item>
+        <item quantity="other">%1$d mín.</item>
+    </plurals>
+    <plurals name="content_liked_songs_subtitle">
+        <item quantity="one">%1$d lag</item>
+        <item quantity="other">%1$d lög</item>
+    </plurals>
+    <plurals name="content_your_episodes_subtitle">
+        <item quantity="one">%1$d þáttur</item>
+        <item quantity="other">%1$d þættir</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">%d ný tilkynning</item>
+        <item quantity="other">%d nýjar tilkynningar</item>
+    </plurals>
+</resources>

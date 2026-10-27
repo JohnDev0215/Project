@@ -1,0 +1,3 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/media/AudioPortEventHandler;->mJniCallback:J,frameworks/base/media/java/android/media/AudioPortEventHandler.java,57,5,57,25,
+Landroid/media/AudioPortEventHandler;->postEventFromNative(Ljava/lang/Object;IIILjava/lang/Object;)V,frameworks/base/media/java/android/media/AudioPortEventHandler.java,181,5,181,25,

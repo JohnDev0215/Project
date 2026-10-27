@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" android:shape="oval">
+    <item
+        android:gravity="center"
+        android:height="@dimen/dp_20"
+        android:width="@dimen/dp_20">
+        <shape android:shape="oval">
+            <corners android:radius="@dimen/dp_10"/>
+            <gradient
+                android:startColor="@color/color_soc_seekbar_thumb_out_shadow_end"
+                android:endColor="@color/color_soc_seekbar_thumb_out_shadow_end"
+                android:angle="0"
+                android:type="radial"
+                android:gradientRadius="@dimen/dp_5"
+                android:centerColor="@color/color_soc_seekbar_thumb_out_shadow_end"/>
+        </shape>
+    </item>
+    <item
+        android:gravity="center"
+        android:height="@dimen/dp_20"
+        android:width="@dimen/dp_20"
+        android:drawable="@mipmap/icon_soc_thump_lock"/>
+</layer-list>

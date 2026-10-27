@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="dotted_app_label">
+        <item quantity="one">Programoje „%1$s“ yra %2$d pranešimas</item>
+        <item quantity="few">Programoje „%1$s“ yra %2$d pranešimai</item>
+        <item quantity="many">Programoje „%1$s“ yra %2$d pranešimo</item>
+        <item quantity="other">Programoje „%1$s“ yra %2$d pranešimų</item>
+    </plurals>
+</resources>

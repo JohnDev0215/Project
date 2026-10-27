@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center"
+    android:id="@+id/app_item"
+    android:clickable="true"
+    android:layout_width="@dimen/dp_92"
+    android:layout_height="@dimen/dp_112"
+    android:stateListAnimator="@drawable/anim_btn_scale_alpha">
+    <ImageView
+        android:id="@+id/app_icon"
+        android:layout_width="@dimen/dp_56"
+        android:layout_height="@dimen/dp_56"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:textSize="@dimen/sp_16"
+        android:textColor="@color/app_recent_use_tv"
+        android:ellipsize="end"
+        android:gravity="center_horizontal"
+        android:id="@+id/app_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_8"
+        android:text="testtestetestest"
+        android:lines="@integer/more_app_recent_tv"
+        android:maxEms="@integer/more_app_recent_tv"
+        android:layout_below="@+id/app_icon"/>
+</RelativeLayout>

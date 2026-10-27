@@ -1,0 +1,67 @@
+package android.net.util;
+
+import android.net.MacAddress;
+import java.security.SecureRandom;
+import java.util.Arrays;
+import java.util.Objects;
+import java.util.Random;
+
+/* JADX INFO: loaded from: classes2.dex */
+public final class MacAddressUtils {
+    private static final String DEFAULT_MAC_ADDRESS = "02:00:00:00:00:00";
+    private static final int ETHER_ADDR_LEN = 6;
+    private static final long VALID_LONG_MASK = 281474976710655L;
+    private static final long LOCALLY_ASSIGNED_MASK = longAddrFromByteAddr(MacAddress.fromString("2:0:0:0:0:0").toByteArray());
+    private static final long MULTICAST_MASK = longAddrFromByteAddr(MacAddress.fromString("1:0:0:0:0:0").toByteArray());
+    private static final long OUI_MASK = longAddrFromByteAddr(MacAddress.fromString("ff:ff:ff:0:0:0").toByteArray());
+    private static final long NIC_MASK = longAddrFromByteAddr(MacAddress.fromString("0:0:0:ff:ff:ff").toByteArray());
+
+    public static boolean isMulticastAddress(MacAddress macAddress) {
+        return (longAddrFromByteAddr(macAddress.toByteArray()) & MULTICAST_MASK) != 0;
+    }
+
+    public static MacAddress createRandomUnicastAddress() {
+        return createRandomUnicastAddress(null, new SecureRandom());
+    }
+
+    public static MacAddress createRandomUnicastAddress(MacAddress macAddress, Random random) {
+        long jLongAddrFromByteAddr;
+        if (macAddress == null) {
+            jLongAddrFromByteAddr = random.nextLong() & VALID_LONG_MASK;
+        } else {
+            jLongAddrFromByteAddr = (longAddrFromByteAddr(macAddress.toByteArray()) & OUI_MASK) | (NIC_MASK & random.nextLong());
+        }
+        MacAddress macAddressFromBytes = MacAddress.fromBytes(byteAddrFromLongAddr((jLongAddrFromByteAddr | LOCALLY_ASSIGNED_MASK) & (~MULTICAST_MASK)));
+        return macAddressFromBytes.equals("02:00:00:00:00:00") ? createRandomUnicastAddress(macAddress, random) : macAddressFromBytes;
+    }
+
+    public static long longAddrFromByteAddr(byte[] bArr) {
+        Objects.requireNonNull(bArr);
+        if (!isMacAddress(bArr)) {
+            throw new IllegalArgumentException(Arrays.toString(bArr) + " was not a valid MAC address");
+        }
+        long j = 0;
+        for (byte b : bArr) {
+            j = (j << 8) + ((long) (b & 255));
+        }
+        return j;
+    }
+
+    public static byte[] byteAddrFromLongAddr(long j) {
+        int i = 6;
+        byte[] bArr = new byte[6];
+        while (true) {
+            int i2 = i - 1;
+            if (i <= 0) {
+                return bArr;
+            }
+            bArr[i2] = (byte) j;
+            j >>= 8;
+            i = i2;
+        }
+    }
+
+    public static boolean isMacAddress(byte[] bArr) {
+        return bArr != null && bArr.length == 6;
+    }
+}

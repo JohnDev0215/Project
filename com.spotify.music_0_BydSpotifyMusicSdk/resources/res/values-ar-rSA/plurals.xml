@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="android_auto_podcast_episode_time_format_hours">
+        <item quantity="zero">ولا ساعة (%1$d)</item>
+        <item quantity="one">ساعة (%1$d)</item>
+        <item quantity="two">ساعتين (%1$d)</item>
+        <item quantity="few">%1$d ساعات</item>
+        <item quantity="many">%1$d ساعة</item>
+        <item quantity="other">%1$d ساعة</item>
+    </plurals>
+    <plurals name="android_auto_podcast_episode_time_format_min">
+        <item quantity="zero">ولا دقيقة (%1$d)</item>
+        <item quantity="one">دقيقة (%1$d)</item>
+        <item quantity="two">دقيقتين (%1$d)</item>
+        <item quantity="few">%1$d دقايق</item>
+        <item quantity="many">%1$d دقيقة</item>
+        <item quantity="other">%1$d دقيقة</item>
+    </plurals>
+    <plurals name="content_liked_songs_subtitle">
+        <item quantity="zero">ولا أغنية (%1$d)</item>
+        <item quantity="one">أغنية واحدة (%1$d)</item>
+        <item quantity="two">أغنيتين (%1$d)</item>
+        <item quantity="few">%1$d أغاني</item>
+        <item quantity="many">%1$d أغنية</item>
+        <item quantity="other">%1$d أغنية</item>
+    </plurals>
+    <plurals name="content_your_episodes_subtitle">
+        <item quantity="zero">ولا حلقة (%1$d)</item>
+        <item quantity="one">حلقة واحدة (%1$d)</item>
+        <item quantity="two">حلقتين (%1$d)</item>
+        <item quantity="few">%1$d حلقات</item>
+        <item quantity="many">%1$d حلقة</item>
+        <item quantity="other">%1$d حلقة</item>
+    </plurals>
+</resources>

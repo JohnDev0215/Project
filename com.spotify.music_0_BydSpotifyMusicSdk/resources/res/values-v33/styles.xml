@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="TextAppearance.Encore.HeadlineLarge" parent="@style/TextAppearance.Encore">
+        <item name="android:textSize">48sp</item>
+        <item name="android:fontFamily">@font/circular_sp_title_black</item>
+        <item name="android:fontFeatureSettings">liga 1</item>
+    </style>
+    <style name="TextAppearance.Encore.HeadlineMedium" parent="@style/TextAppearance.Encore">
+        <item name="android:textSize">40sp</item>
+        <item name="android:fontFamily">@font/circular_sp_title_bold</item>
+        <item name="android:fontFeatureSettings">liga 1</item>
+    </style>
+    <style name="TextAppearance.Encore.TitleLarge" parent="@style/TextAppearance.Encore">
+        <item name="android:textSize">32sp</item>
+        <item name="android:fontFamily">@font/circular_sp_title_bold</item>
+        <item name="android:fontFeatureSettings">liga 1</item>
+    </style>
+    <style name="TextAppearance.Encore.TitleMedium" parent="@style/TextAppearance.Encore">
+        <item name="android:textSize">24sp</item>
+        <item name="android:fontFamily">@font/circular_sp_title_bold</item>
+        <item name="android:fontFeatureSettings">liga 1</item>
+    </style>
+    <style name="TextAppearance.Encore.TitleSmall" parent="@style/TextAppearance.Encore">
+        <item name="android:textSize">20sp</item>
+        <item name="android:fontFamily">@font/circular_sp_title_bold</item>
+        <item name="android:fontFeatureSettings">liga 1</item>
+    </style>
+</resources>

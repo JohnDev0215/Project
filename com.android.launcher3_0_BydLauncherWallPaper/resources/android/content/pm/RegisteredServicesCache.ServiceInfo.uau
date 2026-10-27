@@ -1,0 +1,4 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/content/pm/RegisteredServicesCache$ServiceInfo;->type:Ljava/lang/Object;,frameworks/base/core/java/android/content/pm/RegisteredServicesCache.java,306,9,306,29,
+Landroid/content/pm/RegisteredServicesCache$ServiceInfo;->componentName:Landroid/content/ComponentName;,frameworks/base/core/java/android/content/pm/RegisteredServicesCache.java,309,9,309,29,
+Landroid/content/pm/RegisteredServicesCache$ServiceInfo;->uid:I,frameworks/base/core/java/android/content/pm/RegisteredServicesCache.java,311,9,311,29,

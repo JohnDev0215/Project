@@ -1,0 +1,98 @@
+﻿[
+  {
+    "rsId": 110000010,
+    "rsName": "轮播壁纸",
+    "imgUrl": {
+      "land": [
+        "file:///android_asset/res/wallpaper/110000010/wallpaper-land/BYDCarouselAutoPic1.webp",
+        "file:///android_asset/res/wallpaper/110000010/wallpaper-land/BYDCarouselAutoPic2.webp",
+        "file:///android_asset/res/wallpaper/110000010/wallpaper-land/BYDCarouselAutoPic3.webp",
+        "file:///android_asset/res/wallpaper/110000010/wallpaper-land/BYDCarouselAutoPic4.webp",
+        "file:///android_asset/res/wallpaper/110000010/wallpaper-land/BYDCarouselAutoPic5.webp",
+        "file:///android_asset/res/wallpaper/110000010/wallpaper-land/BYDCarouselAutoPic6.webp",
+        "file:///android_asset/res/wallpaper/110000010/wallpaper-land/BYDCarouselAutoPic7.webp"
+      ],
+      "port": [
+        "file:///android_asset/res/wallpaper/110000010/wallpaper/BYDCarouselAutoPic1.webp",
+        "file:///android_asset/res/wallpaper/110000010/wallpaper/BYDCarouselAutoPic2.webp",
+        "file:///android_asset/res/wallpaper/110000010/wallpaper/BYDCarouselAutoPic3.webp",
+        "file:///android_asset/res/wallpaper/110000010/wallpaper/BYDCarouselAutoPic4.webp",
+        "file:///android_asset/res/wallpaper/110000010/wallpaper/BYDCarouselAutoPic5.webp",
+        "file:///android_asset/res/wallpaper/110000010/wallpaper/BYDCarouselAutoPic6.webp",
+        "file:///android_asset/res/wallpaper/110000010/wallpaper/BYDCarouselAutoPic7.webp"
+      ]
+    },
+    "rsType": 1
+  },
+  {
+    "rsId": 110000011,
+    "rsName": "沙漠风暴",
+    "imgUrl": {
+      "land": [
+        "file:///android_asset/res/wallpaper/110000011/wallpaper-land/sunrise.png",
+        "file:///android_asset/res/wallpaper/110000011/wallpaper-land/night.png",
+        "file:///android_asset/res/wallpaper/110000011/wallpaper-land/evening.png",
+        "file:///android_asset/res/wallpaper/110000011/wallpaper-land/morning.png"
+      ],
+      "port": [
+        "file:///android_asset/res/wallpaper/110000011/wallpaper/sunrise.png",
+        "file:///android_asset/res/wallpaper/110000011/wallpaper/night.png",
+        "file:///android_asset/res/wallpaper/110000011/wallpaper/evening.png",
+        "file:///android_asset/res/wallpaper/110000011/wallpaper/morning.png"
+      ]
+    },
+    "rsType": 15
+  },
+  {
+    "rsId": 110000012,
+    "rsName": "Geometry",
+    "imgUrl": {
+      "land": [
+        "file:///android_asset/res/wallpaper/110000012/land/110000012.webp"
+      ],
+      "port": [
+        "file:///android_asset/res/wallpaper/110000012/port/110000012.webp"
+      ]
+    },
+    "rsType": 2
+  },
+  {
+    "rsId": 110000013,
+    "rsName": "Serenity",
+    "imgUrl": {
+      "land": [
+        "file:///android_asset/res/wallpaper/110000013/land/110000013.webp"
+      ],
+      "port": [
+        "file:///android_asset/res/wallpaper/110000013/port/110000013.webp"
+      ]
+    },
+    "rsType": 2
+  },
+  {
+    "rsId": 110000014,
+    "rsName": "Nature",
+    "imgUrl": {
+      "land": [
+        "file:///android_asset/res/wallpaper/110000014/land/110000014.webp"
+      ],
+      "port": [
+        "file:///android_asset/res/wallpaper/110000014/port/110000014.webp"
+      ]
+    },
+    "rsType": 2
+  },
+  {
+    "rsId": 110000015,
+    "rsName": "Sunset",
+    "imgUrl": {
+      "land": [
+        "file:///android_asset/res/wallpaper/110000015/land/110000015.webp"
+      ],
+      "port": [
+        "file:///android_asset/res/wallpaper/110000015/port/110000015.webp"
+      ]
+    },
+    "rsType": 2
+  }
+]

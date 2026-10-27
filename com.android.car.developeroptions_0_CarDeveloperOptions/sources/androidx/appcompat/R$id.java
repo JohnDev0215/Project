@@ -1,0 +1,53 @@
+package androidx.appcompat;
+
+/* JADX INFO: loaded from: classes.dex */
+public final class R$id {
+    public static final int action_bar = 2131361848;
+    public static final int action_bar_activity_content = 2131361849;
+    public static final int action_bar_container = 2131361850;
+    public static final int action_bar_subtitle = 2131361853;
+    public static final int action_bar_title = 2131361854;
+    public static final int action_context_bar = 2131361857;
+    public static final int action_menu_presenter = 2131361867;
+    public static final int action_mode_bar_stub = 2131361869;
+    public static final int action_mode_close_button = 2131361870;
+    public static final int activity_chooser_view_content = 2131361876;
+    public static final int alertTitle = 2131361900;
+    public static final int buttonPanel = 2131361999;
+    public static final int content = 2131362066;
+    public static final int contentPanel = 2131362067;
+    public static final int custom = 2131362085;
+    public static final int customPanel = 2131362086;
+    public static final int decor_content_parent = 2131362110;
+    public static final int default_activity_button = 2131362113;
+    public static final int edit_query = 2131362180;
+    public static final int expand_activities_button = 2131362222;
+    public static final int group_divider = 2131362276;
+    public static final int icon = 2131362309;
+    public static final int image = 2131362324;
+    public static final int list_item = 2131362403;
+    public static final int message = 2131362425;
+    public static final int parentPanel = 2131362564;
+    public static final int scrollIndicatorDown = 2131362702;
+    public static final int scrollIndicatorUp = 2131362703;
+    public static final int scrollView = 2131362704;
+    public static final int search_button = 2131362712;
+    public static final int search_close_btn = 2131362713;
+    public static final int search_edit_frame = 2131362715;
+    public static final int search_go_btn = 2131362716;
+    public static final int search_mag_icon = 2131362717;
+    public static final int search_plate = 2131362718;
+    public static final int search_src_text = 2131362719;
+    public static final int search_voice_btn = 2131362720;
+    public static final int shortcut = 2131362749;
+    public static final int spacer = 2131362791;
+    public static final int split_action_bar = 2131362795;
+    public static final int submenuarrow = 2131362834;
+    public static final int submit_area = 2131362835;
+    public static final int textSpacerNoButtons = 2131362903;
+    public static final int textSpacerNoTitle = 2131362904;
+    public static final int title = 2131362919;
+    public static final int titleDividerNoCustom = 2131362921;
+    public static final int title_template = 2131362923;
+    public static final int topPanel = 2131362928;
+}

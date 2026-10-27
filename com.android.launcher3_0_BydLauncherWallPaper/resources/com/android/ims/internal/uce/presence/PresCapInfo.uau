@@ -1,0 +1,4 @@
+signature,file,startline,startcol,endline,endcol,properties
+Lcom/android/ims/internal/uce/presence/PresCapInfo;->mContactUri:Ljava/lang/String;,frameworks/base/core/java/com/android/ims/internal/uce/presence/PresCapInfo.java,30,5,30,25,
+Lcom/android/ims/internal/uce/presence/PresCapInfo;->getCapInfo()Lcom/android/ims/internal/uce/common/CapInfo;,frameworks/base/core/java/com/android/ims/internal/uce/presence/PresCapInfo.java,37,5,37,25,
+Lcom/android/ims/internal/uce/presence/PresCapInfo;->getContactUri()Ljava/lang/String;,frameworks/base/core/java/com/android/ims/internal/uce/presence/PresCapInfo.java,54,5,54,25,

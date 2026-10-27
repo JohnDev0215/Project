@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/background"
+        android:drawable="@drawable/view_download_progress_bar_manager_background_denza"/>
+    <item android:id="@+id/progress">
+        <clip
+            android:gravity="end"
+            android:drawable="@drawable/view_download_progress_bar_manager_loaded_denza"
+            android:clipOrientation="horizontal"/>
+    </item>
+</layer-list>

@@ -1,0 +1,6 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/view/DisplayInfo;->logicalWidth:I,frameworks/base/core/java/android/view/DisplayInfo.java,136,5,136,25,
+Landroid/view/DisplayInfo;->logicalHeight:I,frameworks/base/core/java/android/view/DisplayInfo.java,144,5,144,25,
+Landroid/view/DisplayInfo;->displayCutout:Landroid/view/DisplayCutout;,frameworks/base/core/java/android/view/DisplayInfo.java,154,5,154,63,maxTargetSdk=28
+Landroid/view/DisplayInfo;->rotation:I,frameworks/base/core/java/android/view/DisplayInfo.java,168,5,168,25,
+Landroid/view/DisplayInfo;-><init>()V,frameworks/base/core/java/android/view/DisplayInfo.java,285,5,285,88,maxTargetSdk=28&trackingBug=123769467L

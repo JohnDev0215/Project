@@ -1,0 +1,4 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/net/NetworkRequest;->networkCapabilities:Landroid/net/NetworkCapabilities;,frameworks/base/core/java/android/net/NetworkRequest.java,46,5,46,25,
+Landroid/net/NetworkRequest;->requestId:I,frameworks/base/core/java/android/net/NetworkRequest.java,55,5,55,25,
+Landroid/net/NetworkRequest;->legacyType:I,frameworks/base/core/java/android/net/NetworkRequest.java,63,5,63,88,maxTargetSdk=28&trackingBug=115609023L

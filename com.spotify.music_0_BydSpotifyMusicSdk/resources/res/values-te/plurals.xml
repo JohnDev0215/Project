@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="android_auto_podcast_episode_time_format_hours">
+        <item quantity="one">%1$d గంట</item>
+        <item quantity="other">%1$d గంటలు</item>
+    </plurals>
+    <plurals name="android_auto_podcast_episode_time_format_min">
+        <item quantity="one">%1$d నిమిషం</item>
+        <item quantity="other">%1$d నిమిషాలు</item>
+    </plurals>
+    <plurals name="content_liked_songs_subtitle">
+        <item quantity="one">%1$d పాట</item>
+        <item quantity="other">%1$d పాటలు</item>
+    </plurals>
+    <plurals name="content_your_episodes_subtitle">
+        <item quantity="one">%1$d ఎపిసోడ్</item>
+        <item quantity="other">%1$d ఎపిసోడ్‌లు</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">%d కొత్త నోటిఫికేషన్</item>
+        <item quantity="other">%d కొత్త నోటిఫికేషన్‌లు</item>
+    </plurals>
+</resources>

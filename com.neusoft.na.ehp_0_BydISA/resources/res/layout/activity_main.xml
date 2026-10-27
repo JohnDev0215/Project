@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:paddingBottom="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/et_lat"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:hint="lat"
+                    android:layout_weight="1"
+                    android:inputType="numberDecimal"/>
+                <EditText
+                    android:id="@+id/et_lon"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:hint="lon"
+                    android:layout_weight="1"
+                    android:inputType="numberDecimal"/>
+            </LinearLayout>
+            <Button
+                android:id="@+id/btn_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="modify default location"/>
+            <Button
+                android:id="@+id/btn_permission"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="request permission"/>
+            <Button
+                android:id="@+id/btn_start"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="start service"/>
+            <Button
+                android:id="@+id/btn_stop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="stop service"/>
+            <Button
+                android:id="@+id/btn_vp_open"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="open vp"/>
+            <Button
+                android:id="@+id/btn_vp_close"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="close vp"/>
+            <Button
+                android:id="@+id/btn_finish"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="finish activity"/>
+            <Button
+                android:id="@+id/btn_toISA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="start ISA blank door"/>
+            <Button
+                android:id="@+id/btn_copy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="copy dlt"/>
+            <Button
+                android:id="@+id/btn_inputAdasCfg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Input adas configuration"/>
+            <Switch
+                android:textSize="25dp"
+                android:gravity="center"
+                android:id="@+id/switch_dbu"
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="not active dbu service"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

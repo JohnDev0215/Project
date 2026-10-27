@@ -1,0 +1,4 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/provider/DocumentsContract;->METHOD_CREATE_DOCUMENT:Ljava/lang/String;,frameworks/base/core/java/android/provider/DocumentsContract.java,845,5,845,25,
+Landroid/provider/DocumentsContract;->PATH_DOCUMENT:Ljava/lang/String;,frameworks/base/core/java/android/provider/DocumentsContract.java,880,5,880,25,
+Landroid/provider/DocumentsContract;->PATH_TREE:Ljava/lang/String;,frameworks/base/core/java/android/provider/DocumentsContract.java,884,5,884,25,

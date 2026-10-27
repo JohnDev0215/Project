@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="1"
+    android:versionName="8.0.0.186.1-G_NEU_ISA"
+    android:compileSdkVersion="31"
+    android:compileSdkVersionCodename="12"
+    package="com.neusoft.na.ehp"
+    platformBuildVersionCode="31"
+    platformBuildVersionName="12">
+    <uses-sdk
+        android:minSdkVersion="28"
+        android:targetSdkVersion="31"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.BYDAUTO_STATISTIC_COMMON"/>
+    <uses-permission android:name="android.permission.BYDAUTO_STATISTIC_SET"/>
+    <uses-permission android:name="android.permission.BYDAUTO_STATISTIC_GET"/>
+    <uses-permission android:name="android.permission.BYDAUTO_BODYWORK_COMMON"/>
+    <uses-permission android:name="android.permission.BYDAUTO_BODYWORK_GET"/>
+    <uses-permission android:name="android.permission.BYDAUTO_YUN_COMMON"/>
+    <uses-permission android:name="android.permission.BYDAUTO_YUN_GET"/>
+    <uses-permission android:name="android.permission.BYDAUTO_YUN_SET"/>
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION"/>
+    <application
+        android:theme="@style/Theme.Ehp"
+        android:icon="@mipmap/logo"
+        android:persistent="true"
+        android:allowBackup="false"
+        android:supportsRtl="true"
+        android:extractNativeLibs="false"
+        android:usesCleartextTraffic="true"
+        android:networkSecurityConfig="@xml/network_config"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory">
+        <activity
+            android:name="com.neusoft.na.ehp.InputCfgActivity"
+            android:exported="false"/>
+        <activity
+            android:theme="@style/AlertDialogActivity"
+            android:name="com.neusoft.na.ehp.dbu.DialogActivity"
+            android:exported="false"
+            android:launchMode="singleTask"
+            android:configChanges="colorMode|screenSize|uiMode|orientation"/>
+        <activity
+            android:name="com.neusoft.na.ehp.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.neusoft.na.ehp.ISABlankDoorActivity"
+            android:exported="true"/>
+        <service
+            android:name="com.neusoft.na.ehp.EhpService"
+            android:exported="true"/>
+        <receiver
+            android:name="com.neusoft.na.ehp.broadcast.EhpBroadcastReceiver"
+            android:permission="android.permission.RECEIVE_BOOT_COMPLETED"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter android:priority="1000">
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.FIRST_BOOT_COMPLETED"/>
+                <action android:name="com.coagent.intent.action.READY"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.neusoft.na.ehp.broadcast.UsbBroadcastReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter android:priority="1000">
+                <action android:name="android.intent.action.MEDIA_MOUNTED"/>
+                <action android:name="android.intent.action.MEDIA_EJECT"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="file"/>
+            </intent-filter>
+        </receiver>
+        <service
+            android:name="com.neusoft.dlt.LogService"
+            android:process="@string/service_dlt_name"/>
+        <provider
+            android:name="androidx.startup.InitializationProvider"
+            android:exported="false"
+            android:authorities="com.neusoft.na.ehp.androidx-startup">
+            <meta-data
+                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+                android:value="androidx.startup"/>
+            <meta-data
+                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+                android:value="androidx.startup"/>
+        </provider>
+    </application>
+</manifest>

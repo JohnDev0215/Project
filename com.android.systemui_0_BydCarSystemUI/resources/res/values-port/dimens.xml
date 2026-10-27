@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="custom_toast_margin_bottom">@dimen/dp_898</dimen>
+    <dimen name="docked_divider_handle_height">16dp</dimen>
+    <dimen name="docked_divider_handle_width">2dp</dimen>
+    <dimen name="gesture_temp_margin_top">@dimen/dp_308</dimen>
+    <dimen name="gesture_wind_margin_top">@dimen/dp_188</dimen>
+    <dimen name="panel_back_title_margin_top">@dimen/dp_34</dimen>
+    <dimen name="panel_btn_item_text_width">@dimen/dp_114</dimen>
+    <dimen name="panel_btn_item_width">@dimen/dp_114</dimen>
+    <dimen name="panel_scene_introduce_item_margin">@dimen/dp_24</dimen>
+    <dimen name="panel_scene_introduce_recycle_margin">@dimen/dp_32</dimen>
+    <dimen name="privacy_policy_margin_bottom">@dimen/dp_56</dimen>
+    <dimen name="privacy_policy_margin_top">@dimen/dp_28</dimen>
+    <dimen name="privacy_policy_read_tips_margin_bottom">@dimen/dp_270</dimen>
+    <dimen name="safety_warning_margin_top">@dimen/dp_540</dimen>
+</resources>

@@ -1,0 +1,10 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/app/usage/UsageEvents;->mEventsToWrite:Ljava/util/List;,frameworks/base/core/java/android/app/usage/UsageEvents.java,706,5,706,88,maxTargetSdk=28&trackingBug=115609023L
+Landroid/app/usage/UsageEvents;->mParcel:Landroid/os/Parcel;,frameworks/base/core/java/android/app/usage/UsageEvents.java,710,5,710,25,
+Landroid/app/usage/UsageEvents;->mEventCount:I,frameworks/base/core/java/android/app/usage/UsageEvents.java,712,5,712,88,maxTargetSdk=28&trackingBug=115609023L
+Landroid/app/usage/UsageEvents;->mIndex:I,frameworks/base/core/java/android/app/usage/UsageEvents.java,715,5,715,88,maxTargetSdk=28&trackingBug=115609023L
+Landroid/app/usage/UsageEvents;->mStringPool:[Ljava/lang/String;,frameworks/base/core/java/android/app/usage/UsageEvents.java,725,5,725,88,maxTargetSdk=28&trackingBug=115609023L
+Landroid/app/usage/UsageEvents;-><init>(Landroid/os/Parcel;)V,frameworks/base/core/java/android/app/usage/UsageEvents.java,732,5,732,88,maxTargetSdk=28&trackingBug=115609023L
+Landroid/app/usage/UsageEvents;->findStringIndex(Ljava/lang/String;)I,frameworks/base/core/java/android/app/usage/UsageEvents.java,833,5,833,88,maxTargetSdk=28&trackingBug=115609023L
+Landroid/app/usage/UsageEvents;->writeEventToParcel(Landroid/app/usage/UsageEvents$Event;Landroid/os/Parcel;I)V,frameworks/base/core/java/android/app/usage/UsageEvents.java,845,5,845,88,maxTargetSdk=28&trackingBug=115609023L
+Landroid/app/usage/UsageEvents;->readEventFromParcel(Landroid/os/Parcel;Landroid/app/usage/UsageEvents$Event;)V,frameworks/base/core/java/android/app/usage/UsageEvents.java,910,5,910,88,maxTargetSdk=28&trackingBug=115609023L

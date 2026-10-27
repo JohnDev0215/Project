@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:title="@string/system_navigation_title"
+    android:key="gesture_system_navigation_screen">
+    <com.android.car.developeroptions.widget.VideoPreference
+        android:key="gesture_swipe_up_video"
+        app:animation="@raw/gesture_swipe_up"
+        app:preview="@drawable/gesture_swipe_up"/>
+    <com.android.car.developeroptions.widget.RadioButtonPreference
+        android:title="@string/edge_to_edge_navigation_title"
+        android:key="gesture_edge_to_edge"
+        android:summary="@string/edge_to_edge_navigation_summary"
+        app:allowDividerAbove="true"
+        app:controller="com.android.car.developeroptions.gestures.SystemNavigationEdgeToEdgePreferenceController"
+        app:keywords="@string/keywords_gesture"/>
+    <com.android.car.developeroptions.widget.RadioButtonPreference
+        android:title="@string/swipe_up_to_switch_apps_title"
+        android:key="gesture_swipe_up"
+        android:summary="@string/swipe_up_to_switch_apps_summary"
+        app:controller="com.android.car.developeroptions.gestures.SystemNavigationSwipeUpPreferenceController"
+        app:keywords="@string/keywords_gesture"/>
+    <com.android.car.developeroptions.widget.RadioButtonPreference
+        android:title="@string/legacy_navigation_title"
+        android:key="gesture_legacy"
+        android:summary="@string/legacy_navigation_summary"
+        app:controller="com.android.car.developeroptions.gestures.SystemNavigationLegacyPreferenceController"
+        app:keywords="@string/keywords_gesture"/>
+</PreferenceScreen>

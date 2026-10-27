@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="android_auto_podcast_episode_time_format_hours">
+        <item quantity="one">%1$d  घन्टा</item>
+        <item quantity="other">%1$d  घन्टा</item>
+    </plurals>
+    <plurals name="android_auto_podcast_episode_time_format_min">
+        <item quantity="one">%1$d  मिनेट</item>
+        <item quantity="other">%1$d  मिनेट</item>
+    </plurals>
+    <plurals name="content_liked_songs_subtitle">
+        <item quantity="one">%1$d गीत</item>
+        <item quantity="other">%1$d गीतहरू</item>
+    </plurals>
+    <plurals name="content_your_episodes_subtitle">
+        <item quantity="one">%1$d भाग</item>
+        <item quantity="other">%1$d भागहरू</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">%d नयाँ सूचना</item>
+        <item quantity="other">%d नयाँ सूचनाहरू</item>
+    </plurals>
+</resources>

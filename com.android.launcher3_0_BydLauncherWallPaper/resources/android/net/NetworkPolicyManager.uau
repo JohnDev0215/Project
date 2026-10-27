@@ -1,0 +1,11 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/net/NetworkPolicyManager;->mService:Landroid/net/INetworkPolicyManager;,frameworks/base/core/java/android/net/NetworkPolicyManager.java,189,5,189,25,
+Landroid/net/NetworkPolicyManager;->from(Landroid/content/Context;)Landroid/net/NetworkPolicyManager;,frameworks/base/core/java/android/net/NetworkPolicyManager.java,205,5,205,25,
+Landroid/net/NetworkPolicyManager;->setUidPolicy(II)V,frameworks/base/core/java/android/net/NetworkPolicyManager.java,217,5,217,25,
+Landroid/net/NetworkPolicyManager;->getUidPolicy(I)I,frameworks/base/core/java/android/net/NetworkPolicyManager.java,261,5,261,25,
+Landroid/net/NetworkPolicyManager;->getUidsWithPolicy(I)[I,frameworks/base/core/java/android/net/NetworkPolicyManager.java,271,5,271,25,
+Landroid/net/NetworkPolicyManager;->registerListener(Landroid/net/INetworkPolicyListener;)V,frameworks/base/core/java/android/net/NetworkPolicyManager.java,281,5,281,88,maxTargetSdk=28&trackingBug=115609023L
+Landroid/net/NetworkPolicyManager;->unregisterListener(Landroid/net/INetworkPolicyListener;)V,frameworks/base/core/java/android/net/NetworkPolicyManager.java,291,5,291,88,maxTargetSdk=28&trackingBug=115609023L
+Landroid/net/NetworkPolicyManager;->getNetworkPolicies()[Landroid/net/NetworkPolicy;,frameworks/base/core/java/android/net/NetworkPolicyManager.java,337,5,337,25,
+Landroid/net/NetworkPolicyManager;->setRestrictBackground(Z)V,frameworks/base/core/java/android/net/NetworkPolicyManager.java,347,5,347,25,
+Landroid/net/NetworkPolicyManager;->getRestrictBackground()Z,frameworks/base/core/java/android/net/NetworkPolicyManager.java,357,5,357,25,

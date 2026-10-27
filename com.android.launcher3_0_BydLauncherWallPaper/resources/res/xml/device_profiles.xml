@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<profiles xmlns:launcher="http://schemas.android.com/apk/res-auto">
+    <grid-option
+        launcher:defaultLayoutId="@xml/default_workspace_4x4"
+        launcher:name="4_by_4"
+        launcher:numColumns="4"
+        launcher:numFolderColumns="4"
+        launcher:numFolderRows="3"
+        launcher:numHotseatIcons="4"
+        launcher:numRows="4">
+        <display-option
+            launcher:canBeDefault="true"
+            launcher:iconImageSize="48"
+            launcher:iconTextSize="13"
+            launcher:minHeightDps="420"
+            launcher:minWidthDps="275"
+            launcher:name="Short Stubby"/>
+        <display-option
+            launcher:canBeDefault="true"
+            launcher:iconImageSize="48"
+            launcher:iconTextSize="13"
+            launcher:minHeightDps="450"
+            launcher:minWidthDps="255"
+            launcher:name="Stubby"/>
+        <display-option
+            launcher:canBeDefault="true"
+            launcher:iconImageSize="48"
+            launcher:iconTextSize="13"
+            launcher:minHeightDps="491.33"
+            launcher:minWidthDps="296"
+            launcher:name="Nexus S"/>
+        <display-option
+            launcher:canBeDefault="true"
+            launcher:iconImageSize="54"
+            launcher:iconTextSize="13"
+            launcher:minHeightDps="567"
+            launcher:minWidthDps="359"
+            launcher:name="Nexus 4"/>
+        <display-option
+            launcher:canBeDefault="true"
+            launcher:iconImageSize="54"
+            launcher:iconTextSize="13"
+            launcher:minHeightDps="567"
+            launcher:minWidthDps="335"
+            launcher:name="Nexus 5"/>
+        <display-option
+            launcher:canBeDefault="true"
+            launcher:iconImageSize="100"
+            launcher:iconTextSize="16"
+            launcher:minHeightDps="694"
+            launcher:minWidthDps="406"
+            launcher:name="Large Phone"/>
+        <display-option
+            launcher:canBeDefault="true"
+            launcher:iconImageSize="48"
+            launcher:iconTextSize="13"
+            launcher:minHeightDps="400"
+            launcher:minWidthDps="255"
+            launcher:name="Shorter Stubby"/>
+    </grid-option>
+</profiles>

@@ -1,0 +1,4 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/provider/CalendarContract$CalendarAlerts;->findNextAlarmTime(Landroid/content/ContentResolver;J)J,frameworks/base/core/java/android/provider/CalendarContract.java,2516,9,2516,29,
+Landroid/provider/CalendarContract$CalendarAlerts;->rescheduleMissedAlarms(Landroid/content/ContentResolver;Landroid/content/Context;Landroid/app/AlarmManager;)V,frameworks/base/core/java/android/provider/CalendarContract.java,2550,9,2550,29,
+Landroid/provider/CalendarContract$CalendarAlerts;->scheduleAlarm(Landroid/content/Context;Landroid/app/AlarmManager;J)V,frameworks/base/core/java/android/provider/CalendarContract.java,2607,9,2607,29,

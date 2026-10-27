@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="dotted_app_label">
+        <item quantity="one">A aplicación %1$s ten %2$d notificación</item>
+        <item quantity="other">A aplicación %1$s ten %2$d notificacións</item>
+    </plurals>
+</resources>

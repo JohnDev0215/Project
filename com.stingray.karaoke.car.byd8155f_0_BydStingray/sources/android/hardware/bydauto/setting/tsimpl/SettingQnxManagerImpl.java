@@ -1,0 +1,51 @@
+package android.hardware.bydauto.setting.tsimpl;
+
+import M5.b;
+import android.content.Context;
+import android.hardware.bydauto.setting.BYDAutoSettingDevice;
+import com.ts.lib.settings.common.utilities.LogUtil;
+import com.ts.qnxmanager.QnxManager;
+
+/* JADX INFO: loaded from: classes.dex */
+public class SettingQnxManagerImpl {
+    private static final int INSTRUNENT_COMMAND_SUCCESS = 0;
+    private static final int SETTING_COMMAND_BUSY = -2147482647;
+    private static final int SETTING_COMMAND_FAILED = -2147482648;
+    private static final int SETTING_COMMAND_INVALID = -2147482645;
+    private static final int SETTING_COMMAND_TIMEOUT = -2147482646;
+    private static final String TAG = "SettingClusterManagerImpl";
+    private static volatile SettingQnxManagerImpl sInstance;
+    private Context mContext;
+    private boolean mIgnoreBydPermission = false;
+    private QnxManager mQnxManager = QnxManager.getInstance();
+
+    private SettingQnxManagerImpl(Context context) {
+        this.mContext = context;
+    }
+
+    private void enforcePermission(String str) {
+        if (!this.mIgnoreBydPermission && this.mContext.checkCallingOrSelfPermission(str) != 0) {
+            throw new SecurityException(b.g("requires permission ", str));
+        }
+    }
+
+    public static SettingQnxManagerImpl getInstance(Context context) {
+        if (sInstance == null) {
+            synchronized (SettingQnxManagerImpl.class) {
+                try {
+                    if (sInstance == null) {
+                        sInstance = new SettingQnxManagerImpl(context);
+                    }
+                } finally {
+                }
+            }
+        }
+        return sInstance;
+    }
+
+    public int notifyDilinkStarted() {
+        LogUtil.debug(TAG, "notifyDilinkStarted start");
+        enforcePermission(BYDAutoSettingDevice.PERMISSION_BYDAUTO_SETTING_SET);
+        return this.mQnxManager.notifyDiLinkStarted() ? 0 : -2147482648;
+    }
+}

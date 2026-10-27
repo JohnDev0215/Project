@@ -1,0 +1,5 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/view/VelocityTracker$Estimator;->xCoeff:[F,frameworks/base/core/java/android/view/VelocityTracker.java,240,9,240,29,
+Landroid/view/VelocityTracker$Estimator;->yCoeff:[F,frameworks/base/core/java/android/view/VelocityTracker.java,246,9,246,29,
+Landroid/view/VelocityTracker$Estimator;->degree:I,frameworks/base/core/java/android/view/VelocityTracker.java,252,9,252,29,
+Landroid/view/VelocityTracker$Estimator;->confidence:F,frameworks/base/core/java/android/view/VelocityTracker.java,258,9,258,29,

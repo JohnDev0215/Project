@@ -1,0 +1,3 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/net/IpConfiguration;->httpProxy:Landroid/net/ProxyInfo;,frameworks/base/core/java/android/net/IpConfiguration.java,81,5,81,25,
+Landroid/net/IpConfiguration;-><init>(Landroid/net/IpConfiguration$IpAssignment;Landroid/net/IpConfiguration$ProxySettings;Landroid/net/StaticIpConfiguration;Landroid/net/ProxyInfo;)V,frameworks/base/core/java/android/net/IpConfiguration.java,101,5,101,25,

@@ -1,0 +1,12 @@
+package android.security.identity;
+
+/* JADX INFO: loaded from: classes2.dex */
+public class SessionTranscriptMismatchException extends IdentityCredentialException {
+    public SessionTranscriptMismatchException(String str) {
+        super(str);
+    }
+
+    public SessionTranscriptMismatchException(String str, Throwable th) {
+        super(str, th);
+    }
+}

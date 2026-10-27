@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content">
+    <Button
+        android:textSize="@dimen/button_text_size"
+        android:textStyle="normal"
+        android:id="@+id/login_pin_button"
+        android:paddingTop="@dimen/login_scannable_alternatives_padding"
+        android:paddingBottom="@dimen/login_scannable_alternatives_padding"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/login_with_pin"
+        android:layout_weight="5"
+        android:filterTouchesWhenObscured="false"
+        android:layout_marginStart="@dimen/login_scannable_alternatives_spacing"
+        android:layout_marginEnd="@dimen/login_scannable_alternatives_spacing"
+        style="@style/WhiteBorderButtonStyle"/>
+    <Button
+        android:textSize="@dimen/button_text_size"
+        android:textStyle="normal"
+        android:id="@+id/login_password_button"
+        android:paddingTop="@dimen/login_scannable_alternatives_padding"
+        android:paddingBottom="@dimen/login_scannable_alternatives_padding"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/login_with_password"
+        android:layout_weight="5"
+        android:filterTouchesWhenObscured="false"
+        android:layout_marginEnd="@dimen/login_scannable_alternatives_spacing"
+        style="@style/WhiteBorderButtonStyle"/>
+</LinearLayout>

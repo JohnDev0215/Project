@@ -1,0 +1,4 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/hardware/SerialPort;->mNativeContext:I,frameworks/base/core/java/android/hardware/SerialPort.java,34,5,34,25,
+Landroid/hardware/SerialPort;->close()V,frameworks/base/core/java/android/hardware/SerialPort.java,63,5,63,25,
+Landroid/hardware/SerialPort;->write(Ljava/nio/ByteBuffer;I)V,frameworks/base/core/java/android/hardware/SerialPort.java,107,5,107,25,

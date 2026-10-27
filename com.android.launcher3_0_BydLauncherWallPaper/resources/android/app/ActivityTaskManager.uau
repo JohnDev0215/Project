@@ -1,0 +1,2 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/app/ActivityTaskManager;->IActivityTaskManagerSingleton:Landroid/util/Singleton;,frameworks/base/core/java/android/app/ActivityTaskManager.java,153,5,153,50,trackingBug=129726065L

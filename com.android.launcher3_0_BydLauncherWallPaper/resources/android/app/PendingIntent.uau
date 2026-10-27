@@ -1,0 +1,7 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/app/PendingIntent;->setOnMarshaledListener(Landroid/app/PendingIntent$OnMarshaledListener;)V,frameworks/base/core/java/android/app/PendingIntent.java,284,5,284,25,
+Landroid/app/PendingIntent;->getActivityAsUser(Landroid/content/Context;ILandroid/content/Intent;ILandroid/os/Bundle;Landroid/os/UserHandle;)Landroid/app/PendingIntent;,frameworks/base/core/java/android/app/PendingIntent.java,373,5,373,25,
+Landroid/app/PendingIntent;->getBroadcastAsUser(Landroid/content/Context;ILandroid/content/Intent;ILandroid/os/UserHandle;)Landroid/app/PendingIntent;,frameworks/base/core/java/android/app/PendingIntent.java,569,5,569,25,
+Landroid/app/PendingIntent;->isActivity()Z,frameworks/base/core/java/android/app/PendingIntent.java,1108,5,1108,25,
+Landroid/app/PendingIntent;->getIntent()Landroid/content/Intent;,frameworks/base/core/java/android/app/PendingIntent.java,1148,5,1148,25,
+Landroid/app/PendingIntent;->getTag(Ljava/lang/String;)Ljava/lang/String;,frameworks/base/core/java/android/app/PendingIntent.java,1162,5,1162,25,

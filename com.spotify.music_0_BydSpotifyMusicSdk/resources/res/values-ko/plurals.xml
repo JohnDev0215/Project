@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="android_auto_podcast_episode_time_format_hours">
+        <item quantity="other">%1$d시간</item>
+    </plurals>
+    <plurals name="android_auto_podcast_episode_time_format_min">
+        <item quantity="other">%1$d분</item>
+    </plurals>
+    <plurals name="content_liked_songs_subtitle">
+        <item quantity="other">곡 %1$d개</item>
+    </plurals>
+    <plurals name="content_your_episodes_subtitle">
+        <item quantity="other">에피소드 %1$d개</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">새 알림 %d개</item>
+        <item quantity="other">새 알림 %d개</item>
+    </plurals>
+</resources>

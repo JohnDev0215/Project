@@ -1,0 +1,7 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/renderscript/RenderScriptGL;-><init>(Landroid/content/Context;Landroid/renderscript/RenderScriptGL$SurfaceConfig;)V,frameworks/base/rs/java/android/renderscript/RenderScriptGL.java,175,5,175,25,
+Landroid/renderscript/RenderScriptGL;->setSurface(Landroid/view/SurfaceHolder;II)V,frameworks/base/rs/java/android/renderscript/RenderScriptGL.java,209,5,209,25,
+Landroid/renderscript/RenderScriptGL;->bindRootScript(Landroid/renderscript/Script;)V,frameworks/base/rs/java/android/renderscript/RenderScriptGL.java,289,5,289,25,
+Landroid/renderscript/RenderScriptGL;->bindProgramStore(Landroid/renderscript/ProgramStore;)V,frameworks/base/rs/java/android/renderscript/RenderScriptGL.java,302,5,302,25,
+Landroid/renderscript/RenderScriptGL;->bindProgramRaster(Landroid/renderscript/ProgramRaster;)V,frameworks/base/rs/java/android/renderscript/RenderScriptGL.java,327,5,327,25,
+Landroid/renderscript/RenderScriptGL;->bindProgramVertex(Landroid/renderscript/ProgramVertex;)V,frameworks/base/rs/java/android/renderscript/RenderScriptGL.java,340,5,340,25,

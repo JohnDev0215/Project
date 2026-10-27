@@ -1,0 +1,4 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/os/BatteryStats$Uid$Pkg$Serv;->getStartTime(JI)J,frameworks/base/core/java/android/os/BatteryStats.java,1128,17,1128,37,
+Landroid/os/BatteryStats$Uid$Pkg$Serv;->getStarts(I)I,frameworks/base/core/java/android/os/BatteryStats.java,1136,17,1136,37,
+Landroid/os/BatteryStats$Uid$Pkg$Serv;->getLaunches(I)I,frameworks/base/core/java/android/os/BatteryStats.java,1144,17,1144,37,

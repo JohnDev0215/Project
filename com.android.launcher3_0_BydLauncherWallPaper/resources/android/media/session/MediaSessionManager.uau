@@ -1,0 +1,2 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/media/session/MediaSessionManager;->getActiveSessionsForUser(Landroid/content/ComponentName;I)Ljava/util/List;,frameworks/base/media/java/android/media/session/MediaSessionManager.java,202,5,202,25,

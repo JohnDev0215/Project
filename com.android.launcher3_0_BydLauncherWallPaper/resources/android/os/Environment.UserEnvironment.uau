@@ -1,0 +1,5 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/os/Environment$UserEnvironment;-><init>(I)V,frameworks/base/core/java/android/os/Environment.java,153,9,153,29,
+Landroid/os/Environment$UserEnvironment;->getExternalDirs()[Ljava/io/File;,frameworks/base/core/java/android/os/Environment.java,158,9,158,29,
+Landroid/os/Environment$UserEnvironment;->getExternalStorageDirectory()Ljava/io/File;,frameworks/base/core/java/android/os/Environment.java,169,9,169,29,
+Landroid/os/Environment$UserEnvironment;->getExternalStoragePublicDirectory(Ljava/lang/String;)Ljava/io/File;,frameworks/base/core/java/android/os/Environment.java,175,9,175,29,

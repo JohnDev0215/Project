@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="dotted_app_label">
+        <item quantity="one">%1$s comporte %2$dnotification</item>
+        <item quantity="other">%1$s comporte %2$dnotifications</item>
+    </plurals>
+</resources>

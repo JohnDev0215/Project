@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="dotted_app_label">
+        <item quantity="one">%1$sसाठी%2$dसूचना आहे</item>
+        <item quantity="other">%1$sसाठी %2$d सूचना आहेत</item>
+    </plurals>
+</resources>

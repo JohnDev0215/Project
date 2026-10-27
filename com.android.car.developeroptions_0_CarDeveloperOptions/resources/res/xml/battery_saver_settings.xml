@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" xmlns:settings="http://schemas.android.com/apk/res-auto"
+    android:title="@string/battery_saver"
+    android:key="battery_saver_page">
+    <Preference
+        android:title="@string/battery_saver_schedule_settings_title"
+        android:key="battery_saver_schedule"
+        android:fragment="com.android.car.developeroptions.fuelgauge.batterysaver.BatterySaverScheduleSettings"
+        settings:controller="com.android.car.developeroptions.fuelgauge.batterysaver.BatterySaverSchedulePreferenceController"/>
+    <SwitchPreference
+        android:title="@string/battery_saver_sticky_title_new"
+        android:key="battery_saver_sticky"
+        android:summary="@string/summary_placeholder"
+        settings:controller="com.android.car.developeroptions.fuelgauge.batterysaver.BatterySaverStickyPreferenceController"
+        settings:keywords="@string/keywords_battery_saver_sticky"/>
+    <com.android.car.developeroptions.widget.TwoStateButtonPreference
+        android:title="@string/battery_saver"
+        android:selectable="false"
+        android:key="battery_saver"
+        settings:controller="com.android.car.developeroptions.fuelgauge.batterysaver.BatterySaverButtonPreferenceController"
+        settings:platform_slice="true"
+        settings:textOff="@string/battery_saver_button_turn_off"
+        settings:textOn="@string/battery_saver_button_turn_on"/>
+    <PreferenceCategory android:key="battery_saver_footer">
+        <com.android.settingslib.widget.FooterPreference
+            android:title="@android:string/autofill_save_title"
+            android:selectable="false"
+            android:key="battery_saver_footer_preference"/>
+    </PreferenceCategory>
+</PreferenceScreen>

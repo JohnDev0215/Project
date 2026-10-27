@@ -1,0 +1,297 @@
+package android.net.lowpan;
+
+import android.net.lowpan.ILowpanInterface;
+import android.net.lowpan.ILowpanManagerListener;
+import android.os.Binder;
+import android.os.IBinder;
+import android.os.IInterface;
+import android.os.Parcel;
+import android.os.RemoteException;
+
+/* JADX INFO: loaded from: classes2.dex */
+public interface ILowpanManager extends IInterface {
+    public static final String LOWPAN_SERVICE_NAME = "lowpan";
+
+    public static class Default implements ILowpanManager {
+        @Override // android.net.lowpan.ILowpanManager
+        public void addInterface(ILowpanInterface iLowpanInterface) throws RemoteException {
+        }
+
+        @Override // android.net.lowpan.ILowpanManager
+        public void addListener(ILowpanManagerListener iLowpanManagerListener) throws RemoteException {
+        }
+
+        @Override // android.os.IInterface
+        public IBinder asBinder() {
+            return null;
+        }
+
+        @Override // android.net.lowpan.ILowpanManager
+        public ILowpanInterface getInterface(String str) throws RemoteException {
+            return null;
+        }
+
+        @Override // android.net.lowpan.ILowpanManager
+        public String[] getInterfaceList() throws RemoteException {
+            return null;
+        }
+
+        @Override // android.net.lowpan.ILowpanManager
+        public void removeInterface(ILowpanInterface iLowpanInterface) throws RemoteException {
+        }
+
+        @Override // android.net.lowpan.ILowpanManager
+        public void removeListener(ILowpanManagerListener iLowpanManagerListener) throws RemoteException {
+        }
+    }
+
+    void addInterface(ILowpanInterface iLowpanInterface) throws RemoteException;
+
+    void addListener(ILowpanManagerListener iLowpanManagerListener) throws RemoteException;
+
+    ILowpanInterface getInterface(String str) throws RemoteException;
+
+    String[] getInterfaceList() throws RemoteException;
+
+    void removeInterface(ILowpanInterface iLowpanInterface) throws RemoteException;
+
+    void removeListener(ILowpanManagerListener iLowpanManagerListener) throws RemoteException;
+
+    public static abstract class Stub extends Binder implements ILowpanManager {
+        private static final String DESCRIPTOR = "android.net.lowpan.ILowpanManager";
+        static final int TRANSACTION_addInterface = 5;
+        static final int TRANSACTION_addListener = 3;
+        static final int TRANSACTION_getInterface = 1;
+        static final int TRANSACTION_getInterfaceList = 2;
+        static final int TRANSACTION_removeInterface = 6;
+        static final int TRANSACTION_removeListener = 4;
+
+        public static String getDefaultTransactionName(int i) {
+            switch (i) {
+                case 1:
+                    return "getInterface";
+                case 2:
+                    return "getInterfaceList";
+                case 3:
+                    return "addListener";
+                case 4:
+                    return "removeListener";
+                case 5:
+                    return "addInterface";
+                case 6:
+                    return "removeInterface";
+                default:
+                    return null;
+            }
+        }
+
+        @Override // android.os.IInterface
+        public IBinder asBinder() {
+            return this;
+        }
+
+        public Stub() {
+            attachInterface(this, DESCRIPTOR);
+        }
+
+        public static ILowpanManager asInterface(IBinder iBinder) {
+            if (iBinder == null) {
+                return null;
+            }
+            IInterface iInterfaceQueryLocalInterface = iBinder.queryLocalInterface(DESCRIPTOR);
+            if (iInterfaceQueryLocalInterface != null && (iInterfaceQueryLocalInterface instanceof ILowpanManager)) {
+                return (ILowpanManager) iInterfaceQueryLocalInterface;
+            }
+            return new Proxy(iBinder);
+        }
+
+        @Override // android.os.Binder
+        public String getTransactionName(int i) {
+            return getDefaultTransactionName(i);
+        }
+
+        @Override // android.os.Binder
+        public boolean onTransact(int i, Parcel parcel, Parcel parcel2, int i2) throws RemoteException {
+            if (i == 1598968902) {
+                parcel2.writeString(DESCRIPTOR);
+                return true;
+            }
+            switch (i) {
+                case 1:
+                    parcel.enforceInterface(DESCRIPTOR);
+                    ILowpanInterface iLowpanInterface = getInterface(parcel.readString());
+                    parcel2.writeNoException();
+                    parcel2.writeStrongBinder(iLowpanInterface != null ? iLowpanInterface.asBinder() : null);
+                    return true;
+                case 2:
+                    parcel.enforceInterface(DESCRIPTOR);
+                    String[] interfaceList = getInterfaceList();
+                    parcel2.writeNoException();
+                    parcel2.writeStringArray(interfaceList);
+                    return true;
+                case 3:
+                    parcel.enforceInterface(DESCRIPTOR);
+                    addListener(ILowpanManagerListener.Stub.asInterface(parcel.readStrongBinder()));
+                    parcel2.writeNoException();
+                    return true;
+                case 4:
+                    parcel.enforceInterface(DESCRIPTOR);
+                    removeListener(ILowpanManagerListener.Stub.asInterface(parcel.readStrongBinder()));
+                    parcel2.writeNoException();
+                    return true;
+                case 5:
+                    parcel.enforceInterface(DESCRIPTOR);
+                    addInterface(ILowpanInterface.Stub.asInterface(parcel.readStrongBinder()));
+                    parcel2.writeNoException();
+                    return true;
+                case 6:
+                    parcel.enforceInterface(DESCRIPTOR);
+                    removeInterface(ILowpanInterface.Stub.asInterface(parcel.readStrongBinder()));
+                    parcel2.writeNoException();
+                    return true;
+                default:
+                    return super.onTransact(i, parcel, parcel2, i2);
+            }
+        }
+
+        private static class Proxy implements ILowpanManager {
+            public static ILowpanManager sDefaultImpl;
+            private IBinder mRemote;
+
+            public String getInterfaceDescriptor() {
+                return Stub.DESCRIPTOR;
+            }
+
+            Proxy(IBinder iBinder) {
+                this.mRemote = iBinder;
+            }
+
+            @Override // android.os.IInterface
+            public IBinder asBinder() {
+                return this.mRemote;
+            }
+
+            @Override // android.net.lowpan.ILowpanManager
+            public ILowpanInterface getInterface(String str) throws RemoteException {
+                Parcel parcelObtain = Parcel.obtain();
+                Parcel parcelObtain2 = Parcel.obtain();
+                try {
+                    parcelObtain.writeInterfaceToken(Stub.DESCRIPTOR);
+                    parcelObtain.writeString(str);
+                    if (!this.mRemote.transact(1, parcelObtain, parcelObtain2, 0) && Stub.getDefaultImpl() != null) {
+                        return Stub.getDefaultImpl().getInterface(str);
+                    }
+                    parcelObtain2.readException();
+                    return ILowpanInterface.Stub.asInterface(parcelObtain2.readStrongBinder());
+                } finally {
+                    parcelObtain2.recycle();
+                    parcelObtain.recycle();
+                }
+            }
+
+            @Override // android.net.lowpan.ILowpanManager
+            public String[] getInterfaceList() throws RemoteException {
+                Parcel parcelObtain = Parcel.obtain();
+                Parcel parcelObtain2 = Parcel.obtain();
+                try {
+                    parcelObtain.writeInterfaceToken(Stub.DESCRIPTOR);
+                    if (!this.mRemote.transact(2, parcelObtain, parcelObtain2, 0) && Stub.getDefaultImpl() != null) {
+                        return Stub.getDefaultImpl().getInterfaceList();
+                    }
+                    parcelObtain2.readException();
+                    return parcelObtain2.createStringArray();
+                } finally {
+                    parcelObtain2.recycle();
+                    parcelObtain.recycle();
+                }
+            }
+
+            @Override // android.net.lowpan.ILowpanManager
+            public void addListener(ILowpanManagerListener iLowpanManagerListener) throws RemoteException {
+                Parcel parcelObtain = Parcel.obtain();
+                Parcel parcelObtain2 = Parcel.obtain();
+                try {
+                    parcelObtain.writeInterfaceToken(Stub.DESCRIPTOR);
+                    parcelObtain.writeStrongBinder(iLowpanManagerListener != null ? iLowpanManagerListener.asBinder() : null);
+                    if (!this.mRemote.transact(3, parcelObtain, parcelObtain2, 0) && Stub.getDefaultImpl() != null) {
+                        Stub.getDefaultImpl().addListener(iLowpanManagerListener);
+                    } else {
+                        parcelObtain2.readException();
+                    }
+                } finally {
+                    parcelObtain2.recycle();
+                    parcelObtain.recycle();
+                }
+            }
+
+            @Override // android.net.lowpan.ILowpanManager
+            public void removeListener(ILowpanManagerListener iLowpanManagerListener) throws RemoteException {
+                Parcel parcelObtain = Parcel.obtain();
+                Parcel parcelObtain2 = Parcel.obtain();
+                try {
+                    parcelObtain.writeInterfaceToken(Stub.DESCRIPTOR);
+                    parcelObtain.writeStrongBinder(iLowpanManagerListener != null ? iLowpanManagerListener.asBinder() : null);
+                    if (!this.mRemote.transact(4, parcelObtain, parcelObtain2, 0) && Stub.getDefaultImpl() != null) {
+                        Stub.getDefaultImpl().removeListener(iLowpanManagerListener);
+                    } else {
+                        parcelObtain2.readException();
+                    }
+                } finally {
+                    parcelObtain2.recycle();
+                    parcelObtain.recycle();
+                }
+            }
+
+            @Override // android.net.lowpan.ILowpanManager
+            public void addInterface(ILowpanInterface iLowpanInterface) throws RemoteException {
+                Parcel parcelObtain = Parcel.obtain();
+                Parcel parcelObtain2 = Parcel.obtain();
+                try {
+                    parcelObtain.writeInterfaceToken(Stub.DESCRIPTOR);
+                    parcelObtain.writeStrongBinder(iLowpanInterface != null ? iLowpanInterface.asBinder() : null);
+                    if (!this.mRemote.transact(5, parcelObtain, parcelObtain2, 0) && Stub.getDefaultImpl() != null) {
+                        Stub.getDefaultImpl().addInterface(iLowpanInterface);
+                    } else {
+                        parcelObtain2.readException();
+                    }
+                } finally {
+                    parcelObtain2.recycle();
+                    parcelObtain.recycle();
+                }
+            }
+
+            @Override // android.net.lowpan.ILowpanManager
+            public void removeInterface(ILowpanInterface iLowpanInterface) throws RemoteException {
+                Parcel parcelObtain = Parcel.obtain();
+                Parcel parcelObtain2 = Parcel.obtain();
+                try {
+                    parcelObtain.writeInterfaceToken(Stub.DESCRIPTOR);
+                    parcelObtain.writeStrongBinder(iLowpanInterface != null ? iLowpanInterface.asBinder() : null);
+                    if (!this.mRemote.transact(6, parcelObtain, parcelObtain2, 0) && Stub.getDefaultImpl() != null) {
+                        Stub.getDefaultImpl().removeInterface(iLowpanInterface);
+                    } else {
+                        parcelObtain2.readException();
+                    }
+                } finally {
+                    parcelObtain2.recycle();
+                    parcelObtain.recycle();
+                }
+            }
+        }
+
+        public static boolean setDefaultImpl(ILowpanManager iLowpanManager) {
+            if (Proxy.sDefaultImpl != null) {
+                throw new IllegalStateException("setDefaultImpl() called twice");
+            }
+            if (iLowpanManager == null) {
+                return false;
+            }
+            Proxy.sDefaultImpl = iLowpanManager;
+            return true;
+        }
+
+        public static ILowpanManager getDefaultImpl() {
+            return Proxy.sDefaultImpl;
+        }
+    }
+}

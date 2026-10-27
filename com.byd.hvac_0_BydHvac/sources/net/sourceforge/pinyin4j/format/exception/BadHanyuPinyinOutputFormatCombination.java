@@ -1,0 +1,11 @@
+package net.sourceforge.pinyin4j.format.exception;
+
+/* JADX INFO: compiled from: caradapter-bug */
+/* JADX INFO: loaded from: classes.dex */
+public class BadHanyuPinyinOutputFormatCombination extends Exception {
+    private static final long serialVersionUID = -8500822088036526862L;
+
+    public BadHanyuPinyinOutputFormatCombination(String str) {
+        super(str);
+    }
+}

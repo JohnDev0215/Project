@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="146"
+    android:versionName="1.18.2-202507081609"
+    android:compileSdkVersion="29"
+    android:compileSdkVersionCodename="10"
+    package="com.byd.hvac"
+    platformBuildVersionCode="29"
+    platformBuildVersionName="10">
+    <uses-sdk
+        android:minSdkVersion="26"
+        android:targetSdkVersion="29"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.BYDAUTO_AC_COMMON"/>
+    <uses-permission android:name="android.permission.BYDAUTO_AC_GET"/>
+    <uses-permission android:name="android.permission.BYDAUTO_AC_SET"/>
+    <uses-permission android:name="android.permission.BYDAUTO_PM2P5_COMMON"/>
+    <uses-permission android:name="android.permission.BYDAUTO_PM2P5_GET"/>
+    <uses-permission android:name="android.permission.BYDAUTO_PM2P5_SET"/>
+    <uses-permission android:name="android.permission.BYDAUTO_BODYWORK_COMMON"/>
+    <uses-permission android:name="android.permission.BYDAUTO_BODYWORK_GET"/>
+    <uses-permission android:name="android.permission.BYDAUTO_BODYWORK_SET"/>
+    <uses-permission android:name="android.permission.BYDAUTO_SETTING_COMMON"/>
+    <uses-permission android:name="android.permission.BYDAUTO_SETTING_GET"/>
+    <uses-permission android:name="android.permission.BYDAUTO_SETTING_SET"/>
+    <uses-permission android:name="android.permission.BYDAUTO_ADAS_COMMON"/>
+    <uses-permission android:name="android.permission.BYDAUTO_ADAS_GET"/>
+    <uses-permission android:name="android.permission.BYDAUTO_ADAS_SET"/>
+    <uses-permission android:name="android.permission.BYDAUTO_OTA_COMMON"/>
+    <uses-permission android:name="android.permission.BYDAUTO_OTA_GET"/>
+    <uses-permission android:name="android.permission.BYDAUTO_TEST_COMMON"/>
+    <uses-permission android:name="android.permission.BYDAUTO_TEST_GET"/>
+    <uses-permission android:name="android.permission.INJECT_EVENTS"/>
+    <uses-permission android:name="android.permission.BYDAUTO_POWER_COMMON"/>
+    <uses-permission android:name="android.permission.REORDER_TASKS"/>
+    <application
+        android:theme="@style/AppTheme"
+        android:label="@string/app_name"
+        android:icon="@mipmap/ac_launcher"
+        android:name="com.byd.hvac.application.HvacApplication"
+        android:supportsRtl="true"
+        android:extractNativeLibs="true"
+        android:resizeableActivity="false"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+        android:requestLegacyExternalStorage="true">
+        <activity
+            android:name="com.byd.hvac.view.MainActivity"
+            android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="byd.intent.aciton.hvac"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.byd.hvac.view.demo.DemoDiPilotActivity"/>
+        <activity android:name="com.byd.hvac.view.demo.DemoHvacActivity"/>
+        <activity android:name="com.byd.hvac.view.demo.DemoMainActivity"/>
+        <activity android:name="com.byd.hvac.view.demo.DemoSeatActivity"/>
+        <activity android:name="com.byd.hvac.view.demo.DemoBodyWorkActivity"/>
+        <activity android:name="com.byd.hvac.view.demo.DemoFragranceActivity"/>
+        <activity android:name="com.byd.hvac.view.demo.DemoGreenActivity"/>
+        <activity
+            android:theme="@android:style/Theme"
+            android:name="androidx.test.core.app.InstrumentationActivityInvoker.BootstrapActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:theme="@android:style/Theme"
+            android:name="androidx.test.core.app.InstrumentationActivityInvoker.EmptyActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:theme="@android:style/Theme.Dialog"
+            android:name="androidx.test.core.app.InstrumentationActivityInvoker.EmptyFloatingActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>

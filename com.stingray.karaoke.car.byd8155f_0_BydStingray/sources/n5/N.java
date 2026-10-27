@@ -1,0 +1,43 @@
+package N5;
+
+import S8.InterfaceC0725w;
+import com.stingray.karaoke.car.player.PlayerStatus;
+import h8.AbstractC1386c;
+import q7.InterfaceC2189c;
+import r7.EnumC2303a;
+import z7.InterfaceC2785n;
+
+/* JADX INFO: loaded from: classes.dex */
+public final class N extends s7.i implements InterfaceC2785n {
+    public final /* synthetic */ Z l;
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public N(Z z6, InterfaceC2189c interfaceC2189c) {
+        super(2, interfaceC2189c);
+        this.l = z6;
+    }
+
+    @Override // s7.AbstractC2408a
+    public final InterfaceC2189c create(Object obj, InterfaceC2189c interfaceC2189c) {
+        return new N(this.l, interfaceC2189c);
+    }
+
+    @Override // z7.InterfaceC2785n
+    public final Object invoke(Object obj, Object obj2) throws Throwable {
+        N n10 = (N) create((InterfaceC0725w) obj, (InterfaceC2189c) obj2);
+        m7.q qVar = m7.q.f19267a;
+        n10.invokeSuspend(qVar);
+        return qVar;
+    }
+
+    @Override // s7.AbstractC2408a
+    public final Object invokeSuspend(Object obj) throws Throwable {
+        EnumC2303a enumC2303a = EnumC2303a.l;
+        AbstractC1386c.u(obj);
+        Z z6 = this.l;
+        if (z6.f4634M.getValue() != PlayerStatus.STOPPED) {
+            z6.z();
+        }
+        return m7.q.f19267a;
+    }
+}

@@ -1,0 +1,4 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/widget/DateTimeView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V,frameworks/base/core/java/android/widget/DateTimeView.java,84,5,84,25,
+Landroid/widget/DateTimeView;->setTime(J)V,frameworks/base/core/java/android/widget/DateTimeView.java,133,5,133,25,
+Landroid/widget/DateTimeView;->update()V,frameworks/base/core/java/android/widget/DateTimeView.java,168,5,168,25,

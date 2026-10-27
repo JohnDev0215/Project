@@ -1,0 +1,4 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/graphics/drawable/LayerDrawable;->mLayerState:Landroid/graphics/drawable/LayerDrawable$LayerState;,frameworks/base/graphics/java/android/graphics/drawable/LayerDrawable.java,97,5,97,25,
+Landroid/graphics/drawable/LayerDrawable;->addLayer(Landroid/graphics/drawable/LayerDrawable$ChildDrawable;)I,frameworks/base/graphics/java/android/graphics/drawable/LayerDrawable.java,437,5,437,25,
+Landroid/graphics/drawable/LayerDrawable;->ensurePadding()V,frameworks/base/graphics/java/android/graphics/drawable/LayerDrawable.java,1749,5,1749,25,

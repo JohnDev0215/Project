@@ -1,0 +1,5 @@
+package p;
+
+/* JADX INFO: loaded from: classes.dex */
+public interface ty0 extends gz0 {
+}

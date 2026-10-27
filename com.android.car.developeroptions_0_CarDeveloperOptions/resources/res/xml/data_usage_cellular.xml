@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" android:key="data_usage_cellular_screen">
+    <com.android.car.developeroptions.datausage.TemplatePreferenceCategory
+        android:title="@string/data_usage_tab_mobile"
+        android:key="mobile_category">
+        <com.android.car.developeroptions.datausage.CellDataPreference
+            android:title="@string/data_usage_enable_mobile"
+            android:key="data_usage_enable"/>
+        <com.android.car.developeroptions.datausage.DataUsagePreference
+            android:title="@string/cellular_data_usage"
+            android:key="cellular_data_usage"/>
+        <com.android.car.developeroptions.datausage.BillingCyclePreference
+            android:title="@string/billing_cycle"
+            android:key="billing_preference"/>
+    </com.android.car.developeroptions.datausage.TemplatePreferenceCategory>
+</PreferenceScreen>

@@ -1,0 +1,16 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/util/ArrayMap;->CACHE_SIZE:I,frameworks/base/core/java/android/util/ArrayMap.java,79,5,79,44,maxTargetSdk=28
+Landroid/util/ArrayMap;->EMPTY_IMMUTABLE_INTS:[I,frameworks/base/core/java/android/util/ArrayMap.java,85,5,85,44,maxTargetSdk=28
+Landroid/util/ArrayMap;->EMPTY:Landroid/util/ArrayMap;,frameworks/base/core/java/android/util/ArrayMap.java,91,5,91,44,maxTargetSdk=28
+Landroid/util/ArrayMap;->mBaseCache:[Ljava/lang/Object;,frameworks/base/core/java/android/util/ArrayMap.java,100,5,100,44,maxTargetSdk=28
+Landroid/util/ArrayMap;->mBaseCacheSize:I,frameworks/base/core/java/android/util/ArrayMap.java,102,5,102,44,maxTargetSdk=28
+Landroid/util/ArrayMap;->mTwiceBaseCache:[Ljava/lang/Object;,frameworks/base/core/java/android/util/ArrayMap.java,104,5,104,44,maxTargetSdk=28
+Landroid/util/ArrayMap;->mTwiceBaseCacheSize:I,frameworks/base/core/java/android/util/ArrayMap.java,106,5,106,44,maxTargetSdk=28
+Landroid/util/ArrayMap;->mHashes:[I,frameworks/base/core/java/android/util/ArrayMap.java,116,5,116,44,maxTargetSdk=28
+Landroid/util/ArrayMap;->mArray:[Ljava/lang/Object;,frameworks/base/core/java/android/util/ArrayMap.java,118,5,118,44,maxTargetSdk=28
+Landroid/util/ArrayMap;->mSize:I,frameworks/base/core/java/android/util/ArrayMap.java,120,5,120,44,maxTargetSdk=28
+Landroid/util/ArrayMap;->indexOf(Ljava/lang/Object;I)I,frameworks/base/core/java/android/util/ArrayMap.java,136,5,136,44,maxTargetSdk=28
+Landroid/util/ArrayMap;->indexOfNull()I,frameworks/base/core/java/android/util/ArrayMap.java,175,5,175,44,maxTargetSdk=28
+Landroid/util/ArrayMap;->allocArrays(I)V,frameworks/base/core/java/android/util/ArrayMap.java,214,5,214,44,maxTargetSdk=28
+Landroid/util/ArrayMap;->freeArrays([I[Ljava/lang/Object;I)V,frameworks/base/core/java/android/util/ArrayMap.java,283,5,283,44,maxTargetSdk=28
+Landroid/util/ArrayMap;->append(Ljava/lang/Object;Ljava/lang/Object;)V,frameworks/base/core/java/android/util/ArrayMap.java,635,5,635,44,maxTargetSdk=28

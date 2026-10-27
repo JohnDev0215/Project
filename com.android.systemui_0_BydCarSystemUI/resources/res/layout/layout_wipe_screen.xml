@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/black"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.appcompat.widget.AppCompatButton
+        android:textSize="@dimen/sp_18"
+        android:textColor="@color/selector_text_button_long"
+        android:id="@+id/btn_exit"
+        android:background="@drawable/bg_button_pressed"
+        android:layout_width="@dimen/dp_265"
+        android:layout_height="@dimen/dp_48"
+        android:layout_marginBottom="@dimen/dp_116"
+        android:text="@string/exit_pet_long_press_wipe"
+        android:textAllCaps="false"
+        android:stateListAnimator="@animator/profile_pressed_state_list"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+    <TextView
+        android:textSize="@dimen/sp_160"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:id="@+id/tv_time"
+        android:visibility="invisible"
+        android:layout_width="@dimen/dp_90"
+        android:layout_height="@dimen/dp_187"
+        android:layout_marginBottom="@dimen/dp_24"
+        app:layout_constraintBottom_toTopOf="@+id/btn_exit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

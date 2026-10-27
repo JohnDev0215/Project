@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" xmlns:settings="http://schemas.android.com/apk/res-auto" android:key="data_usage_wifi_screen">
+    <com.android.car.developeroptions.datausage.TemplatePreferenceCategory
+        android:title="@string/wifi"
+        android:key="wifi_category">
+        <com.android.car.developeroptions.datausage.DataUsagePreference
+            android:title="@string/wifi_data_usage"
+            android:key="wifi_data_usage"
+            settings:searchable="false"/>
+    </com.android.car.developeroptions.datausage.TemplatePreferenceCategory>
+</PreferenceScreen>

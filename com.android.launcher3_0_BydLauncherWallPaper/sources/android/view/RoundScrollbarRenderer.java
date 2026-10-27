@@ -1,0 +1,83 @@
+package android.view;
+
+import android.graphics.Canvas;
+import android.graphics.Color;
+import android.graphics.Paint;
+import android.graphics.Rect;
+import android.graphics.RectF;
+import com.android.internal.R;
+
+/* JADX INFO: loaded from: classes3.dex */
+class RoundScrollbarRenderer {
+    private static final int DEFAULT_THUMB_COLOR = -1512723;
+    private static final int DEFAULT_TRACK_COLOR = 1291845631;
+    private static final int MAX_SCROLLBAR_ANGLE_SWIPE = 16;
+    private static final int MIN_SCROLLBAR_ANGLE_SWIPE = 6;
+    private static final int SCROLLBAR_ANGLE_RANGE = 90;
+    private static final float WIDTH_PERCENTAGE = 0.02f;
+    private final int mMaskThickness;
+    private final View mParent;
+    private final RectF mRect;
+    private final Paint mThumbPaint;
+    private final Paint mTrackPaint;
+
+    private static float clamp(float f, float f2, float f3) {
+        return f < f2 ? f2 : f > f3 ? f3 : f;
+    }
+
+    public RoundScrollbarRenderer(View view) {
+        Paint paint = new Paint();
+        this.mThumbPaint = paint;
+        Paint paint2 = new Paint();
+        this.mTrackPaint = paint2;
+        this.mRect = new RectF();
+        paint.setAntiAlias(true);
+        paint.setStrokeCap(Paint.Cap.ROUND);
+        paint.setStyle(Paint.Style.STROKE);
+        paint2.setAntiAlias(true);
+        paint2.setStrokeCap(Paint.Cap.ROUND);
+        paint2.setStyle(Paint.Style.STROKE);
+        this.mParent = view;
+        this.mMaskThickness = view.getContext().getResources().getDimensionPixelSize(R.dimen.circular_display_mask_thickness);
+    }
+
+    public void drawRoundScrollbars(Canvas canvas, float f, Rect rect) {
+        if (f == 0.0f) {
+            return;
+        }
+        float fComputeVerticalScrollRange = this.mParent.computeVerticalScrollRange();
+        float fComputeVerticalScrollExtent = this.mParent.computeVerticalScrollExtent();
+        if (fComputeVerticalScrollExtent <= 0.0f || fComputeVerticalScrollRange <= fComputeVerticalScrollExtent) {
+            return;
+        }
+        float fMax = Math.max(0, this.mParent.computeVerticalScrollOffset());
+        float fComputeVerticalScrollExtent2 = this.mParent.computeVerticalScrollExtent();
+        float width = this.mParent.getWidth() * WIDTH_PERCENTAGE;
+        this.mThumbPaint.setStrokeWidth(width);
+        this.mTrackPaint.setStrokeWidth(width);
+        setThumbColor(applyAlpha(DEFAULT_THUMB_COLOR, f));
+        setTrackColor(applyAlpha(DEFAULT_TRACK_COLOR, f));
+        float fClamp = clamp((fComputeVerticalScrollExtent2 / fComputeVerticalScrollRange) * 90.0f, 6.0f, 16.0f);
+        float fClamp2 = clamp(((fMax * (90.0f - fClamp)) / (fComputeVerticalScrollRange - fComputeVerticalScrollExtent2)) - 45.0f, -45.0f, 45.0f - fClamp);
+        float f2 = (width / 2.0f) + this.mMaskThickness;
+        this.mRect.set(rect.left + f2, rect.top + f2, rect.right - f2, rect.bottom - f2);
+        canvas.drawArc(this.mRect, -45.0f, 90.0f, false, this.mTrackPaint);
+        canvas.drawArc(this.mRect, fClamp2, fClamp, false, this.mThumbPaint);
+    }
+
+    private static int applyAlpha(int i, float f) {
+        return Color.argb((int) (Color.alpha(i) * f), Color.red(i), Color.green(i), Color.blue(i));
+    }
+
+    private void setThumbColor(int i) {
+        if (this.mThumbPaint.getColor() != i) {
+            this.mThumbPaint.setColor(i);
+        }
+    }
+
+    private void setTrackColor(int i) {
+        if (this.mTrackPaint.getColor() != i) {
+            this.mTrackPaint.setColor(i);
+        }
+    }
+}

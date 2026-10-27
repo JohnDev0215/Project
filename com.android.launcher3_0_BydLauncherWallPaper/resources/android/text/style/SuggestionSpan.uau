@@ -1,0 +1,5 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/text/style/SuggestionSpan;->mEasyCorrectUnderlineThickness:F,frameworks/base/core/java/android/text/style/SuggestionSpan.java,128,5,128,25,
+Landroid/text/style/SuggestionSpan;->mEasyCorrectUnderlineColor:I,frameworks/base/core/java/android/text/style/SuggestionSpan.java,130,5,130,25,
+Landroid/text/style/SuggestionSpan;->getNotificationTargetClassName()Ljava/lang/String;,frameworks/base/core/java/android/text/style/SuggestionSpan.java,280,5,280,25,
+Landroid/text/style/SuggestionSpan;->notifySelection(Landroid/content/Context;Ljava/lang/String;I)V,frameworks/base/core/java/android/text/style/SuggestionSpan.java,405,5,405,25,

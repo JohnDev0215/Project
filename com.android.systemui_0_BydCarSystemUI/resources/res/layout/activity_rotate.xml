@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:textSize="@dimen/dp_36"
+        android:id="@+id/tv_1"
+        android:padding="@dimen/dp_6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_10"
+        android:text="旋转为 横向"/>
+    <TextView
+        android:textSize="@dimen/dp_36"
+        android:id="@+id/tv_2"
+        android:padding="@dimen/dp_6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_10"
+        android:text="旋转为 竖向"/>
+    <TextView
+        android:textSize="@dimen/dp_36"
+        android:id="@+id/tv_3"
+        android:padding="@dimen/dp_6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_10"
+        android:text="获取当前屏幕方向"/>
+    <TextView
+        android:textSize="@dimen/dp_36"
+        android:id="@+id/tv_4"
+        android:padding="@dimen/dp_6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_10"
+        android:text="当前方向："/>
+    <TextView
+        android:textSize="@dimen/dp_36"
+        android:id="@+id/tv_5"
+        android:padding="@dimen/dp_6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_10"
+        android:text="设置user_rotation-横向"/>
+    <TextView
+        android:textSize="@dimen/dp_36"
+        android:id="@+id/tv_6"
+        android:padding="@dimen/dp_6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_10"
+        android:text="设置user_rotation-竖向"/>
+</LinearLayout>

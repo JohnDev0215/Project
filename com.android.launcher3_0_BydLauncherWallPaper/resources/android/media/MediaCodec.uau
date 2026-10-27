@@ -1,0 +1,5 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/media/MediaCodec;->releaseOutputBuffer(IZZJ)V,frameworks/base/media/java/android/media/MediaCodec.java,3572,5,3572,25,
+Landroid/media/MediaCodec;->setParameters([Ljava/lang/String;[Ljava/lang/Object;)V,frameworks/base/media/java/android/media/MediaCodec.java,4628,5,4628,25,
+Landroid/media/MediaCodec;->getBuffers(Z)[Ljava/nio/ByteBuffer;,frameworks/base/media/java/android/media/MediaCodec.java,4659,5,4659,25,
+Landroid/media/MediaCodec;->mNativeContext:J,frameworks/base/media/java/android/media/MediaCodec.java,4680,5,4680,88,maxTargetSdk=28&trackingBug=115609023L

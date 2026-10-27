@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="additional_permissions_more">
+        <item quantity="one">%1$d altra</item>
+        <item quantity="other">Altre %1$d</item>
+    </plurals>
+    <plurals name="auto_revoke_permission_notification_content_count">
+        <item quantity="one">%1$d app non è stata usata per alcuni mesi. Tocca per controllare.</item>
+        <item quantity="other">%1$d app non sono state usate per alcuni mesi. Tocca per controllare.</item>
+    </plurals>
+    <plurals name="auto_revoke_setting_subtitle_count">
+        <item quantity="one">%1$d app non è stata usata per alcuni mesi</item>
+        <item quantity="other">%1$d app non sono state usate per alcuni mesi</item>
+    </plurals>
+    <plurals name="days">
+        <item quantity="one">1 giorno</item>
+        <item quantity="other">%s giorni</item>
+    </plurals>
+    <plurals name="hours">
+        <item quantity="one">1 ora</item>
+        <item quantity="other">%s ore</item>
+    </plurals>
+    <plurals name="minutes">
+        <item quantity="one">1 minuto</item>
+        <item quantity="other">%s minuti</item>
+    </plurals>
+    <plurals name="seconds">
+        <item quantity="one">1 secondo</item>
+        <item quantity="other">%s secondi</item>
+    </plurals>
+</resources>

@@ -1,0 +1,10 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/widget/Editor;->mInsertionControllerEnabled:Z,frameworks/base/core/java/android/widget/Editor.java,214,5,214,25,
+Landroid/widget/Editor;->mSelectionControllerEnabled:Z,frameworks/base/core/java/android/widget/Editor.java,216,5,216,25,
+Landroid/widget/Editor;->mShowCursor:J,frameworks/base/core/java/android/widget/Editor.java,289,5,289,63,maxTargetSdk=28
+Landroid/widget/Editor;->mShowSoftInputOnFocus:Z,frameworks/base/core/java/android/widget/Editor.java,311,5,311,25,
+Landroid/widget/Editor;->mSelectHandleLeft:Landroid/graphics/drawable/Drawable;,frameworks/base/core/java/android/widget/Editor.java,328,5,328,63,maxTargetSdk=28
+Landroid/widget/Editor;->mSelectHandleRight:Landroid/graphics/drawable/Drawable;,frameworks/base/core/java/android/widget/Editor.java,330,5,330,63,maxTargetSdk=28
+Landroid/widget/Editor;->mSelectHandleCenter:Landroid/graphics/drawable/Drawable;,frameworks/base/core/java/android/widget/Editor.java,332,5,332,63,maxTargetSdk=28
+Landroid/widget/Editor;->mCreatedWithASelection:Z,frameworks/base/core/java/android/widget/Editor.java,343,5,343,25,
+Landroid/widget/Editor;->invalidateTextDisplayList()V,frameworks/base/core/java/android/widget/Editor.java,2199,5,2199,25,

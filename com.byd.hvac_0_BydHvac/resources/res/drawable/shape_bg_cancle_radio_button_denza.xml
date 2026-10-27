@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+    <gradient
+        android:startColor="@color/dialog_cancle_color_denza"
+        android:endColor="@color/dialog_cancle_color_denza"
+        android:angle="0"/>
+    <corners android:radius="@dimen/dp_4"/>
+</shape>

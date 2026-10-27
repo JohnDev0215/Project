@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/split_screen_toast_bg"
+    android:layout_width="@dimen/dp_336"
+    android:layout_height="@dimen/dp_56">
+    <TextView
+        android:textSize="@dimen/sp_18"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:id="@+id/tvMessage"
+        android:layout_width="@dimen/dp_336"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/dp_56"
+        android:text="@string/app_is_opened_select_another_application"/>
+</RelativeLayout>

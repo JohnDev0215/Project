@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" xmlns:settings="http://schemas.android.com/apk/res-auto"
+    android:persistent="false"
+    android:title="@string/accessibility_control_timeout_preference_title"
+    android:key="accessibility_control_timeout_preference">
+    <com.android.car.developeroptions.widget.VideoPreference
+        android:persistent="false"
+        android:title="@string/summary_placeholder"
+        android:key="accessibility_control_timeout_video"
+        settings:animation="@raw/gesture_swipe_up"
+        settings:controller="com.android.car.developeroptions.widget.VideoPreferenceController"
+        settings:preview="@drawable/gesture_swipe_up"/>
+    <com.android.car.developeroptions.widget.RadioButtonPreference
+        android:persistent="false"
+        android:title="@string/accessibility_timeout_default"
+        android:key="accessibility_control_timeout_default"
+        settings:allowDividerAbove="true"/>
+    <com.android.car.developeroptions.widget.RadioButtonPreference
+        android:persistent="false"
+        android:title="@string/accessibility_timeout_10secs"
+        android:key="accessibility_control_timeout_10secs"/>
+    <com.android.car.developeroptions.widget.RadioButtonPreference
+        android:persistent="false"
+        android:title="@string/accessibility_timeout_30secs"
+        android:key="accessibility_control_timeout_30secs"/>
+    <com.android.car.developeroptions.widget.RadioButtonPreference
+        android:persistent="false"
+        android:title="@string/accessibility_timeout_1min"
+        android:key="accessibility_control_timeout_1min"/>
+    <com.android.car.developeroptions.widget.RadioButtonPreference
+        android:persistent="false"
+        android:title="@string/accessibility_timeout_2mins"
+        android:key="accessibility_control_timeout_2mins"/>
+    <com.android.settingslib.widget.FooterPreference
+        android:title="@string/accessibility_control_timeout_preference_summary"
+        android:selectable="false"/>
+</PreferenceScreen>

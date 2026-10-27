@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="additional_permissions_more">
+        <item quantity="one">%1$d ລາຍການເພີ່ມເຕີມ</item>
+        <item quantity="other">%1$d ລາຍການເພີ່ມເຕີມ</item>
+    </plurals>
+    <plurals name="auto_revoke_permission_notification_content_count">
+        <item quantity="one">ບໍ່ໄດ້ໃຊ້ %1$d ມາສອງສາມເດືອນແລ້ວ. ແຕະເພື່ອກວດສອບ</item>
+        <item quantity="other">ບໍ່ໄດ້ໃຊ້ %1$d ແອັບມາສອງສາມເດືອນແລ້ວ. ແຕະເພື່ອກວດສອບ</item>
+    </plurals>
+    <plurals name="auto_revoke_setting_subtitle_count">
+        <item quantity="one">ບໍ່ໄດ້ໃຊ້ %1$d ມາສອງສາມເດືອນແລ້ວ</item>
+        <item quantity="other">ບໍ່ໄດ້ໃຊ້ %1$d ແອັບມາສອງສາມເດືອນແລ້ວ</item>
+    </plurals>
+    <plurals name="days">
+        <item quantity="one">1 ມື້</item>
+        <item quantity="other">%s ມື້</item>
+    </plurals>
+    <plurals name="hours">
+        <item quantity="one">1 ຊົ່ວໂມງ</item>
+        <item quantity="other">%s ຊົ່ວ​ໂມງ</item>
+    </plurals>
+    <plurals name="minutes">
+        <item quantity="one">1 ນາທີ</item>
+        <item quantity="other">%s ນາທີ</item>
+    </plurals>
+    <plurals name="seconds">
+        <item quantity="one">1 ວິນາທີ</item>
+        <item quantity="other">%s ວິ​ນາ​ທີ</item>
+    </plurals>
+</resources>

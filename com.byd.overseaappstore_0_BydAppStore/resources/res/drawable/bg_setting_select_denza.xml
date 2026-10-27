@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+    <solid android:color="@color/setting_selector_background_denza"/>
+    <corners android:radius="@dimen/dp_8"/>
+    <stroke android:color="@color/setting_selector_stroke_background_denza"/>
+</shape>

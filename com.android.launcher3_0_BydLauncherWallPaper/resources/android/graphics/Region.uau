@@ -1,0 +1,5 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/graphics/Region;->mNativeRegion:J,frameworks/base/graphics/java/android/graphics/Region.java,35,5,35,25,
+Landroid/graphics/Region;->scale(F)V,frameworks/base/graphics/java/android/graphics/Region.java,245,5,245,25,
+Landroid/graphics/Region;->recycle()V,frameworks/base/graphics/java/android/graphics/Region.java,340,5,340,25,
+Landroid/graphics/Region;-><init>(JI)V,frameworks/base/graphics/java/android/graphics/Region.java,414,5,414,25,

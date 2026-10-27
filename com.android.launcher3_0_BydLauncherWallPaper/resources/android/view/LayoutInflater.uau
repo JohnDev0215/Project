@@ -1,0 +1,15 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/view/LayoutInflater;->mContext:Landroid/content/Context;,frameworks/base/core/java/android/view/LayoutInflater.java,96,5,96,63,maxTargetSdk=28
+Landroid/view/LayoutInflater;->mFactorySet:Z,frameworks/base/core/java/android/view/LayoutInflater.java,105,5,105,63,maxTargetSdk=28
+Landroid/view/LayoutInflater;->mFactory:Landroid/view/LayoutInflater$Factory;,frameworks/base/core/java/android/view/LayoutInflater.java,107,5,107,25,
+Landroid/view/LayoutInflater;->mFactory2:Landroid/view/LayoutInflater$Factory2;,frameworks/base/core/java/android/view/LayoutInflater.java,109,5,109,25,
+Landroid/view/LayoutInflater;->mPrivateFactory:Landroid/view/LayoutInflater$Factory2;,frameworks/base/core/java/android/view/LayoutInflater.java,111,5,111,25,
+Landroid/view/LayoutInflater;->mConstructorArgs:[Ljava/lang/Object;,frameworks/base/core/java/android/view/LayoutInflater.java,127,5,127,63,maxTargetSdk=28
+Landroid/view/LayoutInflater;->mConstructorSignature:[Ljava/lang/Class;,frameworks/base/core/java/android/view/LayoutInflater.java,130,5,130,25,
+Landroid/view/LayoutInflater;->sConstructorMap:Ljava/util/HashMap;,frameworks/base/core/java/android/view/LayoutInflater.java,134,5,134,88,maxTargetSdk=28&trackingBug=123769490L
+Landroid/view/LayoutInflater;->ATTRS_THEME:[I,frameworks/base/core/java/android/view/LayoutInflater.java,150,5,150,25,
+Landroid/view/LayoutInflater;->setPrivateFactory(Landroid/view/LayoutInflater$Factory2;)V,frameworks/base/core/java/android/view/LayoutInflater.java,383,5,383,25,
+Landroid/view/LayoutInflater;->createViewFromTag(Landroid/view/View;Ljava/lang/String;Landroid/content/Context;Landroid/util/AttributeSet;)Landroid/view/View;,frameworks/base/core/java/android/view/LayoutInflater.java,957,5,957,25,
+Landroid/view/LayoutInflater;->createViewFromTag(Landroid/view/View;Ljava/lang/String;Landroid/content/Context;Landroid/util/AttributeSet;Z)Landroid/view/View;,frameworks/base/core/java/android/view/LayoutInflater.java,977,5,977,25,
+Landroid/view/LayoutInflater;->tryCreateView(Landroid/view/View;Ljava/lang/String;Landroid/content/Context;Landroid/util/AttributeSet;)Landroid/view/View;,frameworks/base/core/java/android/view/LayoutInflater.java,1047,5,1047,50,trackingBug=122360734L
+Landroid/view/LayoutInflater;->parseInclude(Lorg/xmlpull/v1/XmlPullParser;Landroid/content/Context;Landroid/view/View;Landroid/util/AttributeSet;)V,frameworks/base/core/java/android/view/LayoutInflater.java,1154,5,1154,25,

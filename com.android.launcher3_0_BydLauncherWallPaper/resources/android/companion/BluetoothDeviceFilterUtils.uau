@@ -1,0 +1,4 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/companion/BluetoothDeviceFilterUtils;->getDeviceDisplayNameInternal(Landroid/bluetooth/BluetoothDevice;)Ljava/lang/String;,frameworks/base/core/java/android/companion/BluetoothDeviceFilterUtils.java,123,5,123,25,
+Landroid/companion/BluetoothDeviceFilterUtils;->getDeviceDisplayNameInternal(Landroid/net/wifi/ScanResult;)Ljava/lang/String;,frameworks/base/core/java/android/companion/BluetoothDeviceFilterUtils.java,128,5,128,25,
+Landroid/companion/BluetoothDeviceFilterUtils;->getDeviceMacAddress(Landroid/os/Parcelable;)Ljava/lang/String;,frameworks/base/core/java/android/companion/BluetoothDeviceFilterUtils.java,133,5,133,25,

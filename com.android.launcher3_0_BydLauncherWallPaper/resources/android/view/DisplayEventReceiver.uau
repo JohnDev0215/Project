@@ -1,0 +1,8 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/view/DisplayEventReceiver;->mReceiverPtr:J,frameworks/base/core/java/android/view/DisplayEventReceiver.java,74,5,74,25,
+Landroid/view/DisplayEventReceiver;-><init>(Landroid/os/Looper;)V,frameworks/base/core/java/android/view/DisplayEventReceiver.java,92,5,92,25,
+Landroid/view/DisplayEventReceiver;->onVsync(JJI)V,frameworks/base/core/java/android/view/DisplayEventReceiver.java,158,5,158,25,
+Landroid/view/DisplayEventReceiver;->onHotplug(JJZ)V,frameworks/base/core/java/android/view/DisplayEventReceiver.java,170,5,170,25,
+Landroid/view/DisplayEventReceiver;->scheduleVsync()V,frameworks/base/core/java/android/view/DisplayEventReceiver.java,189,5,189,25,
+Landroid/view/DisplayEventReceiver;->dispatchVsync(JJI)V,frameworks/base/core/java/android/view/DisplayEventReceiver.java,201,5,201,25,
+Landroid/view/DisplayEventReceiver;->dispatchHotplug(JJZ)V,frameworks/base/core/java/android/view/DisplayEventReceiver.java,208,5,208,25,

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView
+        android:textSize="@dimen/sp_20"
+        android:textStyle="bold"
+        android:textColor="@color/text_title"
+        android:gravity="center"
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_40"
+        android:layout_marginTop="@dimen/dp_16"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:textSize="@dimen/sp_18"
+        android:textColor="@color/selector_text_button"
+        android:gravity="center"
+        android:id="@+id/btn_reset"
+        android:background="@drawable/bg_button_normal"
+        android:layout_width="@dimen/dp_128"
+        android:layout_height="@dimen/dp_40"
+        android:layout_marginTop="@dimen/dp_16"
+        android:text="@string/btn_reset"
+        android:textAllCaps="false"
+        android:layout_marginEnd="@dimen/dp_22"
+        android:stateListAnimator="@animator/profile_pressed_state_list"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <View
+        android:background="@color/divider"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:layout_marginTop="@dimen/dp_71"
+        app:layout_constraintTop_toTopOf="parent"/>
+</merge>

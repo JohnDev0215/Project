@@ -1,0 +1,28 @@
+package com.android.car.developeroptions.fuelgauge.batterytip.tips;
+
+import android.content.Context;
+import com.android.car.developeroptions.Utils;
+import com.android.car.developeroptions.fuelgauge.batterytip.AppInfo;
+import java.util.function.Predicate;
+
+/* JADX INFO: loaded from: classes.dex */
+public class AppLabelPredicate implements Predicate<AppInfo> {
+    private static AppLabelPredicate sInstance;
+    private Context mContext;
+
+    public static AppLabelPredicate getInstance(Context context) {
+        if (sInstance == null) {
+            sInstance = new AppLabelPredicate(context.getApplicationContext());
+        }
+        return sInstance;
+    }
+
+    private AppLabelPredicate(Context context) {
+        this.mContext = context;
+    }
+
+    @Override // java.util.function.Predicate
+    public boolean test(AppInfo appInfo) {
+        return Utils.getApplicationLabel(this.mContext, appInfo.packageName) == null;
+    }
+}

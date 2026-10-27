@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_app_item"
+    android:layout_width="@dimen/dp_162"
+    android:layout_height="@dimen/dp_160"
+    android:layoutDirection="rtl">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/card_app_cl"
+        android:background="@mipmap/img_card_bg_addapp_rtl"
+        android:layout_width="@dimen/dp_146"
+        android:layout_height="@dimen/dp_144"
+        android:layout_marginTop="@dimen/dp_16">
+        <ImageView
+            android:id="@+id/card_app_icon"
+            android:layout_width="@dimen/dp_64"
+            android:layout_height="@dimen/dp_64"
+            android:layout_marginTop="@dimen/dp_22"
+            android:layout_marginStart="@dimen/dp_41"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+        <TextView
+            android:textSize="@dimen/sp_16"
+            android:textColor="@color/card_app_name"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:id="@+id/card_app_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_96"
+            android:lines="@integer/more_app_recent_tv"
+            android:maxEms="@integer/more_app_recent_tv"
+            android:paddingStart="@dimen/dp_12"
+            android:paddingEnd="@dimen/dp_12"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <ImageView
+        android:id="@+id/card_delete"
+        android:background="@mipmap/card_delete"
+        android:visibility="gone"
+        android:layout_width="@dimen/dp_48"
+        android:layout_height="@dimen/dp_48"
+        android:layout_marginStart="@dimen/dp_112"/>
+</RelativeLayout>

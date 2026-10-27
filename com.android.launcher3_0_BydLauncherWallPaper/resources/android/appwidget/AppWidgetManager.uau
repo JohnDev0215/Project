@@ -1,0 +1,8 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/appwidget/AppWidgetManager;->mService:Lcom/android/internal/appwidget/IAppWidgetService;,frameworks/base/core/java/android/appwidget/AppWidgetManager.java,481,5,481,25,
+Landroid/appwidget/AppWidgetManager;->getInstalledProviders(I)Ljava/util/List;,frameworks/base/core/java/android/appwidget/AppWidgetManager.java,835,5,835,25,
+Landroid/appwidget/AppWidgetManager;->getInstalledProvidersForProfile(ILandroid/os/UserHandle;Ljava/lang/String;)Ljava/util/List;,frameworks/base/core/java/android/appwidget/AppWidgetManager.java,862,5,862,25,
+Landroid/appwidget/AppWidgetManager;->bindAppWidgetId(ILandroid/content/ComponentName;)V,frameworks/base/core/java/android/appwidget/AppWidgetManager.java,923,5,923,25,
+Landroid/appwidget/AppWidgetManager;->bindAppWidgetId(ILandroid/content/ComponentName;Landroid/os/Bundle;)V,frameworks/base/core/java/android/appwidget/AppWidgetManager.java,946,5,946,25,
+Landroid/appwidget/AppWidgetManager;->bindRemoteViewsService(Landroid/content/Context;ILandroid/content/Intent;Landroid/app/IServiceConnection;I)Z,frameworks/base/core/java/android/appwidget/AppWidgetManager.java,1117,5,1117,25,
+Landroid/appwidget/AppWidgetManager;->bindAppWidgetIdIfAllowed(IILandroid/content/ComponentName;Landroid/os/Bundle;)Z,frameworks/base/core/java/android/appwidget/AppWidgetManager.java,1163,5,1163,25,

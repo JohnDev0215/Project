@@ -1,0 +1,6 @@
+signature,file,startline,startcol,endline,endcol,properties
+Lcom/android/ims/internal/uce/common/UceLong;-><init>()V,frameworks/base/core/java/com/android/ims/internal/uce/common/UceLong.java,35,5,35,25,
+Lcom/android/ims/internal/uce/common/UceLong;->getUceLong()J,frameworks/base/core/java/com/android/ims/internal/uce/common/UceLong.java,43,5,43,25,
+Lcom/android/ims/internal/uce/common/UceLong;->setUceLong(J)V,frameworks/base/core/java/com/android/ims/internal/uce/common/UceLong.java,52,5,52,25,
+Lcom/android/ims/internal/uce/common/UceLong;->getClientId()I,frameworks/base/core/java/com/android/ims/internal/uce/common/UceLong.java,60,5,60,25,
+Lcom/android/ims/internal/uce/common/UceLong;->setClientId(I)V,frameworks/base/core/java/com/android/ims/internal/uce/common/UceLong.java,69,5,69,25,

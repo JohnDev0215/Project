@@ -1,0 +1,8 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/telephony/CellSignalStrengthLte;->mSignalStrength:I,frameworks/base/telephony/java/android/telephony/CellSignalStrengthLte.java,79,5,79,74,maxTargetSdk=28
+Landroid/telephony/CellSignalStrengthLte;->mRsrp:I,frameworks/base/telephony/java/android/telephony/CellSignalStrengthLte.java,82,5,82,74,maxTargetSdk=28
+Landroid/telephony/CellSignalStrengthLte;->mRsrq:I,frameworks/base/telephony/java/android/telephony/CellSignalStrengthLte.java,84,5,84,74,maxTargetSdk=28
+Landroid/telephony/CellSignalStrengthLte;->mRssnr:I,frameworks/base/telephony/java/android/telephony/CellSignalStrengthLte.java,86,5,86,74,maxTargetSdk=28
+Landroid/telephony/CellSignalStrengthLte;->mCqi:I,frameworks/base/telephony/java/android/telephony/CellSignalStrengthLte.java,88,5,88,74,maxTargetSdk=28
+Landroid/telephony/CellSignalStrengthLte;->mTimingAdvance:I,frameworks/base/telephony/java/android/telephony/CellSignalStrengthLte.java,90,5,90,74,maxTargetSdk=28
+Landroid/telephony/CellSignalStrengthLte;-><init>()V,frameworks/base/telephony/java/android/telephony/CellSignalStrengthLte.java,110,5,110,25,

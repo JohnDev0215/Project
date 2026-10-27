@@ -1,0 +1,91 @@
+package com.android.settingslib.inputmethod;
+
+import android.content.ContentResolver;
+import android.content.Context;
+import android.util.Log;
+import android.view.inputmethod.InputMethodInfo;
+import android.view.inputmethod.InputMethodManager;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.List;
+
+/* JADX INFO: loaded from: classes.dex */
+public class InputMethodSettingValuesWrapper {
+    private static final String TAG = "InputMethodSettingValuesWrapper";
+    private static volatile InputMethodSettingValuesWrapper sInstance;
+    private final ContentResolver mContentResolver;
+    private final InputMethodManager mImm;
+    private final ArrayList<InputMethodInfo> mMethodList = new ArrayList<>();
+
+    public static InputMethodSettingValuesWrapper getInstance(Context context) {
+        if (sInstance == null) {
+            synchronized (TAG) {
+                if (sInstance == null) {
+                    sInstance = new InputMethodSettingValuesWrapper(context);
+                }
+            }
+        }
+        return sInstance;
+    }
+
+    private InputMethodSettingValuesWrapper(Context context) {
+        this.mContentResolver = context.getContentResolver();
+        this.mImm = (InputMethodManager) context.getSystemService(InputMethodManager.class);
+        refreshAllInputMethodAndSubtypes();
+    }
+
+    public void refreshAllInputMethodAndSubtypes() {
+        this.mMethodList.clear();
+        this.mMethodList.addAll(this.mImm.getInputMethodList());
+    }
+
+    public List<InputMethodInfo> getInputMethodList() {
+        return new ArrayList(this.mMethodList);
+    }
+
+    public boolean isAlwaysCheckedIme(InputMethodInfo inputMethodInfo) {
+        boolean zIsEnabledImi = isEnabledImi(inputMethodInfo);
+        if (getEnabledInputMethodList().size() <= 1 && zIsEnabledImi) {
+            return true;
+        }
+        int enabledValidNonAuxAsciiCapableImeCount = getEnabledValidNonAuxAsciiCapableImeCount();
+        return enabledValidNonAuxAsciiCapableImeCount <= 1 && (enabledValidNonAuxAsciiCapableImeCount != 1 || zIsEnabledImi) && inputMethodInfo.isSystem() && InputMethodAndSubtypeUtil.isValidNonAuxAsciiCapableIme(inputMethodInfo);
+    }
+
+    private int getEnabledValidNonAuxAsciiCapableImeCount() {
+        Iterator<InputMethodInfo> it = getEnabledInputMethodList().iterator();
+        int i = 0;
+        while (it.hasNext()) {
+            if (InputMethodAndSubtypeUtil.isValidNonAuxAsciiCapableIme(it.next())) {
+                i++;
+            }
+        }
+        if (i == 0) {
+            Log.w(TAG, "No \"enabledValidNonAuxAsciiCapableIme\"s found.");
+        }
+        return i;
+    }
+
+    public boolean isEnabledImi(InputMethodInfo inputMethodInfo) {
+        Iterator<InputMethodInfo> it = getEnabledInputMethodList().iterator();
+        while (it.hasNext()) {
+            if (it.next().getId().equals(inputMethodInfo.getId())) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    private ArrayList<InputMethodInfo> getEnabledInputMethodList() {
+        HashMap<String, HashSet<String>> enabledInputMethodsAndSubtypeList = InputMethodAndSubtypeUtil.getEnabledInputMethodsAndSubtypeList(this.mContentResolver);
+        ArrayList<InputMethodInfo> arrayList = new ArrayList<>();
+        for (InputMethodInfo inputMethodInfo : this.mMethodList) {
+            if (enabledInputMethodsAndSubtypeList.keySet().contains(inputMethodInfo.getId())) {
+                arrayList.add(inputMethodInfo);
+            }
+        }
+        return arrayList;
+    }
+}

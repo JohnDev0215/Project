@@ -1,0 +1,4 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/util/TimeUtils;->formatDuration(JLjava/io/PrintWriter;I)V,frameworks/base/core/java/android/util/TimeUtils.java,304,5,304,88,maxTargetSdk=28&trackingBug=115609023L
+Landroid/util/TimeUtils;->formatDuration(JLjava/io/PrintWriter;)V,frameworks/base/core/java/android/util/TimeUtils.java,322,5,322,88,maxTargetSdk=28&trackingBug=115609023L
+Landroid/util/TimeUtils;->logTimeOfDay(J)Ljava/lang/String;,frameworks/base/core/java/android/util/TimeUtils.java,366,5,366,25,

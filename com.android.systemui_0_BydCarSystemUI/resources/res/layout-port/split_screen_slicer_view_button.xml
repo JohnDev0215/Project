@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_gravity="center"
+    android:orientation="horizontal"
+    android:layout_width="@dimen/dp_128"
+    android:layout_height="@dimen/dp_48"
+    android:minWidth="@dimen/dp_128">
+    <com.android.systemui.widget.BydImageView
+        android:layout_gravity="end"
+        android:id="@+id/ivExitSplit"
+        android:background="@mipmap/sys_custom_split_exit_down"
+        android:visibility="invisible"
+        android:layout_width="@dimen/dp_48"
+        android:layout_height="@dimen/dp_48"/>
+    <com.android.systemui.widget.BydImageView
+        android:layout_gravity="end"
+        android:id="@+id/ivSwapSplit"
+        android:background="@mipmap/sys_custom_split_swap"
+        android:visibility="invisible"
+        android:layout_width="@dimen/dp_48"
+        android:layout_height="@dimen/dp_48"/>
+</FrameLayout>

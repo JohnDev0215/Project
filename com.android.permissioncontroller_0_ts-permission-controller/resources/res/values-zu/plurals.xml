@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="additional_permissions_more">
+        <item quantity="one">%1$d okuningi</item>
+        <item quantity="other">%1$d okuningi</item>
+    </plurals>
+    <plurals name="auto_revoke_permission_notification_content_count">
+        <item quantity="one">izinhlelo zokusebenza ezi-%1$d azisetshenziswanga ezinyangeni ezimbalwa. Thepha ukuze ubuyekeze</item>
+        <item quantity="other">izinhlelo zokusebenza ezi-%1$d azisetshenziswanga ezinyangeni ezimbalwa. Thepha ukuze ubuyekeze</item>
+    </plurals>
+    <plurals name="auto_revoke_setting_subtitle_count">
+        <item quantity="one">izinhlelo zokusebenza ezi-%1$d azisetshenziswanga ezinyangeni ezimbalwa</item>
+        <item quantity="other">izinhlelo zokusebenza ezi-%1$d azisetshenziswanga ezinyangeni ezimbalwa</item>
+    </plurals>
+    <plurals name="days">
+        <item quantity="one">%s izinsuku</item>
+        <item quantity="other">%s izinsuku</item>
+    </plurals>
+    <plurals name="hours">
+        <item quantity="one">%s amahora</item>
+        <item quantity="other">%s amahora</item>
+    </plurals>
+    <plurals name="minutes">
+        <item quantity="one">%s amaminithi</item>
+        <item quantity="other">%s amaminithi</item>
+    </plurals>
+    <plurals name="seconds">
+        <item quantity="one">%s amasekhondi</item>
+        <item quantity="other">%s amasekhondi</item>
+    </plurals>
+</resources>

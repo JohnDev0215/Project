@@ -1,0 +1,7 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/content/SyncAdapterType;->userVisible:Z,frameworks/base/core/java/android/content/SyncAdapterType.java,34,5,34,88,maxTargetSdk=28&trackingBug=115609023L
+Landroid/content/SyncAdapterType;->supportsUploading:Z,frameworks/base/core/java/android/content/SyncAdapterType.java,36,5,36,88,maxTargetSdk=28&trackingBug=115609023L
+Landroid/content/SyncAdapterType;->isAlwaysSyncable:Z,frameworks/base/core/java/android/content/SyncAdapterType.java,38,5,38,25,
+Landroid/content/SyncAdapterType;->allowParallelSyncs:Z,frameworks/base/core/java/android/content/SyncAdapterType.java,40,5,40,25,
+Landroid/content/SyncAdapterType;->settingsActivity:Ljava/lang/String;,frameworks/base/core/java/android/content/SyncAdapterType.java,42,5,42,25,
+Landroid/content/SyncAdapterType;-><init>(Ljava/lang/String;Ljava/lang/String;)V,frameworks/base/core/java/android/content/SyncAdapterType.java,89,5,89,88,maxTargetSdk=28&trackingBug=115609023L

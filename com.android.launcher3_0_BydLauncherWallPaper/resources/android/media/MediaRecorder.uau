@@ -1,0 +1,13 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/media/MediaRecorder;->mSurface:Landroid/view/Surface;,frameworks/base/media/java/android/media/MediaRecorder.java,111,5,111,25,
+Landroid/media/MediaRecorder;->mPath:Ljava/lang/String;,frameworks/base/media/java/android/media/MediaRecorder.java,114,5,114,88,maxTargetSdk=28&trackingBug=115609023L
+Landroid/media/MediaRecorder;->mFd:Ljava/io/FileDescriptor;,frameworks/base/media/java/android/media/MediaRecorder.java,116,5,116,88,maxTargetSdk=28&trackingBug=115609023L
+Landroid/media/MediaRecorder;->mEventHandler:Landroid/media/MediaRecorder$EventHandler;,frameworks/base/media/java/android/media/MediaRecorder.java,119,5,119,88,maxTargetSdk=28&trackingBug=115609023L
+Landroid/media/MediaRecorder;->mOnErrorListener:Landroid/media/MediaRecorder$OnErrorListener;,frameworks/base/media/java/android/media/MediaRecorder.java,121,5,121,25,
+Landroid/media/MediaRecorder;->mOnInfoListener:Landroid/media/MediaRecorder$OnInfoListener;,frameworks/base/media/java/android/media/MediaRecorder.java,123,5,123,25,
+Landroid/media/MediaRecorder;->_prepare()V,frameworks/base/media/java/android/media/MediaRecorder.java,1188,5,1188,88,maxTargetSdk=28&trackingBug=115609023L
+Landroid/media/MediaRecorder;->native_reset()V,frameworks/base/media/java/android/media/MediaRecorder.java,1290,5,1290,88,maxTargetSdk=28&trackingBug=115609023L
+Landroid/media/MediaRecorder;->native_init()V,frameworks/base/media/java/android/media/MediaRecorder.java,1833,5,1833,88,maxTargetSdk=28&trackingBug=115609023L
+Landroid/media/MediaRecorder;->native_setup(Ljava/lang/Object;Ljava/lang/String;Ljava/lang/String;)V,frameworks/base/media/java/android/media/MediaRecorder.java,1836,5,1836,25,
+Landroid/media/MediaRecorder;->native_finalize()V,frameworks/base/media/java/android/media/MediaRecorder.java,1840,5,1840,88,maxTargetSdk=28&trackingBug=115609023L
+Landroid/media/MediaRecorder;->setParameter(Ljava/lang/String;)V,frameworks/base/media/java/android/media/MediaRecorder.java,1843,5,1843,25,

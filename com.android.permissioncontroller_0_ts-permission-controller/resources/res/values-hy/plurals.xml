@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="additional_permissions_more">
+        <item quantity="one">Եվս %1$d</item>
+        <item quantity="other">Եվս %1$d</item>
+    </plurals>
+    <plurals name="auto_revoke_permission_notification_content_count">
+        <item quantity="one">%1$d հավելված մի քանի ամիս է, ինչ չի օգտագործվել։ Հպեք՝ մանրամասները տեսնելու համար։</item>
+        <item quantity="other">%1$d հավելված մի քանի ամիս է, ինչ չի օգտագործվել։ Հպեք՝ մանրամասները տեսնելու համար։</item>
+    </plurals>
+    <plurals name="auto_revoke_setting_subtitle_count">
+        <item quantity="one">%1$d հավելված մի քանի ամիս է, ինչ չի օգտագործվել</item>
+        <item quantity="other">%1$d հավելված մի քանի ամիս է, ինչ չի օգտագործվել</item>
+    </plurals>
+    <plurals name="days">
+        <item quantity="one">%s օր</item>
+        <item quantity="other">%s օր</item>
+    </plurals>
+    <plurals name="hours">
+        <item quantity="one">%s ժամ</item>
+        <item quantity="other">%s ժամ</item>
+    </plurals>
+    <plurals name="minutes">
+        <item quantity="one">%s րոպե</item>
+        <item quantity="other">%s րոպե</item>
+    </plurals>
+    <plurals name="seconds">
+        <item quantity="one">%s վայրկյան</item>
+        <item quantity="other">%s վայրկյան</item>
+    </plurals>
+</resources>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@android:id/background">
+        <shape>
+            <solid android:color="@color/sys_volume_dialog_seekbar_bg"/>
+            <corners android:radius="@dimen/dp_8"/>
+        </shape>
+    </item>
+    <item android:id="@android:id/progress">
+        <clip>
+            <shape>
+                <gradient
+                    android:startColor="@color/sys_volume_dialog_seekbar_progress_start_color"
+                    android:endColor="@color/sys_volume_dialog_seekbar_progress_end_color"
+                    android:angle="270"/>
+                <corners android:radius="@dimen/dp_8"/>
+            </shape>
+        </clip>
+    </item>
+</layer-list>

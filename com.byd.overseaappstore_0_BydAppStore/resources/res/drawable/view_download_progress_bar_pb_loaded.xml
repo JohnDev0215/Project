@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+    <corners android:radius="@dimen/dp_10"/>
+    <padding
+        android:left="@dimen/dp_1"
+        android:top="@dimen/dp_1"
+        android:right="@dimen/dp_1"
+        android:bottom="@dimen/dp_1"/>
+    <gradient
+        android:startColor="@color/common_download_progress_bar_loaded_area_start"
+        android:endColor="@color/common_download_progress_bar_loaded_area_end"
+        android:angle="180"
+        android:centerX="0.5"/>
+</shape>

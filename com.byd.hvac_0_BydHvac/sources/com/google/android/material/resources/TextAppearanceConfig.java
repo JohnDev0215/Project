@@ -1,0 +1,15 @@
+package com.google.android.material.resources;
+
+/* JADX INFO: compiled from: caradapter-bug */
+/* JADX INFO: loaded from: classes.dex */
+public class TextAppearanceConfig {
+    private static boolean shouldLoadFontSynchronously;
+
+    public static void setShouldLoadFontSynchronously(boolean z) {
+        shouldLoadFontSynchronously = z;
+    }
+
+    public static boolean shouldLoadFontSynchronously() {
+        return shouldLoadFontSynchronously;
+    }
+}

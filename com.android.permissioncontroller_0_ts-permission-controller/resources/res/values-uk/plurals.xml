@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="additional_permissions_more">
+        <item quantity="one">Ще %1$d</item>
+        <item quantity="few">Ще %1$d</item>
+        <item quantity="many">Ще %1$d</item>
+        <item quantity="other">Ще %1$d</item>
+    </plurals>
+    <plurals name="auto_revoke_permission_notification_content_count">
+        <item quantity="one">%1$d додаток не використовувався кілька місяців. Натисніть, щоб переглянути</item>
+        <item quantity="few">%1$d додатки не використовувалися кілька місяців. Натисніть, щоб переглянути</item>
+        <item quantity="many">%1$d додатків не використовувалися кілька місяців. Натисніть, щоб переглянути</item>
+        <item quantity="other">%1$d додатка не використовувалися кілька місяців. Натисніть, щоб переглянути</item>
+    </plurals>
+    <plurals name="auto_revoke_setting_subtitle_count">
+        <item quantity="one">%1$d додаток не використовувався кілька місяців</item>
+        <item quantity="few">%1$d додатки не використовувалися кілька місяців</item>
+        <item quantity="many">%1$d додатків не використовувалися кілька місяців</item>
+        <item quantity="other">%1$d додатка не використовувалися кілька місяців</item>
+    </plurals>
+    <plurals name="days">
+        <item quantity="one">%s день</item>
+        <item quantity="few">%s дні</item>
+        <item quantity="many">%s днів</item>
+        <item quantity="other">%s дня</item>
+    </plurals>
+    <plurals name="hours">
+        <item quantity="one">%s година</item>
+        <item quantity="few">%s години</item>
+        <item quantity="many">%s годин</item>
+        <item quantity="other">%s години</item>
+    </plurals>
+    <plurals name="minutes">
+        <item quantity="one">%s хвилина</item>
+        <item quantity="few">%s хвилини</item>
+        <item quantity="many">%s хвилин</item>
+        <item quantity="other">%s хвилини</item>
+    </plurals>
+    <plurals name="seconds">
+        <item quantity="one">%s секунда</item>
+        <item quantity="few">%s секунди</item>
+        <item quantity="many">%s секунд</item>
+        <item quantity="other">%s секунди</item>
+    </plurals>
+</resources>

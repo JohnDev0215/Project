@@ -1,0 +1,4 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/security/keymaster/KeymasterBlobArgument;->blob:[B,frameworks/base/core/java/android/security/keymaster/KeymasterBlobArgument.java,26,5,26,25,
+Landroid/security/keymaster/KeymasterBlobArgument;-><init>(I[B)V,frameworks/base/core/java/android/security/keymaster/KeymasterBlobArgument.java,29,5,29,25,
+Landroid/security/keymaster/KeymasterBlobArgument;-><init>(ILandroid/os/Parcel;)V,frameworks/base/core/java/android/security/keymaster/KeymasterBlobArgument.java,42,5,42,25,

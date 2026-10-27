@@ -1,0 +1,6 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/preference/PreferenceActivity;->mPrefsContainer:Landroid/view/ViewGroup;,frameworks/base/core/java/android/preference/PreferenceActivity.java,181,5,181,25,
+Landroid/preference/PreferenceActivity;->mPreferenceManager:Landroid/preference/PreferenceManager;,frameworks/base/core/java/android/preference/PreferenceActivity.java,199,5,199,25,
+Landroid/preference/PreferenceActivity;->getHeaders()Ljava/util/List;,frameworks/base/core/java/android/preference/PreferenceActivity.java,731,5,731,25,
+Landroid/preference/PreferenceActivity;->postBindPreferences()V,frameworks/base/core/java/android/preference/PreferenceActivity.java,1434,5,1434,25,
+Landroid/preference/PreferenceActivity;->requirePreferenceManager()V,frameworks/base/core/java/android/preference/PreferenceActivity.java,1463,5,1463,25,

@@ -1,0 +1,7 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/app/ActivityManager$RunningAppProcessInfo;->FLAG_PERSISTENT:I,frameworks/base/core/java/android/app/ActivityManager.java,3189,9,3189,29,
+Landroid/app/ActivityManager$RunningAppProcessInfo;->FLAG_HAS_ACTIVITIES:I,frameworks/base/core/java/android/app/ActivityManager.java,3197,9,3197,29,
+Landroid/app/ActivityManager$RunningAppProcessInfo;->flags:I,frameworks/base/core/java/android/app/ActivityManager.java,3205,9,3205,29,
+Landroid/app/ActivityManager$RunningAppProcessInfo;->IMPORTANCE_CANT_SAVE_STATE_PRE_26:I,frameworks/base/core/java/android/app/ActivityManager.java,3301,9,3301,29,
+Landroid/app/ActivityManager$RunningAppProcessInfo;->procStateToImportance(I)I,frameworks/base/core/java/android/app/ActivityManager.java,3361,9,3361,29,
+Landroid/app/ActivityManager$RunningAppProcessInfo;->processState:I,frameworks/base/core/java/android/app/ActivityManager.java,3515,9,3515,29,

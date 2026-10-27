@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="dotted_app_label">
+        <item quantity="one">%1$s ima %2$d obvestilo</item>
+        <item quantity="two">%1$s ima %2$d obvestili</item>
+        <item quantity="few">%1$s ima %2$d obvestila</item>
+        <item quantity="other">%1$s ima %2$d obvestil</item>
+    </plurals>
+</resources>

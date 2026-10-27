@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="bottom"
+    android:layout_width="@dimen/dp_144"
+    android:layout_height="@dimen/dp_160">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/card_app_cl"
+        android:background="@mipmap/img_card_bg_addapp"
+        android:layout_width="@dimen/dp_146"
+        android:layout_height="@dimen/dp_144"
+        android:layout_marginTop="@dimen/dp_6">
+        <ImageView
+            android:id="@+id/card_app_icon"
+            android:background="@mipmap/icon_card_edit"
+            android:layout_width="@dimen/dp_64"
+            android:layout_height="@dimen/dp_64"
+            android:layout_marginTop="@dimen/dp_22"
+            android:layout_marginStart="@dimen/dp_41"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+        <TextView
+            android:textSize="@dimen/sp_16"
+            android:textColor="@color/card_app_name"
+            android:gravity="center"
+            android:id="@+id/card_app_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_96"
+            android:text="@string/edit"
+            android:lines="@integer/more_app_recent_tv"
+            android:maxEms="@integer/more_app_recent_tv"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>

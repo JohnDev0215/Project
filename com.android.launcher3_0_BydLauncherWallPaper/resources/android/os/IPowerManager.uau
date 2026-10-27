@@ -1,0 +1,7 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/os/IPowerManager;->releaseWakeLock(Landroid/os/IBinder;I)V,frameworks/base/core/java/android/os/IPowerManager.aidl,37,1,37,25,
+Landroid/os/IPowerManager;->userActivity(JII)V,frameworks/base/core/java/android/os/IPowerManager.aidl,50,1,50,25,
+Landroid/os/IPowerManager;->goToSleep(JII)V,frameworks/base/core/java/android/os/IPowerManager.aidl,53,1,53,25,
+Landroid/os/IPowerManager;->nap(J)V,frameworks/base/core/java/android/os/IPowerManager.aidl,55,1,55,44,maxTargetSdk=28
+Landroid/os/IPowerManager;->isInteractive()Z,frameworks/base/core/java/android/os/IPowerManager.aidl,58,1,58,25,
+Landroid/os/IPowerManager;->reboot(ZLjava/lang/String;Z)V,frameworks/base/core/java/android/os/IPowerManager.aidl,70,1,70,25,

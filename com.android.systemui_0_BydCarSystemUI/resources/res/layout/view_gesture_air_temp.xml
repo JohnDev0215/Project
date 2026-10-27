@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:background="@drawable/shape_gesture_pop_bg"
+        android:layout_width="@dimen/dp_148"
+        android:layout_height="@dimen/dp_260">
+        <ImageView
+            android:layout_width="@dimen/dp_20"
+            android:layout_height="@dimen/dp_30"
+            android:src="@mipmap/img_gesture_ac_arrow_left"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"/>
+        <ImageView
+            android:layout_width="@dimen/dp_20"
+            android:layout_height="@dimen/dp_30"
+            android:src="@mipmap/img_gesture_ac_arrow_right"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"/>
+        <com.android.systemui.widget.WheelView
+            android:gravity="center_horizontal"
+            android:layout_gravity="center"
+            android:id="@+id/wheel_view"
+            android:layout_width="@dimen/dp_64"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            app:wh_max_text_size="@dimen/sp_54"
+            app:wh_min_text_size="@dimen/sp_40"
+            app:wh_selected_text_color="@color/color_navi_temp_set_text_sel"
+            app:wh_text_color="@color/color_navi_temp_set_text_nor"
+            app:wh_text_space_ratio="2"/>
+        <ImageView
+            android:id="@+id/img_degree"
+            android:layout_width="@dimen/dp_16"
+            android:layout_height="@dimen/dp_40"
+            android:src="@mipmap/img_gesture_ac_temperature_unit"
+            android:tint="@color/color_navi_temp_set_text_sel"
+            android:layout_toRightOf="@+id/wheel_view"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+</RelativeLayout>

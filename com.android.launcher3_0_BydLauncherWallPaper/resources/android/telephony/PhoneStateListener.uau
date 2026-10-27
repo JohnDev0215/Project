@@ -1,0 +1,8 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/telephony/PhoneStateListener;->mSubId:Ljava/lang/Integer;,frameworks/base/core/java/android/telephony/PhoneStateListener.java,494,5,494,25,
+Landroid/telephony/PhoneStateListener;->callback:Lcom/android/internal/telephony/IPhoneStateListener;,frameworks/base/core/java/android/telephony/PhoneStateListener.java,501,5,501,25,
+Landroid/telephony/PhoneStateListener;-><init>(Landroid/os/Looper;)V,frameworks/base/core/java/android/telephony/PhoneStateListener.java,517,5,517,63,maxTargetSdk=28
+Landroid/telephony/PhoneStateListener;-><init>(Ljava/lang/Integer;)V,frameworks/base/core/java/android/telephony/PhoneStateListener.java,528,5,528,63,maxTargetSdk=28
+Landroid/telephony/PhoneStateListener;-><init>(Ljava/lang/Integer;Landroid/os/Looper;)V,frameworks/base/core/java/android/telephony/PhoneStateListener.java,542,5,542,63,maxTargetSdk=28
+Landroid/telephony/PhoneStateListener;->onDataConnectionRealTimeInfoChanged(Landroid/telephony/DataConnectionRealTimeInfo;)V,frameworks/base/core/java/android/telephony/PhoneStateListener.java,838,5,838,25,
+Landroid/telephony/PhoneStateListener;->onOemHookRawEvent([B)V,frameworks/base/core/java/android/telephony/PhoneStateListener.java,985,5,985,25,

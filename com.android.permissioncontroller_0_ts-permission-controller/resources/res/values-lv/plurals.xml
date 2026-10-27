@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="additional_permissions_more">
+        <item quantity="zero">Vēl %1$d</item>
+        <item quantity="one">Vēl %1$d</item>
+        <item quantity="other">Vēl %1$d</item>
+    </plurals>
+    <plurals name="auto_revoke_permission_notification_content_count">
+        <item quantity="zero">%1$d lietotnes nav izmantotas vairākus mēnešus. Pieskarieties, lai tās skatītu.</item>
+        <item quantity="one">%1$d lietotne nav izmantota vairākus mēnešus. Pieskarieties, lai tās skatītu.</item>
+        <item quantity="other">%1$d lietotnes nav izmantotas vairākus mēnešus. Pieskarieties, lai tās skatītu.</item>
+    </plurals>
+    <plurals name="auto_revoke_setting_subtitle_count">
+        <item quantity="zero">%1$d lietotnes nav izmantotas vairākus mēnešus.</item>
+        <item quantity="one">%1$d lietotne nav izmantota vairākus mēnešus.</item>
+        <item quantity="other">%1$d lietotnes nav izmantotas vairākus mēnešus.</item>
+    </plurals>
+    <plurals name="days">
+        <item quantity="zero">%s dienu</item>
+        <item quantity="one">%s diena</item>
+        <item quantity="other">%s dienas</item>
+    </plurals>
+    <plurals name="hours">
+        <item quantity="zero">%s stundu</item>
+        <item quantity="one">%s stunda</item>
+        <item quantity="other">%s stundas</item>
+    </plurals>
+    <plurals name="minutes">
+        <item quantity="zero">%s minūšu</item>
+        <item quantity="one">%s minūte</item>
+        <item quantity="other">%s minūtes</item>
+    </plurals>
+    <plurals name="seconds">
+        <item quantity="zero">%s sekunžu</item>
+        <item quantity="one">%s sekunde</item>
+        <item quantity="other">%s sekundes</item>
+    </plurals>
+</resources>

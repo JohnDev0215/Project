@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="additional_permissions_more">
+        <item quantity="one">နောက်ထပ် %1$d ခု</item>
+        <item quantity="other">နောက်ထပ် %1$d ခု</item>
+    </plurals>
+    <plurals name="auto_revoke_permission_notification_content_count">
+        <item quantity="one">အက်ပ် %1$d ခုကို အသုံးမပြုသည်မှာ လအနည်းငယ် ရှိပါပြီ။ ပြန်ကြည့်ရန် တို့ပါ</item>
+        <item quantity="other">အက်ပ် %1$d ခုကို အသုံးမပြုသည်မှာ လအနည်းငယ်ရှိပါပြီ။ ပြန်ကြည့်ရန် တို့ပါ</item>
+    </plurals>
+    <plurals name="auto_revoke_setting_subtitle_count">
+        <item quantity="one">အက်ပ် %1$d ခုကို အသုံးမပြုသည်မှာ လအနည်းငယ် ရှိပါပြီ</item>
+        <item quantity="other">အက်ပ် %1$d ခုကို အသုံးမပြုသည်မှာ လအနည်းငယ်ရှိပါပြီ</item>
+    </plurals>
+    <plurals name="days">
+        <item quantity="one">၁ ရက်</item>
+        <item quantity="other">%s ရက်</item>
+    </plurals>
+    <plurals name="hours">
+        <item quantity="one">၁ နာရီ</item>
+        <item quantity="other">%s နာရီ</item>
+    </plurals>
+    <plurals name="minutes">
+        <item quantity="one">၁ မိနစ်</item>
+        <item quantity="other">%s မိနစ်</item>
+    </plurals>
+    <plurals name="seconds">
+        <item quantity="one">၁ စက္ကန့်</item>
+        <item quantity="other">%s စက္ကန့်</item>
+    </plurals>
+</resources>

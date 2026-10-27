@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.Guideline
+        android:orientation="vertical"
+        android:id="@+id/guide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_percent="0.5"/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:textSize="@dimen/sp_18"
+        android:textColor="@color/selector_text_button_ok"
+        android:gravity="center"
+        android:id="@+id/btn_ok"
+        android:background="@drawable/bg_button_default_selector"
+        android:layout_width="@dimen/dp_144"
+        android:layout_height="@dimen/dp_40"
+        android:layout_marginBottom="@dimen/dp_32"
+        android:text="@string/btn_save"
+        android:textAllCaps="false"
+        android:layout_marginEnd="@dimen/dp_20"
+        android:stateListAnimator="@animator/profile_pressed_state_list"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guide"/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:textSize="@dimen/sp_18"
+        android:textColor="@color/selector_text_button"
+        android:gravity="center"
+        android:id="@+id/btn_cancel"
+        android:background="@drawable/bg_button_normal"
+        android:layout_width="@dimen/dp_144"
+        android:layout_height="@dimen/dp_40"
+        android:layout_marginBottom="@dimen/dp_32"
+        android:text="@string/cancel"
+        android:textAllCaps="false"
+        android:layout_marginStart="@dimen/dp_20"
+        android:stateListAnimator="@animator/profile_pressed_state_list"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/guide"/>
+</merge>

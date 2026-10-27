@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="additional_permissions_more">
+        <item quantity="zero">%1$dلا أذونات أخرى</item>
+        <item quantity="one">%1$dإذن واحد آخر</item>
+        <item quantity="two">إذنان آخران (%1$d)</item>
+        <item quantity="few">%1$d أذونات أخرى</item>
+        <item quantity="many">%1$d إذنًا آخر</item>
+        <item quantity="other">%1$d من الأذونات الأخرى</item>
+    </plurals>
+    <plurals name="auto_revoke_permission_notification_content_count">
+        <item quantity="zero">لم يتم استخدام %1$d تطبيق منذ عدة شهور. انقر لمراجعة الأذونات.</item>
+        <item quantity="one">لم يتم استخدام تطبيق واحد (%1$d) منذ عدة أشهر. انقر لمراجعة الأذونات.</item>
+        <item quantity="two">لم يتم استخدام تطبيقين (%1$d) منذ عدة أشهر. انقر لمراجعة الأذونات.</item>
+        <item quantity="few">لم يتم استخدام %1$d تطبيقات منذ عدة شهور. انقر لمراجعة الأذونات.</item>
+        <item quantity="many">لم يتم استخدام %1$d تطبيقًا منذ عدة شهور. انقر لمراجعة الأذونات.</item>
+        <item quantity="other">لم يتم استخدام %1$d تطبيق منذ عدة شهور. انقر لمراجعة الأذونات.</item>
+    </plurals>
+    <plurals name="auto_revoke_setting_subtitle_count">
+        <item quantity="zero">لم يتم استخدام %1$d تطبيق منذ عدة شهور.</item>
+        <item quantity="one">لم يتم استخدام تطبيق واحد (%1$d) منذ عدة أشهر.</item>
+        <item quantity="two">لم يتم استخدام تطبيقين (%1$d) منذ عدة أشهر.</item>
+        <item quantity="few">لم يتم استخدام %1$d تطبيقات منذ عدة شهور.</item>
+        <item quantity="many">لم يتم استخدام %1$d تطبيقًا منذ عدة شهور.</item>
+        <item quantity="other">لم يتم استخدام %1$d تطبيق منذ عدة شهور.</item>
+    </plurals>
+    <plurals name="days">
+        <item quantity="zero">%s يوم</item>
+        <item quantity="one">يوم واحد</item>
+        <item quantity="two">يومان (%s)</item>
+        <item quantity="few">%s أيام</item>
+        <item quantity="many">%s يومًا</item>
+        <item quantity="other">%s يوم</item>
+    </plurals>
+    <plurals name="hours">
+        <item quantity="zero">%s ساعة</item>
+        <item quantity="one">ساعة واحدة</item>
+        <item quantity="two">ساعتان (%s)</item>
+        <item quantity="few">%s ساعات</item>
+        <item quantity="many">%s ساعة</item>
+        <item quantity="other">%s ساعة</item>
+    </plurals>
+    <plurals name="minutes">
+        <item quantity="zero">%s دقيقة</item>
+        <item quantity="one">دقيقة واحدة</item>
+        <item quantity="two">دقيقتان (%s)</item>
+        <item quantity="few">%s دقائق</item>
+        <item quantity="many">%s دقيقة</item>
+        <item quantity="other">%s دقيقة</item>
+    </plurals>
+    <plurals name="seconds">
+        <item quantity="zero">%s ثانية</item>
+        <item quantity="one">ثانية واحدة</item>
+        <item quantity="two">ثانيتان (%s)</item>
+        <item quantity="few">%s ثوانٍ</item>
+        <item quantity="many">%s ثانية</item>
+        <item quantity="other">%s ثانية</item>
+    </plurals>
+</resources>

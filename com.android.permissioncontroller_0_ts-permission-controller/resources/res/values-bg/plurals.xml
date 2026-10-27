@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="additional_permissions_more">
+        <item quantity="one">Още %1$d</item>
+        <item quantity="other">Още %1$d</item>
+    </plurals>
+    <plurals name="auto_revoke_permission_notification_content_count">
+        <item quantity="one">%1$d приложение не е използвано от няколко месеца. Докоснете за преглед</item>
+        <item quantity="other">%1$d приложения не са използвани от няколко месеца. Докоснете за преглед</item>
+    </plurals>
+    <plurals name="auto_revoke_setting_subtitle_count">
+        <item quantity="one">%1$d приложение не е използвано от няколко месеца</item>
+        <item quantity="other">%1$d приложения не са използвани от няколко месеца</item>
+    </plurals>
+    <plurals name="days">
+        <item quantity="one">1 ден</item>
+        <item quantity="other">%s дни</item>
+    </plurals>
+    <plurals name="hours">
+        <item quantity="one">1 час</item>
+        <item quantity="other">%s часа</item>
+    </plurals>
+    <plurals name="minutes">
+        <item quantity="one">1 минута</item>
+        <item quantity="other">%s минути</item>
+    </plurals>
+    <plurals name="seconds">
+        <item quantity="one">1 секунда</item>
+        <item quantity="other">%s секунди</item>
+    </plurals>
+</resources>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:gravity="center"
+        android:id="@+id/rlLandscape"
+        android:layout_width="@dimen/dp_64"
+        android:layout_height="wrap_content"
+        android:layoutDirection="ltr">
+        <ImageView
+            android:layout_gravity="center"
+            android:id="@+id/ivAdsorbBarLandscape"
+            android:layout_width="@dimen/dp_24"
+            android:layout_height="@dimen/dp_104"
+            android:src="@mipmap/ic_split_screen_adsorb_bar_landscape_light"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:gravity="center"
+        android:id="@+id/rlPortrait"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_64"
+        android:layoutDirection="ltr">
+        <ImageView
+            android:layout_gravity="center"
+            android:id="@+id/ivAdsorbBarPortrait"
+            android:layout_width="@dimen/dp_104"
+            android:layout_height="@dimen/dp_24"
+            android:src="@mipmap/ic_split_screen_adsorb_bar_portrait_light"/>
+    </RelativeLayout>
+</LinearLayout>

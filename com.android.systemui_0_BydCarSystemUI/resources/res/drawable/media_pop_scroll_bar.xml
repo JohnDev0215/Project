@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:top="@dimen/dp_24">
+        <shape
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <corners android:radius="@dimen/dp_2"/>
+            <solid android:color="@color/media_pop_scroll_bar_color"/>
+        </shape>
+    </item>
+</layer-list>

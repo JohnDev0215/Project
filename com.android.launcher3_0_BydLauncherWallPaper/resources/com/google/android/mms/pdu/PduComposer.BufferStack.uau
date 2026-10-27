@@ -1,0 +1,5 @@
+signature,file,startline,startcol,endline,endcol,properties
+Lcom/google/android/mms/pdu/PduComposer$BufferStack;->newbuf()V,frameworks/base/telephony/common/com/google/android/mms/pdu/PduComposer.java,1108,9,1108,29,
+Lcom/google/android/mms/pdu/PduComposer$BufferStack;->pop()V,frameworks/base/telephony/common/com/google/android/mms/pdu/PduComposer.java,1134,9,1134,29,
+Lcom/google/android/mms/pdu/PduComposer$BufferStack;->copy()V,frameworks/base/telephony/common/com/google/android/mms/pdu/PduComposer.java,1155,9,1155,29,
+Lcom/google/android/mms/pdu/PduComposer$BufferStack;->mark()Lcom/google/android/mms/pdu/PduComposer$PositionMarker;,frameworks/base/telephony/common/com/google/android/mms/pdu/PduComposer.java,1166,9,1166,29,

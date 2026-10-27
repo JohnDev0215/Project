@@ -1,0 +1,10 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/widget/RemoteViews;->mApplication:Landroid/content/pm/ApplicationInfo;,frameworks/base/core/java/android/widget/RemoteViews.java,217,5,217,25,
+Landroid/widget/RemoteViews;->mLayoutId:I,frameworks/base/core/java/android/widget/RemoteViews.java,223,5,223,25,
+Landroid/widget/RemoteViews;->mActions:Ljava/util/ArrayList;,frameworks/base/core/java/android/widget/RemoteViews.java,235,5,235,25,
+Landroid/widget/RemoteViews;->mBitmapCache:Landroid/widget/RemoteViews$BitmapCache;,frameworks/base/core/java/android/widget/RemoteViews.java,241,5,241,25,
+Landroid/widget/RemoteViews;->mPortrait:Landroid/widget/RemoteViews;,frameworks/base/core/java/android/widget/RemoteViews.java,263,5,263,25,
+Landroid/widget/RemoteViews;->mergeRemoteViews(Landroid/widget/RemoteViews;)V,frameworks/base/core/java/android/widget/RemoteViews.java,510,5,510,25,
+Landroid/widget/RemoteViews;->estimateMemoryUsage()I,frameworks/base/core/java/android/widget/RemoteViews.java,2489,5,2489,25,
+Landroid/widget/RemoteViews;->addView(ILandroid/widget/RemoteViews;I)V,frameworks/base/core/java/android/widget/RemoteViews.java,2537,5,2537,25,
+Landroid/widget/RemoteViews;->setRemoteAdapter(ILjava/util/ArrayList;I)V,frameworks/base/core/java/android/widget/RemoteViews.java,3014,5,3014,25,

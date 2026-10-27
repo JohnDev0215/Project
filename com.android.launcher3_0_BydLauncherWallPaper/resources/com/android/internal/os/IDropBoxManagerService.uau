@@ -1,0 +1,2 @@
+signature,file,startline,startcol,endline,endcol,properties
+Lcom/android/internal/os/IDropBoxManagerService;->getNextEntry(Ljava/lang/String;JLjava/lang/String;)Landroid/os/DropBoxManager$Entry;,frameworks/base/core/java/com/android/internal/os/IDropBoxManagerService.aidl,40,1,40,25,

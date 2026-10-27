@@ -1,0 +1,9 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/util/NtpTrustedTime;->getInstance(Landroid/content/Context;)Landroid/util/NtpTrustedTime;,frameworks/base/core/java/android/util/NtpTrustedTime.java,135,5,135,25,
+Landroid/util/NtpTrustedTime;->getInstance(Landroid/content/Context;Ljava/lang/String;)Landroid/util/NtpTrustedTime;,frameworks/base/core/java/android/util/NtpTrustedTime.java,144,5,144,25,
+Landroid/util/NtpTrustedTime;->forceRefresh()Z,frameworks/base/core/java/android/util/NtpTrustedTime.java,210,5,210,25,
+Landroid/util/NtpTrustedTime;->forceRefresh(Landroid/net/Network;)Z,frameworks/base/core/java/android/util/NtpTrustedTime.java,215,5,215,25,
+Landroid/util/NtpTrustedTime;->hasCache()Z,frameworks/base/core/java/android/util/NtpTrustedTime.java,226,5,226,25,
+Landroid/util/NtpTrustedTime;->currentTimeMillis()J,frameworks/base/core/java/android/util/NtpTrustedTime.java,253,5,253,25,
+Landroid/util/NtpTrustedTime;->getCachedNtpTime()J,frameworks/base/core/java/android/util/NtpTrustedTime.java,272,5,272,25,
+Landroid/util/NtpTrustedTime;->getCachedNtpTimeReference()J,frameworks/base/core/java/android/util/NtpTrustedTime.java,285,5,285,25,

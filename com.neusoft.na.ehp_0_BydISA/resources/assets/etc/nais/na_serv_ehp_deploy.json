@@ -1,0 +1,214 @@
+{
+   "Watchdog": {
+      "comment 1": "default service- and worker-agent timeout in ms, set to 0 to disable",
+      "comment 2": "any agent is able to overwrite the default timeout",
+      "ServiceAgentTimeout": 7500,
+      "WorkerAgentTimeout": 20000,
+      "comment 3": "how often in ms the watchdog thread inspect all current running agent procedures, set to 0 to disable",
+      "CycleTime": 1000,
+      "comment 4": "log some agent statistic in ms, set to 0 to disable",
+      "StatisticCycleTime": 60000
+   },
+   "FinishTimeout": 300000,
+   "DrainTimeout": 300000,
+   "Agents": [
+      {
+         "comment 1": "overwrite default agent behaviour",
+         "Name": "Finders",
+         "AgentTimeout": 40000
+      }
+   ],
+   "SharedLibraries": [
+      {
+         "Name": "na_serv_ehp_adaptors_fcall",
+         "Enabled": "${interface.cpp}"
+      },
+      {
+         "Name": "na_serv_ehp_adaptors_dbus",
+         "Enabled": "${interface.dbus}"
+      },
+      {
+         "Name": "na_serv_ehp_adaptors_json",
+         "Enabled": "${interface.json}"
+      },
+      {
+         "Name": "na_serv_ehp_adaptors_jni",
+         "Enabled": "${interface.jni}"
+      }
+   ],
+   "Instances": [
+      {
+         "Comment": "start infrastructure manager first",
+         "Name": "MemTrackerManagerImpl"
+      },
+      {
+         "Comment": "start infrastructure manager first",
+         "Name": "MemoryStatMgrImpl"
+      },
+      {
+         "Comment": "start infrastructure manager first",
+         "Name": "CPUTrackerManagerImpl"
+      },
+      {
+         "Comment": "The NdsLibraryProvider should be the first manager to guarantee NDS pointer validity for as long time as possible",
+         "Name": "NdsLibraryProvider"
+      },
+      {
+         "Name": "KPIMonitorsProvider"
+      },
+      {
+         "Comment": "start infrastructure manager first",
+         "Name": "TimerManagerInstance"
+      },
+      {
+         "Comment": "start infrastructure manager first",
+         "Name": "TimeServiceManagerInstance"
+      },
+      {
+         "Comment": "start infrastructure manager first",
+         "Name": "ProviderCoordinatorMgr"
+      },
+      {
+         "Comment": "start infrastructure manager first",
+         "Name": "FilePersistenceManager",
+         "Enabled": true
+      },
+      {
+         "Name": "PositioningMgr"
+      },
+      {
+         "Names": [
+            "MpdManager",
+            "MpdProviderManager",
+            "MpdConfig",
+            "SystemInformationServer"
+         ]
+      },
+      {
+         "Name": "AdasManager"
+      },
+      {
+         "Name": "AdasisMultiplexerManager",
+         "Optional": true
+      },
+      {
+         "Name": "IsaMultiplexerManager"
+      },
+      {
+         "Name": "LocalizationManagerImpl"
+      },
+      {
+         "Name": "LocationManager"
+      },
+      {
+         "Name": "TrafficManager"
+      },
+      {
+         "Name": "DatabaseMgrImpl"
+      },
+      {
+         "Name": "RouteOttoManager"
+      },
+      {
+         "Name": "TITextListManager"
+      },
+      {
+         "Name": "TrafficController"
+      },
+      {
+         "Name": "AndroidManagerImpl",
+         "ServiceAgent": "AndroidManager",
+         "Comment": "this manager is only sometimes deployed, but when existing an instance should be started",
+         "Optional": true
+      },
+      {
+         "Name": "PointerAdaptorAndroidManager",
+         "Comment": "required to create the Java peer class for this manager",
+         "ServiceAgent": "AndroidManager",
+         "Optional": true
+      },
+      {
+         "Name": "WidgetControlProxyFCallAdaptor",
+         "Optional": true
+      },
+      {
+         "Regex": "ProxyAdaptor.*",
+         "ServiceAgent": "ehp_CommAgent",
+         "Optional": true
+      },
+      {
+         "Regex": "FCallCppProvider.*",
+         "Comment": "deploy all FCallCppProviders",
+         "ServiceAgent": "ehp_CommAgent",
+         "Optional": true,
+         "Enabled": "${interface.cpp}"
+      },
+      {
+         "Regex": "FCallCppFacade.*",
+         "Comment": "deploy add FCallCppFacades",
+         "ServiceAgent": "ehp_CommAgent",
+         "Optional": true,
+         "Enabled": false
+      },
+      {
+         "Name": "DBusCommunication",
+         "ServiceAgent": "ehp_CommAgent",
+         "Optional": true,
+         "Enabled": "${interface.dbus}"
+      },
+      {
+         "Regex": "DBusProvider.*",
+         "Comment": "deploy all DBusProviders",
+         "ServiceAgent": "ehp_CommAgent",
+         "Optional": true,
+         "Enabled": "${interface.dbus}"
+      },
+      {
+         "Regex": "DBusFacade.*",
+         "Comment": "deploy all DBusFacades",
+         "ServiceAgent": "ehp_CommAgent",
+         "Optional": true,
+         "Enabled": false
+      },
+      {
+         "Name": "JsonWsCommunication",
+         "ServiceAgent": "ehp_CommAgent",
+         "Optional": true,
+         "Enabled": "${interface.json}"
+      },
+      {
+         "Regex": "JsonWsProvider.*",
+         "Comment": "deploy all JsonWsProviders",
+         "ServiceAgent": "ehp_CommAgent",
+         "Optional": true,
+         "Enabled": "${interface.json}"
+      },
+      {
+         "Regex": "JsonWsFacade.*",
+         "Comment": "deploy all JsonWsFacades",
+         "ServiceAgent": "ehp_CommAgent",
+         "Optional": true,
+         "Enabled": false
+      },
+      {
+         "Name": "JNICommunication",
+         "ServiceAgent": "ehp_CommAgent",
+         "Optional": true,
+         "Enabled": "${interface.jni}"
+      },
+      {
+         "Name": "PointerAdaptorJNICommunicationTask",
+         "Comment": "required to create the Java peer class for this manager",
+         "ServiceAgent": "ehp_CommAgent",
+         "Optional": true,
+         "Enabled": "${interface.jni}"
+      },
+      {
+         "Regex": "JNIProvider.*",
+         "Comment": "deploy all JNI adaptor",
+         "ServiceAgent": "ehp_CommAgent",
+         "Optional": true,
+         "Enabled": "${interface.jni}"
+      }
+   ]
+}

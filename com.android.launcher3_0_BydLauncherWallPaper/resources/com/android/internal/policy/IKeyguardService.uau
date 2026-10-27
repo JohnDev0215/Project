@@ -1,0 +1,3 @@
+signature,file,startline,startcol,endline,endcol,properties
+Lcom/android/internal/policy/IKeyguardService;->setKeyguardEnabled(Z)V,frameworks/base/core/java/com/android/internal/policy/IKeyguardService.aidl,91,1,91,25,
+Lcom/android/internal/policy/IKeyguardService;->doKeyguardTimeout(Landroid/os/Bundle;)V,frameworks/base/core/java/com/android/internal/policy/IKeyguardService.aidl,94,1,94,25,

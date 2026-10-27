@@ -1,0 +1,8 @@
+signature,file,startline,startcol,endline,endcol,properties
+Lcom/android/internal/telephony/gsm/SmsCbHeader;->mMessageIdentifier:I,frameworks/base/telephony/java/com/android/internal/telephony/gsm/SmsCbHeader.java,114,5,114,25,
+Lcom/android/internal/telephony/gsm/SmsCbHeader;-><init>([B)V,frameworks/base/telephony/java/com/android/internal/telephony/gsm/SmsCbHeader.java,133,5,133,25,
+Lcom/android/internal/telephony/gsm/SmsCbHeader;->getGeographicalScope()I,frameworks/base/telephony/java/com/android/internal/telephony/gsm/SmsCbHeader.java,231,5,231,25,
+Lcom/android/internal/telephony/gsm/SmsCbHeader;->getSerialNumber()I,frameworks/base/telephony/java/com/android/internal/telephony/gsm/SmsCbHeader.java,236,5,236,25,
+Lcom/android/internal/telephony/gsm/SmsCbHeader;->getServiceCategory()I,frameworks/base/telephony/java/com/android/internal/telephony/gsm/SmsCbHeader.java,241,5,241,25,
+Lcom/android/internal/telephony/gsm/SmsCbHeader;->getPageIndex()I,frameworks/base/telephony/java/com/android/internal/telephony/gsm/SmsCbHeader.java,254,5,254,25,
+Lcom/android/internal/telephony/gsm/SmsCbHeader;->getNumberOfPages()I,frameworks/base/telephony/java/com/android/internal/telephony/gsm/SmsCbHeader.java,259,5,259,25,

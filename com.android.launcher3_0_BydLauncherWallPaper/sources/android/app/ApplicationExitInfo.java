@@ -1,0 +1,562 @@
+package android.app;
+
+import android.app.IAppTraceRetriever;
+import android.icu.text.SimpleDateFormat;
+import android.os.Parcel;
+import android.os.ParcelFileDescriptor;
+import android.os.Parcelable;
+import android.os.RemoteException;
+import android.os.UserHandle;
+import android.provider.SettingsStringUtil;
+import android.text.TextUtils;
+import android.util.DebugUtils;
+import android.util.proto.ProtoInputStream;
+import android.util.proto.ProtoOutputStream;
+import android.util.proto.WireTypeMismatchException;
+import com.android.internal.util.ArrayUtils;
+import java.io.File;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.PrintWriter;
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
+import java.util.Date;
+import java.util.Objects;
+import java.util.zip.GZIPInputStream;
+
+/* JADX INFO: loaded from: classes.dex */
+public final class ApplicationExitInfo implements Parcelable {
+    public static final Parcelable.Creator<ApplicationExitInfo> CREATOR = new Parcelable.Creator<ApplicationExitInfo>() { // from class: android.app.ApplicationExitInfo.1
+        /* JADX WARN: Can't rename method to resolve collision */
+        @Override // android.os.Parcelable.Creator
+        public ApplicationExitInfo createFromParcel(Parcel parcel) {
+            return new ApplicationExitInfo(parcel);
+        }
+
+        /* JADX WARN: Can't rename method to resolve collision */
+        @Override // android.os.Parcelable.Creator
+        public ApplicationExitInfo[] newArray(int i) {
+            return new ApplicationExitInfo[i];
+        }
+    };
+    public static final int REASON_ANR = 6;
+    public static final int REASON_CRASH = 4;
+    public static final int REASON_CRASH_NATIVE = 5;
+    public static final int REASON_DEPENDENCY_DIED = 12;
+    public static final int REASON_EXCESSIVE_RESOURCE_USAGE = 9;
+    public static final int REASON_EXIT_SELF = 1;
+    public static final int REASON_INITIALIZATION_FAILURE = 7;
+    public static final int REASON_LOW_MEMORY = 3;
+    public static final int REASON_OTHER = 13;
+    public static final int REASON_PERMISSION_CHANGE = 8;
+    public static final int REASON_SIGNALED = 2;
+    public static final int REASON_UNKNOWN = 0;
+    public static final int REASON_USER_REQUESTED = 10;
+    public static final int REASON_USER_STOPPED = 11;
+    public static final int SUBREASON_EXCESSIVE_CPU = 7;
+    public static final int SUBREASON_IMPERCEPTIBLE = 15;
+    public static final int SUBREASON_INVALID_START = 13;
+    public static final int SUBREASON_INVALID_STATE = 14;
+    public static final int SUBREASON_ISOLATED_NOT_NEEDED = 17;
+    public static final int SUBREASON_KILL_ALL_BG_EXCEPT = 10;
+    public static final int SUBREASON_KILL_ALL_FG = 9;
+    public static final int SUBREASON_KILL_PID = 12;
+    public static final int SUBREASON_KILL_UID = 11;
+    public static final int SUBREASON_LARGE_CACHED = 5;
+    public static final int SUBREASON_MEMORY_PRESSURE = 6;
+    public static final int SUBREASON_REMOVE_LRU = 16;
+    public static final int SUBREASON_SYSTEM_UPDATE_DONE = 8;
+    public static final int SUBREASON_TOO_MANY_CACHED = 2;
+    public static final int SUBREASON_TOO_MANY_EMPTY = 3;
+    public static final int SUBREASON_TRIM_EMPTY = 4;
+    public static final int SUBREASON_UNKNOWN = 0;
+    public static final int SUBREASON_WAIT_FOR_DEBUGGER = 1;
+    private IAppTraceRetriever mAppTraceRetriever;
+    private int mConnectionGroup;
+    private int mDefiningUid;
+    private String mDescription;
+    private int mImportance;
+    private String[] mPackageList;
+    private String mPackageName;
+    private int mPackageUid;
+    private int mPid;
+    private String mProcessName;
+    private long mPss;
+    private int mRealUid;
+    private int mReason;
+    private long mRss;
+    private byte[] mState;
+    private int mStatus;
+    private int mSubReason;
+    private long mTimestamp;
+    private File mTraceFile;
+
+    @Retention(RetentionPolicy.SOURCE)
+    public @interface Reason {
+    }
+
+    @Retention(RetentionPolicy.SOURCE)
+    public @interface SubReason {
+    }
+
+    private static String reasonCodeToString(int i) {
+        switch (i) {
+            case 1:
+                return "EXIT_SELF";
+            case 2:
+                return "SIGNALED";
+            case 3:
+                return "LOW_MEMORY";
+            case 4:
+                return "APP CRASH(EXCEPTION)";
+            case 5:
+                return "APP CRASH(NATIVE)";
+            case 6:
+                return "ANR";
+            case 7:
+                return "INITIALIZATION FAILURE";
+            case 8:
+                return "PERMISSION CHANGE";
+            case 9:
+                return "EXCESSIVE RESOURCE USAGE";
+            case 10:
+                return "USER REQUESTED";
+            case 11:
+                return "USER STOPPED";
+            case 12:
+                return "DEPENDENCY DIED";
+            case 13:
+                return "OTHER KILLS BY SYSTEM";
+            default:
+                return "UNKNOWN";
+        }
+    }
+
+    public static String subreasonToString(int i) {
+        switch (i) {
+            case 1:
+                return "WAIT FOR DEBUGGER";
+            case 2:
+                return "TOO MANY CACHED PROCS";
+            case 3:
+                return "TOO MANY EMPTY PROCS";
+            case 4:
+                return "TRIM EMPTY";
+            case 5:
+                return "LARGE CACHED";
+            case 6:
+                return "MEMORY PRESSURE";
+            case 7:
+                return "EXCESSIVE CPU USAGE";
+            case 8:
+                return "SYSTEM UPDATE_DONE";
+            case 9:
+                return "KILL ALL FG";
+            case 10:
+                return "KILL ALL BG EXCEPT";
+            case 11:
+                return "KILL UID";
+            case 12:
+                return "KILL PID";
+            case 13:
+                return "INVALID START";
+            case 14:
+                return "INVALID STATE";
+            case 15:
+                return "IMPERCEPTIBLE";
+            case 16:
+                return "REMOVE LRU";
+            case 17:
+                return "ISOLATED NOT NEEDED";
+            default:
+                return "UNKNOWN";
+        }
+    }
+
+    @Override // android.os.Parcelable
+    public int describeContents() {
+        return 0;
+    }
+
+    public int getPid() {
+        return this.mPid;
+    }
+
+    public int getRealUid() {
+        return this.mRealUid;
+    }
+
+    public int getPackageUid() {
+        return this.mPackageUid;
+    }
+
+    public int getDefiningUid() {
+        return this.mDefiningUid;
+    }
+
+    public String getProcessName() {
+        return this.mProcessName;
+    }
+
+    public int getReason() {
+        return this.mReason;
+    }
+
+    public int getStatus() {
+        return this.mStatus;
+    }
+
+    public int getImportance() {
+        return this.mImportance;
+    }
+
+    public long getPss() {
+        return this.mPss;
+    }
+
+    public long getRss() {
+        return this.mRss;
+    }
+
+    public long getTimestamp() {
+        return this.mTimestamp;
+    }
+
+    public String getDescription() {
+        return this.mDescription;
+    }
+
+    public UserHandle getUserHandle() {
+        return UserHandle.of(UserHandle.getUserId(this.mRealUid));
+    }
+
+    public byte[] getProcessStateSummary() {
+        return this.mState;
+    }
+
+    public InputStream getTraceInputStream() throws IOException {
+        IAppTraceRetriever iAppTraceRetriever = this.mAppTraceRetriever;
+        if (iAppTraceRetriever == null) {
+            return null;
+        }
+        try {
+            ParcelFileDescriptor traceFileDescriptor = iAppTraceRetriever.getTraceFileDescriptor(this.mPackageName, this.mPackageUid, this.mPid);
+            if (traceFileDescriptor == null) {
+                return null;
+            }
+            return new GZIPInputStream(new ParcelFileDescriptor.AutoCloseInputStream(traceFileDescriptor));
+        } catch (RemoteException unused) {
+            return null;
+        }
+    }
+
+    public File getTraceFile() {
+        return this.mTraceFile;
+    }
+
+    public int getSubReason() {
+        return this.mSubReason;
+    }
+
+    public int getConnectionGroup() {
+        return this.mConnectionGroup;
+    }
+
+    public String getPackageName() {
+        return this.mPackageName;
+    }
+
+    public String[] getPackageList() {
+        return this.mPackageList;
+    }
+
+    public void setPid(int i) {
+        this.mPid = i;
+    }
+
+    public void setRealUid(int i) {
+        this.mRealUid = i;
+    }
+
+    public void setPackageUid(int i) {
+        this.mPackageUid = i;
+    }
+
+    public void setDefiningUid(int i) {
+        this.mDefiningUid = i;
+    }
+
+    public void setProcessName(String str) {
+        this.mProcessName = str;
+    }
+
+    public void setReason(int i) {
+        this.mReason = i;
+    }
+
+    public void setStatus(int i) {
+        this.mStatus = i;
+    }
+
+    public void setImportance(int i) {
+        this.mImportance = i;
+    }
+
+    public void setPss(long j) {
+        this.mPss = j;
+    }
+
+    public void setRss(long j) {
+        this.mRss = j;
+    }
+
+    public void setTimestamp(long j) {
+        this.mTimestamp = j;
+    }
+
+    public void setDescription(String str) {
+        this.mDescription = str;
+    }
+
+    public void setSubReason(int i) {
+        this.mSubReason = i;
+    }
+
+    public void setConnectionGroup(int i) {
+        this.mConnectionGroup = i;
+    }
+
+    public void setPackageName(String str) {
+        this.mPackageName = str;
+    }
+
+    public void setPackageList(String[] strArr) {
+        this.mPackageList = strArr;
+    }
+
+    public void setProcessStateSummary(byte[] bArr) {
+        this.mState = bArr;
+    }
+
+    public void setTraceFile(File file) {
+        this.mTraceFile = file;
+    }
+
+    public void setAppTraceRetriever(IAppTraceRetriever iAppTraceRetriever) {
+        this.mAppTraceRetriever = iAppTraceRetriever;
+    }
+
+    @Override // android.os.Parcelable
+    public void writeToParcel(Parcel parcel, int i) {
+        parcel.writeInt(this.mPid);
+        parcel.writeInt(this.mRealUid);
+        parcel.writeInt(this.mPackageUid);
+        parcel.writeInt(this.mDefiningUid);
+        parcel.writeString(this.mProcessName);
+        parcel.writeString(this.mPackageName);
+        parcel.writeInt(this.mConnectionGroup);
+        parcel.writeInt(this.mReason);
+        parcel.writeInt(this.mSubReason);
+        parcel.writeInt(this.mStatus);
+        parcel.writeInt(this.mImportance);
+        parcel.writeLong(this.mPss);
+        parcel.writeLong(this.mRss);
+        parcel.writeLong(this.mTimestamp);
+        parcel.writeString(this.mDescription);
+        parcel.writeByteArray(this.mState);
+        if (this.mAppTraceRetriever != null) {
+            parcel.writeInt(1);
+            parcel.writeStrongBinder(this.mAppTraceRetriever.asBinder());
+        } else {
+            parcel.writeInt(0);
+        }
+    }
+
+    public ApplicationExitInfo() {
+    }
+
+    public ApplicationExitInfo(ApplicationExitInfo applicationExitInfo) {
+        this.mPid = applicationExitInfo.mPid;
+        this.mRealUid = applicationExitInfo.mRealUid;
+        this.mPackageUid = applicationExitInfo.mPackageUid;
+        this.mDefiningUid = applicationExitInfo.mDefiningUid;
+        this.mProcessName = applicationExitInfo.mProcessName;
+        this.mPackageName = applicationExitInfo.mPackageName;
+        this.mConnectionGroup = applicationExitInfo.mConnectionGroup;
+        this.mReason = applicationExitInfo.mReason;
+        this.mStatus = applicationExitInfo.mStatus;
+        this.mSubReason = applicationExitInfo.mSubReason;
+        this.mImportance = applicationExitInfo.mImportance;
+        this.mPss = applicationExitInfo.mPss;
+        this.mRss = applicationExitInfo.mRss;
+        this.mTimestamp = applicationExitInfo.mTimestamp;
+        this.mDescription = applicationExitInfo.mDescription;
+        this.mPackageName = applicationExitInfo.mPackageName;
+        this.mPackageList = applicationExitInfo.mPackageList;
+        this.mState = applicationExitInfo.mState;
+        this.mTraceFile = applicationExitInfo.mTraceFile;
+        this.mAppTraceRetriever = applicationExitInfo.mAppTraceRetriever;
+    }
+
+    private ApplicationExitInfo(Parcel parcel) {
+        this.mPid = parcel.readInt();
+        this.mRealUid = parcel.readInt();
+        this.mPackageUid = parcel.readInt();
+        this.mDefiningUid = parcel.readInt();
+        this.mProcessName = parcel.readString();
+        this.mPackageName = parcel.readString();
+        this.mConnectionGroup = parcel.readInt();
+        this.mReason = parcel.readInt();
+        this.mSubReason = parcel.readInt();
+        this.mStatus = parcel.readInt();
+        this.mImportance = parcel.readInt();
+        this.mPss = parcel.readLong();
+        this.mRss = parcel.readLong();
+        this.mTimestamp = parcel.readLong();
+        this.mDescription = parcel.readString();
+        this.mState = parcel.createByteArray();
+        if (parcel.readInt() == 1) {
+            this.mAppTraceRetriever = IAppTraceRetriever.Stub.asInterface(parcel.readStrongBinder());
+        }
+    }
+
+    public void dump(PrintWriter printWriter, String str, String str2, SimpleDateFormat simpleDateFormat) {
+        printWriter.println(str + "ApplicationExitInfo " + str2 + SettingsStringUtil.DELIMITER);
+        printWriter.println(str + "  timestamp=" + simpleDateFormat.format(new Date(this.mTimestamp)));
+        printWriter.println(str + "  pid=" + this.mPid);
+        printWriter.println(str + "  realUid=" + this.mRealUid);
+        printWriter.println(str + "  packageUid=" + this.mPackageUid);
+        printWriter.println(str + "  definingUid=" + this.mDefiningUid);
+        printWriter.println(str + "  user=" + UserHandle.getUserId(this.mPackageUid));
+        printWriter.println(str + "  process=" + this.mProcessName);
+        printWriter.println(str + "  reason=" + this.mReason + " (" + reasonCodeToString(this.mReason) + ")");
+        printWriter.println(str + "  status=" + this.mStatus);
+        printWriter.println(str + "  importance=" + this.mImportance);
+        printWriter.print(str + "  pss=");
+        DebugUtils.printSizeValue(printWriter, this.mPss << 10);
+        printWriter.println();
+        printWriter.print(str + "  rss=");
+        DebugUtils.printSizeValue(printWriter, this.mRss << 10);
+        printWriter.println();
+        printWriter.println(str + "  description=" + this.mDescription);
+        printWriter.println(str + "  state=" + (ArrayUtils.isEmpty(this.mState) ? "empty" : Integer.toString(this.mState.length) + " bytes"));
+        printWriter.println(str + "  trace=" + this.mTraceFile);
+    }
+
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        sb.append("ApplicationExitInfo(timestamp=");
+        sb.append(new SimpleDateFormat().format(new Date(this.mTimestamp)));
+        sb.append(" pid=").append(this.mPid);
+        sb.append(" realUid=").append(this.mRealUid);
+        sb.append(" packageUid=").append(this.mPackageUid);
+        sb.append(" definingUid=").append(this.mDefiningUid);
+        sb.append(" user=").append(UserHandle.getUserId(this.mPackageUid));
+        sb.append(" process=").append(this.mProcessName);
+        sb.append(" reason=").append(this.mReason).append(" (").append(reasonCodeToString(this.mReason)).append(")");
+        sb.append(" status=").append(this.mStatus);
+        sb.append(" importance=").append(this.mImportance);
+        sb.append(" pss=");
+        DebugUtils.sizeValueToString(this.mPss << 10, sb);
+        sb.append(" rss=");
+        DebugUtils.sizeValueToString(this.mRss << 10, sb);
+        sb.append(" description=").append(this.mDescription);
+        sb.append(" state=").append(ArrayUtils.isEmpty(this.mState) ? "empty" : Integer.toString(this.mState.length) + " bytes");
+        sb.append(" trace=").append(this.mTraceFile);
+        return sb.toString();
+    }
+
+    public void writeToProto(ProtoOutputStream protoOutputStream, long j) {
+        long jStart = protoOutputStream.start(j);
+        protoOutputStream.write(1120986464257L, this.mPid);
+        protoOutputStream.write(1120986464258L, this.mRealUid);
+        protoOutputStream.write(1120986464259L, this.mPackageUid);
+        protoOutputStream.write(1120986464260L, this.mDefiningUid);
+        protoOutputStream.write(1138166333445L, this.mProcessName);
+        protoOutputStream.write(1120986464262L, this.mConnectionGroup);
+        protoOutputStream.write(1159641169927L, this.mReason);
+        protoOutputStream.write(1159641169928L, this.mSubReason);
+        protoOutputStream.write(1120986464265L, this.mStatus);
+        protoOutputStream.write(1159641169930L, this.mImportance);
+        protoOutputStream.write(1112396529675L, this.mPss);
+        protoOutputStream.write(1112396529676L, this.mRss);
+        protoOutputStream.write(1112396529677L, this.mTimestamp);
+        protoOutputStream.write(1138166333454L, this.mDescription);
+        protoOutputStream.write(ApplicationExitInfoProto.STATE, this.mState);
+        File file = this.mTraceFile;
+        protoOutputStream.write(1138166333456L, file == null ? null : file.getAbsolutePath());
+        protoOutputStream.end(jStart);
+    }
+
+    public void readFromProto(ProtoInputStream protoInputStream, long j) throws WireTypeMismatchException, IOException {
+        long jStart = protoInputStream.start(j);
+        while (protoInputStream.nextField() != -1) {
+            switch (protoInputStream.getFieldNumber()) {
+                case 1:
+                    this.mPid = protoInputStream.readInt(1120986464257L);
+                    break;
+                case 2:
+                    this.mRealUid = protoInputStream.readInt(1120986464258L);
+                    break;
+                case 3:
+                    this.mPackageUid = protoInputStream.readInt(1120986464259L);
+                    break;
+                case 4:
+                    this.mDefiningUid = protoInputStream.readInt(1120986464260L);
+                    break;
+                case 5:
+                    this.mProcessName = protoInputStream.readString(1138166333445L);
+                    break;
+                case 6:
+                    this.mConnectionGroup = protoInputStream.readInt(1120986464262L);
+                    break;
+                case 7:
+                    this.mReason = protoInputStream.readInt(1159641169927L);
+                    break;
+                case 8:
+                    this.mSubReason = protoInputStream.readInt(1159641169928L);
+                    break;
+                case 9:
+                    this.mStatus = protoInputStream.readInt(1120986464265L);
+                    break;
+                case 10:
+                    this.mImportance = protoInputStream.readInt(1159641169930L);
+                    break;
+                case 11:
+                    this.mPss = protoInputStream.readLong(1112396529675L);
+                    break;
+                case 12:
+                    this.mRss = protoInputStream.readLong(1112396529676L);
+                    break;
+                case 13:
+                    this.mTimestamp = protoInputStream.readLong(1112396529677L);
+                    break;
+                case 14:
+                    this.mDescription = protoInputStream.readString(1138166333454L);
+                    break;
+                case 15:
+                    this.mState = protoInputStream.readBytes(ApplicationExitInfoProto.STATE);
+                    break;
+                case 16:
+                    String string = protoInputStream.readString(1138166333456L);
+                    if (!TextUtils.isEmpty(string)) {
+                        this.mTraceFile = new File(string);
+                    }
+                    break;
+            }
+        }
+        protoInputStream.end(jStart);
+    }
+
+    public boolean equals(Object obj) {
+        if (obj == null || !(obj instanceof ApplicationExitInfo)) {
+            return false;
+        }
+        ApplicationExitInfo applicationExitInfo = (ApplicationExitInfo) obj;
+        return this.mPid == applicationExitInfo.mPid && this.mRealUid == applicationExitInfo.mRealUid && this.mPackageUid == applicationExitInfo.mPackageUid && this.mDefiningUid == applicationExitInfo.mDefiningUid && this.mConnectionGroup == applicationExitInfo.mConnectionGroup && this.mReason == applicationExitInfo.mReason && this.mSubReason == applicationExitInfo.mSubReason && this.mImportance == applicationExitInfo.mImportance && this.mStatus == applicationExitInfo.mStatus && this.mTimestamp == applicationExitInfo.mTimestamp && this.mPss == applicationExitInfo.mPss && this.mRss == applicationExitInfo.mRss && TextUtils.equals(this.mProcessName, applicationExitInfo.mProcessName) && TextUtils.equals(this.mDescription, applicationExitInfo.mDescription);
+    }
+
+    public int hashCode() {
+        return (((((((((((((((((((((((((this.mPid * 31) + this.mRealUid) * 31) + this.mPackageUid) * 31) + this.mDefiningUid) * 31) + this.mConnectionGroup) * 31) + this.mReason) * 31) + this.mSubReason) * 31) + this.mImportance) * 31) + this.mStatus) * 31) + ((int) this.mPss)) * 31) + ((int) this.mRss)) * 31) + Long.hashCode(this.mTimestamp)) * 31) + Objects.hashCode(this.mProcessName)) * 31) + Objects.hashCode(this.mDescription);
+    }
+}

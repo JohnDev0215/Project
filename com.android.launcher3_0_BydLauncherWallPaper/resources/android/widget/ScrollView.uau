@@ -1,0 +1,15 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/widget/ScrollView;->mLastScroll:J,frameworks/base/core/java/android/widget/ScrollView.java,87,5,87,25,
+Landroid/widget/ScrollView;->mScroller:Landroid/widget/OverScroller;,frameworks/base/core/java/android/widget/ScrollView.java,91,5,91,25,
+Landroid/widget/ScrollView;->mEdgeGlowTop:Landroid/widget/EdgeEffect;,frameworks/base/core/java/android/widget/ScrollView.java,100,5,100,88,maxTargetSdk=28&trackingBug=123768600L
+Landroid/widget/ScrollView;->mEdgeGlowBottom:Landroid/widget/EdgeEffect;,frameworks/base/core/java/android/widget/ScrollView.java,110,5,110,88,maxTargetSdk=28&trackingBug=123769386L
+Landroid/widget/ScrollView;->mLastMotionY:I,frameworks/base/core/java/android/widget/ScrollView.java,116,5,116,25,
+Landroid/widget/ScrollView;->mChildToScrollTo:Landroid/view/View;,frameworks/base/core/java/android/widget/ScrollView.java,130,5,130,88,maxTargetSdk=28&trackingBug=123769715L
+Landroid/widget/ScrollView;->mIsBeingDragged:Z,frameworks/base/core/java/android/widget/ScrollView.java,138,5,138,25,
+Landroid/widget/ScrollView;->mVelocityTracker:Landroid/view/VelocityTracker;,frameworks/base/core/java/android/widget/ScrollView.java,144,5,144,25,
+Landroid/widget/ScrollView;->mMinimumVelocity:I,frameworks/base/core/java/android/widget/ScrollView.java,160,5,160,88,maxTargetSdk=28&trackingBug=124051125L
+Landroid/widget/ScrollView;->mOverscrollDistance:I,frameworks/base/core/java/android/widget/ScrollView.java,164,5,164,82,maxTargetSdk=28&trackingBug=124050903L
+Landroid/widget/ScrollView;->mOverflingDistance:I,frameworks/base/core/java/android/widget/ScrollView.java,166,5,166,82,maxTargetSdk=28&trackingBug=124050903L
+Landroid/widget/ScrollView;->mFlingStrictSpan:Landroid/os/StrictMode$Span;,frameworks/base/core/java/android/widget/ScrollView.java,191,5,191,25,
+Landroid/widget/ScrollView;->canScroll()Z,frameworks/base/core/java/android/widget/ScrollView.java,397,5,397,25,
+Landroid/widget/ScrollView;->endDrag()V,frameworks/base/core/java/android/widget/ScrollView.java,1755,5,1755,25,

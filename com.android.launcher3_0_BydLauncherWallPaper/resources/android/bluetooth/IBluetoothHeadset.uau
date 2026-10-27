@@ -1,0 +1,5 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/bluetooth/IBluetoothHeadset;->getConnectedDevices()Ljava/util/List;,system/bt/binder/android/bluetooth/IBluetoothHeadset.aidl,32,1,32,25,
+Landroid/bluetooth/IBluetoothHeadset;->getConnectionState(Landroid/bluetooth/BluetoothDevice;)I,system/bt/binder/android/bluetooth/IBluetoothHeadset.aidl,35,1,35,25,
+Landroid/bluetooth/IBluetoothHeadset;->connect(Landroid/bluetooth/BluetoothDevice;)Z,system/bt/binder/android/bluetooth/IBluetoothHeadset.aidl,45,1,45,25,
+Landroid/bluetooth/IBluetoothHeadset;->disconnect(Landroid/bluetooth/BluetoothDevice;)Z,system/bt/binder/android/bluetooth/IBluetoothHeadset.aidl,47,1,47,25,

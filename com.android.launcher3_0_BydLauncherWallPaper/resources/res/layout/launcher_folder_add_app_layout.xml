@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.launcher3.BubbleTextView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:launcher="http://schemas.android.com/apk/res-auto"
+    android:textColor="?attr/folderTextColor"
+    android:id="@+id/launcher_folder_add_app"
+    android:text="@string/launcher_add"
+    android:includeFontPadding="false"
+    launcher:iconDisplay="folder"
+    style="@style/BaseIcon"/>

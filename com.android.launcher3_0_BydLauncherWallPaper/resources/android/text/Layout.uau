@@ -1,0 +1,12 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/text/Layout;->drawText(Landroid/graphics/Canvas;II)V,frameworks/base/core/java/android/text/Layout.java,417,5,417,25,
+Landroid/text/Layout;->drawBackground(Landroid/graphics/Canvas;Landroid/graphics/Path;Landroid/graphics/Paint;III)V,frameworks/base/core/java/android/text/Layout.java,586,5,586,25,
+Landroid/text/Layout;->getLineRangeForDraw(Landroid/graphics/Canvas;)J,frameworks/base/core/java/android/text/Layout.java,667,5,667,25,
+Landroid/text/Layout;->isLevelBoundary(I)Z,frameworks/base/core/java/android/text/Layout.java,947,5,947,25,
+Landroid/text/Layout;->getPrimaryHorizontal(IZ)F,frameworks/base/core/java/android/text/Layout.java,1157,5,1157,25,
+Landroid/text/Layout;->getSecondaryHorizontal(IZ)F,frameworks/base/core/java/android/text/Layout.java,1177,5,1177,25,
+Landroid/text/Layout;->shouldClampCursor(I)Z,frameworks/base/core/java/android/text/Layout.java,1852,5,1852,25,
+Landroid/text/Layout;->mPaint:Landroid/text/TextPaint;,frameworks/base/core/java/android/text/Layout.java,2545,5,2545,25,
+Landroid/text/Layout;->DIR_REQUEST_DEFAULT_LTR:I,frameworks/base/core/java/android/text/Layout.java,2571,5,2571,25,
+Landroid/text/Layout;->DIRS_ALL_LEFT_TO_RIGHT:Landroid/text/Layout$Directions;,frameworks/base/core/java/android/text/Layout.java,2596,5,2596,25,
+Landroid/text/Layout;->DIRS_ALL_RIGHT_TO_LEFT:Landroid/text/Layout$Directions;,frameworks/base/core/java/android/text/Layout.java,2602,5,2602,25,

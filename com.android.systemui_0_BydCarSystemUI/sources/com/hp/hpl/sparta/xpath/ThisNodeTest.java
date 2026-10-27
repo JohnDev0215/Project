@@ -1,0 +1,25 @@
+package com.hp.hpl.sparta.xpath;
+
+import com.android.systemui.Constants;
+
+/* JADX INFO: loaded from: classes2.dex */
+public class ThisNodeTest extends NodeTest {
+    static final ThisNodeTest INSTANCE = new ThisNodeTest();
+
+    private ThisNodeTest() {
+    }
+
+    @Override // com.hp.hpl.sparta.xpath.NodeTest
+    public void accept(Visitor visitor) {
+        visitor.visit(this);
+    }
+
+    @Override // com.hp.hpl.sparta.xpath.NodeTest
+    public boolean isStringValue() {
+        return false;
+    }
+
+    public String toString() {
+        return Constants.CHAR_DOT;
+    }
+}

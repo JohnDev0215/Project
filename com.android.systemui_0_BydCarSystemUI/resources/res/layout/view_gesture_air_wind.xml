@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:background="@drawable/shape_gesture_pop_bg"
+        android:paddingLeft="@dimen/dp_12"
+        android:paddingRight="@dimen/dp_12"
+        android:layout_width="@dimen/dp_412"
+        android:layout_height="@dimen/dp_96">
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="@dimen/dp_24"
+            android:layout_height="@dimen/dp_24"
+            android:layout_marginRight="@dimen/dp_12"
+            android:src="@mipmap/icon_gesture_ac_air_volume_fan"
+            android:layout_centerVertical="true"/>
+        <com.android.systemui.widget.BydTabLayout
+            android:id="@+id/tablayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/img"
+            app:tabIndicatorColor="@android:color/transparent"
+            app:tabIndicatorHeight="@dimen/dp_0"
+            app:tabMode="fixed"
+            app:tabPaddingEnd="@dimen/dp_0"
+            app:tabPaddingStart="@dimen/dp_0"
+            app:tabRippleColor="@android:color/transparent"/>
+    </RelativeLayout>
+</RelativeLayout>

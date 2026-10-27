@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.byd.card.widget.BlurView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/media_pop_bg"
+    android:layout_width="@dimen/dp_252"
+    android:layout_height="@dimen/dp_360">
+    <com.byd.card.widget.MaxHeightRecyclerView
+        android:scrollbarSize="@dimen/dp_4"
+        android:scrollbarThumbVertical="@drawable/media_pop_scroll_bar"
+        android:scrollbarTrackVertical="@drawable/media_pop_scroll_track"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:scrollbarStyle="insideOverlay"
+        android:orientation="vertical"
+        android:id="@+id/media_card_popup_rv"
+        android:background="@drawable/media_menu_bg"
+        android:scrollbars="vertical"
+        android:fadingEdge="vertical"
+        android:layout_width="@dimen/dp_252"
+        android:layout_height="wrap_content"
+        android:fadeScrollbars="true"
+        android:overScrollMode="never"
+        android:requiresFadingEdge="vertical"
+        android:paddingEnd="@dimen/dp_9"
+        app:layoutManager="com.byd.card.widget.CustomLayoutManager"
+        app:maxHeight="@dimen/dp_360"/>
+</com.byd.card.widget.BlurView>

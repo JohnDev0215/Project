@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="additional_permissions_more">
+        <item quantity="one">%1$d gehiago</item>
+        <item quantity="other">%1$d gehiago</item>
+    </plurals>
+    <plurals name="auto_revoke_permission_notification_content_count">
+        <item quantity="one">%1$d aplikazio ez da erabili zenbait hilabetez. Sakatu berrikusteko.</item>
+        <item quantity="other">%1$d aplikazio ez dira erabili zenbait hilabetez. Sakatu berrikusteko.</item>
+    </plurals>
+    <plurals name="auto_revoke_setting_subtitle_count">
+        <item quantity="one">%1$d aplikazio ez da erabili zenbait hilabetez</item>
+        <item quantity="other">%1$d aplikazio ez dira erabili zenbait hilabetez</item>
+    </plurals>
+    <plurals name="days">
+        <item quantity="one">1 egun</item>
+        <item quantity="other">%s egun</item>
+    </plurals>
+    <plurals name="hours">
+        <item quantity="one">1 ordu</item>
+        <item quantity="other">%s ordu</item>
+    </plurals>
+    <plurals name="minutes">
+        <item quantity="one">1 minutu</item>
+        <item quantity="other">%s minutu</item>
+    </plurals>
+    <plurals name="seconds">
+        <item quantity="one">1 segundo</item>
+        <item quantity="other">%s segundo</item>
+    </plurals>
+</resources>

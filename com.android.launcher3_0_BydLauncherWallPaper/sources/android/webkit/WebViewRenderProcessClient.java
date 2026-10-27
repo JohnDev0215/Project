@@ -1,0 +1,8 @@
+package android.webkit;
+
+/* JADX INFO: loaded from: classes3.dex */
+public abstract class WebViewRenderProcessClient {
+    public abstract void onRenderProcessResponsive(WebView webView, WebViewRenderProcess webViewRenderProcess);
+
+    public abstract void onRenderProcessUnresponsive(WebView webView, WebViewRenderProcess webViewRenderProcess);
+}

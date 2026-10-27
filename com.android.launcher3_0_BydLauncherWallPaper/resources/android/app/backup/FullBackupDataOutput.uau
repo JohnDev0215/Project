@@ -1,0 +1,5 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/app/backup/FullBackupDataOutput;->mData:Landroid/app/backup/BackupDataOutput;,frameworks/base/core/java/android/app/backup/FullBackupDataOutput.java,13,5,13,25,
+Landroid/app/backup/FullBackupDataOutput;-><init>(Landroid/os/ParcelFileDescriptor;)V,frameworks/base/core/java/android/app/backup/FullBackupDataOutput.java,70,5,70,25,
+Landroid/app/backup/FullBackupDataOutput;->getData()Landroid/app/backup/BackupDataOutput;,frameworks/base/core/java/android/app/backup/FullBackupDataOutput.java,76,5,76,25,
+Landroid/app/backup/FullBackupDataOutput;->addSize(J)V,frameworks/base/core/java/android/app/backup/FullBackupDataOutput.java,80,5,80,25,

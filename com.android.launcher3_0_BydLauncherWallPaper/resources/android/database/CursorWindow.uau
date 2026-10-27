@@ -1,0 +1,5 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/database/CursorWindow;->sCursorWindowSize:I,frameworks/base/core/java/android/database/CursorWindow.java,49,5,49,25,
+Landroid/database/CursorWindow;->mWindowPtr:J,frameworks/base/core/java/android/database/CursorWindow.java,56,5,56,25,
+Landroid/database/CursorWindow;->sWindowToPidMap:Landroid/util/LongSparseArray;,frameworks/base/core/java/android/database/CursorWindow.java,751,5,751,25,
+Landroid/database/CursorWindow;->printStats()Ljava/lang/String;,frameworks/base/core/java/android/database/CursorWindow.java,773,5,773,25,

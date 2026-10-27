@@ -1,0 +1,9 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/hardware/display/DisplayManagerGlobal;->sInstance:Landroid/hardware/display/DisplayManagerGlobal;,frameworks/base/core/java/android/hardware/display/DisplayManagerGlobal.java,73,5,73,25,
+Landroid/hardware/display/DisplayManagerGlobal;->mDm:Landroid/hardware/display/IDisplayManager;,frameworks/base/core/java/android/hardware/display/DisplayManagerGlobal.java,80,5,80,25,
+Landroid/hardware/display/DisplayManagerGlobal;->getInstance()Landroid/hardware/display/DisplayManagerGlobal;,frameworks/base/core/java/android/hardware/display/DisplayManagerGlobal.java,124,5,124,25,
+Landroid/hardware/display/DisplayManagerGlobal;->getDisplayInfo(I)Landroid/view/DisplayInfo;,frameworks/base/core/java/android/hardware/display/DisplayManagerGlobal.java,144,5,144,25,
+Landroid/hardware/display/DisplayManagerGlobal;->getDisplayIds()[I,frameworks/base/core/java/android/hardware/display/DisplayManagerGlobal.java,183,5,183,25,
+Landroid/hardware/display/DisplayManagerGlobal;->getRealDisplay(I)Landroid/view/Display;,frameworks/base/core/java/android/hardware/display/DisplayManagerGlobal.java,262,5,262,25,
+Landroid/hardware/display/DisplayManagerGlobal;->disconnectWifiDisplay()V,frameworks/base/core/java/android/hardware/display/DisplayManagerGlobal.java,427,5,427,25,
+Landroid/hardware/display/DisplayManagerGlobal;->getWifiDisplayStatus()Landroid/hardware/display/WifiDisplayStatus;,frameworks/base/core/java/android/hardware/display/DisplayManagerGlobal.java,460,5,460,25,

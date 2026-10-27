@@ -1,0 +1,4 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/widget/AnalogClock;->mHourHand:Landroid/graphics/drawable/Drawable;,frameworks/base/core/java/android/widget/AnalogClock.java,52,5,52,25,
+Landroid/widget/AnalogClock;->mMinuteHand:Landroid/graphics/drawable/Drawable;,frameworks/base/core/java/android/widget/AnalogClock.java,54,5,54,25,
+Landroid/widget/AnalogClock;->mDial:Landroid/graphics/drawable/Drawable;,frameworks/base/core/java/android/widget/AnalogClock.java,56,5,56,25,

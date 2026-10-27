@@ -1,0 +1,10 @@
+package p;
+
+import io.reactivex.rxjava3.core.Observable;
+
+/* JADX INFO: loaded from: classes.dex */
+public interface s81 {
+    Observable a();
+
+    Object getLast();
+}

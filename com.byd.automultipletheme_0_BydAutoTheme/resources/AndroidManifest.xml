@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="3"
+    android:versionName="V3.0.0.2503131855"
+    android:compileSdkVersion="32"
+    android:compileSdkVersionCodename="12"
+    package="com.byd.automultipletheme"
+    platformBuildVersionCode="32"
+    platformBuildVersionName="12">
+    <uses-sdk
+        android:minSdkVersion="21"
+        android:targetSdkVersion="29"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.SET_WALLPAPER"/>
+    <uses-permission android:name="android.permission.SET_WALLPAPER_COMPONENT"/>
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="android.permission.BYDAUTO_BODYWORK_COMMON"/>
+    <uses-permission android:name="android.permission.BYDAUTO_BODYWORK_GET"/>
+    <permission android:name="android.permission.SET_WALLPAPER_COMPONENT"/>
+    <permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL"/>
+    <permission android:name="com.android.permission.CHANGE_BYD_APP_THEME"/>
+    <uses-permission android:name="com.android.permission.CHANGE_BYD_APP_THEME"/>
+    <uses-permission android:name="android.permission.BYDAUTO_GEARBOX_COMMON"/>
+    <uses-permission android:name="android.permission.BYDAUTO_GEARBOX_GET"/>
+    <permission
+        android:name="com.byd.automultipletheme.Permission.read"
+        android:protectionLevel="normal"/>
+    <permission
+        android:name="com.byd.automultipletheme.Permission.write"
+        android:protectionLevel="normal"/>
+    <uses-permission android:name="android.permission.INJECT_EVENTS"/>
+    <application
+        android:theme="@style/Theme.AutoMultipleTheme"
+        android:label="@string/app_name"
+        android:icon="@mipmap/ic_launcher"
+        android:name="com.byd.automultipletheme.MultipleThemeApplication"
+        android:allowBackup="false"
+        android:supportsRtl="true"
+        android:fullBackupContent="@xml/backup_rules"
+        android:resizeableActivity="false"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+        android:dataExtractionRules="@xml/data_extraction_rules">
+        <activity
+            android:name="com.byd.automultipletheme.activity.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.byd.automultipletheme.activity.CommonActivity"/>
+        <activity
+            android:theme="@style/DetailPreviewTheme"
+            android:name="com.byd.automultipletheme.activity.PreviewImageActivity"/>
+        <activity android:name="com.byd.automultipletheme.activity.CropActivity"/>
+        <provider
+            android:name="com.byd.automultipletheme.common.db.OpenContentProviders"
+            android:readPermission="com.byd.automultipletheme.Permission.read"
+            android:writePermission="com.byd.automultipletheme.Permission.write"
+            android:enabled="true"
+            android:exported="true"
+            android:authorities="com.byd.automultipletheme.ContentProvider"
+            android:grantUriPermissions="true"/>
+        <receiver
+            android:name="com.byd.automultipletheme.receiver.ChangeReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.THEME_WALLPAPER_SET"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.using_wallpaper_result"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.android.permission.CHANGE_BYD_APP_THEME"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.byd.automultipletheme.SAVE_SUCCESS"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.byd.automultipletheme.action.WALLPAPER_SET_TYPE_SOURCE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.byd.automultipletheme.ERROR_REMINDER"/>
+            </intent-filter>
+        </receiver>
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:exported="false"
+            android:authorities="com.byd.automultipletheme.fileProvider"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths"/>
+        </provider>
+        <activity
+            android:theme="@style/ActivityTranslucent"
+            android:name="com.blankj.utilcode.util.UtilsTransActivity4MainProcess"
+            android:configChanges="screenSize|orientation|keyboardHidden"
+            android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity
+            android:theme="@style/ActivityTranslucent"
+            android:name="com.blankj.utilcode.util.UtilsTransActivity"
+            android:multiprocess="true"
+            android:configChanges="screenSize|orientation|keyboardHidden"
+            android:windowSoftInputMode="stateAlwaysHidden"/>
+        <provider
+            android:name="com.blankj.utilcode.util.UtilsFileProvider"
+            android:exported="false"
+            android:authorities="com.byd.automultipletheme.utilcode.fileprovider"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/util_code_provider_paths"/>
+        </provider>
+        <service
+            android:name="com.blankj.utilcode.util.MessengerUtils.ServerService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.byd.automultipletheme.messenger"/>
+            </intent-filter>
+        </service>
+        <meta-data
+            android:name="com.bumptech.glide.integration.webp.WebpGlideModule"
+            android:value="GlideModule"/>
+        <uses-library
+            android:name="androidx.window.extensions"
+            android:required="false"/>
+        <uses-library
+            android:name="androidx.window.sidecar"
+            android:required="false"/>
+    </application>
+</manifest>

@@ -1,0 +1,564 @@
+package android.graphics;
+
+import android.annotation.SystemApi;
+import android.app.AlarmManager;
+import android.app.AppOpsManager;
+import android.app.job.JobInfo;
+import android.content.Context;
+import android.content.pm.PackageInfo;
+import android.content.pm.PackageManager;
+import android.os.Binder;
+import android.os.Environment;
+import android.os.Handler;
+import android.os.HandlerThread;
+import android.os.IBinder;
+import android.os.Message;
+import android.os.ParcelFileDescriptor;
+import android.os.RemoteException;
+import android.os.SharedMemory;
+import android.os.Trace;
+import android.os.UserHandle;
+import android.system.ErrnoException;
+import android.text.format.Time;
+import android.util.Log;
+import android.view.IGraphicsStats;
+import android.view.IGraphicsStatsCallback;
+import com.android.internal.util.DumpUtils;
+import com.android.internal.util.FastPrintWriter;
+import java.io.File;
+import java.io.FileDescriptor;
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.io.StringWriter;
+import java.nio.ByteBuffer;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Calendar;
+import java.util.HashSet;
+import java.util.TimeZone;
+
+/* JADX INFO: loaded from: classes.dex */
+public class GraphicsStatsService extends IGraphicsStats.Stub {
+    private static final int AID_STATSD = 1066;
+    private static final int DELETE_OLD = 2;
+    public static final String GRAPHICS_STATS_SERVICE = "graphicsstats";
+    private static final int SAVE_BUFFER = 1;
+    private static final String TAG = "GraphicsStatsService";
+    private ArrayList<ActiveBuffer> mActive;
+    private final AlarmManager mAlarmManager;
+    private final AppOpsManager mAppOps;
+    private final int mAshmemSize;
+    private final Context mContext;
+    private final Object mFileAccessLock;
+    private File mGraphicsStatsDir;
+    private final Object mLock;
+    private boolean mRotateIsScheduled;
+    private Handler mWriteOutHandler;
+    private final byte[] mZeroData;
+
+    private static native void nAddToDump(long j, String str);
+
+    private static native void nAddToDump(long j, String str, String str2, long j2, long j3, long j4, byte[] bArr);
+
+    private static native long nCreateDump(int i, boolean z);
+
+    private static native void nFinishDump(long j);
+
+    private static native void nFinishDumpInMemory(long j, long j2, boolean z);
+
+    private static native int nGetAshmemSize();
+
+    private static native void nSaveBuffer(String str, String str2, long j, long j2, long j3, byte[] bArr);
+
+    private static native void nativeDestructor();
+
+    private native void nativeInit();
+
+    @SystemApi
+    public GraphicsStatsService(Context context) {
+        int iNGetAshmemSize = nGetAshmemSize();
+        this.mAshmemSize = iNGetAshmemSize;
+        this.mZeroData = new byte[iNGetAshmemSize];
+        this.mLock = new Object();
+        this.mActive = new ArrayList<>();
+        this.mFileAccessLock = new Object();
+        this.mRotateIsScheduled = false;
+        this.mContext = context;
+        this.mAppOps = (AppOpsManager) context.getSystemService(AppOpsManager.class);
+        this.mAlarmManager = (AlarmManager) context.getSystemService(AlarmManager.class);
+        File file = new File(new File(Environment.getDataDirectory(), "system"), GRAPHICS_STATS_SERVICE);
+        this.mGraphicsStatsDir = file;
+        file.mkdirs();
+        if (!this.mGraphicsStatsDir.exists()) {
+            throw new IllegalStateException("Graphics stats directory does not exist: " + this.mGraphicsStatsDir.getAbsolutePath());
+        }
+        HandlerThread handlerThread = new HandlerThread("GraphicsStats-disk", 10);
+        handlerThread.start();
+        this.mWriteOutHandler = new Handler(handlerThread.getLooper(), new Handler.Callback() { // from class: android.graphics.GraphicsStatsService.1
+            @Override // android.os.Handler.Callback
+            public boolean handleMessage(Message message) {
+                int i = message.what;
+                if (i == 1) {
+                    GraphicsStatsService.this.saveBuffer((HistoricalBuffer) message.obj);
+                } else if (i == 2) {
+                    GraphicsStatsService.this.deleteOldBuffers();
+                }
+                return true;
+            }
+        });
+        nativeInit();
+    }
+
+    private void scheduleRotateLocked() {
+        if (this.mRotateIsScheduled) {
+            return;
+        }
+        this.mRotateIsScheduled = true;
+        Calendar calendarNormalizeDate = normalizeDate(System.currentTimeMillis());
+        calendarNormalizeDate.add(5, 1);
+        this.mAlarmManager.setExact(1, calendarNormalizeDate.getTimeInMillis(), TAG, new AlarmManager.OnAlarmListener() { // from class: android.graphics.-$$Lambda$GraphicsStatsService$2VtSuUXTfz2Yu2YWfZdGfTHkCwg
+            @Override // android.app.AlarmManager.OnAlarmListener
+            public final void onAlarm() {
+                this.f$0.onAlarm();
+            }
+        }, this.mWriteOutHandler);
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public void onAlarm() {
+        ActiveBuffer[] activeBufferArr;
+        synchronized (this.mLock) {
+            this.mRotateIsScheduled = false;
+            scheduleRotateLocked();
+            activeBufferArr = (ActiveBuffer[]) this.mActive.toArray(new ActiveBuffer[0]);
+        }
+        for (ActiveBuffer activeBuffer : activeBufferArr) {
+            try {
+                activeBuffer.mCallback.onRotateGraphicsStatsBuffer();
+            } catch (RemoteException e) {
+                Log.w(TAG, String.format("Failed to notify '%s' (pid=%d) to rotate buffers", activeBuffer.mInfo.mPackageName, Integer.valueOf(activeBuffer.mPid)), e);
+            }
+        }
+        this.mWriteOutHandler.sendEmptyMessageDelayed(2, JobInfo.MIN_BACKOFF_MILLIS);
+    }
+
+    @Override // android.view.IGraphicsStats
+    public ParcelFileDescriptor requestBufferForProcess(String str, IGraphicsStatsCallback iGraphicsStatsCallback) throws RemoteException {
+        ParcelFileDescriptor parcelFileDescriptorRequestBufferForProcessLocked;
+        int callingUid = Binder.getCallingUid();
+        int callingPid = Binder.getCallingPid();
+        long jClearCallingIdentity = Binder.clearCallingIdentity();
+        try {
+            try {
+                this.mAppOps.checkPackage(callingUid, str);
+                PackageInfo packageInfoAsUser = this.mContext.getPackageManager().getPackageInfoAsUser(str, 0, UserHandle.getUserId(callingUid));
+                synchronized (this.mLock) {
+                    parcelFileDescriptorRequestBufferForProcessLocked = requestBufferForProcessLocked(iGraphicsStatsCallback, callingUid, callingPid, str, packageInfoAsUser.getLongVersionCode());
+                }
+                return parcelFileDescriptorRequestBufferForProcessLocked;
+            } catch (PackageManager.NameNotFoundException unused) {
+                throw new RemoteException("Unable to find package: '" + str + "'");
+            }
+        } finally {
+            Binder.restoreCallingIdentity(jClearCallingIdentity);
+        }
+    }
+
+    private void pullGraphicsStats(boolean z, long j) throws RemoteException {
+        if (Binder.getCallingUid() != 1066) {
+            StringWriter stringWriter = new StringWriter();
+            FastPrintWriter fastPrintWriter = new FastPrintWriter(stringWriter);
+            if (!DumpUtils.checkDumpAndUsageStatsPermission(this.mContext, TAG, fastPrintWriter)) {
+                fastPrintWriter.flush();
+                throw new RemoteException(stringWriter.toString());
+            }
+        }
+        long jClearCallingIdentity = Binder.clearCallingIdentity();
+        try {
+            pullGraphicsStatsImpl(z, j);
+        } finally {
+            Binder.restoreCallingIdentity(jClearCallingIdentity);
+        }
+    }
+
+    private void pullGraphicsStatsImpl(boolean z, long j) {
+        long timeInMillis;
+        ArrayList<HistoricalBuffer> arrayList;
+        int i;
+        if (z) {
+            timeInMillis = normalizeDate(System.currentTimeMillis() - 86400000).getTimeInMillis();
+        } else {
+            timeInMillis = normalizeDate(System.currentTimeMillis()).getTimeInMillis();
+        }
+        synchronized (this.mLock) {
+            arrayList = new ArrayList<>(this.mActive.size());
+            i = 0;
+            for (int i2 = 0; i2 < this.mActive.size(); i2++) {
+                ActiveBuffer activeBuffer = this.mActive.get(i2);
+                if (activeBuffer.mInfo.mStartTime == timeInMillis) {
+                    try {
+                        arrayList.add(new HistoricalBuffer(activeBuffer));
+                    } catch (IOException unused) {
+                    }
+                }
+            }
+        }
+        long jNCreateDump = nCreateDump(-1, true);
+        try {
+            synchronized (this.mFileAccessLock) {
+                HashSet<File> hashSetDumpActiveLocked = dumpActiveLocked(jNCreateDump, arrayList);
+                arrayList.clear();
+                File file = new File(this.mGraphicsStatsDir, String.format("%d", Long.valueOf(timeInMillis)));
+                if (file.exists()) {
+                    File[] fileArrListFiles = file.listFiles();
+                    int length = fileArrListFiles.length;
+                    int i3 = 0;
+                    while (i3 < length) {
+                        File[] fileArrListFiles2 = fileArrListFiles[i3].listFiles();
+                        int length2 = fileArrListFiles2.length;
+                        for (int i4 = i; i4 < length2; i4++) {
+                            File file2 = new File(fileArrListFiles2[i4], "total");
+                            if (!hashSetDumpActiveLocked.contains(file2)) {
+                                nAddToDump(jNCreateDump, file2.getAbsolutePath());
+                            }
+                        }
+                        i3++;
+                        i = 0;
+                    }
+                }
+            }
+        } finally {
+            nFinishDumpInMemory(jNCreateDump, j, z);
+        }
+    }
+
+    private ParcelFileDescriptor requestBufferForProcessLocked(IGraphicsStatsCallback iGraphicsStatsCallback, int i, int i2, String str, long j) throws RemoteException {
+        ActiveBuffer activeBufferFetchActiveBuffersLocked = fetchActiveBuffersLocked(iGraphicsStatsCallback, i, i2, str, j);
+        scheduleRotateLocked();
+        return activeBufferFetchActiveBuffersLocked.getPfd();
+    }
+
+    private Calendar normalizeDate(long j) {
+        Calendar calendar = Calendar.getInstance(TimeZone.getTimeZone(Time.TIMEZONE_UTC));
+        calendar.setTimeInMillis(j);
+        calendar.set(11, 0);
+        calendar.set(12, 0);
+        calendar.set(13, 0);
+        calendar.set(14, 0);
+        return calendar;
+    }
+
+    private File pathForApp(BufferInfo bufferInfo) {
+        return new File(this.mGraphicsStatsDir, String.format("%d/%s/%d/total", Long.valueOf(normalizeDate(bufferInfo.mStartTime).getTimeInMillis()), bufferInfo.mPackageName, Long.valueOf(bufferInfo.mVersionCode)));
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public void saveBuffer(HistoricalBuffer historicalBuffer) {
+        if (Trace.isTagEnabled(524288L)) {
+            Trace.traceBegin(524288L, "saving graphicsstats for " + historicalBuffer.mInfo.mPackageName);
+        }
+        synchronized (this.mFileAccessLock) {
+            File filePathForApp = pathForApp(historicalBuffer.mInfo);
+            File parentFile = filePathForApp.getParentFile();
+            parentFile.mkdirs();
+            if (!parentFile.exists()) {
+                Log.w(TAG, "Unable to create path: '" + parentFile.getAbsolutePath() + "'");
+            } else {
+                nSaveBuffer(filePathForApp.getAbsolutePath(), historicalBuffer.mInfo.mPackageName, historicalBuffer.mInfo.mVersionCode, historicalBuffer.mInfo.mStartTime, historicalBuffer.mInfo.mEndTime, historicalBuffer.mData);
+                Trace.traceEnd(524288L);
+            }
+        }
+    }
+
+    private void deleteRecursiveLocked(File file) {
+        if (file.isDirectory()) {
+            for (File file2 : file.listFiles()) {
+                deleteRecursiveLocked(file2);
+            }
+        }
+        if (file.delete()) {
+            return;
+        }
+        Log.w(TAG, "Failed to delete '" + file.getAbsolutePath() + "'!");
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public void deleteOldBuffers() {
+        Trace.traceBegin(524288L, "deleting old graphicsstats buffers");
+        synchronized (this.mFileAccessLock) {
+            File[] fileArrListFiles = this.mGraphicsStatsDir.listFiles();
+            if (fileArrListFiles != null && fileArrListFiles.length > 3) {
+                int length = fileArrListFiles.length;
+                long[] jArr = new long[length];
+                for (int i = 0; i < fileArrListFiles.length; i++) {
+                    try {
+                        jArr[i] = Long.parseLong(fileArrListFiles[i].getName());
+                    } catch (NumberFormatException unused) {
+                    }
+                }
+                if (length <= 3) {
+                    return;
+                }
+                Arrays.sort(jArr);
+                for (int i2 = 0; i2 < length - 3; i2++) {
+                    deleteRecursiveLocked(new File(this.mGraphicsStatsDir, Long.toString(jArr[i2])));
+                }
+                Trace.traceEnd(524288L);
+            }
+        }
+    }
+
+    private void addToSaveQueue(ActiveBuffer activeBuffer) {
+        try {
+            Message.obtain(this.mWriteOutHandler, 1, new HistoricalBuffer(activeBuffer)).sendToTarget();
+        } catch (IOException e) {
+            Log.w(TAG, "Failed to copy graphicsstats from " + activeBuffer.mInfo.mPackageName, e);
+        }
+        activeBuffer.closeAllBuffers();
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public void processDied(ActiveBuffer activeBuffer) {
+        synchronized (this.mLock) {
+            this.mActive.remove(activeBuffer);
+        }
+        addToSaveQueue(activeBuffer);
+    }
+
+    /* JADX WARN: Code restructure failed: missing block: B:15:0x003b, code lost:
+    
+        r9 = new android.graphics.GraphicsStatsService.ActiveBuffer(r11, r12, r13, r14, r15, r16);
+        r11.mActive.add(r9);
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:16:0x004d, code lost:
+    
+        return r9;
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:18:0x0055, code lost:
+    
+        throw new android.os.RemoteException("Failed to allocate space");
+     */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+        To view partially-correct code enable 'Show inconsistent code' option in preferences
+    */
+    private android.graphics.GraphicsStatsService.ActiveBuffer fetchActiveBuffersLocked(android.view.IGraphicsStatsCallback r12, int r13, int r14, java.lang.String r15, long r16) throws android.os.RemoteException {
+        /*
+            r11 = this;
+            r8 = r11
+            java.util.ArrayList<android.graphics.GraphicsStatsService$ActiveBuffer> r0 = r8.mActive
+            int r0 = r0.size()
+            long r1 = java.lang.System.currentTimeMillis()
+            java.util.Calendar r1 = r11.normalizeDate(r1)
+            long r1 = r1.getTimeInMillis()
+            r3 = 0
+        L14:
+            if (r3 >= r0) goto L39
+            java.util.ArrayList<android.graphics.GraphicsStatsService$ActiveBuffer> r4 = r8.mActive
+            java.lang.Object r4 = r4.get(r3)
+            android.graphics.GraphicsStatsService$ActiveBuffer r4 = (android.graphics.GraphicsStatsService.ActiveBuffer) r4
+            int r5 = r4.mPid
+            r6 = r14
+            if (r5 != r6) goto L35
+            int r5 = r4.mUid
+            r7 = r13
+            if (r5 != r7) goto L36
+            android.graphics.GraphicsStatsService$BufferInfo r0 = r4.mInfo
+            long r9 = r0.mStartTime
+            int r0 = (r9 > r1 ? 1 : (r9 == r1 ? 0 : -1))
+            if (r0 >= 0) goto L34
+            r4.binderDied()
+            goto L3b
+        L34:
+            return r4
+        L35:
+            r7 = r13
+        L36:
+            int r3 = r3 + 1
+            goto L14
+        L39:
+            r7 = r13
+            r6 = r14
+        L3b:
+            android.graphics.GraphicsStatsService$ActiveBuffer r9 = new android.graphics.GraphicsStatsService$ActiveBuffer     // Catch: java.io.IOException -> L4e
+            r0 = r9
+            r1 = r11
+            r2 = r12
+            r3 = r13
+            r4 = r14
+            r5 = r15
+            r6 = r16
+            r0.<init>(r2, r3, r4, r5, r6)     // Catch: java.io.IOException -> L4e
+            java.util.ArrayList<android.graphics.GraphicsStatsService$ActiveBuffer> r0 = r8.mActive     // Catch: java.io.IOException -> L4e
+            r0.add(r9)     // Catch: java.io.IOException -> L4e
+            return r9
+        L4e:
+            android.os.RemoteException r0 = new android.os.RemoteException
+            java.lang.String r1 = "Failed to allocate space"
+            r0.<init>(r1)
+            throw r0
+        */
+        throw new UnsupportedOperationException("Method not decompiled: android.graphics.GraphicsStatsService.fetchActiveBuffersLocked(android.view.IGraphicsStatsCallback, int, int, java.lang.String, long):android.graphics.GraphicsStatsService$ActiveBuffer");
+    }
+
+    private HashSet<File> dumpActiveLocked(long j, ArrayList<HistoricalBuffer> arrayList) {
+        HashSet<File> hashSet = new HashSet<>(arrayList.size());
+        for (int i = 0; i < arrayList.size(); i++) {
+            HistoricalBuffer historicalBuffer = arrayList.get(i);
+            File filePathForApp = pathForApp(historicalBuffer.mInfo);
+            hashSet.add(filePathForApp);
+            nAddToDump(j, filePathForApp.getAbsolutePath(), historicalBuffer.mInfo.mPackageName, historicalBuffer.mInfo.mVersionCode, historicalBuffer.mInfo.mStartTime, historicalBuffer.mInfo.mEndTime, historicalBuffer.mData);
+        }
+        return hashSet;
+    }
+
+    private void dumpHistoricalLocked(long j, HashSet<File> hashSet) {
+        for (File file : this.mGraphicsStatsDir.listFiles()) {
+            for (File file2 : file.listFiles()) {
+                for (File file3 : file2.listFiles()) {
+                    File file4 = new File(file3, "total");
+                    if (!hashSet.contains(file4)) {
+                        nAddToDump(j, file4.getAbsolutePath());
+                    }
+                }
+            }
+        }
+    }
+
+    @Override // android.os.Binder
+    protected void dump(FileDescriptor fileDescriptor, PrintWriter printWriter, String[] strArr) {
+        boolean z;
+        ArrayList<HistoricalBuffer> arrayList;
+        if (DumpUtils.checkDumpAndUsageStatsPermission(this.mContext, TAG, printWriter)) {
+            int length = strArr.length;
+            int i = 0;
+            while (true) {
+                if (i >= length) {
+                    z = false;
+                    break;
+                } else {
+                    if ("--proto".equals(strArr[i])) {
+                        z = true;
+                        break;
+                    }
+                    i++;
+                }
+            }
+            synchronized (this.mLock) {
+                arrayList = new ArrayList<>(this.mActive.size());
+                for (int i2 = 0; i2 < this.mActive.size(); i2++) {
+                    try {
+                        arrayList.add(new HistoricalBuffer(this.mActive.get(i2)));
+                    } catch (IOException unused) {
+                    }
+                }
+            }
+            long jNCreateDump = nCreateDump(fileDescriptor.getInt$(), z);
+            try {
+                synchronized (this.mFileAccessLock) {
+                    HashSet<File> hashSetDumpActiveLocked = dumpActiveLocked(jNCreateDump, arrayList);
+                    arrayList.clear();
+                    dumpHistoricalLocked(jNCreateDump, hashSetDumpActiveLocked);
+                }
+            } finally {
+                nFinishDump(jNCreateDump);
+            }
+        }
+    }
+
+    protected void finalize() throws Throwable {
+        nativeDestructor();
+    }
+
+    private final class BufferInfo {
+        long mEndTime;
+        final String mPackageName;
+        long mStartTime;
+        final long mVersionCode;
+
+        BufferInfo(String str, long j, long j2) {
+            this.mPackageName = str;
+            this.mVersionCode = j;
+            this.mStartTime = j2;
+        }
+    }
+
+    private final class ActiveBuffer implements IBinder.DeathRecipient {
+        final IGraphicsStatsCallback mCallback;
+        final BufferInfo mInfo;
+        ByteBuffer mMapping;
+        final int mPid;
+        SharedMemory mProcessBuffer;
+        final IBinder mToken;
+        final int mUid;
+
+        ActiveBuffer(IGraphicsStatsCallback iGraphicsStatsCallback, int i, int i2, String str, long j) throws RemoteException, IOException {
+            this.mInfo = GraphicsStatsService.this.new BufferInfo(str, j, System.currentTimeMillis());
+            this.mUid = i;
+            this.mPid = i2;
+            this.mCallback = iGraphicsStatsCallback;
+            IBinder iBinderAsBinder = iGraphicsStatsCallback.asBinder();
+            this.mToken = iBinderAsBinder;
+            iBinderAsBinder.linkToDeath(this, 0);
+            try {
+                SharedMemory sharedMemoryCreate = SharedMemory.create("GFXStats-" + i2, GraphicsStatsService.this.mAshmemSize);
+                this.mProcessBuffer = sharedMemoryCreate;
+                this.mMapping = sharedMemoryCreate.mapReadWrite();
+            } catch (ErrnoException e) {
+                e.rethrowAsIOException();
+            }
+            this.mMapping.position(0);
+            this.mMapping.put(GraphicsStatsService.this.mZeroData, 0, GraphicsStatsService.this.mAshmemSize);
+        }
+
+        @Override // android.os.IBinder.DeathRecipient
+        public void binderDied() {
+            this.mToken.unlinkToDeath(this, 0);
+            GraphicsStatsService.this.processDied(this);
+        }
+
+        void closeAllBuffers() {
+            ByteBuffer byteBuffer = this.mMapping;
+            if (byteBuffer != null) {
+                SharedMemory.unmap(byteBuffer);
+                this.mMapping = null;
+            }
+            SharedMemory sharedMemory = this.mProcessBuffer;
+            if (sharedMemory != null) {
+                sharedMemory.close();
+                this.mProcessBuffer = null;
+            }
+        }
+
+        ParcelFileDescriptor getPfd() {
+            try {
+                return this.mProcessBuffer.getFdDup();
+            } catch (IOException e) {
+                throw new IllegalStateException("Failed to get PFD from memory file", e);
+            }
+        }
+
+        void readBytes(byte[] bArr, int i) throws IOException {
+            ByteBuffer byteBuffer = this.mMapping;
+            if (byteBuffer == null) {
+                throw new IOException("SharedMemory has been deactivated");
+            }
+            byteBuffer.position(0);
+            this.mMapping.get(bArr, 0, i);
+        }
+    }
+
+    private final class HistoricalBuffer {
+        final byte[] mData;
+        final BufferInfo mInfo;
+
+        HistoricalBuffer(ActiveBuffer activeBuffer) throws IOException {
+            byte[] bArr = new byte[GraphicsStatsService.this.mAshmemSize];
+            this.mData = bArr;
+            BufferInfo bufferInfo = activeBuffer.mInfo;
+            this.mInfo = bufferInfo;
+            bufferInfo.mEndTime = System.currentTimeMillis();
+            activeBuffer.readBytes(bArr, GraphicsStatsService.this.mAshmemSize);
+        }
+    }
+}

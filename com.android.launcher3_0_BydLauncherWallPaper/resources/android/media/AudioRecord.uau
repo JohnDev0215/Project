@@ -1,0 +1,9 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/media/AudioRecord;->mNativeRecorderInJavaObj:J,frameworks/base/media/java/android/media/AudioRecord.java,170,5,170,25,
+Landroid/media/AudioRecord;->mNativeCallbackCookie:J,frameworks/base/media/java/android/media/AudioRecord.java,177,5,177,25,
+Landroid/media/AudioRecord;->mNativeDeviceCallback:J,frameworks/base/media/java/android/media/AudioRecord.java,184,5,184,25,
+Landroid/media/AudioRecord;->mInitializationLooper:Landroid/os/Looper;,frameworks/base/media/java/android/media/AudioRecord.java,251,5,251,25,
+Landroid/media/AudioRecord;->mAudioAttributes:Landroid/media/AudioAttributes;,frameworks/base/media/java/android/media/AudioRecord.java,264,5,264,25,
+Landroid/media/AudioRecord;->postEventFromNative(Ljava/lang/Object;IIILjava/lang/Object;)V,frameworks/base/media/java/android/media/AudioRecord.java,1963,5,1963,25,
+Landroid/media/AudioRecord;->native_setup(Ljava/lang/Object;Ljava/lang/Object;[IIIII[ILjava/lang/String;J)I,frameworks/base/media/java/android/media/AudioRecord.java,1990,5,1990,25,
+Landroid/media/AudioRecord;->native_release()V,frameworks/base/media/java/android/media/AudioRecord.java,2003,5,2003,25,

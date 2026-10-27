@@ -1,0 +1,10 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/preference/SeekBarVolumizer;->mContext:Landroid/content/Context;,frameworks/base/core/java/android/preference/SeekBarVolumizer.java,88,5,88,25,
+Landroid/preference/SeekBarVolumizer;->mAudioManager:Landroid/media/AudioManager;,frameworks/base/core/java/android/preference/SeekBarVolumizer.java,93,5,93,25,
+Landroid/preference/SeekBarVolumizer;->mStreamType:I,frameworks/base/core/java/android/preference/SeekBarVolumizer.java,96,5,96,25,
+Landroid/preference/SeekBarVolumizer;->mOriginalStreamVolume:I,frameworks/base/core/java/android/preference/SeekBarVolumizer.java,105,5,105,25,
+Landroid/preference/SeekBarVolumizer;->mRingtone:Landroid/media/Ringtone;,frameworks/base/core/java/android/preference/SeekBarVolumizer.java,112,5,112,25,
+Landroid/preference/SeekBarVolumizer;->mLastProgress:I,frameworks/base/core/java/android/preference/SeekBarVolumizer.java,114,5,114,25,
+Landroid/preference/SeekBarVolumizer;->mSeekBar:Landroid/widget/SeekBar;,frameworks/base/core/java/android/preference/SeekBarVolumizer.java,117,5,117,25,
+Landroid/preference/SeekBarVolumizer;-><init>(Landroid/content/Context;ILandroid/net/Uri;Landroid/preference/SeekBarVolumizer$Callback;)V,frameworks/base/core/java/android/preference/SeekBarVolumizer.java,135,5,135,25,
+Landroid/preference/SeekBarVolumizer;->stop()V,frameworks/base/core/java/android/preference/SeekBarVolumizer.java,358,5,358,25,

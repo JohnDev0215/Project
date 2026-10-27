@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="active_suspension_array">
+        <item>Comfort</item>
+        <item>Sport</item>
+    </array>
+    <array name="bs_freq_band_list">
+        <item>@string/bs_freq_band_list_cl</item>
+        <item>@string/bs_freq_band_list_l</item>
+        <item>@string/bs_freq_band_list_m</item>
+        <item>@string/bs_freq_band_list_mh</item>
+        <item>@string/bs_freq_band_list_h</item>
+    </array>
+    <array name="cal_height_list">
+        <item>@string/vehiclesettings_lock_welcome</item>
+        <item>@string/vehiclesettings_previewing</item>
+        <item>@string/vehiclesettings_unlock_welcome</item>
+    </array>
+    <array name="common_setting_card_title_array">
+        <item>Ambient light colors</item>
+        <item>Ambient light brightness</item>
+        <item>SOC setting</item>
+        <item>Energy feedback</item>
+        <item>Vehicle/ dashboard brightness regulation</item>
+        <item>Steering mode</item>
+        <item>Engine analog sound source</item>
+        <item>Active suspension</item>
+        <item>Ambient light lighting area</item>
+        <item>Music Rhythm</item>
+        <item>Brightness</item>
+        <item>Theme</item>
+    </array>
+    <array name="dark_light_mode_array">
+        <item>Dark</item>
+        <item>Light</item>
+        <item>Auto</item>
+    </array>
+    <array name="dyna_eq_array">
+        <item>@string/original_charact_dynaudio_sound</item>
+        <item>@string/dynamic_charact_dynaudio_sound</item>
+        <item>@string/soft_charact_dynaudio_sound</item>
+        <item>@string/speech_charact_dynaudio_sound</item>
+        <item>@string/custom_charact_dynaudio_sound</item>
+    </array>
+    <array name="dyna_focus_array">
+        <item>@string/all_sound_focus_dynaudio_sound</item>
+        <item>@string/left_1st_sound_focus_dynaudio_sound</item>
+        <item>@string/right_1st_sound_focus_dynaudio_sound</item>
+        <item>@string/last_row_sound_focus_dynaudio_sound</item>
+        <item>@string/surround_sound_focus_dynaudio_sound</item>
+        <item>@string/custom_sound_focus_dynaudio_sound</item>
+    </array>
+    <array name="dyna_focus_mpv_array">
+        <item>@string/all_sound_focus_dynaudio_sound</item>
+        <item>@string/left_1st_sound_focus_dynaudio_sound</item>
+        <item>@string/right_1st_sound_focus_dynaudio_sound</item>
+        <item>@string/middle_row_sound_focus_dynaudio_sound</item>
+        <item>@string/last_row_sound_focus_dynaudio_sound</item>
+        <item>@string/custom_sound_focus_dynaudio_sound</item>
+    </array>
+    <array name="dyna_freq_band_list">
+        <item>@string/dyna_freq_band_list_cl</item>
+        <item>@string/dyna_freq_band_list_l</item>
+        <item>@string/dyna_freq_band_list_m</item>
+        <item>@string/dyna_freq_band_list_h</item>
+    </array>
+    <array name="energy_feedback_array">
+        <item>Standard</item>
+        <item>High</item>
+    </array>
+    <array name="freq_band_list">
+        <item>@string/eq_freq_band_80</item>
+        <item>@string/eq_freq_band_500</item>
+        <item>@string/eq_freq_band_1k</item>
+        <item>@string/eq_freq_band_5k</item>
+        <item>@string/eq_freq_band_16k</item>
+    </array>
+    <array name="harman_balance_array">
+        <item>@string/whole_car_sound_balance_harman_sound</item>
+        <item>@string/row_1st_sound_balance_harman_sound</item>
+        <item>@string/row_last_sound_balance_harman_sound</item>
+    </array>
+    <array name="harman_freq_band_list">
+        <item>@string/dyna_freq_band_list_l</item>
+        <item>@string/dyna_freq_band_list_m</item>
+        <item>@string/dyna_freq_band_list_h</item>
+    </array>
+    <array name="ial_dynamic_colors_array">
+        <item>Sea and stars</item>
+        <item>Tropical Flair</item>
+        <item>Colorful Spectra</item>
+    </array>
+    <array name="ial_music_rhythm_array">
+        <item>Distinctive Charm</item>
+        <item>Sea and stars</item>
+        <item>Tropical Flair</item>
+        <item>Colorful Spectra</item>
+    </array>
+    <array name="language_description_list">
+        <item>@string/lan_zh</item>
+        <item>@string/lan_zh_ft</item>
+        <item>@string/lan_en</item>
+        <item>@string/lan_es</item>
+        <item>@string/lan_es_la</item>
+        <item>@string/lan_pt</item>
+        <item>@string/lan_pt_br</item>
+        <item>@string/lan_ja</item>
+        <item>@string/lan_ha</item>
+        <item>@string/lan_fr</item>
+        <item>@string/lan_de</item>
+        <item>@string/lan_it</item>
+        <item>@string/lan_yda</item>
+        <item>@string/lan_alb</item>
+        <item>@string/lan_hl</item>
+        <item>@string/lan_tai</item>
+        <item>@string/lan_sv</item>
+        <item>@string/lan_no</item>
+        <item>@string/lan_fen</item>
+        <item>@string/lan_daim</item>
+        <item>@string/lan_iw</item>
+        <item>@string/lan_ru</item>
+        <item>@string/lan_uz</item>
+        <item>@string/lan_tr</item>
+        <item>@string/lan_xyl</item>
+        <item>@string/lan_slfk</item>
+        <item>@string/lan_jk</item>
+        <item>@string/lan_bl</item>
+        <item>@string/lan_yl</item>
+        <item>@string/lan_ydnxy</item>
+        <item>@string/lan_mlxy</item>
+        <item>@string/lan_fr_jnd</item>
+        <item>@string/lan_en_aus</item>
+        <item>@string/lan_jtlny</item>
+        <item>@string/lan_kldy</item>
+        <item>@string/lan_lmny</item>
+        <item>@string/lan_xl</item>
+        <item>@string/lan_wkl</item>
+        <item>@string/lan_hskst</item>
+        <item>@string/lan_bjly</item>
+    </array>
+    <array name="language_list">
+        <item>简体中文</item>
+        <item>中文（繁體）</item>
+        <item>English</item>
+        <item>Español</item>
+        <item>Español(América)</item>
+        <item>Português</item>
+        <item>Português(Brasil)</item>
+        <item>日本語</item>
+        <item>한국어</item>
+        <item>Français</item>
+        <item>Deutsch</item>
+        <item>Italiano</item>
+        <item>हिंदीName</item>
+        <item>بالعربية</item>
+        <item>Nederlands</item>
+        <item>ภาษาไทย</item>
+        <item>Svenska</item>
+        <item>norwegian</item>
+        <item>suomi</item>
+        <item>Dansk</item>
+        <item>היברית</item>
+        <item>Русский язык</item>
+        <item>o\'zbek</item>
+        <item>Türkçe</item>
+        <item>Magyar</item>
+        <item>Slovenská</item>
+        <item>Čeština</item>
+        <item>Polski</item>
+        <item>Tiếng Việt</item>
+        <item>Indonesia</item>
+        <item>Malay</item>
+        <item>français (Canada)</item>
+        <item>English (Australia)</item>
+        <item>Catalan</item>
+        <item>Hrvatska</item>
+        <item>Română</item>
+        <item>Ελληνικά</item>
+        <item>УкраїнськаName</item>
+        <item>қазақ тілі</item>
+        <item>Български език</item>
+    </array>
+    <array name="lighting_area_of_atmosphere_lamp_array">
+        <item>Whole</item>
+        <item>Front</item>
+        <item>Rear</item>
+    </array>
+    <array name="month_en_array">
+        <item>Jan.</item>
+        <item>Feb.</item>
+        <item>Mar.</item>
+        <item>Apr.</item>
+        <item>May.</item>
+        <item>Jun.</item>
+        <item>Jul.</item>
+        <item>Aug.</item>
+        <item>Sep.</item>
+        <item>Oct.</item>
+        <item>Nov.</item>
+        <item>Dec.</item>
+    </array>
+    <array name="month_en_normal_array">
+        <item>January</item>
+        <item>February</item>
+        <item>March</item>
+        <item>April</item>
+        <item>May.</item>
+        <item>June</item>
+        <item>July</item>
+        <item>August</item>
+        <item>September</item>
+        <item>October</item>
+        <item>November</item>
+        <item>December</item>
+    </array>
+    <array name="music_style_list">
+        <item>@string/dilink_eq_custom</item>
+        <item>@string/dilink_eq_jazz</item>
+        <item>@string/dilink_eq_classical</item>
+        <item>@string/dilink_eq_country</item>
+        <item>@string/dilink_eq_opera</item>
+        <item>@string/dilink_eq_oldies</item>
+        <item>@string/dilink_eq_pop</item>
+        <item>@string/dilink_eq_rock</item>
+        <item>@string/dilink_eq_dance</item>
+        <item>@string/dilink_eq_electronic</item>
+    </array>
+    <array name="power_steering_mode_array">
+        <item>Comfort</item>
+        <item>Sport</item>
+    </array>
+    <array name="simulation_sound_of_engine_array">
+        <item>Standard</item>
+        <item>Dynamic</item>
+    </array>
+    <array name="soc_setting_array">
+        <item>AUTO</item>
+        <item>SAVE</item>
+    </array>
+    <array name="time_ampm_array">
+        <item>@string/clock_am</item>
+        <item>@string/clock_pm</item>
+    </array>
+</resources>

@@ -1,0 +1,4 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/accounts/AccountManager$GetAuthTokenByTypeAndFeaturesTask;->mAuthTokenType:Ljava/lang/String;,frameworks/base/core/java/android/accounts/AccountManager.java,2548,9,2548,92,maxTargetSdk=28&trackingBug=115609023L
+Landroid/accounts/AccountManager$GetAuthTokenByTypeAndFeaturesTask;->mLoginOptions:Landroid/os/Bundle;,frameworks/base/core/java/android/accounts/AccountManager.java,2552,9,2552,92,maxTargetSdk=28&trackingBug=115609023L
+Landroid/accounts/AccountManager$GetAuthTokenByTypeAndFeaturesTask;->mMyCallback:Landroid/accounts/AccountManagerCallback;,frameworks/base/core/java/android/accounts/AccountManager.java,2554,9,2554,92,maxTargetSdk=28&trackingBug=115609023L

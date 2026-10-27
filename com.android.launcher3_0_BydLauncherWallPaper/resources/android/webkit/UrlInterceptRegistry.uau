@@ -1,0 +1,5 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/webkit/UrlInterceptRegistry;->setUrlInterceptDisabled(Z)V,frameworks/base/core/java/android/webkit/UrlInterceptRegistry.java,57,5,57,25,
+Landroid/webkit/UrlInterceptRegistry;->registerHandler(Landroid/webkit/UrlInterceptHandler;)Z,frameworks/base/core/java/android/webkit/UrlInterceptRegistry.java,88,5,88,25,
+Landroid/webkit/UrlInterceptRegistry;->unregisterHandler(Landroid/webkit/UrlInterceptHandler;)Z,frameworks/base/core/java/android/webkit/UrlInterceptRegistry.java,110,5,110,25,
+Landroid/webkit/UrlInterceptRegistry;->getPluginData(Ljava/lang/String;Ljava/util/Map;)Landroid/webkit/PluginData;,frameworks/base/core/java/android/webkit/UrlInterceptRegistry.java,157,5,157,25,

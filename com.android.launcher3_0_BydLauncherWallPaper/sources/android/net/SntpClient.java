@@ -1,0 +1,145 @@
+package android.net;
+
+import android.util.Log;
+import android.util.proto.ProtoStream;
+import java.util.Arrays;
+
+/* JADX INFO: loaded from: classes2.dex */
+public class SntpClient {
+    private static final boolean DBG = true;
+    private static final int NTP_LEAP_NOSYNC = 3;
+    private static final int NTP_MODE_BROADCAST = 5;
+    private static final int NTP_MODE_CLIENT = 3;
+    private static final int NTP_MODE_SERVER = 4;
+    private static final int NTP_PACKET_SIZE = 48;
+    private static final int NTP_PORT = 123;
+    private static final int NTP_STRATUM_DEATH = 0;
+    private static final int NTP_STRATUM_MAX = 15;
+    private static final int NTP_VERSION = 3;
+    private static final long OFFSET_1900_TO_1970 = 2208988800L;
+    private static final int ORIGINATE_TIME_OFFSET = 24;
+    private static final int RECEIVE_TIME_OFFSET = 32;
+    private static final int REFERENCE_TIME_OFFSET = 16;
+    private static final String TAG = "SntpClient";
+    private static final int TRANSMIT_TIME_OFFSET = 40;
+    private long mNtpTime;
+    private long mNtpTimeReference;
+    private long mRoundTripTime;
+
+    private static class InvalidServerReplyException extends Exception {
+        public InvalidServerReplyException(String str) {
+            super(str);
+        }
+    }
+
+    public boolean requestTime(String str, int i, Network network) {
+        Network privateDnsBypassingCopy = network.getPrivateDnsBypassingCopy();
+        try {
+            return requestTime(privateDnsBypassingCopy.getByName(str), 123, i, privateDnsBypassingCopy);
+        } catch (Exception e) {
+            EventLogTags.writeNtpFailure(str, e.toString());
+            Log.d(TAG, "request time failed: " + e);
+            return false;
+        }
+    }
+
+    /* JADX WARN: Removed duplicated region for block: B:31:0x011c  */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+        To view partially-correct code enable 'Show inconsistent code' option in preferences
+    */
+    public boolean requestTime(java.net.InetAddress r23, int r24, int r25, android.net.Network r26) throws java.lang.Throwable {
+        /*
+            Method dump skipped, instruction units count: 301
+            To view this dump change 'Code comments level' option to 'DEBUG'
+        */
+        throw new UnsupportedOperationException("Method not decompiled: android.net.SntpClient.requestTime(java.net.InetAddress, int, int, android.net.Network):boolean");
+    }
+
+    @Deprecated
+    public boolean requestTime(String str, int i) {
+        Log.w(TAG, "Shame on you for calling the hidden API requestTime()!");
+        return false;
+    }
+
+    public long getNtpTime() {
+        return this.mNtpTime;
+    }
+
+    public long getNtpTimeReference() {
+        return this.mNtpTimeReference;
+    }
+
+    public long getRoundTripTime() {
+        return this.mRoundTripTime;
+    }
+
+    private static void checkValidServerReply(byte b, byte b2, int i, long j) throws InvalidServerReplyException {
+        if (b == 3) {
+            throw new InvalidServerReplyException("unsynchronized server");
+        }
+        if (b2 != 4 && b2 != 5) {
+            throw new InvalidServerReplyException("untrusted mode: " + ((int) b2));
+        }
+        if (i == 0 || i > 15) {
+            throw new InvalidServerReplyException("untrusted stratum: " + i);
+        }
+        if (j == 0) {
+            throw new InvalidServerReplyException("zero transmitTime");
+        }
+    }
+
+    private long read32(byte[] bArr, int i) {
+        int i2 = bArr[i];
+        int i3 = bArr[i + 1];
+        int i4 = bArr[i + 2];
+        int i5 = bArr[i + 3];
+        if ((i2 & 128) == 128) {
+            i2 = (i2 & 127) + 128;
+        }
+        if ((i3 & 128) == 128) {
+            i3 = (i3 & 127) + 128;
+        }
+        if ((i4 & 128) == 128) {
+            i4 = (i4 & 127) + 128;
+        }
+        if ((i5 & 128) == 128) {
+            i5 = (i5 & 127) + 128;
+        }
+        return (((long) i2) << 24) + (((long) i3) << 16) + (((long) i4) << 8) + ((long) i5);
+    }
+
+    private long readTimeStamp(byte[] bArr, int i) {
+        long j = read32(bArr, i);
+        long j2 = read32(bArr, i + 4);
+        if (j == 0 && j2 == 0) {
+            return 0L;
+        }
+        return ((j - OFFSET_1900_TO_1970) * 1000) + ((j2 * 1000) / ProtoStream.FIELD_TYPE_DOUBLE);
+    }
+
+    private void writeTimeStamp(byte[] bArr, int i, long j) {
+        if (j == 0) {
+            Arrays.fill(bArr, i, i + 8, (byte) 0);
+            return;
+        }
+        long j2 = j / 1000;
+        long j3 = j - (j2 * 1000);
+        long j4 = j2 + OFFSET_1900_TO_1970;
+        int i2 = i + 1;
+        bArr[i] = (byte) (j4 >> 24);
+        int i3 = i2 + 1;
+        bArr[i2] = (byte) (j4 >> 16);
+        int i4 = i3 + 1;
+        bArr[i3] = (byte) (j4 >> 8);
+        int i5 = i4 + 1;
+        bArr[i4] = (byte) (j4 >> 0);
+        long j5 = (j3 * ProtoStream.FIELD_TYPE_DOUBLE) / 1000;
+        int i6 = i5 + 1;
+        bArr[i5] = (byte) (j5 >> 24);
+        int i7 = i6 + 1;
+        bArr[i6] = (byte) (j5 >> 16);
+        bArr[i7] = (byte) (j5 >> 8);
+        bArr[i7 + 1] = (byte) (Math.random() * 255.0d);
+    }
+}

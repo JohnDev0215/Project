@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="additional_permissions_more">
+        <item quantity="one">%1$d എണ്ണം കൂടി</item>
+        <item quantity="other">%1$d എണ്ണം കൂടി</item>
+    </plurals>
+    <plurals name="auto_revoke_permission_notification_content_count">
+        <item quantity="one">കുറച്ച് മാസങ്ങളായി %1$d ആപ്പ് ഉപയോഗിച്ചിട്ടില്ല. റിവ്യൂ ചെയ്യുന്നതിന് ടാപ്പ് ചെയ്യുക</item>
+        <item quantity="other">കുറച്ച് മാസങ്ങളായി %1$d ആപ്പുകൾ ഉപയോഗിച്ചിട്ടില്ല. റിവ്യൂ ചെയ്യുന്നതിന് ടാപ്പ് ചെയ്യുക</item>
+    </plurals>
+    <plurals name="auto_revoke_setting_subtitle_count">
+        <item quantity="one">കുറച്ച് മാസങ്ങളായി %1$d ആപ്പ് ഉപയോഗിച്ചിട്ടില്ല</item>
+        <item quantity="other">കുറച്ച് മാസങ്ങളായി %1$d ആപ്പുകൾ ഉപയോഗിച്ചിട്ടില്ല</item>
+    </plurals>
+    <plurals name="days">
+        <item quantity="one">ഒരു ദിവസം</item>
+        <item quantity="other">%s ദിവസം</item>
+    </plurals>
+    <plurals name="hours">
+        <item quantity="one">ഒരു മണിക്കൂർ</item>
+        <item quantity="other">%s മണിക്കൂർ</item>
+    </plurals>
+    <plurals name="minutes">
+        <item quantity="one">ഒരു മിനിറ്റ്</item>
+        <item quantity="other">%s മിനിറ്റ്</item>
+    </plurals>
+    <plurals name="seconds">
+        <item quantity="one">ഒരു സെക്കൻഡ്</item>
+        <item quantity="other">%s സെക്കൻഡ്</item>
+    </plurals>
+</resources>

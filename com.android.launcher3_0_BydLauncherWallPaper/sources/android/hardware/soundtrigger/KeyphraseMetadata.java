@@ -1,0 +1,111 @@
+package android.hardware.soundtrigger;
+
+import android.annotation.NonNull;
+import android.os.Parcel;
+import android.os.Parcelable;
+import android.util.ArraySet;
+import com.android.internal.util.AnnotationValidations;
+import java.util.Locale;
+import java.util.Objects;
+import java.util.Set;
+
+/* JADX INFO: loaded from: classes2.dex */
+public final class KeyphraseMetadata implements Parcelable {
+    public static final Parcelable.Creator<KeyphraseMetadata> CREATOR = new Parcelable.Creator<KeyphraseMetadata>() { // from class: android.hardware.soundtrigger.KeyphraseMetadata.1
+        /* JADX WARN: Can't rename method to resolve collision */
+        @Override // android.os.Parcelable.Creator
+        public KeyphraseMetadata[] newArray(int i) {
+            return new KeyphraseMetadata[i];
+        }
+
+        /* JADX WARN: Can't rename method to resolve collision */
+        @Override // android.os.Parcelable.Creator
+        public KeyphraseMetadata createFromParcel(Parcel parcel) {
+            return new KeyphraseMetadata(parcel);
+        }
+    };
+    private final int mId;
+    private final String mKeyphrase;
+    private final int mRecognitionModeFlags;
+    private final ArraySet<Locale> mSupportedLocales;
+
+    @Deprecated
+    private void __metadata() {
+    }
+
+    @Override // android.os.Parcelable
+    public int describeContents() {
+        return 0;
+    }
+
+    public KeyphraseMetadata(int i, String str, Set<Locale> set, int i2) {
+        this.mId = i;
+        this.mKeyphrase = str;
+        this.mSupportedLocales = new ArraySet<>(set);
+        this.mRecognitionModeFlags = i2;
+    }
+
+    public int getId() {
+        return this.mId;
+    }
+
+    public String getKeyphrase() {
+        return this.mKeyphrase;
+    }
+
+    public Set<Locale> getSupportedLocales() {
+        return this.mSupportedLocales;
+    }
+
+    public int getRecognitionModeFlags() {
+        return this.mRecognitionModeFlags;
+    }
+
+    public boolean supportsPhrase(String str) {
+        return getKeyphrase().isEmpty() || getKeyphrase().equalsIgnoreCase(str);
+    }
+
+    public boolean supportsLocale(Locale locale) {
+        return getSupportedLocales().isEmpty() || getSupportedLocales().contains(locale);
+    }
+
+    public String toString() {
+        return "KeyphraseMetadata { id = " + this.mId + ", keyphrase = " + this.mKeyphrase + ", supportedLocales = " + this.mSupportedLocales + ", recognitionModeFlags = " + this.mRecognitionModeFlags + " }";
+    }
+
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null || getClass() != obj.getClass()) {
+            return false;
+        }
+        KeyphraseMetadata keyphraseMetadata = (KeyphraseMetadata) obj;
+        return this.mId == keyphraseMetadata.mId && Objects.equals(this.mKeyphrase, keyphraseMetadata.mKeyphrase) && Objects.equals(this.mSupportedLocales, keyphraseMetadata.mSupportedLocales) && this.mRecognitionModeFlags == keyphraseMetadata.mRecognitionModeFlags;
+    }
+
+    public int hashCode() {
+        return ((((((this.mId + 31) * 31) + Objects.hashCode(this.mKeyphrase)) * 31) + Objects.hashCode(this.mSupportedLocales)) * 31) + this.mRecognitionModeFlags;
+    }
+
+    @Override // android.os.Parcelable
+    public void writeToParcel(Parcel parcel, int i) {
+        parcel.writeInt(this.mId);
+        parcel.writeString(this.mKeyphrase);
+        parcel.writeArraySet(this.mSupportedLocales);
+        parcel.writeInt(this.mRecognitionModeFlags);
+    }
+
+    KeyphraseMetadata(Parcel parcel) {
+        int i = parcel.readInt();
+        String string = parcel.readString();
+        ArraySet arraySet = parcel.readArraySet(null);
+        int i2 = parcel.readInt();
+        this.mId = i;
+        this.mKeyphrase = string;
+        AnnotationValidations.validate((Class<NonNull>) NonNull.class, (NonNull) null, (Object) string);
+        this.mSupportedLocales = arraySet;
+        AnnotationValidations.validate((Class<NonNull>) NonNull.class, (NonNull) null, (Object) arraySet);
+        this.mRecognitionModeFlags = i2;
+    }
+}

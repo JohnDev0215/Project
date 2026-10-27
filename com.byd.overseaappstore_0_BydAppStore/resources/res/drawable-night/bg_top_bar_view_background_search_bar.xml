@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <solid android:color="@color/search_result_top_bar_input_active_background"/>
+            <corners android:radius="@dimen/dp_8"/>
+            <stroke
+                android:width="@dimen/dp_1"
+                android:color="@color/search_fragment_stroke_color"/>
+        </shape>
+    </item>
+</layer-list>

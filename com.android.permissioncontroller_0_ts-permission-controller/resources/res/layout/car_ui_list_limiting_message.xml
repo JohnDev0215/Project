@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center"
+    android:paddingTop="16dp"
+    android:paddingBottom="32dp"
+    android:layout_width="match_parent"
+    android:layout_height="144dp">
+    <TextView
+        android:textColor="?android:attr/textColorPrimary"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/car_ui_list_limiting_message"
+        android:background="@drawable/car_ui_list_limiting_message_background"
+        android:layout_width="wrap_content"
+        android:layout_height="96dp"
+        android:singleLine="true"
+        android:drawablePadding="24dp"
+        android:textAllCaps="false"
+        android:drawableStart="@drawable/car_ui_icon_lock"
+        android:paddingStart="48dp"
+        android:paddingEnd="48dp"/>
+</FrameLayout>

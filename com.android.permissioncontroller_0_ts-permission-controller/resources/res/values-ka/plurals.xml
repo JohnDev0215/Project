@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="additional_permissions_more">
+        <item quantity="one">%1$d კიდევ</item>
+        <item quantity="other">%1$d კიდევ</item>
+    </plurals>
+    <plurals name="auto_revoke_permission_notification_content_count">
+        <item quantity="one">%1$d აპი რამდენიმე თვეა გამოუყენებელია. შეეხეთ გადასახედად</item>
+        <item quantity="other">%1$d აპი რამდენიმე თვეა გამოუყენებელია. შეეხეთ გადასახედად</item>
+    </plurals>
+    <plurals name="auto_revoke_setting_subtitle_count">
+        <item quantity="one">%1$d აპი რამდენიმე თვეა გამოუყენებელია</item>
+        <item quantity="other">%1$d აპი რამდენიმე თვეა გამოუყენებელია</item>
+    </plurals>
+    <plurals name="days">
+        <item quantity="one">1 დღე</item>
+        <item quantity="other">%s დღე</item>
+    </plurals>
+    <plurals name="hours">
+        <item quantity="one">1 საათი</item>
+        <item quantity="other">%s საათი</item>
+    </plurals>
+    <plurals name="minutes">
+        <item quantity="one">1 წუთი</item>
+        <item quantity="other">%s წუთი</item>
+    </plurals>
+    <plurals name="seconds">
+        <item quantity="one">1 წამი</item>
+        <item quantity="other">%s წამი</item>
+    </plurals>
+</resources>

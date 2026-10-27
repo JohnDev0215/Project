@@ -1,0 +1,532 @@
+package com.spotify.cosmos.util.policy.proto;
+
+import com.google.protobuf.ByteString;
+import com.google.protobuf.GeneratedMessageLite$MethodToInvoke;
+import com.google.protobuf.a;
+import com.google.protobuf.i;
+import java.io.InputStream;
+import java.nio.ByteBuffer;
+import p.au;
+import p.ds1;
+import p.h01;
+import p.i01;
+import p.r1;
+import p.rl0;
+import p.vj1;
+import p.wj1;
+
+/* JADX INFO: loaded from: classes.dex */
+public final class ArtistCollectionDecorationPolicy extends i implements ArtistCollectionDecorationPolicyOrBuilder {
+    public static final int CAN_BAN_FIELD_NUMBER = 6;
+    public static final int COLLECTION_LINK_FIELD_NUMBER = 1;
+    private static final ArtistCollectionDecorationPolicy DEFAULT_INSTANCE;
+    public static final int IS_BANNED_FIELD_NUMBER = 5;
+    public static final int IS_FOLLOWED_FIELD_NUMBER = 2;
+    public static final int NUM_ALBUMS_IN_COLLECTION_FIELD_NUMBER = 4;
+    public static final int NUM_EXPLICITLY_LIKED_TRACKS_FIELD_NUMBER = 8;
+    public static final int NUM_TRACKS_IN_COLLECTION_FIELD_NUMBER = 3;
+    private static volatile ds1 PARSER;
+    private boolean canBan_;
+    private boolean collectionLink_;
+    private boolean isBanned_;
+    private boolean isFollowed_;
+    private boolean numAlbumsInCollection_;
+    private boolean numExplicitlyLikedTracks_;
+    private boolean numTracksInCollection_;
+
+    /* JADX INFO: renamed from: com.spotify.cosmos.util.policy.proto.ArtistCollectionDecorationPolicy$1, reason: invalid class name */
+    public static /* synthetic */ class AnonymousClass1 {
+        static final /* synthetic */ int[] $SwitchMap$com$google$protobuf$GeneratedMessageLite$MethodToInvoke;
+
+        static {
+            int[] iArr = new int[GeneratedMessageLite$MethodToInvoke.values().length];
+            $SwitchMap$com$google$protobuf$GeneratedMessageLite$MethodToInvoke = iArr;
+            try {
+                iArr[3] = 1;
+            } catch (NoSuchFieldError unused) {
+            }
+            try {
+                $SwitchMap$com$google$protobuf$GeneratedMessageLite$MethodToInvoke[4] = 2;
+            } catch (NoSuchFieldError unused2) {
+            }
+            try {
+                $SwitchMap$com$google$protobuf$GeneratedMessageLite$MethodToInvoke[2] = 3;
+            } catch (NoSuchFieldError unused3) {
+            }
+            try {
+                $SwitchMap$com$google$protobuf$GeneratedMessageLite$MethodToInvoke[5] = 4;
+            } catch (NoSuchFieldError unused4) {
+            }
+            try {
+                $SwitchMap$com$google$protobuf$GeneratedMessageLite$MethodToInvoke[6] = 5;
+            } catch (NoSuchFieldError unused5) {
+            }
+            try {
+                $SwitchMap$com$google$protobuf$GeneratedMessageLite$MethodToInvoke[0] = 6;
+            } catch (NoSuchFieldError unused6) {
+            }
+            try {
+                $SwitchMap$com$google$protobuf$GeneratedMessageLite$MethodToInvoke[1] = 7;
+            } catch (NoSuchFieldError unused7) {
+            }
+        }
+    }
+
+    public static final class Builder extends h01 implements ArtistCollectionDecorationPolicyOrBuilder {
+        public /* synthetic */ Builder(AnonymousClass1 anonymousClass1) {
+            this();
+        }
+
+        public /* bridge */ /* synthetic */ wj1 build() {
+            return super.build();
+        }
+
+        @Override // p.h01, p.vj1
+        public /* bridge */ /* synthetic */ wj1 buildPartial() {
+            return super.buildPartial();
+        }
+
+        public /* bridge */ /* synthetic */ vj1 clear() {
+            return super.clear();
+        }
+
+        public Builder clearCanBan() {
+            copyOnWrite();
+            ((ArtistCollectionDecorationPolicy) this.instance).clearCanBan();
+            return this;
+        }
+
+        public Builder clearCollectionLink() {
+            copyOnWrite();
+            ((ArtistCollectionDecorationPolicy) this.instance).clearCollectionLink();
+            return this;
+        }
+
+        public Builder clearIsBanned() {
+            copyOnWrite();
+            ((ArtistCollectionDecorationPolicy) this.instance).clearIsBanned();
+            return this;
+        }
+
+        public Builder clearIsFollowed() {
+            copyOnWrite();
+            ((ArtistCollectionDecorationPolicy) this.instance).clearIsFollowed();
+            return this;
+        }
+
+        public Builder clearNumAlbumsInCollection() {
+            copyOnWrite();
+            ((ArtistCollectionDecorationPolicy) this.instance).clearNumAlbumsInCollection();
+            return this;
+        }
+
+        public Builder clearNumExplicitlyLikedTracks() {
+            copyOnWrite();
+            ((ArtistCollectionDecorationPolicy) this.instance).clearNumExplicitlyLikedTracks();
+            return this;
+        }
+
+        public Builder clearNumTracksInCollection() {
+            copyOnWrite();
+            ((ArtistCollectionDecorationPolicy) this.instance).clearNumTracksInCollection();
+            return this;
+        }
+
+        @Override // p.h01
+        public /* bridge */ /* synthetic */ Object clone() {
+            return super.clone();
+        }
+
+        @Override // com.spotify.cosmos.util.policy.proto.ArtistCollectionDecorationPolicyOrBuilder
+        public boolean getCanBan() {
+            return ((ArtistCollectionDecorationPolicy) this.instance).getCanBan();
+        }
+
+        @Override // com.spotify.cosmos.util.policy.proto.ArtistCollectionDecorationPolicyOrBuilder
+        public boolean getCollectionLink() {
+            return ((ArtistCollectionDecorationPolicy) this.instance).getCollectionLink();
+        }
+
+        @Override // p.h01, p.yj1
+        public /* bridge */ /* synthetic */ wj1 getDefaultInstanceForType() {
+            return super.getDefaultInstanceForType();
+        }
+
+        @Override // com.spotify.cosmos.util.policy.proto.ArtistCollectionDecorationPolicyOrBuilder
+        public boolean getIsBanned() {
+            return ((ArtistCollectionDecorationPolicy) this.instance).getIsBanned();
+        }
+
+        @Override // com.spotify.cosmos.util.policy.proto.ArtistCollectionDecorationPolicyOrBuilder
+        public boolean getIsFollowed() {
+            return ((ArtistCollectionDecorationPolicy) this.instance).getIsFollowed();
+        }
+
+        @Override // com.spotify.cosmos.util.policy.proto.ArtistCollectionDecorationPolicyOrBuilder
+        public boolean getNumAlbumsInCollection() {
+            return ((ArtistCollectionDecorationPolicy) this.instance).getNumAlbumsInCollection();
+        }
+
+        @Override // com.spotify.cosmos.util.policy.proto.ArtistCollectionDecorationPolicyOrBuilder
+        public boolean getNumExplicitlyLikedTracks() {
+            return ((ArtistCollectionDecorationPolicy) this.instance).getNumExplicitlyLikedTracks();
+        }
+
+        @Override // com.spotify.cosmos.util.policy.proto.ArtistCollectionDecorationPolicyOrBuilder
+        public boolean getNumTracksInCollection() {
+            return ((ArtistCollectionDecorationPolicy) this.instance).getNumTracksInCollection();
+        }
+
+        @Override // p.h01, p.r1
+        public /* bridge */ /* synthetic */ r1 internalMergeFrom(a aVar) {
+            return super.internalMergeFrom((i) aVar);
+        }
+
+        @Override // p.h01, p.r1
+        public /* bridge */ /* synthetic */ r1 mergeFrom(au auVar, rl0 rl0Var) {
+            return super.mergeFrom(auVar, rl0Var);
+        }
+
+        public Builder setCanBan(boolean z) {
+            copyOnWrite();
+            ((ArtistCollectionDecorationPolicy) this.instance).setCanBan(z);
+            return this;
+        }
+
+        public Builder setCollectionLink(boolean z) {
+            copyOnWrite();
+            ((ArtistCollectionDecorationPolicy) this.instance).setCollectionLink(z);
+            return this;
+        }
+
+        public Builder setIsBanned(boolean z) {
+            copyOnWrite();
+            ((ArtistCollectionDecorationPolicy) this.instance).setIsBanned(z);
+            return this;
+        }
+
+        public Builder setIsFollowed(boolean z) {
+            copyOnWrite();
+            ((ArtistCollectionDecorationPolicy) this.instance).setIsFollowed(z);
+            return this;
+        }
+
+        public Builder setNumAlbumsInCollection(boolean z) {
+            copyOnWrite();
+            ((ArtistCollectionDecorationPolicy) this.instance).setNumAlbumsInCollection(z);
+            return this;
+        }
+
+        public Builder setNumExplicitlyLikedTracks(boolean z) {
+            copyOnWrite();
+            ((ArtistCollectionDecorationPolicy) this.instance).setNumExplicitlyLikedTracks(z);
+            return this;
+        }
+
+        public Builder setNumTracksInCollection(boolean z) {
+            copyOnWrite();
+            ((ArtistCollectionDecorationPolicy) this.instance).setNumTracksInCollection(z);
+            return this;
+        }
+
+        private Builder() {
+            super(ArtistCollectionDecorationPolicy.DEFAULT_INSTANCE);
+        }
+
+        @Override // p.h01
+        public /* bridge */ /* synthetic */ r1 clone() {
+            return super.clone();
+        }
+
+        @Override // p.h01, p.r1
+        public /* bridge */ /* synthetic */ r1 mergeFrom(byte[] bArr, int i, int i2) {
+            return super.mergeFrom(bArr, i, i2);
+        }
+
+        @Override // p.h01
+        public /* bridge */ /* synthetic */ vj1 clone() {
+            return super.clone();
+        }
+
+        @Override // p.h01, p.r1
+        public /* bridge */ /* synthetic */ r1 mergeFrom(byte[] bArr, int i, int i2, rl0 rl0Var) {
+            return super.mergeFrom(bArr, i, i2, rl0Var);
+        }
+
+        public /* bridge */ /* synthetic */ vj1 mergeFrom(ByteString byteString) {
+            return super.mergeFrom(byteString);
+        }
+
+        public /* bridge */ /* synthetic */ vj1 mergeFrom(ByteString byteString, rl0 rl0Var) {
+            return super.mergeFrom(byteString, rl0Var);
+        }
+
+        public /* bridge */ /* synthetic */ vj1 mergeFrom(InputStream inputStream) {
+            return super.mergeFrom(inputStream);
+        }
+
+        public /* bridge */ /* synthetic */ vj1 mergeFrom(InputStream inputStream, rl0 rl0Var) {
+            return super.mergeFrom(inputStream, rl0Var);
+        }
+
+        public /* bridge */ /* synthetic */ vj1 mergeFrom(au auVar) {
+            return super.mergeFrom(auVar);
+        }
+
+        /* JADX INFO: renamed from: mergeFrom, reason: collision with other method in class */
+        public /* bridge */ /* synthetic */ vj1 m205mergeFrom(au auVar, rl0 rl0Var) {
+            return super.mergeFrom(auVar, rl0Var);
+        }
+
+        public /* bridge */ /* synthetic */ vj1 mergeFrom(wj1 wj1Var) {
+            return super.mergeFrom(wj1Var);
+        }
+
+        public /* bridge */ /* synthetic */ vj1 mergeFrom(byte[] bArr) {
+            return super.mergeFrom(bArr);
+        }
+
+        /* JADX INFO: renamed from: mergeFrom, reason: collision with other method in class */
+        public /* bridge */ /* synthetic */ vj1 m206mergeFrom(byte[] bArr, int i, int i2) {
+            return super.mergeFrom(bArr, i, i2);
+        }
+
+        /* JADX INFO: renamed from: mergeFrom, reason: collision with other method in class */
+        public /* bridge */ /* synthetic */ vj1 m207mergeFrom(byte[] bArr, int i, int i2, rl0 rl0Var) {
+            return super.mergeFrom(bArr, i, i2, rl0Var);
+        }
+
+        public /* bridge */ /* synthetic */ vj1 mergeFrom(byte[] bArr, rl0 rl0Var) {
+            return super.mergeFrom(bArr, rl0Var);
+        }
+    }
+
+    static {
+        ArtistCollectionDecorationPolicy artistCollectionDecorationPolicy = new ArtistCollectionDecorationPolicy();
+        DEFAULT_INSTANCE = artistCollectionDecorationPolicy;
+        i.registerDefaultInstance(ArtistCollectionDecorationPolicy.class, artistCollectionDecorationPolicy);
+    }
+
+    private ArtistCollectionDecorationPolicy() {
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public void clearCanBan() {
+        this.canBan_ = false;
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public void clearCollectionLink() {
+        this.collectionLink_ = false;
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public void clearIsBanned() {
+        this.isBanned_ = false;
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public void clearIsFollowed() {
+        this.isFollowed_ = false;
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public void clearNumAlbumsInCollection() {
+        this.numAlbumsInCollection_ = false;
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public void clearNumExplicitlyLikedTracks() {
+        this.numExplicitlyLikedTracks_ = false;
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public void clearNumTracksInCollection() {
+        this.numTracksInCollection_ = false;
+    }
+
+    public static ArtistCollectionDecorationPolicy getDefaultInstance() {
+        return DEFAULT_INSTANCE;
+    }
+
+    public static Builder newBuilder() {
+        return (Builder) DEFAULT_INSTANCE.createBuilder();
+    }
+
+    public static ArtistCollectionDecorationPolicy parseDelimitedFrom(InputStream inputStream) {
+        return (ArtistCollectionDecorationPolicy) i.parseDelimitedFrom(DEFAULT_INSTANCE, inputStream);
+    }
+
+    public static ArtistCollectionDecorationPolicy parseFrom(ByteBuffer byteBuffer) {
+        return (ArtistCollectionDecorationPolicy) i.parseFrom(DEFAULT_INSTANCE, byteBuffer);
+    }
+
+    public static ds1 parser() {
+        return DEFAULT_INSTANCE.getParserForType();
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public void setCanBan(boolean z) {
+        this.canBan_ = z;
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public void setCollectionLink(boolean z) {
+        this.collectionLink_ = z;
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public void setIsBanned(boolean z) {
+        this.isBanned_ = z;
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public void setIsFollowed(boolean z) {
+        this.isFollowed_ = z;
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public void setNumAlbumsInCollection(boolean z) {
+        this.numAlbumsInCollection_ = z;
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public void setNumExplicitlyLikedTracks(boolean z) {
+        this.numExplicitlyLikedTracks_ = z;
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public void setNumTracksInCollection(boolean z) {
+        this.numTracksInCollection_ = z;
+    }
+
+    @Override // com.google.protobuf.i
+    public final Object dynamicMethod(GeneratedMessageLite$MethodToInvoke generatedMessageLite$MethodToInvoke, Object obj, Object obj2) {
+        AnonymousClass1 anonymousClass1 = null;
+        switch (generatedMessageLite$MethodToInvoke.ordinal()) {
+            case 0:
+                return (byte) 1;
+            case 1:
+                return null;
+            case 2:
+                return i.newMessageInfo(DEFAULT_INSTANCE, "\u0000\u0007\u0000\u0000\u0001\b\u0007\u0000\u0000\u0000\u0001\u0007\u0002\u0007\u0003\u0007\u0004\u0007\u0005\u0007\u0006\u0007\b\u0007", new Object[]{"collectionLink_", "isFollowed_", "numTracksInCollection_", "numAlbumsInCollection_", "isBanned_", "canBan_", "numExplicitlyLikedTracks_"});
+            case 3:
+                return new ArtistCollectionDecorationPolicy();
+            case 4:
+                return new Builder(anonymousClass1);
+            case 5:
+                return DEFAULT_INSTANCE;
+            case 6:
+                ds1 i01Var = PARSER;
+                if (i01Var == null) {
+                    synchronized (ArtistCollectionDecorationPolicy.class) {
+                        try {
+                            i01Var = PARSER;
+                            if (i01Var == null) {
+                                i01Var = new i01(DEFAULT_INSTANCE);
+                                PARSER = i01Var;
+                            }
+                        } finally {
+                        }
+                        break;
+                    }
+                }
+                return i01Var;
+            default:
+                throw new UnsupportedOperationException();
+        }
+    }
+
+    @Override // com.spotify.cosmos.util.policy.proto.ArtistCollectionDecorationPolicyOrBuilder
+    public boolean getCanBan() {
+        return this.canBan_;
+    }
+
+    @Override // com.spotify.cosmos.util.policy.proto.ArtistCollectionDecorationPolicyOrBuilder
+    public boolean getCollectionLink() {
+        return this.collectionLink_;
+    }
+
+    @Override // com.google.protobuf.i, p.yj1
+    public /* bridge */ /* synthetic */ wj1 getDefaultInstanceForType() {
+        return super.getDefaultInstanceForType();
+    }
+
+    @Override // com.spotify.cosmos.util.policy.proto.ArtistCollectionDecorationPolicyOrBuilder
+    public boolean getIsBanned() {
+        return this.isBanned_;
+    }
+
+    @Override // com.spotify.cosmos.util.policy.proto.ArtistCollectionDecorationPolicyOrBuilder
+    public boolean getIsFollowed() {
+        return this.isFollowed_;
+    }
+
+    @Override // com.spotify.cosmos.util.policy.proto.ArtistCollectionDecorationPolicyOrBuilder
+    public boolean getNumAlbumsInCollection() {
+        return this.numAlbumsInCollection_;
+    }
+
+    @Override // com.spotify.cosmos.util.policy.proto.ArtistCollectionDecorationPolicyOrBuilder
+    public boolean getNumExplicitlyLikedTracks() {
+        return this.numExplicitlyLikedTracks_;
+    }
+
+    @Override // com.spotify.cosmos.util.policy.proto.ArtistCollectionDecorationPolicyOrBuilder
+    public boolean getNumTracksInCollection() {
+        return this.numTracksInCollection_;
+    }
+
+    @Override // com.google.protobuf.i, p.wj1
+    public /* bridge */ /* synthetic */ vj1 newBuilderForType() {
+        return super.newBuilderForType();
+    }
+
+    public /* bridge */ /* synthetic */ vj1 toBuilder() {
+        return super.toBuilder();
+    }
+
+    public static Builder newBuilder(ArtistCollectionDecorationPolicy artistCollectionDecorationPolicy) {
+        return (Builder) DEFAULT_INSTANCE.createBuilder(artistCollectionDecorationPolicy);
+    }
+
+    public static ArtistCollectionDecorationPolicy parseDelimitedFrom(InputStream inputStream, rl0 rl0Var) {
+        return (ArtistCollectionDecorationPolicy) i.parseDelimitedFrom(DEFAULT_INSTANCE, inputStream, rl0Var);
+    }
+
+    public static ArtistCollectionDecorationPolicy parseFrom(ByteBuffer byteBuffer, rl0 rl0Var) {
+        return (ArtistCollectionDecorationPolicy) i.parseFrom(DEFAULT_INSTANCE, byteBuffer, rl0Var);
+    }
+
+    public static ArtistCollectionDecorationPolicy parseFrom(ByteString byteString) {
+        return (ArtistCollectionDecorationPolicy) i.parseFrom(DEFAULT_INSTANCE, byteString);
+    }
+
+    public static ArtistCollectionDecorationPolicy parseFrom(ByteString byteString, rl0 rl0Var) {
+        return (ArtistCollectionDecorationPolicy) i.parseFrom(DEFAULT_INSTANCE, byteString, rl0Var);
+    }
+
+    public static ArtistCollectionDecorationPolicy parseFrom(byte[] bArr) {
+        return (ArtistCollectionDecorationPolicy) i.parseFrom(DEFAULT_INSTANCE, bArr);
+    }
+
+    public static ArtistCollectionDecorationPolicy parseFrom(byte[] bArr, rl0 rl0Var) {
+        return (ArtistCollectionDecorationPolicy) i.parseFrom(DEFAULT_INSTANCE, bArr, rl0Var);
+    }
+
+    public static ArtistCollectionDecorationPolicy parseFrom(InputStream inputStream) {
+        return (ArtistCollectionDecorationPolicy) i.parseFrom(DEFAULT_INSTANCE, inputStream);
+    }
+
+    public static ArtistCollectionDecorationPolicy parseFrom(InputStream inputStream, rl0 rl0Var) {
+        return (ArtistCollectionDecorationPolicy) i.parseFrom(DEFAULT_INSTANCE, inputStream, rl0Var);
+    }
+
+    public static ArtistCollectionDecorationPolicy parseFrom(au auVar) {
+        return (ArtistCollectionDecorationPolicy) i.parseFrom(DEFAULT_INSTANCE, auVar);
+    }
+
+    public static ArtistCollectionDecorationPolicy parseFrom(au auVar, rl0 rl0Var) {
+        return (ArtistCollectionDecorationPolicy) i.parseFrom(DEFAULT_INSTANCE, auVar, rl0Var);
+    }
+}

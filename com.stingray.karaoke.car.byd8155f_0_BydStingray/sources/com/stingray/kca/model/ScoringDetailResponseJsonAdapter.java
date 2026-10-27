@@ -1,0 +1,105 @@
+package com.stingray.kca.model;
+
+import A7.m;
+import E5.H;
+import E5.q;
+import E5.u;
+import E5.x;
+import G5.f;
+import h2.AbstractC1347d;
+import io.sentry.C1489n1;
+import java.lang.reflect.Constructor;
+import java.lang.reflect.InvocationTargetException;
+import kotlin.Metadata;
+import n7.w;
+
+/* JADX INFO: loaded from: classes.dex */
+@Metadata(d1 = {"\u0000\u0014\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0004\u0018\u00002\b\u0012\u0004\u0012\u00020\u00020\u0001B\u000f\u0012\u0006\u0010\u0004\u001a\u00020\u0003¢\u0006\u0004\b\u0005\u0010\u0006¨\u0006\u0007"}, d2 = {"Lcom/stingray/kca/model/ScoringDetailResponseJsonAdapter;", "LE5/q;", "Lcom/stingray/kca/model/ScoringDetailResponse;", "LE5/H;", "moshi", "<init>", "(LE5/H;)V", "kca-v2_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
+public final class ScoringDetailResponseJsonAdapter extends q {
+
+    /* JADX INFO: renamed from: a, reason: collision with root package name */
+    public final C1489n1 f13204a;
+
+    /* JADX INFO: renamed from: b, reason: collision with root package name */
+    public final q f13205b;
+    public final q c;
+    public volatile Constructor d;
+
+    public ScoringDetailResponseJsonAdapter(H h10) {
+        m.f(h10, "moshi");
+        this.f13204a = C1489n1.z("points", "accuracy", "streak", "scorePercentage");
+        w wVar = w.l;
+        this.f13205b = h10.c(Integer.class, wVar, "points");
+        this.c = h10.c(Float.class, wVar, "accuracy");
+    }
+
+    @Override // E5.q
+    public final Object a(u uVar) throws IllegalAccessException, NoSuchMethodException, InstantiationException, InvocationTargetException {
+        m.f(uVar, "reader");
+        uVar.g();
+        Integer num = null;
+        Float f10 = null;
+        Integer num2 = null;
+        Float f11 = null;
+        int i7 = -1;
+        while (uVar.m()) {
+            int iF = uVar.F(this.f13204a);
+            if (iF == -1) {
+                uVar.I();
+                uVar.K();
+            } else if (iF == 0) {
+                num = (Integer) this.f13205b.a(uVar);
+                i7 &= -2;
+            } else if (iF == 1) {
+                f10 = (Float) this.c.a(uVar);
+                i7 &= -3;
+            } else if (iF == 2) {
+                num2 = (Integer) this.f13205b.a(uVar);
+                i7 &= -5;
+            } else if (iF == 3) {
+                f11 = (Float) this.c.a(uVar);
+                i7 &= -9;
+            }
+        }
+        uVar.j();
+        if (i7 == -16) {
+            return new ScoringDetailResponse(num, f10, num2, f11);
+        }
+        Constructor declaredConstructor = this.d;
+        if (declaredConstructor == null) {
+            declaredConstructor = ScoringDetailResponse.class.getDeclaredConstructor(Integer.class, Float.class, Integer.class, Float.class, Integer.TYPE, f.c);
+            this.d = declaredConstructor;
+            m.e(declaredConstructor, "also(...)");
+        }
+        Object objNewInstance = declaredConstructor.newInstance(num, f10, num2, f11, Integer.valueOf(i7), null);
+        m.e(objNewInstance, "newInstance(...)");
+        return (ScoringDetailResponse) objNewInstance;
+    }
+
+    @Override // E5.q
+    public final void d(x xVar, Object obj) {
+        ScoringDetailResponse scoringDetailResponse = (ScoringDetailResponse) obj;
+        m.f(xVar, "writer");
+        if (scoringDetailResponse == null) {
+            throw new NullPointerException("value_ was null! Wrap in .nullSafe() to write nullable values.");
+        }
+        xVar.g();
+        xVar.k("points");
+        Integer num = scoringDetailResponse.f13202a;
+        q qVar = this.f13205b;
+        qVar.d(xVar, num);
+        xVar.k("accuracy");
+        Float f10 = scoringDetailResponse.f13203b;
+        q qVar2 = this.c;
+        qVar2.d(xVar, f10);
+        xVar.k("streak");
+        qVar.d(xVar, scoringDetailResponse.c);
+        xVar.k("scorePercentage");
+        qVar2.d(xVar, scoringDetailResponse.d);
+        xVar.i();
+    }
+
+    public final String toString() {
+        return AbstractC1347d.g(43, "GeneratedJsonAdapter(ScoringDetailResponse)");
+    }
+}

@@ -1,0 +1,4 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/renderscript/ProgramRaster$Builder;-><init>(Landroid/renderscript/RenderScript;)V,frameworks/base/rs/java/android/renderscript/ProgramRaster.java,129,9,129,29,
+Landroid/renderscript/ProgramRaster$Builder;->setPointSpriteEnabled(Z)Landroid/renderscript/ProgramRaster$Builder;,frameworks/base/rs/java/android/renderscript/ProgramRaster.java,139,9,139,29,
+Landroid/renderscript/ProgramRaster$Builder;->create()Landroid/renderscript/ProgramRaster;,frameworks/base/rs/java/android/renderscript/ProgramRaster.java,156,9,156,29,

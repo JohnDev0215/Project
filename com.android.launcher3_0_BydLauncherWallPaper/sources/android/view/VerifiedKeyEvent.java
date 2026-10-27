@@ -1,0 +1,142 @@
+package android.view;
+
+import android.annotation.SuppressLint;
+import android.os.Parcel;
+import android.os.Parcelable;
+import com.android.internal.util.AnnotationValidations;
+import java.lang.annotation.Annotation;
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
+
+/* JADX INFO: loaded from: classes3.dex */
+public final class VerifiedKeyEvent extends VerifiedInputEvent implements Parcelable {
+    public static final Parcelable.Creator<VerifiedKeyEvent> CREATOR = new Parcelable.Creator<VerifiedKeyEvent>() { // from class: android.view.VerifiedKeyEvent.1
+        /* JADX WARN: Can't rename method to resolve collision */
+        @Override // android.os.Parcelable.Creator
+        public VerifiedKeyEvent[] newArray(int i) {
+            return new VerifiedKeyEvent[i];
+        }
+
+        /* JADX WARN: Can't rename method to resolve collision */
+        @Override // android.os.Parcelable.Creator
+        public VerifiedKeyEvent createFromParcel(Parcel parcel) {
+            return new VerifiedKeyEvent(parcel);
+        }
+    };
+    private static final String TAG = "VerifiedKeyEvent";
+    private int mAction;
+    private long mDownTimeNanos;
+    private int mFlags;
+    private int mKeyCode;
+    private int mMetaState;
+    private int mRepeatCount;
+    private int mScanCode;
+
+    @Retention(RetentionPolicy.SOURCE)
+    public @interface KeyEventAction {
+    }
+
+    @Deprecated
+    private void __metadata() {
+    }
+
+    @Override // android.view.VerifiedInputEvent, android.os.Parcelable
+    public int describeContents() {
+        return 0;
+    }
+
+    public Boolean getFlag(int i) {
+        if (i != 32) {
+            return null;
+        }
+        return Boolean.valueOf((this.mFlags & i) != 0);
+    }
+
+    public VerifiedKeyEvent(int i, long j, int i2, int i3, int i4, long j2, int i5, int i6, int i7, int i8, int i9) {
+        super(1, i, j, i2, i3);
+        this.mAction = i4;
+        AnnotationValidations.validate((Class<? extends Annotation>) KeyEventAction.class, (Annotation) null, i4);
+        this.mDownTimeNanos = j2;
+        AnnotationValidations.validate((Class<? extends Annotation>) SuppressLint.class, (Annotation) null, Long.valueOf(j2), "value", "MethodNameUnits");
+        this.mFlags = i5;
+        this.mKeyCode = i6;
+        this.mScanCode = i7;
+        this.mMetaState = i8;
+        this.mRepeatCount = i9;
+    }
+
+    public int getAction() {
+        return this.mAction;
+    }
+
+    public long getDownTimeNanos() {
+        return this.mDownTimeNanos;
+    }
+
+    public int getFlags() {
+        return this.mFlags;
+    }
+
+    public int getKeyCode() {
+        return this.mKeyCode;
+    }
+
+    public int getScanCode() {
+        return this.mScanCode;
+    }
+
+    public int getMetaState() {
+        return this.mMetaState;
+    }
+
+    public int getRepeatCount() {
+        return this.mRepeatCount;
+    }
+
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null || getClass() != obj.getClass()) {
+            return false;
+        }
+        VerifiedKeyEvent verifiedKeyEvent = (VerifiedKeyEvent) obj;
+        return getDeviceId() == verifiedKeyEvent.getDeviceId() && getEventTimeNanos() == verifiedKeyEvent.getEventTimeNanos() && getSource() == verifiedKeyEvent.getSource() && getDisplayId() == verifiedKeyEvent.getDisplayId() && this.mAction == verifiedKeyEvent.mAction && this.mDownTimeNanos == verifiedKeyEvent.mDownTimeNanos && this.mFlags == verifiedKeyEvent.mFlags && this.mKeyCode == verifiedKeyEvent.mKeyCode && this.mScanCode == verifiedKeyEvent.mScanCode && this.mMetaState == verifiedKeyEvent.mMetaState && this.mRepeatCount == verifiedKeyEvent.mRepeatCount;
+    }
+
+    public int hashCode() {
+        return ((((((((((((((((((((getDeviceId() + 31) * 31) + Long.hashCode(getEventTimeNanos())) * 31) + getSource()) * 31) + getDisplayId()) * 31) + this.mAction) * 31) + Long.hashCode(this.mDownTimeNanos)) * 31) + this.mFlags) * 31) + this.mKeyCode) * 31) + this.mScanCode) * 31) + this.mMetaState) * 31) + this.mRepeatCount;
+    }
+
+    @Override // android.view.VerifiedInputEvent, android.os.Parcelable
+    public void writeToParcel(Parcel parcel, int i) {
+        super.writeToParcel(parcel, i);
+        parcel.writeInt(this.mAction);
+        parcel.writeLong(this.mDownTimeNanos);
+        parcel.writeInt(this.mFlags);
+        parcel.writeInt(this.mKeyCode);
+        parcel.writeInt(this.mScanCode);
+        parcel.writeInt(this.mMetaState);
+        parcel.writeInt(this.mRepeatCount);
+    }
+
+    VerifiedKeyEvent(Parcel parcel) {
+        super(parcel, 1);
+        int i = parcel.readInt();
+        long j = parcel.readLong();
+        int i2 = parcel.readInt();
+        int i3 = parcel.readInt();
+        int i4 = parcel.readInt();
+        int i5 = parcel.readInt();
+        int i6 = parcel.readInt();
+        this.mAction = i;
+        AnnotationValidations.validate((Class<? extends Annotation>) KeyEventAction.class, (Annotation) null, i);
+        this.mDownTimeNanos = j;
+        AnnotationValidations.validate((Class<? extends Annotation>) SuppressLint.class, (Annotation) null, Long.valueOf(j), "value", "MethodNameUnits");
+        this.mFlags = i2;
+        this.mKeyCode = i3;
+        this.mScanCode = i4;
+        this.mMetaState = i5;
+        this.mRepeatCount = i6;
+    }
+}

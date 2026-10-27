@@ -1,0 +1,3 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/location/IGeocodeProvider;->getFromLocation(DDILandroid/location/GeocoderParams;Ljava/util/List;)Ljava/lang/String;,frameworks/base/location/java/android/location/IGeocodeProvider.aidl,29,1,29,25,
+Landroid/location/IGeocodeProvider;->getFromLocationName(Ljava/lang/String;DDDDILandroid/location/GeocoderParams;Ljava/util/List;)Ljava/lang/String;,frameworks/base/location/java/android/location/IGeocodeProvider.aidl,33,1,33,25,

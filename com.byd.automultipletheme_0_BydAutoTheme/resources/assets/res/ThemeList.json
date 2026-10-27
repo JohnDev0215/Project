@@ -1,0 +1,440 @@
+﻿[
+  {
+    "rsName": "默认",
+    "rsId": 100000010,
+    "dirName": "默认主题",
+    "imgUrl": {
+      "dynasty": {
+        "land": [
+          "file:///android_asset/res/theme/100000010/dynasty/preview/land/light/widget.jpg",
+          "file:///android_asset/res/theme/100000010/dynasty/preview/land/dark/widget.jpg",
+          "file:///android_asset/res/theme/100000010/dynasty/preview/land/light/fashMeter.png",
+          "file:///android_asset/res/theme/100000010/dynasty/preview/land/light/techMeter.png",
+          "file:///android_asset/res/theme/100000010/dynasty/preview/land/dark/fashMeter.png",
+          "file:///android_asset/res/theme/100000010/dynasty/preview/land/dark/techMeter.png"
+        ],
+        "port": [
+          "file:///android_asset/res/theme/100000010/dynasty/preview/port/light/widget.jpg",
+          "file:///android_asset/res/theme/100000010/dynasty/preview/port/dark/widget.jpg",
+          "file:///android_asset/res/theme/100000010/dynasty/preview/port/light/fashMeter.png",
+          "file:///android_asset/res/theme/100000010/dynasty/preview/port/light/techMeter.png",
+          "file:///android_asset/res/theme/100000010/dynasty/preview/port/dark/fashMeter.png",
+          "file:///android_asset/res/theme/100000010/dynasty/preview/port/dark/techMeter.png"
+        ],
+        "wallpaper": {
+          "land": [
+            "file:///android_asset/res/theme/100000010/dynasty/wallpaper/land/light/wallpaper.png",
+            "file:///android_asset/res/theme/100000010/dynasty/wallpaper/land/dark/wallpaper.png"
+          ],
+          "port": [
+            "file:///android_asset/res/theme/100000010/dynasty/wallpaper/port/light/wallpaper.png",
+            "file:///android_asset/res/theme/100000010/dynasty/wallpaper/port/dark/wallpaper.png"
+          ]
+        }
+      },
+      "ocean": {
+        "land": [
+          "file:///android_asset/res/theme/100000010/dynasty/preview/land/light/widget.jpg",
+          "file:///android_asset/res/theme/100000010/dynasty/preview/land/dark/widget.jpg"
+        ],
+        "port": [
+          "file:///android_asset/res/theme/100000010/dynasty/preview/port/light/widget.jpg",
+          "file:///android_asset/res/theme/100000010/dynasty/preview/port/dark/widget.jpg"
+        ],
+        "wallpaper": {
+          "land": [
+            "file:///android_asset/res/theme/100000010/dynasty/wallpaper/land/light/wallpaper.png",
+            "file:///android_asset/res/theme/100000010/dynasty/wallpaper/land/dark/wallpaper.png"
+          ],
+          "port": [
+            "file:///android_asset/res/theme/100000010/dynasty/wallpaper/port/light/wallpaper.png",
+            "file:///android_asset/res/theme/100000010/dynasty/wallpaper/port/dark/wallpaper.png"
+          ]
+        }
+      },
+      "denza": {
+        "land": [
+          "file:///android_asset/res/theme/100000010/dynasty/preview/land/dark/widget.jpg"
+        ],
+        "port": [
+          "file:///android_asset/res/theme/100000010/dynasty/preview/port/dark/widget.jpg"
+        ],
+        "wallpaper": {
+          "land": [
+            "file:///android_asset/res/theme/100000010/dynasty/wallpaper/land/light/wallpaper.png",
+            "file:///android_asset/res/theme/100000010/dynasty/wallpaper/land/dark/wallpaper.png"
+          ],
+          "port": [
+            "file:///android_asset/res/theme/100000010/dynasty/wallpaper/port/light/wallpaper.png",
+            "file:///android_asset/res/theme/100000010/dynasty/wallpaper/port/dark/wallpaper.png"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "rsName": "CityNext",
+    "rsId": 100000011,
+    "dirName": "2D轻质感",
+    "imgUrl": {
+      "dynasty": {
+        "land": [
+          "file:///android_asset/res/theme/100000011/dynasty/preview/land/light/widget.jpg",
+          "file:///android_asset/res/theme/100000011/dynasty/preview/land/dark/widget.jpg",
+          "file:///android_asset/res/theme/100000011/dynasty/preview/land/light/fashMeter.png",
+          "file:///android_asset/res/theme/100000011/dynasty/preview/land/light/techMeter.png",
+          "file:///android_asset/res/theme/100000011/dynasty/preview/land/dark/fashMeter.png",
+          "file:///android_asset/res/theme/100000011/dynasty/preview/land/dark/techMeter.png"
+        ],
+        "port": [
+          "file:///android_asset/res/theme/100000011/dynasty/preview/port/light/widget.jpg",
+          "file:///android_asset/res/theme/100000011/dynasty/preview/port/dark/widget.jpg",
+          "file:///android_asset/res/theme/100000011/dynasty/preview/port/light/fashMeter.png",
+          "file:///android_asset/res/theme/100000011/dynasty/preview/port/light/techMeter.png",
+          "file:///android_asset/res/theme/100000011/dynasty/preview/port/dark/fashMeter.png",
+          "file:///android_asset/res/theme/100000011/dynasty/preview/port/dark/techMeter.png"
+        ],
+        "wallpaper": {
+          "land": [
+            "file:///android_asset/res/theme/100000011/dynasty/wallpaper/land/light/wallpaper.png",
+            "file:///android_asset/res/theme/100000011/dynasty/wallpaper/land/dark/wallpaper.png"
+          ],
+          "port": [
+            "file:///android_asset/res/theme/100000011/dynasty/wallpaper/port/light/wallpaper.png",
+            "file:///android_asset/res/theme/100000011/dynasty/wallpaper/port/dark/wallpaper.png"
+          ]
+        }
+      },
+      "ocean": {
+        "land": [
+          "file:///android_asset/res/theme/100000011/dynasty/preview/land/light/widget.jpg",
+          "file:///android_asset/res/theme/100000011/dynasty/preview/land/dark/widget.jpg"
+        ],
+        "port": [
+          "file:///android_asset/res/theme/100000011/dynasty/preview/port/light/widget.jpg",
+          "file:///android_asset/res/theme/100000011/dynasty/preview/port/dark/widget.jpg"
+        ],
+        "wallpaper": {
+          "land": [
+            "file:///android_asset/res/theme/100000011/dynasty/wallpaper/land/light/wallpaper.png",
+            "file:///android_asset/res/theme/100000011/dynasty/wallpaper/land/dark/wallpaper.png"
+          ],
+          "port": [
+            "file:///android_asset/res/theme/100000011/dynasty/wallpaper/port/light/wallpaper.png",
+            "file:///android_asset/res/theme/100000011/dynasty/wallpaper/port/dark/wallpaper.png"
+          ]
+        }
+      },
+      "denza": {
+        "land": [
+          "file:///android_asset/res/theme/100000011/dynasty/preview/land/dark/widget.jpg"
+        ],
+        "port": [
+          "file:///android_asset/res/theme/100000011/dynasty/preview/port/dark/widget.jpg"
+        ],
+        "wallpaper": {
+          "land": [
+            "file:///android_asset/res/theme/100000011/dynasty/wallpaper/land/light/wallpaper.png",
+            "file:///android_asset/res/theme/100000011/dynasty/wallpaper/land/dark/wallpaper.png"
+          ],
+          "port": [
+            "file:///android_asset/res/theme/100000011/dynasty/wallpaper/port/light/wallpaper.png",
+            "file:///android_asset/res/theme/100000011/dynasty/wallpaper/port/dark/wallpaper.png"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "rsName": "Space",
+    "rsId": 100000012,
+    "dirName": "宁静空间",
+    "imgUrl": {
+      "dynasty": {
+        "land": [
+          "file:///android_asset/res/theme/100000012/dynasty/preview/land/light/widget.jpg",
+          "file:///android_asset/res/theme/100000012/dynasty/preview/land/dark/widget.jpg",
+          "file:///android_asset/res/theme/100000012/dynasty/preview/land/light/fashMeter.png",
+          "file:///android_asset/res/theme/100000012/dynasty/preview/land/light/techMeter.png",
+          "file:///android_asset/res/theme/100000012/dynasty/preview/land/dark/fashMeter.png",
+          "file:///android_asset/res/theme/100000012/dynasty/preview/land/dark/techMeter.png"
+        ],
+        "port": [
+          "file:///android_asset/res/theme/100000012/dynasty/preview/port/light/widget.jpg",
+          "file:///android_asset/res/theme/100000012/dynasty/preview/port/dark/widget.jpg",
+          "file:///android_asset/res/theme/100000012/dynasty/preview/port/light/fashMeter.png",
+          "file:///android_asset/res/theme/100000012/dynasty/preview/port/light/techMeter.png",
+          "file:///android_asset/res/theme/100000012/dynasty/preview/port/dark/fashMeter.png",
+          "file:///android_asset/res/theme/100000012/dynasty/preview/port/dark/techMeter.png"
+        ],
+        "wallpaper": {
+          "land": [
+            "file:///android_asset/res/theme/100000012/dynasty/wallpaper/land/light/wallpaper.png",
+            "file:///android_asset/res/theme/100000012/dynasty/wallpaper/land/dark/wallpaper.png"
+          ],
+          "port": [
+            "file:///android_asset/res/theme/100000012/dynasty/wallpaper/port/light/wallpaper.png",
+            "file:///android_asset/res/theme/100000012/dynasty/wallpaper/port/dark/wallpaper.png"
+          ]
+        }
+      },
+      "ocean": {
+        "land": [
+          "file:///android_asset/res/theme/100000012/dynasty/preview/land/light/widget.jpg",
+          "file:///android_asset/res/theme/100000012/dynasty/preview/land/dark/widget.jpg"
+        ],
+        "port": [
+          "file:///android_asset/res/theme/100000012/dynasty/preview/port/light/widget.jpg",
+          "file:///android_asset/res/theme/100000012/dynasty/preview/port/dark/widget.jpg"
+        ],
+        "wallpaper": {
+          "land": [
+            "file:///android_asset/res/theme/100000012/dynasty/wallpaper/land/light/wallpaper.png",
+            "file:///android_asset/res/theme/100000012/dynasty/wallpaper/land/dark/wallpaper.png"
+          ],
+          "port": [
+            "file:///android_asset/res/theme/100000012/dynasty/wallpaper/port/light/wallpaper.png",
+            "file:///android_asset/res/theme/100000012/dynasty/wallpaper/port/dark/wallpaper.png"
+          ]
+        }
+      },
+      "denza": {
+        "land": [
+          "file:///android_asset/res/theme/100000012/dynasty/preview/land/dark/widget.jpg"
+        ],
+        "port": [
+          "file:///android_asset/res/theme/100000012/dynasty/preview/port/dark/widget.jpg"
+        ],
+        "wallpaper": {
+          "land": [
+            "file:///android_asset/res/theme/100000012/dynasty/wallpaper/land/light/wallpaper.png",
+            "file:///android_asset/res/theme/100000012/dynasty/wallpaper/land/dark/wallpaper.png"
+          ],
+          "port": [
+            "file:///android_asset/res/theme/100000012/dynasty/wallpaper/port/light/wallpaper.png",
+            "file:///android_asset/res/theme/100000012/dynasty/wallpaper/port/dark/wallpaper.png"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "rsName": "Galaxy",
+    "rsId": 100000013,
+    "dirName": "未来",
+    "imgUrl": {
+      "dynasty": {
+        "land": [
+          "file:///android_asset/res/theme/100000013/dynasty/preview/land/light/widget.jpg",
+          "file:///android_asset/res/theme/100000013/dynasty/preview/land/dark/widget.jpg",
+          "file:///android_asset/res/theme/100000013/dynasty/preview/land/light/fashMeter.png",
+          "file:///android_asset/res/theme/100000013/dynasty/preview/land/light/techMeter.png",
+          "file:///android_asset/res/theme/100000013/dynasty/preview/land/dark/fashMeter.png",
+          "file:///android_asset/res/theme/100000013/dynasty/preview/land/dark/techMeter.png"
+        ],
+        "port": [
+          "file:///android_asset/res/theme/100000013/dynasty/preview/port/light/widget.jpg",
+          "file:///android_asset/res/theme/100000013/dynasty/preview/port/dark/widget.jpg",
+          "file:///android_asset/res/theme/100000013/dynasty/preview/port/light/fashMeter.png",
+          "file:///android_asset/res/theme/100000013/dynasty/preview/port/light/techMeter.png",
+          "file:///android_asset/res/theme/100000013/dynasty/preview/port/dark/fashMeter.png",
+          "file:///android_asset/res/theme/100000013/dynasty/preview/port/dark/techMeter.png"
+        ],
+        "wallpaper": {
+          "land": [
+            "file:///android_asset/res/theme/100000013/dynasty/wallpaper/land/light/wallpaper.png",
+            "file:///android_asset/res/theme/100000013/dynasty/wallpaper/land/dark/wallpaper.png"
+          ],
+          "port": [
+            "file:///android_asset/res/theme/100000013/dynasty/wallpaper/port/light/wallpaper.png",
+            "file:///android_asset/res/theme/100000013/dynasty/wallpaper/port/dark/wallpaper.png"
+          ]
+        }
+      },
+      "ocean": {
+        "land": [
+          "file:///android_asset/res/theme/100000013/dynasty/preview/land/light/widget.jpg",
+          "file:///android_asset/res/theme/100000013/dynasty/preview/land/dark/widget.jpg"
+        ],
+        "port": [
+          "file:///android_asset/res/theme/100000013/dynasty/preview/port/light/widget.jpg",
+          "file:///android_asset/res/theme/100000013/dynasty/preview/port/dark/widget.jpg"
+        ],
+        "wallpaper": {
+          "land": [
+            "file:///android_asset/res/theme/100000013/dynasty/wallpaper/land/light/wallpaper.png",
+            "file:///android_asset/res/theme/100000013/dynasty/wallpaper/land/dark/wallpaper.png"
+          ],
+          "port": [
+            "file:///android_asset/res/theme/100000013/dynasty/wallpaper/port/light/wallpaper.png",
+            "file:///android_asset/res/theme/100000013/dynasty/wallpaper/port/dark/wallpaper.png"
+          ]
+        }
+      },
+      "denza": {
+        "land": [
+          "file:///android_asset/res/theme/100000013/dynasty/preview/land/dark/widget.jpg"
+        ],
+        "port": [
+          "file:///android_asset/res/theme/100000013/dynasty/preview/port/dark/widget.jpg"
+        ],
+        "wallpaper": {
+          "land": [
+            "file:///android_asset/res/theme/100000013/dynasty/wallpaper/land/light/wallpaper.png",
+            "file:///android_asset/res/theme/100000013/dynasty/wallpaper/land/dark/wallpaper.png"
+          ],
+          "port": [
+            "file:///android_asset/res/theme/100000013/dynasty/wallpaper/port/light/wallpaper.png",
+            "file:///android_asset/res/theme/100000013/dynasty/wallpaper/port/dark/wallpaper.png"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "rsName": "Hard Edge",
+    "rsId": 100000014,
+    "dirName": "硬材质边缘",
+    "imgUrl": {
+      "dynasty": {
+        "land": [
+          "file:///android_asset/res/theme/100000014/dynasty/preview/land/light/widget.jpg",
+          "file:///android_asset/res/theme/100000014/dynasty/preview/land/dark/widget.jpg",
+          "file:///android_asset/res/theme/100000014/dynasty/preview/land/light/fashMeter.png",
+          "file:///android_asset/res/theme/100000014/dynasty/preview/land/light/techMeter.png",
+          "file:///android_asset/res/theme/100000014/dynasty/preview/land/dark/fashMeter.png",
+          "file:///android_asset/res/theme/100000014/dynasty/preview/land/dark/techMeter.png"
+        ],
+        "port": [
+          "file:///android_asset/res/theme/100000014/dynasty/preview/port/light/widget.jpg",
+          "file:///android_asset/res/theme/100000014/dynasty/preview/port/dark/widget.jpg",
+          "file:///android_asset/res/theme/100000014/dynasty/preview/port/light/fashMeter.png",
+          "file:///android_asset/res/theme/100000014/dynasty/preview/port/light/techMeter.png",
+          "file:///android_asset/res/theme/100000014/dynasty/preview/port/dark/fashMeter.png",
+          "file:///android_asset/res/theme/100000014/dynasty/preview/port/dark/techMeter.png"
+        ],
+        "wallpaper": {
+          "land": [
+            "file:///android_asset/res/theme/100000014/dynasty/wallpaper/land/light/wallpaper.png",
+            "file:///android_asset/res/theme/100000014/dynasty/wallpaper/land/dark/wallpaper.png"
+          ],
+          "port": [
+            "file:///android_asset/res/theme/100000014/dynasty/wallpaper/port/light/wallpaper.png",
+            "file:///android_asset/res/theme/100000014/dynasty/wallpaper/port/dark/wallpaper.png"
+          ]
+        }
+      },
+      "ocean": {
+        "land": [
+          "file:///android_asset/res/theme/100000014/dynasty/preview/land/light/widget.jpg",
+          "file:///android_asset/res/theme/100000014/dynasty/preview/land/dark/widget.jpg"
+        ],
+        "port": [
+          "file:///android_asset/res/theme/100000014/dynasty/preview/port/light/widget.jpg",
+          "file:///android_asset/res/theme/100000014/dynasty/preview/port/dark/widget.jpg"
+        ],
+        "wallpaper": {
+          "land": [
+            "file:///android_asset/res/theme/100000014/dynasty/wallpaper/land/light/wallpaper.png",
+            "file:///android_asset/res/theme/100000014/dynasty/wallpaper/land/dark/wallpaper.png"
+          ],
+          "port": [
+            "file:///android_asset/res/theme/100000014/dynasty/wallpaper/port/light/wallpaper.png",
+            "file:///android_asset/res/theme/100000014/dynasty/wallpaper/port/dark/wallpaper.png"
+          ]
+        }
+      },
+      "denza": {
+        "land": [
+          "file:///android_asset/res/theme/100000014/dynasty/preview/land/dark/widget.jpg"
+        ],
+        "port": [
+          "file:///android_asset/res/theme/100000014/dynasty/preview/port/dark/widget.jpg"
+        ],
+        "wallpaper": {
+          "land": [
+            "file:///android_asset/res/theme/100000014/dynasty/wallpaper/land/light/wallpaper.png",
+            "file:///android_asset/res/theme/100000014/dynasty/wallpaper/land/dark/wallpaper.png"
+          ],
+          "port": [
+            "file:///android_asset/res/theme/100000014/dynasty/wallpaper/port/light/wallpaper.png",
+            "file:///android_asset/res/theme/100000014/dynasty/wallpaper/port/dark/wallpaper.png"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "rsName": "Ocean",
+    "rsId": 100000015,
+    "dirName": "主题 05",
+    "imgUrl": {
+      "dynasty": {
+        "land": [
+          "file:///android_asset/res/theme/100000015/dynasty/preview/land/light/widget.jpg",
+          "file:///android_asset/res/theme/100000015/dynasty/preview/land/dark/widget.jpg",
+          "file:///android_asset/res/theme/100000015/dynasty/preview/land/light/fashMeter.png",
+          "file:///android_asset/res/theme/100000015/dynasty/preview/land/light/techMeter.png",
+          "file:///android_asset/res/theme/100000015/dynasty/preview/land/dark/fashMeter.png",
+          "file:///android_asset/res/theme/100000015/dynasty/preview/land/dark/techMeter.png"
+        ],
+        "port": [
+          "file:///android_asset/res/theme/100000015/dynasty/preview/port/light/widget.jpg",
+          "file:///android_asset/res/theme/100000015/dynasty/preview/port/dark/widget.jpg",
+          "file:///android_asset/res/theme/100000015/dynasty/preview/port/light/fashMeter.png",
+          "file:///android_asset/res/theme/100000015/dynasty/preview/port/light/techMeter.png",
+          "file:///android_asset/res/theme/100000015/dynasty/preview/port/dark/fashMeter.png",
+          "file:///android_asset/res/theme/100000015/dynasty/preview/port/dark/techMeter.png"
+        ],
+        "wallpaper": {
+          "land": [
+            "file:///android_asset/res/theme/100000015/dynasty/wallpaper/land/light/wallpaper.png",
+            "file:///android_asset/res/theme/100000015/dynasty/wallpaper/land/dark/wallpaper.png"
+          ],
+          "port": [
+            "file:///android_asset/res/theme/100000015/dynasty/wallpaper/port/light/wallpaper.png",
+            "file:///android_asset/res/theme/100000015/dynasty/wallpaper/port/dark/wallpaper.png"
+          ]
+        }
+      },
+      "ocean": {
+        "land": [
+          "file:///android_asset/res/theme/100000015/dynasty/preview/land/light/widget.jpg",
+          "file:///android_asset/res/theme/100000015/dynasty/preview/land/dark/widget.jpg"
+        ],
+        "port": [
+          "file:///android_asset/res/theme/100000015/dynasty/preview/port/light/widget.jpg",
+          "file:///android_asset/res/theme/100000015/dynasty/preview/port/dark/widget.jpg"
+        ],
+        "wallpaper": {
+          "land": [
+            "file:///android_asset/res/theme/100000015/dynasty/wallpaper/land/light/wallpaper.png",
+            "file:///android_asset/res/theme/100000015/dynasty/wallpaper/land/dark/wallpaper.png"
+          ],
+          "port": [
+            "file:///android_asset/res/theme/100000015/dynasty/wallpaper/port/light/wallpaper.png",
+            "file:///android_asset/res/theme/100000015/dynasty/wallpaper/port/dark/wallpaper.png"
+          ]
+        }
+      },
+      "denza": {
+        "land": [
+          "file:///android_asset/res/theme/100000015/dynasty/preview/land/dark/widget.jpg"
+        ],
+        "port": [
+          "file:///android_asset/res/theme/100000015/dynasty/preview/port/dark/widget.jpg"
+        ],
+        "wallpaper": {
+          "land": [
+            "file:///android_asset/res/theme/100000015/dynasty/wallpaper/land/light/wallpaper.png",
+            "file:///android_asset/res/theme/100000015/dynasty/wallpaper/land/dark/wallpaper.png"
+          ],
+          "port": [
+            "file:///android_asset/res/theme/100000015/dynasty/wallpaper/port/light/wallpaper.png",
+            "file:///android_asset/res/theme/100000015/dynasty/wallpaper/port/dark/wallpaper.png"
+          ]
+        }
+      }
+    }
+  }
+]

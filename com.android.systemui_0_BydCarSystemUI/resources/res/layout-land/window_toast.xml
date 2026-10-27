@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/window_toast_bg"
+    android:paddingTop="@dimen/dp_14"
+    android:paddingBottom="@dimen/dp_16"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingStart="@dimen/dp_24"
+    android:paddingEnd="@dimen/dp_24">
+    <TextView
+        android:textSize="@dimen/sp_18"
+        android:textColor="@color/white"
+        android:id="@+id/toast_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/card_not_edit"/>
+</RelativeLayout>

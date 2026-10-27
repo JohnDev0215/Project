@@ -1,0 +1,4 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/graphics/drawable/AnimatedVectorDrawable;->mAnimatorSet:Landroid/graphics/drawable/AnimatedVectorDrawable$VectorDrawableAnimator;,frameworks/base/graphics/java/android/graphics/drawable/AnimatedVectorDrawable.java,311,5,311,25,
+Landroid/graphics/drawable/AnimatedVectorDrawable;->mAnimatedVectorState:Landroid/graphics/drawable/AnimatedVectorDrawable$AnimatedVectorDrawableState;,frameworks/base/graphics/java/android/graphics/drawable/AnimatedVectorDrawable.java,320,5,320,25,
+Landroid/graphics/drawable/AnimatedVectorDrawable;->forceAnimationOnUI()V,frameworks/base/graphics/java/android/graphics/drawable/AnimatedVectorDrawable.java,649,5,649,25,

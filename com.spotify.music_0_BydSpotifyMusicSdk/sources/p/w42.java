@@ -1,0 +1,83 @@
+package p;
+
+import com.spotify.player.esperanto.proto.EsRestrictions$Restrictions;
+import com.spotify.player.model.Restrictions;
+
+/* JADX INFO: loaded from: classes.dex */
+public abstract class w42 {
+    public static final Restrictions a(EsRestrictions$Restrictions esRestrictions$Restrictions) {
+        Restrictions.Builder builderA = Restrictions.a();
+        v51 v51VarG = esRestrictions$Restrictions.G();
+        v03.i(v51VarG, "restrictions.disallowPausingReasonsList");
+        builderA.f(ou.q0(v51VarG));
+        v51 v51VarO = esRestrictions$Restrictions.O();
+        v03.i(v51VarO, "restrictions.disallowResumingReasonsList");
+        builderA.n(ou.q0(v51VarO));
+        v51 v51VarP = esRestrictions$Restrictions.P();
+        v03.i(v51VarP, "restrictions.disallowSeekingReasonsList");
+        builderA.o(ou.q0(v51VarP));
+        v51 v51VarI = esRestrictions$Restrictions.I();
+        v03.i(v51VarI, "restrictions.disallowPeekingPrevReasonsList");
+        builderA.h(ou.q0(v51VarI));
+        v51 v51VarH = esRestrictions$Restrictions.H();
+        v03.i(v51VarH, "restrictions.disallowPeekingNextReasonsList");
+        builderA.g(ou.q0(v51VarH));
+        v51 v51VarT = esRestrictions$Restrictions.T();
+        v03.i(v51VarT, "restrictions.disallowSkippingPrevReasonsList");
+        builderA.s(ou.q0(v51VarT));
+        v51 v51VarS = esRestrictions$Restrictions.S();
+        v03.i(v51VarS, "restrictions.disallowSkippingNextReasonsList");
+        builderA.r(ou.q0(v51VarS));
+        v51 v51VarU = esRestrictions$Restrictions.U();
+        v03.i(v51VarU, "restrictions.disallowTog…gRepeatContextReasonsList");
+        builderA.t(ou.q0(v51VarU));
+        v51 v51VarV = esRestrictions$Restrictions.V();
+        v03.i(v51VarV, "restrictions.disallowTog…ingRepeatTrackReasonsList");
+        builderA.u(ou.q0(v51VarV));
+        v51 v51VarW = esRestrictions$Restrictions.W();
+        v03.i(v51VarW, "restrictions.disallowTogglingShuffleReasonsList");
+        builderA.v(ou.q0(v51VarW));
+        v51 v51VarQ = esRestrictions$Restrictions.Q();
+        v03.i(v51VarQ, "restrictions.disallowSetQueueReasonsList");
+        builderA.p(ou.q0(v51VarQ));
+        v51 v51VarC = esRestrictions$Restrictions.C();
+        v03.i(v51VarC, "restrictions.disallowAddToQueueReasonsList");
+        builderA.b(ou.q0(v51VarC));
+        v51 v51VarF = esRestrictions$Restrictions.F();
+        v03.i(v51VarF, "restrictions.disallowInt…uptingPlaybackReasonsList");
+        builderA.e(ou.q0(v51VarF));
+        v51 v51VarX = esRestrictions$Restrictions.X();
+        v03.i(v51VarX, "restrictions.disallowTra…erringPlaybackReasonsList");
+        builderA.w(ou.q0(v51VarX));
+        v51 v51VarJ = esRestrictions$Restrictions.J();
+        v03.i(v51VarJ, "restrictions.disallowRemoteControlReasonsList");
+        builderA.i(ou.q0(v51VarJ));
+        v51 v51VarE = esRestrictions$Restrictions.E();
+        v03.i(v51VarE, "restrictions.disallowIns…IntoNextTracksReasonsList");
+        builderA.d(ou.q0(v51VarE));
+        v51 v51VarD = esRestrictions$Restrictions.D();
+        v03.i(v51VarD, "restrictions.disallowIns…oContextTracksReasonsList");
+        builderA.c(ou.q0(v51VarD));
+        v51 v51VarN = esRestrictions$Restrictions.N();
+        v03.i(v51VarN, "restrictions.disallowReo…ngInNextTracksReasonsList");
+        builderA.m(ou.q0(v51VarN));
+        v51 v51VarM = esRestrictions$Restrictions.M();
+        v03.i(v51VarM, "restrictions.disallowReo…nContextTracksReasonsList");
+        builderA.l(ou.q0(v51VarM));
+        v51 v51VarL = esRestrictions$Restrictions.L();
+        v03.i(v51VarL, "restrictions.disallowRem…FromNextTracksReasonsList");
+        builderA.k(ou.q0(v51VarL));
+        v51 v51VarK = esRestrictions$Restrictions.K();
+        v03.i(v51VarK, "restrictions.disallowRem…mContextTracksReasonsList");
+        builderA.j(ou.q0(v51VarK));
+        v51 v51VarY = esRestrictions$Restrictions.Y();
+        v03.i(v51VarY, "restrictions.disallowUpdatingContextReasonsList");
+        builderA.x(ou.q0(v51VarY));
+        v51 v51VarR = esRestrictions$Restrictions.R();
+        v03.i(v51VarR, "restrictions.disallowSet…gPlaybackSpeedReasonsList");
+        builderA.q(ou.q0(v51VarR));
+        Restrictions restrictionsA = builderA.a();
+        v03.i(restrictionsA, "builder().apply {\n      …st.toSet())\n    }.build()");
+        return restrictionsA;
+    }
+}

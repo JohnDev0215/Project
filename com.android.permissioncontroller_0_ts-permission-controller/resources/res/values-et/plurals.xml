@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="additional_permissions_more">
+        <item quantity="one">Veel %1$d</item>
+        <item quantity="other">Veel %1$d</item>
+    </plurals>
+    <plurals name="auto_revoke_permission_notification_content_count">
+        <item quantity="one">Rakendust %1$d ei ole mõne kuu jooksul kasutatud. Puudutage ülevaatamiseks</item>
+        <item quantity="other">%1$d rakendust ei ole mõne kuu jooksul kasutatud. Puudutage ülevaatamiseks</item>
+    </plurals>
+    <plurals name="auto_revoke_setting_subtitle_count">
+        <item quantity="one">%1$d rakendust ei ole mõne kuu jooksul kasutatud</item>
+        <item quantity="other">%1$d rakendust ei ole mõne kuu jooksul kasutatud</item>
+    </plurals>
+    <plurals name="days">
+        <item quantity="one">1 päev</item>
+        <item quantity="other">%s päeva</item>
+    </plurals>
+    <plurals name="hours">
+        <item quantity="one">1 tund</item>
+        <item quantity="other">%s tundi</item>
+    </plurals>
+    <plurals name="minutes">
+        <item quantity="one">1 minut</item>
+        <item quantity="other">%s minutit</item>
+    </plurals>
+    <plurals name="seconds">
+        <item quantity="one">1 sekund</item>
+        <item quantity="other">%s sekundit</item>
+    </plurals>
+</resources>

@@ -1,0 +1,73 @@
+package android.hardware.bydauto.vehicledata.tsimpl;
+
+import android.content.Context;
+import android.hardware.bydauto.vehicledata.AbsBYDAutoVehicleDataListener;
+
+/* JADX INFO: loaded from: classes.dex */
+public class VehicledataManagerImpl {
+    protected static final String TAG = "VehicledataManagerImpl";
+    private static VehicledataManagerImpl mVehicledataManagerImpl;
+
+    public VehicledataManagerImpl(Context context) {
+    }
+
+    public static synchronized VehicledataManagerImpl getInstance(Context context) {
+        try {
+            if (mVehicledataManagerImpl == null) {
+                mVehicledataManagerImpl = new VehicledataManagerImpl(context);
+            }
+        } catch (Throwable th) {
+            throw th;
+        }
+        return mVehicledataManagerImpl;
+    }
+
+    public int getDevicetype() {
+        return 0;
+    }
+
+    public int[] getFeatureList() {
+        return null;
+    }
+
+    public String getGetPermission() {
+        return null;
+    }
+
+    public String getSetPermission() {
+        return null;
+    }
+
+    public int getType() {
+        return 0;
+    }
+
+    public boolean postEvent(int i7, int i10, int i11, Object obj) {
+        return true;
+    }
+
+    public void registerListener(AbsBYDAutoVehicleDataListener absBYDAutoVehicleDataListener) {
+    }
+
+    public int sendRegisterTable(int i7, byte[] bArr) {
+        return 0;
+    }
+
+    public int sendVehicleDataAcq(byte[] bArr) {
+        return 0;
+    }
+
+    public int sendWholeFrameData(byte[] bArr) {
+        return 0;
+    }
+
+    public void unregisterListener(AbsBYDAutoVehicleDataListener absBYDAutoVehicleDataListener) {
+    }
+
+    public boolean postEvent(int i7, int i10, byte[] bArr, Object obj) {
+        return true;
+    }
+
+    public void registerListener(AbsBYDAutoVehicleDataListener absBYDAutoVehicleDataListener, int[] iArr) {
+    }
+}

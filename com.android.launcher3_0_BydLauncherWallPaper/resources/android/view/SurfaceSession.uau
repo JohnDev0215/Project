@@ -1,0 +1,4 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/view/SurfaceSession;->mNativeClient:J,frameworks/base/core/java/android/view/SurfaceSession.java,29,5,29,25,
+Landroid/view/SurfaceSession;-><init>()V,frameworks/base/core/java/android/view/SurfaceSession.java,37,5,37,25,
+Landroid/view/SurfaceSession;->kill()V,frameworks/base/core/java/android/view/SurfaceSession.java,59,5,59,25,

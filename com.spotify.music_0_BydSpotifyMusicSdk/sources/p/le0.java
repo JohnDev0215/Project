@@ -1,0 +1,29 @@
+package p;
+
+/* JADX INFO: loaded from: classes.dex */
+public final class le0 {
+    public final boolean a;
+
+    public le0(boolean z) {
+        this.a = z;
+    }
+
+    public final boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        return (obj instanceof le0) && this.a == ((le0) obj).a;
+    }
+
+    public final int hashCode() {
+        boolean z = this.a;
+        if (z) {
+            return 1;
+        }
+        return z ? 1 : 0;
+    }
+
+    public final String toString() {
+        return u4.n(new StringBuilder("Playability(playable="), this.a, ')');
+    }
+}

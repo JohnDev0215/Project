@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="additional_permissions_more">
+        <item quantity="one">Još %1$d</item>
+        <item quantity="few">Još %1$d</item>
+        <item quantity="other">Još %1$d</item>
+    </plurals>
+    <plurals name="auto_revoke_permission_notification_content_count">
+        <item quantity="one">%1$d aplikacija nije korištena nekoliko mjeseci. Dodirnite za pregled</item>
+        <item quantity="few">%1$d aplikacije nisu korištene nekoliko mjeseci. Dodirnite za pregled</item>
+        <item quantity="other">%1$d aplikacija nije korišteno nekoliko mjeseci. Dodirnite za pregled</item>
+    </plurals>
+    <plurals name="auto_revoke_setting_subtitle_count">
+        <item quantity="one">%1$d aplikacija nije korištena nekoliko mjeseci</item>
+        <item quantity="few">%1$d aplikacije nisu korištene nekoliko mjeseci</item>
+        <item quantity="other">%1$d aplikacija nije korišteno nekoliko mjeseci</item>
+    </plurals>
+    <plurals name="days">
+        <item quantity="one">%s dan</item>
+        <item quantity="few">%s dana</item>
+        <item quantity="other">%s dana</item>
+    </plurals>
+    <plurals name="hours">
+        <item quantity="one">%s sat</item>
+        <item quantity="few">%s sata</item>
+        <item quantity="other">%s sati</item>
+    </plurals>
+    <plurals name="minutes">
+        <item quantity="one">%s minuta</item>
+        <item quantity="few">%s minute</item>
+        <item quantity="other">%s minuta</item>
+    </plurals>
+    <plurals name="seconds">
+        <item quantity="one">%s sekunda</item>
+        <item quantity="few">%s sekunde</item>
+        <item quantity="other">%s sekundi</item>
+    </plurals>
+</resources>

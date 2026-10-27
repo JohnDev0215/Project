@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:id="@+id/widget_frame"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <View
+        android:theme="@style/AutoRevokeDivider"
+        android:layout_gravity="end|center_vertical"
+        android:id="@+id/divider"
+        android:layout_width="1dp"
+        android:layout_height="24dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"/>
+    <ImageButton
+        android:layout_gravity="end|center_vertical"
+        android:id="@+id/uninstall_button"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/ic_settings_delete"
+        android:contentDescription="@string/uninstall_or_disable"
+        style="@style/SettingsActionButton"/>
+</LinearLayout>

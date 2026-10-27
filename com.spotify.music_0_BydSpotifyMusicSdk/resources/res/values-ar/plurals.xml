@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="android_auto_podcast_episode_time_format_hours">
+        <item quantity="zero">%1$d  ساعة</item>
+        <item quantity="one"> ساعة واحدة</item>
+        <item quantity="two"> ساعتان</item>
+        <item quantity="few">%1$d  ساعات</item>
+        <item quantity="many">%1$d  ساعةً</item>
+        <item quantity="other">%1$d  ساعةٍ</item>
+    </plurals>
+    <plurals name="android_auto_podcast_episode_time_format_min">
+        <item quantity="zero">%1$d  دقيقة</item>
+        <item quantity="one">  دقيقة واحدة</item>
+        <item quantity="two">  دقيقتان</item>
+        <item quantity="few">%1$d  دقائق</item>
+        <item quantity="many">%1$d  دقيقةً</item>
+        <item quantity="other">%1$d  دقيقةٍ</item>
+    </plurals>
+    <plurals name="content_liked_songs_subtitle">
+        <item quantity="zero">لا توجد أغانٍ (%1$d)</item>
+        <item quantity="one">أغنية واحدة (%1$d)</item>
+        <item quantity="two">أغنيتان (%1$d)</item>
+        <item quantity="few">%1$d أغانٍ</item>
+        <item quantity="many">%1$d أغنية</item>
+        <item quantity="other">%1$d أغنية</item>
+    </plurals>
+    <plurals name="content_your_episodes_subtitle">
+        <item quantity="zero">ما من حلقات (%1$d)</item>
+        <item quantity="one">حلقة واحدة (%1$d)</item>
+        <item quantity="two">حلقتان (%1$d)</item>
+        <item quantity="few">%1$d حلقات</item>
+        <item quantity="many">%1$d حلقة</item>
+        <item quantity="other">%1$d حلقة</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="zero">%d إشعار جديد</item>
+        <item quantity="one">إشعار جديد واحد (%d)</item>
+        <item quantity="two">إشعاران جديدان (%d)</item>
+        <item quantity="few">%d إشعارات جديدة</item>
+        <item quantity="many">%d إشعارًا جديدًا</item>
+        <item quantity="other">%d إشعار جديد</item>
+    </plurals>
+</resources>

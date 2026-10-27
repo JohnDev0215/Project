@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.setupdesign.GlifLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/setup_wizard_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="?attr/fingerprint_layout_theme">
+    <LinearLayout
+        android:orientation="vertical"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/SudContentFrame">
+        <com.google.android.setupdesign.view.RichTextView
+            android:id="@+id/description_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/security_settings_fingerprint_enroll_introduction_message"
+            style="@style/SudDescription.Glif"/>
+        <com.google.android.setupdesign.view.RichTextView
+            android:id="@+id/error_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/SudDescription.Glif"/>
+        <com.google.android.setupdesign.view.FillContentLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/fingerprint_enroll_introduction"
+                android:contentDescription="@null"
+                style="@style/SudContentIllustration"/>
+        </com.google.android.setupdesign.view.FillContentLayout>
+    </LinearLayout>
+</com.google.android.setupdesign.GlifLayout>

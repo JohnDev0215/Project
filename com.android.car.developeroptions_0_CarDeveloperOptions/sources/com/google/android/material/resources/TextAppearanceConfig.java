@@ -1,0 +1,10 @@
+package com.google.android.material.resources;
+
+/* JADX INFO: loaded from: classes.dex */
+public class TextAppearanceConfig {
+    private static boolean shouldLoadFontSynchronously;
+
+    public static boolean shouldLoadFontSynchronously() {
+        return shouldLoadFontSynchronously;
+    }
+}

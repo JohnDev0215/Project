@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:radius="6dp"/>
+    <solid android:color="@color/edit_text_background_focused"/>
+    <padding
+        android:left="@dimen/edit_text_inner_padding"
+        android:top="@dimen/edit_text_inner_padding"
+        android:right="@dimen/edit_text_inner_padding"
+        android:bottom="@dimen/edit_text_inner_padding"/>
+</shape>

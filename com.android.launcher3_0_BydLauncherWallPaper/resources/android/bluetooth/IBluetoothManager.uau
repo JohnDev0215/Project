@@ -1,0 +1,4 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/bluetooth/IBluetoothManager;->registerStateChangeCallback(Landroid/bluetooth/IBluetoothStateChangeCallback;)V,system/bt/binder/android/bluetooth/IBluetoothManager.aidl,34,1,34,25,
+Landroid/bluetooth/IBluetoothManager;->unregisterStateChangeCallback(Landroid/bluetooth/IBluetoothStateChangeCallback;)V,system/bt/binder/android/bluetooth/IBluetoothManager.aidl,36,1,36,25,
+Landroid/bluetooth/IBluetoothManager;->getBluetoothGatt()Landroid/bluetooth/IBluetoothGatt;,system/bt/binder/android/bluetooth/IBluetoothManager.aidl,43,1,43,25,

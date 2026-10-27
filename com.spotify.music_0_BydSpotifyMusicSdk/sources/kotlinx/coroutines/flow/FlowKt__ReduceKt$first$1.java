@@ -1,0 +1,20 @@
+package kotlinx.coroutines.flow;
+
+import kotlin.coroutines.jvm.internal.ContinuationImpl;
+import p.e60;
+
+/* JADX INFO: loaded from: classes.dex */
+@e60(c = "kotlinx.coroutines.flow.FlowKt__ReduceKt", f = "Reduce.kt", l = {183}, m = "first")
+final class FlowKt__ReduceKt$first$1<T> extends ContinuationImpl {
+    Object L$0;
+    Object L$1;
+    int label;
+    /* synthetic */ Object result;
+
+    @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
+    public final Object i(Object obj) {
+        this.result = obj;
+        this.label |= Integer.MIN_VALUE;
+        return d.c(null, this);
+    }
+}

@@ -1,0 +1,5 @@
+signature,file,startline,startcol,endline,endcol,properties
+Lcom/android/ims/internal/uce/presence/PresServiceInfo;->getMediaType()I,frameworks/base/core/java/com/android/ims/internal/uce/presence/PresServiceInfo.java,49,5,49,25,
+Lcom/android/ims/internal/uce/presence/PresServiceInfo;->getServiceId()Ljava/lang/String;,frameworks/base/core/java/com/android/ims/internal/uce/presence/PresServiceInfo.java,66,5,66,25,
+Lcom/android/ims/internal/uce/presence/PresServiceInfo;->getServiceDesc()Ljava/lang/String;,frameworks/base/core/java/com/android/ims/internal/uce/presence/PresServiceInfo.java,82,5,82,25,
+Lcom/android/ims/internal/uce/presence/PresServiceInfo;->getServiceVer()Ljava/lang/String;,frameworks/base/core/java/com/android/ims/internal/uce/presence/PresServiceInfo.java,99,5,99,25,

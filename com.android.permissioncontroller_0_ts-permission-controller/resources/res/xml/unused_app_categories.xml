@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:key="three_months"/>
+    <PreferenceCategory android:key="six_months"/>
+    <PreferenceCategory android:key="info_msg_category">
+        <com.android.permissioncontroller.permission.ui.handheld.FooterPreference
+            android:icon="@drawable/ic_info_outline"
+            android:selectable="false"
+            android:key="info_msg"
+            android:summary="@string/auto_revoked_apps_page_summary"/>
+    </PreferenceCategory>
+</PreferenceScreen>

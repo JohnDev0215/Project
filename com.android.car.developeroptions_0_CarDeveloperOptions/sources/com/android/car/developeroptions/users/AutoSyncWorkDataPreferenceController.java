@@ -1,0 +1,24 @@
+package com.android.car.developeroptions.users;
+
+import android.content.Context;
+import android.os.UserHandle;
+import androidx.fragment.app.Fragment;
+import com.android.car.developeroptions.Utils;
+
+/* JADX INFO: loaded from: classes.dex */
+public class AutoSyncWorkDataPreferenceController extends AutoSyncPersonalDataPreferenceController {
+    @Override // com.android.car.developeroptions.users.AutoSyncPersonalDataPreferenceController, com.android.car.developeroptions.users.AutoSyncDataPreferenceController, com.android.settingslib.core.AbstractPreferenceController
+    public String getPreferenceKey() {
+        return "auto_sync_work_account_data";
+    }
+
+    public AutoSyncWorkDataPreferenceController(Context context, Fragment fragment) {
+        super(context, fragment);
+        this.mUserHandle = Utils.getManagedProfileWithDisabled(this.mUserManager);
+    }
+
+    @Override // com.android.car.developeroptions.users.AutoSyncPersonalDataPreferenceController, com.android.car.developeroptions.users.AutoSyncDataPreferenceController, com.android.settingslib.core.AbstractPreferenceController
+    public boolean isAvailable() {
+        return (this.mUserHandle == null || this.mUserManager.isManagedProfile() || this.mUserManager.isLinkedUser() || this.mUserManager.getProfiles(UserHandle.myUserId()).size() <= 1) ? false : true;
+    }
+}

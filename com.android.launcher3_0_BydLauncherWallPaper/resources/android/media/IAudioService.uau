@@ -1,0 +1,5 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/media/IAudioService;->setStreamVolume(IIILjava/lang/String;)V,frameworks/base/media/java/android/media/IAudioService.aidl,79,1,79,25,
+Landroid/media/IAudioService;->getStreamVolume(I)I,frameworks/base/media/java/android/media/IAudioService.aidl,93,1,93,25,
+Landroid/media/IAudioService;->getStreamMaxVolume(I)I,frameworks/base/media/java/android/media/IAudioService.aidl,98,1,98,25,
+Landroid/media/IAudioService;->startWatchingRoutes(Landroid/media/IAudioRoutesObserver;)Landroid/media/AudioRoutesInfo;,frameworks/base/media/java/android/media/IAudioService.aidl,195,1,195,25,

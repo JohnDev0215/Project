@@ -1,0 +1,22 @@
+package com.android.car.developeroptions.enterprise;
+
+import android.content.Context;
+
+/* JADX INFO: loaded from: classes.dex */
+public class CaCertsManagedProfilePreferenceController extends CaCertsPreferenceControllerBase {
+    static final String CA_CERTS_MANAGED_PROFILE = "ca_certs_managed_profile";
+
+    @Override // com.android.settingslib.core.AbstractPreferenceController
+    public String getPreferenceKey() {
+        return CA_CERTS_MANAGED_PROFILE;
+    }
+
+    public CaCertsManagedProfilePreferenceController(Context context) {
+        super(context);
+    }
+
+    @Override // com.android.car.developeroptions.enterprise.CaCertsPreferenceControllerBase
+    protected int getNumberOfCaCerts() {
+        return this.mFeatureProvider.getNumberOfOwnerInstalledCaCertsForManagedProfile();
+    }
+}

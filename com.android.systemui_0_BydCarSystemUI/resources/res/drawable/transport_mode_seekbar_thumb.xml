@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" android:shape="oval">
+    <item
+        android:gravity="center"
+        android:height="@dimen/dp_20"
+        android:width="@dimen/dp_20">
+        <shape
+            android:shape="ring"
+            android:useLevel="false"
+            android:innerRadius="@dimen/dp_8"
+            android:thickness="@dimen/dp_2">
+            <gradient
+                android:startColor="@color/color_transport_mode_seekbar_thumb_bg"
+                android:endColor="@color/color_transport_mode_seekbar_thumb_bg"
+                android:angle="0"
+                android:type="radial"
+                android:gradientRadius="@dimen/dp_10"/>
+        </shape>
+    </item>
+    <item
+        android:gravity="center"
+        android:height="@dimen/dp_20"
+        android:width="@dimen/dp_20">
+        <shape android:shape="oval">
+            <corners android:radius="@dimen/dp_9"/>
+            <gradient
+                android:startColor="@color/color_transport_mode_seekbar_thumb_bg"
+                android:endColor="@color/color_transport_mode_seekbar_thumb_bg"
+                android:angle="0"
+                android:type="radial"
+                android:gradientRadius="@dimen/dp_5"
+                android:centerColor="@color/color_transport_mode_seekbar_thumb_bg"/>
+        </shape>
+    </item>
+</layer-list>

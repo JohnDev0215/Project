@@ -1,0 +1,4 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/provider/BrowserContract$Bookmarks;->CONTENT_URI:Landroid/net/Uri;,frameworks/base/core/java/android/provider/BrowserContract.java,256,9,256,29,
+Landroid/provider/BrowserContract$Bookmarks;->CONTENT_URI_DEFAULT_FOLDER:Landroid/net/Uri;,frameworks/base/core/java/android/provider/BrowserContract.java,306,9,306,29,
+Landroid/provider/BrowserContract$Bookmarks;->buildFolderUri(J)Landroid/net/Uri;,frameworks/base/core/java/android/provider/BrowserContract.java,327,9,327,29,

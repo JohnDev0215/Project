@@ -1,0 +1,12 @@
+package com.spotify.eventsender.api;
+
+/* JADX INFO: loaded from: classes.dex */
+public enum SendResult {
+    EVENT_ACCEPTED,
+    PROTOBUF_SERIALIZATION_FAILED,
+    EVENT_REJECTED_MISSING_NAME,
+    EVENT_REJECTED_MISSING_OWNER,
+    EVENT_REJECTED_EVENT_DATA_TOO_LARGE,
+    EVENT_REJECTED_RATE_LIMITED,
+    OTHER_ERROR
+}

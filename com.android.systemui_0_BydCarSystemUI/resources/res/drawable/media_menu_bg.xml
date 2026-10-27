@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+    <corners android:radius="@dimen/dp_12"/>
+    <gradient
+        android:startColor="@color/color_mask_bg"
+        android:endColor="@color/color_mask_bg"
+        android:useLevel="true"
+        android:angle="180"
+        android:type="linear"
+        android:centerX="0"
+        android:centerY="0"
+        android:gradientRadius="180"/>
+    <stroke
+        android:width="1dp"
+        android:color="@color/media_popup_board_bg"/>
+</shape>

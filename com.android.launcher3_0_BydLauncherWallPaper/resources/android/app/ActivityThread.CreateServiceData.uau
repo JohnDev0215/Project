@@ -1,0 +1,6 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/app/ActivityThread$CreateServiceData;-><init>()V,frameworks/base/core/java/android/app/ActivityThread.java,750,9,750,29,
+Landroid/app/ActivityThread$CreateServiceData;->token:Landroid/os/IBinder;,frameworks/base/core/java/android/app/ActivityThread.java,753,9,753,29,
+Landroid/app/ActivityThread$CreateServiceData;->info:Landroid/content/pm/ServiceInfo;,frameworks/base/core/java/android/app/ActivityThread.java,755,9,755,29,
+Landroid/app/ActivityThread$CreateServiceData;->compatInfo:Landroid/content/res/CompatibilityInfo;,frameworks/base/core/java/android/app/ActivityThread.java,757,9,757,29,
+Landroid/app/ActivityThread$CreateServiceData;->intent:Landroid/content/Intent;,frameworks/base/core/java/android/app/ActivityThread.java,759,9,759,29,

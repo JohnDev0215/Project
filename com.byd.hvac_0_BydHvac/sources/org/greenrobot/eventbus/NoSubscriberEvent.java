@@ -1,0 +1,13 @@
+package org.greenrobot.eventbus;
+
+/* JADX INFO: compiled from: caradapter-bug */
+/* JADX INFO: loaded from: classes.dex */
+public final class NoSubscriberEvent {
+    public final EventBus eventBus;
+    public final Object originalEvent;
+
+    public NoSubscriberEvent(EventBus eventBus, Object obj) {
+        this.eventBus = eventBus;
+        this.originalEvent = obj;
+    }
+}

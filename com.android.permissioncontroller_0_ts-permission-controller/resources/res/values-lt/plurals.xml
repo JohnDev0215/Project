@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="additional_permissions_more">
+        <item quantity="one">Dar %1$d</item>
+        <item quantity="few">Dar %1$d</item>
+        <item quantity="many">Dar %1$d</item>
+        <item quantity="other">Dar %1$d</item>
+    </plurals>
+    <plurals name="auto_revoke_permission_notification_content_count">
+        <item quantity="one">%1$d programa nebuvo naudojama kelis mėnesius. Palieskite ir peržiūrėkite</item>
+        <item quantity="few">%1$d programos nebuvo naudojamos kelis mėnesius. Palieskite ir peržiūrėkite</item>
+        <item quantity="many">%1$d programos nebuvo naudojama kelis mėnesius. Palieskite ir peržiūrėkite</item>
+        <item quantity="other">%1$d programų nebuvo naudojama kelis mėnesius. Palieskite ir peržiūrėkite</item>
+    </plurals>
+    <plurals name="auto_revoke_setting_subtitle_count">
+        <item quantity="one">%1$d programa nebuvo naudojama kelis mėnesius</item>
+        <item quantity="few">%1$d programos nebuvo naudojamos kelis mėnesius</item>
+        <item quantity="many">%1$d programos nebuvo naudojama kelis mėnesius</item>
+        <item quantity="other">%1$d programų nebuvo naudojama kelis mėnesius</item>
+    </plurals>
+    <plurals name="days">
+        <item quantity="one">%s diena</item>
+        <item quantity="few">%s dienos</item>
+        <item quantity="many">%s dienos</item>
+        <item quantity="other">%s dienų</item>
+    </plurals>
+    <plurals name="hours">
+        <item quantity="one">%s valanda</item>
+        <item quantity="few">%s valandos</item>
+        <item quantity="many">%s valandos</item>
+        <item quantity="other">%s valandų</item>
+    </plurals>
+    <plurals name="minutes">
+        <item quantity="one">%s minutė</item>
+        <item quantity="few">%s minutės</item>
+        <item quantity="many">%s minutės</item>
+        <item quantity="other">%s minučių</item>
+    </plurals>
+    <plurals name="seconds">
+        <item quantity="one">%s sekundė</item>
+        <item quantity="few">%s sekundės</item>
+        <item quantity="many">%s sekundės</item>
+        <item quantity="other">%s sekundžių</item>
+    </plurals>
+</resources>

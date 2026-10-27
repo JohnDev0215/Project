@@ -1,0 +1,3 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/view/IRemoteAnimationRunner;->onAnimationStart([Landroid/view/RemoteAnimationTarget;[Landroid/view/RemoteAnimationTarget;Landroid/view/IRemoteAnimationFinishedCallback;)V,frameworks/base/core/java/android/view/IRemoteAnimationRunner.aidl,36,1,36,25,
+Landroid/view/IRemoteAnimationRunner;->onAnimationCancelled()V,frameworks/base/core/java/android/view/IRemoteAnimationRunner.aidl,44,1,44,25,

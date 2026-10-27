@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="DividerMoreButtonView" parent="">
+        <item name="android:gravity">0x11</item>
+        <item name="android:layout_gravity">0x10</item>
+        <item name="android:layout_width">-1</item>
+        <item name="android:layout_height">48dp</item>
+    </style>
+    <style name="DockedDividerBackground" parent="">
+        <item name="android:layout_gravity">0x10</item>
+        <item name="android:layout_width">-1</item>
+        <item name="android:layout_height">10dp</item>
+    </style>
+    <style name="DockedDividerHandle" parent="">
+        <item name="android:layout_gravity">0x10</item>
+        <item name="android:layout_width">-1</item>
+        <item name="android:layout_height">@dimen/dp_48</item>
+    </style>
+    <style name="DockedDividerHandleBg" parent="">
+        <item name="android:layout_gravity">0x10</item>
+        <item name="android:paddingTop">@dimen/dp_19</item>
+        <item name="android:paddingBottom">@dimen/dp_19</item>
+        <item name="android:layout_width">-1</item>
+        <item name="android:layout_height">@dimen/dp_48</item>
+    </style>
+    <style name="DockedDividerMinimizedShadow" parent="">
+        <item name="android:layout_gravity">0x10</item>
+        <item name="android:layout_width">-1</item>
+        <item name="android:layout_height">8dp</item>
+    </style>
+    <style name="navi_bar_wind_set_pop_btn_check" parent="">
+        <item name="android:background">@mipmap/icon_check_pitch_regular</item>
+        <item name="android:layout_width">@dimen/width_navi_bar_wind_set_btn_check</item>
+        <item name="android:layout_height">@dimen/width_navi_bar_wind_set_btn_check</item>
+        <item name="android:checked">false</item>
+        <item name="android:button">@null</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+    <style name="navi_bar_wind_set_pop_tv_name" parent="">
+        <item name="android:textSize">@dimen/sp_20</item>
+        <item name="android:ellipsize">3</item>
+        <item name="android:gravity">0x10</item>
+        <item name="android:layout_width">-2</item>
+        <item name="android:layout_height">-2</item>
+        <item name="android:checked">false</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:drawableTint">@color/color_bar_blue_tint</item>
+        <item name="android:breakStrategy">2</item>
+    </style>
+    <style name="navigation_bar_button_left" parent="@style/navigation_bar_button_common">
+        <item name="android:layout_marginStart">@dimen/dp_10</item>
+    </style>
+    <style name="navigation_bar_button_right" parent="@style/navigation_bar_button_common">
+        <item name="android:layout_marginEnd">@dimen/dp_10</item>
+    </style>
+</resources>

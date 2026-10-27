@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:gravity="bottom|center_horizontal"
+        android:height="@dimen/dp_16"
+        android:width="@dimen/dp_16"
+        android:drawable="@mipmap/icon_air_gesture_up"/>
+</layer-list>

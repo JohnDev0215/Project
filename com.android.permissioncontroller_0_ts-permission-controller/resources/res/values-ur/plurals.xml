@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="additional_permissions_more">
+        <item quantity="one">%1$d مزید</item>
+        <item quantity="other">%1$d مزید</item>
+    </plurals>
+    <plurals name="auto_revoke_permission_notification_content_count">
+        <item quantity="one">%1$d ایپ کا استعمال کچھ مہینوں سے نہیں کیا گیا ہے۔ جائزے کے لیے تھپتھپائیں</item>
+        <item quantity="other">%1$d ایپس کا استعمال کچھ مہینوں سے نہیں کیا گیا ہے۔ جائزے کے لیے تھپتھپائیں</item>
+    </plurals>
+    <plurals name="auto_revoke_setting_subtitle_count">
+        <item quantity="one">%1$d ایپ کا استعمال کچھ مہینوں سے نہیں کیا گیا ہے</item>
+        <item quantity="other">%1$d ایپس کا استعمال کچھ مہینوں سے نہیں کیا گیا ہے</item>
+    </plurals>
+    <plurals name="days">
+        <item quantity="one">1 دن</item>
+        <item quantity="other">%s دن</item>
+    </plurals>
+    <plurals name="hours">
+        <item quantity="one">1 گھنٹہ</item>
+        <item quantity="other">%s گھنٹے</item>
+    </plurals>
+    <plurals name="minutes">
+        <item quantity="one">1 منٹ</item>
+        <item quantity="other">%s منٹ</item>
+    </plurals>
+    <plurals name="seconds">
+        <item quantity="one">1 سیکنڈ</item>
+        <item quantity="other">%s سیکنڈ</item>
+    </plurals>
+</resources>

@@ -1,0 +1,454 @@
+package android.app.usage;
+
+import android.annotation.SystemApi;
+import android.content.res.Configuration;
+import android.os.Parcel;
+import android.os.Parcelable;
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
+import java.util.Arrays;
+import java.util.List;
+
+/* JADX INFO: loaded from: classes.dex */
+public final class UsageEvents implements Parcelable {
+    public static final Parcelable.Creator<UsageEvents> CREATOR = new Parcelable.Creator<UsageEvents>() { // from class: android.app.usage.UsageEvents.1
+        /* JADX WARN: Can't rename method to resolve collision */
+        @Override // android.os.Parcelable.Creator
+        public UsageEvents createFromParcel(Parcel parcel) {
+            return new UsageEvents(parcel);
+        }
+
+        /* JADX WARN: Can't rename method to resolve collision */
+        @Override // android.os.Parcelable.Creator
+        public UsageEvents[] newArray(int i) {
+            return new UsageEvents[i];
+        }
+    };
+    public static final int HIDE_LOCUS_EVENTS = 8;
+    public static final int HIDE_SHORTCUT_EVENTS = 2;
+    public static final String INSTANT_APP_CLASS_NAME = "android.instant_class";
+    public static final String INSTANT_APP_PACKAGE_NAME = "android.instant_app";
+    public static final String OBFUSCATED_NOTIFICATION_CHANNEL_ID = "unknown_channel_id";
+    public static final int OBFUSCATE_INSTANT_APPS = 1;
+    public static final int OBFUSCATE_NOTIFICATION_EVENTS = 4;
+    public static final int SHOW_ALL_EVENT_DATA = 0;
+    private final int mEventCount;
+    private List<Event> mEventsToWrite;
+    private final boolean mIncludeTaskRoots;
+    private int mIndex;
+    private Parcel mParcel;
+    private String[] mStringPool;
+
+    @Override // android.os.Parcelable
+    public int describeContents() {
+        return 0;
+    }
+
+    public static final class Event {
+        public static final int ACTIVITY_DESTROYED = 24;
+        public static final int ACTIVITY_PAUSED = 2;
+        public static final int ACTIVITY_RESUMED = 1;
+        public static final int ACTIVITY_STOPPED = 23;
+        public static final int CHOOSER_ACTION = 9;
+        public static final int CONFIGURATION_CHANGE = 5;
+        public static final int CONTINUE_PREVIOUS_DAY = 4;
+        public static final int CONTINUING_FOREGROUND_SERVICE = 21;
+        public static final String DEVICE_EVENT_PACKAGE_NAME = "android";
+        public static final int DEVICE_SHUTDOWN = 26;
+        public static final int DEVICE_STARTUP = 27;
+        public static final int END_OF_DAY = 3;
+        public static final int FLAG_IS_PACKAGE_INSTANT_APP = 1;
+        public static final int FLUSH_TO_DISK = 25;
+        public static final int FOREGROUND_SERVICE_START = 19;
+        public static final int FOREGROUND_SERVICE_STOP = 20;
+        public static final int KEYGUARD_HIDDEN = 18;
+        public static final int KEYGUARD_SHOWN = 17;
+        public static final int LOCUS_ID_SET = 30;
+        public static final int MAX_EVENT_TYPE = 30;
+
+        @Deprecated
+        public static final int MOVE_TO_BACKGROUND = 2;
+
+        @Deprecated
+        public static final int MOVE_TO_FOREGROUND = 1;
+        public static final int NONE = 0;
+
+        @SystemApi
+        public static final int NOTIFICATION_INTERRUPTION = 12;
+
+        @SystemApi
+        public static final int NOTIFICATION_SEEN = 10;
+        public static final int ROLLOVER_FOREGROUND_SERVICE = 22;
+        public static final int SCREEN_INTERACTIVE = 15;
+        public static final int SCREEN_NON_INTERACTIVE = 16;
+        public static final int SHORTCUT_INVOCATION = 8;
+
+        @SystemApi
+        public static final int SLICE_PINNED = 14;
+
+        @SystemApi
+        public static final int SLICE_PINNED_PRIV = 13;
+        public static final int STANDBY_BUCKET_CHANGED = 11;
+
+        @SystemApi
+        public static final int SYSTEM_INTERACTION = 6;
+        private static final int UNASSIGNED_TOKEN = -1;
+        public static final int USER_INTERACTION = 7;
+        public static final int USER_STOPPED = 29;
+        public static final int USER_UNLOCKED = 28;
+        public static final int VALID_FLAG_BITS = 1;
+        public String mAction;
+        public int mBucketAndReason;
+        public String mClass;
+        public Configuration mConfiguration;
+        public String[] mContentAnnotations;
+        public String mContentType;
+        public int mEventType;
+        public int mFlags;
+        public int mInstanceId;
+        public String mLocusId;
+        public String mNotificationChannelId;
+        public String mPackage;
+        public String mShortcutId;
+        public String mTaskRootClass;
+        public String mTaskRootPackage;
+        public long mTimeStamp;
+        public int mPackageToken = -1;
+        public int mClassToken = -1;
+        public int mTaskRootPackageToken = -1;
+        public int mTaskRootClassToken = -1;
+        public int mShortcutIdToken = -1;
+        public int mNotificationChannelIdToken = -1;
+        public int mLocusIdToken = -1;
+
+        @Retention(RetentionPolicy.SOURCE)
+        public @interface EventFlags {
+        }
+
+        public Event() {
+        }
+
+        public Event(int i, long j) {
+            this.mEventType = i;
+            this.mTimeStamp = j;
+        }
+
+        public Event(Event event) {
+            copyFrom(event);
+        }
+
+        public String getPackageName() {
+            return this.mPackage;
+        }
+
+        @SystemApi
+        public boolean isInstantApp() {
+            return (this.mFlags & 1) == 1;
+        }
+
+        public String getClassName() {
+            return this.mClass;
+        }
+
+        @SystemApi
+        public int getInstanceId() {
+            return this.mInstanceId;
+        }
+
+        @SystemApi
+        public String getTaskRootPackageName() {
+            return this.mTaskRootPackage;
+        }
+
+        @SystemApi
+        public String getTaskRootClassName() {
+            return this.mTaskRootClass;
+        }
+
+        public long getTimeStamp() {
+            return this.mTimeStamp;
+        }
+
+        public int getEventType() {
+            return this.mEventType;
+        }
+
+        public Configuration getConfiguration() {
+            return this.mConfiguration;
+        }
+
+        public String getShortcutId() {
+            return this.mShortcutId;
+        }
+
+        public int getStandbyBucket() {
+            return (this.mBucketAndReason & (-65536)) >>> 16;
+        }
+
+        public int getAppStandbyBucket() {
+            return (this.mBucketAndReason & (-65536)) >>> 16;
+        }
+
+        public int getStandbyReason() {
+            return this.mBucketAndReason & 65535;
+        }
+
+        @SystemApi
+        public String getNotificationChannelId() {
+            return this.mNotificationChannelId;
+        }
+
+        public Event getObfuscatedIfInstantApp() {
+            if (!isInstantApp()) {
+                return this;
+            }
+            Event event = new Event(this);
+            event.mPackage = UsageEvents.INSTANT_APP_PACKAGE_NAME;
+            event.mClass = UsageEvents.INSTANT_APP_CLASS_NAME;
+            return event;
+        }
+
+        public Event getObfuscatedNotificationEvent() {
+            Event event = new Event(this);
+            event.mNotificationChannelId = UsageEvents.OBFUSCATED_NOTIFICATION_CHANNEL_ID;
+            return event;
+        }
+
+        public String getLocusId() {
+            return this.mLocusId;
+        }
+
+        /* JADX INFO: Access modifiers changed from: private */
+        public void copyFrom(Event event) {
+            this.mPackage = event.mPackage;
+            this.mClass = event.mClass;
+            this.mInstanceId = event.mInstanceId;
+            this.mTaskRootPackage = event.mTaskRootPackage;
+            this.mTaskRootClass = event.mTaskRootClass;
+            this.mTimeStamp = event.mTimeStamp;
+            this.mEventType = event.mEventType;
+            this.mConfiguration = event.mConfiguration;
+            this.mShortcutId = event.mShortcutId;
+            this.mAction = event.mAction;
+            this.mContentType = event.mContentType;
+            this.mContentAnnotations = event.mContentAnnotations;
+            this.mFlags = event.mFlags;
+            this.mBucketAndReason = event.mBucketAndReason;
+            this.mNotificationChannelId = event.mNotificationChannelId;
+            this.mLocusId = event.mLocusId;
+        }
+    }
+
+    public UsageEvents(Parcel parcel) {
+        this.mEventsToWrite = null;
+        this.mParcel = null;
+        this.mIndex = 0;
+        byte[] blob = parcel.readBlob();
+        Parcel parcelObtain = Parcel.obtain();
+        parcelObtain.unmarshall(blob, 0, blob.length);
+        parcelObtain.setDataPosition(0);
+        int i = parcelObtain.readInt();
+        this.mEventCount = i;
+        this.mIndex = parcelObtain.readInt();
+        if (i > 0) {
+            this.mStringPool = parcelObtain.createStringArray();
+            int i2 = parcelObtain.readInt();
+            int i3 = parcelObtain.readInt();
+            Parcel parcelObtain2 = Parcel.obtain();
+            this.mParcel = parcelObtain2;
+            parcelObtain2.setDataPosition(0);
+            this.mParcel.appendFrom(parcelObtain, parcelObtain.dataPosition(), i2);
+            Parcel parcel2 = this.mParcel;
+            parcel2.setDataSize(parcel2.dataPosition());
+            this.mParcel.setDataPosition(i3);
+        }
+        this.mIncludeTaskRoots = true;
+    }
+
+    UsageEvents() {
+        this.mEventsToWrite = null;
+        this.mParcel = null;
+        this.mIndex = 0;
+        this.mEventCount = 0;
+        this.mIncludeTaskRoots = true;
+    }
+
+    public UsageEvents(List<Event> list, String[] strArr) {
+        this(list, strArr, false);
+    }
+
+    public UsageEvents(List<Event> list, String[] strArr, boolean z) {
+        this.mEventsToWrite = null;
+        this.mParcel = null;
+        this.mIndex = 0;
+        this.mStringPool = strArr;
+        this.mEventCount = list.size();
+        this.mEventsToWrite = list;
+        this.mIncludeTaskRoots = z;
+    }
+
+    public boolean hasNextEvent() {
+        return this.mIndex < this.mEventCount;
+    }
+
+    public boolean getNextEvent(Event event) {
+        Parcel parcel;
+        int i = this.mIndex;
+        if (i >= this.mEventCount) {
+            return false;
+        }
+        Parcel parcel2 = this.mParcel;
+        if (parcel2 == null) {
+            event.copyFrom(this.mEventsToWrite.get(i));
+        } else {
+            readEventFromParcel(parcel2, event);
+        }
+        int i2 = this.mIndex + 1;
+        this.mIndex = i2;
+        if (i2 >= this.mEventCount && (parcel = this.mParcel) != null) {
+            parcel.recycle();
+            this.mParcel = null;
+        }
+        return true;
+    }
+
+    public void resetToStart() {
+        this.mIndex = 0;
+        Parcel parcel = this.mParcel;
+        if (parcel != null) {
+            parcel.setDataPosition(0);
+        }
+    }
+
+    private int findStringIndex(String str) {
+        int iBinarySearch = Arrays.binarySearch(this.mStringPool, str);
+        if (iBinarySearch >= 0) {
+            return iBinarySearch;
+        }
+        throw new IllegalStateException("String '" + str + "' is not in the string pool");
+    }
+
+    private void writeEventToParcel(Event event, Parcel parcel, int i) {
+        int iFindStringIndex = -1;
+        int iFindStringIndex2 = event.mPackage != null ? findStringIndex(event.mPackage) : -1;
+        int iFindStringIndex3 = event.mClass != null ? findStringIndex(event.mClass) : -1;
+        int iFindStringIndex4 = (!this.mIncludeTaskRoots || event.mTaskRootPackage == null) ? -1 : findStringIndex(event.mTaskRootPackage);
+        if (this.mIncludeTaskRoots && event.mTaskRootClass != null) {
+            iFindStringIndex = findStringIndex(event.mTaskRootClass);
+        }
+        parcel.writeInt(iFindStringIndex2);
+        parcel.writeInt(iFindStringIndex3);
+        parcel.writeInt(event.mInstanceId);
+        parcel.writeInt(iFindStringIndex4);
+        parcel.writeInt(iFindStringIndex);
+        parcel.writeInt(event.mEventType);
+        parcel.writeLong(event.mTimeStamp);
+        int i2 = event.mEventType;
+        if (i2 == 5) {
+            event.mConfiguration.writeToParcel(parcel, i);
+        } else if (i2 == 30) {
+            parcel.writeString(event.mLocusId);
+        } else if (i2 == 8) {
+            parcel.writeString(event.mShortcutId);
+        } else if (i2 == 9) {
+            parcel.writeString(event.mAction);
+            parcel.writeString(event.mContentType);
+            parcel.writeStringArray(event.mContentAnnotations);
+        } else if (i2 == 11) {
+            parcel.writeInt(event.mBucketAndReason);
+        } else if (i2 == 12) {
+            parcel.writeString(event.mNotificationChannelId);
+        }
+        parcel.writeInt(event.mFlags);
+    }
+
+    private void readEventFromParcel(Parcel parcel, Event event) {
+        int i = parcel.readInt();
+        if (i >= 0) {
+            event.mPackage = this.mStringPool[i];
+        } else {
+            event.mPackage = null;
+        }
+        int i2 = parcel.readInt();
+        if (i2 >= 0) {
+            event.mClass = this.mStringPool[i2];
+        } else {
+            event.mClass = null;
+        }
+        event.mInstanceId = parcel.readInt();
+        int i3 = parcel.readInt();
+        if (i3 >= 0) {
+            event.mTaskRootPackage = this.mStringPool[i3];
+        } else {
+            event.mTaskRootPackage = null;
+        }
+        int i4 = parcel.readInt();
+        if (i4 >= 0) {
+            event.mTaskRootClass = this.mStringPool[i4];
+        } else {
+            event.mTaskRootClass = null;
+        }
+        event.mEventType = parcel.readInt();
+        event.mTimeStamp = parcel.readLong();
+        event.mConfiguration = null;
+        event.mShortcutId = null;
+        event.mAction = null;
+        event.mContentType = null;
+        event.mContentAnnotations = null;
+        event.mNotificationChannelId = null;
+        event.mLocusId = null;
+        int i5 = event.mEventType;
+        if (i5 == 5) {
+            event.mConfiguration = Configuration.CREATOR.createFromParcel(parcel);
+        } else if (i5 == 30) {
+            event.mLocusId = parcel.readString();
+        } else if (i5 == 8) {
+            event.mShortcutId = parcel.readString();
+        } else if (i5 == 9) {
+            event.mAction = parcel.readString();
+            event.mContentType = parcel.readString();
+            event.mContentAnnotations = parcel.createStringArray();
+        } else if (i5 == 11) {
+            event.mBucketAndReason = parcel.readInt();
+        } else if (i5 == 12) {
+            event.mNotificationChannelId = parcel.readString();
+        }
+        event.mFlags = parcel.readInt();
+    }
+
+    @Override // android.os.Parcelable
+    public void writeToParcel(Parcel parcel, int i) {
+        Parcel parcelObtain = Parcel.obtain();
+        parcelObtain.writeInt(this.mEventCount);
+        parcelObtain.writeInt(this.mIndex);
+        if (this.mEventCount > 0) {
+            parcelObtain.writeStringArray(this.mStringPool);
+            if (this.mEventsToWrite != null) {
+                Parcel parcelObtain2 = Parcel.obtain();
+                try {
+                    parcelObtain2.setDataPosition(0);
+                    for (int i2 = 0; i2 < this.mEventCount; i2++) {
+                        writeEventToParcel(this.mEventsToWrite.get(i2), parcelObtain2, i);
+                    }
+                    int iDataPosition = parcelObtain2.dataPosition();
+                    parcelObtain.writeInt(iDataPosition);
+                    parcelObtain.writeInt(0);
+                    parcelObtain.appendFrom(parcelObtain2, 0, iDataPosition);
+                } finally {
+                    parcelObtain2.recycle();
+                }
+            } else {
+                Parcel parcel2 = this.mParcel;
+                if (parcel2 != null) {
+                    parcelObtain.writeInt(parcel2.dataSize());
+                    parcelObtain.writeInt(this.mParcel.dataPosition());
+                    Parcel parcel3 = this.mParcel;
+                    parcelObtain.appendFrom(parcel3, 0, parcel3.dataSize());
+                } else {
+                    throw new IllegalStateException("Either mParcel or mEventsToWrite must not be null");
+                }
+            }
+        }
+        parcel.writeBlob(parcelObtain.marshall());
+    }
+}

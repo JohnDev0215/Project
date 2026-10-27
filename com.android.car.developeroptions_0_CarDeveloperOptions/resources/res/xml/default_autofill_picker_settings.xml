@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" xmlns:settings="http://schemas.android.com/apk/res-auto"
+    android:title="@string/autofill_app"
+    android:key="default_autofill_picker"
+    settings:keywords="@string/autofill_keywords">
+    <com.android.car.developeroptions.widget.GearPreference
+        android:title="@string/autofill_app"
+        android:key="default_autofill_main"
+        android:fragment="com.android.car.developeroptions.applications.defaultapps.DefaultAutofillPicker"
+        settings:keywords="@string/autofill_keywords">
+        <extra
+            android:name="for_work"
+            android:value="false"/>
+    </com.android.car.developeroptions.widget.GearPreference>
+    <com.android.car.developeroptions.widget.WorkOnlyCategory
+        android:title="@string/default_for_work"
+        android:key="autofill_work_app_defaults">
+        <com.android.car.developeroptions.widget.GearPreference
+            android:title="@string/autofill_app"
+            android:key="default_autofill_work"
+            android:fragment="com.android.car.developeroptions.applications.defaultapps.DefaultAutofillPicker"
+            settings:keywords="@string/autofill_keywords">
+            <extra
+                android:name="for_work"
+                android:value="true"/>
+        </com.android.car.developeroptions.widget.GearPreference>
+    </com.android.car.developeroptions.widget.WorkOnlyCategory>
+</PreferenceScreen>

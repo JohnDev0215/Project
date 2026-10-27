@@ -1,0 +1,9 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/os/storage/StorageEventListener;-><init>()V,frameworks/base/core/java/android/os/storage/StorageEventListener.java,28,5,28,25,
+Landroid/os/storage/StorageEventListener;->onUsbMassStorageConnectionChanged(Z)V,frameworks/base/core/java/android/os/storage/StorageEventListener.java,36,5,36,25,
+Landroid/os/storage/StorageEventListener;->onStorageStateChanged(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V,frameworks/base/core/java/android/os/storage/StorageEventListener.java,46,5,46,25,
+Landroid/os/storage/StorageEventListener;->onVolumeStateChanged(Landroid/os/storage/VolumeInfo;II)V,frameworks/base/core/java/android/os/storage/StorageEventListener.java,50,5,50,25,
+Landroid/os/storage/StorageEventListener;->onVolumeRecordChanged(Landroid/os/storage/VolumeRecord;)V,frameworks/base/core/java/android/os/storage/StorageEventListener.java,54,5,54,25,
+Landroid/os/storage/StorageEventListener;->onVolumeForgotten(Ljava/lang/String;)V,frameworks/base/core/java/android/os/storage/StorageEventListener.java,58,5,58,25,
+Landroid/os/storage/StorageEventListener;->onDiskScanned(Landroid/os/storage/DiskInfo;I)V,frameworks/base/core/java/android/os/storage/StorageEventListener.java,62,5,62,25,
+Landroid/os/storage/StorageEventListener;->onDiskDestroyed(Landroid/os/storage/DiskInfo;)V,frameworks/base/core/java/android/os/storage/StorageEventListener.java,66,5,66,25,

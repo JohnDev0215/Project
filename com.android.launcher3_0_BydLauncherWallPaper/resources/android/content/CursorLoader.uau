@@ -1,0 +1,3 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/content/CursorLoader;->mObserver:Landroid/content/Loader$ForceLoadContentObserver;,frameworks/base/core/java/android/content/CursorLoader.java,48,5,48,25,
+Landroid/content/CursorLoader;->mCancellationSignal:Landroid/os/CancellationSignal;,frameworks/base/core/java/android/content/CursorLoader.java,58,5,58,25,

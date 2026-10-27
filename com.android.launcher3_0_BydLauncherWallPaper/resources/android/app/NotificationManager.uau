@@ -1,0 +1,9 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/app/NotificationManager;->sService:Landroid/app/INotificationManager;,frameworks/base/core/java/android/app/NotificationManager.java,468,5,468,25,
+Landroid/app/NotificationManager;->getService()Landroid/app/INotificationManager;,frameworks/base/core/java/android/app/NotificationManager.java,472,5,472,25,
+Landroid/app/NotificationManager;-><init>(Landroid/content/Context;Landroid/os/Handler;)V,frameworks/base/core/java/android/app/NotificationManager.java,483,5,483,25,
+Landroid/app/NotificationManager;->from(Landroid/content/Context;)Landroid/app/NotificationManager;,frameworks/base/core/java/android/app/NotificationManager.java,490,5,490,25,
+Landroid/app/NotificationManager;->notifyAsUser(Ljava/lang/String;ILandroid/app/Notification;Landroid/os/UserHandle;)V,frameworks/base/core/java/android/app/NotificationManager.java,573,5,573,25,
+Landroid/app/NotificationManager;->cancelAsUser(Ljava/lang/String;ILandroid/os/UserHandle;)V,frameworks/base/core/java/android/app/NotificationManager.java,678,5,678,25,
+Landroid/app/NotificationManager;->setZenMode(ILandroid/net/Uri;Ljava/lang/String;)V,frameworks/base/core/java/android/app/NotificationManager.java,997,5,997,25,
+Landroid/app/NotificationManager;->getZenModeConfig()Landroid/service/notification/ZenModeConfig;,frameworks/base/core/java/android/app/NotificationManager.java,1022,5,1022,25,

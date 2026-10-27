@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="additional_permissions_more">
+        <item quantity="one">మరో %1$d</item>
+        <item quantity="other">మరో %1$d</item>
+    </plurals>
+    <plurals name="auto_revoke_permission_notification_content_count">
+        <item quantity="one">గత కొన్ని నెలలుగా %1$d యాప్ వినియోగంలో లేదు. రివ్యూ చేయడానికి ట్యాప్ చేయండి</item>
+        <item quantity="other">%1$d యాప్‌లు గత కొన్ని నెలలుగా వినియోగంలో లేవు. రివ్యూ చేయడానికి ట్యాప్ చేయండి</item>
+    </plurals>
+    <plurals name="auto_revoke_setting_subtitle_count">
+        <item quantity="one">గత కొన్ని నెలలుగా %1$d యాప్ వినియోగంలో లేదు</item>
+        <item quantity="other">%1$d యాప్‌లు గత కొన్ని నెలలుగా వినియోగంలో లేవు</item>
+    </plurals>
+    <plurals name="days">
+        <item quantity="one">1 రోజు</item>
+        <item quantity="other">%s రోజులు</item>
+    </plurals>
+    <plurals name="hours">
+        <item quantity="one">1 గంట</item>
+        <item quantity="other">%s గంటలు</item>
+    </plurals>
+    <plurals name="minutes">
+        <item quantity="one">1 నిమిషం</item>
+        <item quantity="other">%s నిమిషాలు</item>
+    </plurals>
+    <plurals name="seconds">
+        <item quantity="one">1 సెకను</item>
+        <item quantity="other">%s సెకన్లు</item>
+    </plurals>
+</resources>

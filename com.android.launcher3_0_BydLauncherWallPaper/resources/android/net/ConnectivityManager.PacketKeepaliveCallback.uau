@@ -1,0 +1,5 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/net/ConnectivityManager$PacketKeepaliveCallback;-><init>()V,frameworks/base/core/java/android/net/ConnectivityManager.java,1725,9,1725,29,
+Landroid/net/ConnectivityManager$PacketKeepaliveCallback;->onStarted()V,frameworks/base/core/java/android/net/ConnectivityManager.java,1729,9,1729,29,
+Landroid/net/ConnectivityManager$PacketKeepaliveCallback;->onStopped()V,frameworks/base/core/java/android/net/ConnectivityManager.java,1732,9,1732,29,
+Landroid/net/ConnectivityManager$PacketKeepaliveCallback;->onError(I)V,frameworks/base/core/java/android/net/ConnectivityManager.java,1735,9,1735,29,

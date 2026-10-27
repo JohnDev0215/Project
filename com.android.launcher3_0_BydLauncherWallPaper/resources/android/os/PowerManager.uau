@@ -1,0 +1,16 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/os/PowerManager;->BRIGHTNESS_ON:I,frameworks/base/core/java/android/os/PowerManager.java,240,5,240,25,
+Landroid/os/PowerManager;->GO_TO_SLEEP_REASON_TIMEOUT:I,frameworks/base/core/java/android/os/PowerManager.java,367,5,367,25,
+Landroid/os/PowerManager;->mService:Landroid/os/IPowerManager;,frameworks/base/core/java/android/os/PowerManager.java,919,5,919,25,
+Landroid/os/PowerManager;->mHandler:Landroid/os/Handler;,frameworks/base/core/java/android/os/PowerManager.java,921,5,921,63,maxTargetSdk=28
+Landroid/os/PowerManager;->getMinimumScreenBrightnessSetting()I,frameworks/base/core/java/android/os/PowerManager.java,956,5,956,25,
+Landroid/os/PowerManager;->getMaximumScreenBrightnessSetting()I,frameworks/base/core/java/android/os/PowerManager.java,968,5,968,25,
+Landroid/os/PowerManager;->getDefaultScreenBrightnessSetting()I,frameworks/base/core/java/android/os/PowerManager.java,978,5,978,25,
+Landroid/os/PowerManager;->getBrightnessConstraint(I)F,frameworks/base/core/java/android/os/PowerManager.java,1017,5,1017,25,
+Landroid/os/PowerManager;->validateWakeLockParameters(ILjava/lang/String;)V,frameworks/base/core/java/android/os/PowerManager.java,1107,5,1107,25,
+Landroid/os/PowerManager;->goToSleep(JII)V,frameworks/base/core/java/android/os/PowerManager.java,1240,5,1240,25,
+Landroid/os/PowerManager;->wakeUp(JLjava/lang/String;)V,frameworks/base/core/java/android/os/PowerManager.java,1297,5,1297,25,
+Landroid/os/PowerManager;->isLightDeviceIdleMode()Z,frameworks/base/core/java/android/os/PowerManager.java,1788,5,1788,25,
+Landroid/os/PowerManager;->ACTION_LIGHT_DEVICE_IDLE_MODE_CHANGED:Ljava/lang/String;,frameworks/base/core/java/android/os/PowerManager.java,2237,5,2237,25,
+Landroid/os/PowerManager;->ACTION_POWER_SAVE_MODE_CHANGING:Ljava/lang/String;,frameworks/base/core/java/android/os/PowerManager.java,2268,5,2269,89,maxTargetSdk=29&publicAlternatives=%22Use+%7B%40link+%23ACTION_POWER_SAVE_MODE_CHANGED%7D+instead.%22
+Landroid/os/PowerManager;->EXTRA_POWER_SAVE_MODE:Ljava/lang/String;,frameworks/base/core/java/android/os/PowerManager.java,2280,5,2281,76,maxTargetSdk=29&publicAlternatives=%22Use+%7B%40link+%23isPowerSaveMode%28%29%7D+instead.%22

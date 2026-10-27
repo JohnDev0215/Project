@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" xmlns:settings="http://schemas.android.com/apk/res-auto"
+    android:title="@string/financial_apps_sms_access_title"
+    android:key="@string/financial_sms_root_screen_key"
+    settings:controller="com.android.car.developeroptions.applications.specialaccess.financialapps.FinancialAppsController"/>

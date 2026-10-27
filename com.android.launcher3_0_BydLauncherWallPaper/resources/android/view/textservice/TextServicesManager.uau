@@ -1,0 +1,6 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/view/textservice/TextServicesManager;->getInstance()Landroid/view/textservice/TextServicesManager;,frameworks/base/core/java/android/view/textservice/TextServicesManager.java,111,5,111,25,
+Landroid/view/textservice/TextServicesManager;->getEnabledSpellCheckers()[Landroid/view/textservice/SpellCheckerInfo;,frameworks/base/core/java/android/view/textservice/TextServicesManager.java,219,5,219,25,
+Landroid/view/textservice/TextServicesManager;->getCurrentSpellChecker()Landroid/view/textservice/SpellCheckerInfo;,frameworks/base/core/java/android/view/textservice/TextServicesManager.java,235,5,235,25,
+Landroid/view/textservice/TextServicesManager;->getCurrentSpellCheckerSubtype(Z)Landroid/view/textservice/SpellCheckerSubtype;,frameworks/base/core/java/android/view/textservice/TextServicesManager.java,248,5,248,25,
+Landroid/view/textservice/TextServicesManager;->isSpellCheckerEnabled()Z,frameworks/base/core/java/android/view/textservice/TextServicesManager.java,261,5,261,25,

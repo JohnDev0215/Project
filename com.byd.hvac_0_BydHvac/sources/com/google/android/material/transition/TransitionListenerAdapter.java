@@ -1,0 +1,27 @@
+package com.google.android.material.transition;
+
+import androidx.transition.Transition;
+
+/* JADX INFO: compiled from: caradapter-bug */
+/* JADX INFO: loaded from: classes.dex */
+public abstract class TransitionListenerAdapter implements Transition.TransitionListener {
+    @Override // androidx.transition.Transition.TransitionListener
+    public void onTransitionCancel(Transition transition) {
+    }
+
+    @Override // androidx.transition.Transition.TransitionListener
+    public void onTransitionEnd(Transition transition) {
+    }
+
+    @Override // androidx.transition.Transition.TransitionListener
+    public void onTransitionPause(Transition transition) {
+    }
+
+    @Override // androidx.transition.Transition.TransitionListener
+    public void onTransitionResume(Transition transition) {
+    }
+
+    @Override // androidx.transition.Transition.TransitionListener
+    public void onTransitionStart(Transition transition) {
+    }
+}

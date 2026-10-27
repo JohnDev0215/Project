@@ -1,0 +1,8 @@
+signature,file,startline,startcol,endline,endcol,properties
+Lcom/android/internal/os/BatteryStatsImpl$Uid$Proc;->addCpuTimeLocked(II)V,frameworks/base/core/java/com/android/internal/os/BatteryStatsImpl.java,9059,13,9059,33,
+Lcom/android/internal/os/BatteryStatsImpl$Uid$Proc;->addForegroundTimeLocked(J)V,frameworks/base/core/java/com/android/internal/os/BatteryStatsImpl.java,9071,13,9071,33,
+Lcom/android/internal/os/BatteryStatsImpl$Uid$Proc;->incStartsLocked()V,frameworks/base/core/java/com/android/internal/os/BatteryStatsImpl.java,9076,13,9076,33,
+Lcom/android/internal/os/BatteryStatsImpl$Uid$Proc;->getUserTime(I)J,frameworks/base/core/java/com/android/internal/os/BatteryStatsImpl.java,9095,13,9095,33,
+Lcom/android/internal/os/BatteryStatsImpl$Uid$Proc;->getSystemTime(I)J,frameworks/base/core/java/com/android/internal/os/BatteryStatsImpl.java,9101,13,9101,33,
+Lcom/android/internal/os/BatteryStatsImpl$Uid$Proc;->getForegroundTime(I)J,frameworks/base/core/java/com/android/internal/os/BatteryStatsImpl.java,9107,13,9107,33,
+Lcom/android/internal/os/BatteryStatsImpl$Uid$Proc;->getStarts(I)I,frameworks/base/core/java/com/android/internal/os/BatteryStatsImpl.java,9113,13,9113,33,

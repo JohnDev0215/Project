@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+    <gradient
+        android:startColor="@color/dialog_button_bg_blue_startcolor_press"
+        android:endColor="@color/dialog_button_bg_blue_endcolor_press"
+        android:angle="180"/>
+    <corners android:radius="@dimen/dp_10"/>
+</shape>

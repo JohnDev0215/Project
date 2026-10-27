@@ -1,0 +1,10 @@
+package androidx.lifecycle;
+
+import androidx.annotation.NonNull;
+import androidx.lifecycle.Lifecycle;
+
+/* JADX INFO: compiled from: caradapter-bug */
+/* JADX INFO: loaded from: classes.dex */
+public interface LifecycleEventObserver extends LifecycleObserver {
+    void onStateChanged(@NonNull LifecycleOwner lifecycleOwner, @NonNull Lifecycle.Event event);
+}

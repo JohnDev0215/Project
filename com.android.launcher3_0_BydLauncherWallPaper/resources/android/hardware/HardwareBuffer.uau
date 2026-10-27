@@ -1,0 +1,3 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/hardware/HardwareBuffer;->mNativeObject:J,frameworks/base/core/java/android/hardware/HardwareBuffer.java,99,5,99,25,
+Landroid/hardware/HardwareBuffer;-><init>(J)V,frameworks/base/core/java/android/hardware/HardwareBuffer.java,239,5,239,88,maxTargetSdk=28&trackingBug=115609023L

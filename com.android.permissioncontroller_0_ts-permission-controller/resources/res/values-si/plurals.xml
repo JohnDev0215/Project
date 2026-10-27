@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="additional_permissions_more">
+        <item quantity="one">.තව %1$d</item>
+        <item quantity="other">.තව %1$d</item>
+    </plurals>
+    <plurals name="auto_revoke_permission_notification_content_count">
+        <item quantity="one">යෙදුම් %1$dක් මාස කිහිපයක් තුළ භාවිත කර නැත. සමාලෝචනය කිරීමට තට්ටු කරන්න</item>
+        <item quantity="other">යෙදුම් %1$dක් මාස කිහිපයක් තුළ භාවිත කර නැත. සමාලෝචනය කිරීමට තට්ටු කරන්න</item>
+    </plurals>
+    <plurals name="auto_revoke_setting_subtitle_count">
+        <item quantity="one">යෙදුම් %1$dක් මාස කිහිපයක් තුළ භාවිත කර නැත</item>
+        <item quantity="other">යෙදුම් %1$dක් මාස කිහිපයක් තුළ භාවිත කර නැත</item>
+    </plurals>
+    <plurals name="days">
+        <item quantity="one">දින %s</item>
+        <item quantity="other">දින %s</item>
+    </plurals>
+    <plurals name="hours">
+        <item quantity="one">පැය %s</item>
+        <item quantity="other">පැය %s</item>
+    </plurals>
+    <plurals name="minutes">
+        <item quantity="one">මිනිත්තු %s</item>
+        <item quantity="other">මිනිත්තු %s</item>
+    </plurals>
+    <plurals name="seconds">
+        <item quantity="one">තත්පර %s</item>
+        <item quantity="other">තත්පර %s</item>
+    </plurals>
+</resources>

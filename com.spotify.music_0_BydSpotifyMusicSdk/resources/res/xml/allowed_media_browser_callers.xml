@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<allowed_callers>
+    <signature
+        name="Alexa Auto Client Service"
+        package="com.amazon.alexaautoclientservice">
+        <key> bf:90:51:73:53:d6:0b:43:5d:dd:f0:fc:27:49:3b:61:eb:7e:4b:83:a5:d1:34:68:55:55:25:88:13:ac:a5:89 
+        </key>
+    </signature>
+    <signature
+        name="Alexa Sample app"
+        package="com.amazon.sampleapp">
+        <key> bf:90:51:73:53:d6:0b:43:5d:dd:f0:fc:27:49:3b:61:eb:7e:4b:83:a5:d1:34:68:55:55:25:88:13:ac:a5:89 
+        </key>
+    </signature>
+    <signature
+        name="Alexa app for GM"
+        package="com.gm.info3.alexa">
+        <key> 56:57:DC:AA:87:18:FC:C2:FF:F0:86:55:41:74:DD:42:45:F0:31:BC:FF:F4:5D:BA:7F:0D:DD:48:52:B9:5C:71 
+        </key>
+    </signature>
+    <signature
+        name="Google Assistant"
+        package="com.google.android.carassistant">
+        <key> 17:E2:81:11:06:2F:97:A8:60:79:7A:83:70:5B:F8:2C:7C:C0:29:35:56:6D:46:22:BC:4E:CF:EE:1B:EB:F8:15 
+        </key>
+        <key> 74:B6:FB:F7:10:E8:D9:0D:44:D3:40:12:58:89:B4:23:06:A6:2C:43:79:D0:E5:A6:62:20:E3:A6:8A:BF:90:E2 
+        </key>
+    </signature>
+    <signature
+        name="Polestar Test Drive"
+        package="com.polestar.testdrive.production.android">
+        <key> 0C:FC:A0:44:CC:1E:8D:D1:DE:C5:45:90:1C:74:02:81:7F:A8:AE:DE:BA:00:88:6F:98:47:BF:2F:74:F6:3D:E7 
+        </key>
+    </signature>
+    <signature
+        name="VW Media player"
+        package="com.vw.app.vwmp">
+        <key> 15:7A:D8:1C:09:B1:B3:36:2B:1B:DA:11:02:57:54:40:EC:BE:6F:40:13:97:E3:4E:3B:4D:C1:CE:A2:AD:EF:53 
+        </key>
+    </signature>
+    <signature
+        name="Ford automotive OS dev app integration with Alexa"
+        package="com.ford.alexa.auto.app">
+        <key> 8C:0F:D6:61:C9:BB:61:84:BC:C8:89:B3:45:D5:DB:ED:88:A9:94:B8:CB:8F:47:09:73:9B:4D:FA:E7:FB:98:9B 
+        </key>
+    </signature>
+    <signature
+        name="Ford automotive OS production app integration with Alexa"
+        package="com.ford.alexa.auto.app">
+        <key> 54:83:2E:9E:B7:3E:B3:09:55:A3:32:9C:40:A6:F4:BE:77:A0:15:DB:C2:17:63:E7:F4:39:54:B6:F0:F6:BD:E9 
+        </key>
+    </signature>
+</allowed_callers>

@@ -1,0 +1,5 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/hardware/camera2/impl/CameraMetadataNative;->mMetadataPtr:J,frameworks/base/core/java/android/hardware/camera2/impl/CameraMetadataNative.java,1712,5,1712,25,
+Landroid/hardware/camera2/impl/CameraMetadataNative;->nativeReadValues(IJ)[B,frameworks/base/core/java/android/hardware/camera2/impl/CameraMetadataNative.java,1737,5,1737,25,
+Landroid/hardware/camera2/impl/CameraMetadataNative;->nativeGetTagFromKeyLocal(JLjava/lang/String;)I,frameworks/base/core/java/android/hardware/camera2/impl/CameraMetadataNative.java,1746,5,1746,25,
+Landroid/hardware/camera2/impl/CameraMetadataNative;->nativeGetTypeFromTagLocal(JI)I,frameworks/base/core/java/android/hardware/camera2/impl/CameraMetadataNative.java,1750,5,1750,25,

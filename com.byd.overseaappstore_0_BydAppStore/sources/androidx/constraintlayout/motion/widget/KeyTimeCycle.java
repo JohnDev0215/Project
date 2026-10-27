@@ -1,0 +1,450 @@
+package androidx.constraintlayout.motion.widget;
+
+import android.content.Context;
+import android.util.AttributeSet;
+import android.util.Log;
+import android.util.SparseIntArray;
+import androidx.constraintlayout.motion.utils.ViewSpline;
+import androidx.constraintlayout.motion.utils.ViewTimeCycle;
+import androidx.constraintlayout.widget.ConstraintAttribute;
+import androidx.constraintlayout.widget.R;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.Objects;
+import spi.d;
+
+/* JADX INFO: loaded from: classes.dex */
+public class KeyTimeCycle extends Key {
+    public static final int KEY_TYPE = 3;
+    public static final String NAME = "KeyTimeCycle";
+    public static final int SHAPE_BOUNCE = 6;
+    public static final int SHAPE_COS_WAVE = 5;
+    public static final int SHAPE_REVERSE_SAW_WAVE = 4;
+    public static final int SHAPE_SAW_WAVE = 3;
+    public static final int SHAPE_SIN_WAVE = 0;
+    public static final int SHAPE_SQUARE_WAVE = 1;
+    public static final int SHAPE_TRIANGLE_WAVE = 2;
+    private static final String TAG = "KeyTimeCycle";
+    public static final String WAVE_OFFSET = "waveOffset";
+    public static final String WAVE_PERIOD = "wavePeriod";
+    public static final String WAVE_SHAPE = "waveShape";
+    private String mTransitionEasing;
+    private int mCurveFit = -1;
+    private float mAlpha = Float.NaN;
+    private float mElevation = Float.NaN;
+    private float mRotation = Float.NaN;
+    private float mRotationX = Float.NaN;
+    private float mRotationY = Float.NaN;
+    private float mTransitionPathRotate = Float.NaN;
+    private float mScaleX = Float.NaN;
+    private float mScaleY = Float.NaN;
+    private float mTranslationX = Float.NaN;
+    private float mTranslationY = Float.NaN;
+    private float mTranslationZ = Float.NaN;
+    private float mProgress = Float.NaN;
+    private int mWaveShape = 0;
+    private String mCustomWaveShape = null;
+    private float mWavePeriod = Float.NaN;
+    private float mWaveOffset = 0.0f;
+
+    public static class Loader {
+        private static final int ANDROID_ALPHA = 1;
+        private static final int ANDROID_ELEVATION = 2;
+        private static final int ANDROID_ROTATION = 4;
+        private static final int ANDROID_ROTATION_X = 5;
+        private static final int ANDROID_ROTATION_Y = 6;
+        private static final int ANDROID_SCALE_X = 7;
+        private static final int ANDROID_SCALE_Y = 14;
+        private static final int ANDROID_TRANSLATION_X = 15;
+        private static final int ANDROID_TRANSLATION_Y = 16;
+        private static final int ANDROID_TRANSLATION_Z = 17;
+        private static final int CURVE_FIT = 13;
+        private static final int FRAME_POSITION = 12;
+        private static final int PROGRESS = 18;
+        private static final int TARGET_ID = 10;
+        private static final int TRANSITION_EASING = 9;
+        private static final int TRANSITION_PATH_ROTATE = 8;
+        private static final int WAVE_OFFSET = 21;
+        private static final int WAVE_PERIOD = 20;
+        private static final int WAVE_SHAPE = 19;
+        private static SparseIntArray mAttrMap;
+
+        static {
+            SparseIntArray sparseIntArray = new SparseIntArray();
+            mAttrMap = sparseIntArray;
+            sparseIntArray.append(R.styleable.KeyTimeCycle_android_alpha, 1);
+            mAttrMap.append(R.styleable.KeyTimeCycle_android_elevation, 2);
+            mAttrMap.append(R.styleable.KeyTimeCycle_android_rotation, 4);
+            mAttrMap.append(R.styleable.KeyTimeCycle_android_rotationX, 5);
+            mAttrMap.append(R.styleable.KeyTimeCycle_android_rotationY, 6);
+            mAttrMap.append(R.styleable.KeyTimeCycle_android_scaleX, 7);
+            mAttrMap.append(R.styleable.KeyTimeCycle_transitionPathRotate, 8);
+            mAttrMap.append(R.styleable.KeyTimeCycle_transitionEasing, 9);
+            mAttrMap.append(R.styleable.KeyTimeCycle_motionTarget, 10);
+            mAttrMap.append(R.styleable.KeyTimeCycle_framePosition, 12);
+            mAttrMap.append(R.styleable.KeyTimeCycle_curveFit, 13);
+            mAttrMap.append(R.styleable.KeyTimeCycle_android_scaleY, 14);
+            mAttrMap.append(R.styleable.KeyTimeCycle_android_translationX, 15);
+            mAttrMap.append(R.styleable.KeyTimeCycle_android_translationY, 16);
+            mAttrMap.append(R.styleable.KeyTimeCycle_android_translationZ, 17);
+            mAttrMap.append(R.styleable.KeyTimeCycle_motionProgress, 18);
+            mAttrMap.append(R.styleable.KeyTimeCycle_wavePeriod, 20);
+            mAttrMap.append(R.styleable.KeyTimeCycle_waveOffset, 21);
+            mAttrMap.append(R.styleable.KeyTimeCycle_waveShape, 19);
+        }
+
+        private Loader() {
+        }
+
+        /* JADX WARN: Removed duplicated region for block: B:32:0x00f6  */
+        /*
+            Code decompiled incorrectly, please refer to instructions dump.
+            To view partially-correct code enable 'Show inconsistent code' option in preferences
+        */
+        public static void read(androidx.constraintlayout.motion.widget.KeyTimeCycle r5, android.content.res.TypedArray r6) {
+            /*
+                Method dump skipped, instruction units count: 404
+                To view this dump change 'Code comments level' option to 'DEBUG'
+            */
+            throw new UnsupportedOperationException("Method not decompiled: androidx.constraintlayout.motion.widget.KeyTimeCycle.Loader.read(androidx.constraintlayout.motion.widget.KeyTimeCycle, android.content.res.TypedArray):void");
+        }
+    }
+
+    public KeyTimeCycle() {
+        this.mType = 3;
+        this.mCustomConstraints = new HashMap<>();
+    }
+
+    public void addTimeValues(HashMap<String, ViewTimeCycle> map) {
+        int i;
+        float f;
+        for (String str : map.keySet()) {
+            ViewTimeCycle viewTimeCycle = map.get(str);
+            if (viewTimeCycle != null) {
+                if (str.startsWith("CUSTOM")) {
+                    ConstraintAttribute constraintAttribute = this.mCustomConstraints.get(str.substring(7));
+                    if (constraintAttribute != null) {
+                        ((ViewTimeCycle.CustomSet) viewTimeCycle).setPoint(this.mFramePosition, constraintAttribute, this.mWavePeriod, this.mWaveShape, this.mWaveOffset);
+                    }
+                } else {
+                    switch (str) {
+                        case "rotationX":
+                            if (Float.isNaN(this.mRotationX)) {
+                                break;
+                            } else {
+                                i = this.mFramePosition;
+                                f = this.mRotationX;
+                                break;
+                            }
+                            break;
+                        case "rotationY":
+                            if (Float.isNaN(this.mRotationY)) {
+                                break;
+                            } else {
+                                i = this.mFramePosition;
+                                f = this.mRotationY;
+                                break;
+                            }
+                            break;
+                        case "translationX":
+                            if (Float.isNaN(this.mTranslationX)) {
+                                break;
+                            } else {
+                                i = this.mFramePosition;
+                                f = this.mTranslationX;
+                                break;
+                            }
+                            break;
+                        case "translationY":
+                            if (Float.isNaN(this.mTranslationY)) {
+                                break;
+                            } else {
+                                i = this.mFramePosition;
+                                f = this.mTranslationY;
+                                break;
+                            }
+                            break;
+                        case "translationZ":
+                            if (Float.isNaN(this.mTranslationZ)) {
+                                break;
+                            } else {
+                                i = this.mFramePosition;
+                                f = this.mTranslationZ;
+                                break;
+                            }
+                            break;
+                        case "progress":
+                            if (Float.isNaN(this.mProgress)) {
+                                break;
+                            } else {
+                                i = this.mFramePosition;
+                                f = this.mProgress;
+                                break;
+                            }
+                            break;
+                        case "scaleX":
+                            if (Float.isNaN(this.mScaleX)) {
+                                break;
+                            } else {
+                                i = this.mFramePosition;
+                                f = this.mScaleX;
+                                break;
+                            }
+                            break;
+                        case "scaleY":
+                            if (Float.isNaN(this.mScaleY)) {
+                                break;
+                            } else {
+                                i = this.mFramePosition;
+                                f = this.mScaleY;
+                                break;
+                            }
+                            break;
+                        case "rotation":
+                            if (Float.isNaN(this.mRotation)) {
+                                break;
+                            } else {
+                                i = this.mFramePosition;
+                                f = this.mRotation;
+                                break;
+                            }
+                            break;
+                        case "elevation":
+                            if (Float.isNaN(this.mElevation)) {
+                                break;
+                            } else {
+                                i = this.mFramePosition;
+                                f = this.mElevation;
+                                break;
+                            }
+                            break;
+                        case "transitionPathRotate":
+                            if (Float.isNaN(this.mTransitionPathRotate)) {
+                                break;
+                            } else {
+                                i = this.mFramePosition;
+                                f = this.mTransitionPathRotate;
+                                break;
+                            }
+                            break;
+                        case "alpha":
+                            if (Float.isNaN(this.mAlpha)) {
+                                break;
+                            } else {
+                                i = this.mFramePosition;
+                                f = this.mAlpha;
+                                break;
+                            }
+                            break;
+                        default:
+                            Log.e("KeyTimeCycles", "UNKNOWN addValues \"" + str + "\"");
+                            continue;
+                            break;
+                    }
+                    viewTimeCycle.setPoint(i, f, this.mWavePeriod, this.mWaveShape, this.mWaveOffset);
+                }
+            }
+        }
+    }
+
+    @Override // androidx.constraintlayout.motion.widget.Key
+    public void addValues(HashMap<String, ViewSpline> map) {
+        throw new IllegalArgumentException(" KeyTimeCycles do not support SplineSet");
+    }
+
+    @Override // androidx.constraintlayout.motion.widget.Key
+    /* JADX INFO: renamed from: clone */
+    public Key mo9clone() {
+        return new KeyTimeCycle().copy(this);
+    }
+
+    @Override // androidx.constraintlayout.motion.widget.Key
+    public Key copy(Key key) {
+        super.copy(key);
+        KeyTimeCycle keyTimeCycle = (KeyTimeCycle) key;
+        this.mTransitionEasing = keyTimeCycle.mTransitionEasing;
+        this.mCurveFit = keyTimeCycle.mCurveFit;
+        this.mWaveShape = keyTimeCycle.mWaveShape;
+        this.mWavePeriod = keyTimeCycle.mWavePeriod;
+        this.mWaveOffset = keyTimeCycle.mWaveOffset;
+        this.mProgress = keyTimeCycle.mProgress;
+        this.mAlpha = keyTimeCycle.mAlpha;
+        this.mElevation = keyTimeCycle.mElevation;
+        this.mRotation = keyTimeCycle.mRotation;
+        this.mTransitionPathRotate = keyTimeCycle.mTransitionPathRotate;
+        this.mRotationX = keyTimeCycle.mRotationX;
+        this.mRotationY = keyTimeCycle.mRotationY;
+        this.mScaleX = keyTimeCycle.mScaleX;
+        this.mScaleY = keyTimeCycle.mScaleY;
+        this.mTranslationX = keyTimeCycle.mTranslationX;
+        this.mTranslationY = keyTimeCycle.mTranslationY;
+        this.mTranslationZ = keyTimeCycle.mTranslationZ;
+        return this;
+    }
+
+    @Override // androidx.constraintlayout.motion.widget.Key
+    public void getAttributeNames(HashSet<String> hashSet) {
+        if (!Float.isNaN(this.mAlpha)) {
+            hashSet.add("alpha");
+        }
+        if (!Float.isNaN(this.mElevation)) {
+            hashSet.add("elevation");
+        }
+        if (!Float.isNaN(this.mRotation)) {
+            hashSet.add(Key.ROTATION);
+        }
+        if (!Float.isNaN(this.mRotationX)) {
+            hashSet.add("rotationX");
+        }
+        if (!Float.isNaN(this.mRotationY)) {
+            hashSet.add("rotationY");
+        }
+        if (!Float.isNaN(this.mTranslationX)) {
+            hashSet.add("translationX");
+        }
+        if (!Float.isNaN(this.mTranslationY)) {
+            hashSet.add("translationY");
+        }
+        if (!Float.isNaN(this.mTranslationZ)) {
+            hashSet.add("translationZ");
+        }
+        if (!Float.isNaN(this.mTransitionPathRotate)) {
+            hashSet.add("transitionPathRotate");
+        }
+        if (!Float.isNaN(this.mScaleX)) {
+            hashSet.add("scaleX");
+        }
+        if (!Float.isNaN(this.mScaleY)) {
+            hashSet.add("scaleY");
+        }
+        if (!Float.isNaN(this.mProgress)) {
+            hashSet.add("progress");
+        }
+        if (this.mCustomConstraints.size() > 0) {
+            Iterator<String> it = this.mCustomConstraints.keySet().iterator();
+            while (it.hasNext()) {
+                hashSet.add("CUSTOM," + it.next());
+            }
+        }
+    }
+
+    @Override // androidx.constraintlayout.motion.widget.Key
+    public void load(Context context, AttributeSet attributeSet) {
+        Loader.read(this, context.obtainStyledAttributes(attributeSet, R.styleable.KeyTimeCycle));
+    }
+
+    @Override // androidx.constraintlayout.motion.widget.Key
+    public void setInterpolation(HashMap<String, Integer> map) {
+        if (this.mCurveFit == -1) {
+            return;
+        }
+        if (!Float.isNaN(this.mAlpha)) {
+            map.put("alpha", Integer.valueOf(this.mCurveFit));
+        }
+        if (!Float.isNaN(this.mElevation)) {
+            map.put("elevation", Integer.valueOf(this.mCurveFit));
+        }
+        if (!Float.isNaN(this.mRotation)) {
+            map.put(Key.ROTATION, Integer.valueOf(this.mCurveFit));
+        }
+        if (!Float.isNaN(this.mRotationX)) {
+            map.put("rotationX", Integer.valueOf(this.mCurveFit));
+        }
+        if (!Float.isNaN(this.mRotationY)) {
+            map.put("rotationY", Integer.valueOf(this.mCurveFit));
+        }
+        if (!Float.isNaN(this.mTranslationX)) {
+            map.put("translationX", Integer.valueOf(this.mCurveFit));
+        }
+        if (!Float.isNaN(this.mTranslationY)) {
+            map.put("translationY", Integer.valueOf(this.mCurveFit));
+        }
+        if (!Float.isNaN(this.mTranslationZ)) {
+            map.put("translationZ", Integer.valueOf(this.mCurveFit));
+        }
+        if (!Float.isNaN(this.mTransitionPathRotate)) {
+            map.put("transitionPathRotate", Integer.valueOf(this.mCurveFit));
+        }
+        if (!Float.isNaN(this.mScaleX)) {
+            map.put("scaleX", Integer.valueOf(this.mCurveFit));
+        }
+        if (!Float.isNaN(this.mScaleX)) {
+            map.put("scaleY", Integer.valueOf(this.mCurveFit));
+        }
+        if (!Float.isNaN(this.mProgress)) {
+            map.put("progress", Integer.valueOf(this.mCurveFit));
+        }
+        if (this.mCustomConstraints.size() > 0) {
+            Iterator<String> it = this.mCustomConstraints.keySet().iterator();
+            while (it.hasNext()) {
+                map.put(d.f("CUSTOM,", it.next()), Integer.valueOf(this.mCurveFit));
+            }
+        }
+    }
+
+    @Override // androidx.constraintlayout.motion.widget.Key
+    public void setValue(String str, Object obj) {
+        Objects.requireNonNull(str);
+        switch (str) {
+            case "motionProgress":
+                this.mProgress = toFloat(obj);
+                break;
+            case "transitionEasing":
+                this.mTransitionEasing = obj.toString();
+                break;
+            case "rotationX":
+                this.mRotationX = toFloat(obj);
+                break;
+            case "rotationY":
+                this.mRotationY = toFloat(obj);
+                break;
+            case "translationX":
+                this.mTranslationX = toFloat(obj);
+                break;
+            case "translationY":
+                this.mTranslationY = toFloat(obj);
+                break;
+            case "translationZ":
+                this.mTranslationZ = toFloat(obj);
+                break;
+            case "scaleX":
+                this.mScaleX = toFloat(obj);
+                break;
+            case "scaleY":
+                this.mScaleY = toFloat(obj);
+                break;
+            case "rotation":
+                this.mRotation = toFloat(obj);
+                break;
+            case "elevation":
+                this.mElevation = toFloat(obj);
+                break;
+            case "transitionPathRotate":
+                this.mTransitionPathRotate = toFloat(obj);
+                break;
+            case "alpha":
+                this.mAlpha = toFloat(obj);
+                break;
+            case "waveOffset":
+                this.mWaveOffset = toFloat(obj);
+                break;
+            case "wavePeriod":
+                this.mWavePeriod = toFloat(obj);
+                break;
+            case "curveFit":
+                this.mCurveFit = toInt(obj);
+                break;
+            case "waveShape":
+                if (!(obj instanceof Integer)) {
+                    this.mWaveShape = 7;
+                    this.mCustomWaveShape = obj.toString();
+                    break;
+                } else {
+                    this.mWaveShape = toInt(obj);
+                    break;
+                }
+                break;
+        }
+    }
+}

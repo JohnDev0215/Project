@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@drawable/bg_dialog_status_list"
+    android:layout_width="@dimen/dp_278"
+    android:layout_height="wrap_content"
+    android:maxHeight="@dimen/dp_410"
+    android:layoutDirection="ltr">
+    <TextView
+        android:textSize="@dimen/sp_20"
+        android:textColor="@color/item_status_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_20"
+        android:text="@string/sys_ui_status_title"
+        android:layout_marginStart="@dimen/dp_16"/>
+    <View
+        android:background="@color/bg_color_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:layout_marginTop="@dimen/dp_68"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/dp_69"/>
+</RelativeLayout>

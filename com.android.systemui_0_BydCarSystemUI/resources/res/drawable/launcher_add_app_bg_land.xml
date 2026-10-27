@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:radius="@dimen/dp_16"/>
+    <gradient
+        android:dither="true"
+        android:startColor="@color/add_app_bg_start"
+        android:endColor="@color/add_app_bg_end"
+        android:useLevel="true"
+        android:angle="180"
+        android:type="linear"
+        android:centerX="0"
+        android:centerY="0"
+        android:gradientRadius="180"/>
+    <stroke
+        android:width="1dp"
+        android:color="@color/app_center_second_pop_board"/>
+</shape>

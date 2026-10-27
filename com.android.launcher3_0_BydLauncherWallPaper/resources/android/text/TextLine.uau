@@ -1,0 +1,8 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/text/TextLine;->mText:Ljava/lang/CharSequence;,frameworks/base/core/java/android/text/TextLine.java,58,5,58,25,
+Landroid/text/TextLine;->mSpanned:Landroid/text/Spanned;,frameworks/base/core/java/android/text/TextLine.java,68,5,68,88,maxTargetSdk=28&trackingBug=115609023L
+Landroid/text/TextLine;->mMetricAffectingSpanSpanSet:Landroid/text/SpanSet;,frameworks/base/core/java/android/text/TextLine.java,84,5,84,25,
+Landroid/text/TextLine;->mCharacterStyleSpanSet:Landroid/text/SpanSet;,frameworks/base/core/java/android/text/TextLine.java,87,5,87,25,
+Landroid/text/TextLine;->mReplacementSpanSpanSet:Landroid/text/SpanSet;,frameworks/base/core/java/android/text/TextLine.java,90,5,90,25,
+Landroid/text/TextLine;->sCached:[Landroid/text/TextLine;,frameworks/base/core/java/android/text/TextLine.java,98,5,98,63,maxTargetSdk=28
+Landroid/text/TextLine;->obtain()Landroid/text/TextLine;,frameworks/base/core/java/android/text/TextLine.java,107,5,107,25,

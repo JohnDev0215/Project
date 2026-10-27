@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.byd.hvac.view.dialog.AcInnerDisplayModeTipsLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/common_dialog_background"
+    android:layout_width="@dimen/dp_560"
+    android:layout_height="@dimen/dp_264"
+    android:layoutDirection="ltr">
+    <TextView
+        android:textSize="@dimen/sp_20"
+        android:textColor="@color/dialog_common_text_content"
+        android:gravity="center"
+        android:id="@+id/tv_content"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_116"
+        android:layout_marginTop="@dimen/dp_48"
+        android:text="@string/display_ac_open_limit"
+        android:layout_below="@+id/divider"
+        android:layout_centerHorizontal="true"
+        android:paddingStart="@dimen/dp_48"
+        android:paddingEnd="@dimen/dp_48"/>
+    <LinearLayout
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:id="@+id/ll_btn_container"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_76"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true">
+        <com.byd.hvac.view.dialog.CountDownTimerTextView
+            android:textSize="@dimen/sp_18"
+            android:textColor="@color/dialog_cancle_textcolor"
+            android:gravity="center"
+            android:id="@+id/tv_yes"
+            android:background="@drawable/shape_bg_cancle_radio_button"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_48"
+            android:minWidth="@dimen/dp_176"
+            android:stateListAnimator="@drawable/anim_btn_alpha"
+            app:duration="8"
+            app:text="@string/vehicle_state_confirm"/>
+    </LinearLayout>
+</com.byd.hvac.view.dialog.AcInnerDisplayModeTipsLayout>

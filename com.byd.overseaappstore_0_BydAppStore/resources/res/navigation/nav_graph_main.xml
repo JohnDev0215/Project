@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph_main"
+    app:startDestination="@+id/startUpFragment">
+    <fragment
+        android:label="fragment_start_up"
+        android:name="com.byd.overseaappstore.ui.view.fragment.StartUpFragment"
+        android:id="@+id/startUpFragment">
+        <action
+            android:id="@+id/action_start_up_to_protocol"
+            app:destination="@+id/startUpProtocolFragment"/>
+    </fragment>
+    <fragment
+        android:label="fragment_start_up_protocol"
+        android:name="com.byd.overseaappstore.ui.view.fragment.ProtocolFragment"
+        android:id="@+id/startUpProtocolFragment">
+        <argument
+            android:name="protocol_type"
+            android:defaultValue=""
+            app:argType="string"/>
+    </fragment>
+    <include app:graph="@navigation/nav_graph_panel"/>
+</navigation>

@@ -1,0 +1,9 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/app/ResourcesManager;->mResConfiguration:Landroid/content/res/Configuration;,frameworks/base/core/java/android/app/ResourcesManager.java,82,5,82,25,
+Landroid/app/ResourcesManager;->mResourceImpls:Landroid/util/ArrayMap;,frameworks/base/core/java/android/app/ResourcesManager.java,89,5,89,25,
+Landroid/app/ResourcesManager;->mResourceReferences:Ljava/util/ArrayList;,frameworks/base/core/java/android/app/ResourcesManager.java,96,5,96,25,
+Landroid/app/ResourcesManager;->mActivityResourceReferences:Ljava/util/WeakHashMap;,frameworks/base/core/java/android/app/ResourcesManager.java,174,5,174,25,
+Landroid/app/ResourcesManager;-><init>()V,frameworks/base/core/java/android/app/ResourcesManager.java,189,5,189,25,
+Landroid/app/ResourcesManager;->getInstance()Landroid/app/ResourcesManager;,frameworks/base/core/java/android/app/ResourcesManager.java,193,5,193,25,
+Landroid/app/ResourcesManager;->createAssetManager(Landroid/content/res/ResourcesKey;)Landroid/content/res/AssetManager;,frameworks/base/core/java/android/app/ResourcesManager.java,432,5,432,25,
+Landroid/app/ResourcesManager;->appendLibAssetForMainAssetPath(Ljava/lang/String;Ljava/lang/String;)V,frameworks/base/core/java/android/app/ResourcesManager.java,1189,5,1189,25,

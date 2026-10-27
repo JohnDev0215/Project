@@ -1,0 +1,17 @@
+package androidx.constraintlayout.solver.state;
+
+import androidx.constraintlayout.solver.widgets.ConstraintWidget;
+
+/* JADX INFO: compiled from: caradapter-bug */
+/* JADX INFO: loaded from: classes.dex */
+public interface Reference {
+    void apply();
+
+    ConstraintWidget getConstraintWidget();
+
+    Object getKey();
+
+    void setConstraintWidget(ConstraintWidget constraintWidget);
+
+    void setKey(Object obj);
+}

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="additional_permissions_more">
+        <item quantity="one">%1$d zaidi</item>
+        <item quantity="other">%1$d zaidi</item>
+    </plurals>
+    <plurals name="auto_revoke_permission_notification_content_count">
+        <item quantity="one">Programu %1$d haijatumiwa kwa miezi michache. Gusa ili ukague</item>
+        <item quantity="other">Programu %1$d hazijatumiwa kwa miezi michache. Gusa ili ukague</item>
+    </plurals>
+    <plurals name="auto_revoke_setting_subtitle_count">
+        <item quantity="one">Programu %1$d haijatumiwa kwa miezi michache</item>
+        <item quantity="other">Programu %1$d hazijatumiwa kwa miezi michache</item>
+    </plurals>
+    <plurals name="days">
+        <item quantity="one">Siku 1</item>
+        <item quantity="other">Siku %s</item>
+    </plurals>
+    <plurals name="hours">
+        <item quantity="one">Saa 1</item>
+        <item quantity="other">Saa %s</item>
+    </plurals>
+    <plurals name="minutes">
+        <item quantity="one">Dakika 1</item>
+        <item quantity="other">Dakika %s</item>
+    </plurals>
+    <plurals name="seconds">
+        <item quantity="one">Sekunde 1</item>
+        <item quantity="other">Sekunde %s</item>
+    </plurals>
+</resources>

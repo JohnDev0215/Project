@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="dotted_app_label">
+        <item quantity="one">לאפליקציה %1$s יש התראה אחת (%2$d)</item>
+        <item quantity="two">לאפליקציה %1$s יש %2$d התראות</item>
+        <item quantity="many">לאפליקציה %1$s יש %2$d התראות</item>
+        <item quantity="other">לאפליקציה %1$s יש %2$d התראות</item>
+    </plurals>
+</resources>

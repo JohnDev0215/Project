@@ -1,0 +1,6 @@
+signature,file,startline,startcol,endline,endcol,properties
+Lcom/android/internal/app/IAppOpsService;->finishOperation(Landroid/os/IBinder;IILjava/lang/String;Ljava/lang/String;)V,frameworks/base/core/java/com/android/internal/app/IAppOpsService.aidl,43,1,43,25,
+Lcom/android/internal/app/IAppOpsService;->getPackagesForOps([I)Ljava/util/List;,frameworks/base/core/java/com/android/internal/app/IAppOpsService.aidl,65,1,65,25,
+Lcom/android/internal/app/IAppOpsService;->getOpsForPackage(ILjava/lang/String;[I)Ljava/util/List;,frameworks/base/core/java/com/android/internal/app/IAppOpsService.aidl,67,1,67,25,
+Lcom/android/internal/app/IAppOpsService;->setMode(IILjava/lang/String;I)V,frameworks/base/core/java/com/android/internal/app/IAppOpsService.aidl,83,1,83,25,
+Lcom/android/internal/app/IAppOpsService;->resetAllModes(ILjava/lang/String;)V,frameworks/base/core/java/com/android/internal/app/IAppOpsService.aidl,85,1,85,25,

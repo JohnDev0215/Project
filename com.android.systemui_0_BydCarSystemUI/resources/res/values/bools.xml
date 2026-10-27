@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <bool name="abc_action_bar_embed_tabs">true</bool>
+    <bool name="abc_allow_stacked_button_bar">false</bool>
+    <bool name="abc_config_actionMenuItemAllCaps">true</bool>
+    <bool name="config_alwaysExpandNonGroupedNotifications">false</bool>
+    <bool name="config_clipNotificationScrollToTop">true</bool>
+    <bool name="config_clipNotificationsToOutline">false</bool>
+    <bool name="config_enableFullscreenUserSwitcher">false</bool>
+    <bool name="config_enableKeyguardService">true</bool>
+    <bool name="config_enableNonGroupedNotificationExpand">true</bool>
+    <bool name="config_fadeDependingOnAmountSwiped">false</bool>
+    <bool name="config_hideDividersDuringExpand">false</bool>
+    <bool name="config_hspa_data_distinguishable">false</bool>
+    <bool name="config_pipEnableDismissDragToEdge">true</bool>
+    <bool name="config_recents_fake_shadows">false</bool>
+    <bool name="config_showActivity">false</bool>
+    <bool name="config_showDividersWhenGroupNotificationExpanded">false</bool>
+    <bool name="config_showMin3G">false</bool>
+    <bool name="config_showNotificationExpandButtonAtEnd">false</bool>
+    <bool name="config_showPhoneRSSIForData">false</bool>
+    <bool name="config_showRotationLock">true</bool>
+    <bool name="config_showWifiIndicatorWhenEnabled">false</bool>
+    <bool name="config_statusBarShowNumber">false</bool>
+    <bool name="enable_volume_ui">true</bool>
+    <bool name="mtrl_btn_textappearance_all_caps">true</bool>
+    <bool name="qs_show_user_switcher_for_single_user">false</bool>
+    <bool name="recents_grow_in_multiwindow">true</bool>
+</resources>

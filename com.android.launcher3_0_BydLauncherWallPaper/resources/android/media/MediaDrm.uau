@@ -1,0 +1,4 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/media/MediaDrm;->getCertificateRequest(ILjava/lang/String;)Landroid/media/MediaDrm$CertificateRequest;,frameworks/base/media/java/android/media/MediaDrm.java,1895,5,1895,25,
+Landroid/media/MediaDrm;->provideCertificateResponse([B)Landroid/media/MediaDrm$Certificate;,frameworks/base/media/java/android/media/MediaDrm.java,1966,5,1966,25,
+Landroid/media/MediaDrm;->signRSA([BLjava/lang/String;[B[B)[B,frameworks/base/media/java/android/media/MediaDrm.java,1989,5,1989,25,

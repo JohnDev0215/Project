@@ -1,0 +1,7 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/widget/OverScroller;->mScrollerY:Landroid/widget/OverScroller$SplineOverScroller;,frameworks/base/core/java/android/widget/OverScroller.java,36,5,36,25,
+Landroid/widget/OverScroller;->mInterpolator:Landroid/view/animation/Interpolator;,frameworks/base/core/java/android/widget/OverScroller.java,39,5,39,25,
+Landroid/widget/OverScroller;-><init>(Landroid/content/Context;Landroid/view/animation/Interpolator;Z)V,frameworks/base/core/java/android/widget/OverScroller.java,74,5,74,25,
+Landroid/widget/OverScroller;->setInterpolator(Landroid/view/animation/Interpolator;)V,frameworks/base/core/java/android/widget/OverScroller.java,123,5,123,25,
+Landroid/widget/OverScroller;->extendDuration(I)V,frameworks/base/core/java/android/widget/OverScroller.java,258,5,258,25,
+Landroid/widget/OverScroller;->isScrollingInDirection(FF)Z,frameworks/base/core/java/android/widget/OverScroller.java,539,5,539,25,

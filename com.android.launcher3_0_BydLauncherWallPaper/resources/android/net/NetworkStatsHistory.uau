@@ -1,0 +1,12 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/net/NetworkStatsHistory;-><init>(J)V,frameworks/base/core/java/android/net/NetworkStatsHistory.java,109,5,109,25,
+Landroid/net/NetworkStatsHistory;-><init>(Landroid/os/Parcel;)V,frameworks/base/core/java/android/net/NetworkStatsHistory.java,136,5,136,25,
+Landroid/net/NetworkStatsHistory;->size()I,frameworks/base/core/java/android/net/NetworkStatsHistory.java,222,5,222,25,
+Landroid/net/NetworkStatsHistory;->getStart()J,frameworks/base/core/java/android/net/NetworkStatsHistory.java,231,5,231,25,
+Landroid/net/NetworkStatsHistory;->getEnd()J,frameworks/base/core/java/android/net/NetworkStatsHistory.java,240,5,240,25,
+Landroid/net/NetworkStatsHistory;->getIndexBefore(J)I,frameworks/base/core/java/android/net/NetworkStatsHistory.java,260,5,260,25,
+Landroid/net/NetworkStatsHistory;->getValues(ILandroid/net/NetworkStatsHistory$Entry;)Landroid/net/NetworkStatsHistory$Entry;,frameworks/base/core/java/android/net/NetworkStatsHistory.java,288,5,288,25,
+Landroid/net/NetworkStatsHistory;->recordEntireHistory(Landroid/net/NetworkStatsHistory;)V,frameworks/base/core/java/android/net/NetworkStatsHistory.java,390,5,390,25,
+Landroid/net/NetworkStatsHistory;->getValues(JJLandroid/net/NetworkStatsHistory$Entry;)Landroid/net/NetworkStatsHistory$Entry;,frameworks/base/core/java/android/net/NetworkStatsHistory.java,527,5,527,25,
+Landroid/net/NetworkStatsHistory;->getValues(JJJLandroid/net/NetworkStatsHistory$Entry;)Landroid/net/NetworkStatsHistory$Entry;,frameworks/base/core/java/android/net/NetworkStatsHistory.java,536,5,536,25,
+Landroid/net/NetworkStatsHistory;->CREATOR:Landroid/os/Parcelable$Creator;,frameworks/base/core/java/android/net/NetworkStatsHistory.java,721,5,721,25,

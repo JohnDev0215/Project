@@ -1,0 +1,5 @@
+signature,file,startline,startcol,endline,endcol,properties
+Lcom/android/internal/policy/DecorView;->mLastBottomInset:I,frameworks/base/core/java/com/android/internal/policy/DecorView.java,224,5,224,25,
+Lcom/android/internal/policy/DecorView;->mLastRightInset:I,frameworks/base/core/java/com/android/internal/policy/DecorView.java,226,5,226,25,
+Lcom/android/internal/policy/DecorView;->mLastLeftInset:I,frameworks/base/core/java/com/android/internal/policy/DecorView.java,228,5,228,25,
+Lcom/android/internal/policy/DecorView;->mWindow:Lcom/android/internal/policy/PhoneWindow;,frameworks/base/core/java/com/android/internal/policy/DecorView.java,239,5,239,25,

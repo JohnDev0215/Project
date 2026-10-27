@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="additional_permissions_more">
+        <item quantity="one">%1$d ďalšie</item>
+        <item quantity="few">%1$d ďalšie</item>
+        <item quantity="many">%1$d more</item>
+        <item quantity="other">%1$d ďalších</item>
+    </plurals>
+    <plurals name="auto_revoke_permission_notification_content_count">
+        <item quantity="one">%1$d aplikácia nebola niekoľko mesiacov používaná. Skontrolujte to klepnutím.</item>
+        <item quantity="few">%1$d aplikácie neboli niekoľko mesiacov používané Skontrolujte to klepnutím.</item>
+        <item quantity="many">%1$d apps haven’t been used in a few months. Skontrolujte to klepnutím.</item>
+        <item quantity="other">%1$d aplikácií nebolo niekoľko mesiacov používaných. Skontrolujte to klepnutím.</item>
+    </plurals>
+    <plurals name="auto_revoke_setting_subtitle_count">
+        <item quantity="one">%1$d aplikácia nebola niekoľko mesiacov používaná</item>
+        <item quantity="few">%1$d aplikácie neboli niekoľko mesiacov používané</item>
+        <item quantity="many">%1$d apps haven’t been used in a few months</item>
+        <item quantity="other">%1$d aplikácií nebolo niekoľko mesiacov používaných</item>
+    </plurals>
+    <plurals name="days">
+        <item quantity="one">1 d.</item>
+        <item quantity="few">%s d.</item>
+        <item quantity="many">%s d.</item>
+        <item quantity="other">%s d.</item>
+    </plurals>
+    <plurals name="hours">
+        <item quantity="one">1 h</item>
+        <item quantity="few">%s h</item>
+        <item quantity="many">%s h</item>
+        <item quantity="other">%s h</item>
+    </plurals>
+    <plurals name="minutes">
+        <item quantity="one">1 min</item>
+        <item quantity="few">%s min</item>
+        <item quantity="many">%s min</item>
+        <item quantity="other">%s min</item>
+    </plurals>
+    <plurals name="seconds">
+        <item quantity="one">1 s</item>
+        <item quantity="few">%s s</item>
+        <item quantity="many">%s s</item>
+        <item quantity="other">%s s</item>
+    </plurals>
+</resources>

@@ -1,0 +1,13 @@
+package com.google.android.material.resources;
+
+import android.graphics.Typeface;
+import androidx.annotation.RestrictTo;
+
+/* JADX INFO: compiled from: caradapter-bug */
+/* JADX INFO: loaded from: classes.dex */
+@RestrictTo({RestrictTo.Scope.LIBRARY_GROUP})
+public abstract class TextAppearanceFontCallback {
+    public abstract void onFontRetrievalFailed(int i);
+
+    public abstract void onFontRetrieved(Typeface typeface, boolean z);
+}

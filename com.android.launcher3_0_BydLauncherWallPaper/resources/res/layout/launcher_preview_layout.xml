@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.launcher3.InsettableFrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:launcher="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.android.launcher3.CellLayout
+        android:theme="@style/HomeScreenElementTheme"
+        android:layout_gravity="top|left"
+        android:id="@+id/workspace"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        launcher:containerType="workspace"
+        launcher:pageIndicator="@+id/page_indicator"/>
+    <com.android.launcher3.Hotseat
+        android:theme="@style/HomeScreenElementTheme"
+        android:id="@+id/hotseat"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:importantForAccessibility="no"
+        launcher:containerType="hotseat"/>
+    <com.android.launcher3.InsettableFrameLayout
+        android:id="@+id/apps_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <include
+            android:id="@+id/search_container_all_apps"
+            layout="@layout/search_container_all_apps"/>
+    </com.android.launcher3.InsettableFrameLayout>
+</com.android.launcher3.InsettableFrameLayout>

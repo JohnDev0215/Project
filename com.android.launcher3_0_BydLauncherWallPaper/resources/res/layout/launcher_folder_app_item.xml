@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:launcher="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp">
+    <com.android.launcher3.BubbleTextView
+        android:textColor="?attr/folderTextColor"
+        android:id="@+id/btv_app"
+        android:includeFontPadding="false"
+        launcher:iconDisplay="folder"
+        style="@style/BaseIcon"/>
+    <CheckBox
+        android:id="@+id/cb_select_app"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"/>
+</RelativeLayout>

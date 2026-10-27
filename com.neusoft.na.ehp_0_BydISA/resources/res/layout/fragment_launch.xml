@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:textSize="30px"
+        android:textColor="@color/pop_text_color_black"
+        android:gravity="center_horizontal"
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="65px"
+        android:text="Update now"/>
+    <TextView
+        android:textSize="30px"
+        android:textColor="@color/pop_text_color_black"
+        android:gravity="center_horizontal"
+        android:id="@+id/tvContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="72px"
+        android:layout_marginTop="52px"
+        android:layout_marginRight="72px"
+        android:text="Do not power off or remove the USB drive before the map update is completed. ISA not be available during the map update."/>
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="77px"
+        android:layout_marginBottom="42px">
+        <Button
+            android:textSize="28px"
+            android:textColor="@color/pop_text_color_white"
+            android:gravity="center"
+            android:id="@+id/btn_update"
+            android:background="@drawable/blue_btn_bg"
+            android:layout_width="272px"
+            android:layout_height="72px"
+            android:text="UPDATE"/>
+        <Button
+            android:textSize="28px"
+            android:textColor="@color/pop_text_color_black"
+            android:gravity="center"
+            android:id="@+id/btn_cancel"
+            android:background="@drawable/white_btn_bg"
+            android:layout_width="272px"
+            android:layout_height="72px"
+            android:layout_marginLeft="72px"
+            android:text="CANCEL"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="additional_permissions_more">
+        <item quantity="one">%1$d ακόμα</item>
+        <item quantity="other">%1$d ακόμα</item>
+    </plurals>
+    <plurals name="auto_revoke_permission_notification_content_count">
+        <item quantity="one">%1$d εφαρμογή δεν έχει χρησιμοποιηθεί τους τελευταίους μήνες. Πατήστε για έλεγχο.</item>
+        <item quantity="other">%1$d εφαρμογές δεν έχουν χρησιμοποιηθεί τους τελευταίους μήνες. Πατήστε για έλεγχο.</item>
+    </plurals>
+    <plurals name="auto_revoke_setting_subtitle_count">
+        <item quantity="one">%1$d εφαρμογή δεν έχει χρησιμοποιηθεί τους τελευταίους μήνες.</item>
+        <item quantity="other">%1$d εφαρμογές δεν έχουν χρησιμοποιηθεί τους τελευταίους μήνες.</item>
+    </plurals>
+    <plurals name="days">
+        <item quantity="one">1 ημέρα</item>
+        <item quantity="other">%s ημέρες</item>
+    </plurals>
+    <plurals name="hours">
+        <item quantity="one">1 ώρα</item>
+        <item quantity="other">%s ώρες</item>
+    </plurals>
+    <plurals name="minutes">
+        <item quantity="one">1 λεπτό</item>
+        <item quantity="other">%s λεπτά</item>
+    </plurals>
+    <plurals name="seconds">
+        <item quantity="one">1 δευτερόλεπτο</item>
+        <item quantity="other">%s δευτερόλεπτα</item>
+    </plurals>
+</resources>

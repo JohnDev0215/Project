@@ -1,0 +1,5 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/app/ActivityOptions;->makeCustomAnimation(Landroid/content/Context;IILandroid/os/Handler;Landroid/app/ActivityOptions$OnAnimationStartedListener;)Landroid/app/ActivityOptions;,frameworks/base/core/java/android/app/ActivityOptions.java,414,5,414,25,
+Landroid/app/ActivityOptions;->makeMultiThumbFutureAspectScaleAnimation(Landroid/content/Context;Landroid/os/Handler;Landroid/view/IAppTransitionAnimationSpecsFuture;Landroid/app/ActivityOptions$OnAnimationStartedListener;Z)Landroid/app/ActivityOptions;,frameworks/base/core/java/android/app/ActivityOptions.java,674,5,674,25,
+Landroid/app/ActivityOptions;->makeRemoteAnimation(Landroid/view/RemoteAnimationAdapter;)Landroid/app/ActivityOptions;,frameworks/base/core/java/android/app/ActivityOptions.java,951,5,951,25,
+Landroid/app/ActivityOptions;->setSplitScreenCreateMode(I)V,frameworks/base/core/java/android/app/ActivityOptions.java,1464,5,1464,25,

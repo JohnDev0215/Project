@@ -1,0 +1,12 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/view/TextureView;->mLayer:Landroid/view/TextureLayer;,frameworks/base/core/java/android/view/TextureView.java,112,5,112,25,
+Landroid/view/TextureView;->mSurface:Landroid/graphics/SurfaceTexture;,frameworks/base/core/java/android/view/TextureView.java,114,5,114,25,
+Landroid/view/TextureView;->mOpaque:Z,frameworks/base/core/java/android/view/TextureView.java,119,5,119,25,
+Landroid/view/TextureView;->mUpdateSurface:Z,frameworks/base/core/java/android/view/TextureView.java,127,5,127,25,
+Landroid/view/TextureView;->mNativeWindow:J,frameworks/base/core/java/android/view/TextureView.java,135,5,135,25,
+Landroid/view/TextureView;->onDetachedFromWindowInternal()V,frameworks/base/core/java/android/view/TextureView.java,229,5,229,25,
+Landroid/view/TextureView;->destroyHardwareResources()V,frameworks/base/core/java/android/view/TextureView.java,240,5,240,25,
+Landroid/view/TextureView;->destroyHardwareLayer()V,frameworks/base/core/java/android/view/TextureView.java,246,5,246,25,
+Landroid/view/TextureView;->mUpdateListener:Landroid/graphics/SurfaceTexture$OnFrameAvailableListener;,frameworks/base/core/java/android/view/TextureView.java,804,5,804,25,
+Landroid/view/TextureView;->nCreateNativeWindow(Landroid/graphics/SurfaceTexture;)V,frameworks/base/core/java/android/view/TextureView.java,855,5,855,25,
+Landroid/view/TextureView;->nDestroyNativeWindow()V,frameworks/base/core/java/android/view/TextureView.java,857,5,857,25,

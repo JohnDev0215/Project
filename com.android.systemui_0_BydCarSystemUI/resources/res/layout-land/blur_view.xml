@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/global_screenshot_action_chip"
+    android:background="@color/transparent_00"
+    android:paddingTop="@dimen/dp_1"
+    android:paddingBottom="@dimen/dp_1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingStart="@dimen/dp_1"
+    android:paddingEnd="@dimen/dp_1">
+    <com.byd.card.widget.RoundRectImageView
+        android:id="@+id/ivBlur"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"/>
+    <com.byd.card.widget.RoundRectImageView
+        android:id="@+id/ivMask"
+        android:background="@color/color_mask_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"/>
+</RelativeLayout>

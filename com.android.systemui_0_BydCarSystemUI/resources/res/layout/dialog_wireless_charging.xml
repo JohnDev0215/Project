@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@drawable/shape_wireless_bg"
+    android:layout_width="@dimen/dp_560"
+    android:layout_height="@dimen/dp_356">
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="@dimen/dp_275"
+        android:layout_height="@dimen/dp_200"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:textSize="@dimen/sp_20"
+        android:textColor="@color/color_wireless_title"
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_234"
+        android:text="@string/wireless_charging_dialog_title"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:textSize="@dimen/sp_18"
+        android:textColor="@color/color_wireless_content"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_8"
+        android:text="@string/wireless_charging_dialog_content"
+        android:layout_below="@+id/tv_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="@dimen/dp_48"
+        android:layout_marginEnd="@dimen/dp_48"/>
+</RelativeLayout>

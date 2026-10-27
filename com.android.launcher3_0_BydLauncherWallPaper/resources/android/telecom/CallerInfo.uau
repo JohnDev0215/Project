@@ -1,0 +1,7 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/telecom/CallerInfo;->numberType:I,frameworks/base/telecomm/java/android/telecom/CallerInfo.java,110,5,110,25,
+Landroid/telecom/CallerInfo;->numberLabel:Ljava/lang/String;,frameworks/base/telecomm/java/android/telecom/CallerInfo.java,113,5,113,25,
+Landroid/telecom/CallerInfo;-><init>()V,frameworks/base/telecomm/java/android/telecom/CallerInfo.java,189,5,189,25,
+Landroid/telecom/CallerInfo;->getCallerInfo(Landroid/content/Context;Landroid/net/Uri;)Landroid/telecom/CallerInfo;,frameworks/base/telecomm/java/android/telecom/CallerInfo.java,350,5,350,25,
+Landroid/telecom/CallerInfo;->getCallerInfo(Landroid/content/Context;Ljava/lang/String;)Landroid/telecom/CallerInfo;,frameworks/base/telecomm/java/android/telecom/CallerInfo.java,377,5,377,25,
+Landroid/telecom/CallerInfo;->getCallerInfo(Landroid/content/Context;Ljava/lang/String;I)Landroid/telecom/CallerInfo;,frameworks/base/telecomm/java/android/telecom/CallerInfo.java,398,5,398,25,

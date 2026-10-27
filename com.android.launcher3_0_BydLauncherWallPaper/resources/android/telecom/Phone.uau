@@ -1,0 +1,3 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/telecom/Phone;->setProximitySensorOn()V,frameworks/base/telecomm/java/android/telecom/Phone.java,373,5,373,88,maxTargetSdk=28&trackingBug=127403196L
+Landroid/telecom/Phone;->setProximitySensorOff(Z)V,frameworks/base/telecomm/java/android/telecom/Phone.java,391,5,391,88,maxTargetSdk=28&trackingBug=127403196L

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="additional_permissions_more">
+        <item quantity="one">Бусад %1$d</item>
+        <item quantity="other">Бусад %1$d</item>
+    </plurals>
+    <plurals name="auto_revoke_permission_notification_content_count">
+        <item quantity="one">%1$d аппыг хэдэн сарын турш ашиглаагүй байна. Шалгахын тулд товшино уу</item>
+        <item quantity="other">%1$d аппыг хэдэн сарын турш ашиглаагүй байна Шалгахын тулд товшино уу</item>
+    </plurals>
+    <plurals name="auto_revoke_setting_subtitle_count">
+        <item quantity="one">%1$d аппыг хэдэн сарын турш ашиглаагүй байна</item>
+        <item quantity="other">%1$d аппыг хэдэн сарын турш ашиглаагүй байна</item>
+    </plurals>
+    <plurals name="days">
+        <item quantity="one">1 өдөр</item>
+        <item quantity="other">%s өдөр</item>
+    </plurals>
+    <plurals name="hours">
+        <item quantity="one">1 цаг</item>
+        <item quantity="other">%s цаг</item>
+    </plurals>
+    <plurals name="minutes">
+        <item quantity="one">1 минут</item>
+        <item quantity="other">%s минут</item>
+    </plurals>
+    <plurals name="seconds">
+        <item quantity="one">1 секунд</item>
+        <item quantity="other">%s секунд</item>
+    </plurals>
+</resources>

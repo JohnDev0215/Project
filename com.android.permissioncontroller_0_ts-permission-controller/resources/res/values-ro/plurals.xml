@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="additional_permissions_more">
+        <item quantity="one">Încă %1$d</item>
+        <item quantity="few">Încă %1$d</item>
+        <item quantity="other">Încă %1$d</item>
+    </plurals>
+    <plurals name="auto_revoke_permission_notification_content_count">
+        <item quantity="one">%1$d aplicație nu a fost folosită de câteva luni. Atingeți pentru a examina.</item>
+        <item quantity="few">%1$d aplicații nu au fost folosite de câteva luni. Atingeți pentru a examina.</item>
+        <item quantity="other">%1$d de aplicații nu au fost folosite de câteva luni. Atingeți pentru a examina.</item>
+    </plurals>
+    <plurals name="auto_revoke_setting_subtitle_count">
+        <item quantity="one">%1$d aplicație nu a fost folosită de câteva luni</item>
+        <item quantity="few">%1$d aplicații nu au fost folosite de câteva luni</item>
+        <item quantity="other">%1$d de aplicații nu au fost folosite de câteva luni</item>
+    </plurals>
+    <plurals name="days">
+        <item quantity="one">O zi</item>
+        <item quantity="few">%s zile</item>
+        <item quantity="other">%s de zile</item>
+    </plurals>
+    <plurals name="hours">
+        <item quantity="one">O oră</item>
+        <item quantity="few">%s ore</item>
+        <item quantity="other">%s de ore</item>
+    </plurals>
+    <plurals name="minutes">
+        <item quantity="one">1 minut</item>
+        <item quantity="few">%s minute</item>
+        <item quantity="other">%s de minute</item>
+    </plurals>
+    <plurals name="seconds">
+        <item quantity="one">O secundă</item>
+        <item quantity="few">%s secunde</item>
+        <item quantity="other">%s de secunde</item>
+    </plurals>
+</resources>

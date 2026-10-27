@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_crop_graph"
+    app:startDestination="@+id/fragmentCropLand">
+    <fragment
+        android:name="com.byd.automultipletheme.fragment.FragmentCropLand"
+        android:id="@+id/fragmentCropLand">
+        <action
+            android:id="@+id/action_fragmentCropLand_to_fragmentCropPort"
+            app:destination="@+id/fragmentCropPort"/>
+    </fragment>
+    <fragment
+        android:name="com.byd.automultipletheme.fragment.FragmentCropPort"
+        android:id="@+id/fragmentCropPort">
+        <action
+            android:id="@+id/action_fragmentCropPort_to_fragmentCropLand"
+            app:destination="@+id/fragmentCropLand"/>
+    </fragment>
+</navigation>

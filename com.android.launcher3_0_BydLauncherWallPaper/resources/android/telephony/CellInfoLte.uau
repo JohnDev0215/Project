@@ -1,0 +1,4 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/telephony/CellInfoLte;-><init>()V,frameworks/base/telephony/java/android/telephony/CellInfoLte.java,42,5,42,25,
+Landroid/telephony/CellInfoLte;->setCellIdentity(Landroid/telephony/CellIdentityLte;)V,frameworks/base/telephony/java/android/telephony/CellInfoLte.java,104,5,104,88,maxTargetSdk=28&trackingBug=115609023L
+Landroid/telephony/CellInfoLte;->setCellSignalStrength(Landroid/telephony/CellSignalStrengthLte;)V,frameworks/base/telephony/java/android/telephony/CellInfoLte.java,128,5,128,88,maxTargetSdk=28&trackingBug=115609023L

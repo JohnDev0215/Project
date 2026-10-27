@@ -1,0 +1,25 @@
+package androidx.constraintlayout.core.widgets.analyzer;
+
+import androidx.constraintlayout.core.widgets.analyzer.DependencyNode;
+
+/* JADX INFO: loaded from: classes.dex */
+class DimensionDependency extends DependencyNode {
+    public int wrapValue;
+
+    public DimensionDependency(WidgetRun widgetRun) {
+        super(widgetRun);
+        this.type = widgetRun instanceof HorizontalWidgetRun ? DependencyNode.Type.HORIZONTAL_DIMENSION : DependencyNode.Type.VERTICAL_DIMENSION;
+    }
+
+    @Override // androidx.constraintlayout.core.widgets.analyzer.DependencyNode
+    public void resolve(int i) {
+        if (this.resolved) {
+            return;
+        }
+        this.resolved = true;
+        this.value = i;
+        for (Dependency dependency : this.dependencies) {
+            dependency.update(dependency);
+        }
+    }
+}

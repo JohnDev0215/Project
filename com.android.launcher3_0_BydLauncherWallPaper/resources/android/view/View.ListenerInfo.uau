@@ -1,0 +1,11 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/view/View$ListenerInfo;-><init>()V,frameworks/base/core/java/android/view/View.java,4674,9,4674,29,
+Landroid/view/View$ListenerInfo;->mOnFocusChangeListener:Landroid/view/View$OnFocusChangeListener;,frameworks/base/core/java/android/view/View.java,4683,9,4683,29,
+Landroid/view/View$ListenerInfo;->mOnClickListener:Landroid/view/View$OnClickListener;,frameworks/base/core/java/android/view/View.java,4703,9,4703,29,
+Landroid/view/View$ListenerInfo;->mOnLongClickListener:Landroid/view/View$OnLongClickListener;,frameworks/base/core/java/android/view/View.java,4711,9,4711,29,
+Landroid/view/View$ListenerInfo;->mOnCreateContextMenuListener:Landroid/view/View$OnCreateContextMenuListener;,frameworks/base/core/java/android/view/View.java,4726,9,4726,29,
+Landroid/view/View$ListenerInfo;->mOnKeyListener:Landroid/view/View$OnKeyListener;,frameworks/base/core/java/android/view/View.java,4729,9,4729,29,
+Landroid/view/View$ListenerInfo;->mOnTouchListener:Landroid/view/View$OnTouchListener;,frameworks/base/core/java/android/view/View.java,4732,9,4732,29,
+Landroid/view/View$ListenerInfo;->mOnHoverListener:Landroid/view/View$OnHoverListener;,frameworks/base/core/java/android/view/View.java,4735,9,4735,29,
+Landroid/view/View$ListenerInfo;->mOnGenericMotionListener:Landroid/view/View$OnGenericMotionListener;,frameworks/base/core/java/android/view/View.java,4738,9,4738,29,
+Landroid/view/View$ListenerInfo;->mOnDragListener:Landroid/view/View$OnDragListener;,frameworks/base/core/java/android/view/View.java,4741,9,4741,29,

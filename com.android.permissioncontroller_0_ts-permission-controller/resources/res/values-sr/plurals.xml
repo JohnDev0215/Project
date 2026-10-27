@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="additional_permissions_more">
+        <item quantity="one">још %1$d</item>
+        <item quantity="few">још %1$d</item>
+        <item quantity="other">још %1$d</item>
+    </plurals>
+    <plurals name="auto_revoke_permission_notification_content_count">
+        <item quantity="one">%1$d апликација није коришћена неколико месеци. Додирните да бисте прегледали</item>
+        <item quantity="few">%1$d апликације нису коришћене неколико месеци. Додирните да бисте прегледали</item>
+        <item quantity="other">%1$d апликација није коришћено неколико месеци. Додирните да бисте прегледали</item>
+    </plurals>
+    <plurals name="auto_revoke_setting_subtitle_count">
+        <item quantity="one">%1$d апликација није коришћена неколико месеци</item>
+        <item quantity="few">%1$d апликације нису коришћене неколико месеци</item>
+        <item quantity="other">%1$d апликација није коришћено неколико месеци</item>
+    </plurals>
+    <plurals name="days">
+        <item quantity="one">%s дан</item>
+        <item quantity="few">%s дана</item>
+        <item quantity="other">%s дана</item>
+    </plurals>
+    <plurals name="hours">
+        <item quantity="one">%s сат</item>
+        <item quantity="few">%s сата</item>
+        <item quantity="other">%s сати</item>
+    </plurals>
+    <plurals name="minutes">
+        <item quantity="one">%s минут</item>
+        <item quantity="few">%s минута</item>
+        <item quantity="other">%s минута</item>
+    </plurals>
+    <plurals name="seconds">
+        <item quantity="one">%s секунда</item>
+        <item quantity="few">%s секунде</item>
+        <item quantity="other">%s секунди</item>
+    </plurals>
+</resources>

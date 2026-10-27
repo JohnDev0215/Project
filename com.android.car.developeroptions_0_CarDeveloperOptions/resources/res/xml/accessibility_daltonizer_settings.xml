@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" xmlns:settings="http://schemas.android.com/apk/res-auto"
+    android:title="@string/accessibility_display_daltonizer_preference_title"
+    android:key="daltonizer_preference_screen">
+    <ListPreference
+        android:icon="@drawable/ic_accessibility_illustration_colorblind"
+        android:entries="@array/daltonizer_type_entries"
+        android:title="@string/daltonizer_type"
+        android:key="type"
+        android:summary="%s"
+        android:entryValues="@array/daltonizer_type_values"/>
+    <com.android.settingslib.widget.FooterPreference
+        android:title="@string/accessibility_display_daltonizer_preference_subtitle"
+        android:selectable="false"
+        android:key="daltonizer_footer"
+        settings:searchable="false"/>
+</PreferenceScreen>

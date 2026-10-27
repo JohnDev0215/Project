@@ -1,0 +1,6 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/app/QueuedWork;->sFinishers:Ljava/util/LinkedList;,frameworks/base/core/java/android/app/QueuedWork.java,74,5,74,25,
+Landroid/app/QueuedWork;->getHandler()Landroid/os/Handler;,frameworks/base/core/java/android/app/QueuedWork.java,101,5,101,25,
+Landroid/app/QueuedWork;->addFinisher(Ljava/lang/Runnable;)V,frameworks/base/core/java/android/app/QueuedWork.java,127,5,127,25,
+Landroid/app/QueuedWork;->removeFinisher(Ljava/lang/Runnable;)V,frameworks/base/core/java/android/app/QueuedWork.java,139,5,139,25,
+Landroid/app/QueuedWork;->queue(Ljava/lang/Runnable;Z)V,frameworks/base/core/java/android/app/QueuedWork.java,220,5,220,25,

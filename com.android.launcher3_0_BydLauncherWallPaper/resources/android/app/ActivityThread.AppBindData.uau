@@ -1,0 +1,10 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/app/ActivityThread$AppBindData;-><init>()V,frameworks/base/core/java/android/app/ActivityThread.java,794,9,794,29,
+Landroid/app/ActivityThread$AppBindData;->info:Landroid/app/LoadedApk;,frameworks/base/core/java/android/app/ActivityThread.java,797,9,797,29,
+Landroid/app/ActivityThread$AppBindData;->processName:Ljava/lang/String;,frameworks/base/core/java/android/app/ActivityThread.java,799,9,799,29,
+Landroid/app/ActivityThread$AppBindData;->appInfo:Landroid/content/pm/ApplicationInfo;,frameworks/base/core/java/android/app/ActivityThread.java,801,9,801,29,
+Landroid/app/ActivityThread$AppBindData;->providers:Ljava/util/List;,frameworks/base/core/java/android/app/ActivityThread.java,803,9,803,29,
+Landroid/app/ActivityThread$AppBindData;->instrumentationArgs:Landroid/os/Bundle;,frameworks/base/core/java/android/app/ActivityThread.java,806,9,806,29,
+Landroid/app/ActivityThread$AppBindData;->restrictedBackupMode:Z,frameworks/base/core/java/android/app/ActivityThread.java,813,9,813,29,
+Landroid/app/ActivityThread$AppBindData;->persistent:Z,frameworks/base/core/java/android/app/ActivityThread.java,815,9,815,29,
+Landroid/app/ActivityThread$AppBindData;->compatInfo:Landroid/content/res/CompatibilityInfo;,frameworks/base/core/java/android/app/ActivityThread.java,818,9,818,92,maxTargetSdk=28&trackingBug=115609023L

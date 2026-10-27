@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="additional_permissions_more">
+        <item quantity="one">Nog %1$d</item>
+        <item quantity="other">Nog %1$d</item>
+    </plurals>
+    <plurals name="auto_revoke_permission_notification_content_count">
+        <item quantity="one">%1$d app is al een paar maanden niet gebruikt. Tik om te bekijken.</item>
+        <item quantity="other">%1$d apps zijn al een paar maanden niet gebruikt. Tik om te bekijken.</item>
+    </plurals>
+    <plurals name="auto_revoke_setting_subtitle_count">
+        <item quantity="one">%1$d app is al een paar maanden niet gebruikt</item>
+        <item quantity="other">%1$d apps zijn al een paar maanden niet gebruikt</item>
+    </plurals>
+    <plurals name="days">
+        <item quantity="one">1 dag</item>
+        <item quantity="other">%s dagen</item>
+    </plurals>
+    <plurals name="hours">
+        <item quantity="one">1 uur</item>
+        <item quantity="other">%s uur</item>
+    </plurals>
+    <plurals name="minutes">
+        <item quantity="one">1 minuut</item>
+        <item quantity="other">%s minuten</item>
+    </plurals>
+    <plurals name="seconds">
+        <item quantity="one">1 seconde</item>
+        <item quantity="other">%s seconden</item>
+    </plurals>
+</resources>

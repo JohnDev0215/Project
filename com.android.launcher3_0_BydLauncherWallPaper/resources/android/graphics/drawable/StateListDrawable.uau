@@ -1,0 +1,4 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/graphics/drawable/StateListDrawable;->mStateListState:Landroid/graphics/drawable/StateListDrawable$StateListState;,frameworks/base/graphics/java/android/graphics/drawable/StateListDrawable.java,67,5,67,25,
+Landroid/graphics/drawable/StateListDrawable;->updateStateFromTypedArray(Landroid/content/res/TypedArray;)V,frameworks/base/graphics/java/android/graphics/drawable/StateListDrawable.java,134,5,134,25,
+Landroid/graphics/drawable/StateListDrawable;->extractStateSet(Landroid/util/AttributeSet;)[I,frameworks/base/graphics/java/android/graphics/drawable/StateListDrawable.java,212,5,212,25,

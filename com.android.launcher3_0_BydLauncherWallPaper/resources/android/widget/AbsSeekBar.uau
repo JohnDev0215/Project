@@ -1,0 +1,9 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/widget/AbsSeekBar;->mThumb:Landroid/graphics/drawable/Drawable;,frameworks/base/core/java/android/widget/AbsSeekBar.java,54,5,54,25,
+Landroid/widget/AbsSeekBar;->mSplitTrack:Z,frameworks/base/core/java/android/widget/AbsSeekBar.java,68,5,68,25,
+Landroid/widget/AbsSeekBar;->mTouchProgressOffset:F,frameworks/base/core/java/android/widget/AbsSeekBar.java,75,5,75,25,
+Landroid/widget/AbsSeekBar;->mIsUserSeekable:Z,frameworks/base/core/java/android/widget/AbsSeekBar.java,81,5,81,25,
+Landroid/widget/AbsSeekBar;->mDisabledAlpha:F,frameworks/base/core/java/android/widget/AbsSeekBar.java,91,5,91,25,
+Landroid/widget/AbsSeekBar;->mIsDragging:Z,frameworks/base/core/java/android/widget/AbsSeekBar.java,97,5,97,25,
+Landroid/widget/AbsSeekBar;->drawThumb(Landroid/graphics/Canvas;)V,frameworks/base/core/java/android/widget/AbsSeekBar.java,860,5,860,25,
+Landroid/widget/AbsSeekBar;->trackTouchEvent(Landroid/view/MotionEvent;)V,frameworks/base/core/java/android/widget/AbsSeekBar.java,974,5,974,25,

@@ -1,0 +1,193 @@
+package android.location;
+
+import android.annotation.SystemApi;
+import android.os.Parcel;
+import android.os.Parcelable;
+import com.android.internal.util.Preconditions;
+
+/* JADX INFO: loaded from: classes2.dex */
+@SystemApi
+public final class GnssSingleSatCorrection implements Parcelable {
+    public static final Parcelable.Creator<GnssSingleSatCorrection> CREATOR = new Parcelable.Creator<GnssSingleSatCorrection>() { // from class: android.location.GnssSingleSatCorrection.1
+        /* JADX WARN: Can't rename method to resolve collision */
+        @Override // android.os.Parcelable.Creator
+        public GnssSingleSatCorrection createFromParcel(Parcel parcel) {
+            boolean z = (parcel.readInt() & 8) != 0;
+            Builder excessPathLengthUncertaintyMeters = new Builder().setConstellationType(parcel.readInt()).setSatelliteId(parcel.readInt()).setCarrierFrequencyHz(parcel.readFloat()).setProbabilityLineOfSight(parcel.readFloat()).setExcessPathLengthMeters(parcel.readFloat()).setExcessPathLengthUncertaintyMeters(parcel.readFloat());
+            if (z) {
+                excessPathLengthUncertaintyMeters.setReflectingPlane(GnssReflectingPlane.CREATOR.createFromParcel(parcel));
+            }
+            return excessPathLengthUncertaintyMeters.build();
+        }
+
+        /* JADX WARN: Can't rename method to resolve collision */
+        @Override // android.os.Parcelable.Creator
+        public GnssSingleSatCorrection[] newArray(int i) {
+            return new GnssSingleSatCorrection[i];
+        }
+    };
+    public static final int HAS_EXCESS_PATH_LENGTH_MASK = 2;
+    public static final int HAS_EXCESS_PATH_LENGTH_UNC_MASK = 4;
+    public static final int HAS_PROB_SAT_IS_LOS_MASK = 1;
+    public static final int HAS_REFLECTING_PLANE_MASK = 8;
+    private final float mCarrierFrequencyHz;
+    private final int mConstellationType;
+    private final float mExcessPathLengthMeters;
+    private final float mExcessPathLengthUncertaintyMeters;
+    private final float mProbSatIsLos;
+    private final GnssReflectingPlane mReflectingPlane;
+    private final int mSatId;
+    private final int mSingleSatCorrectionFlags;
+
+    @Override // android.os.Parcelable
+    public int describeContents() {
+        return 0;
+    }
+
+    private GnssSingleSatCorrection(Builder builder) {
+        this.mSingleSatCorrectionFlags = builder.mSingleSatCorrectionFlags;
+        this.mSatId = builder.mSatId;
+        this.mConstellationType = builder.mConstellationType;
+        this.mCarrierFrequencyHz = builder.mCarrierFrequencyHz;
+        this.mProbSatIsLos = builder.mProbSatIsLos;
+        this.mExcessPathLengthMeters = builder.mExcessPathLengthMeters;
+        this.mExcessPathLengthUncertaintyMeters = builder.mExcessPathLengthUncertaintyMeters;
+        this.mReflectingPlane = builder.mReflectingPlane;
+    }
+
+    public int getSingleSatelliteCorrectionFlags() {
+        return this.mSingleSatCorrectionFlags;
+    }
+
+    public int getConstellationType() {
+        return this.mConstellationType;
+    }
+
+    public int getSatelliteId() {
+        return this.mSatId;
+    }
+
+    public float getCarrierFrequencyHz() {
+        return this.mCarrierFrequencyHz;
+    }
+
+    public float getProbabilityLineOfSight() {
+        return this.mProbSatIsLos;
+    }
+
+    public float getExcessPathLengthMeters() {
+        return this.mExcessPathLengthMeters;
+    }
+
+    public float getExcessPathLengthUncertaintyMeters() {
+        return this.mExcessPathLengthUncertaintyMeters;
+    }
+
+    public GnssReflectingPlane getReflectingPlane() {
+        return this.mReflectingPlane;
+    }
+
+    public boolean hasValidSatelliteLineOfSight() {
+        return (this.mSingleSatCorrectionFlags & 1) != 0;
+    }
+
+    public boolean hasExcessPathLength() {
+        return (this.mSingleSatCorrectionFlags & 2) != 0;
+    }
+
+    public boolean hasExcessPathLengthUncertainty() {
+        return (this.mSingleSatCorrectionFlags & 4) != 0;
+    }
+
+    public boolean hasReflectingPlane() {
+        return (this.mSingleSatCorrectionFlags & 8) != 0;
+    }
+
+    public String toString() {
+        StringBuilder sb = new StringBuilder("GnssSingleSatCorrection:\n");
+        sb.append(String.format("   %-29s = %s\n", "SingleSatCorrectionFlags = ", Integer.valueOf(this.mSingleSatCorrectionFlags)));
+        sb.append(String.format("   %-29s = %s\n", "ConstellationType = ", Integer.valueOf(this.mConstellationType)));
+        sb.append(String.format("   %-29s = %s\n", "SatId = ", Integer.valueOf(this.mSatId)));
+        sb.append(String.format("   %-29s = %s\n", "CarrierFrequencyHz = ", Float.valueOf(this.mCarrierFrequencyHz)));
+        sb.append(String.format("   %-29s = %s\n", "ProbSatIsLos = ", Float.valueOf(this.mProbSatIsLos)));
+        sb.append(String.format("   %-29s = %s\n", "ExcessPathLengthMeters = ", Float.valueOf(this.mExcessPathLengthMeters)));
+        sb.append(String.format("   %-29s = %s\n", "ExcessPathLengthUncertaintyMeters = ", Float.valueOf(this.mExcessPathLengthUncertaintyMeters)));
+        if (hasReflectingPlane()) {
+            sb.append(String.format("   %-29s = %s\n", "ReflectingPlane = ", this.mReflectingPlane));
+        }
+        return sb.toString();
+    }
+
+    @Override // android.os.Parcelable
+    public void writeToParcel(Parcel parcel, int i) {
+        parcel.writeInt(this.mSingleSatCorrectionFlags);
+        parcel.writeInt(this.mConstellationType);
+        parcel.writeInt(this.mSatId);
+        parcel.writeFloat(this.mCarrierFrequencyHz);
+        parcel.writeFloat(this.mProbSatIsLos);
+        parcel.writeFloat(this.mExcessPathLengthMeters);
+        parcel.writeFloat(this.mExcessPathLengthUncertaintyMeters);
+        if (hasReflectingPlane()) {
+            this.mReflectingPlane.writeToParcel(parcel, i);
+        }
+    }
+
+    public static final class Builder {
+        private float mCarrierFrequencyHz;
+        private int mConstellationType;
+        private float mExcessPathLengthMeters;
+        private float mExcessPathLengthUncertaintyMeters;
+        private float mProbSatIsLos;
+        private GnssReflectingPlane mReflectingPlane;
+        private int mSatId;
+        private int mSingleSatCorrectionFlags;
+
+        public Builder setConstellationType(int i) {
+            this.mConstellationType = i;
+            return this;
+        }
+
+        public Builder setSatelliteId(int i) {
+            this.mSatId = i;
+            return this;
+        }
+
+        public Builder setCarrierFrequencyHz(float f) {
+            this.mCarrierFrequencyHz = f;
+            return this;
+        }
+
+        public Builder setProbabilityLineOfSight(float f) {
+            Preconditions.checkArgumentInRange(f, 0.0f, 1.0f, "probSatIsLos should be between 0 and 1.");
+            this.mProbSatIsLos = f;
+            this.mSingleSatCorrectionFlags = (byte) (this.mSingleSatCorrectionFlags | 1);
+            return this;
+        }
+
+        public Builder setExcessPathLengthMeters(float f) {
+            this.mExcessPathLengthMeters = f;
+            this.mSingleSatCorrectionFlags = (byte) (this.mSingleSatCorrectionFlags | 2);
+            return this;
+        }
+
+        public Builder setExcessPathLengthUncertaintyMeters(float f) {
+            this.mExcessPathLengthUncertaintyMeters = f;
+            this.mSingleSatCorrectionFlags = (byte) (this.mSingleSatCorrectionFlags | 4);
+            return this;
+        }
+
+        public Builder setReflectingPlane(GnssReflectingPlane gnssReflectingPlane) {
+            this.mReflectingPlane = gnssReflectingPlane;
+            if (gnssReflectingPlane != null) {
+                this.mSingleSatCorrectionFlags = (byte) (this.mSingleSatCorrectionFlags | 8);
+            } else {
+                this.mSingleSatCorrectionFlags = (byte) (this.mSingleSatCorrectionFlags & (-9));
+            }
+            return this;
+        }
+
+        public GnssSingleSatCorrection build() {
+            return new GnssSingleSatCorrection(this);
+        }
+    }
+}

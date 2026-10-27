@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/shape_navi_bar_air_pop_bg"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:paddingTop="@dimen/dp_1"
+        android:paddingBottom="@dimen/dp_1"
+        android:layout_width="@dimen/dp_380"
+        android:layout_height="@dimen/dp_90">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <com.android.systemui.widget.BydImageView
+                android:layout_gravity="center_vertical"
+                android:id="@+id/iv_set_temp_reduction"
+                android:layout_width="@dimen/dp_48"
+                android:layout_height="@dimen/dp_48"
+                android:src="@mipmap/icon_air_temperature_reduction_horizontal"
+                android:layout_marginStart="@dimen/dp_17"
+                app:clickChangeColor="false"/>
+            <com.android.systemui.widget.HorizontalWheelView
+                android:layout_gravity="center_vertical"
+                android:id="@+id/wheel_view"
+                android:layout_width="@dimen/dp_242"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_4"/>
+            <com.android.systemui.widget.BydImageView
+                android:layout_gravity="center_vertical"
+                android:id="@+id/iv_set_temp_rise"
+                android:layout_width="@dimen/dp_48"
+                android:layout_height="@dimen/dp_48"
+                android:src="@mipmap/icon_air_temperature_rise_horizontal"
+                android:layout_marginStart="@dimen/dp_4"
+                app:clickChangeColor="false"/>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

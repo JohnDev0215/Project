@@ -1,0 +1,4 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/accounts/AccountManager$AmsTask;->mResponse:Landroid/accounts/IAccountManagerResponse;,frameworks/base/core/java/android/accounts/AccountManager.java,2218,9,2218,92,maxTargetSdk=28&trackingBug=115609023L
+Landroid/accounts/AccountManager$AmsTask;->mHandler:Landroid/os/Handler;,frameworks/base/core/java/android/accounts/AccountManager.java,2220,9,2220,92,maxTargetSdk=28&trackingBug=115609023L
+Landroid/accounts/AccountManager$AmsTask;->mActivity:Landroid/app/Activity;,frameworks/base/core/java/android/accounts/AccountManager.java,2223,9,2223,92,maxTargetSdk=28&trackingBug=115609023L

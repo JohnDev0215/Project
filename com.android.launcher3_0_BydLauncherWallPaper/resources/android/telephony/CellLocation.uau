@@ -1,0 +1,4 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/telephony/CellLocation;->newFromBundle(Landroid/os/Bundle;)Landroid/telephony/CellLocation;,frameworks/base/telephony/java/android/telephony/CellLocation.java,63,5,63,25,
+Landroid/telephony/CellLocation;->fillInNotifierBundle(Landroid/os/Bundle;)V,frameworks/base/telephony/java/android/telephony/CellLocation.java,80,5,80,25,
+Landroid/telephony/CellLocation;->isEmpty()Z,frameworks/base/telephony/java/android/telephony/CellLocation.java,86,5,86,25,

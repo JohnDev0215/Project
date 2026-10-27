@@ -1,0 +1,5 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/graphics/Paint;->mNativePaint:J,frameworks/base/graphics/java/android/graphics/Paint.java,56,5,56,25,
+Landroid/graphics/Paint;->mTypeface:Landroid/graphics/Typeface;,frameworks/base/graphics/java/android/graphics/Paint.java,73,5,73,88,maxTargetSdk=28&trackingBug=115609023L
+Landroid/graphics/Paint;->setCompatibilityScaling(F)V,frameworks/base/graphics/java/android/graphics/Paint.java,661,5,661,25,
+Landroid/graphics/Paint;->getNativeInstance()J,frameworks/base/graphics/java/android/graphics/Paint.java,679,5,679,25,

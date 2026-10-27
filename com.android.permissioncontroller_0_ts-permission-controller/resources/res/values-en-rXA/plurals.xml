@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="additional_permissions_more">
+        <item quantity="one">[%1$d ḿöŕé one]</item>
+        <item quantity="other">[%1$d ḿöŕé one]</item>
+    </plurals>
+    <plurals name="auto_revoke_permission_notification_content_count">
+        <item quantity="one">[%1$d åþþ ĥåšñ’ţ ɓééñ ûšéð îñ å ƒéŵ ḿöñţĥš. Ţåþ ţö ŕéVîéŵ one two three four five six seven]</item>
+        <item quantity="other">[%1$d åþþš ĥåVéñ’ţ ɓééñ ûšéð îñ å ƒéŵ ḿöñţĥš. Ţåþ ţö ŕéVîéŵ one two three four five six seven]</item>
+    </plurals>
+    <plurals name="auto_revoke_setting_subtitle_count">
+        <item quantity="one">[%1$d åþþ ĥåšñ’ţ ɓééñ ûšéð îñ å ƒéŵ ḿöñţĥš one two three four five]</item>
+        <item quantity="other">[%1$d åþþš ĥåVéñ’ţ ɓééñ ûšéð îñ å ƒéŵ ḿöñţĥš one two three four five]</item>
+    </plurals>
+    <plurals name="days">
+        <item quantity="one">[1 ðåý one]</item>
+        <item quantity="other">[%s ðåýš one]</item>
+    </plurals>
+    <plurals name="hours">
+        <item quantity="one">[1 ĥöûŕ one two]</item>
+        <item quantity="other">[%s ĥöûŕš one two]</item>
+    </plurals>
+    <plurals name="minutes">
+        <item quantity="one">[1 ḿîñûţé one two]</item>
+        <item quantity="other">[%s ḿîñûţéš one two]</item>
+    </plurals>
+    <plurals name="seconds">
+        <item quantity="one">[1 šéçöñð one two]</item>
+        <item quantity="other">[%s šéçöñðš one two]</item>
+    </plurals>
+</resources>

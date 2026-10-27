@@ -1,0 +1,14 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/net/IConnectivityManager;->getActiveNetworkInfo()Landroid/net/NetworkInfo;,frameworks/base/core/java/android/net/IConnectivityManager.aidl,54,1,54,25,
+Landroid/net/IConnectivityManager;->getNetworkInfo(I)Landroid/net/NetworkInfo;,frameworks/base/core/java/android/net/IConnectivityManager.aidl,57,1,57,44,maxTargetSdk=28
+Landroid/net/IConnectivityManager;->getAllNetworkInfo()[Landroid/net/NetworkInfo;,frameworks/base/core/java/android/net/IConnectivityManager.aidl,60,1,60,25,
+Landroid/net/IConnectivityManager;->getActiveLinkProperties()Landroid/net/LinkProperties;,frameworks/base/core/java/android/net/IConnectivityManager.aidl,69,1,69,25,
+Landroid/net/IConnectivityManager;->getAllNetworkState()[Landroid/net/NetworkState;,frameworks/base/core/java/android/net/IConnectivityManager.aidl,76,1,76,25,
+Landroid/net/IConnectivityManager;->getLastTetherError(Ljava/lang/String;)I,frameworks/base/core/java/android/net/IConnectivityManager.aidl,84,1,85,99,maxTargetSdk=29&publicAlternatives=%22Use+%7B%40code+TetheringManager%23getLastTetherError%7D+as+alternative%22
+Landroid/net/IConnectivityManager;->getTetherableIfaces()[Ljava/lang/String;,frameworks/base/core/java/android/net/IConnectivityManager.aidl,88,1,89,100,maxTargetSdk=29&publicAlternatives=%22Use+%7B%40code+TetheringManager%23getTetherableIfaces%7D+as+alternative%22
+Landroid/net/IConnectivityManager;->getTetheredIfaces()[Ljava/lang/String;,frameworks/base/core/java/android/net/IConnectivityManager.aidl,92,1,93,98,maxTargetSdk=29&publicAlternatives=%22Use+%7B%40code+TetheringManager%23getTetheredIfaces%7D+as+alternative%22
+Landroid/net/IConnectivityManager;->getTetheringErroredIfaces()[Ljava/lang/String;,frameworks/base/core/java/android/net/IConnectivityManager.aidl,96,1,98,32,maxTargetSdk=29&publicAlternatives=%22Use+%7B%40code+TetheringManager%23getTetheringErroredIfaces%7D+as+Alternative%22
+Landroid/net/IConnectivityManager;->getTetherableUsbRegexs()[Ljava/lang/String;,frameworks/base/core/java/android/net/IConnectivityManager.aidl,101,1,102,103,maxTargetSdk=29&publicAlternatives=%22Use+%7B%40code+TetheringManager%23getTetherableUsbRegexs%7D+as+alternative%22
+Landroid/net/IConnectivityManager;->getTetherableWifiRegexs()[Ljava/lang/String;,frameworks/base/core/java/android/net/IConnectivityManager.aidl,105,1,106,104,maxTargetSdk=29&publicAlternatives=%22Use+%7B%40code+TetheringManager%23getTetherableWifiRegexs%7D+as+alternative%22
+Landroid/net/IConnectivityManager;->reportInetCondition(II)V,frameworks/base/core/java/android/net/IConnectivityManager.aidl,109,1,109,44,maxTargetSdk=28
+Landroid/net/IConnectivityManager;->startLegacyVpn(Lcom/android/internal/net/VpnProfile;)V,frameworks/base/core/java/android/net/IConnectivityManager.aidl,136,1,136,25,

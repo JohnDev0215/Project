@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/ActivityTheme">
+    <include layout="@layout/layout_login_top"/>
+    <FrameLayout
+        android:id="@+id/login_primary_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/login_secondary_layout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo">
+        <LinearLayout
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textSize="@dimen/login_text_size_primary"
+                android:textColor="@color/activity_text_primary"
+                android:id="@+id/scannable_instructions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/login_scannable_instructions"
+                android:textAlignment="center"/>
+            <ImageView
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/scannable"
+                android:background="@drawable/scannable_background"
+                android:paddingTop="@dimen/login_scannable_padding"
+                android:paddingBottom="@dimen/login_scannable_padding"
+                android:layout_width="@dimen/login_scannable_size"
+                android:layout_height="@dimen/login_scannable_size"
+                android:layout_marginTop="@dimen/login_scannable_top_margin"
+                android:scaleType="fitXY"
+                android:contentDescription="@string/login_scannable_instructions"
+                android:paddingStart="@dimen/login_scannable_padding"
+                android:paddingEnd="@dimen/login_scannable_padding"/>
+        </LinearLayout>
+        <include layout="@layout/layout_login_error"/>
+        <ProgressBar
+            android:layout_gravity="center"
+            android:id="@+id/progressbar"
+            android:visibility="gone"
+            style="@style/LoadingIndicator"/>
+    </FrameLayout>
+    <include
+        android:orientation="horizontal"
+        android:id="@+id/login_secondary_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/login_buttons_top_margin"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_container"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login_primary_layout"
+        layout="@layout/layout_login_buttons"/>
+    <include layout="@layout/layout_login_bottom"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

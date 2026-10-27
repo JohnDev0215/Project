@@ -1,0 +1,46 @@
+package S5;
+
+import S8.InterfaceC0725w;
+import h8.AbstractC1386c;
+import q7.InterfaceC2189c;
+import r7.EnumC2303a;
+import z7.InterfaceC2785n;
+
+/* JADX INFO: loaded from: classes.dex */
+public final class l extends s7.i implements InterfaceC2785n {
+    public final /* synthetic */ boolean l;
+
+    /* JADX INFO: renamed from: m, reason: collision with root package name */
+    public final /* synthetic */ String f8016m;
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public l(boolean z6, String str, InterfaceC2189c interfaceC2189c) {
+        super(2, interfaceC2189c);
+        this.l = z6;
+        this.f8016m = str;
+    }
+
+    @Override // s7.AbstractC2408a
+    public final InterfaceC2189c create(Object obj, InterfaceC2189c interfaceC2189c) {
+        return new l(this.l, this.f8016m, interfaceC2189c);
+    }
+
+    @Override // z7.InterfaceC2785n
+    public final Object invoke(Object obj, Object obj2) throws Throwable {
+        l lVar = (l) create((InterfaceC0725w) obj, (InterfaceC2189c) obj2);
+        m7.q qVar = m7.q.f19267a;
+        lVar.invokeSuspend(qVar);
+        return qVar;
+    }
+
+    @Override // s7.AbstractC2408a
+    public final Object invokeSuspend(Object obj) throws Throwable {
+        EnumC2303a enumC2303a = EnumC2303a.l;
+        AbstractC1386c.u(obj);
+        if (this.l) {
+            io.sentry.hints.i iVar = k6.o.f18284a;
+            io.sentry.hints.i.i(this.f8016m, false);
+        }
+        return m7.q.f19267a;
+    }
+}

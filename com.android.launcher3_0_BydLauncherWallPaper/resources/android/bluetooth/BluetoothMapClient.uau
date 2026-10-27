@@ -1,0 +1,2 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/bluetooth/BluetoothMapClient;->sendMessage(Landroid/bluetooth/BluetoothDevice;[Landroid/net/Uri;Ljava/lang/String;Landroid/app/PendingIntent;Landroid/app/PendingIntent;)Z,frameworks/base/core/java/android/bluetooth/BluetoothMapClient.java,394,5,394,25,

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="com.google.firebase.crashlytics.build_ids_arch">
+        <item>aarch64</item>
+        <item>x86_64</item>
+        <item>x86</item>
+        <item>arm</item>
+    </array>
+    <array name="com.google.firebase.crashlytics.build_ids_build_id">
+        <item>a7e9e4ed332f71e3</item>
+        <item>04e2e0cdca88070e</item>
+        <item>c85cf43e3f84378b</item>
+        <item>9af2a13718848dae</item>
+    </array>
+    <array name="com.google.firebase.crashlytics.build_ids_lib">
+        <item>libfull-jni-spotify.so</item>
+        <item>libfull-jni-spotify.so</item>
+        <item>libfull-jni-spotify.so</item>
+        <item>libfull-jni-spotify.so</item>
+    </array>
+</resources>

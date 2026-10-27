@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:title="@string/allowed_storage_full"
+        android:key="allowed_storage_full"/>
+    <PreferenceCategory
+        android:title="@string/allowed_storage_scoped"
+        android:key="allowed_storage_scoped"/>
+    <PreferenceCategory
+        android:title="@string/allowed_foreground_header"
+        android:key="allowed_foreground"/>
+    <PreferenceCategory
+        android:title="@string/ask_header"
+        android:key="ask"/>
+    <PreferenceCategory
+        android:title="@string/denied_header"
+        android:key="denied"/>
+</PreferenceScreen>

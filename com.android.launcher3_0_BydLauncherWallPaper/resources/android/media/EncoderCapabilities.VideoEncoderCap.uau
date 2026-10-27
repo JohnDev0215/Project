@@ -1,0 +1,6 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/media/EncoderCapabilities$VideoEncoderCap;->mCodec:I,frameworks/base/media/java/android/media/EncoderCapabilities.java,47,9,47,29,
+Landroid/media/EncoderCapabilities$VideoEncoderCap;->mMinFrameWidth:I,frameworks/base/media/java/android/media/EncoderCapabilities.java,53,9,53,29,
+Landroid/media/EncoderCapabilities$VideoEncoderCap;->mMaxFrameWidth:I,frameworks/base/media/java/android/media/EncoderCapabilities.java,55,9,55,29,
+Landroid/media/EncoderCapabilities$VideoEncoderCap;->mMinFrameHeight:I,frameworks/base/media/java/android/media/EncoderCapabilities.java,57,9,57,29,
+Landroid/media/EncoderCapabilities$VideoEncoderCap;->mMaxFrameHeight:I,frameworks/base/media/java/android/media/EncoderCapabilities.java,59,9,59,29,

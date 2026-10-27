@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:textSize="@dimen/login_pin_code_text_size"
+    android:textColor="@color/login_pin_code_foreground"
+    android:background="@drawable/pin_char_background"
+    android:paddingTop="@dimen/login_pin_code_inner_vertical_padding"
+    android:paddingBottom="@dimen/login_pin_code_inner_vertical_padding"
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_weight="1"
+    android:textAlignment="center"/>

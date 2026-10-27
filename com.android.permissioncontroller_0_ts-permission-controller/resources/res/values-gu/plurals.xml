@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="additional_permissions_more">
+        <item quantity="one">વધુ %1$d</item>
+        <item quantity="other">વધુ %1$d</item>
+    </plurals>
+    <plurals name="auto_revoke_permission_notification_content_count">
+        <item quantity="one">%1$d ઍપનો થોડા મહિનામાં ઉપયોગ થયો નથી. રિવ્યૂ કરવા માટે ટૅપ કરો</item>
+        <item quantity="other">%1$d ઍપનો થોડા મહિનામાં ઉપયોગ થયો નથી. રિવ્યૂ કરવા માટે ટૅપ કરો</item>
+    </plurals>
+    <plurals name="auto_revoke_setting_subtitle_count">
+        <item quantity="one">%1$d ઍપનો થોડા મહિનામાં ઉપયોગ થયો નથી</item>
+        <item quantity="other">%1$d ઍપનો થોડા મહિનામાં ઉપયોગ થયો નથી</item>
+    </plurals>
+    <plurals name="days">
+        <item quantity="one">%s દિવસ</item>
+        <item quantity="other">%s દિવસ</item>
+    </plurals>
+    <plurals name="hours">
+        <item quantity="one">%s કલાક</item>
+        <item quantity="other">%s કલાક</item>
+    </plurals>
+    <plurals name="minutes">
+        <item quantity="one">%s મિનિટ</item>
+        <item quantity="other">%s મિનિટ</item>
+    </plurals>
+    <plurals name="seconds">
+        <item quantity="one">%s સેકંડ</item>
+        <item quantity="other">%s સેકંડ</item>
+    </plurals>
+</resources>

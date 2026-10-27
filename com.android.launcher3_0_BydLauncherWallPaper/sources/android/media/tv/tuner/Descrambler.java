@@ -1,0 +1,76 @@
+package android.media.tv.tuner;
+
+import android.annotation.SystemApi;
+import android.media.tv.tuner.filter.Filter;
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
+import java.util.Objects;
+
+/* JADX INFO: loaded from: classes2.dex */
+@SystemApi
+public class Descrambler implements AutoCloseable {
+    public static final int PID_TYPE_MMTP = 2;
+    public static final int PID_TYPE_T = 1;
+    private static final String TAG = "Descrambler";
+    private boolean mIsClosed = false;
+    private final Object mLock = new Object();
+    private long mNativeContext;
+
+    @Retention(RetentionPolicy.SOURCE)
+    public @interface PidType {
+    }
+
+    private native int nativeAddPid(int i, int i2, Filter filter);
+
+    private native int nativeClose();
+
+    private native int nativeRemovePid(int i, int i2, Filter filter);
+
+    private native int nativeSetKeyToken(byte[] bArr);
+
+    private Descrambler() {
+    }
+
+    public int addPid(int i, int i2, Filter filter) {
+        int iNativeAddPid;
+        synchronized (this.mLock) {
+            TunerUtils.checkResourceState(TAG, this.mIsClosed);
+            iNativeAddPid = nativeAddPid(i, i2, filter);
+        }
+        return iNativeAddPid;
+    }
+
+    public int removePid(int i, int i2, Filter filter) {
+        int iNativeRemovePid;
+        synchronized (this.mLock) {
+            TunerUtils.checkResourceState(TAG, this.mIsClosed);
+            iNativeRemovePid = nativeRemovePid(i, i2, filter);
+        }
+        return iNativeRemovePid;
+    }
+
+    public int setKeyToken(byte[] bArr) {
+        int iNativeSetKeyToken;
+        synchronized (this.mLock) {
+            TunerUtils.checkResourceState(TAG, this.mIsClosed);
+            Objects.requireNonNull(bArr, "key token must not be null");
+            iNativeSetKeyToken = nativeSetKeyToken(bArr);
+        }
+        return iNativeSetKeyToken;
+    }
+
+    @Override // java.lang.AutoCloseable
+    public void close() {
+        synchronized (this.mLock) {
+            if (this.mIsClosed) {
+                return;
+            }
+            int iNativeClose = nativeClose();
+            if (iNativeClose != 0) {
+                TunerUtils.throwExceptionForResult(iNativeClose, "Failed to close descrambler");
+            } else {
+                this.mIsClosed = true;
+            }
+        }
+    }
+}

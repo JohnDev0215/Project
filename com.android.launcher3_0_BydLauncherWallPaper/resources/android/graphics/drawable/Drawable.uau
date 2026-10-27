@@ -1,0 +1,7 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/graphics/drawable/Drawable;->mCallback:Ljava/lang/ref/WeakReference;,frameworks/base/graphics/java/android/graphics/drawable/Drawable.java,193,5,193,25,
+Landroid/graphics/drawable/Drawable;->mSrcDensityOverride:I,frameworks/base/graphics/java/android/graphics/drawable/Drawable.java,212,5,212,25,
+Landroid/graphics/drawable/Drawable;->inflateWithAttributes(Landroid/content/res/Resources;Lorg/xmlpull/v1/XmlPullParser;Landroid/content/res/TypedArray;I)V,frameworks/base/graphics/java/android/graphics/drawable/Drawable.java,1463,5,1463,25,
+Landroid/graphics/drawable/Drawable;->updateTintFilter(Landroid/graphics/PorterDuffColorFilter;Landroid/content/res/ColorStateList;Landroid/graphics/PorterDuff$Mode;)Landroid/graphics/PorterDuffColorFilter;,frameworks/base/graphics/java/android/graphics/drawable/Drawable.java,1583,5,1583,25,
+Landroid/graphics/drawable/Drawable;->parseTintMode(ILandroid/graphics/PorterDuff$Mode;)Landroid/graphics/PorterDuff$Mode;,frameworks/base/graphics/java/android/graphics/drawable/Drawable.java,1703,5,1703,25,
+Landroid/graphics/drawable/Drawable;->parseBlendMode(ILandroid/graphics/BlendMode;)Landroid/graphics/BlendMode;,frameworks/base/graphics/java/android/graphics/drawable/Drawable.java,1722,5,1722,25,

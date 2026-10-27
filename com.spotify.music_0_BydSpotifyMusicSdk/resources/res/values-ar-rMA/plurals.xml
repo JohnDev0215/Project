@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="android_auto_podcast_episode_time_format_hours">
+        <item quantity="zero">%1$d السوايع</item>
+        <item quantity="one">%1$d ساعة</item>
+        <item quantity="two">%1$d السوايع</item>
+        <item quantity="few">%1$d السوايع</item>
+        <item quantity="many">%1$d السوايع</item>
+        <item quantity="other">%1$d السوايع</item>
+    </plurals>
+    <plurals name="android_auto_podcast_episode_time_format_min">
+        <item quantity="zero">%1$d الدقايق</item>
+        <item quantity="one">%1$d دقيقة</item>
+        <item quantity="two">%1$d الدقايق</item>
+        <item quantity="few">%1$d الدقايق</item>
+        <item quantity="many">%1$d الدقايق</item>
+        <item quantity="other">%1$d الدقايق</item>
+    </plurals>
+    <plurals name="content_liked_songs_subtitle">
+        <item quantity="zero">%1$d الأغاني</item>
+        <item quantity="one">%1$d الأغنية</item>
+        <item quantity="two">%1$d الأغاني</item>
+        <item quantity="few">%1$d الأغاني</item>
+        <item quantity="many">%1$d الأغاني</item>
+        <item quantity="other">%1$d الأغاني</item>
+    </plurals>
+    <plurals name="content_your_episodes_subtitle">
+        <item quantity="zero">%1$d الحلقات</item>
+        <item quantity="one">%1$d الحلقة</item>
+        <item quantity="two">%1$d الحلقات</item>
+        <item quantity="few">%1$d الحلقات</item>
+        <item quantity="many">%1$d الحلقات</item>
+        <item quantity="other">%1$d الحلقات</item>
+    </plurals>
+</resources>

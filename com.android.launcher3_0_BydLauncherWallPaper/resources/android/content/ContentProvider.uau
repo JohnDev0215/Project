@@ -1,0 +1,13 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/content/ContentProvider;->mContext:Landroid/content/Context;,frameworks/base/core/java/android/content/ContentProvider.java,124,5,124,25,
+Landroid/content/ContentProvider;->mAuthority:Ljava/lang/String;,frameworks/base/core/java/android/content/ContentProvider.java,130,5,130,25,
+Landroid/content/ContentProvider;->mAuthorities:[Ljava/lang/String;,frameworks/base/core/java/android/content/ContentProvider.java,132,5,132,25,
+Landroid/content/ContentProvider;->mReadPermission:Ljava/lang/String;,frameworks/base/core/java/android/content/ContentProvider.java,134,5,134,25,
+Landroid/content/ContentProvider;->mWritePermission:Ljava/lang/String;,frameworks/base/core/java/android/content/ContentProvider.java,136,5,136,25,
+Landroid/content/ContentProvider;->mPathPermissions:[Landroid/content/pm/PathPermission;,frameworks/base/core/java/android/content/ContentProvider.java,138,5,138,25,
+Landroid/content/ContentProvider;-><init>(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;[Landroid/content/pm/PathPermission;)V,frameworks/base/core/java/android/content/ContentProvider.java,179,5,179,88,maxTargetSdk=28&trackingBug=115609023L
+Landroid/content/ContentProvider;->coerceToLocalContentProvider(Landroid/content/IContentProvider;)Landroid/content/ContentProvider;,frameworks/base/core/java/android/content/ContentProvider.java,204,5,204,25,
+Landroid/content/ContentProvider;->setAppOps(II)V,frameworks/base/core/java/android/content/ContentProvider.java,1163,5,1163,25,
+Landroid/content/ContentProvider;->getIContentProvider()Landroid/content/IContentProvider;,frameworks/base/core/java/android/content/ContentProvider.java,2335,5,2335,25,
+Landroid/content/ContentProvider;->attachInfoForTesting(Landroid/content/Context;Landroid/content/pm/ProviderInfo;)V,frameworks/base/core/java/android/content/ContentProvider.java,2345,5,2345,25,
+Landroid/content/ContentProvider;->maybeAddUserId(Landroid/net/Uri;I)Landroid/net/Uri;,frameworks/base/core/java/android/content/ContentProvider.java,2611,5,2611,25,

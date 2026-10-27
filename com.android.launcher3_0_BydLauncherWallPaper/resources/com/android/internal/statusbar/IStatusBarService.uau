@@ -1,0 +1,7 @@
+signature,file,startline,startcol,endline,endcol,properties
+Lcom/android/internal/statusbar/IStatusBarService;->expandNotificationsPanel()V,frameworks/base/core/java/com/android/internal/statusbar/IStatusBarService.aidl,37,1,37,25,
+Lcom/android/internal/statusbar/IStatusBarService;->collapsePanels()V,frameworks/base/core/java/com/android/internal/statusbar/IStatusBarService.aidl,39,1,39,25,
+Lcom/android/internal/statusbar/IStatusBarService;->disable(ILandroid/os/IBinder;Ljava/lang/String;)V,frameworks/base/core/java/com/android/internal/statusbar/IStatusBarService.aidl,42,1,42,25,
+Lcom/android/internal/statusbar/IStatusBarService;->setIconVisibility(Ljava/lang/String;Z)V,frameworks/base/core/java/com/android/internal/statusbar/IStatusBarService.aidl,49,1,49,25,
+Lcom/android/internal/statusbar/IStatusBarService;->removeIcon(Ljava/lang/String;)V,frameworks/base/core/java/com/android/internal/statusbar/IStatusBarService.aidl,51,1,51,25,
+Lcom/android/internal/statusbar/IStatusBarService;->handleSystemKey(I)V,frameworks/base/core/java/com/android/internal/statusbar/IStatusBarService.aidl,98,1,98,25,

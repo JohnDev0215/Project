@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" xmlns:settings="http://schemas.android.com/apk/res-auto"
+    android:title="@string/accessibility_autoclick_preference_title"
+    android:key="autoclick_preference_screen">
+    <com.android.car.developeroptions.widget.SeekBarPreference
+        android:title="@string/accessibility_autoclick_delay_preference_title"
+        android:key="autoclick_delay"/>
+    <com.android.settingslib.widget.FooterPreference
+        android:title="@string/accessibility_autoclick_description"
+        android:selectable="false"
+        android:key="autoclick_footer"
+        settings:searchable="false"/>
+</PreferenceScreen>

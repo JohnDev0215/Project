@@ -1,0 +1,4 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/os/BatteryStats$Timer;-><init>()V,frameworks/base/core/java/android/os/BatteryStats.java,541,9,541,67,maxTargetSdk=28
+Landroid/os/BatteryStats$Timer;->getCountLocked(I)I,frameworks/base/core/java/android/os/BatteryStats.java,550,9,550,29,
+Landroid/os/BatteryStats$Timer;->getTotalTimeLocked(JI)J,frameworks/base/core/java/android/os/BatteryStats.java,561,9,561,29,

@@ -1,0 +1,8 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/net/INetworkPolicyManager;->setUidPolicy(II)V,frameworks/base/core/java/android/net/INetworkPolicyManager.aidl,34,1,34,25,
+Landroid/net/INetworkPolicyManager;->getUidPolicy(I)I,frameworks/base/core/java/android/net/INetworkPolicyManager.aidl,38,1,38,25,
+Landroid/net/INetworkPolicyManager;->setNetworkPolicies([Landroid/net/NetworkPolicy;)V,frameworks/base/core/java/android/net/INetworkPolicyManager.aidl,46,1,46,25,
+Landroid/net/INetworkPolicyManager;->snoozeLimit(Landroid/net/NetworkTemplate;)V,frameworks/base/core/java/android/net/INetworkPolicyManager.aidl,51,1,51,25,
+Landroid/net/INetworkPolicyManager;->setRestrictBackground(Z)V,frameworks/base/core/java/android/net/INetworkPolicyManager.aidl,55,1,55,25,
+Landroid/net/INetworkPolicyManager;->getRestrictBackground()Z,frameworks/base/core/java/android/net/INetworkPolicyManager.aidl,57,1,57,25,
+Landroid/net/INetworkPolicyManager;->getNetworkQuotaInfo(Landroid/net/NetworkState;)Landroid/net/NetworkQuotaInfo;,frameworks/base/core/java/android/net/INetworkPolicyManager.aidl,70,1,70,25,

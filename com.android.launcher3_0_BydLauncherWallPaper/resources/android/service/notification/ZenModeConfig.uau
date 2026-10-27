@@ -1,0 +1,5 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/service/notification/ZenModeConfig;->allowAlarms:Z,frameworks/base/core/java/android/service/notification/ZenModeConfig.java,170,5,170,25,
+Landroid/service/notification/ZenModeConfig;->automaticRules:Landroid/util/ArrayMap;,frameworks/base/core/java/android/service/notification/ZenModeConfig.java,189,5,189,25,
+Landroid/service/notification/ZenModeConfig;-><init>()V,frameworks/base/core/java/android/service/notification/ZenModeConfig.java,192,5,192,25,
+Landroid/service/notification/ZenModeConfig;->tryParseScheduleConditionId(Landroid/net/Uri;)Landroid/service/notification/ZenModeConfig$ScheduleInfo;,frameworks/base/core/java/android/service/notification/ZenModeConfig.java,1484,5,1484,25,

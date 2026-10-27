@@ -1,0 +1,34 @@
+{
+  "Instances": [
+    {
+      "Name": "DBusCommunication",
+      "ServiceAgent": "Dbu_CommAgent",
+      "Optional": true,
+      "Enabled": "${interface.dbus}"
+    },
+    {
+      "Regex": "DBusProvider.*",
+      "ServiceAgent": "Dbu_CommAgent",
+      "Optional": true,
+      "Enabled": "${interface.dbus}"
+    },
+    {
+      "Name": "JsonWsCommunication",
+      "ServiceAgent": "Dbu_CommAgent",
+      "Optional": true,
+      "Enabled": "${interface.json}"
+    },
+    {
+      "Regex": "JsonWsProvider.*",
+      "ServiceAgent": "Dbu_CommAgent",
+      "Optional": true,
+      "Enabled": "${interface.json}"
+    },
+    {
+      "Name": "OnOffConfigurationProvider"
+    },
+    {
+      "Name": "OnOffManager"
+    }
+  ]
+}

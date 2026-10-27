@@ -1,0 +1,13 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/app/ActivityManager$StackInfo;->stackId:I,frameworks/base/core/java/android/app/ActivityManager.java,2817,9,2817,29,
+Landroid/app/ActivityManager$StackInfo;->bounds:Landroid/graphics/Rect;,frameworks/base/core/java/android/app/ActivityManager.java,2819,9,2819,29,
+Landroid/app/ActivityManager$StackInfo;->taskIds:[I,frameworks/base/core/java/android/app/ActivityManager.java,2821,9,2821,29,
+Landroid/app/ActivityManager$StackInfo;->taskNames:[Ljava/lang/String;,frameworks/base/core/java/android/app/ActivityManager.java,2823,9,2823,29,
+Landroid/app/ActivityManager$StackInfo;->taskBounds:[Landroid/graphics/Rect;,frameworks/base/core/java/android/app/ActivityManager.java,2825,9,2825,29,
+Landroid/app/ActivityManager$StackInfo;->taskUserIds:[I,frameworks/base/core/java/android/app/ActivityManager.java,2827,9,2827,29,
+Landroid/app/ActivityManager$StackInfo;->topActivity:Landroid/content/ComponentName;,frameworks/base/core/java/android/app/ActivityManager.java,2829,9,2829,29,
+Landroid/app/ActivityManager$StackInfo;->displayId:I,frameworks/base/core/java/android/app/ActivityManager.java,2831,9,2831,29,
+Landroid/app/ActivityManager$StackInfo;->userId:I,frameworks/base/core/java/android/app/ActivityManager.java,2833,9,2833,29,
+Landroid/app/ActivityManager$StackInfo;->visible:Z,frameworks/base/core/java/android/app/ActivityManager.java,2835,9,2835,29,
+Landroid/app/ActivityManager$StackInfo;->position:I,frameworks/base/core/java/android/app/ActivityManager.java,2839,9,2839,29,
+Landroid/app/ActivityManager$StackInfo;->toString(Ljava/lang/String;)Ljava/lang/String;,frameworks/base/core/java/android/app/ActivityManager.java,2933,9,2933,29,

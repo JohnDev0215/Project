@@ -1,0 +1,6 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/content/pm/PackageParser$SigningDetails$Builder;-><init>()V,frameworks/base/core/java/android/content/pm/PackageParser.java,6547,13,6547,33,
+Landroid/content/pm/PackageParser$SigningDetails$Builder;->setSignatures([Landroid/content/pm/Signature;)Landroid/content/pm/PackageParser$SigningDetails$Builder;,frameworks/base/core/java/android/content/pm/PackageParser.java,6552,13,6552,33,
+Landroid/content/pm/PackageParser$SigningDetails$Builder;->setSignatureSchemeVersion(I)Landroid/content/pm/PackageParser$SigningDetails$Builder;,frameworks/base/core/java/android/content/pm/PackageParser.java,6559,13,6559,33,
+Landroid/content/pm/PackageParser$SigningDetails$Builder;->setPastSigningCertificates([Landroid/content/pm/Signature;)Landroid/content/pm/PackageParser$SigningDetails$Builder;,frameworks/base/core/java/android/content/pm/PackageParser.java,6566,13,6566,33,
+Landroid/content/pm/PackageParser$SigningDetails$Builder;->build()Landroid/content/pm/PackageParser$SigningDetails;,frameworks/base/core/java/android/content/pm/PackageParser.java,6580,13,6580,33,

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="additional_permissions_more">
+        <item quantity="one">Yana %1$d ta</item>
+        <item quantity="other">Yana %1$d ta</item>
+    </plurals>
+    <plurals name="auto_revoke_permission_notification_content_count">
+        <item quantity="one">%1$d ta ilova bir necha oydan beri ishlatilmadi. Tekshirish uchun bosing</item>
+        <item quantity="other">%1$d ta ilova bir necha oydan beri ishlatilmadi. Tekshirish uchun bosing</item>
+    </plurals>
+    <plurals name="auto_revoke_setting_subtitle_count">
+        <item quantity="one">%1$d ta ilova bir necha oydan beri ishlatilmadi.</item>
+        <item quantity="other">%1$d ta ilova bir necha oydan beri ishlatilmadi</item>
+    </plurals>
+    <plurals name="days">
+        <item quantity="one">1 kun</item>
+        <item quantity="other">%s kun</item>
+    </plurals>
+    <plurals name="hours">
+        <item quantity="one">1 soat</item>
+        <item quantity="other">%s soat</item>
+    </plurals>
+    <plurals name="minutes">
+        <item quantity="one">1 daqiqa</item>
+        <item quantity="other">%s daqiqa</item>
+    </plurals>
+    <plurals name="seconds">
+        <item quantity="one">1 soniya</item>
+        <item quantity="other">%s soniya</item>
+    </plurals>
+</resources>

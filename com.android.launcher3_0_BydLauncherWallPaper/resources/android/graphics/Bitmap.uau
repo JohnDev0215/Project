@@ -1,0 +1,16 @@
+signature,file,startline,startcol,endline,endcol,properties
+Landroid/graphics/Bitmap;->mNativePtr:J,frameworks/base/graphics/java/android/graphics/Bitmap.java,64,5,64,25,
+Landroid/graphics/Bitmap;->mNinePatchChunk:[B,frameworks/base/graphics/java/android/graphics/Bitmap.java,81,5,81,88,maxTargetSdk=28&trackingBug=123769491L
+Landroid/graphics/Bitmap;->mNinePatchInsets:Landroid/graphics/NinePatch$InsetStruct;,frameworks/base/graphics/java/android/graphics/Bitmap.java,83,5,83,25,
+Landroid/graphics/Bitmap;->mWidth:I,frameworks/base/graphics/java/android/graphics/Bitmap.java,85,5,85,25,
+Landroid/graphics/Bitmap;->mHeight:I,frameworks/base/graphics/java/android/graphics/Bitmap.java,87,5,87,25,
+Landroid/graphics/Bitmap;->setDefaultDensity(I)V,frameworks/base/graphics/java/android/graphics/Bitmap.java,109,5,109,25,
+Landroid/graphics/Bitmap;->getDefaultDensity()I,frameworks/base/graphics/java/android/graphics/Bitmap.java,115,5,115,25,
+Landroid/graphics/Bitmap;-><init>(JIIIZ[BLandroid/graphics/NinePatch$InsetStruct;)V,frameworks/base/graphics/java/android/graphics/Bitmap.java,129,5,129,44,maxTargetSdk=28
+Landroid/graphics/Bitmap;->reinit(IIZ)V,frameworks/base/graphics/java/android/graphics/Bitmap.java,188,5,188,25,
+Landroid/graphics/Bitmap;->setNinePatchChunk([B)V,frameworks/base/graphics/java/android/graphics/Bitmap.java,359,5,359,25,
+Landroid/graphics/Bitmap;->createAshmemBitmap()Landroid/graphics/Bitmap;,frameworks/base/graphics/java/android/graphics/Bitmap.java,704,5,704,25,
+Landroid/graphics/Bitmap;->createAshmemBitmap(Landroid/graphics/Bitmap$Config;)Landroid/graphics/Bitmap;,frameworks/base/graphics/java/android/graphics/Bitmap.java,723,5,723,25,
+Landroid/graphics/Bitmap;->scaleFromDensity(III)I,frameworks/base/graphics/java/android/graphics/Bitmap.java,1607,5,1607,25,
+Landroid/graphics/Bitmap;->createGraphicBufferHandle()Landroid/graphics/GraphicBuffer;,frameworks/base/graphics/java/android/graphics/Bitmap.java,2241,5,2241,25,
+Landroid/graphics/Bitmap;->nativeReconfigure(JIIIZ)V,frameworks/base/graphics/java/android/graphics/Bitmap.java,2271,5,2271,25,

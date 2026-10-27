@@ -1,0 +1,80 @@
+package android.hardware.bydauto.gb;
+
+import android.content.Context;
+import android.hardware.bydauto.AbsBYDAutoDevice;
+import org.java_websocket.extensions.ExtensionRequestData;
+
+/* JADX INFO: loaded from: classes.dex */
+public final class BYDAutoGBDevice extends AbsBYDAutoDevice {
+    public static final int GB_COMMAND_BUSY = -2147482647;
+    public static final int GB_COMMAND_FAILED = -2147482648;
+    public static final int GB_COMMAND_INVALID_VALUE = -2147482645;
+    public static final int GB_COMMAND_SUCCESS = 0;
+    public static final int GB_COMMAND_TIMEOUT = -2147482646;
+    public static final int GB_WATE_TEMP_ALARM_NO = 0;
+    public static final int GB_WATE_TEMP_ALARM_YES = 1;
+    protected static final String TAG = "BYDAutoGBDevice";
+    private static BYDAutoGBDevice sInstance;
+
+    public void getAllStatus() {
+    }
+
+    @Override // android.hardware.bydauto.AbsBYDAutoDevice
+    public int getDevicetype() {
+        return 0;
+    }
+
+    @Override // android.hardware.IBYDAutoDevice
+    public int[] getFeatureList() {
+        return new int[0];
+    }
+
+    @Override // android.hardware.bydauto.AbsBYDAutoDevice
+    public String getGetPermission() {
+        return ExtensionRequestData.EMPTY_VALUE;
+    }
+
+    @Override // android.hardware.bydauto.AbsBYDAutoDevice
+    public String getSetPermission() {
+        return ExtensionRequestData.EMPTY_VALUE;
+    }
+
+    public int getTempMeterPercentAlarmValue() {
+        return 0;
+    }
+
+    @Override // android.hardware.IBYDAutoDevice
+    public int getType() {
+        return 0;
+    }
+
+    @Override // android.hardware.bydauto.AbsBYDAutoDevice, android.hardware.IBYDAutoDevice
+    public boolean postEvent(int i, int i2, int i3, Object obj) {
+        return false;
+    }
+
+    @Override // android.hardware.bydauto.AbsBYDAutoDevice, android.hardware.IBYDAutoDevice
+    public boolean postEvent(int i, int i2, byte[] bArr, Object obj) {
+        return false;
+    }
+
+    public void registerListener(AbsBYDAutoGBListener absBYDAutoGBListener) {
+    }
+
+    public void registerListener(AbsBYDAutoGBListener absBYDAutoGBListener, int[] iArr) {
+    }
+
+    public void unregisterListener(AbsBYDAutoGBListener absBYDAutoGBListener) {
+    }
+
+    BYDAutoGBDevice(Context context) {
+        super(context);
+    }
+
+    public static synchronized BYDAutoGBDevice getInstance(Context context) {
+        if (sInstance == null) {
+            sInstance = new BYDAutoGBDevice(context);
+        }
+        return sInstance;
+    }
+}

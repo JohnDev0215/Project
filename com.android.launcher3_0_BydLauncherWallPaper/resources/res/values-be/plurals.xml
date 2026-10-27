@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="dotted_app_label">
+        <item quantity="one">%1$s, мае %2$d апавяшчэнне</item>
+        <item quantity="few">%1$s, мае %2$d апавяшчэнні</item>
+        <item quantity="many">%1$s, мае %2$d апавяшчэнняў</item>
+        <item quantity="other">%1$s, мае %2$d апавяшчэння</item>
+    </plurals>
+</resources>
