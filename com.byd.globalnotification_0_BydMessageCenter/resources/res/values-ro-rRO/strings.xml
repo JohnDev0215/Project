@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_foreground_service_running">is Running</string>
+    <string name="app_name">Message Center</string>
+    <string name="cancel">Anulează</string>
+    <string name="media_mounted">Se verifică stick-ul USB/cardul SD</string>
+    <string name="media_removed">Se ejectează stick-ul USB/cardul SD</string>
+    <string name="notification_msg">Mesaj</string>
+    <string name="notify_time_h_s">Acum %d oră(e)</string>
+    <string name="notify_time_just_now">Acum</string>
+    <string name="notify_time_mins">Acum %d minut(e)</string>
+    <string name="notify_time_one_h">Acum 1 oră</string>
+    <string name="notify_time_one_min">Acum 1 min</string>
+    <string name="notify_time_yesterday">Ieri</string>
+    <string name="personal_main_clear_all">Șterge toate</string>
+    <string name="personal_main_manage">Gestionare</string>
+    <string name="personal_main_no_msg">Niciun mesaj</string>
+</resources>

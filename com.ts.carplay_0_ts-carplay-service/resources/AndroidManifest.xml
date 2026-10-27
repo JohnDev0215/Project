@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    android:sharedUserId="android.uid.system"
+    android:versionCode="30"
+    android:versionName="4.5.4.0"
+    android:compileSdkVersion="30"
+    android:compileSdkVersionCodename="11"
+    package="com.ts.carplay"
+    platformBuildVersionCode="30"
+    platformBuildVersionName="11">
+    <uses-sdk
+        android:minSdkVersion="30"
+        android:targetSdkVersion="30"/>
+    <permission android:name="car.permission.CARPLAY"/>
+    <permission android:name="car.permission.CARPLAY_APP"/>
+    <permission android:name="car.permission.CARPLAY_DEVICE_LIST"/>
+    <application
+        android:name="com.ts.carplay.CarPlayApplication"
+        android:process="com.ts.carplay"
+        android:allowBackup="false"
+        android:hardwareAccelerated="true"
+        android:largeHeap="true"
+        android:extractNativeLibs="false"
+        android:usesNonSdkApi="true">
+        <service android:name="com.ts.carplay.CarPlayService">
+            <intent-filter>
+                <action android:name="com.ts.carplay.action.CarPlayService"/>
+            </intent-filter>
+        </service>
+        <uses-library android:name="ts.dcm.foundation.lib"/>
+        <uses-library android:name="ts.carplay.adapter"/>
+        <uses-library android:name="ts.platform.library"/>
+    </application>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.OVERRIDE_WIFI_CONFIG"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.TETHER_PRIVILEGED"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_PRIVILEGED"/>
+    <uses-permission android:name="com.ts.fw.ACCESS_TS_SERVICES"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.car.permission.CAR_CONTROL_ENHANCED_AUDIO"/>
+    <uses-permission android:name="android.permission.BYDAUTO_POWER_COMMON"/>
+</manifest>

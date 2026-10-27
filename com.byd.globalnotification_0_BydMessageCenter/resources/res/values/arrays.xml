@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="bind_app_integration_music">
+        <item>com.byd.mediacenter</item>
+        <item>com.byd.music</item>
+    </array>
+    <array name="bind_app_package">
+        <item>com.kugou.android.auto</item>
+        <item>cn.kuwo.kwmusiccar</item>
+        <item>com.ximalaya.ting.android.car</item>
+        <item>cmgyunting.vehicleplayer.cnr</item>
+    </array>
+    <array name="bind_app_package_3part_5">
+        <item>com.aha.autocar.vehicle</item>
+    </array>
+    <array name="bind_app_package_self_dev5">
+        <item>com.byd.launchermap</item>
+        <item>com.byd.mediacenter</item>
+        <item>com.byd.naviauto</item>
+        <item>com.byd.music</item>
+    </array>
+    <array name="bind_on_3part_app_package">
+        <item>com.byd.automap</item>
+        <item>com.byd.launchermap</item>
+        <item>com.byd.naviauto</item>
+        <item>com.aha.autocar.vehicle</item>
+    </array>
+    <array name="notify_black_list">
+        <item>com.byd.negativescreen</item>
+        <item>com.byd.automap</item>
+        <item>com.byd.multipletheme</item>
+        <item>com.byd.autovoice</item>
+        <item>cn.kuwo.kwmusiccar</item>
+        <item>com.byd.kuwowidget</item>
+        <item>com.ximalaya.ting.android.car</item>
+        <item>com.lcoolme.android.weather.bydauto</item>
+        <item>com.byd.appstore</item>
+        <item>com.byd.codermrye.killer</item>
+        <item>com.byd.playdilink</item>
+        <item>com.byd.auto_emanual</item>
+        <item>com.byd.pushservice</item>
+        <item>com.byd.auto_camera</item>
+        <item>com.byd.auto_photo</item>
+        <item>com.baidu.input</item>
+        <item>com.byd.smarttravel</item>
+        <item>cmgyunting.vehicleplayer.cnr</item>
+        <item>com.sohu.inputmethod.sogou</item>
+        <item>com.byd.dipilot.dms</item>
+        <item>com.byd.accountservice</item>
+        <item>com.byd.launchermap</item>
+        <item>com.byd.mediacenter</item>
+        <item>com.byd.diLinkAccount</item>
+        <item>com.qualcomm.wfd.service</item>
+        <item>com.qualcomm.qti.smq</item>
+        <item>android</item>
+        <item>com.byd.miniprogram</item>
+        <item>com.byd.sceneandmode</item>
+        <item>com.byd.music</item>
+        <item>com.ts.appservice.power</item>
+        <item>com.neusoft.na.ehp</item>
+        <item>com.neusoft.na.navigation</item>
+        <item>com.neusoft.na.navigation</item>
+        <item>com.byd.vrassistant</item>
+        <item>com.byd.carsettings</item>
+        <item>com.byd.vrsettings</item>
+        <item>com.byd.vrdownload</item>
+        <item>com.gpack.agent</item>
+    </array>
+    <array name="notify_black_list2">
+        <item>com.android.car.media</item>
+        <item>com.amazon.mp3.automotiveOS</item>
+        <item>com.desay.engmode</item>
+        <item>com.desaysv.ivi.vds.log</item>
+        <item>com.desaysv.ivi.vds.upgrade</item>
+        <item>com.byd.music.kr</item>
+        <item>skplanet.musicmate</item>
+        <item>com.fce.onlinemedia.deezer</item>
+        <item>deezer.android.app</item>
+        <item>com.fce.onlinemedia.tidal</item>
+        <item>com.aspiro.tidal</item>
+        <item>com.fce.onlinemedia.melon</item>
+        <item>com.iloen.melon</item>
+        <item>com.fce.onlinemedia.tunein</item>
+        <item>tunein.player</item>
+        <item>com.fce.onlinemedia.audiothek</item>
+        <item>de.ard.audiothek</item>
+        <item>com.fce.onlinemedia.pocketcasts</item>
+        <item>au.com.shiftyjelly.pocketcasts</item>
+        <item>com.fce.onlinemedia.audible</item>
+        <item>com.audible.application</item>
+        <item>com.fce.onlinemedia.libby</item>
+        <item>com.overdrive.mobile.android.automotive.libby</item>
+        <item>com.fce.onlinemedia.radioline</item>
+        <item>com.radioline.android.radioline.auto</item>
+        <item>com.fce.onlinemedia.audials</item>
+        <item>com.audials</item>
+        <item>com.fce.onlinemedia.sportschau</item>
+        <item>de.ard.sportschau.automotive</item>
+        <item>com.fce.onlinemedia.radiofrance</item>
+        <item>com.radiofrance.radio.radiofrance.android</item>
+        <item>com.fce.onlinemedia.heute</item>
+        <item>de.heute.mobile</item>
+        <item>com.fce.onlinemedia.iheartradio</item>
+        <item>com.clearchannel.iheartradio.controller</item>
+        <item>com.fce.onlinemedia.musicmate</item>
+        <item>skplanet.musicmate</item>
+        <item>com.fce.onlinemedia.bloomberg</item>
+        <item>com.bloomberg.android.plus</item>
+        <item>com.tmap.auto.byd</item>
+        <item>com.stingray.karaoke.car.byd8155f</item>
+    </array>
+    <array name="self_dev_app_list">
+        <item>com.byd.multipletheme</item>
+        <item>com.byd.negativescreen</item>
+        <item>com.byd.ditrainer</item>
+        <item>com.byd.dipilot.dms</item>
+        <item>com.android.systemui</item>
+        <item>com.byd.carsettings</item>
+        <item>com.byd.mycar</item>
+        <item>com.byd.softwarestore</item>
+    </array>
+    <array name="vin">
+        <item>TEST0013421812821</item>
+        <item>TEST0019928817203</item>
+        <item>TEST0018138808337</item>
+        <item>TEST0013510885377</item>
+        <item>TEST0014716006328</item>
+        <item>TESTCAR0000000003</item>
+        <item>LC0CE6CD4L1074770</item>
+        <item>TESTDILINKSCAN001</item>
+        <item>TESTDILINKSCAN100</item>
+        <item>TC800192190055950</item>
+        <item>TESTCAR2090001278</item>
+        <item>TESTCAR2190012675</item>
+        <item>LGXC76D41M0011560</item>
+    </array>
+    <array name="welcome_show_app_list">
+        <item>com.byd.multipletheme</item>
+        <item>com.byd.carsettings</item>
+    </array>
+</resources>

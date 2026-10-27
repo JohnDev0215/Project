@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_foreground_service_running">is Running</string>
+    <string name="app_name">Message Center</string>
+    <string name="cancel">Avbryt</string>
+    <string name="media_mounted">Kontroll av USB-flashdisk/SD-kort</string>
+    <string name="media_removed">USB-flashdisk/SD-kort løses ut</string>
+    <string name="notification_msg">Melding</string>
+    <string name="notify_time_h_s">%d time(r) siden</string>
+    <string name="notify_time_just_now">Akkurat nå</string>
+    <string name="notify_time_mins">%d minutt(er) siden</string>
+    <string name="notify_time_one_h">1 time siden</string>
+    <string name="notify_time_one_min">1 min siden</string>
+    <string name="notify_time_yesterday">I går</string>
+    <string name="personal_main_clear_all">Tøm alt</string>
+    <string name="personal_main_manage">Administrasjon</string>
+    <string name="personal_main_no_msg">Ingen melding</string>
+</resources>

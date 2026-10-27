@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="WifiApChannel">
+        <item>CN,153,153,153,6,6,6,China</item>
+        <item>US,36,149,36,6,6,6,USA</item>
+        <item>IN,153,153,153,153,6,6,India</item>
+        <item>TH,149,149,149,149,6,6,Thailand</item>
+    </array>
+    <array name="controllerInformation">
+        <item>UsbConnController.jar,com.ts.car.dcm.usbcontroller.UsbConnController,true,v8</item>
+        <item>WirelessConnController.jar,com.ts.car.dcm.wirelesscontroller.WirelessConnController,true,v7</item>
+    </array>
+</resources>

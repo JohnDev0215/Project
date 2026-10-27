@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="permission_delete_audio">
+        <item quantity="one">^1 ilovasiga bu audio faylni oʻchirib tashlashi uchun ruxsat berilsinmi?</item>
+        <item quantity="other">^1 ilovasiga ^2 ta audio faylni oʻchirib tashlashi uchun ruxsat berilsinmi?</item>
+    </plurals>
+    <plurals name="permission_delete_generic">
+        <item quantity="one">^1 ilovasiga bu elementni oʻchirib tashlashi uchun ruxsat berilsinmi?</item>
+        <item quantity="other">^1 ilovasiga ^2 ta elementni oʻchirib tashlashi uchun ruxsat berilsinmi?</item>
+    </plurals>
+    <plurals name="permission_delete_image">
+        <item quantity="one">^1 ilovasiga bu suratni oʻchirib tashlashi uchun ruxsat berilsinmi?</item>
+        <item quantity="other">^1 ilovasiga ^2 ta suratni oʻchirib tashlashi uchun ruxsat berilsinmi?</item>
+    </plurals>
+    <plurals name="permission_delete_video">
+        <item quantity="one">^1 ilovasiga bu videoni oʻchirib tashlashi uchun ruxsat berilsinmi?</item>
+        <item quantity="other">^1 ilovasiga ^2 ta videoni oʻchirib tashlashi uchun ruxsat berilsinmi?</item>
+    </plurals>
+    <plurals name="permission_more_text">
+        <item quantity="one">Yana ^1 ta qoʻshimcha element</item>
+        <item quantity="other">Yana ^1 ta qoʻshimcha element</item>
+    </plurals>
+    <plurals name="permission_more_thumb">
+        <item quantity="one">+^1</item>
+        <item quantity="other">+^1</item>
+    </plurals>
+    <plurals name="permission_trash_audio">
+        <item quantity="one">^1 ilovasiga bu audio faylni chiqitdonga tashlashi uchun ruxsat berilsinmi?</item>
+        <item quantity="other">^1 ilovasiga ^2 ta audio faylni chiqitdonga tashlashi uchun ruxsat berilsinmi?</item>
+    </plurals>
+    <plurals name="permission_trash_generic">
+        <item quantity="one">^1 ilovasiga bu elementni chiqitdonga tashlashi uchun ruxsat berilsinmi?</item>
+        <item quantity="other">^1 ilovasiga ^2 ta elementni chiqitdonga tashlashi uchun ruxsat berilsinmi?</item>
+    </plurals>
+    <plurals name="permission_trash_image">
+        <item quantity="one">^1 ilovasiga bu suratni chiqitdonga tashlashi uchun ruxsat berilsinmi?</item>
+        <item quantity="other">^1 ilovasiga ^2 ta suratni chiqitdonga tashlashi uchun ruxsat berilsinmi?</item>
+    </plurals>
+    <plurals name="permission_trash_video">
+        <item quantity="one">^1 ilovasiga bu videoni chiqitdonga tashlashi uchun ruxsat berilsinmi?</item>
+        <item quantity="other">^1 ilovasiga ^2 ta videoni chiqitdonga tashlashi uchun ruxsat berilsinmi?</item>
+    </plurals>
+    <plurals name="permission_untrash_audio">
+        <item quantity="one">^1 ilovasiga bu audio faylni chiqitdondan chiqarib olishi uchun ruxsat berilsinmi?</item>
+        <item quantity="other">^1 ilovasiga ^2 ta audio faylni chiqitdondan chiqarib olishi uchun ruxsat berilsinmi?</item>
+    </plurals>
+    <plurals name="permission_untrash_generic">
+        <item quantity="one">^1 ilovasiga bu elementni chiqitdondan chiqarib olishi uchun ruxsat berilsinmi?</item>
+        <item quantity="other">^1 ilovasiga ^2 ta elementni chiqitdondan chiqarib olishi uchun ruxsat berilsinmi?</item>
+    </plurals>
+    <plurals name="permission_untrash_image">
+        <item quantity="one">^1 ilovasiga bu suratni chiqitdondan chiqarib olishi uchun ruxsat berilsinmi?</item>
+        <item quantity="other">^1 ilovasiga ^2 ta suratni chiqitdondan chiqarib olishi uchun ruxsat berilsinmi?</item>
+    </plurals>
+    <plurals name="permission_untrash_video">
+        <item quantity="one">^1 ilovasiga bu videoni chiqitdondan chiqarib olishi uchun ruxsat berilsinmi?</item>
+        <item quantity="other">^1 ilovasiga ^2 ta videoni chiqitdondan chiqarib olishi uchun ruxsat berilsinmi?</item>
+    </plurals>
+    <plurals name="permission_write_audio">
+        <item quantity="one">^1 ilovasiga bu audio faylni oʻzgartirishi uchun ruxsat berilsinmi?</item>
+        <item quantity="other">^1 ilovasiga ^2 ta audio faylni oʻzgartirishi uchun ruxsat berilsinmi?</item>
+    </plurals>
+    <plurals name="permission_write_generic">
+        <item quantity="one">^1 ilovasiga bu elementni oʻzgartirishi uchun ruxsat berilsinmi?</item>
+        <item quantity="other">^1 ilovasiga ^2 ta elementni oʻzgartirishi uchun ruxsat berilsinmi?</item>
+    </plurals>
+    <plurals name="permission_write_image">
+        <item quantity="one">^1 ilovasiga bu suratni oʻzgartirishi uchun ruxsat berilsinmi?</item>
+        <item quantity="other">^1 ilovasiga ^2 ta suratni oʻzgartirishi uchun ruxsat berilsinmi?</item>
+    </plurals>
+    <plurals name="permission_write_video">
+        <item quantity="one">^1 ilovasiga bu videoni oʻzgartirishi uchun ruxsat berilsinmi?</item>
+        <item quantity="other">^1 ilovasiga ^2 ta videoni oʻzgartirishi uchun ruxsat berilsinmi?</item>
+    </plurals>
+</resources>

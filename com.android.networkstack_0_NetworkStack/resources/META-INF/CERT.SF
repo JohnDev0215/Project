@@ -1,0 +1,53 @@
+Signature-Version: 1.0
+Created-By: 1.0 (Android SignApk)
+SHA-256-Digest-Manifest: XKwkWOXIqqoCWzl5/L0/VrlepG8XuGw3Y6LAqMxAmSw=
+X-Android-APK-Signed: 2, 3
+
+Name: AndroidManifest.xml
+SHA-256-Digest: ixGzR9mLG3ips2AmOjpqSAPyczTjtePitTjNADTHM7A=
+
+Name: META-INF/proguard/androidx-annotations.pro
+SHA-256-Digest: z4VPeB3xyX+1oqubmSAZIacjNrmoTsLyFuu+ubl7+m4=
+
+Name: android/net/DhcpResults.uau
+SHA-256-Digest: nO7ZE8Z6LaqgwyqsUrWdm/JPQJ1lIQL4ob1pnjEG/xQ=
+
+Name: android/net/networkstack/util/HexDump.uau
+SHA-256-Digest: vAHDuK5j5193J/T/vPNL4fnXR0BtCklCXWL91BruI6s=
+
+Name: android/net/networkstack/util/IState.uau
+SHA-256-Digest: ZsyE/LsViuZX6suA9+4EclZxJfPxxHq/5ZUpQOlbfMA=
+
+Name: android/net/networkstack/util/IndentingPrintWriter.uau
+SHA-256-Digest: ZEDarLm+Rh9n2hKwaRr9dBAEzHRD2rAC9JeEsDgiyvw=
+
+Name: android/net/networkstack/util/Preconditions.uau
+SHA-256-Digest: CyA/stABbc1EXjpjGbzImtEzVaRnkk0uUDlr6c13TkI=
+
+Name: android/net/networkstack/util/State.uau
+SHA-256-Digest: AWiFUUKWrSuGOr561k5AOye3aNqJS8/kL5SxZ64cEEo=
+
+Name: android/net/networkstack/util/StateMachine.uau
+SHA-256-Digest: msgqdsVHf3fYubV93CjFlH9178D92h3P3WNP09Auuqw=
+
+Name: android/util/LocalLog.ReadOnlyLocalLog.uau
+SHA-256-Digest: s17VZ8dAbUoumYgDoKs6kgUQKU5uKLNa9+G2urF5Cqs=
+
+Name: android/util/LocalLog.uau
+SHA-256-Digest: jCzQ6Bh1I5c7NjNw4JHybO+cQdBx6jgaPooycwTJ11Q=
+
+Name: classes.dex
+SHA-256-Digest: LGJwYf34329WNpfnzYSQ7q0I6R5Suaywtuz3xaNNhq0=
+
+Name: lib/arm64-v8a/libnativehelper_compat_libc++.so
+SHA-256-Digest: s6zJ8cfTz7cVIFmL3ytZN6GWaIanjaEGwObe3G38a/M=
+
+Name: lib/arm64-v8a/libnetworkstackutilsjni.so
+SHA-256-Digest: klgo12S08yG6TP0YlOLWOo/F4RyKVj5KD8WOelEGC74=
+
+Name: res/drawable/icon_wifi.xml
+SHA-256-Digest: NhpcOwERGb7rEyK30Dp6ljM/GuBTmd69R5twMbNST04=
+
+Name: resources.arsc
+SHA-256-Digest: Otez63FzbZFfPnbrbd0CjE+DfxphK4W8dEio/eWibqg=
+

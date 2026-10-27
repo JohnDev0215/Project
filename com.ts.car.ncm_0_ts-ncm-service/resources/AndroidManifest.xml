@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    android:sharedUserId="android.uid.system"
+    android:versionCode="1"
+    android:versionName="4.5.0.0"
+    android:compileSdkVersion="30"
+    android:compileSdkVersionCodename="11"
+    package="com.ts.car.ncm"
+    platformBuildVersionCode="30"
+    platformBuildVersionName="11">
+    <uses-sdk
+        android:minSdkVersion="30"
+        android:targetSdkVersion="30"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.NETWORK_STACK"/>
+    <uses-permission android:name="android.permission.CONNECTIVITY_INTERNAL"/>
+    <uses-permission android:name="android.permission.WRITE_DEVICE_CONFIG"/>
+    <application
+        android:label="@string/app_name"
+        android:name="com.ts.car.ncm.ExtConnectivityServiceApp"
+        android:persistent="true"
+        android:allowBackup="false"
+        android:supportsRtl="true"
+        android:extractNativeLibs="true"
+        android:defaultToDeviceProtectedStorage="true"
+        android:directBootAware="true"
+        android:usesNonSdkApi="true">
+        <uses-library android:name="ts.platform.library"/>
+        <uses-library
+            android:name="ts.ncm.foundation.lib"
+            android:required="false"/>
+        <service
+            android:name="com.ts.car.ncm.network.ExtConnectivityService"
+            android:exported="true"
+            android:singleUser="true">
+            <intent-filter>
+                <action android:name="com.ts.car.ncm.network.ExtConnectivityService"/>
+            </intent-filter>
+        </service>
+    </application>
+    <permission
+        android:name="com.ts.car.ncm.NET_CONFIG_CHANGE_BROADCAT"
+        android:protectionLevel="signatureOrSystem"/>
+</manifest>

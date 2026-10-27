@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="config_captive_portal_fallback_probe_specs">
+    </array>
+    <array name="config_captive_portal_fallback_urls">
+    </array>
+    <array name="config_captive_portal_http_urls">
+        <item>http://www.qualcomm.cn/generate_204</item>
+        <item>http://www.google.com/gen_204</item>
+        <item>http://play.googleapis.com/generate_204</item>
+    </array>
+    <array name="config_captive_portal_https_urls">
+        <item>https://www.google.com/generate_204</item>
+        <item>https://www.gstatic.com/generate_204</item>
+        <item>https://connectivitycheck.gstatic.com/generate_204</item>
+    </array>
+    <array name="config_default_dns_servers">
+    </array>
+    <array name="default_captive_portal_fallback_urls">
+        <item>http://www.google.com/gen_204</item>
+        <item>http://play.googleapis.com/generate_204</item>
+    </array>
+</resources>

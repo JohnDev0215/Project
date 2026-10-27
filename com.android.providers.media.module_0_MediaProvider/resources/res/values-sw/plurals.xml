@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="permission_delete_audio">
+        <item quantity="one">Ungependa kuruhusu ^1 ifute faili hii ya sauti?</item>
+        <item quantity="other">Ungependa kuruhusu ^1 ifute faili ^2 za sauti?</item>
+    </plurals>
+    <plurals name="permission_delete_generic">
+        <item quantity="one">Ungependa kuruhusu ^1 ifute kipengee hiki?</item>
+        <item quantity="other">Ungependa kuruhusu ^1 ifute vipengee ^2?</item>
+    </plurals>
+    <plurals name="permission_delete_image">
+        <item quantity="one">Ungependa kuruhusu ^1 ifute picha hii?</item>
+        <item quantity="other">Ungependa kuruhusu ^1 ifute picha ^2?</item>
+    </plurals>
+    <plurals name="permission_delete_video">
+        <item quantity="one">Ungependa kuruhusu ^1 ifute video hii?</item>
+        <item quantity="other">Ungependa kuruhusu ^1 ifute video ^2?</item>
+    </plurals>
+    <plurals name="permission_more_text">
+        <item quantity="one">Pamoja na kipengee ^1 zaidi</item>
+        <item quantity="other">Pamoja na vipengee ^1 zaidi</item>
+    </plurals>
+    <plurals name="permission_more_thumb">
+        <item quantity="one">+^1</item>
+        <item quantity="other">+^1</item>
+    </plurals>
+    <plurals name="permission_trash_audio">
+        <item quantity="one">Ungependa kuruhusu ^1 ihamishie faili hii ya sauti kwenye tupio?</item>
+        <item quantity="other">Ungependa kuruhusu ^1 ihamishie faili ^2 za sauti kwenye tupio?</item>
+    </plurals>
+    <plurals name="permission_trash_generic">
+        <item quantity="one">Ungependa kuruhusu ^1 ihamishie kipengee hiki kwenye tupio?</item>
+        <item quantity="other">Ungependa kuruhusu ^1 ihamishie vipengee ^2 kwenye tupio?</item>
+    </plurals>
+    <plurals name="permission_trash_image">
+        <item quantity="one">Ungependa kuruhusu ^1 ihamishie picha hii kwenye tupio?</item>
+        <item quantity="other">Ungependa kuruhusu ^1 ihamishie picha ^2 kwenye tupio?</item>
+    </plurals>
+    <plurals name="permission_trash_video">
+        <item quantity="one">Ungependa kuruhusu ^1 ihamishie video hii kwenye tupio?</item>
+        <item quantity="other">Ungependa kuruhusu ^1 ihamishie video ^2 kwenye tupio?</item>
+    </plurals>
+    <plurals name="permission_untrash_audio">
+        <item quantity="one">Ungependa kuruhusu ^1 iondoe faili hii ya sauti kwenye tupio?</item>
+        <item quantity="other">Ungependa kuruhusu ^1 iondoe faili ^2 za sauti kwenye tupio?</item>
+    </plurals>
+    <plurals name="permission_untrash_generic">
+        <item quantity="one">Ungependa kuruhusu ^1 iondoe kipengee hiki kwenye tupio?</item>
+        <item quantity="other">Ungependa kuruhusu ^1 iondoe vipengee ^2 kwenye tupio?</item>
+    </plurals>
+    <plurals name="permission_untrash_image">
+        <item quantity="one">Ungependa kuruhusu ^1 iondoe picha hii kwenye tupio?</item>
+        <item quantity="other">Ungependa kuruhusu ^1 iondoe picha ^2 kwenye tupio?</item>
+    </plurals>
+    <plurals name="permission_untrash_video">
+        <item quantity="one">Ungependa kuruhusu ^1 iondoe video hii kwenye tupio?</item>
+        <item quantity="other">Ungependa kuruhusu ^1 iondoe video ^2 kwenye tupio?</item>
+    </plurals>
+    <plurals name="permission_write_audio">
+        <item quantity="one">Ungependa kuruhusu ^1 ibadilishe faili hii ya sauti?</item>
+        <item quantity="other">Ungependa kuruhusu ^1 ibadilishe faili ^2 za sauti?</item>
+    </plurals>
+    <plurals name="permission_write_generic">
+        <item quantity="one">Ungependa kuruhusu ^1 ibadilishe kipengee hiki?</item>
+        <item quantity="other">Ungependa kuruhusu ^1 ibadilishe vipengee ^2?</item>
+    </plurals>
+    <plurals name="permission_write_image">
+        <item quantity="one">Ungependa kuruhusu ^1 ibadilishe picha hii?</item>
+        <item quantity="other">Ungependa kuruhusu ^1 ibadilishe picha ^2?</item>
+    </plurals>
+    <plurals name="permission_write_video">
+        <item quantity="one">Ungependa kuruhusu ^1 ibadilishe video hii?</item>
+        <item quantity="other">Ungependa kuruhusu ^1 ibadilishe video ^2?</item>
+    </plurals>
+</resources>

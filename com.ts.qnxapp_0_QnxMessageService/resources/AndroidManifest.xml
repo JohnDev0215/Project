@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    android:sharedUserId="android.uid.system"
+    android:versionCode="30"
+    android:versionName="11"
+    android:compileSdkVersion="30"
+    android:compileSdkVersionCodename="11"
+    coreApp="true"
+    package="com.ts.qnxapp"
+    platformBuildVersionCode="30"
+    platformBuildVersionName="11">
+    <uses-sdk
+        android:minSdkVersion="30"
+        android:targetSdkVersion="23"/>
+    <application
+        android:label="QnxMessageApp"
+        android:name="QnxMessageApp"
+        android:persistent="true"
+        android:allowBackup="false"
+        android:extractNativeLibs="true"
+        android:directBootAware="true"
+        android:usesNonSdkApi="true">
+        <service android:name="com.ts.qnxapp.QnxMessageService">
+            <intent-filter>
+                <action android:name="com.ts.qnxservice"/>
+            </intent-filter>
+        </service>
+        <uses-library android:name="byd.ota.master"/>
+        <uses-library android:name="ts.framework"/>
+    </application>
+</manifest>

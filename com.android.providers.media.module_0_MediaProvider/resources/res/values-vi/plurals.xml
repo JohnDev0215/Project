@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="permission_delete_audio">
+        <item quantity="one">Cho phép ^1 xóa tệp âm thanh này?</item>
+        <item quantity="other">Cho phép ^1 xóa ^2 tệp âm thanh?</item>
+    </plurals>
+    <plurals name="permission_delete_generic">
+        <item quantity="one">Cho phép ^1 xóa mục này?</item>
+        <item quantity="other">Cho phép ^1 xóa ^2 mục?</item>
+    </plurals>
+    <plurals name="permission_delete_image">
+        <item quantity="one">Cho phép ^1 xóa ảnh này?</item>
+        <item quantity="other">Cho phép ^1 xóa ^2 ảnh?</item>
+    </plurals>
+    <plurals name="permission_delete_video">
+        <item quantity="one">Cho phép ^1 xóa video này?</item>
+        <item quantity="other">Cho phép ^1 xóa ^2 video?</item>
+    </plurals>
+    <plurals name="permission_more_text">
+        <item quantity="one">Và ^1 mục khác</item>
+        <item quantity="other">Và ^1 mục khác</item>
+    </plurals>
+    <plurals name="permission_more_thumb">
+        <item quantity="one">+^1</item>
+        <item quantity="other">+^1</item>
+    </plurals>
+    <plurals name="permission_trash_audio">
+        <item quantity="one">Cho phép ^1 chuyển tệp âm thanh này vào thùng rác?</item>
+        <item quantity="other">Cho phép ^1 chuyển ^2 tệp âm thanh vào thùng rác?</item>
+    </plurals>
+    <plurals name="permission_trash_generic">
+        <item quantity="one">Cho phép ^1 chuyển mục này vào thùng rác?</item>
+        <item quantity="other">Cho phép ^1 chuyển ^2 mục vào thùng rác?</item>
+    </plurals>
+    <plurals name="permission_trash_image">
+        <item quantity="one">Cho phép ^1 chuyển ảnh này vào thùng rác?</item>
+        <item quantity="other">Cho phép ^1 chuyển ^2 ảnh vào thùng rác?</item>
+    </plurals>
+    <plurals name="permission_trash_video">
+        <item quantity="one">Cho phép ^1 chuyển video này vào thùng rác?</item>
+        <item quantity="other">Cho phép ^1 chuyển ^2 video vào thùng rác?</item>
+    </plurals>
+    <plurals name="permission_untrash_audio">
+        <item quantity="one">Cho phép ^1 chuyển tệp âm thanh này ra khỏi thùng rác?</item>
+        <item quantity="other">Cho phép ^1 chuyển ^2 tệp âm thanh ra khỏi thùng rác?</item>
+    </plurals>
+    <plurals name="permission_untrash_generic">
+        <item quantity="one">Cho phép ^1 chuyển mục này ra khỏi thùng rác?</item>
+        <item quantity="other">Cho phép ^1 chuyển ^2 mục ra khỏi thùng rác?</item>
+    </plurals>
+    <plurals name="permission_untrash_image">
+        <item quantity="one">Cho phép ^1 chuyển ảnh này ra khỏi thùng rác?</item>
+        <item quantity="other">Cho phép ^1 chuyển ^2 ảnh ra khỏi thùng rác?</item>
+    </plurals>
+    <plurals name="permission_untrash_video">
+        <item quantity="one">Cho phép ^1 chuyển video này ra khỏi thùng rác?</item>
+        <item quantity="other">Cho phép ^1 chuyển ^2 video ra khỏi thùng rác?</item>
+    </plurals>
+    <plurals name="permission_write_audio">
+        <item quantity="one">Cho phép ^1 sửa đổi tệp âm thanh này?</item>
+        <item quantity="other">Cho phép ^1 sửa đổi ^2 tệp âm thanh?</item>
+    </plurals>
+    <plurals name="permission_write_generic">
+        <item quantity="one">Cho phép ^1 sửa đổi mục này?</item>
+        <item quantity="other">Cho phép ^1 sửa đổi ^2 mục?</item>
+    </plurals>
+    <plurals name="permission_write_image">
+        <item quantity="one">Cho phép ^1 sửa đổi ảnh này?</item>
+        <item quantity="other">Cho phép ^1 sửa đổi ^2 ảnh?</item>
+    </plurals>
+    <plurals name="permission_write_video">
+        <item quantity="one">Cho phép ^1 sửa đổi video này?</item>
+        <item quantity="other">Cho phép ^1 sửa đổi ^2 video?</item>
+    </plurals>
+</resources>

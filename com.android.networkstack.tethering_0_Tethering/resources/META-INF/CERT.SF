@@ -1,0 +1,86 @@
+Signature-Version: 1.0
+Created-By: 1.0 (Android SignApk)
+SHA-256-Digest-Manifest: ERjqTgpO2W2lZxMoZK0UYr0xCgN7R3PYXHJR2o/VDxw=
+X-Android-APK-Signed: 2, 3
+
+Name: AndroidManifest.xml
+SHA-256-Digest: gEvGsGMONUOTzo0/MKuyoAZxJLQTS2K6do5cmBd7KG8=
+
+Name: META-INF/proguard/androidx-annotations.pro
+SHA-256-Digest: z4VPeB3xyX+1oqubmSAZIacjNrmoTsLyFuu+ubl7+m4=
+
+Name: android/util/LocalLog.ReadOnlyLocalLog.uau
+SHA-256-Digest: s17VZ8dAbUoumYgDoKs6kgUQKU5uKLNa9+G2urF5Cqs=
+
+Name: android/util/LocalLog.uau
+SHA-256-Digest: jCzQ6Bh1I5c7NjNw4JHybO+cQdBx6jgaPooycwTJ11Q=
+
+Name: classes.dex
+SHA-256-Digest: BXYLoqvu0i5bmL98NpvtaxU02J199F5CtE7dnWHUj/A=
+
+Name: com/android/networkstack/tethering/util/IState.uau
+SHA-256-Digest: k03CaRXGLT3bA6VDDDetEp5tKGTaMschw1pbPc/TK7M=
+
+Name: com/android/networkstack/tethering/util/IndentingPrintWriter.uau
+SHA-256-Digest: Ewppn1HAD9cCxJvEbM+ZgRLTpVxhXY2OpaMgZEH7XwQ=
+
+Name: com/android/networkstack/tethering/util/State.uau
+SHA-256-Digest: kMFQeOJtxB9APVQAhjWF0bdsWBxGeTfhBm1GJKfJCi0=
+
+Name: com/android/networkstack/tethering/util/StateMachine.uau
+SHA-256-Digest: d3PLSBzviCjzVabCSzRNwEjfSe4Bqy7CDEtTdy79IpA=
+
+Name: lib/arm64-v8a/libnativehelper_compat_libc++.so
+SHA-256-Digest: s6zJ8cfTz7cVIFmL3ytZN6GWaIanjaEGwObe3G38a/M=
+
+Name: lib/arm64-v8a/libtetherutilsjni.so
+SHA-256-Digest: 7uIifrwT7jL71ArbyFesmVEEgyXzYGwvLAZYtZFxnOM=
+
+Name: res/drawable-hdpi-v4/stat_sys_tether_bluetooth.png
+SHA-256-Digest: HlN3G7rbWDWCF4NDNP9TucVv0S2txWahdm0XZJqHqJY=
+
+Name: res/drawable-hdpi-v4/stat_sys_tether_general.png
+SHA-256-Digest: oQQXZ2XV5iLcOy9qisrr55P5AESEMBW0RjIfHG6Y7CE=
+
+Name: res/drawable-hdpi-v4/stat_sys_tether_usb.png
+SHA-256-Digest: oIFDtQmaWe0CMcCmdpjFItKlMFEPdTAYDQ8JaoRUk9g=
+
+Name: res/drawable-ldpi-v4/stat_sys_tether_bluetooth.png
+SHA-256-Digest: 7pxgFi0Nx7VUTXWhw2XRZrO2u+q6bGuyYFpSg4ySkgc=
+
+Name: res/drawable-ldpi-v4/stat_sys_tether_general.png
+SHA-256-Digest: FkhphadFc1KVhFyZAQODUrNJTc9AqjKsu5zOO+GCjis=
+
+Name: res/drawable-ldpi-v4/stat_sys_tether_usb.png
+SHA-256-Digest: X0oykpUlsxQXapSvMbOLxOPoShc/uebhWSEzUNoInlg=
+
+Name: res/drawable-mdpi-v4/stat_sys_tether_bluetooth.png
+SHA-256-Digest: jnnbB4ovDcMJjLKbr1WvbWg89FN8rE6ql/6sdj+diyc=
+
+Name: res/drawable-mdpi-v4/stat_sys_tether_general.png
+SHA-256-Digest: rrgTXxegYCdByL/JrkuW96gtBKx8cAtV48IAutERQlk=
+
+Name: res/drawable-mdpi-v4/stat_sys_tether_usb.png
+SHA-256-Digest: wEHD3LLK1P4snE2QUkSfUfMU0wyLEp8jFp+EdRFNcMI=
+
+Name: res/drawable-xhdpi-v4/stat_sys_tether_bluetooth.png
+SHA-256-Digest: MUK72Cuo9Ij1r1g9La3lvENxQGjAuMT3I87lkLyRCrc=
+
+Name: res/drawable-xhdpi-v4/stat_sys_tether_general.png
+SHA-256-Digest: dy5er9qJE7r6W+fKrt9IXbyNH5d+D9CZfJpvitKSp8c=
+
+Name: res/drawable-xhdpi-v4/stat_sys_tether_usb.png
+SHA-256-Digest: 9y32amHEd1nyDQCEfVPlPMcQMJZjOBvEOFCSAW7jC0w=
+
+Name: res/drawable-xxhdpi-v4/stat_sys_tether_bluetooth.png
+SHA-256-Digest: PbRFm9kSiSAkziIt/HL6Dmy5xCCz6dF+mvrsDdsnDk0=
+
+Name: res/drawable-xxhdpi-v4/stat_sys_tether_general.png
+SHA-256-Digest: oBU3eG7maNzgjVzwHkPSeT4X+ivAvTc1wrx9x6sR7VA=
+
+Name: res/drawable-xxhdpi-v4/stat_sys_tether_usb.png
+SHA-256-Digest: SGQIjof/W1e30MwcbZnPuHDJZeow85sVClEM5GuWwKY=
+
+Name: resources.arsc
+SHA-256-Digest: 7xuanEKJ7LR0QFAQ1fG8de7aUNa17ceSEtT84Y16U0I=
+

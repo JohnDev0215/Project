@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:theme="@style/CacheClearingAlertDialogTheme"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/dialog_space"
+    android:paddingBottom="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="?android:attr/dialogPreferredPadding"
+    android:paddingEnd="?android:attr/dialogPreferredPadding">
+    <ImageView
+        android:layout_gravity="bottom|center_horizontal"
+        android:id="@+id/dialog_icon"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginBottom="7dp"
+        android:src="@drawable/ic_delete"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"
+        android:contentDescription="@null"/>
+    <TextView
+        android:id="@+id/dialog_title"
+        style="@style/CacheClearingAlertDialogTitle"/>
+</LinearLayout>

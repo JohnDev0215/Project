@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:textSize="@dimen/sp_18"
+        android:textColor="@color/text_button"
+        android:gravity="center"
+        android:id="@+id/btn_cancel"
+        android:background="@drawable/bg_button_normal"
+        android:layout_width="@dimen/dp_176"
+        android:layout_height="@dimen/dp_48"
+        android:text="@string/cancel"
+        android:layout_centerInParent="true"
+        android:elevation="@dimen/dp_1"
+        android:stateListAnimator="@animator/pressed_state_list"/>
+</merge>

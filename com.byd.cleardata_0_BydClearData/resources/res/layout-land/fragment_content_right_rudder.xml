@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="rtl">
+    <com.byd.cleardata.ui.view.EmptyRecyclerView
+        android:scrollbarSize="@dimen/dp_4"
+        android:scrollbarThumbVertical="@color/solid_scrollbar_indicator"
+        android:scrollbarTrackVertical="@color/solid_scrollbar"
+        android:scrollbarStyle="outsideInset"
+        android:id="@+id/recyclerView"
+        android:scrollbars="vertical"
+        android:fadingEdgeLength="@dimen/dp_60"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/dp_10"
+        android:fadeScrollbars="true"
+        android:requiresFadingEdge="vertical"
+        android:paddingEnd="@dimen/dp_17"
+        android:layout_marginStart="@dimen/dp_18"
+        android:layout_marginEnd="@dimen/dp_25"/>
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        layout="@layout/layout_empty"/>
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        layout="@layout/layout_clear_cache"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

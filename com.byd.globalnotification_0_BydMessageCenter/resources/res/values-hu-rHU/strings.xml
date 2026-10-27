@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_foreground_service_running">is Running</string>
+    <string name="app_name">Message Center</string>
+    <string name="cancel">Mégse</string>
+    <string name="media_mounted">USB-adathordozó / SD-kártya ellenőrzése</string>
+    <string name="media_removed">USB-adathordozó / SD-kártya kiadása</string>
+    <string name="notification_msg">Üzenet</string>
+    <string name="notify_time_h_s">%d órával ezelőtt</string>
+    <string name="notify_time_just_now">Épp most</string>
+    <string name="notify_time_mins">%d perccel ezelőtt</string>
+    <string name="notify_time_one_h">1 órával ezelőtt</string>
+    <string name="notify_time_one_min">1 perce</string>
+    <string name="notify_time_yesterday">Tegnap</string>
+    <string name="personal_main_clear_all">Összes törlése</string>
+    <string name="personal_main_manage">Kezelés</string>
+    <string name="personal_main_no_msg">Nincs üzenet</string>
+</resources>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="character">[- one]</string>
+    <string name="chinese">[Çĥîñéšé one two]</string>
+    <string name="device_name">[ĜÉ8 one]</string>
+    <string name="english">[Éñĝļîšĥ one two]</string>
+    <string name="reset_tbox_toast_fail_text">[通讯模块重启失败，请稍后再试 one two three four five]</string>
+    <string name="reset_tbox_toast_success_text">[通讯模块重启成功 one two three]</string>
+    <string name="reset_tbox_toast_timeout_text">[通讯模块重启超时，请稍后再试 one two three four five]</string>
+    <string name="two_blanks">[   one]</string>
+</resources>

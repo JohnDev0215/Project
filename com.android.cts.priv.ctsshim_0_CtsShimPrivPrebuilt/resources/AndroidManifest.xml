@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="30"
+    android:versionName="11-6508977"
+    android:compileSdkVersion="29"
+    android:compileSdkVersionCodename="R"
+    package="com.android.cts.priv.ctsshim"
+    platformBuildVersionCode="29"
+    platformBuildVersionName="R">
+    <uses-sdk
+        android:minSdkVersion="24"
+        android:targetSdkVersion="28"/>
+    <restrict-update android:hash="b8979608cc4f70664685f5c6140c2d1d340562ed1955416f9573a5b94209f38fab397ad50be99012f0ae2fc5bc50528f80d03eda4910cdc8544c42a5b2c42be8"/>
+    <application
+        android:hasCode="false"
+        android:multiArch="true"
+        android:extractNativeLibs="false">
+        <activity android:name=".InstallPriority">
+            <intent-filter android:priority="100">
+                <action android:name="android.intent.action.SEARCH"/>
+                <category android:name="android.intent.category.INFO"/>
+            </intent-filter>
+            <intent-filter android:priority="100">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+            <intent-filter android:priority="100">
+                <action android:name="android.intent.action.SEND"/>
+            </intent-filter>
+            <intent-filter android:priority="100">
+                <action android:name="android.intent.action.SEND_MULTIPLE"/>
+            </intent-filter>
+            <intent-filter android:priority="100">
+                <action android:name="android.intent.action.SENDTO"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".UpgradeMatch">
+            <intent-filter android:priority="100">
+                <action android:name="com.android.cts.action.MATCH"/>
+                <category android:name="android.intent.category.INFO"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".UpgradeMatchMultiple">
+            <intent-filter android:priority="100">
+                <action android:name="com.android.cts.action.MATCH_MULTIPLE"/>
+                <category android:name="android.intent.category.INFO"/>
+            </intent-filter>
+            <intent-filter android:priority="150">
+                <action android:name="com.android.cts.action.MATCH_MULTIPLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="http"/>
+                <data android:scheme="https"/>
+                <data
+                    android:host="www.google.com"
+                    android:port="80"/>
+                <data
+                    android:host="www.google.com"
+                    android:port="8080"/>
+                <data
+                    android:host="goo.gl"
+                    android:port="443"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".UpgradeLowerPriority">
+            <intent-filter android:priority="100">
+                <action android:name="com.android.cts.action.LOWER_PRIORITY"/>
+                <category android:name="android.intent.category.INFO"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".UpgradeActionSubset">
+            <intent-filter android:priority="100">
+                <action android:name="com.android.cts.action.ACTION_SUB"/>
+                <action android:name="com.android.cts.action.ACTION_SUB_2"/>
+                <action android:name="com.android.cts.action.ACTION_SUB_3"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".UpgradeCategorySubset">
+            <intent-filter android:priority="100">
+                <action android:name="com.android.cts.action.CATEGORY_SUB"/>
+                <category android:name="android.intent.category.INFO"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".UpgradeSchemeSubset">
+            <intent-filter android:priority="100">
+                <action android:name="com.android.cts.action.SCHEME_SUB"/>
+                <data android:scheme="content"/>
+                <data android:scheme="flubber"/>
+                <data android:scheme="zoodle"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".UpgradeAuthoritySubset">
+            <intent-filter android:priority="100">
+                <action android:name="com.android.cts.action.AUTHORITY_SUB"/>
+                <data
+                    android:host="www.google.com"
+                    android:port="80"/>
+                <data
+                    android:host="www.google.com"
+                    android:port="8080"/>
+                <data
+                    android:host="mail.google.com"
+                    android:port="80"/>
+                <data
+                    android:host="goo.gl"
+                    android:port="443"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".UpgradeNewAction">
+            <intent-filter android:priority="100">
+                <action android:name="com.android.cts.action.NEW_ACTION"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".UpgradeNewCategory">
+            <intent-filter android:priority="100">
+                <action android:name="com.android.cts.action.NEW_CATEGORY"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".UpgradeNewScheme">
+            <intent-filter android:priority="100">
+                <action android:name="com.android.cts.action.NEW_SCHEME"/>
+                <data android:scheme="content"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".UpgradeNewAuthority">
+            <intent-filter android:priority="100">
+                <action android:name="com.android.cts.action.NEW_AUTHORITY"/>
+                <data
+                    android:host="www.google.com"
+                    android:port="80"/>
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>

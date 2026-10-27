@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="@android:style/Theme.Material.Light.DarkActionBar">
+    </style>
+    <style name="v_line" parent="">
+        <item name="android:background">#26ccddff</item>
+        <item name="android:layout_width">-1</item>
+        <item name="android:layout_height">@dimen/line_width</item>
+    </style>
+    <style name="v_line_list" parent="">
+        <item name="android:gravity">0x11</item>
+        <item name="android:background">#26ccddff</item>
+        <item name="android:layout_width">386px</item>
+        <item name="android:layout_height">@dimen/line_width</item>
+    </style>
+    <style name="v_line_vert" parent="">
+        <item name="android:background">#26ccddff</item>
+        <item name="android:layout_width">@dimen/line_width</item>
+        <item name="android:layout_height">-1</item>
+    </style>
+</resources>

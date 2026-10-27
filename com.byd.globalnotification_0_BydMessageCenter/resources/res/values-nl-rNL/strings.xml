@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_foreground_service_running">is Running</string>
+    <string name="app_name">Message Center</string>
+    <string name="cancel">Annuleren</string>
+    <string name="media_mounted">USB flash disk/SD kaart controleren</string>
+    <string name="media_removed">USB flash disk/SD kaart uitwerpen</string>
+    <string name="notification_msg">Informatie</string>
+    <string name="notify_time_h_s">%d uur(en) geleden</string>
+    <string name="notify_time_just_now">Zojuist</string>
+    <string name="notify_time_mins">%d minuut(en) geleden</string>
+    <string name="notify_time_one_h">1 uur geleden</string>
+    <string name="notify_time_one_min">1 min geleden</string>
+    <string name="notify_time_yesterday">Gestern</string>
+    <string name="personal_main_clear_all">Alles wissen</string>
+    <string name="personal_main_manage">beheren</string>
+    <string name="personal_main_no_msg">Nog geen nieuws</string>
+</resources>

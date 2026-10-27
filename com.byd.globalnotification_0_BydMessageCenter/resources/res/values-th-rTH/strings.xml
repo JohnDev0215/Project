@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_foreground_service_running">is Running</string>
+    <string name="app_name">Message Center</string>
+    <string name="cancel">ยกเลิก</string>
+    <string name="media_mounted">การตรวจสอบแฟลชดิสก์ USB/SD การ์ด</string>
+    <string name="media_removed">การถอดแฟลชดิสก์ USB/SD การ์ดออก</string>
+    <string name="notification_msg">ข้อความ</string>
+    <string name="notify_time_h_s">%d ชั่วโมงที่แล้ว</string>
+    <string name="notify_time_just_now">เมื่อสักครู่</string>
+    <string name="notify_time_mins">%d นาทีผ่านมา</string>
+    <string name="notify_time_one_h">1 ชั่วโมงก่อน</string>
+    <string name="notify_time_one_min">1 นาทีก่อน</string>
+    <string name="notify_time_yesterday">เมื่อวาน</string>
+    <string name="personal_main_clear_all">ล้างทั้งหมด</string>
+    <string name="personal_main_manage">การจัดการ</string>
+    <string name="personal_main_no_msg">ไม่มีข้อความ</string>
+</resources>

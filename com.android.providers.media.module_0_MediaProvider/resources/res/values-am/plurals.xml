@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="permission_delete_audio">
+        <item quantity="one">^1 ^2 የኦዲዮ ፋይሎችን እንዲሰረዝ ይፈቀድለት?</item>
+        <item quantity="other">^1 ^2 የኦዲዮ ፋይሎችን እንዲሰረዝ ይፈቀድለት?</item>
+    </plurals>
+    <plurals name="permission_delete_generic">
+        <item quantity="one">^1 ^2 ንጥሎችን እንዲሰረዝ ይፈቀድለት?</item>
+        <item quantity="other">^1 ^2 ንጥሎችን እንዲሰረዝ ይፈቀድለት?</item>
+    </plurals>
+    <plurals name="permission_delete_image">
+        <item quantity="one">^1 ^2 ፎቶዎችን እንዲሰረዝ ይፈቀድለት?</item>
+        <item quantity="other">^1 ^2 ፎቶዎችን እንዲሰረዝ ይፈቀድለት?</item>
+    </plurals>
+    <plurals name="permission_delete_video">
+        <item quantity="one">^1 ^2 ቪዲዮዎችን እንዲሰረዝ ይፈቀድለት?</item>
+        <item quantity="other">^1 ^2 ቪዲዮዎችን እንዲሰረዝ ይፈቀድለት?</item>
+    </plurals>
+    <plurals name="permission_more_text">
+        <item quantity="one">እንዲሁም ^1 ተጨማሪ ንጥሎች</item>
+        <item quantity="other">እንዲሁም ^1 ተጨማሪ ንጥሎች</item>
+    </plurals>
+    <plurals name="permission_more_thumb">
+        <item quantity="one">+^1</item>
+        <item quantity="other">+^1</item>
+    </plurals>
+    <plurals name="permission_trash_audio">
+        <item quantity="one">^1 ^2 ኦዲዮ ፋይሎችን ወደ መጣያ እንዲወስድ ይፈቀድለት?</item>
+        <item quantity="other">^1 ^2 ኦዲዮ ፋይሎችን ወደ መጣያ እንዲወስድ ይፈቀድለት?</item>
+    </plurals>
+    <plurals name="permission_trash_generic">
+        <item quantity="one">^1 ^2 ንጥሎችን ወደ መጣያ እንዲወስድ ይፈቀድለት?</item>
+        <item quantity="other">^1 ^2 ንጥሎችን ወደ መጣያ እንዲወስድ ይፈቀድለት?</item>
+    </plurals>
+    <plurals name="permission_trash_image">
+        <item quantity="one">^1 ^2 ፎቶዎችን ወደ መጣያ እንዲወስድ ይፈቀድለት?</item>
+        <item quantity="other">^1 ^2 ፎቶዎችን ወደ መጣያ እንዲወስድ ይፈቀድለት?</item>
+    </plurals>
+    <plurals name="permission_trash_video">
+        <item quantity="one">^1 ^2 ቪዲዮዎችን ወደ መጣያ እንዲወስድ ይፈቀድለት?</item>
+        <item quantity="other">^1 ^2 ቪዲዮዎችን ወደ መጣያ እንዲወስድ ይፈቀድለት?</item>
+    </plurals>
+    <plurals name="permission_untrash_audio">
+        <item quantity="one">^1 ^2 ኦዲዮ ፋይሎችን ከመጣያ እንዲያስወጣ ይፈቀድለት?</item>
+        <item quantity="other">^1 ^2 ኦዲዮ ፋይሎችን ከመጣያ እንዲያስወጣ ይፈቀድለት?</item>
+    </plurals>
+    <plurals name="permission_untrash_generic">
+        <item quantity="one">^1 ^2 ንጥሎችን ከመጣያ እንዲያስወጣ ይፈቀድለት?</item>
+        <item quantity="other">^1 ^2 ንጥሎችን ከመጣያ እንዲያስወጣ ይፈቀድለት?</item>
+    </plurals>
+    <plurals name="permission_untrash_image">
+        <item quantity="one">^1 ^2 ፎቶዎችን ከመጣያ እንዲያስወጣ ይፈቀድለት?</item>
+        <item quantity="other">^1 ^2 ፎቶዎችን ከመጣያ እንዲያስወጣ ይፈቀድለት?</item>
+    </plurals>
+    <plurals name="permission_untrash_video">
+        <item quantity="one">^1 ^2 ቪዲዮዎችን ከመጣያ እንዲያስወጣ ይፈቀድለት?</item>
+        <item quantity="other">^1 ^2 ቪዲዮዎችን ከመጣያ እንዲያስወጣ ይፈቀድለት?</item>
+    </plurals>
+    <plurals name="permission_write_audio">
+        <item quantity="one">^1 ^2 ኦዲዮ ፋይሎችን እንዲቀይር ይፈቀድለት?</item>
+        <item quantity="other">^1 ^2 ኦዲዮ ፋይሎችን እንዲቀይር ይፈቀድለት?</item>
+    </plurals>
+    <plurals name="permission_write_generic">
+        <item quantity="one">^1 ^2 ንጥሎችን እንዲቀይር ይፈቀድለት?</item>
+        <item quantity="other">^1 ^2 ንጥሎችን እንዲቀይር ይፈቀድለት?</item>
+    </plurals>
+    <plurals name="permission_write_image">
+        <item quantity="one">^1 ^2 ፎቶዎችን እንዲቀይር ይፈቀድለት?</item>
+        <item quantity="other">^1 ^2 ፎቶዎችን እንዲቀይር ይፈቀድለት?</item>
+    </plurals>
+    <plurals name="permission_write_video">
+        <item quantity="one">^1 ^2 ቪዲዮዎችን እንዲቀይር ይፈቀድለት?</item>
+        <item quantity="other">^1 ^2 ቪዲዮዎችን እንዲቀይር ይፈቀድለት?</item>
+    </plurals>
+</resources>

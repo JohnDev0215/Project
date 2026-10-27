@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ExtConnectivityService</string>
+    <string name="captive_protal_fallback_url">http://www.google.com/gen_204</string>
+    <string name="captive_protal_http_url">http://www.qualcomm.cn/generate_204</string>
+    <string name="captive_protal_https_url">https://www.google.com/generate_204</string>
+    <string name="captive_protal_other_fallback_url">http://play.googleapis.com/generate_204</string>
+</resources>

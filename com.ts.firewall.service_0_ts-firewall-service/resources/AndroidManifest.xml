@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    android:sharedUserId="android.uid.networkstack"
+    android:versionCode="1"
+    android:versionName="4.5.0.0"
+    android:compileSdkVersion="30"
+    android:compileSdkVersionCodename="11"
+    package="com.ts.firewall.service"
+    platformBuildVersionCode="30"
+    platformBuildVersionName="11">
+    <uses-sdk
+        android:minSdkVersion="30"
+        android:targetSdkVersion="30"/>
+    <permission
+        android:name="car.permission.FIREWALL_ACCESS"
+        android:protectionLevel="normal"/>
+    <application
+        android:name="com.ts.firewall.service.FirewallApplication"
+        android:persistent="true"
+        android:extractNativeLibs="true"
+        android:usesNonSdkApi="true">
+        <service
+            android:name="com.ts.firewall.service.FirewallService"
+            android:permission="car.permission.FIREWALL_ACCESS"
+            android:enabled="true"
+            android:exported="true"/>
+    </application>
+</manifest>

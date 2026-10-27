@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    android:sharedUserId="android.uid.networkstack"
+    android:versionCode="300000000"
+    android:versionName="2019-09"
+    android:compileSdkVersion="30"
+    android:compileSdkVersionCodename="11"
+    package="com.android.networkstack.permissionconfig"
+    platformBuildVersionCode="30"
+    platformBuildVersionName="11">
+    <uses-sdk
+        android:minSdkVersion="29"
+        android:targetSdkVersion="30"/>
+    <permission
+        android:name="android.permission.MAINLINE_NETWORK_STACK"
+        android:protectionLevel="signature"/>
+    <application
+        android:name="com.android.server.NetworkPermissionConfig"
+        android:extractNativeLibs="true"
+        android:usesNonSdkApi="true"/>
+</manifest>

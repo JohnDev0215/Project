@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    android:sharedUserId="android.uid.system"
+    android:versionCode="30"
+    android:versionName="4.6.7.0"
+    android:compileSdkVersion="30"
+    android:compileSdkVersionCodename="11"
+    package="com.ts.dm.service"
+    platformBuildVersionCode="30"
+    platformBuildVersionName="11">
+    <uses-sdk
+        android:minSdkVersion="30"
+        android:targetSdkVersion="30"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_PRIVILEGED"/>
+    <uses-permission android:name="android.permission.MODIFY_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.OVERRIDE_WIFI_CONFIG"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.TETHER_PRIVILEGED"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.SYSTEM_OVERLAY_WINDOW"/>
+    <uses-permission android:name="android.permission.INTERNAL_SYSTEM_WINDOW"/>
+    <uses-permission android:name="com.ts.permission.BIND_EXTERNAL_KEY_SERVICE"/>
+    <uses-permission android:name="car.permission.ANDROIDAUTO"/>
+    <uses-permission android:name="car.permission.CARPLAY"/>
+    <uses-permission android:name="car.permission.ANDROIDAUTO_DEVICE_LIST"/>
+    <uses-permission android:name="car.permission.CARPLAY_DEVICE_LIST"/>
+    <application
+        android:name="com.ts.dm.service.DeviceManagerServiceApplication"
+        android:persistent="true"
+        android:allowBackup="false"
+        android:extractNativeLibs="true"
+        android:usesNonSdkApi="true">
+        <uses-library android:name="ts.platform.library"/>
+        <uses-library android:name="ts.dm.foundation.lib"/>
+        <service
+            android:name="com.ts.dm.service.DeviceManagerService"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.ts.dm.action.DeviceManagerService"/>
+            </intent-filter>
+        </service>
+    </application>
+</manifest>

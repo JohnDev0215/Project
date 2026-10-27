@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="all">Todo</string>
+    <string name="app_name">Borrar datos</string>
+    <string name="cache">Cachés</string>
+    <string name="cancel">Cancelar</string>
+    <string name="data">Datos</string>
+    <string name="delete">Eliminar</string>
+    <string name="deleting">Borrando...</string>
+    <string name="empty_data">Sin contenidos</string>
+    <string name="error_delete">Error al eliminar</string>
+    <string name="exit_delete">¿Salir de la eliminación?</string>
+    <string name="file_count">%1$d seleccionado</string>
+    <string name="files_delete">¿Desea eliminar el archivo seleccionado?</string>
+    <string name="loading">Cargando</string>
+    <string name="local">Local</string>
+    <string name="msg_clear_app_data">Todos los datos de esta App se eliminarán permanentemente del sistema. Esto incluye todos los archivos, configuraciones, cuentas, bases de datos, etc. ¿Borrar estos datos?</string>
+    <string name="no_content">Sin contenidos</string>
+    <string name="ok">OK</string>
+    <string name="select_none">Ningún archivo seleccionado</string>
+    <string name="storage">Almacenamiento</string>
+    <string name="str_clear_cache">Borrar caché</string>
+    <string name="str_clear_cache_data">Datos en caché</string>
+    <string name="str_clear_cache_data_fail">Error al borrar el caché</string>
+    <string name="str_clear_cache_data_success">Caché borrado correctamente</string>
+    <string name="success_delete">Eliminado con éxito</string>
+    <string name="title_clear_app_data">Borrar datos de la App</string>
+</resources>

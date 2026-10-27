@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_foreground_service_running">is Running</string>
+    <string name="app_name">Message Center</string>
+    <string name="cancel">Annuller</string>
+    <string name="media_mounted">USB-nøgle/SD-kort tjekkes</string>
+    <string name="media_removed">USB-nøgle/SD-kort skubbes ud</string>
+    <string name="notification_msg">Besked</string>
+    <string name="notify_time_h_s">%d time(r) siden</string>
+    <string name="notify_time_just_now">Lige nu</string>
+    <string name="notify_time_mins">%d minut(ter) siden</string>
+    <string name="notify_time_one_h">1 time siden</string>
+    <string name="notify_time_one_min">1 min siden</string>
+    <string name="notify_time_yesterday">I går</string>
+    <string name="personal_main_clear_all">Ryd alle</string>
+    <string name="personal_main_manage">Administration</string>
+    <string name="personal_main_no_msg">Ingen besked</string>
+</resources>

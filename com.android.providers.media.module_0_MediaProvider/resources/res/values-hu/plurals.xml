@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="permission_delete_audio">
+        <item quantity="one">Engedélyezi a(z) ^1 számára ennek az audiofájlnak a törlését?</item>
+        <item quantity="other">Engedélyezi a(z) ^1 számára ^2 audiofájl törlését?</item>
+    </plurals>
+    <plurals name="permission_delete_generic">
+        <item quantity="one">Engedélyezi a(z) ^1 számára ennek az elemnek a törlését?</item>
+        <item quantity="other">Engedélyezi a(z) ^1 számára ^2 elem törlését?</item>
+    </plurals>
+    <plurals name="permission_delete_image">
+        <item quantity="one">Engedélyezi a(z) ^1 számára ennek a fotónak a törlését?</item>
+        <item quantity="other">Engedélyezi a(z) ^1 számára ^2 fotó törlését?</item>
+    </plurals>
+    <plurals name="permission_delete_video">
+        <item quantity="one">Engedélyezi a(z) ^1 számára ennek a videónak a törlését?</item>
+        <item quantity="other">Engedélyezi a(z) ^1 számára ^2 videó törlését?</item>
+    </plurals>
+    <plurals name="permission_more_text">
+        <item quantity="one">És további ^1 elem</item>
+        <item quantity="other">És további ^1 elem</item>
+    </plurals>
+    <plurals name="permission_more_thumb">
+        <item quantity="one">+^1</item>
+        <item quantity="other">+^1</item>
+    </plurals>
+    <plurals name="permission_trash_audio">
+        <item quantity="one">Engedélyezi a(z) ^1 számára ennek a hangfájlnak a kukába helyezését?</item>
+        <item quantity="other">Engedélyezi a(z) ^1 számára ^2 hangfájlnak a kukába helyezését?</item>
+    </plurals>
+    <plurals name="permission_trash_generic">
+        <item quantity="one">Engedélyezi a(z) ^1 számára ennek az elemnek a kukába helyezését?</item>
+        <item quantity="other">Engedélyezi a(z) ^1 számára ^2 elemnek a kukába helyezését?</item>
+    </plurals>
+    <plurals name="permission_trash_image">
+        <item quantity="one">Engedélyezi a(z) ^1 számára ennek a fotónak a kukába helyezését?</item>
+        <item quantity="other">Engedélyezi a(z) ^1 számára ^2 fotónak a kukába helyezését?</item>
+    </plurals>
+    <plurals name="permission_trash_video">
+        <item quantity="one">Engedélyezi a(z) ^1 számára ennek a videónak a kukába helyezését?</item>
+        <item quantity="other">Engedélyezi a(z) ^1 számára ^2 videónak a kukába helyezését?</item>
+    </plurals>
+    <plurals name="permission_untrash_audio">
+        <item quantity="one">Engedélyezi a(z) ^1 számára ennek a hangfájlnak a kukából való visszaállítását?</item>
+        <item quantity="other">Engedélyezi a(z) ^1 számára ^2 hangfájlnak a kukából való visszaállítását?</item>
+    </plurals>
+    <plurals name="permission_untrash_generic">
+        <item quantity="one">Engedélyezi a(z) ^1 számára ennek az elemnek a kukából való visszaállítását?</item>
+        <item quantity="other">Engedélyezi a(z) ^1 számára ^2 elemnek a kukából való visszaállítását?</item>
+    </plurals>
+    <plurals name="permission_untrash_image">
+        <item quantity="one">Engedélyezi a(z) ^1 számára ennek a fotónak a kukából való visszaállítását?</item>
+        <item quantity="other">Engedélyezi a(z) ^1 számára ^2 fotónak a kukából való visszaállítását?</item>
+    </plurals>
+    <plurals name="permission_untrash_video">
+        <item quantity="one">Engedélyezi a(z) ^1 számára ennek a videónak a kukából való visszaállítását?</item>
+        <item quantity="other">Engedélyezi a(z) ^1 számára ^2 videónak a kukából való visszaállítását?</item>
+    </plurals>
+    <plurals name="permission_write_audio">
+        <item quantity="one">Engedélyezi a(z) ^1 számára ennek a hangfájlnak a módosítását?</item>
+        <item quantity="other">Engedélyezi a(z) ^1 számára ^2 hangfájl módosítását?</item>
+    </plurals>
+    <plurals name="permission_write_generic">
+        <item quantity="one">Engedélyezi a(z) ^1 számára ennek az elemnek a módosítását?</item>
+        <item quantity="other">Engedélyezi a(z) ^1 számára ^2 elem módosítását?</item>
+    </plurals>
+    <plurals name="permission_write_image">
+        <item quantity="one">Engedélyezi a(z) ^1 számára ennek a fotónak a módosítását?</item>
+        <item quantity="other">Engedélyezi a(z) ^1 számára ^2 fotó módosítását?</item>
+    </plurals>
+    <plurals name="permission_write_video">
+        <item quantity="one">Engedélyezi a(z) ^1 számára ennek a videónak a módosítását?</item>
+        <item quantity="other">Engedélyezi a(z) ^1 számára ^2 videó módosítását?</item>
+    </plurals>
+</resources>

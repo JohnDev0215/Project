@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="permission_delete_audio">
+        <item quantity="one">به ^1 اجازه می‌دهید ^2 فایل صوتی را حذف کند؟</item>
+        <item quantity="other">به ^1 اجازه می‌دهید ^2 فایل صوتی را حذف کند؟</item>
+    </plurals>
+    <plurals name="permission_delete_generic">
+        <item quantity="one">به ^1 اجازه می‌دهید ^2 مورد را حذف کند؟</item>
+        <item quantity="other">به ^1 اجازه می‌دهید ^2 مورد را حذف کند؟</item>
+    </plurals>
+    <plurals name="permission_delete_image">
+        <item quantity="one">به ^1 اجازه می‌دهید ^2 عکس را حذف کند؟</item>
+        <item quantity="other">به ^1 اجازه می‌دهید ^2 عکس را حذف کند؟</item>
+    </plurals>
+    <plurals name="permission_delete_video">
+        <item quantity="one">به ^1 اجازه می‌دهید ^2 ویدیو را حذف کند؟</item>
+        <item quantity="other">به ^1 اجازه می‌دهید ^2 ویدیو را حذف کند؟</item>
+    </plurals>
+    <plurals name="permission_more_text">
+        <item quantity="one">به‌علاوه ^1 مورد دیگر</item>
+        <item quantity="other">به‌علاوه ^1 مورد دیگر</item>
+    </plurals>
+    <plurals name="permission_more_thumb">
+        <item quantity="one">‎+^1‎</item>
+        <item quantity="other">‎+^1‎</item>
+    </plurals>
+    <plurals name="permission_trash_audio">
+        <item quantity="one">به ^1 اجازه می‌دهید ^2 فایل صوتی را به «حذف‌شده‌ها» منتقل کند؟</item>
+        <item quantity="other">به ^1 اجازه می‌دهید ^2 فایل صوتی را به «حذف‌شده‌ها» منتقل کند؟</item>
+    </plurals>
+    <plurals name="permission_trash_generic">
+        <item quantity="one">به ^1 اجازه می‌دهید ^2 مورد را به «حذف‌شده‌ها» منتقل کند؟</item>
+        <item quantity="other">به ^1 اجازه می‌دهید ^2 مورد را به «حذف‌شده‌ها» منتقل کند؟</item>
+    </plurals>
+    <plurals name="permission_trash_image">
+        <item quantity="one">به ^1 اجازه می‌دهید ^2 عکس را به «حذف‌شده‌ها» منتقل کند؟</item>
+        <item quantity="other">به ^1 اجازه می‌دهید ^2 عکس را به «حذف‌شده‌ها» منتقل کند؟</item>
+    </plurals>
+    <plurals name="permission_trash_video">
+        <item quantity="one">به ^1 اجازه می‌دهید ^2 ویدیو را به «حذف‌شده‌ها» منتقل کند؟</item>
+        <item quantity="other">به ^1 اجازه می‌دهید ^2 ویدیو را به «حذف‌شده‌ها» منتقل کند؟</item>
+    </plurals>
+    <plurals name="permission_untrash_audio">
+        <item quantity="one">به ^1 اجازه می‌دهید ^2 فایل صوتی را از «حذف‌شده‌ها» خارج کند؟</item>
+        <item quantity="other">به ^1 اجازه می‌دهید ^2 فایل صوتی را از «حذف‌شده‌ها» خارج کند؟</item>
+    </plurals>
+    <plurals name="permission_untrash_generic">
+        <item quantity="one">به ^1 اجازه می‌دهید ^2 مورد را از «حذف‌شده‌ها» خارج کند؟</item>
+        <item quantity="other">به ^1 اجازه می‌دهید ^2 مورد را از «حذف‌شده‌ها» خارج کند؟</item>
+    </plurals>
+    <plurals name="permission_untrash_image">
+        <item quantity="one">به ^1 اجازه می‌دهید ^2 عکس را از «حذف‌شده‌ها» خارج کند؟</item>
+        <item quantity="other">به ^1 اجازه می‌دهید ^2 عکس را از «حذف‌شده‌ها» خارج کند؟</item>
+    </plurals>
+    <plurals name="permission_untrash_video">
+        <item quantity="one">به ^1 اجازه می‌دهید ^2 ویدیو را از «حذف‌شده‌ها» خارج کند؟</item>
+        <item quantity="other">به ^1 اجازه می‌دهید ^2 ویدیو را از «حذف‌شده‌ها» خارج کند؟</item>
+    </plurals>
+    <plurals name="permission_write_audio">
+        <item quantity="one">به ^1 اجازه می‌دهید ^2 فایل صوتی را تغییر دهد؟</item>
+        <item quantity="other">به ^1 اجازه می‌دهید ^2 فایل صوتی را تغییر دهد؟</item>
+    </plurals>
+    <plurals name="permission_write_generic">
+        <item quantity="one">به ^1 اجازه می‌دهید ^2 مورد را تغییر دهد؟</item>
+        <item quantity="other">به ^1 اجازه می‌دهید ^2 مورد را تغییر دهد؟</item>
+    </plurals>
+    <plurals name="permission_write_image">
+        <item quantity="one">به ^1 اجازه می‌دهید ^2 عکس را تغییر دهد؟</item>
+        <item quantity="other">به ^1 اجازه می‌دهید ^2 عکس را تغییر دهد؟</item>
+    </plurals>
+    <plurals name="permission_write_video">
+        <item quantity="one">به ^1 اجازه می‌دهید ^2 ویدیو را تغییر دهد؟</item>
+        <item quantity="other">به ^1 اجازه می‌دهید ^2 ویدیو را تغییر دهد؟</item>
+    </plurals>
+</resources>

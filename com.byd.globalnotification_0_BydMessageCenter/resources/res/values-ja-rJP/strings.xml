@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_foreground_service_running">is Running</string>
+    <string name="app_name">Message Center</string>
+    <string name="cancel">キャンセル</string>
+    <string name="media_mounted">USBフラッシュディスク／SDカードチェック</string>
+    <string name="media_removed">USBフラッシュディスク／SDカード取り出し</string>
+    <string name="notification_msg">メッセージ</string>
+    <string name="notify_time_h_s">%d 時間前</string>
+    <string name="notify_time_just_now">ちょうど今</string>
+    <string name="notify_time_mins">%d 分前</string>
+    <string name="notify_time_one_h">1時間前</string>
+    <string name="notify_time_one_min">1分前</string>
+    <string name="notify_time_yesterday">昨日</string>
+    <string name="personal_main_clear_all">すべてをクリア</string>
+    <string name="personal_main_manage">管理</string>
+    <string name="personal_main_no_msg">メッセージがありません</string>
+</resources>

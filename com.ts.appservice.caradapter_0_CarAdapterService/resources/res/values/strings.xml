@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="character">-</string>
+    <string name="chinese">Chinese</string>
+    <string name="device_name">GE8</string>
+    <string name="english">English</string>
+    <string name="reset_tbox_toast_fail_text">通讯模块重启失败，请稍后再试</string>
+    <string name="reset_tbox_toast_success_text">通讯模块重启成功</string>
+    <string name="reset_tbox_toast_timeout_text">通讯模块重启超时，请稍后再试</string>
+    <string name="two_blanks">  </string>
+</resources>

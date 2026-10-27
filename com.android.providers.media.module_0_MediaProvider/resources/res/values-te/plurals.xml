@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="permission_delete_audio">
+        <item quantity="one">ఈ ఆడియో ఫైల్‌ను తొలగించడానికి ^1ను అనుమతించాలా?</item>
+        <item quantity="other">^2 ఆడియో ఫైల్‌లను తొలగించడానికి ^1ను అనుమతించాలా?</item>
+    </plurals>
+    <plurals name="permission_delete_generic">
+        <item quantity="one">ఈ ఐటెమ్‌ను తొలగించడానికి ^1ను అనుమతించాలా?</item>
+        <item quantity="other">^2 ఐటెమ్‌లను తొలగించడానికి ^1ను అనుమతించాలా?</item>
+    </plurals>
+    <plurals name="permission_delete_image">
+        <item quantity="one">ఈ ఫోటోను తొలగించడానికి ^1ను అనుమతించాలా?</item>
+        <item quantity="other">^2 ఫోటోలను తొలగించడానికి ^1ను అనుమతించాలా?</item>
+    </plurals>
+    <plurals name="permission_delete_video">
+        <item quantity="one">ఈ వీడియోను తొలగించడానికి ^1ను అనుమతించాలా?</item>
+        <item quantity="other">^2 వీడియోలను తొలగించడానికి ^1ను అనుమతించాలా?</item>
+    </plurals>
+    <plurals name="permission_more_text">
+        <item quantity="one">దానితో పాటు, ^1 అదనపు అంశం</item>
+        <item quantity="other">దానితో పాటు, ^1 అదనపు అంశాలు</item>
+    </plurals>
+    <plurals name="permission_more_thumb">
+        <item quantity="one">+^1</item>
+        <item quantity="other">+^1</item>
+    </plurals>
+    <plurals name="permission_trash_audio">
+        <item quantity="one">ఈ ఆడియో ఫైల్‌ను ట్రాష్‌కు తరలించడానికి ^1ను అనుమతించాలా?</item>
+        <item quantity="other">^2 ఆడియో ఫైల్‌లను ట్రాష్‌కు తరలించడానికి ^1ను అనుమతించాలా?</item>
+    </plurals>
+    <plurals name="permission_trash_generic">
+        <item quantity="one">ఈ ఐటెమ్‌ను ట్రాష్‌కు తరలించడానికి ^1ను అనుమతించాలా?</item>
+        <item quantity="other">^2 ఐటెమ్‌లను ట్రాష్‌కు తరలించడానికి ^1ను అనుమతించాలా?</item>
+    </plurals>
+    <plurals name="permission_trash_image">
+        <item quantity="one">ఈ ఫోటోను ట్రాష్‌కు తరలించడానికి ^1ను అనుమతించాలా?</item>
+        <item quantity="other">^2 ఫోటోలను ట్రాష్‌కు తరలించడానికి ^1ను అనుమతించాలా?</item>
+    </plurals>
+    <plurals name="permission_trash_video">
+        <item quantity="one">ఈ వీడియోను ట్రాష్‌కు తరలించడానికి ^1ను అనుమతించాలా?</item>
+        <item quantity="other">^2 వీడియోలను ట్రాష్‌కు తరలించడానికి ^1ను అనుమతించాలా?</item>
+    </plurals>
+    <plurals name="permission_untrash_audio">
+        <item quantity="one">ఈ ఆడియో ఫైల్‌ను ట్రాష్ నుండి బయటకు తీయడానికి ^1ను అనుమతించాలా?</item>
+        <item quantity="other">^2 ఆడియో ఫైల్‌లను ట్రాష్ నుండి బయటకు తీయడానికి ^1ను అనుమతించాలా?</item>
+    </plurals>
+    <plurals name="permission_untrash_generic">
+        <item quantity="one">ఈ ఐటెమ్‌ను ట్రాష్ నుండి బయటకు తీయడానికి ^1ను అనుమతించాలా?</item>
+        <item quantity="other">^2 ఐటెమ్‌లను ట్రాష్ నుండి బయటకు తీయడానికి ^1ను అనుమతించాలా?</item>
+    </plurals>
+    <plurals name="permission_untrash_image">
+        <item quantity="one">ఈ ఫోటోను ట్రాష్ నుండి బయటకు తీయడానికి ^1ను అనుమతించాలా?</item>
+        <item quantity="other">^2 ఫోటోలను ట్రాష్ నుండి బయటకు తీయడానికి ^1ను అనుమతించాలా?</item>
+    </plurals>
+    <plurals name="permission_untrash_video">
+        <item quantity="one">ఈ వీడియోను ట్రాష్ నుండి బయటకు తీయడానికి ^1ను అనుమతించాలా?</item>
+        <item quantity="other">^2 వీడియోలను ట్రాష్ నుండి బయటకు తీయడానికి ^1ను అనుమతించాలా?</item>
+    </plurals>
+    <plurals name="permission_write_audio">
+        <item quantity="one">ఈ ఆడియో ఫైల్‌ను సవరించడానికి ^1ను అనుమతించాలా?</item>
+        <item quantity="other">^2 ఆడియో ఫైల్‌లను సవరించడానికి ^1ను అనుమతించాలా?</item>
+    </plurals>
+    <plurals name="permission_write_generic">
+        <item quantity="one">ఈ ఐటెమ్‌ను సవరించడానికి ^1ను అనుమతించాలా?</item>
+        <item quantity="other">^2 ఐటెమ్‌లను సవరించడానికి ^1ను అనుమతించాలా?</item>
+    </plurals>
+    <plurals name="permission_write_image">
+        <item quantity="one">ఈ ఫోటోను సవరించడానికి ^1ను అనుమతించాలా?</item>
+        <item quantity="other">^2 ఫోటోలను సవరించడానికి ^1ను అనుమతించాలా?</item>
+    </plurals>
+    <plurals name="permission_write_video">
+        <item quantity="one">ఈ వీడియోను సవరించడానికి ^1ను అనుమతించాలా?</item>
+        <item quantity="other">^2 వీడియోలను సవరించడానికి ^1ను అనుమతించాలా?</item>
+    </plurals>
+</resources>

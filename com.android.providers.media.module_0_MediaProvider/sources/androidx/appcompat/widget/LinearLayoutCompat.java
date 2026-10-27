@@ -1,0 +1,467 @@
+package androidx.appcompat.widget;
+
+import android.content.Context;
+import android.content.res.TypedArray;
+import android.graphics.Canvas;
+import android.graphics.drawable.Drawable;
+import android.util.AttributeSet;
+import android.view.View;
+import android.view.ViewGroup;
+import android.view.accessibility.AccessibilityEvent;
+import android.view.accessibility.AccessibilityNodeInfo;
+import androidx.appcompat.R$styleable;
+import androidx.core.view.ViewCompat;
+import com.android.providers.media.R;
+
+/* JADX INFO: loaded from: classes.dex */
+public class LinearLayoutCompat extends ViewGroup {
+    private boolean mBaselineAligned;
+    private int mBaselineAlignedChildIndex;
+    private int mBaselineChildTop;
+    private Drawable mDivider;
+    private int mDividerHeight;
+    private int mDividerPadding;
+    private int mDividerWidth;
+    private int mGravity;
+    private int[] mMaxAscent;
+    private int[] mMaxDescent;
+    private int mOrientation;
+    private int mShowDividers;
+    private int mTotalLength;
+    private boolean mUseLargestChild;
+    private float mWeightSum;
+
+    int getChildrenSkipCount(View view, int i) {
+        return 0;
+    }
+
+    int getLocationOffset(View view) {
+        return 0;
+    }
+
+    int getNextLocationOffset(View view) {
+        return 0;
+    }
+
+    int measureNullChild(int i) {
+        return 0;
+    }
+
+    @Override // android.view.ViewGroup
+    public boolean shouldDelayChildPressedState() {
+        return false;
+    }
+
+    public LinearLayoutCompat(Context context) {
+        this(context, null);
+    }
+
+    public LinearLayoutCompat(Context context, AttributeSet attributeSet) {
+        this(context, attributeSet, 0);
+    }
+
+    public LinearLayoutCompat(Context context, AttributeSet attributeSet, int i) {
+        super(context, attributeSet, i);
+        this.mBaselineAligned = true;
+        this.mBaselineAlignedChildIndex = -1;
+        this.mBaselineChildTop = 0;
+        this.mGravity = 8388659;
+        TintTypedArray tintTypedArrayObtainStyledAttributes = TintTypedArray.obtainStyledAttributes(context, attributeSet, R$styleable.LinearLayoutCompat, i, 0);
+        ViewCompat.saveAttributeDataForStyleable(this, context, R$styleable.LinearLayoutCompat, attributeSet, tintTypedArrayObtainStyledAttributes.getWrappedTypeArray(), i, 0);
+        int i2 = tintTypedArrayObtainStyledAttributes.getInt(R$styleable.LinearLayoutCompat_android_orientation, -1);
+        if (i2 >= 0) {
+            setOrientation(i2);
+        }
+        int i3 = tintTypedArrayObtainStyledAttributes.getInt(R$styleable.LinearLayoutCompat_android_gravity, -1);
+        if (i3 >= 0) {
+            setGravity(i3);
+        }
+        boolean z = tintTypedArrayObtainStyledAttributes.getBoolean(R$styleable.LinearLayoutCompat_android_baselineAligned, true);
+        if (!z) {
+            setBaselineAligned(z);
+        }
+        this.mWeightSum = tintTypedArrayObtainStyledAttributes.getFloat(R$styleable.LinearLayoutCompat_android_weightSum, -1.0f);
+        this.mBaselineAlignedChildIndex = tintTypedArrayObtainStyledAttributes.getInt(R$styleable.LinearLayoutCompat_android_baselineAlignedChildIndex, -1);
+        this.mUseLargestChild = tintTypedArrayObtainStyledAttributes.getBoolean(R$styleable.LinearLayoutCompat_measureWithLargestChild, false);
+        setDividerDrawable(tintTypedArrayObtainStyledAttributes.getDrawable(R$styleable.LinearLayoutCompat_divider));
+        this.mShowDividers = tintTypedArrayObtainStyledAttributes.getInt(R$styleable.LinearLayoutCompat_showDividers, 0);
+        this.mDividerPadding = tintTypedArrayObtainStyledAttributes.getDimensionPixelSize(R$styleable.LinearLayoutCompat_dividerPadding, 0);
+        tintTypedArrayObtainStyledAttributes.recycle();
+    }
+
+    public Drawable getDividerDrawable() {
+        return this.mDivider;
+    }
+
+    public void setDividerDrawable(Drawable drawable) {
+        if (drawable == this.mDivider) {
+            return;
+        }
+        this.mDivider = drawable;
+        if (drawable != null) {
+            this.mDividerWidth = drawable.getIntrinsicWidth();
+            this.mDividerHeight = drawable.getIntrinsicHeight();
+        } else {
+            this.mDividerWidth = 0;
+            this.mDividerHeight = 0;
+        }
+        setWillNotDraw(drawable == null);
+        requestLayout();
+    }
+
+    public int getDividerWidth() {
+        return this.mDividerWidth;
+    }
+
+    @Override // android.view.View
+    protected void onDraw(Canvas canvas) {
+        if (this.mDivider == null) {
+            return;
+        }
+        if (this.mOrientation == 1) {
+            drawDividersVertical(canvas);
+        } else {
+            drawDividersHorizontal(canvas);
+        }
+    }
+
+    void drawDividersVertical(Canvas canvas) {
+        int bottom;
+        int virtualChildCount = getVirtualChildCount();
+        for (int i = 0; i < virtualChildCount; i++) {
+            View virtualChildAt = getVirtualChildAt(i);
+            if (virtualChildAt != null && virtualChildAt.getVisibility() != 8 && hasDividerBeforeChildAt(i)) {
+                drawHorizontalDivider(canvas, (virtualChildAt.getTop() - ((ViewGroup.MarginLayoutParams) ((LayoutParams) virtualChildAt.getLayoutParams())).topMargin) - this.mDividerHeight);
+            }
+        }
+        if (hasDividerBeforeChildAt(virtualChildCount)) {
+            View virtualChildAt2 = getVirtualChildAt(virtualChildCount - 1);
+            if (virtualChildAt2 == null) {
+                bottom = (getHeight() - getPaddingBottom()) - this.mDividerHeight;
+            } else {
+                bottom = virtualChildAt2.getBottom() + ((ViewGroup.MarginLayoutParams) ((LayoutParams) virtualChildAt2.getLayoutParams())).bottomMargin;
+            }
+            drawHorizontalDivider(canvas, bottom);
+        }
+    }
+
+    void drawDividersHorizontal(Canvas canvas) {
+        int right;
+        int left;
+        int i;
+        int left2;
+        int virtualChildCount = getVirtualChildCount();
+        boolean zIsLayoutRtl = ViewUtils.isLayoutRtl(this);
+        for (int i2 = 0; i2 < virtualChildCount; i2++) {
+            View virtualChildAt = getVirtualChildAt(i2);
+            if (virtualChildAt != null && virtualChildAt.getVisibility() != 8 && hasDividerBeforeChildAt(i2)) {
+                LayoutParams layoutParams = (LayoutParams) virtualChildAt.getLayoutParams();
+                if (zIsLayoutRtl) {
+                    left2 = virtualChildAt.getRight() + ((ViewGroup.MarginLayoutParams) layoutParams).rightMargin;
+                } else {
+                    left2 = (virtualChildAt.getLeft() - ((ViewGroup.MarginLayoutParams) layoutParams).leftMargin) - this.mDividerWidth;
+                }
+                drawVerticalDivider(canvas, left2);
+            }
+        }
+        if (hasDividerBeforeChildAt(virtualChildCount)) {
+            View virtualChildAt2 = getVirtualChildAt(virtualChildCount - 1);
+            if (virtualChildAt2 != null) {
+                LayoutParams layoutParams2 = (LayoutParams) virtualChildAt2.getLayoutParams();
+                if (zIsLayoutRtl) {
+                    left = virtualChildAt2.getLeft() - ((ViewGroup.MarginLayoutParams) layoutParams2).leftMargin;
+                    i = this.mDividerWidth;
+                    right = left - i;
+                } else {
+                    right = virtualChildAt2.getRight() + ((ViewGroup.MarginLayoutParams) layoutParams2).rightMargin;
+                }
+            } else if (zIsLayoutRtl) {
+                right = getPaddingLeft();
+            } else {
+                left = getWidth() - getPaddingRight();
+                i = this.mDividerWidth;
+                right = left - i;
+            }
+            drawVerticalDivider(canvas, right);
+        }
+    }
+
+    void drawHorizontalDivider(Canvas canvas, int i) {
+        this.mDivider.setBounds(getPaddingLeft() + this.mDividerPadding, i, (getWidth() - getPaddingRight()) - this.mDividerPadding, this.mDividerHeight + i);
+        this.mDivider.draw(canvas);
+    }
+
+    void drawVerticalDivider(Canvas canvas, int i) {
+        this.mDivider.setBounds(i, getPaddingTop() + this.mDividerPadding, this.mDividerWidth + i, (getHeight() - getPaddingBottom()) - this.mDividerPadding);
+        this.mDivider.draw(canvas);
+    }
+
+    public void setBaselineAligned(boolean z) {
+        this.mBaselineAligned = z;
+    }
+
+    @Override // android.view.View
+    public int getBaseline() {
+        int i;
+        if (this.mBaselineAlignedChildIndex < 0) {
+            return super.getBaseline();
+        }
+        int childCount = getChildCount();
+        int i2 = this.mBaselineAlignedChildIndex;
+        if (childCount <= i2) {
+            throw new RuntimeException("mBaselineAlignedChildIndex of LinearLayout set to an index that is out of bounds.");
+        }
+        View childAt = getChildAt(i2);
+        int baseline = childAt.getBaseline();
+        if (baseline == -1) {
+            if (this.mBaselineAlignedChildIndex == 0) {
+                return -1;
+            }
+            throw new RuntimeException("mBaselineAlignedChildIndex of LinearLayout points to a View that doesn't know how to get its baseline.");
+        }
+        int bottom = this.mBaselineChildTop;
+        if (this.mOrientation == 1 && (i = this.mGravity & R.styleable.AppCompatTheme_toolbarNavigationButtonStyle) != 48) {
+            if (i == 16) {
+                bottom += ((((getBottom() - getTop()) - getPaddingTop()) - getPaddingBottom()) - this.mTotalLength) / 2;
+            } else if (i == 80) {
+                bottom = ((getBottom() - getTop()) - getPaddingBottom()) - this.mTotalLength;
+            }
+        }
+        return bottom + ((ViewGroup.MarginLayoutParams) ((LayoutParams) childAt.getLayoutParams())).topMargin + baseline;
+    }
+
+    View getVirtualChildAt(int i) {
+        return getChildAt(i);
+    }
+
+    int getVirtualChildCount() {
+        return getChildCount();
+    }
+
+    @Override // android.view.View
+    protected void onMeasure(int i, int i2) {
+        if (this.mOrientation == 1) {
+            measureVertical(i, i2);
+        } else {
+            measureHorizontal(i, i2);
+        }
+    }
+
+    protected boolean hasDividerBeforeChildAt(int i) {
+        if (i == 0) {
+            return (this.mShowDividers & 1) != 0;
+        }
+        if (i == getChildCount()) {
+            return (this.mShowDividers & 4) != 0;
+        }
+        if ((this.mShowDividers & 2) == 0) {
+            return false;
+        }
+        for (int i2 = i - 1; i2 >= 0; i2--) {
+            if (getChildAt(i2).getVisibility() != 8) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    /* JADX WARN: Removed duplicated region for block: B:150:0x0327  */
+    /* JADX WARN: Removed duplicated region for block: B:156:0x0335  */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+        To view partially-correct code enable 'Show inconsistent code' option in preferences
+    */
+    void measureVertical(int r34, int r35) {
+        /*
+            Method dump skipped, instruction units count: 916
+            To view this dump change 'Code comments level' option to 'DEBUG'
+        */
+        throw new UnsupportedOperationException("Method not decompiled: androidx.appcompat.widget.LinearLayoutCompat.measureVertical(int, int):void");
+    }
+
+    private void forceUniformWidth(int i, int i2) {
+        int iMakeMeasureSpec = View.MeasureSpec.makeMeasureSpec(getMeasuredWidth(), 1073741824);
+        for (int i3 = 0; i3 < i; i3++) {
+            View virtualChildAt = getVirtualChildAt(i3);
+            if (virtualChildAt.getVisibility() != 8) {
+                LayoutParams layoutParams = (LayoutParams) virtualChildAt.getLayoutParams();
+                if (((ViewGroup.MarginLayoutParams) layoutParams).width == -1) {
+                    int i4 = ((ViewGroup.MarginLayoutParams) layoutParams).height;
+                    ((ViewGroup.MarginLayoutParams) layoutParams).height = virtualChildAt.getMeasuredHeight();
+                    measureChildWithMargins(virtualChildAt, iMakeMeasureSpec, 0, i2, 0);
+                    ((ViewGroup.MarginLayoutParams) layoutParams).height = i4;
+                }
+            }
+        }
+    }
+
+    /* JADX WARN: Removed duplicated region for block: B:197:0x0455  */
+    /* JADX WARN: Removed duplicated region for block: B:60:0x0179  */
+    /* JADX WARN: Removed duplicated region for block: B:67:0x019b  */
+    /* JADX WARN: Removed duplicated region for block: B:74:0x01c7  */
+    /* JADX WARN: Removed duplicated region for block: B:77:0x01cf  */
+    /* JADX WARN: Removed duplicated region for block: B:81:0x01da  */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+        To view partially-correct code enable 'Show inconsistent code' option in preferences
+    */
+    void measureHorizontal(int r39, int r40) {
+        /*
+            Method dump skipped, instruction units count: 1296
+            To view this dump change 'Code comments level' option to 'DEBUG'
+        */
+        throw new UnsupportedOperationException("Method not decompiled: androidx.appcompat.widget.LinearLayoutCompat.measureHorizontal(int, int):void");
+    }
+
+    private void forceUniformHeight(int i, int i2) {
+        int iMakeMeasureSpec = View.MeasureSpec.makeMeasureSpec(getMeasuredHeight(), 1073741824);
+        for (int i3 = 0; i3 < i; i3++) {
+            View virtualChildAt = getVirtualChildAt(i3);
+            if (virtualChildAt.getVisibility() != 8) {
+                LayoutParams layoutParams = (LayoutParams) virtualChildAt.getLayoutParams();
+                if (((ViewGroup.MarginLayoutParams) layoutParams).height == -1) {
+                    int i4 = ((ViewGroup.MarginLayoutParams) layoutParams).width;
+                    ((ViewGroup.MarginLayoutParams) layoutParams).width = virtualChildAt.getMeasuredWidth();
+                    measureChildWithMargins(virtualChildAt, i2, 0, iMakeMeasureSpec, 0);
+                    ((ViewGroup.MarginLayoutParams) layoutParams).width = i4;
+                }
+            }
+        }
+    }
+
+    void measureChildBeforeLayout(View view, int i, int i2, int i3, int i4, int i5) {
+        measureChildWithMargins(view, i2, i3, i4, i5);
+    }
+
+    @Override // android.view.ViewGroup, android.view.View
+    protected void onLayout(boolean z, int i, int i2, int i3, int i4) {
+        if (this.mOrientation == 1) {
+            layoutVertical(i, i2, i3, i4);
+        } else {
+            layoutHorizontal(i, i2, i3, i4);
+        }
+    }
+
+    /* JADX WARN: Removed duplicated region for block: B:29:0x009f  */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+        To view partially-correct code enable 'Show inconsistent code' option in preferences
+    */
+    void layoutVertical(int r18, int r19, int r20, int r21) {
+        /*
+            Method dump skipped, instruction units count: 204
+            To view this dump change 'Code comments level' option to 'DEBUG'
+        */
+        throw new UnsupportedOperationException("Method not decompiled: androidx.appcompat.widget.LinearLayoutCompat.layoutVertical(int, int, int, int):void");
+    }
+
+    /* JADX WARN: Removed duplicated region for block: B:29:0x00af  */
+    /* JADX WARN: Removed duplicated region for block: B:32:0x00b8  */
+    /* JADX WARN: Removed duplicated region for block: B:44:0x00eb  */
+    /* JADX WARN: Removed duplicated region for block: B:47:0x00ff  */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+        To view partially-correct code enable 'Show inconsistent code' option in preferences
+    */
+    void layoutHorizontal(int r25, int r26, int r27, int r28) {
+        /*
+            Method dump skipped, instruction units count: 329
+            To view this dump change 'Code comments level' option to 'DEBUG'
+        */
+        throw new UnsupportedOperationException("Method not decompiled: androidx.appcompat.widget.LinearLayoutCompat.layoutHorizontal(int, int, int, int):void");
+    }
+
+    private void setChildFrame(View view, int i, int i2, int i3, int i4) {
+        view.layout(i, i2, i3 + i, i4 + i2);
+    }
+
+    public void setOrientation(int i) {
+        if (this.mOrientation != i) {
+            this.mOrientation = i;
+            requestLayout();
+        }
+    }
+
+    public void setGravity(int i) {
+        if (this.mGravity != i) {
+            if ((8388615 & i) == 0) {
+                i |= 8388611;
+            }
+            if ((i & R.styleable.AppCompatTheme_toolbarNavigationButtonStyle) == 0) {
+                i |= 48;
+            }
+            this.mGravity = i;
+            requestLayout();
+        }
+    }
+
+    public int getGravity() {
+        return this.mGravity;
+    }
+
+    @Override // android.view.ViewGroup
+    public LayoutParams generateLayoutParams(AttributeSet attributeSet) {
+        return new LayoutParams(getContext(), attributeSet);
+    }
+
+    /* JADX INFO: Access modifiers changed from: protected */
+    @Override // android.view.ViewGroup
+    public LayoutParams generateDefaultLayoutParams() {
+        int i = this.mOrientation;
+        if (i == 0) {
+            return new LayoutParams(-2, -2);
+        }
+        if (i == 1) {
+            return new LayoutParams(-1, -2);
+        }
+        return null;
+    }
+
+    /* JADX INFO: Access modifiers changed from: protected */
+    @Override // android.view.ViewGroup
+    public LayoutParams generateLayoutParams(ViewGroup.LayoutParams layoutParams) {
+        return new LayoutParams(layoutParams);
+    }
+
+    @Override // android.view.ViewGroup
+    protected boolean checkLayoutParams(ViewGroup.LayoutParams layoutParams) {
+        return layoutParams instanceof LayoutParams;
+    }
+
+    @Override // android.view.View
+    public void onInitializeAccessibilityEvent(AccessibilityEvent accessibilityEvent) {
+        super.onInitializeAccessibilityEvent(accessibilityEvent);
+        accessibilityEvent.setClassName("androidx.appcompat.widget.LinearLayoutCompat");
+    }
+
+    @Override // android.view.View
+    public void onInitializeAccessibilityNodeInfo(AccessibilityNodeInfo accessibilityNodeInfo) {
+        super.onInitializeAccessibilityNodeInfo(accessibilityNodeInfo);
+        accessibilityNodeInfo.setClassName("androidx.appcompat.widget.LinearLayoutCompat");
+    }
+
+    public static class LayoutParams extends ViewGroup.MarginLayoutParams {
+        public int gravity;
+        public float weight;
+
+        public LayoutParams(Context context, AttributeSet attributeSet) {
+            super(context, attributeSet);
+            this.gravity = -1;
+            TypedArray typedArrayObtainStyledAttributes = context.obtainStyledAttributes(attributeSet, R$styleable.LinearLayoutCompat_Layout);
+            this.weight = typedArrayObtainStyledAttributes.getFloat(R$styleable.LinearLayoutCompat_Layout_android_layout_weight, 0.0f);
+            this.gravity = typedArrayObtainStyledAttributes.getInt(R$styleable.LinearLayoutCompat_Layout_android_layout_gravity, -1);
+            typedArrayObtainStyledAttributes.recycle();
+        }
+
+        public LayoutParams(int i, int i2) {
+            super(i, i2);
+            this.gravity = -1;
+            this.weight = 0.0f;
+        }
+
+        public LayoutParams(ViewGroup.LayoutParams layoutParams) {
+            super(layoutParams);
+            this.gravity = -1;
+        }
+    }
+}

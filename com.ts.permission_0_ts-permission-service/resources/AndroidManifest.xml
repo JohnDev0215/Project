@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    android:sharedUserId="android.uid.system"
+    android:versionCode="1"
+    android:versionName="4.5.0.0"
+    android:compileSdkVersion="30"
+    android:compileSdkVersionCodename="11"
+    coreApp="true"
+    package="com.ts.permission"
+    platformBuildVersionCode="30"
+    platformBuildVersionName="11">
+    <uses-sdk
+        android:minSdkVersion="30"
+        android:targetSdkVersion="30"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <application
+        android:label="@string/service_name"
+        android:name="com.ts.permission.CoreApplication"
+        android:persistent="true"
+        android:allowBackup="false"
+        android:extractNativeLibs="true"
+        android:directBootAware="true"
+        android:usesNonSdkApi="true">
+        <service
+            android:name="com.ts.permission.CoreService"
+            android:permission="android.permission.OBSERVE_GRANT_REVOKE_PERMISSIONS"
+            android:enabled="true"
+            android:exported="true"/>
+    </application>
+</manifest>

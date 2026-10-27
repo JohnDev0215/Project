@@ -1,0 +1,13 @@
+package org.apache.commons.net.util;
+
+import java.security.cert.X509Certificate;
+
+/* JADX INFO: loaded from: classes.dex */
+public class NetConstants {
+    public static final String[] EMPTY_STRING_ARRAY = new String[0];
+    public static final byte[] EMPTY_BTYE_ARRAY = new byte[0];
+    public static final X509Certificate[] EMPTY_X509_CERTIFICATE_ARRAY = new X509Certificate[0];
+
+    private NetConstants() {
+    }
+}

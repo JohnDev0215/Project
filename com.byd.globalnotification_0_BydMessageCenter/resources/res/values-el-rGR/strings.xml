@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_foreground_service_running">is Running</string>
+    <string name="app_name">Message Center</string>
+    <string name="cancel">Ακύρωση</string>
+    <string name="media_mounted">Έλεγχος μονάδας flash USB/κάρτας SD</string>
+    <string name="media_removed">Εξαγωγή μονάδας flash USB/κάρτας SD</string>
+    <string name="notification_msg">Μήνυμα</string>
+    <string name="notify_time_h_s">πριν από %d ώρα(ες)</string>
+    <string name="notify_time_just_now">Μόλις τώρα</string>
+    <string name="notify_time_mins">πριν από %d λεπτό(α)</string>
+    <string name="notify_time_one_h">πριν από 1 ώρα</string>
+    <string name="notify_time_one_min">πριν από 1 min</string>
+    <string name="notify_time_yesterday">Χθες</string>
+    <string name="personal_main_clear_all">Εκκαθάριση όλων</string>
+    <string name="personal_main_manage">Διαχείριση</string>
+    <string name="personal_main_no_msg">Δεν υπάρχουν μηνύματα</string>
+</resources>

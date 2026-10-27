@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    android:sharedUserId="android.uid.phone"
+    android:versionCode="30"
+    android:versionName="11"
+    android:compileSdkVersion="30"
+    android:compileSdkVersionCodename="11"
+    coreApp="true"
+    package="com.android.providers.telephony"
+    platformBuildVersionCode="30"
+    platformBuildVersionName="11">
+    <uses-sdk
+        android:minSdkVersion="30"
+        android:targetSdkVersion="30"/>
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_DEVICE_CONFIG"/>
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS"/>
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL"/>
+    <uses-permission android:name="android.permission.USE_RESERVED_DISK"/>
+    <uses-permission android:name="android.permission.READ_COMPAT_CHANGE_CONFIG"/>
+    <uses-permission android:name="android.permission.LOG_COMPAT_CHANGE"/>
+    <protected-broadcast android:name="android.provider.action.EXTERNAL_PROVIDER_CHANGE"/>
+    <protected-broadcast android:name="android.intent.action.CONTENT_CHANGED"/>
+    <uses-permission android:name="android.permission.MODIFY_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_MESSAGES_ON_ICC"/>
+    <application
+        android:label="@string/app_label"
+        android:icon="@mipmap/ic_launcher_phone"
+        android:allowClearUserData="false"
+        android:process="com.android.phone"
+        android:backupAgent="TelephonyBackupAgent"
+        android:restoreAnyVersion="true"
+        android:fullBackupOnly="true"
+        android:extractNativeLibs="true"
+        android:usesCleartextTraffic="true"
+        android:defaultToDeviceProtectedStorage="true"
+        android:directBootAware="true"
+        android:backupInForeground="true"
+        android:usesNonSdkApi="true"
+        android:forceQueryable="true">
+        <provider
+            android:name="TelephonyProvider"
+            android:exported="true"
+            android:multiprocess="false"
+            android:authorities="telephony"
+            android:singleUser="true"/>
+        <provider
+            android:name="SmsProvider"
+            android:readPermission="android.permission.READ_SMS"
+            android:exported="true"
+            android:multiprocess="false"
+            android:authorities="sms"
+            android:singleUser="true"/>
+        <provider
+            android:name="SmsChangesProvider"
+            android:readPermission="android.permission.READ_SMS"
+            android:exported="true"
+            android:multiprocess="false"
+            android:authorities="sms-changes"
+            android:singleUser="true"/>
+        <provider
+            android:name="MmsProvider"
+            android:readPermission="android.permission.READ_SMS"
+            android:exported="true"
+            android:multiprocess="false"
+            android:authorities="mms"
+            android:singleUser="true">
+            <grant-uri-permission android:pathPrefix="/part/"/>
+            <grant-uri-permission android:pathPrefix="/drm/"/>
+        </provider>
+        <provider
+            android:name="MmsSmsProvider"
+            android:readPermission="android.permission.READ_SMS"
+            android:exported="true"
+            android:multiprocess="false"
+            android:authorities="mms-sms"
+            android:singleUser="true"/>
+        <provider
+            android:name="CarrierProvider"
+            android:writePermission="android.permission.MODIFY_PHONE_STATE"
+            android:exported="true"
+            android:multiprocess="false"
+            android:authorities="carrier_information"
+            android:singleUser="true"/>
+        <provider
+            android:name="HbpcdLookupProvider"
+            android:writePermission="android.permission.MODIFY_PHONE_STATE"
+            android:exported="true"
+            android:multiprocess="false"
+            android:authorities="hbpcd_lookup"
+            android:singleUser="true"/>
+        <provider
+            android:name="CarrierIdProvider"
+            android:exported="true"
+            android:multiprocess="false"
+            android:authorities="carrier_id"
+            android:singleUser="true"/>
+        <service
+            android:name="com.android.providers.telephony.TelephonyBackupAgent.DeferredSmsMmsRestoreService"
+            android:exported="false"/>
+    </application>
+</manifest>

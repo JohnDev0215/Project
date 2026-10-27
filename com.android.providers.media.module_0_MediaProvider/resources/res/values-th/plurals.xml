@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="permission_delete_audio">
+        <item quantity="one">อนุญาตให้ ^1 ลบไฟล์เสียงนี้ไหม</item>
+        <item quantity="other">อนุญาตให้ ^1 ลบไฟล์เสียง ^2 ไฟล์ไหม</item>
+    </plurals>
+    <plurals name="permission_delete_generic">
+        <item quantity="one">อนุญาตให้ ^1 ลบรายการนี้ไหม</item>
+        <item quantity="other">อนุญาตให้ ^1 ลบ ^2 รายการไหม</item>
+    </plurals>
+    <plurals name="permission_delete_image">
+        <item quantity="one">อนุญาตให้ ^1 ลบรูปภาพนี้ไหม</item>
+        <item quantity="other">อนุญาตให้ ^1 ลบรูปภาพ ^2 รูปไหม</item>
+    </plurals>
+    <plurals name="permission_delete_video">
+        <item quantity="one">อนุญาตให้ ^1 ลบวิดีโอนี้ไหม</item>
+        <item quantity="other">อนุญาตให้ ^1 ลบวิดีโอ ^2 รายการไหม</item>
+    </plurals>
+    <plurals name="permission_more_text">
+        <item quantity="one">และอีก ^1 รายการ</item>
+        <item quantity="other">และอีก ^1 รายการ</item>
+    </plurals>
+    <plurals name="permission_more_thumb">
+        <item quantity="one">+^1</item>
+        <item quantity="other">+^1</item>
+    </plurals>
+    <plurals name="permission_trash_audio">
+        <item quantity="one">อนุญาตให้ ^1 ย้ายไฟล์เสียงนี้ไปที่ถังขยะไหม</item>
+        <item quantity="other">อนุญาตให้ ^1 ย้ายไฟล์เสียง ^2 ไฟล์ไปที่ถังขยะไหม</item>
+    </plurals>
+    <plurals name="permission_trash_generic">
+        <item quantity="one">อนุญาตให้ ^1 ย้ายรายการนี้ไปที่ถังขยะไหม</item>
+        <item quantity="other">อนุญาตให้ ^1 ย้าย ^2 รายการไปที่ถังขยะไหม</item>
+    </plurals>
+    <plurals name="permission_trash_image">
+        <item quantity="one">อนุญาตให้ ^1 ย้ายรูปภาพนี้ไปที่ถังขยะไหม</item>
+        <item quantity="other">อนุญาตให้ ^1 ย้ายรูปภาพ ^2 รูปไปที่ถังขยะไหม</item>
+    </plurals>
+    <plurals name="permission_trash_video">
+        <item quantity="one">อนุญาตให้ ^1 ย้ายวิดีโอนี้ไปที่ถังขยะไหม</item>
+        <item quantity="other">อนุญาตให้ ^1 ย้ายวิดีโอ ^2 รายการไปที่ถังขยะไหม</item>
+    </plurals>
+    <plurals name="permission_untrash_audio">
+        <item quantity="one">อนุญาตให้ ^1 ย้ายไฟล์เสียงนี้ออกจากถังขยะไหม</item>
+        <item quantity="other">อนุญาตให้ ^1 ย้ายไฟล์เสียง ^2 ไฟล์ออกจากถังขยะไหม</item>
+    </plurals>
+    <plurals name="permission_untrash_generic">
+        <item quantity="one">อนุญาตให้ ^1 ย้ายรายการนี้ออกจากถังขยะไหม</item>
+        <item quantity="other">อนุญาตให้ ^1 ย้าย ^2 รายการออกจากถังขยะไหม</item>
+    </plurals>
+    <plurals name="permission_untrash_image">
+        <item quantity="one">อนุญาตให้ ^1 ย้ายรูปภาพนี้ออกจากถังขยะไหม</item>
+        <item quantity="other">อนุญาตให้ ^1 ย้ายรูปภาพ ^2 รูปออกจากถังขยะไหม</item>
+    </plurals>
+    <plurals name="permission_untrash_video">
+        <item quantity="one">อนุญาตให้ ^1 ย้ายวิดีโอนี้ออกจากถังขยะไหม</item>
+        <item quantity="other">อนุญาตให้ ^1 ย้ายวิดีโอ ^2 รายการออกจากถังขยะไหม</item>
+    </plurals>
+    <plurals name="permission_write_audio">
+        <item quantity="one">อนุญาตให้ ^1 แก้ไขไฟล์เสียงนี้ไหม</item>
+        <item quantity="other">อนุญาตให้ ^1 แก้ไขไฟล์เสียง ^2 ไฟล์ไหม</item>
+    </plurals>
+    <plurals name="permission_write_generic">
+        <item quantity="one">อนุญาตให้ ^1 แก้ไขรายการนี้ไหม</item>
+        <item quantity="other">อนุญาตให้ ^1 แก้ไข ^2 รายการไหม</item>
+    </plurals>
+    <plurals name="permission_write_image">
+        <item quantity="one">อนุญาตให้ ^1 แก้ไขรูปภาพนี้ไหม</item>
+        <item quantity="other">อนุญาตให้ ^1 แก้ไขรูปภาพ ^2 รูปไหม</item>
+    </plurals>
+    <plurals name="permission_write_video">
+        <item quantity="one">อนุญาตให้ ^1 แก้ไขวิดีโอนี้ไหม</item>
+        <item quantity="other">อนุญาตให้ ^1 แก้ไขวิดีโอ ^2 รายการไหม</item>
+    </plurals>
+</resources>

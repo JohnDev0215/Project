@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="permission_delete_audio">
+        <item quantity="one">Želite dovoliti aplikaciji ^1, da izbriše ^2 zvočno datoteko?</item>
+        <item quantity="two">Želite dovoliti aplikaciji ^1, da izbriše ^2 zvočni datoteki?</item>
+        <item quantity="few">Želite dovoliti aplikaciji ^1, da izbriše ^2 zvočne datoteke?</item>
+        <item quantity="other">Želite dovoliti aplikaciji ^1, da izbriše ^2 zvočnih datotek?</item>
+    </plurals>
+    <plurals name="permission_delete_generic">
+        <item quantity="one">Želite dovoliti aplikaciji ^1, da izbriše ^2 element?</item>
+        <item quantity="two">Želite dovoliti aplikaciji ^1, da izbriše ^2 elementa?</item>
+        <item quantity="few">Želite dovoliti aplikaciji ^1, da izbriše ^2 elemente?</item>
+        <item quantity="other">Želite dovoliti aplikaciji ^1, da izbriše ^2 elementov?</item>
+    </plurals>
+    <plurals name="permission_delete_image">
+        <item quantity="one">Želite dovoliti aplikaciji ^1, da izbriše ^2 fotografijo?</item>
+        <item quantity="two">Želite dovoliti aplikaciji ^1, da izbriše ^2 fotografiji?</item>
+        <item quantity="few">Želite dovoliti aplikaciji ^1, da izbriše ^2 fotografije?</item>
+        <item quantity="other">Želite dovoliti aplikaciji ^1, da izbriše ^2 fotografij?</item>
+    </plurals>
+    <plurals name="permission_delete_video">
+        <item quantity="one">Želite dovoliti aplikaciji ^1, da izbriše ^2 videoposnetek?</item>
+        <item quantity="two">Želite dovoliti aplikaciji ^1, da izbriše ^2 videoposnetka?</item>
+        <item quantity="few">Želite dovoliti aplikaciji ^1, da izbriše ^2 videoposnetke?</item>
+        <item quantity="other">Želite dovoliti aplikaciji ^1, da izbriše ^2 videoposnetkov?</item>
+    </plurals>
+    <plurals name="permission_more_text">
+        <item quantity="one">In še ^1 dodaten element</item>
+        <item quantity="two">In še ^1 dodatna elementa</item>
+        <item quantity="few">In še ^1 dodatni elementi</item>
+        <item quantity="other">In še ^1 dodatnih elementov</item>
+    </plurals>
+    <plurals name="permission_more_thumb">
+        <item quantity="one">+^1</item>
+        <item quantity="two">+^1</item>
+        <item quantity="few">+^1</item>
+        <item quantity="other">+^1</item>
+    </plurals>
+    <plurals name="permission_trash_audio">
+        <item quantity="one">Želite dovoliti aplikaciji ^1, da premakne ^2 zvočno datoteko v smetnjak?</item>
+        <item quantity="two">Želite dovoliti aplikaciji ^1, da premakne ^2 zvočni datoteki v smetnjak?</item>
+        <item quantity="few">Želite dovoliti aplikaciji ^1, da premakne ^2 zvočne datoteke v smetnjak?</item>
+        <item quantity="other">Želite dovoliti aplikaciji ^1, da premakne ^2 zvočnih datotek v smetnjak?</item>
+    </plurals>
+    <plurals name="permission_trash_generic">
+        <item quantity="one">Želite dovoliti aplikaciji ^1, da premakne ^2 element v smetnjak?</item>
+        <item quantity="two">Želite dovoliti aplikaciji ^1, da premakne ^2 elementa v smetnjak?</item>
+        <item quantity="few">Želite dovoliti aplikaciji ^1, da premakne ^2 elemente v smetnjak?</item>
+        <item quantity="other">Želite dovoliti aplikaciji ^1, da premakne ^2 elementov v smetnjak?</item>
+    </plurals>
+    <plurals name="permission_trash_image">
+        <item quantity="one">Želite dovoliti aplikaciji ^1, da premakne ^2 fotografijo v smetnjak?</item>
+        <item quantity="two">Želite dovoliti aplikaciji ^1, da premakne ^2 fotografiji v smetnjak?</item>
+        <item quantity="few">Želite dovoliti aplikaciji ^1, da premakne ^2 fotografije v smetnjak?</item>
+        <item quantity="other">Želite dovoliti aplikaciji ^1, da premakne ^2 fotografij v smetnjak?</item>
+    </plurals>
+    <plurals name="permission_trash_video">
+        <item quantity="one">Želite dovoliti aplikaciji ^1, da premakne ^2 videoposnetek v smetnjak?</item>
+        <item quantity="two">Želite dovoliti aplikaciji ^1, da premakne ^2 videoposnetka v smetnjak?</item>
+        <item quantity="few">Želite dovoliti aplikaciji ^1, da premakne ^2 videoposnetke v smetnjak?</item>
+        <item quantity="other">Želite dovoliti aplikaciji ^1, da premakne ^2 videoposnetkov v smetnjak?</item>
+    </plurals>
+    <plurals name="permission_untrash_audio">
+        <item quantity="one">Želite dovoliti aplikaciji ^1, da premakne ^2 zvočno datoteko iz smetnjaka?</item>
+        <item quantity="two">Želite dovoliti aplikaciji ^1, da premakne ^2 zvočni datoteki iz smetnjaka?</item>
+        <item quantity="few">Želite dovoliti aplikaciji ^1, da premakne ^2 zvočne datoteke iz smetnjaka?</item>
+        <item quantity="other">Želite dovoliti aplikaciji ^1, da premakne ^2 zvočnih datotek iz smetnjaka?</item>
+    </plurals>
+    <plurals name="permission_untrash_generic">
+        <item quantity="one">Želite dovoliti aplikaciji ^1, da premakne ^2 element iz smetnjaka?</item>
+        <item quantity="two">Želite dovoliti aplikaciji ^1, da premakne ^2 elementa iz smetnjaka?</item>
+        <item quantity="few">Želite dovoliti aplikaciji ^1, da premakne ^2 elemente iz smetnjaka?</item>
+        <item quantity="other">Želite dovoliti aplikaciji ^1, da premakne ^2 elementov iz smetnjaka?</item>
+    </plurals>
+    <plurals name="permission_untrash_image">
+        <item quantity="one">Želite dovoliti aplikaciji ^1, da premakne ^2 fotografijo iz smetnjaka?</item>
+        <item quantity="two">Želite dovoliti aplikaciji ^1, da premakne ^2 fotografiji iz smetnjaka?</item>
+        <item quantity="few">Želite dovoliti aplikaciji ^1, da premakne ^2 fotografije iz smetnjaka?</item>
+        <item quantity="other">Želite dovoliti aplikaciji ^1, da premakne ^2 fotografij iz smetnjaka?</item>
+    </plurals>
+    <plurals name="permission_untrash_video">
+        <item quantity="one">Želite dovoliti aplikaciji ^1, da premakne ^2 videoposnetek iz smetnjaka?</item>
+        <item quantity="two">Želite dovoliti aplikaciji ^1, da premakne ^2 videoposnetka iz smetnjaka?</item>
+        <item quantity="few">Želite dovoliti aplikaciji ^1, da premakne ^2 videoposnetke iz smetnjaka?</item>
+        <item quantity="other">Želite dovoliti aplikaciji ^1, da premakne ^2 videoposnetkov iz smetnjaka?</item>
+    </plurals>
+    <plurals name="permission_write_audio">
+        <item quantity="one">Želite dovoliti aplikaciji ^1, da spremeni ^2 zvočno datoteko?</item>
+        <item quantity="two">Želite dovoliti aplikaciji ^1, da spremeni ^2 zvočni datoteki?</item>
+        <item quantity="few">Želite dovoliti aplikaciji ^1, da spremeni ^2 zvočne datoteke?</item>
+        <item quantity="other">Želite dovoliti aplikaciji ^1, da spremeni ^2 zvočnih datotek?</item>
+    </plurals>
+    <plurals name="permission_write_generic">
+        <item quantity="one">Želite dovoliti aplikaciji ^1, da spremeni ^2 element?</item>
+        <item quantity="two">Želite dovoliti aplikaciji ^1, da spremeni ^2 elementa?</item>
+        <item quantity="few">Želite dovoliti aplikaciji ^1, da spremeni ^2 elemente?</item>
+        <item quantity="other">Želite dovoliti aplikaciji ^1, da spremeni ^2 elementov?</item>
+    </plurals>
+    <plurals name="permission_write_image">
+        <item quantity="one">Želite dovoliti aplikaciji ^1, da spremeni ^2 fotografijo?</item>
+        <item quantity="two">Želite dovoliti aplikaciji ^1, da spremeni ^2 fotografiji?</item>
+        <item quantity="few">Želite dovoliti aplikaciji ^1, da spremeni ^2 fotografije?</item>
+        <item quantity="other">Želite dovoliti aplikaciji ^1, da spremeni ^2 fotografij?</item>
+    </plurals>
+    <plurals name="permission_write_video">
+        <item quantity="one">Želite dovoliti aplikaciji ^1, da spremeni ^2 videoposnetek?</item>
+        <item quantity="two">Želite dovoliti aplikaciji ^1, da spremeni ^2 videoposnetka?</item>
+        <item quantity="few">Želite dovoliti aplikaciji ^1, da spremeni ^2 videoposnetke?</item>
+        <item quantity="other">Želite dovoliti aplikaciji ^1, da spremeni ^2 videoposnetkov?</item>
+    </plurals>
+</resources>

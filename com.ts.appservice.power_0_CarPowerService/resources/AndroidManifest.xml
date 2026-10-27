@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    android:sharedUserId="android.uid.system"
+    android:versionCode="30"
+    android:versionName="11"
+    android:compileSdkVersion="30"
+    android:compileSdkVersionCodename="11"
+    coreApp="true"
+    package="com.ts.appservice.power"
+    platformBuildVersionCode="30"
+    platformBuildVersionName="11">
+    <uses-sdk
+        android:minSdkVersion="30"
+        android:targetSdkVersion="29"/>
+    <uses-permission android:name="android.car.permission.CAR_POWER"/>
+    <uses-permission android:name="android.car.permission.CAR_VENDOR_EXTENSION"/>
+    <uses-permission android:name="android.car.permission.CAR_HVAC"/>
+    <uses-permission android:name="android.car.permission.REBOOT"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="com.ts.power.permission.BRIGHTNESS"/>
+    <uses-permission android:name="com.ts.power.permission.REBOOT"/>
+    <uses-permission android:name="com.ts.power.permission.OTA_ACTION"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.REBOOT"/>
+    <uses-permission android:name="android.permission.SHUTDOWN"/>
+    <uses-permission android:name="android.permission.DEVICE_POWER"/>
+    <uses-permission android:name="car.permission.DMS_ACCESS"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="car.permission.CARPLAY"/>
+    <permission
+        android:name="com.ts.power.permission.REBOOT"
+        android:protectionLevel="signature"
+        android:description="@string/reboot"/>
+    <permission
+        android:name="com.ts.power.permission.BRIGHTNESS"
+        android:protectionLevel="signature"
+        android:description="@string/brightness"/>
+    <permission
+        android:name="com.ts.power.permission.OTA_ACTION"
+        android:protectionLevel="signature"/>
+    <application
+        android:theme="@style/AppTheme"
+        android:label="@string/app_name"
+        android:icon="@mipmap/ic_launcher"
+        android:allowBackup="false"
+        android:supportsRtl="true"
+        android:extractNativeLibs="true"
+        android:defaultToDeviceProtectedStorage="true"
+        android:directBootAware="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:usesNonSdkApi="true">
+        <activity android:name="com.ts.appservice.power.activity.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+        <service
+            android:name="com.ts.appservice.power.CarPowerService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.ts.intent.action.ts.carpower"/>
+            </intent-filter>
+        </service>
+        <uses-library android:name="ts-framework"/>
+        <uses-library android:name="ts.platform.library"/>
+    </application>
+</manifest>

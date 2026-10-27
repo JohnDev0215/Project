@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="downloads">
+        <item>Document</item>
+        <item>Audio</item>
+        <item>Video</item>
+        <item>Photo</item>
+        <item>Compressed</item>
+        <item>Installer</item>
+    </array>
+    <array name="file_attr_img_items">
+        <item>Name</item>
+        <item>Shooting time</item>
+        <item>Location</item>
+        <item>Size</item>
+        <item>Resolution</item>
+        <item>Path to save</item>
+    </array>
+    <array name="file_attr_items">
+        <item>Name</item>
+        <item>Size</item>
+        <item>File properties</item>
+        <item>Path to save</item>
+    </array>
+    <array name="icon_list_medium_large">
+        <item>@drawable/icon_filemanager_local_96</item>
+        <item>@drawable/icon_filemanager_sd_96</item>
+        <item>@drawable/icon_filemanager_usb_96</item>
+    </array>
+    <array name="icon_list_menu">
+        <item>@drawable/icon_file_lately_48</item>
+        <item>@drawable/icon_file_all_48</item>
+        <item>@drawable/icon_file_audiofrequency_48</item>
+        <item>@drawable/icon_album_video_48</item>
+        <item>@drawable/icon_album_photo_48</item>
+    </array>
+    <array name="icon_list_more">
+        <item>@drawable/icon_file_rename_48</item>
+        <item>@drawable/icon_public_movefc_48</item>
+        <item>@drawable/icon_file_open_48</item>
+        <item>@drawable/icon_file_compress_48</item>
+        <item>@drawable/icon_public_details_48</item>
+        <item>@drawable/icon_file_openparty_48</item>
+    </array>
+    <array name="icon_list_more_short">
+        <item>@drawable/icon_public_movefc_48</item>
+        <item>@drawable/icon_file_compress_48</item>
+    </array>
+    <array name="icon_tab_path">
+        <item>@drawable/icon_media_folder_24</item>
+        <item>@drawable/icon_media_sd_24</item>
+        <item>@drawable/icon_media_usb_24</item>
+    </array>
+    <array name="menus">
+        <item>@string/data</item>
+        <item>@string/cache</item>
+        <item>@string/storage</item>
+    </array>
+    <array name="more_items">
+        <item>Rename</item>
+        <item>Move</item>
+        <item>Open</item>
+        <item>Compress</item>
+        <item>Details</item>
+        <item>Open with</item>
+    </array>
+    <array name="more_items_short">
+        <item>Move</item>
+        <item>Compress</item>
+    </array>
+    <array name="sort_items">
+        <item>Name</item>
+        <item>Size</item>
+        <item>Time</item>
+        <item>Type</item>
+    </array>
+    <array name="tabs">
+        <item>Local</item>
+        <item>SD</item>
+        <item>USB</item>
+    </array>
+    <array name="tabs_all">
+        <item>All</item>
+        <item>Local</item>
+        <item>SD</item>
+        <item>USB</item>
+    </array>
+</resources>

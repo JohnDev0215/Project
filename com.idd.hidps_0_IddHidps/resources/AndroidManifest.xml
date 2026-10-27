@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    android:sharedUserId="android.uid.system"
+    android:versionCode="11"
+    android:versionName="1.1.2"
+    android:compileSdkVersion="30"
+    android:compileSdkVersionCodename="11"
+    package="com.idd.hidps"
+    platformBuildVersionCode="30"
+    platformBuildVersionName="11">
+    <uses-permission android:name="android.permission.READ_PRIVILEGED_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.car.permission.CAR_INFO"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <permission
+        android:name="com.qtxa.hidps.permission.HOST_PROTECTION"
+        android:protectionLevel="normal"
+        android:permissionGroup="com.qtxa.hidps.permission-group.FRAMEWORK"/>
+    <permission
+        android:name="com.qtxa.hidps.permission.MOBILE_NETWORK_MONITOR"
+        android:protectionLevel="normal"
+        android:permissionGroup="com.qtxa.hidps.permission-group.FRAMEWORK"/>
+    <permission
+        android:name="com.qtxa.hidps.permission.USB_MONITOR"
+        android:protectionLevel="normal"
+        android:permissionGroup="com.qtxa.hidps.permission-group.FRAMEWORK"/>
+    <permission
+        android:name="com.qtxa.hidps.permission.LOCATION_MONITOR"
+        android:protectionLevel="normal"
+        android:permissionGroup="com.qtxa.hidps.permission-group.FRAMEWORK"/>
+    <permission
+        android:name="com.qtxa.hidps.permission.BLUETOOTH_MONITOR"
+        android:protectionLevel="normal"
+        android:permissionGroup="com.qtxa.hidps.permission-group.FRAMEWORK"/>
+    <permission
+        android:name="com.qtxa.hidps.permission.WIFI_MONITOR"
+        android:protectionLevel="normal"
+        android:permissionGroup="com.qtxa.hidps.permission-group.FRAMEWORK"/>
+    <permission-group
+        android:name="com.qtxa.hidps.permission-group.FRAMEWORK"
+        android:protectionLevel="normal"/>
+    <uses-sdk
+        android:minSdkVersion="30"
+        android:targetSdkVersion="28"/>
+    <permission
+        android:name="com.qtxa.hidps.permission.MODULE_RECEIVER"
+        android:protectionLevel="signature"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="com.qtxa.hidps.permission.MODULE_RECEIVER"/>
+    <protected-broadcast android:name="com.qtxa.hidps.MODULE_CONTROL"/>
+    <protected-broadcast android:name="com.baidu.naviauto.action.recv"/>
+    <protected-broadcast android:name="com.amap.naviauto.action.recv"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <application
+        android:theme="@style/AppTheme"
+        android:label="@string/app_name"
+        android:icon="@drawable/ic_launcher"
+        android:name="com.qtxa.hidps.QtHidpsApplication"
+        android:persistent="true"
+        android:process="com.idd.hidps"
+        android:allowBackup="false"
+        android:largeHeap="true"
+        android:extractNativeLibs="false"
+        android:defaultToDeviceProtectedStorage="true"
+        android:usesNonSdkApi="true">
+        <receiver
+            android:name="com.qtxa.hidps.QtHidpsReceiver"
+            android:permission="android.permission.RECEIVE_BOOT_COMPLETED">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+        <service
+            android:name="com.qtxa.service.HandlerRequestService"
+            android:enabled="true"
+            android:exported="true"/>
+        <service
+            android:name="com.qtxa.qtxadefend.SecurityService"
+            android:enabled="true"
+            android:exported="false"
+            android:directBootAware="true"/>
+        <receiver
+            android:name="com.qtxa.qtxadefend.QtAppSecServiceHandlerReceiver"
+            android:permission="com.qtxa.hidps.permission.MODULE_RECEIVER">
+            <intent-filter android:priority="100">
+                <action android:name="com.qtxa.hidps.MODULE_CONTROL"/>
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.qtxa.clean.QtCleanerServiceHandlerReceiver"
+            android:permission="com.qtxa.hidps.permission.MODULE_RECEIVER">
+            <intent-filter android:priority="100">
+                <action android:name="com.qtxa.hidps.MODULE_CONTROL"/>
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.qtxa.monitor.QtMonitorServiceHandlerReceiver"
+            android:permission="com.qtxa.hidps.permission.MODULE_RECEIVER">
+            <intent-filter android:priority="100">
+                <action android:name="com.qtxa.hidps.MODULE_CONTROL"/>
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.qtxa.qtxadefend.QtRootCheckServiceHandlerReceiver"
+            android:permission="com.qtxa.hidps.permission.MODULE_RECEIVER">
+            <intent-filter android:priority="100">
+                <action android:name="com.qtxa.hidps.MODULE_CONTROL"/>
+            </intent-filter>
+        </receiver>
+    </application>
+</manifest>

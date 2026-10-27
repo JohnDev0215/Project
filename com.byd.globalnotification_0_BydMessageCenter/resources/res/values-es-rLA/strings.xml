@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_foreground_service_running">is Running</string>
+    <string name="app_name">Message Center</string>
+    <string name="cancel">Cancelar</string>
+    <string name="media_mounted">Comprobación de unidad flash USB/tarjeta SD</string>
+    <string name="media_removed">Expulsión de unidad flash USB/tarjeta SD</string>
+    <string name="notification_msg">Mensaje</string>
+    <string name="notify_time_h_s">hace %d hora(s)</string>
+    <string name="notify_time_just_now">Justo ahora</string>
+    <string name="notify_time_mins">hace %d minuto(s)</string>
+    <string name="notify_time_one_h">Hace 1 hora</string>
+    <string name="notify_time_one_min">Hace 1 minuto</string>
+    <string name="notify_time_yesterday">Ayer</string>
+    <string name="personal_main_clear_all">Borrar todo</string>
+    <string name="personal_main_manage">Gestión</string>
+    <string name="personal_main_no_msg">Sin mensajes</string>
+</resources>

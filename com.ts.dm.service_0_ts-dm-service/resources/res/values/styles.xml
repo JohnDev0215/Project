@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="CommonDialogBgStyle" parent="">
+        <item name="android:gravity">0x11</item>
+        <item name="android:background">@drawable/ic_dialog_bg</item>
+        <item name="android:paddingTop">@dimen/commondialog_spacingtop</item>
+        <item name="android:paddingBottom">@dimen/commondialog_spacingbottom</item>
+        <item name="android:layout_width">@dimen/commondialog_width</item>
+    </style>
+    <style name="CommonDialogCancelTextStyle" parent="">
+        <item name="android:textSize">@dimen/commondialog_btn_text_size</item>
+        <item name="android:textColor">@color/commondialog_cancel</item>
+        <item name="android:gravity">0x11</item>
+        <item name="android:background">@drawable/ic_dialog_cancle_bg</item>
+        <item name="android:layout_width">@dimen/commondialog_single_width</item>
+        <item name="android:layout_height">@dimen/commondialog_single_height</item>
+    </style>
+    <style name="CommonDialogContentTextStyle" parent="">
+        <item name="android:textSize">@dimen/commondialog_content_text_size</item>
+        <item name="android:textColor">@color/commondialog_content</item>
+        <item name="android:gravity">0x11</item>
+        <item name="android:layout_width">@dimen/commondialog_content_width</item>
+        <item name="android:layout_marginBottom">@dimen/commondialog_content_marginbottom</item>
+        <item name="android:lineHeight">@dimen/commondialog_content_lineheight</item>
+    </style>
+    <style name="CommonDialogRecommendTextStyle" parent="">
+        <item name="android:textSize">@dimen/commondialog_btn_text_size</item>
+        <item name="android:textColor">@color/commondialog_recommend</item>
+        <item name="android:gravity">0x11</item>
+        <item name="android:background">@drawable/ic_dialog_recommen_bg</item>
+        <item name="android:layout_width">@dimen/commondialog_single_width</item>
+        <item name="android:layout_height">@dimen/commondialog_single_height</item>
+    </style>
+    <style name="CommonDialogTitleTextStyle" parent="">
+        <item name="android:textSize">@dimen/commondialog_title_text_size</item>
+        <item name="android:textStyle">0x1</item>
+        <item name="android:textColor">@color/commondialog_title</item>
+        <item name="android:gravity">0x11</item>
+        <item name="android:layout_width">@dimen/commondialog_title_width</item>
+        <item name="android:layout_marginBottom">@dimen/commondialog_title_marginbottom</item>
+        <item name="android:lineHeight">@dimen/commondialog_title_lineheight</item>
+    </style>
+    <style name="CommonToastBgStyle" parent="">
+        <item name="android:gravity">0x11</item>
+        <item name="android:background">@drawable/ic_topdialog_bg</item>
+        <item name="android:paddingBottom">@dimen/top_spacingbottom</item>
+        <item name="android:layout_width">@dimen/top_width</item>
+        <item name="android:layout_height">@dimen/top_height</item>
+        <item name="android:paddingHorizontal">@dimen/top_spacinghorizontal</item>
+    </style>
+    <style name="CommonToastCloseStyle" parent="">
+        <item name="android:textSize">@dimen/top_close_text</item>
+        <item name="android:textColor">@color/top_close</item>
+        <item name="android:gravity">0x11</item>
+        <item name="android:background">@drawable/ic_topdialog_close_bg</item>
+        <item name="android:layout_width">@dimen/top_close_width</item>
+        <item name="android:layout_height">@dimen/top_close_height</item>
+    </style>
+    <style name="CommonToastContentStyle" parent="">
+        <item name="android:textSize">@dimen/top_content_text</item>
+        <item name="android:textColor">@color/top_content</item>
+        <item name="android:paddingTop">@dimen/top_content_spacingtop</item>
+        <item name="android:paddingRight">@dimen/top_content_spacingright</item>
+        <item name="android:paddingBottom">@dimen/top_content_spacingbottom</item>
+    </style>
+    <style name="CommonToastIconStyle" parent="">
+        <item name="android:layout_width">@dimen/top_logo_width</item>
+        <item name="android:layout_height">@dimen/top_logo_height</item>
+        <item name="android:layout_marginRight">@dimen/top_logo_marginright</item>
+        <item name="android:src">@drawable/ic_topdialog_logo</item>
+        <item name="android:scaleType">1</item>
+        <item name="android:adjustViewBounds">true</item>
+    </style>
+    <style name="DialogStyle" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+    <style name="LoadingDialogBgStyle" parent="">
+        <item name="android:gravity">0x11</item>
+        <item name="android:background">@drawable/ic_loading_bg</item>
+        <item name="android:layout_width">@dimen/loading_width</item>
+        <item name="android:layout_height">@dimen/loading_height</item>
+    </style>
+    <style name="LoadingDialogIconStyle" parent="">
+        <item name="android:layout_width">@dimen/loading_icon_width</item>
+        <item name="android:layout_height">@dimen/loading_icon_height</item>
+        <item name="android:src">@drawable/ic_loading</item>
+        <item name="android:scaleType">1</item>
+        <item name="android:adjustViewBounds">true</item>
+    </style>
+    <style name="LoadingDialogTextStyle" parent="">
+        <item name="android:textSize">@dimen/loading_text_size</item>
+        <item name="android:textColor">@color/loading_text</item>
+        <item name="android:gravity">0x11</item>
+        <item name="android:layout_width">@dimen/loading_text_width</item>
+        <item name="android:layout_height">@dimen/loading_text_height</item>
+        <item name="android:layout_marginTop">@dimen/loading_text_margintop</item>
+    </style>
+</resources>

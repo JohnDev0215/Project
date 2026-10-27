@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="notif_summary_active">
+        <item quantity="zero">Notiek %d failu lejupielāde</item>
+        <item quantity="one">Notiek %d faila lejupielāde</item>
+        <item quantity="other">Notiek %d failu lejupielāde</item>
+    </plurals>
+    <plurals name="notif_summary_waiting">
+        <item quantity="zero">Rindā: %d failu</item>
+        <item quantity="one">Rindā: %d fails</item>
+        <item quantity="other">Rindā: %d faili</item>
+    </plurals>
+</resources>

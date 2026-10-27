@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="config_ext_ifaces_strategy">
+        <item>vlan3;false</item>
+        <item>vlan4;false</item>
+    </array>
+    <array name="config_ext_network_interfaces">
+        <item>vlan3;12,13,14,15,21;ip=172.16.3.102/24 gateway=172.16.3.101 dns=172.16.3.101;0;50</item>
+        <item>vlan4;13,14,15,21,22;ip=172.16.4.102/24 gateway=172.16.4.101 dns=172.16.3.101;3;9</item>
+    </array>
+    <array name="config_ext_network_regexs">
+        <item>vlan3</item>
+    </array>
+    <array name="config_filter_macs">
+    </array>
+    <array name="failsafe_ifaces">
+    </array>
+</resources>

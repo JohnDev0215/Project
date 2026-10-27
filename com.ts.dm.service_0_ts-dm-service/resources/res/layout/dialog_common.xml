@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    style="@style/CommonDialogBgStyle">
+    <TextView
+        android:id="@+id/dialog_title"
+        android:visibility="gone"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        style="@style/CommonDialogTitleTextStyle"/>
+    <TextView
+        android:id="@+id/dialog_content"
+        android:visibility="gone"
+        android:layout_height="wrap_content"
+        style="@style/CommonDialogContentTextStyle"/>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/dialog_cancel"
+            android:visibility="gone"
+            style="@style/CommonDialogCancelTextStyle"/>
+        <Button
+            android:id="@+id/dialog_recommend"
+            android:visibility="gone"
+            style="@style/CommonDialogRecommendTextStyle"/>
+    </LinearLayout>
+</LinearLayout>

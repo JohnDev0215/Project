@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    android:sharedUserId="android.media"
+    android:versionCode="1024"
+    android:versionName="11"
+    android:compileSdkVersion="30"
+    android:compileSdkVersionCodename="11"
+    package="com.android.providers.media"
+    platformBuildVersionCode="30"
+    platformBuildVersionName="11">
+    <uses-sdk
+        android:minSdkVersion="30"
+        android:targetSdkVersion="30"/>
+    <application
+        android:process="android.process.media"
+        android:allowBackup="false"
+        android:supportsRtl="true"
+        android:extractNativeLibs="true"
+        android:usesCleartextTraffic="true"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+        android:forceQueryable="true">
+        <provider
+            android:name="com.android.providers.media.LegacyMediaProvider"
+            android:permission="android.permission.WRITE_MEDIA_STORAGE"
+            android:exported="true"
+            android:authorities="media_legacy"/>
+    </application>
+</manifest>

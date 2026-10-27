@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    android:sharedUserId="android.uid.system"
+    android:versionCode="30"
+    android:versionName="4.5.4.0"
+    android:compileSdkVersion="30"
+    android:compileSdkVersionCodename="11"
+    package="com.ts.car.dcm.dccontroller"
+    platformBuildVersionCode="30"
+    platformBuildVersionName="11">
+    <uses-sdk
+        android:minSdkVersion="30"
+        android:targetSdkVersion="30"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.OVERRIDE_WIFI_CONFIG"/>
+    <uses-permission android:name="android.permission.NETWORK_STACK"/>
+    <uses-permission android:name="android.permission.NETWORK_SETTINGS"/>
+    <uses-permission android:name="android.permission.TETHER_PRIVILEGED"/>
+    <permission android:name="com.ts.car.permission.DeviceConnectionManager"/>
+    <protected-broadcast android:name="com.ts.car.DeviceConnectionManager.DeviceAttached"/>
+    <protected-broadcast android:name="com.ts.car.DeviceConnectionManager.DeviceDetached"/>
+    <protected-broadcast android:name="com.ts.car.DeviceConnectionManager.DeviceConnectionChanged"/>
+    <protected-broadcast android:name="com.ts.car.DeviceConnectionManager.DeviceAttached"/>
+    <protected-broadcast android:name="com.ts.car.DeviceConnectionManager.DeviceDetached"/>
+    <protected-broadcast android:name="com.ts.car.DeviceConnectionManager.DeviceConnectionChanged"/>
+    <application
+        android:label="@string/app_name"
+        android:name="com.ts.car.dcm.dccontroller.ConnectionManagerServiceApp"
+        android:allowBackup="false"
+        android:supportsRtl="true"
+        android:extractNativeLibs="true"
+        android:usesNonSdkApi="true">
+        <uses-library android:name="ts.platform.library"/>
+        <uses-library android:name="ts.dcm.foundation.lib"/>
+        <service
+            android:name="com.ts.car.dcm.dccontroller.connectionmanagerservice.CmService"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.ts.car.dcm.dccontroller.connectionmanagerservice.CmService"/>
+            </intent-filter>
+        </service>
+    </application>
+</manifest>

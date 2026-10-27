@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="wifi_item" parent="">
+        <item name="android:gravity">0x800003</item>
+        <item name="android:orientation">1</item>
+        <item name="android:layout_width">200dp</item>
+        <item name="android:layout_height">-2</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:layout_marginStart">16dp</item>
+        <item name="android:layout_marginEnd">16dp</item>
+    </style>
+    <style name="wifi_item_content" parent="">
+        <item name="android:textSize">18sp</item>
+        <item name="android:layout_width">-1</item>
+        <item name="android:layout_height">-2</item>
+    </style>
+    <style name="wifi_item_label" parent="">
+        <item name="android:textSize">14sp</item>
+        <item name="android:layout_width">-2</item>
+        <item name="android:layout_height">-2</item>
+    </style>
+    <style name="wifi_section" parent="">
+        <item name="android:orientation">1</item>
+        <item name="android:layout_width">-1</item>
+        <item name="android:layout_height">-2</item>
+    </style>
+</resources>

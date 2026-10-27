@@ -1,0 +1,52 @@
+package ts.car.service.tbox.data;
+
+/* JADX INFO: loaded from: classes.dex */
+public class MessageTopic {
+    public static final int GET_BASESTATION_INFO_TOPIC = 268435459;
+    public static final int GET_MOBILE_INFO_TOPIC = 268435457;
+    public static final int GET_MSIDN_INFO_TOPIC = 268435461;
+    public static final int GET_SIGNAL_INFO_TOPIC = 268435458;
+    public static final int GET_SIM_STATUS_TOPIC = 268435463;
+    public static final int GET_TBOX_AIRPLANE_MODE_TOPIC = 268435467;
+    public static final int GET_TBOX_CALL_STATE_TOPIC = 268435468;
+    public static final int GET_TBOX_CONNECTION_STATE_TOPIC = 268435464;
+    public static final int GET_TBOX_KEEP_ALIVE_TOPIC = 268435470;
+    public static final int GET_TBOX_LOG_LEVEL_TOPIC = 268435469;
+    public static final int GET_TBOX_NETWORK_REG_STATE_TOPIC = 268435473;
+    public static final int GET_TBOX_POWER_MODE_TOPIC = 268435472;
+    public static final int GET_TBOX_SERIAL_TOPIC = 268435471;
+    public static final int GET_TBOX_STATE_TOPIC = 268435466;
+    public static final int GET_TBOX_TETHERING_STATE_TOPIC = 268435465;
+    public static final int GET_TBOX_VERSION_INFO_TOPIC = 268435462;
+    public static final int GET_VIN_INFO_TOPIC = 268435460;
+    public static final int NOTIFY_TBOX_AIRPLANE_MODE_TOPIC = 1073741831;
+    public static final int NOTIFY_TBOX_BASE_STATION_INFO_TOPIC = 1073741834;
+    public static final int NOTIFY_TBOX_CALL_STATE_INFO_TOPIC = 1073741830;
+    public static final int NOTIFY_TBOX_KEEP_ALIVE_STATE_TOPIC = 1073741825;
+    public static final int NOTIFY_TBOX_LOCATION_TOPIC = 1073741827;
+    public static final int NOTIFY_TBOX_LOG_EXPORT_STATE_TOPIC = 1073741826;
+    public static final int NOTIFY_TBOX_MOBILE_INFO_TOPIC = 1073741839;
+    public static final int NOTIFY_TBOX_NETREG_STATE_TOPIC = 1073741833;
+    public static final int NOTIFY_TBOX_NETWORK_TETHERING_TOPIC = 1073741835;
+    public static final int NOTIFY_TBOX_POWER_MODE_TOPIC = 1073741838;
+    public static final int NOTIFY_TBOX_SIGNAL_TOPIC = 1073741832;
+    public static final int NOTIFY_TBOX_SIM_STATUS_TOPIC = 1073741836;
+    public static final int NOTIFY_TBOX_UPGRADE_INFO_TOPIC = 1073741837;
+    public static final int NOTIFY_TBOX_VERSION_INFO_TOPIC = 1073741840;
+    public static final int REQUEST_TBOX_CALL_ANSWER_TOPIC = 805306371;
+    public static final int REQUEST_TBOX_CALL_DIAL_TOPIC = 805306370;
+    public static final int REQUEST_TBOX_CALL_HANGUP_TOPIC = 805306372;
+    public static final int REQUEST_TBOX_CALL_REJECT_TOPIC = 805306373;
+    public static final int REQUEST_TBOX_EXPORT_LOG_TOPIC = 805306375;
+    public static final int REQUEST_TBOX_RESET_TOPIC = 805306377;
+    public static final int REQUEST_TBOX_SEND_DTMF_TOPIC = 805306374;
+    public static final int REQUEST_TBOX_SHUTDOWN_TOPIC = 805306376;
+    public static final int REQUEST_TBOX_UPGRADE_TOPIC = 805306369;
+    public static final int SET_ENGIN_MODE_TOPIC = 536870914;
+    public static final int SET_TBOX_AIRPLANE_MODE_TOPIC = 536870915;
+    public static final int SET_TBOX_KEEP_ALIVE_TOPIC = 536870917;
+    public static final int SET_TBOX_LOG_LEVEL_TOPIC = 536870916;
+    public static final int SET_TBOX_RESET_NETWORK_TOPIC = 536870918;
+    public static final int SET_TBOX_TETHERING_STATE_TOPIC = 536870913;
+    public static final int TBOX_EXTEND_EVENT_TOPIC_BEGIN = 1073807360;
+}

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    android:sharedUserId="android.uid.system"
+    android:versionCode="30"
+    android:versionName="11"
+    android:compileSdkVersion="30"
+    android:compileSdkVersionCodename="11"
+    package="com.android.keychain"
+    platformBuildVersionCode="30"
+    platformBuildVersionName="11">
+    <uses-sdk
+        android:minSdkVersion="30"
+        android:targetSdkVersion="30"/>
+    <uses-permission android:name="android.permission.READ_LOGS"/>
+    <uses-permission android:name="android.permission.HIDE_NON_SYSTEM_OVERLAY_WINDOWS"/>
+    <application
+        android:theme="@android:style/Theme.DeviceDefault.DayNight"
+        android:label="@string/app_name"
+        android:allowBackup="false"
+        android:extractNativeLibs="true"
+        android:usesCleartextTraffic="false"
+        android:usesNonSdkApi="true">
+        <service android:name="com.android.keychain.KeyChainService">
+            <intent-filter>
+                <action android:name="android.security.IKeyChainService"/>
+            </intent-filter>
+        </service>
+        <activity
+            android:theme="@style/KeyChainTransparent"
+            android:name="com.android.keychain.KeyChainActivity"
+            android:excludeFromRecents="true">
+            <intent-filter>
+                <action android:name="com.android.keychain.CHOOSER"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>

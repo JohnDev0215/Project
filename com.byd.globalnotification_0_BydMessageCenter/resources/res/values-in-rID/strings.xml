@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_foreground_service_running">is Running</string>
+    <string name="app_name">Message Center</string>
+    <string name="cancel">Batal</string>
+    <string name="media_mounted">Pemeriksaan flash disk USB/kartu SD</string>
+    <string name="media_removed">Pencabutan flash disk USB/kartu SD</string>
+    <string name="notification_msg">Pesan</string>
+    <string name="notify_time_h_s">%d jam yang lalu</string>
+    <string name="notify_time_just_now">Baru saja</string>
+    <string name="notify_time_mins">%d menit yang lalu</string>
+    <string name="notify_time_one_h">1 jam yang lalu</string>
+    <string name="notify_time_one_min">1 menit yang lalu</string>
+    <string name="notify_time_yesterday">Kemarin</string>
+    <string name="personal_main_clear_all">Hapus semua</string>
+    <string name="personal_main_manage">Pengelolaan</string>
+    <string name="personal_main_no_msg">Tidak ada pesan</string>
+</resources>

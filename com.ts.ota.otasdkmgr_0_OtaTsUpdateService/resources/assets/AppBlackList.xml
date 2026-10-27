@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Configuration>
+    <package name="com.byd.autoservice"/>
+    <package name="com.byd.avm"/>
+    <package name="com.byd.bluetoothcall"/>
+    <package name="com.byd.card"/>
+    <package name="com.byd.carsettings"/>
+    <package name="com.byd.data.collect"/>
+    <package name="com.byd.engineermode"/>
+    <package name="com.byd.filemanager"/>
+    <package name="com.byd.flowmonitor"/>
+    <package name="com.byd.hvac"/>
+    <package name="com.byd.logtools"/>
+    <package name="com.byd.secretcode"/>
+    <package name="com.byd.uereport"/>
+    <package name="com.android.provision"/>
+    <package name="com.byd.auto_camera"/>
+    <package name="com.byd.auto_photo"/>
+    <package name="com.byd.smarttravel"/>
+    <package name="com.byd.automultipletheme"/>
+    <package name="com.byd.localmusic"/>
+    <package name="com.byd.mycar"/>
+    <package name="com.android.launcher3"/>
+    <package name="com.telenav.scoutivi.spotify.byd"/>
+    <package name="com.spotify.music"/>
+    <package name="com.neusoft.na.navigation"/>
+    <package name="com.ts.carplay.app"/>
+    <package name="com.ts.androidauto.app"/>
+    <package name="com.byd.vrassistant"/>
+
+</Configuration>

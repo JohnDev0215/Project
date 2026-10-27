@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_foreground_service_running">is Running</string>
+    <string name="app_name">Message Center</string>
+    <string name="cancel">취소</string>
+    <string name="media_mounted">USB 플래시 디스크/SD 카드 검사</string>
+    <string name="media_removed">USB 플래시 디스크/SD 카드 꺼내기</string>
+    <string name="notification_msg">메시지</string>
+    <string name="notify_time_h_s">%d시간 전</string>
+    <string name="notify_time_just_now">바로 지금</string>
+    <string name="notify_time_mins">%d분 전</string>
+    <string name="notify_time_one_h">1시간 전</string>
+    <string name="notify_time_one_min">1분 전</string>
+    <string name="notify_time_yesterday">어제</string>
+    <string name="personal_main_clear_all">모두 삭제</string>
+    <string name="personal_main_manage">관리</string>
+    <string name="personal_main_no_msg">메시지 없음</string>
+</resources>

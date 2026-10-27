@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <bool name="config_tether_enable_bpf_offload">true</bool>
+    <bool name="config_tether_enable_dun_preferred">0</bool>
+    <bool name="config_tether_enable_legacy_dhcp_server">false</bool>
+    <bool name="config_tether_upstream_automatic">true</bool>
+    <bool name="config_upstream_roaming_notification">false</bool>
+</resources>

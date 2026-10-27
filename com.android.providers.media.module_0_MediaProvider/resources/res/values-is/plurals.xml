@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="permission_delete_audio">
+        <item quantity="one">Leyfa ^1 að eyða ^2 hljóðskrá?</item>
+        <item quantity="other">Leyfa ^1 að eyða ^2 hljóðskrám?</item>
+    </plurals>
+    <plurals name="permission_delete_generic">
+        <item quantity="one">Leyfa ^1 að eyða ^2 atriði?</item>
+        <item quantity="other">Leyfa ^1 að eyða ^2 atriðum?</item>
+    </plurals>
+    <plurals name="permission_delete_image">
+        <item quantity="one">Leyfa ^1 að eyða ^2 mynd?</item>
+        <item quantity="other">Leyfa ^1 að eyða ^2 myndum?</item>
+    </plurals>
+    <plurals name="permission_delete_video">
+        <item quantity="one">Leyfa ^1 að eyða ^2 myndskeiði?</item>
+        <item quantity="other">Leyfa ^1 að eyða ^2 myndskeiðum?</item>
+    </plurals>
+    <plurals name="permission_more_text">
+        <item quantity="one">Auk ^1 atriðis til viðbótar</item>
+        <item quantity="other">Auk ^1 atriða til viðbótar</item>
+    </plurals>
+    <plurals name="permission_more_thumb">
+        <item quantity="one">+^1</item>
+        <item quantity="other">+^1</item>
+    </plurals>
+    <plurals name="permission_trash_audio">
+        <item quantity="one">Leyfa ^1 að færa ^2 hljóðskrá í ruslið?</item>
+        <item quantity="other">Leyfa ^1 að færa ^2 hljóðskrár í ruslið?</item>
+    </plurals>
+    <plurals name="permission_trash_generic">
+        <item quantity="one">Leyfa ^1 að færa ^2 atriði í ruslið?</item>
+        <item quantity="other">Leyfa ^1 að færa ^2 atriði í ruslið?</item>
+    </plurals>
+    <plurals name="permission_trash_image">
+        <item quantity="one">Leyfa ^1 að færa ^2 mynd í ruslið?</item>
+        <item quantity="other">Leyfa ^1 að færa ^2 myndir í ruslið?</item>
+    </plurals>
+    <plurals name="permission_trash_video">
+        <item quantity="one">Leyfa ^1 að færa ^2 myndskeið í ruslið?</item>
+        <item quantity="other">Leyfa ^1 að færa ^2 myndskeið í ruslið?</item>
+    </plurals>
+    <plurals name="permission_untrash_audio">
+        <item quantity="one">Leyfa ^1 að færa ^2 hljóðskrá úr ruslinu?</item>
+        <item quantity="other">Leyfa ^1 að færa ^2 hljóðskrár úr ruslinu?</item>
+    </plurals>
+    <plurals name="permission_untrash_generic">
+        <item quantity="one">Leyfa ^1 að færa ^2 atriði úr ruslinu?</item>
+        <item quantity="other">Leyfa ^1 að færa ^2 atriði úr ruslinu?</item>
+    </plurals>
+    <plurals name="permission_untrash_image">
+        <item quantity="one">Leyfa ^1 að færa ^2 mynd úr ruslinu?</item>
+        <item quantity="other">Leyfa ^1 að færa ^2 myndir úr ruslinu?</item>
+    </plurals>
+    <plurals name="permission_untrash_video">
+        <item quantity="one">Leyfa ^1 að færa ^2 myndskeið úr ruslinu?</item>
+        <item quantity="other">Leyfa ^1 að færa ^2 myndskeið úr ruslinu?</item>
+    </plurals>
+    <plurals name="permission_write_audio">
+        <item quantity="one">Leyfa ^1 að breyta ^2 hljóðskrá?</item>
+        <item quantity="other">Leyfa ^1 að breyta ^2 hljóðskrám?</item>
+    </plurals>
+    <plurals name="permission_write_generic">
+        <item quantity="one">Leyfa ^1 að breyta ^2 atriði?</item>
+        <item quantity="other">Leyfa ^1 að breyta ^2 atriðum?</item>
+    </plurals>
+    <plurals name="permission_write_image">
+        <item quantity="one">Leyfa ^1 að breyta ^2 mynd?</item>
+        <item quantity="other">Leyfa ^1 að breyta ^2 myndum?</item>
+    </plurals>
+    <plurals name="permission_write_video">
+        <item quantity="one">Leyfa ^1 að breyta ^2 myndskeiði?</item>
+        <item quantity="other">Leyfa ^1 að breyta ^2 myndskeiðum?</item>
+    </plurals>
+</resources>

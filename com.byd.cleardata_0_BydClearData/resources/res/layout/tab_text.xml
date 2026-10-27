@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@android:color/transparent"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <TextView
+        android:textSize="@dimen/sp_20"
+        android:textColor="@color/color_text_selector"
+        android:gravity="center"
+        android:id="@+id/tv_name"
+        android:layout_width="@dimen/dp_116"
+        android:layout_height="@dimen/dp_44"
+        android:layout_marginTop="@dimen/dp_1"/>
+</LinearLayout>

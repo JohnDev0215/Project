@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="config_wifiConnectedScanIntervalScheduleSec">
+        <item>20</item>
+        <item>40</item>
+        <item>80</item>
+        <item>160</item>
+    </array>
+    <array name="config_wifiDisconnectedScanIntervalScheduleSec">
+        <item>20</item>
+        <item>40</item>
+        <item>80</item>
+        <item>160</item>
+    </array>
+    <array name="config_wifiRssiLevelThresholds">
+        <item>-88</item>
+        <item>-77</item>
+        <item>-66</item>
+        <item>-55</item>
+    </array>
+    <array name="config_wifiSingleSavedNetworkConnectedScanIntervalScheduleSec">
+    </array>
+    <array name="config_wifi_aggressive_randomization_ssid_allowlist">
+    </array>
+    <array name="config_wifi_aggressive_randomization_ssid_blocklist">
+    </array>
+    <array name="config_wifi_fatal_firmware_alert_error_code_list">
+    </array>
+</resources>

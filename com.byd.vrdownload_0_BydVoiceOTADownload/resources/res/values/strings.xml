@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">BydVoiceService</string>
+    <string name="default_filedownloader_notification_content">FileDownloader is running.</string>
+    <string name="default_filedownloader_notification_title">FileDownloader</string>
+    <string name="no_permission_and_not_tip">Storage permission disabled, please turn it on manually first</string>
+    <string name="status_bar_notification_info_overflow">999+</string>
+</resources>

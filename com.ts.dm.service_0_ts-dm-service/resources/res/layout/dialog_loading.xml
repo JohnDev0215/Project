@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    style="@style/LoadingDialogBgStyle">
+    <ImageView
+        android:id="@+id/loading_icon"
+        style="@style/LoadingDialogIconStyle"/>
+    <TextView
+        android:id="@+id/loading_tv"
+        android:text="@string/connecting"
+        style="@style/LoadingDialogTextStyle"/>
+</LinearLayout>

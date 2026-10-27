@@ -1,0 +1,57 @@
+package com.qtxa.report;
+
+/* JADX INFO: loaded from: classes.dex */
+public interface DefineFlag {
+    public static final int ACD_GW = 3;
+    public static final int ACD_HU = 1;
+    public static final int ACD_TBOX = 2;
+    public static final int ADB_MONITOR = 1506;
+    public static final int API_MONITOR = 1502;
+    public static final int APPSTAT = 1504;
+    public static final int APP_LIST = 1507;
+    public static final int AP_MONITOR = 1405;
+    public static final int ATTACK_APP_CRASH = 902;
+    public static final int ATTACK_CRASH_MONITOR = 900;
+    public static final int ATTACK_ILLEGAL_INSTALL = 601;
+    public static final int ATTACK_ILLEGAL_RUNING = 602;
+    public static final int ATTACK_ILLEGAL_UNINSTALL = 603;
+    public static final int ATTACK_SELINUX_ALARM = 700;
+    public static final int ATTACK_SYSTEM_CRASH = 901;
+    public static final int ATTACK_SYSTEM_ROOT = 500;
+    public static final int ATTACK_TAMPERED_APP = 604;
+    public static final int BLOCK = 1;
+    public static final int BT_MONITOR = 1403;
+    public static final int CAN_LOG = 10005;
+    public static final int FILE_MONITOR = 1501;
+    public static final int GPS_MONITOR = 1402;
+    public static final int HARDWARE_MONITOR = 1200;
+    public static final int KERNAL_LOG = 1305;
+    public static final int NETWORK_TYPE_MONITOR = 1404;
+    public static final int OTA_MONITOR = 1308;
+    public static final int PASS = 3;
+    public static final int PERMISSION_MONITOR_CAMERA = 1602;
+    public static final int PERMISSION_MONITOR_CONTACTS = 1605;
+    public static final int PERMISSION_MONITOR_LOCATION = 1601;
+    public static final int PERMISSION_MONITOR_MICROPHONE = 1603;
+    public static final int PERMISSION_MONITOR_STORAGE = 1604;
+    public static final int PROTO_VERSION = 1;
+    public static final int RULE_FUN_APP = 7;
+    public static final int RULE_FUN_CAN = 10;
+    public static final int RULE_FUN_DEEP = 3;
+    public static final int RULE_FUN_FILE = 13;
+    public static final int RULE_FUN_FIREWALL = 1;
+    public static final int RULE_FUN_INTRUSION = 2;
+    public static final int RULE_FUN_LOG = 5;
+    public static final int RULE_FUN_PROCESS = 11;
+    public static final int RULE_FUN_ROOT = 6;
+    public static final int RULE_FUN_SELINUX = 8;
+    public static final int RULE_FUN_SYSCALL = 12;
+    public static final int RULE_FUN_SYSTEM = 9;
+    public static final int RULE_FUN_TERMINAL = 14;
+    public static final int RULE_FUN_TRFC = 4;
+    public static final int USB_MONITOR = 1406;
+    public static final int USB_SHELL = 1503;
+    public static final int WAISHE = 1306;
+    public static final int WARN = 2;
+    public static final int WIFI_MONITOR = 1401;
+}

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_foreground_service_running">is Running</string>
+    <string name="app_name">Message Center</string>
+    <string name="cancel">Peruuta</string>
+    <string name="media_mounted">USB-muistitikun/SD-kortin tarkistaminen</string>
+    <string name="media_removed">USB-muistitikun/SD-kortin poistaminen</string>
+    <string name="notification_msg">Viesti</string>
+    <string name="notify_time_h_s">%d tunti(a) sitten</string>
+    <string name="notify_time_just_now">Juuri nyt</string>
+    <string name="notify_time_mins">%d minuutti(a) sitten</string>
+    <string name="notify_time_one_h">1 tunti sitten</string>
+    <string name="notify_time_one_min">1 minuutti sitten</string>
+    <string name="notify_time_yesterday">Eilen</string>
+    <string name="personal_main_clear_all">Poista kaikki</string>
+    <string name="personal_main_manage">Hallinta</string>
+    <string name="personal_main_no_msg">Ei viestiä</string>
+</resources>

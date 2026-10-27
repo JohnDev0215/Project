@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="all">全选</string>
+    <string name="app_name">清除数据</string>
+    <string name="cache">缓存</string>
+    <string name="cancel">取消</string>
+    <string name="data">数据</string>
+    <string name="date_format">yyyy/MM/dd</string>
+    <string name="delete">删除</string>
+    <string name="deleting">正在删除</string>
+    <string name="empty_data">暂无内容</string>
+    <string name="error_delete">删除失败</string>
+    <string name="exit_delete">确定退出删除流程？</string>
+    <string name="file_count">选中%1$d项</string>
+    <string name="files_delete">是否删除选中的文件？</string>
+    <string name="loading">加载中…</string>
+    <string name="local">本地</string>
+    <string name="msg_clear_app_data">系统会永久清除此应用的所有数据。清除的内容包括所有文件、设置、账号、数据库等，确定清除吗？</string>
+    <string name="no_content">暂无内容</string>
+    <string name="ok">确定</string>
+    <string name="select_none">未选中文件</string>
+    <string name="storage">存储</string>
+    <string name="str_clear_cache">清除缓存</string>
+    <string name="str_clear_cache_data">缓存数据</string>
+    <string name="str_clear_cache_data_fail">清除缓存失败</string>
+    <string name="str_clear_cache_data_success">清除缓存成功</string>
+    <string name="success_delete">删除成功</string>
+    <string name="time_format_12">yyyy/MM/dd hh:mm a</string>
+    <string name="time_format_24">yyyy/MM/dd HH:mm</string>
+    <string name="title_clear_app_data">清除应用数据</string>
+</resources>

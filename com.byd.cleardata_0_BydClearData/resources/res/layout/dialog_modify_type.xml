@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:textSize="@dimen/sp_20"
+        android:textColor="@color/text_main"
+        android:gravity="center"
+        android:id="@+id/tv_message"
+        android:layout_width="@dimen/dp_464"
+        android:layout_height="@dimen/dp_58"
+        android:layout_marginTop="@dimen/dp_50"
+        android:layout_marginBottom="@dimen/dp_27"
+        android:layout_centerHorizontal="true"/>
+</merge>

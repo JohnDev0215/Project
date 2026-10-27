@@ -1,0 +1,181 @@
+package com.google.android.material.internal;
+
+import a.g.k.t;
+import android.content.Context;
+import android.content.res.TypedArray;
+import android.util.AttributeSet;
+import android.view.View;
+import android.view.ViewGroup;
+import b.a.a.a.l;
+
+/* JADX INFO: loaded from: classes.dex */
+public class c extends ViewGroup {
+
+    /* JADX INFO: renamed from: b, reason: collision with root package name */
+    private int f3134b;
+
+    /* JADX INFO: renamed from: c, reason: collision with root package name */
+    private int f3135c;
+
+    /* JADX INFO: renamed from: d, reason: collision with root package name */
+    private boolean f3136d;
+    private int e;
+
+    public c(Context context, AttributeSet attributeSet) {
+        this(context, attributeSet, 0);
+    }
+
+    public c(Context context, AttributeSet attributeSet, int i) {
+        super(context, attributeSet, i);
+        this.f3136d = false;
+        d(context, attributeSet);
+    }
+
+    private static int a(int i, int i2, int i3) {
+        return i2 != Integer.MIN_VALUE ? i2 != 1073741824 ? i3 : i : Math.min(i3, i);
+    }
+
+    private void d(Context context, AttributeSet attributeSet) {
+        TypedArray typedArrayObtainStyledAttributes = context.getTheme().obtainStyledAttributes(attributeSet, l.e1, 0, 0);
+        this.f3134b = typedArrayObtainStyledAttributes.getDimensionPixelSize(l.g1, 0);
+        this.f3135c = typedArrayObtainStyledAttributes.getDimensionPixelSize(l.f1, 0);
+        typedArrayObtainStyledAttributes.recycle();
+    }
+
+    public int b(View view) {
+        Object tag = view.getTag(b.a.a.a.f.p);
+        if (tag instanceof Integer) {
+            return ((Integer) tag).intValue();
+        }
+        return -1;
+    }
+
+    public boolean c() {
+        return this.f3136d;
+    }
+
+    protected int getItemSpacing() {
+        return this.f3135c;
+    }
+
+    protected int getLineSpacing() {
+        return this.f3134b;
+    }
+
+    protected int getRowCount() {
+        return this.e;
+    }
+
+    @Override // android.view.ViewGroup, android.view.View
+    protected void onLayout(boolean z, int i, int i2, int i3, int i4) {
+        int iA;
+        int iB;
+        if (getChildCount() == 0) {
+            this.e = 0;
+            return;
+        }
+        this.e = 1;
+        boolean z2 = t.y(this) == 1;
+        int paddingRight = z2 ? getPaddingRight() : getPaddingLeft();
+        int paddingLeft = z2 ? getPaddingLeft() : getPaddingRight();
+        int paddingTop = getPaddingTop();
+        int i5 = (i3 - i) - paddingLeft;
+        int measuredWidth = paddingRight;
+        int i6 = paddingTop;
+        for (int i7 = 0; i7 < getChildCount(); i7++) {
+            View childAt = getChildAt(i7);
+            if (childAt.getVisibility() == 8) {
+                childAt.setTag(b.a.a.a.f.p, -1);
+            } else {
+                ViewGroup.LayoutParams layoutParams = childAt.getLayoutParams();
+                if (layoutParams instanceof ViewGroup.MarginLayoutParams) {
+                    ViewGroup.MarginLayoutParams marginLayoutParams = (ViewGroup.MarginLayoutParams) layoutParams;
+                    iB = a.g.k.g.b(marginLayoutParams);
+                    iA = a.g.k.g.a(marginLayoutParams);
+                } else {
+                    iA = 0;
+                    iB = 0;
+                }
+                int measuredWidth2 = measuredWidth + iB + childAt.getMeasuredWidth();
+                if (!this.f3136d && measuredWidth2 > i5) {
+                    i6 = this.f3134b + paddingTop;
+                    this.e++;
+                    measuredWidth = paddingRight;
+                }
+                childAt.setTag(b.a.a.a.f.p, Integer.valueOf(this.e - 1));
+                int i8 = measuredWidth + iB;
+                int measuredWidth3 = childAt.getMeasuredWidth() + i8;
+                int measuredHeight = childAt.getMeasuredHeight() + i6;
+                if (z2) {
+                    i8 = i5 - measuredWidth3;
+                    measuredWidth3 = (i5 - measuredWidth) - iB;
+                }
+                childAt.layout(i8, i6, measuredWidth3, measuredHeight);
+                measuredWidth += iB + iA + childAt.getMeasuredWidth() + this.f3135c;
+                paddingTop = measuredHeight;
+            }
+        }
+    }
+
+    @Override // android.view.View
+    protected void onMeasure(int i, int i2) {
+        int i3;
+        int i4;
+        int paddingLeft;
+        int size = View.MeasureSpec.getSize(i);
+        int mode = View.MeasureSpec.getMode(i);
+        int size2 = View.MeasureSpec.getSize(i2);
+        int mode2 = View.MeasureSpec.getMode(i2);
+        int i5 = (mode == Integer.MIN_VALUE || mode == 1073741824) ? size : Integer.MAX_VALUE;
+        int paddingLeft2 = getPaddingLeft();
+        int paddingTop = getPaddingTop();
+        int paddingRight = i5 - getPaddingRight();
+        int i6 = paddingTop;
+        int i7 = 0;
+        for (int i8 = 0; i8 < getChildCount(); i8++) {
+            View childAt = getChildAt(i8);
+            if (childAt.getVisibility() != 8) {
+                measureChild(childAt, i, i2);
+                ViewGroup.LayoutParams layoutParams = childAt.getLayoutParams();
+                if (layoutParams instanceof ViewGroup.MarginLayoutParams) {
+                    ViewGroup.MarginLayoutParams marginLayoutParams = (ViewGroup.MarginLayoutParams) layoutParams;
+                    i3 = marginLayoutParams.leftMargin + 0;
+                    i4 = marginLayoutParams.rightMargin + 0;
+                } else {
+                    i3 = 0;
+                    i4 = 0;
+                }
+                int i9 = paddingLeft2;
+                if (paddingLeft2 + i3 + childAt.getMeasuredWidth() <= paddingRight || c()) {
+                    paddingLeft = i9;
+                } else {
+                    paddingLeft = getPaddingLeft();
+                    i6 = this.f3134b + paddingTop;
+                }
+                int measuredWidth = paddingLeft + i3 + childAt.getMeasuredWidth();
+                int measuredHeight = i6 + childAt.getMeasuredHeight();
+                if (measuredWidth > i7) {
+                    i7 = measuredWidth;
+                }
+                paddingLeft2 = paddingLeft + i3 + i4 + childAt.getMeasuredWidth() + this.f3135c;
+                if (i8 == getChildCount() - 1) {
+                    i7 += i4;
+                }
+                paddingTop = measuredHeight;
+            }
+        }
+        setMeasuredDimension(a(size, mode, i7 + getPaddingRight()), a(size2, mode2, paddingTop + getPaddingBottom()));
+    }
+
+    protected void setItemSpacing(int i) {
+        this.f3135c = i;
+    }
+
+    protected void setLineSpacing(int i) {
+        this.f3134b = i;
+    }
+
+    public void setSingleLine(boolean z) {
+        this.f3136d = z;
+    }
+}

@@ -1,0 +1,79 @@
+package com.google.common.hash;
+
+import com.google.common.base.Preconditions;
+import java.nio.ByteBuffer;
+import java.nio.ByteOrder;
+
+/* JADX INFO: loaded from: classes.dex */
+abstract class AbstractStreamingHasher extends AbstractHasher {
+    private final ByteBuffer buffer;
+    private final int bufferSize;
+    private final int chunkSize;
+
+    protected abstract HashCode makeHash();
+
+    protected abstract void process(ByteBuffer byteBuffer);
+
+    protected abstract void processRemaining(ByteBuffer byteBuffer);
+
+    protected AbstractStreamingHasher(int i) {
+        this(i, i);
+    }
+
+    protected AbstractStreamingHasher(int i, int i2) {
+        Preconditions.checkArgument(i2 % i == 0);
+        this.buffer = ByteBuffer.allocate(i2 + 7).order(ByteOrder.LITTLE_ENDIAN);
+        this.bufferSize = i2;
+        this.chunkSize = i;
+    }
+
+    @Override // com.google.common.hash.AbstractHasher, com.google.common.hash.Hasher
+    public final Hasher putBytes(byte[] bArr, int i, int i2) {
+        putBytesInternal(ByteBuffer.wrap(bArr, i, i2).order(ByteOrder.LITTLE_ENDIAN));
+        return this;
+    }
+
+    private Hasher putBytesInternal(ByteBuffer byteBuffer) {
+        if (byteBuffer.remaining() <= this.buffer.remaining()) {
+            this.buffer.put(byteBuffer);
+            munchIfFull();
+            return this;
+        }
+        int iPosition = this.bufferSize - this.buffer.position();
+        for (int i = 0; i < iPosition; i++) {
+            this.buffer.put(byteBuffer.get());
+        }
+        munch();
+        while (byteBuffer.remaining() >= this.chunkSize) {
+            process(byteBuffer);
+        }
+        this.buffer.put(byteBuffer);
+        return this;
+    }
+
+    @Override // com.google.common.hash.Hasher
+    public final HashCode hash() {
+        munch();
+        this.buffer.flip();
+        if (this.buffer.remaining() > 0) {
+            processRemaining(this.buffer);
+            ByteBuffer byteBuffer = this.buffer;
+            byteBuffer.position(byteBuffer.limit());
+        }
+        return makeHash();
+    }
+
+    private void munchIfFull() {
+        if (this.buffer.remaining() < 8) {
+            munch();
+        }
+    }
+
+    private void munch() {
+        this.buffer.flip();
+        while (this.buffer.remaining() >= this.chunkSize) {
+            process(this.buffer);
+        }
+        this.buffer.compact();
+    }
+}
